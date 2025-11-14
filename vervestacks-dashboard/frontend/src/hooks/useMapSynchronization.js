@@ -29,6 +29,8 @@ export const useMapSynchronization = () => {
       console.warn('Maps not properly initialized for synchronization');
       return;
     }
+
+    let isZooming = false;
     
     // Prevent infinite loops and zoom conflicts
     let isSyncing = false;
