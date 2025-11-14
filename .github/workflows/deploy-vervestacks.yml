@@ -7,13 +7,15 @@ on:
 
 env:
   DEPLOY_ROOT: "C:\\inetpub\\vervestacks\\vervestacks-dashboard"
-  FRONTEND_DIR: "frontend"
-  BACKEND_DIR: "backend"
-  PYTHON_DIR: "python-service"
+
+  # Correct paths (your project is under vervestacks-dashboard)
+  BACKEND_DIR: "vervestacks-dashboard/backend"
+  FRONTEND_DIR: "vervestacks-dashboard/frontend"
+  PYTHON_DIR: "vervestacks-dashboard/python-service"
 
   IIS_SITE_NAME: "vervestacks"
 
-  # Your actual Python path:
+  # Your server's Python executable
   PYTHON_EXE: "D:\\Pyvenvs\\Scripts\\python.exe"
 
 jobs:
@@ -25,7 +27,7 @@ jobs:
         uses: actions/checkout@v4
 
       # ------------------------------
-      # BACKEND (no build, just deps)
+      # BACKEND (npm install only)
       # ------------------------------
       - name: Install backend dependencies
         shell: powershell
@@ -34,12 +36,11 @@ jobs:
           npm install
 
       # ------------------------------
-      # PYTHON SERVICE (using your python.exe)
+      # PYTHON SERVICE (venv + requirements)
       # ------------------------------
       - name: Setup python-service
         shell: powershell
         run: |
-          Write-Host "=== Python service setup ==="
           cd $env:PYTHON_DIR
 
           if (-not (Test-Path ".venv")) {
@@ -47,20 +48,19 @@ jobs:
             & $env:PYTHON_EXE -m venv .venv
           }
 
-          Write-Host "Installing Python dependencies..."
           .\.venv\Scripts\python.exe -m pip install --upgrade pip
           .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 
       # ------------------------------
-      # FRONTEND BUILD (CI=false to ignore warnings)
+      # FRONTEND BUILD (CI=false)
       # ------------------------------
-      - name: Build frontend (prod)
+      - name: Build frontend (CI=false)
         shell: powershell
         run: |
           cd $env:FRONTEND_DIR
           npm install
 
-          # Disable CI mode so React does NOT treat warnings as errors
+          # Disable warnings-as-errors
           $env:CI="false"
 
           npm run build:prod
@@ -82,11 +82,6 @@ jobs:
         run: |
           $sourceBuild = Join-Path $env:FRONTEND_DIR "build"
           $targetBuild = Join-Path $env:DEPLOY_ROOT "frontend\\build"
-          
-          if (-not (Test-Path $sourceBuild)) {
-            Write-Error "Frontend build folder missing: $sourceBuild"
-            exit 1
-          }
 
           if (-not (Test-Path $targetBuild)) {
             New-Item -ItemType Directory -Path $targetBuild | Out-Null
@@ -107,16 +102,13 @@ jobs:
           if (-not (Test-Path $backendTarget)) {
             New-Item -ItemType Directory -Path $backendTarget | Out-Null
           }
-
           if (-not (Test-Path $pythonTarget)) {
             New-Item -ItemType Directory -Path $pythonTarget | Out-Null
           }
 
-          Write-Host "=== Deploying backend ==="
           robocopy $env:BACKEND_DIR $backendTarget /MIR /NFL /NDL /NJH /NJS /NP
           if ($LASTEXITCODE -ge 8) { exit $LASTEXITCODE }
 
-          Write-Host "=== Deploying python-service ==="
           robocopy $env:PYTHON_DIR $pythonTarget /MIR /NFL /NDL /NJH /NJS /NP
           if ($LASTEXITCODE -ge 8) { exit $LASTEXITCODE }
 
