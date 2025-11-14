@@ -1,0 +1,176 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_FI12-220,ep_oil_gas_turbine_G100001000140,30.0,oil,Kristiina Reserve power station_GT1 -- operating,e_FI12-220,FI12-220,62.257,21.3262,False
+e_FI12-220,ep_oil_gas_turbine_G100001000141,30.0,oil,Kristiina Reserve power station_GT2 -- operating,e_FI12-220,FI12-220,62.257,21.3262,False
+e_FI16-400,ep_gas_FI16-400__ember,27.948586118251935,gas,Aggregated Plant - EMBER Gap - FI16-400_Missing Gas Capacity -- operating,e_FI16-400,FI16-400,61.24341943077336,23.471100001871356,False
+e_FI16-400,ep_gas_combined_cycle_G100000400081,72.0,gas,Nokia kombi power station_1 -- operating,e_FI16-400,FI16-400,61.47432,23.4966,False
+e_FI18-400,ep_gas_FI18-400__ember,57.061696658097695,gas,Aggregated Plant - EMBER Gap - FI18-400_Missing Gas Capacity -- operating,e_FI18-400,FI18-400,61.30738409669615,23.76092679321533,False
+e_FI18-400,ep_gas_combined_cycle_G100000400079,147.0,gas,Lielahti power station_1 -- operating,e_FI18-400,FI18-400,61.51042,23.67523,False
+e_FI19-400,ep_solar_pv_400,3.6,solar,Aggregated Plant -- operating,e_FI19-400,FI19-400,61.36062937249294,23.654412125692815,False
+e_FI20-400,ep_hydro_FI20-400__irena,36.977401129943495,hydro,Aggregated Plant - IRENA Gap - FI20-400_Missing Hydro Capacity -- operating,e_FI20-400,FI20-400,61.511147088233216,23.497712160736288,False
+e_FI20-400,ep_hydro_dam_G100001027232,70.0,hydro,Melo hydroelectric plant_ -- operating,e_FI20-400,FI20-400,61.1454,23.5502,False
+e_FI23-400,ep_hydro_FI23-400__irena,61.805084745762706,hydro,Aggregated Plant - IRENA Gap - FI23-400_Missing Hydro Capacity -- operating,e_FI23-400,FI23-400,61.049471671249925,22.49342810429999,False
+e_FI23-400,ep_hydro_dam_G100001027230,72.0,hydro,Harjavalta hydroelectric plant_ -- operating,e_FI23-400,FI23-400,61.3167,22.1333,False
+e_FI23-400,ep_hydro_ror_G100001027231,45.0,hydro,Kolsi hydroelectric plant_ -- operating,e_FI23-400,FI23-400,61.2565,22.3564,False
+e_FI23-400,ep_solar_pv_400,3.1,solar,Aggregated Plant -- operating,e_FI23-400,FI23-400,61.02882247951928,22.0231060767362,False
+e_FI26-400,ep_hydro_FI26-400__irena,134.17514124293783,hydro,Aggregated Plant - IRENA Gap - FI26-400_Missing Hydro Capacity -- operating,e_FI26-400,FI26-400,60.69797687279824,28.386469685352996,False
+e_FI26-400,ep_hydro_dam_G100000601625,192.0,hydro,Imatra hydroelectric plant_ -- operating,e_FI26-400,FI26-400,61.1668,28.7745,False
+e_FI26-400,ep_hydro_dam_G100001027234,62.0,hydro,Tainionkoski hydroelectric plant_ -- operating,e_FI26-400,FI26-400,61.2104,28.7834,False
+e_FI28-400,ep_bioenergy_FI28-400,45.0,bioenergy,Aggregated Plant -- operating,e_FI28-400,FI28-400,60.386007027348136,25.254790193656188,False
+e_FI28-400,ep_bioenergy_FI28-400__ember,77.16813048933503,bioenergy,Aggregated Plant - EMBER Gap - FI28-400_Missing Bioenergy Capacity -- operating,e_FI28-400,FI28-400,60.352664928774566,24.791616663649933,False
+e_FI28-400,ep_bioenergy_G100000201374,50.0,bioenergy,Kymijarvi power station_2 -- operating,e_FI28-400,FI28-400,60.9932,25.7193,False
+e_FI28-400,ep_bioenergy_G100000410453,76.0,bioenergy,Kymijarvi power station_GT1 -- operating,e_FI28-400,FI28-400,60.9932,25.7193,False
+e_FI28-400,ep_solar_pv_400,2.3,solar,Aggregated Plant -- operating,e_FI28-400,FI28-400,60.898721367352046,24.568804504521406,False
+e_FI3-220,ep_hydro_FI3-220__irena,76.06779661016948,hydro,Aggregated Plant - IRENA Gap - FI3-220_Missing Hydro Capacity -- operating,e_FI3-220,FI3-220,66.67145576715018,27.281389202681158,False
+e_FI3-220,ep_hydro_dam_G100000601634,144.0,hydro,Seitakorva hydroelectric plant_ -- operating,e_FI3-220,FI3-220,66.4052,27.3301,False
+e_FI34-400,ep_oil_gas_turbine_G100001000148,20.0,oil,Tolkkinen power station_GT1 -- operating,e_FI34-400,FI34-400,60.3252,25.5789,False
+e_FI34-400,ep_oil_gas_turbine_G100001000149,20.0,oil,Tolkkinen power station_GT2 -- operating,e_FI34-400,FI34-400,60.3252,25.5789,False
+e_FI35-400,ep_gas_FI35-400__ember,108.30077120822624,gas,Aggregated Plant - EMBER Gap - FI35-400_Missing Gas Capacity -- operating,e_FI35-400,FI35-400,60.07588029304774,24.786861973500073,False
+e_FI35-400,ep_gas_combined_cycle_G100000400084,234.0,gas,Suomenoja power station_2 -- operating,e_FI35-400,FI35-400,60.14913,24.71837,False
+e_FI35-400,ep_gas_gas_turbine_G100000400085,45.0,gas,Suomenoja power station_6 -- operating,e_FI35-400,FI35-400,60.14913,24.71837,False
+e_FI36-400,ep_bioenergy_FI36-400__ember,57.763278962777086,bioenergy,Aggregated Plant - EMBER Gap - FI36-400_Missing Bioenergy Capacity -- operating,e_FI36-400,FI36-400,60.06515271296967,24.38774874023531,False
+e_FI36-400,ep_bioenergy_G100000400078,128.0,bioenergy,Kirkniemi Mill power station_1 -- operating,e_FI36-400,FI36-400,60.19092,23.94365,False
+e_FI7-400,ep_bioenergy_FI7-400,35.0,bioenergy,Aggregated Plant -- operating,e_FI7-400,FI7-400,65.20990890060364,25.79361762242253,False
+e_FI7-400,ep_bioenergy_FI7-400__ember,47.383939774153085,bioenergy,Aggregated Plant -- operating,e_FI7-400,FI7-400,64.83928889522561,25.992452292040056,False
+e_FI7-400,ep_bioenergy_G100000201376,70.0,bioenergy,Laanila power station_2 -- operating,e_FI7-400,FI7-400,65.0354,25.5164,False
+e_FI7-400,ep_solar_pv_400,4.9,solar,Aggregated Plant -- operating,e_FI7-400,FI7-400,64.82353402905123,25.501664096530398,False
+e_FI9-220,ep_hydro_FI9-220__irena,102.48022598870054,hydro,Aggregated Plant - IRENA Gap - FI9-220_Missing Hydro Capacity -- operating,e_FI9-220,FI9-220,64.60115540411702,26.86123103665021,False
+e_FI9-220,ep_hydro_dam_G100000601627,81.0,hydro,Nuojua hydroelectric plant_ -- operating,e_FI9-220,FI9-220,64.5774,26.713,False
+e_FI9-220,ep_hydro_dam_G100001027235,58.0,hydro,Utanen hydroelectric plant_ -- operating,e_FI9-220,FI9-220,64.7333,26.5001,False
+e_FI9-220,ep_hydro_ror_G100001052088,55.0,hydro,Jylhämä hydroelectric plant_ -- operating,e_FI9-220,FI9-220,64.5722,26.7811,False
+e_w1107461441-400,ep_hydro_w1107461441-400__irena,39.61864406779661,hydro,Aggregated Plant - IRENA Gap - way/1107461441-400_Missing Hydro Capacity -- operating,e_w1107461441-400,way/1107461441-400,63.627480498824,25.314924631025246,False
+e_w123462491-400,ep_solar_pv_400,9.0,solar,Aggregated Plant -- operating,e_w123462491-400,way/123462491-400,62.61091067623278,22.757521603304944,False
+e_w128463750-400,ep_bioenergy_G100000201385,107.0,bioenergy,Uimaharju Enocell power station_2 -- operating,e_w128463750-400,way/128463750-400,62.9212,30.2292,False
+e_w128463750-400,ep_bioenergy_w128463750-400__ember,48.28649100794647,bioenergy,Aggregated Plant -- operating,e_w128463750-400,way/128463750-400,63.28642678733349,27.86716911092241,False
+e_w128463750-400,ep_hydro_dam_G100000601629,94.0,hydro,Pamilo hydroelectric plant_ -- operating,e_w128463750-400,way/128463750-400,62.801,30.4283,False
+e_w128463750-400,ep_hydro_w128463750-400__irena,49.65536723163841,hydro,Aggregated Plant - IRENA Gap - way/128463750-400_Missing Hydro Capacity -- operating,e_w128463750-400,way/128463750-400,62.83341753344163,27.453470188302138,False
+e_w1306874220-400,ep_gas_combined_cycle_G100001000153,125.0,gas,Raahen Voima power station_1 -- operating,e_w1306874220-400,way/1306874220-400,64.6522,24.4252,False
+e_w1306874220-400,ep_gas_w1306874220-400__ember,48.52185089974294,gas,Aggregated Plant - EMBER Gap - way/1306874220-400_Missing Gas Capacity -- operating,e_w1306874220-400,way/1306874220-400,64.52729344498292,24.60139367467239,False
+e_w144832705-400,ep_bioenergy_G100000410456,161.0,bioenergy,Anjalankoski Mill power station_CC1 -- operating,e_w144832705-400,way/144832705-400,60.68694,26.81659,False
+e_w144832705-400,ep_bioenergy_w144832705-400,46.0,bioenergy,Aggregated Plant -- operating,e_w144832705-400,way/144832705-400,60.241842679463474,26.857849285592536,False
+e_w144832705-400,ep_bioenergy_w144832705-400__ember,93.41405269761607,bioenergy,Aggregated Plant - EMBER Gap - way/144832705-400_Missing Bioenergy Capacity -- operating,e_w144832705-400,way/144832705-400,60.54839199492307,26.54969226953573,False
+e_w149965733-400,ep_hydro_ror_G100001052089,51.0,hydro,Pälli hydroelectric plant_ -- operating,e_w149965733-400,way/149965733-400,64.8435,26.1947,False
+e_w149965733-400,ep_hydro_w149965733-400__irena,26.940677966101692,hydro,Aggregated Plant - IRENA Gap - way/149965733-400_Missing Hydro Capacity -- operating,e_w149965733-400,way/149965733-400,64.49478692555427,26.16109416969406,False
+e_w149965733-400,ep_solar_pv_400,80.0,solar,Aggregated Plant -- construction,e_w149965733-400,way/149965733-400,64.81966213917826,25.71233065041455,False
+e_w149965738-220,ep_hydro_dam_G100000601632,149.0,hydro,Pyhajoski hydroelectric plant_ -- operating,e_w149965738-220,way/149965738-220,64.8463,26.0404,False
+e_w149965738-220,ep_hydro_w149965738-220__irena,78.70903954802257,hydro,Aggregated Plant - IRENA Gap - way/149965738-220_Missing Hydro Capacity -- operating,e_w149965738-220,way/149965738-220,64.85509253459635,26.024503169704616,False
+e_w150209972-400,ep_coal_subcritical_G100000110566,250.0,coal,Vaskiluoto power station_Unit 2 -- operating,e_w150209972-400,way/150209972-400,63.09151,21.552176,False
+e_w150209972-400,ep_coal_w150209972-400__ember,59.29038281979457,coal,Aggregated Plant - EMBER Gap - way/150209972-400_Missing Coal Capacity -- operating,e_w150209972-400,way/150209972-400,63.400339566862755,21.756098365652637,False
+e_w150209972-400,ep_oil_gas_turbine_G100001000154,162.0,oil,Vaskiluotos power station_GT1 -- operating,e_w150209972-400,way/150209972-400,63.090259,21.552825,False
+e_w151818544-400,ep_bioenergy_G100000201379,142.0,bioenergy,Naantali CHP power station_4 -- operating,e_w151818544-400,way/151818544-400,60.451,22.0517,False
+e_w151818544-400,ep_bioenergy_w151818544-400__ember,64.08113759933083,bioenergy,Aggregated Plant - EMBER Gap - way/151818544-400_Missing Bioenergy Capacity -- operating,e_w151818544-400,way/151818544-400,60.716460629931134,23.004477368410136,False
+e_w151818544-400,ep_coal_w151818544-400__ember,29.645191409897286,coal,Aggregated Plant - EMBER Gap - way/151818544-400_Missing Coal Capacity -- operating,e_w151818544-400,way/151818544-400,60.218977652212175,22.94620810591024,False
+e_w151818544-400,ep_m_coal_subcritical_G100000107157,125.0,coal,Naantali CHP power station_Unit 3 -- mothballed,e_w151818544-400,way/151818544-400,60.451,22.0517,False
+e_w151818544-400,ep_oil_gas_turbine_G100001000142,20.0,oil,Naantali Reserve power station_GT1 -- operating,e_w151818544-400,way/151818544-400,60.4594,22.0455,False
+e_w151818544-400,ep_oil_gas_turbine_G100001000143,20.0,oil,Naantali Reserve power station_GT2 -- operating,e_w151818544-400,way/151818544-400,60.4594,22.0455,False
+e_w169899622-220,ep_hydro_dam_G100000601635,134.0,hydro,Taivalkoski hydroelectric plant_ -- operating,e_w169899622-220,way/169899622-220,65.9308,24.7143,False
+e_w169899622-220,ep_hydro_w169899622-220__irena,70.78531073446327,hydro,Aggregated Plant - IRENA Gap - way/169899622-220_Missing Hydro Capacity -- operating,e_w169899622-220,way/169899622-220,66.04292336715328,24.574910009044682,False
+e_w173431802-400,ep_bioenergy_w173431802-400,43.0,bioenergy,Aggregated Plant -- operating,e_w173431802-400,way/173431802-400,61.703031887142565,25.32048017041082,False
+e_w173431802-400,ep_bioenergy_w173431802-400__ember,19.40485152655793,bioenergy,Aggregated Plant -- operating,e_w173431802-400,way/173431802-400,61.6959129118237,24.94267874104818,False
+e_w26501426-400,ep_bioenergy_G100000201378,75.0,bioenergy,Metsä Rauma power station_1 -- operating,e_w26501426-400,way/26501426-400,61.1113,21.4648,False
+e_w26501426-400,ep_bioenergy_G100000201384,76.0,bioenergy,Rauma power station_TG6 -- operating,e_w26501426-400,way/26501426-400,61.118,21.478,False
+e_w26501426-400,ep_bioenergy_w26501426-400__ember,68.14261815140111,bioenergy,Aggregated Plant - EMBER Gap - way/26501426-400_Missing Bioenergy Capacity -- operating,e_w26501426-400,way/26501426-400,61.51282009506301,21.622994989458494,False
+e_w26501426-400,ep_solar_pv_400,32.0,solar,Aggregated Plant -- operating,e_w26501426-400,way/26501426-400,61.1142856800551,21.982548899940728,False
+e_w26619335,ep_gas_gas_turbine_G100000410451,80.0,gas,Porvoo power station_1 -- operating,e_w26619335,way/26619335,60.3125,25.5248,False
+e_w26619335,ep_gas_steam_turbine_G100000400083,31.0,gas,Porvoo Refinery power station_1 -- operating,e_w26619335,way/26619335,60.30734,25.49704,False
+e_w26619335,ep_gas_w26619335__ember,43.08740359897173,gas,Aggregated Plant - EMBER Gap - way/26619335_Missing Gas Capacity -- operating,e_w26619335,way/26619335,60.44678922280102,25.286491520554765,False
+e_w26619335,ep_oil_combined_cycle_G100000400082,121.0,oil,Porvoo Refinery power station_2 & 3 -- operating,e_w26619335,way/26619335,60.30734,25.49704,False
+e_w286955409-220,ep_hydro_ror_G100000601630,182.0,hydro,Petäjäskoski hydroelectric plant_ -- operating,e_w286955409-220,way/286955409-220,66.2722,25.3374,False
+e_w286955409-220,ep_hydro_w286955409-220__irena,96.14124293785311,hydro,Aggregated Plant - IRENA Gap - way/286955409-220_Missing Hydro Capacity -- operating,e_w286955409-220,way/286955409-220,66.3789848750358,25.22332360658865,False
+e_w28820749-400,ep_bioenergy_G100000200350,78.0,bioenergy,Vantaa Waste-to-Energy power station_1 -- operating,e_w28820749-400,way/28820749-400,60.261,25.1291,False
+e_w28820749-400,ep_bioenergy_w28820749-400__ember,35.19949811794229,bioenergy,Aggregated Plant -- operating,e_w28820749-400,way/28820749-400,60.43689274578743,25.1549424722214,False
+e_w28820749-400,ep_gas_combined_cycle_G100000400086,163.0,gas,Vuosaari power station_A -- operating,e_w28820749-400,way/28820749-400,60.22032,25.16966,False
+e_w28820749-400,ep_gas_combined_cycle_G100000400087,485.0,gas,Vuosaari power station_B -- operating,e_w28820749-400,way/28820749-400,60.22032,25.16966,False
+e_w28820749-400,ep_gas_w28820749-400__ember,251.53727506426736,gas,Aggregated Plant - EMBER Gap - way/28820749-400_Missing Gas Capacity -- operating,e_w28820749-400,way/28820749-400,60.07999271882758,25.12050348301163,False
+e_w314853393-220,ep_windon_wind_220,99.0,windon,Aggregated Plant -- operating,e_w314853393-220,way/314853393-220,67.70463084108668,24.952768752947527,False
+e_w34623113-400,ep_gas_w34623113-400__ember,50.07455012853471,gas,Aggregated Plant - EMBER Gap - way/34623113-400_Missing Gas Capacity -- operating,e_w34623113-400,way/34623113-400,61.36815003194932,23.854200503691317,False
+e_w34623113-400,ep_m_gas_combined_cycle_G100000400080,129.0,gas,Naistenlahti power station_1 -- mothballed,e_w34623113-400,way/34623113-400,61.50975,23.77752,False
+e_w348358044-400,ep_bioenergy_G100000201383,53.0,bioenergy,Pursiala power station_2 -- operating,e_w348358044-400,way/348358044-400,61.6759,27.2891,False
+e_w348358044-400,ep_bioenergy_w348358044-400__ember,23.91760769552489,bioenergy,Aggregated Plant -- operating,e_w348358044-400,way/348358044-400,61.371721337360185,27.319015164246274,False
+e_w348358044-400,ep_solar_pv_400,8.0,solar,Aggregated Plant -- operating,e_w348358044-400,way/348358044-400,61.79958011481586,27.012706838583412,False
+e_w35281467-400,ep_bioenergy_G100000201373,76.0,bioenergy,Kymi Mill power station_1 -- operating,e_w35281467-400,way/35281467-400,60.9101,26.6603,False
+e_w35281467-400,ep_bioenergy_w35281467-400__ember,34.2969468841489,bioenergy,Aggregated Plant -- operating,e_w35281467-400,way/35281467-400,60.7380859606247,27.21806884583725,False
+e_w35281467-400,ep_coal_subcritical_G100000103740,39.2,coal,Heinola Plant power station_Unit 1 -- operating,e_w35281467-400,way/35281467-400,61.2,26.033333,False
+e_w35281467-400,ep_gas_gas_turbine_G100000400077,45.0,gas,Hinkismäki power station_1 -- operating,e_w35281467-400,way/35281467-400,60.87189,26.70136,False
+e_w35281467-400,ep_gas_w35281467-400__ember,17.467866323907458,gas,Aggregated Plant - EMBER Gap - way/35281467-400_Missing Gas Capacity -- operating,e_w35281467-400,way/35281467-400,60.21824560996,26.710549149383766,False
+e_w388655178-400,ep_hydro_dam_G100000601631,152.0,hydro,Pirttikoski hydroelectric plant_ -- operating,e_w388655178-400,way/388655178-400,66.3402,27.1514,False
+e_w388655178-400,ep_hydro_w388655178-400__irena,80.29378531073446,hydro,Aggregated Plant - IRENA Gap - way/388655178-400_Missing Hydro Capacity -- operating,e_w388655178-400,way/388655178-400,66.47026536266068,27.25443218832759,False
+e_w388832477-220,ep_hydro_ror_G100000601628,124.0,hydro,Ossauskoski hydroelectric plant_ -- operating,e_w388832477-220,way/388832477-220,66.1558,25.1255,False
+e_w388832477-220,ep_hydro_w388832477-220__irena,65.50282485875705,hydro,Aggregated Plant - IRENA Gap - way/388832477-220_Missing Hydro Capacity -- operating,e_w388832477-220,way/388832477-220,66.06624717064525,25.260383018841985,False
+e_w391140226-400,ep_hydro_ror_G100001027233,60.0,hydro,Raasakka hydroelectric plant_ -- operating,e_w391140226-400,way/391140226-400,65.4667,27.5167,False
+e_w391140226-400,ep_hydro_w391140226-400__irena,31.694915254237287,hydro,Aggregated Plant - IRENA Gap - way/391140226-400_Missing Hydro Capacity -- operating,e_w391140226-400,way/391140226-400,65.64497438976635,26.59931019560483,False
+e_w391142034-220,ep_hydro_dam_G100000601637,95.0,hydro,Vanttauskoski hydroelectric plant_ -- operating,e_w391142034-220,way/391142034-220,66.3696,26.6871,False
+e_w391142034-220,ep_hydro_w391142034-220__irena,50.18361581920904,hydro,Aggregated Plant - IRENA Gap - way/391142034-220_Missing Hydro Capacity -- operating,e_w391142034-220,way/391142034-220,66.54965371526607,26.662845284210125,False
+e_w43143343-400,ep_bioenergy_G100000200235,260.0,bioenergy,Äänekoski Bioproduct Mill power station_1 -- operating,e_w43143343-400,way/43143343-400,62.5908,25.7522,False
+e_w43143343-400,ep_bioenergy_w43143343-400__ember,117.33166039314096,bioenergy,Aggregated Plant - EMBER Gap - way/43143343-400_Missing Bioenergy Capacity -- operating,e_w43143343-400,way/43143343-400,62.537367927377865,25.821791159151896,False
+e_w47317827-400,ep_bioenergy_G100000200289,270.0,bioenergy,Kemi Bioproduct Mill power station_1 -- operating,e_w47317827-400,way/47317827-400,65.7613,24.522,False
+e_w47317827-400,ep_bioenergy_G100000200290,83.0,bioenergy,Kemi Pulp Mill power station_1 -- operating,e_w47317827-400,way/47317827-400,65.7602,24.5293,False
+e_w47317827-400,ep_bioenergy_w47317827-400__ember,159.3002927645337,bioenergy,Aggregated Plant - EMBER Gap - way/47317827-400_Missing Bioenergy Capacity -- operating,e_w47317827-400,way/47317827-400,66.06548626082986,24.558674863565287,False
+e_w47317827-400,ep_hydro_dam_G100000601626,128.0,hydro,Isohaara hydroelectric plant_ -- operating,e_w47317827-400,way/47317827-400,65.7928,24.5448,False
+e_w47317827-400,ep_hydro_w47317827-400__irena,67.61581920903954,hydro,Aggregated Plant - IRENA Gap - way/47317827-400_Missing Hydro Capacity -- operating,e_w47317827-400,way/47317827-400,65.7090484953627,24.507697777746337,False
+e_w498816162-400,ep_bioenergy_G100000201382,81.0,bioenergy,Porin Prosessivoiman power station_1 -- operating,e_w498816162-400,way/498816162-400,61.5769,21.554,False
+e_w498816162-400,ep_bioenergy_w498816162-400__ember,36.55332496863238,bioenergy,Aggregated Plant -- operating,e_w498816162-400,way/498816162-400,61.974473732362895,21.828649641515803,False
+e_w498816162-400,ep_coal_supercritical_G100000106877,614.0,coal,Meri-Pori power station_Unit 1 -- operating,e_w498816162-400,way/498816162-400,61.63215,21.40473,False
+e_w498816162-400,ep_coal_w498816162-400__ember,154.91391223155927,coal,Aggregated Plant - EMBER Gap - way/498816162-400_Missing Coal Capacity -- operating,e_w498816162-400,way/498816162-400,61.2404731203583,21.782709914396488,False
+e_w498816162-400,ep_oil_gas_turbine_G100001000146,26.0,oil,Tahkoluoto power station_GT1 -- operating,e_w498816162-400,way/498816162-400,61.6319,21.4069,False
+e_w498816162-400,ep_oil_gas_turbine_G100001000147,26.0,oil,Tahkoluoto power station_GT2 -- operating,e_w498816162-400,way/498816162-400,61.6319,21.4069,False
+e_w53047196-400,ep_nuclear_G100000500448,531.0,nuclear,Loviisa nuclear power plant_1 -- operating,e_w53047196-400,way/53047196-400,60.3708,26.3468,False
+e_w53047196-400,ep_nuclear_G100000500449,531.0,nuclear,Loviisa nuclear power plant_2 -- operating,e_w53047196-400,way/53047196-400,60.3708,26.3468,False
+e_w551596913-400,ep_solar_pv_400,10.0,solar,Aggregated Plant -- operating,e_w551596913-400,way/551596913-400,64.22047272198193,24.377082280360383,False
+e_w55275866-400,ep_coal_subcritical_G100000106706,80.0,coal,Martinlaakso power station_Unit 2 -- operating,e_w55275866-400,way/55275866-400,60.2833,24.8364,False
+e_w55275866-400,ep_coal_subcritical_G100000108748,177.0,coal,Salmisaari power station_Phase B Unit 1 -- operating,e_w55275866-400,way/55275866-400,60.165375,24.904517,False
+e_w55275866-400,ep_coal_w55275866-400__ember,60.95051353874883,coal,Aggregated Plant - EMBER Gap - way/55275866-400_Missing Coal Capacity -- operating,e_w55275866-400,way/55275866-400,60.72977506728825,25.060205578280417,False
+e_w55275866-400,ep_oil_gas_turbine_G100001000151,60.0,oil,Kellosaari power station_GT1 -- operating,e_w55275866-400,way/55275866-400,60.16188,24.90872,False
+e_w55275866-400,ep_oil_gas_turbine_G100001000152,60.0,oil,Kellosaari power station_GT2 -- operating,e_w55275866-400,way/55275866-400,60.16188,24.90872,False
+e_w55275866-400,ep_solar_pv_400,2.5,solar,Aggregated Plant -- operating,e_w55275866-400,way/55275866-400,60.47427664204749,25.38126843807887,False
+e_w55609623-220,ep_hydro_dam_G100000601636,101.0,hydro,Valajaskosken hydroelectric plant_ -- operating,e_w55609623-220,way/55609623-220,66.4241,25.5393,False
+e_w55609623-220,ep_hydro_w55609623-220__irena,53.353107344632754,hydro,Aggregated Plant - IRENA Gap - way/55609623-220_Missing Hydro Capacity -- operating,e_w55609623-220,way/55609623-220,66.35385795462591,25.48827046767948,False
+e_w590767557-400,ep_bioenergy_G100000201387,95.0,bioenergy,Wisapower power station_1 -- operating,e_w590767557-400,way/590767557-400,63.6985,22.7133,False
+e_w590767557-400,ep_bioenergy_w590767557-400,30.0,bioenergy,Aggregated Plant -- operating,e_w590767557-400,way/590767557-400,64.34084647609805,23.063762881957786,False
+e_w590767557-400,ep_bioenergy_w590767557-400__ember,56.409452112087,bioenergy,Aggregated Plant - EMBER Gap - way/590767557-400_Missing Bioenergy Capacity -- operating,e_w590767557-400,way/590767557-400,63.978072368296814,23.59162466066411,False
+e_w881741424-400,ep_bioenergy_w881741424-400,94.0,bioenergy,Aggregated Plant -- operating,e_w881741424-400,way/881741424-400,62.027877678744744,28.273301214249386,False
+e_w881741424-400,ep_bioenergy_w881741424-400__ember,42.419907988289424,bioenergy,Aggregated Plant -- operating,e_w881741424-400,way/881741424-400,61.60361844646088,27.83301351886053,False
+e_w881741424-400,ep_oil_gas_turbine_G100001000134,30.0,oil,Huutokoski power station_GT1 -- operating,e_w881741424-400,way/881741424-400,62.2116,27.6756,False
+e_w881741424-400,ep_oil_gas_turbine_G100001000135,30.0,oil,Huutokoski power station_GT2 -- operating,e_w881741424-400,way/881741424-400,62.2116,27.6756,False
+e_w881741424-400,ep_oil_gas_turbine_G100001000136,30.0,oil,Huutokoski power station_GT3 -- operating,e_w881741424-400,way/881741424-400,62.2116,27.6756,False
+e_w881741424-400,ep_oil_gas_turbine_G100001000137,30.0,oil,Huutokoski power station_GT4 -- operating,e_w881741424-400,way/881741424-400,62.2116,27.6756,False
+e_w881741424-400,ep_oil_gas_turbine_G100001000138,30.0,oil,Huutokoski power station_GT5 -- operating,e_w881741424-400,way/881741424-400,62.2116,27.6756,False
+e_w881741424-400,ep_oil_gas_turbine_G100001000139,30.0,oil,Huutokoski power station_GT6 -- operating,e_w881741424-400,way/881741424-400,62.2116,27.6756,False
+e_w881741424-400,ep_solar_pv_400,5.0,solar,Aggregated Plant -- operating,e_w881741424-400,way/881741424-400,61.63655361592624,27.414535907464167,False
+e_w96660466-400,ep_bioenergy_G100000400076,65.0,bioenergy,Hämeenlinna power station_1 -- operating,e_w96660466-400,way/96660466-400,60.92924,24.6343,False
+e_w96660466-400,ep_bioenergy_w96660466-400__ember,29.33291509828524,bioenergy,Aggregated Plant -- operating,e_w96660466-400,way/96660466-400,60.597090956509035,24.695665283159883,False
+e_w96660466-400,ep_oil_gas_turbine_G100001000150,50.0,oil,Vanaja power station_GT1 -- operating,e_w96660466-400,way/96660466-400,60.9746,24.5052,False
+e_w98561229-400,ep_bioenergy_G100000201371,85.0,bioenergy,Joutseno Pulp power station_1 -- operating,e_w98561229-400,way/98561229-400,61.1303,28.4521,False
+e_w98561229-400,ep_bioenergy_G100000201377,67.0,bioenergy,Lappeenranta power station_TG9 -- operating,e_w98561229-400,way/98561229-400,61.0659,28.247,False
+e_w98561229-400,ep_bioenergy_w98561229-400__ember,68.5938937682978,bioenergy,Aggregated Plant - EMBER Gap - way/98561229-400_Missing Bioenergy Capacity -- operating,e_w98561229-400,way/98561229-400,60.9030253736277,27.785716555730552,False
+e_w98561229-400,ep_oil_gas_turbine_G100000410452,102.0,oil,Mertaniemi power station_1 & 2 -- operating,e_w98561229-400,way/98561229-400,61.08085,28.17171,False
+e_w98609844-400,ep_nuclear_G100000500006,1720.0,nuclear,Olkiluoto nuclear power plant_3 -- operating,e_w98609844-400,way/98609844-400,61.2356,21.4372,False
+e_w98609844-400,ep_nuclear_G100000500355,920.0,nuclear,Olkiluoto nuclear power plant_1 -- operating,e_w98609844-400,way/98609844-400,61.2371,21.4433,False
+e_w98609844-400,ep_nuclear_G100000500356,920.0,nuclear,Olkiluoto nuclear power plant_2 -- operating,e_w98609844-400,way/98609844-400,61.2371,21.4433,False
+e_w98609844-400,ep_oil_gas_turbine_G100001000144,50.0,oil,Olkiluoto Reserve power station_GT1 -- operating,e_w98609844-400,way/98609844-400,61.23957,21.44796,False
+e_w98609844-400,ep_oil_gas_turbine_G100001000145,50.0,oil,Olkiluoto Reserve power station_GT2 -- operating,e_w98609844-400,way/98609844-400,61.23957,21.44796,False
+e_w98735006-400,ep_oil_gas_turbine_G100001000132,160.0,oil,Forssa power station_GT1 -- operating,e_w98735006-400,way/98735006-400,60.8034,23.5642,False
+e_w98735006-400,ep_oil_gas_turbine_G100001000133,160.0,oil,Forssa power station_GT2 -- operating,e_w98735006-400,way/98735006-400,60.8034,23.5642,False
+elc_spv_001,ep_solar_001__irena,0.0,solar,Aggregated Plant -- operating,elc_spv_001,way/55275866-400,59.92096758543915,24.71022959785552,False
+elc_spv_001,ep_solar_pv_001,1.8,solar,Aggregated Plant -- operating,elc_spv_001,way/55275866-400,60.405981665843164,24.53623934324845,False
+elc_spv_001,ep_solar_pv_G100000818844,206.0,solar,Kalanti solar farm_-- -- construction,elc_spv_001,way/55275866-400,60.8216,21.5411,False
+elc_wof_007,ep_windoff_wind_007,42.0,windoff,Aggregated Plant -- operating,elc_wof_007,way/98609844-400,61.39339199366544,20.069027542832107,False
+elc_won_003,ep_windon_wind_003,10.0,windon,Aggregated Plant -- operating,elc_won_003,way/881741424-400,62.66467529930676,27.230407292177066,False
+elc_won_004,ep_windon_wind_004,131.0,windon,Aggregated Plant -- construction,elc_won_004,way/35281467-400,61.125926840100604,26.034239354452183,False
+elc_won_005,ep_windon_wind_005,33.0,windon,Aggregated Plant -- operating,elc_won_005,way/53047196-400,60.745193672901586,27.3647020918726,False
+elc_won_006,ep_windon_006__irena,104.99570929965569,windon,Aggregated Plant -- operating,elc_won_006,way/26501426-400,61.16762359572851,21.26417515001802,False
+elc_won_007,ep_windon_wind_007,154.79999999999998,windon,Aggregated Plant -- operating,elc_won_007,way/151818544-400,60.85555646583118,22.073091080244044,False
+elc_won_008,ep_windon_wind_008,18.0,windon,Aggregated Plant -- operating,elc_won_008,way/1184732640-400,60.76871758715301,25.169294370880998,False
+elc_won_009,ep_windon_wind_009,2668.8,windon,Aggregated Plant -- operating,elc_won_009,way/590767557-400,64.02495753922176,22.589282658946807,False
+elc_won_009,ep_windon_wind_G100000919972,378.0,windon,Mutkalampi wind farm_1 -- operating,elc_won_009,way/590767557-400,63.9008,23.917,False
+elc_won_010,ep_windon_wind_010,2280.1,windon,Aggregated Plant -- operating,elc_won_010,way/498816162-400,61.8472260379095,20.91432179251898,False
+elc_won_010,ep_windon_wind_G100001000647,251.6,windon,Pjelax wind farm_Närpiö -- operating,elc_won_010,way/498816162-400,62.4052,21.4842,False
+elc_won_011,ep_windon_wind_011,544.3,windon,Aggregated Plant -- operating,elc_won_011,way/98613134-400,61.756875252387616,22.388091655030767,False
+elc_won_012,ep_windon_wind_012,671.6000000000001,windon,Aggregated Plant -- operating,elc_won_012,way/150209972-400,63.08541356483998,21.492366008469553,False
+elc_won_012,ep_windon_wind_G100000919871,455.0,windon,Lestijärvi wind farm_-- -- construction,elc_won_012,way/150209972-400,63.4701,24.6884,False
+elc_won_013,ep_windon_013__irena,118.19524459421648,windon,Aggregated Plant -- operating,elc_won_013,way/379937972-220,69.52656065738513,27.429494627859295,False
+elc_won_016,ep_windon_wind_016,51.00000000000001,windon,Aggregated Plant -- operating,elc_won_016,FI5-400,68.07754571039978,23.795306386668024,False
+elc_won_017,ep_windon_017__irena,108.40904610612775,windon,Aggregated Plant -- operating,elc_won_017,way/314853393-220,67.34820142317375,24.90429557483878,False
+elc_won_018,ep_windon_wind_018,322.0,windon,Aggregated Plant -- construction,elc_won_018,FI3-220,66.34202874006645,27.06186887935336,False
+elc_won_020,ep_windon_wind_020,658.5,windon,Aggregated Plant -- operating,elc_won_020,way/149965739-400,64.89966271551982,26.05479667957501,False
+elc_won_021,ep_windon_wind_021,688.3000000000001,windon,Aggregated Plant -- operating,elc_won_021,FI6-400,65.95255288670177,25.00744346241899,False
+elc_won_022,ep_windon_wind_022,124.0,windon,Aggregated Plant -- operating,elc_won_022,way/391142034-220,66.19098499179907,26.695697027866213,False

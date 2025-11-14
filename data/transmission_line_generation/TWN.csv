@@ -1,0 +1,172 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_gas__ember,4.000000000001336,gas,Aggregated Plant -- operating,,,,,False
+e_TW13-345,ep_coal_subcritical_G100000113102,49.0,coal,Miaoli Petrochemical power station_Unit 1 -- operating,e_TW13-345,TW13-345,24.5932386,120.8179175,False
+e_TW13-345,ep_gas_combined_cycle_G100000406176,386.0,gas,Tunghsiao power station_4 -- operating,e_TW13-345,TW13-345,24.490013,120.673505,False
+e_TW13-345,ep_gas_combined_cycle_G100000406177,386.0,gas,Tunghsiao power station_5 -- operating,e_TW13-345,TW13-345,24.490013,120.673505,False
+e_TW13-345,ep_gas_combined_cycle_G100000406178,320.0,gas,Tunghsiao power station_6 -- operating,e_TW13-345,TW13-345,24.490013,120.673505,False
+e_TW13-345,ep_gas_combined_cycle_G100000406179,893.0,gas,Tunghsiao power station_New 1 -- operating,e_TW13-345,TW13-345,24.490013,120.673505,False
+e_TW13-345,ep_gas_combined_cycle_G100000406180,893.0,gas,Tunghsiao power station_New 2 -- operating,e_TW13-345,TW13-345,24.490013,120.673505,False
+e_TW13-345,ep_gas_combined_cycle_G100000406181,893.0,gas,Tunghsiao power station_New 3 -- operating,e_TW13-345,TW13-345,24.490013,120.673505,False
+e_TW13-345,ep_gas_gas_turbine_G100000410605,180.0,gas,Tunghsiao power station_Expansion 1 -- operating,e_TW13-345,TW13-345,24.490013,120.673505,False
+e_TW14-345,ep_hydro_dam_G100000603581,80.0,hydro,Zhuolan hydroelectric plant_ -- operating,e_TW14-345,TW14-345,24.3498,120.8812,False
+e_TW16-345,ep_coal_subcritical_G100000103902,660.0,coal,Ho-Ping power station_Unit 1 -- operating,e_TW16-345,TW16-345,24.307782,121.76346,False
+e_TW16-345,ep_coal_subcritical_G100000103903,660.0,coal,Ho-Ping power station_Unit 2 -- operating,e_TW16-345,TW16-345,24.307782,121.76346,False
+e_TW16-345,ep_hydro_dam_G100001030560,61.0,hydro,Bihai hydroelectric plant_ -- operating,e_TW16-345,TW16-345,24.3353,121.6762,False
+e_TW2-345,ep_geothermal_TW2-345,5.0,geothermal,Aggregated Plant -- operating,e_TW2-345,TW2-345,25.25459989603484,121.45200932159676,False
+e_TW20-345,ep_coal_TW20-345__ember,32.90332705586979,coal,Aggregated Plant - EMBER Gap - TW20-345_Missing Coal Capacity -- operating,e_TW20-345,TW20-345,24.167893404813572,120.33234682570084,False
+e_TW20-345,ep_coal_subcritical_G100000109822,550.0,coal,Taichung power station_Unit 1 -- operating,e_TW20-345,TW20-345,24.2131,120.485,False
+e_TW20-345,ep_coal_subcritical_G100000109823,550.0,coal,Taichung power station_Unit 10 -- operating,e_TW20-345,TW20-345,24.2194242,120.4731345,False
+e_TW20-345,ep_coal_subcritical_G100000109824,550.0,coal,Taichung power station_Unit 2 -- operating,e_TW20-345,TW20-345,24.2131,120.485,False
+e_TW20-345,ep_coal_subcritical_G100000109825,550.0,coal,Taichung power station_Unit 3 -- operating,e_TW20-345,TW20-345,24.2131,120.485,False
+e_TW20-345,ep_coal_subcritical_G100000109826,550.0,coal,Taichung power station_Unit 4 -- operating,e_TW20-345,TW20-345,24.2131,120.485,False
+e_TW20-345,ep_coal_subcritical_G100000109827,550.0,coal,Taichung power station_Unit 5 -- operating,e_TW20-345,TW20-345,24.2131,120.485,False
+e_TW20-345,ep_coal_subcritical_G100000109828,550.0,coal,Taichung power station_Unit 6 -- operating,e_TW20-345,TW20-345,24.2131,120.485,False
+e_TW20-345,ep_coal_subcritical_G100000109829,550.0,coal,Taichung power station_Unit 7 -- operating,e_TW20-345,TW20-345,24.2131,120.485,False
+e_TW20-345,ep_coal_subcritical_G100000109830,550.0,coal,Taichung power station_Unit 8 -- operating,e_TW20-345,TW20-345,24.2131,120.485,False
+e_TW20-345,ep_coal_subcritical_G100000109831,550.0,coal,Taichung power station_Unit 9 -- operating,e_TW20-345,TW20-345,24.2194242,120.4731345,False
+e_TW20-345,ep_gas_combined_cycle_G100000406201,1300.0,gas,Taichung power station_CC1 -- construction,e_TW20-345,TW20-345,24.212265,120.485459,False
+e_TW20-345,ep_gas_combined_cycle_G100000406202,1300.0,gas,Taichung power station_CC2 -- construction,e_TW20-345,TW20-345,24.212265,120.485459,False
+e_TW20-345,ep_oil_gas_turbine_G100000412611,70.0,oil,Taichung power station_1 -- operating,e_TW20-345,TW20-345,24.212265,120.485459,False
+e_TW20-345,ep_oil_gas_turbine_G100000413111,70.0,oil,Taichung power station_4 -- operating,e_TW20-345,TW20-345,24.212265,120.485459,False
+e_TW20-345,ep_oil_gas_turbine_G100000413112,70.0,oil,Taichung power station_3 -- operating,e_TW20-345,TW20-345,24.212265,120.485459,False
+e_TW20-345,ep_oil_gas_turbine_G100000413113,70.0,oil,Taichung power station_2 -- operating,e_TW20-345,TW20-345,24.212265,120.485459,False
+e_TW22-345,ep_hydro_TW22-345__irena,152.37381708542665,hydro,Aggregated Plant - IRENA Gap - TW22-345_Missing Hydro Capacity -- operating,e_TW22-345,TW22-345,24.100557780959452,120.9653199029147,False
+e_TW22-345,ep_hydro_dam_G100000603572,368.0,hydro,Dajia River Chingshan hydroelectric plant_ -- operating,e_TW22-345,TW22-345,24.2516,121.1019,False
+e_TW22-345,ep_hydro_dam_G100000603573,234.0,hydro,Dajia River Deji hydroelectric plant_ -- operating,e_TW22-345,TW22-345,24.2545,121.1655,False
+e_TW22-345,ep_hydro_dam_G100000603575,218.0,hydro,Dajia River Kukuan hydroelectric plant_ -- operating,e_TW22-345,TW22-345,24.2091,121.024,False
+e_TW22-345,ep_hydro_dam_G100000603576,134.0,hydro,Dajia River Ma'an hydroelectric plant_ -- operating,e_TW22-345,TW22-345,24.1822,120.8411,False
+e_TW22-345,ep_hydro_dam_G100000603577,195.0,hydro,Dajia River Tienlun hydroelectric plant_ -- operating,e_TW22-345,TW22-345,24.1846,120.9228,False
+e_TW23-345,ep_hydro_ror_G100001030561,56.0,hydro,Wanda hydroelectric plant_ -- operating,e_TW23-345,TW23-345,23.9805,121.1393,False
+e_TW26-345,ep_hydro_TW26-345__irena,74.73925628140681,hydro,Aggregated Plant - IRENA Gap - TW26-345_Missing Hydro Capacity -- operating,e_TW26-345,TW26-345,23.681954873350485,121.03112680510212,False
+e_TW26-345,ep_hydro_dam_G100000603570,110.0,hydro,Daguan I hydroelectric plant_ -- operating,e_TW26-345,TW26-345,23.8524,120.8714,False
+e_TW26-345,ep_hydro_ps_G100000603571,1000.0,hydro,Daguan II hydroelectric plant_ -- operating,e_TW26-345,TW26-345,23.8545,120.8704,False
+e_TW27-345,ep_coal_TW27-345__ember,11.096672944130693,coal,Aggregated Plant - EMBER Gap - TW27-345_Missing Coal Capacity -- operating,e_TW27-345,TW27-345,24.512049408143998,120.04790107330358,False
+e_TW27-345,ep_coal_subcritical_G100000103554,107.0,coal,Haifeng power station_Unit 1 -- operating,e_TW27-345,TW27-345,23.777644,120.184462,False
+e_TW27-345,ep_coal_subcritical_G100000103555,107.0,coal,Haifeng power station_Unit 2 -- operating,e_TW27-345,TW27-345,23.777644,120.184462,False
+e_TW27-345,ep_coal_subcritical_G100000103556,107.0,coal,Haifeng power station_Unit 3 -- operating,e_TW27-345,TW27-345,23.777644,120.184462,False
+e_TW27-345,ep_coal_subcritical_G100000106582,96.0,coal,Mailiao Formosa Petrochemical power station_Unit 1 -- operating,e_TW27-345,TW27-345,23.80877,120.211888,False
+e_TW27-345,ep_coal_subcritical_G100000106583,33.0,coal,Mailiao Formosa Petrochemical power station_Unit 2 -- operating,e_TW27-345,TW27-345,23.80877,120.211888,False
+e_TW27-345,ep_coal_subcritical_G100000106584,69.0,coal,Mailiao Formosa Petrochemical power station_Unit 3 -- operating,e_TW27-345,TW27-345,23.80877,120.211888,False
+e_TW27-345,ep_coal_subcritical_G100000106585,33.0,coal,Mailiao Formosa Petrochemical power station_Unit 4 -- operating,e_TW27-345,TW27-345,23.80877,120.211888,False
+e_TW27-345,ep_coal_subcritical_G100000106586,69.0,coal,Mailiao Formosa Petrochemical power station_Unit 5 -- operating,e_TW27-345,TW27-345,23.80877,120.211888,False
+e_TW27-345,ep_coal_supercritical_G100000106590,600.0,coal,Mailiao power station_Unit 1 -- operating,e_TW27-345,TW27-345,23.803419,120.189024,False
+e_TW27-345,ep_coal_supercritical_G100000106591,600.0,coal,Mailiao power station_Unit 2 -- operating,e_TW27-345,TW27-345,23.803419,120.189024,False
+e_TW27-345,ep_coal_supercritical_G100000106592,600.0,coal,Mailiao power station_Unit 3 -- operating,e_TW27-345,TW27-345,23.803419,120.189024,False
+e_TW27-345,ep_coal_supercritical_G100000113426,600.0,coal,Mailiao power station_Unit 4 -- operating,e_TW27-345,TW27-345,23.803419,120.189024,False
+e_TW27-345,ep_coal_supercritical_G100000113427,600.0,coal,Mailiao power station_Unit 5 -- operating,e_TW27-345,TW27-345,23.803419,120.189024,False
+e_TW27-345,ep_coal_supercritical_G100000113428,600.0,coal,Mailiao power station_Unit 6 -- operating,e_TW27-345,TW27-345,23.803419,120.189024,False
+e_TW27-345,ep_coal_supercritical_G100000113429,600.0,coal,Mailiao power station_Unit 7 -- operating,e_TW27-345,TW27-345,23.803419,120.189024,False
+e_TW27-345,ep_oil_internal_combustion_G100000413110,88.0,oil,Chienshan power plant_1 -- operating,e_TW27-345,TW27-345,23.56378,119.658661,False
+e_TW29-345,ep_coal_subcritical_G100000105999,48.0,coal,Kuan-Tien power station_Unit 1 -- operating,e_TW29-345,TW29-345,23.2109,120.319735,False
+e_TW32-345,ep_coal_subcritical_G100000103988,550.0,coal,Hsinta power station_Unit 3 -- operating,e_TW32-345,TW32-345,22.85577,120.197167,False
+e_TW32-345,ep_coal_subcritical_G100000103989,550.0,coal,Hsinta power station_Unit 4 -- operating,e_TW32-345,TW32-345,22.85577,120.197167,False
+e_TW32-345,ep_gas_combined_cycle_G100000406193,442.0,gas,Hsinta power station_CC1 -- operating,e_TW32-345,TW32-345,22.856179,120.197438,False
+e_TW32-345,ep_gas_combined_cycle_G100000406194,442.0,gas,Hsinta power station_CC2 -- operating,e_TW32-345,TW32-345,22.856179,120.197438,False
+e_TW32-345,ep_gas_combined_cycle_G100000406195,442.0,gas,Hsinta power station_CC3 -- operating,e_TW32-345,TW32-345,22.856179,120.197438,False
+e_TW32-345,ep_gas_combined_cycle_G100000406196,442.0,gas,Hsinta power station_CC4 -- operating,e_TW32-345,TW32-345,22.856179,120.197438,False
+e_TW32-345,ep_gas_combined_cycle_G100000406197,442.0,gas,Hsinta power station_CC5 -- operating,e_TW32-345,TW32-345,22.856179,120.197438,False
+e_TW32-345,ep_gas_combined_cycle_G100000406198,1300.0,gas,Hsinta power station_New 1 -- construction,e_TW32-345,TW32-345,22.856179,120.197438,False
+e_TW32-345,ep_gas_combined_cycle_G100000406199,1300.0,gas,Hsinta power station_New 2 -- construction,e_TW32-345,TW32-345,22.856179,120.197438,False
+e_TW32-345,ep_gas_combined_cycle_G100000406200,1300.0,gas,Hsinta power station_New 3 -- construction,e_TW32-345,TW32-345,22.856179,120.197438,False
+e_TW32-345,ep_m_coal_subcritical_G100000103986,500.0,coal,"Hsinta power station_Unit 1, timepoint 1 -- mothballed",e_TW32-345,TW32-345,22.85577,120.197167,False
+e_TW32-345,ep_m_coal_subcritical_G100000103987,500.0,coal,Hsinta power station_Unit 2 -- mothballed,e_TW32-345,TW32-345,22.85577,120.197167,False
+e_TW33-345,ep_coal_subcritical_G100000101513,50.0,coal,Chiutang Mill power station_Unit 1 -- operating,e_TW33-345,TW33-345,22.53,120.3,False
+e_TW33-345,ep_coal_ultra-supercritical_G100000109901,800.0,coal,Talin power station_Unit 7 -- operating,e_TW33-345,TW33-345,22.537,120.335,False
+e_TW33-345,ep_coal_ultra-supercritical_G100000109902,800.0,coal,Talin power station_Unit 8 -- operating,e_TW33-345,TW33-345,22.537,120.335,False
+e_TW33-345,ep_gas_combined_cycle_G100000406203,289.0,gas,NanPu power station_1 -- operating,e_TW33-345,TW33-345,22.600761,120.299218,False
+e_TW33-345,ep_gas_combined_cycle_G100000406204,289.0,gas,NanPu power station_2 -- operating,e_TW33-345,TW33-345,22.600761,120.299218,False
+e_TW33-345,ep_gas_combined_cycle_G100000406205,289.0,gas,NanPu power station_3 -- operating,e_TW33-345,TW33-345,22.600761,120.299218,False
+e_TW33-345,ep_gas_combined_cycle_G100000406206,251.0,gas,NanPu power station_4 -- operating,e_TW33-345,TW33-345,22.600761,120.299218,False
+e_TW33-345,ep_gas_combined_cycle_G100000406208,500.0,gas,Talin power station_6 -- operating,e_TW33-345,TW33-345,22.5370831,120.3287967,False
+e_TW36-345,ep_nuclear_G100000500628,951.0,nuclear,Maanshan nuclear power plant_1 -- operating,e_TW36-345,TW36-345,21.9589,120.7501,False
+e_TW36-345,ep_nuclear_G100000500629,951.0,nuclear,Maanshan nuclear power plant_2 -- operating,e_TW36-345,TW36-345,21.9589,120.7501,False
+e_TW4-345,ep_oil_steam_turbine_G100000412612,500.0,oil,Hsieh-Ho power station_3 -- operating,e_TW4-345,TW4-345,25.157227,121.73974,False
+e_TW4-345,ep_oil_steam_turbine_G100000413114,500.0,oil,Hsieh-Ho power station_4 -- operating,e_TW4-345,TW4-345,25.157227,121.73974,False
+e_TW5-345,ep_bioenergy_TW5-345,41.0,bioenergy,Aggregated Plant -- operating,e_TW5-345,TW5-345,25.19694036547074,121.23867771156895,False
+e_TW5-345,ep_coal_ultra-supercritical_G100000106312,800.0,coal,Linkou power station_Renewal Unit 1 -- operating,e_TW5-345,TW5-345,25.1209,121.298,False
+e_TW5-345,ep_coal_ultra-supercritical_G100000106313,800.0,coal,Linkou power station_Renewal Unit 2 -- operating,e_TW5-345,TW5-345,25.1209,121.298,False
+e_TW5-345,ep_coal_ultra-supercritical_G100000106314,800.0,coal,Linkou power station_Renewal Unit 3 -- operating,e_TW5-345,TW5-345,25.1209,121.298,False
+e_TW5-345,ep_gas_combined_cycle_G100000406216,536.0,gas,Hai-Fu power station_1 -- operating,e_TW5-345,TW5-345,25.116523,121.256293,False
+e_TW5-345,ep_gas_combined_cycle_G100000406217,536.0,gas,Hai-Fu power station_2 -- operating,e_TW5-345,TW5-345,25.116523,121.256293,False
+e_TW7-345,ep_bioenergy_TW7-345,40.0,bioenergy,Aggregated Plant -- operating,e_TW7-345,TW7-345,24.989657133682837,121.50225116625388,False
+e_TW7-345,ep_coal_subcritical_G100000105265,57.0,coal,"Jinshin power station_Unit 1, timepoint 1 -- operating",e_TW7-345,TW7-345,25.0553617,121.2826287,False
+e_TW7-345,ep_coal_subcritical_G100000105266,57.0,coal,"Jinshin power station_Unit 2, timepoint 1 -- operating",e_TW7-345,TW7-345,25.0553617,121.2826287,False
+e_TW7-345,ep_gas_combined_cycle_G100000406215,480.0,gas,Kuo Kuang power station_1 -- operating,e_TW7-345,TW7-345,25.042752,121.342135,False
+e_TW9-345,ep_gas_combined_cycle_G100000409951,155.0,gas,Hsin Yu cogeneration power station_1 -- operating,e_TW9-345,TW9-345,24.782387,121.005877,False
+e_r2898719-345,ep_gas_combined_cycle_G100000406213,490.0,gas,Chang-Bin power station_1 -- operating,e_r2898719-345,relation/2898719-345,24.126383,120.431048,False
+e_r2898719-345,ep_gas_combined_cycle_G100000406214,490.0,gas,Star Buck power station_1 -- operating,e_r2898719-345,relation/2898719-345,24.129192,120.422142,False
+e_w129025956-345,ep_gas_combined_cycle_G100000406220,600.0,gas,Hsin Tao power station_1 -- operating,e_w129025956-345,way/129025956-345,24.814156,121.1978,False
+e_w129025956-345,ep_hydro_dam_G100000603579,90.0,hydro,Shimen hydroelectric plant_ -- operating,e_w129025956-345,way/129025956-345,24.8127,121.2439,False
+e_w135638663-345,ep_hydro_dam_G100001030552,70.0,hydro,Feicui hydroelectric plant_ -- operating,e_w135638663-345,way/135638663-345,24.9094,121.5774,False
+e_w135762164-345,ep_coal_subcritical_G100000106406,162.0,coal,Longder power station_Unit LT2 -- operating,e_w135762164-345,way/135762164-345,24.630095,121.818432,False
+e_w135762164-345,ep_coal_subcritical_G100000113307,162.0,coal,Longder power station_Unit LT3 -- operating,e_w135762164-345,way/135762164-345,24.630095,121.818432,False
+e_w135762164-345,ep_geothermal_w135762164-345,4.2,geothermal,Aggregated Plant -- operating,e_w135762164-345,way/135762164-345,24.823894263260375,121.71508446366494,False
+e_w135762164-345,ep_solar_pv_345,8.2,solar,Aggregated Plant -- operating,e_w135762164-345,way/135762164-345,24.464089113223615,121.72283648480331,False
+e_w135795801-345,ep_gas_steam_turbine_G100001017848,52.0,gas,"Shu-Lin power station_Unit 2, timepoint 2 -- operating",e_w135795801-345,way/135795801-345,24.9734331,121.4044035,False
+e_w136343017-345,ep_hydro_dam_G100000603580,97.0,hydro,Tungpu Longjian hydroelectric plant_ -- operating,e_w136343017-345,way/136343017-345,24.0224,121.4101,False
+e_w136343017-345,ep_solar_pv_345,80.1,solar,Aggregated Plant -- operating,e_w136343017-345,way/136343017-345,23.897782154654397,121.39295114159295,False
+e_w192391806-345,ep_coal_subcritical_G100000103973,48.0,coal,Houli Mill power station_Unit G2 -- operating,e_w192391806-345,way/192391806-345,24.28528,120.724804,False
+e_w192391806-345,ep_coal_subcritical_G100000113689,35.0,coal,Houli Mill power station_Unit G3 -- operating,e_w192391806-345,way/192391806-345,24.28528,120.724804,False
+e_w198324718-345,ep_coal_subcritical_G100000104798,148.0,coal,Hwa Ya Cogen power station_Unit 1 -- operating,e_w198324718-345,way/198324718-345,25.035413,121.372605,False
+e_w198324718-345,ep_coal_subcritical_G100000104799,152.0,coal,Hwa Ya Cogen power station_Unit 2 -- operating,e_w198324718-345,way/198324718-345,25.035413,121.372605,False
+e_w216625865-345,ep_bioenergy_w216625865-345,33.0,bioenergy,Aggregated Plant -- operating,e_w216625865-345,way/216625865-345,22.72458338384616,120.22005167986721,False
+e_w221835950-345,ep_bioenergy_w221835950-345,49.0,bioenergy,Aggregated Plant -- operating,e_w221835950-345,way/221835950-345,22.39226663654644,120.50848060211163,False
+e_w221835950-345,ep_coal_subcritical_G100000106336,46.0,coal,Linyuan Plant power station_Unit 2 -- operating,e_w221835950-345,way/221835950-345,22.499497,120.40636,False
+e_w299260534-345,ep_coal_subcritical_G100000103980,56.0,coal,Hsinkang SK power station_Unit SK1 -- operating,e_w299260534-345,way/299260534-345,23.518563,120.37488,False
+e_w299260534-345,ep_coal_subcritical_G100000103981,56.0,coal,Hsinkang SK power station_Unit SK2 -- operating,e_w299260534-345,way/299260534-345,23.518563,120.37488,False
+e_w299260534-345,ep_coal_subcritical_G100000103982,101.0,coal,Hsinkang SK power station_Unit SK3 -- operating,e_w299260534-345,way/299260534-345,23.518563,120.37488,False
+e_w299260534-345,ep_coal_subcritical_G100000103983,148.0,coal,Hsinkang SK power station_Unit SK4 -- operating,e_w299260534-345,way/299260534-345,23.518563,120.37488,False
+e_w299260534-345,ep_gas_combined_cycle_G100000406218,700.0,gas,Chia-Hui power station_1 -- operating,e_w299260534-345,way/299260534-345,23.531781,120.472716,False
+e_w299260534-345,ep_gas_combined_cycle_G100000406219,510.0,gas,Chia-Hui power station_2 -- operating,e_w299260534-345,way/299260534-345,23.531781,120.472716,False
+e_w504905000-345,ep_bioenergy_w504905000-345,48.0,bioenergy,Aggregated Plant -- operating,e_w504905000-345,way/504905000-345,25.275720151899016,121.60092032275857,False
+e_w504977455-345,ep_bioenergy_w504977455-345,38.0,bioenergy,Aggregated Plant -- operating,e_w504977455-345,way/504977455-345,22.976225689089578,120.15168300125154,False
+e_w513315281-345,ep_hydro_ps_G100000603578,1602.0,hydro,Mingtan hydroelectric plant_ -- operating,e_w513315281-345,way/513315281-345,23.8368,120.8695,False
+e_w513315281-345,ep_hydro_w513315281-345__irena,107.86692663316549,hydro,Aggregated Plant - IRENA Gap - way/513315281-345_Missing Hydro Capacity -- operating,e_w513315281-345,way/513315281-345,23.683496949390204,120.99072244101117,False
+e_w518594424-345,ep_gas_combined_cycle_G100000406211,490.0,gas,Fong Der power station_1-1 -- operating,e_w518594424-345,way/518594424-345,23.0833831,120.3554167,False
+e_w518594424-345,ep_gas_combined_cycle_G100000406212,490.0,gas,Fong Der power station_1-2 -- operating,e_w518594424-345,way/518594424-345,23.0833831,120.3554167,False
+e_w518594424-345,ep_gas_combined_cycle_G100000409389,1100.0,gas,Fong Der power station_2-1 -- construction,e_w518594424-345,way/518594424-345,23.0833831,120.3554167,False
+e_w518594424-345,ep_hydro_dam_G100001030559,50.0,hydro,Cengwen hydroelectric plant_ -- operating,e_w518594424-345,way/518594424-345,23.2498,120.5365,False
+e_w661713706-345,ep_gas_combined_cycle_G100000406182,743.0,gas,Datan power station_1 -- operating,e_w661713706-345,way/661713706-345,25.029685,121.04822,False
+e_w661713706-345,ep_gas_combined_cycle_G100000406183,743.0,gas,Datan power station_2 -- operating,e_w661713706-345,way/661713706-345,25.029685,121.04822,False
+e_w661713706-345,ep_gas_combined_cycle_G100000406184,723.0,gas,Datan power station_3 -- operating,e_w661713706-345,way/661713706-345,25.029685,121.04822,False
+e_w661713706-345,ep_gas_combined_cycle_G100000406185,723.0,gas,Datan power station_4 -- operating,e_w661713706-345,way/661713706-345,25.029685,121.04822,False
+e_w661713706-345,ep_gas_combined_cycle_G100000406186,723.0,gas,Datan power station_5 -- operating,e_w661713706-345,way/661713706-345,25.029685,121.04822,False
+e_w661713706-345,ep_gas_combined_cycle_G100000406187,723.0,gas,Datan power station_6 -- operating,e_w661713706-345,way/661713706-345,25.029685,121.04822,False
+e_w661713706-345,ep_gas_combined_cycle_G100000406191,1124.0,gas,Datan power station_8 -- operating,e_w661713706-345,way/661713706-345,25.029685,121.04822,False
+e_w661713706-345,ep_gas_combined_cycle_G100000406192,1124.0,gas,Datan power station_9 -- construction,e_w661713706-345,way/661713706-345,25.029685,121.04822,False
+e_w661713706-345,ep_gas_steam_turbine_G100000406190,913.0,gas,Datan power station_7-3 -- construction,e_w661713706-345,way/661713706-345,25.029685,121.04822,False
+elc_spv_001,ep_solar_001__irena,2797.8529879665098,solar,Aggregated Plant - IRENA Gap - 1_Missing Solar Capacity -- operating,elc_spv_001,TW29-345,23.78819238607861,120.8181419895201,False
+elc_spv_001,ep_solar_pv_001,1018.5,solar,Aggregated Plant -- operating,elc_spv_001,TW29-345,23.29476441330337,120.68952826302663,False
+elc_spv_001,ep_solar_pv_G100000801660,252.0,solar,Tainan Solar Power City solar farm_1 -- operating,elc_spv_001,TW29-345,23.9739,120.982,False
+elc_spv_001,ep_solar_pv_G100000801661,260.0,solar,Tainan Solar Power City solar farm_2 -- operating,elc_spv_001,TW29-345,23.9739,120.982,False
+elc_spv_001,ep_solar_pv_G100000834976,272.0,solar,Yunlin E2 solar farm_-- -- operating,elc_spv_001,TW29-345,23.7212,120.1621,False
+elc_spv_002,ep_solar_002__irena,2289.6075923517733,solar,Aggregated Plant - IRENA Gap - 2_Missing Solar Capacity -- operating,elc_spv_002,TW32-345,22.4405630291021,120.6771824011743,False
+elc_spv_002,ep_solar_pv_002,2855.2,solar,Aggregated Plant -- operating,elc_spv_002,TW32-345,22.360168924645784,120.17733833303423,False
+elc_spv_004,ep_solar_pv_004,6.3,solar,Aggregated Plant -- operating,elc_spv_004,way/136343017-345,23.541614128665163,121.43108117193844,False
+elc_spv_005,ep_solar_pv_005,8.7,solar,Aggregated Plant -- operating,elc_spv_005,TW34-345,22.709176787535945,120.80904757260589,False
+elc_spv_006,ep_solar_006__irena,1995.086419681717,solar,Aggregated Plant - IRENA Gap - 6_Missing Solar Capacity -- operating,elc_spv_006,TW36-345,22.146309988415503,120.82746753376934,False
+elc_spv_006,ep_solar_pv_006,62.099999999999994,solar,Aggregated Plant -- operating,elc_spv_006,TW36-345,21.78940378855839,120.87718328664377,False
+elc_spv_007,ep_solar_pv_007,8.8,solar,Aggregated Plant -- operating,elc_spv_007,way/129025956-345,24.805187542642624,121.96753671896053,False
+elc_spv_008,ep_solar_pv_008,68.7,solar,Aggregated Plant -- operating,elc_spv_008,way/174415337-345,24.941090868788095,120.98266437180557,False
+elc_wof_003,ep_windoff_003__irena,147.5253584750923,windoff,Aggregated Plant -- operating,elc_wof_003,TW32-345,22.829603654004046,119.92184227836202,False
+elc_wof_007,ep_windoff_007__irena,137.06742374046203,windoff,Aggregated Plant -- operating,elc_wof_007,TW27-345,23.710772925984347,120.91019474440377,False
+elc_wof_007,ep_windoff_wind_007,386.0,windoff,Aggregated Plant -- operating,elc_wof_007,TW27-345,23.43155222378185,120.81128177789401,False
+elc_wof_007,ep_windoff_wind_G100000900843,452.0,windoff,Changfang And Xidao Offshore wind farm_2 -- operating,elc_wof_007,TW27-345,24.1115,120.2042,False
+elc_wof_007,ep_windoff_wind_G100000901008,300.0,windoff,Hai Long Offshore wind farm_2A -- construction,elc_wof_007,TW27-345,24.0335,119.7085,False
+elc_wof_007,ep_windoff_wind_G100000901009,232.0,windoff,Hai Long Offshore wind farm_2B -- construction,elc_wof_007,TW27-345,24.0335,119.7085,False
+elc_wof_007,ep_windoff_wind_G100000901010,512.0,windoff,Hai Long Offshore wind farm_3 -- construction,elc_wof_007,TW27-345,24.0528,119.6414,False
+elc_wof_007,ep_windoff_wind_G100000901142,295.0,windoff,Greater Changhua Southwest wind farm_1 -- operating,elc_wof_007,TW27-345,24.1518,119.9938,False
+elc_wof_007,ep_windoff_wind_G100000901144,605.0,windoff,Greater Changhua Southeast wind farm_-- -- operating,elc_wof_007,TW27-345,24.2306,120.0278,False
+elc_wof_007,ep_windoff_wind_G100000901145,337.0,windoff,Greater Changhua Southwest wind farm_2 -- operating,elc_wof_007,TW27-345,24.1518,119.9938,False
+elc_wof_007,ep_windoff_wind_G100000901146,583.0,windoff,Greater Changhua Northwest wind farm_-- -- construction,elc_wof_007,TW27-345,24.2494,120.22,False
+elc_wof_007,ep_windoff_wind_G100000901243,640.0,windoff,Yunlin Offshore wind farm_-- -- construction,elc_wof_007,TW27-345,23.5998,120.0283,False
+elc_wof_007,ep_windoff_wind_G100000901246,300.0,windoff,Zhong Neng wind farm_1 -- operating,elc_wof_007,TW27-345,23.9671,120.217,False
+elc_wof_007,ep_windoff_wind_G100000920987,376.0,windoff,Formosa 2 offshore wind farm_-- -- operating,elc_wof_007,TW27-345,24.772,120.6472,False
+elc_wof_007,ep_windoff_wind_G100000927782,295.0,windoff,Taipower Offshore wind farm_2 -- construction,elc_wof_007,TW27-345,24.1025,120.202,False
+elc_wof_010,ep_windoff_010__irena,122.21321778444573,windoff,Aggregated Plant -- operating,elc_wof_010,TW1-345,26.467532424769757,122.16429990138634,False
+elc_won_003,ep_windon_003__irena,20.299718983551998,windon,Aggregated Plant -- operating,elc_won_003,TW27-345,23.408304906867603,119.59527482397272,False
+elc_won_003,ep_windon_wind_003,470.00000000000006,windon,Aggregated Plant -- operating,elc_won_003,TW27-345,23.794822188942824,119.47526130351892,False
+elc_won_008,ep_windon_wind_008,362.0,windon,Aggregated Plant -- operating,elc_won_008,way/174415337-345,24.58814565217675,120.91001362169962,False
+elc_won_009,ep_windon_009__irena,23.222337514692722,windon,Aggregated Plant -- operating,elc_won_009,TW29-345,23.338142611652344,120.05582095465961,False
+elc_won_009,ep_windon_wind_009,18.0,windon,Aggregated Plant -- operating,elc_won_009,TW29-345,23.88678195529425,120.02088061991583,False
+elc_won_010,ep_windon_010__irena,18.726943501755276,windon,Aggregated Plant -- operating,elc_won_010,TW27-345,24.420458272729693,119.81810082281132,False

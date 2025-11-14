@@ -1,0 +1,53 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_gas__ember,4.999999999999893,gas,Aggregated Plant -- operating,,,,,False
+e_GE11-220,ep_hydro_ror_G100001027257,48.0,hydro,Gumati hydroelectric plant_ -- operating,e_GE11-220,GE11-220,42.3202,42.704,False
+e_GE12-220,ep_hydro_GE12-220__irena,10.355828220858891,hydro,Aggregated Plant - IRENA Gap - GE12-220_Missing Hydro Capacity -- operating,e_GE12-220,GE12-220,42.178760796449204,42.6540195627279,False
+e_GE14-220,ep_hydro_GE14-220__irena,19.883190184049074,hydro,Aggregated Plant - IRENA Gap - GE14-220_Missing Hydro Capacity -- operating,e_GE14-220,GE14-220,42.28602219703561,42.799003858658445,False
+e_GE14-220,ep_hydro_ror_G100001027258,54.0,hydro,Rioni hydroelectric plant_ -- operating,e_GE14-220,GE14-220,42.2006,42.7258,False
+e_GE14-220,ep_hydro_ror_G100001051730,46.0,hydro,Vartsikhe I hydroelectric plant_ -- operating,e_GE14-220,GE14-220,42.1534,42.7007,False
+e_GE14-220,ep_hydro_ror_G100001051731,46.0,hydro,Vartsikhe II hydroelectric plant_ -- operating,e_GE14-220,GE14-220,42.1307,42.658,False
+e_GE14-220,ep_hydro_ror_G100001051732,46.0,hydro,Vartsikhe III hydroelectric plant_ -- operating,e_GE14-220,GE14-220,42.1148,42.5981,False
+e_GE17-220,ep_hydro_GE17-220__irena,13.46257668711656,hydro,Aggregated Plant - IRENA Gap - GE17-220_Missing Hydro Capacity -- operating,e_GE17-220,GE17-220,42.1276136560894,44.68911285161043,False
+e_GE17-220,ep_hydro_dam_G100000601736,130.0,hydro,Zhinvali hydroelectric plant_ -- operating,e_GE17-220,GE17-220,42.1349,44.7721,False
+e_GE20-220,ep_windon_wind_220,20.7,windon,Aggregated Plant -- operating,e_GE20-220,GE20-220,41.844741840256766,44.01758467891933,False
+e_GE34-220,ep_hydro_GE34-220__irena,18.536932515337416,hydro,Aggregated Plant - IRENA Gap - GE34-220_Missing Hydro Capacity -- operating,e_GE34-220,GE34-220,41.74292240956375,42.17767759842104,False
+e_GE34-220,ep_hydro_ror_G100000601732,179.0,hydro,Shuakhevi hydroelectric plant_ -- operating,e_GE34-220,GE34-220,41.6578,42.3496,False
+e_GE4-500,ep_hydro_GE4-500__irena,244.39754601226986,hydro,Aggregated Plant - IRENA Gap - GE4-500_Missing Hydro Capacity -- operating,e_GE4-500,GE4-500,42.861968206543295,42.01155918007697,False
+e_GE4-500,ep_hydro_dam_G100000601719,1300.0,hydro,Enguri hydroelectric plant_ -- operating,e_GE4-500,GE4-500,42.7584,42.0309,False
+e_GE4-500,ep_hydro_dam_G100000601723,702.0,hydro,Khudoni hydroelectric plant_ -- construction,e_GE4-500,GE4-500,42.9547,42.1939,False
+e_GE51-220,ep_hydro_GE51-220__irena,23.197055214723918,hydro,Aggregated Plant - IRENA Gap - GE51-220_Missing Hydro Capacity -- operating,e_GE51-220,GE51-220,41.4948759026591,44.24897744427709,False
+e_GE51-220,ep_hydro_dam_G100000601721,114.0,hydro,Khrami I hydroelectric plant_ -- operating,e_GE51-220,GE51-220,41.549,44.1236,False
+e_GE51-220,ep_hydro_dam_G100000601722,110.0,hydro,Khrami II hydroelectric plant_ -- operating,e_GE51-220,GE51-220,41.468,44.2352,False
+e_GE7-500,ep_hydro_GE7-500__irena,11.184294478527603,hydro,Aggregated Plant - IRENA Gap - GE7-500_Missing Hydro Capacity -- operating,e_GE7-500,GE7-500,42.62183983582984,44.61453328700556,False
+e_GE7-500,ep_hydro_ror_G100000601716,108.0,hydro,Dariali hydroelectric plant_ -- operating,e_GE7-500,GE7-500,42.7453,44.6253,False
+e_GE8-220,ep_hydro_GE8-220__irena,149.33104294478522,hydro,Aggregated Plant - IRENA Gap - GE8-220_Missing Hydro Capacity -- operating,e_GE8-220,GE8-220,42.45847601917668,43.004034076782354,False
+e_GE8-220,ep_hydro_dam_G100000601725,112.0,hydro,Lajanuri hydroelectric plant_ -- operating,e_GE8-220,GE8-220,42.589,42.8519,False
+e_w107025722-220,ep_hydro_ror_G100000601731,85.0,hydro,Paravani hydroelectric plant_ -- operating,e_w107025722-220,way/107025722-220,41.4573,43.4612,False
+e_w1247422454-500,ep_hydro_ror_G100001051734,46.0,hydro,Khobi 2 hydroelectric plant_ -- operating,e_w1247422454-500,way/1247422454-500,42.6351,42.1725,False
+e_w1247422454-500,ep_hydro_w1247422454-500__irena,33.759999999999984,hydro,Aggregated Plant - IRENA Gap - way/1247422454-500_Missing Hydro Capacity -- operating,e_w1247422454-500,way/1247422454-500,42.752766840592244,42.17405529065185,False
+e_w1284993185-330,ep_gas_combined_cycle_G100000408107,255.0,gas,Gardabani Combined Cycle power station_2 -- operating,e_w1284993185-330,way/1284993185-330,41.460003,45.053716,False
+e_w1284993185-330,ep_gas_combined_cycle_G100000408108,230.0,gas,Gardabani Combined Cycle power station_1 -- operating,e_w1284993185-330,way/1284993185-330,41.460003,45.053716,False
+e_w1284993185-500,ep_gas_gas_turbine_G100000408109,55.0,gas,Airturbine power station_2 -- operating,e_w1284993185-500,way/1284993185-500,41.4797,45.06858,False
+e_w1284993185-500,ep_gas_gas_turbine_G100000408110,55.0,gas,Airturbine power station_1 -- operating,e_w1284993185-500,way/1284993185-500,41.4797,45.06858,False
+e_w1284993185-500,ep_gas_steam_turbine_G100000408112,300.0,gas,Tbilsresi power station_9 -- operating,e_w1284993185-500,way/1284993185-500,41.472971,45.063891,False
+e_w1284993185-500,ep_gas_steam_turbine_G100000408117,142.0,gas,Tbilsresi power station_4 -- operating,e_w1284993185-500,way/1284993185-500,41.472971,45.063891,False
+e_w1284993185-500,ep_gas_steam_turbine_G100000408118,130.0,gas,Tbilsresi power station_3 -- operating,e_w1284993185-500,way/1284993185-500,41.472971,45.063891,False
+e_w1284993185-500,ep_m_gas_steam_turbine_G100000408111,300.0,gas,Tbilsresi power station_10 -- mothballed,e_w1284993185-500,way/1284993185-500,41.472971,45.063891,False
+e_w1284993185-500,ep_m_gas_steam_turbine_G100000408113,142.0,gas,Tbilsresi power station_8 -- mothballed,e_w1284993185-500,way/1284993185-500,41.472971,45.063891,False
+e_w1284993185-500,ep_m_gas_steam_turbine_G100000408114,142.0,gas,Tbilsresi power station_7 -- mothballed,e_w1284993185-500,way/1284993185-500,41.472971,45.063891,False
+e_w1284993185-500,ep_m_gas_steam_turbine_G100000408115,142.0,gas,Tbilsresi power station_6 -- mothballed,e_w1284993185-500,way/1284993185-500,41.472971,45.063891,False
+e_w1284993185-500,ep_m_gas_steam_turbine_G100000408116,142.0,gas,Tbilsresi power station_5 -- mothballed,e_w1284993185-500,way/1284993185-500,41.472971,45.063891,False
+e_w313528106-500,ep_hydro_dam_G100000601718,80.0,hydro,Dzevrula hydroelectric plant_ -- operating,e_w313528106-500,way/313528106-500,42.2629,42.9582,False
+e_w488848960-220,ep_hydro_dam_G100001051736,47.0,hydro,Khelvachauri hydroelectric plant_ -- operating,e_w488848960-220,way/488848960-220,41.5507,41.7005,False
+e_w488848960-220,ep_hydro_dam_G100001051737,51.0,hydro,Kirnati hydroelectric plant_ -- operating,e_w488848960-220,way/488848960-220,41.5153,41.7139,False
+e_w488848960-220,ep_hydro_w488848960-220__irena,10.148711656441712,hydro,Aggregated Plant - IRENA Gap - way/488848960-220_Missing Hydro Capacity -- operating,e_w488848960-220,way/488848960-220,41.45814251457762,41.8241065799153,False
+e_w492291376-220,ep_hydro_ror_G100001051733,46.0,hydro,Vartsikhe IV hydroelectric plant_ -- operating,e_w492291376-220,way/492291376-220,42.1415,42.4631,False
+e_w82574424-220,ep_hydro_dam_G100000601735,220.0,hydro,Vardnili-1 hydroelectric plant_ -- operating,e_w82574424-220,way/82574424-220,42.6524,41.7619,False
+e_w82574424-220,ep_hydro_w82574424-220__irena,22.78282208588956,hydro,Aggregated Plant - IRENA Gap - way/82574424-220_Missing Hydro Capacity -- operating,e_w82574424-220,way/82574424-220,42.58529770885884,41.74765036743901,False
+e_w864535132-220,ep_hydro_ror_G100001051735,53.0,hydro,Mtkvari hydroelectric plant_ -- construction,e_w864535132-220,way/864535132-220,41.6401,42.9717,False
+elc_spv_003,ep_solar_003__irena,13.83113020104823,solar,Aggregated Plant -- operating,elc_spv_003,GE30-220,41.420516685176885,45.807483817054305,False
+elc_spv_005,ep_solar_005__irena,10.702809115784282,solar,Aggregated Plant -- operating,elc_spv_005,GE36-220,41.3726178119334,45.04995130748109,False
+elc_spv_008,ep_solar_008__irena,10.722060683167491,solar,Aggregated Plant -- operating,elc_spv_008,way/212340842-220,42.184215676276104,42.35850576295996,False
+elc_won_003,ep_windon_003__irena,0.10414452675320522,windon,Aggregated Plant -- operating,elc_won_003,way/488320753-220,42.32711573422694,41.425094348904004,False
+elc_won_005,ep_windon_005__irena,0.1253335161282369,windon,Aggregated Plant -- operating,elc_won_005,GE22-220,41.920564749363784,44.085753578309145,False
+elc_won_006,ep_windon_006__irena,0.09052195711855872,windon,Aggregated Plant -- operating,elc_won_006,GE27-220,41.857901635389965,44.527264958519474,False

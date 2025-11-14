@@ -1,0 +1,39 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_TN15-400,ep_hydro_TN15-400__irena,66.0,hydro,Aggregated Plant - IRENA Gap - TN15-400_Missing Hydro Capacity -- operating,e_TN15-400,TN15-400,36.460009368579385,8.883425111349663,False
+e_TN2-225,ep_gas_gas_turbine_G100000407526,120.0,gas,Goulette power station_1 -- operating,e_TN2-225,TN2-225,36.8148,10.2897,False
+e_TN27-225,ep_gas_gas_turbine_G100000407528,120.0,gas,Feriana power station_2 -- operating,e_TN27-225,TN27-225,34.9054,8.5408,False
+e_TN27-225,ep_gas_gas_turbine_G100000407529,120.0,gas,Feriana power station_1 -- operating,e_TN27-225,TN27-225,34.9054,8.5408,False
+e_TN3-225,ep_gas_combined_cycle_G100000407517,480.0,gas,Rades II power station_1 -- operating,e_TN3-225,TN3-225,36.799,10.2865,False
+e_TN3-225,ep_gas_combined_cycle_G100000407519,450.0,gas,Rades C power station_1 -- operating,e_TN3-225,TN3-225,36.80038,10.284873,False
+e_TN3-225,ep_gas_steam_turbine_G100000407520,180.0,gas,Rades B power station_2 -- operating,e_TN3-225,TN3-225,36.799624,10.286984,False
+e_TN3-225,ep_gas_steam_turbine_G100000407521,180.0,gas,Rades B power station_1 -- operating,e_TN3-225,TN3-225,36.799624,10.286984,False
+e_TN3-225,ep_gas_steam_turbine_G100000407522,170.0,gas,Rades A power station_2 -- operating,e_TN3-225,TN3-225,36.7967,10.283,False
+e_TN3-225,ep_gas_steam_turbine_G100000407523,170.0,gas,Rades A power station_1 -- operating,e_TN3-225,TN3-225,36.7967,10.283,False
+e_w111375434-225,ep_gas_combined_cycle_G100000407510,424.0,gas,Sousse D power station_1 -- operating,e_w111375434-225,way/111375434-225,35.787695,10.675387,False
+e_w111375434-225,ep_gas_combined_cycle_G100000407511,424.0,gas,Sousse C power station_1 -- operating,e_w111375434-225,way/111375434-225,35.785913,10.677649,False
+e_w111375434-225,ep_gas_combined_cycle_G100000407512,357.0,gas,Sousse B power station_1 -- operating,e_w111375434-225,way/111375434-225,35.785575,10.678426,False
+e_w111375434-225,ep_gas_steam_turbine_G100000407513,160.0,gas,Sousse A power station_2 -- operating,e_w111375434-225,way/111375434-225,35.784903,10.679153,False
+e_w111375434-225,ep_gas_steam_turbine_G100000407514,160.0,gas,Sousse A power station_1 -- operating,e_w111375434-225,way/111375434-225,35.784903,10.679153,False
+e_w129996167-225,ep_gas_gas_turbine_G100000407524,312.0,gas,Mornaguia power station_2 -- operating,e_w129996167-225,way/129996167-225,36.677342,9.921053,False
+e_w129996167-225,ep_gas_gas_turbine_G100000407525,312.0,gas,Mornaguia power station_1 -- operating,e_w129996167-225,way/129996167-225,36.677342,9.921053,False
+e_w173531194-225,ep_gas_gas_turbine_G100000407535,128.0,gas,Bir Mcherga power station_4 -- operating,e_w173531194-225,way/173531194-225,36.46247,10.054547,False
+e_w173531194-225,ep_gas_gas_turbine_G100000407536,128.0,gas,Bir Mcherga power station_3 -- operating,e_w173531194-225,way/173531194-225,36.46247,10.054547,False
+e_w173531194-225,ep_gas_gas_turbine_G100000407537,120.0,gas,Bir Mcherga power station_2 -- operating,e_w173531194-225,way/173531194-225,36.46247,10.054547,False
+e_w173531194-225,ep_gas_gas_turbine_G100000407538,120.0,gas,Bir Mcherga power station_1 -- operating,e_w173531194-225,way/173531194-225,36.46247,10.054547,False
+e_w178328237-225,ep_gas_gas_turbine_G100000407507,123.0,gas,Thyna power station_3 -- operating,e_w178328237-225,way/178328237-225,34.6868,10.6424,False
+e_w178328237-225,ep_gas_gas_turbine_G100000407508,123.0,gas,Thyna power station_2 -- operating,e_w178328237-225,way/178328237-225,34.6868,10.6424,False
+e_w178328237-225,ep_gas_gas_turbine_G100000407509,120.0,gas,Thyna power station_1 -- operating,e_w178328237-225,way/178328237-225,34.6868,10.6424,False
+e_w322419514-225,ep_gas_combined_cycle_G100000407527,400.0,gas,Ghannouch power station_1 -- operating,e_w322419514-225,way/322419514-225,33.9263,10.0932,False
+e_w833217485-225,ep_gas_gas_turbine_G100000407531,125.0,gas,Bouchemma power station_5 -- operating,e_w833217485-225,way/833217485-225,33.9181,10.0376,False
+e_w833217485-225,ep_gas_gas_turbine_G100000407532,125.0,gas,Bouchemma power station_4 -- operating,e_w833217485-225,way/833217485-225,33.9181,10.0376,False
+e_w833217485-225,ep_gas_gas_turbine_G100000407533,120.0,gas,Bouchemma power station_1 -- operating,e_w833217485-225,way/833217485-225,33.9181,10.0376,False
+elc_spv_001,ep_solar_001__irena,55.91769367501342,solar,Aggregated Plant -- operating,elc_spv_001,way/833217485-225,33.040517762435634,9.011274707991424,False
+elc_spv_001,ep_solar_pv_001,70.0,solar,Aggregated Plant -- operating,elc_spv_001,way/833217485-225,32.786605371392056,8.649738792760367,False
+elc_spv_003,ep_solar_003__irena,46.82798844716802,solar,Aggregated Plant -- operating,elc_spv_003,TN30-225,31.099613296105346,9.798111928217624,False
+elc_spv_003,ep_solar_pv_003,4.8,solar,Aggregated Plant -- operating,elc_spv_003,TN30-225,30.745685163020763,9.860064741820233,False
+elc_spv_004,ep_solar_004__irena,48.130317877818584,solar,Aggregated Plant -- operating,elc_spv_004,way/180615776-225,32.79978750067975,11.131325563810718,False
+elc_spv_004,ep_solar_pv_004,10.0,solar,Aggregated Plant -- operating,elc_spv_004,way/180615776-225,32.39604683500961,10.735195276825666,False
+elc_spv_004,ep_solar_pv_G100000800085,200.0,solar,Borj Bourguiba Solar PV Plant_-- -- construction,elc_spv_004,way/180615776-225,32.9211,10.4509,False
+elc_spv_007,ep_solar_pv_007,60.00000000000001,solar,Aggregated Plant -- operating,elc_spv_007,TN26-225,34.389478764067036,7.8091321071944435,False
+elc_spv_009,ep_solar_pv_009,101.4,solar,Aggregated Plant -- construction,elc_spv_009,way/242398869-225,35.52342573836294,10.331975347703025,False
+elc_won_003,ep_windon_wind_003,283.0,windon,Aggregated Plant -- construction,elc_won_003,TN6-225,36.673740915015266,10.111784489134623,False

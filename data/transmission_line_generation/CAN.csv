@@ -1,0 +1,509 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_CA121-315,ep_hydro_CA121-315__irena,25.52892714134489,hydro,Aggregated Plant -- operating,e_CA121-315,CA121-315,50.14135748234683,-68.20889890741661,False
+e_CA121-315,ep_hydro_dam_G100000600534,526.0,hydro,Toulnustouc hydroelectric plant_ -- operating,e_CA121-315,CA121-315,49.9705,-68.1591,False
+e_CA138-315,ep_hydro_CA138-315__irena,38.099254383946274,hydro,Aggregated Plant -- operating,e_CA138-315,CA138-315,49.71409430922667,-68.97370200598208,False
+e_CA138-315,ep_hydro_dam_G100000600494,785.0,hydro,Outardes 4 hydroelectric plant_ -- operating,e_CA138-315,CA138-315,49.7037,-68.9038,False
+e_CA142-315,ep_hydro_CA142-315__irena,49.79596815022787,hydro,Aggregated Plant -- operating,e_CA142-315,CA142-315,49.430561584453756,-68.6254648391263,False
+e_CA142-315,ep_hydro_ror_G100000600493,1026.0,hydro,Outardes 3 hydroelectric plant_ -- operating,e_CA142-315,CA142-315,49.5593,-68.7318,False
+e_CA147-315,ep_hydro_CA147-315__irena,59.648386799834356,hydro,Aggregated Plant -- operating,e_CA147-315,CA147-315,49.3076515964763,-68.53365632332256,False
+e_CA147-315,ep_hydro_ror_G100000600475,1229.0,hydro,Manic 2 hydroelectric plant_ -- operating,e_CA147-315,CA147-315,49.3213,-68.3467,False
+e_CA164-315,ep_hydro_CA164-315__irena,25.383324895291594,hydro,Aggregated Plant -- operating,e_CA164-315,CA164-315,49.005324715135544,-68.32580814716437,False
+e_CA164-315,ep_hydro_ror_G100000600492,523.0,hydro,Outardes 2 hydroelectric plant_ -- operating,e_CA164-315,CA164-315,49.1445,-68.3897,False
+e_CA193-500,ep_hydro_ror_CA193-500,140.0,hydro,Aggregated Plant -- operating,e_CA193-500,CA193-500,49.059452472134254,-95.39608100640046,False
+e_CA200-500,ep_bioenergy_CA200-500__ember,189.2330097087379,bioenergy,Aggregated Plant - EMBER Gap - CA200-500_Missing Bioenergy Capacity -- operating,e_CA200-500,CA200-500,49.22814336369547,-95.52429433190754,False
+e_CA200-500,ep_bioenergy_G100000201533,62.0,bioenergy,Thunder Bay Abibow power station_5 -- operating,e_CA200-500,CA200-500,48.3579,-89.2317,False
+e_CA200-500,ep_bioenergy_G1000002471,205.0,bioenergy,"Atikokan power station_1, timepoint 2 -- operating",e_CA200-500,CA200-500,48.838089,-91.570573,False
+e_CA200-500,ep_hydro_ror_CA200-500,51.0,hydro,Aggregated Plant -- operating,e_CA200-500,CA200-500,48.81155581290452,-94.97038095392963,False
+e_CA229-345,ep_coal_CA229-345__ember,217.28821580690956,coal,Aggregated Plant - EMBER Gap - CA229-345_Missing Coal Capacity -- operating,e_CA229-345,CA229-345,48.1779149139691,-65.84948578127384,False
+e_CA229-345,ep_coal_subcritical_G100000100746,490.0,coal,Belledune power station_Unit 1 -- operating,e_CA229-345,CA229-345,47.906148,-65.863671,False
+e_CA24-240,ep_bioenergy_CA24-240,82.0,bioenergy,Aggregated Plant -- operating,e_CA24-240,CA24-240,55.535140048494135,-112.1069983558216,False
+e_CA24-240,ep_bioenergy_CA24-240__ember,100.64077669902916,bioenergy,Aggregated Plant - EMBER Gap - CA24-240_Missing Bioenergy Capacity -- operating,e_CA24-240,CA24-240,55.15458136904034,-111.87149579624976,False
+e_CA24-240,ep_bioenergy_G100000201529,60.0,bioenergy,Prince George Pulp and Paper Mill power station_1 -- operating,e_CA24-240,CA24-240,54.921,-112.8622,False
+e_CA273-315,ep_hydro_CA273-315__irena,19.122428314999787,hydro,Aggregated Plant -- operating,e_CA273-315,CA273-315,46.38298462292734,-72.73953664359581,False
+e_CA273-315,ep_hydro_ror_G100000600522,200.0,hydro,Shawinigan 2 hydroelectric plant_ -- operating,e_CA273-315,CA273-315,46.5359,-72.7673,False
+e_CA273-315,ep_hydro_ror_G100000600523,194.0,hydro,Shawinigan 3 hydroelectric plant_ -- operating,e_CA273-315,CA273-315,46.5338,-72.7656,False
+e_CA274-315,ep_hydro_ror_CA274-315,131.0,hydro,Aggregated Plant -- operating,e_CA274-315,CA274-315,46.52561463777437,-72.68074044643946,False
+e_CA304-315,ep_hydro_ror_CA304-315,109.0,hydro,Aggregated Plant -- operating,e_CA304-315,CA304-315,45.66098784498003,-75.29813826371071,False
+e_CA305-315,ep_hydro_ror_CA305-315,54.0,hydro,Aggregated Plant -- operating,e_CA305-315,CA305-315,45.4671564128572,-73.69184565254315,False
+e_CA31-735,ep_hydro_CA31-735__irena,134.8762139273716,hydro,Aggregated Plant -- operating,e_CA31-735,CA31-735,53.95596174007638,-73.45861444767836,False
+e_CA31-735,ep_hydro_dam_G100000600463,2779.0,hydro,La Grande 4 hydroelectric plant_ -- operating,e_CA31-735,CA31-735,53.8863,-73.466,False
+e_CA33-240,ep_gas_combined_cycle_G100000404204,195.0,gas,Scotford Oil Sands Upgrader Complex cogeneration plant_1 -- operating,e_CA33-240,CA33-240,53.798538,-113.094336,False
+e_CA33-240,ep_gas_gas_turbine_CA33-240,80.0,gas,Aggregated Plant -- operating,e_CA33-240,CA33-240,53.788867630767534,-113.0128108173722,False
+e_CA331-500,ep_hydro_CA331-500__irena,48.873820591890315,hydro,Aggregated Plant -- operating,e_CA331-500,CA331-500,45.55238963741363,-75.8967602028817,False
+e_CA331-500,ep_hydro_dam_CA331-500,82.0,hydro,Aggregated Plant -- operating,e_CA331-500,CA331-500,45.106910972476626,-75.66831491686544,False
+e_CA331-500,ep_hydro_dam_G100000600429,192.0,hydro,Chute-des-Chats hydroelectric plant_ -- operating,e_CA331-500,CA331-500,45.4749,-76.2364,False
+e_CA331-500,ep_hydro_ror_CA331-500,205.0,hydro,Aggregated Plant -- operating,e_CA331-500,CA331-500,45.157246971832855,-76.11237813964247,False
+e_CA331-500,ep_hydro_ror_G100000600401,176.0,hydro,Barrett Chute hydroelectric plant_ -- operating,e_CA331-500,CA331-500,45.2499,-76.759,False
+e_CA331-500,ep_hydro_ror_G100000600486,170.0,hydro,Mountain Chute hydroelectric plant_ -- operating,e_CA331-500,CA331-500,45.1958,-76.9074,False
+e_CA331-500,ep_hydro_ror_G100000600532,182.0,hydro,Stewartville hydroelectric plant_ -- operating,e_CA331-500,CA331-500,45.4072,-76.5068,False
+e_CA337-345,ep_gas_combined_cycle_G100000404150,290.0,gas,Bayside generating station_1 -- operating,e_CA337-345,CA337-345,45.27533,-66.026329,False
+e_CA343-765,ep_gas_combined_cycle_G100000404161,156.0,gas,Cardinal power station_1 -- operating,e_CA343-765,CA343-765,44.784648,-75.377919,False
+e_CA343-765,ep_hydro_CA343-765__irena,50.71811570856541,hydro,Aggregated Plant -- operating,e_CA343-765,CA343-765,45.09890317087893,-74.82878888990196,False
+e_CA343-765,ep_hydro_ror_G100000600509,1045.0,hydro,Robert H Saunders hydroelectric plant_ -- operating,e_CA343-765,CA343-765,45.0088,-74.7905,False
+e_CA35-735,ep_hydro_CA35-735__irena,117.30687623694033,hydro,Aggregated Plant -- operating,e_CA35-735,CA35-735,53.85897219420517,-76.09477032248166,False
+e_CA35-735,ep_hydro_dam_G100000600462,2417.0,hydro,La Grande 3 hydroelectric plant_ -- operating,e_CA35-735,CA35-735,53.7276,-75.9898,False
+e_CA364-500,ep_windon_wind_500,182.0,windon,Aggregated Plant -- operating,e_CA364-500,CA364-500,44.26515291283444,-81.67881191528865,False
+e_CA376-500,ep_hydro_CA376-500__irena,48.534082017765954,hydro,Aggregated Plant -- operating,e_CA376-500,CA376-500,44.41604243958586,-81.4413512208872,False
+e_CA376-500,ep_windon_wind_500,180.0,windon,Aggregated Plant -- operating,e_CA376-500,CA376-500,44.0629855166523,-81.4251943419003,False
+e_CA387-500,ep_hydro_CA387-500__irena,19.41363280710638,hydro,Aggregated Plant -- operating,e_CA387-500,CA387-500,44.043773321499835,-77.7656572492915,False
+e_CA444-345,ep_gas_combined_cycle_CA444-345,72.0,gas,Aggregated Plant -- operating,e_CA444-345,CA444-345,43.03559291013575,-82.48557534305566,False
+e_CA444-345,ep_gas_combined_cycle_G100000404159,580.0,gas,Brighton Beach generating station_1 -- operating,e_CA444-345,CA444-345,42.2798,-83.0946,False
+e_CA444-345,ep_gas_combined_cycle_G100000404177,1038.0,gas,Greenfield Energy Centre_1 -- operating,e_CA444-345,CA444-345,42.770108,-82.452839,False
+e_CA444-345,ep_gas_combined_cycle_G100000404228,135.4,gas,West Windsor power plant_1 -- operating,e_CA444-345,CA444-345,42.2807,-83.0876,False
+e_CA444-345,ep_gas_steam_turbine_G100000410013,92.0,gas,East Windsor cogeneration centre_1 -- operating,e_CA444-345,CA444-345,42.326054,-83.00175,False
+e_CA52-315,ep_hydro_CA52-315__irena,109.2016845399734,hydro,Aggregated Plant -- operating,e_CA52-315,CA52-315,53.095474322396754,-60.64132790936078,False
+e_CA56-240,ep_hydro_dam_CA56-240,120.0,hydro,Aggregated Plant -- operating,e_CA56-240,CA56-240,52.64658505926072,-115.03535902325252,False
+e_CA72-240,ep_hydro_ror_CA72-240,54.0,hydro,Aggregated Plant -- operating,e_CA72-240,CA72-240,51.34845826934646,-114.27607169723134,False
+e_CA72-240,ep_windon_wind_240,151.0,windon,Aggregated Plant -- operating,e_CA72-240,CA72-240,50.989300197242954,-114.24809331333866,False
+e_CA72-240,ep_windon_wind_G100000910009,202.0,windon,Whitla wind farm_1 -- operating,e_CA72-240,CA72-240,51.2333,-115.677,False
+e_CA75-240,ep_hydro_dam_CA75-240,112.0,hydro,Aggregated Plant -- operating,e_CA75-240,CA75-240,51.27993632624652,-114.21774876098833,False
+e_CA75-240,ep_hydro_ror_CA75-240,50.0,hydro,Aggregated Plant -- operating,e_CA75-240,CA75-240,50.92396216089847,-114.26284419233414,False
+e_CA82-315,ep_hydro_CA82-315__irena,42.80706033966957,hydro,Aggregated Plant -- operating,e_CA82-315,CA82-315,50.73105925247816,-66.79384002291907,False
+e_CA82-315,ep_hydro_dam_G100000600518,882.0,hydro,Sainte Marguerite 3 hydroelectric plant_ -- operating,e_CA82-315,CA82-315,50.7128,-66.7814,False
+e_CA87-315,ep_hydro_CA87-315__irena,129.10065816725745,hydro,Aggregated Plant -- operating,e_CA87-315,CA87-315,50.75996364259142,-68.58434943610908,False
+e_CA87-315,ep_hydro_dam_G100000600477,1596.0,hydro,Manic 5 hydroelectric plant_ -- operating,e_CA87-315,CA87-315,50.6399,-68.7321,False
+e_CA87-315,ep_hydro_dam_G100000600478,1064.0,hydro,Manic 5PA hydroelectric plant_ -- operating,e_CA87-315,CA87-315,50.6467,-68.7395,False
+e_r10383760-500,ep_hydro_dam_G100000600423,158.0,hydro,Cheakamus hydroelectric plant_ -- operating,e_r10383760-500,relation/10383760-500,49.9336,-123.291,False
+e_r10383760-500,ep_hydro_r10383760-500__irena,12.910065816725744,hydro,Aggregated Plant -- operating,e_r10383760-500,relation/10383760-500,49.97032248470581,-123.14241124030633,False
+e_r10383760-500,ep_hydro_ror_r10383760-500,108.00000000000001,hydro,Aggregated Plant -- operating,e_r10383760-500,relation/10383760-500,49.61229886302725,-123.18265259190018,False
+e_r11490625-240,ep_gas_combined_cycle_G100000404162,120.0,gas,Cavalier Energy Centre_1 -- operating,e_r11490625-240,relation/11490625-240,51.005566,-113.171588,False
+e_r12377895-287,ep_hydro_dam_G100000600455,896.0,hydro,Kemano hydroelectric plant_ -- operating,e_r12377895-287,relation/12377895-287,53.5609,-127.944,False
+e_r12377895-287,ep_hydro_r12377895-287__irena,43.4865374879183,hydro,Aggregated Plant -- operating,e_r12377895-287,relation/12377895-287,53.741589446166586,-127.92266626341818,False
+e_r13076509-735,ep_bioenergy_r13076509-735,32.0,bioenergy,Aggregated Plant -- operating,e_r13076509-735,relation/13076509-735,45.74274521583319,-71.98322141245347,False
+e_r13076509-735,ep_bioenergy_r13076509-735__ember,22.67961165048544,bioenergy,Aggregated Plant -- operating,e_r13076509-735,relation/13076509-735,45.38531481281821,-71.94143004664845,False
+e_w1001057176-500,ep_hydro_dam_G100000600483,2746.0,hydro,Mica hydroelectric plant_ -- operating,e_w1001057176-500,way/1001057176-500,52.0758,-118.571,False
+e_w1001057176-500,ep_hydro_w1001057176-500__irena,133.27458922078532,hydro,Aggregated Plant -- operating,e_w1001057176-500,way/1001057176-500,52.22124635023868,-118.63107139307914,False
+e_w100242013-315,ep_gas_combined_cycle_G100000404152,550.0,gas,Bécancour cogeneration plant_1 -- operating,e_w100242013-315,way/100242013-315,46.367491,-72.403661,False
+e_w100242013-315,ep_gas_gas_turbine_G100000404153,103.0,gas,Bécancour power station_1 -- operating,e_w100242013-315,way/100242013-315,46.3919,-72.3523,False
+e_w100242013-315,ep_gas_gas_turbine_G100000404154,103.0,gas,Bécancour power station_2 -- operating,e_w100242013-315,way/100242013-315,46.3919,-72.3523,False
+e_w100242013-315,ep_gas_gas_turbine_G100000404155,103.0,gas,Bécancour power station_3 -- operating,e_w100242013-315,way/100242013-315,46.3919,-72.3523,False
+e_w100242013-315,ep_gas_gas_turbine_G100000404156,103.0,gas,Bécancour power station_4 -- operating,e_w100242013-315,way/100242013-315,46.3919,-72.3523,False
+e_w100242013-315,ep_hydro_ror_G100000600511,230.0,hydro,Rocher-de-Grand-Mère hydroelectric plant_ -- operating,e_w100242013-315,way/100242013-315,46.6134,-72.6742,False
+e_w100242013-315,ep_hydro_ror_w100242013-315,67.0,hydro,Aggregated Plant -- operating,e_w100242013-315,way/100242013-315,46.65712938053599,-72.6287029723965,False
+e_w100242013-315,ep_hydro_w100242013-315__irena,14.414622359276487,hydro,Aggregated Plant -- operating,e_w100242013-315,way/100242013-315,46.301506294362824,-72.68052633425373,False
+e_w1034015958-315,ep_hydro_dam_G100000600515,245.0,hydro,Romaine 4 hydroelectric plant_ -- operating,e_w1034015958-315,way/1034015958-315,51.368,-63.5069,False
+e_w1034015958-315,ep_hydro_w1034015958-315__irena,11.89085009435266,hydro,Aggregated Plant -- operating,e_w1034015958-315,way/1034015958-315,51.28868597518397,-63.46089890870033,False
+e_w104561026-500,ep_bioenergy_G100000201527,63.0,bioenergy,Northwood Pulp Mill power station_1 -- operating,e_w104561026-500,way/104561026-500,53.9792,-122.6936,False
+e_w104561026-500,ep_bioenergy_w104561026-500,65.0,bioenergy,Aggregated Plant -- operating,e_w104561026-500,way/104561026-500,54.02931615651137,-122.62709871751323,False
+e_w104561026-500,ep_bioenergy_w104561026-500__ember,90.71844660194176,bioenergy,Aggregated Plant - EMBER Gap - way/104561026-500_Missing Bioenergy Capacity -- operating,e_w104561026-500,way/104561026-500,53.67036118363944,-122.62448010309137,False
+e_w1054532447-315,ep_hydro_dam_G100000600465,878.0,hydro,Laforge 1 hydroelectric plant_ -- operating,e_w1054532447-315,way/1054532447-315,54.1693,-72.6146,False
+e_w1054532447-315,ep_hydro_w1054532447-315__irena,42.6129240115985,hydro,Aggregated Plant -- operating,e_w1054532447-315,way/1054532447-315,54.34762456807299,-72.61002294746899,False
+e_w1116652015-500,ep_gas_combined_cycle_G100000404172,560.0,gas,Genesee power station_RP1 -- operating,e_w1116652015-500,way/1116652015-500,53.343254,-114.304763,False
+e_w1116652015-500,ep_gas_combined_cycle_G100000404173,560.0,gas,Genesee power station_RP2 -- operating,e_w1116652015-500,way/1116652015-500,53.343254,-114.304763,False
+e_w1116652015-500,ep_gas_steam_turbine_G100001017904,466.0,gas,"Genesee power station_Unit 3, timepoint 2 -- operating",e_w1116652015-500,way/1116652015-500,53.343254,-114.304763,False
+e_w113343685-500,ep_bioenergy_G100000200397,76.0,bioenergy,Kamloops Pulp Mill power station_1 -- operating,e_w113343685-500,way/113343685-500,50.6861,-120.4037,False
+e_w113343685-500,ep_bioenergy_w113343685-500,40.0,bioenergy,Aggregated Plant -- operating,e_w113343685-500,way/113343685-500,50.53404967446036,-120.46024262647904,False
+e_w113343685-500,ep_bioenergy_w113343685-500__ember,82.21359223300972,bioenergy,Aggregated Plant - EMBER Gap - way/113343685-500_Missing Bioenergy Capacity -- operating,e_w113343685-500,way/113343685-500,50.121875516047126,-120.03501276317503,False
+e_w113855788-500,ep_nuclear_G100000500258,872.0,nuclear,Bruce nuclear power plant_B5 -- operating,e_w113855788-500,way/113855788-500,44.319,-81.6027,False
+e_w113855788-500,ep_nuclear_G100000500259,872.0,nuclear,Bruce nuclear power plant_B7 -- operating,e_w113855788-500,way/113855788-500,44.319,-81.6027,False
+e_w113855788-500,ep_nuclear_G100000500326,891.0,nuclear,Bruce nuclear power plant_B6 -- operating,e_w113855788-500,way/113855788-500,44.319,-81.6027,False
+e_w113855788-500,ep_nuclear_G100000500327,872.0,nuclear,Bruce nuclear power plant_B8 -- operating,e_w113855788-500,way/113855788-500,44.319,-81.6027,False
+e_w113855788-500,ep_nuclear_G100000500339,868.0,nuclear,Bruce nuclear power plant_A1 -- operating,e_w113855788-500,way/113855788-500,44.3391,-81.5747,False
+e_w113855788-500,ep_nuclear_G100000500340,836.0,nuclear,Bruce nuclear power plant_A2 -- operating,e_w113855788-500,way/113855788-500,44.3391,-81.5747,False
+e_w113855788-500,ep_nuclear_G100000500351,868.0,nuclear,Bruce nuclear power plant_A4 -- operating,e_w113855788-500,way/113855788-500,44.3391,-81.5747,False
+e_w113855788-500,ep_nuclear_G100000500352,865.0,nuclear,Bruce nuclear power plant_A3 -- operating,e_w113855788-500,way/113855788-500,44.3391,-81.5747,False
+e_w117228972-345,ep_nuclear_G100000500376,705.0,nuclear,Point Lepreau nuclear power plant_-- -- operating,e_w117228972-345,way/117228972-345,45.0686,-66.4543,False
+e_w117955755-345,ep_gas_combined_cycle_G100000404176,300.0,gas,Green Electron power station_1 -- operating,e_w117955755-345,way/117955755-345,42.784676,-82.429444,False
+e_w117955755-345,ep_gas_combined_cycle_G100000404214,499.0,gas,Sarnia cogeneration plant_1 -- operating,e_w117955755-345,way/117955755-345,42.9346,-82.4381,False
+e_w117955755-345,ep_gas_combined_cycle_G100000404220,292.0,gas,St. Clair Energy Centre_1 -- operating,e_w117955755-345,way/117955755-345,42.897277,-82.398371,False
+e_w117955755-345,ep_gas_combined_cycle_G100000404221,292.0,gas,St. Clair Energy Centre_2 -- operating,e_w117955755-345,way/117955755-345,42.897277,-82.398371,False
+e_w117955755-345,ep_gas_gas_turbine_G100000404215,90.0,gas,Sarnia Refinery power station_1 -- operating,e_w117955755-345,way/117955755-345,42.9571,-82.4141,False
+e_w124919871-315,ep_hydro_ror_G100000600404,1912.0,hydro,Beauharnois hydroelectric plant_ -- operating,e_w124919871-315,way/124919871-315,45.314,-73.9086,False
+e_w124919871-315,ep_hydro_w124919871-315__irena,92.7971648179685,hydro,Aggregated Plant -- operating,e_w124919871-315,way/124919871-315,45.206603392749805,-73.92457914426616,False
+e_w128099193-360,ep_hydro_dam_G100000600413,298.0,hydro,Bridge River 2 hydroelectric plant_ -- operating,e_w128099193-360,way/128099193-360,50.7233,-122.244,False
+e_w128099193-360,ep_hydro_dam_G100000600414,180.0,hydro,Bridge River hydroelectric plant_ -- operating,e_w128099193-360,way/128099193-360,50.7296,-122.2401,False
+e_w128099193-360,ep_hydro_ror_w128099193-360,129.0,hydro,Aggregated Plant -- operating,e_w128099193-360,way/128099193-360,50.631699619084756,-121.90366052206576,False
+e_w128099193-360,ep_hydro_w128099193-360__irena,36.497629677359996,hydro,Aggregated Plant -- operating,e_w128099193-360,way/128099193-360,50.38014529680088,-122.35596382117818,False
+e_w1293508819-315,ep_hydro_dam_G100000600487,824.0,hydro,Muskrat Falls hydroelectric plant_ -- operating,e_w1293508819-315,way/1293508819-315,53.2464,-60.7672,False
+e_w1293508819-315,ep_hydro_dam_w1293508819-315,127.0,hydro,Aggregated Plant -- operating,e_w1293508819-315,way/1293508819-315,53.41977742347331,-60.75489450304912,False
+e_w1293508819-315,ep_hydro_w1293508819-315__irena,46.15591199889543,hydro,Aggregated Plant -- operating,e_w1293508819-315,way/1293508819-315,53.06376839085937,-60.79653119014501,False
+e_w1335860683-500,ep_gas_combined_cycle_G100000404174,875.0,gas,Goreway power station_1 -- operating,e_w1335860683-500,way/1335860683-500,43.7465,-79.6799,False
+e_w1335860683-500,ep_gas_combined_cycle_G100000404226,117.0,gas,Toronto Pearson Airport cogeneration Complex_1 -- operating,e_w1335860683-500,way/1335860683-500,43.6911,-79.6105,False
+e_w136145755-345,ep_oil_steam_turbine_G100000413062,350.0,oil,Coleson Cove power station_3 -- operating,e_w136145755-345,way/136145755-345,45.154201,-66.202321,False
+e_w136145755-345,ep_oil_steam_turbine_G100000413063,350.0,oil,Coleson Cove power station_2 -- operating,e_w136145755-345,way/136145755-345,45.154201,-66.202321,False
+e_w136145755-345,ep_oil_steam_turbine_G100000413064,350.0,oil,Coleson Cove power station_1 -- operating,e_w136145755-345,way/136145755-345,45.154201,-66.202321,False
+e_w145535463-500,ep_hydro_dam_G100000600508,2480.0,hydro,Revelstoke hydroelectric plant_ -- operating,e_w145535463-500,way/145535463-500,51.0491,-118.195,False
+e_w145535463-500,ep_hydro_ror_w145535463-500,45.0,hydro,Aggregated Plant -- operating,e_w145535463-500,way/145535463-500,51.22898387741856,-118.2120091320966,False
+e_w145535463-500,ep_hydro_w145535463-500__irena,122.54855709485902,hydro,Aggregated Plant -- operating,e_w145535463-500,way/145535463-500,50.8700296323994,-118.18027485956662,False
+e_w156417764-500,ep_gas_combined_cycle_G100000404209,550.0,gas,Portlands Energy Centre_1 -- operating,e_w156417764-500,way/156417764-500,43.6495,-79.3311,False
+e_w156417764-500,ep_gas_gas_turbine_G100000404231,228.0,gas,York Energy Centre_1 -- operating,e_w156417764-500,way/156417764-500,44.075683,-79.530857,False
+e_w156417764-500,ep_gas_gas_turbine_G100000404232,228.0,gas,York Energy Centre_2 -- operating,e_w156417764-500,way/156417764-500,44.075683,-79.530857,False
+e_w156738152-500,ep_hydro_dam_G100000600452,170.0,hydro,Jordan River hydroelectric plant_ -- operating,e_w156738152-500,way/156738152-500,48.4294,-124.053,False
+e_w156738153-500,ep_gas_combined_cycle_G100000404186,275.0,gas,Island Generation power station_1 -- operating,e_w156738153-500,way/156738153-500,50.069379,-125.281452,False
+e_w156738153-500,ep_hydro_dam_w156738153-500,206.00000000000003,hydro,Aggregated Plant -- operating,e_w156738153-500,way/156738153-500,49.69061072101776,-124.61537589834995,False
+e_w156738153-500,ep_hydro_ror_w156738153-500,92.0,hydro,Aggregated Plant -- operating,e_w156738153-500,way/156738153-500,49.239085839339694,-124.44404670666586,False
+e_w156738153-500,ep_hydro_w156738153-500__irena,14.463156441294254,hydro,Aggregated Plant -- operating,e_w156738153-500,way/156738153-500,49.3022095654013,-124.88560115111277,False
+e_w158578970-500,ep_hydro_dam_G100000600496,694.0,hydro,Peace Canyon hydroelectric plant_ -- operating,e_w158578970-500,way/158578970-500,55.9828,-121.997,False
+e_w158578970-500,ep_hydro_w158578970-500__irena,33.68265292032957,hydro,Aggregated Plant -- operating,e_w158578970-500,way/158578970-500,56.08918434394007,-121.91257041072815,False
+e_w159783135-500,ep_bioenergy_G100000201531,51.0,bioenergy,Skookumchuk power station_2 -- operating,e_w159783135-500,way/159783135-500,49.5284,-115.7578,False
+e_w159783135-500,ep_bioenergy_w159783135-500__ember,36.145631067961176,bioenergy,Aggregated Plant -- operating,e_w159783135-500,way/159783135-500,49.947163632788175,-115.64433620813871,False
+e_w163080106-500,ep_gas_combined_cycle_G100000404185,120.0,gas,Iroquois Falls cogeneration station_1 -- operating,e_w163080106-500,way/163080106-500,48.769182,-80.666608,False
+e_w163080106-500,ep_gas_combined_cycle_G100000404188,132.0,gas,Kirkland Lake generating station_1 -- operating,e_w163080106-500,way/163080106-500,48.134975,-80.040529,False
+e_w163080106-500,ep_hydro_dam_w163080106-500,154.0,hydro,Aggregated Plant -- operating,e_w163080106-500,way/163080106-500,48.89736028666258,-81.39816834976101,False
+e_w166899876-500,ep_bioenergy_G100000201524,63.0,bioenergy,Howe Sound Mill power station_B1 -- operating,e_w166899876-500,way/166899876-500,49.522,-123.4862,False
+e_w166899876-500,ep_bioenergy_G100000201525,50.0,bioenergy,Howe Sound Mill power station_B2 -- operating,e_w166899876-500,way/166899876-500,49.522,-123.4862,False
+e_w166899876-500,ep_bioenergy_w166899876-500,62.0,bioenergy,Aggregated Plant -- operating,e_w166899876-500,way/166899876-500,50.02778672572425,-123.99043185870342,False
+e_w166899876-500,ep_bioenergy_w166899876-500__ember,124.02912621359226,bioenergy,Aggregated Plant - EMBER Gap - way/166899876-500_Missing Bioenergy Capacity -- operating,e_w166899876-500,way/166899876-500,49.64189926916815,-123.60108141864231,False
+e_w166899876-500,ep_hydro_ror_w166899876-500,297.0,hydro,Aggregated Plant -- operating,e_w166899876-500,way/166899876-500,49.31367409340638,-124.02235787921073,False
+e_w166899876-500,ep_hydro_w166899876-500__irena,14.414622359276487,hydro,Aggregated Plant -- operating,e_w166899876-500,way/166899876-500,49.61369675671388,-124.31658718746301,False
+e_w168607246-315,ep_hydro_dam_w168607246-315,105.0,hydro,Aggregated Plant -- operating,e_w168607246-315,way/168607246-315,45.51098155631435,-75.62431817246164,False
+e_w169165650-500,ep_bioenergy_G100000200430,66.0,bioenergy,Williams Lake power station_1 -- operating,e_w169165650-500,way/169165650-500,52.1612,-122.1712,False
+e_w169165650-500,ep_bioenergy_w169165650-500__ember,46.77669902912622,bioenergy,Aggregated Plant -- operating,e_w169165650-500,way/169165650-500,51.09942804337902,-121.74243567879935,False
+e_w171560375-315,ep_hydro_dam_G100000600431,224.0,hydro,Chute-du-Diable hydroelectric plant_ -- operating,e_w171560375-315,way/171560375-315,48.7807,-71.6974,False
+e_w171560375-315,ep_hydro_dam_G100000600448,448.0,hydro,Isle-Maligne hydroelectric plant_ -- operating,e_w171560375-315,way/171560375-315,48.5772,-71.6346,False
+e_w171560375-315,ep_hydro_ror_G100000600428,258.0,hydro,Chute-à-la-Savane hydroelectric plant_ -- operating,e_w171560375-315,way/171560375-315,48.7544,-71.8402,False
+e_w171560375-315,ep_hydro_ror_w171560375-315,63.0,hydro,Aggregated Plant -- operating,e_w171560375-315,way/171560375-315,48.77149081326864,-71.63592992288284,False
+e_w171560375-315,ep_hydro_w171560375-315__irena,48.19434344364159,hydro,Aggregated Plant -- operating,e_w171560375-315,way/171560375-315,48.414224644248094,-71.65931568555347,False
+e_w171599032-735,ep_bioenergy_w171599032-735,43.0,bioenergy,Aggregated Plant -- operating,e_w171599032-735,way/171599032-735,49.012113333910435,-72.81044323345643,False
+e_w171599032-735,ep_bioenergy_w171599032-735__ember,30.475728155339812,bioenergy,Aggregated Plant -- operating,e_w171599032-735,way/171599032-735,48.634096033197,-72.35339627957923,False
+e_w171599032-735,ep_hydro_dam_G100000600503,204.0,hydro,Rapide-Blanc hydroelectric plant_ -- operating,e_w171599032-735,way/171599032-735,47.7966,-72.9734,False
+e_w171599032-735,ep_hydro_ror_G100000600535,302.0,hydro,Trenche hydroelectric plant_ -- operating,e_w171599032-735,way/171599032-735,47.7521,-72.8783,False
+e_w171599032-735,ep_hydro_ror_w171599032-735,76.0,hydro,Aggregated Plant -- operating,e_w171599032-735,way/171599032-735,48.31917089043209,-72.81250757364882,False
+e_w171599032-735,ep_hydro_w171599032-735__irena,28.246835734339786,hydro,Aggregated Plant -- operating,e_w171599032-735,way/171599032-735,48.58263011911625,-73.06313754947575,False
+e_w184564045-735,ep_hydro_dam_w184564045-735,55.0,hydro,Aggregated Plant -- operating,e_w184564045-735,way/184564045-735,47.670076902046645,-74.8862523645284,False
+e_w184564045-735,ep_hydro_ror_w184564045-735,62.0,hydro,Aggregated Plant -- operating,e_w184564045-735,way/184564045-735,47.31829600455114,-74.90433859324948,False
+e_w198186160-315,ep_hydro_dam_G100000600409,1178.0,hydro,Bersimis 1 hydroelectric plant_ -- operating,e_w198186160-315,way/198186160-315,49.2953,-69.5509,False
+e_w198186160-315,ep_hydro_w198186160-315__irena,57.1731486169283,hydro,Aggregated Plant -- operating,e_w198186160-315,way/198186160-315,49.12940098415323,-69.62378718603846,False
+e_w201214685-240,ep_gas_gas_turbine_G100000410001,92.0,gas,Mildred Lake cogeneration station_2 -- operating,e_w201214685-240,way/201214685-240,57.04887,-111.608113,False
+e_w201214685-240,ep_gas_gas_turbine_w201214685-240,75.0,gas,Aggregated Plant -- operating,e_w201214685-240,way/201214685-240,57.22684618077708,-111.51575970203291,False
+e_w201214685-240,ep_gas_steam_turbine_w201214685-240,217.0,gas,Aggregated Plant -- operating,e_w201214685-240,way/201214685-240,56.87223752156671,-111.57982439565524,False
+e_w202429808-315,ep_hydro_ror_G100000600476,1326.0,hydro,Manic 3 hydroelectric plant_ -- operating,e_w202429808-315,way/202429808-315,49.7397,-68.5922,False
+e_w202429808-315,ep_hydro_w202429808-315__irena,64.35619275555766,hydro,Aggregated Plant -- operating,e_w202429808-315,way/202429808-315,49.74359544306946,-68.51835605429999,False
+e_w243819450-500,ep_hydro_dam_G100000600521,180.0,hydro,Seven Sisters hydroelectric plant_ -- operating,e_w243819450-500,way/243819450-500,50.1204,-96.0178,False
+e_w243819450-500,ep_hydro_dam_w243819450-500,150.0,hydro,Aggregated Plant -- operating,e_w243819450-500,way/243819450-500,50.22389076184406,-96.92502907836233,False
+e_w243819450-500,ep_hydro_ror_w243819450-500,371.0,hydro,Aggregated Plant -- operating,e_w243819450-500,way/243819450-500,49.85719050774663,-96.58094388262593,False
+e_w243819450-500,ep_hydro_w243819450-500__irena,34.022391494453935,hydro,Aggregated Plant -- operating,e_w243819450-500,way/243819450-500,49.50737225378253,-96.88879275329371,False
+e_w243819450-500,ep_m_gas_steam_turbine_w243819450-500,132.0,gas,Aggregated Plant -- mothballed,e_w243819450-500,way/243819450-500,49.77648785305698,-97.29084095991037,False
+e_w246652207-500,ep_bioenergy_G100000201532,50.0,bioenergy,Témiscaming power station_2 -- operating,e_w246652207-500,way/246652207-500,46.7094,-79.0954,False
+e_w246652207-500,ep_bioenergy_w246652207-500__ember,35.4368932038835,bioenergy,Aggregated Plant -- operating,e_w246652207-500,way/246652207-500,46.98565061216052,-80.91079876632413,False
+e_w246652207-500,ep_gas_combined_cycle_G100000410009,110.0,gas,Lake Superior power plant_1 -- operating,e_w246652207-500,way/246652207-500,46.515773,-84.368867,False
+e_w246652207-500,ep_hydro_dam_G100000600400,162.0,hydro,Aubrey Falls hydroelectric plant_ -- operating,e_w246652207-500,way/246652207-500,46.9095,-83.2129,False
+e_w246652207-500,ep_hydro_dam_G100000600472,274.0,hydro,Lower Notch hydroelectric plant_ -- operating,e_w246652207-500,way/246652207-500,47.139,-79.454,False
+e_w246652207-500,ep_hydro_dam_G100000600541,239.0,hydro,Wells hydroelectric plant (Canada)_ -- operating,e_w246652207-500,way/246652207-500,46.4315,-83.3859,False
+e_w246652207-500,ep_hydro_dam_w246652207-500,87.0,hydro,Aggregated Plant -- operating,e_w246652207-500,way/246652207-500,46.53399161120498,-80.56742453596199,False
+e_w246652207-500,ep_hydro_ror_G100000600491,243.0,hydro,Otto Holden hydroelectric plant_ -- operating,e_w246652207-500,way/246652207-500,46.3782,-78.729,False
+e_w246652207-500,ep_hydro_ror_w246652207-500,52.0,hydro,Aggregated Plant -- operating,e_w246652207-500,way/246652207-500,46.265085542004684,-80.9068021754262,False
+e_w246652207-500,ep_hydro_w246652207-500__irena,51.30052469277861,hydro,Aggregated Plant -- operating,e_w246652207-500,way/246652207-500,46.62547661981618,-81.27637810271683,False
+e_w25164969-360,ep_hydro_dam_w25164969-360,63.0,hydro,Aggregated Plant -- operating,e_w25164969-360,way/25164969-360,49.39550628631164,-121.8502140913085,False
+e_w252897103-315,ep_hydro_ror_G100000600410,845.0,hydro,Bersimis 2 hydroelectric plant_ -- operating,e_w252897103-315,way/252897103-315,49.1753,-69.2259,False
+e_w252897103-315,ep_hydro_w252897103-315__irena,41.01129930501223,hydro,Aggregated Plant -- operating,e_w252897103-315,way/252897103-315,49.43787782518153,-69.18158776408967,False
+e_w25495523-500,ep_hydro_dam_w25495523-500,196.0,hydro,Aggregated Plant -- operating,e_w25495523-500,way/25495523-500,49.10579472425331,-122.30970614717997,False
+e_w25500667-500,ep_bioenergy_w25500667-500,38.0,bioenergy,Aggregated Plant -- operating,e_w25500667-500,way/25500667-500,49.33339445261265,-122.91751095604909,False
+e_w25500667-500,ep_bioenergy_w25500667-500__ember,26.93203883495146,bioenergy,Aggregated Plant -- operating,e_w25500667-500,way/25500667-500,48.979359838306344,-122.89467325809534,False
+e_w255866641-500,ep_bioenergy_w255866641-500,35.0,bioenergy,Aggregated Plant -- operating,e_w255866641-500,way/255866641-500,50.13035143022839,-81.03346337826376,False
+e_w255866641-500,ep_bioenergy_w255866641-500__ember,24.805825242718452,bioenergy,Aggregated Plant -- operating,e_w255866641-500,way/255866641-500,49.818096574953806,-80.96916891410295,False
+e_w255866641-500,ep_hydro_dam_G100000600396,349.0,hydro,Abitibi Canyon hydroelectric plant_ -- operating,e_w255866641-500,way/255866641-500,49.8819,-81.5671,False
+e_w255866641-500,ep_hydro_dam_G100000600444,219.0,hydro,Harmon hydroelectric plant_ -- operating,e_w255866641-500,way/255866641-500,50.1114,-82.2082,False
+e_w255866641-500,ep_hydro_dam_G100000600457,230.0,hydro,Kipling hydroelectric plant_ -- operating,e_w255866641-500,way/255866641-500,50.1451,-82.2081,False
+e_w255866641-500,ep_hydro_dam_G100000600470,200.0,hydro,Little Long hydroelectric plant_ -- operating,e_w255866641-500,way/255866641-500,50.0045,-82.1659,False
+e_w255866641-500,ep_hydro_dam_G100000600490,182.0,hydro,Otter Rapids hydroelectric plant_ -- operating,e_w255866641-500,way/255866641-500,50.1812,-81.6373,False
+e_w255866641-500,ep_hydro_dam_G100000600529,267.0,hydro,Smoky Falls hydroelectric plant_ -- operating,e_w255866641-500,way/255866641-500,50.0611,-82.1613,False
+e_w255866641-500,ep_hydro_dam_w255866641-500,237.0,hydro,Aggregated Plant -- operating,e_w255866641-500,way/255866641-500,49.236829754031824,-81.45653169163747,False
+e_w255866641-500,ep_hydro_ror_w255866641-500,116.0,hydro,Aggregated Plant -- operating,e_w255866641-500,way/255866641-500,49.35731504251701,-81.99110444455937,False
+e_w255866641-500,ep_hydro_w255866641-500__irena,92.2147558337553,hydro,Aggregated Plant -- operating,e_w255866641-500,way/255866641-500,49.7046387154546,-82.21230155464237,False
+e_w26103715-500,ep_hydro_ror_w26103715-500,59.0,hydro,Aggregated Plant -- operating,e_w26103715-500,way/26103715-500,49.464675298048505,-122.63565207732033,False
+e_w268183893-500,ep_gas_steam_turbine_G100001017951,463.0,gas,"Keephills power station_Unit 3, timepoint 2 -- operating",e_w268183893-500,way/268183893-500,53.447667,-114.45147,False
+e_w268183893-500,ep_gas_steam_turbine_G100001017983,403.2,gas,"Keephills power station_Unit 2, timepoint 2 -- operating",e_w268183893-500,way/268183893-500,53.447667,-114.45147,False
+e_w268192671-240,ep_gas_steam_turbine_G100001017921,385.0,gas,"Battle River power station_Unit 5, timepoint 2 -- operating",e_w268192671-240,way/268192671-240,52.46928,-112.135056,False
+e_w268192671-240,ep_gas_steam_turbine_G100001017994,155.0,gas,"Battle River power station_Unit 4, timepoint 2 -- operating",e_w268192671-240,way/268192671-240,52.46928,-112.135056,False
+e_w268205078-240,ep_gas_combined_cycle_G100000404198,480.0,gas,Joffre cogeneration power station_1 -- operating,e_w268205078-240,way/268205078-240,52.307822,-113.546795,False
+e_w268511255-240,ep_hydro_ror_G100000600412,355.0,hydro,Brazeau hydroelectric plant_ -- operating,e_w268511255-240,way/268511255-240,52.9099,-115.376,False
+e_w268511255-240,ep_hydro_w268511255-240__irena,17.229599116306915,hydro,Aggregated Plant -- operating,e_w268511255-240,way/268511255-240,53.08371688008422,-115.32026000763203,False
+e_w268537508-240,ep_hydro_w268537508-240__irena,15.530906245685104,hydro,Aggregated Plant -- operating,e_w268537508-240,way/268537508-240,49.465650566452474,-114.12539288263301,False
+e_w269811579-345,ep_bioenergy_G100000200412,60.0,bioenergy,Port Hawkesbury power station_New 1 -- operating,e_w269811579-345,way/269811579-345,45.5972,-61.3581,False
+e_w269811579-345,ep_bioenergy_w269811579-345__ember,42.5242718446602,bioenergy,Aggregated Plant -- operating,e_w269811579-345,way/269811579-345,46.62177299110348,-60.26552607750756,False
+e_w269811579-345,ep_coal_CFB_G100000114114,165.0,coal,Point Aconi Generating Station_-- -- operating,e_w269811579-345,way/269811579-345,46.321633,-60.329987,False
+e_w269811579-345,ep_coal_subcritical_G100000106303,158.2,coal,"Lingan power station_Unit 1, timepoint 1 -- operating",e_w269811579-345,way/269811579-345,46.23557,-60.038285,False
+e_w269811579-345,ep_coal_subcritical_G100000106304,158.2,coal,Lingan power station_Unit 2 -- operating,e_w269811579-345,way/269811579-345,46.23557,-60.038285,False
+e_w269811579-345,ep_coal_subcritical_G100000106305,158.2,coal,"Lingan power station_Unit 3, timepoint 1 -- operating",e_w269811579-345,way/269811579-345,46.23557,-60.038285,False
+e_w269811579-345,ep_coal_subcritical_G100000106306,158.2,coal,"Lingan power station_Unit 4, timepoint 1 -- operating",e_w269811579-345,way/269811579-345,46.23557,-60.038285,False
+e_w269811579-345,ep_coal_subcritical_G100000108060,150.0,coal,"Point Tupper power station_Unit 2, timepoint 1 -- operating",e_w269811579-345,way/269811579-345,45.586418,-61.34768,False
+e_w269811579-345,ep_coal_w269811579-345__ember,420.29749171793645,coal,Aggregated Plant - EMBER Gap - way/269811579-345_Missing Coal Capacity -- operating,e_w269811579-345,way/269811579-345,46.383874017695554,-59.780672420407775,False
+e_w269811579-345,ep_hydro_dam_G100000600403,604.0,hydro,Bay D'Espoir hydroelectric plant_ -- operating,e_w269811579-345,way/269811579-345,47.9901,-55.7998,False
+e_w269811579-345,ep_hydro_dam_G100000600542,212.0,hydro,Wreck Cove hydroelectric plant_ -- operating,e_w269811579-345,way/269811579-345,46.5314,-60.4402,False
+e_w269811579-345,ep_hydro_dam_w269811579-345,213.00000000000003,hydro,Aggregated Plant -- operating,e_w269811579-345,way/269811579-345,45.90826433343969,-59.64897944689813,False
+e_w269811579-345,ep_hydro_ror_w269811579-345,150.0,hydro,Aggregated Plant -- operating,e_w269811579-345,way/269811579-345,45.37317836986912,-60.14866187540526,False
+e_w269811579-345,ep_hydro_w269811579-345__irena,64.69593132968201,hydro,Aggregated Plant -- operating,e_w269811579-345,way/269811579-345,45.52429477505984,-60.69803529868076,False
+e_w269811579-345,ep_oil_internal_combustion_w269811579-345,132.0,oil,Aggregated Plant -- operating,e_w269811579-345,way/269811579-345,45.836005303120835,-60.88536846314503,False
+e_w269811579-345,ep_oil_steam_turbine_G100000413059,163.3,oil,Holyrood Thermal Generating Station_3 -- operating,e_w269811579-345,way/269811579-345,47.453426,-53.097717,False
+e_w269811579-345,ep_oil_steam_turbine_G100000413060,163.3,oil,Holyrood Thermal Generating Station_2 -- operating,e_w269811579-345,way/269811579-345,47.453426,-53.097717,False
+e_w269811579-345,ep_oil_steam_turbine_G100000413061,163.3,oil,Holyrood Thermal Generating Station_1 -- operating,e_w269811579-345,way/269811579-345,47.453426,-53.097717,False
+e_w269999294-345,ep_coal_subcritical_G100000107528,152.0,coal,Trenton Generating Station_Unit 5 -- operating,e_w269999294-345,way/269999294-345,45.62042,-62.646992,False
+e_w269999294-345,ep_coal_subcritical_G100000107529,158.0,coal,Trenton Generating Station_Unit 6 -- operating,e_w269999294-345,way/269999294-345,45.62042,-62.646992,False
+e_w269999294-345,ep_coal_w269999294-345__ember,137.4680548982489,coal,Aggregated Plant - EMBER Gap - way/269999294-345_Missing Coal Capacity -- operating,e_w269999294-345,way/269999294-345,45.8079575603548,-62.59756745600451,False
+e_w269999294-345,ep_m_oil_steam_turbine_w269999294-345,55.0,oil,Aggregated Plant -- mothballed,e_w269999294-345,way/269999294-345,45.44922530746344,-62.30702058658949,False
+e_w269999294-345,ep_oil_gas_turbine_w269999294-345,50.0,oil,Aggregated Plant -- operating,e_w269999294-345,way/269999294-345,45.09731223942597,-62.6190140761226,False
+e_w269999294-345,ep_windon_wind_345,60.0,windon,Aggregated Plant -- operating,e_w269999294-345,way/269999294-345,45.39378604232046,-63.02256667191439,False
+e_w272219026-345,ep_bioenergy_w272219026-345,30.0,bioenergy,Aggregated Plant -- operating,e_w272219026-345,way/272219026-345,45.00137085380574,-63.64179166130375,False
+e_w272219026-345,ep_bioenergy_w272219026-345__ember,21.2621359223301,bioenergy,Aggregated Plant -- operating,e_w272219026-345,way/272219026-345,44.614570438319866,-63.324419644691936,False
+e_w272219026-345,ep_gas_gas_turbine_G100000404227,100.0,gas,Tufts Cove generating station_1 -- operating,e_w272219026-345,way/272219026-345,44.678233,-63.594599,False
+e_w272219026-345,ep_gas_gas_turbine_G100000409997,150.0,gas,Tufts Cove generating station_3 -- operating,e_w272219026-345,way/272219026-345,44.678233,-63.594599,False
+e_w272219026-345,ep_gas_gas_turbine_G100000409998,100.0,gas,Tufts Cove generating station_2 -- operating,e_w272219026-345,way/272219026-345,44.678233,-63.594599,False
+e_w272219026-345,ep_gas_steam_turbine_w272219026-345,50.0,gas,Aggregated Plant -- operating,e_w272219026-345,way/272219026-345,44.29093765336763,-63.60880719567969,False
+e_w273447830-240,ep_coal_subcritical_G100000108079,315.0,coal,Poplar River power station_Unit 1 -- operating,e_w273447830-240,way/273447830-240,49.057028,-105.485138,False
+e_w273447830-240,ep_coal_subcritical_G100000108080,315.0,coal,Poplar River power station_Unit 2 -- operating,e_w273447830-240,way/273447830-240,49.057028,-105.485138,False
+e_w273447830-240,ep_coal_w273447830-240__ember,279.3705631803123,coal,Aggregated Plant - EMBER Gap - way/273447830-240_Missing Coal Capacity -- operating,e_w273447830-240,way/273447830-240,51.378560417270165,-110.19567873013061,False
+e_w273447830-240,ep_gas_combined_cycle_G100000400862,353.0,gas,Chinook Swift power station_1 -- operating,e_w273447830-240,way/273447830-240,50.345253,-107.937285,False
+e_w273447830-240,ep_gas_combined_cycle_G100000400863,360.0,gas,Moose Jaw power station_CC -- construction,e_w273447830-240,way/273447830-240,50.391581,-105.534856,False
+e_w273447830-240,ep_hydro_dam_G100000600433,186.0,hydro,Coteau Creek hydroelectric plant_ -- operating,e_w273447830-240,way/273447830-240,51.2749,-106.874,False
+e_w273633282-240,ep_gas_gas_turbine_w273633282-240,160.0,gas,Aggregated Plant -- operating,e_w273633282-240,way/273633282-240,57.435040856528964,-111.59226901638242,False
+e_w29999719-500,ep_coal_subcritical_CCS_G100000101026,110.0,coal,Boundary Dam power station_Unit 3 -- operating,e_w29999719-500,way/29999719-500,49.095746,-103.030413,False
+e_w29999719-500,ep_coal_subcritical_G100000101029,293.0,coal,Boundary Dam power station_Unit 6 -- operating,e_w29999719-500,way/29999719-500,49.095746,-103.030413,False
+e_w29999719-500,ep_coal_subcritical_G100000108982,300.0,coal,Shand power station_Unit 1 -- operating,e_w29999719-500,way/29999719-500,49.088234,-102.863043,False
+e_w29999719-500,ep_coal_w29999719-500__ember,444.7756743965924,coal,Aggregated Plant - EMBER Gap - way/29999719-500_Missing Coal Capacity -- operating,e_w29999719-500,way/29999719-500,50.16761358193433,-96.72970762298894,False
+e_w29999719-500,ep_gas_gas_turbine_G100000404157,140.0,gas,Manitoba Brandon power station_1 -- operating,e_w29999719-500,way/29999719-500,49.844951,-99.889816,False
+e_w29999719-500,ep_gas_gas_turbine_G100000404158,140.0,gas,Manitoba Brandon power station_2 -- operating,e_w29999719-500,way/29999719-500,49.844951,-99.889816,False
+e_w29999719-500,ep_geothermal_w29999719-500,5.0,geothermal,Aggregated Plant -- construction,e_w29999719-500,way/29999719-500,49.53735819886483,-96.87092196655385,False
+e_w29999719-500,ep_m_coal_subcritical_G100000101027,150.0,coal,Boundary Dam power station_Unit 4 -- mothballed,e_w29999719-500,way/29999719-500,49.095746,-103.030413,False
+e_w29999719-500,ep_m_coal_subcritical_G100000101028,150.0,coal,Boundary Dam power station_Unit 5 -- mothballed,e_w29999719-500,way/29999719-500,49.095746,-103.030413,False
+e_w29999719-500,ep_windon_wind_500,20.0,windon,Aggregated Plant -- operating,e_w29999719-500,way/29999719-500,49.273200318106554,-97.40057877091438,False
+e_w302580598-315,ep_hydro_ror_G100000600405,270.0,hydro,Beaumont hydroelectric plant_ -- operating,e_w302580598-315,way/302580598-315,47.5562,-72.8359,False
+e_w302580598-315,ep_hydro_ror_G100000600464,294.0,hydro,La Tuque hydroelectric plant_ -- operating,e_w302580598-315,way/302580598-315,47.4445,-72.7981,False
+e_w302580598-315,ep_hydro_w302580598-315__irena,27.373222258019997,hydro,Aggregated Plant -- operating,e_w302580598-315,way/302580598-315,46.741171102400564,-72.27271467957627,False
+e_w321501597-315,ep_hydro_ror_G100000600460,1436.0,hydro,La Grande 1 hydroelectric plant_ -- operating,e_w321501597-315,way/321501597-315,53.7339,-78.5699,False
+e_w321501597-315,ep_hydro_w321501597-315__irena,69.69494177751191,hydro,Aggregated Plant -- operating,e_w321501597-315,way/321501597-315,53.908901448008685,-78.60670145918145,False
+e_w321566366-315,ep_hydro_ror_G100000600466,319.0,hydro,Laforge 2 hydroelectric plant_ -- operating,e_w321566366-315,way/321566366-315,54.5908,-71.2787,False
+e_w321566366-315,ep_hydro_w321566366-315__irena,15.482372163667339,hydro,Aggregated Plant -- operating,e_w321566366-315,way/321566366-315,54.56273444099699,-71.12902507638661,False
+e_w322119595-315,ep_hydro_dam_G100000600407,480.0,hydro,Bernard Landry 1 hydroelectric plant_ -- operating,e_w322119595-315,way/322119595-315,52.1818,-76.0513,False
+e_w322119595-315,ep_hydro_dam_G100000600408,768.0,hydro,Bernard Landry 1A hydroelectric plant_ -- operating,e_w322119595-315,way/322119595-315,52.1793,-76.0418,False
+e_w322119595-315,ep_hydro_w322119595-315__irena,60.57053435817191,hydro,Aggregated Plant -- operating,e_w322119595-315,way/322119595-315,52.13726994201926,-76.2231775323098,False
+e_w322119608-315,ep_hydro_dam_G100000600417,469.0,hydro,Brisay hydroelectric plant_ -- operating,e_w322119608-315,way/322119608-315,54.4436,-70.5118,False
+e_w322119608-315,ep_hydro_w322119608-315__irena,22.76248446633223,hydro,Aggregated Plant -- operating,e_w322119608-315,way/322119608-315,54.57478903024355,-70.49404718584171,False
+e_w322153178-315,ep_hydro_ror_G100000600519,150.0,hydro,Sarcelle hydroelectric plant_ -- operating,e_w322153178-315,way/322153178-315,52.6678,-76.6326,False
+e_w322366625-315,ep_hydro_dam_G100000600430,833.0,hydro,Chute-des-Passes hydroelectric plant_ -- operating,e_w322366625-315,way/322366625-315,49.841,-71.1702,False
+e_w322366625-315,ep_hydro_ror_G100000600498,385.0,hydro,Péribonka hydroelectric plant_ -- operating,e_w322366625-315,way/322366625-315,49.5101,-71.1793,False
+e_w322366625-315,ep_hydro_w322366625-315__irena,59.11451189763893,hydro,Aggregated Plant -- operating,e_w322366625-315,way/322366625-315,49.72269312901923,-71.17256210674147,False
+e_w323166651-315,ep_hydro_dam_G100000600426,5428.0,hydro,Churchill Falls hydroelectric plant_ -- operating,e_w323166651-315,way/323166651-315,53.5291,-63.9666,False
+e_w323166651-315,ep_hydro_w323166651-315__irena,263.4429971924336,hydro,Aggregated Plant - IRENA Gap - way/323166651-315_Missing Hydro Capacity -- operating,e_w323166651-315,way/323166651-315,53.519694531093386,-64.0235975713793,False
+e_w323866585-315,ep_hydro_dam_w323866585-315,51.0,hydro,Aggregated Plant -- operating,e_w323866585-315,way/323866585-315,52.91507206895534,-67.27089541638026,False
+e_w323896233-735,ep_hydro_dam_G100000600461,2106.0,hydro,La Grande 2A hydroelectric plant_ -- operating,e_w323896233-735,way/323896233-735,53.7808,-77.5483,False
+e_w323896233-735,ep_hydro_dam_G100000600510,5616.0,hydro,Robert-Bourassa hydroelectric plant_ -- operating,e_w323896233-735,way/323896233-735,53.7856,-77.5381,False
+e_w323896233-735,ep_hydro_w323896233-735__irena,499.02743130666954,hydro,Aggregated Plant - IRENA Gap - way/323896233-735_Missing Hydro Capacity -- operating,e_w323896233-735,way/323896233-735,53.69846250138212,-77.46233457928307,False
+e_w32963410-500,ep_nuclear_G100000500414,542.0,nuclear,Pickering nuclear power plant_A1 -- operating,e_w32963410-500,way/32963410-500,43.8107,-79.0689,False
+e_w32963410-500,ep_nuclear_G100000500415,542.0,nuclear,Pickering nuclear power plant_A4 -- operating,e_w32963410-500,way/32963410-500,43.8107,-79.0689,False
+e_w32963410-500,ep_nuclear_G100000500416,540.0,nuclear,Pickering nuclear power plant_B5 -- operating,e_w32963410-500,way/32963410-500,43.8096,-79.0639,False
+e_w32963410-500,ep_nuclear_G100000500417,540.0,nuclear,Pickering nuclear power plant_B6 -- operating,e_w32963410-500,way/32963410-500,43.8096,-79.0639,False
+e_w32963410-500,ep_nuclear_G100000500418,540.0,nuclear,Pickering nuclear power plant_B7 -- operating,e_w32963410-500,way/32963410-500,43.8096,-79.0639,False
+e_w32963410-500,ep_nuclear_G100000500419,540.0,nuclear,Pickering nuclear power plant_B8 -- operating,e_w32963410-500,way/32963410-500,43.8096,-79.0639,False
+e_w33297515-500,ep_gas_combined_cycle_G100000404208,683.0,gas,Halton Hills power station_1 -- operating,e_w33297515-500,way/33297515-500,43.561281,-79.844726,False
+e_w33299685-500,ep_gas_combined_cycle_G100000404225,265.0,gas,Thorold cogeneration station_1 -- operating,e_w33299685-500,way/33299685-500,43.10713,-79.198343,False
+e_w33299685-500,ep_hydro_dam_G100000600525,446.0,hydro,Sir Adam Beck 1 hydroelectric plant_ -- operating,e_w33299685-500,way/33299685-500,43.1489,-79.0444,False
+e_w33299685-500,ep_hydro_dam_G100000600526,1499.0,hydro,Sir Adam Beck 2 hydroelectric plant_ -- operating,e_w33299685-500,way/33299685-500,43.1437,-79.0459,False
+e_w33299685-500,ep_hydro_dam_w33299685-500,144.0,hydro,Aggregated Plant -- operating,e_w33299685-500,way/33299685-500,43.70001410909436,-79.68054815023955,False
+e_w33299685-500,ep_hydro_ps_G100000600527,174.0,hydro,Sir Adam Beck Pump hydroelectric plant_ -- operating,e_w33299685-500,way/33299685-500,43.1445,-79.0601,False
+e_w33299685-500,ep_hydro_w33299685-500__irena,109.83262760620435,hydro,Aggregated Plant -- operating,e_w33299685-500,way/33299685-500,43.34871559652214,-79.75295208989861,False
+e_w334287872-240,ep_gas_combined_cycle_G100000404171,118.0,gas,Fort Saskatchewan power station_1 -- operating,e_w334287872-240,way/334287872-240,53.735956,-113.173377,False
+e_w33728777-500,ep_gas_gas_turbine_w33728777-500,50.0,gas,Aggregated Plant -- operating,e_w33728777-500,way/33728777-500,43.79844764515027,-78.68643513533027,False
+e_w33728777-500,ep_nuclear_G100000500311,934.0,nuclear,Darlington nuclear power plant_1 -- operating,e_w33728777-500,way/33728777-500,43.8697,-78.7239,False
+e_w33728777-500,ep_nuclear_G100000500312,934.0,nuclear,Darlington nuclear power plant_2 -- operating,e_w33728777-500,way/33728777-500,43.8697,-78.7239,False
+e_w33728777-500,ep_nuclear_G100000500313,934.0,nuclear,Darlington nuclear power plant_3 -- operating,e_w33728777-500,way/33728777-500,43.8697,-78.7239,False
+e_w33728777-500,ep_nuclear_G100000500314,934.0,nuclear,Darlington nuclear power plant_4 -- operating,e_w33728777-500,way/33728777-500,43.8697,-78.7239,False
+e_w359143123-240,ep_gas_gas_turbine_w359143123-240,102.0,gas,Aggregated Plant -- operating,e_w359143123-240,way/359143123-240,53.67643978244625,-112.9500342309961,False
+e_w359240603-240,ep_gas_gas_turbine_G100000404164,100.0,gas,Clover Bar Energy Centre_2 -- operating,e_w359240603-240,way/359240603-240,53.587143,-113.365184,False
+e_w359240603-240,ep_gas_gas_turbine_G100000404165,100.0,gas,Clover Bar Energy Centre_3 -- operating,e_w359240603-240,way/359240603-240,53.587143,-113.365184,False
+e_w378545575-240,ep_gas_combined_cycle_G100000404201,101.0,gas,Muskeg River Mine power station_1 -- operating,e_w378545575-240,way/378545575-240,57.253655,-111.506361,False
+e_w378545575-240,ep_gas_combined_cycle_G100000404202,101.0,gas,Muskeg River Mine power station_2 -- operating,e_w378545575-240,way/378545575-240,57.253655,-111.506361,False
+e_w398222892-240,ep_gas_combined_cycle_G100000404219,860.0,gas,Shepard Energy Centre_1 -- operating,e_w398222892-240,way/398222892-240,50.971328,-113.885783,False
+e_w398222931-240,ep_gas_steam_turbine_G100001017903,422.0,gas,"Alberta Sundance power station_Unit 6, timepoint 2 -- operating",e_w398222931-240,way/398222931-240,53.507405,-114.559003,False
+e_w398222931-240,ep_gas_steam_turbine_G100001018029,113.0,gas,"Alberta Sundance power station_Unit 4, timepoint 2 -- operating",e_w398222931-240,way/398222931-240,53.507405,-114.559003,False
+e_w398227543-240,ep_gas_combined_cycle_G100000404149,120.0,gas,Balzac Facility power station_1 -- operating,e_w398227543-240,way/398227543-240,51.191223,-113.942411,False
+e_w398227543-240,ep_gas_combined_cycle_G100000404160,320.0,gas,Calgary Energy Centre_1 -- operating,e_w398227543-240,way/398227543-240,51.18045,-113.93728,False
+e_w398417796-240,ep_gas_gas_turbine_w398417796-240,425.0,gas,Aggregated Plant -- operating,e_w398417796-240,way/398417796-240,57.06501505970034,-110.82893845379822,False
+e_w398417819-240,ep_gas_gas_turbine_G100000404196,165.0,gas,MacKay River cogeneration plant_1 -- operating,e_w398417819-240,way/398417819-240,57.041277,-111.905455,False
+e_w398417866-240,ep_gas_gas_turbine_G100000404181,103.0,gas,Horizon Mine power station_1 -- operating,e_w398417866-240,way/398417866-240,57.339309,-111.757753,False
+e_w398417877-240,ep_gas_combined_cycle_G100000404212,224.0,gas,Poplar Creek power station_1 -- operating,e_w398417877-240,way/398417877-240,57.007952,-111.486777,False
+e_w398417877-240,ep_gas_combined_cycle_G100000404223,403.0,gas,Suncor Oil Sands Base Plant cogeneration power station_1 -- construction,e_w398417877-240,way/398417877-240,57.005879,-111.480846,False
+e_w398417877-240,ep_gas_combined_cycle_G100000404224,403.0,gas,Suncor Oil Sands Base Plant cogeneration power station_2 -- construction,e_w398417877-240,way/398417877-240,57.005879,-111.480846,False
+e_w398623087-240,ep_gas_combined_cycle_w398623087-240,170.0,gas,Aggregated Plant -- operating,e_w398623087-240,way/398623087-240,55.588831339591394,-110.74369586879803,False
+e_w398726503-240,ep_bioenergy_w398726503-240,30.0,bioenergy,Aggregated Plant -- operating,e_w398726503-240,way/398726503-240,56.53886327855773,-116.90799538328626,False
+e_w398726503-240,ep_bioenergy_w398726503-240__ember,21.2621359223301,bioenergy,Aggregated Plant -- operating,e_w398726503-240,way/398726503-240,56.110804228859315,-116.76237533917089,False
+e_w398726503-240,ep_hydro_w398726503-240__irena,17.957610346573404,hydro,Aggregated Plant -- operating,e_w398726503-240,way/398726503-240,56.121916027544835,-117.196656619226,False
+e_w399079326-240,ep_bioenergy_w399079326-240,32.0,bioenergy,Aggregated Plant -- operating,e_w399079326-240,way/399079326-240,54.91603088894013,-116.84426654317926,False
+e_w399079326-240,ep_bioenergy_w399079326-240__ember,22.67961165048544,bioenergy,Aggregated Plant -- operating,e_w399079326-240,way/399079326-240,54.59143165944292,-117.12142914411368,False
+e_w399079326-240,ep_gas_combined_cycle_G100000404151,100.0,gas,Bear Creek cogeneration plant_1 -- operating,e_w399079326-240,way/399079326-240,55.0712,-118.6896,False
+e_w399079326-240,ep_gas_combined_cycle_G100000410024,96.0,gas,H.R. Milner power station_2 upgrade -- operating,e_w399079326-240,way/399079326-240,54.007659,-119.103559,False
+e_w399079326-240,ep_gas_gas_turbine_G100000404175,105.0,gas,Grande Prairie generating station_1 -- operating,e_w399079326-240,way/399079326-240,55.178109,-118.9607,False
+e_w399079326-240,ep_gas_gas_turbine_G100000404183,204.0,gas,H.R. Milner power station_2 -- operating,e_w399079326-240,way/399079326-240,54.007659,-119.103559,False
+e_w399079326-240,ep_gas_gas_turbine_w399079326-240,100.0,gas,Aggregated Plant -- operating,e_w399079326-240,way/399079326-240,54.98512320967243,-117.56147421042294,False
+e_w399079326-240,ep_gas_steam_turbine_G100000404182,150.0,gas,H.R. Milner power station_1 -- operating,e_w399079326-240,way/399079326-240,54.007659,-119.103559,False
+e_w401273523-240,ep_geothermal_w401273523-240,5.0,geothermal,Aggregated Plant -- operating,e_w401273523-240,way/401273523-240,54.575047297054795,-115.5244881292634,False
+e_w401679870-240,ep_gas_gas_turbine_G100000404203,100.0,gas,Primrose South power plant_1 -- operating,e_w401679870-240,way/401679870-240,54.696257,-110.72382,False
+e_w401679870-240,ep_gas_gas_turbine_G100000404207,170.0,gas,Cold Lake Project Nabiye power station_1 -- operating,e_w401679870-240,way/401679870-240,54.726515,-110.3441,False
+e_w401679870-240,ep_gas_gas_turbine_w401679870-240,170.0,gas,Aggregated Plant -- operating,e_w401679870-240,way/401679870-240,54.53086445591801,-110.88117381940118,False
+e_w401774037-240,ep_gas_combined_cycle_G100000404166,249.0,gas,Cory cogeneration power station_1 -- operating,e_w401774037-240,way/401774037-240,52.092692,-106.853313,False
+e_w401774037-240,ep_gas_combined_cycle_G100000404206,228.0,gas,Meridian cogeneration station_1 -- operating,e_w401774037-240,way/401774037-240,53.2593,-109.9512,False
+e_w401774037-240,ep_gas_combined_cycle_G100000404210,286.0,gas,North Battleford power station_1 -- operating,e_w401774037-240,way/401774037-240,52.68323,-108.17154,False
+e_w401774037-240,ep_gas_combined_cycle_G100000404213,141.0,gas,Queen Elizabeth generating station_A -- operating,e_w401774037-240,way/401774037-240,52.0944,-106.705,False
+e_w401774037-240,ep_gas_combined_cycle_G100000411128,204.0,gas,Queen Elizabeth generating station_D -- operating,e_w401774037-240,way/401774037-240,52.0944,-106.705,False
+e_w401774037-240,ep_gas_combined_cycle_G100000411130,141.0,gas,Queen Elizabeth generating station_B -- operating,e_w401774037-240,way/401774037-240,52.0944,-106.705,False
+e_w401774037-240,ep_gas_gas_turbine_w401774037-240,78.0,gas,Aggregated Plant -- operating,e_w401774037-240,way/401774037-240,52.58615469667157,-110.56775952612715,False
+e_w401774037-240,ep_gas_steam_turbine_G100000411129,95.0,gas,Queen Elizabeth generating station_C -- operating,e_w401774037-240,way/401774037-240,52.0944,-106.705,False
+e_w401774037-240,ep_hydro_w401774037-240__irena,12.133520504441488,hydro,Aggregated Plant -- operating,e_w401774037-240,way/401774037-240,52.23045722089994,-110.5502295419736,False
+e_w401875185-240,ep_gas_steam_turbine_G100001017959,390.0,gas,"Sheerness power station_Unit 1, timepoint 2 -- operating",e_w401875185-240,way/401875185-240,51.4427177,-111.7903304,False
+e_w401875185-240,ep_gas_steam_turbine_G100001017960,390.0,gas,"Sheerness power station_Unit 2, timepoint 2 -- operating",e_w401875185-240,way/401875185-240,51.4427177,-111.7903304,False
+e_w402099433-240,ep_gas_combined_cycle_G100000400860,450.0,gas,Cascade power station_Phase 1 -- operating,e_w402099433-240,way/402099433-240,53.57997,-116.509934,False
+e_w402099433-240,ep_gas_combined_cycle_G100000400861,450.0,gas,Cascade power station_Phase 2 -- operating,e_w402099433-240,way/402099433-240,53.57997,-116.509934,False
+e_w431696974-240,ep_gas_gas_turbine_w431696974-240,55.0,gas,Aggregated Plant -- operating,e_w431696974-240,way/431696974-240,50.003485958978565,-110.42977187241218,False
+e_w476702648-500,ep_windon_wind_500,115.99999999999999,windon,Aggregated Plant -- operating,e_w476702648-500,way/476702648-500,43.8528862142478,-81.64393316371373,False
+e_w476702648-500,ep_windon_wind_G100000910158,270.0,windon,K2 Wind Power Facility_-- -- operating,e_w476702648-500,way/476702648-500,43.8368,-81.6767,False
+e_w481119623-360,ep_hydro_ror_w481119623-360,50.0,hydro,Aggregated Plant -- operating,e_w481119623-360,way/481119623-360,49.77275823649402,-122.08331351865456,False
+e_w481119701-360,ep_hydro_ror_w481119701-360,50.0,hydro,Aggregated Plant -- operating,e_w481119701-360,way/481119701-360,50.09513596670992,-122.50832305700746,False
+e_w504215807-240,ep_solar_pv_240,3.5,solar,Aggregated Plant -- operating,e_w504215807-240,way/504215807-240,57.60611176138098,-111.17795611325653,False
+e_w504803033-240,ep_gas_combined_cycle_G100000410012,98.0,gas,Foster Creek cogeneration power station_1 -- operating,e_w504803033-240,way/504803033-240,55.0708,-110.537165,False
+e_w504803035-240,ep_gas_combined_cycle_G100000410015,100.0,gas,Christina Lake cogeneration power station_1 -- operating,e_w504803035-240,way/504803035-240,55.570182,-110.890659,False
+e_w5065566-500,ep_gas_combined_cycle_G100000400859,900.0,gas,Napanee generating station_CC1 -- operating,e_w5065566-500,way/5065566-500,44.148442,-76.841299,False
+e_w5065566-500,ep_gas_combined_cycle_G100000404187,110.0,gas,Kingston generating station_1 -- operating,e_w5065566-500,way/5065566-500,44.209846,-76.724691,False
+e_w5065566-500,ep_gas_steam_turbine_G100000404190,525.0,gas,Lennox generating station_1 -- operating,e_w5065566-500,way/5065566-500,44.144185,-76.848034,False
+e_w5065566-500,ep_gas_steam_turbine_G100000404191,525.0,gas,Lennox generating station_2 -- operating,e_w5065566-500,way/5065566-500,44.144185,-76.848034,False
+e_w5065566-500,ep_gas_steam_turbine_G100000404192,525.0,gas,Lennox generating station_3 -- operating,e_w5065566-500,way/5065566-500,44.144185,-76.848034,False
+e_w5065566-500,ep_gas_steam_turbine_G100000404193,525.0,gas,Lennox generating station_4 -- operating,e_w5065566-500,way/5065566-500,44.144185,-76.848034,False
+e_w543432160-315,ep_bioenergy_w543432160-315,35.0,bioenergy,Aggregated Plant -- operating,e_w543432160-315,way/543432160-315,48.9916741578949,-78.01966519648542,False
+e_w543432160-315,ep_bioenergy_w543432160-315__ember,24.805825242718452,bioenergy,Aggregated Plant -- operating,e_w543432160-315,way/543432160-315,48.61134757314685,-77.6455749114428,False
+e_w543432160-315,ep_hydro_dam_w543432160-315,61.0,hydro,Aggregated Plant -- operating,e_w543432160-315,way/543432160-315,48.143934766335555,-77.89023969351187,False
+e_w543432160-315,ep_hydro_ror_G100000600505,176.0,hydro,Rapides-des-Îles hydroelectric plant_ -- operating,e_w543432160-315,way/543432160-315,47.5768,-79.3546,False
+e_w543432160-315,ep_hydro_ror_w543432160-315,301.0,hydro,Aggregated Plant -- operating,e_w543432160-315,way/543432160-315,48.166446003739914,-78.33245169660238,False
+e_w543432160-315,ep_hydro_w543432160-315__irena,26.111336125558083,hydro,Aggregated Plant -- operating,e_w543432160-315,way/543432160-315,48.64083530573158,-78.53196422853499,False
+e_w550172871-315,ep_hydro_dam_G100000600513,640.0,hydro,Romaine 2 hydroelectric plant_ -- operating,e_w550172871-315,way/550172871-315,50.6244,-63.1941,False
+e_w550172871-315,ep_hydro_w550172871-315__irena,31.06181249137021,hydro,Aggregated Plant -- operating,e_w550172871-315,way/550172871-315,50.768912762420136,-63.117165688079744,False
+e_w551510936-345,ep_bioenergy_w551510936-345,39.0,bioenergy,Aggregated Plant -- operating,e_w551510936-345,way/551510936-345,47.585912864506604,-68.19868454094865,False
+e_w551510936-345,ep_bioenergy_w551510936-345__ember,27.64077669902913,bioenergy,Aggregated Plant -- operating,e_w551510936-345,way/551510936-345,47.23275135426504,-68.26535226636304,False
+e_w553650272-315,ep_hydro_dam_G100000600514,395.0,hydro,Romaine 3 hydroelectric plant_ -- operating,e_w553650272-315,way/553650272-315,51.1141,-63.3999,False
+e_w553650272-315,ep_hydro_w553650272-315__irena,19.17096239701755,hydro,Aggregated Plant -- operating,e_w553650272-315,way/553650272-315,50.992182435061,-63.30384484434074,False
+e_w581345032-345,ep_hydro_dam_w581345032-345,179.0,hydro,Aggregated Plant -- operating,e_w581345032-345,way/581345032-345,47.100369913664935,-67.46725474287781,False
+e_w581345032-345,ep_hydro_w581345032-345__irena,13.541008882956701,hydro,Aggregated Plant -- operating,e_w581345032-345,way/581345032-345,47.088770517332904,-67.98902361459974,False
+e_w581354518-345,ep_oil_gas_turbine_G100000413053,100.0,oil,Sainte Rose power station_1 -- operating,e_w581354518-345,way/581354518-345,47.6149086,-64.9122511,False
+e_w581354518-345,ep_oil_gas_turbine_G100000413054,100.0,oil,Millbank power station_4 -- operating,e_w581354518-345,way/581354518-345,47.07205,-65.454868,False
+e_w581354518-345,ep_oil_gas_turbine_G100000413055,100.0,oil,Millbank power station_3 -- operating,e_w581354518-345,way/581354518-345,47.07205,-65.454868,False
+e_w581354518-345,ep_oil_gas_turbine_G100000413056,100.0,oil,Millbank power station_2 -- operating,e_w581354518-345,way/581354518-345,47.07205,-65.454868,False
+e_w581354518-345,ep_oil_gas_turbine_G100000413057,100.0,oil,Millbank power station_1 -- operating,e_w581354518-345,way/581354518-345,47.07205,-65.454868,False
+e_w609824151-240,ep_hydro_dam_G100000600453,695.0,hydro,Keeyask hydroelectric plant_ -- operating,e_w609824151-240,way/609824151-240,56.3499,-95.202,False
+e_w609824151-240,ep_hydro_dam_G100000600454,316.0,hydro,Kelsey hydroelectric plant_ -- operating,e_w609824151-240,way/609824151-240,56.0407,-96.538,False
+e_w609824151-240,ep_hydro_ror_G100000600456,1253.0,hydro,Kettle hydroelectric plant_ -- operating,e_w609824151-240,way/609824151-240,56.3842,-94.635,False
+e_w609824151-240,ep_hydro_ror_G100000600468,1350.0,hydro,Limestone hydroelectric plant_ -- operating,e_w609824151-240,way/609824151-240,56.5079,-94.1101,False
+e_w609824151-240,ep_hydro_ror_G100000600471,1010.0,hydro,Long Spruce hydroelectric plant_ -- operating,e_w609824151-240,way/609824151-240,56.3978,-94.369,False
+e_w609824151-240,ep_hydro_w609824151-240__irena,287.51590187324547,hydro,Aggregated Plant - IRENA Gap - way/609824151-240_Missing Hydro Capacity -- operating,e_w609824151-240,way/609824151-240,55.87218775864122,-97.91440431283006,False
+e_w610199852-287,ep_hydro_ror_G100000600439,195.0,hydro,Forrest Kerr hydroelectric plant_ -- operating,e_w610199852-287,way/610199852-287,56.7188,-130.6901,False
+e_w610199852-287,ep_hydro_ror_w610199852-287,66.0,hydro,Aggregated Plant -- operating,e_w610199852-287,way/610199852-287,56.89037127091676,-130.70988348807117,False
+e_w610199852-287,ep_hydro_w610199852-287__irena,12.667395406636913,hydro,Aggregated Plant -- operating,e_w610199852-287,way/610199852-287,56.5359240493928,-130.6466642760012,False
+e_w614612290-500,ep_bioenergy_G100000200433,52.0,bioenergy,Zellstoff Celgar Mill power station_2 -- operating,e_w614612290-500,way/614612290-500,49.3355,-117.7272,False
+e_w614612290-500,ep_bioenergy_w614612290-500,48.0,bioenergy,Aggregated Plant -- operating,e_w614612290-500,way/614612290-500,49.507744701875815,-117.4704599892405,False
+e_w614612290-500,ep_bioenergy_w614612290-500__ember,70.873786407767,bioenergy,Aggregated Plant - EMBER Gap - way/614612290-500_Missing Bioenergy Capacity -- operating,e_w614612290-500,way/614612290-500,49.19572140805319,-117.0843421364282,False
+e_w614612290-500,ep_hydro_dam_G100000600399,185.0,hydro,Arrow Lakes hydroelectric plant_ -- operating,e_w614612290-500,way/614612290-500,49.343,-117.769,False
+e_w614612290-500,ep_hydro_dam_G100000600458,580.0,hydro,Kootenay Canal hydroelectric plant_ -- operating,e_w614612290-500,way/614612290-500,49.4532,-117.518,False
+e_w614612290-500,ep_hydro_dam_G100000600520,805.0,hydro,Seven Mile hydroelectric plant_ -- operating,e_w614612290-500,way/614612290-500,49.0301,-117.503,False
+e_w614612290-500,ep_hydro_dam_G100000600539,335.0,hydro,Waneta Expansion hydroelectric plant_ -- operating,e_w614612290-500,way/614612290-500,49.0047,-117.616,False
+e_w614612290-500,ep_hydro_dam_G100000600540,490.0,hydro,Waneta hydroelectric plant_ -- operating,e_w614612290-500,way/614612290-500,49.0042,-117.613,False
+e_w614612290-500,ep_hydro_dam_w614612290-500,260.0,hydro,Aggregated Plant -- operating,e_w614612290-500,way/614612290-500,48.762116766815375,-117.17521415877077,False
+e_w614612290-500,ep_hydro_ror_w614612290-500,223.99999999999997,hydro,Aggregated Plant -- operating,e_w614612290-500,way/614612290-500,48.65482967345051,-117.71178209148076,False
+e_w614612290-500,ep_hydro_w614612290-500__irena,139.7296221291482,hydro,Aggregated Plant -- operating,e_w614612290-500,way/614612290-500,49.1549376299268,-117.9538563086198,False
+e_w67214412-500,ep_gas_steam_turbine_w67214412-500,65.0,gas,Aggregated Plant -- operating,e_w67214412-500,way/67214412-500,42.93953524410123,-80.19914036089949,False
+e_w675398070-240,ep_hydro_dam_G100000600437,289.0,hydro,E B Campbell hydroelectric plant_ -- operating,e_w675398070-240,way/675398070-240,53.689,-103.348,False
+e_w675398070-240,ep_hydro_dam_G100000600441,479.0,hydro,Grand Rapids hydroelectric plant_ -- operating,e_w675398070-240,way/675398070-240,53.1601,-99.2862,False
+e_w675398070-240,ep_hydro_dam_G100000600488,255.0,hydro,Nipawin hydroelectric plant_ -- operating,e_w675398070-240,way/675398070-240,53.321,-104.043,False
+e_w675398070-240,ep_hydro_dam_G100000600543,210.0,hydro,Wuskwatim hydroelectric plant_ -- operating,e_w675398070-240,way/675398070-240,55.5384,-98.4936,False
+e_w675398070-240,ep_hydro_dam_w675398070-240,111.0,hydro,Aggregated Plant -- operating,e_w675398070-240,way/675398070-240,55.44608429885217,-98.23135086811381,False
+e_w675398070-240,ep_hydro_ror_G100000600449,174.0,hydro,Jenpeg hydroelectric plant_ -- operating,e_w675398070-240,way/675398070-240,54.541,-98.0284,False
+e_w675398070-240,ep_hydro_w675398070-240__irena,78.52814470474532,hydro,Aggregated Plant -- operating,e_w675398070-240,way/675398070-240,55.36860335232347,-98.68946555748745,False
+e_w74321375-345,ep_hydro_ror_G100000600473,660.0,hydro,Mactaquac hydroelectric plant_ -- operating,e_w74321375-345,way/74321375-345,45.9552,-66.8666,False
+e_w74321375-345,ep_hydro_w74321375-345__irena,32.03249413172553,hydro,Aggregated Plant -- operating,e_w74321375-345,way/74321375-345,46.23694937359385,-66.85771436483363,False
+e_w76734082-500,ep_gas_combined_cycle_w76734082-500,74.0,gas,Aggregated Plant -- operating,e_w76734082-500,way/76734082-500,45.39392703520977,-75.70144324514814,False
+e_w79660529-500,ep_bioenergy_w79660529-500,36.0,bioenergy,Aggregated Plant -- operating,e_w79660529-500,way/79660529-500,55.25165195392849,-122.78565064179324,False
+e_w79660529-500,ep_bioenergy_w79660529-500__ember,25.51456310679612,bioenergy,Aggregated Plant -- operating,e_w79660529-500,way/79660529-500,54.89681817661689,-122.74462800287795,False
+e_w80575562-315,ep_hydro_ror_G100000600474,184.0,hydro,Manic 1 hydroelectric plant_ -- operating,e_w80575562-315,way/80575562-315,49.189,-68.3296,False
+e_w80575562-315,ep_hydro_ror_G100000600481,235.0,hydro,McCormick hydroelectric plant_ -- operating,e_w80575562-315,way/80575562-315,49.1931,-68.327,False
+e_w80575562-315,ep_hydro_w80575562-315__irena,20.335780365443934,hydro,Aggregated Plant -- operating,e_w80575562-315,way/80575562-315,49.01079114677925,-68.46684429784634,False
+e_w816708307-315,ep_hydro_ror_G100000600512,270.0,hydro,Romaine 1 hydroelectric plant_ -- operating,e_w816708307-315,way/816708307-315,50.3883,-63.2541,False
+e_w816708307-315,ep_hydro_w816708307-315__irena,13.104202144796806,hydro,Aggregated Plant -- operating,e_w816708307-315,way/816708307-315,50.25189346720666,-63.13430170517209,False
+e_w82304430-500,ep_hydro_dam_w82304430-500,50.0,hydro,Aggregated Plant -- operating,e_w82304430-500,way/82304430-500,50.52566397441942,-118.8824172443642,False
+e_w87373194-315,ep_hydro_ror_G100000600424,152.0,hydro,Chelsea hydroelectric plant_ -- operating,e_w87373194-315,way/87373194-315,45.5125,-75.7772,False
+e_w87373194-315,ep_hydro_ror_G100000600436,429.0,hydro,Des Joachims hydroelectric plant_ -- operating,e_w87373194-315,way/87373194-315,46.1827,-77.697,False
+e_w87373194-315,ep_hydro_ror_G100000600495,216.0,hydro,Paugan hydroelectric plant_ -- operating,e_w87373194-315,way/87373194-315,45.8095,-75.9326,False
+e_w87373194-315,ep_hydro_ror_w87373194-315,104.0,hydro,Aggregated Plant -- operating,e_w87373194-315,way/87373194-315,45.670698986229304,-75.74647813092902,False
+e_w87373194-315,ep_hydro_w87373194-315__irena,43.72920789800712,hydro,Aggregated Plant -- operating,e_w87373194-315,way/87373194-315,45.31667107349794,-75.68534006311988,False
+e_w89024998-500,ep_bioenergy_w89024998-500,40.0,bioenergy,Aggregated Plant -- operating,e_w89024998-500,way/89024998-500,54.24909860740597,-124.97202773949967,False
+e_w89024998-500,ep_bioenergy_w89024998-500__ember,28.349514563106805,bioenergy,Aggregated Plant -- operating,e_w89024998-500,way/89024998-500,53.89548862974686,-125.03798357184898,False
+e_w911604497-287,ep_solar_pv_287,1.2,solar,Aggregated Plant -- operating,e_w911604497-287,way/911604497-287,57.63800707333442,-129.8710243192939,False
+e_w911604499-287,ep_solar_pv_287,1.0,solar,Aggregated Plant -- operating,e_w911604499-287,way/911604499-287,57.8697352734096,-129.84246455952783,False
+e_w911609411-500,ep_gas_combined_cycle_w911609411-500,73.0,gas,Aggregated Plant -- operating,e_w911609411-500,way/911609411-500,56.32520559928923,-120.48228397207977,False
+e_w911609411-500,ep_gas_gas_turbine_G100000410149,97.0,gas,Rainbow Lake generating station_1 -- operating,e_w911609411-500,way/911609411-500,58.4483,-119.238216,False
+e_w911609411-500,ep_gas_gas_turbine_w911609411-500,120.0,gas,Aggregated Plant -- operating,e_w911609411-500,way/911609411-500,55.91021979378226,-120.54862481861728,False
+e_w911609411-500,ep_geothermal_w911609411-500,7.0,geothermal,Aggregated Plant -- construction,e_w911609411-500,way/911609411-500,55.79857754280201,-121.14755293393857,False
+e_w911609411-500,ep_hydro_dam_G100000600528,1100.0,hydro,Site C hydroelectric plant_ -- construction,e_w911609411-500,way/911609411-500,56.1961,-120.914,False
+e_w911609411-500,ep_hydro_w911609411-500__irena,53.38749021954255,hydro,Aggregated Plant -- operating,e_w911609411-500,way/911609411-500,56.3260283575831,-121.33522761213669,False
+e_w92544660-315,ep_hydro_ror_w92544660-315,113.0,hydro,Aggregated Plant -- operating,e_w92544660-315,way/92544660-315,45.24910009240502,-73.98864284283263,False
+e_w92676944-735,ep_hydro_ror_G100000600421,753.0,hydro,Carillon hydroelectric plant_ -- operating,e_w92676944-735,way/92676944-735,45.5686,-74.383,False
+e_w92676944-735,ep_hydro_w92676944-735__irena,36.54616375937776,hydro,Aggregated Plant -- operating,e_w92676944-735,way/92676944-735,45.444448508203415,-74.08197126212656,False
+e_w97782477-735,ep_hydro_dam_G100000600427,224.0,hydro,Chute-à-Caron hydroelectric plant_ -- operating,e_w97782477-735,way/97782477-735,48.4504,-71.2541,False
+e_w97782477-735,ep_hydro_dam_G100000600524,1145.0,hydro,Shipshaw hydroelectric plant_ -- operating,e_w97782477-735,way/97782477-735,48.4483,-71.2153,False
+e_w97782477-735,ep_hydro_dam_w97782477-735,55.0,hydro,Aggregated Plant -- operating,e_w97782477-735,way/97782477-735,48.54943532037695,-71.23813833391941,False
+e_w97782477-735,ep_hydro_w97782477-735__irena,69.11253279329873,hydro,Aggregated Plant -- operating,e_w97782477-735,way/97782477-735,48.19581988086201,-71.28569052026158,False
+e_w99457083-500,ep_hydro_dam_G100000600440,2730.0,hydro,Gordon M Shrum hydroelectric plant_ -- operating,e_w99457083-500,way/99457083-500,56.0147,-122.196,False
+e_w99457083-500,ep_hydro_w99457083-500__irena,132.49804390850107,hydro,Aggregated Plant -- operating,e_w99457083-500,way/99457083-500,56.37317857627103,-122.22108477324925,False
+elc_spv_044,ep_solar_pv_044,51.5,solar,Aggregated Plant -- operating,elc_spv_044,way/29999719-500,49.61504476163589,-98.04249237066003,False
+elc_spv_047,ep_solar_pv_047,5.1,solar,Aggregated Plant -- operating,elc_spv_047,CA57-240,52.38622714040703,-110.21932454578815,False
+elc_spv_048,ep_solar_048__irena,877.8331665965998,solar,Aggregated Plant - IRENA Gap - 48_Missing Solar Capacity -- operating,elc_spv_048,CA144-240,50.00474549041178,-110.76443844229141,False
+elc_spv_048,ep_solar_pv_048,852.4000000000001,solar,Aggregated Plant -- operating,elc_spv_048,CA144-240,50.46462492840902,-111.09585692584719,False
+elc_spv_049,ep_solar_pv_049,140.8,solar,Aggregated Plant -- operating,elc_spv_049,way/402099433-240,53.53464280010097,-116.96429473516137,False
+elc_spv_050,ep_solar_050__irena,631.0540154315053,solar,Aggregated Plant - IRENA Gap - 50_Missing Solar Capacity -- operating,elc_spv_050,way/159783135-500,49.20960333461163,-115.92405452994196,False
+elc_spv_050,ep_solar_pv_050,572.2,solar,Aggregated Plant -- operating,elc_spv_050,way/159783135-500,49.62857853454122,-116.01281575318855,False
+elc_spv_050,ep_solar_pv_G100000805202,465.0,solar,Travers Solar_-- -- operating,elc_spv_050,way/159783135-500,50.2887,-112.711,False
+elc_spv_050,ep_solar_pv_G100000810501,360.0,solar,Brooks (Solar Krafte) solar farm_-- -- construction,elc_spv_050,way/159783135-500,50.5531,-112.0302,False
+elc_spv_051,ep_solar_pv_051,21.0,solar,Aggregated Plant -- operating,elc_spv_051,way/273447830-240,50.30791377964463,-109.40821798739111,False
+elc_spv_052,ep_solar_052__irena,675.7128179718951,solar,Aggregated Plant - IRENA Gap - 52_Missing Solar Capacity -- operating,elc_spv_052,way/273447830-240,49.961031841381924,-110.10086427725537,False
+elc_spv_052,ep_solar_pv_052,10.0,solar,Aggregated Plant -- operating,elc_spv_052,way/273447830-240,50.24668380948479,-110.60417319320342,False
+elc_spv_059,ep_solar_pv_059,3.2,solar,Aggregated Plant -- operating,elc_spv_059,way/504215807-240,57.24939223513656,-111.13270248466745,False
+elc_spv_068,ep_solar_pv_068,1.2,solar,Aggregated Plant -- operating,elc_spv_068,CA191-500,48.920643173071156,-122.9849246561763,False
+elc_spv_070,ep_solar_pv_070,1.6,solar,Aggregated Plant -- operating,elc_spv_070,way/128099193-360,50.81494608897593,-122.60068681923791,False
+elc_spv_084,ep_solar_pv_084,40.0,solar,Aggregated Plant -- operating,elc_spv_084,way/163080106-500,48.67319231375234,-80.86900121489084,False
+elc_spv_085,ep_solar_pv_085,16.0,solar,Aggregated Plant -- operating,elc_spv_085,way/255866641-500,50.18874500425304,-82.13160399095435,False
+elc_spv_093,ep_solar_pv_093,10.0,solar,Aggregated Plant -- operating,elc_spv_093,CA200-500,48.366146688347946,-95.26742662631979,False
+elc_spv_094,ep_solar_pv_094,20.4,solar,Aggregated Plant -- operating,elc_spv_094,CA200-500,48.43498145853409,-95.69773795480953,False
+elc_spv_095,ep_solar_pv_095,801.9999999999999,solar,Aggregated Plant -- operating,elc_spv_095,CA444-345,42.650669756359854,-82.22982853425569,False
+elc_spv_096,ep_solar_pv_096,129.39999999999998,solar,Aggregated Plant -- operating,elc_spv_096,way/163080106-500,48.10209647681646,-81.00322243394156,False
+elc_spv_097,ep_solar_pv_097,42.099999999999994,solar,Aggregated Plant -- operating,elc_spv_097,way/163080106-500,48.19499613138771,-81.62881489833661,False
+elc_spv_100,ep_solar_pv_100,67.6,solar,Aggregated Plant -- operating,elc_spv_100,CA343-765,44.74658213690997,-74.77928123626806,False
+elc_spv_101,ep_solar_pv_101,886.4000000000001,solar,Aggregated Plant -- operating,elc_spv_101,CA390-500,44.23070424332176,-75.77972722600316,False
+elc_spv_105,ep_solar_pv_105,1.1,solar,Aggregated Plant -- operating,elc_spv_105,way/272219026-345,44.69164101098515,-64.04074426217593,False
+elc_spv_107,ep_solar_pv_107,35.7,solar,Aggregated Plant -- operating,elc_spv_107,way/117228972-345,45.88525062445759,-65.67263563251832,False
+elc_won_002,ep_windon_wind_002,1082.0,windon,Aggregated Plant -- operating,elc_won_002,way/113343685-500,50.273155574020144,-120.73881625230119,False
+elc_won_002,ep_windon_wind_G100000910028,206.0,windon,Windrise wind farm_-- -- operating,elc_won_002,way/113343685-500,49.4722,-113.4617,False
+elc_won_003,ep_windon_wind_003,447.99999999999994,windon,Aggregated Plant -- operating,elc_won_003,way/486389136-240,50.768807335468644,-111.78594161069198,False
+elc_won_003,ep_windon_wind_G100000910190,299.0,windon,Blackspring Ridge wind farm_-- -- operating,elc_won_003,way/486389136-240,50.2064,-112.914,False
+elc_won_003,ep_windon_wind_G100000920211,494.0,windon,Buffalo Plains wind farm_-- -- operating,elc_won_003,way/486389136-240,50.3646,-112.7201,False
+elc_won_004,ep_windon_wind_004,408.00000000000006,windon,Aggregated Plant -- operating,elc_won_004,way/1159197102-240,49.86842442430318,-110.09546981096189,False
+elc_won_004,ep_windon_wind_G100000909998,202.0,windon,Cypress (Alberta) wind farm_1 -- operating,elc_won_004,way/1159197102-240,49.8038,-110.3701,False
+elc_won_004,ep_windon_wind_G100000910013,279.0,windon,Forty Mile wind farm_Granlea -- construction,elc_won_004,way/1159197102-240,49.7307,-111.2945,False
+elc_won_005,ep_windon_wind_005,82.0,windon,Aggregated Plant -- operating,elc_won_005,way/268511255-240,52.734066627272256,-115.40461195625561,False
+elc_won_006,ep_m_windon_wind_006,151.0,windon,Aggregated Plant -- mothballed,elc_won_006,way/502683508-240,51.72531797355844,-110.79992795104346,False
+elc_won_006,ep_windon_wind_006,925.0,windon,Aggregated Plant -- operating,elc_won_006,way/502683508-240,52.12968332993,-111.17082803931744,False
+elc_won_006,ep_windon_wind_G100000910229,297.0,windon,Sharp Hills wind farm_-- -- operating,elc_won_006,way/502683508-240,51.6616,-110.6643,False
+elc_won_009,ep_windon_wind_009,99.0,windon,Aggregated Plant -- operating,elc_won_009,relation/12377895-287,53.38366767024733,-127.96447112402174,False
+elc_won_035,ep_windon_wind_035,612.0,windon,Aggregated Plant -- operating,elc_won_035,way/99457083-500,55.988417836760966,-122.55633132878842,False
+elc_won_036,ep_windon_wind_036,152.0,windon,Aggregated Plant -- operating,elc_won_036,CA18-500,54.364180646734845,-119.24017218943197,False
+elc_won_040,ep_windon_wind_040,24.0,windon,Aggregated Plant -- operating,elc_won_040,way/191476327-735,49.88158401417211,-72.45399539977166,False
+elc_won_043,ep_windon_wind_043,2625.0,windon,Aggregated Plant -- operating,elc_won_043,CA444-345,42.597531630315736,-82.68616445045555,False
+elc_won_043,ep_windon_wind_G100000910092,230.0,windon,Niagara Region wind farm_-- -- operating,elc_won_043,CA444-345,43.0834,-79.5774,False
+elc_won_043,ep_windon_wind_G100000910159,270.0,windon,South Kent wind farm_-- -- operating,elc_won_043,CA444-345,42.2429,-82.4248,False
+elc_won_044,ep_windon_wind_044,419.0,windon,Aggregated Plant -- operating,elc_won_044,way/113855788-500,46.06194372277382,-80.94483920563968,False
+elc_won_045,ep_windon_wind_045,250.0,windon,Aggregated Plant -- operating,elc_won_045,CA295-315,45.43595457792445,-72.99854504016946,False
+elc_won_046,ep_windon_wind_046,451.0,windon,Aggregated Plant -- operating,elc_won_046,way/32963410-500,44.17753564158854,-75.84807967499327,False
+elc_won_047,ep_windon_wind_047,852.0,windon,Aggregated Plant -- operating,elc_won_047,way/117228972-345,45.45605900261059,-66.0352313698826,False
+elc_won_048,ep_windon_wind_048,62.0,windon,Aggregated Plant -- operating,elc_won_048,way/74321375-345,45.87792666965785,-66.87051248376328,False
+elc_won_050,ep_windon_wind_050,1854.0,windon,Aggregated Plant -- operating,elc_won_050,way/252897103-315,49.02100460106429,-69.45062461538389,False
+elc_won_051,ep_windon_wind_051,1088.0,windon,Aggregated Plant -- operating,elc_won_051,way/201247095-735,47.66195363840012,-70.36768156549313,False
+elc_won_051,ep_windon_wind_G100000909958,200.0,windon,Rivière-Du-Moulin wind farm_2 -- operating,elc_won_051,way/201247095-735,47.8952,-71.0593,False
+elc_won_051,ep_windon_wind_G100000910073,224.0,windon,Nicolas-Riou wind farm_-- -- operating,elc_won_051,way/201247095-735,48.1901,-68.7697,False
+elc_won_051,ep_windon_wind_G100000910161,272.0,windon,Seigneurie De Beaupré wind farm_1 -- operating,elc_won_051,way/201247095-735,47.3325,-70.8281,False
+elc_won_052,ep_windon_wind_052,54.0,windon,Aggregated Plant -- operating,elc_won_052,way/269811579-345,46.23791495129208,-60.85450083135228,False
+elc_won_054,ep_windon_wind_054,217.0,windon,Aggregated Plant -- operating,elc_won_054,CA229-345,47.7291630054267,-66.06506676320777,False
+elc_won_057,ep_windon_057__irena,17.999029162739525,windon,Aggregated Plant -- operating,elc_won_057,way/1054532447-315,53.98780525836805,-72.62289665123242,False
+elc_won_058,ep_windon_058__irena,14.598832052037697,windon,Aggregated Plant -- operating,elc_won_058,way/321501597-315,53.559380132832295,-78.6243592936755,False
+elc_won_082,ep_windon_wind_G100000909907,200.0,windon,Bekevar wind farm_-- -- operating,elc_won_082,way/273447830-240,50.0079,-102.5657,False
+elc_won_084,ep_windon_wind_084,371.0,windon,Aggregated Plant -- operating,elc_won_084,way/273447830-240,50.46578237342287,-110.71549768760671,False
+elc_won_084,ep_windon_wind_G100000909926,200.0,windon,Golden South wind farm_-- -- operating,elc_won_084,way/273447830-240,49.628,-105.989,False
+elc_won_089,ep_windon_wind_089,99.0,windon,Aggregated Plant -- operating,elc_won_089,CA200-500,48.83297082088447,-95.86869129254744,False
+elc_won_096,ep_windon_wind_096,332.0,windon,Aggregated Plant -- operating,elc_won_096,way/163080106-500,48.657674455983575,-81.6764665162121,False
+elc_won_096,ep_windon_wind_G100000910217,300.0,windon,Henvey Inlet wind farm_-- -- operating,elc_won_096,way/163080106-500,45.8711,-80.7111,False
+elc_won_102,ep_windon_wind_102,258.0,windon,Aggregated Plant -- operating,elc_won_102,way/29999719-500,50.118199776089085,-98.13887164181176,False
+elc_won_105,ep_windon_wind_105,26.0,windon,Aggregated Plant -- operating,elc_won_105,way/29999719-500,50.446349762003635,-97.98961438732962,False
+elc_won_107,ep_windon_107__irena,14.402138785221597,windon,Aggregated Plant -- operating,elc_won_107,way/609824151-240,55.51533240157321,-97.92727276506835,False

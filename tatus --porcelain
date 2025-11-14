@@ -1,0 +1,108 @@
+[1mdiff --git a/2_ts_design/README.md b/2_ts_design/README.md[m
+[1mindex 8689adc..2939952 100644[m
+[1m--- a/2_ts_design/README.md[m
+[1m+++ b/2_ts_design/README.md[m
+[36m@@ -8,6 +8,7 @@[m [mThe `2_ts_design` module contains the core VerveStacks timeslice processor that[m
+ 2_ts_design/[m
+ ├── scripts/[m
+ │   ├── RE_Shapes_Analysis_v5.py          # Main timeslice processor[m
+[32m+[m[32m│   ├── 8760_supply_demand_constructor.py # 8760-hour supply/demand profiles[m
+ │   └── enhanced_lcoe_calculator.py       # LCOE calculation engine[m
+ ├── outputs/                              # ISO-organized outputs[m
+ │   ├── USA/                              # United States outputs[m
+[36m@@ -17,6 +18,8 @@[m [mThe `2_ts_design` module contains the core VerveStacks timeslice processor that[m
+ ├── config/[m
+ │   ├── default_settings.json             # Default parameters[m
+ │   └── iso_settings.json                 # ISO-specific overrides[m
+[32m+[m[32m├── ember_utils.py                        # EMBER electricity generation utilities[m
+[32m+[m[32m├── README_EMBER.md                       # EMBER data access documentation[m
+ └── README.md                             # This file[m
+ ```[m
+ [m
+[36m@@ -55,6 +58,33 @@[m [mresults = processor.run_full_pipeline([m
+ )[m
+ ```[m
+ [m
+[32m+[m[32m### EMBER Electricity Generation Data Access[m
+[32m+[m[32m```python[m
+[32m+[m[32mfrom ember_utils import get_total_electricity_generation, get_generation_by_fuel[m
+[32m+[m
+[32m+[m[32m# Get total electricity generation for Germany in 2022[m
+[32m+[m[32mgermany_total = get_total_electricity_generation('DEU', 2022)[m
+[32m+[m[32m# Returns: 566.23 TWh[m
+[32m+[m
+[32m+[m[32m# Get generation breakdown by fuel for Germany in 2022[m
+[32m+[m[32mgermany_fuels = get_generation_by_fuel('DEU', 2022)[m
+[32m+[m[32m# Returns DataFrame with fuel types and values[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32m### 8760-Hour Supply and Demand Profiles[m
+[32m+[m[32m```python[m
+[32m+[m[32mfrom scripts.8760_supply_demand_constructor import Supply8760Constructor[m
+[32m+[m
+[32m+[m[32m# Initialize constructor[m
+[32m+[m[32mconstructor = Supply8760Constructor()[m
+[32m+[m
+[32m+[m[32m# Get total generation from EMBER data[m
+[32m+[m[32mtotal_gen = constructor.get_total_electricity_generation('DEU', 2022)[m
+[32m+[m
+[32m+[m[32m# Build complete 8760-hour profiles[m
+[32m+[m[32mprofiles = constructor.construct_8760_profiles('DEU')[m
+[32m+[m[32m```[m
+[32m+[m
+ ### Custom Configuration[m
+ ```python[m
+ # Override specific parameters[m
+[36m@@ -93,6 +123,8 @@[m [mThe module requires data files in the `../data/` directory:[m
+ - `timeslices/re_potentials.xlsx` - Renewable resource potential[m
+ - `hourly_profiles/sarah_era5_iso_2015.csv` - Renewable generation shapes[m
+ - `timeslices/monthly_full_release_long_format.csv` - Hydro patterns[m
+[32m+[m[32m- `ember/yearly_full_release_long_format.csv` - EMBER electricity generation data[m
+[32m+[m[32m- `ember/monthly_full_release_long_format.csv` - EMBER monthly hydro patterns[m
+ [m
+ ## Key Features[m
+ [m
+[36m@@ -106,6 +138,12 @@[m [mThe module requires data files in the `../data/` directory:[m
+ - **Historical deployment ratios**: Solar/wind mix based on recent IRENA data[m
+ - **Comprehensive validation**: Statistical analysis of timeslice adequacy[m
+ [m
+[32m+[m[32m### EMBER Data Integration[m
+[32m+[m[32m- **Electricity generation data**: Access total generation and fuel breakdown by ISO and year[m
+[32m+[m[32m- **8760-hour profiles**: Complete hourly supply and demand profiles for any ISO[m
+[32m+[m[32m- **Baseline generation**: Nuclear and hydro profiles from actual EMBER data[m
+[32m+[m[32m- **Renewable integration**: Solar and wind from REZoning with hourly shapes[m
+[32m+[m
+ ### Flexible Configuration[m
+ - **Default parameters**: Sensible defaults for all ISOs[m
+ - **ISO-specific overrides**: Customized settings for complex regions[m
+[36m@@ -121,7 +159,27 @@[m [mThe module requires data files in the `../data/` directory:[m
+ - Typical processing time: 5-15 minutes per ISO[m
+ - Varies with system complexity and renewable potential data size[m
+ [m
+[32m+[m[32m### EMBER Data Access[m
+[32m+[m[32m- **Data coverage**: 210+ countries with electricity generation data (2000-2023)[m
+[32m+[m[32m- **Data quality**: Official national statistics and international databases[m
+[32m+[m[32m- **Performance**: Cached data loading for efficient repeated access[m
+[32m+[m
+ ### Customization[m
+ - Modify `config/iso_settings.json` to add new ISOs or adjust parameters[m
+ - Update `config/default_settings.json` to change global defaults[m
+[31m-- Add custom scenarios by modifying the scenario_types configuration[m
+\ No newline at end of file[m
+[32m+[m[32m- Add custom scenarios by modifying the scenario_types configuration[m
+[32m+[m
+[32m+[m[32m## Additional Utilities[m
+[32m+[m
+[32m+[m[32m### EMBER Utilities (`ember_utils.py`)[m
+[32m+[m[32mStandalone functions for accessing EMBER electricity generation data:[m
+[32m+[m[32m- `get_total_electricity_generation(iso_code, year)` - Get total generation in TWh[m
+[32m+[m[32m- `get_generation_by_fuel(iso_code, year)` - Get fuel breakdown by type[m
+[32m+[m
+[32m+[m[32m### 8760 Supply Constructor (`scripts/8760_supply_demand_constructor.py`)[m
+[32m+[m[32mComplete system for building 8760-hour supply and demand profiles:[m
+[32m+[m[32m- **Baseline generation**: Nuclear (flat) + Hydro (demand-shaped) from EMBER data[m
+[32m+[m[32m- **Renewable integration**: Solar and wind from REZoning with hourly shapes[m
+[32m+[m[32m- **Visualization**: Quarterly charts and supply curve analysis[m
+[32m+[m
+[32m+[m[32mFor detailed documentation on EMBER data access, see [README_EMBER.md](README_EMBER.md).[m
+\ No newline at end of file[m

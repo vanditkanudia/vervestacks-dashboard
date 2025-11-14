@@ -1,0 +1,65 @@
+VERVESTACKS MODEL COMPONENTS
+
+*Demand
+- electricity demand
+-- base year generation/import/export from ember = base year demand
+-- growth based on median values from AR6 scenarios for 5 climate categories (iso - R10) mapping
+-- sector shares split from AR6 (to identify EV load)
+- hydrogen demand
+-- 0 in base year
+-- future projected as share of total electricity demand in AR6 scenarios
+- electricity demand profile
+-- hourly profiles by ISO from era5_combined_data_2030 - broken into industry, residential, and commercial by assuming contributions to variations and allocating the hourly variation to each sector.
+
+*Generation
+- existing coal/gas/oil/hydro/nuclear/pumped hydro/solar/wind plants from GEM - flexible aggregation
+-- missing capacity added from EMBER/IRENA
+--- existing solar/wind units get appropriate utililzation profiles from Atlite
+-- Eff and cost assumptions based on region/size/vintage of units
+--- Eff calibration based on total emissions
+- CCS retrofits for each unit based on EPA table 6 logic of costs and efficiency/capacity penalties
+-- CO2 transport and storage modeled with a flat $30/t costs right now
+- new conventional plants from WEO pg dataset. Costs for new solar/wind/hydro too.
+- wind onshore/offshore/solar 
+-- GW potential by 50X50 km grid from REZoning.
+-- potentials reduced by about 40% for solar and 30% for wind based on most conservative landuse overlap.
+-- Solar/wind profile for each grid_cell from Atlite
+- New hydro potential from EIA
+-- P10/P50/P90 monthly availability profiles from synthetic data based on historical numbers
+- storage batteries from NREL
+- Hydrogen electrolysers from NREL
+
+*Model configuration
+- Regions
+-- create demand, generation (voronoi clusters population and GEM units) and renewable potential clusters. RE clusters based on capacity and distance from demand clusters.
+-- Trade links from gen clusters to closest demand clusters and from RE clusters to closest demand/generation clusters.
+-- estimate NTC across clusters with OSM data and compute distances for eff/cost of transmission lines.
+- Existing power plants at unit level - aggregated below a threshold - 100MW by default.
+- solar/wind potential aggregated into 15-30 cost-CF classes
+- Time periods - 2022, 2025-30-35-40-45-50 by default, but flexible.
+- Timeslices
+-- identify stress periods
+--- assume current demand profile
+--- existing nuclear capacity (flat dispatch) hydro capacity (load followign within hours each month)
+--- take a mix of solar and wind based on relative LCOEs (REZoning data) to meet the annual TWh.
+--- distributing the wind/solar by hour leads to shortages and surpluses
+--- compute "coverage" for each hour and rank days/weeks on scarcity/surplus/voltality
+--- pick combinations of days and weeks from these lists to compose hybrid ts definitions.
+--- ready scenarios for between 1 to 600 timeslices.
+
+**Future plans - moving towards full ESOM
+* More supply regions (currently we have existing generators and renewable supply)
+- Coal supply regions
+-- import/export terminals and mines
+- Gas supply regions
+-- LNG terminals and pipelines
+* Demand regions with disaggregated and elec+non-elec consumption
+- buildings regions (OSM data - cities by size)
+-- buildings services
+-- transportation services
+- inter-building region transportation
+- Industrial regions
+-- steel regions (GEM)
+-- cement regions
+-- petchem regions
+-- paper regions

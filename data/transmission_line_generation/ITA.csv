@@ -1,0 +1,469 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_IT10-380,ep_hydro_IT10-380__irena,199.76152334984016,hydro,Aggregated Plant - IRENA Gap - IT10-380_Missing Hydro Capacity -- operating,e_IT10-380,IT10-380,46.33499449834682,9.332379339423053,False
+e_IT10-380,ep_hydro_dam_G100001027305,56.0,hydro,Ardenno hydroelectric plant_ -- operating,e_IT10-380,IT10-380,46.1556,9.6439,False
+e_IT10-380,ep_hydro_dam_G100001027307,60.0,hydro,Chiavenna hydroelectric plant_ -- operating,e_IT10-380,IT10-380,46.3128,9.3963,False
+e_IT10-380,ep_hydro_ror_G100000602239,280.0,hydro,Mese hydroelectric plant_ -- operating,e_IT10-380,IT10-380,46.3051,9.3783,False
+e_IT10-380,ep_hydro_ror_G100001027308,42.0,hydro,Monastero hydroelectric plant_ -- operating,e_IT10-380,IT10-380,46.1544,9.4408,False
+e_IT116-380,ep_hydro_IT116-380__irena,29.64497492634614,hydro,Aggregated Plant -- operating,e_IT116-380,IT116-380,44.38108346863572,7.535801752723314,False
+e_IT116-380,ep_hydro_dam_G100001030550,65.0,hydro,Andonno hydroelectric plant_ -- operating,e_IT116-380,IT116-380,44.2946,7.4463,False
+e_IT128-380,ep_hydro_IT128-380__irena,30.557128001002944,hydro,Aggregated Plant -- operating,e_IT128-380,IT128-380,43.89524827594932,10.54458794752839,False
+e_IT128-380,ep_hydro_dam_G100001027309,67.0,hydro,Torrite hydroelectric plant_ -- operating,e_IT128-380,IT128-380,44.1264,10.3934,False
+e_IT134-380,ep_geothermal_G100000700012,40.0,geothermal,Bagnore geothermal power plant_4 -- operating,e_IT134-380,IT134-380,42.8416,11.5588,False
+e_IT134-380,ep_geothermal_IT134-380,79.0,geothermal,Aggregated Plant -- operating,e_IT134-380,IT134-380,43.22380289313499,11.308098146424308,False
+e_IT138-380,ep_gas_IT138-380__ember,80.2684041640237,gas,Aggregated Plant -- operating,e_IT138-380,IT138-380,42.89017884161784,12.777417829885406,False
+e_IT138-380,ep_gas_combined_cycle_G100000400415,365.0,gas,Pietrafitta power station_1 -- operating,e_IT138-380,IT138-380,42.9954,12.1995,False
+e_IT138-380,ep_windon_wind_380,312.0,windon,Aggregated Plant -- operating,e_IT138-380,IT138-380,42.53386277651376,12.969668243284131,False
+e_IT140-380,ep_gas_IT140-380__ember,58.93680086563932,gas,Aggregated Plant -- operating,e_IT140-380,IT140-380,42.679677926082235,14.190984989833265,False
+e_IT140-380,ep_gas_combined_cycle_IT140-380,225.99999999999997,gas,Aggregated Plant -- operating,e_IT140-380,IT140-380,42.257960592195325,14.476297402402551,False
+e_IT140-380,ep_gas_internal_combustion_IT140-380,42.0,gas,Aggregated Plant -- operating,e_IT140-380,IT140-380,41.96849973491829,14.076340424201442,False
+e_IT140-380,ep_windon_wind_380,156.0,windon,Aggregated Plant -- operating,e_IT140-380,IT140-380,42.39268875711295,13.768282370143158,False
+e_IT143-380,ep_gas_IT143-380__ember,84.66667288534008,gas,Aggregated Plant -- operating,e_IT143-380,IT143-380,41.07127791750188,14.77220873022571,False
+e_IT21-380,ep_hydro_IT21-380__irena,554.1329928540086,hydro,Aggregated Plant - IRENA Gap - IT21-380_Missing Hydro Capacity -- operating,e_IT21-380,IT21-380,45.95173091963021,8.857413967558651,False
+e_IT21-380,ep_hydro_dam_G100001027306,68.0,hydro,Cadarese hydroelectric plant_ -- operating,e_IT21-380,IT21-380,46.2921,8.3038,False
+e_IT21-380,ep_hydro_dam_G100001030521,54.0,hydro,Verampio hydroelectric plant_ -- operating,e_IT21-380,IT21-380,46.2424,8.3237,False
+e_IT21-380,ep_hydro_ps_G100000602249,1000.0,hydro,Roncovalgrande hydroelectric plant_ -- operating,e_IT21-380,IT21-380,46.0694,8.7324,False
+e_IT21-380,ep_hydro_ror_G100001030603,45.0,hydro,Crevola Diveria hydroelectric plant_ -- operating,e_IT21-380,IT21-380,46.1595,8.3073,False
+e_IT21-380,ep_hydro_ror_G100001030606,48.0,hydro,Pieve Vergonte II hydroelectric plant_ -- operating,e_IT21-380,IT21-380,46.0171,8.2737,False
+e_IT30-500,ep_gas_IT30-500__ember,12.09523898362001,gas,Aggregated Plant -- operating,e_IT30-500,IT30-500,46.25753910988981,11.337572891001845,False
+e_IT30-500,ep_gas_combined_cycle_IT30-500,55.0,gas,Aggregated Plant -- operating,e_IT30-500,IT30-500,45.92272396456169,11.535473136933447,False
+e_IT30-500,ep_hydro_IT30-500__irena,600.1967231241773,hydro,Aggregated Plant - IRENA Gap - IT30-500_Missing Hydro Capacity -- operating,e_IT30-500,IT30-500,45.819295151632815,11.069260270108556,False
+e_IT30-500,ep_hydro_dam_G100000602222,90.0,hydro,Bressanone hydroelectric plant_ -- operating,e_IT30-500,IT30-500,46.717,11.6677,False
+e_IT30-500,ep_hydro_dam_G100000602237,132.0,hydro,Lana hydroelectric plant_ -- operating,e_IT30-500,IT30-500,46.6127,11.1452,False
+e_IT30-500,ep_hydro_dam_G100000602259,90.0,hydro,St Anton hydroelectric plant_ -- operating,e_IT30-500,IT30-500,46.5146,11.3581,False
+e_IT30-500,ep_hydro_dam_G100001030608,63.0,hydro,Mezzocorona hydroelectric plant_ -- operating,e_IT30-500,IT30-500,46.2195,11.1055,False
+e_IT30-500,ep_hydro_ps_G100000602248,117.0,hydro,Riva Del Garda hydroelectric plant_ -- operating,e_IT30-500,IT30-500,45.8833,10.8382,False
+e_IT30-500,ep_hydro_ps_G100000602254,377.0,hydro,Santa Massenza hydroelectric plant_ -- operating,e_IT30-500,IT30-500,46.0659,10.9805,False
+e_IT30-500,ep_hydro_ror_G100000602224,121.0,hydro,Cardano hydroelectric plant_ -- operating,e_IT30-500,IT30-500,46.4949,11.3959,False
+e_IT30-500,ep_hydro_ror_G100000602260,161.0,hydro,Taio-Santa Giustina hydroelectric plant_ -- operating,e_IT30-500,IT30-500,46.393,11.0122,False
+e_IT30-500,ep_hydro_ror_G100000602263,110.0,hydro,Torbole hydroelectric plant_ -- operating,e_IT30-500,IT30-500,45.8816,10.8815,False
+e_IT30-500,ep_hydro_ror_G100001052157,55.0,hydro,Ponte Gardena hydroelectric plant_ -- operating,e_IT30-500,IT30-500,46.6043,11.5319,False
+e_IT31-380,ep_hydro_IT31-380__irena,43.327271046198206,hydro,Aggregated Plant - IRENA Gap - IT31-380_Missing Hydro Capacity -- operating,e_IT31-380,IT31-380,46.10568007797873,10.393355136948461,False
+e_IT31-380,ep_hydro_dam_G100000602221,95.0,hydro,Boazzo hydroelectric plant_ -- operating,e_IT31-380,IT31-380,45.9956,10.523,False
+e_IT36-380,ep_hydro_IT36-380__irena,152.78564000501473,hydro,Aggregated Plant - IRENA Gap - IT36-380_Missing Hydro Capacity -- operating,e_IT36-380,IT36-380,45.84906128315723,10.437683729190177,False
+e_IT36-380,ep_hydro_ror_G100000602227,335.0,hydro,Cimego hydroelectric plant_ -- operating,e_IT36-380,IT36-380,45.9228,10.6281,False
+e_IT40-500,ep_hydro_IT40-500__irena,25.08420955306212,hydro,Aggregated Plant -- operating,e_IT40-500,IT40-500,46.049936796070455,11.47334729316336,False
+e_IT40-500,ep_hydro_dam_G100001052163,55.0,hydro,Val Noana hydroelectric plant_ -- operating,e_IT40-500,IT40-500,46.1309,11.7698,False
+e_IT53-380,ep_hydro_IT53-380__irena,62.482485613991095,hydro,Aggregated Plant - IRENA Gap - IT53-380_Missing Hydro Capacity -- operating,e_IT53-380,IT53-380,45.70393441661368,10.283592868836205,False
+e_IT53-380,ep_hydro_ps_G100000602233,137.0,hydro,Gargnano hydroelectric plant_ -- operating,e_IT53-380,IT53-380,45.7039,10.6863,False
+e_IT59-400,ep_gas_IT59-400__ember,76.96970262303643,gas,Aggregated Plant -- operating,e_IT59-400,IT59-400,45.51092190487412,13.969931016053215,False
+e_IT59-400,ep_gas_combined_cycle_G100000412788,230.0,gas,Servola power station_1 -- operating,e_IT59-400,IT59-400,45.61949,13.78295,False
+e_IT7-380,ep_hydro_IT7-380__irena,532.2413190622452,hydro,Aggregated Plant - IRENA Gap - IT7-380_Missing Hydro Capacity -- operating,e_IT7-380,IT7-380,46.27920973269153,9.945660480639514,False
+e_IT7-380,ep_hydro_dam_G100000602255,101.0,hydro,Seled Glorenza hydroelectric plant_ -- operating,e_IT7-380,IT7-380,46.6738,10.5757,False
+e_IT7-380,ep_hydro_ps_G100000602266,327.0,hydro,Venina hydroelectric plant_ -- operating,e_IT7-380,IT7-380,46.1614,9.9252,False
+e_IT7-380,ep_hydro_ror_G100000602238,350.0,hydro,Lanzada hydroelectric plant_ -- operating,e_IT7-380,IT7-380,46.2685,9.876,False
+e_IT7-380,ep_hydro_ror_G100000602245,245.0,hydro,Premadio hydroelectric plant_ -- operating,e_IT7-380,IT7-380,46.4858,10.3516,False
+e_IT7-380,ep_hydro_ror_G100000602257,144.0,hydro,Sondrio hydroelectric plant_ -- operating,e_IT7-380,IT7-380,46.173,9.8876,False
+e_IT71-380,ep_hydro_IT71-380__irena,57.92172024070707,hydro,Aggregated Plant - IRENA Gap - IT71-380_Missing Hydro Capacity -- operating,e_IT71-380,IT71-380,45.48718379627321,7.586481512670785,False
+e_IT71-380,ep_hydro_ror_G100000602218,127.0,hydro,Avise hydroelectric plant_ -- operating,e_IT71-380,IT71-380,45.7056,7.1452,False
+e_IT71-400,ep_hydro_IT71-400__irena,59.28994985269228,hydro,Aggregated Plant - IRENA Gap - IT71-400_Missing Hydro Capacity -- operating,e_IT71-400,IT71-400,45.480742542096074,7.2779924028183975,False
+e_IT71-400,ep_hydro_dam_G100000602264,130.0,hydro,Valpelline hydroelectric plant_ -- operating,e_IT71-400,IT71-400,45.8257,7.3324,False
+e_IT72-380,ep_hydro_IT72-380__irena,98.96860860026327,hydro,Aggregated Plant - IRENA Gap - IT72-380_Missing Hydro Capacity -- operating,e_IT72-380,IT72-380,45.438103499889785,7.4078913390545305,False
+e_IT72-380,ep_hydro_dam_G100000602250,135.0,hydro,Rosone Ceresole hydroelectric plant_ -- operating,e_IT72-380,IT72-380,45.4361,7.4198,False
+e_IT72-380,ep_hydro_dam_G100001052162,82.0,hydro,Rosone Eugio hydroelectric plant_ -- operating,e_IT72-380,IT72-380,45.4333,7.4174,False
+e_IT72-400,ep_hydro_IT72-400__irena,43.327271046198206,hydro,Aggregated Plant - IRENA Gap - IT72-400_Missing Hydro Capacity -- operating,e_IT72-400,IT72-400,45.51881872651699,7.4805216496656195,False
+e_IT72-400,ep_hydro_dam_G100001030614,45.0,hydro,Pont-Saint-Martin hydroelectric plant_ -- operating,e_IT72-400,IT72-400,45.5998,7.8019,False
+e_IT72-400,ep_hydro_ror_G100001030613,50.0,hydro,Montjovet hydroelectric plant_ -- operating,e_IT72-400,IT72-400,45.7201,7.6673,False
+e_IT93-380,ep_hydro_IT93-380__irena,68.41148059926032,hydro,Aggregated Plant - IRENA Gap - IT93-380_Missing Hydro Capacity -- operating,e_IT93-380,IT93-380,45.338777766090374,7.044973897457524,False
+e_IT93-380,ep_hydro_ps_G100000602244,150.0,hydro,Pont Ventoux hydroelectric plant_ -- operating,e_IT93-380,IT93-380,45.1506,7.0176,False
+e_r17467354-380,ep_gas_internal_combustion_r17467354-380,24.6,gas,Aggregated Plant -- operating,e_r17467354-380,relation/17467354-380,41.80519456084126,12.170148145761557,False
+e_r4816679-380,ep_geothermal_G100000700207,40.0,geothermal,Nuova San Martino geothermal power plant_-- -- operating,e_r4816679-380,relation/4816679-380,43.1452,10.8325,False
+e_r4816679-380,ep_geothermal_G100000700208,60.0,geothermal,Nuova Serrazzano geothermal power plant_-- -- operating,e_r4816679-380,relation/4816679-380,43.204,10.8003,False
+e_r4816679-380,ep_geothermal_r4816679-380,152.0,geothermal,Aggregated Plant -- operating,e_r4816679-380,relation/4816679-380,43.232784112275574,10.694482101097519,False
+e_w100113593-380,ep_gas_combined_cycle_G100000412803,180.0,gas,Piombino Steel Plant power station_CC -- operating,e_w100113593-380,way/100113593-380,42.9385,10.5444,False
+e_w100113593-380,ep_gas_combined_cycle_w100113593-380,60.0,gas,Aggregated Plant -- operating,e_w100113593-380,way/100113593-380,43.408432936316075,10.624324859343968,False
+e_w100113593-380,ep_gas_internal_combustion_w100113593-380,58.0,gas,Aggregated Plant -- operating,e_w100113593-380,way/100113593-380,43.177535624474594,10.996845986839187,False
+e_w100113593-380,ep_gas_w100113593-380__ember,65.53420394761388,gas,Aggregated Plant -- operating,e_w100113593-380,way/100113593-380,42.628961594830635,10.910374616936474,False
+e_w100407576-380,ep_gas_combined_cycle_G100000400349,239.0,gas,Azotati power station_1 -- operating,e_w100407576-380,way/100407576-380,45.4511,12.2239,False
+e_w100407576-380,ep_gas_combined_cycle_G100000400395,780.0,gas,"Marghera Levante power station_Unit 1, timepoint 1 -- operating",e_w100407576-380,way/100407576-380,45.4458,12.2552,False
+e_w100407576-380,ep_gas_combined_cycle_G100000400396,766.0,gas,Marghera Levante power station_Unit 3 & 4 -- operating,e_w100407576-380,way/100407576-380,45.4458,12.2552,False
+e_w100407576-380,ep_gas_w100407576-380__ember,617.7588332524904,gas,Aggregated Plant - EMBER Gap - way/100407576-380_Missing Gas Capacity -- operating,e_w100407576-380,way/100407576-380,45.696553319652615,12.203976756445682,False
+e_w100407576-380,ep_oil_combined_cycle_w100407576-380,33.0,oil,Aggregated Plant -- operating,e_w100407576-380,way/100407576-380,45.29313716158226,12.479073170254935,False
+e_w100407576-380,ep_oil_steam_turbine_w100407576-380,81.0,oil,Aggregated Plant -- operating,e_w100407576-380,way/100407576-380,45.35584204149273,11.985711661707473,False
+e_w100952845-380,ep_gas_gas_turbine_w100952845-380,80.0,gas,Aggregated Plant -- operating,e_w100952845-380,way/100952845-380,45.0649420168502,8.862691070403617,False
+e_w100952845-380,ep_gas_w100952845-380__ember,17.59307488526547,gas,Aggregated Plant -- operating,e_w100952845-380,way/100952845-380,44.74277346001161,9.24306993992151,False
+e_w103381531-380,ep_gas_combined_cycle_G100000412786,564.0,gas,Taranto CHP power station_CC3 -- operating,e_w103381531-380,way/103381531-380,40.463793,17.246516,False
+e_w103381531-380,ep_gas_combined_cycle_w103381531-380,48.5,gas,Aggregated Plant -- operating,e_w103381531-380,way/103381531-380,40.40973939151605,17.561965351677443,False
+e_w103381531-380,ep_gas_steam_turbine_G100000412783,160.0,gas,Taranto CHP power station_CET2-3 -- operating,e_w103381531-380,way/103381531-380,40.463793,17.246516,False
+e_w103381531-380,ep_gas_steam_turbine_G100000412784,160.0,gas,Taranto CHP power station_CET2-2 -- operating,e_w103381531-380,way/103381531-380,40.463793,17.246516,False
+e_w103381531-380,ep_gas_steam_turbine_G100000412785,160.0,gas,Taranto CHP power station_CET2-1 -- operating,e_w103381531-380,way/103381531-380,40.463793,17.246516,False
+e_w103381531-380,ep_gas_w103381531-380__ember,248.39222603634187,gas,Aggregated Plant - EMBER Gap - way/103381531-380_Missing Gas Capacity -- operating,e_w103381531-380,way/103381531-380,40.35348300775422,17.11692169054988,False
+e_w103653592-380,ep_gas_combined_cycle_G100000400475,800.0,gas,Vado Ligure power station_VL5 -- operating,e_w103653592-380,way/103653592-380,44.2755,8.4305,False
+e_w103653592-380,ep_gas_w103653592-380__ember,175.93074885265472,gas,Aggregated Plant - EMBER Gap - way/103653592-380_Missing Gas Capacity -- operating,e_w103653592-380,way/103653592-380,44.63478337284591,8.467024953752558,False
+e_w103974940-380,ep_gas_combined_cycle_G100000400391,380.0,gas,Leini power station_1 -- operating,e_w103974940-380,way/103974940-380,45.163,7.7505,False
+e_w103974940-380,ep_gas_combined_cycle_G100000400468,395.0,gas,Torino Nord power station_1 -- operating,e_w103974940-380,way/103974940-380,45.10383,7.61308,False
+e_w103974940-380,ep_gas_w103974940-380__ember,170.43291295100926,gas,Aggregated Plant - EMBER Gap - way/103974940-380_Missing Gas Capacity -- operating,e_w103974940-380,way/103974940-380,45.2634772945659,7.794769364548118,False
+e_w104359058-380,ep_hydro_ps_G100000602229,1064.0,hydro,Entracque Chro hydroelectric plant_ -- operating,e_w104359058-380,way/104359058-380,44.2299,7.3908,False
+e_w104359058-380,ep_hydro_ps_G100000602230,125.0,hydro,Entracque Rovina hydroelectric plant_ -- operating,e_w104359058-380,way/104359058-380,44.2299,7.3908,False
+e_w104359058-380,ep_hydro_ror_G100001030518,60.0,hydro,Vinadio hydroelectric plant_ -- operating,e_w104359058-380,way/104359058-380,44.3047,7.2001,False
+e_w104359058-380,ep_hydro_w104359058-380__irena,569.6395951231743,hydro,Aggregated Plant - IRENA Gap - way/104359058-380_Missing Hydro Capacity -- operating,e_w104359058-380,way/104359058-380,44.49824926095528,7.375100550742284,False
+e_w105581403-380,ep_gas_combined_cycle_G100000400367,753.0,gas,Chivasso power station_1 -- operating,e_w105581403-380,way/105581403-380,45.1856,7.9016,False
+e_w105581403-380,ep_gas_combined_cycle_G100000400368,370.0,gas,Chivasso power station_2 -- operating,e_w105581403-380,way/105581403-380,45.1856,7.9016,False
+e_w105581403-380,ep_gas_w105581403-380__ember,246.96278870191406,gas,Aggregated Plant - EMBER Gap - way/105581403-380_Missing Gas Capacity -- operating,e_w105581403-380,way/105581403-380,45.13927692394424,8.017643467304891,False
+e_w105757794-380,ep_gas_combined_cycle_G100000400387,345.0,gas,La Spezia power station_SP1 -- operating,e_w105757794-380,way/105757794-380,44.112151,9.8842,False
+e_w105757794-380,ep_gas_combined_cycle_G100000400388,337.0,gas,La Spezia power station_SP2 -- operating,e_w105757794-380,way/105757794-380,44.112151,9.8842,False
+e_w105757794-380,ep_gas_w105757794-380__ember,149.98096339688811,gas,Aggregated Plant -- operating,e_w105757794-380,way/105757794-380,44.37681778440866,9.90136287428525,False
+e_w107438024-380,ep_gas_combined_cycle_G100000400383,381.0,gas,La Casella power station_1 -- operating,e_w107438024-380,way/107438024-380,45.0904,9.4805,False
+e_w107438024-380,ep_gas_combined_cycle_G100000400384,381.0,gas,La Casella power station_2 -- operating,e_w107438024-380,way/107438024-380,45.0904,9.4805,False
+e_w107438024-380,ep_gas_combined_cycle_G100000400385,381.0,gas,La Casella power station_3 -- operating,e_w107438024-380,way/107438024-380,45.0904,9.4805,False
+e_w107438024-380,ep_gas_combined_cycle_G100000400386,381.0,gas,La Casella power station_4 -- operating,e_w107438024-380,way/107438024-380,45.0904,9.4805,False
+e_w107438024-380,ep_gas_w107438024-380__ember,367.6952651020484,gas,Aggregated Plant - EMBER Gap - way/107438024-380_Missing Gas Capacity -- operating,e_w107438024-380,way/107438024-380,44.909456929178205,9.527067524602685,False
+e_w107681459-380,ep_gas_combined_cycle_w107681459-380,203.0,gas,Aggregated Plant -- operating,e_w107681459-380,way/107681459-380,43.72881860731356,10.457434539615926,False
+e_w107681459-380,ep_gas_w107681459-380__ember,44.642427521361135,gas,Aggregated Plant -- operating,e_w107681459-380,way/107681459-380,43.37727342061751,10.534567747331206,False
+e_w107683818-380,ep_gas_gas_turbine_w107683818-380,150.00000000000003,gas,Aggregated Plant -- operating,e_w107683818-380,way/107683818-380,44.01801445561445,10.678629606606318,False
+e_w107683818-380,ep_gas_w107683818-380__ember,32.987015409872754,gas,Aggregated Plant -- operating,e_w107683818-380,way/107683818-380,43.66558948960597,10.648958472983377,False
+e_w108020416-380,ep_bioenergy_w108020416-380,41.0,bioenergy,Aggregated Plant -- operating,e_w108020416-380,way/108020416-380,40.704570692272746,15.935211065250435,False
+e_w108020416-380,ep_bioenergy_w108020416-380__ember,248.77966101694915,bioenergy,Aggregated Plant - EMBER Gap - way/108020416-380_Missing Bioenergy Capacity -- operating,e_w108020416-380,way/108020416-380,40.539534950626845,16.49385863559944,False
+e_w108020416-380,ep_hydro_dam_G100000602226,83.0,hydro,Castrocucco hydroelectric plant_ -- operating,e_w108020416-380,way/108020416-380,39.9896,15.8081,False
+e_w108020416-380,ep_hydro_dam_G100001052153,60.0,hydro,Bussento hydroelectric plant_ -- operating,e_w108020416-380,way/108020416-380,40.1305,15.5105,False
+e_w108020416-380,ep_hydro_ror_G100001030554,46.0,hydro,Palazzo II hydroelectric plant_ -- operating,e_w108020416-380,way/108020416-380,39.8399,15.891,False
+e_w108020416-380,ep_hydro_w108020416-380__irena,86.19846555506801,hydro,Aggregated Plant - IRENA Gap - way/108020416-380_Missing Hydro Capacity -- operating,e_w108020416-380,way/108020416-380,40.13111485111687,16.73449379049693,False
+e_w109588422-380,ep_gas_gas_turbine_w109588422-380,224.0,gas,Aggregated Plant -- operating,e_w109588422-380,way/109588422-380,39.88548044912161,16.651255655642544,False
+e_w109588422-380,ep_gas_w109588422-380__ember,49.26060967874332,gas,Aggregated Plant -- operating,e_w109588422-380,way/109588422-380,39.54937278842262,16.867744845135036,False
+e_w109588422-380,ep_hydro_ror_G100000602241,169.0,hydro,Mucone I hydroelectric plant_ -- operating,e_w109588422-380,way/109588422-380,39.4716,16.4056,False
+e_w109588422-380,ep_hydro_w109588422-380__irena,77.07693480849996,hydro,Aggregated Plant - IRENA Gap - way/109588422-380_Missing Hydro Capacity -- operating,e_w109588422-380,way/109588422-380,39.545664099151566,16.346427565323708,False
+e_w109756016-380,ep_bioenergy_w109756016-380,46.0,bioenergy,Aggregated Plant -- operating,e_w109756016-380,way/109756016-380,39.46241159487029,17.062302881581964,False
+e_w109756016-380,ep_bioenergy_w109756016-380__ember,279.11864406779665,bioenergy,Aggregated Plant - EMBER Gap - way/109756016-380_Missing Bioenergy Capacity -- operating,e_w109756016-380,way/109756016-380,39.15000794598577,17.393821632676637,False
+e_w109756016-380,ep_gas_combined_cycle_G100000400438,407.0,gas,Scandale power station_1 -- operating,e_w109756016-380,way/109756016-380,39.1022,17.0325,False
+e_w109756016-380,ep_gas_combined_cycle_G100000400439,407.0,gas,Scandale power station_2 -- operating,e_w109756016-380,way/109756016-380,39.1022,17.0325,False
+e_w109756016-380,ep_gas_w109756016-380__ember,179.00953695757616,gas,Aggregated Plant - EMBER Gap - way/109756016-380_Missing Gas Capacity -- operating,e_w109756016-380,way/109756016-380,38.7495685263761,16.966082422687727,False
+e_w1098087457-380,ep_gas_internal_combustion_w1098087457-380,44.0,gas,Aggregated Plant -- operating,e_w1098087457-380,way/1098087457-380,40.69809823364418,16.25068059946592,False
+e_w1098087457-380,ep_oil_steam_turbine_w1098087457-380,280.0,oil,Aggregated Plant -- operating,e_w1098087457-380,way/1098087457-380,40.340988216859564,16.294441817392343,False
+e_w109993642-380,ep_gas_combined_cycle_G100000400425,384.0,gas,Rizziconi power station_1 -- operating,e_w109993642-380,way/109993642-380,38.4453,15.99,False
+e_w109993642-380,ep_gas_combined_cycle_G100000400426,384.0,gas,Rizziconi power station_2 -- operating,e_w109993642-380,way/109993642-380,38.4453,15.99,False
+e_w109993642-380,ep_gas_w109993642-380__ember,168.8935188985485,gas,Aggregated Plant - EMBER Gap - way/109993642-380_Missing Gas Capacity -- operating,e_w109993642-380,way/109993642-380,38.6168044591945,15.981873688209568,False
+e_w1100665914-380,ep_hydro_dam_G100000602243,151.0,hydro,Orichella hydroelectric plant_ -- operating,e_w1100665914-380,way/1100665914-380,39.1922,16.7254,False
+e_w1100665914-380,ep_hydro_ror_G100000602262,214.0,hydro,Timpagrande hydroelectric plant_ -- operating,e_w1100665914-380,way/1100665914-380,39.1755,16.7803,False
+e_w1100665914-380,ep_hydro_ror_G100001030612,51.0,hydro,Calusia hydroelectric plant_ -- operating,e_w1100665914-380,way/1100665914-380,39.1846,16.8335,False
+e_w1100665914-380,ep_hydro_w1100665914-380__irena,189.7278395286153,hydro,Aggregated Plant - IRENA Gap - way/1100665914-380_Missing Hydro Capacity -- operating,e_w1100665914-380,way/1100665914-380,39.03974887193092,16.69989232080081,False
+e_w110138220-380,ep_gas_combined_cycle_G100000400399,155.0,gas,Milazzo power station_1 -- operating,e_w110138220-380,way/110138220-380,38.19779,15.26759,False
+e_w110138220-380,ep_gas_gas_turbine_w110138220-380,45.0,gas,Aggregated Plant -- operating,e_w110138220-380,way/110138220-380,38.247842419476825,15.638315903716055,False
+e_w110138220-380,ep_gas_w110138220-380__ember,243.22426028879514,gas,Aggregated Plant - EMBER Gap - way/110138220-380_Missing Gas Capacity -- operating,e_w110138220-380,way/110138220-380,37.83737129333002,15.198572407558315,False
+e_w110138220-380,ep_oil_steam_turbine_G100000412793,320.0,oil,San Filippo del Mela power station_6 -- operating,e_w110138220-380,way/110138220-380,38.202161,15.283165,False
+e_w110138220-380,ep_oil_steam_turbine_G100000412794,320.0,oil,San Filippo del Mela power station_5 -- operating,e_w110138220-380,way/110138220-380,38.202161,15.283165,False
+e_w110138220-380,ep_oil_steam_turbine_G100000412795,160.0,oil,San Filippo del Mela power station_2 -- operating,e_w110138220-380,way/110138220-380,38.202161,15.283165,False
+e_w110138220-380,ep_oil_steam_turbine_G100000412796,160.0,oil,San Filippo del Mela power station_1 -- operating,e_w110138220-380,way/110138220-380,38.202161,15.283165,False
+e_w110330925-380,ep_gas_combined_cycle_G100000400339,808.0,gas,Altomonte power station_1 -- operating,e_w110330925-380,way/110330925-380,39.7118,16.215,False
+e_w110330925-380,ep_gas_w110330925-380__ember,177.69005634118128,gas,Aggregated Plant - EMBER Gap - way/110330925-380_Missing Gas Capacity -- operating,e_w110330925-380,way/110330925-380,39.88658467169419,16.261713842129375,False
+e_w110330925-380,ep_hydro_ror_G100001030551,57.0,hydro,Mucone II hydroelectric plant_ -- operating,e_w110330925-380,way/110330925-380,39.4762,16.2908,False
+e_w110330925-380,ep_hydro_w110330925-380__irena,25.996362627718923,hydro,Aggregated Plant -- operating,e_w110330925-380,way/110330925-380,39.53943634127473,16.264591204535602,False
+e_w1137611914-380,ep_gas_combined_cycle_G100000400380,420.0,gas,Gissi power station_1 -- operating,e_w1137611914-380,way/1137611914-380,42.0502,14.5639,False
+e_w1137611914-380,ep_gas_combined_cycle_G100000400381,420.0,gas,Gissi power station_2 -- operating,e_w1137611914-380,way/1137611914-380,42.0502,14.5639,False
+e_w1137611914-380,ep_gas_gas_turbine_w1137611914-380,34.0,gas,Aggregated Plant -- operating,e_w1137611914-380,way/1137611914-380,42.3224444385358,14.58370883945302,False
+e_w1137611914-380,ep_gas_w1137611914-380__ember,192.20434312152526,gas,Aggregated Plant - EMBER Gap - way/1137611914-380_Missing Gas Capacity -- operating,e_w1137611914-380,way/1137611914-380,41.87203873816809,14.766466057042672,False
+e_w1137611914-380,ep_hydro_dam_G100001027310,60.0,hydro,Villa Santa Maria hydroelectric plant_ -- operating,e_w1137611914-380,way/1137611914-380,42.0154,14.3535,False
+e_w1137611914-380,ep_hydro_ror_G100001052158,58.0,hydro,Sant'Angelo hydroelectric plant_ -- operating,e_w1137611914-380,way/1137611914-380,42.113,14.3515,False
+e_w1137611914-380,ep_hydro_w1137611914-380__irena,53.817031404751454,hydro,Aggregated Plant - IRENA Gap - way/1137611914-380_Missing Hydro Capacity -- operating,e_w1137611914-380,way/1137611914-380,41.91734861681544,14.331641579157413,False
+e_w114661587-380,ep_gas_combined_cycle_G100000400407,400.0,gas,Napoli Levante power station_1 -- operating,e_w114661587-380,way/114661587-380,40.8339,14.3006,False
+e_w114661587-380,ep_gas_w114661587-380__ember,87.96537442632736,gas,Aggregated Plant -- operating,e_w114661587-380,way/114661587-380,41.103954556064906,14.113984887614107,False
+e_w114661587-380,ep_solar_pv_380,30.2,solar,Aggregated Plant -- operating,e_w114661587-380,way/114661587-380,40.74509955225892,14.08108173293852,False
+e_w114931087-380,ep_hydro_ps_G100000602219,281.0,hydro,Bargi hydroelectric plant (Italy)_ -- operating,e_w114931087-380,way/114931087-380,44.1167,11.043,False
+e_w114931087-380,ep_hydro_w114931087-380__irena,128.15750698928102,hydro,Aggregated Plant - IRENA Gap - way/114931087-380_Missing Hydro Capacity -- operating,e_w114931087-380,way/114931087-380,44.26021431841893,10.909611730877094,False
+e_w1156702013-380,ep_oil_combined_cycle_w1156702013-380,100.0,oil,Aggregated Plant -- operating,e_w1156702013-380,way/1156702013-380,40.78652227837778,8.678502718125138,False
+e_w116517585-380,ep_hydro_ror_G100000602236,90.0,hydro,Isola Serafini hydroelectric plant_ -- operating,e_w116517585-380,way/116517585-380,45.0936,9.9046,False
+e_w116517585-380,ep_hydro_w116517585-380__irena,41.04688835955619,hydro,Aggregated Plant - IRENA Gap - way/116517585-380_Missing Hydro Capacity -- operating,e_w116517585-380,way/116517585-380,45.097371867600565,9.810724755964221,False
+e_w116797658-380,ep_gas_combined_cycle_G100000400374,390.0,gas,Enipower Mantova power station_2 -- operating,e_w116797658-380,way/116797658-380,45.15026,10.83491,False
+e_w116797658-380,ep_gas_combined_cycle_G100000400375,390.0,gas,Enipower Mantova power station_3 -- operating,e_w116797658-380,way/116797658-380,45.15026,10.83491,False
+e_w116797658-380,ep_gas_w116797658-380__ember,182.74806537069506,gas,Aggregated Plant - EMBER Gap - way/116797658-380_Missing Gas Capacity -- operating,e_w116797658-380,way/116797658-380,45.32488416848102,10.80363738616848,False
+e_w116797658-380,ep_m_gas_steam_turbine_w116797658-380,51.0,gas,Aggregated Plant -- mothballed,e_w116797658-380,way/116797658-380,44.96927953513895,10.858632410287596,False
+e_w131291789-380,ep_gas_combined_cycle_G100000400417,400.0,gas,Ponti sul Mincio power station_1 -- operating,e_w131291789-380,way/131291789-380,45.3993,10.7142,False
+e_w131291789-380,ep_gas_w131291789-380__ember,87.96537442632736,gas,Aggregated Plant -- operating,e_w131291789-380,way/131291789-380,45.51206126153506,10.608752871329909,False
+e_w132450233-380,ep_gas_combined_cycle_G100000400454,380.0,gas,Sparanise power station_1 -- operating,e_w132450233-380,way/132450233-380,41.1783,14.1129,False
+e_w132450233-380,ep_gas_combined_cycle_G100000400455,380.0,gas,Sparanise power station_2 -- operating,e_w132450233-380,way/132450233-380,41.1783,14.1129,False
+e_w132450233-380,ep_gas_w132450233-380__ember,167.134211410022,gas,Aggregated Plant - EMBER Gap - way/132450233-380_Missing Gas Capacity -- operating,e_w132450233-380,way/132450233-380,41.11894070371616,13.989094038152315,False
+e_w132701980-380,ep_gas_combined_cycle_G100000400366,404.0,gas,Teverola power station_1 -- operating,e_w132701980-380,way/132701980-380,41.00915,14.2286,False
+e_w132701980-380,ep_gas_w132701980-380__ember,88.84502817059064,gas,Aggregated Plant -- operating,e_w132701980-380,way/132701980-380,41.119199864952314,14.374542048771872,False
+e_w133601335-380,ep_gas_combined_cycle_G100000400361,848.0,gas,Cassano D'Adda power station_CC -- operating,e_w133601335-380,way/133601335-380,45.5115,9.5098,False
+e_w133601335-380,ep_gas_internal_combustion_w133601335-380,108.0,gas,Aggregated Plant -- construction,e_w133601335-380,way/133601335-380,45.68453148208527,9.552534042048029,False
+e_w133601335-380,ep_gas_w133601335-380__ember,210.23724487892238,gas,Aggregated Plant - EMBER Gap - way/133601335-380_Missing Gas Capacity -- operating,e_w133601335-380,way/133601335-380,45.331616659492155,9.53019291092476,False
+e_w139442467-380,ep_gas_combined_cycle_w139442467-380,86.0,gas,Aggregated Plant -- operating,e_w139442467-380,way/139442467-380,44.75167871261812,11.427999860255596,False
+e_w139442467-380,ep_gas_w139442467-380__ember,18.912555501660382,gas,Aggregated Plant -- operating,e_w139442467-380,way/139442467-380,44.39495794862637,11.716747244685733,False
+e_w144005863-380,ep_bioenergy_w144005863-380,37.0,bioenergy,Aggregated Plant -- operating,e_w144005863-380,way/144005863-380,40.83703218445904,8.55067367528111,False
+e_w144005863-380,ep_bioenergy_w144005863-380__ember,224.50847457627117,bioenergy,Aggregated Plant - EMBER Gap - way/144005863-380_Missing Bioenergy Capacity -- operating,e_w144005863-380,way/144005863-380,40.405277438238436,8.83196627620842,False
+e_w144005863-380,ep_hydro_ps_G100000602261,240.0,hydro,Taloro hydroelectric plant_ -- operating,e_w144005863-380,way/144005863-380,40.1278,9.1409,False
+e_w144005863-380,ep_hydro_w144005863-380__irena,109.45836895881651,hydro,Aggregated Plant - IRENA Gap - way/144005863-380_Missing Hydro Capacity -- operating,e_w144005863-380,way/144005863-380,40.402203737855714,8.416460398891934,False
+e_w145665799-380,ep_gas_combined_cycle_G100000400355,381.0,gas,Brindisi Nord power station_10 -- operating,e_w145665799-380,way/145665799-380,40.644119,17.980801,False
+e_w145665799-380,ep_gas_combined_cycle_G100000400356,381.0,gas,Brindisi Nord power station_8 -- operating,e_w145665799-380,way/145665799-380,40.644119,17.980801,False
+e_w145665799-380,ep_gas_combined_cycle_G100000400357,381.0,gas,Brindisi Nord power station_9 -- operating,e_w145665799-380,way/145665799-380,40.644119,17.980801,False
+e_w145665799-380,ep_gas_steam_turbine_w145665799-380,140.0,gas,Aggregated Plant -- operating,e_w145665799-380,way/145665799-380,40.8230680334334,17.976787202042495,False
+e_w145665799-380,ep_gas_w145665799-380__ember,282.14893847244497,gas,Aggregated Plant - EMBER Gap - way/145665799-380_Missing Gas Capacity -- operating,e_w145665799-380,way/145665799-380,40.46673175900565,17.94031342992763,False
+e_w149997403-380,ep_gas_combined_cycle_G100000409823,393.0,gas,Ravenna power station_2 -- operating,e_w149997403-380,way/149997403-380,44.443784,12.23618,False
+e_w149997403-380,ep_gas_combined_cycle_G100000409824,380.0,gas,Ravenna power station_1 -- operating,e_w149997403-380,way/149997403-380,44.443784,12.23618,False
+e_w149997403-380,ep_gas_w149997403-380__ember,183.18789224282673,gas,Aggregated Plant - EMBER Gap - way/149997403-380_Missing Gas Capacity -- operating,e_w149997403-380,way/149997403-380,44.273836635979826,12.219269764669189,False
+e_w155158689-380,ep_gas_combined_cycle_w155158689-380,125.0,gas,Aggregated Plant -- operating,e_w155158689-380,way/155158689-380,45.23038677973012,12.141231412770107,False
+e_w155158689-380,ep_gas_w155158689-380__ember,27.4891795082273,gas,Aggregated Plant -- operating,e_w155158689-380,way/155158689-380,44.877694421396505,12.194163612951014,False
+e_w155791516-380,ep_gas_internal_combustion_w155791516-380,31.5,gas,Aggregated Plant -- operating,e_w155791516-380,way/155791516-380,45.476705967240726,10.88403720709779,False
+e_w155791516-380,ep_hydro_ror_G100001030609,50.0,hydro,Bussolengo hydroelectric plant_ -- operating,e_w155791516-380,way/155791516-380,45.4786,10.8424,False
+e_w155791516-380,ep_hydro_w155791516-380__irena,22.80382686642011,hydro,Aggregated Plant -- operating,e_w155791516-380,way/155791516-380,45.11847070689737,10.88724229631286,False
+e_w158739183-380,ep_gas_combined_cycle_G100000400418,350.0,gas,Porto Corsini power station_3 -- operating,e_w158739183-380,way/158739183-380,44.4836,12.2652,False
+e_w158739183-380,ep_gas_combined_cycle_G100000400419,368.0,gas,Porto Corsini power station_4 -- operating,e_w158739183-380,way/158739183-380,44.4836,12.2652,False
+e_w158739183-380,ep_gas_w158739183-380__ember,157.89784709525762,gas,Aggregated Plant - EMBER Gap - way/158739183-380_Missing Gas Capacity -- operating,e_w158739183-380,way/158739183-380,44.6618850183807,12.28247349783272,False
+e_w162828577-380,ep_gas_combined_cycle_G100000400474,855.0,gas,Turbigo power station_4 -- operating,e_w162828577-380,way/162828577-380,45.52051,8.74128,False
+e_w162828577-380,ep_gas_combined_cycle_G100000406334,430.0,gas,Turbigo power station_5 -- operating,e_w162828577-380,way/162828577-380,45.52051,8.74128,False
+e_w162828577-380,ep_gas_combined_cycle_w162828577-380,180.0,gas,Aggregated Plant -- operating,e_w162828577-380,way/162828577-380,45.69524616219195,8.781847030550077,False
+e_w162828577-380,ep_gas_w162828577-380__ember,322.1731838364239,gas,Aggregated Plant - EMBER Gap - way/162828577-380_Missing Gas Capacity -- operating,e_w162828577-380,way/162828577-380,45.33886479173621,8.760351964233461,False
+e_w162960205-380,ep_gas_combined_cycle_G100000400457,765.0,gas,Tavazzano power station_5 -- operating,e_w162960205-380,way/162960205-380,45.3325,9.4364,False
+e_w162960205-380,ep_gas_combined_cycle_G100000400458,385.0,gas,Tavazzano power station_6 -- operating,e_w162960205-380,way/162960205-380,45.3325,9.4364,False
+e_w162960205-380,ep_gas_gas_turbine_G100000409812,800.0,gas,"Tavazzano power station_CCGT8, timepoint 1 -- operating",e_w162960205-380,way/162960205-380,45.3325,9.4364,False
+e_w162960205-380,ep_gas_w162960205-380__ember,428.8312003283458,gas,Aggregated Plant - EMBER Gap - way/162960205-380_Missing Gas Capacity -- operating,e_w162960205-380,way/162960205-380,45.51271634845982,9.439575009081523,False
+e_w171270810-380,ep_gas_combined_cycle_G100000400360,401.0,gas,Candela power station_1 -- operating,e_w171270810-380,way/171270810-380,41.2014,15.4762,False
+e_w171270810-380,ep_gas_w171270810-380__ember,88.18528786239317,gas,Aggregated Plant -- operating,e_w171270810-380,way/171270810-380,41.291852608258324,15.406118421378663,False
+e_w172302572-380,ep_gas_combined_cycle_G100000400342,800.0,gas,Aprilia power station_1 -- operating,e_w172302572-380,way/172302572-380,41.5616,12.6337,False
+e_w172302572-380,ep_gas_w172302572-380__ember,175.93074885265472,gas,Aggregated Plant - EMBER Gap - way/172302572-380_Missing Gas Capacity -- operating,e_w172302572-380,way/172302572-380,41.685899480939604,12.60727780374214,False
+e_w181125039-380,ep_gas_combined_cycle_G100000400432,381.0,gas,S.E.F. Ferrara power station_2 -- operating,e_w181125039-380,way/181125039-380,44.86406,11.59439,False
+e_w181125039-380,ep_gas_combined_cycle_G100000400433,381.0,gas,S.E.F. Ferrara power station_3 -- operating,e_w181125039-380,way/181125039-380,44.86406,11.59439,False
+e_w181125039-380,ep_gas_w181125039-380__ember,167.57403828215362,gas,Aggregated Plant - EMBER Gap - way/181125039-380_Missing Gas Capacity -- operating,e_w181125039-380,way/181125039-380,44.95842501638269,11.438522780489917,False
+e_w199675964-380,ep_gas_combined_cycle_G100000400452,885.0,gas,Simeri Crichi power station_1 -- operating,e_w199675964-380,way/199675964-380,38.8759,16.6569,False
+e_w199675964-380,ep_gas_w199675964-380__ember,194.62339091824927,gas,Aggregated Plant - EMBER Gap - way/199675964-380_Missing Gas Capacity -- operating,e_w199675964-380,way/199675964-380,38.89852917772049,16.665999372466356,False
+e_w203225567,ep_oil_steam_turbine_w203225567,140.0,oil,Aggregated Plant -- operating,e_w203225567,way/203225567,40.70426936197032,8.436343196877967,False
+e_w236661269-380,ep_gas_combined_cycle_w236661269-380,62.0,gas,Aggregated Plant -- operating,e_w236661269-380,way/236661269-380,45.52428801240123,9.146594028736022,False
+e_w236661269-380,ep_gas_w236661269-380__ember,13.63463303608074,gas,Aggregated Plant -- operating,e_w236661269-380,way/236661269-380,45.16518112743665,9.116566053631994,False
+e_w255011550-380,ep_gas_combined_cycle_G100000412791,575.0,gas,Sarroch power station_CC -- operating,e_w255011550-380,way/255011550-380,39.0777,9.0162,False
+e_w255011550-380,ep_gas_steam_turbine_w255011550-380,61.0,gas,Aggregated Plant -- operating,e_w255011550-380,way/255011550-380,39.95894932925999,9.219194172545556,False
+e_w255011550-380,ep_gas_w255011550-380__ember,139.86494533786052,gas,Aggregated Plant -- operating,e_w255011550-380,way/255011550-380,39.81179818512062,9.54121589553181,False
+e_w257351439-380,ep_hydro_w257351439-380__irena,123.14066507866858,hydro,Aggregated Plant - IRENA Gap - way/257351439-380_Missing Hydro Capacity -- operating,e_w257351439-380,way/257351439-380,40.913683592663304,15.334883382023943,False
+e_w303915533-380,ep_coal_subcritical_G100000109677,350.0,coal,Sulcis power station_Unit 2 -- operating,e_w303915533-380,way/303915533-380,39.197631,8.401494,False
+e_w303915533-380,ep_coal_subcritical_G100000109678,240.0,coal,Sulcis power station_Unit 3 -- operating,e_w303915533-380,way/303915533-380,39.197631,8.401494,False
+e_w303915533-380,ep_coal_w303915533-380__ember,184.16184971098258,coal,Aggregated Plant - EMBER Gap - way/303915533-380_Missing Coal Capacity -- operating,e_w303915533-380,way/303915533-380,39.40160322470657,8.95099595550573,False
+e_w303915533-380,ep_oil_gas_turbine_w303915533-380,180.0,oil,Aggregated Plant -- operating,e_w303915533-380,way/303915533-380,39.050564469481095,8.969927991368209,False
+e_w338753171-380,ep_gas_combined_cycle_G100000400410,480.0,gas,Priolo-Melili power station_1 -- operating,e_w338753171-380,way/338753171-380,37.17949,15.19632,False
+e_w338753171-380,ep_gas_combined_cycle_G100000400422,360.0,gas,Priolo Gargallo power station_1 -- operating,e_w338753171-380,way/338753171-380,37.14,15.2159,False
+e_w338753171-380,ep_gas_combined_cycle_G100000400423,383.0,gas,Priolo Gargallo power station_2 -- operating,e_w338753171-380,way/338753171-380,37.14,15.2159,False
+e_w338753171-380,ep_gas_combined_cycle_G100000409833,256.0,gas,Priolo IGCC power station_2 -- operating,e_w338753171-380,way/338753171-380,37.126595,15.217502,False
+e_w338753171-380,ep_gas_combined_cycle_G100000411145,256.0,gas,Priolo IGCC power station_3 -- operating,e_w338753171-380,way/338753171-380,37.126595,15.217502,False
+e_w338753171-380,ep_gas_combined_cycle_w338753171-380,143.00000000000003,gas,Aggregated Plant -- operating,e_w338753171-380,way/338753171-380,37.48462350807621,15.129320180050197,False
+e_w338753171-380,ep_gas_w338753171-380__ember,412.99743293160697,gas,Aggregated Plant - EMBER Gap - way/338753171-380_Missing Gas Capacity -- operating,e_w338753171-380,way/338753171-380,37.13003875743074,15.5589921047219,False
+e_w338753171-380,ep_hydro_ps_G100000602217,500.0,hydro,Anapo hydroelectric plant_ -- operating,e_w338753171-380,way/338753171-380,37.1101,15.1493,False
+e_w338753171-380,ep_hydro_w338753171-380__irena,228.0382686642011,hydro,Aggregated Plant - IRENA Gap - way/338753171-380_Missing Hydro Capacity -- operating,e_w338753171-380,way/338753171-380,36.772170105490254,15.165368660294975,False
+e_w339104227-380,ep_gas_combined_cycle_G100000400351,800.0,gas,Bertonico - Turano Lodigliano power station_1 -- operating,e_w339104227-380,way/339104227-380,45.2268,9.6377,False
+e_w339104227-380,ep_gas_w339104227-380__ember,175.93074885265472,gas,Aggregated Plant - EMBER Gap - way/339104227-380_Missing Gas Capacity -- operating,e_w339104227-380,way/339104227-380,45.11505293152739,9.68177754239946,False
+e_w339703159-380,ep_gas_combined_cycle_G100000400436,392.0,gas,Santa Barbara power station_1 -- operating,e_w339703159-380,way/339703159-380,43.565,11.4777,False
+e_w339703159-380,ep_gas_w339703159-380__ember,86.20606693780081,gas,Aggregated Plant -- operating,e_w339703159-380,way/339703159-380,43.738524945714126,11.527051720265415,False
+e_w339703159-380,ep_hydro_ror_G100001030529,98.0,hydro,La Penna hydroelectric plant_ -- construction,e_w339703159-380,way/339703159-380,43.5002,11.7337,False
+e_w339703159-380,ep_hydro_w339703159-380__irena,44.69550065818341,hydro,Aggregated Plant - IRENA Gap - way/339703159-380_Missing Hydro Capacity -- operating,e_w339703159-380,way/339703159-380,43.39007534361417,11.435272646381533,False
+e_w339706878-380,ep_gas_combined_cycle_w339706878-380,236.0,gas,Aggregated Plant -- operating,e_w339706878-380,way/339706878-380,41.79287891706872,13.453520563398056,False
+e_w339706878-380,ep_gas_w339706878-380__ember,51.89957091153313,gas,Aggregated Plant -- operating,e_w339706878-380,way/339706878-380,41.40052827193764,13.767890818338566,False
+e_w339706878-380,ep_hydro_ror_G100001030566,48.0,hydro,Cassino hydroelectric plant_ -- operating,e_w339706878-380,way/339706878-380,41.5532,13.8394,False
+e_w339706878-380,ep_hydro_w339706878-380__irena,21.891673791763303,hydro,Aggregated Plant -- operating,e_w339706878-380,way/339706878-380,41.460880962185776,13.273224819204673,False
+e_w34157795-380,ep_bioenergy_G100000200325,59.0,bioenergy,Silla 2 power station_1 -- operating,e_w34157795-380,way/34157795-380,45.5044,9.071,False
+e_w34157795-380,ep_bioenergy_w34157795-380__ember,358.00000000000006,bioenergy,Aggregated Plant - EMBER Gap - way/34157795-380_Missing Bioenergy Capacity -- operating,e_w34157795-380,way/34157795-380,45.3639386530018,9.18508498885978,False
+e_w36873258-380,ep_gas_combined_cycle_w36873258-380,140.0,gas,Aggregated Plant -- operating,e_w36873258-380,way/36873258-380,43.84297381287269,13.491268509865721,False
+e_w36873258-380,ep_gas_w36873258-380__ember,30.787881049214572,gas,Aggregated Plant -- operating,e_w36873258-380,way/36873258-380,43.39717324833599,13.707355968133047,False
+e_w36873258-380,ep_oil_steam_turbine_w36873258-380,100.0,oil,Aggregated Plant -- operating,e_w36873258-380,way/36873258-380,43.432276904134255,13.271232604832575,False
+e_w39255054-380,ep_gas_combined_cycle_w39255054-380,137.0,gas,Aggregated Plant -- operating,e_w39255054-380,way/39255054-380,44.95054655193363,10.346537142164657,False
+e_w39255054-380,ep_gas_w39255054-380__ember,221.4528301182791,gas,Aggregated Plant - EMBER Gap - way/39255054-380_Missing Gas Capacity -- operating,e_w39255054-380,way/39255054-380,44.59989823544124,10.327934414630038,False
+e_w409439916-380,ep_coal_subcritical_G100000102764,320.0,coal,Fiume Santo power station_Unit 3 -- operating,e_w409439916-380,way/409439916-380,40.846447,8.307164,False
+e_w409439916-380,ep_coal_subcritical_G100000102765,320.0,coal,Fiume Santo power station_Unit 4 -- operating,e_w409439916-380,way/409439916-380,40.846447,8.307164,False
+e_w409439916-380,ep_coal_w409439916-380__ember,199.76878612716752,coal,Aggregated Plant - EMBER Gap - way/409439916-380_Missing Coal Capacity -- operating,e_w409439916-380,way/409439916-380,41.11336640178412,8.289739822558515,False
+e_w409439916-380,ep_gas_w409439916-380__ember,123.15152419685829,gas,Aggregated Plant -- operating,e_w409439916-380,way/409439916-380,40.74379237547401,8.55705539084162,False
+e_w409439916-380,ep_m_oil_gas_turbine_w409439916-380,80.0,oil,Aggregated Plant -- mothballed,e_w409439916-380,way/409439916-380,40.71579470967908,8.067726700724476,False
+e_w411026199-380,ep_gas_combined_cycle_G100000400465,769.0,gas,Termoli power station_1 -- operating,e_w411026199-380,way/411026199-380,41.9369,15.0004,False
+e_w411026199-380,ep_gas_internal_combustion_w411026199-380,75.2,gas,Aggregated Plant -- operating,e_w411026199-380,way/411026199-380,42.113994637670494,15.028430637672306,False
+e_w411026199-380,ep_gas_w411026199-380__ember,185.6509227267639,gas,Aggregated Plant - EMBER Gap - way/411026199-380_Missing Gas Capacity -- operating,e_w411026199-380,way/411026199-380,41.75706493461453,14.979370492415908,False
+e_w414663585-380,ep_gas_combined_cycle_G100000400429,180.0,gas,Rosignano power station_Rosen 3 -- operating,e_w414663585-380,way/414663585-380,43.38134,10.44855,False
+e_w414663585-380,ep_gas_combined_cycle_G100001030388,400.0,gas,Roselectra power station_Roselectra -- operating,e_w414663585-380,way/414663585-380,43.38134,10.44855,False
+e_w414663585-380,ep_gas_gas_turbine_G100001020490,356.0,gas,Rosignano power station_Rosen 1 -- operating,e_w414663585-380,way/414663585-380,43.38134,10.44855,False
+e_w414663585-380,ep_gas_w414663585-380__ember,205.83897615760603,gas,Aggregated Plant - EMBER Gap - way/414663585-380_Missing Gas Capacity -- operating,e_w414663585-380,way/414663585-380,43.38923223590796,10.541546437004492,False
+e_w416989699-380,ep_gas_combined_cycle_G100000400403,305.0,gas,Montalto Di Castro power station_1 -- operating,e_w416989699-380,way/416989699-380,42.3572,11.5373,False
+e_w416989699-380,ep_gas_combined_cycle_G100000400404,305.0,gas,Montalto Di Castro power station_2 -- operating,e_w416989699-380,way/416989699-380,42.3572,11.5373,False
+e_w416989699-380,ep_gas_combined_cycle_G100000400405,240.0,gas,Montalto Di Castro power station_3 -- operating,e_w416989699-380,way/416989699-380,42.3572,11.5373,False
+e_w416989699-380,ep_gas_combined_cycle_G100000400406,240.0,gas,Montalto Di Castro power station_4 -- operating,e_w416989699-380,way/416989699-380,42.3572,11.5373,False
+e_w416989699-380,ep_gas_w416989699-380__ember,270.49352636095665,gas,Aggregated Plant - EMBER Gap - way/416989699-380_Missing Gas Capacity -- operating,e_w416989699-380,way/416989699-380,42.48689616436528,11.970846233261248,False
+e_w416989699-380,ep_geothermal_G100000700310,60.0,geothermal,Valle Secolo geothermal power plant_1 -- operating,e_w416989699-380,way/416989699-380,42.2362,10.8674,False
+e_w416989699-380,ep_geothermal_G100000700311,60.0,geothermal,Valle Secolo geothermal power plant_2 -- operating,e_w416989699-380,way/416989699-380,42.2362,10.8674,False
+e_w418565264-380,ep_gas_combined_cycle_G100000400435,421.0,gas,San Severo Enplus power station_1 -- operating,e_w418565264-380,way/418565264-380,41.6262,15.42256,False
+e_w418565264-380,ep_gas_w418565264-380__ember,92.58355658370955,gas,Aggregated Plant -- operating,e_w418565264-380,way/418565264-380,41.53886775384557,15.558584185856823,False
+e_w418902800-380,ep_coal_supercritical_G100000101061,660.0,coal,Brindisi Sud power station_Unit 1 -- operating,e_w418902800-380,way/418902800-380,40.563636,18.032206,False
+e_w418902800-380,ep_coal_supercritical_G100000101063,660.0,coal,Brindisi Sud power station_Unit 3 -- operating,e_w418902800-380,way/418902800-380,40.563636,18.032206,False
+e_w418902800-380,ep_coal_supercritical_G100000101064,660.0,coal,Brindisi Sud power station_Unit 4 -- operating,e_w418902800-380,way/418902800-380,40.563636,18.032206,False
+e_w418902800-380,ep_coal_w418902800-380__ember,618.0346820809245,coal,Aggregated Plant - EMBER Gap - way/418902800-380_Missing Coal Capacity -- operating,e_w418902800-380,way/418902800-380,40.69476148191563,17.938174961316683,False
+e_w41892273-400,ep_gas_internal_combustion_w41892273-400,70.0,gas,Aggregated Plant -- operating,e_w41892273-400,way/41892273-400,46.03037903897161,13.49863915635344,False
+e_w41892273-400,ep_gas_w41892273-400__ember,15.393940524607286,gas,Aggregated Plant -- operating,e_w41892273-400,way/41892273-400,45.67203785955997,13.470032430765265,False
+e_w419423704-380,ep_gas_combined_cycle_G100000400989,765.0,gas,"Presenzano Edison power station_Unit 1, timepoint 1 -- operating",e_w419423704-380,way/419423704-380,41.376619,14.07642,False
+e_w419423704-380,ep_gas_w419423704-380__ember,168.23377859035105,gas,Aggregated Plant - EMBER Gap - way/419423704-380_Missing Gas Capacity -- operating,e_w419423704-380,way/419423704-380,41.6406497500657,14.012550414015335,False
+e_w419423704-380,ep_hydro_ps_G100000602223,113.0,hydro,Capriati hydroelectric plant_ -- operating,e_w419423704-380,way/419423704-380,41.4763,14.1282,False
+e_w419423704-380,ep_hydro_ps_G100000602246,985.0,hydro,Presenzano hydroelectric plant_ -- operating,e_w419423704-380,way/419423704-380,41.3854,14.0929,False
+e_w419423704-380,ep_hydro_w419423704-380__irena,500.77203798658553,hydro,Aggregated Plant - IRENA Gap - way/419423704-380_Missing Hydro Capacity -- operating,e_w419423704-380,way/419423704-380,41.31968103215093,14.353017585478089,False
+e_w419423704-380,ep_windon_wind_380,30.0,windon,Aggregated Plant -- operating,e_w419423704-380,way/419423704-380,41.24963003171181,13.854157055394472,False
+e_w421827453-380,ep_gas_combined_cycle_G100000400414,806.0,gas,Piacenza power station_1 -- operating,e_w421827453-380,way/421827453-380,45.0543,9.7086,False
+e_w421827453-380,ep_gas_w421827453-380__ember,177.2502294690496,gas,Aggregated Plant - EMBER Gap - way/421827453-380_Missing Gas Capacity -- operating,e_w421827453-380,way/421827453-380,45.081993944308635,9.701808037239202,False
+e_w42206116-380,ep_hydro_ror_G100001030564,51.0,hydro,Bordogna hydroelectric plant_ -- operating,e_w42206116-380,way/42206116-380,45.9512,9.7129,False
+e_w42206116-380,ep_hydro_w42206116-380__irena,23.259903403748513,hydro,Aggregated Plant -- operating,e_w42206116-380,way/42206116-380,45.669420075700664,9.917424593838742,False
+e_w432729521-380,ep_gas_combined_cycle_G100000400400,800.0,gas,Modugno power station_1 -- operating,e_w432729521-380,way/432729521-380,41.1025,16.756,False
+e_w432729521-380,ep_gas_w432729521-380__ember,175.93074885265472,gas,Aggregated Plant - EMBER Gap - way/432729521-380_Missing Gas Capacity -- operating,e_w432729521-380,way/432729521-380,41.21271671952082,16.751076971896886,False
+e_w491424937-380,ep_hydro_dam_G100000602265,230.0,hydro,Venaus hydroelectric plant_ -- operating,e_w491424937-380,way/491424937-380,45.1617,7.0091,False
+e_w491424937-380,ep_hydro_w491424937-380__irena,104.8976035855325,hydro,Aggregated Plant - IRENA Gap - way/491424937-380_Missing Hydro Capacity -- operating,e_w491424937-380,way/491424937-380,45.15446671129898,7.066342151349412,False
+e_w57384507-380,ep_gas_gas_turbine_w57384507-380,295.59999999999997,gas,Aggregated Plant -- operating,e_w57384507-380,way/57384507-380,38.22313879809632,14.893248313296374,False
+e_w57384507-380,ep_gas_w57384507-380__ember,113.38736763553597,gas,Aggregated Plant -- operating,e_w57384507-380,way/57384507-380,37.93686974621572,15.440045228090982,False
+e_w57384507-380,ep_oil_steam_turbine_w57384507-380,255.0,oil,Aggregated Plant -- operating,e_w57384507-380,way/57384507-380,37.125371454146,15.81288968682855,False
+e_w58440884-380,ep_bioenergy_G100000200253,85.0,bioenergy,Brescia Waste-to-Energy power station_1 -- operating,e_w58440884-380,way/58440884-380,45.5115,10.2099,False
+e_w58440884-380,ep_bioenergy_w58440884-380__ember,515.7627118644068,bioenergy,Aggregated Plant - EMBER Gap - way/58440884-380_Missing Bioenergy Capacity -- operating,e_w58440884-380,way/58440884-380,45.76097582068329,10.212648026047198,False
+e_w58440884-380,ep_gas_steam_turbine_w58440884-380,139.0,gas,Aggregated Plant -- operating,e_w58440884-380,way/58440884-380,45.34815444465286,10.422773953301567,False
+e_w58440884-380,ep_gas_w58440884-380__ember,30.567967613148756,gas,Aggregated Plant -- operating,e_w58440884-380,way/58440884-380,45.37900543255737,9.947773074398139,False
+e_w58931857-380,ep_gas_combined_cycle_w58931857-380,44.0,gas,Aggregated Plant -- operating,e_w58931857-380,way/58931857-380,41.65279829602904,12.773601160955485,False
+e_w59462263-380,ep_gas_steam_turbine_w59462263-380,20.0,gas,Aggregated Plant -- operating,e_w59462263-380,way/59462263-380,46.22511033286078,13.132334896648475,False
+e_w59462263-380,ep_hydro_dam_G100001052154,62.0,hydro,Ampezzo hydroelectric plant_ -- operating,e_w59462263-380,way/59462263-380,46.427,12.7856,False
+e_w59462263-380,ep_hydro_ror_G100000602256,220.0,hydro,Somplago hydroelectric plant_ -- operating,e_w59462263-380,way/59462263-380,46.3419,13.0678,False
+e_w59462263-380,ep_hydro_w59462263-380__irena,128.61358352660943,hydro,Aggregated Plant - IRENA Gap - way/59462263-380_Missing Hydro Capacity -- operating,e_w59462263-380,way/59462263-380,45.86952534037392,13.171746751814316,False
+e_w59462715-380,ep_gas_combined_cycle_G100000400471,867.0,gas,Torviscosa power station_1 -- operating,e_w59462715-380,way/59462715-380,45.817,13.2891,False
+e_w59462715-380,ep_gas_w59462715-380__ember,190.66494906906456,gas,Aggregated Plant - EMBER Gap - way/59462715-380_Missing Gas Capacity -- operating,e_w59462715-380,way/59462715-380,45.70354678824639,13.172476150008013,False
+e_w60235685-380,ep_gas_gas_turbine_w60235685-380,248.0,gas,Aggregated Plant -- operating,e_w60235685-380,way/60235685-380,42.27105571711865,14.97818242854696,False
+e_w60235685-380,ep_gas_w60235685-380__ember,54.53853214432296,gas,Aggregated Plant -- operating,e_w60235685-380,way/60235685-380,42.058840219084615,15.345951876300118,False
+e_w60725875-380,ep_gas_combined_cycle_G100000406331,860.0,gas,"Monfalcone power station_CC1, timepoint 1 -- construction",e_w60725875-380,way/60725875-380,45.7979,13.5455,False
+e_w60725875-380,ep_gas_combined_cycle_w60725875-380,120.0,gas,Aggregated Plant -- operating,e_w60725875-380,way/60725875-380,45.97404567441078,13.510949239999427,False
+e_w60725875-380,ep_gas_w60725875-380__ember,215.51516734450203,gas,Aggregated Plant - EMBER Gap - way/60725875-380_Missing Gas Capacity -- operating,e_w60725875-380,way/60725875-380,45.6192224833607,13.523196699607404,False
+e_w61157826-380,ep_gas_combined_cycle_G100000400464,780.0,gas,Termini Imerese power station_Ti6 -- operating,e_w61157826-380,way/61157826-380,37.96801,13.75079,False
+e_w61157826-380,ep_gas_gas_turbine_G100000410764,150.0,gas,Termini Imerese power station_GT2 -- operating,e_w61157826-380,way/61157826-380,37.96801,13.75079,False
+e_w61157826-380,ep_gas_gas_turbine_G100000410765,150.0,gas,Termini Imerese power station_GT1 -- operating,e_w61157826-380,way/61157826-380,37.96801,13.75079,False
+e_w61157826-380,ep_gas_w61157826-380__ember,359.7783814036789,gas,Aggregated Plant - EMBER Gap - way/61157826-380_Missing Gas Capacity -- operating,e_w61157826-380,way/61157826-380,37.80528680656609,14.84185575902443,False
+e_w61157826-380,ep_hydro_ps_G100000602235,80.0,hydro,Guadalami hydroelectric plant_ -- operating,e_w61157826-380,way/61157826-380,37.9555,13.2793,False
+e_w61157826-380,ep_hydro_w61157826-380__irena,36.48612298627218,hydro,Aggregated Plant -- operating,e_w61157826-380,way/61157826-380,37.39350045573454,15.114225989703687,False
+e_w61157826-380,ep_m_gas_combined_cycle_G100000400461,320.0,gas,Termini Imerese power station_Ti41 -- mothballed,e_w61157826-380,way/61157826-380,37.96801,13.75079,False
+e_w61157826-380,ep_m_gas_gas_turbine_w61157826-380,236.0,gas,Aggregated Plant -- mothballed,e_w61157826-380,way/61157826-380,37.3450254170784,14.697744949979045,False
+e_w61626687-380,ep_hydro_ror_G100000602240,110.0,hydro,Montorio hydroelectric plant_ -- operating,e_w61626687-380,way/61626687-380,42.5858,13.7089,False
+e_w61626687-380,ep_hydro_w61626687-380__irena,50.16841910612424,hydro,Aggregated Plant - IRENA Gap - way/61626687-380_Missing Hydro Capacity -- operating,e_w61626687-380,way/61626687-380,42.95782002166496,13.675951946123922,False
+e_w61712456-380,ep_gas_combined_cycle_w61712456-380,95.0,gas,Aggregated Plant -- operating,e_w61712456-380,way/61712456-380,42.82722810565131,12.69318875776372,False
+e_w61712456-380,ep_gas_w61712456-380__ember,20.89177642625275,gas,Aggregated Plant -- operating,e_w61712456-380,way/61712456-380,42.450981636776994,12.936439017867865,False
+e_w61712456-380,ep_hydro_dam_G100000602220,86.0,hydro,Baschi hydroelectric plant_ -- operating,e_w61712456-380,way/61712456-380,42.6565,12.2359,False
+e_w61712456-380,ep_hydro_ror_G100000602232,295.0,hydro,Galleto hydroelectric plant_ -- operating,e_w61712456-380,way/61712456-380,42.5527,12.699,False
+e_w61712456-380,ep_hydro_ror_G100001030602,48.0,hydro,Cotilia Salto hydroelectric plant_ -- operating,e_w61712456-380,way/61712456-380,42.3725,12.9686,False
+e_w61712456-380,ep_hydro_ror_G100001030605,64.0,hydro,Monte Argento hydroelectric plant_ -- operating,e_w61712456-380,way/61712456-380,42.5521,12.6709,False
+e_w61712456-380,ep_hydro_w61712456-380__irena,224.84573290290228,hydro,Aggregated Plant - IRENA Gap - way/61712456-380_Missing Hydro Capacity -- operating,e_w61712456-380,way/61712456-380,42.37780761410842,12.485518156344057,False
+e_w64200868-380,ep_hydro_dam_G100000602242,175.0,hydro,Naturno hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.6519,10.993,False
+e_w64200868-380,ep_hydro_dam_G100001030607,60.0,hydro,Sonico hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.169,10.3497,False
+e_w64200868-380,ep_hydro_dam_G100001030611,46.0,hydro,Stazzona hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.2004,10.1302,False
+e_w64200868-380,ep_hydro_dam_G100001052148,62.0,hydro,Belviso hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.1529,10.0852,False
+e_w64200868-380,ep_hydro_dam_G100001052164,60.0,hydro,Ganda Teglio hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.1405,10.1237,False
+e_w64200868-380,ep_hydro_dam_G100001052165,47.0,hydro,S Valburga hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.5276,10.9546,False
+e_w64200868-380,ep_hydro_dam_G100001052166,64.0,hydro,Lasa hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.6109,10.7083,False
+e_w64200868-380,ep_hydro_ps_G100000602228,950.0,hydro,Edolo hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.1721,10.3442,False
+e_w64200868-380,ep_hydro_ror_G100000602225,87.0,hydro,Castelbello hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.6227,10.9152,False
+e_w64200868-380,ep_hydro_ror_G100000602234,737.0,hydro,Grosio hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.292,10.266,False
+e_w64200868-380,ep_hydro_ror_G100001030610,58.0,hydro,Lovero hydroelectric plant_ -- operating,e_w64200868-380,way/64200868-380,46.2363,10.2149,False
+e_w64200868-380,ep_hydro_w64200868-380__irena,1069.9555565724315,hydro,Aggregated Plant - IRENA Gap - way/64200868-380_Missing Hydro Capacity -- operating,e_w64200868-380,way/64200868-380,46.06436624035869,10.367533637179438,False
+e_w653230504-380,ep_gas_gas_turbine_w653230504-380,32.0,gas,Aggregated Plant -- operating,e_w653230504-380,way/653230504-380,41.418993738081866,15.663923543719292,False
+e_w653230504-380,ep_gas_internal_combustion_w653230504-380,74.0,gas,Aggregated Plant -- operating,e_w653230504-380,way/653230504-380,41.05538038623043,16.01846801048857,False
+e_w653230504-380,ep_gas_w653230504-380__ember,23.31082422297675,gas,Aggregated Plant -- operating,e_w653230504-380,way/653230504-380,40.69891291980839,15.637454236626725,False
+e_w653230504-380,ep_windon_wind_380,48.0,windon,Aggregated Plant -- operating,e_w653230504-380,way/653230504-380,41.08768247943653,15.298931374579977,False
+e_w68299044-380,ep_gas_combined_cycle_w68299044-380,161.0,gas,Aggregated Plant -- operating,e_w68299044-380,way/68299044-380,45.73306225003444,9.26374268817237,False
+e_w68299044-380,ep_gas_w68299044-380__ember,35.40606320659676,gas,Aggregated Plant -- operating,e_w68299044-380,way/68299044-380,45.37821854314092,9.25281880769018,False
+e_w72466334-380,ep_hydro_dam_G100001052152,72.0,hydro,Cedegolo hydroelectric plant_ -- operating,e_w72466334-380,way/72466334-380,46.0622,10.3512,False
+e_w72466334-380,ep_hydro_ps_G100000602251,268.0,hydro,San Fiorano hydroelectric plant_ -- operating,e_w72466334-380,way/72466334-380,46.0442,10.3521,False
+e_w72466334-380,ep_hydro_w72466334-380__irena,155.06602269165674,hydro,Aggregated Plant - IRENA Gap - way/72466334-380_Missing Hydro Capacity -- operating,e_w72466334-380,way/72466334-380,46.06717212995501,10.22807560103715,False
+e_w75378894-380,ep_gas_internal_combustion_w75378894-380,73.6,gas,Aggregated Plant -- operating,e_w75378894-380,way/75378894-380,45.82901126543806,9.018995903601525,False
+e_w75378894-380,ep_gas_w75378894-380__ember,16.185628894444232,gas,Aggregated Plant -- operating,e_w75378894-380,way/75378894-380,45.47509175034429,8.951257521153979,False
+e_w75602396-380,ep_hydro_dam_G100001030604,45.0,hydro,Dossi hydroelectric plant_ -- operating,e_w75602396-380,way/75602396-380,46.0301,9.984,False
+e_w75602396-380,ep_hydro_ror_G100001030565,48.0,hydro,Carona hydroelectric plant_ -- operating,e_w75602396-380,way/75602396-380,46.0221,9.7911,False
+e_w75602396-380,ep_hydro_w75602396-380__irena,42.4151179715414,hydro,Aggregated Plant - IRENA Gap - way/75602396-380_Missing Hydro Capacity -- operating,e_w75602396-380,way/75602396-380,45.82919551671154,10.285871082876172,False
+e_w75947556-380,ep_gas_combined_cycle_w75947556-380,122.0,gas,Aggregated Plant -- operating,e_w75947556-380,way/75947556-380,45.75070963426748,9.552197117469966,False
+e_w75947556-380,ep_gas_w75947556-380__ember,26.829439200029846,gas,Aggregated Plant -- operating,e_w75947556-380,way/75947556-380,45.39750621995802,9.586373472237227,False
+e_w76709660-380,ep_hydro_dam_G100001030526,49.0,hydro,Acquoria hydroelectric plant_ -- operating,e_w76709660-380,way/76709660-380,41.9645,12.7889,False
+e_w76709660-380,ep_hydro_w76709660-380__irena,22.347750329091706,hydro,Aggregated Plant -- operating,e_w76709660-380,way/76709660-380,41.869359781284444,12.583679244702877,False
+e_w78066534-380,ep_gas_combined_cycle_w78066534-380,63.0,gas,Aggregated Plant -- operating,e_w78066534-380,way/78066534-380,44.801902095484095,10.732783789310318,False
+e_w78066534-380,ep_gas_w78066534-380__ember,13.85454647214656,gas,Aggregated Plant -- operating,e_w78066534-380,way/78066534-380,44.45395567232923,10.826154321267031,False
+e_w81938081-380,ep_bioenergy_G100000200258,51.0,bioenergy,Conselice Factory power station_1 -- operating,e_w81938081-380,way/81938081-380,44.5351,11.8608,False
+e_w81938081-380,ep_bioenergy_w81938081-380,30.0,bioenergy,Aggregated Plant -- operating,e_w81938081-380,way/81938081-380,44.60484002357283,12.174421748383658,False
+e_w81938081-380,ep_bioenergy_w81938081-380__ember,491.49152542372883,bioenergy,Aggregated Plant - EMBER Gap - way/81938081-380_Missing Bioenergy Capacity -- operating,e_w81938081-380,way/81938081-380,44.25443407423928,12.186082473164563,False
+e_w82078641-380,ep_gas_combined_cycle_G100000400412,392.0,gas,Ostiglia power station_1 -- operating,e_w82078641-380,way/82078641-380,45.0603,11.1374,False
+e_w82078641-380,ep_gas_combined_cycle_G100000400413,384.0,gas,Ostiglia power station_3 -- operating,e_w82078641-380,way/82078641-380,45.0603,11.1374,False
+e_w82078641-380,ep_gas_combined_cycle_G100000409828,392.0,gas,Ostiglia power station_2 -- operating,e_w82078641-380,way/82078641-380,45.0603,11.1374,False
+e_w82078641-380,ep_gas_w82078641-380__ember,452.5818514234542,gas,Aggregated Plant - EMBER Gap - way/82078641-380_Missing Gas Capacity -- operating,e_w82078641-380,way/82078641-380,45.20941123858327,11.141396480159463,False
+e_w82083756-380,ep_hydro_dam_G100000602258,214.0,hydro,Soverzene hydroelectric plant_ -- operating,e_w82083756-380,way/82083756-380,46.2009,12.3023,False
+e_w82083756-380,ep_hydro_dam_G100001030523,45.0,hydro,Nove 25 hydroelectric plant_ -- operating,e_w82083756-380,way/82083756-380,46.0365,12.3043,False
+e_w82083756-380,ep_hydro_dam_G100001030527,53.0,hydro,Nove 71 hydroelectric plant_ -- operating,e_w82083756-380,way/82083756-380,46.0365,12.3043,False
+e_w82083756-380,ep_hydro_dam_G100001052159,56.0,hydro,Nove hydroelectric plant_ -- operating,e_w82083756-380,way/82083756-380,46.0366,12.3026,False
+e_w82083756-380,ep_hydro_ps_G100000602231,220.0,hydro,Fadalto hydroelectric plant_ -- operating,e_w82083756-380,way/82083756-380,46.0692,12.3299,False
+e_w82083756-380,ep_hydro_ror_G100000602252,180.0,hydro,San Floriano hydroelectric plant_ -- operating,e_w82083756-380,way/82083756-380,46.0285,12.3016,False
+e_w82083756-380,ep_hydro_w82083756-380__irena,350.26678066821285,hydro,Aggregated Plant - IRENA Gap - way/82083756-380_Missing Hydro Capacity -- operating,e_w82083756-380,way/82083756-380,45.98891296863775,12.364080464792487,False
+e_w82084019-380,ep_gas_combined_cycle_G100000400446,385.0,gas,Sermide power station_3 -- operating,e_w82084019-380,way/82084019-380,45.0265,11.2522,False
+e_w82084019-380,ep_gas_combined_cycle_G100000400447,766.0,gas,Sermide power station_4 -- operating,e_w82084019-380,way/82084019-380,45.0265,11.2522,False
+e_w82084019-380,ep_gas_combined_cycle_w82084019-380,54.0,gas,Aggregated Plant -- operating,e_w82084019-380,way/82084019-380,45.202941498317756,11.227202631030305,False
+e_w82084019-380,ep_gas_w82084019-380__ember,264.99569045931116,gas,Aggregated Plant - EMBER Gap - way/82084019-380_Missing Gas Capacity -- operating,e_w82084019-380,way/82084019-380,44.84464425853552,11.237412080457807,False
+e_w82767145-380,ep_coal_ultra-supercritical_G100000110298,660.0,coal,Torrevaldaliga Nord power station_Unit 1 -- operating,e_w82767145-380,way/82767145-380,42.1269,11.7583,False
+e_w82767145-380,ep_coal_ultra-supercritical_G100000110299,660.0,coal,Torrevaldaliga Nord power station_Unit 2 -- operating,e_w82767145-380,way/82767145-380,42.1269,11.7583,False
+e_w82767145-380,ep_coal_ultra-supercritical_G100000110300,660.0,coal,Torrevaldaliga Nord power station_Unit 3 -- operating,e_w82767145-380,way/82767145-380,42.1269,11.7583,False
+e_w82767145-380,ep_coal_w82767145-380__ember,618.0346820809245,coal,Aggregated Plant - EMBER Gap - way/82767145-380_Missing Coal Capacity -- operating,e_w82767145-380,way/82767145-380,42.29780286371891,11.815744411780651,False
+e_w82767145-380,ep_gas_combined_cycle_G100000400469,760.0,gas,Torrevaldaliga Sud power station_TV5 -- operating,e_w82767145-380,way/82767145-380,42.1241,11.7624,False
+e_w82767145-380,ep_gas_combined_cycle_G100000400470,380.0,gas,Torrevaldaliga Sud power station_TV6 -- operating,e_w82767145-380,way/82767145-380,42.1241,11.7624,False
+e_w82767145-380,ep_gas_w82767145-380__ember,250.70131711503296,gas,Aggregated Plant - EMBER Gap - way/82767145-380_Missing Gas Capacity -- operating,e_w82767145-380,way/82767145-380,41.946822953965366,11.739017806222035,False
+e_w83805453-380,ep_geothermal_G100000700079,60.0,geothermal,Farinello geothermal power plant_-- -- operating,e_w83805453-380,way/83805453-380,43.2388,10.9047,False
+e_w83805453-380,ep_geothermal_G100000700206,40.0,geothermal,Nuova Radicondoli geothermal power plant_-- -- operating,e_w83805453-380,way/83805453-380,43.1935,11.0446,False
+e_w83805453-380,ep_geothermal_G100000700299,40.0,geothermal,Travale geothermal power plant_4 -- operating,e_w83805453-380,way/83805453-380,43.1708,11.039,False
+e_w83805453-380,ep_geothermal_w83805453-380,203.0,geothermal,Aggregated Plant -- operating,e_w83805453-380,way/83805453-380,43.21811076961326,11.10637787049404,False
+e_w84696559-380,ep_bioenergy_G100000200236,68.0,bioenergy,Acerra power station_1 -- operating,e_w84696559-380,way/84696559-380,40.9744,14.3766,False
+e_w84696559-380,ep_bioenergy_w84696559-380,108.0,bioenergy,Aggregated Plant -- operating,e_w84696559-380,way/84696559-380,41.1867103210742,14.399683905412768,False
+e_w84696559-380,ep_bioenergy_w84696559-380__ember,1067.9322033898306,bioenergy,Aggregated Plant - EMBER Gap - way/84696559-380_Missing Bioenergy Capacity -- operating,e_w84696559-380,way/84696559-380,40.835102651304744,14.329818261250283,False
+e_w96190189-380,ep_gas_w96190189-380__ember,38.48485131151821,gas,Aggregated Plant -- operating,e_w96190189-380,way/96190189-380,42.71477445364737,13.521803659352939,False
+e_w96190189-380,ep_hydro_ps_G100000602247,139.0,hydro,Provvidenza hydroelectric plant_ -- operating,e_w96190189-380,way/96190189-380,42.5113,13.4104,False
+e_w96190189-380,ep_hydro_ps_G100000602253,490.0,hydro,San Giacomo Sul Vomano hydroelectric plant_ -- operating,e_w96190189-380,way/96190189-380,42.5607,13.5641,False
+e_w96190189-380,ep_hydro_w96190189-380__irena,286.87214197956496,hydro,Aggregated Plant - IRENA Gap - way/96190189-380_Missing Hydro Capacity -- operating,e_w96190189-380,way/96190189-380,42.36011500083592,13.52780537219888,False
+e_w96190189-380,ep_m_gas_combined_cycle_G100000400365,175.0,gas,Celano power station_1 -- mothballed,e_w96190189-380,way/96190189-380,42.048236,13.535986,False
+e_w98421779-380,ep_gas_combined_cycle_G100000409829,805.0,gas,Livorno Ferraris power station_1 -- operating,e_w98421779-380,way/98421779-380,45.281729,8.084918,False
+e_w98421779-380,ep_gas_gas_turbine_w98421779-380,50.0,gas,Aggregated Plant -- operating,e_w98421779-380,way/98421779-380,45.43048713288562,8.20792777828299,False
+e_w98421779-380,ep_gas_w98421779-380__ember,188.0259878362747,gas,Aggregated Plant - EMBER Gap - way/98421779-380_Missing Gas Capacity -- operating,e_w98421779-380,way/98421779-380,45.07107600603634,8.207111984026445,False
+e_w98900549-380,ep_gas_combined_cycle_G100000400376,230.0,gas,Ferrera Erbognone Refinery power station_10 -- operating,e_w98900549-380,way/98900549-380,45.09963,8.86632,False
+e_w98900549-380,ep_gas_combined_cycle_G100000400377,395.0,gas,Ferrera Erbognone Refinery power station_8 -- operating,e_w98900549-380,way/98900549-380,45.09963,8.86632,False
+e_w98900549-380,ep_gas_combined_cycle_G100000400378,381.0,gas,Ferrera Erbognone Refinery power station_9 -- operating,e_w98900549-380,way/98900549-380,45.09963,8.86632,False
+e_w98900549-380,ep_gas_combined_cycle_G100000412792,260.0,gas,Sannazzaro Refinery power station_1 -- operating,e_w98900549-380,way/98900549-380,45.1015,8.8777,False
+e_w98900549-380,ep_gas_w98900549-380__ember,278.41041005932607,gas,Aggregated Plant - EMBER Gap - way/98900549-380_Missing Gas Capacity -- operating,e_w98900549-380,way/98900549-380,45.250292911389366,9.013978779280428,False
+e_w98901130-380,ep_gas_combined_cycle_G100000400478,400.0,gas,Voghera power station_1 -- operating,e_w98901130-380,way/98901130-380,45.0296,8.9723,False
+e_w98901130-380,ep_gas_w98901130-380__ember,87.96537442632736,gas,Aggregated Plant -- operating,e_w98901130-380,way/98901130-380,44.93290723448044,8.909142821643073,False
+e_w98902899-380,ep_bioenergy_G100000200346,65.0,bioenergy,Turin-Gerbido Waste-to-Energy power station_1 -- operating,e_w98902899-380,way/98902899-380,45.037,7.5868,False
+e_w98902899-380,ep_bioenergy_w98902899-380__ember,394.40677966101697,bioenergy,Aggregated Plant - EMBER Gap - way/98902899-380_Missing Bioenergy Capacity -- operating,e_w98902899-380,way/98902899-380,45.23292091263783,7.5037527474938415,False
+e_w98902899-380,ep_gas_combined_cycle_w98902899-380,146.0,gas,Aggregated Plant -- operating,e_w98902899-380,way/98902899-380,44.842825096844905,7.6804847766337065,False
+e_w98902899-380,ep_gas_w98902899-380__ember,32.10736166560949,gas,Aggregated Plant -- operating,e_w98902899-380,way/98902899-380,44.77762688907442,7.251890406194592,False
+e_w99694910-380,ep_gas_combined_cycle_w99694910-380,140.0,gas,Aggregated Plant -- operating,e_w99694910-380,way/99694910-380,44.64087328235342,7.816306120394568,False
+e_w99694910-380,ep_gas_w99694910-380__ember,30.787881049214572,gas,Aggregated Plant -- operating,e_w99694910-380,way/99694910-380,44.28900965518564,7.837085259057302,False
+e_w99826025-380,ep_gas_combined_cycle_G100000400401,400.0,gas,Moncalieri power station_2 -- operating,e_w99826025-380,way/99826025-380,44.993,7.6755,False
+e_w99826025-380,ep_gas_combined_cycle_G100000400402,380.0,gas,Moncalieri power station_3 -- operating,e_w99826025-380,way/99826025-380,44.993,7.6755,False
+e_w99826025-380,ep_gas_combined_cycle_w99826025-380,50.0,gas,Aggregated Plant -- operating,e_w99826025-380,way/99826025-380,45.050564213019825,7.742431036658978,False
+e_w99826025-380,ep_gas_w99826025-380__ember,182.52815193462925,gas,Aggregated Plant - EMBER Gap - way/99826025-380_Missing Gas Capacity -- operating,e_w99826025-380,way/99826025-380,44.696665850685015,7.7650427643349484,False
+elc_spv_001,ep_solar_pv_001,56.7,solar,Aggregated Plant -- operating,elc_spv_001,IT93-380,44.982229490378664,6.994406033367439,False
+elc_spv_002,ep_solar_pv_002,138.9,solar,Aggregated Plant -- operating,elc_spv_002,way/103653592-380,43.91636279223762,8.442733969578832,False
+elc_spv_003,ep_solar_pv_003,3.1,solar,Aggregated Plant -- operating,elc_spv_003,way/104359058-380,44.136313295438825,7.645690001488228,False
+elc_spv_004,ep_solar_pv_004,207.0,solar,Aggregated Plant -- operating,elc_spv_004,way/104359058-380,44.16432354312837,7.129078012007044,False
+elc_spv_005,ep_solar_pv_005,14.2,solar,Aggregated Plant -- operating,elc_spv_005,IT8-380,46.79563513130816,10.368889293628587,False
+elc_spv_006,ep_solar_pv_006,72.3,solar,Aggregated Plant -- operating,elc_spv_006,way/152597636-380,45.79088491893915,9.45986831970339,False
+elc_spv_007,ep_solar_007__irena,6955.327315339239,solar,Aggregated Plant - IRENA Gap - 7_Missing Solar Capacity -- operating,elc_spv_007,way/100952845-380,44.352205515843295,8.95690024511358,False
+elc_spv_007,ep_solar_pv_007,228.00000000000003,solar,Aggregated Plant -- operating,elc_spv_007,way/100952845-380,44.621776663607406,8.534109588157515,False
+elc_spv_008,ep_solar_pv_008,30.300000000000004,solar,Aggregated Plant -- operating,elc_spv_008,way/100113593-380,42.54501487226559,10.424487745102118,False
+elc_spv_009,ep_solar_pv_009,32.199999999999996,solar,Aggregated Plant -- operating,elc_spv_009,way/105757794-380,43.9538338022659,10.107008449258704,False
+elc_spv_010,ep_solar_pv_010,291.8,solar,Aggregated Plant -- operating,elc_spv_010,IT149-380,40.227333730246556,8.85573351329503,False
+elc_spv_011,ep_solar_pv_011,139.59999999999997,solar,Aggregated Plant -- operating,elc_spv_011,way/255011550-380,39.04517096166695,9.913220317761086,False
+elc_spv_012,ep_solar_pv_012,221.3,solar,Aggregated Plant -- operating,elc_spv_012,way/57384507-380,36.03225692527323,15.167771040645672,False
+elc_spv_012,ep_solar_thermal_012,8.3,solar,Aggregated Plant -- construction,elc_spv_012,way/57384507-380,35.918347669203385,14.486731763738655,False
+elc_spv_013,ep_solar_013__irena,6459.692756696223,solar,Aggregated Plant - IRENA Gap - 13_Missing Solar Capacity -- operating,elc_spv_013,way/57384507-380,37.0114198083907,13.473418893464057,False
+elc_spv_013,ep_solar_pv_013,556.6999999999999,solar,Aggregated Plant -- operating,elc_spv_013,way/57384507-380,37.58198037168547,13.584923671570742,False
+elc_spv_013,ep_solar_thermal_013,8.7,solar,Aggregated Plant -- construction,elc_spv_013,way/57384507-380,38.08075664618562,14.035741124236992,False
+elc_spv_014,ep_solar_pv_014,139.50000000000003,solar,Aggregated Plant -- operating,elc_spv_014,IT157-380,38.94961088216544,16.768057847288052,False
+elc_spv_014,ep_solar_thermal_014,1.0,solar,Aggregated Plant -- operating,elc_spv_014,IT157-380,38.87216953809948,16.285569863898004,False
+elc_spv_015,ep_solar_pv_015,349.4000000000001,solar,Aggregated Plant -- operating,elc_spv_015,way/321724202-380,40.196456993458106,17.87981033047772,False
+elc_spv_016,ep_solar_016__irena,6465.4479279645375,solar,Aggregated Plant - IRENA Gap - 16_Missing Solar Capacity -- operating,elc_spv_016,way/108020416-380,39.429383995711376,15.574600212728068,False
+elc_spv_016,ep_solar_pv_016,497.49999999999994,solar,Aggregated Plant -- operating,elc_spv_016,way/108020416-380,39.83147847074715,15.324646996814465,False
+elc_spv_017,ep_solar_pv_017,121.9,solar,Aggregated Plant -- operating,elc_spv_017,way/58992998-380,45.76929213240192,13.266368781173043,False
+elc_spv_018,ep_solar_pv_018,18.2,solar,Aggregated Plant -- operating,elc_spv_018,IT40-500,45.69494681168604,11.459626833428704,False
+elc_spv_019,ep_solar_pv_019,156.9,solar,Aggregated Plant -- operating,elc_spv_019,way/61626687-380,42.660127942181134,13.348826279373416,False
+elc_spv_020,ep_solar_pv_020,972.3000000000002,solar,Aggregated Plant -- operating,elc_spv_020,way/416989699-380,42.60362578605884,11.160271925102618,False
+elc_spv_021,ep_solar_pv_021,812.4999999999999,solar,Aggregated Plant -- operating,elc_spv_021,way/743450089-380,41.17290929420505,14.052425536898065,False
+elc_spv_022,ep_solar_pv_022,465.8,solar,Aggregated Plant -- operating,elc_spv_022,way/139442467-380,44.37444244998194,11.214084565484477,False
+elc_spv_023,ep_solar_pv_023,205.60000000000005,solar,Aggregated Plant -- operating,elc_spv_023,IT138-380,42.50798097317185,12.473292403004645,False
+elc_spv_024,ep_solar_pv_024,43.199999999999996,solar,Aggregated Plant -- operating,elc_spv_024,IT134-380,42.857868409138824,11.569736588068116,False
+elc_wof_005,ep_windoff_wind_005,30.0,windoff,Aggregated Plant -- operating,elc_wof_005,way/109756016-380,39.08938267743024,16.676439998349263,False
+elc_won_002,ep_windon_wind_002,83.0,windon,Aggregated Plant -- operating,elc_won_002,way/100113593-380,43.13661563294802,10.18952009061454,False
+elc_won_003,ep_windon_wind_003,52.00000000000001,windon,Aggregated Plant -- operating,elc_won_003,relation/4816679-380,42.87771609551749,10.651674773995998,False
+elc_won_004,ep_windon_wind_004,32.0,windon,Aggregated Plant -- operating,elc_won_004,way/103653592-380,44.29851932814537,8.069132507482271,False
+elc_won_005,ep_windon_wind_005,10.0,windon,Aggregated Plant -- operating,elc_won_005,way/105757794-380,44.01729046692833,9.629466091263906,False
+elc_won_006,ep_windon_wind_006,27.0,windon,Aggregated Plant -- operating,elc_won_006,way/40634284-380,44.08719780286544,11.7165651714437,False
+elc_won_007,ep_windon_wind_007,10.0,windon,Aggregated Plant -- operating,elc_won_007,IT134-380,42.80604150375703,11.090636743197244,False
+elc_won_010,ep_windon_wind_010,1065.1999999999998,windon,Aggregated Plant -- operating,elc_won_010,way/60235685-380,42.06551225069795,14.585297084305605,False
+elc_won_011,ep_windon_011__irena,629.3971522891966,windon,Aggregated Plant - IRENA Gap - 11_Missing Onshore wind energy Capacity -- operating,elc_won_011,way/495354824-380,40.30431766344338,16.59348935767957,False
+elc_won_011,ep_windon_wind_011,3309.6,windon,Aggregated Plant -- construction,elc_won_011,way/495354824-380,40.587345060306006,16.20111607759366,False
+elc_won_012,ep_windon_wind_012,1121.8,windon,Aggregated Plant -- operating,elc_won_012,way/988654143-380,40.78365578440691,15.295090344589948,False
+elc_won_013,ep_windon_wind_013,65.0,windon,Aggregated Plant -- operating,elc_won_013,way/108020416-380,40.570839279766844,15.601319408725605,False
+elc_won_014,ep_windon_wind_014,127.0,windon,Aggregated Plant -- operating,elc_won_014,way/743450089-380,41.175393645421074,13.569018539302942,False
+elc_won_015,ep_windon_015__irena,759.6382190275476,windon,Aggregated Plant - IRENA Gap - 15_Missing Onshore wind energy Capacity -- operating,elc_won_015,way/255011550-380,38.2018823340317,8.820428347434262,False
+elc_won_015,ep_windon_wind_015,1216.0,windon,Aggregated Plant -- operating,elc_won_015,way/255011550-380,38.30064117821875,8.564533019735492,False
+elc_won_016,ep_windon_016__irena,663.0726286832561,windon,Aggregated Plant - IRENA Gap - 16_Missing Onshore wind energy Capacity -- operating,elc_won_016,way/255011550-380,39.27507545607579,8.133113866451353,False
+elc_won_016,ep_windon_wind_016,1574.0,windon,Aggregated Plant -- operating,elc_won_016,way/255011550-380,39.82030446370818,8.49688355684472,False
+elc_won_017,ep_windon_wind_017,362.59999999999997,windon,Aggregated Plant -- operating,elc_won_017,IT161-380,37.5628221786809,14.015969766782934,False
+elc_won_018,ep_windon_wind_018,140.0,windon,Aggregated Plant -- operating,elc_won_018,way/338753171-380,37.16369725363253,14.839759839963536,False
+elc_won_019,ep_windon_wind_019,494.0,windon,Aggregated Plant -- operating,elc_won_019,way/110138220-380,38.112380452972914,14.930608581370514,False

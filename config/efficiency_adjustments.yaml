@@ -1,0 +1,96 @@
+# VerveStacks Efficiency Adjustment Factors by Country
+# 
+# Purpose: Country-specific efficiency calibration factors for coal and gas plants
+# Usage: Applied as multipliers to base efficiency values during processing
+# 
+# Format:
+#   ISO_CODE:
+#     coal_factor: multiplier for coal plant efficiency (default: 1.0)
+#     gas_factor: multiplier for gas plant efficiency (default: 1.0)
+#     notes: optional calibration notes or reasoning
+#
+# Example: If base coal efficiency is 35% and coal_factor is 0.9, 
+#          final efficiency becomes 31.5% (35% × 0.9)
+
+# Default values (applied when country not specified)
+default:
+  coal_factor: 1.0
+  gas_factor: 1.0
+  notes: "Default efficiency - no adjustment"
+
+# Country-specific adjustments
+GRC:
+  coal_factor: 0.8  # Reduce coal efficiency by 22%
+  gas_factor: 0.8   # Reduce gas efficiency by 22%
+  notes: "Initial calibration based on GRC analysis - efficiency needs downgrading"
+
+LVA:
+  gas_factor: 0.7
+
+GBR:
+  coal_factor: 0.8
+  gas_factor: 0.8
+
+EST:
+  coal_factor: 0.5
+  gas_factor: 0.5
+
+POL:
+  coal_factor: 0.95
+
+ITA:
+  coal_factor: 1.1
+  gas_factor: 1.08
+
+FRA:
+  coal_factor: 1
+  gas_factor: 1
+
+VNM:
+  coal_factor: 1.01
+
+NZL:
+  coal_factor: .85
+  gas_factor: .85
+
+TJK:
+  coal_factor: .94
+
+KAZ:
+  coal_factor: 0.98
+
+ZWE:
+  coal_factor: 1.2
+
+FIN:
+  coal_factor: .79
+  gas_factor: .79
+
+CHN:
+  coal_factor: .93
+  gas_factor: .93
+
+DZA:
+  gas_factor: 0.9
+
+DEU:
+  coal_factor: .92
+  gas_factor: .92
+
+JPN:
+  coal_factor: .88
+  gas_factor: .88
+
+CHE:
+  coal_factor: .92
+  gas_factor: .92
+
+ESP:
+  coal_factor: .75
+  gas_factor: .75
+
+IND:
+  coal_factor: 1.03
+
+USA:
+  coal_factor: 1.01

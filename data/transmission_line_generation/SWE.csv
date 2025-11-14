@@ -1,0 +1,352 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_SE10-220,ep_hydro_SE10-220__irena,16.6155905980363,hydro,Aggregated Plant - IRENA Gap - SE10-220_Missing Hydro Capacity -- operating,e_SE10-220,SE10-220,63.708235723092464,15.087649956787962,False
+e_SE10-220,ep_hydro_ror_G100001052078,60.0,hydro,Hissmofors VI hydroelectric plant_ -- operating,e_SE10-220,SE10-220,63.3318,14.4681,False
+e_SE10-220,ep_windon_wind_220,230.5,windon,Aggregated Plant -- operating,e_SE10-220,SE10-220,63.355042250513414,15.158636002545437,False
+e_SE10-220,ep_windon_wind_G100000919849,288.0,windon,Åskälen wind farm_-- -- operating,e_SE10-220,SE10-220,63.5542,15.0532,False
+e_SE11-400,ep_hydro_SE11-400__irena,16.6155905980363,hydro,Aggregated Plant - IRENA Gap - SE11-400_Missing Hydro Capacity -- operating,e_SE11-400,SE11-400,63.45743759005372,16.676001598310926,False
+e_SE11-400,ep_hydro_dam_G100001052073,60.0,hydro,Edsele hydroelectric plant_ -- operating,e_SE11-400,SE11-400,63.4046,16.5571,False
+e_SE11-400,ep_windon_wind_G100000919651,242.0,windon,Ranasjö wind farm_-- -- construction,e_SE11-400,SE11-400,63.5225,16.5706,False
+e_SE12-220,ep_hydro_SE12-220__irena,31.015769116334425,hydro,Aggregated Plant - IRENA Gap - SE12-220_Missing Hydro Capacity -- operating,e_SE12-220,SE12-220,63.252100113915695,16.891456254202385,False
+e_SE12-220,ep_hydro_dam_G100000603487,112.0,hydro,Nämforsen hydroelectric plant_ -- operating,e_SE12-220,SE12-220,63.4401,16.8806,False
+e_SE19-220,ep_windon_wind_220,79.0,windon,Aggregated Plant -- operating,e_SE19-220,SE19-220,62.62869193760778,16.61479937957305,False
+e_SE19-220,ep_windon_wind_G100000919830,260.0,windon,Stor-Skälsjön wind farm_-- -- construction,e_SE19-220,SE19-220,62.7305,16.9775,False
+e_SE20-220,ep_hydro_SE20-220__irena,43.20053555489439,hydro,Aggregated Plant - IRENA Gap - SE20-220_Missing Hydro Capacity -- operating,e_SE20-220,SE20-220,62.73365715148457,12.567937754024369,False
+e_SE20-220,ep_hydro_dam_G100000603478,156.0,hydro,Långå hydroelectric plant_ -- operating,e_SE20-220,SE20-220,62.4632,13.0803,False
+e_SE20-220,ep_windon_wind_220,24.0,windon,Aggregated Plant -- operating,e_SE20-220,SE20-220,62.37768840766511,12.6092489167292,False
+e_SE21-400,ep_windon_wind_400,208.00000000000003,windon,Aggregated Plant -- operating,e_SE21-400,SE21-400,62.53976797451212,16.95464324642189,False
+e_SE23-220,ep_windon_wind_220,146.4,windon,Aggregated Plant -- operating,e_SE23-220,SE23-220,62.38798993399532,16.295802184111384,False
+e_SE24-220,ep_hydro_SE24-220__irena,13.846325498363585,hydro,Aggregated Plant - IRENA Gap - SE24-220_Missing Hydro Capacity -- operating,e_SE24-220,SE24-220,61.34236239425876,16.069770004812096,False
+e_SE24-220,ep_hydro_ror_G100001052092,50.0,hydro,Norrange hydroelectric plant_ -- operating,e_SE24-220,SE24-220,61.4774,16.3887,False
+e_SE25-220,ep_hydro_SE25-220__irena,19.93870871764356,hydro,Aggregated Plant - IRENA Gap - SE25-220_Missing Hydro Capacity -- operating,e_SE25-220,SE25-220,61.49615741022802,16.00528518158258,False
+e_SE25-220,ep_hydro_dam_G100001027454,72.0,hydro,Dönje hydroelectric plant_ -- operating,e_SE25-220,SE25-220,61.3956,16.4041,False
+e_SE25-220,ep_windon_wind_220,22.0,windon,Aggregated Plant -- operating,e_SE25-220,SE25-220,61.14171825464195,16.038304171578417,False
+e_SE26-220,ep_bioenergy_G100000200252,90.0,bioenergy,Bomhus Energi power station_1 -- operating,e_SE26-220,SE26-220,60.6815,17.2697,False
+e_SE26-220,ep_bioenergy_SE26-220,46.0,bioenergy,Aggregated Plant -- operating,e_SE26-220,SE26-220,60.837989201642564,17.0410331161785,False
+e_SE26-220,ep_bioenergy_SE26-220__ember,63.999999999999986,bioenergy,Aggregated Plant - EMBER Gap - SE26-220_Missing Bioenergy Capacity -- operating,e_SE26-220,SE26-220,60.480669535328715,17.08626506433125,False
+e_SE35-220,ep_bioenergy_G100000201441,51.0,bioenergy,Aroskraft-1 power station_6 -- operating,e_SE35-220,SE35-220,59.58849,16.513861,False
+e_SE35-220,ep_bioenergy_G100000201442,55.0,bioenergy,Aroskraft-1 power station_7 -- operating,e_SE35-220,SE35-220,59.58849,16.513861,False
+e_SE35-220,ep_bioenergy_G100001009098,250.0,bioenergy,Aroskraft-1 power station_4 -- operating,e_SE35-220,SE35-220,59.58849,16.513861,False
+e_SE35-220,ep_bioenergy_SE35-220,38.0,bioenergy,Aggregated Plant -- operating,e_SE35-220,SE35-220,59.761824489696885,16.463313833956423,False
+e_SE35-220,ep_bioenergy_SE35-220__ember,185.41176470588232,bioenergy,Aggregated Plant - EMBER Gap - SE35-220_Missing Bioenergy Capacity -- operating,e_SE35-220,SE35-220,59.40843654420183,16.522007424418454,False
+e_SE35-220,ep_oil_steam_turbine_G100001000107,250.0,oil,Aroskraft-1 power station_3 -- operating,e_SE35-220,SE35-220,59.58849,16.513861,False
+e_SE39-220,ep_bioenergy_SE39-220__ember,291.7647058823529,bioenergy,Aggregated Plant - EMBER Gap - SE39-220_Missing Bioenergy Capacity -- operating,e_SE39-220,SE39-220,59.31901524062118,17.752963107359218,False
+e_SE41-220,ep_bioenergy_SE41-220__ember,35.294117647058826,bioenergy,Aggregated Plant -- operating,e_SE41-220,SE41-220,59.46006756006542,17.96048215379703,False
+e_SE41-220,ep_m_bioenergy_G100001000112,75.0,bioenergy,Hässelby power station_1 -- mothballed,e_SE41-220,SE41-220,59.36224,17.82471,False
+e_SE46-400,ep_bioenergy_G100000200230,85.0,bioenergy,Igelsta CHP power station_1 -- operating,e_SE46-400,SE46-400,59.176,17.6646,False
+e_SE46-400,ep_bioenergy_SE46-400__ember,39.99999999999999,bioenergy,Aggregated Plant -- operating,e_SE46-400,SE46-400,59.27944985532123,17.715473096892865,False
+e_SE61-230,ep_bioenergy_G100000200333,142.0,bioenergy,Södra Cell Mönsterås Pulp Mill power station_1 -- operating,e_SE61-230,SE61-230,57.0916,16.5461,False
+e_SE61-230,ep_bioenergy_SE61-230__ember,66.8235294117647,bioenergy,Aggregated Plant - EMBER Gap - SE61-230_Missing Bioenergy Capacity -- operating,e_SE61-230,SE61-230,57.52532160188168,16.654953999734687,False
+e_SE64-400,ep_bioenergy_SE64-400,69.0,bioenergy,Aggregated Plant -- operating,e_SE64-400,SE64-400,57.03988476519209,14.456738336722092,False
+e_SE64-400,ep_bioenergy_SE64-400__ember,32.47058823529411,bioenergy,Aggregated Plant -- operating,e_SE64-400,SE64-400,56.69003584268884,14.542978529774265,False
+e_SE7-220,ep_hydro_SE7-220__irena,19.661782207676293,hydro,Aggregated Plant - IRENA Gap - SE7-220_Missing Hydro Capacity -- operating,e_SE7-220,SE7-220,63.88470046174672,17.154923781405003,False
+e_SE7-220,ep_hydro_dam_G100001052072,71.0,hydro,Edensforsen hydroelectric plant_ -- operating,e_SE7-220,SE7-220,63.6838,17.0066,False
+e_SE8-220,ep_hydro_SE8-220__irena,31.015769116334425,hydro,Aggregated Plant - IRENA Gap - SE8-220_Missing Hydro Capacity -- operating,e_SE8-220,SE8-220,63.8420460355716,13.562268112461911,False
+e_SE8-220,ep_hydro_ror_G100000603488,112.0,hydro,Olden hydroelectric plant_ -- operating,e_SE8-220,SE8-220,63.7387,13.5473,False
+e_r10153505-400,ep_bioenergy_G100000200278,55.0,bioenergy,Hedenverket power station_1 -- operating,e_r10153505-400,relation/10153505-400,59.3866,13.5696,False
+e_r10153505-400,ep_bioenergy_G100000201462,58.0,bioenergy,Skoghalls Mill power station_TG8 -- operating,e_r10153505-400,relation/10153505-400,59.3215,13.447,False
+e_r10153505-400,ep_bioenergy_r10153505-400,40.0,bioenergy,Aggregated Plant -- operating,e_r10153505-400,relation/10153505-400,59.74701048060847,12.996272792939108,False
+e_r10153505-400,ep_bioenergy_r10153505-400__ember,72.0,bioenergy,Aggregated Plant - EMBER Gap - relation/10153505-400_Missing Bioenergy Capacity -- operating,e_r10153505-400,relation/10153505-400,59.439757573016365,13.317889941145854,False
+e_r10153505-400,ep_hydro_ps_G100001027457,55.0,hydro,Kymmens hydroelectric plant_ -- operating,e_r10153505-400,relation/10153505-400,59.9501,12.7501,False
+e_r10153505-400,ep_hydro_r10153505-400__irena,15.230958048199945,hydro,Aggregated Plant - IRENA Gap - relation/10153505-400_Missing Hydro Capacity -- operating,e_r10153505-400,relation/10153505-400,59.03777750764949,13.044591247588913,False
+e_r10153505-400,ep_windoff_wind_400,30.0,windoff,Aggregated Plant -- operating,e_r10153505-400,relation/10153505-400,59.387101108821525,12.60085568304757,False
+e_r10629005,ep_bioenergy_r10629005,31.0,bioenergy,Aggregated Plant -- operating,e_r10629005,relation/10629005,57.28505455036031,16.008555070731234,False
+e_r10629005,ep_bioenergy_r10629005__ember,14.588235294117645,bioenergy,Aggregated Plant -- operating,e_r10629005,relation/10629005,57.081206185830375,16.29389041977439,False
+e_r11964241-400,ep_hydro_dam_G100000603467,170.0,hydro,Hojum hydroelectric plant_ -- operating,e_r11964241-400,relation/11964241-400,58.2803,12.2786,False
+e_r11964241-400,ep_hydro_r11964241-400__irena,85.57029157988696,hydro,Aggregated Plant - IRENA Gap - relation/11964241-400_Missing Hydro Capacity -- operating,e_r11964241-400,relation/11964241-400,58.37855701945847,12.05381906193256,False
+e_r11964241-400,ep_hydro_ror_G100000603489,103.0,hydro,Olidan hydroelectric plant_ -- operating,e_r11964241-400,relation/11964241-400,58.275,12.2727,False
+e_r11964241-400,ep_hydro_ror_G100001027459,36.0,hydro,Lilla Edet hydroelectric plant_ -- operating,e_r11964241-400,relation/11964241-400,58.1356,12.1199,False
+e_r11964241-400,ep_oil_gas_turbine_G100001000129,67.0,oil,Stallbacka power station_GT1 -- operating,e_r11964241-400,relation/11964241-400,58.3061,12.3198,False
+e_r11964241-400,ep_oil_gas_turbine_G100001000130,67.0,oil,Stallbacka power station_GT2 -- operating,e_r11964241-400,relation/11964241-400,58.3061,12.3198,False
+e_r11964241-400,ep_oil_gas_turbine_G100001000131,67.0,oil,Stallbacka power station_GT3 -- operating,e_r11964241-400,relation/11964241-400,58.3061,12.3198,False
+e_r12606773-220,ep_hydro_dam_G100000603469,151.0,hydro,Hölleforsen hydroelectric plant_ -- operating,e_r12606773-220,relation/12606773-220,62.9507,16.6683,False
+e_r12606773-220,ep_hydro_r12606773-220__irena,41.81590300505803,hydro,Aggregated Plant - IRENA Gap - relation/12606773-220_Missing Hydro Capacity -- operating,e_r12606773-220,relation/12606773-220,63.07747420814353,16.703228102489497,False
+e_r12722201-220,ep_hydro_r12722201-220__irena,26.584944956858084,hydro,Aggregated Plant - IRENA Gap - relation/12722201-220_Missing Hydro Capacity -- operating,e_r12722201-220,relation/12722201-220,62.972905875564145,16.69965811215571,False
+e_r12722201-220,ep_hydro_ror_G100000603470,96.0,hydro,Järkvissle hydroelectric plant_ -- operating,e_r12722201-220,relation/12722201-220,62.7972,16.6647,False
+e_r12722201-220,ep_windon_wind_220,174.00000000000003,windon,Aggregated Plant -- operating,e_r12722201-220,relation/12722201-220,62.61571021622142,16.66823505267309,False
+e_r13889505-220,ep_windon_wind_220,194.99999999999997,windon,Aggregated Plant -- operating,e_r13889505-220,relation/13889505-220,63.025279674273655,17.145284884221596,False
+e_r13889505-400,ep_hydro_dam_G100001052087,62.0,hydro,Sollefteå hydroelectric plant_ -- operating,e_r13889505-400,relation/13889505-400,63.1713,17.2658,False
+e_r13889505-400,ep_hydro_r13889505-400__irena,66.4623623921452,hydro,Aggregated Plant - IRENA Gap - relation/13889505-400_Missing Hydro Capacity -- operating,e_r13889505-400,relation/13889505-400,63.35003046470443,17.151389552787375,False
+e_r13889505-400,ep_hydro_ror_G100000603466,178.0,hydro,Hjälta hydroelectric plant_ -- operating,e_r13889505-400,relation/13889505-400,63.1836,17.0985,False
+e_r13889505-400,ep_windon_wind_400,15.0,windon,Aggregated Plant -- operating,e_r13889505-400,relation/13889505-400,62.99856825177415,17.074033546227724,False
+e_r14939275,ep_oil_steam_turbine_G100001000113,42.0,oil,Karlshamn power station_G13 -- operating,e_r14939275,relation/14939275,56.1525,14.8349,False
+e_r14939275,ep_oil_steam_turbine_G100001000114,334.0,oil,Karlshamn power station_G2 -- operating,e_r14939275,relation/14939275,56.1525,14.8349,False
+e_r14939275,ep_oil_steam_turbine_G100001000115,328.0,oil,Karlshamn power station_G3 -- operating,e_r14939275,relation/14939275,56.1525,14.8349,False
+e_r14939275-400,ep_bioenergy_G100000200334,53.0,bioenergy,Södra Cell Mörrum Pulp Mill power station_1 -- operating,e_r14939275-400,relation/14939275-400,56.1604,14.7632,False
+e_r14939275-400,ep_bioenergy_r14939275-400__ember,24.941176470588236,bioenergy,Aggregated Plant -- operating,e_r14939275-400,relation/14939275-400,56.15821216797738,14.975328802604203,False
+e_r15654150-220,ep_windon_wind_220,235.0,windon,Aggregated Plant -- operating,e_r15654150-220,relation/15654150-220,62.37784745671533,14.999115731928965,False
+e_r15657011-220,ep_hydro_dam_G100001052086,60.0,hydro,Rätan hydroelectric plant_ -- operating,e_r15657011-220,relation/15657011-220,62.4891,14.6257,False
+e_r15657011-220,ep_hydro_r15657011-220__irena,16.6155905980363,hydro,Aggregated Plant - IRENA Gap - relation/15657011-220_Missing Hydro Capacity -- operating,e_r15657011-220,relation/15657011-220,62.66593185994168,14.662908359475052,False
+e_r15657011-220,ep_windon_wind_220,78.0,windon,Aggregated Plant -- operating,e_r15657011-220,relation/15657011-220,62.31071394836847,14.652272835990175,False
+e_r15657011-400,ep_windon_wind_400,12.0,windon,Aggregated Plant -- operating,e_r15657011-400,relation/15657011-400,62.35696166855364,14.566372244460771,False
+e_r18160532-400,ep_bioenergy_G100000200300,130.0,bioenergy,Metsä Husum power station_1 -- operating,e_r18160532-400,relation/18160532-400,63.328,19.1613,False
+e_r18160532-400,ep_bioenergy_r18160532-400,40.0,bioenergy,Aggregated Plant -- operating,e_r18160532-400,relation/18160532-400,63.42082502692886,18.79968806927298,False
+e_r18160532-400,ep_bioenergy_r18160532-400__ember,79.99999999999999,bioenergy,Aggregated Plant - EMBER Gap - relation/18160532-400_Missing Bioenergy Capacity -- operating,e_r18160532-400,relation/18160532-400,63.06376549063953,18.53886247871878,False
+e_r18160532-400,ep_windon_wind_400,378.99999999999994,windon,Aggregated Plant -- operating,e_r18160532-400,relation/18160532-400,63.32029997275284,18.090507080870015,False
+e_r6081310-400,ep_windon_wind_400,49.0,windon,Aggregated Plant -- operating,e_r6081310-400,relation/6081310-400,60.67600687149935,15.260972235280652,False
+e_r7107330-220,ep_windon_wind_220,10.0,windon,Aggregated Plant -- operating,e_r7107330-220,relation/7107330-220,60.52086461842316,16.431296363239483,False
+e_r7123679-220,ep_windon_wind_220,116.0,windon,Aggregated Plant -- operating,e_r7123679-220,relation/7123679-220,60.767917797916304,16.755892094800767,False
+e_r7123679-220,ep_windon_wind_G100000919802,249.0,windon,Bergvind Lingbo wind farm_-- -- operating,e_r7123679-220,relation/7123679-220,61.0874,16.3927,False
+e_r8488753-220,ep_hydro_dam_G100001052084,73.0,hydro,Linnvasselv hydroelectric plant_ -- operating,e_r8488753-220,relation/8488753-220,64.6482,13.7609,False
+e_r8488753-220,ep_hydro_r8488753-220__irena,20.215635227610832,hydro,Aggregated Plant - IRENA Gap - relation/8488753-220_Missing Hydro Capacity -- operating,e_r8488753-220,relation/8488753-220,64.69922402284858,13.686052074928403,False
+e_w101320612-400,ep_bioenergy_G100000200233,70.0,bioenergy,Västhamnsverket power station_1 -- operating,e_w101320612-400,way/101320612-400,56.037,12.6936,False
+e_w101320612-400,ep_bioenergy_w101320612-400__ember,32.94117647058823,bioenergy,Aggregated Plant -- operating,e_w101320612-400,way/101320612-400,56.09472310152938,12.902244573057336,False
+e_w1024243178-220,ep_windon_wind_220,90.0,windon,Aggregated Plant -- operating,e_w1024243178-220,way/1024243178-220,61.85446750358502,14.339200573321088,False
+e_w1024243178-220,ep_windon_wind_G100000919786,231.0,windon,Skaftåsen wind farm_-- -- operating,e_w1024243178-220,way/1024243178-220,61.7926,14.4778,False
+e_w1024243178-220,ep_windon_wind_G100000919846,286.0,windon,Åndberg wind farm_-- -- operating,e_w1024243178-220,way/1024243178-220,61.7668,13.941,False
+e_w1025530508-400,ep_bioenergy_G100000201452,52.0,bioenergy,Karlsborg Mill power station_1 -- operating,e_w1025530508-400,way/1025530508-400,65.7942,23.2804,False
+e_w1025530508-400,ep_bioenergy_w1025530508-400__ember,24.470588235294116,bioenergy,Aggregated Plant -- operating,e_w1025530508-400,way/1025530508-400,65.89688132679062,23.28273349124759,False
+e_w1028201096-400,ep_bioenergy_w1028201096-400,36.0,bioenergy,Aggregated Plant -- operating,e_w1028201096-400,way/1028201096-400,64.9831391018502,20.816126576682695,False
+e_w1028201096-400,ep_bioenergy_w1028201096-400__ember,16.941176470588236,bioenergy,Aggregated Plant -- operating,e_w1028201096-400,way/1028201096-400,64.36144728307237,20.651121046592895,False
+e_w1028201096-400,ep_hydro_ror_G100000603477,140.0,hydro,Kvistforsen hydroelectric plant_ -- operating,e_w1028201096-400,way/1028201096-400,64.7497,20.8664,False
+e_w1028201096-400,ep_hydro_w1028201096-400__irena,38.76971139541804,hydro,Aggregated Plant - IRENA Gap - way/1028201096-400_Missing Hydro Capacity -- operating,e_w1028201096-400,way/1028201096-400,64.42481419982187,20.12045415947611,False
+e_w1028201096-400,ep_windon_wind_400,433.0,windon,Aggregated Plant -- operating,e_w1028201096-400,way/1028201096-400,64.83158731075756,19.985205806796277,False
+e_w1065701571-400,ep_bioenergy_w1065701571-400,35.0,bioenergy,Aggregated Plant -- operating,e_w1065701571-400,way/1065701571-400,59.1771869311483,16.585598371805254,False
+e_w1065701571-400,ep_bioenergy_w1065701571-400__ember,16.470588235294116,bioenergy,Aggregated Plant -- operating,e_w1065701571-400,way/1065701571-400,58.823103139401276,16.625692370737994,False
+e_w1237755672-400,ep_hydro_dam_G100001027458,57.0,hydro,Laforsen hydroelectric plant_ -- operating,e_w1237755672-400,way/1237755672-400,61.9501,15.5167,False
+e_w1237755672-400,ep_hydro_ror_G100000603476,103.0,hydro,Krokströmmen hydroelectric plant_ -- operating,e_w1237755672-400,way/1237755672-400,62.0466,14.8779,False
+e_w1237755672-400,ep_hydro_w1237755672-400__irena,44.30824159476347,hydro,Aggregated Plant - IRENA Gap - way/1237755672-400_Missing Hydro Capacity -- operating,e_w1237755672-400,way/1237755672-400,61.713542411170955,15.430141133746622,False
+e_w1237755672-400,ep_windon_wind_400,93.0,windon,Aggregated Plant -- operating,e_w1237755672-400,way/1237755672-400,61.711944816172725,14.957397054779962,False
+e_w1241429776-220,ep_hydro_dam_G100000603495,160.0,hydro,Sällsjö hydroelectric plant_ -- operating,e_w1241429776-220,way/1241429776-220,63.2224,13.6601,False
+e_w1241429776-220,ep_hydro_w1241429776-220__irena,44.30824159476347,hydro,Aggregated Plant - IRENA Gap - way/1241429776-220_Missing Hydro Capacity -- operating,e_w1241429776-220,way/1241429776-220,63.090007891206376,13.654157818213381,False
+e_w1302595553-400,ep_bioenergy_w1302595553-400,38.0,bioenergy,Aggregated Plant -- operating,e_w1302595553-400,way/1302595553-400,55.602235937325716,13.16223591544943,False
+e_w1302595553-400,ep_bioenergy_w1302595553-400__ember,39.05882352941176,bioenergy,Aggregated Plant -- operating,e_w1302595553-400,way/1302595553-400,55.67857753137407,12.675102871941016,False
+e_w1302595553-400,ep_oil_gas_turbine_G100001000127,40.0,oil,Barsebäck power station_GT1 -- operating,e_w1302595553-400,way/1302595553-400,55.7486,12.9334,False
+e_w1302595553-400,ep_oil_gas_turbine_G100001000128,40.0,oil,Barsebäck power station_GT2 -- operating,e_w1302595553-400,way/1302595553-400,55.7486,12.9334,False
+e_w138622087-220,ep_hydro_dam_G100000603452,125.0,hydro,Älvkarleby hydroelectric plant_ -- operating,e_w138622087-220,way/138622087-220,60.5632,17.4431,False
+e_w138622087-220,ep_hydro_w138622087-220__irena,47.908286224338,hydro,Aggregated Plant - IRENA Gap - way/138622087-220_Missing Hydro Capacity -- operating,e_w138622087-220,way/138622087-220,60.613744039058865,17.311497005681,False
+e_w144381726-220,ep_bioenergy_w144381726-220,46.0,bioenergy,Aggregated Plant -- operating,e_w144381726-220,way/144381726-220,59.80326367259982,17.875316607690937,False
+e_w144381726-220,ep_bioenergy_w144381726-220__ember,21.64705882352941,bioenergy,Aggregated Plant -- operating,e_w144381726-220,way/144381726-220,59.44432348843279,17.86450643681329,False
+e_w160474491-400,ep_bioenergy_G100000201440,100.0,bioenergy,Åbyverket power station_G3 -- operating,e_w160474491-400,way/160474491-400,59.2649,15.1772,False
+e_w160474491-400,ep_bioenergy_w160474491-400__ember,47.058823529411754,bioenergy,Aggregated Plant -- operating,e_w160474491-400,way/160474491-400,59.30016292992849,15.031834657293313,False
+e_w172201471-400,ep_m_oil_gas_turbine_G100001000110,78.0,oil,Halmstad power station_11 -- mothballed,e_w172201471-400,way/172201471-400,56.6926,12.9075,False
+e_w172201471-400,ep_oil_gas_turbine_G100001000111,200.0,oil,Halmstad power station_12 -- operating,e_w172201471-400,way/172201471-400,56.6926,12.9075,False
+e_w187832596-220,ep_bioenergy_G100000201457,75.0,bioenergy,Östersund power station_KVV2 -- construction,e_w187832596-220,way/187832596-220,63.207,14.6506,False
+e_w187832596-220,ep_bioenergy_w187832596-220,40.0,bioenergy,Aggregated Plant -- operating,e_w187832596-220,way/187832596-220,63.590060938370165,15.303508179461826,False
+e_w187832596-220,ep_bioenergy_w187832596-220__ember,54.11764705882352,bioenergy,Aggregated Plant - EMBER Gap - way/187832596-220_Missing Bioenergy Capacity -- operating,e_w187832596-220,way/187832596-220,63.2188709433637,15.600445271547484,False
+e_w187832596-220,ep_hydro_dam_G100001052079,56.0,hydro,Kattstrupeforsen hydroelectric plant_ -- operating,e_w187832596-220,way/187832596-220,63.3265,14.5811,False
+e_w187832596-220,ep_hydro_w187832596-220__irena,15.507884558167213,hydro,Aggregated Plant - IRENA Gap - way/187832596-220_Missing Hydro Capacity -- operating,e_w187832596-220,way/187832596-220,62.87632842021281,15.27252399583093,False
+e_w187832596-220,ep_solar_pv_220,3.6,solar,Aggregated Plant -- operating,e_w187832596-220,way/187832596-220,63.23576826331421,14.880097753525881,False
+e_w187832596-400,ep_hydro_dam_G100000603485,143.0,hydro,Midskog hydroelectric plant_ -- operating,e_w187832596-400,way/187832596-400,63.239,15.2396,False
+e_w187832596-400,ep_hydro_w187832596-400__irena,39.60049092531985,hydro,Aggregated Plant - IRENA Gap - way/187832596-400_Missing Hydro Capacity -- operating,e_w187832596-400,way/187832596-400,63.336064763864535,15.120145522680476,False
+e_w200052139-400,ep_bioenergy_w200052139-400,35.0,bioenergy,Aggregated Plant -- operating,e_w200052139-400,way/200052139-400,58.033222306454775,14.140418265319358,False
+e_w200052139-400,ep_bioenergy_w200052139-400__ember,16.470588235294116,bioenergy,Aggregated Plant -- operating,e_w200052139-400,way/200052139-400,57.72252866135336,14.551576143514046,False
+e_w200772307-220,ep_hydro_dam_G100000603472,114.0,hydro,Järpströmmen hydroelectric plant_ -- operating,e_w200772307-220,way/200772307-220,63.3893,13.3844,False
+e_w200772307-220,ep_hydro_w200772307-220__irena,31.569622136268976,hydro,Aggregated Plant - IRENA Gap - way/200772307-220_Missing Hydro Capacity -- operating,e_w200772307-220,way/200772307-220,63.40013004827821,13.474345397987054,False
+e_w220076858-400,ep_hydro_dam_G100000603508,325.0,hydro,Vietas hydroelectric plant_ -- operating,e_w220076858-400,way/220076858-400,67.4927,18.3547,False
+e_w220076858-400,ep_hydro_w220076858-400__irena,90.00111573936331,hydro,Aggregated Plant - IRENA Gap - way/220076858-400_Missing Hydro Capacity -- operating,e_w220076858-400,way/220076858-400,67.36740517189236,18.227730914285676,False
+e_w23064675-220,ep_bioenergy_G100000201464,130.0,bioenergy,Värtaverket power station_8 -- operating,e_w23064675-220,way/23064675-220,59.353269,18.100901,False
+e_w23064675-220,ep_bioenergy_w23064675-220__ember,167.52941176470588,bioenergy,Aggregated Plant - EMBER Gap - way/23064675-220_Missing Bioenergy Capacity -- operating,e_w23064675-220,way/23064675-220,59.24402345790132,17.95101008375775,False
+e_w241937764-400,ep_hydro_dam_G100000603484,463.0,hydro,Messaure hydroelectric plant_ -- operating,e_w241937764-400,way/241937764-400,66.6926,20.3476,False
+e_w241937764-400,ep_hydro_w241937764-400__irena,169.75595060993757,hydro,Aggregated Plant - IRENA Gap - way/241937764-400_Missing Hydro Capacity -- operating,e_w241937764-400,way/241937764-400,66.85945710800061,20.30800351644535,False
+e_w241937764-400,ep_windon_wind_400,148.0,windon,Aggregated Plant -- operating,e_w241937764-400,way/241937764-400,66.50391418949272,20.365565767842966,False
+e_w24415564-220,ep_bioenergy_G100000200280,71.0,bioenergy,Högdalenverket power station_1 -- operating,e_w24415564-220,way/24415564-220,59.2581,18.0603,False
+e_w24415564-220,ep_bioenergy_w24415564-220__ember,33.41176470588235,bioenergy,Aggregated Plant -- operating,e_w24415564-220,way/24415564-220,59.21544065960599,17.91463128405184,False
+e_w252824769-400,ep_windon_wind_400,406.0,windon,Aggregated Plant -- construction,e_w252824769-400,way/252824769-400,65.21467918503072,21.02266659277295,False
+e_w252824769-400,ep_windon_wind_G100000920053,650.0,windon,Markbygden wind farm_1-MBETT -- operating,e_w252824769-400,way/252824769-400,65.3544,20.9832,False
+e_w252824769-400,ep_windon_wind_G100000925641,389.0,windon,Markbygden wind farm_2-MB Etapp 2 South -- construction,e_w252824769-400,way/252824769-400,65.3549,21.3619,False
+e_w252824769-400,ep_windon_wind_G100000925642,753.0,windon,Markbygden wind farm_3-Önusberget -- construction,e_w252824769-400,way/252824769-400,65.3255,20.7389,False
+e_w252824769-400,ep_windon_wind_G100001005442,235.5,windon,Ersträsk wind farm_-- -- operating,e_w252824769-400,way/252824769-400,65.4231,20.613,False
+e_w252965920-400,ep_hydro_dam_G100000603496,214.0,hydro,Seitevare hydroelectric plant_ -- operating,e_w252965920-400,way/252965920-400,66.9774,18.583,False
+e_w252965920-400,ep_hydro_w252965920-400__irena,59.26227313299614,hydro,Aggregated Plant - IRENA Gap - way/252965920-400_Missing Hydro Capacity -- operating,e_w252965920-400,way/252965920-400,67.12941006387538,18.406559994627916,False
+e_w254135216-400,ep_bioenergy_w254135216-400,42.0,bioenergy,Aggregated Plant -- operating,e_w254135216-400,way/254135216-400,58.39458113458159,12.435548347899793,False
+e_w254135216-400,ep_bioenergy_w254135216-400__ember,54.58823529411764,bioenergy,Aggregated Plant - EMBER Gap - way/254135216-400_Missing Bioenergy Capacity -- operating,e_w254135216-400,way/254135216-400,57.77065303930681,12.731145383081357,False
+e_w254135216-400,ep_gas_combined_cycle_G100000400721,250.0,gas,Rya Göteborg power station_1 -- operating,e_w254135216-400,way/254135216-400,57.6924,11.8905,False
+e_w254135216-400,ep_oil_gas_turbine_G100001000109,36.0,oil,Göteborg power station_1 -- operating,e_w254135216-400,way/254135216-400,57.70291,11.95464,False
+e_w255820193-400,ep_hydro_dam_G100000603465,818.0,hydro,Harsprånget hydroelectric plant_ -- operating,e_w255820193-400,way/255820193-400,66.9541,19.8147,False
+e_w255820193-400,ep_hydro_dam_G100000603490,417.0,hydro,Porjus hydroelectric plant_ -- operating,e_w255820193-400,way/255820193-400,66.9587,19.8008,False
+e_w255820193-400,ep_hydro_w255820193-400__irena,394.6202767033622,hydro,Aggregated Plant - IRENA Gap - way/255820193-400_Missing Hydro Capacity -- operating,e_w255820193-400,way/255820193-400,67.13746583468064,19.827694852726694,False
+e_w255820193-400,ep_windon_wind_400,78.0,windon,Aggregated Plant -- operating,e_w255820193-400,way/255820193-400,66.77936662000845,19.80563298627049,False
+e_w257920140-400,ep_bioenergy_G100000201445,89.0,bioenergy,Händelö power station_G11 -- operating,e_w257920140-400,way/257920140-400,58.6206,16.2319,False
+e_w257920140-400,ep_bioenergy_G100000201453,65.0,bioenergy,KV Linkoping power station_1 -- operating,e_w257920140-400,way/257920140-400,58.4188,15.6239,False
+e_w257920140-400,ep_bioenergy_G100000201461,50.0,bioenergy,Skårblacka Bruk power station_G3 -- operating,e_w257920140-400,way/257920140-400,58.5796,15.9051,False
+e_w257920140-400,ep_bioenergy_w257920140-400,40.0,bioenergy,Aggregated Plant -- operating,e_w257920140-400,way/257920140-400,58.97243091451007,16.066031952737426,False
+e_w257920140-400,ep_bioenergy_w257920140-400__ember,114.82352941176468,bioenergy,Aggregated Plant - EMBER Gap - way/257920140-400_Missing Bioenergy Capacity -- operating,e_w257920140-400,way/257920140-400,58.65513999313723,16.387571757273026,False
+e_w257920140-400,ep_oil_gas_turbine_G100001000116,67.0,oil,Kimstad power station_GT1 -- operating,e_w257920140-400,way/257920140-400,58.53811,15.96513,False
+e_w257920140-400,ep_oil_gas_turbine_G100001000117,67.0,oil,Kimstad power station_GT2 -- operating,e_w257920140-400,way/257920140-400,58.53811,15.96513,False
+e_w260770703-400,ep_hydro_ror_G100000603500,112.0,hydro,Storfinnforsen hydroelectric plant_ -- operating,e_w260770703-400,way/260770703-400,63.5978,16.126,False
+e_w260770703-400,ep_hydro_w260770703-400__irena,31.015769116334425,hydro,Aggregated Plant - IRENA Gap - way/260770703-400_Missing Hydro Capacity -- operating,e_w260770703-400,way/260770703-400,63.500586246077795,16.383582136520626,False
+e_w260770703-400,ep_windon_wind_400,776.9000000000001,windon,Aggregated Plant -- construction,e_w260770703-400,way/260770703-400,63.52202642097585,15.872529183406323,False
+e_w260770703-400,ep_windon_wind_G100000919850,288.0,windon,Björkhöjden wind farm_-- -- operating,e_w260770703-400,way/260770703-400,63.4722,16.1034,False
+e_w262859794-400,ep_gas_combined_cycle_G100000410480,100.0,gas,Lulea power station_1 -- operating,e_w262859794-400,way/262859794-400,65.5716,22.082,False
+e_w262859794-400,ep_hydro_dam_G100000603457,80.0,hydro,Boden hydroelectric plant_ -- operating,e_w262859794-400,way/262859794-400,65.8077,21.6726,False
+e_w262859794-400,ep_hydro_w262859794-400__irena,22.154120797381736,hydro,Aggregated Plant - IRENA Gap - way/262859794-400_Missing Hydro Capacity -- operating,e_w262859794-400,way/262859794-400,65.85057237886741,21.942897756344532,False
+e_w263688590-400,ep_bioenergy_G100000200351,127.0,bioenergy,Värö Pulp Mill power station_1 -- operating,e_w263688590-400,way/263688590-400,57.2245,12.177,False
+e_w263688590-400,ep_bioenergy_w263688590-400__ember,59.764705882352935,bioenergy,Aggregated Plant - EMBER Gap - way/263688590-400_Missing Bioenergy Capacity -- operating,e_w263688590-400,way/263688590-400,57.28603550201367,12.268284910754966,False
+e_w263688590-400,ep_nuclear_G100000500129,1171.0,nuclear,Ringhals nuclear power plant_4 -- operating,e_w263688590-400,way/263688590-400,57.2574,12.1087,False
+e_w263688590-400,ep_nuclear_G100000500186,1117.0,nuclear,Ringhals nuclear power plant_3 -- operating,e_w263688590-400,way/263688590-400,57.2574,12.1087,False
+e_w263688590-400,ep_oil_gas_turbine_G100001000118,60.0,oil,Lahall power station_GT1 -- operating,e_w263688590-400,way/263688590-400,57.2332,12.1737,False
+e_w263688590-400,ep_oil_gas_turbine_G100001000119,60.0,oil,Lahall power station_GT2 -- operating,e_w263688590-400,way/263688590-400,57.2332,12.1737,False
+e_w263688590-400,ep_oil_gas_turbine_G100001000120,60.0,oil,Lahall power station_GT3 -- operating,e_w263688590-400,way/263688590-400,57.2332,12.1737,False
+e_w263688590-400,ep_oil_gas_turbine_G100001000121,60.0,oil,Lahall power station_GT4 -- operating,e_w263688590-400,way/263688590-400,57.2332,12.1737,False
+e_w278497532-400,ep_hydro_dam_G100000603453,88.0,hydro,Bålforsen hydroelectric plant_ -- operating,e_w278497532-400,way/278497532-400,64.6535,18.4833,False
+e_w278497532-400,ep_hydro_dam_G100000603505,105.0,hydro,Tuggen hydroelectric plant_ -- operating,e_w278497532-400,way/278497532-400,64.4729,18.8826,False
+e_w278497532-400,ep_hydro_ror_G100001027462,42.0,hydro,Rusfors hydroelectric plant_ -- operating,e_w278497532-400,way/278497532-400,64.7129,18.2534,False
+e_w278497532-400,ep_hydro_w278497532-400__irena,65.07772984230886,hydro,Aggregated Plant - IRENA Gap - way/278497532-400_Missing Hydro Capacity -- operating,e_w278497532-400,way/278497532-400,64.39970269185072,19.142085271674375,False
+e_w278497532-400,ep_windon_wind_400,234.8,windon,Aggregated Plant -- operating,e_w278497532-400,way/278497532-400,64.30868431510932,18.667533598622015,False
+e_w278505918-400,ep_hydro_dam_G100000603454,100.0,hydro,Bastusel hydroelectric plant_ -- operating,e_w278505918-400,way/278505918-400,65.4029,18.6736,False
+e_w278505918-400,ep_hydro_dam_G100000603459,220.0,hydro,Gallejuar hydroelectric plant_ -- operating,e_w278505918-400,way/278505918-400,65.1269,19.4693,False
+e_w278505918-400,ep_hydro_dam_G100000603507,120.0,hydro,Vargfors hydroelectric plant_ -- operating,e_w278505918-400,way/278505918-400,65.0214,19.6854,False
+e_w278505918-400,ep_hydro_w278505918-400__irena,121.84766438559956,hydro,Aggregated Plant - IRENA Gap - way/278505918-400_Missing Hydro Capacity -- operating,e_w278505918-400,way/278505918-400,65.19222257760381,19.635956044200352,False
+e_w278505918-400,ep_windon_wind_400,323.0,windon,Aggregated Plant -- construction,e_w278505918-400,way/278505918-400,64.83960102860344,19.701506932467925,False
+e_w278968690-400,ep_hydro_dam_G100000603473,296.0,hydro,Kilforsen hydroelectric plant_ -- operating,e_w278968690-400,way/278968690-400,63.5442,16.763,False
+e_w278968690-400,ep_hydro_w278968690-400__irena,81.97024695031243,hydro,Aggregated Plant - IRENA Gap - way/278968690-400_Missing Hydro Capacity -- operating,e_w278968690-400,way/278968690-400,63.414601703444944,16.84848614089181,False
+e_w278968695-400,ep_hydro_ror_G100000603492,157.0,hydro,Ramsele hydroelectric plant_ -- operating,e_w278968695-400,way/278968695-400,63.5817,16.3303,False
+e_w278968695-400,ep_hydro_w278968695-400__irena,43.47746206486166,hydro,Aggregated Plant - IRENA Gap - way/278968695-400_Missing Hydro Capacity -- operating,e_w278968695-400,way/278968695-400,63.541295624395275,16.463263363145565,False
+e_w278982557-220,ep_hydro_dam_G100000603480,165.0,hydro,Lasele hydroelectric plant_ -- operating,e_w278982557-220,way/278982557-220,63.5552,16.8277,False
+e_w278982557-220,ep_hydro_w278982557-220__irena,45.69287414459983,hydro,Aggregated Plant - IRENA Gap - way/278982557-220_Missing Hydro Capacity -- operating,e_w278982557-220,way/278982557-220,63.548020331379135,16.65215488496221,False
+e_w279194469-400,ep_hydro_dam_G100000603479,98.0,hydro,Långbjörn hydroelectric plant_ -- operating,e_w279194469-400,way/279194469-400,63.6367,16.7761,False
+e_w279194469-400,ep_hydro_w279194469-400__irena,27.138797976792628,hydro,Aggregated Plant - IRENA Gap - way/279194469-400_Missing Hydro Capacity -- operating,e_w279194469-400,way/279194469-400,63.4986834985341,16.868152841287156,False
+e_w279208190-220,ep_hydro_ror_G100001052076,56.0,hydro,Forsse hydroelectric plant_ -- operating,e_w279208190-220,way/279208190-220,63.1547,17.0215,False
+e_w279208190-220,ep_hydro_w279208190-220__irena,15.507884558167213,hydro,Aggregated Plant - IRENA Gap - way/279208190-220_Missing Hydro Capacity -- operating,e_w279208190-220,way/279208190-220,63.045620923075326,17.26698733974147,False
+e_w279208190-220,ep_windon_wind_220,92.0,windon,Aggregated Plant -- construction,e_w279208190-220,way/279208190-220,62.961205969566144,16.833348964583152,False
+e_w279212108-220,ep_hydro_dam_G100000603458,158.0,hydro,Forsmo hydroelectric plant_ -- operating,e_w279212108-220,way/279212108-220,63.2707,17.2003,False
+e_w279212108-220,ep_hydro_w279212108-220__irena,43.75438857482892,hydro,Aggregated Plant - IRENA Gap - way/279212108-220_Missing Hydro Capacity -- operating,e_w279212108-220,way/279212108-220,63.35704053931078,17.34093468889561,False
+e_w279221972-220,ep_hydro_ror_G100000603486,140.0,hydro,Moforsen hydroelectric plant_ -- operating,e_w279221972-220,way/279221972-220,63.3678,16.9872,False
+e_w279221972-220,ep_hydro_w279221972-220__irena,38.76971139541804,hydro,Aggregated Plant - IRENA Gap - way/279221972-220_Missing Hydro Capacity -- operating,e_w279221972-220,way/279221972-220,63.34107413961339,16.951579687438166,False
+e_w279842937-400,ep_nuclear_G100000500041,1450.0,nuclear,Oskarshamn nuclear power plant_3 -- operating,e_w279842937-400,way/279842937-400,57.4166,16.67301,False
+e_w279842937-400,ep_oil_gas_turbine_G100001000125,63.0,oil,Slite power station_GT1 -- operating,e_w279842937-400,way/279842937-400,57.7087,18.8034,False
+e_w279842937-400,ep_oil_gas_turbine_G100001000126,63.0,oil,Slite power station_GT2 -- operating,e_w279842937-400,way/279842937-400,57.7087,18.8034,False
+e_w279842937-400,ep_oil_gas_turbine_G100001009082,43.0,oil,Oskarshamn power station_GT1 -- operating,e_w279842937-400,way/279842937-400,57.4143,16.674,False
+e_w279842937-400,ep_oil_gas_turbine_G100001009083,43.0,oil,Oskarshamn power station_GT2 -- operating,e_w279842937-400,way/279842937-400,57.4143,16.674,False
+e_w279842937-400,ep_windon_wind_400,11.0,windon,Aggregated Plant -- operating,e_w279842937-400,way/279842937-400,57.684148204507245,16.686221808137326,False
+e_w283078113-220,ep_bioenergy_G100000201451,75.0,bioenergy,Iggesund Mill power station_G6 -- operating,e_w283078113-220,way/283078113-220,61.6407,17.0867,False
+e_w283078113-220,ep_bioenergy_w283078113-220__ember,35.294117647058826,bioenergy,Aggregated Plant -- operating,e_w283078113-220,way/283078113-220,61.45953026775173,16.829536835169506,False
+e_w283078113-220,ep_windon_wind_220,10.0,windon,Aggregated Plant -- operating,e_w283078113-220,way/283078113-220,61.10588108428641,16.892524683829777,False
+e_w28390455-400,ep_windoff_wind_400,110.0,windoff,Aggregated Plant -- operating,e_w28390455-400,way/28390455-400,55.426318957870585,13.219621473080792,False
+e_w284182193-400,ep_bioenergy_w284182193-400,45.0,bioenergy,Aggregated Plant -- operating,e_w284182193-400,way/284182193-400,57.649288441397545,13.148253875036673,False
+e_w284182193-400,ep_bioenergy_w284182193-400__ember,21.176470588235293,bioenergy,Aggregated Plant -- operating,e_w284182193-400,way/284182193-400,57.295606780790386,13.215302249267149,False
+e_w284869911-220,ep_hydro_dam_G100001027464,46.0,hydro,Skallböle hydroelectric plant_ -- operating,e_w284869911-220,way/284869911-220,62.3667,16.9667,False
+e_w284869911-220,ep_hydro_w284869911-220__irena,12.738619458494497,hydro,Aggregated Plant - IRENA Gap - way/284869911-220_Missing Hydro Capacity -- operating,e_w284869911-220,way/284869911-220,62.28527637036915,16.763155056369705,False
+e_w284896192-400,ep_bioenergy_G100000201458,75.0,bioenergy,Östrand Pulp Mill power station_2 -- operating,e_w284896192-400,way/284896192-400,62.4753,17.3269,False
+e_w284896192-400,ep_bioenergy_w284896192-400__ember,35.294117647058826,bioenergy,Aggregated Plant -- operating,e_w284896192-400,way/284896192-400,62.557991371495625,17.610913738008797,False
+e_w284896192-400,ep_hydro_dam_G100000603455,174.0,hydro,Bergeforsen hydroelectric plant_ -- operating,e_w284896192-400,way/284896192-400,62.5198,17.3878,False
+e_w284896192-400,ep_hydro_w284896192-400__irena,48.18521273430528,hydro,Aggregated Plant - IRENA Gap - way/284896192-400_Missing Hydro Capacity -- operating,e_w284896192-400,way/284896192-400,62.14328139241057,17.232687673802744,False
+e_w284896192-400,ep_windon_wind_400,196.0,windon,Aggregated Plant -- operating,e_w284896192-400,way/284896192-400,62.59100076480757,16.905338397005142,False
+e_w284896192-400,ep_windon_wind_G100000919891,308.5,windon,Nysäter wind farm_1 -- operating,e_w284896192-400,way/284896192-400,62.7681,17.2968,False
+e_w286857165-400,ep_bioenergy_w286857165-400,35.0,bioenergy,Aggregated Plant -- operating,e_w286857165-400,way/286857165-400,64.0291478865641,20.46449101078166,False
+e_w286857165-400,ep_bioenergy_w286857165-400__ember,16.470588235294116,bioenergy,Aggregated Plant -- operating,e_w286857165-400,way/286857165-400,63.47428105945056,20.29699226315225,False
+e_w286857165-400,ep_hydro_dam_G100000603456,78.0,hydro,Bjurfors Nedre hydroelectric plant_ -- operating,e_w286857165-400,way/286857165-400,64.1023,19.5671,False
+e_w286857165-400,ep_hydro_dam_G100000603501,599.0,hydro,Stornorrfors hydroelectric plant_ -- operating,e_w286857165-400,way/286857165-400,63.8525,20.0517,False
+e_w286857165-400,ep_hydro_dam_G100001027461,69.0,hydro,Pengfors hydroelectric plant_ -- operating,e_w286857165-400,way/286857165-400,63.9304,19.6661,False
+e_w286857165-400,ep_hydro_dam_G100001027463,61.0,hydro,Selsfors hydroelectric plant_ -- operating,e_w286857165-400,way/286857165-400,64.2167,20.3167,False
+e_w286857165-400,ep_hydro_ror_G100000603464,223.0,hydro,Harrsele hydroelectric plant_ -- operating,e_w286857165-400,way/286857165-400,64.0169,19.5606,False
+e_w286857165-400,ep_hydro_w286857165-400__irena,285.2343052662898,hydro,Aggregated Plant - IRENA Gap - way/286857165-400_Missing Hydro Capacity -- operating,e_w286857165-400,way/286857165-400,63.557964556664786,19.708820005978694,False
+e_w286857165-400,ep_windon_wind_400,131.8,windon,Aggregated Plant -- operating,e_w286857165-400,way/286857165-400,63.881766641443605,19.601180741050317,False
+e_w287756074-400,ep_hydro_dam_G100000603451,157.0,hydro,Akkats hydroelectric plant_ -- operating,e_w287756074-400,way/287756074-400,66.6315,19.8208,False
+e_w287756074-400,ep_hydro_dam_G100000603483,342.0,hydro,Ligga hydroelectric plant_ -- operating,e_w287756074-400,way/287756074-400,66.809,19.8997,False
+e_w287756074-400,ep_hydro_dam_G100000603493,85.0,hydro,Randi hydroelectric plant_ -- operating,e_w287756074-400,way/287756074-400,66.7092,19.5343,False
+e_w287756074-400,ep_hydro_w287756074-400__irena,161.72508182088666,hydro,Aggregated Plant - IRENA Gap - way/287756074-400_Missing Hydro Capacity -- operating,e_w287756074-400,way/287756074-400,66.81474894967897,19.817474878407353,False
+e_w292593503-400,ep_hydro_dam_G100000603494,304.0,hydro,Ritsem hydroelectric plant_ -- operating,e_w292593503-400,way/292593503-400,67.7289,17.4851,False
+e_w292593503-400,ep_hydro_w292593503-400__irena,84.1856590300506,hydro,Aggregated Plant - IRENA Gap - way/292593503-400_Missing Hydro Capacity -- operating,e_w292593503-400,way/292593503-400,67.60006531650659,17.59445839645551,False
+e_w294897999-400,ep_hydro_ror_G100000603468,128.0,hydro,Höljes hydroelectric plant_ -- operating,e_w294897999-400,way/294897999-400,60.9507,12.5479,False
+e_w294897999-400,ep_hydro_w294897999-400__irena,35.44659327581078,hydro,Aggregated Plant - IRENA Gap - way/294897999-400_Missing Hydro Capacity -- operating,e_w294897999-400,way/294897999-400,60.81905043565077,13.486969793802139,False
+e_w299750661-220,ep_hydro_dam_G100001027466,54.0,hydro,Stensele hydroelectric plant_ -- operating,e_w299750661-220,way/299750661-220,65.0521,17.2328,False
+e_w299750661-220,ep_hydro_ror_G100000603461,108.0,hydro,Grundfors hydroelectric plant_ -- operating,e_w299750661-220,way/299750661-220,64.9623,17.5789,False
+e_w299750661-220,ep_hydro_w299750661-220__irena,44.862094614698016,hydro,Aggregated Plant - IRENA Gap - way/299750661-220_Missing Hydro Capacity -- operating,e_w299750661-220,way/299750661-220,64.93010040991976,17.676298608343952,False
+e_w299750661-400,ep_windon_wind_400,10.0,windon,Aggregated Plant -- operating,e_w299750661-400,way/299750661-400,65.05143650357304,17.67767067656081,False
+e_w357241243-220,ep_hydro_dam_G100000603499,95.0,hydro,Stensjöfallet hydroelectric plant_ -- operating,e_w357241243-220,way/357241243-220,63.9745,13.8816,False
+e_w357241243-220,ep_hydro_w357241243-220__irena,26.308018446890813,hydro,Aggregated Plant - IRENA Gap - way/357241243-220_Missing Hydro Capacity -- operating,e_w357241243-220,way/357241243-220,63.810028943077974,13.914465148052088,False
+e_w375751481-220,ep_hydro_dam_G100000603471,100.0,hydro,Järnvägsforsen hydroelectric plant_ -- operating,e_w375751481-220,way/375751481-220,62.5165,15.6609,False
+e_w375751481-220,ep_hydro_ror_G100001052085,59.0,hydro,Ljunga hydroelectric plant_ -- operating,e_w375751481-220,way/375751481-220,62.5011,16.0194,False
+e_w375751481-220,ep_hydro_w375751481-220__irena,44.031315084796205,hydro,Aggregated Plant - IRENA Gap - way/375751481-220_Missing Hydro Capacity -- operating,e_w375751481-220,way/375751481-220,62.48748565772052,15.51884719035513,False
+e_w400471060-400,ep_windon_wind_400,115.99999999999999,windon,Aggregated Plant -- operating,e_w400471060-400,way/400471060-400,66.24835778441938,23.49162524601179,False
+e_w401299546-220,ep_windon_wind_220,30.0,windon,Aggregated Plant -- operating,e_w401299546-220,way/401299546-220,63.754766422015905,13.60750098360709,False
+e_w469360939-220,ep_hydro_ror_G100000603502,80.0,hydro,Svarthålsforsen hydroelectric plant_ -- operating,e_w469360939-220,way/469360939-220,63.0291,16.573,False
+e_w469360939-220,ep_hydro_w469360939-220__irena,22.154120797381736,hydro,Aggregated Plant - IRENA Gap - way/469360939-220_Missing Hydro Capacity -- operating,e_w469360939-220,way/469360939-220,63.10333048990047,16.509001281754674,False
+e_w469402329-220,ep_hydro_dam_G100000603497,142.0,hydro,Stadsforsen hydroelectric plant_ -- operating,e_w469402329-220,way/469402329-220,62.9782,16.6577,False
+e_w469402329-220,ep_hydro_w469402329-220__irena,39.323564415352585,hydro,Aggregated Plant - IRENA Gap - way/469402329-220_Missing Hydro Capacity -- operating,e_w469402329-220,way/469402329-220,62.88616788218707,16.63580472825634,False
+e_w470977068-220,ep_windon_wind_220,142.0,windon,Aggregated Plant -- operating,e_w470977068-220,way/470977068-220,61.85810353090829,16.071172256670376,False
+e_w471002829-220,ep_windon_wind_220,77.6,windon,Aggregated Plant -- operating,e_w471002829-220,way/471002829-220,62.66031519123991,15.775250925981855,False
+e_w471002835-220,ep_windon_wind_220,85.0,windon,Aggregated Plant -- operating,e_w471002835-220,way/471002835-220,62.59282243064661,15.818551801128566,False
+e_w471015841-220,ep_hydro_dam_G100000603475,248.0,hydro,Krångede hydroelectric plant_ -- operating,e_w471015841-220,way/471015841-220,63.1467,16.0718,False
+e_w471015841-220,ep_hydro_w471015841-220__irena,68.67777447188338,hydro,Aggregated Plant - IRENA Gap - way/471015841-220_Missing Hydro Capacity -- operating,e_w471015841-220,way/471015841-220,62.97150526213656,16.111336494541398,False
+e_w471044150-220,ep_hydro_dam_G100000603460,78.0,hydro,Gammelänge hydroelectric plant_ -- operating,e_w471044150-220,way/471044150-220,63.1414,16.1613,False
+e_w471044150-220,ep_hydro_dam_G100000603463,80.0,hydro,Hammarforsen hydroelectric plant_ -- operating,e_w471044150-220,way/471044150-220,63.1137,16.3573,False
+e_w471044150-220,ep_hydro_w471044150-220__irena,43.75438857482892,hydro,Aggregated Plant - IRENA Gap - way/471044150-220_Missing Hydro Capacity -- operating,e_w471044150-220,way/471044150-220,63.017674617944444,16.119204358170403,False
+e_w471397693-220,ep_hydro_dam_G100000603503,119.0,hydro,Torpshammar hydroelectric plant_ -- operating,e_w471397693-220,way/471397693-220,62.5083,16.3788,False
+e_w471397693-220,ep_hydro_w471397693-220__irena,32.95425468610534,hydro,Aggregated Plant - IRENA Gap - way/471397693-220_Missing Hydro Capacity -- operating,e_w471397693-220,way/471397693-220,62.411807922661346,16.230566586550594,False
+e_w471557119-220,ep_windon_wind_220,152.00000000000003,windon,Aggregated Plant -- construction,e_w471557119-220,way/471557119-220,62.31021868397887,15.524745279307048,False
+e_w471557119-220,ep_windon_wind_G100000919937,372.0,windon,Björnberget wind farm_-- -- operating,e_w471557119-220,way/471557119-220,62.3244,15.7484,False
+e_w471732548-236,ep_windon_wind_236,11.0,windon,Aggregated Plant -- operating,e_w471732548-236,way/471732548-236,63.30679296224828,13.663732391001169,False
+e_w471738469-220,ep_hydro_dam_G100001027460,70.0,hydro,Naverede hydroelectric plant_ -- operating,e_w471738469-220,way/471738469-220,63.2207,15.3219,False
+e_w471738469-220,ep_hydro_dam_G100001027467,47.0,hydro,Stugun hydroelectric plant_ -- operating,e_w471738469-220,way/471738469-220,63.1625,15.6245,False
+e_w471738469-220,ep_hydro_w471738469-220__irena,32.40040166617079,hydro,Aggregated Plant - IRENA Gap - way/471738469-220_Missing Hydro Capacity -- operating,e_w471738469-220,way/471738469-220,63.297882397275565,15.245930017095954,False
+e_w490596608-220,ep_hydro_dam_G100000603450,80.0,hydro,Ajaure hydroelectric plant_ -- operating,e_w490596608-220,way/490596608-220,65.5064,15.6212,False
+e_w490596608-220,ep_hydro_dam_G100000603498,130.0,hydro,Stalon hydroelectric plant_ -- operating,e_w490596608-220,way/490596608-220,64.9439,15.8305,False
+e_w490596608-220,ep_hydro_dam_G100001027455,60.0,hydro,Gardikfors hydroelectric plant_ -- operating,e_w490596608-220,way/490596608-220,65.4763,15.8566,False
+e_w490596608-220,ep_hydro_dam_G100001027456,66.0,hydro,Gejman hydroelectric plant_ -- operating,e_w490596608-220,way/490596608-220,65.572,15.1816,False
+e_w490596608-220,ep_hydro_w490596608-220__irena,93.04730734900329,hydro,Aggregated Plant - IRENA Gap - way/490596608-220_Missing Hydro Capacity -- operating,e_w490596608-220,way/490596608-220,64.92730803983247,15.755293630061985,False
+e_w495724636-220,ep_hydro_dam_G100001052077,72.0,hydro,Gulsele hydroelectric plant_ -- operating,e_w495724636-220,way/495724636-220,63.8147,17.1246,False
+e_w495724636-220,ep_hydro_w495724636-220__irena,19.93870871764356,hydro,Aggregated Plant - IRENA Gap - way/495724636-220_Missing Hydro Capacity -- operating,e_w495724636-220,way/495724636-220,63.85627549447423,17.139615759975,False
+e_w495724640-220,ep_hydro_dam_G100001052071,78.0,hydro,Degerforsen hydroelectric plant_ -- operating,e_w495724640-220,way/495724640-220,63.7423,17.0257,False
+e_w495724640-220,ep_hydro_w495724640-220__irena,21.600267777447193,hydro,Aggregated Plant - IRENA Gap - way/495724640-220_Missing Hydro Capacity -- operating,e_w495724640-220,way/495724640-220,63.70500307064969,16.93460813385047,False
+e_w495725229-220,ep_hydro_dam_G100000603462,84.0,hydro,Hällby hydroelectric plant_ -- operating,e_w495725229-220,way/495725229-220,63.8846,17.1948,False
+e_w495725229-220,ep_hydro_w495725229-220__irena,23.261826837250823,hydro,Aggregated Plant - IRENA Gap - way/495725229-220_Missing Hydro Capacity -- operating,e_w495725229-220,way/495725229-220,64.05748797326386,17.149924174913025,False
+e_w495725229-220,ep_windon_wind_220,399.0,windon,Aggregated Plant -- operating,e_w495725229-220,way/495725229-220,63.708749796392375,17.240705489804814,False
+e_w495727767-220,ep_hydro_dam_G100001027465,57.0,hydro,Stenkullafors hydroelectric plant_ -- operating,e_w495727767-220,way/495727767-220,64.2861,17.2427,False
+e_w495727767-220,ep_hydro_w495727767-220__irena,15.784811068134488,hydro,Aggregated Plant - IRENA Gap - way/495727767-220_Missing Hydro Capacity -- operating,e_w495727767-220,way/495727767-220,64.10615626736805,17.232537855513936,False
+e_w497608943-220,ep_hydro_ror_G100000603474,130.0,hydro,Korsselbränna hydroelectric plant_ -- operating,e_w497608943-220,way/497608943-220,64.4584,15.5387,False
+e_w497608943-220,ep_hydro_w497608943-220__irena,36.00044629574532,hydro,Aggregated Plant - IRENA Gap - way/497608943-220_Missing Hydro Capacity -- operating,e_w497608943-220,way/497608943-220,64.81678544070367,15.724269630822638,False
+e_w497608943-220,ep_windon_wind_220,36.0,windon,Aggregated Plant -- operating,e_w497608943-220,way/497608943-220,64.45693319967931,15.725538500879868,False
+e_w497608968-220,ep_windon_wind_G100000919928,353.0,windon,Blakliden Fäbodberget wind farm_-- -- operating,e_w497608968-220,way/497608968-220,64.025,18.1358,False
+e_w514042409-220,ep_hydro_dam_G100001052070,60.0,hydro,Blasjon hydroelectric plant_ -- operating,e_w514042409-220,way/514042409-220,64.8348,14.081,False
+e_w514042409-220,ep_hydro_w514042409-220__irena,16.6155905980363,hydro,Aggregated Plant - IRENA Gap - way/514042409-220_Missing Hydro Capacity -- operating,e_w514042409-220,way/514042409-220,64.54213498531726,13.975960719175129,False
+e_w52956134-400,ep_hydro_dam_G100000603481,207.0,hydro,Laxede hydroelectric plant_ -- operating,e_w52956134-400,way/52956134-400,66.2242,20.8602,False
+e_w52956134-400,ep_hydro_dam_G100000603482,483.0,hydro,Letsi hydroelectric plant_ -- operating,e_w52956134-400,way/52956134-400,66.504,20.3828,False
+e_w52956134-400,ep_hydro_dam_G100000603491,282.0,hydro,Porsi hydroelectric plant_ -- operating,e_w52956134-400,way/52956134-400,66.4287,20.6533,False
+e_w52956134-400,ep_hydro_w52956134-400__irena,269.1725676881881,hydro,Aggregated Plant - IRENA Gap - way/52956134-400_Missing Hydro Capacity -- operating,e_w52956134-400,way/52956134-400,66.33355928008571,20.33890398047993,False
+e_w551500880-400,ep_hydro_dam_G100000603506,104.0,hydro,Umluspen hydroelectric plant_ -- operating,e_w551500880-400,way/551500880-400,65.0949,17.1037,False
+e_w551500880-400,ep_hydro_w551500880-400__irena,134.0324308241595,hydro,Aggregated Plant - IRENA Gap - way/551500880-400_Missing Hydro Capacity -- operating,e_w551500880-400,way/551500880-400,65.4643500876391,17.273024903029075,False
+e_w551500880-400,ep_windon_wind_400,307.0,windon,Aggregated Plant -- operating,e_w551500880-400,way/551500880-400,65.11243800465361,17.195522714567208,False
+e_w718209950-400,ep_bioenergy_w718209950-400__ember,61.17647058823529,bioenergy,Aggregated Plant - EMBER Gap - way/718209950-400_Missing Bioenergy Capacity -- operating,e_w718209950-400,way/718209950-400,55.62102428926963,13.132230624792903,False
+e_w718209950-400,ep_m_bioenergy_G100000411134,130.0,bioenergy,Heleneholms power station_1 -- mothballed,e_w718209950-400,way/718209950-400,55.57797,13.01178,False
+e_w718209950-400,ep_m_gas_combined_cycle_G100001000122,449.0,gas,Öresundsverket power station_CC1 -- mothballed,e_w718209950-400,way/718209950-400,55.6254,13.0409,False
+e_w718209950-400,ep_oil_gas_turbine_G100001000123,63.0,oil,Öresundsverket power station_GT24 -- operating,e_w718209950-400,way/718209950-400,55.6254,13.0409,False
+e_w718209950-400,ep_oil_gas_turbine_G100001000124,63.0,oil,Öresundsverket power station_GT25 -- operating,e_w718209950-400,way/718209950-400,55.6254,13.0409,False
+e_w77696816-400,ep_hydro_dam_G100001027453,47.0,hydro,Bullerforsen hydroelectric plant_ -- operating,e_w77696816-400,way/77696816-400,60.4858,15.4371,False
+e_w77696816-400,ep_hydro_dam_G100001052081,52.0,hydro,Långhag hydroelectric plant_ -- operating,e_w77696816-400,way/77696816-400,60.397,15.7152,False
+e_w77696816-400,ep_hydro_ror_G100001052080,60.0,hydro,Kvarnsveden hydroelectric plant_ -- operating,e_w77696816-400,way/77696816-400,60.5248,15.426,False
+e_w77696816-400,ep_hydro_w77696816-400__irena,44.031315084796205,hydro,Aggregated Plant - IRENA Gap - way/77696816-400_Missing Hydro Capacity -- operating,e_w77696816-400,way/77696816-400,60.51492051100047,15.424697214763851,False
+e_w80702333-400,ep_nuclear_G100000500128,1208.0,nuclear,Forsmark nuclear power plant_3 -- operating,e_w80702333-400,way/80702333-400,60.4028,18.1744,False
+e_w80702333-400,ep_nuclear_G100000500146,1160.0,nuclear,Forsmark nuclear power plant_2 -- operating,e_w80702333-400,way/80702333-400,60.4028,18.1744,False
+e_w80702333-400,ep_nuclear_G100000500246,1078.0,nuclear,Forsmark nuclear power plant_1 -- operating,e_w80702333-400,way/80702333-400,60.4028,18.1744,False
+e_w80702333-400,ep_oil_gas_turbine_G100001009084,43.0,oil,Forsmark power station_GT1 -- operating,e_w80702333-400,way/80702333-400,60.4029,18.1627,False
+e_w80702333-400,ep_oil_gas_turbine_G100001009085,43.0,oil,Forsmark power station_GT2 -- operating,e_w80702333-400,way/80702333-400,60.4029,18.1627,False
+e_w934908818-400,ep_hydro_dam_G100000603504,329.0,hydro,Trängslet hydroelectric plant_ -- operating,e_w934908818-400,way/934908818-400,61.3813,13.725,False
+e_w934908818-400,ep_hydro_w934908818-400__irena,91.1088217792324,hydro,Aggregated Plant - IRENA Gap - way/934908818-400_Missing Hydro Capacity -- operating,e_w934908818-400,way/934908818-400,61.04014374867895,14.13202026548809,False
+e_w934908818-400,ep_windon_wind_400,71.00000000000001,windon,Aggregated Plant -- operating,e_w934908818-400,way/934908818-400,60.68270032920689,14.090642175254628,False
+elc_spv_001,ep_solar_001__irena,776.5227019034846,solar,Aggregated Plant - IRENA Gap - 1_Missing Solar Capacity -- operating,elc_spv_001,way/257920140-400,58.26010129805967,15.597282456369513,False
+elc_spv_001,ep_solar_pv_001,99.1,solar,Aggregated Plant -- operating,elc_spv_001,way/257920140-400,58.74713375525345,15.554954729930264,False
+elc_spv_002,ep_solar_pv_002,6.9,solar,Aggregated Plant -- operating,elc_spv_002,way/494975756-220,59.45504831626847,16.086913769507422,False
+elc_spv_003,ep_solar_003__irena,703.9231984332727,solar,Aggregated Plant - IRENA Gap - 3_Missing Solar Capacity -- operating,elc_spv_003,SE50-400,58.44940509302,15.343114803141829,False
+elc_spv_003,ep_solar_pv_003,23.799999999999997,solar,Aggregated Plant -- construction,elc_spv_003,SE50-400,58.51370062106829,14.918330824539792,False
+elc_spv_005,ep_solar_pv_005,94.1,solar,Aggregated Plant -- operating,elc_spv_005,relation/10629005-400,57.63018012440046,15.997658695785328,False
+elc_spv_006,ep_solar_pv_006,2.0,solar,Aggregated Plant -- operating,elc_spv_006,way/200224266-400,56.44916762083915,16.21349632921043,False
+elc_spv_007,ep_solar_pv_007,10.4,solar,Aggregated Plant -- operating,elc_spv_007,way/254135216-400,57.08182622484213,11.489191241250321,False
+elc_spv_008,ep_solar_pv_008,2.3,solar,Aggregated Plant -- operating,elc_spv_008,SE43-400,59.763933005101926,11.684400892569723,False
+elc_spv_010,ep_solar_010__irena,752.1540996632425,solar,Aggregated Plant - IRENA Gap - 10_Missing Solar Capacity -- operating,elc_spv_010,way/281023714-400,58.36653973410881,13.755293514515666,False
+elc_spv_010,ep_solar_pv_010,26.8,solar,Aggregated Plant -- operating,elc_spv_010,way/281023714-400,58.331413973811706,13.270952955103061,False
+elc_spv_011,ep_solar_pv_011,85.4,solar,Aggregated Plant -- operating,elc_spv_011,SE67-400,56.343669304626005,13.44535244423314,False
+elc_spv_012,ep_solar_pv_012,1.0,solar,Aggregated Plant -- operating,elc_spv_012,way/172201471-400,56.6220880774231,13.676158753999651,False
+elc_wof_004,ep_windoff_004__irena,1.639828818172952,windoff,Aggregated Plant -- operating,elc_wof_004,way/138622087-220,60.25847786681361,17.37181975136439,False
+elc_wof_006,ep_windoff_006__irena,1.7047978324588828,windoff,Aggregated Plant -- operating,elc_wof_006,way/256147227-220,62.52619083563944,19.294630980813782,False
+elc_wof_010,ep_windoff_010__irena,1.6553733493681693,windoff,Aggregated Plant -- operating,elc_wof_010,way/188393971-220,59.15168724739816,19.88506884185528,False
+elc_wof_016,ep_windoff_wind_016,48.0,windoff,Aggregated Plant -- operating,elc_wof_016,SE61-230,57.14833072051326,16.99173147486746,False
+elc_won_001,ep_windon_001__irena,743.6142629866752,windon,Aggregated Plant - IRENA Gap - 1_Missing Onshore wind energy Capacity -- operating,elc_won_001,SE61-230,56.71174973599479,16.298258765411735,False
+elc_won_001,ep_windon_wind_001,164.8,windon,Aggregated Plant -- operating,elc_won_001,SE61-230,57.24904966477926,16.124442846140944,False
+elc_won_002,ep_windon_wind_002,565.4,windon,Aggregated Plant -- operating,elc_won_002,SE67-400,56.285469216511025,12.555776863509138,False
+elc_won_003,ep_windon_wind_003,152.0,windon,Aggregated Plant -- operating,elc_won_003,SE63-400,56.87210367930455,14.15538370237045,False
+elc_won_004,ep_windon_004__irena,740.9383340068697,windon,Aggregated Plant - IRENA Gap - 4_Missing Onshore wind energy Capacity -- operating,elc_won_004,relation/10629005,56.62080739900073,16.374364123848874,False
+elc_won_004,ep_windon_wind_004,53.0,windon,Aggregated Plant -- operating,elc_won_004,relation/10629005,56.22711294092131,15.878813419420448,False
+elc_won_005,ep_windon_wind_005,766.0,windon,Aggregated Plant -- operating,elc_won_005,relation/10629005,56.91761192012054,15.334833547271355,False
+elc_won_005,ep_windon_wind_G100000919755,202.0,windon,Tvinnesheda-Badeboda wind farm_-- -- operating,elc_won_005,relation/10629005,57.1396,15.3177,False
+elc_won_006,ep_windon_wind_006,671.0,windon,Aggregated Plant -- operating,elc_won_006,SE44-400,59.554867093837494,16.373638513801296,False
+elc_won_006,ep_windon_wind_G100000919765,213.0,windon,Jädraås wind farm_-- -- operating,elc_won_006,SE44-400,60.8296,16.3202,False
+elc_won_007,ep_windon_wind_007,78.60000000000001,windon,Aggregated Plant -- operating,elc_won_007,way/260986936-220,59.058415366259815,15.457764893725273,False
+elc_won_009,ep_windon_wind_009,166.99999999999997,windon,Aggregated Plant -- operating,elc_won_009,way/208965529-400,59.5197121993896,17.42399916429161,False
+elc_won_010,ep_windon_wind_010,214.2,windon,Aggregated Plant -- operating,elc_won_010,SE43-400,59.33049505248821,11.522453093113786,False
+elc_won_011,ep_windon_wind_011,465.3,windon,Aggregated Plant -- operating,elc_won_011,way/200052139-400,57.68159286860811,13.833788434096963,False
+elc_won_012,ep_windon_wind_012,136.0,windon,Aggregated Plant -- operating,elc_won_012,way/1265541077,58.16597666989383,15.78127526182924,False
+elc_won_013,ep_windon_013__irena,852.1474030064556,windon,Aggregated Plant - IRENA Gap - 13_Missing Onshore wind energy Capacity -- operating,elc_won_013,way/254135216-400,57.853745270844826,11.114019743653225,False
+elc_won_013,ep_windon_wind_013,562.0,windon,Aggregated Plant -- operating,elc_won_013,way/254135216-400,58.49741654661692,11.565229694574098,False
+elc_won_014,ep_windon_wind_014,890.5,windon,Aggregated Plant -- operating,elc_won_014,SE47-420,58.83952727613666,12.906041928083203,False

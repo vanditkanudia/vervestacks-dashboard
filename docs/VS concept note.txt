@@ -1,0 +1,109 @@
+ 
+Concept Note
+Open Use Automated Energy System Models: Democratising Access to Energy Modelling
+1.	Background and Rationale
+Energy system modelling is essential for guiding effective climate policy, energy transition strategies, and investment decisions. However, the current landscape presents two main limitations:
+•	Proprietary models: Limited transparency, expensive licensing, restricted use.
+•	Open-source models: Free in principle, but require high expertise, significant setup time, and scarce resources.
+This creates a bottleneck: decision-makers, especially in developing countries, often lack access to usable, credible models. The Open Use initiative seeks to address this by automating model creation, offering free, transparent, and customisable models to the global community.
+2.	Objectives
+•	Develop an automated framework for creating country-specific energy models.
+•	Provide free online access to complex, ready-to-use models.
+•	Promote an “open use” movement where focus shifts from building models to applying them effectively.
+•	Enhance global capacity for climate policy analysis, NDC reporting, and fossil-fleet transition strategies.
+3.	Technical Approach
+•	Automated Model Generation: Prototypes tested for Italy and Mexico with detailed power sector representation (unit-level data, renewables, grid modelling, unit commitment).
+•	Calibration & Validation: Automated efficiency adjustment to ensure alignment with reported energy data.
+•	Open Infrastructure: Publicly available model-agnostic datasets and Veda templates on GitHub.
+•	Free Online Platform: Plans for a large Veda Online instance, enabling broad accessibility and community engagement.
+4.	Potential Applications
+•	Rapid-response policy analysis and consulting projects.
+•	National and subnational decarbonisation planning.
+•	Fossil fleet transition studies and scenario development.
+•	NDC-related reporting and international climate commitments.
+•	Capacity building in regions with limited modelling expertise.
+5.	Expected Outcomes & Impact
+•	Lower barriers for institutions and practitioners worldwide.
+•	Accelerated policy analysis, enabling evidence-based decision-making on shorter timelines.
+•	Equitable access: levelling the playing field for actors who traditionally face capacity gaps.
+•	Enhanced transparency and credibility in energy system analysis.
+•	Catalyst for collaboration, fostering a community of practice around open and usable energy models.
+6.	Partnerships and Funding Opportunities
+•	The initiative seeks strategic collaboration with:
+International development agencies (e.g., GIZ, UNDP, UNOPS, DEA).
+•	Philanthropic foundations supporting open science and climate action.
+•	Technology partners (e.g., Google).
+7.	Funding priorities include
+1.	Expanding country coverage of automated models.
+2.	Deploying and maintaining a robust online platform for free access.
+3.	Outreach and training to support uptake in developing regions.
+4.	Continuous improvement of data quality and modelling methodologies.
+8.	Next Steps
+•	Estimate possible costs. 
+•	Circulate this concept note informally with potential partners and donors for feedback.
+•	Identify and apply to relevant open calls for partnership.
+•	Co-design pilot applications with early adopters in selected regions.
+•	Formalise a proposal for multi-year funding to ensure scale and sustainability.
+9.	Possible Risks
+•	Perceived concern: Can an automatically generated model really support national energy policy decisions? Is it too generic to be useful in our national context?
+AK: I will send you an Italian model and you can tell me what you think 😊
+•	Even with automation, using and interpreting the models effectively may still require a certain level of expertise.
+AK: Exactly. The burden shifts from engineering the model to engaging with the results.
+With Veda Online and intuitive time slices, stakeholders can explore high-VRE scenarios, fossil fleet retirements, or grid adequacy without needing to debug 1000 lines of GAMS code.
+In short: expertise is still essential — but it’s now focused on insight, not syntax.
+•	Easier access may lead to over-simplified conclusions or inappropriate use of model results.
+AK: once you make knives available some people may use it for murder. 
+That risk exists with all powerful tools - including PowerPoint and Excel. But the VS platform will include:
+•	Clear documentation of assumptions
+•	Sensitivity options to test robustness
+The goal is to enable focusing on the right thing. Can’t eliminate risk.
+
+•	Maintaining an open-access, cloud-based platform involves ongoing costs for hosting, updates, and support. What happens when the initial funding ends?
+AK: the data sets (TIMES and otherwise) are ready for local use too. 
+The VS pipeline produces Excel and VEDA files that can be downloaded and run locally — ensuring model longevity even if the cloud platform shuts down.
+Also, we are pursuing a dual-track strategy: free access for public good, and paid support for consultancies, governments, and utilities who need deeper engagement. This creates a revenue loop, not just a funding dependence.
+•	Are international donors and philanthropic organisations willing to finance a project coordinated by private companies? Most open initiatives are currently coordinated by NGOs
+AK: I don’t know. But hopefully I will not be dependent only on them. You need philanthropic funding mainly when the value is unclear or far in future. That is not the case with VerveStacks.
+We’re not asking donors to bet on a vision — we’re offering them a ready-to-use global tool.
+The demand is already there: for power sector analysis, fossil fleet transitions, hydrogen trade, and VRE integration.
+What we’re offering is acceleration and inclusion, with models that can be tailored in minutes instead of built from scratch.
+
+Where VerveStacks Is Now
+When we first spoke, the idea behind VerveStacks was focused on a calibrated, granular representation of existing fossil stock, some methodically derived solar/wind resource shapes, and the ability to run models with hourly slices. There was no real consideration of how to select those slices.
+But the vision — and capability — has expanded dramatically:
+________________________________________
+1. Time Dimension Intelligence
+I'm now working directly with hourly data to:
+•	Identify hourly scarcity, surplus, and variability (gap between load and VRE)
+•	Select representative stress days using multiple criteria (max scarcity, variability, surplus)
+•	Generate multiple automated time slice definitions — including a special structure that captures two weeks of sustained scarcity
+These TS definitions are created algorithmically and used directly in model generation — no manual judgment or hand-picked days.
+________________________________________
+2. Solution Validator
+This led to the idea of a lightweight, universal solution validator:
+•	Simulates any given capacity/generation mix at the hourly level
+•	Calculates shortages, curtailments, and storage/ramping needs
+•	Allows users to adjust storage/ramping exogenously and derive constraints for any ESOM (TIMES, OSeMOSYS, PyPSA, etc.)
+•	Can be made into a fully automated web portal, enabling model-independent validation of proposed capacity mixes
+________________________________________
+3. Grid and RE Spatial Modeling
+I’ve now brought grid modeling to the same level of automation:
+•	Modeled like PyPSA, with actual grid infrastructure and RE zones
+•	RE resources are mapped at 50×50 km resolution — e.g., 24 zones in Switzerland, 4,000+ in China
+•	These zones are connected to the node with real transmission requirements and cost penalties.
+This means both the time and space dimensions of RE are now represented with a fidelity I couldn't have imagined a month ago.
+________________________________________
+4. Systemic Application Areas
+With all this in place, VS is becoming the best platform I know of for:
+•	Fossil fleet phase-out and retrofit analysis (unit-level)
+•	High VRE integration and realistic modeling of storage and ramping
+•	Transport electrification, given its interaction with demand profiles and VRE
+•	Hydrogen production, due to its dependence on clean, surplus electricity
+And on top of this, we’re still able to layer:
+•	Stochastic modeling
+•	SPINES-style multi-model analysis
+________________________________________
+5. FACETS Is the Last Frontier
+The only model I can’t yet replicate or beat is FACETS. All others are FAR behind I’m now thinking about how to bring these new capabilities into KiNESYS.
+To be honest, I can no longer bring myself to work with power sectors that use Summer/Winter type time slices. 
+

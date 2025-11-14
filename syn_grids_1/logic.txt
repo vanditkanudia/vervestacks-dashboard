@@ -1,0 +1,14 @@
+STEP 1: Create Abstract Clusters (Existing VerveStacks Logic)
+├── Demand Clusters (cities/population)
+├── Generation Clusters (power plants) 
+└── Renewable Clusters (solar+wind zones)
+
+STEP 2: Map Real Infrastructure to Clusters (NEW)
+├── Assign substations → clusters (spatial mapping)
+├── Aggregate substation data within clusters
+└── Create cluster-level "synthetic buses"
+
+STEP 3: Calculate Inter-Cluster NTC (ENHANCED)
+├── Find transmission lines crossing cluster boundaries
+├── Aggregate line capacities between cluster pairs
+└── Calculate realistic NTC between synthetic buses

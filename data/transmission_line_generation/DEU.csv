@@ -1,0 +1,527 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_DE102-380,ep_gas_combined_cycle_G100000400132,417.0,gas,Cuno herdecke power station_1 -- operating,e_DE102-380,DE102-380,51.4031,7.4155,False
+e_DE102-380,ep_hydro_DE102-380__irena,69.83276988956503,hydro,Aggregated Plant - IRENA Gap - DE102-380_Missing Hydro Capacity -- operating,e_DE102-380,DE102-380,51.54249658640862,7.4787947461872735,False
+e_DE102-380,ep_hydro_ps_G100000601747,154.0,hydro,Herdecke hydroelectric plant_ -- operating,e_DE102-380,DE102-380,51.4103,7.4526,False
+e_DE104-380,ep_coal_DE104-380__ember,672.2558552987554,coal,Aggregated Plant - EMBER Gap - DE104-380_Missing Coal Capacity -- operating,e_DE104-380,DE104-380,51.57555817905021,14.590716725805738,False
+e_DE104-380,ep_coal_subcritical_G100000101032,500.0,coal,Boxberg power station_Unit N -- operating,e_DE104-380,DE104-380,51.419696,14.575308,False
+e_DE104-380,ep_coal_subcritical_G100000101033,500.0,coal,Boxberg power station_Unit P -- operating,e_DE104-380,DE104-380,51.419696,14.575308,False
+e_DE104-380,ep_coal_supercritical_G100000101034,907.0,coal,Boxberg power station_Unit Q -- operating,e_DE104-380,DE104-380,51.419696,14.575308,False
+e_DE104-380,ep_coal_ultra-supercritical_G100000101036,675.0,coal,Boxberg power station_Unit R -- operating,e_DE104-380,DE104-380,51.418683,14.568425,False
+e_DE108-380,ep_coal_DE108-380__ember,245.0568137899049,coal,Aggregated Plant - EMBER Gap - DE108-380_Missing Coal Capacity -- operating,e_DE108-380,DE108-380,51.74678190843603,11.850674920735099,False
+e_DE108-380,ep_coal_subcritical_G100000108876,490.0,coal,Schkopau power station_Phase A -- operating,e_DE108-380,DE108-380,51.398462,11.950385,False
+e_DE108-380,ep_coal_subcritical_G100000108877,490.0,coal,Schkopau power station_Phase B -- operating,e_DE108-380,DE108-380,51.398462,11.950385,False
+e_DE108-380,ep_gas_combined_cycle_DE108-380,359.1,gas,Aggregated Plant -- operating,e_DE108-380,DE108-380,51.462989786532034,12.303930664555784,False
+e_DE108-380,ep_gas_combined_cycle_G100000411146,117.0,gas,Leuna power station_GuD2 -- operating,e_DE108-380,DE108-380,51.2998,12.0193,False
+e_DE108-380,ep_gas_steam_turbine_DE108-380,37.0,gas,Aggregated Plant -- operating,e_DE108-380,DE108-380,51.046892807354446,12.020429599241352,False
+e_DE108-380,ep_oil_combined_cycle_G100000412865,162.0,oil,Leuna Refinery power station_CHP -- operating,e_DE108-380,DE108-380,51.2866,11.9997,False
+e_DE108-380,ep_oil_steam_turbine_DE108-380,92.5,oil,Aggregated Plant -- operating,e_DE108-380,DE108-380,51.37197527931284,11.589837082795604,False
+e_DE112-380,ep_gas_DE112-380__ember,10.087597155366335,gas,Aggregated Plant -- operating,e_DE112-380,DE112-380,51.72014902618107,6.672183994784971,False
+e_DE112-380,ep_gas_combined_cycle_G100000400137,234.0,gas,Duisburg power station_B -- operating,e_DE112-380,DE112-380,51.39066,6.74778,False
+e_DE112-380,ep_gas_gas_turbine_DE112-380,31.0,gas,Aggregated Plant -- operating,e_DE112-380,DE112-380,51.38103547047284,7.069357744558129,False
+e_DE112-380,ep_gas_internal_combustion_DE112-380,41.0,gas,Aggregated Plant -- operating,e_DE112-380,DE112-380,51.001370157553396,6.710987781053054,False
+e_DE112-380,ep_gas_steam_turbine_DE112-380,62.0,gas,Aggregated Plant -- operating,e_DE112-380,DE112-380,51.34268944495861,6.349657899795512,False
+e_DE112-380,ep_gas_steam_turbine_G100000412876,320.0,gas,Huckingen power station_B -- operating,e_DE112-380,DE112-380,51.3699,6.7163,False
+e_DE112-380,ep_gas_steam_turbine_G100000412877,320.0,gas,Huckingen power station_A -- operating,e_DE112-380,DE112-380,51.3699,6.7163,False
+e_DE119-380,ep_gas_combined_cycle_DE119-380,100.0,gas,Aggregated Plant -- operating,e_DE119-380,DE119-380,51.37695086427485,6.610510141453293,False
+e_DE119-380,ep_gas_combined_cycle_G100000400201,595.0,gas,Lausward power station_F -- operating,e_DE119-380,DE119-380,51.2214,6.7313,False
+e_DE119-380,ep_gas_gas_turbine_DE119-380,131.4,gas,Aggregated Plant -- operating,e_DE119-380,DE119-380,51.02141615188144,6.659382520621205,False
+e_DE129-380,ep_coal_DE129-380__ember,550.127541161011,coal,Aggregated Plant - EMBER Gap - DE129-380_Missing Coal Capacity -- operating,e_DE129-380,DE129-380,51.1305638411899,6.734783840762235,False
+e_DE129-380,ep_coal_ultra-supercritical_G100000107368,1100.0,coal,Neurath power station_Unit F -- operating,e_DE129-380,DE129-380,51.035808,6.633038,False
+e_DE129-380,ep_coal_ultra-supercritical_G100000107369,1100.0,coal,Neurath power station_Unit G -- operating,e_DE129-380,DE129-380,51.035808,6.633038,False
+e_DE13-380,ep_coal_DE13-380__ember,72.44179485197493,coal,Aggregated Plant -- operating,e_DE13-380,DE13-380,53.820488158612335,9.609046608731523,False
+e_DE13-380,ep_coal_subcritical_G100000110760,151.0,coal,Wedel power station_Unit 1 -- operating,e_DE13-380,DE13-380,53.566837,9.725696,False
+e_DE13-380,ep_coal_subcritical_G100000110761,138.7,coal,Wedel power station_Unit 2 -- operating,e_DE13-380,DE13-380,53.566837,9.725696,False
+e_DE13-380,ep_gas_combined_cycle_G100000409747,440.0,gas,Wedel power station_CC1 -- construction,e_DE13-380,DE13-380,53.566837,9.725696,False
+e_DE13-380,ep_oil_gas_turbine_DE13-380,101.0,oil,Aggregated Plant -- operating,e_DE13-380,DE13-380,53.462552987181745,9.632443765199568,False
+e_DE131-380,ep_bioenergy_DE131-380__ember,445.6137805983681,bioenergy,Aggregated Plant - EMBER Gap - DE131-380_Missing Bioenergy Capacity -- operating,e_DE131-380,DE131-380,51.45500597309681,6.841095631158738,False
+e_DE131-380,ep_bioenergy_G100000200245,56.0,bioenergy,AVG Köln RMVA power station_1 -- operating,e_DE131-380,DE131-380,51.0051,6.9488,False
+e_DE131-380,ep_coal_DE131-380__ember,28.006493004560557,coal,Aggregated Plant -- operating,e_DE131-380,DE131-380,51.1965597921586,7.373641559067864,False
+e_DE131-380,ep_coal_subcritical_G100000101380,112.0,coal,Chempark Leverkusen power station_Unit 1 -- operating,e_DE131-380,DE131-380,51.022231,6.986313,False
+e_DE131-380,ep_gas_DE131-380__ember,10.883196335774693,gas,Aggregated Plant -- operating,e_DE131-380,DE131-380,50.67469500709026,7.2480229959015,False
+e_DE131-380,ep_gas_combined_cycle_G100000400215,128.0,gas,Merkenich (Nord) power station_1 -- operating,e_DE131-380,DE131-380,51.0178,6.9643,False
+e_DE131-380,ep_gas_combined_cycle_G100000400226,413.0,gas,Niehl power station_2 -- operating,e_DE131-380,DE131-380,50.9749,6.988,False
+e_DE131-380,ep_gas_combined_cycle_G100000400227,460.0,gas,Niehl power station_3 -- operating,e_DE131-380,DE131-380,50.9749,6.988,False
+e_DE131-380,ep_gas_internal_combustion_DE131-380,31.5,gas,Aggregated Plant -- operating,e_DE131-380,DE131-380,50.73203039540105,6.612973632044247,False
+e_DE131-380,ep_gas_steam_turbine_DE131-380,55.0,gas,Aggregated Plant -- operating,e_DE131-380,DE131-380,51.275795159414784,6.588136531784499,False
+e_DE135-380,ep_gas_combined_cycle_DE135-380,26.5,gas,Aggregated Plant -- operating,e_DE135-380,DE135-380,51.05242457066788,11.520084081744958,False
+e_DE143-380,ep_gas_combined_cycle_DE143-380,107.0,gas,Aggregated Plant -- operating,e_DE143-380,DE143-380,50.92092066072073,6.911566119036068,False
+e_DE146-380,ep_coal_DE146-380__ember,398.84246734173297,coal,Aggregated Plant - EMBER Gap - DE146-380_Missing Coal Capacity -- operating,e_DE146-380,DE146-380,51.015006921313656,6.302457309256142,False
+e_DE146-380,ep_coal_subcritical_G100000110854,340.0,coal,Weisweiler power station_Unit F -- operating,e_DE146-380,DE146-380,50.839578,6.322382,False
+e_DE146-380,ep_coal_subcritical_G100000110855,630.0,coal,Weisweiler power station_Unit G -- operating,e_DE146-380,DE146-380,50.839578,6.322382,False
+e_DE146-380,ep_coal_subcritical_G100000110856,625.0,coal,Weisweiler power station_Unit H -- operating,e_DE146-380,DE146-380,50.839578,6.322382,False
+e_DE146-380,ep_gas_DE146-380__ember,12.009044232578972,gas,Aggregated Plant -- operating,e_DE146-380,DE146-380,50.65858035245729,6.354475292786988,False
+e_DE146-380,ep_gas_gas_turbine_G100000400274,200.0,gas,Weisweiler power station_G_VGT -- operating,e_DE146-380,DE146-380,50.839578,6.322382,False
+e_DE146-380,ep_gas_gas_turbine_G100000400275,200.0,gas,Weisweiler power station_H_VGT -- operating,e_DE146-380,DE146-380,50.839578,6.322382,False
+e_DE149-380,ep_gas_combined_cycle_G100000400192,128.8,gas,Karlstraße power station_1 -- operating,e_DE149-380,DE149-380,50.7338,7.0805,False
+e_DE167-380,ep_bioenergy_DE167-380,37.0,bioenergy,Aggregated Plant -- operating,e_DE167-380,DE167-380,50.314841608660565,8.599745739146243,False
+e_DE167-380,ep_bioenergy_DE167-380__ember,294.4233907524932,bioenergy,Aggregated Plant - EMBER Gap - DE167-380_Missing Bioenergy Capacity -- operating,e_DE167-380,DE167-380,49.95498834825964,8.587546213663952,False
+e_DE172-380,ep_gas_gas_turbine_DE172-380,95.0,gas,Aggregated Plant -- operating,e_DE172-380,DE172-380,49.929151097958446,8.794192697038389,False
+e_DE204-380,ep_gas_internal_combustion_DE204-380,52.0,gas,Aggregated Plant -- operating,e_DE204-380,DE204-380,48.806991590655876,8.916601397309355,False
+e_DE214-380,ep_gas_steam_turbine_DE214-380,106.0,gas,Aggregated Plant -- operating,e_DE214-380,DE214-380,48.52145293230415,8.835675822135299,False
+e_DE219-380,ep_gas_gas_turbine_G100000400889,319.0,gas,"Leipheim power station_GT1, timepoint 1 -- operating",e_DE219-380,DE219-380,48.44078,10.2526,False
+e_DE221-380,ep_gas_steam_turbine_DE221-380,20.5,gas,Aggregated Plant -- operating,e_DE221-380,DE221-380,48.375304680972796,9.938898562497574,False
+e_DE235-380,ep_hydro_DE235-380__irena,115.63218390804597,hydro,Aggregated Plant - IRENA Gap - DE235-380_Missing Hydro Capacity -- operating,e_DE235-380,DE235-380,47.47300380478434,8.177899842376686,False
+e_DE235-380,ep_hydro_ps_G100000601763,150.0,hydro,Waldshut hydroelectric plant_ -- operating,e_DE235-380,DE235-380,47.6184,8.1937,False
+e_DE235-380,ep_hydro_ror_G100000601737,105.0,hydro,Albbruck-Dogern hydroelectric plant_ -- operating,e_DE235-380,DE235-380,47.5861,8.1327,False
+e_DE237-400,ep_hydro_DE237-400__irena,48.06671174216813,hydro,Aggregated Plant - IRENA Gap - DE237-400_Missing Hydro Capacity -- operating,e_DE237-400,DE237-400,47.47743343974605,8.107597214852722,False
+e_DE237-400,ep_hydro_ror_G100000604128,106.0,hydro,Laufenburg hydroelectric plant_ -- operating,e_DE237-400,DE237-400,47.5565,8.0483,False
+e_DE238-380,ep_gas_combined_cycle_DE238-380,39.0,gas,Aggregated Plant -- operating,e_DE238-380,DE238-380,47.466909782292845,7.832965963645274,False
+e_DE28-380,ep_bioenergy_DE28-380__ember,557.0172257479602,bioenergy,Aggregated Plant - EMBER Gap - DE28-380_Missing Bioenergy Capacity -- operating,e_DE28-380,DE28-380,52.84596452548889,7.019091412764612,False
+e_DE28-380,ep_bioenergy_G100000200274,70.0,bioenergy,EVI Abfallverwertung power station_1 -- operating,e_DE28-380,DE28-380,52.6446,6.7431,False
+e_DE33-380,ep_gas_gas_turbine_DE33-380,150.0,gas,Aggregated Plant -- operating,e_DE33-380,DE33-380,52.79537596080353,13.578881880600402,False
+e_DE34-380,ep_gas_combined_cycle_G100000400194,160.0,gas,Kirchmöser power station_1 -- operating,e_DE34-380,DE34-380,52.3942,12.4181,False
+e_DE4-400,ep_coal_subcritical_DE4-400,31.0,coal,Aggregated Plant -- operating,e_DE4-400,DE4-400,54.986104605668736,9.32199405652661,False
+e_DE4-400,ep_gas_combined_cycle_DE4-400,209.00000000000003,gas,Aggregated Plant -- operating,e_DE4-400,DE4-400,54.62574570370186,9.32292348176567,False
+e_DE51-380,ep_bioenergy_DE51-380,45.0,bioenergy,Aggregated Plant -- operating,e_DE51-380,DE51-380,52.34724648316534,10.945170550190188,False
+e_DE51-380,ep_bioenergy_DE51-380__ember,358.0825022665459,bioenergy,Aggregated Plant - EMBER Gap - DE51-380_Missing Bioenergy Capacity -- operating,e_DE51-380,DE51-380,51.995210480514594,10.931371693701447,False
+e_DE52-380,ep_gas_steam_turbine_DE52-380,180.0,gas,Aggregated Plant -- operating,e_DE52-380,DE52-380,51.99965798998786,10.534621629751825,False
+e_DE52-380,ep_gas_steam_turbine_G100000412843,110.0,gas,Salzgitter power station_Block 2 -- operating,e_DE52-380,DE52-380,52.15473,10.38943,False
+e_DE52-380,ep_gas_steam_turbine_G100000412844,110.0,gas,Salzgitter power station_Block 1 -- operating,e_DE52-380,DE52-380,52.15473,10.38943,False
+e_DE65-380,ep_hydro_DE65-380__irena,99.76109984223575,hydro,Aggregated Plant - IRENA Gap - DE65-380_Missing Hydro Capacity -- operating,e_DE65-380,DE65-380,51.778077954865104,10.059550867347825,False
+e_DE65-380,ep_hydro_ps_G100000601739,220.0,hydro,Erzhausen hydroelectric plant_ -- operating,e_DE65-380,DE65-380,51.8993,9.9243,False
+e_DE66-380,ep_coal_DE66-380__ember,535.1240627657105,coal,Aggregated Plant - EMBER Gap - DE66-380_Missing Coal Capacity -- operating,e_DE66-380,DE66-380,52.19302941483885,14.489099000701696,False
+e_DE66-380,ep_coal_subcritical_G100000104967,535.0,coal,Janschwalde power station_Unit A -- operating,e_DE66-380,DE66-380,51.835666,14.457808,False
+e_DE66-380,ep_coal_subcritical_G100000104968,535.0,coal,Janschwalde power station_Unit B -- operating,e_DE66-380,DE66-380,51.835666,14.457808,False
+e_DE66-380,ep_coal_subcritical_G100000104969,535.0,coal,Janschwalde power station_Unit C -- operating,e_DE66-380,DE66-380,51.835666,14.457808,False
+e_DE66-380,ep_coal_subcritical_G100000104970,535.0,coal,Janschwalde power station_Unit D -- operating,e_DE66-380,DE66-380,51.835666,14.457808,False
+e_DE66-380,ep_gas_DE66-380__ember,10.036558717377876,gas,Aggregated Plant -- operating,e_DE66-380,DE66-380,51.82171914956,14.81790257659558,False
+e_DE66-380,ep_gas_internal_combustion_DE66-380,54.0,gas,Aggregated Plant -- operating,e_DE66-380,DE66-380,51.48018853636065,14.389545107078286,False
+e_DE66-380,ep_gas_steam_turbine_DE66-380,48.9,gas,Aggregated Plant -- operating,e_DE66-380,DE66-380,51.83998603171025,14.097441514690166,False
+e_DE77-380,ep_gas_combined_cycle_G100000409739,130.0,gas,Solvay Rheinberg power station_1 -- operating,e_DE77-380,DE77-380,51.56489,6.57824,False
+e_DE8-380,ep_coal_DE8-380__ember,138.28205921001774,coal,Aggregated Plant - EMBER Gap - DE8-380_Missing Coal Capacity -- operating,e_DE8-380,DE8-380,54.32100164251019,12.13418668360079,False
+e_DE8-380,ep_coal_supercritical_G100000108642,553.0,coal,Rostock power station_-- -- operating,e_DE8-380,DE8-380,54.142799,12.132865,False
+e_DE8-380,ep_gas_combined_cycle_DE8-380,108.0,gas,Aggregated Plant -- operating,e_DE8-380,DE8-380,53.963110350579,12.159977412506406,False
+e_w1068350839-380,ep_gas_combined_cycle_w1068350839-380,108.0,gas,Aggregated Plant -- operating,e_w1068350839-380,way/1068350839-380,51.81618641781458,14.039213288021433,False
+e_w1068350839-380,ep_gas_steam_turbine_w1068350839-380,36.0,gas,Aggregated Plant -- operating,e_w1068350839-380,way/1068350839-380,51.46466995756034,13.95987327909733,False
+e_w1076001174-380,ep_coal_supercritical_G100000103850,500.0,coal,Herne power station_Unit 4 -- operating,e_w1076001174-380,way/1076001174-380,51.550673,7.187527,False
+e_w1076001174-380,ep_coal_w1076001174-380__ember,125.02898662750248,coal,Aggregated Plant - EMBER Gap - way/1076001174-380_Missing Coal Capacity -- operating,e_w1076001174-380,way/1076001174-380,51.55550981788888,7.228805179204617,False
+e_w1076001174-380,ep_gas_combined_cycle_G100000400887,725.0,gas,"Herne power station_Unit 6, timepoint 1 -- operating",e_w1076001174-380,way/1076001174-380,51.551389,7.188889,False
+e_w1089568373-380,ep_hydro_ps_G100000601755,107.0,hydro,Reisach hydroelectric plant_ -- operating,e_w1089568373-380,way/1089568373-380,49.5302,12.2846,False
+e_w1089568373-380,ep_hydro_w1089568373-380__irena,48.52017128690557,hydro,Aggregated Plant - IRENA Gap - way/1089568373-380_Missing Hydro Capacity -- operating,e_w1089568373-380,way/1089568373-380,49.787807284165325,12.241393144704666,False
+e_w1089911133-380,ep_hydro_ps_G100000601742,119.0,hydro,Geesthacht hydroelectric plant_ -- operating,e_w1089911133-380,way/1089911133-380,53.4188,10.3943,False
+e_w1089911133-380,ep_hydro_w1089911133-380__irena,53.96168582375479,hydro,Aggregated Plant - IRENA Gap - way/1089911133-380_Missing Hydro Capacity -- operating,e_w1089911133-380,way/1089911133-380,53.243257509762316,10.249559678407454,False
+e_w1091984573-380,ep_gas_steam_turbine_w1091984573-380,38.0,gas,Aggregated Plant -- operating,e_w1091984573-380,way/1091984573-380,54.30623404991222,13.594821589141832,False
+e_w1104947187-380,ep_coal_subcritical_G100000103729,125.0,coal,Heilbronn power station_Unit 5 -- operating,e_w1104947187-380,way/1104947187-380,49.175277,9.207428,False
+e_w1104947187-380,ep_coal_subcritical_G100000103730,125.0,coal,Heilbronn power station_Unit 6 -- operating,e_w1104947187-380,way/1104947187-380,49.175277,9.207428,False
+e_w1104947187-380,ep_coal_subcritical_G100000103731,816.0,coal,Heilbronn power station_Unit 7 -- operating,e_w1104947187-380,way/1104947187-380,49.175277,9.207428,False
+e_w1104947187-380,ep_coal_w1104947187-380__ember,266.5617994898353,coal,Aggregated Plant - EMBER Gap - way/1104947187-380_Missing Coal Capacity -- operating,e_w1104947187-380,way/1104947187-380,49.01987770551369,9.274940197780037,False
+e_w112695048-380,ep_gas_combined_cycle_G100000400266,417.0,gas,"Trianel Hamm power station_Block 10, timepoint 1 -- operating",e_w112695048-380,way/112695048-380,51.67395,7.92915,False
+e_w112695048-380,ep_gas_combined_cycle_G100000400267,421.0,gas,"Trianel Hamm power station_Block 20, timepoint 1 -- operating",e_w112695048-380,way/112695048-380,51.67395,7.92915,False
+e_w112695048-380,ep_gas_w112695048-380__ember,13.390084319325553,gas,Aggregated Plant -- operating,e_w112695048-380,way/112695048-380,51.70688042358443,7.834559420537508,False
+e_w1134105414-380,ep_coal_ultra-supercritical_G100000110939,830.0,coal,Wilhelmshaven Engie power station_-- -- operating,e_w1134105414-380,way/1134105414-380,53.5748,8.137,False
+e_w1134105414-380,ep_coal_w1134105414-380__ember,207.54811780165414,coal,Aggregated Plant - EMBER Gap - way/1134105414-380_Missing Coal Capacity -- operating,e_w1134105414-380,way/1134105414-380,53.522842005206556,8.083410713267282,False
+e_w1223405794-380,ep_gas_gas_turbine_w1223405794-380,374.0,gas,Aggregated Plant -- operating,e_w1223405794-380,way/1223405794-380,49.567147487703,8.461149671494777,False
+e_w1280178911-380,ep_gas_gas_turbine_w1280178911-380,52.0,gas,Aggregated Plant -- operating,e_w1280178911-380,way/1280178911-380,53.366773196393524,7.107553736592248,False
+e_w1280178911-380,ep_m_gas_steam_turbine_G100000412896,450.0,gas,Emden power station_ST -- mothballed,e_w1280178911-380,way/1280178911-380,53.3422,7.2062,False
+e_w1280843652-380,ep_gas_combined_cycle_w1280843652-380,84.0,gas,Aggregated Plant -- operating,e_w1280843652-380,way/1280843652-380,53.13120519672064,7.324497063102549,False
+e_w128277645-380,ep_bioenergy_G100000201394,57.0,bioenergy,Rosenthal Mill power station_1 -- operating,e_w128277645-380,way/128277645-380,50.4035,11.7007,False
+e_w128277645-380,ep_bioenergy_w128277645-380__ember,453.5711695376247,bioenergy,Aggregated Plant - EMBER Gap - way/128277645-380_Missing Bioenergy Capacity -- operating,e_w128277645-380,way/128277645-380,50.71465645321756,11.65864346448455,False
+e_w128277645-380,ep_hydro_ps_G100000601738,80.0,hydro,Bleiloch hydroelectric plant_ -- operating,e_w128277645-380,way/128277645-380,50.525,11.7149,False
+e_w128277645-380,ep_hydro_ps_G100000601748,320.0,hydro,Hohenwarte II hydroelectric plant_ -- operating,e_w128277645-380,way/128277645-380,50.6042,11.4747,False
+e_w128277645-380,ep_hydro_w128277645-380__irena,362.76763578994814,hydro,Aggregated Plant - IRENA Gap - way/128277645-380_Missing Hydro Capacity -- operating,e_w128277645-380,way/128277645-380,50.357033374036654,11.617335626858422,False
+e_w1303270458-380,ep_coal_subcritical_G100000108878,370.0,coal,Scholven power station_Unit B -- operating,e_w1303270458-380,way/1303270458-380,51.60064,7.004609,False
+e_w1303270458-380,ep_coal_subcritical_G100000108879,370.0,coal,Scholven power station_Unit C -- operating,e_w1303270458-380,way/1303270458-380,51.60064,7.004609,False
+e_w1303270458-380,ep_coal_w1303270458-380__ember,185.0429002087037,coal,Aggregated Plant - EMBER Gap - way/1303270458-380_Missing Coal Capacity -- operating,e_w1303270458-380,way/1303270458-380,51.54698543211429,7.100569040854163,False
+e_w1303270458-380,ep_gas_combined_cycle_G100000401328,138.0,gas,"Scholven power station_CC1, timepoint 1 -- operating",e_w1303270458-380,way/1303270458-380,51.60064,7.004609,False
+e_w137197826-380,ep_bioenergy_w137197826-380,35.0,bioenergy,Aggregated Plant -- operating,e_w137197826-380,way/137197826-380,52.71989178103984,13.720561983845734,False
+e_w137197826-380,ep_bioenergy_w137197826-380__ember,278.5086128739801,bioenergy,Aggregated Plant - EMBER Gap - way/137197826-380_Missing Bioenergy Capacity -- operating,e_w137197826-380,way/137197826-380,52.35992847774828,13.704466888344431,False
+e_w137602559-380,ep_gas_combined_cycle_G100000400188,561.0,gas,Irsching power station_4 -- operating,e_w137602559-380,way/137602559-380,48.767,11.58,False
+e_w137602559-380,ep_gas_combined_cycle_G100000400189,846.0,gas,Irsching power station_5 -- operating,e_w137602559-380,way/137602559-380,48.767,11.58,False
+e_w137602559-380,ep_gas_combined_cycle_w137602559-380,25.0,gas,Aggregated Plant -- operating,e_w137602559-380,way/137602559-380,49.02644019524509,11.649990801198232,False
+e_w137602559-380,ep_gas_gas_turbine_G100000406320,320.0,gas,Irsching power station_6 -- operating,e_w137602559-380,way/137602559-380,48.767,11.58,False
+e_w137602559-380,ep_gas_steam_turbine_w137602559-380,81.0,gas,Aggregated Plant -- operating,e_w137602559-380,way/137602559-380,48.67246295087214,11.835458745705887,False
+e_w137602559-380,ep_gas_w137602559-380__ember,305.94951622035273,gas,Aggregated Plant - EMBER Gap - way/137602559-380_Missing Gas Capacity -- operating,e_w137602559-380,way/137602559-380,48.66337845493712,11.331076258882335,False
+e_w137602559-380,ep_m_gas_steam_turbine_G100000409755,415.0,gas,Irsching power station_3 -- mothballed,e_w137602559-380,way/137602559-380,48.767,11.58,False
+e_w143882655-380,ep_gas_combined_cycle_w143882655-380,114.60000000000001,gas,Aggregated Plant -- operating,e_w143882655-380,way/143882655-380,51.09734751220713,11.08534283828614,False
+e_w147878692-380,ep_coal_subcritical_G100000110699,160.0,coal,Walheim power station_Unit 2 -- operating,e_w147878692-380,way/147878692-380,49.01767,9.157693,False
+e_w147878692-380,ep_coal_w147878692-380__ember,40.0092757208008,coal,Aggregated Plant -- operating,e_w147878692-380,way/147878692-380,48.997161453138034,9.043529763694192,False
+e_w147878692-380,ep_oil_gas_turbine_G100000412832,136.0,oil,Walheim power station_GT1 -- operating,e_w147878692-380,way/147878692-380,49.01767,9.157693,False
+e_w148211527-380,ep_gas_combined_cycle_G100000400191,182.0,gas,Jena power station_1 -- operating,e_w148211527-380,way/148211527-380,50.89688,11.5857,False
+e_w148211527-380,ep_gas_internal_combustion_w148211527-380,63.0,gas,Aggregated Plant -- operating,e_w148211527-380,way/148211527-380,50.85782015141699,11.503349505715942,False
+e_w148446247-380,ep_gas_combined_cycle_w148446247-380,37.0,gas,Aggregated Plant -- operating,e_w148446247-380,way/148446247-380,50.41547541131374,9.694361914675039,False
+e_w149987048-380,ep_bioenergy_G100000201395,59.0,bioenergy,SCA Mannheim power station_1 -- operating,e_w149987048-380,way/149987048-380,49.5394,8.4588,False
+e_w149987048-380,ep_bioenergy_w149987048-380__ember,469.4859474161379,bioenergy,Aggregated Plant - EMBER Gap - way/149987048-380_Missing Bioenergy Capacity -- operating,e_w149987048-380,way/149987048-380,49.8085882652034,8.462267542855663,False
+e_w149987048-380,ep_gas_steam_turbine_w149987048-380,29.0,gas,Aggregated Plant -- operating,e_w149987048-380,way/149987048-380,49.45945679745512,8.373056207553905,False
+e_w152018146-380,ep_coal_w152018146-380__ember,195.0452191389039,coal,Aggregated Plant - EMBER Gap - way/152018146-380_Missing Coal Capacity -- operating,e_w152018146-380,way/152018146-380,49.903598273046185,7.152784839113924,False
+e_w152018146-380,ep_gas_gas_turbine_w152018146-380,20.0,gas,Aggregated Plant -- operating,e_w152018146-380,way/152018146-380,49.72935160205229,7.639275851104082,False
+e_w152018146-380,ep_m_coal_subcritical_G100000100773,780.0,coal,Bexbach-C power station_Unit 1 -- mothballed,e_w152018146-380,way/152018146-380,49.363454,7.237098,False
+e_w152107815-380,ep_gas_steam_turbine_w152107815-380,27.4,gas,Aggregated Plant -- operating,e_w152107815-380,way/152107815-380,49.3686781466296,7.684876763642726,False
+e_w152261133-380,ep_bioenergy_w152261133-380,41.0,bioenergy,Aggregated Plant -- operating,e_w152261133-380,way/152261133-380,49.630291791934056,8.422386222294547,False
+e_w152261133-380,ep_bioenergy_w152261133-380__ember,326.2529465095196,bioenergy,Aggregated Plant - EMBER Gap - way/152261133-380_Missing Bioenergy Capacity -- operating,e_w152261133-380,way/152261133-380,49.26778919015034,8.887997026782042,False
+e_w152261133-380,ep_coal_ultra-supercritical_G100000108504,910.0,coal,RDK (Karlsruhe) power station_Unit 8 -- operating,e_w152261133-380,way/152261133-380,49.0125,8.302778,False
+e_w152261133-380,ep_coal_w152261133-380__ember,365.0846409523073,coal,Aggregated Plant - EMBER Gap - way/152261133-380_Missing Coal Capacity -- operating,e_w152261133-380,way/152261133-380,48.88622221200459,8.931308826033309,False
+e_w152261133-380,ep_gas_combined_cycle_G100000400240,363.0,gas,RDK (Karlsruhe) power station_RDK 4S -- operating,e_w152261133-380,way/152261133-380,49.0125,8.30278,False
+e_w152261133-380,ep_gas_combined_cycle_w152261133-380,70.0,gas,Aggregated Plant -- operating,e_w152261133-380,way/152261133-380,48.50532399426596,8.691936509002716,False
+e_w152261133-380,ep_gas_steam_turbine_w152261133-380,42.0,gas,Aggregated Plant -- operating,e_w152261133-380,way/152261133-380,48.49796163647867,7.943645028421504,False
+e_w152261133-380,ep_m_coal_subcritical_G100000108503,550.0,coal,RDK (Karlsruhe) power station_Unit 7 -- mothballed,e_w152261133-380,way/152261133-380,49.0125,8.302778,False
+e_w152261133-380,ep_oil_gas_turbine_w152261133-380,70.0,oil,Aggregated Plant -- operating,e_w152261133-380,way/152261133-380,49.000514335774305,7.682226379335247,False
+e_w152261133-380,ep_oil_steam_turbine_w152261133-380,120.0,oil,Aggregated Plant -- operating,e_w152261133-380,way/152261133-380,49.50874271337382,7.927818067977624,False
+e_w152924498-380,ep_gas_combined_cycle_G100000400210,503.0,gas,"Ludwigshafen Mitte power station_Blocks 10, 11, 12 -- operating",e_w152924498-380,way/152924498-380,49.453,8.433,False
+e_w152924498-380,ep_oil_combined_cycle_w152924498-380,33.0,oil,Aggregated Plant -- operating,e_w152924498-380,way/152924498-380,49.285236928764945,8.190971143358697,False
+e_w152973139-380,ep_coal_subcritical_G100000103045,280.0,coal,GKM (Mannheim) power station_Mannheim Unit 6 -- operating,e_w152973139-380,way/152973139-380,49.445694,8.490444,False
+e_w152973139-380,ep_coal_subcritical_G100000103047,480.0,coal,GKM (Mannheim) power station_Mannheim Unit 8 -- operating,e_w152973139-380,way/152973139-380,49.445694,8.490444,False
+e_w152973139-380,ep_coal_supercritical_G100000103046,475.0,coal,GKM (Mannheim) power station_Mannheim Unit 7 -- operating,e_w152973139-380,way/152973139-380,49.445694,8.490444,False
+e_w152973139-380,ep_coal_ultra-supercritical_G100000103042,912.0,coal,GKM (Mannheim) power station_Unit 9 -- operating,e_w152973139-380,way/152973139-380,49.445694,8.490444,False
+e_w152973139-380,ep_coal_w152973139-380__ember,536.8744685784957,coal,Aggregated Plant - EMBER Gap - way/152973139-380_Missing Coal Capacity -- operating,e_w152973139-380,way/152973139-380,49.37857940236515,8.373457340914806,False
+e_w156673637-380,ep_gas_internal_combustion_w156673637-380,45.0,gas,Aggregated Plant -- operating,e_w156673637-380,way/156673637-380,50.64219902244303,11.91968631384623,False
+e_w156960655-380,ep_coal_subcritical_w156960655-380,38.0,coal,Aggregated Plant -- operating,e_w156960655-380,way/156960655-380,51.51924991737779,9.441035584591011,False
+e_w156960655-380,ep_gas_combined_cycle_w156960655-380,81.0,gas,Aggregated Plant -- operating,e_w156960655-380,way/156960655-380,51.0770738304664,9.713737862208111,False
+e_w156960655-380,ep_gas_steam_turbine_w156960655-380,58.0,gas,Aggregated Plant -- operating,e_w156960655-380,way/156960655-380,51.1335650482521,9.2744227209555,False
+e_w157628351-380,ep_coal_w157628351-380__ember,195.0452191389039,coal,Aggregated Plant - EMBER Gap - way/157628351-380_Missing Coal Capacity -- operating,e_w157628351-380,way/157628351-380,51.59723464252028,7.513859859407581,False
+e_w157628351-380,ep_m_coal_subcritical_G100000100765,780.0,coal,Bergkamen power station_Unit A -- mothballed,e_w157628351-380,way/157628351-380,51.636678,7.620603,False
+e_w166604822-380,ep_hydro_ps_G100000601753,1046.0,hydro,Markersbach hydroelectric plant_ -- operating,e_w166604822-380,way/166604822-380,50.5176,12.8804,False
+e_w166604822-380,ep_hydro_w166604822-380__irena,474.3186837953572,hydro,Aggregated Plant - IRENA Gap - way/166604822-380_Missing Hydro Capacity -- operating,e_w166604822-380,way/166604822-380,50.63368713791299,12.820190288162237,False
+e_w170123812-380,ep_oil_steam_turbine_G100000412837,334.0,oil,Schwedt Refinery power station_ST1-4 -- operating,e_w170123812-380,way/170123812-380,53.0959,14.2364,False
+e_w188276460-380,ep_coal_subcritical_G100000107428,630.0,coal,Niederaussem power station_Unit G -- operating,e_w188276460-380,way/188276460-380,50.996883,6.667549,False
+e_w188276460-380,ep_coal_subcritical_G100000107429,636.0,coal,Niederaussem power station_Unit H -- operating,e_w188276460-380,way/188276460-380,50.996883,6.667549,False
+e_w188276460-380,ep_coal_ultra-supercritical_G100000107430,1012.0,coal,Niederaussem power station_Unit K -- operating,e_w188276460-380,way/188276460-380,50.996883,6.667549,False
+e_w188276460-380,ep_coal_w188276460-380__ember,569.6320630749013,coal,Aggregated Plant - EMBER Gap - way/188276460-380_Missing Coal Capacity -- operating,e_w188276460-380,way/188276460-380,50.88814651300164,6.768634712782078,False
+e_w202865177-380,ep_hydro_ps_G100000601764,910.0,hydro,Wehr hydroelectric plant_ -- operating,e_w202865177-380,way/202865177-380,47.6521,7.9258,False
+e_w202865177-380,ep_hydro_w202865177-380__irena,412.64818571106605,hydro,Aggregated Plant - IRENA Gap - way/202865177-380_Missing Hydro Capacity -- operating,e_w202865177-380,way/202865177-380,47.64383270221193,8.038812678365645,False
+e_w22765517-380,ep_bioenergy_w22765517-380,34.0,bioenergy,Aggregated Plant -- operating,e_w22765517-380,way/22765517-380,51.3103711446847,6.785045377790833,False
+e_w22765517-380,ep_bioenergy_w22765517-380__ember,270.5512239347235,bioenergy,Aggregated Plant - EMBER Gap - way/22765517-380_Missing Bioenergy Capacity -- operating,e_w22765517-380,way/22765517-380,50.873812177135584,7.293130315840422,False
+e_w22765517-380,ep_coal_subcritical_w22765517-380,133.0,coal,Aggregated Plant -- operating,e_w22765517-380,way/22765517-380,50.55347261672362,7.169449220008571,False
+e_w22765517-380,ep_coal_w22765517-380__ember,33.257710442915666,coal,Aggregated Plant -- operating,e_w22765517-380,way/22765517-380,50.56708844937114,6.503731298632593,False
+e_w22765517-380,ep_gas_combined_cycle_G100000400196,802.0,gas,Knapsack Gas power station_I -- operating,e_w22765517-380,way/22765517-380,50.859,6.841,False
+e_w22765517-380,ep_gas_combined_cycle_G100000400197,450.0,gas,Knapsack Gas power station_II -- operating,e_w22765517-380,way/22765517-380,50.859,6.841,False
+e_w22765517-380,ep_gas_w22765517-380__ember,12.52943614932406,gas,Aggregated Plant -- operating,e_w22765517-380,way/22765517-380,50.89399193576807,6.393368216102031,False
+e_w22766160-380,ep_gas_combined_cycle_w22766160-380,52.0,gas,Aggregated Plant -- operating,e_w22766160-380,way/22766160-380,50.793137938237045,7.106699579503353,False
+e_w22960899-380,ep_coal_subcritical_w22960899-380,96.4,coal,Aggregated Plant -- operating,e_w22960899-380,way/22960899-380,49.207739834861584,9.275050456494968,False
+e_w22960899-380,ep_coal_w22960899-380__ember,24.10558862178248,coal,Aggregated Plant -- operating,e_w22960899-380,way/22960899-380,48.95744257257084,9.560352003426173,False
+e_w22960899-380,ep_gas_combined_cycle_G100000410316,114.0,gas,"Stuttgart-Muenster power station_CC1, timepoint 1 -- construction",e_w22960899-380,way/22960899-380,48.813842,9.219193,False
+e_w22960899-380,ep_gas_combined_cycle_w22960899-380,38.0,gas,Aggregated Plant -- operating,e_w22960899-380,way/22960899-380,48.49327426775439,9.246591160376628,False
+e_w22960899-380,ep_gas_internal_combustion_w22960899-380,30.9,gas,Aggregated Plant -- operating,e_w22960899-380,way/22960899-380,48.890085161652344,8.857295326196086,False
+e_w23380800-380,ep_gas_steam_turbine_w23380800-380,24.0,gas,Aggregated Plant -- operating,e_w23380800-380,way/23380800-380,51.32187913076349,6.619226808556441,False
+e_w23583867-380,ep_coal_subcritical_G100000110157,205.0,coal,Tiefstack power station_Unit 1 -- operating,e_w23583867-380,way/23583867-380,53.526046,10.064258,False
+e_w23583867-380,ep_coal_w23583867-380__ember,51.26188451727602,coal,Aggregated Plant -- operating,e_w23583867-380,way/23583867-380,53.45765039577196,10.198101216368102,False
+e_w23583867-380,ep_gas_combined_cycle_G100000400264,127.0,gas,Tiefstack power station_CC -- operating,e_w23583867-380,way/23583867-380,53.526046,10.064258,False
+e_w23641079-380,ep_coal_w23641079-380__ember,16.503826234830328,coal,Aggregated Plant -- operating,e_w23641079-380,way/23641079-380,50.42636911911517,8.630238055645654,False
+e_w23641079-380,ep_gas_combined_cycle_w23641079-380,288.00000000000006,gas,Aggregated Plant -- operating,e_w23641079-380,way/23641079-380,50.11266415524378,8.896071132130562,False
+e_w23641079-380,ep_gas_gas_turbine_w23641079-380,54.0,gas,Aggregated Plant -- operating,e_w23641079-380,way/23641079-380,49.72691065759608,8.617787034640987,False
+e_w23641079-380,ep_m_coal_subcritical_w23641079-380,66.0,coal,Aggregated Plant -- mothballed,e_w23641079-380,way/23641079-380,50.160680208891705,8.186574211778822,False
+e_w23899043-380,ep_coal_subcritical_G100000103040,150.0,coal,GKH Hannover power station_Unit 1 -- operating,e_w23899043-380,way/23899043-380,52.420278,9.647508,False
+e_w23899043-380,ep_coal_subcritical_G100000103041,150.0,coal,GKH Hannover power station_Unit 2 -- operating,e_w23899043-380,way/23899043-380,52.420278,9.647508,False
+e_w23899043-380,ep_coal_w23899043-380__ember,75.01739197650151,coal,Aggregated Plant -- operating,e_w23899043-380,way/23899043-380,52.45158330339719,9.96614653797276,False
+e_w23899043-380,ep_gas_combined_cycle_G100000400173,230.0,gas,"GKL Linden power station_GT1, GT3, DT -- operating",e_w23899043-380,way/23899043-380,52.42,9.648,False
+e_w23899043-380,ep_gas_combined_cycle_w23899043-380,30.0,gas,Aggregated Plant -- operating,e_w23899043-380,way/23899043-380,52.0984558021248,9.904429227695916,False
+e_w23907283-380,ep_geothermal_w23907283-380,8.0,geothermal,Aggregated Plant -- construction,e_w23907283-380,way/23907283-380,48.11847157039894,11.51218455676167,False
+e_w24230738-380,ep_gas_combined_cycle_G100000409956,125.0,gas,Kirchlengern power station_1 -- operating,e_w24230738-380,way/24230738-380,52.196217,8.647442,False
+e_w24230738-380,ep_gas_combined_cycle_w24230738-380,111.0,gas,Aggregated Plant -- operating,e_w24230738-380,way/24230738-380,52.19663520207081,8.457066156070372,False
+e_w24258096-380,ep_gas_combined_cycle_G100000401329,133.0,gas,Wolfsburg North power station_GUD1 -- operating,e_w24258096-380,way/24258096-380,52.431703,10.786957,False
+e_w24258096-380,ep_gas_combined_cycle_G100000401331,144.0,gas,Wolfsburg West power station_GuD-West1 -- operating,e_w24258096-380,way/24258096-380,52.441544,10.765079,False
+e_w24258096-380,ep_gas_combined_cycle_G100000401332,144.0,gas,Wolfsburg West power station_GuD-West2 -- operating,e_w24258096-380,way/24258096-380,52.441544,10.765079,False
+e_w24262656-380,ep_gas_combined_cycle_w24262656-380,95.0,gas,Aggregated Plant -- operating,e_w24262656-380,way/24262656-380,52.45859272182233,10.413036821989625,False
+e_w24262656-380,ep_gas_gas_turbine_w24262656-380,87.0,gas,Aggregated Plant -- operating,e_w24262656-380,way/24262656-380,52.10437120768238,10.369019232998603,False
+e_w24264701-380,ep_bioenergy_w24264701-380,40.0,bioenergy,Aggregated Plant -- operating,e_w24264701-380,way/24264701-380,52.17873266725014,8.639158319937122,False
+e_w24264701-380,ep_bioenergy_w24264701-380__ember,318.29555757026293,bioenergy,Aggregated Plant - EMBER Gap - way/24264701-380_Missing Bioenergy Capacity -- operating,e_w24264701-380,way/24264701-380,51.81993796877605,8.67168668441173,False
+e_w24268944-380,ep_gas_steam_turbine_w24268944-380,21.55,gas,Aggregated Plant -- operating,e_w24268944-380,way/24268944-380,50.812612669863725,6.162566106582207,False
+e_w24413992-380,ep_bioenergy_G100000200228,50.0,bioenergy,Enertec Hameln power station_1 -- operating,e_w24413992-380,way/24413992-380,52.0984,9.3887,False
+e_w24413992-380,ep_bioenergy_w24413992-380__ember,397.8694469628287,bioenergy,Aggregated Plant - EMBER Gap - way/24413992-380_Missing Bioenergy Capacity -- operating,e_w24413992-380,way/24413992-380,52.00810598007065,9.307482919323697,False
+e_w24478889-380,ep_coal_ultra-supercritical_G100000110704,790.0,coal,Duisburg-Walsum power station_Unit 10 -- operating,e_w24478889-380,way/24478889-380,51.528611,6.711944,False
+e_w24478889-380,ep_coal_w24478889-380__ember,197.54579887145397,coal,Aggregated Plant - EMBER Gap - way/24478889-380_Missing Coal Capacity -- operating,e_w24478889-380,way/24478889-380,51.70504209726813,6.688269639277731,False
+e_w24478889-380,ep_gas_steam_turbine_G100000412878,177.0,gas,Hermann Wenzel power station_4 -- operating,e_w24478889-380,way/24478889-380,51.45972,6.73055,False
+e_w24478889-380,ep_gas_steam_turbine_G100000412887,241.0,gas,Hamborn power station_5 -- operating,e_w24478889-380,way/24478889-380,51.4908,6.72697,False
+e_w24478889-380,ep_gas_steam_turbine_w24478889-380,337.0,gas,Aggregated Plant -- operating,e_w24478889-380,way/24478889-380,51.34673016670615,6.714340692614236,False
+e_w24479984-380,ep_coal_subcritical_G100000105963,120.0,coal,Krefeld-Uerdingen power station_Unit 1 -- operating,e_w24479984-380,way/24479984-380,51.377382,6.65873,False
+e_w24479984-380,ep_coal_w24479984-380__ember,30.006956790600597,coal,Aggregated Plant -- operating,e_w24479984-380,way/24479984-380,51.649188092347984,6.6763948350587095,False
+e_w24479984-380,ep_gas_combined_cycle_w24479984-380,45.0,gas,Aggregated Plant -- operating,e_w24479984-380,way/24479984-380,51.21260263192948,6.869366129443658,False
+e_w24479984-380,ep_gas_steam_turbine_w24479984-380,33.0,gas,Aggregated Plant -- operating,e_w24479984-380,way/24479984-380,51.24017032474706,6.425366145405492,False
+e_w24667346-380,ep_m_gas_combined_cycle_G100000409957,254.0,gas,Hagen-Kabel power station_H4/5 -- mothballed,e_w24667346-380,way/24667346-380,51.410556,7.490472,False
+e_w24685992-380,ep_gas_combined_cycle_G100000400112,112.0,gas,Anlage Rüsselsheim power station_1 -- operating,e_w24685992-380,way/24685992-380,49.99545,8.39445,False
+e_w24685992-380,ep_gas_combined_cycle_G100000400212,335.0,gas,Mainz power station_KW2 -- operating,e_w24685992-380,way/24685992-380,50.0264,8.2379,False
+e_w24685992-380,ep_gas_combined_cycle_G100000400213,434.0,gas,Mainz power station_KW3 -- operating,e_w24685992-380,way/24685992-380,50.0264,8.2379,False
+e_w24685992-380,ep_gas_combined_cycle_w24685992-380,78.0,gas,Aggregated Plant -- operating,e_w24685992-380,way/24685992-380,50.24536637211755,8.326877664665329,False
+e_w24685992-380,ep_gas_internal_combustion_w24685992-380,100.0,gas,Aggregated Plant -- operating,e_w24685992-380,way/24685992-380,49.91854711819393,8.65221849913026,False
+e_w24685992-380,ep_gas_w24685992-380__ember,10.597981535250941,gas,Aggregated Plant -- operating,e_w24685992-380,way/24685992-380,49.799976811021445,8.190272590738298,False
+e_w24705761-380,ep_gas_combined_cycle_G100000400156,395.0,gas,Franken 1 power station_Block 1 -- operating,e_w24705761-380,way/24705761-380,49.4208,11.0077,False
+e_w24705761-380,ep_gas_combined_cycle_G100000400157,440.0,gas,Franken 1 power station_Block 2 -- operating,e_w24705761-380,way/24705761-380,49.4208,11.0077,False
+e_w24758329-380,ep_gas_steam_turbine_w24758329-380,62.0,gas,Aggregated Plant -- operating,e_w24758329-380,way/24758329-380,50.00974623924824,10.801447214709267,False
+e_w24921206-380,ep_gas_internal_combustion_w24921206-380,23.0,gas,Aggregated Plant -- operating,e_w24921206-380,way/24921206-380,51.546442140285706,6.9340788488018,False
+e_w24976300-380,ep_gas_combined_cycle_G100000400125,141.0,gas,Burghausen power station_12 -- operating,e_w24976300-380,way/24976300-380,48.18621,12.84577,False
+e_w24976300-380,ep_gas_combined_cycle_w24976300-380,97.0,gas,Aggregated Plant -- operating,e_w24976300-380,way/24976300-380,48.84625599763385,13.1206790366268,False
+e_w24976300-380,ep_hydro_dam_G100001027259,45.0,hydro,Alzwerke hydroelectric plant_ -- operating,e_w24976300-380,way/24976300-380,48.1834,12.8517,False
+e_w24976300-380,ep_hydro_ror_G100001027260,54.0,hydro,Kachlet hydroelectric plant_ -- operating,e_w24976300-380,way/24976300-380,48.5797,13.4083,False
+e_w24976300-380,ep_hydro_w24976300-380__irena,180.93035835023665,hydro,Aggregated Plant - IRENA Gap - way/24976300-380_Missing Hydro Capacity -- operating,e_w24976300-380,way/24976300-380,48.490604245801755,13.06617307930664,False
+e_w25044557-380,ep_bioenergy_G100000201391,55.0,bioenergy,Flingern power station_1 -- operating,e_w25044557-380,way/25044557-380,51.22453,6.81451,False
+e_w25044557-380,ep_bioenergy_w25044557-380__ember,437.6563916591116,bioenergy,Aggregated Plant - EMBER Gap - way/25044557-380_Missing Bioenergy Capacity -- operating,e_w25044557-380,way/25044557-380,51.44296429232511,6.854344733642026,False
+e_w25044557-380,ep_gas_internal_combustion_w25044557-380,24.0,gas,Aggregated Plant -- operating,e_w25044557-380,way/25044557-380,51.08952240760171,6.789072488939172,False
+e_w25746125-380,ep_hydro_ps_G100000601744,1060.0,hydro,Goldisthal hydroelectric plant_ -- operating,e_w25746125-380,way/25746125-380,50.5178,11.0085,False
+e_w25746125-380,ep_hydro_w25746125-380__irena,480.6671174216813,hydro,Aggregated Plant - IRENA Gap - way/25746125-380_Missing Hydro Capacity -- operating,e_w25746125-380,way/25746125-380,50.54264442390651,10.926344944846724,False
+e_w259561755-380,ep_gas_gas_turbine_w259561755-380,21.0,gas,Aggregated Plant -- operating,e_w259561755-380,way/259561755-380,49.43701639463725,8.300113065192967,False
+e_w259561755-380,ep_geothermal_w259561755-380,7.8,geothermal,Aggregated Plant -- operating,e_w259561755-380,way/259561755-380,49.07714406116941,8.29792296645494,False
+e_w26245195-380,ep_coal_supercritical_G100000111745,474.0,coal,Zolling power station_Unit 5 -- operating,e_w26245195-380,way/26245195-380,48.455287,11.799544,False
+e_w26245195-380,ep_coal_w26245195-380__ember,118.52747932287237,coal,Aggregated Plant - EMBER Gap - way/26245195-380_Missing Coal Capacity -- operating,e_w26245195-380,way/26245195-380,48.640263932427736,11.99038676816819,False
+e_w26245195-380,ep_hydro_dam_G100000601751,93.0,hydro,Leitzach hydroelectric plant_ -- operating,e_w26245195-380,way/26245195-380,47.874,11.8712,False
+e_w26245195-380,ep_hydro_w26245195-380__irena,42.17173766058147,hydro,Aggregated Plant - IRENA Gap - way/26245195-380_Missing Hydro Capacity -- operating,e_w26245195-380,way/26245195-380,48.35890991000433,12.291574652339666,False
+e_w26383042-380,ep_gas_steam_turbine_w26383042-380,25.0,gas,Aggregated Plant -- operating,e_w26383042-380,way/26383042-380,52.003447278826826,8.2063348559347,False
+e_w26472665-380,ep_gas_steam_turbine_w26472665-380,29.96,gas,Aggregated Plant -- operating,e_w26472665-380,way/26472665-380,52.29332330421069,11.614710817830803,False
+e_w26593929-380,ep_gas_internal_combustion_w26593929-380,25.2,gas,Aggregated Plant -- operating,e_w26593929-380,way/26593929-380,50.78218593041203,6.604340137509892,False
+e_w26814283-380,ep_hydro_ps_G100001051840,50.0,hydro,Forbach Pumped Storage hydroelectric plant_ -- construction,e_w26814283-380,way/26814283-380,48.6592,8.3219,False
+e_w26814283-380,ep_hydro_ror_G100001030812,46.0,hydro,Schwarzenbach hydroelectric plant_ -- operating,e_w26814283-380,way/26814283-380,48.6545,8.3298,False
+e_w26814283-380,ep_hydro_w26814283-380__irena,222.6486364660807,hydro,Aggregated Plant - IRENA Gap - way/26814283-380_Missing Hydro Capacity -- operating,e_w26814283-380,way/26814283-380,48.6682315517904,8.766939416377012,False
+e_w274630377-380,ep_hydro_w274630377-380__irena,176.84922244759974,hydro,Aggregated Plant - IRENA Gap - way/274630377-380_Missing Hydro Capacity -- operating,e_w274630377-380,way/274630377-380,51.68841130357357,9.530187455934053,False
+e_w275138524-380,ep_coal_ultra-supercritical_G100000102255,1100.0,coal,Datteln power station_Unit 4 -- operating,e_w275138524-380,way/275138524-380,51.631973,7.345948,False
+e_w275138524-380,ep_coal_w275138524-380__ember,275.0637705805055,coal,Aggregated Plant - EMBER Gap - way/275138524-380_Missing Coal Capacity -- operating,e_w275138524-380,way/275138524-380,51.78940769095683,7.362970525058648,False
+e_w27739871-380,ep_gas_gas_turbine_w27739871-380,58.0,gas,Aggregated Plant -- operating,e_w27739871-380,way/27739871-380,52.5272329160567,9.120540294836754,False
+e_w27739871-380,ep_m_gas_gas_turbine_G100000410310,450.0,gas,Robert Frank power station_2 -- mothballed,e_w27739871-380,way/27739871-380,52.54585,9.11363,False
+e_w28613721-380,ep_gas_combined_cycle_w28613721-380,228.7,gas,Aggregated Plant -- operating,e_w28613721-380,way/28613721-380,49.735736335449126,10.940811350707408,False
+e_w28613721-380,ep_hydro_ps_G100001030805,160.0,hydro,Happurg Pumped Storage hydroelectric plant_ -- construction,e_w28613721-380,way/28613721-380,49.4871,11.4742,False
+e_w28613721-380,ep_hydro_w28613721-380__irena,72.55352715798965,hydro,Aggregated Plant - IRENA Gap - way/28613721-380_Missing Hydro Capacity -- operating,e_w28613721-380,way/28613721-380,49.37854019071074,10.962559670804591,False
+e_w28956649-380,ep_bioenergy_G100000200234,54.0,bioenergy,ZMS Schwandorf power station_1 -- operating,e_w28956649-380,way/28956649-380,49.3111,12.0858,False
+e_w28956649-380,ep_bioenergy_w28956649-380__ember,429.699002719855,bioenergy,Aggregated Plant - EMBER Gap - way/28956649-380_Missing Bioenergy Capacity -- operating,e_w28956649-380,way/28956649-380,49.25251151299491,12.028589122497891,False
+e_w29077623-380,ep_gas_combined_cycle_w29077623-380,387.8,gas,Aggregated Plant -- operating,e_w29077623-380,way/29077623-380,51.87305259631996,7.096325874931586,False
+e_w29077623-380,ep_gas_steam_turbine_w29077623-380,36.0,gas,Aggregated Plant -- operating,e_w29077623-380,way/29077623-380,51.51813116158277,7.034861331458044,False
+e_w29309786-380,ep_bioenergy_G100000201393,64.0,bioenergy,MVA Heringen power station_1 -- operating,e_w29309786-380,way/29309786-380,50.8924,9.9992,False
+e_w29309786-380,ep_bioenergy_w29309786-380__ember,509.2728921124208,bioenergy,Aggregated Plant - EMBER Gap - way/29309786-380_Missing Bioenergy Capacity -- operating,e_w29309786-380,way/29309786-380,51.09745880407001,9.734747772281565,False
+e_w29309786-380,ep_gas_combined_cycle_G100000400283,112.0,gas,Wintershall power station_1 -- operating,e_w29309786-380,way/29309786-380,50.894,9.9972,False
+e_w29309786-380,ep_gas_steam_turbine_G100000400179,121.0,gas,Hattorf power station_CC -- operating,e_w29309786-380,way/29309786-380,50.8126,9.978,False
+e_w29309786-380,ep_gas_steam_turbine_w29309786-380,20.0,gas,Aggregated Plant -- operating,e_w29309786-380,way/29309786-380,50.737543405716636,9.751864223193602,False
+e_w30040568-380,ep_gas_combined_cycle_w30040568-380,73.0,gas,Aggregated Plant -- operating,e_w30040568-380,way/30040568-380,53.56520183460078,11.48315104768121,False
+e_w30303506-380,ep_gas_combined_cycle_G100000400208,315.0,gas,Lichterfelde power station_4 -- operating,e_w30303506-380,way/30303506-380,52.4252,13.3098,False
+e_w30303506-380,ep_gas_combined_cycle_G100000400883,267.0,gas,Berlin-Marzahn power station_1 -- operating,e_w30303506-380,way/30303506-380,52.51862,13.37619,False
+e_w30734324-380,ep_hydro_ps_G100000601743,90.0,hydro,Glems hydroelectric plant_ -- operating,e_w30734324-380,way/30734324-380,48.505,9.2869,False
+e_w30734324-380,ep_hydro_w30734324-380__irena,40.81135902636917,hydro,Aggregated Plant - IRENA Gap - way/30734324-380_Missing Hydro Capacity -- operating,e_w30734324-380,way/30734324-380,48.586425298795476,9.110091102807422,False
+e_w30954714-380,ep_gas_combined_cycle_G100000400117,461.0,gas,Berlin Mitte power station_GuD Mitte -- operating,e_w30954714-380,way/30954714-380,52.51172,13.42092,False
+e_w30954714-380,ep_gas_steam_turbine_G100001017933,188.0,gas,"Berlin-Klingenberg power station_Unit 4, timepoint 2 -- operating",e_w30954714-380,way/30954714-380,52.489993,13.495988,False
+e_w31367940-380,ep_hydro_ps_G100000601745,100.0,hydro,Häusern hydroelectric plant_ -- operating,e_w31367940-380,way/31367940-380,47.7553,8.1876,False
+e_w31367940-380,ep_hydro_ps_G100000601766,220.0,hydro,Witznau hydroelectric plant_ -- operating,e_w31367940-380,way/31367940-380,47.6876,8.2513,False
+e_w31367940-380,ep_hydro_w31367940-380__irena,145.1070543159793,hydro,Aggregated Plant - IRENA Gap - way/31367940-380_Missing Hydro Capacity -- operating,e_w31367940-380,way/31367940-380,47.46517603199546,8.330960371857849,False
+e_w31653753-380,ep_gas_gas_turbine_w31653753-380,74.0,gas,Aggregated Plant -- operating,e_w31653753-380,way/31653753-380,49.753172374774,9.900902525696468,False
+e_w31653753-380,ep_gas_steam_turbine_w31653753-380,68.0,gas,Aggregated Plant -- operating,e_w31653753-380,way/31653753-380,49.399156619451766,9.963406204314817,False
+e_w32690742-380,ep_hydro_ps_G100000601765,80.0,hydro,Wendefurth hydroelectric plant_ -- operating,e_w32690742-380,way/32690742-380,51.7392,10.9074,False
+e_w32690742-380,ep_hydro_w32690742-380__irena,36.276763578994824,hydro,Aggregated Plant - IRENA Gap - way/32690742-380_Missing Hydro Capacity -- operating,e_w32690742-380,way/32690742-380,51.72340282361106,11.60916917281876,False
+e_w33169401-380,ep_bioenergy_G100000201396,100.0,bioenergy,Stendal Mill power station_1 -- operating,e_w33169401-380,way/33169401-380,52.7263,12.0112,False
+e_w33169401-380,ep_bioenergy_w33169401-380,40.0,bioenergy,Aggregated Plant -- operating,e_w33169401-380,way/33169401-380,53.10335769888304,11.807901392432274,False
+e_w33169401-380,ep_bioenergy_w33169401-380__ember,1114.0344514959204,bioenergy,Aggregated Plant - EMBER Gap - way/33169401-380_Missing Bioenergy Capacity -- operating,e_w33169401-380,way/33169401-380,52.937606598082574,12.1228398058298,False
+e_w35176751-380,ep_gas_internal_combustion_G100000412869,192.0,gas,"Kiel power station_ICCC, timepoint 1 -- operating",e_w35176751-380,way/35176751-380,54.338671,10.176885,False
+e_w35176751-380,ep_gas_steam_turbine_w35176751-380,22.0,gas,Aggregated Plant -- operating,e_w35176751-380,way/35176751-380,54.46385032233468,9.687387918018086,False
+e_w35176751-380,ep_oil_internal_combustion_w35176751-380,88.8,oil,Aggregated Plant -- operating,e_w35176751-380,way/35176751-380,54.10792823775224,9.7169598046953,False
+e_w373967500-380,ep_hydro_w373967500-380__irena,126.96867252648184,hydro,Aggregated Plant - IRENA Gap - way/373967500-380_Missing Hydro Capacity -- operating,e_w373967500-380,way/373967500-380,50.007174712054486,7.759958639782371,False
+e_w37721677-380,ep_coal_subcritical_G100000100137,433.0,coal,Altbach power station_CHP 1 -- operating,e_w37721677-380,way/37721677-380,48.717185,9.37079,False
+e_w37721677-380,ep_coal_supercritical_G100000100138,350.0,coal,Altbach power station_CHP 2 -- operating,e_w37721677-380,way/37721677-380,48.717185,9.37079,False
+e_w37721677-380,ep_coal_w37721677-380__ember,195.79539305866888,coal,Aggregated Plant - EMBER Gap - way/37721677-380_Missing Coal Capacity -- operating,e_w37721677-380,way/37721677-380,49.07925655213884,9.359295545265304,False
+e_w37721677-380,ep_gas_combined_cycle_G100000410325,750.0,gas,"Altbach power station_HKW3, timepoint 1 -- construction",e_w37721677-380,way/37721677-380,48.717185,9.37079,False
+e_w37721677-380,ep_gas_combined_cycle_w37721677-380,65.0,gas,Aggregated Plant -- operating,e_w37721677-380,way/37721677-380,48.81175151551505,9.71931167689709,False
+e_w37721677-380,ep_gas_gas_turbine_w37721677-380,197.0,gas,Aggregated Plant -- operating,e_w37721677-380,way/37721677-380,48.36534655521129,9.439815945403288,False
+e_w37721677-380,ep_gas_w37721677-380__ember,10.127627302808266,gas,Aggregated Plant -- operating,e_w37721677-380,way/37721677-380,48.820326056216786,9.025221112096117,False
+e_w395847307-380,ep_gas_combined_cycle_w395847307-380,63.0,gas,Aggregated Plant -- operating,e_w395847307-380,way/395847307-380,50.2594828978446,7.548875754557973,False
+e_w41072584-380,ep_hydro_ps_G100000601761,140.0,hydro,Waldeck 1 hydroelectric plant_ -- operating,e_w41072584-380,way/41072584-380,51.1678,9.047,False
+e_w41072584-380,ep_hydro_ps_G100000601762,480.0,hydro,Waldeck 2 hydroelectric plant_ -- operating,e_w41072584-380,way/41072584-380,51.1678,9.047,False
+e_w41072584-380,ep_hydro_w41072584-380__irena,281.14491773720977,hydro,Aggregated Plant - IRENA Gap - way/41072584-380_Missing Hydro Capacity -- operating,e_w41072584-380,way/41072584-380,51.21170421124206,9.116495495825465,False
+e_w42050342-380,ep_gas_combined_cycle_w42050342-380,77.0,gas,Aggregated Plant -- operating,e_w42050342-380,way/42050342-380,49.04566836574856,10.161788658579379,False
+e_w42410916-380,ep_coal_supercritical_G100000109623,553.0,coal,Staudinger power station_Unit 5 -- operating,e_w42410916-380,way/42410916-380,50.088361,8.952166,False
+e_w42410916-380,ep_coal_w42410916-380__ember,138.28205921001774,coal,Aggregated Plant - EMBER Gap - way/42410916-380_Missing Coal Capacity -- operating,e_w42410916-380,way/42410916-380,49.95295490547022,9.050556308131753,False
+e_w42410916-380,ep_gas_steam_turbine_G100000400255,622.0,gas,Staudinger power station_4 -- operating,e_w42410916-380,way/42410916-380,50.0886,8.9534,False
+e_w42507488-380,ep_gas_combined_cycle_G100000400170,355.0,gas,Gersteinwerk power station_G2 -- operating,e_w42507488-380,way/42507488-380,51.673532,7.720513,False
+e_w42507488-380,ep_gas_combined_cycle_G100000405839,355.0,gas,Gersteinwerk power station_F2 -- operating,e_w42507488-380,way/42507488-380,51.673532,7.720513,False
+e_w42507488-380,ep_gas_combined_cycle_w42507488-380,110.0,gas,Aggregated Plant -- operating,e_w42507488-380,way/42507488-380,51.94472076822991,7.672368457818122,False
+e_w42507488-380,ep_gas_gas_turbine_G100000400172,112.0,gas,Gersteinwerk power station_K1 -- operating,e_w42507488-380,way/42507488-380,51.673532,7.720513,False
+e_w42507488-380,ep_gas_gas_turbine_w42507488-380,103.00000000000001,gas,Aggregated Plant -- operating,e_w42507488-380,way/42507488-380,51.53716573239245,7.940334028837589,False
+e_w42507488-380,ep_gas_w42507488-380__ember,21.916505724456623,gas,Aggregated Plant -- operating,e_w42507488-380,way/42507488-380,51.60623704882384,7.448161143287276,False
+e_w42507488-380,ep_m_gas_combined_cycle_G100000409761,355.0,gas,Gersteinwerk power station_I2 -- mothballed,e_w42507488-380,way/42507488-380,51.673532,7.720513,False
+e_w425100082-380,ep_coal_ultra-supercritical_G100000106458,810.0,coal,Luenen-Stummhafen power station_-- -- operating,e_w425100082-380,way/425100082-380,51.614389,7.464277,False
+e_w425100082-380,ep_coal_w425100082-380__ember,202.54695833655404,coal,Aggregated Plant - EMBER Gap - way/425100082-380_Missing Coal Capacity -- operating,e_w425100082-380,way/425100082-380,51.65439684380953,7.404357133979788,False
+e_w42799487-380,ep_hydro_ps_G100000601757,140.0,hydro,Rönkhausen hydroelectric plant_ -- operating,e_w42799487-380,way/42799487-380,51.2247,7.9932,False
+e_w42799487-380,ep_hydro_w42799487-380__irena,63.48433626324092,hydro,Aggregated Plant - IRENA Gap - way/42799487-380_Missing Hydro Capacity -- operating,e_w42799487-380,way/42799487-380,51.29496942826496,8.07344994479072,False
+e_w42861703-380,ep_gas_combined_cycle_w42861703-380,104.1,gas,Aggregated Plant -- operating,e_w42861703-380,way/42861703-380,51.85374716140945,7.73076914284982,False
+e_w43163132-380,ep_coal_subcritical_G100000100771,300.0,coal,Berlin-Reuter-West power station_Unit A -- operating,e_w43163132-380,way/43163132-380,52.534601,13.244531,False
+e_w43163132-380,ep_coal_subcritical_G100000100772,300.0,coal,Berlin-Reuter-West power station_Unit B -- operating,e_w43163132-380,way/43163132-380,52.534601,13.244531,False
+e_w43163132-380,ep_coal_w43163132-380__ember,150.03478395300303,coal,Aggregated Plant - EMBER Gap - way/43163132-380_Missing Coal Capacity -- operating,e_w43163132-380,way/43163132-380,52.356367503794715,13.207201255606028,False
+e_w442199284-380,ep_coal_subcritical_w442199284-380,37.4,coal,Aggregated Plant -- operating,e_w442199284-380,way/442199284-380,51.37553105123065,12.313334227698927,False
+e_w442199284-380,ep_gas_gas_turbine_w442199284-380,124.0,gas,Aggregated Plant -- operating,e_w442199284-380,way/442199284-380,51.01679303775926,12.338744712631643,False
+e_w442199284-380,ep_m_gas_combined_cycle_G100000400202,172.0,gas,Leipzig Nord power station_1 -- mothballed,e_w442199284-380,way/442199284-380,51.3512,12.3784,False
+e_w442199284-380,ep_oil_combined_cycle_G100000412875,126.0,oil,Industriepark Zeitz power station_CC -- operating,e_w442199284-380,way/442199284-380,51.0692,12.1959,False
+e_w44717036-380,ep_bioenergy_G100000200302,50.0,bioenergy,Müllheizkraftwerk Bremen power station_1 -- operating,e_w44717036-380,way/44717036-380,53.1137,8.8167,False
+e_w44717036-380,ep_bioenergy_w44717036-380__ember,397.8694469628287,bioenergy,Aggregated Plant - EMBER Gap - way/44717036-380_Missing Bioenergy Capacity -- operating,e_w44717036-380,way/44717036-380,53.360424213644926,8.73096570136745,False
+e_w44717036-380,ep_gas_combined_cycle_G100000412836,238.0,gas,SWB Mittelsbüren power station_1 -- operating,e_w44717036-380,way/44717036-380,53.12874,8.68637,False
+e_w44717036-380,ep_gas_internal_combustion_w44717036-380,105.0,gas,Aggregated Plant -- operating,e_w44717036-380,way/44717036-380,52.98058065657633,8.94115265602569,False
+e_w44717036-380,ep_gas_steam_turbine_G100000400216,445.0,gas,Mittelsbüren power station_GuD MiBÜ -- operating,e_w44717036-380,way/44717036-380,53.12891,8.68524,False
+e_w44717036-380,ep_gas_steam_turbine_w44717036-380,35.0,gas,Aggregated Plant -- operating,e_w44717036-380,way/44717036-380,52.96637193555982,8.45614486891946,False
+e_w456386244-380,ep_bioenergy_w456386244-380,34.0,bioenergy,Aggregated Plant -- operating,e_w456386244-380,way/456386244-380,51.507682803072605,9.622434018711893,False
+e_w456386244-380,ep_bioenergy_w456386244-380__ember,270.5512239347235,bioenergy,Aggregated Plant - EMBER Gap - way/456386244-380_Missing Bioenergy Capacity -- operating,e_w456386244-380,way/456386244-380,51.15617808449885,9.54319687778336,False
+e_w46615737-380,ep_coal_subcritical_w46615737-380,100.0,coal,Aggregated Plant -- operating,e_w46615737-380,way/46615737-380,52.789782408057036,13.352013384400845,False
+e_w46615737-380,ep_coal_w46615737-380__ember,25.0057973255005,coal,Aggregated Plant -- operating,e_w46615737-380,way/46615737-380,52.4086315886995,13.560873993649166,False
+e_w46615737-380,ep_gas_gas_turbine_w46615737-380,144.0,gas,Aggregated Plant -- operating,e_w46615737-380,way/46615737-380,52.4564862564842,13.05331086075125,False
+e_w49577401-380,ep_gas_combined_cycle_G100000400134,586.0,gas,Dormagen power station_1 -- operating,e_w49577401-380,way/49577401-380,51.0791,6.8287,False
+e_w49577401-380,ep_gas_combined_cycle_w49577401-380,58.0,gas,Aggregated Plant -- operating,e_w49577401-380,way/49577401-380,51.30455494146457,6.787234948868489,False
+e_w49577401-380,ep_gas_steam_turbine_w49577401-380,84.0,gas,Aggregated Plant -- operating,e_w49577401-380,way/49577401-380,50.95140546670879,6.753755424856602,False
+e_w52983550-380,ep_bioenergy_w52983550-380,32.0,bioenergy,Aggregated Plant -- operating,e_w52983550-380,way/52983550-380,52.535029115508614,14.593157924326512,False
+e_w52983550-380,ep_bioenergy_w52983550-380__ember,254.6364460562104,bioenergy,Aggregated Plant - EMBER Gap - way/52983550-380_Missing Bioenergy Capacity -- operating,e_w52983550-380,way/52983550-380,52.09223919874706,14.95483102131955,False
+e_w52983550-380,ep_gas_internal_combustion_w52983550-380,51.5,gas,Aggregated Plant -- operating,e_w52983550-380,way/52983550-380,51.81603375832846,14.570565817609651,False
+e_w52983550-380,ep_gas_steam_turbine_w52983550-380,156.0,gas,Aggregated Plant -- operating,e_w52983550-380,way/52983550-380,52.07599285918375,14.257523573609884,False
+e_w53378027-380,ep_bioenergy_G100000200244,76.0,bioenergy,AVA Augsburg power station_1 -- operating,e_w53378027-380,way/53378027-380,48.4038,10.9332,False
+e_w53378027-380,ep_bioenergy_w53378027-380__ember,604.7615593834996,bioenergy,Aggregated Plant - EMBER Gap - way/53378027-380_Missing Bioenergy Capacity -- operating,e_w53378027-380,way/53378027-380,48.747564217150774,11.03647623547536,False
+e_w53378027-380,ep_gas_gas_turbine_w53378027-380,30.7,gas,Aggregated Plant -- operating,e_w53378027-380,way/53378027-380,48.37906913797339,11.29637859553282,False
+e_w53378027-380,ep_gas_steam_turbine_w53378027-380,20.4,gas,Aggregated Plant -- operating,e_w53378027-380,way/53378027-380,48.044553592155324,10.987674341983979,False
+e_w53378027-380,ep_m_gas_steam_turbine_w53378027-380,32.0,gas,Aggregated Plant -- mothballed,e_w53378027-380,way/53378027-380,48.44406473613147,10.57889125166322,False
+e_w5404079-380,ep_gas_combined_cycle_G100000400218,429.0,gas,Munchen Sud power station_GUD 2 -- operating,e_w5404079-380,way/5404079-380,48.114,11.556,False
+e_w5404079-380,ep_gas_combined_cycle_G100000400221,214.0,gas,Munchen Sud power station_GUD 1 -- operating,e_w5404079-380,way/5404079-380,48.114,11.556,False
+e_w5404079-380,ep_gas_gas_turbine_w5404079-380,100.0,gas,Aggregated Plant -- operating,e_w5404079-380,way/5404079-380,48.718296007053006,11.631159921015394,False
+e_w5404079-380,ep_gas_w5404079-380__ember,11.088350841414584,gas,Aggregated Plant -- operating,e_w5404079-380,way/5404079-380,48.31918531644865,12.162196024177716,False
+e_w5404079-380,ep_geothermal_w5404079-380,11.099999999999998,geothermal,Aggregated Plant -- operating,e_w5404079-380,way/5404079-380,47.911311989751404,12.110729093532989,False
+e_w5404079-380,ep_oil_gas_turbine_w5404079-380,100.0,oil,Aggregated Plant -- operating,e_w5404079-380,way/5404079-380,47.63885264342812,11.681470170505218,False
+e_w54359256-380,ep_coal_subcritical_G100000110779,724.0,coal,Weiher power station_Weiher-3 -- operating,e_w54359256-380,way/54359256-380,49.335278,7.030556,False
+e_w54359256-380,ep_coal_subcritical_w54359256-380,53.0,coal,Aggregated Plant -- operating,e_w54359256-380,way/54359256-380,49.820613639757276,6.928118241186702,False
+e_w54359256-380,ep_coal_w54359256-380__ember,194.29504521913887,coal,Aggregated Plant - EMBER Gap - way/54359256-380_Missing Coal Capacity -- operating,e_w54359256-380,way/54359256-380,49.51241312556688,7.4254993902485005,False
+e_w54359256-380,ep_gas_combined_cycle_w54359256-380,74.0,gas,Aggregated Plant -- operating,e_w54359256-380,way/54359256-380,49.045107264781684,7.302723661831631,False
+e_w54359256-380,ep_gas_internal_combustion_w54359256-380,50.0,gas,Aggregated Plant -- operating,e_w54359256-380,way/54359256-380,48.98855991047174,6.765567859739101,False
+e_w54359256-380,ep_gas_steam_turbine_w54359256-380,53.0,gas,Aggregated Plant -- operating,e_w54359256-380,way/54359256-380,49.523473246878,6.570995603551246,False
+e_w55069713-380,ep_gas_combined_cycle_G100000400110,116.0,gas,Akzo Obernburg power station_1 -- operating,e_w55069713-380,way/55069713-380,49.82935,9.14824,False
+e_w55069713-380,ep_gas_combined_cycle_w55069713-380,47.0,gas,Aggregated Plant -- operating,e_w55069713-380,way/55069713-380,50.14871872181408,9.087496349715792,False
+e_w55069713-380,ep_hydro_ps_G100000601750,164.0,hydro,Langenprozelten hydroelectric plant_ -- operating,e_w55069713-380,way/55069713-380,50.0531,9.5812,False
+e_w55069713-380,ep_hydro_w55069713-380__irena,74.36736533693937,hydro,Aggregated Plant - IRENA Gap - way/55069713-380_Missing Hydro Capacity -- operating,e_w55069713-380,way/55069713-380,49.79505719952506,9.138033182250297,False
+e_w57727004-380,ep_gas_gas_turbine_w57727004-380,20.0,gas,Aggregated Plant -- operating,e_w57727004-380,way/57727004-380,47.57629853789571,10.36620177747691,False
+e_w58429825-380,ep_coal_supercritical_G100000108885,800.0,coal,Schwarze Pumpe power station_Unit A -- operating,e_w58429825-380,way/58429825-380,51.537855,14.353492,False
+e_w58429825-380,ep_coal_supercritical_G100000108886,800.0,coal,Schwarze Pumpe power station_Unit B -- operating,e_w58429825-380,way/58429825-380,51.537855,14.353492,False
+e_w58429825-380,ep_coal_w58429825-380__ember,400.092757208008,coal,Aggregated Plant - EMBER Gap - way/58429825-380_Missing Coal Capacity -- operating,e_w58429825-380,way/58429825-380,51.60120134299683,14.465956842355082,False
+e_w59925390-380,ep_bioenergy_w59925390-380,38.0,bioenergy,Aggregated Plant -- operating,e_w59925390-380,way/59925390-380,51.69403771301581,7.008656972691738,False
+e_w59925390-380,ep_bioenergy_w59925390-380__ember,302.3807796917498,bioenergy,Aggregated Plant - EMBER Gap - way/59925390-380_Missing Bioenergy Capacity -- operating,e_w59925390-380,way/59925390-380,51.338866302563204,7.037590397985915,False
+e_w600395952-380,ep_gas_combined_cycle_G100000400211,415.0,gas,Ludwigshafen Süd power station_1 -- operating,e_w600395952-380,way/600395952-380,49.5136,8.4316,False
+e_w603661085-380,ep_oil_combined_cycle_w603661085-380,47.0,oil,Aggregated Plant -- operating,e_w603661085-380,way/603661085-380,54.432376880505636,9.057791855555369,False
+e_w61918154-380,ep_gas_combined_cycle_G100000400141,475.0,gas,Emsland power station_B -- operating,e_w61918154-380,way/61918154-380,52.48188,7.30666,False
+e_w61918154-380,ep_gas_combined_cycle_G100000400143,475.0,gas,Emsland power station_C -- operating,e_w61918154-380,way/61918154-380,52.48188,7.30666,False
+e_w61918154-380,ep_gas_combined_cycle_G100000400145,887.0,gas,Emsland power station_D -- operating,e_w61918154-380,way/61918154-380,52.48188,7.30666,False
+e_w61918154-380,ep_gas_w61918154-380__ember,18.72410146596271,gas,Aggregated Plant -- operating,e_w61918154-380,way/61918154-380,52.31328795393176,7.528478539769924,False
+e_w61918154-380,ep_oil_combined_cycle_w61918154-380,89.0,oil,Aggregated Plant -- operating,e_w61918154-380,way/61918154-380,52.319447515921595,7.0883093858378645,False
+e_w62061952-380,ep_coal_subcritical_w62061952-380,204.0,coal,Aggregated Plant -- operating,e_w62061952-380,way/62061952-380,50.152188433127044,9.064949312962867,False
+e_w62061952-380,ep_coal_w62061952-380__ember,51.01182654402101,coal,Aggregated Plant -- operating,e_w62061952-380,way/62061952-380,49.81464126295669,8.973185138715383,False
+e_w62061952-380,ep_gas_combined_cycle_w62061952-380,132.0,gas,Aggregated Plant -- operating,e_w62061952-380,way/62061952-380,49.667467862394446,8.468787443051356,False
+e_w62061952-380,ep_gas_steam_turbine_G100000400278,110.8,gas,Mainova West power station_Block 4 -- operating,e_w62061952-380,way/62061952-380,50.098779,8.655656,False
+e_w62061952-380,ep_gas_steam_turbine_w62061952-380,38.7,gas,Aggregated Plant -- operating,e_w62061952-380,way/62061952-380,50.2671467944876,8.203359296191094,False
+e_w68549340-380,ep_gas_steam_turbine_w68549340-380,44.0,gas,Aggregated Plant -- operating,e_w68549340-380,way/68549340-380,51.612902003990335,7.215300033663007,False
+e_w714098678-380,ep_coal_supercritical_G100000106337,933.0,coal,Lippendorf power station_Unit R -- operating,e_w714098678-380,way/714098678-380,51.184537,12.372852,False
+e_w714098678-380,ep_coal_supercritical_G100000106338,933.0,coal,Lippendorf power station_Unit S -- operating,e_w714098678-380,way/714098678-380,51.184537,12.372852,False
+e_w714098678-380,ep_coal_w714098678-380__ember,466.60817809383923,coal,Aggregated Plant - EMBER Gap - way/714098678-380_Missing Coal Capacity -- operating,e_w714098678-380,way/714098678-380,51.03761001796026,12.443171935890145,False
+e_w77038371-380,ep_gas_combined_cycle_w77038371-380,88.0,gas,Aggregated Plant -- operating,e_w77038371-380,way/77038371-380,48.085806500473026,10.778260746493531,False
+e_w77038371-380,ep_gas_steam_turbine_w77038371-380,90.0,gas,Aggregated Plant -- operating,e_w77038371-380,way/77038371-380,47.64208620350788,10.899914662781057,False
+e_w77038371-380,ep_hydro_dam_G100000601760,124.0,hydro,Walchensee hydroelectric plant_ -- operating,e_w77038371-380,way/77038371-380,47.6296,11.3377,False
+e_w77038371-380,ep_hydro_dam_G100001027261,46.0,hydro,Roßhaupten hydroelectric plant_ -- operating,e_w77038371-380,way/77038371-380,47.6515,10.7355,False
+e_w77038371-380,ep_hydro_w77038371-380__irena,77.08812260536398,hydro,Aggregated Plant - IRENA Gap - way/77038371-380_Missing Hydro Capacity -- operating,e_w77038371-380,way/77038371-380,47.70669861971421,10.459977974347291,False
+e_w77697810-380,ep_gas_steam_turbine_w77697810-380,73.0,gas,Aggregated Plant -- operating,e_w77697810-380,way/77697810-380,48.78215607660861,12.338760920160794,False
+e_w77697810-380,ep_hydro_ror_G100000601759,120.0,hydro,Töging hydroelectric plant_ -- operating,e_w77697810-380,way/77697810-380,48.2505,12.5849,False
+e_w77697810-380,ep_hydro_w77697810-380__irena,54.41514536849222,hydro,Aggregated Plant - IRENA Gap - way/77697810-380_Missing Hydro Capacity -- operating,e_w77697810-380,way/77697810-380,48.42734513629197,12.28200512361983,False
+e_w78441561-380,ep_gas_combined_cycle_w78441561-380,121.0,gas,Aggregated Plant -- operating,e_w78441561-380,way/78441561-380,48.76855411133189,12.987878437994995,False
+e_w82773910-380,ep_coal_w82773910-380__ember,116.52701553683231,coal,Aggregated Plant - EMBER Gap - way/82773910-380_Missing Coal Capacity -- operating,e_w82773910-380,way/82773910-380,49.56077842500084,6.757737733515573,False
+e_w82773910-380,ep_gas_combined_cycle_w82773910-380,39.0,gas,Aggregated Plant -- operating,e_w82773910-380,way/82773910-380,49.19713934947537,7.026738058484721,False
+e_w82773910-380,ep_gas_internal_combustion_w82773910-380,24.0,gas,Aggregated Plant -- operating,e_w82773910-380,way/82773910-380,49.22098185835773,6.512217663527977,False
+e_w82773910-380,ep_m_coal_subcritical_G100000110652,233.0,coal,Völklingen-Fenne power station_Phase B Unit 1 -- mothballed,e_w82773910-380,way/82773910-380,49.249374,6.880646,False
+e_w82773910-380,ep_m_coal_subcritical_G100000110653,233.0,coal,Völklingen-Fenne power station_Phase C Unit 1 -- mothballed,e_w82773910-380,way/82773910-380,49.249374,6.880646,False
+e_w82773910-400,ep_gas_combined_cycle_G100000412904,115.0,gas,Dillingen power station_1 -- operating,e_w82773910-400,way/82773910-400,49.3512,6.7509,False
+e_w829116805-380,ep_gas_gas_turbine_G100000400183,321.0,gas,Huntorf power station_1 -- operating,e_w829116805-380,way/829116805-380,53.18969,8.40869,False
+e_w87653464-380,ep_gas_combined_cycle_w87653464-380,59.0,gas,Aggregated Plant -- operating,e_w87653464-380,way/87653464-380,48.54672339741106,7.750129405774137,False
+e_w87653464-380,ep_gas_steam_turbine_w87653464-380,27.0,gas,Aggregated Plant -- operating,e_w87653464-380,way/87653464-380,48.15547191893677,8.19846432652151,False
+e_w881636329-380,ep_gas_combined_cycle_G100000400251,163.0,gas,Stade Dow power station_1 -- operating,e_w881636329-380,way/881636329-380,53.6535,9.4944,False
+e_w881636329-380,ep_gas_gas_turbine_w881636329-380,31.0,gas,Aggregated Plant -- operating,e_w881636329-380,way/881636329-380,53.77196488155344,9.41038182795883,False
+e_w883928229-380,ep_gas_steam_turbine_w883928229-380,31.0,gas,Aggregated Plant -- operating,e_w883928229-380,way/883928229-380,53.43822726258761,8.109542336562875,False
+e_w88901626-380,ep_hydro_dam_G100000604130,120.0,hydro,Ryburg-Schwörstadt hydroelectric plant_ -- operating,e_w88901626-380,way/88901626-380,47.5866,7.8337,False
+e_w88901626-380,ep_hydro_ror_G100000604129,100.0,hydro,Rheinfelden hydroelectric plant_ -- operating,e_w88901626-380,way/88901626-380,47.5694,7.8111,False
+e_w88901626-380,ep_hydro_w88901626-380__irena,99.76109984223575,hydro,Aggregated Plant - IRENA Gap - way/88901626-380_Missing Hydro Capacity -- operating,e_w88901626-380,way/88901626-380,47.544882705085485,7.860021383965802,False
+e_w88916034-380,ep_hydro_ps_G100000601758,360.0,hydro,Säckingen hydroelectric plant_ -- operating,e_w88916034-380,way/88916034-380,47.5653,7.953,False
+e_w88916034-380,ep_hydro_w88916034-380__irena,163.24543610547667,hydro,Aggregated Plant - IRENA Gap - way/88916034-380_Missing Hydro Capacity -- operating,e_w88916034-380,way/88916034-380,47.69881776974652,8.027799736027596,False
+e_w92165128-380,ep_gas_combined_cycle_w92165128-380,88.0,gas,Aggregated Plant -- operating,e_w92165128-380,way/92165128-380,51.254764255906885,7.3272105795011955,False
+e_w940470389-380,ep_gas_gas_turbine_w940470389-380,191.0,gas,Aggregated Plant -- operating,e_w940470389-380,way/940470389-380,52.40996740768528,13.290797642255368,False
+e_w940470389-380,ep_gas_steam_turbine_w940470389-380,84.0,gas,Aggregated Plant -- operating,e_w940470389-380,way/940470389-380,52.05053799720865,13.315867159196895,False
+e_w941805476-380,ep_gas_combined_cycle_w941805476-380,36.0,gas,Aggregated Plant -- operating,e_w941805476-380,way/941805476-380,51.09169284926982,14.358204796728096,False
+e_w942771541-380,ep_gas_combined_cycle_w942771541-380,269.0,gas,Aggregated Plant -- operating,e_w942771541-380,way/942771541-380,50.63590833025957,13.772776302921235,False
+e_w942771541-380,ep_gas_internal_combustion_w942771541-380,166.20000000000002,gas,Aggregated Plant -- operating,e_w942771541-380,way/942771541-380,50.950794541986,13.484042558340624,False
+e_w943135226-380,ep_gas_internal_combustion_w943135226-380,151.2,gas,Aggregated Plant -- operating,e_w943135226-380,way/943135226-380,50.9947920982553,12.955169515279213,False
+e_w943939310-380,ep_bioenergy_w943939310-380,36.0,bioenergy,Aggregated Plant -- operating,e_w943939310-380,way/943939310-380,52.44870696723305,11.633285876555373,False
+e_w943939310-380,ep_bioenergy_w943939310-380__ember,286.4660018132367,bioenergy,Aggregated Plant - EMBER Gap - way/943939310-380_Missing Bioenergy Capacity -- operating,e_w943939310-380,way/943939310-380,52.04295575933076,12.167540252004255,False
+e_w943939310-380,ep_gas_combined_cycle_G100000400119,231.0,gas,Bernburg Alkali power station_1 -- operating,e_w943939310-380,way/943939310-380,51.80261,11.75151,False
+e_w943939310-380,ep_gas_combined_cycle_G100000400254,134.0,gas,Staßfurt power station_1 -- operating,e_w943939310-380,way/943939310-380,51.86553,11.57381,False
+e_w943939310-380,ep_gas_steam_turbine_w943939310-380,23.0,gas,Aggregated Plant -- operating,e_w943939310-380,way/943939310-380,51.512678038668845,12.012406256670701,False
+e_w946025110-380,ep_gas_combined_cycle_G100000400120,112.0,gas,Bitterfeld power station_1 -- operating,e_w946025110-380,way/946025110-380,51.62487,12.30705,False
+e_w946025110-380,ep_gas_steam_turbine_w946025110-380,103.00000000000001,gas,Aggregated Plant -- operating,e_w946025110-380,way/946025110-380,51.90137988426756,12.366773848127997,False
+e_w946206351-380,ep_gas_steam_turbine_w946206351-380,47.0,gas,Aggregated Plant -- operating,e_w946206351-380,way/946206351-380,51.21150291705555,12.667480714507104,False
+e_w947118608-380,ep_gas_combined_cycle_w947118608-380,77.0,gas,Aggregated Plant -- operating,e_w947118608-380,way/947118608-380,53.89345144802333,13.159639137849533,False
+e_w97825259-380,ep_gas_gas_turbine_G100000412855,300.0,gas,Marbach power station_4 -- construction,e_w97825259-380,way/97825259-380,48.92808,9.23109,False
+e_w97825259-380,ep_oil_combined_cycle_G100000412856,265.0,oil,Marbach power station_3 -- operating,e_w97825259-380,way/97825259-380,48.92808,9.23109,False
+e_w97825259-380,ep_oil_gas_turbine_G100000412857,130.0,oil,Marbach power station_2 -- operating,e_w97825259-380,way/97825259-380,48.92808,9.23109,False
+elc_spv_001,ep_solar_pv_001,602.7,solar,Aggregated Plant -- operating,elc_spv_001,way/5404079-380,48.402769451289565,11.148947137093282,False
+elc_spv_002,ep_solar_pv_002,1003.0000000000001,solar,Aggregated Plant -- operating,elc_spv_002,DE188-380,49.58847267807158,12.279926839856987,False
+elc_spv_003,ep_solar_pv_003,2844.6,solar,Aggregated Plant -- operating,elc_spv_003,way/26245195-380,47.87517584016817,11.562799721608593,False
+elc_spv_004,ep_solar_004__irena,14094.74787735675,solar,Aggregated Plant - IRENA Gap - 4_Missing Solar Capacity -- operating,elc_spv_004,way/143903369-380,49.82686508694238,10.821945785151254,False
+elc_spv_004,ep_solar_pv_004,3870.3999999999996,solar,Aggregated Plant -- operating,elc_spv_004,way/143903369-380,49.296492115902545,10.763922262337731,False
+elc_spv_005,ep_m_solar_pv_005,2.0,solar,Aggregated Plant -- mothballed,elc_spv_005,way/31131325-380,48.14210083466262,10.663859647350835,False
+elc_spv_005,ep_solar_005__irena,13953.21643774522,solar,Aggregated Plant - IRENA Gap - 5_Missing Solar Capacity -- operating,elc_spv_005,way/31131325-380,47.70349576343401,10.382371617747634,False
+elc_spv_005,ep_solar_pv_005,1804.1999999999998,solar,Aggregated Plant -- operating,elc_spv_005,way/31131325-380,48.0803514215833,9.954015323721388,False
+elc_spv_006,ep_solar_006__irena,13953.935684898035,solar,Aggregated Plant - IRENA Gap - 6_Missing Solar Capacity -- operating,elc_spv_006,way/152018146-380,49.17880202938377,6.730145850861355,False
+elc_spv_006,ep_solar_pv_006,984.7000000000002,solar,Aggregated Plant -- operating,elc_spv_006,way/152018146-380,49.65473420219528,6.776782048517042,False
+elc_spv_007,ep_solar_pv_007,853.3,solar,Aggregated Plant -- operating,elc_spv_007,way/59707532-380,53.0026618669735,11.904512488063052,False
+elc_spv_008,ep_solar_pv_008,1282.8999999999999,solar,Aggregated Plant -- operating,elc_spv_008,way/947118608-380,53.491570505748605,12.938841441209624,False
+elc_spv_008,ep_solar_pv_G100000807013,300.0,solar,Anklam solar farm_-- -- construction,elc_spv_008,way/947118608-380,53.8561,13.6881,False
+elc_spv_008,ep_solar_pv_G100001005219,260.0,solar,Bartow (Encavis) solar farm_1 -- construction,elc_spv_008,way/947118608-380,53.8238,13.3443,False
+elc_spv_009,ep_solar_pv_009,1476.5,solar,Aggregated Plant -- operating,elc_spv_009,way/234171369-380,53.94500578899356,12.148261512236777,False
+elc_spv_010,ep_solar_pv_010,2225.4,solar,Aggregated Plant -- operating,elc_spv_010,DE152-380,50.83422369200141,12.754492524346466,False
+elc_spv_010,ep_solar_pv_G100000825260,415.3,solar,Witznitz solar farm_1 -- operating,elc_spv_010,DE152-380,51.1727,12.4024,False
+elc_spv_011,ep_solar_pv_011,3376.8,solar,Aggregated Plant -- operating,elc_spv_011,way/29713902-380,51.87066788332599,12.132998229304983,False
+elc_spv_012,ep_solar_pv_012,2660.4,solar,Aggregated Plant -- operating,elc_spv_012,way/30132758-380,52.16437341782027,13.699483887640598,False
+elc_spv_013,ep_solar_pv_013,152.10000000000002,solar,Aggregated Plant -- operating,elc_spv_013,DE23-380,54.275563518816654,7.477412418073809,False
+elc_spv_014,ep_solar_pv_014,373.8,solar,Aggregated Plant -- operating,elc_spv_014,way/797009308-380,52.87612624630326,8.141287606248428,False
+elc_spv_015,ep_solar_pv_015,366.8,solar,Aggregated Plant -- operating,elc_spv_015,way/1072574879-380,53.19628364930905,10.325007688338372,False
+elc_spv_016,ep_solar_pv_016,1512.8000000000002,solar,Aggregated Plant -- operating,elc_spv_016,way/603661085-380,54.00991746273481,8.827889973029977,False
+elc_spv_017,ep_solar_pv_017,592.8,solar,Aggregated Plant -- operating,elc_spv_017,way/1024536785-380,50.65850455690598,7.843498824280832,False
+elc_spv_018,ep_solar_pv_018,1686.5,solar,Aggregated Plant -- operating,elc_spv_018,DE196-400,49.415775916795404,8.155245191397835,False
+elc_spv_019,ep_solar_pv_019,605.9,solar,Aggregated Plant -- operating,elc_spv_019,way/952004951-380,51.964445678087785,10.586272453195026,False
+elc_spv_020,ep_solar_pv_020,671.9999999999999,solar,Aggregated Plant -- operating,elc_spv_020,way/156673636-380,50.94694922897235,10.157914104488611,False
+elc_spv_021,ep_solar_pv_021,200.8,solar,Aggregated Plant -- operating,elc_spv_021,way/29472852-380,52.17287522674901,8.608379129957482,False
+elc_spv_022,ep_solar_pv_022,155.70000000000002,solar,Aggregated Plant -- operating,elc_spv_022,DE63-380,52.50751722484722,7.21057049723801,False
+elc_spv_023,ep_solar_pv_023,459.9,solar,Aggregated Plant -- operating,elc_spv_023,DE118-380,51.262955063425416,7.2455008440988165,False
+elc_wof_001,ep_windoff_001__irena,72.0039980642097,windoff,Aggregated Plant -- operating,elc_wof_001,DE23-380,53.74701401030568,7.8961394367582205,False
+elc_wof_001,ep_windoff_wind_001,112.0,windoff,Aggregated Plant -- operating,elc_wof_001,DE23-380,53.42845393348966,7.9473227435314,False
+elc_wof_001,ep_windoff_wind_G100000919812,260.0,windoff,Deutsche Bucht wind farm_-- -- operating,elc_wof_001,DE23-380,54.3036,5.7894,False
+elc_wof_001,ep_windoff_wind_G100000919852,288.0,windoff,Dantysk wind farm_-- -- operating,elc_wof_001,DE23-380,55.14,7.2,False
+elc_wof_001,ep_windoff_wind_G100000919855,288.0,windoff,Sandbank wind farm_-- -- operating,elc_wof_001,DE23-380,55.19,6.86,False
+elc_wof_001,ep_windoff_wind_G100000919888,302.0,windoff,Amrumbank West wind farm_-- -- operating,elc_wof_001,DE23-380,54.52,7.708,False
+elc_wof_001,ep_windoff_wind_G100000919954,400.0,windoff,BARD Offshore wind farm_-- -- operating,elc_wof_001,DE23-380,54.355,5.98,False
+elc_wof_001,ep_windoff_wind_G100000919956,400.0,windoff,Global Tech wind farm_1 -- operating,elc_wof_001,DE23-380,54.5,6.358,False
+elc_wof_001,ep_windoff_wind_G100000919971,402.0,windoff,Veja Mate wind farm_-- -- operating,elc_wof_001,DE23-380,54.321,5.86,False
+elc_wof_001,ep_windoff_wind_G100000920008,497.0,windoff,Hohe See wind farm_-- -- operating,elc_wof_001,DE23-380,54.4393,6.3327,False
+elc_wof_002,ep_windoff_002__irena,58.537768957417725,windoff,Aggregated Plant -- operating,elc_wof_002,way/31024391-380,54.74413248439705,7.794244678583462,False
+elc_wof_002,ep_windoff_wind_G100000919851,288.0,windoff,Butendiek wind farm_-- -- operating,elc_wof_002,way/31024391-380,55.019,7.774,False
+elc_wof_002,ep_windoff_wind_G100000919914,342.0,windoff,Kaskasi wind farm_-- -- operating,elc_wof_002,way/31024391-380,54.49,7.7,False
+elc_wof_003,ep_windoff_003__irena,57.458232978371406,windoff,Aggregated Plant -- operating,elc_wof_003,DE23-380,52.606510585899365,7.503697778821322,False
+elc_wof_003,ep_windoff_wind_003,173.0,windoff,Aggregated Plant -- operating,elc_wof_003,DE23-380,52.472527608195016,6.710824162336076,False
+elc_wof_003,ep_windoff_wind_G100000919751,200.0,windoff,Trianel Borkum wind farm_1 -- operating,elc_wof_003,DE23-380,54.0417,6.4667,False
+elc_wof_003,ep_windoff_wind_G100000919756,203.0,windoff,Trianel Borkum wind farm_2 -- operating,elc_wof_003,DE23-380,54.0417,6.4667,False
+elc_wof_003,ep_windoff_wind_G100000919792,240.0,windoff,Borkum Riffgrund 3 wind farm_2 -- construction,elc_wof_003,DE23-380,53.9667,6.4956,False
+elc_wof_003,ep_windoff_wind_G100000919793,240.0,windoff,Borkum Riffgrund 3 wind farm_3 -- construction,elc_wof_003,DE23-380,54.047,6.234,False
+elc_wof_003,ep_windoff_wind_G100000919799,265.0,windoff,Gode wind farm_3 -- operating,elc_wof_003,DE23-380,54.037,7.11,False
+elc_wof_003,ep_windoff_wind_G100000919813,252.0,windoff,Gode wind farm_2 -- operating,elc_wof_003,DE23-380,54.075,7.007,False
+elc_wof_003,ep_windoff_wind_G100000919854,288.0,windoff,Meerwind Süd Ost wind farm_-- -- operating,elc_wof_003,DE23-380,54.402,7.707,False
+elc_wof_003,ep_windoff_wind_G100000919859,332.0,windoff,Nordsee Ost wind farm_-- -- operating,elc_wof_003,DE23-380,54.444,7.682,False
+elc_wof_003,ep_windoff_wind_G100000919896,312.0,windoff,Borkum Riffgrund 1 wind farm_-- -- operating,elc_wof_003,DE23-380,53.9741,6.4912,False
+elc_wof_003,ep_windoff_wind_G100000919908,330.0,windoff,Gode wind farm_1 -- operating,elc_wof_003,DE23-380,54.016,6.983,False
+elc_wof_003,ep_windoff_wind_G100000919911,332.0,windoff,Nordsee One wind farm_-- -- operating,elc_wof_003,DE23-380,54.444,7.682,False
+elc_wof_003,ep_windoff_wind_G100000919952,396.0,windoff,Merkur wind farm_-- -- operating,elc_wof_003,DE23-380,54.0564,6.5536,False
+elc_wof_003,ep_windoff_wind_G100000919978,420.0,windoff,Borkum Riffgrund 3 wind farm_1 -- construction,elc_wof_003,DE23-380,53.9667,6.5623,False
+elc_wof_003,ep_windoff_wind_G100000919986,450.0,windoff,Borkum Riffgrund 2 wind farm_-- -- operating,elc_wof_003,DE23-380,53.9665,6.5493,False
+elc_wof_004,ep_windoff_wind_004,111.0,windoff,Aggregated Plant -- operating,elc_wof_004,DE23-380,52.660256901592085,6.335444086682027,False
+elc_wof_005,ep_windoff_wind_005,48.0,windoff,Aggregated Plant -- operating,elc_wof_005,way/941453716-380,54.92865151687687,13.850097340031606,False
+elc_wof_005,ep_windoff_wind_G100000919826,257.0,windoff,Arcadis Ost wind farm_-- -- operating,elc_wof_005,way/941453716-380,54.8202,13.6335,False
+elc_wof_005,ep_windoff_wind_G100000919853,288.0,windoff,Enbw Baltic wind farm_2 -- operating,elc_wof_005,way/941453716-380,54.9998,13.1999,False
+elc_wof_005,ep_windoff_wind_G100000919927,350.0,windoff,Wikinger wind farm_-- -- operating,elc_wof_005,way/941453716-380,54.834,14.068,False
+elc_wof_005,ep_windoff_wind_G100000919946,384.0,windoff,Arkona Becken SüDost wind farm_-- -- operating,elc_wof_005,way/941453716-380,54.78,14.12,False
+elc_wof_005,ep_windoff_wind_G100000919992,476.0,windoff,Baltic Eagle wind farm_-- -- operating,elc_wof_005,way/941453716-380,54.8506,13.8014,False
+elc_won_001,ep_windon_001__irena,7501.85439662027,windon,Aggregated Plant - IRENA Gap - 1_Missing Onshore wind energy Capacity -- operating,elc_won_001,way/33169401-380,52.27383715255456,11.274690644762481,False
+elc_won_001,ep_windon_wind_001,5010.0,windon,Aggregated Plant -- operating,elc_won_001,way/33169401-380,52.9137111836749,11.311452144622638,False
+elc_won_002,ep_windon_wind_002,1591.0,windon,Aggregated Plant -- operating,elc_won_002,DE165-380,50.75969130520265,12.071105924844742,False
+elc_won_003,ep_windon_wind_003,3037.0,windon,Aggregated Plant -- operating,elc_won_003,way/943939310-380,52.183815276835425,11.179008850087259,False
+elc_won_004,ep_windon_wind_004,7171.0,windon,Aggregated Plant -- operating,elc_won_004,DE23-380,54.34858409103524,6.5780812973242995,False
+elc_won_005,ep_windon_wind_005,925.0,windon,Aggregated Plant -- operating,elc_won_005,way/941453716-380,54.62232367270082,13.498544300664948,False
+elc_won_006,ep_windon_006__irena,7847.8571269710255,windon,Aggregated Plant - IRENA Gap - 6_Missing Onshore wind energy Capacity -- operating,elc_won_006,way/30622610-380,53.840925996820424,10.425787070015708,False
+elc_won_006,ep_windon_wind_006,4166.0,windon,Aggregated Plant -- operating,elc_won_006,way/30622610-380,54.12355506176505,9.991920843808296,False
+elc_won_007,ep_windon_wind_007,1734.5000000000002,windon,Aggregated Plant -- operating,elc_won_007,DE63-380,52.45450032592922,6.404330705960557,False
+elc_won_008,ep_windon_wind_008,3094.0,windon,Aggregated Plant -- operating,elc_won_008,way/1024536785-380,50.75367705076353,7.0517545643917,False
+elc_won_009,ep_windon_009__irena,7035.288476408704,windon,Aggregated Plant - IRENA Gap - 9_Missing Onshore wind energy Capacity -- operating,elc_won_009,way/951773852-380,52.602545487333416,9.955609841365277,False
+elc_won_009,ep_windon_wind_009,4652.5,windon,Aggregated Plant -- operating,elc_won_009,way/951773852-380,53.062694577355366,9.650238447621684,False
+elc_won_010,ep_windon_wind_010,2323.0,windon,Aggregated Plant -- operating,elc_won_010,way/42681484-380,51.71998634392366,9.804543420555184,False
+elc_won_012,ep_windon_wind_012,69.0,windon,Aggregated Plant -- operating,elc_won_012,DE188-380,49.643720335087345,11.849841348448804,False
+elc_won_013,ep_windon_wind_013,26.000000000000004,windon,Aggregated Plant -- operating,elc_won_013,way/26245195-380,48.4079320663274,11.464458549570125,False
+elc_won_015,ep_windon_wind_015,1962.0,windon,Aggregated Plant -- operating,elc_won_015,DE196-400,49.70913530928474,7.114744037724919,False
+elc_won_016,ep_windon_wind_016,1256.0,windon,Aggregated Plant -- operating,elc_won_016,way/143903369-380,49.9481720266157,9.901669823048632,False
+elc_won_017,ep_windon_wind_017,1912.0,windon,Aggregated Plant -- operating,elc_won_017,way/160584794-380,50.603383020931425,9.348661139564848,False
+elc_won_018,ep_windon_wind_018,72.00000000000001,windon,Aggregated Plant -- operating,elc_won_018,way/683227471-380,47.83676059369395,10.793447629386632,False
+elc_won_019,ep_windon_wind_019,310.0,windon,Aggregated Plant -- operating,elc_won_019,way/26404600-380,48.609941339878816,10.151911965384324,False
+elc_won_021,ep_windon_wind_021,66.0,windon,Aggregated Plant -- operating,elc_won_021,way/25306752-380,47.85436160278513,9.18449379152115,False
+elc_won_022,ep_windon_wind_022,178.0,windon,Aggregated Plant -- operating,elc_won_022,way/87653464-380,48.12453086521322,7.302356908334124,False

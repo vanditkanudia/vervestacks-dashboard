@@ -1,0 +1,119 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,20.0,bioenergy,Aggregated Plant -- operating,,,,,False
+ELC,ep_gas__ember,1.9999999999988916,gas,Aggregated Plant -- operating,,,,,False
+e_NG17-330,ep_gas_gas_turbine_G100000407173,126.0,gas,Gbarain Gas Plant power station_1 -- operating,e_NG17-330,NG17-330,5.031067,6.301568,False
+e_NG17-330,ep_gas_gas_turbine_G100000407174,126.0,gas,Gbarain Gas Plant power station_2 -- operating,e_NG17-330,NG17-330,5.031067,6.301568,False
+e_NG17-330,ep_gas_gas_turbine_G100000407242,100.0,gas,Ughelli power station_1 -- operating,e_NG17-330,NG17-330,5.541314,5.915909,False
+e_NG17-330,ep_gas_gas_turbine_G100000407243,100.0,gas,Ughelli power station_2 -- operating,e_NG17-330,NG17-330,5.541314,5.915909,False
+e_NG17-330,ep_gas_gas_turbine_G100000407244,100.0,gas,Ughelli power station_3 -- operating,e_NG17-330,NG17-330,5.541314,5.915909,False
+e_NG17-330,ep_gas_gas_turbine_G100000407245,100.0,gas,Ughelli power station_4 -- operating,e_NG17-330,NG17-330,5.541314,5.915909,False
+e_NG17-330,ep_gas_gas_turbine_G100000407246,100.0,gas,Ughelli power station_5 -- operating,e_NG17-330,NG17-330,5.541314,5.915909,False
+e_NG17-330,ep_gas_gas_turbine_G100000407247,100.0,gas,Ughelli power station_6 -- operating,e_NG17-330,NG17-330,5.541314,5.915909,False
+e_NG21-330,ep_gas_combined_cycle_G100000407135,650.0,gas,Afam VI power station_CC1 -- operating,e_NG21-330,NG21-330,4.849527,7.256933,False
+e_NG21-330,ep_gas_gas_turbine_G100000407125,180.0,gas,Afam (FIPL) power station_1 -- operating,e_NG21-330,NG21-330,4.834987,7.226529,False
+e_NG21-330,ep_gas_gas_turbine_G100000407126,180.0,gas,Afam (FIPL) power station_2 -- operating,e_NG21-330,NG21-330,4.834987,7.226529,False
+e_NG21-330,ep_gas_gas_turbine_G100000407127,75.0,gas,Afam IV power station_1 -- operating,e_NG21-330,NG21-330,4.851761,7.2535,False
+e_NG21-330,ep_gas_gas_turbine_G100000407128,75.0,gas,Afam IV power station_2 -- operating,e_NG21-330,NG21-330,4.851761,7.2535,False
+e_NG21-330,ep_gas_gas_turbine_G100000407129,75.0,gas,Afam IV power station_3 -- operating,e_NG21-330,NG21-330,4.851761,7.2535,False
+e_NG21-330,ep_gas_gas_turbine_G100000407130,75.0,gas,Afam IV power station_4 -- operating,e_NG21-330,NG21-330,4.851761,7.2535,False
+e_NG21-330,ep_gas_gas_turbine_G100000407131,75.0,gas,Afam IV power station_5 -- operating,e_NG21-330,NG21-330,4.851761,7.2535,False
+e_NG21-330,ep_gas_gas_turbine_G100000407132,75.0,gas,Afam IV power station_6 -- operating,e_NG21-330,NG21-330,4.851761,7.2535,False
+e_NG21-330,ep_gas_gas_turbine_G100000407133,138.0,gas,Afam V power station_1 -- operating,e_NG21-330,NG21-330,4.851761,7.2535,False
+e_NG21-330,ep_gas_gas_turbine_G100000407134,138.0,gas,Afam V power station_2 -- operating,e_NG21-330,NG21-330,4.851761,7.2535,False
+e_NG21-330,ep_gas_gas_turbine_G100000407145,90.0,gas,ALSCON Smelter power plant_5 -- operating,e_NG21-330,NG21-330,4.568734,7.573493,False
+e_NG21-330,ep_gas_gas_turbine_G100000407146,90.0,gas,ALSCON Smelter power plant_6 -- operating,e_NG21-330,NG21-330,4.568734,7.573493,False
+e_NG21-330,ep_gas_gas_turbine_G100000407181,63.0,gas,Ibom power station_1-1 -- operating,e_NG21-330,NG21-330,4.564635,7.567409,False
+e_NG21-330,ep_gas_gas_turbine_G100000407182,63.0,gas,Ibom power station_1-2 -- operating,e_NG21-330,NG21-330,4.564635,7.567409,False
+e_NG21-330,ep_gas_gas_turbine_G100000407183,63.0,gas,Ibom power station_1-3 -- operating,e_NG21-330,NG21-330,4.564635,7.567409,False
+e_NG21-330,ep_m_gas_gas_turbine_G100000407141,90.0,gas,ALSCON Smelter power plant_1 -- mothballed,e_NG21-330,NG21-330,4.568734,7.573493,False
+e_NG21-330,ep_m_gas_gas_turbine_G100000407142,90.0,gas,ALSCON Smelter power plant_2 -- mothballed,e_NG21-330,NG21-330,4.568734,7.573493,False
+e_NG21-330,ep_m_gas_gas_turbine_G100000407143,90.0,gas,ALSCON Smelter power plant_3 -- mothballed,e_NG21-330,NG21-330,4.568734,7.573493,False
+e_NG21-330,ep_m_gas_gas_turbine_G100000407144,90.0,gas,ALSCON Smelter power plant_4 -- mothballed,e_NG21-330,NG21-330,4.568734,7.573493,False
+e_NG3-330,ep_hydro_dam_G100000602890,700.0,hydro,Zungeru hydroelectric plant_ -- operating,e_NG3-330,NG3-330,9.9006,6.295,False
+e_NG7-330,ep_coal_subcritical_G100000115146,45.0,coal,Obajana Cement power station_Unit 1 -- operating,e_NG7-330,NG7-330,7.926,6.423,False
+e_NG7-330,ep_coal_subcritical_G100000115147,45.0,coal,Obajana Cement power station_Unit 2 -- operating,e_NG7-330,NG7-330,7.926,6.423,False
+e_NG7-330,ep_coal_subcritical_G100000115148,45.0,coal,Obajana Cement power station_Unit 3 -- operating,e_NG7-330,NG7-330,7.926,6.423,False
+e_w215459565-330,ep_gas_gas_turbine_G100000407175,145.0,gas,Geregu I power station_1 -- operating,e_w215459565-330,way/215459565-330,7.469675,6.659126,False
+e_w215459565-330,ep_gas_gas_turbine_G100000407176,145.0,gas,Geregu I power station_2 -- operating,e_w215459565-330,way/215459565-330,7.469675,6.659126,False
+e_w215459565-330,ep_gas_gas_turbine_G100000407177,145.0,gas,Geregu I power station_3 -- operating,e_w215459565-330,way/215459565-330,7.469675,6.659126,False
+e_w215459565-330,ep_gas_gas_turbine_G100000407178,169.0,gas,Geregu II power station_1 -- operating,e_w215459565-330,way/215459565-330,7.471578,6.66025,False
+e_w215459565-330,ep_gas_gas_turbine_G100000407179,169.0,gas,Geregu II power station_2 -- operating,e_w215459565-330,way/215459565-330,7.471578,6.66025,False
+e_w215459565-330,ep_gas_gas_turbine_G100000407180,169.0,gas,Geregu II power station_3 -- operating,e_w215459565-330,way/215459565-330,7.471578,6.66025,False
+e_w215459565-330,ep_gas_steam_turbine_G100000409655,55.0,gas,Asco power station_2 -- operating,e_w215459565-330,way/215459565-330,7.522562,6.56099,False
+e_w215459565-330,ep_gas_steam_turbine_G100000409656,55.0,gas,Asco power station_1 -- operating,e_w215459565-330,way/215459565-330,7.522562,6.56099,False
+e_w266617120-330,ep_hydro_ror_G100000604597,182.0,hydro,Mangu hydroelectric plant_ -- construction,e_w266617120-330,way/266617120-330,9.0319,9.885,False
+e_w540463591-330,ep_hydro_dam_G100000602885,578.0,hydro,Jebba hydroelectric plant_ -- operating,e_w540463591-330,way/540463591-330,9.1409,4.7896,False
+e_w546666333-330,ep_gas_gas_turbine_G100000407228,113.0,gas,Sapele II power station_2-1 -- operating,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_gas_gas_turbine_G100000407229,113.0,gas,Sapele II power station_2-2 -- operating,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_gas_gas_turbine_G100000407230,113.0,gas,Sapele II power station_2-3 -- operating,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_gas_gas_turbine_G100000407231,113.0,gas,Sapele II power station_2-4 -- operating,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_gas_steam_turbine_G100000407236,120.0,gas,Sapele power station_1-ST1 -- operating,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_gas_steam_turbine_G100000407237,120.0,gas,Sapele power station_1-ST2 -- operating,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_gas_steam_turbine_G100000407238,120.0,gas,Sapele power station_1-ST3 -- operating,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_gas_steam_turbine_G100000407241,120.0,gas,Sapele power station_1-ST6 -- operating,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_m_gas_gas_turbine_G100000407232,75.0,gas,Sapele power station_1-GT11 -- mothballed,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_m_gas_gas_turbine_G100000407233,75.0,gas,Sapele power station_1-GT12 -- mothballed,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_m_gas_gas_turbine_G100000407234,75.0,gas,Sapele power station_1-GT13 -- mothballed,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_m_gas_gas_turbine_G100000407235,75.0,gas,Sapele power station_1-GT14 -- mothballed,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_m_gas_steam_turbine_G100000407239,120.0,gas,Sapele power station_1-ST4 -- mothballed,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w546666333-330,ep_m_gas_steam_turbine_G100000407240,120.0,gas,Sapele power station_1-ST5 -- mothballed,e_w546666333-330,way/546666333-330,5.926139,5.644983,False
+e_w556550171-330,ep_hydro_dam_G100000602889,600.0,hydro,Shiroro hydroelectric plant_ -- operating,e_w556550171-330,way/556550171-330,9.9751,6.8344,False
+e_w559542338-330,ep_gas_combined_cycle_G100000407199,570.0,gas,Lekki Refinery power station_1 -- operating,e_w559542338-330,way/559542338-330,6.4698,3.5852,False
+e_w563732518-330,ep_gas_gas_turbine_G100000407139,124.0,gas,Alaoji power station_3 -- operating,e_w563732518-330,way/563732518-330,5.066768,7.32181,False
+e_w563732518-330,ep_gas_gas_turbine_G100000407140,124.0,gas,Alaoji power station_4 -- operating,e_w563732518-330,way/563732518-330,5.066768,7.32181,False
+e_w563732518-330,ep_gas_gas_turbine_G100000410625,124.0,gas,Alaoji power station_2 -- operating,e_w563732518-330,way/563732518-330,5.066768,7.32181,False
+e_w563732518-330,ep_gas_gas_turbine_G100000410626,124.0,gas,Alaoji power station_1 -- operating,e_w563732518-330,way/563732518-330,5.066768,7.32181,False
+e_w563732518-330,ep_gas_steam_turbine_G100000409650,286.0,gas,Alaoji power station_5 -- construction,e_w563732518-330,way/563732518-330,5.066768,7.32181,False
+e_w563732518-330,ep_gas_steam_turbine_G100000410627,286.0,gas,Alaoji power station_6 -- construction,e_w563732518-330,way/563732518-330,5.066768,7.32181,False
+e_w564429999-330,ep_gas_gas_turbine_G100000407150,113.0,gas,Calabar power station_1 -- operating,e_w564429999-330,way/564429999-330,5.1897,8.272566,False
+e_w564429999-330,ep_gas_gas_turbine_G100000407151,113.0,gas,Calabar power station_2 -- operating,e_w564429999-330,way/564429999-330,5.1897,8.272566,False
+e_w564429999-330,ep_gas_gas_turbine_G100000407152,113.0,gas,Calabar power station_3 -- operating,e_w564429999-330,way/564429999-330,5.1897,8.272566,False
+e_w564429999-330,ep_gas_gas_turbine_G100000407153,113.0,gas,Calabar power station_4 -- operating,e_w564429999-330,way/564429999-330,5.1897,8.272566,False
+e_w564429999-330,ep_gas_gas_turbine_G100000407154,113.0,gas,Calabar power station_5 -- operating,e_w564429999-330,way/564429999-330,5.1897,8.272566,False
+e_w565081403-330,ep_coal_subcritical_G100000115152,38.5,coal,Gboko Cement power station_-- -- operating,e_w565081403-330,way/565081403-330,7.411,8.974,False
+e_w565486405-330,ep_gas_combined_cycle_G100000407122,450.0,gas,Abuja power station_1 -- construction,e_w565486405-330,way/565486405-330,8.939696,7.076826,False
+e_w565486405-330,ep_gas_combined_cycle_G100000407123,450.0,gas,Abuja power station_2 -- construction,e_w565486405-330,way/565486405-330,8.939696,7.076826,False
+e_w565486405-330,ep_gas_combined_cycle_G100000407124,450.0,gas,Abuja power station_3 -- construction,e_w565486405-330,way/565486405-330,8.939696,7.076826,False
+e_w565866986-330,ep_gas_gas_turbine_G100000407217,128.0,gas,Omotosho II power station_1 -- operating,e_w565866986-330,way/565866986-330,6.732447,4.710922,False
+e_w565866986-330,ep_gas_gas_turbine_G100000407218,128.0,gas,Omotosho II power station_2 -- operating,e_w565866986-330,way/565866986-330,6.732447,4.710922,False
+e_w565866986-330,ep_gas_gas_turbine_G100000407219,128.0,gas,Omotosho II power station_3 -- operating,e_w565866986-330,way/565866986-330,6.732447,4.710922,False
+e_w565866986-330,ep_gas_gas_turbine_G100000407220,128.0,gas,Omotosho II power station_4 -- operating,e_w565866986-330,way/565866986-330,6.732447,4.710922,False
+e_w574152484-330,ep_gas_gas_turbine_G100000407147,154.0,gas,Azura-Edo IPP power station_1 -- operating,e_w574152484-330,way/574152484-330,6.409881,5.68062,False
+e_w574152484-330,ep_gas_gas_turbine_G100000407148,154.0,gas,Azura-Edo IPP power station_2 -- operating,e_w574152484-330,way/574152484-330,6.409881,5.68062,False
+e_w574152484-330,ep_gas_gas_turbine_G100000407149,154.0,gas,Azura-Edo IPP power station_3 -- operating,e_w574152484-330,way/574152484-330,6.409881,5.68062,False
+e_w574152484-330,ep_gas_gas_turbine_G100000407185,113.0,gas,Ihovbor power station_1 -- operating,e_w574152484-330,way/574152484-330,6.406782,5.682859,False
+e_w574152484-330,ep_gas_gas_turbine_G100000407186,113.0,gas,Ihovbor power station_2 -- operating,e_w574152484-330,way/574152484-330,6.406782,5.682859,False
+e_w574152484-330,ep_gas_gas_turbine_G100000407187,113.0,gas,Ihovbor power station_3 -- operating,e_w574152484-330,way/574152484-330,6.406782,5.682859,False
+e_w574152484-330,ep_gas_gas_turbine_G100000407188,113.0,gas,Ihovbor power station_4 -- operating,e_w574152484-330,way/574152484-330,6.406782,5.682859,False
+e_w575706869-330,ep_gas_combined_cycle_G100000407201,480.0,gas,Oando Kwale power station_1 -- operating,e_w575706869-330,way/575706869-330,5.709692,6.575917,False
+e_w575706869-330,ep_gas_gas_turbine_G100000407161,126.9,gas,Egbema power station_1 -- construction,e_w575706869-330,way/575706869-330,5.565581,6.738307,False
+e_w575706869-330,ep_gas_gas_turbine_G100000407162,126.9,gas,Egbema power station_2 -- construction,e_w575706869-330,way/575706869-330,5.565581,6.738307,False
+e_w575706869-330,ep_gas_gas_turbine_G100000407163,126.9,gas,Egbema power station_3 -- construction,e_w575706869-330,way/575706869-330,5.565581,6.738307,False
+e_w575706869-330,ep_gas_gas_turbine_G100000407215,113.0,gas,Omoku-II power station_1 -- operating,e_w575706869-330,way/575706869-330,5.385019,6.664967,False
+e_w575706869-330,ep_gas_gas_turbine_G100000407216,113.0,gas,Omoku-II power station_2 -- operating,e_w575706869-330,way/575706869-330,5.385019,6.664967,False
+e_w655273140-330,ep_gas_gas_turbine_G100000409696,50.0,gas,Maiduguri power plant_1 -- operating,e_w655273140-330,way/655273140-330,11.833,13.15,False
+e_w669957212-330,ep_gas_steam_turbine_G100000407164,220.0,gas,Egbin power station_1 -- operating,e_w669957212-330,way/669957212-330,6.563713,3.615082,False
+e_w669957212-330,ep_gas_steam_turbine_G100000407165,220.0,gas,Egbin power station_2 -- operating,e_w669957212-330,way/669957212-330,6.563713,3.615082,False
+e_w669957212-330,ep_gas_steam_turbine_G100000407166,220.0,gas,Egbin power station_3 -- operating,e_w669957212-330,way/669957212-330,6.563713,3.615082,False
+e_w669957212-330,ep_gas_steam_turbine_G100000407167,220.0,gas,Egbin power station_4 -- operating,e_w669957212-330,way/669957212-330,6.563713,3.615082,False
+e_w669957212-330,ep_gas_steam_turbine_G100000407168,220.0,gas,Egbin power station_5 -- operating,e_w669957212-330,way/669957212-330,6.563713,3.615082,False
+e_w669957212-330,ep_gas_steam_turbine_G100000407169,220.0,gas,Egbin power station_6 -- operating,e_w669957212-330,way/669957212-330,6.563713,3.615082,False
+e_w695826179-330,ep_hydro_dam_G100000602886,760.0,hydro,Kainji hydroelectric plant_ -- operating,e_w695826179-330,way/695826179-330,9.8637,4.6121,False
+e_w695826179-330,ep_hydro_ror_G100001051760,100.0,hydro,Zamfara hydroelectric plant_ -- operating,e_w695826179-330,way/695826179-330,11.1317,4.517,False
+e_w746582404-330,ep_gas_gas_turbine_G100000409770,90.0,gas,Bonny Island LNG power plant_6 -- operating,e_w746582404-330,way/746582404-330,4.41836,7.16157,False
+e_w746582404-330,ep_gas_gas_turbine_G100000409771,90.0,gas,Bonny Island LNG power plant_5 -- operating,e_w746582404-330,way/746582404-330,4.41836,7.16157,False
+e_w836122563-330,ep_coal_subcritical_G100000115149,37.0,coal,Ibese Cement power station_Unit 1 -- operating,e_w836122563-330,way/836122563-330,7.004,3.048,False
+e_w836122563-330,ep_coal_subcritical_G100000115150,37.0,coal,Ibese Cement power station_Unit 2 -- operating,e_w836122563-330,way/836122563-330,7.004,3.048,False
+e_w836122563-330,ep_coal_subcritical_G100000115151,37.0,coal,Ibese Cement power station_Unit 3 -- operating,e_w836122563-330,way/836122563-330,7.004,3.048,False
+e_w836122563-330,ep_gas_combined_cycle_G100000407208,377.0,gas,Olorunsogo II power station_1 -- operating,e_w836122563-330,way/836122563-330,6.885316,3.316268,False
+e_w836122563-330,ep_gas_combined_cycle_G100000407209,377.0,gas,Olorunsogo II power station_2 -- operating,e_w836122563-330,way/836122563-330,6.885316,3.316268,False
+elc_spv_004,ep_solar_pv_004,20.0,solar,Aggregated Plant -- operating,elc_spv_004,way/108020974-330,6.607483722673073,3.4145357027561145,False
+elc_spv_017,ep_solar_017__irena,26.24451649259138,solar,Aggregated Plant -- operating,elc_spv_017,way/563723584-330,12.701787944302431,12.747083119838825,False
+elc_spv_018,ep_solar_018__irena,27.352700546276587,solar,Aggregated Plant -- operating,elc_spv_018,way/266712817-330,10.98186751693407,12.887329782468019,False
+elc_spv_021,ep_solar_pv_021,4.0,solar,Aggregated Plant -- operating,elc_spv_021,way/565081403-330,7.9572392027031045,8.84391576646174,False
+elc_spv_025,ep_solar_pv_025,8.6,solar,Aggregated Plant -- operating,elc_spv_025,way/565486405-330,9.34438020611571,7.236401425085197,False
+elc_spv_027,ep_solar_027__irena,28.01478296113203,solar,Aggregated Plant -- operating,elc_spv_027,way/266617120-330,10.848517026397685,10.075588765034025,False
+elc_spv_028,ep_solar_pv_028,11.4,solar,Aggregated Plant -- operating,elc_spv_028,way/1226249784-330,12.422589196621447,7.542930736996555,False
+elc_spv_029,ep_solar_pv_029,1.9,solar,Aggregated Plant -- operating,elc_spv_029,NG2-330,12.322720121203893,9.716365078718992,False
+elc_spv_030,ep_solar_pv_030,2.7,solar,Aggregated Plant -- operating,elc_spv_030,way/564410486-330,13.052751952221262,5.69210071555055,False
+elc_won_023,ep_windon_wind_023,10.0,windon,Aggregated Plant -- operating,elc_won_023,way/564410486-330,13.053463047093281,4.995836761047733,False

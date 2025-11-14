@@ -1,0 +1,155 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,10.0,bioenergy,Aggregated Plant -- operating,,,,,False
+e_NP1-220,ep_hydro_NP1-220__irena,11.238682949180223,hydro,Aggregated Plant - IRENA Gap - NP1-220_Missing Hydro Capacity -- operating,e_NP1-220,NP1-220,28.032776310423866,85.18116491251737,False
+e_NP1-220,ep_hydro_ror_G100000602625,22.0,hydro,Chilime hydroelectric plant_ -- operating,e_NP1-220,NP1-220,28.1577,85.3332,False
+e_NP1-220,ep_hydro_ror_G100000602628,14.0,hydro,Devighat hydroelectric plant_ -- operating,e_NP1-220,NP1-220,27.8884,85.1345,False
+e_NP1-220,ep_hydro_ror_G100000602744,15.0,hydro,Phalakhu Khola hydroelectric plant_ -- construction,e_NP1-220,NP1-220,28.0201,85.2931,False
+e_NP1-220,ep_hydro_ror_G100000602755,43.0,hydro,Sanjen hydroelectric plant_ -- construction,e_NP1-220,NP1-220,28.2001,85.2896,False
+e_NP1-220,ep_hydro_ror_G100000602801,24.0,hydro,Trishuli hydroelectric plant_ -- operating,e_NP1-220,NP1-220,27.9464,85.1661,False
+e_NP1-220,ep_hydro_ror_G100000602845,60.0,hydro,Upper Trishuli 3A hydroelectric plant_ -- operating,e_NP1-220,NP1-220,28.0258,85.1872,False
+e_NP1-220,ep_hydro_ror_G100000602846,37.0,hydro,Upper Trishuli 3B hydroelectric plant_ -- construction,e_NP1-220,NP1-220,27.996,85.1836,False
+e_NP1-220,ep_hydro_ror_G100000604842,24.0,hydro,Super Aankhu Khola hydroelectric plant_ -- construction,e_NP1-220,NP1-220,28.1667,85.0489,False
+e_NP1-220,ep_hydro_ror_G100000604906,38.0,hydro,Upper Ankhu Khola hydroelectric plant_ -- construction,e_NP1-220,NP1-220,28.1417,85.0292,False
+e_NP1-220,ep_hydro_ror_G100000604915,14.0,hydro,Upper Mailun Khola hydroelectric plant_ -- construction,e_NP1-220,NP1-220,28.1161,85.2001,False
+e_NP1-220,ep_hydro_ror_G100000604920,15.0,hydro,Upper Sanjen hydroelectric plant_ -- operating,e_NP1-220,NP1-220,28.2341,85.2871,False
+e_NP1-220,ep_hydro_ror_G100000604925,216.0,hydro,Upper Trishuli 1 hydroelectric plant_ -- construction,e_NP1-220,NP1-220,28.0737,85.208,False
+e_NP11-220,ep_hydro_dam_G100000602842,255.0,hydro,Upper Tamor hydroelectric plant_ -- construction,e_NP11-220,NP11-220,27.3541,87.668,False
+e_NP11-220,ep_hydro_ror_G100000602642,15.0,hydro,Hewa Khola A hydroelectric plant_ -- operating,e_NP11-220,NP11-220,27.1856,87.8285,False
+e_NP11-220,ep_hydro_ror_G100000602654,22.0,hydro,Kabeli 3 hydroelectric plant_ -- construction,e_NP11-220,NP11-220,27.3901,87.8697,False
+e_NP11-220,ep_hydro_ror_G100000602655,25.0,hydro,Kabeli B1 hydroelectric plant_ -- operating,e_NP11-220,NP11-220,27.2801,87.8097,False
+e_NP11-220,ep_hydro_ror_G100000602692,22.0,hydro,Lower Hewa hydroelectric plant_ -- operating,e_NP11-220,NP11-220,27.1601,87.7564,False
+e_NP11-220,ep_hydro_ror_G100000602716,50.0,hydro,Mewa Khola (United Mewa Khola Hydropower) hydroelectric plant_ -- construction,e_NP11-220,NP11-220,27.4022,87.6056,False
+e_NP11-220,ep_hydro_ror_G100000604394,78.0,hydro,Ghunsa Khola (Remit Hydro) hydroelectric plant_ -- construction,e_NP11-220,NP11-220,27.6503,87.9201,False
+e_NP11-220,ep_hydro_ror_G100000604846,14.0,hydro,Super Kabeli Khola A hydroelectric plant_ -- construction,e_NP11-220,NP11-220,27.4625,87.9454,False
+e_NP12-220,ep_hydro_ror_G100000602707,22.0,hydro,Mai hydroelectric plant_ -- operating,e_NP12-220,NP12-220,26.7924,87.8784,False
+e_NP12-220,ep_hydro_ror_G100000602822,12.0,hydro,Upper Mai hydroelectric plant_ -- operating,e_NP12-220,NP12-220,26.9727,87.9636,False
+e_NP2-220,ep_hydro_NP2-220__irena,14.327989162698957,hydro,Aggregated Plant - IRENA Gap - NP2-220_Missing Hydro Capacity -- operating,e_NP2-220,NP2-220,28.790954422873774,83.40852676396845,False
+e_NP2-220,ep_hydro_ror_G100000602652,12.0,hydro,Jhimruk Khola hydroelectric plant_ -- operating,e_NP2-220,NP2-220,28.2262,82.7026,False
+e_NP2-220,ep_hydro_ror_G100000602659,144.0,hydro,Kaligandaki A hydroelectric plant_ -- operating,e_NP2-220,NP2-220,27.931,83.6152,False
+e_NP3-400,ep_hydro_NP3-400__irena,11.997693527501637,hydro,Aggregated Plant - IRENA Gap - NP3-400_Missing Hydro Capacity -- operating,e_NP3-400,NP3-400,27.77818593631694,85.34849211111987,False
+e_NP3-400,ep_hydro_ror_G100000602683,160.0,hydro,Lapche Khola hydroelectric plant_ -- construction,e_NP3-400,NP3-400,27.6528,85.3933,False
+e_NP3-400,ep_hydro_ror_G100000602684,77.0,hydro,Likhu 1 hydroelectric plant_ -- operating,e_NP3-400,NP3-400,27.6528,85.3933,False
+e_NP3-400,ep_hydro_ror_G100000602702,102.0,hydro,Madhya Bhotekoshi hydroelectric plant_ -- construction,e_NP3-400,NP3-400,27.6528,85.3933,False
+e_NP3-400,ep_hydro_ror_G100000602748,120.0,hydro,Rasuwa Bhotekoshi hydroelectric plant_ -- construction,e_NP3-400,NP3-400,27.6528,85.3933,False
+e_NP3-400,ep_hydro_ror_G100000602749,111.0,hydro,Rasuwagadhi hydroelectric plant_ -- construction,e_NP3-400,NP3-400,27.6528,85.3933,False
+e_NP3-400,ep_hydro_ror_G100000602756,78.0,hydro,Sanjen Khola hydroelectric plant_ -- construction,e_NP3-400,NP3-400,27.6528,85.3933,False
+e_NP6-220,ep_hydro_dam_G100000602677,60.0,hydro,Kulekhani I hydroelectric plant_ -- operating,e_NP6-220,NP6-220,27.5899,85.156,False
+e_NP6-220,ep_hydro_ror_G100000602610,22.0,hydro,Bagmati Nadi hydroelectric plant_ -- operating,e_NP6-220,NP6-220,27.5363,85.2341,False
+e_NP6-220,ep_hydro_ror_G100000602780,42.0,hydro,Super Lower Bagmati hydroelectric plant_ -- construction,e_NP6-220,NP6-220,27.5361,85.233,False
+e_NP7-220,ep_hydro_ror_G100000602722,18.0,hydro,Middle Modi hydroelectric plant_ -- operating,e_NP7-220,NP7-220,27.4841,83.276,False
+e_NP8-220,ep_hydro_ror_G100000602639,15.0,hydro,Gandak hydroelectric plant_ -- operating,e_NP8-220,NP8-220,27.4257,83.7941,False
+e_NP9-400,ep_hydro_ror_G100000602670,60.0,hydro,Khimti I hydroelectric plant_ -- operating,e_NP9-400,NP9-400,27.5501,86.169,False
+e_NP9-400,ep_hydro_ror_G100000602671,49.0,hydro,Khimti II hydroelectric plant_ -- construction,e_NP9-400,NP9-400,27.5849,86.2237,False
+e_w1369219991-220,ep_hydro_ror_G100000602681,86.0,hydro,Landruk Modi hydroelectric plant_ -- construction,e_w1369219991-220,way/1369219991-220,28.3781,83.8317,False
+e_w1369219991-220,ep_hydro_ror_G100000602697,10.0,hydro,Lower Modi 1 hydroelectric plant_ -- operating,e_w1369219991-220,way/1369219991-220,28.2372,83.7115,False
+e_w1369219991-220,ep_hydro_ror_G100000602698,20.0,hydro,Lower Modi Khola hydroelectric plant_ -- operating,e_w1369219991-220,way/1369219991-220,28.2106,84.0017,False
+e_w1369219991-220,ep_hydro_ror_G100000602727,15.0,hydro,Modi Khola hydroelectric plant_ -- operating,e_w1369219991-220,way/1369219991-220,28.2729,83.7419,False
+e_w1369219991-220,ep_hydro_ror_G100000602734,12.0,hydro,Namarjun Madi hydroelectric plant_ -- operating,e_w1369219991-220,way/1369219991-220,28.3004,84.0912,False
+e_w1369219991-220,ep_hydro_ror_G100000602737,71.0,hydro,Nilgiri Khola 2 hydroelectric plant_ -- operating,e_w1369219991-220,way/1369219991-220,28.2127,83.9812,False
+e_w1369219991-220,ep_hydro_ror_G100000602746,40.0,hydro,Rahughat hydroelectric plant_ -- construction,e_w1369219991-220,way/1369219991-220,28.3765,83.5724,False
+e_w1369219991-220,ep_hydro_ror_G100000602762,22.0,hydro,Setikhola hydroelectric plant_ -- operating,e_w1369219991-220,way/1369219991-220,28.1118,84.081,False
+e_w1369219991-220,ep_hydro_ror_G100000602821,25.0,hydro,Upper Madi hydroelectric plant_ -- operating,e_w1369219991-220,way/1369219991-220,28.2663,84.0821,False
+e_w1369219991-220,ep_hydro_ror_G100000602834,48.0,hydro,Upper Rahughat hydroelectric plant_ -- construction,e_w1369219991-220,way/1369219991-220,28.3841,84.0363,False
+e_w1369219991-220,ep_hydro_ror_G100000604584,13.0,hydro,Madkyu Khola hydroelectric plant_ -- operating,e_w1369219991-220,way/1369219991-220,28.3681,84.1356,False
+e_w1369219991-220,ep_hydro_ror_G100000604640,15.0,hydro,Mudi Khola hydroelectric plant_ -- construction,e_w1369219991-220,way/1369219991-220,28.3841,84.0363,False
+e_w1369219991-220,ep_hydro_ror_G100000604795,25.0,hydro,Seti Khola hydroelectric plant_ -- construction,e_w1369219991-220,way/1369219991-220,28.3406,83.9646,False
+e_w1369219991-220,ep_hydro_ror_G100000604847,44.0,hydro,Super Madi hydroelectric plant_ -- operating,e_w1369219991-220,way/1369219991-220,28.339,84.111,False
+e_w1369219991-220,ep_hydro_ror_G100000604916,42.0,hydro,Upper Modi A hydroelectric plant_ -- construction,e_w1369219991-220,way/1369219991-220,28.3675,83.8074,False
+e_w1369219991-220,ep_hydro_ror_G100000604917,18.0,hydro,Upper Modi Cascade hydroelectric plant_ -- construction,e_w1369219991-220,way/1369219991-220,28.3274,83.7849,False
+e_w1369219991-220,ep_hydro_w1369219991-220__irena,14.86728615255891,hydro,Aggregated Plant - IRENA Gap - way/1369219991-220_Missing Hydro Capacity -- operating,e_w1369219991-220,way/1369219991-220,28.35885576171418,83.64787403037111,False
+e_w1369373444-220,ep_hydro_dam_G100000602793,140.0,hydro,Tanahu hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.4086,83.9767,False
+e_w1369373444-220,ep_hydro_ror_G100000602624,30.0,hydro,Chameliya Khola hydroelectric plant_ -- operating,e_w1369373444-220,way/1369373444-220,29.7103,80.6875,False
+e_w1369373444-220,ep_hydro_ror_G100000602638,25.0,hydro,Durbang Myagdi Khola hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.4146,83.4069,False
+e_w1369373444-220,ep_hydro_ror_G100000602708,135.0,hydro,Manang Marsyangdi hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.5176,84.2392,False
+e_w1369373444-220,ep_hydro_ror_G100000602720,54.0,hydro,Middle Kaligandaki hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.5014,83.6501,False
+e_w1369373444-220,ep_hydro_ror_G100000602726,42.0,hydro,Mistri Khola hydroelectric plant_ -- operating,e_w1369373444-220,way/1369373444-220,28.5057,83.6592,False
+e_w1369373444-220,ep_hydro_ror_G100000602728,42.0,hydro,Mristi Khola hydroelectric plant_ -- operating,e_w1369373444-220,way/1369373444-220,28.5057,83.6596,False
+e_w1369373444-220,ep_hydro_ror_G100000602732,57.0,hydro,Myagdi Khola hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.601,83.3903,False
+e_w1369373444-220,ep_hydro_ror_G100000602738,38.0,hydro,Nilgiri Khola hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.5776,83.6921,False
+e_w1369373444-220,ep_hydro_ror_G100000602747,37.0,hydro,Rahughat Mangale hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.5028,83.5128,False
+e_w1369373444-220,ep_hydro_ror_G100000602751,16.0,hydro,Ruru Banchu 1 hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,29.1012,81.7832,False
+e_w1369373444-220,ep_hydro_ror_G100000602794,11.0,hydro,Thapa Khola hydroelectric plant_ -- operating,e_w1369373444-220,way/1369373444-220,28.7253,83.6301,False
+e_w1369373444-220,ep_hydro_ror_G100000602795,21.0,hydro,Thulo Khola hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.5619,83.5333,False
+e_w1369373444-220,ep_hydro_ror_G100000602831,37.0,hydro,Upper Myagdi hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.5378,83.3764,False
+e_w1369373444-220,ep_hydro_ror_G100000602832,54.0,hydro,Upper Myagdi I hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.4889,83.3653,False
+e_w1369373444-220,ep_hydro_ror_G100000604393,14.0,hydro,Ghar Khola hydroelectric plant_ -- operating,e_w1369373444-220,way/1369373444-220,28.4674,83.6528,False
+e_w1369373444-220,ep_hydro_ror_G100000604485,15.0,hydro,Kalanga hydroelectric plant_ -- operating,e_w1369373444-220,way/1369373444-220,29.5117,80.8764,False
+e_w1369373444-220,ep_hydro_ror_G100000604489,180.0,hydro,Kaligandaki Gorge hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.5208,83.6208,False
+e_w1369373444-220,ep_hydro_ror_G100000604585,24.0,hydro,Madme Khola hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.4319,84.1356,False
+e_w1369373444-220,ep_hydro_ror_G100000604838,11.0,hydro,Sunigad hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,29.6347,81.2169,False
+e_w1369373444-220,ep_hydro_ror_G100000604907,40.0,hydro,Upper Chameliya hydroelectric plant_ -- operating,e_w1369373444-220,way/1369373444-220,29.7424,80.7818,False
+e_w1369373444-220,ep_hydro_ror_G100000604912,38.0,hydro,Upper Kalangad hydroelectric plant_ -- operating,e_w1369373444-220,way/1369373444-220,29.6093,80.9153,False
+e_w1369373444-220,ep_hydro_ror_G100001030616,46.0,hydro,Bheri Babai hydroelectric plant_ -- construction,e_w1369373444-220,way/1369373444-220,28.4469,81.7025,False
+e_w1369373444-220,ep_hydro_w1369373444-220__irena,195.51180379305524,hydro,Aggregated Plant - IRENA Gap - way/1369373444-220_Missing Hydro Capacity -- operating,e_w1369373444-220,way/1369373444-220,28.661443974057658,83.76099500919025,False
+e_w1369373444-220,ep_m_hydro_ror_G100000602725,12.0,hydro,Mistri Khola 2 hydroelectric plant_ -- mothballed,e_w1369373444-220,way/1369373444-220,28.4946,83.6553,False
+e_w1369394712-220,ep_hydro_ror_G100000602630,27.0,hydro,Dordi Khola hydroelectric plant_ -- operating,e_w1369394712-220,way/1369394712-220,28.1961,84.4542,False
+e_w1369394712-220,ep_hydro_ror_G100000602643,57.0,hydro,Himchuli Dordi hydroelectric plant_ -- construction,e_w1369394712-220,way/1369394712-220,28.3274,84.5792,False
+e_w1369394712-220,ep_hydro_ror_G100000602696,139.0,hydro,Lower Manang Marsyangdi hydroelectric plant_ -- construction,e_w1369394712-220,way/1369394712-220,28.4931,84.3333,False
+e_w1369394712-220,ep_hydro_ror_G100000602703,70.0,hydro,Madhya Marsyangdi hydroelectric plant_ -- operating,e_w1369394712-220,way/1369394712-220,28.189,84.4195,False
+e_w1369394712-220,ep_hydro_ror_G100000602709,69.0,hydro,Marsyangd hydroelectric plant_ -- operating,e_w1369394712-220,way/1369394712-220,27.9278,84.4977,False
+e_w1369394712-220,ep_hydro_ror_G100000602710,50.0,hydro,Marsyangdi Besi hydroelectric plant_ -- construction,e_w1369394712-220,way/1369394712-220,28.2333,84.3826,False
+e_w1369394712-220,ep_hydro_ror_G100000602740,30.0,hydro,Nyadi Khola hydroelectric plant_ -- operating,e_w1369394712-220,way/1369394712-220,28.3296,84.4212,False
+e_w1369394712-220,ep_hydro_ror_G100000602783,43.0,hydro,Super Nyadi hydroelectric plant_ -- construction,e_w1369394712-220,way/1369394712-220,28.3794,84.4771,False
+e_w1369394712-220,ep_hydro_ror_G100000602811,25.0,hydro,Upper Dordi A hydroelectric plant_ -- operating,e_w1369394712-220,way/1369394712-220,28.2495,84.4835,False
+e_w1369394712-220,ep_hydro_ror_G100000602825,102.0,hydro,Upper Marsyangdi 1 hydroelectric plant_ -- construction,e_w1369394712-220,way/1369394712-220,28.4098,84.3802,False
+e_w1369394712-220,ep_hydro_ror_G100000602827,50.0,hydro,Upper Marsyangdi A hydroelectric plant_ -- operating,e_w1369394712-220,way/1369394712-220,28.3049,84.384,False
+e_w1369394712-220,ep_hydro_ror_G100000604353,12.0,hydro,Dordi 1 hydroelectric plant_ -- operating,e_w1369394712-220,way/1369394712-220,28.231,84.4511,False
+e_w1369394712-220,ep_hydro_ror_G100000604844,54.0,hydro,Super Dordi hydroelectric plant_ -- operating,e_w1369394712-220,way/1369394712-220,28.2921,84.5431,False
+e_w1369394712-220,ep_hydro_ror_G100000604913,21.0,hydro,Upper Khudi hydroelectric plant_ -- construction,e_w1369394712-220,way/1369394712-220,28.335,84.3272,False
+e_w1369394712-220,ep_hydro_w1369394712-220__irena,18.23622784230132,hydro,Aggregated Plant - IRENA Gap - way/1369394712-220_Missing Hydro Capacity -- operating,e_w1369394712-220,way/1369394712-220,28.069760811000666,84.3349279704669,False
+e_w1369733807-220,ep_hydro_w1369733807-220__irena,19.973962587405612,hydro,Aggregated Plant - IRENA Gap - way/1369733807-220_Missing Hydro Capacity -- operating,e_w1369733807-220,way/1369733807-220,26.788881654427097,86.96184798022716,False
+e_w1369739650-220,ep_hydro_dam_G100000604356,70.0,hydro,Dudhkoshi 2 - Jaleswar hydroelectric plant_ -- construction,e_w1369739650-220,way/1369739650-220,27.3603,86.6667,False
+e_w1369739650-220,ep_hydro_ror_G100000602607,900.0,hydro,Arun 3 hydroelectric plant_ -- construction,e_w1369739650-220,way/1369739650-220,27.5106,87.1941,False
+e_w1369739650-220,ep_hydro_ror_G100000602647,16.0,hydro,Irkhuwa Khola B hydroelectric plant_ -- construction,e_w1369739650-220,way/1369739650-220,27.4088,87.0817,False
+e_w1369739650-220,ep_hydro_ror_G100000602649,38.0,hydro,Isuwa Khola PRoR Cascade hydroelectric plant_ -- construction,e_w1369739650-220,way/1369739650-220,27.5426,87.2322,False
+e_w1369739650-220,ep_hydro_ror_G100000602666,45.0,hydro,Kasuwa Khola hydroelectric plant_ -- construction,e_w1369739650-220,way/1369739650-220,27.6056,87.2828,False
+e_w1369739650-220,ep_hydro_ror_G100000602693,14.0,hydro,Lower Irkhuwa Khola hydroelectric plant_ -- construction,e_w1369739650-220,way/1369739650-220,27.4156,87.114,False
+e_w1369739650-220,ep_hydro_ror_G100001030826,48.0,hydro,Chujung Khola hydroelectric plant_ -- construction,e_w1369739650-220,way/1369739650-220,27.7433,87.4531,False
+e_w1369739650-220,ep_hydro_w1369739650-220__irena,25.793043687869776,hydro,Aggregated Plant - IRENA Gap - way/1369739650-220_Missing Hydro Capacity -- operating,e_w1369739650-220,way/1369739650-220,27.387773972407437,87.19716548743376,False
+e_w1369739653-220,ep_hydro_ror_G100000602721,74.0,hydro,Middle Mewa hydroelectric plant_ -- construction,e_w1369739653-220,way/1369739653-220,27.4779,87.6229,False
+e_w1369739653-220,ep_hydro_ror_G100000602723,73.0,hydro,Middle Tamor hydroelectric plant_ -- operating,e_w1369739653-220,way/1369739653-220,27.416,87.4063,False
+e_w1369739653-220,ep_hydro_ror_G100000602753,15.0,hydro,Sabha Khola B hydroelectric plant_ -- construction,e_w1369739653-220,way/1369739653-220,27.4297,87.3533,False
+e_w1369739653-220,ep_hydro_ror_G100000604609,15.0,hydro,Maya Khola hydroelectric plant_ -- operating,e_w1369739653-220,way/1369739653-220,27.2575,87.3065,False
+e_w1369972956-220,ep_hydro_ror_G100000602653,56.0,hydro,Jum Khola hydroelectric plant_ -- construction,e_w1369972956-220,way/1369972956-220,27.9588,86.2315,False
+e_w1369972956-220,ep_hydro_ror_G100000602667,30.0,hydro,Khani Khola - Dolakha hydroelectric plant_ -- construction,e_w1369972956-220,way/1369972956-220,27.7902,86.2885,False
+e_w1369972956-220,ep_hydro_ror_G100000602668,40.0,hydro,Khani Khola 1 hydroelectric plant_ -- construction,e_w1369972956-220,way/1369972956-220,27.8189,86.3501,False
+e_w1369972956-220,ep_hydro_ror_G100000602694,11.0,hydro,Lower Khare hydroelectric plant_ -- operating,e_w1369972956-220,way/1369972956-220,27.756,86.2121,False
+e_w1369972956-220,ep_hydro_ror_G100000602739,58.0,hydro,Nupche Likhu hydroelectric plant_ -- construction,e_w1369972956-220,way/1369972956-220,27.6848,86.4701,False
+e_w1369972956-220,ep_hydro_ror_G100000602754,20.0,hydro,Sagu Khola hydroelectric plant_ -- construction,e_w1369972956-220,way/1369972956-220,27.8093,86.1076,False
+e_w1369972956-220,ep_hydro_ror_G100000602765,25.0,hydro,Singati Khola hydroelectric plant_ -- operating,e_w1369972956-220,way/1369972956-220,27.7874,86.119,False
+e_w1369972956-220,ep_hydro_ror_G100000602766,10.0,hydro,Sipring Khola hydroelectric plant_ -- operating,e_w1369972956-220,way/1369972956-220,27.8252,86.229,False
+e_w1369972956-220,ep_hydro_ror_G100000602788,100.0,hydro,Tamakoshi 5 hydroelectric plant_ -- construction,e_w1369972956-220,way/1369972956-220,27.7501,86.175,False
+e_w1369972956-220,ep_hydro_ror_G100000602817,12.0,hydro,Upper Khimti hydroelectric plant_ -- operating,e_w1369972956-220,way/1369972956-220,27.6916,86.3496,False
+e_w1369972956-220,ep_hydro_ror_G100000602819,52.0,hydro,Upper Lapche Khola hydroelectric plant_ -- construction,e_w1369972956-220,way/1369972956-220,28.0826,86.1707,False
+e_w1369972956-220,ep_hydro_ror_G100000602840,456.0,hydro,Upper Tamakoshi hydroelectric plant_ -- operating,e_w1369972956-220,way/1369972956-220,27.9248,86.2135,False
+e_w1369972956-220,ep_hydro_ror_G100000604358,12.0,hydro,Dudhkunda Khola hydroelectric plant_ -- operating,e_w1369972956-220,way/1369972956-220,27.6021,86.6056,False
+e_w1369972956-220,ep_hydro_ror_G100000604507,24.0,hydro,Khare hydroelectric plant_ -- construction,e_w1369972956-220,way/1369972956-220,27.7801,86.2667,False
+e_w1370049736-220,ep_hydro_ror_G100000602685,55.0,hydro,Likhu 2 hydroelectric plant_ -- operating,e_w1370049736-220,way/1370049736-220,27.5874,86.406,False
+e_w1370049736-220,ep_hydro_ror_G100000602686,52.0,hydro,Likhu 4 hydroelectric plant_ -- operating,e_w1370049736-220,way/1370049736-220,27.4444,86.2584,False
+e_w1370049736-220,ep_hydro_ror_G100000602687,51.0,hydro,Likhu Khola A hydroelectric plant_ -- operating,e_w1370049736-220,way/1370049736-220,27.5528,86.3706,False
+e_w1370049736-220,ep_hydro_ror_G100000602701,82.0,hydro,Lower Solu hydroelectric plant_ -- construction,e_w1370049736-220,way/1370049736-220,27.4136,86.5753,False
+e_w1370049736-220,ep_hydro_ror_G100000602767,24.0,hydro,Solu hydroelectric plant_ -- operating,e_w1370049736-220,way/1370049736-220,27.4625,86.5758,False
+e_w1370049736-220,ep_hydro_ror_G100000602768,86.0,hydro,Solu Khola hydroelectric plant_ -- operating,e_w1370049736-220,way/1370049736-220,27.3647,86.6264,False
+e_w1370049736-220,ep_hydro_ror_G100000604570,28.0,hydro,Lower Likhu hydroelectric plant_ -- operating,e_w1370049736-220,way/1370049736-220,27.3916,86.2266,False
+e_w1370049736-220,ep_hydro_ror_G100000604923,20.0,hydro,Upper Solu Khola hydroelectric plant_ -- operating,e_w1370049736-220,way/1370049736-220,27.535,86.5814,False
+e_w1370049736-220,ep_hydro_w1370049736-220__irena,22.264310297428118,hydro,Aggregated Plant - IRENA Gap - way/1370049736-220_Missing Hydro Capacity -- operating,e_w1370049736-220,way/1370049736-220,27.36347163846239,86.02767465608999,False
+e_w1370062069-400,ep_hydro_ror_G100000602616,40.0,hydro,Bhotekoshi 1 hydroelectric plant_ -- construction,e_w1370062069-400,way/1370062069-400,27.8979,85.919,False
+e_w1370062069-400,ep_hydro_ror_G100000602617,62.0,hydro,Botekoshi 5 hydroelectric plant_ -- construction,e_w1370062069-400,way/1370062069-400,27.789,85.8838,False
+e_w1370062069-400,ep_hydro_ror_G100000602688,16.0,hydro,Liping Khola hydroelectric plant_ -- construction,e_w1370062069-400,way/1370062069-400,27.9718,85.9578,False
+e_w1370062069-400,ep_hydro_ror_G100000602769,11.0,hydro,Sun Koshi hydroelectric plant_ -- operating,e_w1370062069-400,way/1370062069-400,27.7538,85.8384,False
+e_w1370062069-400,ep_hydro_ror_G100000602804,36.0,hydro,Upper Balephi A hydroelectric plant_ -- operating,e_w1370062069-400,way/1370062069-400,27.9229,85.7764,False
+e_w1370062069-400,ep_hydro_ror_G100000602807,45.0,hydro,Upper Bhote Koshi hydroelectric plant_ -- operating,e_w1370062069-400,way/1370062069-400,27.9281,85.9344,False
+e_w1370062069-400,ep_hydro_ror_G100000602809,22.0,hydro,Upper Chaku A hydroelectric plant_ -- operating,e_w1370062069-400,way/1370062069-400,27.8669,85.9508,False
+e_w1370062069-400,ep_hydro_ror_G100000604919,43.0,hydro,Upper Nyasim Khola hydroelectric plant_ -- construction,e_w1370062069-400,way/1370062069-400,28.0056,85.8278,False
+e_w825755908-220,ep_hydro_ror_G100000602676,14.0,hydro,Kule Khani III hydroelectric plant_ -- operating,e_w825755908-220,way/825755908-220,27.4733,85.0402,False
+e_w825755908-220,ep_hydro_ror_G100000602678,32.0,hydro,Kulekhani II hydroelectric plant_ -- operating,e_w825755908-220,way/825755908-220,27.5017,85.0422,False
+elc_spv_001,ep_solar_pv_001,29.8,solar,Aggregated Plant -- operating,elc_spv_001,NP15-400,26.252097537218305,87.00996752003442,False
+elc_spv_003,ep_solar_pv_003,20.0,solar,Aggregated Plant -- operating,elc_spv_003,NP2-220,27.207178232269648,83.47411535568001,False
+elc_spv_006,ep_solar_pv_006,24.0,solar,Aggregated Plant -- operating,elc_spv_006,NP10-400,26.73722127342565,85.11062587782335,False
+elc_spv_007,ep_solar_pv_007,57.49999999999999,solar,Aggregated Plant -- operating,elc_spv_007,NP7-220,27.139467857524323,83.15621406681399,False
+elc_spv_008,ep_solar_pv_008,53.400000000000006,solar,Aggregated Plant -- operating,elc_spv_008,NP6-220,27.35179923536837,85.18497836705453,False
+elc_spv_009,ep_solar_pv_009,11.0,solar,Aggregated Plant -- construction,elc_spv_009,NP8-220,27.319995523138875,84.01110563797421,False
+elc_spv_010,ep_solar_pv_010,12.4,solar,Aggregated Plant -- operating,elc_spv_010,NP2-220,28.515866412558786,82.98165415041761,False
+elc_won_002,ep_windon_002__irena,0.06520974892494233,windon,Aggregated Plant -- operating,elc_won_002,NP7-220,27.54747040063075,82.82455407302307,False
+elc_won_005,ep_windon_005__irena,0.06423009721208381,windon,Aggregated Plant -- operating,elc_won_005,NP16-400,26.481851958860165,85.33775186881672,False
+elc_won_007,ep_windon_007__irena,0.06956015386297389,windon,Aggregated Plant -- operating,elc_won_007,NP15-400,26.58449746287296,86.74009951784603,False

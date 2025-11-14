@@ -1,0 +1,34 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,1.9999999999999463,bioenergy,Aggregated Plant -- operating,,,,,False
+e_ET13-230,ep_bioenergy_ET13-230,31.0,bioenergy,Aggregated Plant -- operating,e_ET13-230,ET13-230,9.827926693516375,37.37628370107051,False
+e_ET15-230,ep_hydro_dam_G100000601602,97.0,hydro,Fincha Amerti Neshe hydroelectric plant_ -- operating,e_ET15-230,ET15-230,9.5607,37.3625,False
+e_ET15-230,ep_hydro_dam_G100000601603,134.0,hydro,Fincha hydroelectric plant_ -- operating,e_ET15-230,ET15-230,9.558,37.3663,False
+e_ET20-400,ep_hydro_dam_G100000601618,2160.0,hydro,Koysha hydroelectric plant_ -- construction,e_ET20-400,ET20-400,6.5743,36.5489,False
+e_ET5-230,ep_hydro_dam_G100000601621,300.0,hydro,Tekeze I hydroelectric plant_ -- operating,e_ET5-230,ET5-230,13.3493,38.7406,False
+e_ET8-500,ep_hydro_ET8-500__irena,62.279000000000195,hydro,Aggregated Plant - IRENA Gap - ET8-500_Missing Hydro Capacity -- operating,e_ET8-500,ET8-500,11.18820892585737,34.9403199323251,False
+e_ET8-500,ep_hydro_dam_G100000601614,5700.0,hydro,Grand Ethiopian Renaissance hydroelectric plant_ -- construction,e_ET8-500,ET8-500,11.2165,35.0936,False
+e_ET8-500,ep_hydro_dam_G100000601615,750.0,hydro,Grand Ethiopian Renaissance hydroelectric plant_ -- operating,e_ET8-500,ET8-500,11.2165,35.0936,False
+e_w1024633567-400,ep_bioenergy_G100000200003,60.0,bioenergy,Omo Kuraz 2 Sugar Factory power station_1 -- operating,e_w1024633567-400,way/1024633567-400,6.0871,35.9171,False
+e_w1024633567-400,ep_bioenergy_G100000200004,76.0,bioenergy,Omo Kuraz 3 Sugar Factory power station_1 -- operating,e_w1024633567-400,way/1024633567-400,5.9683,36.0102,False
+e_w1024633567-400,ep_m_bioenergy_w1024633567-400,35.0,bioenergy,Aggregated Plant -- mothballed,e_w1024633567-400,way/1024633567-400,6.611147095759794,36.462510007168035,False
+e_w1096104907-400,ep_hydro_dam_G100000601606,254.0,hydro,Genale Dawa III hydroelectric plant_ -- operating,e_w1096104907-400,way/1096104907-400,5.5105,39.7182,False
+e_w1329351903-400,ep_bioenergy_w1329351903-400,45.0,bioenergy,Aggregated Plant -- operating,e_w1329351903-400,way/1329351903-400,11.449953242757015,36.62080867300888,False
+e_w180305473-400,ep_hydro_dam_G100000601611,420.0,hydro,Gilgel Gibe II hydroelectric plant_ -- operating,e_w180305473-400,way/180305473-400,7.7567,37.5626,False
+e_w180727873-230,ep_windon_wind_230,120.0,windon,Aggregated Plant -- operating,e_w180727873-230,way/180727873-230,13.547175410120737,39.768277202736556,False
+e_w184801675-230,ep_hydro_dam_G100000601619,153.0,hydro,Melka Wakena hydroelectric plant_ -- operating,e_w184801675-230,way/184801675-230,7.225,39.4618,False
+e_w187232642-230,ep_hydro_dam_G100000601610,184.0,hydro,Gilgel Gibe I hydroelectric plant_ -- operating,e_w187232642-230,way/187232642-230,7.8376,37.326,False
+e_w220122466-400,ep_hydro_ror_G100001031109,73.0,hydro,Tis Abay II hydroelectric plant_ -- operating,e_w220122466-400,way/220122466-400,11.4888,37.5999,False
+e_w260312386-230,ep_m_bioenergy_G100000200012,60.0,bioenergy,Tendeho Sugar Factory power station_1 -- mothballed,e_w260312386-230,way/260312386-230,11.5504,41.3893,False
+e_w342271873-230,ep_bioenergy_w342271873-230,31.0,bioenergy,Aggregated Plant -- operating,e_w342271873-230,way/342271873-230,8.742708162988956,39.17097875628135,False
+e_w342271873-230,ep_geothermal_G100000700008,35.0,geothermal,Aluto Langano geothermal power plant_2 -- construction,e_w342271873-230,way/342271873-230,7.7888,38.7952,False
+e_w342271873-230,ep_geothermal_G100001005193,35.0,geothermal,Aluto Langano geothermal power plant_1 -- construction,e_w342271873-230,way/342271873-230,7.7888,38.7952,False
+e_w342271873-230,ep_hydro_ror_G100001027229,64.0,hydro,Awash II hydroelectric plant_ -- operating,e_w342271873-230,way/342271873-230,8.3932,39.352,False
+e_w342271873-230,ep_m_geothermal_w342271873-230,7.3,geothermal,Aggregated Plant -- mothballed,e_w342271873-230,way/342271873-230,8.297083329008796,39.363977311370164,False
+e_w407077362-400,ep_hydro_dam_G100000601612,1870.0,hydro,Gilgel Gibe III hydroelectric plant_ -- operating,e_w407077362-400,way/407077362-400,6.8482,37.3018,False
+e_w576081249-400,ep_hydro_dam_G100000601596,460.0,hydro,Beles hydroelectric plant_ -- operating,e_w576081249-400,way/576081249-400,11.8204,36.9204,False
+elc_spv_001,ep_solar_001__irena,6.590853891409324,solar,Aggregated Plant -- operating,elc_spv_001,way/693970811-230,11.91838774150385,41.96985643289064,False
+elc_spv_010,ep_solar_010__irena,6.788145855045979,solar,Aggregated Plant -- operating,elc_spv_010,way/670304982-230,7.222393722365748,41.87571507586905,False
+elc_spv_011,ep_solar_011__irena,6.6050002535446986,solar,Aggregated Plant -- operating,elc_spv_011,way/670304976-230,5.506439327662829,44.405639122113726,False
+elc_spv_042,ep_solar_pv_042,1.2,solar,Aggregated Plant -- operating,elc_spv_042,way/407077362-400,6.748224740343912,37.90823483925817,False
+elc_won_023,ep_windon_wind_023,304.0,windon,Aggregated Plant -- operating,elc_won_023,way/466844633-230,7.989286037914334,38.96309359769215,False
+elc_won_024,ep_windon_wind_024,240.0,windon,Aggregated Plant -- operating,elc_won_024,way/695773621-230,10.648926440086619,42.310557096112134,False

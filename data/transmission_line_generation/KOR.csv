@@ -1,0 +1,284 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_KR1-345,ep_hydro_KR1-345__irena,74.31505965817476,hydro,Aggregated Plant - IRENA Gap - KR1-345_Missing Hydro Capacity -- operating,e_KR1-345,KR1-345,37.96898096874112,128.60533549958734,False
+e_KR1-345,ep_hydro_ps_G100000603370,1000.0,hydro,Yangyang hydroelectric plant_ -- operating,e_KR1-345,KR1-345,38.0205,128.5371,False
+e_KR10-345,ep_bioenergy_G1000002491,175.0,bioenergy,"Yongdong power station_1, timepoint 2 -- operating",e_KR10-345,KR10-345,37.738959,128.980391,False
+e_KR10-345,ep_bioenergy_G1000002492,200.0,bioenergy,"Yongdong power station_2, timepoint 2 -- operating",e_KR10-345,KR10-345,37.738959,128.980391,False
+e_KR10-345,ep_bioenergy_KR10-345__ember,541.4249456127629,bioenergy,Aggregated Plant - EMBER Gap - KR10-345_Missing Bioenergy Capacity -- operating,e_KR10-345,KR10-345,37.90855362991652,128.98947113259788,False
+e_KR10-345,ep_coal_ultra-supercritical_G100000100246,1040.0,coal,Anin power station_Unit 1 -- operating,e_KR10-345,KR10-345,37.733159,128.979405,False
+e_KR10-345,ep_coal_ultra-supercritical_G100000100247,1040.0,coal,Anin power station_Unit 2 -- operating,e_KR10-345,KR10-345,37.733159,128.979405,False
+e_KR10-345,ep_m_hydro_dam_G100000604384,82.0,hydro,Gangneung hydroelectric plant_ -- mothballed,e_KR10-345,KR10-345,37.7061,128.8224,False
+e_KR14-345,ep_gas_combined_cycle_KR14-345,115.0,gas,Aggregated Plant -- operating,e_KR14-345,KR14-345,37.425915627048674,126.99275615500788,False
+e_KR15-345,ep_gas_combined_cycle_G100000401371,504.0,gas,KOMIPO Incheon power station_1 -- operating,e_KR15-345,KR15-345,37.5109,126.609,False
+e_KR15-345,ep_gas_combined_cycle_G100000401372,509.0,gas,KOMIPO Incheon power station_2 -- operating,e_KR15-345,KR15-345,37.5109,126.609,False
+e_KR15-345,ep_gas_combined_cycle_G100000401373,450.0,gas,KOMIPO Incheon power station_3 -- operating,e_KR15-345,KR15-345,37.5109,126.609,False
+e_KR15-345,ep_gas_combined_cycle_KR15-345,1927.0,gas,Aggregated Plant -- operating,e_KR15-345,KR15-345,37.39366342627596,126.54198419490218,False
+e_KR16-345,ep_gas_combined_cycle_G100000401399,400.0,gas,Seoul power station_1 -- operating,e_KR16-345,KR16-345,37.544246,126.919861,False
+e_KR16-345,ep_gas_combined_cycle_G100000401400,400.0,gas,Seoul power station_2 -- operating,e_KR16-345,KR16-345,37.544246,126.919861,False
+e_KR17-345,ep_bioenergy_G100000200051,50.0,bioenergy,Sudokwon Landfill power station_1 -- operating,e_KR17-345,KR17-345,37.5765,126.6616,False
+e_KR17-345,ep_bioenergy_KR17-345__ember,72.18999274836838,bioenergy,Aggregated Plant - EMBER Gap - KR17-345_Missing Bioenergy Capacity -- operating,e_KR17-345,KR17-345,37.419298472038925,126.55391827439176,False
+e_KR17-345,ep_gas_combined_cycle_G100000401353,450.0,gas,Bucheon power station_1 -- operating,e_KR17-345,KR17-345,37.5225,126.764,False
+e_KR17-345,ep_gas_combined_cycle_G100000401374,450.0,gas,POSCO Incheon power station_3 -- operating,e_KR17-345,KR17-345,37.508947,126.616745,False
+e_KR17-345,ep_gas_combined_cycle_G100000401375,450.0,gas,POSCO Incheon power station_4 -- operating,e_KR17-345,KR17-345,37.508947,126.616745,False
+e_KR17-345,ep_gas_combined_cycle_G100000401376,626.0,gas,POSCO Incheon power station_5 -- operating,e_KR17-345,KR17-345,37.508947,126.616745,False
+e_KR17-345,ep_gas_combined_cycle_G100000401377,626.0,gas,POSCO Incheon power station_6 -- operating,e_KR17-345,KR17-345,37.508947,126.616745,False
+e_KR17-345,ep_gas_combined_cycle_G100000401378,420.0,gas,POSCO Incheon power station_7 -- operating,e_KR17-345,KR17-345,37.508947,126.616745,False
+e_KR17-345,ep_gas_combined_cycle_G100000401379,420.0,gas,POSCO Incheon power station_8 -- operating,e_KR17-345,KR17-345,37.508947,126.616745,False
+e_KR17-345,ep_gas_combined_cycle_G100000401380,420.0,gas,POSCO Incheon power station_9 -- operating,e_KR17-345,KR17-345,37.508947,126.616745,False
+e_KR17-345,ep_gas_combined_cycle_G100000401410,450.0,gas,Shinincheon power station_1 -- operating,e_KR17-345,KR17-345,37.508,126.6159,False
+e_KR17-345,ep_gas_combined_cycle_G100000401411,450.0,gas,Shinincheon power station_2 -- operating,e_KR17-345,KR17-345,37.508,126.6159,False
+e_KR17-345,ep_gas_combined_cycle_G100000401412,450.0,gas,Shinincheon power station_3 -- operating,e_KR17-345,KR17-345,37.508,126.6159,False
+e_KR17-345,ep_gas_combined_cycle_G100000401413,450.0,gas,Shinincheon power station_4 -- operating,e_KR17-345,KR17-345,37.508,126.6159,False
+e_KR21-345,ep_coal_supercritical_G100000108110,1050.0,coal,Samcheok power station_Unit 1 -- operating,e_KR21-345,KR21-345,37.40687,129.1778,False
+e_KR21-345,ep_coal_supercritical_G100000108111,1050.0,coal,Samcheok power station_Unit 2 -- construction,e_KR21-345,KR21-345,37.40687,129.1778,False
+e_KR22-345,ep_gas_combined_cycle_G100000406126,480.0,gas,Anyang CHP power station_2-1 -- operating,e_KR22-345,KR22-345,37.405538,126.928479,False
+e_KR22-345,ep_gas_combined_cycle_G100000406127,480.0,gas,Anyang CHP power station_2-2 -- operating,e_KR22-345,KR22-345,37.405538,126.928479,False
+e_KR23-345,ep_gas_steam_turbine_KR23-345,145.0,gas,Aggregated Plant -- operating,e_KR23-345,KR23-345,37.363289049567534,127.16572565311877,False
+e_KR24-345,ep_gas_combined_cycle_G100000401354,574.0,gas,Bundang power station_1 -- operating,e_KR24-345,KR24-345,37.3642,127.1482,False
+e_KR24-345,ep_gas_combined_cycle_KR24-345,348.0,gas,Aggregated Plant -- operating,e_KR24-345,KR24-345,37.36354786253732,127.12815640771188,False
+e_KR31-345,ep_gas_combined_cycle_G100000406133,400.0,gas,Dongtan CHP power station_1 -- operating,e_KR31-345,KR31-345,37.1755,127.0927,False
+e_KR31-345,ep_gas_combined_cycle_G100000406134,400.0,gas,Dongtan CHP power station_2 -- operating,e_KR31-345,KR31-345,37.1755,127.0927,False
+e_KR34-345,ep_coal_ultra-supercritical_G100000108757,1022.0,coal,Samcheok Green power station_Unit 1 -- operating,e_KR34-345,KR34-345,37.186,129.341822,False
+e_KR34-345,ep_coal_ultra-supercritical_G100000108758,1022.0,coal,Samcheok Green power station_Unit 2 -- operating,e_KR34-345,KR34-345,37.186,129.341822,False
+e_KR35-345,ep_gas_combined_cycle_G100000401382,833.0,gas,Oseong power station_1 -- operating,e_KR35-345,KR35-345,37.0254,127.0027,False
+e_KR37-765,ep_coal_supercritical_G100000101952,500.0,coal,"Dangjin power station_Unit 1, timepoint 1 -- operating",e_KR37-765,KR37-765,37.05513,126.5122247,False
+e_KR37-765,ep_coal_supercritical_G100000101954,500.0,coal,"Dangjin power station_Unit 2, timepoint 1 -- operating",e_KR37-765,KR37-765,37.05513,126.5122247,False
+e_KR37-765,ep_coal_supercritical_G100000101955,500.0,coal,"Dangjin power station_Unit 3, timepoint 1 -- operating",e_KR37-765,KR37-765,37.05513,126.5122247,False
+e_KR37-765,ep_coal_supercritical_G100000101956,500.0,coal,"Dangjin power station_Unit 4, timepoint 1 -- operating",e_KR37-765,KR37-765,37.05513,126.5122247,False
+e_KR37-765,ep_coal_ultra-supercritical_G100000101953,1020.0,coal,Dangjin power station_Unit 10 -- operating,e_KR37-765,KR37-765,37.05513,126.5122247,False
+e_KR37-765,ep_coal_ultra-supercritical_G100000101957,500.0,coal,"Dangjin power station_Unit 5, timepoint 1 -- operating",e_KR37-765,KR37-765,37.05513,126.5122247,False
+e_KR37-765,ep_coal_ultra-supercritical_G100000101958,500.0,coal,"Dangjin power station_Unit 6, timepoint 1 -- operating",e_KR37-765,KR37-765,37.05513,126.5122247,False
+e_KR37-765,ep_coal_ultra-supercritical_G100000101959,500.0,coal,Dangjin power station_Unit 7 -- operating,e_KR37-765,KR37-765,37.05513,126.5122247,False
+e_KR37-765,ep_coal_ultra-supercritical_G100000101960,500.0,coal,Dangjin power station_Unit 8 -- operating,e_KR37-765,KR37-765,37.05513,126.5122247,False
+e_KR37-765,ep_coal_ultra-supercritical_G100000101961,1020.0,coal,Dangjin power station_Unit 9 -- operating,e_KR37-765,KR37-765,37.05513,126.5122247,False
+e_KR37-765,ep_oil_combined_cycle_G100000401409,465.0,oil,Daesan Complex power station_CC1 -- operating,e_KR37-765,KR37-765,36.997163,126.36523,False
+e_KR39-345,ep_bioenergy_KR39-345,43.0,bioenergy,Aggregated Plant -- operating,e_KR39-345,KR39-345,37.27765280774597,126.7880387251358,False
+e_KR39-345,ep_bioenergy_KR39-345__ember,62.08339376359681,bioenergy,Aggregated Plant - EMBER Gap - KR39-345_Missing Bioenergy Capacity -- operating,e_KR39-345,KR39-345,36.856896580749385,127.02327938217252,False
+e_KR39-345,ep_gas_combined_cycle_G100000401390,868.0,gas,Pyeongtaek power station_CC2 -- operating,e_KR39-345,KR39-345,37.005802,126.79841,False
+e_KR39-345,ep_gas_combined_cycle_G100000401401,950.0,gas,Shin Pyeongtaek power station_CC1 -- operating,e_KR39-345,KR39-345,37.003843,126.794635,False
+e_KR39-345,ep_gas_steam_turbine_KR39-345,1400.0,gas,Aggregated Plant -- operating,e_KR39-345,KR39-345,36.825661143634676,126.59906834049144,False
+e_KR4-345,ep_gas_combined_cycle_G100000401366,858.0,gas,Dongducheon power station_1 -- operating,e_KR4-345,KR4-345,37.903,127.09,False
+e_KR4-345,ep_gas_combined_cycle_G100000401367,858.0,gas,Dongducheon power station_2 -- operating,e_KR4-345,KR4-345,37.903,127.09,False
+e_KR43-345,ep_coal_IGCC_KR43-345,346.0,coal,Aggregated Plant -- operating,e_KR43-345,KR43-345,37.43090662715591,126.32743543589451,False
+e_KR43-345,ep_coal_supercritical_G100000109801,500.0,coal,Taean power station_Unit 1 -- operating,e_KR43-345,KR43-345,36.903319,126.234263,False
+e_KR43-345,ep_coal_supercritical_G100000109803,500.0,coal,Taean power station_Unit 2 -- operating,e_KR43-345,KR43-345,36.903319,126.234263,False
+e_KR43-345,ep_coal_supercritical_G100000109804,500.0,coal,Taean power station_Unit 3 -- operating,e_KR43-345,KR43-345,36.903319,126.234263,False
+e_KR43-345,ep_coal_supercritical_G100000109805,500.0,coal,Taean power station_Unit 4 -- operating,e_KR43-345,KR43-345,36.903319,126.234263,False
+e_KR43-345,ep_coal_supercritical_G100000109806,500.0,coal,Taean power station_Unit 5 -- operating,e_KR43-345,KR43-345,36.903319,126.234263,False
+e_KR43-345,ep_coal_supercritical_G100000109807,500.0,coal,Taean power station_Unit 6 -- operating,e_KR43-345,KR43-345,36.903319,126.234263,False
+e_KR43-345,ep_coal_ultra-supercritical_G100000109802,1050.0,coal,Taean power station_Unit 10 -- operating,e_KR43-345,KR43-345,36.9055681,126.2346268,False
+e_KR43-345,ep_coal_ultra-supercritical_G100000109808,500.0,coal,Taean power station_Unit 7 -- operating,e_KR43-345,KR43-345,36.903319,126.234263,False
+e_KR43-345,ep_coal_ultra-supercritical_G100000109809,500.0,coal,Taean power station_Unit 8 -- operating,e_KR43-345,KR43-345,36.903319,126.234263,False
+e_KR43-345,ep_coal_ultra-supercritical_G100000109810,1050.0,coal,Taean power station_Unit 9 -- operating,e_KR43-345,KR43-345,36.9055681,126.2346268,False
+e_KR47-345,ep_bioenergy_G100000200041,110.0,bioenergy,Daesan power station_1 -- operating,e_KR47-345,KR47-345,36.9601,126.401,False
+e_KR47-345,ep_bioenergy_KR47-345__ember,158.81798404641046,bioenergy,Aggregated Plant - EMBER Gap - KR47-345_Missing Bioenergy Capacity -- operating,e_KR47-345,KR47-345,36.69920738072311,126.33389477890361,False
+e_KR49-345,ep_gas_combined_cycle_KR49-345,114.0,gas,Aggregated Plant -- operating,e_KR49-345,KR49-345,36.673893119885335,127.04267485927987,False
+e_KR52-345,ep_gas_combined_cycle_G100000406148,500.0,gas,Naepo Green Energy power station_1 -- operating,e_KR52-345,KR52-345,36.654944,126.6765,False
+e_KR54-345,ep_hydro_KR54-345__irena,40.1160915833602,hydro,Aggregated Plant - IRENA Gap - KR54-345_Missing Hydro Capacity -- operating,e_KR54-345,KR54-345,36.695913054982434,128.3219462047527,False
+e_KR54-345,ep_hydro_ps_G100000603371,800.0,hydro,Yecheon hydroelectric plant_ -- operating,e_KR54-345,KR54-345,36.7526,128.4272,False
+e_KR55-345,ep_hydro_ps_G100000603357,90.0,hydro,Andong hydroelectric plant_ -- operating,e_KR55-345,KR55-345,36.5672,128.7486,False
+e_KR56-345,ep_gas_combined_cycle_G100000401351,417.0,gas,Andong power station_1 -- operating,e_KR56-345,KR56-345,36.595906,128.541298,False
+e_KR57-345,ep_hydro_dam_G100000603361,90.0,hydro,Daecheong hydroelectric plant_ -- operating,e_KR57-345,KR57-345,36.478,127.4801,False
+e_KR58-345,ep_coal_supercritical_G100000109271,550.0,coal,Boryeong power station_Unit 3 -- operating,e_KR58-345,KR58-345,36.400853,126.490831,False
+e_KR58-345,ep_coal_supercritical_G100000109272,500.0,coal,Boryeong power station_Unit 4 -- operating,e_KR58-345,KR58-345,36.400853,126.490831,False
+e_KR58-345,ep_coal_supercritical_G100000109273,500.0,coal,Boryeong power station_Unit 5 -- operating,e_KR58-345,KR58-345,36.400853,126.490831,False
+e_KR58-345,ep_coal_supercritical_G100000109274,500.0,coal,Boryeong power station_Unit 6 -- operating,e_KR58-345,KR58-345,36.400853,126.490831,False
+e_KR58-345,ep_coal_ultra-supercritical_G100000109275,500.0,coal,Boryeong power station_Unit 7 -- operating,e_KR58-345,KR58-345,36.400853,126.490831,False
+e_KR58-345,ep_coal_ultra-supercritical_G100000109276,500.0,coal,Boryeong power station_Unit 8 -- operating,e_KR58-345,KR58-345,36.400853,126.490831,False
+e_KR58-345,ep_gas_combined_cycle_G100000401387,450.0,gas,Boryeong power station_CC1 -- operating,e_KR58-345,KR58-345,36.400853,126.490831,False
+e_KR58-345,ep_gas_combined_cycle_G100000401388,450.0,gas,Boryeong power station_CC2 -- operating,e_KR58-345,KR58-345,36.400853,126.490831,False
+e_KR58-345,ep_gas_combined_cycle_G100000401389,450.0,gas,Boryeong power station_CC3 -- operating,e_KR58-345,KR58-345,36.400853,126.490831,False
+e_KR58-345,ep_gas_combined_cycle_G100000406128,500.0,gas,Boryeong power station_CC5 -- construction,e_KR58-345,KR58-345,36.400853,126.490831,False
+e_KR59-345,ep_coal_ultra-supercritical_G100000109269,1000.0,coal,Shin Boryeong power station_Unit 2 -- operating,e_KR59-345,KR59-345,36.384613,126.486169,False
+e_KR59-345,ep_coal_ultra-supercritical_G100000109277,1000.0,coal,Shin Boryeong power station_Unit 1 -- operating,e_KR59-345,KR59-345,36.384613,126.486169,False
+e_KR6-345,ep_gas_combined_cycle_G100000406169,524.0,gas,Yangju CHP power station_1 -- operating,e_KR6-345,KR6-345,37.824985,127.07059,False
+e_KR62-345,ep_hydro_KR62-345__irena,30.08706868752015,hydro,Aggregated Plant - IRENA Gap - KR62-345_Missing Hydro Capacity -- operating,e_KR62-345,KR62-345,35.977483376689484,127.68553285470875,False
+e_KR62-345,ep_hydro_ps_G100000603365,600.0,hydro,Muju hydroelectric plant_ -- operating,e_KR62-345,KR62-345,35.9685,127.7074,False
+e_KR63-345,ep_gas_combined_cycle_G100000406132,415.0,gas,Daegu CHP power station_1 -- operating,e_KR63-345,KR63-345,35.874687,128.612188,False
+e_KR63-345,ep_gas_combined_cycle_KR63-345,270.0,gas,Aggregated Plant -- construction,e_KR63-345,KR63-345,35.817964934873885,128.45649345294848,False
+e_KR7-345,ep_gas_combined_cycle_G100000406131,470.0,gas,Chuncheon CHP power station_1 -- operating,e_KR7-345,KR7-345,37.875853,127.710374,False
+e_KR7-345,ep_hydro_KR7-345__irena,48.03901967107384,hydro,Aggregated Plant - IRENA Gap - KR7-345_Missing Hydro Capacity -- operating,e_KR7-345,KR7-345,38.01731122176736,127.52942521146805,False
+e_KR7-345,ep_hydro_dam_G100000603364,108.0,hydro,Hwacheon hydroelectric plant_ -- operating,e_KR7-345,KR7-345,38.1174,127.7801,False
+e_KR7-345,ep_hydro_dam_G100000603369,200.0,hydro,Soyanggang hydroelectric plant_ -- operating,e_KR7-345,KR7-345,37.9442,127.8161,False
+e_KR7-345,ep_hydro_dam_G100000604992,140.0,hydro,Cheongpyeong hydroelectric plant_ -- operating,e_KR7-345,KR7-345,37.726,127.4213,False
+e_KR7-345,ep_hydro_ps_G100000603358,400.0,hydro,Cheongpyeong hydroelectric plant_ -- operating,e_KR7-345,KR7-345,37.726,127.4213,False
+e_KR7-345,ep_hydro_ror_G100001027417,62.0,hydro,Chan Cheon hydroelectric plant_ -- operating,e_KR7-345,KR7-345,37.9672,127.6699,False
+e_KR7-345,ep_hydro_ror_G100001027419,48.0,hydro,Uiam hydroelectric plant_ -- operating,e_KR7-345,KR7-345,37.836,127.6779,False
+e_KR77-345,ep_gas_combined_cycle_KR77-345,270.0,gas,Aggregated Plant -- operating,e_KR77-345,KR77-345,35.50992055592001,129.45615288483896,False
+e_KR78-345,ep_hydro_dam_G100000603363,100.0,hydro,Hapcheon hydroelectric plant_ -- operating,e_KR78-345,KR78-345,35.5401,128.0842,False
+e_KR79-345,ep_hydro_KR79-345__irena,30.08706868752015,hydro,Aggregated Plant - IRENA Gap - KR79-345_Missing Hydro Capacity -- operating,e_KR79-345,KR79-345,35.39913454699067,128.6760023481269,False
+e_KR79-345,ep_hydro_ps_G100000603367,600.0,hydro,Samnangjin hydroelectric plant_ -- operating,e_KR79-345,KR79-345,35.4136,128.8795,False
+e_KR8-345,ep_gas_combined_cycle_G100000406146,630.0,gas,Ilsan power station_1 -- operating,e_KR8-345,KR8-345,37.647871,126.797366,False
+e_KR8-345,ep_gas_combined_cycle_KR8-345,399.0,gas,Aggregated Plant -- operating,e_KR8-345,KR8-345,37.80021954135242,126.79445065186917,False
+e_KR87-345,ep_gas_combined_cycle_G100000401356,450.0,gas,Busan power station_1 -- operating,e_KR87-345,KR87-345,35.0851,129.0003,False
+e_KR87-345,ep_gas_combined_cycle_G100000401357,450.0,gas,Busan power station_2 -- operating,e_KR87-345,KR87-345,35.0851,129.0003,False
+e_KR87-345,ep_gas_combined_cycle_G100000401358,450.0,gas,Busan power station_3 -- operating,e_KR87-345,KR87-345,35.0851,129.0003,False
+e_KR87-345,ep_gas_combined_cycle_G100000401359,450.0,gas,Busan power station_4 -- operating,e_KR87-345,KR87-345,35.0851,129.0003,False
+e_KR91-345,ep_coal_supercritical_G100000103526,500.0,coal,"Hadong power station_Unit 1, timepoint 1 -- operating",e_KR91-345,KR91-345,34.952354,127.819851,False
+e_KR91-345,ep_coal_supercritical_G100000103527,500.0,coal,"Hadong power station_Unit 2, timepoint 1 -- operating",e_KR91-345,KR91-345,34.952354,127.819851,False
+e_KR91-345,ep_coal_supercritical_G100000103528,500.0,coal,"Hadong power station_Unit 3, timepoint 1 -- operating",e_KR91-345,KR91-345,34.952354,127.819851,False
+e_KR91-345,ep_coal_supercritical_G100000103529,500.0,coal,"Hadong power station_Unit 4, timepoint 1 -- operating",e_KR91-345,KR91-345,34.952354,127.819851,False
+e_KR91-345,ep_coal_supercritical_G100000103530,500.0,coal,"Hadong power station_Unit 5, timepoint 1 -- operating",e_KR91-345,KR91-345,34.952354,127.819851,False
+e_KR91-345,ep_coal_supercritical_G100000103531,500.0,coal,"Hadong power station_Unit 6, timepoint 1 -- operating",e_KR91-345,KR91-345,34.952354,127.819851,False
+e_KR91-345,ep_coal_ultra-supercritical_G100000103532,500.0,coal,Hadong power station_Unit 7 -- operating,e_KR91-345,KR91-345,34.952354,127.819851,False
+e_KR91-345,ep_coal_ultra-supercritical_G100000103533,500.0,coal,Hadong power station_Unit 8 -- operating,e_KR91-345,KR91-345,34.952354,127.819851,False
+e_KR92-345,ep_gas_combined_cycle_KR92-345,284.0,gas,Aggregated Plant -- operating,e_KR92-345,KR92-345,34.90345350341461,127.64012855582354,False
+e_KR93-345,ep_bioenergy_G100000200814,110.0,bioenergy,Gwangyang Biomass power station_1 -- construction,e_KR93-345,KR93-345,34.9045,127.6225,False
+e_KR93-345,ep_bioenergy_G100000200815,110.0,bioenergy,Gwangyang Biomass power station_2 -- construction,e_KR93-345,KR93-345,34.9045,127.6225,False
+e_KR93-345,ep_bioenergy_KR93-345__ember,317.6359680928209,bioenergy,Aggregated Plant - EMBER Gap - KR93-345_Missing Bioenergy Capacity -- operating,e_KR93-345,KR93-345,34.8142236567824,127.45687250757295,False
+e_KR93-345,ep_gas_combined_cycle_G100000401407,577.0,gas,Yulchon power station_1 -- operating,e_KR93-345,KR93-345,34.913,127.593,False
+e_KR93-345,ep_gas_combined_cycle_G100000401408,946.0,gas,Yulchon power station_2 -- operating,e_KR93-345,KR93-345,34.913,127.593,False
+e_KR94-345,ep_gas_combined_cycle_G100000401369,563.0,gas,Gwangyang power station_1 -- operating,e_KR94-345,KR94-345,34.8895,127.7747,False
+e_KR94-345,ep_gas_combined_cycle_G100000401370,563.0,gas,Gwangyang power station_2 -- operating,e_KR94-345,KR94-345,34.8895,127.7747,False
+e_w1093106965-345,ep_coal_supercritical_G100000111357,800.0,coal,Yeongheung power station_Unit 1 -- operating,e_w1093106965-345,way/1093106965-345,37.236543,126.437797,False
+e_w1093106965-345,ep_coal_supercritical_G100000111358,800.0,coal,Yeongheung power station_Unit 2 -- operating,e_w1093106965-345,way/1093106965-345,37.236543,126.437797,False
+e_w1093106965-345,ep_coal_supercritical_G100000111361,870.0,coal,Yeongheung power station_Unit 5 -- operating,e_w1093106965-345,way/1093106965-345,37.2369399,126.4360929,False
+e_w1093106965-345,ep_coal_supercritical_G100000111362,870.0,coal,Yeongheung power station_Unit 6 -- operating,e_w1093106965-345,way/1093106965-345,37.2369399,126.4360929,False
+e_w1093106965-345,ep_coal_ultra-supercritical_G100000111359,870.0,coal,Yeongheung power station_Unit 3 -- operating,e_w1093106965-345,way/1093106965-345,37.236543,126.437797,False
+e_w1093106965-345,ep_coal_ultra-supercritical_G100000111360,870.0,coal,Yeongheung power station_Unit 4 -- operating,e_w1093106965-345,way/1093106965-345,37.236543,126.437797,False
+e_w1094336380-345,ep_nuclear_G100000500265,1048.0,nuclear,Shin-Wolsong nuclear power plant_2 -- operating,e_w1094336380-345,way/1094336380-345,35.7221,129.4786,False
+e_w1094336380-345,ep_nuclear_G100000500267,1048.0,nuclear,Shin-Wolsong nuclear power plant_1 -- operating,e_w1094336380-345,way/1094336380-345,35.7221,129.4786,False
+e_w1094336380-345,ep_nuclear_G100000500387,624.0,nuclear,Wolsong nuclear power plant_3 -- operating,e_w1094336380-345,way/1094336380-345,35.7111,129.4743,False
+e_w1094336380-345,ep_nuclear_G100000500388,589.0,nuclear,Wolsong nuclear power plant_4 -- operating,e_w1094336380-345,way/1094336380-345,35.7111,129.4743,False
+e_w1094336380-345,ep_nuclear_G100000500389,599.0,nuclear,Wolsong nuclear power plant_2 -- operating,e_w1094336380-345,way/1094336380-345,35.7111,129.4743,False
+e_w1255613947-345,ep_coal_subcritical_w1255613947-345,130.0,coal,Aggregated Plant -- operating,e_w1255613947-345,way/1255613947-345,35.35045917170376,129.43668518021374,False
+e_w1255613947-345,ep_gas_combined_cycle_G100000401414,476.0,gas,Yeongnam power station_1 -- operating,e_w1255613947-345,way/1255613947-345,35.513988,129.38339,False
+e_w1255613947-345,ep_gas_combined_cycle_G100000406174,1122.0,gas,Ulsan GPS power station_1 -- operating,e_w1255613947-345,way/1255613947-345,35.501181,129.334363,False
+e_w1255613947-354,ep_gas_combined_cycle_G100000401402,948.0,gas,Ulsan power station_4 -- operating,e_w1255613947-354,way/1255613947-354,35.47699,129.3826,False
+e_w1255613947-354,ep_gas_combined_cycle_G100000401404,450.0,gas,Ulsan power station_2 -- operating,e_w1255613947-354,way/1255613947-354,35.47699,129.3826,False
+e_w1255613947-354,ep_gas_combined_cycle_w1255613947-354,600.0,gas,Aggregated Plant -- operating,e_w1255613947-354,way/1255613947-354,35.35037817964671,129.3504095877771,False
+e_w1259317127-345,ep_gas_combined_cycle_w1259317127-345,399.0,gas,Aggregated Plant -- operating,e_w1259317127-345,way/1259317127-345,37.63655208591067,127.08730463607306,False
+e_w1259317127-345,ep_hydro_dam_G100000603366,120.0,hydro,Paldang hydroelectric plant_ -- operating,e_w1259317127-345,way/1259317127-345,37.527,127.2795,False
+e_w143605191-345,ep_gas_combined_cycle_w143605191-345,290.0,gas,Aggregated Plant -- operating,e_w143605191-345,way/143605191-345,35.949137961231315,129.2941284199639,False
+e_w143756950-345,ep_gas_combined_cycle_G100000401365,500.0,gas,Dangjin Eco Ulsan power station_1 -- construction,e_w143756950-345,way/143756950-345,35.562248,129.211413,False
+e_w143756950-345,ep_gas_combined_cycle_G100000414456,500.0,gas,Dangjin Eco Ulsan power station_2 -- construction,e_w143756950-345,way/143756950-345,35.562248,129.211413,False
+e_w143990785-345,ep_nuclear_G100000500260,1053.0,nuclear,Hanbit nuclear power plant_6 -- operating,e_w143990785-345,way/143990785-345,35.4105,126.4175,False
+e_w143990785-345,ep_nuclear_G100000500263,1051.0,nuclear,Hanbit nuclear power plant_5 -- operating,e_w143990785-345,way/143990785-345,35.4105,126.4175,False
+e_w143990785-345,ep_nuclear_G100000500270,1041.0,nuclear,Hanbit nuclear power plant_3 -- operating,e_w143990785-345,way/143990785-345,35.4105,126.4175,False
+e_w143990785-345,ep_nuclear_G100000500271,1041.0,nuclear,Hanbit nuclear power plant_4 -- operating,e_w143990785-345,way/143990785-345,35.4105,126.4175,False
+e_w143990785-345,ep_nuclear_G100000500275,1025.0,nuclear,Hanbit nuclear power plant_1 -- operating,e_w143990785-345,way/143990785-345,35.4105,126.4175,False
+e_w143990785-345,ep_nuclear_G100000500276,1024.0,nuclear,Hanbit nuclear power plant_2 -- operating,e_w143990785-345,way/143990785-345,35.4105,126.4175,False
+e_w307934520-345,ep_gas_combined_cycle_w307934520-345,145.0,gas,Aggregated Plant -- operating,e_w307934520-345,way/307934520-345,37.370202540949215,126.98669258193075,False
+e_w308711345-345,ep_gas_combined_cycle_G100000406145,512.3,gas,Hwasung power station_1 -- operating,e_w308711345-345,way/308711345-345,37.2155,127.0778,False
+e_w308711345-345,ep_gas_combined_cycle_G100000406149,474.0,gas,Osan CHP power station_1 -- operating,e_w308711345-345,way/308711345-345,37.139905,127.055619,False
+e_w308733209-345,ep_bioenergy_w308733209-345,32.0,bioenergy,Aggregated Plant -- operating,e_w308733209-345,way/308733209-345,36.01659291795082,126.99396782592228,False
+e_w308733209-345,ep_bioenergy_w308733209-345__ember,46.201595358955764,bioenergy,Aggregated Plant -- operating,e_w308733209-345,way/308733209-345,35.66480713639026,127.06360360938343,False
+e_w310065312-345,ep_gas_gas_turbine_w310065312-345,167.0,gas,Aggregated Plant -- construction,e_w310065312-345,way/310065312-345,36.98786336972141,127.5802898227833,False
+e_w310065312-345,ep_gas_steam_turbine_G100000406173,585.0,gas,Smart Energy Center (Cheongju) power station_1 -- construction,e_w310065312-345,way/310065312-345,36.64927,127.42218,False
+e_w310065312-345,ep_gas_steam_turbine_w310065312-345,103.0,gas,Aggregated Plant -- construction,e_w310065312-345,way/310065312-345,36.58513712500973,127.91014380700429,False
+e_w310065312-345,ep_oil_steam_turbine_w310065312-345,58.3,oil,Aggregated Plant -- operating,e_w310065312-345,way/310065312-345,36.18365782715061,127.7178733916624,False
+e_w310226151-345,ep_gas_combined_cycle_w310226151-345,118.0,gas,Aggregated Plant -- operating,e_w310226151-345,way/310226151-345,35.38856501180306,126.94206352388719,False
+e_w310421666-345,ep_gas_steam_turbine_w310421666-345,207.0,gas,Aggregated Plant -- operating,e_w310421666-345,way/310421666-345,37.529071646572625,126.69185700129077,False
+e_w310943500-345,ep_gas_combined_cycle_G100000406168,412.0,gas,Wirye CHP power station_1 -- operating,e_w310943500-345,way/310943500-345,37.481406,127.151457,False
+e_w311144495-345,ep_gas_combined_cycle_w311144495-345,629.1999999999999,gas,Aggregated Plant -- operating,e_w311144495-345,way/311144495-345,36.71144848750874,126.63819459189469,False
+e_w311144495-345,ep_solar_pv_345,93.60000000000001,solar,Aggregated Plant -- operating,e_w311144495-345,way/311144495-345,36.658666439990995,127.16013078239313,False
+e_w311223101-345,ep_bioenergy_w311223101-345,30.0,bioenergy,Aggregated Plant -- operating,e_w311223101-345,way/311223101-345,37.77176177794627,129.16804800962572,False
+e_w311223101-345,ep_bioenergy_w311223101-345__ember,43.31399564902103,bioenergy,Aggregated Plant -- operating,e_w311223101-345,way/311223101-345,37.365476900051114,129.32764904550504,False
+e_w311223101-345,ep_coal_subcritical_w311223101-345,400.0,coal,Aggregated Plant -- operating,e_w311223101-345,way/311223101-345,37.437214241574374,128.83928643225036,False
+e_w311223101-345,ep_coal_supercritical_G100000101094,595.0,coal,Bukpyung power station_Unit 1 -- operating,e_w311223101-345,way/311223101-345,37.480546,129.143343,False
+e_w311223101-345,ep_coal_supercritical_G100000101095,595.0,coal,Bukpyung power station_Unit 2 -- operating,e_w311223101-345,way/311223101-345,37.480546,129.143343,False
+e_w311223102-345,ep_gas_combined_cycle_G100000401406,848.0,gas,Yeongwol power station_1 -- operating,e_w311223102-345,way/311223102-345,37.162939,128.492275,False
+e_w312153485-345,ep_gas_combined_cycle_G100000401405,1000.0,gas,Yeoju Complex power station_1 -- operating,e_w312153485-345,way/312153485-345,37.288928,127.44166,False
+e_w312153485-345,ep_gas_steam_turbine_w312153485-345,570.0,gas,Aggregated Plant -- operating,e_w312153485-345,way/312153485-345,37.19533312637039,127.27760615465176,False
+e_w312297594-345,ep_gas_combined_cycle_G100000401383,848.0,gas,Paju power station_1 -- operating,e_w312297594-345,way/312297594-345,37.761533,126.75859,False
+e_w312297594-345,ep_gas_combined_cycle_G100000401384,848.0,gas,Paju power station_2 -- operating,e_w312297594-345,way/312297594-345,37.761533,126.75859,False
+e_w312297594-345,ep_gas_combined_cycle_G100000406150,515.0,gas,Paju (KDHC) power station_1 -- operating,e_w312297594-345,way/312297594-345,37.758291,126.781498,False
+e_w312392026-345,ep_coal_subcritical_w312392026-345,170.0,coal,Aggregated Plant -- operating,e_w312392026-345,way/312392026-345,38.12931434927684,127.18724522814523,False
+e_w312392026-345,ep_gas_combined_cycle_G100000401385,780.0,gas,Pocheon power station_1 -- operating,e_w312392026-345,way/312392026-345,37.9465,127.1689,False
+e_w312392026-345,ep_gas_combined_cycle_G100000401386,780.0,gas,Pocheon power station_2 -- operating,e_w312392026-345,way/312392026-345,37.9465,127.1689,False
+e_w312392026-345,ep_gas_combined_cycle_G100000401417,900.0,gas,Pocheon IPP power station_1 -- operating,e_w312392026-345,way/312392026-345,37.897217,127.192645,False
+e_w312392026-345,ep_gas_combined_cycle_G100000414457,900.0,gas,Pocheon IPP power station_2 -- operating,e_w312392026-345,way/312392026-345,37.897217,127.192645,False
+e_w371952375-345,ep_gas_combined_cycle_G100000401364,561.0,gas,Eumseong power station_CC1 -- construction,e_w371952375-345,way/371952375-345,36.941815,127.654621,False
+e_w371952375-345,ep_gas_combined_cycle_G100000412629,561.0,gas,Eumseong power station_CC2 -- construction,e_w371952375-345,way/371952375-345,36.941815,127.654621,False
+e_w371952375-345,ep_hydro_dam_G100000603360,412.0,hydro,Chungju hydroelectric plant_ -- operating,e_w371952375-345,way/371952375-345,37.0063,127.9931,False
+e_w371952375-345,ep_hydro_w371952375-345__irena,20.6597871654305,hydro,Aggregated Plant - IRENA Gap - way/371952375-345_Missing Hydro Capacity -- operating,e_w371952375-345,way/371952375-345,37.1653013889423,127.90330066196,False
+e_w606158231-765,ep_nuclear_G100000500249,1046.0,nuclear,Kori nuclear power plant_3 -- operating,e_w606158231-765,way/606158231-765,35.3199,129.2948,False
+e_w606158231-765,ep_nuclear_G100000500250,1046.0,nuclear,Kori nuclear power plant_4 -- operating,e_w606158231-765,way/606158231-765,35.3199,129.2948,False
+e_w606158231-765,ep_nuclear_G100000500268,1047.0,nuclear,Shin-Kori nuclear power plant_2 -- operating,e_w606158231-765,way/606158231-765,35.3271,129.3017,False
+e_w606158231-765,ep_nuclear_G100000500269,1048.0,nuclear,Shin-Kori nuclear power plant_1 -- operating,e_w606158231-765,way/606158231-765,35.3271,129.3017,False
+e_w606158231-765,ep_nuclear_G100000500401,681.0,nuclear,Kori nuclear power plant_2 -- operating,e_w606158231-765,way/606158231-765,35.3199,129.2948,False
+e_w606158231-765,ep_nuclear_G100000501017,1488.0,nuclear,Saeul nuclear power plant_1 -- operating,e_w606158231-765,way/606158231-765,35.3271,129.3017,False
+e_w606158231-765,ep_nuclear_G100000501018,1491.0,nuclear,Saeul nuclear power plant_2 -- operating,e_w606158231-765,way/606158231-765,35.3271,129.3017,False
+e_w606158231-765,ep_nuclear_G100000501019,1400.0,nuclear,Saeul nuclear power plant_3 -- construction,e_w606158231-765,way/606158231-765,35.3271,129.3017,False
+e_w606158231-765,ep_nuclear_G100000501020,1400.0,nuclear,Saeul nuclear power plant_4 -- construction,e_w606158231-765,way/606158231-765,35.3271,129.3017,False
+e_w614454744-345,ep_coal_subcritical_CCS_w614454744-345,60.0,coal,Aggregated Plant -- operating,e_w614454744-345,way/614454744-345,35.018723000749404,127.70696390844874,False
+e_w614454744-345,ep_coal_subcritical_w614454744-345,1193.0,coal,Aggregated Plant -- operating,e_w614454744-345,way/614454744-345,34.65929553560182,127.68113042194076,False
+e_w814396959-345,ep_coal_subcritical_G100000108761,560.0,coal,Samchonpo power station_Unit 3 -- operating,e_w814396959-345,way/814396959-345,34.910715,128.108397,False
+e_w814396959-345,ep_coal_subcritical_G100000108762,560.0,coal,Samchonpo power station_Unit 4 -- operating,e_w814396959-345,way/814396959-345,34.910715,128.108397,False
+e_w814396959-345,ep_coal_supercritical_G100000108763,500.0,coal,Samchonpo power station_Unit 5 -- operating,e_w814396959-345,way/814396959-345,34.910715,128.108397,False
+e_w814396959-345,ep_coal_supercritical_G100000108764,500.0,coal,Samchonpo power station_Unit 6 -- operating,e_w814396959-345,way/814396959-345,34.910715,128.108397,False
+e_w814396959-345,ep_coal_ultra-supercritical_G100000103106,1040.0,coal,Goseong Green power station_Unit 1 -- operating,e_w814396959-345,way/814396959-345,34.904909,128.125406,False
+e_w814396959-345,ep_coal_ultra-supercritical_G100000103107,1040.0,coal,Goseong Green power station_Unit 2 -- operating,e_w814396959-345,way/814396959-345,34.904909,128.125406,False
+e_w814396959-345,ep_gas_combined_cycle_G100000406167,1000.0,gas,Tongyeong power station_1 -- operating,e_w814396959-345,way/814396959-345,34.95377,128.426434,False
+e_w880532874-345,ep_coal_subcritical_w880532874-345,157.0,coal,Aggregated Plant -- operating,e_w880532874-345,way/880532874-345,36.05882956619087,128.44800813436282,False
+e_w880532874-345,ep_gas_combined_cycle_G100000410206,501.0,gas,Gumi Combined Cycle power plant_1 -- construction,e_w880532874-345,way/880532874-345,36.20735,128.3555,False
+e_w882983098-345,ep_bioenergy_G100000200818,100.0,bioenergy,SGC Green Power power station_1 -- operating,e_w882983098-345,way/882983098-345,35.947039,126.5304571,False
+e_w882983098-345,ep_bioenergy_G1000002490,60.0,bioenergy,"Seagull power station_3, timepoint 2 -- operating",e_w882983098-345,way/882983098-345,35.977864,126.638267,False
+e_w882983098-345,ep_bioenergy_w882983098-345__ember,231.00797679477887,bioenergy,Aggregated Plant - EMBER Gap - way/882983098-345_Missing Bioenergy Capacity -- operating,e_w882983098-345,way/882983098-345,36.31675977781458,126.63023323607824,False
+e_w882983098-345,ep_coal_CFB_w882983098-345,99.0,coal,Aggregated Plant -- operating,e_w882983098-345,way/882983098-345,36.0248150509147,126.97629066739687,False
+e_w882983098-345,ep_coal_subcritical_w882983098-345,787.9999999999999,coal,Aggregated Plant -- operating,e_w882983098-345,way/882983098-345,35.60648848316995,126.53665814928382,False
+e_w882983098-345,ep_coal_ultra-supercritical_G100000108918,1018.0,coal,Shin Seocheon power station_-- -- operating,e_w882983098-345,way/882983098-345,36.144144,126.495938,False
+e_w882983098-345,ep_gas_combined_cycle_G100000401368,718.0,gas,Gunsan CC power station_1 -- operating,e_w882983098-345,way/882983098-345,35.9836,126.7307,False
+e_w883142549-345,ep_gas_combined_cycle_G100000406158,530.0,gas,Sejong (KOMIPO) power station_1 -- operating,e_w883142549-345,way/883142549-345,36.468637,127.247137,False
+e_w883142549-345,ep_gas_combined_cycle_G100000406159,630.0,gas,Shinsejong power station_1 -- operating,e_w883142549-345,way/883142549-345,36.527333,127.296625,False
+e_w883725334-345,ep_bioenergy_w883725334-345__ember,158.81798404641046,bioenergy,Aggregated Plant - EMBER Gap - way/883725334-345_Missing Bioenergy Capacity -- operating,e_w883725334-345,way/883725334-345,36.14281493144879,129.19741322996876,False
+e_w884033657-345,ep_gas_combined_cycle_G100000406135,500.0,gas,Gimpo CHP power station_1 -- operating,e_w884033657-345,way/884033657-345,37.64981,126.638319,False
+e_w884263043-345,ep_nuclear_G100000500019,1455.0,nuclear,Shin-Hanul nuclear power plant_1 -- operating,e_w884263043-345,way/884263043-345,37.0869,129.3881,False
+e_w884263043-345,ep_nuclear_G100000500023,1400.0,nuclear,Shin-Hanul nuclear power plant_2 -- operating,e_w884263043-345,way/884263043-345,37.0869,129.3881,False
+e_w884263043-345,ep_nuclear_G100000500261,1052.0,nuclear,Hanul nuclear power plant_4 -- operating,e_w884263043-345,way/884263043-345,37.0931,129.38301,False
+e_w884263043-345,ep_nuclear_G100000500262,1051.0,nuclear,Hanul nuclear power plant_3 -- operating,e_w884263043-345,way/884263043-345,37.0931,129.38301,False
+e_w884263043-345,ep_nuclear_G100000500264,1049.0,nuclear,Hanul nuclear power plant_6 -- operating,e_w884263043-345,way/884263043-345,37.0931,129.38301,False
+e_w884263043-345,ep_nuclear_G100000500266,1049.0,nuclear,Hanul nuclear power plant_5 -- operating,e_w884263043-345,way/884263043-345,37.0931,129.38301,False
+e_w884263043-345,ep_nuclear_G100000500315,1014.0,nuclear,Hanul nuclear power plant_1 -- operating,e_w884263043-345,way/884263043-345,37.0931,129.38301,False
+e_w884263043-345,ep_nuclear_G100000500316,1010.9999999999999,nuclear,Hanul nuclear power plant_2 -- operating,e_w884263043-345,way/884263043-345,37.0931,129.38301,False
+e_w884263043-765,ep_bioenergy_w884263043-765,39.0,bioenergy,Aggregated Plant -- operating,e_w884263043-765,way/884263043-765,37.259993693810785,129.41065186224884,False
+e_w884263043-765,ep_bioenergy_w884263043-765__ember,56.30819434372734,bioenergy,Aggregated Plant - EMBER Gap - way/884263043-765_Missing Bioenergy Capacity -- operating,e_w884263043-765,way/884263043-765,36.90166972217829,129.40570001573522,False
+e_w884641930-345,ep_hydro_ps_G100000603359,600.0,hydro,Cheongsong hydroelectric plant_ -- operating,e_w884641930-345,way/884641930-345,36.4055,129.0163,False
+e_w884641930-345,ep_hydro_ror_G100001027418,50.0,hydro,Imha hydroelectric plant_ -- operating,e_w884641930-345,way/884641930-345,36.5384,128.8813,False
+e_w884641930-345,ep_hydro_w884641930-345__irena,32.59432441148016,hydro,Aggregated Plant - IRENA Gap - way/884641930-345_Missing Hydro Capacity -- operating,e_w884641930-345,way/884641930-345,36.40061427480427,128.90841167759402,False
+e_w884641932-345,ep_hydro_ps_G100000603368,700.0,hydro,Sancheong hydroelectric plant_ -- operating,e_w884641932-345,way/884641932-345,35.2766,127.7766,False
+e_w884641932-345,ep_hydro_w884641932-345__irena,35.10158013544017,hydro,Aggregated Plant - IRENA Gap - way/884641932-345_Missing Hydro Capacity -- operating,e_w884641932-345,way/884641932-345,35.31188241886037,127.74379771221362,False
+e_w888000302-345,ep_gas_combined_cycle_G100000401352,834.0,gas,Ansan power station_1 -- operating,e_w888000302-345,way/888000302-345,37.2952,126.7788,False
+e_w888000302-345,ep_gas_steam_turbine_w888000302-345,62.6,gas,Aggregated Plant -- operating,e_w888000302-345,way/888000302-345,37.151525571046555,126.63227570544886,False
+e_w978811496-345,ep_bioenergy_G100000200811,105.0,bioenergy,Dangjin Bio power station_1 -- operating,e_w978811496-345,way/978811496-345,36.9587,126.7834,False
+e_w978811496-345,ep_bioenergy_G100000200812,105.0,bioenergy,Dangjin Bio power station_2 -- operating,e_w978811496-345,way/978811496-345,36.9587,126.7834,False
+e_w978811496-345,ep_bioenergy_w978811496-345__ember,303.1979695431473,bioenergy,Aggregated Plant - EMBER Gap - way/978811496-345_Missing Bioenergy Capacity -- operating,e_w978811496-345,way/978811496-345,36.80992847634334,126.68084841776387,False
+e_w978811496-345,ep_gas_combined_cycle_G100000401360,538.0,gas,Dangjin Combined Cycle power station_1 -- operating,e_w978811496-345,way/978811496-345,36.959,126.7825,False
+e_w978811496-345,ep_gas_combined_cycle_G100000401361,550.0,gas,Dangjin Combined Cycle power station_2 -- operating,e_w978811496-345,way/978811496-345,36.959,126.7825,False
+e_w978811496-345,ep_gas_combined_cycle_G100000401362,415.0,gas,Dangjin Combined Cycle power station_3 -- operating,e_w978811496-345,way/978811496-345,36.959,126.7825,False
+e_w978811496-345,ep_gas_combined_cycle_G100000401363,903.0,gas,Dangjin Combined Cycle power station_4 -- operating,e_w978811496-345,way/978811496-345,36.959,126.7825,False
+elc_spv_001,ep_solar_pv_001,312.5,solar,Aggregated Plant -- operating,elc_spv_001,KR43-345,36.508409326266126,126.59630601697945,False
+elc_spv_001,ep_solar_pv_G100000811032,307.0,solar,Taean Anmyeon Clean Energy Solar Power Plant_-- -- construction,elc_spv_001,KR43-345,36.4775,126.3739,False
+elc_spv_002,ep_solar_pv_002,1398.3000000000006,solar,Aggregated Plant -- operating,elc_spv_002,way/143990785-345,36.01230059142603,127.09104555839836,False
+elc_spv_003,ep_solar_003__irena,4312.3516293757475,solar,Aggregated Plant - IRENA Gap - 3_Missing Solar Capacity -- operating,elc_spv_003,way/119001902-345,36.66334119170768,127.17496297908889,False
+elc_spv_003,ep_solar_pv_003,492.9,solar,Aggregated Plant -- operating,elc_spv_003,way/119001902-345,36.610652893788895,126.7520590961106,False
+elc_spv_004,ep_solar_004__irena,4696.07104449087,solar,Aggregated Plant - IRENA Gap - 4_Missing Solar Capacity -- operating,elc_spv_004,way/1093106969-345,37.99222745007609,127.017149516018,False
+elc_spv_004,ep_solar_pv_004,224.60000000000002,solar,Aggregated Plant -- operating,elc_spv_004,way/1093106969-345,37.55224923962144,126.74606603941166,False
+elc_spv_005,ep_solar_pv_005,295.59999999999997,solar,Aggregated Plant -- operating,elc_spv_005,way/310943500-345,37.48895188004453,127.4516406783777,False
+elc_spv_006,ep_solar_pv_006,229.2,solar,Aggregated Plant -- operating,elc_spv_006,way/311144495-345,35.84155598279784,128.3427682851345,False
+elc_spv_007,ep_solar_pv_007,1588.9,solar,Aggregated Plant -- operating,elc_spv_007,way/311144495-345,35.443619240308834,128.55073932191695,False
+elc_spv_007,ep_solar_pv_G100000811012,204.0,solar,Anjwa Smart Farm & Solar City 2_-- -- operating,elc_spv_007,way/311144495-345,34.7318,126.1277,False
+elc_spv_007,ep_solar_pv_G100000811013,200.0,solar,Bigeum Residents' Solar Power Plant_-- -- operating,elc_spv_007,way/311144495-345,34.7679,125.9909,False
+elc_spv_007,ep_solar_pv_G100000811029,200.0,solar,Sinan (KEPCO) Solar Power Plant_-- -- construction,elc_spv_007,way/311144495-345,34.8377,126.1042,False
+elc_spv_008,ep_solar_pv_008,1368.0,solar,Aggregated Plant -- operating,elc_spv_008,way/311144495-345,34.20451402091414,128.61242098812986,False
+elc_spv_009,ep_solar_pv_009,213.10000000000002,solar,Aggregated Plant -- operating,elc_spv_009,KR70-345,35.447531451271104,129.04284889408467,False
+elc_spv_010,ep_solar_010__irena,4245.877326133383,solar,Aggregated Plant - IRENA Gap - 10_Missing Solar Capacity -- operating,elc_spv_010,KR75-345,36.316406879787685,127.7041941344093,False
+elc_spv_010,ep_solar_pv_010,795.5,solar,Aggregated Plant -- operating,elc_spv_010,KR75-345,35.9645743001236,127.62655858464848,False
+elc_spv_011,ep_solar_pv_011,147.79999999999998,solar,Aggregated Plant -- operating,elc_spv_011,way/308765055-345,36.451338191836356,128.78306075145005,False
+elc_spv_012,ep_solar_pv_012,446.9,solar,Aggregated Plant -- operating,elc_spv_012,KR50-345,37.469756160862474,128.7959925828511,False
+elc_wof_006,ep_windoff_wind_006,30.0,windoff,Aggregated Plant -- operating,elc_wof_006,way/311144495-345,32.82598061055392,127.25026613753626,False
+elc_wof_008,ep_windoff_wind_008,194.0,windoff,Aggregated Plant -- operating,elc_wof_008,way/143990785-345,36.08571749802911,126.28038303709131,False
+elc_wof_010,ep_windoff_010__irena,3.9573375099146366,windoff,Aggregated Plant -- operating,elc_wof_010,way/311144495-345,32.80467702083152,127.17005628779918,False
+elc_wof_013,ep_windoff_013__irena,3.434073310600358,windoff,Aggregated Plant -- operating,elc_wof_013,way/311144495-345,32.89858948347277,125.94490496532451,False
+elc_wof_014,ep_windoff_014__irena,3.608589179485016,windoff,Aggregated Plant -- operating,elc_wof_014,way/311144495-345,33.20488293620839,125.43626879311245,False
+elc_wof_016,ep_windoff_wind_G100000920896,224.0,windoff,Jwasari Offshore wind farm_-- -- construction,elc_wof_016,way/614454744-345,34.6556,127.8101,False
+elc_won_002,ep_windon_wind_002,438.59999999999997,windon,Aggregated Plant -- operating,elc_won_002,KR7-345,37.60660503582873,127.319215702256,False
+elc_won_003,ep_windon_wind_003,60.0,windon,Aggregated Plant -- operating,elc_won_003,way/310065312-345,36.57423990813275,127.01082721039441,False
+elc_won_006,ep_windon_wind_006,80.0,windon,Aggregated Plant -- operating,elc_won_006,KR43-345,37.08357524573591,125.71551702003283,False
+elc_won_007,ep_windon_wind_007,24.0,windon,Aggregated Plant -- operating,elc_won_007,way/1093106969-345,37.830017611723456,126.3150722704319,False
+elc_won_009,ep_windon_009__irena,220.1431524347969,windon,Aggregated Plant - IRENA Gap - 9_Missing Onshore wind energy Capacity -- operating,elc_won_009,way/311144495-345,34.64276147759883,124.72146113127974,False
+elc_won_009,ep_windon_wind_009,50.0,windon,Aggregated Plant -- operating,elc_won_009,way/311144495-345,35.14148546293344,124.76260318195045,False
+elc_won_010,ep_windon_010__irena,205.40075864174537,windon,Aggregated Plant - IRENA Gap - 10_Missing Onshore wind energy Capacity -- operating,elc_won_010,way/311144495-345,36.471792994853296,125.75488929723107,False
+elc_won_010,ep_windon_wind_010,315.0,windon,Aggregated Plant -- operating,elc_won_010,way/311144495-345,36.654223461456674,126.22457848767458,False
+elc_won_011,ep_windon_wind_011,226.20000000000002,windon,Aggregated Plant -- operating,elc_won_011,KR10-345,37.58181949030051,128.65929817427144,False
+elc_won_012,ep_windon_012__irena,175.45608892345777,windon,Aggregated Plant -- operating,elc_won_012,way/576074205-345,35.998290154513725,129.58298365948332,False
+elc_won_012,ep_windon_wind_012,479.0,windon,Aggregated Plant -- operating,elc_won_012,way/576074205-345,36.043984314552965,129.1009038483669,False

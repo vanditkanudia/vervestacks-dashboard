@@ -1,0 +1,688 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_BR119-500,ep_hydro_BR119-500__irena,28.030199263826532,hydro,Aggregated Plant -- operating,e_BR119-500,BR119-500,-4.929118665082155,-49.042092848789615,False
+e_BR125-500,ep_gas_BR125-500__ember,105.07543420051131,gas,Aggregated Plant - EMBER Gap - BR125-500_Missing Gas Capacity -- operating,e_BR125-500,BR125-500,-5.448416194033727,-44.48870712492491,False
+e_BR125-500,ep_gas_combined_cycle_G100000406773,1061.0,gas,Parnaiba power station_I-V -- operating,e_BR125-500,BR125-500,-4.820569,-44.355006,False
+e_BR125-500,ep_gas_combined_cycle_G100000406774,519.0,gas,Parnaiba power station_II -- operating,e_BR125-500,BR125-500,-4.820569,-44.355006,False
+e_BR125-500,ep_gas_gas_turbine_G100000406776,178.0,gas,Parnaiba power station_III -- operating,e_BR125-500,BR125-500,-4.820569,-44.355006,False
+e_BR125-500,ep_gas_internal_combustion_G100000412197,56.4,gas,Parnaiba power station_IV -- operating,e_BR125-500,BR125-500,-4.820569,-44.355006,False
+e_BR125-500,ep_gas_steam_turbine_G100000406777,92.0,gas,Parnaiba power station_VI -- construction,e_BR125-500,BR125-500,-4.820569,-44.355006,False
+e_BR141-500,ep_bioenergy_BR141-500__ember,66.08000774893455,bioenergy,Aggregated Plant - EMBER Gap - BR141-500_Missing Bioenergy Capacity -- operating,e_BR141-500,BR141-500,-5.244355065086467,-47.44822755347374,False
+e_BR141-500,ep_bioenergy_G100000200682,127.0,bioenergy,Suzano Maranhão power station_1 -- operating,e_BR141-500,BR141-500,-5.3358,-47.5658,False
+e_BR141-500,ep_bioenergy_G100000200683,128.0,bioenergy,Suzano Maranhão power station_2 -- operating,e_BR141-500,BR141-500,-5.3358,-47.5658,False
+e_BR148-500,ep_gas_BR148-500__ember,17.802856298135307,gas,Aggregated Plant - EMBER Gap - BR148-500_Missing Gas Capacity -- operating,e_BR148-500,BR148-500,-5.688259817323527,-36.87886677400355,False
+e_BR148-500,ep_gas_gas_turbine_G100000406795,161.5,gas,Jesus Soares Pereira power station_2 -- operating,e_BR148-500,BR148-500,-5.3825,-36.818611,False
+e_BR148-500,ep_gas_gas_turbine_G100000406796,161.5,gas,Jesus Soares Pereira power station_1 -- operating,e_BR148-500,BR148-500,-5.3825,-36.818611,False
+e_BR154-500,ep_oil_internal_combustion_G100000412188,64.0,oil,Potiguar power plant_III -- operating,e_BR154-500,BR154-500,-5.8688097,-35.3046484,False
+e_BR154-500,ep_oil_internal_combustion_G100000412189,51.2,oil,Potiguar power plant_I -- operating,e_BR154-500,BR154-500,-5.8706208,-35.2933123,False
+e_BR184-500,ep_hydro_BR184-500__irena,14.10593824063863,hydro,Aggregated Plant -- operating,e_BR184-500,BR184-500,-6.411747967536852,-47.41114700967612,False
+e_BR184-500,ep_hydro_dam_G100000600245,1087.0,hydro,Estreito hydroelectric plant (Rio Tocantins)_ -- operating,e_BR184-500,BR184-500,-6.5891,-47.4665,False
+e_BR185-500,ep_hydro_dam_G100000600222,237.0,hydro,Boa Esperança hydroelectric plant_ -- operating,e_BR185-500,BR185-500,-6.7535,-43.5627,False
+e_BR20-500,ep_coal_subcritical_G100000100611,52.0,coal,Barcarena Alunorte power station_Unit 2 -- operating,e_BR20-500,BR20-500,-1.569926,-48.754535,False
+e_BR20-500,ep_coal_subcritical_G100000100612,52.0,coal,Barcarena Alunorte power station_Unit 3 -- operating,e_BR20-500,BR20-500,-1.569926,-48.754535,False
+e_BR20-500,ep_gas_BR20-500__ember,121.58854796806963,gas,Aggregated Plant - EMBER Gap - BR20-500_Missing Gas Capacity -- operating,e_BR20-500,BR20-500,-1.3027734636149517,-48.716808836217226,False
+e_BR20-500,ep_gas_combined_cycle_G100000406779,630.0,gas,Novo Tempo Barcarena power station_1 -- construction,e_BR20-500,BR20-500,-1.548658,-48.745631,False
+e_BR20-500,ep_gas_gas_turbine_G100000406767,394.0,gas,Portocém power station_1 -- construction,e_BR20-500,BR20-500,-1.551069,-48.74771,False
+e_BR20-500,ep_gas_gas_turbine_G100000406768,394.0,gas,Portocém power station_3 -- construction,e_BR20-500,BR20-500,-1.551069,-48.74771,False
+e_BR20-500,ep_gas_gas_turbine_G100000406769,394.0,gas,Portocém power station_2 -- construction,e_BR20-500,BR20-500,-1.551069,-48.74771,False
+e_BR20-500,ep_gas_gas_turbine_G100000410833,394.0,gas,Portocém power station_4 -- construction,e_BR20-500,BR20-500,-1.551069,-48.74771,False
+e_BR204-500,ep_oil_internal_combustion_G100000412222,175.0,oil,Campina Grande power plant_1 -- operating,e_BR204-500,BR204-500,-7.293046,-35.908664,False
+e_BR227-500,ep_bioenergy_BR227-500,47.0,bioenergy,Aggregated Plant -- operating,e_BR227-500,BR227-500,-7.678741361755482,-35.02033907809967,False
+e_BR227-500,ep_bioenergy_BR227-500__ember,12.179452408627151,bioenergy,Aggregated Plant -- operating,e_BR227-500,BR227-500,-8.038871253623212,-35.02953972461021,False
+e_BR227-500,ep_oil_internal_combustion_G100000412162,142.3,oil,Termomanaus power station_1 -- operating,e_BR227-500,BR227-500,-7.860773,-35.018767,False
+e_BR227-500,ep_oil_internal_combustion_G100000412194,200.8,oil,Pernambuco III power station_1 -- operating,e_BR227-500,BR227-500,-7.864036,-35.018734,False
+e_BR227-500,ep_oil_internal_combustion_G100000412196,93.9,oil,Pau Ferro I power station_1 -- operating,e_BR227-500,BR227-500,-7.856787,-35.009368,False
+e_BR258-500,ep_gas_BR258-500__ember,29.377468752031326,gas,Aggregated Plant - EMBER Gap - BR258-500_Missing Gas Capacity -- operating,e_BR258-500,BR258-500,-8.209563811272774,-35.067079592329705,False
+e_BR258-500,ep_gas_combined_cycle_G100000406747,533.0,gas,Termopernambuco power station_1 -- operating,e_BR258-500,BR258-500,-8.4046,-34.9692,False
+e_BR258-500,ep_oil_internal_combustion_G100000412218,381.1,oil,Energética Suape II SA power station_1 -- operating,e_BR258-500,BR258-500,-8.351993,-35.022973,False
+e_BR258-500,ep_oil_steam_turbine_G100000412158,50.0,oil,U-50 power station_2 -- operating,e_BR258-500,BR258-500,-8.385944,-35.030002,False
+e_BR258-500,ep_oil_steam_turbine_G100000412159,50.0,oil,U-50 power station_1 -- operating,e_BR258-500,BR258-500,-8.385944,-35.030002,False
+e_BR270-230,ep_hydro_dam_G100000600336,217.0,hydro,Samuel hydroelectric plant_ -- operating,e_BR270-230,BR270-230,-8.751,-63.4542,False
+e_BR273-230,ep_gas_BR273-230__ember,19.23590355433196,gas,Aggregated Plant - EMBER Gap - BR273-230_Missing Gas Capacity -- operating,e_BR273-230,BR273-230,-8.92400775754106,-63.68763567360698,False
+e_BR273-230,ep_gas_combined_cycle_G100000406750,349.0,gas,Termo Norte power station_II -- operating,e_BR273-230,BR273-230,-8.7948,-63.8153,False
+e_BR273-230,ep_oil_internal_combustion_G100000412184,64.0,oil,Termo Norte power station_I -- operating,e_BR273-230,BR273-230,-8.7948,-63.8153,False
+e_BR274-500,ep_hydro_BR274-500__irena,46.30173656172827,hydro,Aggregated Plant -- operating,e_BR274-500,BR274-500,-8.931700372451923,-63.89144184633813,False
+e_BR274-500,ep_hydro_ror_G100000604782,3568.0,hydro,Santo Antônio hydroelectric plant (Rondônia)_ -- operating,e_BR274-500,BR274-500,-8.7967,-63.9522,False
+e_BR282-500,ep_hydro_BR282-500__irena,19.205877273362624,hydro,Aggregated Plant -- operating,e_BR282-500,BR282-500,-9.159283511574413,-38.48497485342368,False
+e_BR282-500,ep_hydro_dam_G100000600291,1480.0,hydro,Luiz Gonzaga hydroelectric plant_ -- operating,e_BR282-500,BR282-500,-9.1435,-38.3124,False
+e_BR283-500,ep_hydro_BR283-500__irena,30.937034743038176,hydro,Aggregated Plant -- operating,e_BR283-500,BR283-500,-9.125775097329106,-57.13881813596402,False
+e_BR283-500,ep_hydro_ror_G100000600343,700.0,hydro,São Manoel hydroelectric plant_ -- operating,e_BR283-500,BR283-500,-9.1903,-57.0522,False
+e_BR285-500,ep_hydro_BR285-500__irena,48.663540388587734,hydro,Aggregated Plant -- operating,e_BR285-500,BR285-500,-9.260443184598492,-64.67280976600652,False
+e_BR285-500,ep_hydro_ror_G100000600287,3750.0,hydro,Jirau hydroelectric plant_ -- operating,e_BR285-500,BR285-500,-9.2675,-64.6461,False
+e_BR290-500,ep_hydro_ror_BR290-500,45.0,hydro,Aggregated Plant -- operating,e_BR290-500,BR290-500,-9.174758405066717,-56.82439732800622,False
+e_BR292-500,ep_bioenergy_BR292-500,72.00000000000001,bioenergy,Aggregated Plant -- operating,e_BR292-500,BR292-500,-9.22424700290789,-35.86483854810195,False
+e_BR292-500,ep_bioenergy_BR292-500__ember,48.458672349218666,bioenergy,Aggregated Plant -- operating,e_BR292-500,BR292-500,-9.583146838244243,-35.83626009444539,False
+e_BR292-500,ep_bioenergy_G100000200498,53.0,bioenergy,BEN Bioenergia power station_1 -- operating,e_BR292-500,BR292-500,-9.9164,-36.334,False
+e_BR292-500,ep_bioenergy_G100000200503,62.0,bioenergy,Bioflex Caeté power station_1 -- operating,e_BR292-500,BR292-500,-9.777,-36.0854,False
+e_BR293-500,ep_hydro_BR293-500__irena,55.528343819404505,hydro,Aggregated Plant -- operating,e_BR293-500,BR293-500,-9.365169416649099,-38.0749752184641,False
+e_BR293-500,ep_hydro_dam_G100000600212,400.0,hydro,Apolônio Sales hydroelectric plant_ -- operating,e_BR293-500,BR293-500,-9.3581,-38.2085,False
+e_BR293-500,ep_hydro_ror_G100000600310,180.0,hydro,Paulo Afonso I hydroelectric plant_ -- operating,e_BR293-500,BR293-500,-9.3981,-38.2029,False
+e_BR293-500,ep_hydro_ror_G100000600311,443.0,hydro,Paulo Afonso II hydroelectric plant_ -- operating,e_BR293-500,BR293-500,-9.3969,-38.2027,False
+e_BR293-500,ep_hydro_ror_G100000600312,794.0,hydro,Paulo Afonso III hydroelectric plant_ -- operating,e_BR293-500,BR293-500,-9.396,-38.2019,False
+e_BR293-500,ep_hydro_ror_G100000600313,2462.0,hydro,Paulo Afonso IV hydroelectric plant_ -- operating,e_BR293-500,BR293-500,-9.4156,-38.2077,False
+e_BR294-500,ep_hydro_BR294-500__irena,13.625791308804565,hydro,Aggregated Plant -- operating,e_BR294-500,BR294-500,-9.55112552651674,-40.89523672933258,False
+e_BR294-500,ep_hydro_dam_G100000600351,1050.0,hydro,Sobradinho hydroelectric plant_ -- operating,e_BR294-500,BR294-500,-9.4302,-40.8272,False
+e_BR296-500,ep_oil_internal_combustion_G100000412193,136.0,oil,Petrolina Energy power station_1 -- operating,e_BR296-500,BR296-500,-9.371823,-40.582627,False
+e_BR300-500,ep_bioenergy_BR300-500__ember,20.73098282319515,bioenergy,Aggregated Plant -- operating,e_BR300-500,BR300-500,-9.281462212665607,-48.44204199095572,False
+e_BR300-500,ep_bioenergy_G100000200632,80.0,bioenergy,Pedro Afonso power station_1 -- operating,e_BR300-500,BR300-500,-9.198,-48.1433,False
+e_BR302-500,ep_hydro_BR302-500__irena,41.033097255657175,hydro,Aggregated Plant -- operating,e_BR302-500,BR302-500,-9.671872833118217,-37.79322632931449,False
+e_BR302-500,ep_hydro_ror_G100000600363,3162.0,hydro,Xingó hydroelectric plant_ -- operating,e_BR302-500,BR302-500,-9.6196,-37.7926,False
+e_BR310-500,ep_hydro_BR310-500__irena,11.718180525571924,hydro,Aggregated Plant -- operating,e_BR310-500,BR310-500,-9.89368906292794,-48.395752389899314,False
+e_BR310-500,ep_hydro_ror_G100000600290,903.0,hydro,Luís Eduardo Magalhães hydroelectric plant_ -- operating,e_BR310-500,BR310-500,-9.7574,-48.372,False
+e_BR319-230,ep_oil_internal_combustion_G100000412220,52.8,oil,Cruzeiro do Sul D power station_1 -- operating,e_BR319-230,BR319-230,-7.598614,-72.67152,False
+e_BR340-500,ep_gas_BR340-500__ember,262.4681166926326,gas,Aggregated Plant - EMBER Gap - BR340-500_Missing Gas Capacity -- operating,e_BR340-500,BR340-500,-10.545148957180638,-36.92562377896185,False
+e_BR340-500,ep_gas_combined_cycle_G100000406772,1593.0,gas,Porto de Sergipe power station_I -- operating,e_BR340-500,BR340-500,-10.815646,-36.937062,False
+e_BR347-500,ep_hydro_ror_G100000600235,300.0,hydro,Colíder hydroelectric plant_ -- operating,e_BR347-500,BR347-500,-10.9848,-55.766,False
+e_BR353-500,ep_hydro_dam_G100000600350,402.0,hydro,Sinop hydroelectric plant_ -- operating,e_BR353-500,BR353-500,-11.2667,-55.4501,False
+e_BR37-500,ep_coal_subcritical_G100000107066,360.0,coal,Itaqui power station_-- -- operating,e_BR37-500,BR37-500,-2.587312,-44.338353,False
+e_BR37-500,ep_gas_BR37-500__ember,90.5024459490346,gas,Aggregated Plant - EMBER Gap - BR37-500_Missing Gas Capacity -- operating,e_BR37-500,BR37-500,-2.715982910437158,-44.444029052104554,False
+e_BR371-500,ep_bioenergy_BR371-500,72.00000000000001,bioenergy,Aggregated Plant -- operating,e_BR371-500,BR371-500,-11.804143123448059,-55.53904438309655,False
+e_BR371-500,ep_bioenergy_BR371-500__ember,18.65788454087564,bioenergy,Aggregated Plant -- operating,e_BR371-500,BR371-500,-12.16224953984548,-55.54206440400046,False
+e_BR373-500,ep_bioenergy_BR373-500,30.0,bioenergy,Aggregated Plant -- operating,e_BR373-500,BR373-500,-12.165139526203317,-45.18121234380052,False
+e_BR384-500,ep_hydro_BR384-500__irena,10.796817494214665,hydro,Aggregated Plant -- operating,e_BR384-500,BR384-500,-12.407640998565117,-48.38436535173252,False
+e_BR384-500,ep_hydro_dam_G100000600315,499.0,hydro,Peixe Angical hydroelectric plant_ -- operating,e_BR384-500,BR384-500,-12.2355,-48.3864,False
+e_BR384-500,ep_hydro_ror_G100000600345,243.0,hydro,São Salvador hydroelectric plant_ -- operating,e_BR384-500,BR384-500,-12.8084,-48.2382,False
+e_BR400-500,ep_bioenergy_BR400-500__ember,28.245964096603394,bioenergy,Aggregated Plant -- operating,e_BR400-500,BR400-500,-12.172292952845435,-38.29420055131285,False
+e_BR400-500,ep_bioenergy_G100000200488,109.0,bioenergy,Bahia Pulp power station_1 -- operating,e_BR400-500,BR400-500,-12.6431,-38.3372,False
+e_BR400-500,ep_gas_BR400-500__ember,20.55871640620579,gas,Aggregated Plant - EMBER Gap - BR400-500_Missing Gas Capacity -- operating,e_BR400-500,BR400-500,-12.465369667985161,-37.922052935033314,False
+e_BR400-500,ep_gas_combined_cycle_G100000406762,131.0,gas,Termocamaçari power station_1 -- operating,e_BR400-500,BR400-500,-12.66711,-38.320997,False
+e_BR400-500,ep_gas_combined_cycle_G100000406821,186.0,gas,Celso Furtado power station_1 -- operating,e_BR400-500,BR400-500,-12.703048,-38.572766,False
+e_BR400-500,ep_gas_internal_combustion_G100000412186,56.0,gas,Prosperidade III power station_1 -- operating,e_BR400-500,BR400-500,-12.499615,-38.207336,False
+e_BR400-500,ep_oil_internal_combustion_G100000412195,160.5,oil,Pecém Energia II power station_1 -- operating,e_BR400-500,BR400-500,-12.604368,-38.297994,False
+e_BR400-500,ep_oil_internal_combustion_G100000412209,150.0,oil,Guarani power station_1 -- operating,e_BR400-500,BR400-500,-12.690214,-38.301937,False
+e_BR400-500,ep_oil_internal_combustion_G100000412213,150.0,oil,Global II power station_1 -- operating,e_BR400-500,BR400-500,-12.73021,-38.481217,False
+e_BR400-500,ep_oil_internal_combustion_G100000412214,150.0,oil,Global I power station_1 -- operating,e_BR400-500,BR400-500,-12.729994,-38.482121,False
+e_BR400-500,ep_oil_internal_combustion_G100000412223,160.5,oil,Camaçari Muricy II power plant_1 -- operating,e_BR400-500,BR400-500,-12.6561,-38.2999,False
+e_BR400-500,ep_oil_internal_combustion_G100000412225,148.0,oil,Apoena power station_1 -- operating,e_BR400-500,BR400-500,-12.6620376,-38.2770718,False
+e_BR412-500,ep_hydro_dam_G100000600314,160.0,hydro,Pedra Do Cavalo hydroelectric plant_ -- operating,e_BR412-500,BR412-500,-12.5835,-38.998,False
+e_BR433-500,ep_hydro_ror_G100000600229,450.0,hydro,Cana Brava hydroelectric plant_ -- operating,e_BR433-500,BR433-500,-13.4024,-48.1433,False
+e_BR435-500,ep_hydro_BR435-500__irena,16.545603732119826,hydro,Aggregated Plant -- operating,e_BR435-500,BR435-500,-13.287533404683234,-48.338786490548394,False
+e_BR435-500,ep_hydro_dam_G100000600347,1275.0,hydro,Serra Da Mesa hydroelectric plant_ -- operating,e_BR435-500,BR435-500,-13.8339,-48.3049,False
+e_BR446-500,ep_bioenergy_BR446-500__ember,49.495221490378434,bioenergy,Aggregated Plant -- operating,e_BR446-500,BR446-500,-13.622496284515117,-54.35166967450825,False
+e_BR446-500,ep_bioenergy_G100000201499,191.0,bioenergy,FS Primavera power station_1 -- operating,e_BR446-500,BR446-500,-15.3442,-54.2089,False
+e_BR459-500,ep_hydro_ror_G100000600276,462.0,hydro,Itapebi hydroelectric plant_ -- operating,e_BR459-500,BR459-500,-15.9656,-39.5926,False
+e_BR478-500,ep_bioenergy_BR478-500__ember,14.511687976236606,bioenergy,Aggregated Plant -- operating,e_BR478-500,BR478-500,-15.379484055603147,-43.391735343372716,False
+e_BR478-500,ep_bioenergy_G100000200673,56.0,bioenergy,São Judas Tadeu power station (Minas Gerais)_1 -- operating,e_BR478-500,BR478-500,-15.1997,-43.8848,False
+e_BR482-500,ep_bioenergy_BR482-500__ember,34.46525894356194,bioenergy,Aggregated Plant -- operating,e_BR482-500,BR482-500,-15.904099519045944,-48.15303895239449,False
+e_BR482-500,ep_bioenergy_G100000200540,68.0,bioenergy,Codora power station_1 -- operating,e_BR482-500,BR482-500,-15.0828,-49.2994,False
+e_BR482-500,ep_bioenergy_G100000200566,65.0,bioenergy,Esplanada power station_1 -- operating,e_BR482-500,BR482-500,-15.217,-48.9887,False
+e_BR485-500,ep_hydro_dam_BR485-500,105.0,hydro,Aggregated Plant -- operating,e_BR485-500,BR485-500,-16.500236073487894,-47.92377673618981,False
+e_BR487-500,ep_bioenergy_BR487-500,150.00000000000003,bioenergy,Aggregated Plant -- construction,e_BR487-500,BR487-500,-15.845119107535723,-52.595628315785746,False
+e_BR487-500,ep_bioenergy_BR487-500__ember,160.66511687976245,bioenergy,Aggregated Plant - EMBER Gap - BR487-500_Missing Bioenergy Capacity -- operating,e_BR487-500,BR487-500,-16.06058420686628,-52.1618270836113,False
+e_BR487-500,ep_bioenergy_G100000200696,73.0,bioenergy,Unidade de Bioenergia Alto Taquari power station_1 -- operating,e_BR487-500,BR487-500,-17.8347,-53.282,False
+e_BR487-500,ep_bioenergy_G100000200699,73.0,bioenergy,Unidade de Bioenergia Morro Vermelho power station_1 -- operating,e_BR487-500,BR487-500,-17.7246,-53.0219,False
+e_BR487-500,ep_hydro_BR487-500__irena,11.88688079891903,hydro,Aggregated Plant -- operating,e_BR487-500,BR487-500,-16.492063190293386,-52.007365421272816,False
+e_BR491-500,ep_hydro_dam_BR491-500,129.0,hydro,Aggregated Plant -- operating,e_BR491-500,BR491-500,-16.74560000962364,-48.226129606369106,False
+e_BR493-500,ep_hydro_dam_BR493-500,96.0,hydro,Aggregated Plant -- operating,e_BR493-500,BR493-500,-16.583848701921887,-48.01145658105289,False
+e_BR499-500,ep_bioenergy_BR499-500__ember,30.31906237892291,bioenergy,Aggregated Plant -- operating,e_BR499-500,BR499-500,-16.829247574010363,-41.48698265998557,False
+e_BR499-500,ep_bioenergy_G100000200712,117.0,bioenergy,Veracel power station_1 -- operating,e_BR499-500,BR499-500,-16.374,-39.5705,False
+e_BR499-500,ep_hydro_dam_G100000600272,399.0,hydro,Irapé hydroelectric plant_ -- operating,e_BR499-500,BR499-500,-16.7381,-42.5747,False
+e_BR500-500,ep_bioenergy_BR500-500,30.0,bioenergy,Aggregated Plant -- operating,e_BR500-500,BR500-500,-16.801118512145443,-47.087447477389176,False
+e_BR500-500,ep_bioenergy_BR500-500__ember,22.026669249644847,bioenergy,Aggregated Plant -- operating,e_BR500-500,BR500-500,-17.223347410044497,-46.88891851302931,False
+e_BR500-500,ep_bioenergy_G100000200501,55.0,bioenergy,Bioenergética Vale do Paracatu - BEVAP power station_1 -- operating,e_BR500-500,BR500-500,-17.0622,-46.1836,False
+e_BR500-500,ep_hydro_ror_BR500-500,53.0,hydro,Aggregated Plant -- operating,e_BR500-500,BR500-500,-17.235836959947786,-47.32532347145387,False
+e_BR506-500,ep_hydro_dam_G100000600358,396.0,hydro,Três Marias hydroelectric plant_ -- operating,e_BR506-500,BR506-500,-18.215,-45.2592,False
+e_BR515-500,ep_bioenergy_BR515-500,424.00000000000006,bioenergy,Aggregated Plant -- operating,e_BR515-500,BR515-500,-17.544589988527118,-50.83056763118486,False
+e_BR515-500,ep_bioenergy_BR515-500__ember,122.83107322743128,bioenergy,Aggregated Plant - EMBER Gap - BR515-500_Missing Bioenergy Capacity -- operating,e_BR515-500,BR515-500,-17.89665432242272,-50.90632218421249,False
+e_BR515-500,ep_bioenergy_G100000201497,50.0,bioenergy,Entre Rios power station_1 -- operating,e_BR515-500,BR515-500,-17.9694,-50.3014,False
+e_BR52-500,ep_hydro_BR52-500__irena,145.77001311600156,hydro,Aggregated Plant - IRENA Gap - BR52-500_Missing Hydro Capacity -- operating,e_BR52-500,BR52-500,-3.064624559805456,-51.9146624775664,False
+e_BR52-500,ep_hydro_dam_G100000600220,11233.0,hydro,Belo Monte hydroelectric plant_ -- operating,e_BR52-500,BR52-500,-3.1264,-51.775,False
+e_BR525-500,ep_hydro_BR525-500__irena,24.072231312221398,hydro,Aggregated Plant -- operating,e_BR525-500,BR525-500,-18.33388839037898,-48.14568083516307,False
+e_BR525-500,ep_hydro_dam_G100000600209,240.0,hydro,Amador Aguiar I hydroelectric plant_ -- operating,e_BR525-500,BR525-500,-18.7891,-48.1486,False
+e_BR525-500,ep_hydro_dam_G100000600210,210.0,hydro,Amador Aguiar II hydroelectric plant_ -- operating,e_BR525-500,BR525-500,-18.6592,-48.4368,False
+e_BR525-500,ep_hydro_dam_G100000600242,1192.0,hydro,Emborcação hydroelectric plant_ -- operating,e_BR525-500,BR525-500,-18.4524,-47.9848,False
+e_BR525-500,ep_hydro_dam_G100000600348,213.0,hydro,Serra Do Facão hydroelectric plant_ -- operating,e_BR525-500,BR525-500,-18.046,-47.6749,False
+e_BR528-500,ep_hydro_dam_BR528-500,84.0,hydro,Aggregated Plant -- operating,e_BR528-500,BR528-500,-18.49186600310982,-44.073182844091434,False
+e_BR535-500,ep_hydro_ror_G100000600213,140.0,hydro,Baguari hydroelectric plant_ -- operating,e_BR535-500,BR535-500,-19.0216,-42.1249,False
+e_BR541-500,ep_bioenergy_BR541-500,65.0,bioenergy,Aggregated Plant -- operating,e_BR541-500,BR541-500,-18.73950403410458,-50.68551753427809,False
+e_BR541-500,ep_bioenergy_BR541-500__ember,42.757652072839996,bioenergy,Aggregated Plant -- operating,e_BR541-500,BR541-500,-19.206249607696083,-50.48545489540597,False
+e_BR541-500,ep_bioenergy_G100000200518,50.0,bioenergy,Caçú I power station_1 -- operating,e_BR541-500,BR541-500,-18.6013,-51.1913,False
+e_BR541-500,ep_bioenergy_G100000200519,50.0,bioenergy,Caçú I power station_2 -- operating,e_BR541-500,BR541-500,-18.6013,-51.1913,False
+e_BR541-500,ep_hydro_ror_BR541-500,432.0,hydro,Aggregated Plant -- operating,e_BR541-500,BR541-500,-19.187421659210536,-50.873932699952015,False
+e_BR543-500,ep_bioenergy_BR543-500,164.0,bioenergy,Aggregated Plant -- operating,e_BR543-500,BR543-500,-18.75283325464923,-50.448913145999086,False
+e_BR543-500,ep_bioenergy_BR543-500__ember,42.498514787550064,bioenergy,Aggregated Plant -- operating,e_BR543-500,BR543-500,-19.104112171934393,-50.243020500551985,False
+e_BR543-500,ep_hydro_BR543-500__irena,22.190574417196004,hydro,Aggregated Plant -- operating,e_BR543-500,BR543-500,-19.091287663126604,-50.75957147140228,False
+e_BR543-500,ep_hydro_dam_G100000600346,1710.0,hydro,São Simão hydroelectric plant_ -- operating,e_BR543-500,BR543-500,-19.0183,-50.4986,False
+e_BR544-500,ep_bioenergy_BR544-500,41.0,bioenergy,Aggregated Plant -- operating,e_BR544-500,BR544-500,-18.84368002096598,-50.46689595015348,False
+e_BR544-500,ep_bioenergy_BR544-500__ember,24.877179387834182,bioenergy,Aggregated Plant -- operating,e_BR544-500,BR544-500,-19.201649678694892,-50.507181956700066,False
+e_BR544-500,ep_bioenergy_G100000200709,55.0,bioenergy,Vale do São Simão power station_1 -- operating,e_BR544-500,BR544-500,-19.0657,-50.3626,False
+e_BR550-500,ep_bioenergy_BR550-500,84.99999999999999,bioenergy,Aggregated Plant -- operating,e_BR550-500,BR550-500,-18.776480057972986,-47.67712190966373,False
+e_BR550-500,ep_bioenergy_BR550-500__ember,121.79452408627152,bioenergy,Aggregated Plant - EMBER Gap - BR550-500_Missing Bioenergy Capacity -- operating,e_BR550-500,BR550-500,-19.109106940541423,-47.3402263505146,False
+e_BR550-500,ep_bioenergy_G100000200464,50.0,bioenergy,Uberaba 2 power station_1 -- construction,e_BR550-500,BR550-500,-19.3914,-47.8169,False
+e_BR550-500,ep_bioenergy_G100000200608,203.0,bioenergy,LD Celulose power station_1 -- operating,e_BR550-500,BR550-500,-18.837,-47.9182,False
+e_BR550-500,ep_bioenergy_G100000200661,82.0,bioenergy,Santa Juliana power station_1 -- operating,e_BR550-500,BR550-500,-19.3023,-47.464,False
+e_BR550-500,ep_hydro_BR550-500__irena,11.912834687126276,hydro,Aggregated Plant -- operating,e_BR550-500,BR550-500,-19.49078872350593,-47.76347909296473,False
+e_BR550-500,ep_hydro_dam_G100000600299,408.0,hydro,Miranda hydroelectric plant_ -- operating,e_BR550-500,BR550-500,-18.9104,-48.0409,False
+e_BR550-500,ep_hydro_dam_G100000600304,510.0,hydro,Nova Ponte hydroelectric plant_ -- operating,e_BR550-500,BR550-500,-19.1296,-47.697,False
+e_BR556-500,ep_bioenergy_BR556-500,46.0,bioenergy,Aggregated Plant -- operating,e_BR556-500,BR556-500,-18.890528169926554,-46.07176958896444,False
+e_BR556-500,ep_bioenergy_BR556-500__ember,11.920315123337213,bioenergy,Aggregated Plant -- operating,e_BR556-500,BR556-500,-19.20711981195485,-45.58316378686877,False
+e_BR558-500,ep_bioenergy_BR558-500,40.0,bioenergy,Aggregated Plant -- operating,e_BR558-500,BR558-500,-19.06107908336985,-42.60811210702769,False
+e_BR558-500,ep_bioenergy_BR558-500__ember,25.913728528993943,bioenergy,Aggregated Plant -- operating,e_BR558-500,BR558-500,-19.371446327031872,-42.19086380015702,False
+e_BR558-500,ep_bioenergy_G100000201494,60.0,bioenergy,Cenibra power station_2 -- operating,e_BR558-500,BR558-500,-19.216,-42.4745,False
+e_BR558-500,ep_hydro_dam_BR558-500,112.0,hydro,Aggregated Plant -- operating,e_BR558-500,BR558-500,-19.76771227550035,-42.62890121985745,False
+e_BR558-500,ep_hydro_ror_BR558-500,180.0,hydro,Aggregated Plant -- operating,e_BR558-500,BR558-500,-19.37872346231955,-42.9067811877634,False
+e_BR571-500,ep_hydro_ror_G100000600265,140.0,hydro,Guilman Amorim hydroelectric plant_ -- operating,e_BR571-500,BR571-500,-19.7083,-42.9601,False
+e_BR579-500,ep_bioenergy_BR579-500,109.0,bioenergy,Aggregated Plant -- operating,e_BR579-500,BR579-500,-19.501512407662577,-40.385566624907575,False
+e_BR579-500,ep_bioenergy_BR579-500__ember,114.27954281286327,bioenergy,Aggregated Plant - EMBER Gap - BR579-500_Missing Bioenergy Capacity -- operating,e_BR579-500,BR579-500,-19.955376855243777,-40.19481925016193,False
+e_BR579-500,ep_bioenergy_G100000200487,210.0,bioenergy,Aracruz power station_1 -- operating,e_BR579-500,BR579-500,-19.843,-40.0747,False
+e_BR579-500,ep_bioenergy_G100000200686,61.0,bioenergy,Suzano Mucuri power station_TG4 -- operating,e_BR579-500,BR579-500,-18.0425,-39.9197,False
+e_BR579-500,ep_bioenergy_G100000200687,61.0,bioenergy,Suzano Mucuri power station_TG5 -- operating,e_BR579-500,BR579-500,-18.0425,-39.9197,False
+e_BR579-500,ep_gas_BR579-500__ember,17.41703588300544,gas,Aggregated Plant - EMBER Gap - BR579-500_Missing Gas Capacity -- operating,e_BR579-500,BR579-500,-19.870699331856432,-40.64454152304886,False
+e_BR579-500,ep_gas_internal_combustion_G100000412187,75.2,gas,Povoação power station_1 -- operating,e_BR579-500,BR579-500,-19.536223,-39.799921,False
+e_BR579-500,ep_gas_internal_combustion_G100000412202,240.8,gas,Luiz Oscar Rodrigues de Melo power station_1 -- operating,e_BR579-500,BR579-500,-19.533784,-39.802281,False
+e_BR579-500,ep_hydro_ror_G100000600297,198.0,hydro,Mascarenhas hydroelectric plant_ -- operating,e_BR579-500,BR579-500,-19.5005,-40.9185,False
+e_BR580-500,ep_bioenergy_BR580-500,114.99999999999999,bioenergy,Aggregated Plant -- operating,e_BR580-500,BR580-500,-19.618467906555765,-45.35575440135461,False
+e_BR580-500,ep_bioenergy_BR580-500__ember,43.27592664341988,bioenergy,Aggregated Plant -- operating,e_BR580-500,BR580-500,-19.969779205338202,-45.276139965065006,False
+e_BR580-500,ep_bioenergy_G100000200479,52.0,bioenergy,Agropéu power station_1 -- operating,e_BR580-500,BR580-500,-19.2517,-44.985,False
+e_BR583-500,ep_gas_BR583-500__ember,12.95254250793126,gas,Aggregated Plant - EMBER Gap - BR583-500_Missing Gas Capacity -- operating,e_BR583-500,BR583-500,-19.984987599538865,-44.2600474725102,False
+e_BR583-500,ep_gas_combined_cycle_G100000406830,235.0,gas,Aureliano Chaves power station_1 -- operating,e_BR583-500,BR583-500,-19.989701,-44.098379,False
+e_BR583-500,ep_m_oil_steam_turbine_G100000412208,120.0,oil,Igarapé thermoelectric power station_1 -- mothballed,e_BR583-500,BR583-500,-19.970096,-44.28292,False
+e_BR587-500,ep_hydro_ror_G100000600208,330.0,hydro,Aimorés hydroelectric plant_ -- operating,e_BR587-500,BR587-500,-19.4571,-41.098,False
+e_BR592-500,ep_bioenergy_BR592-500__ember,59.860712901976,bioenergy,Aggregated Plant - EMBER Gap - BR592-500_Missing Bioenergy Capacity -- operating,e_BR592-500,BR592-500,-19.66179798920216,-47.370951492436134,False
+e_BR592-500,ep_bioenergy_G100000200514,74.0,bioenergy,Buriti power station_1 -- operating,e_BR592-500,BR592-500,-20.2187,-47.6539,False
+e_BR592-500,ep_bioenergy_G100000200555,102.0,bioenergy,Delta power station_1 -- operating,e_BR592-500,BR592-500,-19.9448,-47.8128,False
+e_BR592-500,ep_bioenergy_G100000200721,55.0,bioenergy,Volta Grande power station_1 -- operating,e_BR592-500,BR592-500,-19.9799,-48.2645,False
+e_BR592-500,ep_hydro_BR592-500__irena,13.158621321074122,hydro,Aggregated Plant -- operating,e_BR592-500,BR592-500,-20.014928177573584,-47.077810063880705,False
+e_BR592-500,ep_hydro_ror_G100000600268,210.0,hydro,Igarapava hydroelectric plant_ -- operating,e_BR592-500,BR592-500,-19.9891,-47.756,False
+e_BR592-500,ep_hydro_ror_G100000600283,424.0,hydro,Jaguara hydroelectric plant_ -- operating,e_BR592-500,BR592-500,-20.0227,-47.4339,False
+e_BR592-500,ep_hydro_ror_G100000600362,380.0,hydro,Volta Grande hydroelectric plant_ -- operating,e_BR592-500,BR592-500,-20.0333,-48.2218,False
+e_BR596-500,ep_hydro_ror_G100000600254,180.0,hydro,Funil Grande hydroelectric plant_ -- operating,e_BR596-500,BR596-500,-21.1429,-45.0361,False
+e_BR602-500,ep_hydro_BR602-500__irena,35.58278073213535,hydro,Aggregated Plant -- operating,e_BR602-500,BR602-500,-20.18235443230774,-47.305568492061255,False
+e_BR602-500,ep_hydro_dam_G100000600256,1216.0,hydro,Furnas hydroelectric plant_ -- operating,e_BR602-500,BR602-500,-20.6692,-46.3182,False
+e_BR602-500,ep_hydro_dam_G100000600295,476.0,hydro,Marechal Mascarenhas De Moraes hydroelectric plant_ -- operating,e_BR602-500,BR602-500,-20.2863,-47.0644,False
+e_BR602-500,ep_hydro_ror_G100000600244,1050.0,hydro,Estreito hydroelectric plant (Rio Grande)_ -- operating,e_BR602-500,BR602-500,-20.1509,-47.2798,False
+e_BR606-500,ep_bioenergy_BR606-500,72.00000000000001,bioenergy,Aggregated Plant -- operating,e_BR606-500,BR606-500,-20.03588282911335,-49.15097409963777,False
+e_BR606-500,ep_bioenergy_BR606-500__ember,49.23608420508849,bioenergy,Aggregated Plant -- operating,e_BR606-500,BR606-500,-20.41267486072222,-48.958279456377454,False
+e_BR606-500,ep_bioenergy_G100000200584,65.0,bioenergy,Guarani Cruz Alta power station_1 -- operating,e_BR606-500,BR606-500,-20.6884,-49.1112,False
+e_BR606-500,ep_bioenergy_G100000200713,53.0,bioenergy,Vertente power station_1 -- operating,e_BR606-500,BR606-500,-20.4015,-48.9911,False
+e_BR606-500,ep_hydro_BR606-500__irena,22.839421622377177,hydro,Aggregated Plant -- operating,e_BR606-500,BR606-500,-20.42788312248962,-49.44287143181131,False
+e_BR606-500,ep_hydro_dam_G100000600296,1440.0,hydro,Marimbondo hydroelectric plant_ -- operating,e_BR606-500,BR606-500,-20.303,-49.1977,False
+e_BR606-500,ep_hydro_ror_G100000600319,320.0,hydro,Porto Colômbia hydroelectric plant_ -- operating,e_BR606-500,BR606-500,-20.1242,-48.5719,False
+e_BR609-440,ep_bioenergy_BR609-440,64.0,bioenergy,Aggregated Plant -- operating,e_BR609-440,BR609-440,-20.139826449177622,-51.4321920618244,False
+e_BR609-440,ep_bioenergy_BR609-440__ember,16.58478625855612,bioenergy,Aggregated Plant -- operating,e_BR609-440,BR609-440,-20.49370202078389,-51.371561899623174,False
+e_BR61-500,ep_oil_internal_combustion_G100000412215,165.3,oil,Geramar II (Antiga Tocantinópolis) power station_1 -- operating,e_BR61-500,BR61-500,-3.566189,-44.558718,False
+e_BR61-500,ep_oil_internal_combustion_G100000412216,165.3,oil,Geramar I (Antiga Tocantinópolis) power station_1 -- operating,e_BR61-500,BR61-500,-3.566189,-44.558718,False
+e_BR610-500,ep_gas_BR610-500__ember,12.065155553132564,gas,Aggregated Plant - EMBER Gap - BR610-500_Missing Gas Capacity -- operating,e_BR610-500,BR610-500,-20.05822133899472,-43.77905917244542,False
+e_BR610-500,ep_gas_internal_combustion_G100000412191,115.9,gas,Porsud I power station_1 -- operating,e_BR610-500,BR610-500,-20.940069,-43.802578,False
+e_BR610-500,ep_gas_steam_turbine_G100001000301,103.0,gas,Açominas power station_1 -- operating,e_BR610-500,BR610-500,-20.544734,-43.755202,False
+e_BR613-500,ep_gas_BR613-500__ember,23.31457651427627,gas,Aggregated Plant - EMBER Gap - BR613-500_Missing Gas Capacity -- operating,e_BR613-500,BR613-500,-20.29093721793255,-40.64281617366549,False
+e_BR613-500,ep_gas_steam_turbine_G100001000292,75.0,gas,CST power station_1 -- operating,e_BR613-500,BR613-500,-20.252287,-40.241924,False
+e_BR613-500,ep_gas_steam_turbine_G100001000293,75.0,gas,CST power station_2 -- operating,e_BR613-500,BR613-500,-20.252287,-40.241924,False
+e_BR613-500,ep_gas_steam_turbine_G100001000294,75.0,gas,CST power station_3 -- operating,e_BR613-500,BR613-500,-20.252287,-40.241924,False
+e_BR613-500,ep_gas_steam_turbine_G100001000297,99.0,gas,Sol Coqueria Tubarão power station_1 -- operating,e_BR613-500,BR613-500,-20.252743,-40.230285,False
+e_BR613-500,ep_gas_steam_turbine_G100001000298,99.0,gas,Sol Coqueria Tubarão power station_2 -- operating,e_BR613-500,BR613-500,-20.252743,-40.230285,False
+e_BR613-500,ep_oil_internal_combustion_G100000412157,174.0,oil,Viana power station_1 -- operating,e_BR613-500,BR613-500,-20.379949,-40.437152,False
+e_BR614-440,ep_bioenergy_BR614-440,48.0,bioenergy,Aggregated Plant -- operating,e_BR614-440,BR614-440,-20.229635585957173,-51.375122418400835,False
+e_BR614-440,ep_bioenergy_BR614-440__ember,12.438589693917091,bioenergy,Aggregated Plant -- operating,e_BR614-440,BR614-440,-20.58238279012008,-51.31346852280077,False
+e_BR621-440,ep_bioenergy_BR621-440__ember,58.5650264755263,bioenergy,Aggregated Plant - EMBER Gap - BR621-440_Missing Bioenergy Capacity -- operating,e_BR621-440,BR621-440,-20.515507291511216,-51.27728083751112,False
+e_BR621-440,ep_bioenergy_G100000200557,113.0,bioenergy,Eldorado Brasil power station_1 -- operating,e_BR621-440,BR621-440,-20.5988,-51.6096,False
+e_BR621-440,ep_bioenergy_G100000200558,113.0,bioenergy,Eldorado Brasil power station_2 -- operating,e_BR621-440,BR621-440,-20.5988,-51.6096,False
+e_BR624-440,ep_bioenergy_BR624-440,185.0,bioenergy,Aggregated Plant -- operating,e_BR624-440,BR624-440,-20.40294322033697,-51.32286412862557,False
+e_BR624-440,ep_bioenergy_BR624-440__ember,47.94039777863879,bioenergy,Aggregated Plant -- operating,e_BR624-440,BR624-440,-20.804084085347345,-51.06545649224842,False
+e_BR624-440,ep_hydro_BR624-440__irena,10.485370835727704,hydro,Aggregated Plant -- operating,e_BR624-440,BR624-440,-20.865154379037747,-51.49087123652284,False
+e_BR624-440,ep_hydro_ror_G100000600357,808.0,hydro,Três Irmãos hydroelectric plant_ -- operating,e_BR624-440,BR624-440,-20.6687,-51.2998,False
+e_BR625-440,ep_bioenergy_BR625-440,30.0,bioenergy,Aggregated Plant -- operating,e_BR625-440,BR625-440,-20.618774603210866,-51.56486827630826,False
+e_BR625-440,ep_bioenergy_BR625-440__ember,20.73098282319515,bioenergy,Aggregated Plant -- operating,e_BR625-440,BR625-440,-20.969741545038563,-51.644453045860715,False
+e_BR625-440,ep_bioenergy_G100000200716,50.0,bioenergy,Viralcool Castilho power station_1 -- operating,e_BR625-440,BR625-440,-20.9102,-51.5441,False
+e_BR626-440,ep_bioenergy_BR626-440,34.0,bioenergy,Aggregated Plant -- operating,e_BR626-440,BR626-440,-20.438736040040148,-51.604608218323264,False
+e_BR626-440,ep_bioenergy_BR626-440__ember,224.9311636316674,bioenergy,Aggregated Plant - EMBER Gap - BR626-440_Missing Bioenergy Capacity -- operating,e_BR626-440,BR626-440,-20.82412240128407,-51.2791146769174,False
+e_BR626-440,ep_bioenergy_G100000200470,384.0,bioenergy,Suzano Cerrado power station_1 -- construction,e_BR626-440,BR626-440,-20.4755,-53.6754,False
+e_BR626-440,ep_bioenergy_G100000200572,175.0,bioenergy,Fibria MS power station_1 -- operating,e_BR626-440,BR626-440,-20.9953,-51.797,False
+e_BR626-440,ep_bioenergy_G100000200573,149.0,bioenergy,Fibria MS-II power station_TG3 -- operating,e_BR626-440,BR626-440,-20.9961,-51.7961,False
+e_BR626-440,ep_bioenergy_G100000200574,126.0,bioenergy,Fibria MS-II power station_TG4 -- operating,e_BR626-440,BR626-440,-20.9961,-51.7961,False
+e_BR627-500,ep_gas_BR627-500__ember,31.692391242810537,gas,Aggregated Plant - EMBER Gap - BR627-500_Missing Gas Capacity -- operating,e_BR627-500,BR627-500,-20.68179001584175,-40.917225892589464,False
+e_BR627-500,ep_hydro_ror_BR627-500,55.0,hydro,Aggregated Plant -- operating,e_BR627-500,BR627-500,-21.034787708253816,-40.92265510040111,False
+e_BR628-440,ep_bioenergy_BR628-440,30.0,bioenergy,Aggregated Plant -- operating,e_BR628-440,BR628-440,-20.684633980450396,-49.53770432938226,False
+e_BR628-440,ep_bioenergy_BR628-440__ember,23.32235567609455,bioenergy,Aggregated Plant -- operating,e_BR628-440,BR628-440,-21.039432463921642,-49.54427421035598,False
+e_BR628-440,ep_bioenergy_G100000200679,60.0,bioenergy,Sebastianópolis I power station_1 -- operating,e_BR628-440,BR628-440,-20.581,-49.9424,False
+e_BR629-500,ep_bioenergy_BR629-500,224.0,bioenergy,Aggregated Plant -- operating,e_BR629-500,BR629-500,-20.59934030544156,-48.2049494932836,False
+e_BR629-500,ep_bioenergy_BR629-500__ember,217.41618235825916,bioenergy,Aggregated Plant - EMBER Gap - BR629-500_Missing Bioenergy Capacity -- operating,e_BR629-500,BR629-500,-20.996119475152383,-47.92032561076025,False
+e_BR629-500,ep_bioenergy_G100000200482,71.0,bioenergy,Alta Mogiana power station_1 -- operating,e_BR629-500,BR629-500,-20.4818,-47.8662,False
+e_BR629-500,ep_bioenergy_G100000200526,50.0,bioenergy,Central Energética Alta Mogiana power station_1 -- operating,e_BR629-500,BR629-500,-20.4781,-47.8831,False
+e_BR629-500,ep_bioenergy_G100000200544,57.0,bioenergy,Colorado power station_1 -- operating,e_BR629-500,BR629-500,-20.2792,-48.1755,False
+e_BR629-500,ep_bioenergy_G100000200582,55.0,bioenergy,Guaíra Energética power station_1 -- operating,e_BR629-500,BR629-500,-20.4184,-48.2114,False
+e_BR629-500,ep_bioenergy_G100000200615,90.0,bioenergy,Mandu power station_1 -- operating,e_BR629-500,BR629-500,-20.479,-48.4015,False
+e_BR629-500,ep_bioenergy_G100000200624,54.0,bioenergy,Nardini power station_1 -- operating,e_BR629-500,BR629-500,-21.1815,-48.6447,False
+e_BR629-500,ep_bioenergy_G100000200659,58.0,bioenergy,Santa Elisa - Unidade I power station_1 -- operating,e_BR629-500,BR629-500,-21.1057,-48.068,False
+e_BR629-500,ep_bioenergy_G100000200670,83.0,bioenergy,São José Colina power station_1 -- operating,e_BR629-500,BR629-500,-20.6619,-48.5339,False
+e_BR629-500,ep_bioenergy_G100000200708,97.0,bioenergy,Vale do Rosário power station_1 -- operating,e_BR629-500,BR629-500,-20.6133,-48.0008,False
+e_BR63-500,ep_coal_BR63-500__ember,47.899486625236534,coal,Aggregated Plant - EMBER Gap - BR63-500_Missing Coal Capacity -- operating,e_BR63-500,BR63-500,-3.4190474972200007,-38.88706872241849,False
+e_BR63-500,ep_coal_subcritical_G100000108097,360.0,coal,Porto do Pecém power station_Plant I Unit 1 -- operating,e_BR63-500,BR63-500,-3.5827,-38.875,False
+e_BR63-500,ep_coal_subcritical_G100000108098,360.0,coal,Porto do Pecém power station_Plant I Unit 2 -- operating,e_BR63-500,BR63-500,-3.5827,-38.875,False
+e_BR63-500,ep_coal_subcritical_G100000108099,365.0,coal,Porto do Pecém power station_Plant II Unit 1 -- operating,e_BR63-500,BR63-500,-3.5827,-38.875,False
+e_BR63-500,ep_gas_BR63-500__ember,195.44559886435852,gas,Aggregated Plant - EMBER Gap - BR63-500_Missing Gas Capacity -- operating,e_BR63-500,BR63-500,-3.7779825596579273,-38.89053377296026,False
+e_BR63-500,ep_gas_combined_cycle_G100000406815,327.0,gas,Fortaleza power station_1 -- operating,e_BR63-500,BR63-500,-3.681111,-38.866111,False
+e_BR63-500,ep_gas_gas_turbine_G100000406749,220.0,gas,Termoceará power station_1 -- operating,e_BR63-500,BR63-500,-3.6925,-38.871667,False
+e_BR63-500,ep_gas_steam_turbine_G100001000299,100.0,gas,CSP power station_1 -- operating,e_BR63-500,BR63-500,-3.585257,-38.852371,False
+e_BR63-500,ep_gas_steam_turbine_G100001000300,100.0,gas,CSP power station_2 -- operating,e_BR63-500,BR63-500,-3.585257,-38.852371,False
+e_BR630-440,ep_bioenergy_BR630-440,82.0,bioenergy,Aggregated Plant -- operating,e_BR630-440,BR630-440,-21.01910580755035,-49.2787228476194,False
+e_BR630-440,ep_bioenergy_BR630-440__ember,80.8508330104611,bioenergy,Aggregated Plant - EMBER Gap - BR630-440_Missing Bioenergy Capacity -- operating,e_BR630-440,BR630-440,-21.04256034442286,-49.70913345185575,False
+e_BR630-440,ep_bioenergy_G100000200524,75.0,bioenergy,Catanduva I power station_1 -- operating,e_BR630-440,BR630-440,-21.0966,-48.9335,False
+e_BR630-440,ep_bioenergy_G100000200542,63.0,bioenergy,Colombo Ariranha power station_1 -- operating,e_BR630-440,BR630-440,-21.2116,-48.8296,False
+e_BR630-440,ep_bioenergy_G100000200569,62.0,bioenergy,Fartura power station_1 -- operating,e_BR630-440,BR630-440,-21.1528,-49.6114,False
+e_BR632-440,ep_bioenergy_BR632-440,70.0,bioenergy,Aggregated Plant -- operating,e_BR632-440,BR632-440,-20.966909633412367,-50.259353791543475,False
+e_BR632-440,ep_bioenergy_BR632-440__ember,71.78102802531322,bioenergy,Aggregated Plant - EMBER Gap - BR632-440_Missing Bioenergy Capacity -- operating,e_BR632-440,BR632-440,-21.325601660598256,-50.2746559381069,False
+e_BR632-440,ep_bioenergy_G100000200551,50.0,bioenergy,Da Mata power station_1 -- operating,e_BR632-440,BR632-440,-21.0509,-50.8441,False
+e_BR632-440,ep_hydro_dam_G100000600322,264.0,hydro,Promissão hydroelectric plant_ -- operating,e_BR632-440,BR632-440,-21.2961,-49.7831,False
+e_BR632-440,ep_hydro_ror_G100000600303,347.0,hydro,Nova Avanhandava hydroelectric plant_ -- operating,e_BR632-440,BR632-440,-21.1189,-50.2011,False
+e_BR632-440,ep_m_bioenergy_G100000200477,65.0,bioenergy,Revati power station_1 -- mothballed,e_BR632-440,BR632-440,-21.2164,-50.2079,False
+e_BR632-440,ep_m_bioenergy_G100000200478,92.0,bioenergy,Revati power station_2 -- mothballed,e_BR632-440,BR632-440,-21.2164,-50.2079,False
+e_BR639-440,ep_bioenergy_BR639-440,125.0,bioenergy,Aggregated Plant -- operating,e_BR639-440,BR639-440,-21.462179481142964,-51.181476646703636,False
+e_BR639-440,ep_bioenergy_BR639-440__ember,32.39216066124243,bioenergy,Aggregated Plant -- operating,e_BR639-440,BR639-440,-21.817335995043504,-51.19867701446013,False
+e_BR641-500,ep_bioenergy_BR641-500,153.0,bioenergy,Aggregated Plant -- operating,e_BR641-500,BR641-500,-21.882585304308282,-48.007058119810765,False
+e_BR641-500,ep_bioenergy_BR641-500__ember,73.07671445176292,bioenergy,Aggregated Plant - EMBER Gap - BR641-500_Missing Bioenergy Capacity -- operating,e_BR641-500,BR641-500,-21.857967767409757,-48.511689843728774,False
+e_BR641-500,ep_bioenergy_G100000200658,84.0,bioenergy,Santa Cruz AB power station_1 -- operating,e_BR641-500,BR641-500,-21.7628,-48.0839,False
+e_BR642-500,ep_bioenergy_BR642-500__ember,18.13960997029576,bioenergy,Aggregated Plant -- operating,e_BR642-500,BR642-500,-21.448110129473516,-46.70070199576758,False
+e_BR642-500,ep_bioenergy_G100000200668,70.0,bioenergy,São João da Boa Vista power station_1 -- operating,e_BR642-500,BR642-500,-21.972,-46.7964,False
+e_BR642-500,ep_hydro_dam_BR642-500,80.0,hydro,Aggregated Plant -- operating,e_BR642-500,BR642-500,-21.78016877975281,-46.25237877633163,False
+e_BR642-500,ep_hydro_ror_BR642-500,109.0,hydro,Aggregated Plant -- operating,e_BR642-500,BR642-500,-22.156185484099346,-46.64666424102868,False
+e_BR643-500,ep_bioenergy_BR643-500,44.0,bioenergy,Aggregated Plant -- operating,e_BR643-500,BR643-500,-21.652966748853334,-41.37922040239432,False
+e_BR643-500,ep_bioenergy_BR643-500__ember,11.402040552757333,bioenergy,Aggregated Plant -- operating,e_BR643-500,BR643-500,-22.007980038733272,-41.383232578564126,False
+e_BR644-500,ep_gas_BR644-500__ember,165.90277850584295,gas,Aggregated Plant - EMBER Gap - BR644-500_Missing Gas Capacity -- operating,e_BR644-500,BR644-500,-21.723158173498703,-40.85365631111423,False
+e_BR644-500,ep_gas_combined_cycle_G100000406808,1672.0,gas,GNA II power station_1 -- construction,e_BR644-500,BR644-500,-21.838643,-41.015863,False
+e_BR644-500,ep_gas_combined_cycle_G100000406809,1338.0,gas,GNA I power station_1 -- operating,e_BR644-500,BR644-500,-21.837217,-41.041983,False
+e_BR646-440,ep_bioenergy_BR646-440__ember,13.734276120366788,bioenergy,Aggregated Plant -- operating,e_BR646-440,BR646-440,-22.448018303433408,-49.19487300919543,False
+e_BR646-440,ep_bioenergy_G100000200586,53.0,bioenergy,Iacanga power station_1 -- operating,e_BR646-440,BR646-440,-21.7972,-49.0121,False
+e_BR646-440,ep_hydro_dam_G100000600216,143.0,hydro,Bariri hydroelectric plant_ -- operating,e_BR646-440,BR646-440,-22.1533,-48.7525,False
+e_BR646-440,ep_hydro_ror_G100000600267,131.0,hydro,Ibitinga hydroelectric plant_ -- operating,e_BR646-440,BR646-440,-21.7592,-48.9906,False
+e_BR650-440,ep_bioenergy_BR650-440,126.0,bioenergy,Aggregated Plant -- operating,e_BR650-440,BR650-440,-22.216902575987387,-47.49002279579084,False
+e_BR650-440,ep_bioenergy_BR650-440__ember,71.52189074002328,bioenergy,Aggregated Plant - EMBER Gap - BR650-440_Missing Bioenergy Capacity -- operating,e_BR650-440,BR650-440,-22.573267851595524,-47.48382668116192,False
+e_BR650-440,ep_bioenergy_G100000200571,80.0,bioenergy,Ferrari power station_1 -- operating,e_BR650-440,BR650-440,-21.8449,-47.3603,False
+e_BR650-440,ep_bioenergy_G100000200674,70.0,bioenergy,São Luiz power station_1 -- operating,e_BR650-440,BR650-440,-21.8856,-47.3053,False
+e_BR652-500,ep_gas_BR652-500__ember,768.9400873538257,gas,Aggregated Plant - EMBER Gap - BR652-500_Missing Gas Capacity -- operating,e_BR652-500,BR652-500,-22.23124831360029,-42.016728599072785,False
+e_BR652-500,ep_gas_combined_cycle_G100000406784,827.0,gas,Norte Fluminense power station_1 -- operating,e_BR652-500,BR652-500,-22.3055,-41.8814,False
+e_BR652-500,ep_gas_combined_cycle_G100000406788,565.0,gas,Marlim Azul power station_1 -- operating,e_BR652-500,BR652-500,-22.35944,-41.874453,False
+e_BR652-500,ep_hydro_ror_G100000600269,187.0,hydro,Ilha Dos Pombos hydroelectric plant_ -- operating,e_BR652-500,BR652-500,-21.8433,-42.5794,False
+e_BR652-500,ep_hydro_ror_G100000600349,334.0,hydro,Simplício hydroelectric plant_ -- operating,e_BR652-500,BR652-500,-21.9207,-42.7932,False
+e_BR657-440,ep_bioenergy_BR657-440,408.00000000000006,bioenergy,Aggregated Plant -- operating,e_BR657-440,BR657-440,-21.9826652693386,-52.585274044229415,False
+e_BR657-440,ep_bioenergy_BR657-440__ember,322.88505747126453,bioenergy,Aggregated Plant - EMBER Gap - BR657-440_Missing Bioenergy Capacity -- operating,e_BR657-440,BR657-440,-22.740005195230108,-52.385156636990736,False
+e_BR657-440,ep_bioenergy_G100000200486,70.0,bioenergy,Angélica power station_1 -- operating,e_BR657-440,BR657-440,-22.0409,-53.8419,False
+e_BR657-440,ep_bioenergy_G100000200559,58.0,bioenergy,Eldorado power station_2 -- operating,e_BR657-440,BR657-440,-21.8648,-54.0222,False
+e_BR657-440,ep_bioenergy_G100000200560,58.0,bioenergy,Eldorado power station_3 -- operating,e_BR657-440,BR657-440,-21.8648,-54.0222,False
+e_BR657-440,ep_bioenergy_G100000200613,50.0,bioenergy,LDC Bioenergia Rio Brilhante power station_2 -- operating,e_BR657-440,BR657-440,-21.5139,-54.7018,False
+e_BR657-440,ep_bioenergy_G100000200662,50.0,bioenergy,Santa Luzia I power station_1 -- operating,e_BR657-440,BR657-440,-21.4666,-54.3828,False
+e_BR657-440,ep_bioenergy_G100000200664,50.0,bioenergy,Santa Luzia I power station_3 -- operating,e_BR657-440,BR657-440,-21.4666,-54.3828,False
+e_BR657-440,ep_bioenergy_G100000200718,60.0,bioenergy,Vista Alegre I power station_1 -- operating,e_BR657-440,BR657-440,-21.7802,-55.5766,False
+e_BR657-440,ep_bioenergy_G100000201496,50.0,bioenergy,Cerradinho MS1 power station_1 -- construction,e_BR657-440,BR657-440,-21.7763,-54.9657,False
+e_BR657-440,ep_bioenergy_G100000201500,52.0,bioenergy,Inpasa Dourados power station_1 -- operating,e_BR657-440,BR657-440,-22.3344,-54.8142,False
+e_BR657-440,ep_hydro_BR657-440__irena,24.578332132262712,hydro,Aggregated Plant -- operating,e_BR657-440,BR657-440,-22.954722079293852,-52.539405324682846,False
+e_BR657-440,ep_hydro_dam_G100000600321,1540.0,hydro,Porto Primavera hydroelectric plant_ -- operating,e_BR657-440,BR657-440,-22.4757,-52.9587,False
+e_BR657-440,ep_hydro_ror_G100000600328,354.0,hydro,Rosana hydroelectric plant_ -- operating,e_BR657-440,BR657-440,-22.601,-52.8694,False
+e_BR659-500,ep_hydro_dam_G100000600255,216.0,hydro,Funil hydroelectric plant_ -- operating,e_BR659-500,BR659-500,-22.5288,-44.5679,False
+e_BR659-500,ep_hydro_ror_BR659-500,98.0,hydro,Aggregated Plant -- operating,e_BR659-500,BR659-500,-22.429071280698576,-44.3491735297205,False
+e_BR661-440,ep_bioenergy_BR661-440,136.0,bioenergy,Aggregated Plant -- operating,e_BR661-440,BR661-440,-22.329613752485837,-48.76068056388686,False
+e_BR661-440,ep_bioenergy_BR661-440__ember,62.452085754875405,bioenergy,Aggregated Plant - EMBER Gap - BR661-440_Missing Bioenergy Capacity -- operating,e_BR661-440,BR661-440,-22.683833489816934,-48.7378877121535,False
+e_BR661-440,ep_bioenergy_G100000200469,50.0,bioenergy,São José 2 power station_1 -- operating,e_BR661-440,BR661-440,-22.4917,-48.7837,False
+e_BR661-440,ep_bioenergy_G100000200672,55.0,bioenergy,São José power station_2 -- operating,e_BR661-440,BR661-440,-22.4835,-48.771,False
+e_BR661-440,ep_hydro_dam_G100000600217,141.0,hydro,Barra Bonita hydroelectric plant_ -- operating,e_BR661-440,BR661-440,-22.5194,-48.5344,False
+e_BR662-440,ep_bioenergy_BR662-440,144.0,bioenergy,Aggregated Plant -- operating,e_BR662-440,BR662-440,-22.36557590065189,-51.94895470978097,False
+e_BR662-440,ep_bioenergy_BR662-440__ember,94.32597184553794,bioenergy,Aggregated Plant - EMBER Gap - BR662-440_Missing Bioenergy Capacity -- operating,e_BR662-440,BR662-440,-22.71676638468943,-51.97330289749266,False
+e_BR662-440,ep_bioenergy_G100000200545,110.0,bioenergy,Conquista do Pontal power station_1 -- operating,e_BR662-440,BR662-440,-22.1202,-51.7568,False
+e_BR662-440,ep_bioenergy_G100000200628,60.0,bioenergy,Paranapanema power station_1 -- operating,e_BR662-440,BR662-440,-22.5463,-51.8189,False
+e_BR662-440,ep_bioenergy_G100000200692,50.0,bioenergy,UJU Bio power station_1 -- operating,e_BR662-440,BR662-440,-22.9318,-51.9517,False
+e_BR662-440,ep_hydro_ror_G100000600353,525.0,hydro,Taquaruçu hydroelectric plant_ -- operating,e_BR662-440,BR662-440,-22.5437,-52.0002,False
+e_BR663-440,ep_bioenergy_BR663-440,66.0,bioenergy,Aggregated Plant -- operating,e_BR663-440,BR663-440,-22.27060863101682,-48.84342925189233,False
+e_BR663-440,ep_bioenergy_BR663-440__ember,199.2765723879634,bioenergy,Aggregated Plant - EMBER Gap - BR663-440_Missing Bioenergy Capacity -- operating,e_BR663-440,BR663-440,-22.728732202993495,-48.616265639048684,False
+e_BR663-440,ep_bioenergy_G100000200457,80.0,bioenergy,Barra Grande 2 power station_1 -- operating,e_BR663-440,BR663-440,-22.6291,-48.8021,False
+e_BR663-440,ep_bioenergy_G100000200496,63.0,bioenergy,Barra Grande Lençóis power station_1 -- operating,e_BR663-440,BR663-440,-22.6253,-48.7568,False
+e_BR663-440,ep_bioenergy_G100000200509,140.0,bioenergy,Bracell Star power station_1 -- operating,e_BR663-440,BR663-440,-22.5414,-48.815,False
+e_BR663-440,ep_bioenergy_G100000200510,140.0,bioenergy,Bracell Star power station_2 -- operating,e_BR663-440,BR663-440,-22.5414,-48.815,False
+e_BR663-440,ep_bioenergy_G100000200511,140.0,bioenergy,Bracell Star power station_3 -- operating,e_BR663-440,BR663-440,-22.5414,-48.815,False
+e_BR663-440,ep_bioenergy_G100000200650,60.0,bioenergy,Rio Pardo power station_1 -- operating,e_BR663-440,BR663-440,-23.0618,-49.1264,False
+e_BR663-440,ep_hydro_ror_BR663-440,90.0,hydro,Aggregated Plant -- operating,e_BR663-440,BR663-440,-22.662879387842246,-49.04833669177224,False
+e_BR666-440,ep_bioenergy_BR666-440,40.0,bioenergy,Aggregated Plant -- operating,e_BR666-440,BR666-440,-22.414364128305422,-47.23279711099458,False
+e_BR666-440,ep_bioenergy_BR666-440__ember,24.099767531964368,bioenergy,Aggregated Plant -- operating,e_BR666-440,BR666-440,-22.768314479218503,-47.253829853365325,False
+e_BR666-440,ep_bioenergy_G100000200654,53.0,bioenergy,Ripasa power station_1 -- operating,e_BR666-440,BR666-440,-22.5945,-47.3542,False
+e_BR670-440,ep_bioenergy_BR670-440__ember,19.435296396745457,bioenergy,Aggregated Plant -- operating,e_BR670-440,BR670-440,-22.49769543561143,-47.70046007915426,False
+e_BR670-440,ep_bioenergy_G100000200548,75.0,bioenergy,Costa Pinto power station_1 -- operating,e_BR670-440,BR670-440,-22.6357,-47.6749,False
+e_BR673-440,ep_bioenergy_BR673-440,122.0,bioenergy,Aggregated Plant -- operating,e_BR673-440,BR673-440,-22.29737256727838,-51.37502279371504,False
+e_BR673-440,ep_bioenergy_BR673-440__ember,44.830750355159516,bioenergy,Aggregated Plant -- operating,e_BR673-440,BR673-440,-22.612967112179504,-51.00267297286066,False
+e_BR673-440,ep_bioenergy_G100000200539,51.0,bioenergy,Cocal II power station_3 -- operating,e_BR673-440,BR673-440,-22.5309,-51.5091,False
+e_BR674-500,ep_hydro_ror_BR674-500,110.0,hydro,Aggregated Plant -- operating,e_BR674-500,BR674-500,-22.60267188289254,-43.43080782552426,False
+e_BR676-440,ep_bioenergy_BR676-440,33.0,bioenergy,Aggregated Plant -- operating,e_BR676-440,BR676-440,-22.405607199936473,-50.2830150845134,False
+e_BR676-440,ep_bioenergy_BR676-440__ember,28.245964096603394,bioenergy,Aggregated Plant -- operating,e_BR676-440,BR676-440,-22.803906385365742,-50.11884132592152,False
+e_BR676-440,ep_bioenergy_G100000200593,76.0,bioenergy,Ipaussu Bioenergia power station_1 -- operating,e_BR676-440,BR676-440,-23.0957,-49.5836,False
+e_BR676-440,ep_hydro_dam_G100000600233,414.0,hydro,Chavantes hydroelectric plant_ -- operating,e_BR676-440,BR676-440,-23.128,-49.733,False
+e_BR676-440,ep_hydro_ror_BR676-440,273.0,hydro,Aggregated Plant -- operating,e_BR676-440,BR676-440,-22.831006268047222,-50.56664381154436,False
+e_BR676-500,ep_bioenergy_BR676-500,107.0,bioenergy,Aggregated Plant -- operating,e_BR676-500,BR676-500,-22.82501268037273,-50.13274849526194,False
+e_BR676-500,ep_bioenergy_BR676-500__ember,35.501808084721695,bioenergy,Aggregated Plant -- operating,e_BR676-500,BR676-500,-22.803447933383808,-50.584906319224054,False
+e_BR679-500,ep_gas_BR679-500__ember,29.212117145547097,gas,Aggregated Plant - EMBER Gap - BR679-500_Missing Gas Capacity -- operating,e_BR679-500,BR679-500,-22.87548924547087,-43.59544363703921,False
+e_BR679-500,ep_gas_combined_cycle_G100000406829,530.0,gas,Baixada Fluminense power station_1 -- operating,e_BR679-500,BR679-500,-22.723437,-43.642327,False
+e_BR683-500,ep_gas_BR683-500__ember,157.20528400477252,gas,Aggregated Plant - EMBER Gap - BR683-500_Missing Gas Capacity -- operating,e_BR683-500,BR683-500,-22.87673132108031,-43.395247168152984,False
+e_BR683-500,ep_gas_combined_cycle_G100000406803,330.9,gas,Governador Leonel Brizola power station_3 -- operating,e_BR683-500,BR683-500,-22.7145,-43.2541,False
+e_BR683-500,ep_gas_combined_cycle_G100000406804,330.9,gas,Governador Leonel Brizola power station_2 -- operating,e_BR683-500,BR683-500,-22.7145,-43.2541,False
+e_BR683-500,ep_gas_combined_cycle_G100000406805,327.4,gas,Governador Leonel Brizola power station_1 -- operating,e_BR683-500,BR683-500,-22.7145,-43.2541,False
+e_BR683-500,ep_gas_steam_turbine_G100000406764,63.0,gas,Refinaria Duque de Caxias power station_1 -- operating,e_BR683-500,BR683-500,-22.719928,-43.281436,False
+e_BR691-500,ep_gas_BR691-500__ember,52.5046467789588,gas,Aggregated Plant - EMBER Gap - BR691-500_Missing Gas Capacity -- operating,e_BR691-500,BR691-500,-22.732404927803906,-43.70679367489941,False
+e_BR691-500,ep_gas_combined_cycle_G100000406761,500.0,gas,Santa Cruz power station (Brazil)_1 -- operating,e_BR691-500,BR691-500,-22.914269,-43.765292,False
+e_BR691-500,ep_gas_internal_combustion_G100000412190,78.0,gas,Porsud II power station_1 -- operating,e_BR691-500,BR691-500,-22.926062,-43.857008,False
+e_BR691-500,ep_gas_internal_combustion_G100000412203,115.9,gas,Karkey 019 power station_1 -- operating,e_BR691-500,BR691-500,-22.936126,-43.834043,False
+e_BR691-500,ep_gas_internal_combustion_G100000412204,258.7,gas,Karkey 013 power station_1 -- operating,e_BR691-500,BR691-500,-22.930485,-43.857014,False
+e_BR691-500,ep_oil_gas_turbine_G100001000290,90.0,oil,Atlântico power station_2 -- operating,e_BR691-500,BR691-500,-22.909863,-43.739638,False
+e_BR691-500,ep_oil_gas_turbine_G100001000291,90.0,oil,Atlântico power station_3 -- operating,e_BR691-500,BR691-500,-22.909863,-43.739638,False
+e_BR691-500,ep_oil_steam_turbine_G100001000289,310.0,oil,Atlântico power station_1 -- operating,e_BR691-500,BR691-500,-22.909863,-43.739638,False
+e_BR703-500,ep_gas_BR703-500__ember,96.11337712906611,gas,Aggregated Plant - EMBER Gap - BR703-500_Missing Gas Capacity -- operating,e_BR703-500,BR703-500,-22.963630329826948,-45.64218732429732,False
+e_BR713-500,ep_gas_steam_turbine_G100000406822,139.0,gas,Celpav IV power station_1 -- operating,e_BR713-500,BR713-500,-23.29489,-45.981045,False
+e_BR713-500,ep_hydro_dam_BR713-500,87.0,hydro,Aggregated Plant -- operating,e_BR713-500,BR713-500,-23.084019224691627,-45.72722699687051,False
+e_BR713-500,ep_hydro_ror_BR713-500,56.0,hydro,Aggregated Plant -- operating,e_BR713-500,BR713-500,-23.43630568428749,-45.66704576485424,False
+e_BR728-440,ep_bioenergy_BR728-440__ember,15.548237117396365,bioenergy,Aggregated Plant -- operating,e_BR728-440,BR728-440,-23.29186352739962,-47.52340577007751,False
+e_BR728-440,ep_bioenergy_G100000200720,60.0,bioenergy,Vista Alegre power station_1 -- operating,e_BR728-440,BR728-440,-23.4891,-48.1247,False
+e_BR732-500,ep_bioenergy_BR732-500__ember,155.48237117396366,bioenergy,Aggregated Plant - EMBER Gap - BR732-500_Missing Bioenergy Capacity -- operating,e_BR732-500,BR732-500,-23.423658585643075,-51.15591093315409,False
+e_BR732-500,ep_bioenergy_G100000200603,165.0,bioenergy,Klabin Celulose power station_1 -- operating,e_BR732-500,BR732-500,-24.2436,-50.7414,False
+e_BR732-500,ep_bioenergy_G100000200604,165.0,bioenergy,Klabin Celulose power station_2 -- operating,e_BR732-500,BR732-500,-24.2436,-50.7414,False
+e_BR732-500,ep_bioenergy_G100000200643,135.0,bioenergy,Puma II power station_1 -- operating,e_BR732-500,BR732-500,-24.2443,-50.7435,False
+e_BR732-500,ep_bioenergy_G100000201501,135.0,bioenergy,Klabin Puma II power station_1 -- operating,e_BR732-500,BR732-500,-24.2443,-50.7435,False
+e_BR732-500,ep_hydro_dam_G100000600260,363.0,hydro,Governador Jayme Canet Junior hydroelectric plant_ -- operating,e_BR732-500,BR732-500,-24.0621,-50.7072,False
+e_BR741-440,ep_hydro_ror_BR741-440,56.0,hydro,Aggregated Plant -- operating,e_BR741-440,BR741-440,-23.534467730704932,-47.451524593248536,False
+e_BR756-440,ep_bioenergy_BR756-440__ember,20.73098282319515,bioenergy,Aggregated Plant -- operating,e_BR756-440,BR756-440,-23.919563827128215,-46.44684256041136,False
+e_BR758-440,ep_bioenergy_BR758-440__ember,12.956864264496971,bioenergy,Aggregated Plant -- operating,e_BR758-440,BR758-440,-23.51158702377615,-46.39038655525366,False
+e_BR758-440,ep_gas_BR758-440__ember,13.779300540352406,gas,Aggregated Plant - EMBER Gap - BR758-440_Missing Gas Capacity -- operating,e_BR758-440,BR758-440,-23.968177519826128,-46.183806107655876,False
+e_BR758-440,ep_gas_combined_cycle_G100000406817,250.0,gas,Euzébio Rocha power station_1 -- operating,e_BR758-440,BR758-440,-23.875531,-46.431825,False
+e_BR758-440,ep_hydro_BR758-440__irena,11.5365033081212,hydro,Aggregated Plant -- operating,e_BR758-440,BR758-440,-23.909131708548372,-46.617681463179515,False
+e_BR758-440,ep_hydro_ror_G100000600266,889.0,hydro,Henry Borden hydroelectric plant_ -- operating,e_BR758-440,BR758-440,-23.8619,-46.4621,False
+e_BR764-440,ep_gas_BR764-440__ember,31.747508444971942,gas,Aggregated Plant - EMBER Gap - BR764-440_Missing Gas Capacity -- operating,e_BR764-440,BR764-440,-23.71443028589456,-46.773904081820774,False
+e_BR764-440,ep_gas_combined_cycle_G100000406816,386.0,gas,Nova Piratininga power station_1 -- operating,e_BR764-440,BR764-440,-23.698889,-46.678611,False
+e_BR764-440,ep_gas_combined_cycle_G100000409851,190.0,gas,Piratininga power station_1 -- operating,e_BR764-440,BR764-440,-23.696288,-46.668591,False
+e_BR777-500,ep_bioenergy_BR777-500__ember,29.541650523053093,bioenergy,Aggregated Plant -- operating,e_BR777-500,BR777-500,-24.016138209076413,-53.78466037476138,False
+e_BR777-500,ep_bioenergy_G100000200516,114.0,bioenergy,Caarapó power station_1 -- operating,e_BR777-500,BR777-500,-22.6105,-54.6848,False
+e_BR78-500,ep_oil_internal_combustion_G100000412200,168.0,oil,Maracanau Geradora de Energia SA power plant_1 -- operating,e_BR78-500,BR78-500,-3.85021,-38.55552,False
+e_BR786-500,ep_hydro_dam_G100000600263,260.0,hydro,Governador Pedro Viriato Parigot De Souza hydroelectric plant_ -- operating,e_BR786-500,BR786-500,-25.1383,-48.8744,False
+e_BR788-500,ep_bioenergy_BR788-500__ember,29.28251323776315,bioenergy,Aggregated Plant -- operating,e_BR788-500,BR788-500,-25.243606312878562,-50.098854990520366,False
+e_BR788-500,ep_bioenergy_G100000200607,113.0,bioenergy,Klabin power station_1 -- operating,e_BR788-500,BR788-500,-24.3091,-50.5994,False
+e_BR803-500,ep_hydro_BR803-500__irena,383.274044100517,hydro,Aggregated Plant - IRENA Gap - BR803-500_Missing Hydro Capacity -- operating,e_BR803-500,BR803-500,-25.553423984718762,-54.41523538886749,False
+e_BR803-500,ep_hydro_dam_G100000604112,14000.0,hydro,Itaipu hydroelectric plant_ -- operating,e_BR803-500,BR803-500,-25.4078,-54.5892,False
+e_BR820-500,ep_hydro_BR820-500__irena,20.6333411247612,hydro,Aggregated Plant -- operating,e_BR820-500,BR820-500,-25.363550303202288,-53.50915151656019,False
+e_BR820-500,ep_hydro_dam_G100000600214,350.0,hydro,Baixo Iguaçu hydroelectric plant_ -- operating,e_BR820-500,BR820-500,-25.5033,-53.6717,False
+e_BR820-500,ep_hydro_ror_G100000600261,1240.0,hydro,Governador José Richa hydroelectric plant_ -- operating,e_BR820-500,BR820-500,-25.5431,-53.4981,False
+e_BR832-500,ep_hydro_dam_BR832-500,240.0,hydro,Aggregated Plant -- operating,e_BR832-500,BR832-500,-25.789442111884593,-52.024575006740044,False
+e_BR833-500,ep_hydro_BR833-500__irena,16.350949570565476,hydro,Aggregated Plant -- operating,e_BR833-500,BR833-500,-25.729644893314894,-52.17205671446443,False
+e_BR833-500,ep_hydro_dam_G100000600262,1260.0,hydro,Governador Ney Aminthas De Barros Braga hydroelectric plant_ -- operating,e_BR833-500,BR833-500,-25.7904,-52.1123,False
+e_BR838-500,ep_hydro_BR838-500__irena,21.749358317672808,hydro,Aggregated Plant -- operating,e_BR838-500,BR838-500,-25.826958671559357,-51.65546831700223,False
+e_BR838-500,ep_hydro_dam_G100000600259,1676.0,hydro,Governador Bento Munhoz Da Rocha Netto hydroelectric plant_ -- operating,e_BR838-500,BR838-500,-26.0098,-51.666,False
+e_BR858-500,ep_hydro_BR858-500__irena,18.816568950253924,hydro,Aggregated Plant -- operating,e_BR858-500,BR858-500,-27.449708092009164,-52.4025693859526,False
+e_BR858-500,ep_hydro_ror_G100000600273,1450.0,hydro,Itá hydroelectric plant_ -- operating,e_BR858-500,BR858-500,-27.2767,-52.3822,False
+e_BR866-500,ep_bioenergy_BR866-500,72.00000000000001,bioenergy,Aggregated Plant -- operating,e_BR866-500,BR866-500,-27.310999295200503,-51.00016382618784,False
+e_BR866-500,ep_bioenergy_BR866-500__ember,18.65788454087564,bioenergy,Aggregated Plant -- operating,e_BR866-500,BR866-500,-27.705847499031783,-50.83729562213069,False
+e_BR866-500,ep_hydro_BR866-500__irena,13.288390762110357,hydro,Aggregated Plant -- operating,e_BR866-500,BR866-500,-27.67874190024421,-51.31997966906231,False
+e_BR866-500,ep_hydro_dam_G100000600219,690.0,hydro,Barra Grande hydroelectric plant_ -- operating,e_BR866-500,BR866-500,-27.7803,-51.1919,False
+e_BR866-500,ep_hydro_dam_G100000600344,142.0,hydro,São Roque hydroelectric plant_ -- operating,e_BR866-500,BR866-500,-27.4978,-50.8046,False
+e_BR866-500,ep_hydro_ror_G100000600258,192.0,hydro,Garibaldi hydroelectric plant_ -- operating,e_BR866-500,BR866-500,-27.6247,-50.9839,False
+e_BR876-500,ep_hydro_ror_BR876-500,51.0,hydro,Aggregated Plant -- operating,e_BR876-500,BR876-500,-28.01614789021807,-54.40784404742456,False
+e_BR878-500,ep_hydro_BR878-500__irena,12.49679717178933,hydro,Aggregated Plant -- operating,e_BR878-500,BR878-500,-28.10098830966259,-54.32706989479265,False
+e_BR878-500,ep_hydro_dam_BR878-500,125.0,hydro,Aggregated Plant -- operating,e_BR878-500,BR878-500,-28.459126816534198,-54.29624060082116,False
+e_BR878-500,ep_hydro_dam_G100000600308,158.0,hydro,Passo Real hydroelectric plant_ -- operating,e_BR878-500,BR878-500,-29.017,-53.1901,False
+e_BR878-500,ep_hydro_ror_G100000600278,500.0,hydro,Itaúba hydroelectric plant_ -- operating,e_BR878-500,BR878-500,-29.2607,-53.2359,False
+e_BR878-500,ep_hydro_ror_G100000600282,180.0,hydro,Jacuí hydroelectric plant_ -- operating,e_BR878-500,BR878-500,-29.0728,-53.2081,False
+e_BR886-500,ep_coal_BR886-500__ember,18.293164009727143,coal,Aggregated Plant - EMBER Gap - BR886-500_Missing Coal Capacity -- operating,e_BR886-500,BR886-500,-28.21194330686149,-49.513176749088586,False
+e_BR886-500,ep_coal_subcritical_G100000105355,50.0,coal,Jorge Lacerda power station_Unit 1 -- operating,e_BR886-500,BR886-500,-28.452084,-48.968482,False
+e_BR886-500,ep_coal_subcritical_G100000105356,50.0,coal,Jorge Lacerda power station_Unit 2 -- operating,e_BR886-500,BR886-500,-28.452084,-48.968482,False
+e_BR886-500,ep_coal_subcritical_G100000105357,66.0,coal,Jorge Lacerda power station_Unit 3 -- operating,e_BR886-500,BR886-500,-28.452084,-48.968482,False
+e_BR886-500,ep_coal_subcritical_G100000105358,66.0,coal,Jorge Lacerda power station_Unit 4 -- operating,e_BR886-500,BR886-500,-28.452084,-48.968482,False
+e_BR886-500,ep_coal_subcritical_G100000105359,131.0,coal,Jorge Lacerda power station_Unit 5 -- operating,e_BR886-500,BR886-500,-28.452084,-48.968482,False
+e_BR886-500,ep_coal_subcritical_G100000105360,131.0,coal,Jorge Lacerda power station_Unit 6 -- operating,e_BR886-500,BR886-500,-28.452084,-48.968482,False
+e_BR886-500,ep_coal_subcritical_G100000105361,363.0,coal,Jorge Lacerda power station_Unit 7 -- operating,e_BR886-500,BR886-500,-28.452084,-48.968482,False
+e_BR886-500,ep_gas_BR886-500__ember,24.251568951020236,gas,Aggregated Plant - EMBER Gap - BR886-500_Missing Gas Capacity -- operating,e_BR886-500,BR886-500,-28.600977131823882,-49.053231652953734,False
+e_BR886-500,ep_windon_wind_500,3.0,windon,Aggregated Plant -- operating,e_BR886-500,BR886-500,-28.915939095083857,-49.373771670409305,False
+e_BR903-500,ep_bioenergy_BR903-500__ember,12.956864264496971,bioenergy,Aggregated Plant -- operating,e_BR903-500,BR903-500,-29.108434358641617,-51.11169293329038,False
+e_BR904-500,ep_hydro_dam_G100000600232,130.0,hydro,Castro Alves hydroelectric plant_ -- operating,e_BR904-500,BR904-500,-29.0053,-51.3844,False
+e_BR909-500,ep_hydro_dam_BR909-500,100.0,hydro,Aggregated Plant -- operating,e_BR909-500,BR909-500,-28.97511361459957,-51.310620511382425,False
+e_BR909-500,ep_hydro_dam_G100000600301,130.0,hydro,Monte Claro hydroelectric plant_ -- operating,e_BR909-500,BR909-500,-29.0308,-51.5213,False
+e_BR949-525,ep_gas_BR949-525__ember,13.724183338190995,gas,Aggregated Plant - EMBER Gap - BR949-525_Missing Gas Capacity -- operating,e_BR949-525,BR949-525,-29.673148130212414,-51.233784271088545,False
+e_BR949-525,ep_gas_combined_cycle_G100000406756,249.0,gas,Sepé Tiarajú power station_1 -- operating,e_BR949-525,BR949-525,-29.874421,-51.147048,False
+e_BR984-525,ep_bioenergy_BR984-525__ember,64.78432132248486,bioenergy,Aggregated Plant - EMBER Gap - BR984-525_Missing Bioenergy Capacity -- operating,e_BR984-525,BR984-525,-29.977852815288298,-51.58353281543206,False
+e_BR984-525,ep_bioenergy_G100000200533,58.0,bioenergy,CMPC power station_1 -- operating,e_BR984-525,BR984-525,-30.1293,-51.2975,False
+e_BR984-525,ep_bioenergy_G100000200534,96.0,bioenergy,CMPC power station_2 -- operating,e_BR984-525,BR984-525,-30.1293,-51.2975,False
+e_BR984-525,ep_bioenergy_G100000200535,96.0,bioenergy,CMPC power station_3 -- operating,e_BR984-525,BR984-525,-30.1293,-51.2975,False
+e_r6844204-500,ep_bioenergy_G100000200499,50.0,bioenergy,Bio Alvorada power station_1 -- operating,e_r6844204-500,relation/6844204-500,-18.4411,-49.1901,False
+e_r6844204-500,ep_bioenergy_G100000200596,56.0,bioenergy,Ituiutaba power station_1 -- operating,e_r6844204-500,relation/6844204-500,-18.9731,-49.4622,False
+e_r6844204-500,ep_bioenergy_G100000200597,62.0,bioenergy,Itumbiara power station_1 -- operating,e_r6844204-500,relation/6844204-500,-18.369,-49.2605,False
+e_r6844204-500,ep_bioenergy_r6844204-500,202.0,bioenergy,Aggregated Plant -- operating,e_r6844204-500,relation/6844204-500,-18.444880089159927,-48.75087349993584,False
+e_r6844204-500,ep_bioenergy_r6844204-500__ember,106.24628696887515,bioenergy,Aggregated Plant - EMBER Gap - relation/6844204-500_Missing Bioenergy Capacity -- operating,e_r6844204-500,relation/6844204-500,-18.768583717385876,-49.120397428890215,False
+e_r6844204-500,ep_hydro_dam_G100000600236,375.0,hydro,Corumbá I hydroelectric plant_ -- operating,e_r6844204-500,relation/6844204-500,-17.9879,-48.5323,False
+e_r6844204-500,ep_hydro_dam_G100000600280,2082.0,hydro,Itumbiara hydroelectric plant_ -- operating,e_r6844204-500,relation/6844204-500,-18.4236,-49.1183,False
+e_r6844204-500,ep_hydro_r6844204-500__irena,40.42318088278687,hydro,Aggregated Plant -- operating,e_r6844204-500,relation/6844204-500,-18.38473740095435,-49.468964962245614,False
+e_r6844204-500,ep_hydro_ror_G100000600226,658.0,hydro,Cachoeira Dourada hydroelectric plant_ -- operating,e_r6844204-500,relation/6844204-500,-18.5043,-49.4902,False
+e_r9328495-500,ep_gas_combined_cycle_G100000406744,640.0,gas,Uruguaiana power station_1 -- operating,e_r9328495-500,relation/9328495-500,-29.7652,-57.0002,False
+e_r9328495-500,ep_gas_r9328495-500__ember,35.275009383302155,gas,Aggregated Plant - EMBER Gap - relation/9328495-500_Missing Gas Capacity -- operating,e_r9328495-500,relation/9328495-500,-27.534258206354618,-55.70121357640471,False
+e_r9328495-500,ep_hydro_ror_r9328495-500,77.0,hydro,Aggregated Plant -- operating,e_r9328495-500,relation/9328495-500,-27.669708829567305,-55.250297350835744,False
+e_w1090304792-500,ep_bioenergy_w1090304792-500,100.0,bioenergy,Aggregated Plant -- operating,e_w1090304792-500,way/1090304792-500,-7.046371668708435,-34.87436569080902,False
+e_w1090304792-500,ep_bioenergy_w1090304792-500__ember,25.913728528993943,bioenergy,Aggregated Plant -- operating,e_w1090304792-500,way/1090304792-500,-7.391651485937661,-34.977522313924524,False
+e_w1090304792-500,ep_oil_internal_combustion_G100000412160,170.8,oil,Termoparaíba power station_1 -- operating,e_w1090304792-500,way/1090304792-500,-7.209574,-34.922959,False
+e_w1090304792-500,ep_oil_internal_combustion_G100000412161,170.8,oil,Termonordeste power station_1 -- operating,e_w1090304792-500,way/1090304792-500,-7.210341,-34.920785,False
+e_w131742617-500,ep_gas_combined_cycle_G100000406831,484.0,gas,Araucária power station_1 -- operating,e_w131742617-500,way/131742617-500,-25.588687,-49.354701,False
+e_w131742617-500,ep_gas_w131742617-500__ember,26.676725846122256,gas,Aggregated Plant - EMBER Gap - way/131742617-500_Missing Gas Capacity -- operating,e_w131742617-500,way/131742617-500,-25.537152355917826,-49.151567950263,False
+e_w140181432-500,ep_hydro_dam_G100000600228,880.0,hydro,Campos Novos hydroelectric plant_ -- operating,e_w140181432-500,way/140181432-500,-27.6041,-51.3271,False
+e_w140181432-500,ep_hydro_w140181432-500__irena,11.419710811188589,hydro,Aggregated Plant -- operating,e_w140181432-500,way/140181432-500,-27.521154314046818,-51.56007048691023,False
+e_w150728360-500,ep_hydro_dam_G100000600335,1420.0,hydro,Salto Santiago hydroelectric plant_ -- operating,e_w150728360-500,way/150728360-500,-25.6288,-52.6145,False
+e_w150728360-500,ep_hydro_ror_G100000600333,1078.0,hydro,Salto Osório hydroelectric plant_ -- operating,e_w150728360-500,way/150728360-500,-25.5376,-53.009,False
+e_w150728360-500,ep_hydro_w150728360-500__irena,32.41640637085124,hydro,Aggregated Plant -- operating,e_w150728360-500,way/150728360-500,-25.797619194038457,-52.55831635840867,False
+e_w160888682-440,ep_bioenergy_w160888682-440,30.0,bioenergy,Aggregated Plant -- operating,e_w160888682-440,way/160888682-440,-22.56567451237135,-47.392591693266716,False
+e_w167516187-500,ep_bioenergy_G100000200649,79.0,bioenergy,Rigesa power station_1 -- operating,e_w167516187-500,way/167516187-500,-26.102,-50.3125,False
+e_w167516187-500,ep_bioenergy_w167516187-500__ember,20.471845537905217,bioenergy,Aggregated Plant -- operating,e_w167516187-500,way/167516187-500,-25.582961406740814,-49.594834927793414,False
+e_w168664395-500,ep_bioenergy_w168664395-500,103.00000000000001,bioenergy,Aggregated Plant -- operating,e_w168664395-500,way/168664395-500,-14.795117276223989,-55.99139672434562,False
+e_w168664395-500,ep_bioenergy_w168664395-500__ember,26.691140384863758,bioenergy,Aggregated Plant -- operating,e_w168664395-500,way/168664395-500,-15.02822617614544,-55.238150703923964,False
+e_w168664395-500,ep_gas_combined_cycle_G100000406818,529.0,gas,Cuiabá power station_1 -- operating,e_w168664395-500,way/168664395-500,-15.677895,-56.022289,False
+e_w168664395-500,ep_gas_internal_combustion_G100000412219,56.1,gas,Edlux X power station_1 -- operating,e_w168664395-500,way/168664395-500,-15.67522,-56.02033,False
+e_w168664395-500,ep_gas_w168664395-500__ember,32.249074984640764,gas,Aggregated Plant - EMBER Gap - way/168664395-500_Missing Gas Capacity -- operating,e_w168664395-500,way/168664395-500,-15.43860231099971,-54.98785496410842,False
+e_w168664395-500,ep_hydro_dam_G100000600293,210.0,hydro,Manso hydroelectric plant_ -- operating,e_w168664395-500,way/168664395-500,-14.8712,-55.7853,False
+e_w168664395-500,ep_hydro_ror_G100000600279,157.0,hydro,Itiquira hydroelectric plant_ -- operating,e_w168664395-500,way/168664395-500,-17.0906,-54.8307,False
+e_w168664395-500,ep_hydro_ror_G100000600318,176.0,hydro,Ponte De Pedra hydroelectric plant_ -- operating,e_w168664395-500,way/168664395-500,-17.6078,-54.8273,False
+e_w168904844-500,ep_hydro_dam_w168904844-500,122.0,hydro,Aggregated Plant -- operating,e_w168904844-500,way/168904844-500,-15.021884226369624,-58.854814766709154,False
+e_w168904844-500,ep_hydro_ror_w168904844-500,120.0,hydro,Aggregated Plant -- operating,e_w168904844-500,way/168904844-500,-15.275269047556518,-58.4856839729143,False
+e_w172071437-440,ep_bioenergy_G100000200648,50.0,bioenergy,Rafard power station_1 -- operating,e_w172071437-440,way/172071437-440,-22.9974,-47.5202,False
+e_w172071437-440,ep_bioenergy_w172071437-440__ember,12.956864264496971,bioenergy,Aggregated Plant -- operating,e_w172071437-440,way/172071437-440,-22.69709675854431,-47.13624522915794,False
+e_w174017677-440,ep_bioenergy_G100000200565,58.0,bioenergy,Equipav power station_1 -- operating,e_w174017677-440,way/174017677-440,-21.5607,-49.87,False
+e_w174017677-440,ep_bioenergy_w174017677-440,213.0,bioenergy,Aggregated Plant -- operating,e_w174017677-440,way/174017677-440,-21.935558380220304,-49.58015897766503,False
+e_w174017677-440,ep_bioenergy_w174017677-440__ember,88.36581428386933,bioenergy,Aggregated Plant - EMBER Gap - way/174017677-440_Missing Bioenergy Capacity -- operating,e_w174017677-440,way/174017677-440,-21.99501231095528,-50.06967016622165,False
+e_w174852067-440,ep_bioenergy_w174852067-440,153.00000000000003,bioenergy,Aggregated Plant -- construction,e_w174852067-440,way/174852067-440,-21.02324461335644,-47.71682618477746,False
+e_w174852067-440,ep_bioenergy_w174852067-440__ember,39.64800464936073,bioenergy,Aggregated Plant -- operating,e_w174852067-440,way/174852067-440,-21.380691645744633,-47.694932659846536,False
+e_w174852067-500,ep_bioenergy_G100000200530,54.0,bioenergy,Cevasa power station_1 -- operating,e_w174852067-500,way/174852067-500,-20.7478,-47.4218,False
+e_w174852067-500,ep_bioenergy_w174852067-500,150.00000000000003,bioenergy,Aggregated Plant -- operating,e_w174852067-500,way/174852067-500,-21.020412050495025,-47.69379503118893,False
+e_w174852067-500,ep_bioenergy_w174852067-500__ember,71.00361616944339,bioenergy,Aggregated Plant - EMBER Gap - way/174852067-500_Missing Bioenergy Capacity -- operating,e_w174852067-500,way/174852067-500,-21.376871178173346,-47.72206607385788,False
+e_w188465343-500,ep_hydro_dam_G100000600307,226.0,hydro,Passo Fundo hydroelectric plant_ -- operating,e_w188465343-500,way/188465343-500,-27.5532,-52.7414,False
+e_w188465343-500,ep_hydro_dam_w188465343-500,120.0,hydro,Aggregated Plant -- operating,e_w188465343-500,way/188465343-500,-27.30125932192404,-52.04693803632881,False
+e_w188465343-500,ep_hydro_ror_G100000600251,855.0,hydro,Foz Do Chapecó hydroelectric plant_ -- operating,e_w188465343-500,way/188465343-500,-27.1401,-53.0433,False
+e_w188465343-500,ep_hydro_ror_w188465343-500,74.0,hydro,Aggregated Plant -- operating,e_w188465343-500,way/188465343-500,-27.62167798165686,-52.315364407358,False
+e_w188465343-500,ep_hydro_w188465343-500__irena,31.326343066146872,hydro,Aggregated Plant -- operating,e_w188465343-500,way/188465343-500,-27.26663748338662,-52.766489770793726,False
+e_w202622375-765,ep_hydro_dam_w202622375-765,101.0,hydro,Aggregated Plant -- operating,e_w202622375-765,way/202622375-765,-23.97011197745818,-49.04896357246348,False
+e_w206109551-500,ep_bioenergy_G100000200500,50.0,bioenergy,Bio Coopcana power station_1 -- operating,e_w206109551-500,way/206109551-500,-23.2708,-52.4876,False
+e_w206109551-500,ep_bioenergy_G100000200666,50.0,bioenergy,Santa Terezinha power station_1 -- operating,e_w206109551-500,way/206109551-500,-23.748,-52.8733,False
+e_w206109551-500,ep_bioenergy_w206109551-500__ember,25.913728528993943,bioenergy,Aggregated Plant -- operating,e_w206109551-500,way/206109551-500,-23.346726563328573,-51.76215922685883,False
+e_w215284729-500,ep_hydro_dam_G100000600359,8535.0,hydro,Tucuruí hydroelectric plant_ -- operating,e_w215284729-500,way/215284729-500,-3.8316,-49.6431,False
+e_w215284729-500,ep_hydro_w215284729-500__irena,110.75821792442568,hydro,Aggregated Plant -- operating,e_w215284729-500,way/215284729-500,-3.9989843297618433,-49.48914133834831,False
+e_w225181494-500,ep_hydro_ror_w225181494-500,72.0,hydro,Aggregated Plant -- operating,e_w225181494-500,way/225181494-500,-23.73216096935646,-46.94311358788587,False
+e_w286006777-440,ep_bioenergy_G100000200627,50.0,bioenergy,Onça Pintada power station_1 -- operating,e_w286006777-440,way/286006777-440,-20.3839,-51.4258,False
+e_w286006777-440,ep_bioenergy_w286006777-440__ember,12.956864264496971,bioenergy,Aggregated Plant -- operating,e_w286006777-440,way/286006777-440,-20.204964253622652,-51.38517682788156,False
+e_w286006777-440,ep_hydro_dam_G100000600270,3444.0,hydro,Ilha Solteira hydroelectric plant_ -- operating,e_w286006777-440,way/286006777-440,-20.3822,-51.3636,False
+e_w286006777-440,ep_hydro_w286006777-440__irena,44.69259549287897,hydro,Aggregated Plant -- operating,e_w286006777-440,way/286006777-440,-20.556643193681765,-51.41677506981675,False
+e_w287374167-500,ep_gas_combined_cycle_G100000410860,590.0,gas,Azulão power station_II -- construction,e_w287374167-500,way/287374167-500,-2.743816,-58.180234,False
+e_w287374167-500,ep_gas_gas_turbine_G100000410862,360.0,gas,Azulão power station_I -- construction,e_w287374167-500,way/287374167-500,-2.743816,-58.180234,False
+e_w287374167-500,ep_gas_w287374167-500__ember,52.36134205333914,gas,Aggregated Plant - EMBER Gap - way/287374167-500_Missing Gas Capacity -- operating,e_w287374167-500,way/287374167-500,-2.4402643457749793,-58.30311802036713,False
+e_w287374167-500,ep_hydro_w287374167-500__irena,136.15409753521666,hydro,Aggregated Plant - IRENA Gap - way/287374167-500_Missing Hydro Capacity -- operating,e_w287374167-500,way/287374167-500,-2.815723817268539,-58.02716431522036,False
+e_w287393618-500,ep_nuclear_G100000500042,1405.0,nuclear,Angra nuclear power plant_3 -- construction,e_w287393618-500,way/287393618-500,-23.0091,-44.47201,False
+e_w287393618-500,ep_nuclear_G100000500071,1350.0,nuclear,Angra nuclear power plant_2 -- operating,e_w287393618-500,way/287393618-500,-23.0077,-44.4598,False
+e_w287393618-500,ep_nuclear_G100000500402,640.0,nuclear,Angra nuclear power plant_1 -- operating,e_w287393618-500,way/287393618-500,-23.0069,-44.4585,False
+e_w302735025-440,ep_bioenergy_G100000200657,55.0,bioenergy,Santa Cândida II power station_1 -- operating,e_w302735025-440,way/302735025-440,-22.1047,-48.4814,False
+e_w302735025-440,ep_bioenergy_w302735025-440,30.0,bioenergy,Aggregated Plant -- operating,e_w302735025-440,way/302735025-440,-21.652909272074996,-48.34278006833177,False
+e_w302735025-440,ep_bioenergy_w302735025-440__ember,22.026669249644847,bioenergy,Aggregated Plant -- operating,e_w302735025-440,way/302735025-440,-22.005714544146844,-48.296927012487906,False
+e_w302735025-500,ep_bioenergy_w302735025-500,70.0,bioenergy,Aggregated Plant -- operating,e_w302735025-500,way/302735025-500,-21.660204163939177,-48.29724008691304,False
+e_w302735025-500,ep_bioenergy_w302735025-500__ember,18.13960997029576,bioenergy,Aggregated Plant -- operating,e_w302735025-500,way/302735025-500,-22.011111963089725,-48.32050673185477,False
+e_w302901044-440,ep_gas_combined_cycle_G100000406789,386.0,gas,Luiz Carlos Prestes power station_1 -- operating,e_w302901044-440,way/302901044-440,-20.7468,-51.6619,False
+e_w302901044-440,ep_gas_w302901044-440__ember,21.27524003430411,gas,Aggregated Plant - EMBER Gap - way/302901044-440_Missing Gas Capacity -- operating,e_w302901044-440,way/302901044-440,-20.51448175406581,-51.580271327891225,False
+e_w302901044-440,ep_hydro_ror_G100000600288,1551.0,hydro,Jupiá hydroelectric plant_ -- operating,e_w302901044-440,way/302901044-440,-20.7758,-51.6267,False
+e_w302901044-440,ep_hydro_ror_w302901044-440,48.0,hydro,Aggregated Plant -- operating,e_w302901044-440,way/302901044-440,-20.897770840853497,-51.387846663795244,False
+e_w302901044-440,ep_hydro_w302901044-440__irena,20.75013362169381,hydro,Aggregated Plant -- operating,e_w302901044-440,way/302901044-440,-20.89253085496823,-51.87677493078262,False
+e_w302931307-440,ep_bioenergy_G100000200543,50.0,bioenergy,Colombo Santa Albertina power station_1 -- operating,e_w302931307-440,way/302931307-440,-20.0361,-50.6662,False
+e_w302931307-440,ep_bioenergy_G100000200618,60.0,bioenergy,Meridiano I power station_1 -- operating,e_w302931307-440,way/302931307-440,-20.3541,-50.1818,False
+e_w302931307-440,ep_bioenergy_w302931307-440,30.0,bioenergy,Aggregated Plant -- operating,e_w302931307-440,way/302931307-440,-19.5920650075948,-50.381291464277574,False
+e_w302931307-440,ep_bioenergy_w302931307-440__ember,36.27921994059152,bioenergy,Aggregated Plant -- operating,e_w302931307-440,way/302931307-440,-20.01820618336201,-50.12960775517343,False
+e_w302931307-440,ep_hydro_dam_G100000600207,1396.0,hydro,Água Vermelha hydroelectric plant_ -- operating,e_w302931307-440,way/302931307-440,-19.8632,-50.3465,False
+e_w302931307-440,ep_hydro_w302931307-440__irena,18.11581396865826,hydro,Aggregated Plant -- operating,e_w302931307-440,way/302931307-440,-19.978057064374806,-50.59234248616261,False
+e_w304646981-500,ep_bioenergy_G100000200467,57.0,bioenergy,BBF Forte São Joaquim power station_1 -- construction,e_w304646981-500,way/304646981-500,2.9658,-60.6974,False
+e_w304646981-500,ep_bioenergy_w304646981-500__ember,14.770825261526547,bioenergy,Aggregated Plant -- operating,e_w304646981-500,way/304646981-500,-2.3812376452448882,-59.96985084674663,False
+e_w304646981-500,ep_gas_combined_cycle_G100000406787,591.0,gas,Mauá 3 power station_1 -- operating,e_w304646981-500,way/304646981-500,-3.117405,-59.92955,False
+e_w304646981-500,ep_gas_combined_cycle_G100000406798,141.0,gas,Jaguatirica II power station_1 -- operating,e_w304646981-500,way/304646981-500,2.965066,-60.67583,False
+e_w304646981-500,ep_gas_combined_cycle_G100000410839,162.9,gas,Manaus I power station_1 -- construction,e_w304646981-500,way/304646981-500,-3.119055,-59.929845,False
+e_w304646981-500,ep_gas_internal_combustion_G100000412192,92.0,gas,Ponta Negra power station_1 -- operating,e_w304646981-500,way/304646981-500,-3.091056,-60.072972,False
+e_w304646981-500,ep_gas_internal_combustion_G100000412201,92.0,gas,Manauara power station_1 -- operating,e_w304646981-500,way/304646981-500,-2.936926,-60.012396,False
+e_w304646981-500,ep_gas_internal_combustion_G100000412221,92.0,gas,Cristiano Rocha power station_1 -- operating,e_w304646981-500,way/304646981-500,-2.88851,-60.023868,False
+e_w304646981-500,ep_gas_w304646981-500__ember,74.89876601713955,gas,Aggregated Plant - EMBER Gap - way/304646981-500_Missing Gas Capacity -- operating,e_w304646981-500,way/304646981-500,-2.7997031851566727,-59.488088851496244,False
+e_w304646981-500,ep_hydro_dam_G100000600215,250.0,hydro,Balbina hydroelectric plant_ -- operating,e_w304646981-500,way/304646981-500,-1.9159,-59.4734,False
+e_w304646981-500,ep_hydro_w304646981-500__irena,13.508998811871955,hydro,Aggregated Plant -- operating,e_w304646981-500,way/304646981-500,-3.1023215078693993,-59.506278942326794,False
+e_w304646981-500,ep_oil_internal_combustion_G100000412185,156.0,oil,Tambaqui power station_1 -- operating,e_w304646981-500,way/304646981-500,-3.107691,-59.938938,False
+e_w304646981-500,ep_oil_internal_combustion_G100000412199,154.9,oil,Monte Cristo power station_1 -- operating,e_w304646981-500,way/304646981-500,2.930977,-60.712173,False
+e_w304646981-500,ep_oil_internal_combustion_G100000412207,157.0,oil,Jaraqui power station_1 -- operating,e_w304646981-500,way/304646981-500,-2.981565,-60.017757,False
+e_w306104018-500,ep_bioenergy_G100000200690,80.0,bioenergy,Tropical Bioenergia power station_1 -- operating,e_w306104018-500,way/306104018-500,-17.3381,-49.9344,False
+e_w306104018-500,ep_bioenergy_w306104018-500__ember,47.94039777863879,bioenergy,Aggregated Plant -- operating,e_w306104018-500,way/306104018-500,-16.675758654290718,-49.54792301625607,False
+e_w306104018-500,ep_oil_internal_combustion_G100000412151,53.6,oil,Xavantes Aruanã power station_1 -- operating,e_w306104018-500,way/306104018-500,-16.581667,-49.2575,False
+e_w306104018-500,ep_oil_internal_combustion_G100000412198,175.5,oil,Palmeiras de Goiás power station_1 -- operating,e_w306104018-500,way/306104018-500,-16.776269,-49.938959,False
+e_w306104018-500,ep_oil_internal_combustion_G100000412210,140.4,oil,Goiânia II power station_1 -- operating,e_w306104018-500,way/306104018-500,-16.793719,-49.240005,False
+e_w307168542-230,ep_bioenergy_w307168542-230,30.0,bioenergy,Aggregated Plant -- operating,e_w307168542-230,way/307168542-230,-11.338660658312747,-61.10301313498023,False
+e_w307168542-230,ep_hydro_ror_G100000600240,261.0,hydro,Dardanelos hydroelectric plant_ -- operating,e_w307168542-230,way/307168542-230,-10.1633,-59.4642,False
+e_w307168542-230,ep_hydro_ror_w307168542-230,74.0,hydro,Aggregated Plant -- operating,e_w307168542-230,way/307168542-230,-11.769948563589274,-60.92068641307949,False
+e_w348815398-500,ep_bioenergy_w348815398-500,30.0,bioenergy,Aggregated Plant -- operating,e_w348815398-500,way/348815398-500,-8.124298971965263,-35.136814363928984,False
+e_w385000005-500,ep_gas_w385000005-500__ember,24.802740972634332,gas,Aggregated Plant - EMBER Gap - way/385000005-500_Missing Gas Capacity -- operating,e_w385000005-500,way/385000005-500,-25.60299145926746,-48.96126844496167,False
+e_w453724535-500,ep_hydro_ror_G100000600355,1820.0,hydro,Teles Pires hydroelectric plant_ -- operating,e_w453724535-500,way/453724535-500,-9.3515,-56.778,False
+e_w453724535-500,ep_hydro_w453724535-500__irena,23.618038268594578,hydro,Aggregated Plant -- operating,e_w453724535-500,way/453724535-500,-9.161210098627341,-56.77603025371104,False
+e_w495013387-500,ep_hydro_dam_G100000600334,192.0,hydro,Salto Pilão hydroelectric plant_ -- operating,e_w495013387-500,way/495013387-500,-27.1359,-49.5183,False
+e_w521542011-500,ep_hydro_dam_G100000600292,1140.0,hydro,Machadinho hydroelectric plant_ -- operating,e_w521542011-500,way/521542011-500,-27.5271,-51.7897,False
+e_w521542011-500,ep_hydro_w521542011-500__irena,14.793716278130672,hydro,Aggregated Plant -- operating,e_w521542011-500,way/521542011-500,-27.352693189137266,-51.83305014998456,False
+e_w525253078-500,ep_bioenergy_G100000200598,55.0,bioenergy,Jari Celulose power station_1 -- operating,e_w525253078-500,way/525253078-500,-0.9242,-52.4329,False
+e_w525253078-500,ep_bioenergy_w525253078-500__ember,14.252550690946666,bioenergy,Aggregated Plant -- operating,e_w525253078-500,way/525253078-500,-1.0993307318575007,-52.83087192854003,False
+e_w525253078-500,ep_gas_w525253078-500__ember,35.21989218114074,gas,Aggregated Plant - EMBER Gap - way/525253078-500_Missing Gas Capacity -- operating,e_w525253078-500,way/525253078-500,-1.382163069674213,-52.34942425077698,False
+e_w525253078-500,ep_hydro_dam_G100000600247,252.0,hydro,Ferreira Gomes hydroelectric plant_ -- operating,e_w525253078-500,way/525253078-500,0.8557,-51.1968,False
+e_w525253078-500,ep_hydro_dam_G100000600338,393.0,hydro,Santo Antônio Do Jari hydroelectric plant_ -- operating,e_w525253078-500,way/525253078-500,-0.6501,-52.5167,False
+e_w525253078-500,ep_hydro_ror_G100000600223,219.0,hydro,Cachoeira Caldeirão hydroelectric plant_ -- operating,e_w525253078-500,way/525253078-500,0.8528,-51.2967,False
+e_w525253078-500,ep_hydro_ror_w525253078-500,77.0,hydro,Aggregated Plant -- operating,e_w525253078-500,way/525253078-500,-1.9697266951756975,-52.61764040375566,False
+e_w525253078-500,ep_hydro_w525253078-500__irena,16.000572079767647,hydro,Aggregated Plant -- operating,e_w525253078-500,way/525253078-500,-1.8428156060355225,-53.1076291244975,False
+e_w526061686-500,ep_coal_w526061686-500__ember,12.807349365036506,coal,Aggregated Plant - EMBER Gap - way/526061686-500_Missing Coal Capacity -- operating,e_w526061686-500,way/526061686-500,-31.5408354883318,-53.52436818195236,False
+e_w526061686-525,ep_coal_subcritical_G100000108133,350.0,coal,Presidente Médici Candiota power station_Presidente Médici-C power station Unit 5 -- operating,e_w526061686-525,way/526061686-525,-31.5514,-53.6828,False
+e_w537470701-500,ep_bioenergy_G100000200529,54.0,bioenergy,Cerradão power station_1 -- operating,e_w537470701-500,way/537470701-500,-19.9183,-49.1458,False
+e_w537470701-500,ep_bioenergy_G100000200620,89.0,bioenergy,Moema power station_1 -- operating,e_w537470701-500,way/537470701-500,-20.2018,-49.3556,False
+e_w537470701-500,ep_bioenergy_G100000201490,60.0,bioenergy,Boa Esperança power station_1 -- operating,e_w537470701-500,way/537470701-500,-19.9234,-49.1564,False
+e_w537470701-500,ep_bioenergy_w537470701-500,100.0,bioenergy,Aggregated Plant -- operating,e_w537470701-500,way/537470701-500,-20.073919551037882,-49.219311385665854,False
+e_w537470701-500,ep_bioenergy_w537470701-500__ember,78.51859744285164,bioenergy,Aggregated Plant - EMBER Gap - way/537470701-500_Missing Bioenergy Capacity -- operating,e_w537470701-500,way/537470701-500,-20.433537778956524,-49.206300011905114,False
+e_w626452961-500,ep_coal_CFB_G100000107746,345.0,coal,Pampa Sul power station_Unit 1 -- operating,e_w626452961-500,way/626452961-500,-31.4506,-53.77687,False
+e_w626479359-500,ep_gas_steam_turbine_G100001000295,117.6,gas,CTE II power station_1 -- operating,e_w626479359-500,way/626479359-500,-22.515397,-44.124569,False
+e_w626479359-500,ep_gas_steam_turbine_G100001000296,117.6,gas,CTE II power station_2 -- operating,e_w626479359-500,way/626479359-500,-22.515397,-44.124569,False
+e_w626479359-500,ep_gas_w626479359-500__ember,12.963565948363541,gas,Aggregated Plant - EMBER Gap - way/626479359-500_Missing Gas Capacity -- operating,e_w626479359-500,way/626479359-500,-22.483810778994016,-43.71682699915928,False
+e_w626479359-500,ep_hydro_dam_G100000600248,132.0,hydro,Fontes Nova hydroelectric plant_ -- operating,e_w626479359-500,way/626479359-500,-22.6914,-43.8644,False
+e_w626479359-500,ep_hydro_ror_G100000600302,380.0,hydro,Nilo Peçanha hydroelectric plant_ -- operating,e_w626479359-500,way/626479359-500,-22.6833,-43.8733,False
+e_w626479359-500,ep_hydro_ror_w626479359-500,99.0,hydro,Aggregated Plant -- operating,e_w626479359-500,way/626479359-500,-22.836210340058596,-43.75959184402842,False
+e_w94745966-500,ep_bioenergy_w94745966-500,30.0,bioenergy,Aggregated Plant -- operating,e_w94745966-500,way/94745966-500,-29.89795892130925,-51.21842713204406,False
+elc_spv_001,ep_solar_pv_001,8.0,solar,Aggregated Plant -- operating,elc_spv_001,way/626452961-500,-29.85826056986489,-52.104699795963015,False
+elc_spv_002,ep_solar_pv_002,35.699999999999996,solar,Aggregated Plant -- operating,elc_spv_002,BR876-500,-28.37483832316028,-54.386291182317166,False
+elc_spv_003,ep_solar_pv_003,33.9,solar,Aggregated Plant -- operating,elc_spv_003,BR909-500,-29.325418341157846,-51.28787403476832,False
+elc_spv_004,ep_solar_pv_004,1.0,solar,Aggregated Plant -- operating,elc_spv_004,way/626452961-500,-30.560302761607236,-52.08176305036701,False
+elc_spv_005,ep_solar_pv_005,45.00000000000001,solar,Aggregated Plant -- operating,elc_spv_005,relation/9328495-500,-28.39555409759566,-54.96496928015629,False
+elc_spv_006,ep_solar_pv_006,5.8999999999999995,solar,Aggregated Plant -- operating,elc_spv_006,relation/9328495-500,-28.689937273428324,-55.097511095528574,False
+elc_spv_007,ep_solar_pv_007,26.999999999999996,solar,Aggregated Plant -- operating,elc_spv_007,way/32300871-525,-25.811348486468574,-53.06705090829747,False
+elc_spv_008,ep_solar_pv_008,54.1,solar,Aggregated Plant -- operating,elc_spv_008,BR777-500,-24.43289697384313,-53.9160317655439,False
+elc_spv_009,ep_solar_pv_009,5.0,solar,Aggregated Plant -- operating,elc_spv_009,BR788-500,-25.187049775908328,-50.57525590981354,False
+elc_spv_010,ep_solar_pv_010,15.299999999999997,solar,Aggregated Plant -- operating,elc_spv_010,BR845-500,-26.040626224877492,-49.22812438082042,False
+elc_spv_011,ep_solar_pv_011,5.7,solar,Aggregated Plant -- operating,elc_spv_011,BR838-500,-26.181046230204124,-51.62372188567382,False
+elc_spv_012,ep_solar_pv_012,3.3000000000000003,solar,Aggregated Plant -- operating,elc_spv_012,BR837-500,-26.256847423206015,-50.45642867389381,False
+elc_spv_014,ep_solar_pv_014,24.3,solar,Aggregated Plant -- operating,elc_spv_014,BR862-500,-27.14575183343912,-48.35629782582964,False
+elc_spv_015,ep_solar_pv_015,140.3,solar,Aggregated Plant -- operating,elc_spv_015,BR781-500,-22.89316334098292,-47.39688277217845,False
+elc_spv_016,ep_solar_pv_016,112.8,solar,Aggregated Plant -- operating,elc_spv_016,BR629-500,-21.059127384400156,-48.34516429701184,False
+elc_spv_017,ep_solar_pv_017,94.39999999999998,solar,Aggregated Plant -- operating,elc_spv_017,BR642-500,-21.893879485471782,-46.9595468690354,False
+elc_spv_018,ep_solar_pv_018,24.4,solar,Aggregated Plant -- operating,elc_spv_018,way/168904844-230,-17.06965070054521,-56.852010147382,False
+elc_spv_019,ep_solar_pv_019,4.1000000000000005,solar,Aggregated Plant -- operating,elc_spv_019,way/168904844-230,-17.428615566379765,-56.82435594891698,False
+elc_spv_020,ep_solar_pv_020,35.4,solar,Aggregated Plant -- operating,elc_spv_020,way/168904844-500,-15.287273491574007,-59.177915366754206,False
+elc_spv_021,ep_solar_pv_021,5.5,solar,Aggregated Plant -- operating,elc_spv_021,way/168664395-500,-16.14414031036122,-55.078829877962086,False
+elc_spv_022,ep_solar_pv_022,2.0,solar,Aggregated Plant -- operating,elc_spv_022,BR777-500,-24.475199805305596,-54.48423270091427,False
+elc_spv_023,ep_solar_pv_023,50.49999999999999,solar,Aggregated Plant -- operating,elc_spv_023,BR777-500,-24.000635416102224,-54.66397002745946,False
+elc_spv_024,ep_solar_pv_024,15.8,solar,Aggregated Plant -- operating,elc_spv_024,way/168664395-500,-16.58197326761269,-55.764857937466864,False
+elc_spv_025,ep_solar_pv_025,24.5,solar,Aggregated Plant -- operating,elc_spv_025,BR657-440,-22.494231909120664,-53.593669585009394,False
+elc_spv_026,ep_solar_pv_026,233.90000000000003,solar,Aggregated Plant -- operating,elc_spv_026,BR657-440,-21.972891968391515,-53.32744628308155,False
+elc_spv_027,ep_solar_pv_027,200.7,solar,Aggregated Plant -- operating,elc_spv_027,BR673-440,-22.67293121864275,-51.72030650539245,False
+elc_spv_028,ep_solar_pv_028,1160.2,solar,Aggregated Plant -- operating,elc_spv_028,BR626-440,-20.752850091135763,-51.99607381865268,False
+elc_spv_029,ep_solar_pv_029,338.5,solar,Aggregated Plant -- operating,elc_spv_029,BR592-500,-20.030718912643188,-47.798222091887354,False
+elc_spv_030,ep_solar_pv_030,263.29999999999995,solar,Aggregated Plant -- operating,elc_spv_030,BR556-500,-19.183771947724946,-46.43786637044002,False
+elc_spv_031,ep_solar_pv_031,2212.1,solar,Aggregated Plant -- operating,elc_spv_031,BR506-500,-17.007387445152183,-45.10290337130443,False
+elc_spv_032,ep_solar_pv_032,95.6,solar,Aggregated Plant -- operating,elc_spv_032,BR550-500,-19.16170097551988,-48.059023987766295,False
+elc_spv_033,ep_solar_pv_033,1708.0000000000002,solar,Aggregated Plant -- operating,elc_spv_033,BR490-500,-16.720164890244508,-47.177457550318515,False
+elc_spv_034,ep_solar_pv_034,1.0,solar,Aggregated Plant -- operating,elc_spv_034,BR571-500,-18.265096249284777,-42.320148300709114,False
+elc_spv_035,ep_solar_pv_035,36.4,solar,Aggregated Plant -- operating,elc_spv_035,BR587-500,-19.599797344073483,-40.79025995296421,False
+elc_spv_036,ep_solar_pv_036,27.500000000000004,solar,Aggregated Plant -- operating,elc_spv_036,BR535-500,-17.857505192526446,-41.15404621751747,False
+elc_spv_037,ep_solar_pv_037,19.099999999999998,solar,Aggregated Plant -- operating,elc_spv_037,BR571-500,-18.646412843699867,-42.6150120030252,False
+elc_spv_038,ep_solar_pv_038,103.2,solar,Aggregated Plant -- operating,elc_spv_038,BR691-500,-23.0829775041257,-43.78968416405243,False
+elc_spv_039,ep_solar_pv_039,78.8,solar,Aggregated Plant -- operating,elc_spv_039,BR610-500,-20.42195629129429,-44.038097971090124,False
+elc_spv_041,ep_solar_pv_041,27.000000000000004,solar,Aggregated Plant -- operating,elc_spv_041,way/954122148-500,-15.459007726652676,-41.958709150474455,False
+elc_spv_042,ep_solar_pv_042,1.0,solar,Aggregated Plant -- operating,elc_spv_042,BR499-500,-17.189549605834017,-41.481748959457306,False
+elc_spv_043,ep_solar_pv_043,180.4,solar,Aggregated Plant -- operating,elc_spv_043,BR340-500,-10.912851207772432,-37.191964275318256,False
+elc_spv_044,ep_solar_pv_044,5812.599999999999,solar,Aggregated Plant -- operating,elc_spv_044,BR209-500,-6.5138450559796635,-37.64018270901728,False
+elc_spv_044,ep_solar_pv_G100000810009,320.0,solar,SSM solar farm_1-2 -- operating,elc_spv_044,BR209-500,-5.6479,-36.3662,False
+elc_spv_044,ep_solar_pv_G100000810010,260.0,solar,SSM solar farm_3-6 -- operating,elc_spv_044,BR209-500,-5.6479,-36.3662,False
+elc_spv_045,ep_solar_pv_045,1168.6,solar,Aggregated Plant -- operating,elc_spv_045,BR337-500,-9.03185025735655,-39.68384946545409,False
+elc_spv_046,ep_solar_pv_046,22.8,solar,Aggregated Plant -- operating,elc_spv_046,BR355-500,-10.454417356267285,-37.84583793416156,False
+elc_spv_047,ep_solar_pv_047,5.3,solar,Aggregated Plant -- operating,elc_spv_047,BR412-500,-11.633383015351574,-39.5908589584047,False
+elc_spv_048,ep_solar_048__irena,4554.799616085686,solar,Aggregated Plant - IRENA Gap - 48_Missing Solar Capacity -- operating,elc_spv_048,BR435-500,-14.16666537952579,-47.88122721758653,False
+elc_spv_048,ep_solar_pv_048,12.4,solar,Aggregated Plant -- operating,elc_spv_048,BR435-500,-14.361752596362637,-48.37899811478042,False
+elc_spv_049,ep_solar_pv_049,1210.8,solar,Aggregated Plant -- operating,elc_spv_049,BR435-500,-13.566202612517381,-48.77512729249848,False
+elc_spv_050,ep_solar_pv_050,4471.4,solar,Aggregated Plant -- operating,elc_spv_050,BR478-500,-16.136239072612433,-43.1332783328894,False
+elc_spv_051,ep_solar_051__irena,4467.383195923393,solar,Aggregated Plant - IRENA Gap - 51_Missing Solar Capacity -- operating,elc_spv_051,BR437-500,-10.180184400176602,-45.281093418655615,False
+elc_spv_051,ep_solar_pv_051,2735.3,solar,Aggregated Plant -- operating,elc_spv_051,BR437-500,-10.143595992062986,-45.78988190655684,False
+elc_spv_052,ep_solar_pv_052,531.5999999999999,solar,Aggregated Plant -- operating,elc_spv_052,BR333-500,-9.766419362250833,-42.0369903612822,False
+elc_spv_053,ep_solar_053__irena,4216.70118799092,solar,Aggregated Plant - IRENA Gap - 53_Missing Solar Capacity -- operating,elc_spv_053,BR300-500,-9.608756546739839,-48.26042712813997,False
+elc_spv_053,ep_solar_pv_053,1.0,solar,Aggregated Plant -- operating,elc_spv_053,BR300-500,-9.615673726989867,-48.781108219186095,False
+elc_spv_054,ep_solar_pv_054,1.5,solar,Aggregated Plant -- operating,elc_spv_054,BR184-500,-6.763102905721081,-47.434104972760025,False
+elc_spv_055,ep_solar_pv_055,537.2,solar,Aggregated Plant -- operating,elc_spv_055,BR220-500,-7.569146304388413,-45.55907757294439,False
+elc_spv_056,ep_solar_pv_056,9.799999999999999,solar,Aggregated Plant -- operating,elc_spv_056,BR141-500,-5.601325556091192,-47.44697319969261,False
+elc_spv_057,ep_solar_pv_057,533.3,solar,Aggregated Plant -- operating,elc_spv_057,BR51-500,-5.3862446099504435,-40.02637720903623,False
+elc_spv_058,ep_solar_pv_058,270.4,solar,Aggregated Plant -- operating,elc_spv_058,BR248-500,-6.798203710349443,-40.88824662894794,False
+elc_spv_058,ep_solar_pv_G100000809698,252.0,solar,Caldeirao Grande 2 Solar Complex_-- -- operating,elc_spv_058,BR248-500,-7.3886,-40.5724,False
+elc_spv_059,ep_solar_pv_059,389.79999999999995,solar,Aggregated Plant -- operating,elc_spv_059,BR61-500,-3.936282507565827,-44.27237970583346,False
+elc_spv_060,ep_solar_pv_060,2.1999999999999997,solar,Aggregated Plant -- operating,elc_spv_060,BR119-500,-5.350104388372456,-49.248568868118056,False
+elc_spv_061,ep_solar_pv_061,20.6,solar,Aggregated Plant -- operating,elc_spv_061,BR20-500,-1.7581860507327267,-48.928988412213215,False
+elc_spv_062,ep_solar_pv_062,17.2,solar,Aggregated Plant -- operating,elc_spv_062,BR446-500,-13.956626080857731,-53.92849510678803,False
+elc_spv_063,ep_solar_pv_063,24.7,solar,Aggregated Plant -- operating,elc_spv_063,BR446-500,-14.697754671884404,-54.43818403482456,False
+elc_spv_064,ep_solar_pv_064,41.70000000000001,solar,Aggregated Plant -- operating,elc_spv_064,BR487-500,-17.095578174885528,-52.74619133452704,False
+elc_spv_065,ep_solar_pv_065,42.3,solar,Aggregated Plant -- operating,elc_spv_065,BR487-500,-15.968365194187813,-53.01415478520187,False
+elc_spv_066,ep_solar_pv_066,49.9,solar,Aggregated Plant -- operating,elc_spv_066,way/168664395-500,-16.1520550956968,-56.624950472676154,False
+elc_spv_067,ep_solar_pv_067,5.0,solar,Aggregated Plant -- operating,elc_spv_067,BR446-500,-14.546821808311599,-54.8051619918127,False
+elc_spv_068,ep_solar_pv_068,47.199999999999996,solar,Aggregated Plant -- operating,elc_spv_068,way/168664395-500,-14.851471490076188,-56.194826781667096,False
+elc_spv_069,ep_solar_pv_069,6.0,solar,Aggregated Plant -- operating,elc_spv_069,way/525253078-500,-1.4184247564535948,-53.201345164491585,False
+elc_spv_070,ep_solar_pv_070,13.2,solar,Aggregated Plant -- operating,elc_spv_070,way/515552863-500,-1.3486358416000548,-49.113049764366046,False
+elc_spv_071,ep_solar_pv_071,5.0,solar,Aggregated Plant -- operating,elc_spv_071,BR181-500,-4.970082341117152,-49.5319246532075,False
+elc_spv_073,ep_solar_pv_073,2.1999999999999997,solar,Aggregated Plant -- operating,elc_spv_073,way/285044818-500,-1.757555256160621,-55.76634448089546,False
+elc_spv_076,ep_solar_pv_076,4.0,solar,Aggregated Plant -- operating,elc_spv_076,BR446-500,-13.900254428509252,-54.90594577486077,False
+elc_spv_077,ep_solar_pv_077,12.800000000000002,solar,Aggregated Plant -- operating,elc_spv_077,way/453724535-500,-9.521416322851334,-56.78001998078302,False
+elc_spv_078,ep_solar_pv_078,14.499999999999998,solar,Aggregated Plant -- operating,elc_spv_078,BR367-500,-11.120757535760406,-49.64226002394695,False
+elc_spv_079,ep_solar_pv_079,6.6,solar,Aggregated Plant -- operating,elc_spv_079,BR181-500,-5.328420986222836,-49.51270052831251,False
+elc_spv_081,ep_solar_pv_081,12.0,solar,Aggregated Plant -- operating,elc_spv_081,BR290-500,-9.52871716328051,-56.7985956820941,False
+elc_spv_089,ep_solar_pv_089,2.4,solar,Aggregated Plant -- operating,elc_spv_089,way/287374167-500,-2.790311331459254,-58.533310552674635,False
+elc_spv_091,ep_solar_pv_091,1.0,solar,Aggregated Plant -- operating,elc_spv_091,way/304646981-500,-3.438908766308602,-60.16607786172852,False
+elc_spv_092,ep_solar_pv_092,8.7,solar,Aggregated Plant -- operating,elc_spv_092,way/304646981-500,-3.040526876269491,-60.542005367598705,False
+elc_spv_097,ep_solar_pv_097,12.0,solar,Aggregated Plant -- operating,elc_spv_097,way/304646981-500,-2.650933279922416,-60.483983610142346,False
+elc_spv_100,ep_solar_pv_100,2.0,solar,Aggregated Plant -- operating,elc_spv_100,way/307168542-230,-11.701537645020494,-61.38937518818648,False
+elc_spv_101,ep_solar_pv_101,5.3,solar,Aggregated Plant -- operating,elc_spv_101,BR270-230,-8.639864899161998,-61.84934036235388,False
+elc_spv_102,ep_solar_pv_102,15.199999999999998,solar,Aggregated Plant -- operating,elc_spv_102,BR411-230,-12.891520775826532,-60.221788162807954,False
+elc_spv_104,ep_solar_pv_104,2.0,solar,Aggregated Plant -- operating,elc_spv_104,BR315-230,-9.955646998496844,-62.5489952660516,False
+elc_spv_105,ep_solar_pv_105,13.600000000000001,solar,Aggregated Plant -- operating,elc_spv_105,BR315-230,-10.305068154126783,-62.547368532502574,False
+elc_spv_112,ep_solar_pv_112,1.0,solar,Aggregated Plant -- operating,elc_spv_112,BR319-230,-10.144902739172498,-67.72161773006476,False
+elc_won_008,ep_windon_wind_008,68.0,windon,Aggregated Plant -- operating,elc_won_008,way/521542011-500,-27.70056980699357,-51.7393560344562,False
+elc_won_009,ep_windon_wind_009,93.0,windon,Aggregated Plant -- operating,elc_won_009,BR992-525,-28.278998277476507,-50.095340761778516,False
+elc_won_012,ep_windon_wind_012,1618.7,windon,Aggregated Plant -- operating,elc_won_012,BR1012-500,-32.366961496057556,-53.16708798413016,False
+elc_won_014,ep_windon_014__irena,11.569314150154712,windon,Aggregated Plant -- operating,elc_won_014,relation/9328495-500,-28.42420731245276,-56.37215258198398,False
+elc_won_014,ep_windon_wind_014,515.4,windon,Aggregated Plant -- operating,elc_won_014,relation/9328495-500,-27.662487708254428,-56.08295379902272,False
+elc_won_030,ep_windon_wind_030,81.3,windon,Aggregated Plant -- operating,elc_won_030,BR820-500,-25.71743177995713,-53.54424426112252,False
+elc_won_034,ep_windon_wind_034,6044.2,windon,Aggregated Plant -- operating,elc_won_034,BR464-500,-11.28505244401539,-41.908254564321844,False
+elc_won_034,ep_windon_wind_G100000920279,201.6,windon,Caetité Norte e Brejinhos wind farm_-- -- operating,elc_won_034,BR464-500,-14.0853,-42.5146,False
+elc_won_036,ep_windon_036__irena,13.072490862197489,windon,Aggregated Plant -- operating,elc_won_036,BR366-500,-9.651711371173823,-39.54210790374673,False
+elc_won_036,ep_windon_wind_036,4894.0,windon,Aggregated Plant -- operating,elc_won_036,BR366-500,-9.374959405419524,-39.849611421781105,False
+elc_won_036,ep_windon_wind_G100000906283,360.0,windon,Babilônia Sul wind farm_1 -- construction,elc_won_036,BR366-500,-11.1145,-41.3314,False
+elc_won_037,ep_windon_wind_037,90.0,windon,Aggregated Plant -- operating,elc_won_037,BR528-500,-18.850478911545036,-44.072809749463545,False
+elc_won_038,ep_windon_wind_038,322.40000000000003,windon,Aggregated Plant -- operating,elc_won_038,BR430-500,-12.636106498833675,-40.605220065413484,False
+elc_won_043,ep_windon_wind_043,696.8,windon,Aggregated Plant -- operating,elc_won_043,BR61-500,-3.4980786323118913,-44.97715043353845,False
+elc_won_044,ep_windon_wind_044,382.8,windon,Aggregated Plant -- operating,elc_won_044,BR400-500,-12.578188826333163,-38.7937061942232,False
+elc_won_044,ep_windon_wind_G100000906294,420.0,windon,Novo Horizonte wind farm_1 -- operating,elc_won_044,BR400-500,-12.5779,-38.0049,False
+elc_won_045,ep_windon_045__irena,10.493194987612632,windon,Aggregated Plant -- operating,elc_won_045,BR46-500,-7.640548997209605,-35.93776933095717,False
+elc_won_045,ep_windon_wind_045,15003.2,windon,Aggregated Plant -- operating,elc_won_045,BR46-500,-7.344514129914764,-36.326939073476,False
+elc_won_045,ep_windon_wind_G100000926950,248.0,windon,Seridó Oeste wind farm_12-Jan -- construction,elc_won_045,BR46-500,-6.6926,-36.6615,False
+elc_won_046,ep_windon_wind_046,393.59999999999997,windon,Aggregated Plant -- operating,elc_won_046,BR208-500,-6.494283675790215,-37.394075554501114,False
+elc_won_047,ep_windon_wind_047,250.2,windon,Aggregated Plant -- operating,elc_won_047,BR122-500,-5.606056182684744,-40.6605197500985,False
+elc_won_052,ep_windon_wind_052,28.0,windon,Aggregated Plant -- operating,elc_won_052,BR652-500,-22.587089579036004,-41.96010413739925,False
+elc_won_053,ep_windon_wind_053,6.300000000000001,windon,Aggregated Plant -- operating,elc_won_053,BR886-500,-28.641369278221575,-49.76142539123765,False
+elc_won_061,ep_windon_wind_061,4885.1,windon,Aggregated Plant -- operating,elc_won_061,BR333-500,-9.71145653650008,-42.75522650419532,False
+elc_won_061,ep_windon_wind_G100000906788,396.0,windon,Lagoa Dos Ventos 5 wind farm_5 -- construction,elc_won_061,BR333-500,-8.8531,-41.5597,False
+elc_won_065,ep_windon_wind_065,112.5,windon,Aggregated Plant -- operating,elc_won_065,BR478-500,-15.654008877626689,-43.875595423682675,False

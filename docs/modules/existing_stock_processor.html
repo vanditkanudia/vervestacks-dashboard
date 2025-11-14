@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>existing_stock_processor.py - VerveStacks Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .breadcrumb {
+            background: #e9ecef;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+        
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #52c41a 0%, #389e0d 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #52c41a;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #52c41a;
+            padding-bottom: 10px;
+        }
+        
+        .function-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-left: 4px solid #52c41a;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .function-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+        }
+        
+        .function-card .signature {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        
+        .data-flow {
+            display: grid;
+            grid-template-columns: 1fr 50px 1fr;
+            gap: 15px;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .data-box {
+            background: #f0f7ff;
+            border: 1px solid #d4edff;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .arrow {
+            text-align: center;
+            font-size: 1.5em;
+            color: #52c41a;
+        }
+        
+        .highlight-box {
+            background: #fff7e6;
+            border: 1px solid #ffd591;
+            border-left: 4px solid #fa8c16;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .code-snippet {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        .code-snippet .comment {
+            color: #68d391;
+        }
+        
+        .code-snippet .keyword {
+            color: #f687b3;
+        }
+        
+        .code-snippet .function {
+            color: #90cdf4;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.7em;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+        
+        .status-badge.recent { background: #d1ecf1; color: #0c5460; }
+        .status-badge.critical { background: #f8d7da; color: #721c24; }
+        .status-badge.utility { background: #d4edda; color: #155724; }
+        
+        .file-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .file-list li {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .nav-button {
+            background: #667eea;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background 0.3s ease;
+        }
+        
+        .nav-button:hover {
+            background: #5a6fd8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">← Back to Overview</a> / existing_stock_processor.py
+        </div>
+        
+        <div class="header">
+            <h1>existing_stock_processor.py</h1>
+            <div class="subtitle">The Heart of VerveStacks - Where All the Spatial Magic Happens</div>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 What This Module Does</h2>
+            <p>This is the <strong>core processing engine</strong> that transforms raw global energy data into spatially-aware, country-specific power plant inventories. It's where your recent spatial distribution work lives.</p>
+            
+            <div class="highlight-box">
+                <strong>Key Achievement:</strong> Recently implemented clean single-pass commodity assignment with sophisticated thermal distribution based on existing fuel-specific plant locations. No more overwrites!
+            </div>
+            
+            <div class="data-flow">
+                <div class="data-box">
+                    <strong>Input</strong><br>
+                    • GEM plant database<br>
+                    • IRENA capacity targets<br>
+                    • Ember thermal data<br>
+                    • Spatial mapping files
+                </div>
+                <div class="arrow">→</div>
+                <div class="data-box">
+                    <strong>Output</strong><br>
+                    • Complete plant inventory<br>
+                    • Spatial commodities assigned<br>
+                    • Gap capacity distributed<br>
+                    • Ready for VEDA
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🔧 Key Functions - Your Recent Work</h2>
+            
+            <div class="function-card">
+                <h3>process_gem_data() <span class="status-badge critical">MAIN PIPELINE</span></h3>
+                <div class="signature">
+                def process_gem_data(iso_processor, grid_modeling=False, detailed_logging=False)
+                </div>
+                <p><strong>Purpose:</strong> The master orchestrator that runs the complete pipeline</p>
+                <p><strong>What it does:</strong></p>
+                <ul>
+                    <li>Loads GEM plant data for the country</li>
+                    <li>Loads spatial mapping data early (for thermal distribution)</li>
+                    <li>Calls gap-filling functions with spatial data</li>
+                    <li>Merges final spatial assignments</li>
+                    <li>Applies single commodity assignment</li>
+                    <li>Exports to Excel</li>
+                </ul>
+                <p><strong>Recent Change:</strong> Now loads spatial data before gap-filling to enable proper thermal distribution</p>
+            </div>
+            
+            <div class="function-card">
+                <h3>add_missing_irena_capacity() <span class="status-badge recent">RECENTLY UPDATED</span></h3>
+                <div class="signature">
+                def add_missing_irena_capacity(df_gem_iso, df_irena_c, input_iso, fuel_type, 
+                                             iso_processor=None, existing_plants_with_spatial=None, 
+                                             buses_data=None, grid_modeling=False)
+                </div>
+                <p><strong>Purpose:</strong> Adds missing renewable capacity from IRENA with proper spatial distribution</p>
+                <p><strong>Logic:</strong></p>
+                <ul>
+                    <li>Solar/Wind: Distributed across REZ zones based on resource quality</li>
+                    <li>Hydro: Distributed to existing hydro plant locations (thermal-style distribution)</li>
+                    <li>Creates multiple spatially-aware records instead of single aggregated record</li>
+                </ul>
+                <div class="code-snippet">
+<span class="comment"># Example output from recent CHE run:</span>
+<span class="keyword">Distributing</span> hydro gap capacity across <span class="function">44 locations</span>:
+  - CH18-220: 0.391 GW
+  - way/234983117-220: 0.489 GW
+  - way/260211728-225: 0.238 GW
+  <span class="comment"># (distributed to actual existing hydro plants!)</span>
+                </div>
+            </div>
+            
+            <div class="function-card">
+                <h3>add_missing_ember_capacity() <span class="status-badge recent">RECENTLY UPDATED</span></h3>
+                <div class="signature">
+                def add_missing_ember_capacity(df_gem_iso, df_ember, input_iso, fuel_type,
+                                             iso_processor=None, existing_plants_with_spatial=None,
+                                             buses_data=None, grid_modeling=False)
+                </div>
+                <p><strong>Purpose:</strong> Adds missing thermal capacity from Ember with fuel-specific spatial distribution</p>
+                <p><strong>Smart Distribution:</strong></p>
+                <ul>
+                    <li>Coal capacity → distributed to existing coal plant buses</li>
+                    <li>Gas capacity → distributed to existing gas plant buses</li>
+                    <li>If no existing plants of that fuel type → voltage-based fallback</li>
+                    <li>10MW threshold applied with residual to largest bus</li>
+                </ul>
+                <div class="code-snippet">
+<span class="comment"># Example: Gas distribution in CHE</span>
+<span class="keyword">Distributing</span> gas based on existing gas plant locations
+<span class="keyword">Distributing</span> gas gap capacity across <span class="function">3 buses</span>:
+  - CH49-225: 0.021 GW
+  - way/1284913429-220: 0.094 GW
+                </div>
+            </div>
+            
+            <div class="function-card">
+                <h3>assign_single_commodity() <span class="status-badge recent">NEW FUNCTION</span></h3>
+                <div class="signature">
+                def assign_single_commodity(df_gem_iso, grid_modeling=False, input_iso=None)
+                </div>
+                <p><strong>Purpose:</strong> Single-pass commodity assignment - no more overwrites!</p>
+                <p><strong>Logic:</strong></p>
+                <ul>
+                    <li><strong>Grid modeling ON:</strong> Solar/wind → grid_cell commodities, others → bus_id commodities</li>
+                    <li><strong>Grid modeling OFF:</strong> Solar → elc_sol-{ISO}, Wind → elc_win-{ISO}, Others → ELC</li>
+                    <li>Applied once at the end, preserves all spatial assignments</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📊 Data Flow Through This Module</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Input Data Sources</h3>
+                    <ul class="file-list">
+                        <li>GEM plant database (global)</li>
+                        <li>IRENA renewable capacity (by country/year)</li>
+                        <li>Ember thermal capacity (by country/year)</li>
+                        <li>{ISO}_power_plants_assigned_to_buses.csv</li>
+                        <li>{ISO}_clustered_buses.csv</li>
+                        <li>REZoning solar/wind data</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Output Files Created</h3>
+                    <ul class="file-list">
+                        <li>output/VerveStacks_{ISO}.xlsx</li>
+                        <li>Historical data sheets</li>
+                        <li>Plant inventory with spatial commodities</li>
+                        <li>Gap capacity records</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🚨 Key Design Decisions You Made</h2>
+            
+            <div class="highlight-box">
+                <h3>1. Early Spatial Data Loading</h3>
+                <p>You moved spatial data loading to happen <strong>before</strong> gap-filling, not after. This enables thermal distribution to analyze existing plant locations during gap-filling.</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>2. Unified Distribution Function</h3>
+                <p>Created <code>calculate_capacity_distribution()</code> in spatial_utils.py that dispatches to either REZ-based (renewables) or thermal-based (everything else) distribution.</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>3. Single-Pass Commodity Assignment</h3>
+                <p>Replaced multiple overwriting assignment functions with one clean function that runs once at the end. No more conflicts!</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>4. 10MW Threshold with Residual Redistribution</h3>
+                <p>Small bus allocations below 10MW get redistributed to the largest bus. Prevents tiny, impractical plant distributions.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🔍 Common Debugging Spots</h2>
+            <ul>
+                <li><strong>Spatial data not loading:</strong> Check if grid modeling files exist in <code>1_grids/output_kan/{ISO}/</code></li>
+                <li><strong>Commodities still showing 'ELC':</strong> Verify spatial assignments happened before commodity assignment</li>
+                <li><strong>Gap capacity not distributed:</strong> Check if unified distribution function is being called with correct parameters</li>
+                <li><strong>Bus data missing:</strong> Ensure bus clustering completed successfully</li>
+                <li><strong>Thermal distribution failing:</strong> Check if existing plants have bus_id assignments</li>
+            </li>
+        </div>
+        
+        <div class="section">
+            <h2>🔗 Module Dependencies</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>This Module Calls:</h3>
+                    <ul>
+                        <li><code>spatial_utils.py</code> - Distribution functions</li>
+                        <li><code>shared_data_loader.py</code> - Global data access</li>
+                        <li><code>excel_manager.py</code> - Excel operations</li>
+                        <li>Pandas, DuckDB for data processing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Called By:</h3>
+                    <ul>
+                        <li><code>verve_stacks_processor.py</code> (main pipeline)</li>
+                        <li>Receives <code>iso_processor</code> object with all global data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-buttons">
+            <a href="../index.html" class="nav-button">← Back to Overview</a>
+            <a href="spatial_utils.html" class="nav-button">spatial_utils.py →</a>
+        </div>
+    </div>
+</body>
+</html>

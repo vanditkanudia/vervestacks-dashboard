@@ -1,0 +1,234 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_coal__ember,1.9999999999997797,coal,Aggregated Plant -- operating,,,,,False
+e_TH10-230,ep_hydro_dam_G100000603608,500.0,hydro,Sirikit hydroelectric plant_ -- operating,e_TH10-230,TH10-230,17.7648,100.5634,False
+e_TH13-500,ep_bioenergy_TH13-500,41.0,bioenergy,Aggregated Plant -- operating,e_TH13-500,TH13-500,17.837888694485635,101.48016929362679,False
+e_TH13-500,ep_bioenergy_TH13-500__ember,168.2609699769053,bioenergy,Aggregated Plant - EMBER Gap - TH13-500_Missing Bioenergy Capacity -- operating,e_TH13-500,TH13-500,17.48188717918828,101.43549106563478,False
+e_TH17-230,ep_hydro_TH17-230__irena,18.267950413223115,hydro,Aggregated Plant - IRENA Gap - TH17-230_Missing Hydro Capacity -- operating,e_TH17-230,TH17-230,17.42236976586295,98.96062155250966,False
+e_TH17-230,ep_hydro_dam_G100000603603,779.0,hydro,Bhumibol hydroelectric plant_ -- operating,e_TH17-230,TH17-230,17.2414,98.9732,False
+e_TH17-230,ep_hydro_ps_G100000604991,171.0,hydro,Bhumibol hydroelectric plant_ -- operating,e_TH17-230,TH17-230,17.2414,98.9732,False
+e_TH20-230,ep_bioenergy_G100000200087,103.0,bioenergy,Mitr Biopower Chaiyaphum power station_3 -- operating,e_TH20-230,TH20-230,16.4822,102.1201,False
+e_TH20-230,ep_bioenergy_TH20-230__ember,422.7043879907621,bioenergy,Aggregated Plant - EMBER Gap - TH20-230_Missing Bioenergy Capacity -- operating,e_TH20-230,TH20-230,16.473711161616873,102.53483482830282,False
+e_TH25-230,ep_hydro_dam_G100000603606,136.0,hydro,Pak Mun hydroelectric plant_ -- operating,e_TH25-230,TH25-230,15.2826,105.4683,False
+e_TH30-230,ep_hydro_TH30-230__irena,19.22942148760328,hydro,Aggregated Plant - IRENA Gap - TH30-230_Missing Hydro Capacity -- operating,e_TH30-230,TH30-230,14.987432852367133,101.54537215276542,False
+e_TH30-230,ep_hydro_ps_G100000603605,1000.0,hydro,Lam Ta Khong hydroelectric plant_ -- operating,e_TH30-230,TH30-230,14.8653,101.5603,False
+e_TH31-230,ep_hydro_TH31-230__irena,23.075305785123934,hydro,Aggregated Plant - IRENA Gap - TH31-230_Missing Hydro Capacity -- operating,e_TH31-230,TH31-230,15.062541459634948,98.56545928460788,False
+e_TH31-230,ep_hydro_dam_G100000603610,300.0,hydro,Vajiralongkorn hydroelectric plant_ -- operating,e_TH31-230,TH31-230,14.7998,98.597,False
+e_TH35-230,ep_gas_combined_cycle_G100000404513,123.0,gas,Chaiyo power station_1 -- operating,e_TH35-230,TH35-230,14.69335,100.458415,False
+e_TH36-500,ep_gas_TH36-500__ember,68.13943601466411,gas,Aggregated Plant -- operating,e_TH36-500,TH36-500,14.61850677908619,100.81128017614806,False
+e_TH36-500,ep_gas_combined_cycle_G100000404446,800.0,gas,Nong Saeng power station_1 -- operating,e_TH36-500,TH36-500,14.4417,100.7756,False
+e_TH36-500,ep_gas_combined_cycle_G100000404447,800.0,gas,Nong Saeng power station_2 -- operating,e_TH36-500,TH36-500,14.4417,100.7756,False
+e_TH38-500,ep_gas_TH38-500__ember,79.85090157968452,gas,Aggregated Plant -- operating,e_TH38-500,TH38-500,14.263635580264529,100.62872287807157,False
+e_TH38-500,ep_gas_combined_cycle_G100000404462,275.0,gas,Rojana power station_1 -- operating,e_TH38-500,TH38-500,14.3324,100.6382,False
+e_TH38-500,ep_gas_combined_cycle_G100000404508,800.0,gas,U-Thai power station_1 -- operating,e_TH38-500,TH38-500,14.331653,100.69591,False
+e_TH38-500,ep_gas_combined_cycle_G100000404509,800.0,gas,U-Thai power station_2 -- operating,e_TH38-500,TH38-500,14.331653,100.69591,False
+e_TH47-230,ep_bioenergy_TH47-230,47.0,bioenergy,Aggregated Plant -- operating,e_TH47-230,TH47-230,14.166583626133674,101.22705557396533,False
+e_TH47-230,ep_bioenergy_TH47-230__ember,192.88452655889142,bioenergy,Aggregated Plant - EMBER Gap - TH47-230_Missing Bioenergy Capacity -- operating,e_TH47-230,TH47-230,13.729588040395834,101.75319119329377,False
+e_TH47-230,ep_gas_TH47-230__ember,27.851994470993958,gas,Aggregated Plant -- operating,e_TH47-230,TH47-230,13.42466672871558,101.64069116795366,False
+e_TH47-230,ep_gas_steam_turbine_TH47-230,114.0,gas,Aggregated Plant -- operating,e_TH47-230,TH47-230,13.316297362626717,101.10820056111952,False
+e_TH48-230,ep_gas_combined_cycle_TH48-230,110.0,gas,Aggregated Plant -- operating,e_TH48-230,TH48-230,13.784863273386396,100.76670636014863,False
+e_TH51-230,ep_gas_combined_cycle_G100000404478,234.0,gas,Ratchaburi World cogeneration power station_1 -- operating,e_TH51-230,TH51-230,13.650941,99.846812,False
+e_TH51-500,ep_gas_TH51-500__ember,284.5332499382337,gas,Aggregated Plant - EMBER Gap - TH51-500_Missing Gas Capacity -- operating,e_TH51-500,TH51-500,13.458662199534984,99.79519029965421,False
+e_TH51-500,ep_gas_combined_cycle_G100000404450,725.0,gas,Ratchaburi (RATCHGEN) power station_1 -- operating,e_TH51-500,TH51-500,13.5979,99.8841,False
+e_TH51-500,ep_gas_combined_cycle_G100000404451,725.0,gas,Ratchaburi (RATCHGEN) power station_2 -- operating,e_TH51-500,TH51-500,13.5979,99.8841,False
+e_TH51-500,ep_gas_combined_cycle_G100000404452,725.0,gas,Ratchaburi (RATCHGEN) power station_3 -- operating,e_TH51-500,TH51-500,13.5979,99.8841,False
+e_TH51-500,ep_gas_combined_cycle_G100000404455,700.0,gas,Ratchaburi Power (RPCL) power station_1 -- operating,e_TH51-500,TH51-500,13.6068,99.8902,False
+e_TH51-500,ep_gas_combined_cycle_G100000404456,700.0,gas,Ratchaburi Power (RPCL) power station_2 -- operating,e_TH51-500,TH51-500,13.6068,99.8902,False
+e_TH51-500,ep_gas_gas_turbine_G100000404453,735.0,gas,Ratchaburi (RATCHGEN) power station_4 -- operating,e_TH51-500,TH51-500,13.5979,99.8841,False
+e_TH51-500,ep_gas_gas_turbine_G100000404454,735.0,gas,Ratchaburi (RATCHGEN) power station_5 -- operating,e_TH51-500,TH51-500,13.5979,99.8841,False
+e_TH52-230,ep_gas_TH52-230__ember,10.220915402199617,gas,Aggregated Plant -- operating,e_TH52-230,TH52-230,13.436668989661738,100.86455299066552,False
+e_TH52-230,ep_gas_combined_cycle_G100000404484,120.0,gas,Bangpoo cogeneration power station_1-1 -- operating,e_TH52-230,TH52-230,13.533183,100.651384,False
+e_TH52-230,ep_gas_combined_cycle_G100000404485,120.0,gas,Bangpoo cogeneration power station_2-1 -- operating,e_TH52-230,TH52-230,13.533183,100.651384,False
+e_TH57-230,ep_gas_TH57-230__ember,59.6220065128311,gas,Aggregated Plant -- operating,e_TH57-230,TH57-230,13.464946353375385,99.84955678317107,False
+e_TH57-230,ep_gas_combined_cycle_G100000404476,700.0,gas,Hin Kong power plant_1 -- operating,e_TH57-230,TH57-230,13.536,99.743,False
+e_TH57-230,ep_gas_combined_cycle_G100000404477,700.0,gas,Hin Kong power plant_2 -- construction,e_TH57-230,TH57-230,13.536,99.743,False
+e_TH67-230,ep_gas_TH67-230__ember,10.178328254690452,gas,Aggregated Plant -- operating,e_TH67-230,TH67-230,13.333766803720803,100.89374372506923,False
+e_TH67-230,ep_gas_combined_cycle_TH67-230,239.0,gas,Aggregated Plant -- operating,e_TH67-230,TH67-230,12.984369198891022,100.90458339383838,False
+e_TH69-230,ep_gas_TH69-230__ember,43.183367574293385,gas,Aggregated Plant -- operating,e_TH69-230,TH69-230,13.294458725992863,100.93148636492602,False
+e_TH69-230,ep_gas_combined_cycle_G100000404436,140.0,gas,Laem Chabang power station_1 -- operating,e_TH69-230,TH69-230,13.0913,100.8943,False
+e_TH69-230,ep_gas_combined_cycle_G100000404472,700.0,gas,Sriracha power station_1 -- operating,e_TH69-230,TH69-230,13.1128,100.9085,False
+e_TH69-230,ep_gas_combined_cycle_TH69-230,174.0,gas,Aggregated Plant -- operating,e_TH69-230,TH69-230,12.937813642280203,100.9406414072525,False
+e_TH71-500,ep_gas_TH71-500__ember,117.5405271252956,gas,Aggregated Plant -- operating,e_TH71-500,TH71-500,12.882016162266632,101.18266704059329,False
+e_TH71-500,ep_gas_combined_cycle_G100000401094,625.0,gas,Chonburi Ng Project power station_1 -- operating,e_TH71-500,TH71-500,13.049968,101.193335,False
+e_TH71-500,ep_gas_combined_cycle_G100000401095,625.0,gas,Chonburi Ng Project power station_2 -- operating,e_TH71-500,TH71-500,13.049968,101.193335,False
+e_TH71-500,ep_gas_combined_cycle_G100000401096,625.0,gas,Chonburi Ng Project power station_3 -- operating,e_TH71-500,TH71-500,13.049968,101.193335,False
+e_TH71-500,ep_gas_combined_cycle_G100000401097,625.0,gas,Chonburi Ng Project power station_4 -- operating,e_TH71-500,TH71-500,13.049968,101.193335,False
+e_TH71-500,ep_gas_combined_cycle_G100000404494,130.0,gas,Gulf Tasit 3 & 4 power station_1 -- operating,e_TH71-500,TH71-500,13.064886,101.185198,False
+e_TH71-500,ep_gas_combined_cycle_G100000404495,130.0,gas,Gulf Tasit 3 & 4 power station_2 -- operating,e_TH71-500,TH71-500,13.064886,101.185198,False
+e_TH75-230,ep_gas_combined_cycle_TH75-230,80.0,gas,Aggregated Plant -- construction,e_TH75-230,TH75-230,12.674082341817867,100.75165330276441,False
+e_TH76-230,ep_gas_TH76-230__ember,14.394455858097794,gas,Aggregated Plant -- operating,e_TH76-230,TH76-230,12.900904094289842,101.1499705191924,False
+e_TH76-230,ep_gas_combined_cycle_G100000404420,226.0,gas,Global Power Synergy Central Utility Plant 1_1 -- operating,e_TH76-230,TH76-230,12.7014,101.1258,False
+e_TH76-230,ep_gas_combined_cycle_TH76-230,112.0,gas,Aggregated Plant -- operating,e_TH76-230,TH76-230,12.54591407184163,101.09657013877651,False
+e_TH77-500,ep_coal_subcritical_G100000106655,717.0,coal,Map Ta Phut BLCP power station_Unit 1 -- operating,e_TH77-500,TH77-500,12.6435,101.160536,False
+e_TH77-500,ep_coal_subcritical_G100000106656,717.0,coal,Map Ta Phut BLCP power station_Unit 2 -- operating,e_TH77-500,TH77-500,12.6435,101.160536,False
+e_TH81-230,ep_gas_TH81-230__ember,41.30953308389012,gas,Aggregated Plant -- operating,e_TH81-230,TH81-230,9.150857907348339,99.70435208562397,False
+e_TH81-230,ep_gas_combined_cycle_G100000404431,970.0,gas,Khanom power station_CC4 -- operating,e_TH81-230,TH81-230,9.2357,99.8593,False
+e_TH85-230,ep_windon_wind_230,10.0,windon,Aggregated Plant -- operating,e_TH85-230,TH85-230,8.419484527006807,99.94429774529651,False
+e_w1364467990-230,ep_gas_combined_cycle_G100000404489,126.5,gas,Gulf NC power station_1 -- operating,e_w1364467990-230,way/1364467990-230,14.032236,101.710998,False
+e_w1366689326-500,ep_gas_combined_cycle_G100000401098,625.0,gas,Rayong Gulf PD power station_1 -- operating,e_w1366689326-500,way/1366689326-500,12.950169,101.156081,False
+e_w1366689326-500,ep_gas_combined_cycle_G100000401099,625.0,gas,Rayong Gulf PD power station_2 -- operating,e_w1366689326-500,way/1366689326-500,12.950169,101.156081,False
+e_w1366689326-500,ep_gas_combined_cycle_G100000401100,625.0,gas,Rayong Gulf PD power station_3 -- operating,e_w1366689326-500,way/1366689326-500,12.950169,101.156081,False
+e_w1366689326-500,ep_gas_combined_cycle_G100000401101,625.0,gas,Rayong Gulf PD power station_4 -- operating,e_w1366689326-500,way/1366689326-500,12.950169,101.156081,False
+e_w1366689326-500,ep_gas_combined_cycle_G100000404405,123.0,gas,Amata (Rayong) power station_1 -- operating,e_w1366689326-500,way/1366689326-500,12.968022,101.118265,False
+e_w1366689326-500,ep_gas_combined_cycle_G100000404406,124.0,gas,Amata (Rayong) power station_2 -- operating,e_w1366689326-500,way/1366689326-500,12.968022,101.118265,False
+e_w1366689326-500,ep_gas_combined_cycle_G100000404407,133.0,gas,Amata (Rayong) power station_3 -- operating,e_w1366689326-500,way/1366689326-500,12.968022,101.118265,False
+e_w1366689326-500,ep_gas_combined_cycle_G100000404408,133.0,gas,Amata (Rayong) power station_4 -- operating,e_w1366689326-500,way/1366689326-500,12.968022,101.118265,False
+e_w1366689326-500,ep_gas_combined_cycle_G100000404409,133.0,gas,Amata (Rayong) power station_5 -- operating,e_w1366689326-500,way/1366689326-500,12.968022,101.118265,False
+e_w1366689326-500,ep_gas_combined_cycle_G100000404425,162.0,gas,Glow SPP 11 power station_1-1 -- operating,e_w1366689326-500,way/1366689326-500,13.0074,101.137,False
+e_w1366689326-500,ep_gas_combined_cycle_w1366689326-500,110.0,gas,Aggregated Plant -- operating,e_w1366689326-500,way/1366689326-500,13.134679625174863,101.18696009144034,False
+e_w1366689326-500,ep_gas_w1366689326-500__ember,145.56287018632622,gas,Aggregated Plant - EMBER Gap - way/1366689326-500_Missing Gas Capacity -- operating,e_w1366689326-500,way/1366689326-500,12.782059315457102,101.19806706474088,False
+e_w155847885-230,ep_gas_combined_cycle_G100000404492,138.3,gas,Gulf Tasit 1 & 2 power station_1 -- operating,e_w155847885-230,way/155847885-230,13.017385,101.192733,False
+e_w155847885-230,ep_gas_combined_cycle_G100000404493,138.3,gas,Gulf Tasit 1 & 2 power station_2 -- operating,e_w155847885-230,way/155847885-230,13.017385,101.192733,False
+e_w155847885-230,ep_gas_combined_cycle_G100000404496,137.0,gas,Gulf VTP power station_1 -- operating,e_w155847885-230,way/155847885-230,13.003965,101.172476,False
+e_w155847885-230,ep_gas_w155847885-230__ember,17.614044209790674,gas,Aggregated Plant -- operating,e_w155847885-230,way/155847885-230,12.846025027736122,101.1121973566768,False
+e_w155851424-500,ep_gas_combined_cycle_G100000404417,710.0,gas,Bang Pakong power station_CC5 -- operating,e_w155851424-500,way/155851424-500,13.501,101.0253,False
+e_w155851424-500,ep_gas_combined_cycle_G100000405963,704.0,gas,Bang Pakong power station_CC1 -- operating,e_w155851424-500,way/155851424-500,13.501,101.0253,False
+e_w155851424-500,ep_gas_combined_cycle_G100000405964,704.0,gas,Bang Pakong power station_CC2 -- operating,e_w155851424-500,way/155851424-500,13.501,101.0253,False
+e_w155851424-500,ep_gas_steam_turbine_G100000404413,576.0,gas,Bang Pakong power station_ST3 -- operating,e_w155851424-500,way/155851424-500,13.501,101.0253,False
+e_w155851424-500,ep_gas_steam_turbine_G100000404414,576.0,gas,Bang Pakong power station_ST4 -- operating,e_w155851424-500,way/155851424-500,13.501,101.0253,False
+e_w155851424-500,ep_gas_w155851424-500__ember,139.2599723549698,gas,Aggregated Plant - EMBER Gap - way/155851424-500_Missing Gas Capacity -- operating,e_w155851424-500,way/155851424-500,13.488998274912884,101.16135241967258,False
+e_w199773788-230,ep_coal_subcritical_w199773788-230,34.0,coal,Aggregated Plant -- operating,e_w199773788-230,way/199773788-230,14.03077290323063,99.83974804044074,False
+e_w199773788-230,ep_gas_combined_cycle_G100000404433,128.0,gas,Banpong power station_1 -- operating,e_w199773788-230,way/199773788-230,13.858877,99.855819,False
+e_w199773788-230,ep_gas_combined_cycle_G100000405840,128.0,gas,Banpong power station_2 -- operating,e_w199773788-230,way/199773788-230,13.858877,99.855819,False
+e_w199773788-230,ep_gas_w199773788-230__ember,10.90230976234626,gas,Aggregated Plant -- operating,e_w199773788-230,way/199773788-230,13.67516167831399,99.83977426565453,False
+e_w199806286-230,ep_coal_subcritical_w199806286-230,36.0,coal,Aggregated Plant -- operating,e_w199806286-230,way/199806286-230,13.991511410798536,100.52827040309442,False
+e_w199806286-230,ep_gas_combined_cycle_G100000404448,670.0,gas,North Bangkok power station_1 -- operating,e_w199806286-230,way/199806286-230,13.8129,100.5092,False
+e_w199806286-230,ep_gas_combined_cycle_G100000404449,828.0,gas,North Bangkok power station_2 -- operating,e_w199806286-230,way/199806286-230,13.8129,100.5092,False
+e_w199806286-230,ep_gas_w199806286-230__ember,123.41755348156038,gas,Aggregated Plant - EMBER Gap - way/199806286-230_Missing Gas Capacity -- operating,e_w199806286-230,way/199806286-230,13.632909204384674,100.49273384959277,False
+e_w223601302-500,ep_gas_combined_cycle_G100000404503,120.0,gas,Lat Krabang power station_1 -- operating,e_w223601302-500,way/223601302-500,13.759803,100.789088,False
+e_w238578822-230,ep_hydro_dam_G100000603602,84.0,hydro,Bang Lang hydroelectric plant_ -- operating,e_w238578822-230,way/238578822-230,6.1709,101.3159,False
+e_w239587274-230,ep_hydro_dam_G100000603607,240.0,hydro,Rajjaprabha hydroelectric plant_ -- operating,e_w239587274-230,way/239587274-230,8.973,98.8066,False
+e_w247878196-230,ep_bioenergy_G100000200086,68.0,bioenergy,Mitr Kalasin power station_1 -- operating,e_w247878196-230,way/247878196-230,16.4658,104.0381,False
+e_w247878196-230,ep_bioenergy_w247878196-230__ember,279.06697459584296,bioenergy,Aggregated Plant - EMBER Gap - way/247878196-230_Missing Bioenergy Capacity -- operating,e_w247878196-230,way/247878196-230,16.18200780710617,103.51812241535494,False
+e_w26120059-230,ep_gas_combined_cycle_G100000404470,710.0,gas,South Bangkok power station_CC3 -- operating,e_w26120059-230,way/26120059-230,13.617,100.559,False
+e_w26120059-230,ep_gas_combined_cycle_G100000404471,1220.0,gas,South Bangkok power station_CC4 -- operating,e_w26120059-230,way/26120059-230,13.617,100.559,False
+e_w26120059-230,ep_gas_w26120059-230__ember,171.62620446193523,gas,Aggregated Plant - EMBER Gap - way/26120059-230_Missing Gas Capacity -- operating,e_w26120059-230,way/26120059-230,13.505081254367553,100.37839072001643,False
+e_w261489769-500,ep_gas_combined_cycle_G100000404440,140.0,gas,Ratchaburi (B.Grimm) power station_1 -- operating,e_w261489769-500,way/261489769-500,13.547204,99.338006,False
+e_w261489769-500,ep_gas_combined_cycle_G100000404441,140.0,gas,Ratchaburi (B.Grimm) power station_2 -- operating,e_w261489769-500,way/261489769-500,13.547204,99.338006,False
+e_w261489769-500,ep_gas_combined_cycle_w261489769-500,99.0,gas,Aggregated Plant -- operating,e_w261489769-500,way/261489769-500,13.998246181142521,99.65435477498505,False
+e_w261489769-500,ep_gas_w261489769-500__ember,16.14052890597356,gas,Aggregated Plant -- operating,e_w261489769-500,way/261489769-500,13.711931183708948,100.01922871363742,False
+e_w262815047-230,ep_hydro_dam_G100000603609,360.0,hydro,Srinagarind hydroelectric plant_ -- operating,e_w262815047-230,way/262815047-230,14.4075,99.1261,False
+e_w27828836-230,ep_gas_combined_cycle_w27828836-230,230.0,gas,Aggregated Plant -- operating,e_w27828836-230,way/27828836-230,14.063897575904358,100.42318176591368,False
+e_w27828836-500,ep_gas_combined_cycle_G100000404432,122.0,gas,Klong Luang power station_1 -- operating,e_w27828836-500,way/27828836-500,14.022191,100.614683,False
+e_w293324904-500,ep_coal_subcritical_G100000106547,300.0,coal,Mae Moh power station_Unit 10 -- operating,e_w293324904-500,way/293324904-500,18.296,99.752,False
+e_w293324904-500,ep_coal_subcritical_G100000106548,300.0,coal,Mae Moh power station_Unit 11 -- operating,e_w293324904-500,way/293324904-500,18.296,99.752,False
+e_w293324904-500,ep_coal_subcritical_G100000106549,300.0,coal,Mae Moh power station_Unit 12 -- operating,e_w293324904-500,way/293324904-500,18.296,99.752,False
+e_w293324904-500,ep_coal_subcritical_G100000106550,300.0,coal,Mae Moh power station_Unit 13 -- operating,e_w293324904-500,way/293324904-500,18.296,99.752,False
+e_w293324904-500,ep_coal_subcritical_G100000106551,150.0,coal,Mae Moh power station_Unit 4 -- operating,e_w293324904-500,way/293324904-500,18.296,99.752,False
+e_w293324904-500,ep_coal_subcritical_G100000106555,300.0,coal,Mae Moh power station_Unit 8 -- operating,e_w293324904-500,way/293324904-500,18.296,99.752,False
+e_w293324904-500,ep_coal_subcritical_G100000106556,300.0,coal,Mae Moh power station_Unit 9 -- operating,e_w293324904-500,way/293324904-500,18.296,99.752,False
+e_w293324904-500,ep_coal_ultra-supercritical_G100000106557,655.0,coal,Mae Moh power station_Units 4-7 replacement -- operating,e_w293324904-500,way/293324904-500,18.296,99.752,False
+e_w295988731-230,ep_gas_combined_cycle_G100000404418,710.0,gas,Chana power station_1 -- operating,e_w295988731-230,way/295988731-230,6.9553,100.7076,False
+e_w295988731-230,ep_gas_combined_cycle_G100000404419,766.0,gas,Chana power station_2 -- operating,e_w295988731-230,way/295988731-230,6.9553,100.7076,False
+e_w295988731-230,ep_gas_w295988731-230__ember,62.858629723527656,gas,Aggregated Plant -- operating,e_w295988731-230,way/295988731-230,6.892554750190226,100.63826633960085,False
+e_w296560688-230,ep_gas_combined_cycle_G100000404490,123.0,gas,Gulf NLL power station_1 -- operating,e_w296560688-230,way/296560688-230,12.825592,101.248684,False
+e_w296560688-230,ep_gas_combined_cycle_G100000404491,127.0,gas,Gulf NLL power station_2 -- operating,e_w296560688-230,way/296560688-230,12.825592,101.248684,False
+e_w296560688-230,ep_gas_combined_cycle_G100000404505,160.0,gas,Rayong Sipco power station_1 -- operating,e_w296560688-230,way/296560688-230,12.790557,101.24586,False
+e_w296560688-230,ep_gas_combined_cycle_w296560688-230,209.00000000000003,gas,Aggregated Plant -- operating,e_w296560688-230,way/296560688-230,12.961831064641096,101.2029603660647,False
+e_w296560688-230,ep_gas_w296560688-230__ember,26.361444308173184,gas,Aggregated Plant -- operating,e_w296560688-230,way/296560688-230,12.610724811866351,101.2155867662392,False
+e_w381823390-230,ep_gas_combined_cycle_G100000404483,750.0,gas,Wang Noi power station_4 -- operating,e_w381823390-230,way/381823390-230,14.2324,100.7805,False
+e_w381823390-230,ep_gas_w381823390-230__ember,31.940360631873805,gas,Aggregated Plant -- operating,e_w381823390-230,way/381823390-230,14.21524474548778,100.95461935318784,False
+e_w381823435-230,ep_gas_combined_cycle_G100000404427,734.0,gas,Kaeng Khoi 2 power station_1 -- operating,e_w381823435-230,way/381823435-230,14.605,101.0259,False
+e_w381823435-230,ep_gas_combined_cycle_G100000404428,734.0,gas,Kaeng Khoi 2 power station_2 -- operating,e_w381823435-230,way/381823435-230,14.605,101.0259,False
+e_w381823435-230,ep_gas_combined_cycle_w381823435-230,114.0,gas,Aggregated Plant -- operating,e_w381823435-230,way/381823435-230,14.783322768575411,101.01300142797555,False
+e_w381823435-230,ep_gas_w381823435-230__ember,67.37286735949914,gas,Aggregated Plant -- operating,e_w381823435-230,way/381823435-230,14.42446607063912,101.00543777157459,False
+e_w403466241-230,ep_gas_combined_cycle_G100000410590,120.0,gas,Siam Pure Rice Combined Cycle power station_1 -- operating,e_w403466241-230,way/403466241-230,14.849078,100.444793,False
+e_w403512774-230,ep_gas_combined_cycle_G100000404487,127.0,gas,Gulf BL power station_1 -- operating,e_w403512774-230,way/403512774-230,14.252758,100.588845,False
+e_w403512774-230,ep_gas_combined_cycle_G100000404488,127.0,gas,Gulf BP power station_1 -- operating,e_w403512774-230,way/403512774-230,14.25334,100.602789,False
+e_w403512774-230,ep_gas_combined_cycle_w403512774-230,234.0,gas,Aggregated Plant -- operating,e_w403512774-230,way/403512774-230,14.378608513208622,100.60480137742921,False
+e_w403512774-230,ep_gas_w403512774-230__ember,20.782527984472555,gas,Aggregated Plant -- operating,e_w403512774-230,way/403512774-230,14.018414003989669,100.61052883220799,False
+e_w403525677-230,ep_gas_combined_cycle_w403525677-230,113.0,gas,Aggregated Plant -- operating,e_w403525677-230,way/403525677-230,12.677333649063618,101.12220235249455,False
+e_w404006545-230,ep_gas_combined_cycle_G100000404412,350.0,gas,Bang Bo power station_1 -- operating,e_w404006545-230,way/404006545-230,13.492,100.8416,False
+e_w404006545-230,ep_gas_w404006545-230__ember,14.905501628207775,gas,Aggregated Plant -- operating,e_w404006545-230,way/404006545-230,13.51209516384891,100.82219503034092,False
+e_w404291501-230,ep_gas_combined_cycle_G100000404400,140.0,gas,Amata (Chonburi) power station_1 -- operating,e_w404291501-230,way/404291501-230,13.4191,101.0272,False
+e_w404291501-230,ep_gas_combined_cycle_G100000404401,140.0,gas,Amata (Chonburi) power station_2 -- operating,e_w404291501-230,way/404291501-230,13.4191,101.0272,False
+e_w404291501-230,ep_gas_combined_cycle_G100000404402,133.0,gas,Amata (Chonburi) power station_3 -- operating,e_w404291501-230,way/404291501-230,13.4191,101.0272,False
+e_w404291501-230,ep_gas_combined_cycle_G100000404403,131.0,gas,Amata (Chonburi) power station_4 -- operating,e_w404291501-230,way/404291501-230,13.4191,101.0272,False
+e_w404291501-230,ep_gas_combined_cycle_G100000404404,131.0,gas,Amata (Chonburi) power station_5 -- operating,e_w404291501-230,way/404291501-230,13.4191,101.0272,False
+e_w404291501-230,ep_gas_w404291501-230__ember,28.746324568686425,gas,Aggregated Plant -- operating,e_w404291501-230,way/404291501-230,13.590706621582193,101.17154140771274,False
+e_w404291513-230,ep_bioenergy_G100000200824,98.0,bioenergy,National Power Plant 5A power station_1 -- operating,e_w404291513-230,way/404291513-230,13.9742,101.628,False
+e_w404291513-230,ep_bioenergy_G100000200826,135.0,bioenergy,National Power Plant 9 power station_1 -- operating,e_w404291513-230,way/404291513-230,13.9742,101.628,False
+e_w404291513-230,ep_bioenergy_w404291513-230,111.0,bioenergy,Aggregated Plant -- operating,e_w404291513-230,way/404291513-230,14.015951178815929,101.58096399822952,False
+e_w404291513-230,ep_bioenergy_w404291513-230__ember,1411.7505773672056,bioenergy,Aggregated Plant - EMBER Gap - way/404291513-230_Missing Bioenergy Capacity -- operating,e_w404291513-230,way/404291513-230,13.659651294486007,101.53346025329446,False
+e_w404291513-230,ep_coal_subcritical_G100000110037,164.0,coal,Tha Tum power station_Unit 1 -- operating,e_w404291513-230,way/404291513-230,13.932457,101.587568,False
+e_w404291513-230,ep_coal_subcritical_G100000110038,164.0,coal,Tha Tum power station_Unit 2 -- operating,e_w404291513-230,way/404291513-230,13.932457,101.587568,False
+e_w404544820-230,ep_gas_combined_cycle_G100000404467,202.7,gas,Saha Patana power station_1 -- operating,e_w404544820-230,way/404544820-230,13.0988,100.9606,False
+e_w404563246-230,ep_bioenergy_G100000200053,90.0,bioenergy,TPI Power power station_Tg6 -- operating,e_w404563246-230,way/404563246-230,14.6453,101.1254,False
+e_w404563246-230,ep_bioenergy_G100000200828,70.0,bioenergy,TPI Power power station_Tg7 -- operating,e_w404563246-230,way/404563246-230,14.6453,101.1254,False
+e_w404563246-230,ep_bioenergy_w404563246-230__ember,656.6281755196305,bioenergy,Aggregated Plant - EMBER Gap - way/404563246-230_Missing Bioenergy Capacity -- operating,e_w404563246-230,way/404563246-230,14.518081857319093,101.13380875624067,False
+e_w404563246-230,ep_coal_subcritical_G100000113104,150.0,coal,TPI Coal power station_-- -- operating,e_w404563246-230,way/404563246-230,14.645696,101.12726,False
+e_w550224444-230,ep_windon_wind_230,60.0,windon,Aggregated Plant -- operating,e_w550224444-230,way/550224444-230,16.664251740579203,101.1063730528988,False
+e_w550257735-230,ep_bioenergy_w550257735-230,30.0,bioenergy,Aggregated Plant -- operating,e_w550257735-230,way/550257735-230,16.94960013349457,102.76004436782333,False
+e_w550257735-230,ep_bioenergy_w550257735-230__ember,123.1177829099307,bioenergy,Aggregated Plant - EMBER Gap - way/550257735-230_Missing Bioenergy Capacity -- operating,e_w550257735-230,way/550257735-230,16.540237518172763,102.97339459600369,False
+e_w550257735-230,ep_gas_combined_cycle_G100000404443,355.0,gas,Nam Phong power station_1 -- operating,e_w550257735-230,way/550257735-230,16.682,102.7422,False
+e_w550257735-230,ep_gas_combined_cycle_G100000404444,355.0,gas,Nam Phong power station_2 -- operating,e_w550257735-230,way/550257735-230,16.682,102.7422,False
+e_w550257735-230,ep_gas_w550257735-230__ember,57.9185206124645,gas,Aggregated Plant -- operating,e_w550257735-230,way/550257735-230,16.49255682283897,102.54725154132507,False
+e_w550622477-230,ep_gas_combined_cycle_G100000401104,128.0,gas,Gulf NRV power station_1 -- operating,e_w550622477-230,way/550622477-230,14.928799,102.177099,False
+e_w550622477-230,ep_gas_combined_cycle_G100000401105,128.0,gas,Gulf NRV power station_2 -- operating,e_w550622477-230,way/550622477-230,14.928799,102.177099,False
+e_w550622477-230,ep_gas_w550622477-230__ember,10.90230976234626,gas,Aggregated Plant -- operating,e_w550622477-230,way/550622477-230,14.955296727958101,102.01783310013553,False
+e_w550862967-230,ep_gas_w550862967-230__ember,70.01327050506738,gas,Aggregated Plant -- operating,e_w550862967-230,way/550862967-230,9.134291522130134,99.2763532090241,False
+e_w550862967-230,ep_m_gas_gas_turbine_G100000404473,122.0,gas,Surat Thani power station_GT1 -- mothballed,e_w550862967-230,way/550862967-230,9.071442,99.225492,False
+e_w550862967-230,ep_m_gas_gas_turbine_G100000404474,122.0,gas,Surat Thani power station_GT2 -- mothballed,e_w550862967-230,way/550862967-230,9.071442,99.225492,False
+e_w550881475-230,ep_gas_steam_turbine_G100000404435,315.0,gas,Krabi power station_1 -- operating,e_w550881475-230,way/550881475-230,7.9934,99.0482,False
+e_w550881475-230,ep_gas_w550881475-230__ember,13.414951465386997,gas,Aggregated Plant -- operating,e_w550881475-230,way/550881475-230,8.00167866627107,99.15535627380105,False
+e_w550922890-230,ep_hydro_w550922890-230__irena,55.765322314049506,hydro,Aggregated Plant - IRENA Gap - way/550922890-230_Missing Hydro Capacity -- operating,e_w550922890-230,way/550922890-230,8.57855948710529,99.98904938628613,False
+e_w550922890-230,ep_windon_wind_230,30.0,windon,Aggregated Plant -- operating,e_w550922890-230,way/550922890-230,8.226484529098599,99.91665131911239,False
+e_w550957004-230,ep_windon_wind_230,36.0,windon,Aggregated Plant -- operating,e_w550957004-230,way/550957004-230,7.774387395177795,99.98531387260573,False
+e_w631215304-230,ep_bioenergy_w631215304-230,73.00000000000001,bioenergy,Aggregated Plant -- operating,e_w631215304-230,way/631215304-230,14.978379371135022,100.17056728229528,False
+e_w631215304-230,ep_bioenergy_w631215304-230__ember,299.5866050808314,bioenergy,Aggregated Plant - EMBER Gap - way/631215304-230_Missing Bioenergy Capacity -- operating,e_w631215304-230,way/631215304-230,14.62847326779312,100.08442529615532,False
+e_w64680187-500,ep_gas_combined_cycle_w64680187-500,55.0,gas,Aggregated Plant -- operating,e_w64680187-500,way/64680187-500,13.80517535006715,100.55833756623963,False
+e_w650122709-230,ep_coal_subcritical_G100000114525,307.0,coal,IRPC power station_-- -- operating,e_w650122709-230,way/650122709-230,12.655398,101.311848,False
+e_w650122709-230,ep_gas_combined_cycle_G100000404459,120.0,gas,IRPC Industrial Zone Clean power station_1 -- operating,e_w650122709-230,way/650122709-230,12.675409,101.325686,False
+e_w650122709-230,ep_gas_combined_cycle_G100000404460,120.0,gas,IRPC Industrial Zone Clean power station_2 -- operating,e_w650122709-230,way/650122709-230,12.675409,101.325686,False
+e_w650122709-230,ep_gas_w650122709-230__ember,10.220915402199617,gas,Aggregated Plant -- operating,e_w650122709-230,way/650122709-230,12.850420416379617,101.29015145982007,False
+e_w659640311-230,ep_gas_combined_cycle_G100000404461,139.0,gas,Nava Nakorn power station_1 -- operating,e_w659640311-230,way/659640311-230,14.129484,100.596772,False
+e_w659640311-230,ep_gas_combined_cycle_G100000404501,125.9,gas,Gulf CRN power station_1 -- operating,e_w659640311-230,way/659640311-230,14.097682,100.572578,False
+e_w659640311-230,ep_gas_combined_cycle_w659640311-230,60.0,gas,Aggregated Plant -- operating,e_w659640311-230,way/659640311-230,14.29151049594076,100.64946097068993,False
+e_w659640311-230,ep_gas_w659640311-230__ember,13.83656422572773,gas,Aggregated Plant -- operating,e_w659640311-230,way/659640311-230,13.941092711778493,100.56565190312593,False
+e_w659859442-230,ep_gas_combined_cycle_G100000404424,357.0,gas,Glow IPP power station_1 -- operating,e_w659859442-230,way/659859442-230,13.0536,101.0857,False
+e_w659859442-230,ep_gas_combined_cycle_G100000404438,130.0,gas,Hemaraj Industrial Estate power station_1 -- operating,e_w659859442-230,way/659859442-230,13.0505,101.0859,False
+e_w659859442-230,ep_gas_combined_cycle_G100000406244,357.0,gas,Glow IPP power station_2 -- operating,e_w659859442-230,way/659859442-230,13.0536,101.0857,False
+e_w659859442-230,ep_gas_w659859442-230__ember,35.943552497735325,gas,Aggregated Plant -- operating,e_w659859442-230,way/659859442-230,12.966624354381421,101.07581904842142,False
+e_w659861082-230,ep_coal_CFB_G100000410153,222.0,coal,Glow Energy power complex_Unit 2 -- operating,e_w659861082-230,way/659861082-230,12.675773,101.135243,False
+e_w659861082-230,ep_coal_CFB_G100000410154,222.0,coal,Glow Energy power complex_Unit 1 -- operating,e_w659861082-230,way/659861082-230,12.675773,101.135243,False
+e_w659861082-230,ep_coal_subcritical_w659861082-230,140.0,coal,Aggregated Plant -- operating,e_w659861082-230,way/659861082-230,12.946398143972143,101.16315804504892,False
+e_w659861082-230,ep_coal_supercritical_G100000103014,660.0,coal,Gheco One power station_Unit 1 -- operating,e_w659861082-230,way/659861082-230,12.674653,101.134665,False
+e_w659861082-230,ep_gas_combined_cycle_G100000404423,328.0,gas,Glow Energy Phase 5 power station_1 -- operating,e_w659861082-230,way/659861082-230,12.6779,101.1356,False
+e_w659861082-230,ep_gas_combined_cycle_G100000404439,140.0,gas,Glow SPP 1 power station_1 -- operating,e_w659861082-230,way/659861082-230,12.695363,101.128845,False
+e_w659861082-230,ep_gas_combined_cycle_G100000410155,281.0,gas,Glow Energy Phase 2 Power Station_1 -- operating,e_w659861082-230,way/659861082-230,12.694,101.1452,False
+e_w659861082-230,ep_gas_combined_cycle_G100000410594,140.0,gas,Glow SPP 1 power station_2 -- operating,e_w659861082-230,way/659861082-230,12.695363,101.128845,False
+e_w659861082-230,ep_gas_gas_turbine_w659861082-230,77.0,gas,Aggregated Plant -- operating,e_w659861082-230,way/659861082-230,12.617249411211626,101.39747238115689,False
+e_w659861082-230,ep_gas_w659861082-230__ember,41.13918449385346,gas,Aggregated Plant -- operating,e_w659861082-230,way/659861082-230,12.60643240552441,100.8733445311686,False
+e_w708317946-230,ep_gas_combined_cycle_G100000401103,135.0,gas,Gulf NPM power station_CC1 -- operating,e_w708317946-230,way/708317946-230,14.36647,100.836403,False
+e_w708317946-230,ep_gas_combined_cycle_G100000404499,133.0,gas,Gulf NK2 power station_1 -- operating,e_w708317946-230,way/708317946-230,14.368055,100.835808,False
+e_w708317946-230,ep_gas_combined_cycle_w708317946-230,333.0,gas,Aggregated Plant -- operating,e_w708317946-230,way/708317946-230,14.535711326461564,100.89256656316041,False
+e_w708317946-230,ep_gas_w708317946-230__ember,25.59487565300821,gas,Aggregated Plant -- operating,e_w708317946-230,way/708317946-230,14.177652028042221,100.90402881343066,False
+elc_spv_001,ep_solar_pv_001,9.500000000000002,solar,Aggregated Plant -- operating,elc_spv_001,TH9-500,17.848030898266824,103.36828205603837,False
+elc_spv_002,ep_solar_002__irena,80.11659437309727,solar,Aggregated Plant -- operating,elc_spv_002,way/343034987-500,17.32069969868005,103.78908715893523,False
+elc_spv_002,ep_solar_pv_002,71.3,solar,Aggregated Plant -- operating,elc_spv_002,way/343034987-500,16.964696764900967,103.73947033755219,False
+elc_spv_005,ep_solar_pv_005,135.8,solar,Aggregated Plant -- operating,elc_spv_005,way/550657165-230,15.410451142756363,102.49488411680713,False
+elc_spv_006,ep_solar_006__irena,84.55512655487331,solar,Aggregated Plant -- operating,elc_spv_006,TH22-230,16.559767613864867,102.64104390378841,False
+elc_spv_006,ep_solar_pv_006,237.6,solar,Aggregated Plant -- operating,elc_spv_006,TH22-230,16.567137939402492,102.1539941750548,False
+elc_spv_007,ep_solar_pv_007,41.99999999999999,solar,Aggregated Plant -- operating,elc_spv_007,way/550665519-230,15.205626564562646,103.91848314116055,False
+elc_spv_008,ep_solar_pv_008,76.0,solar,Aggregated Plant -- operating,elc_spv_008,way/404604266-230,15.137101676811081,104.9353179297321,False
+elc_spv_009,ep_solar_pv_009,66.3,solar,Aggregated Plant -- construction,elc_spv_009,way/650122709-230,12.498496108168203,101.3668965364342,False
+elc_spv_010,ep_solar_pv_010,620.1,solar,Aggregated Plant -- operating,elc_spv_010,TH47-230,13.831418979527163,100.86570039814994,False
+elc_spv_011,ep_solar_pv_011,150.4,solar,Aggregated Plant -- operating,elc_spv_011,way/551510148-230,13.854553933103034,102.62318859265608,False
+elc_spv_013,ep_solar_pv_013,30.1,solar,Aggregated Plant -- operating,elc_spv_013,way/381850842-230,8.325170913750153,99.11216801360483,False
+elc_spv_015,ep_solar_pv_015,1.1,solar,Aggregated Plant -- operating,elc_spv_015,TH82-500,8.862825525937797,99.50260417224695,False
+elc_spv_016,ep_solar_pv_016,6.2,solar,Aggregated Plant -- operating,elc_spv_016,way/550957004-230,7.4200382137129495,100.0462491698015,False
+elc_spv_017,ep_solar_pv_017,6.6,solar,Aggregated Plant -- operating,elc_spv_017,way/1281883109-230,19.314997346150758,98.29307637236764,False
+elc_spv_018,ep_solar_pv_018,149.6,solar,Aggregated Plant -- operating,elc_spv_018,TH5-230,17.860141339216142,98.88887960926368,False
+elc_spv_019,ep_solar_pv_019,22.399999999999995,solar,Aggregated Plant -- operating,elc_spv_019,way/813762139-230,18.44127150854063,100.22337162594746,False
+elc_spv_020,ep_solar_pv_020,14.200000000000001,solar,Aggregated Plant -- operating,elc_spv_020,way/1281883109-230,18.956772746738633,98.27646362969412,False
+elc_spv_021,ep_solar_pv_021,8.1,solar,Aggregated Plant -- operating,elc_spv_021,TH80-230,10.201046111716508,99.13338609946749,False
+elc_spv_022,ep_solar_pv_022,185.7,solar,Aggregated Plant -- operating,elc_spv_022,way/573736537-230,12.806352043722896,99.72866622610145,False
+elc_spv_023,ep_solar_pv_023,13.0,solar,Aggregated Plant -- operating,elc_spv_023,TH17-230,17.068552512102897,98.92648096702908,False
+elc_spv_026,ep_solar_026__irena,78.87827907202895,solar,Aggregated Plant -- operating,elc_spv_026,way/1357836334-230,16.348154240961268,100.24852476539415,False
+elc_spv_026,ep_solar_pv_026,261.79999999999995,solar,Aggregated Plant -- operating,elc_spv_026,way/1357836334-230,16.34698079028715,99.85159658668823,False
+elc_spv_027,ep_solar_pv_027,141.39999999999998,solar,Aggregated Plant -- operating,elc_spv_027,way/261489769-500,13.55988684444572,99.31474241557517,False
+elc_spv_028,ep_solar_pv_028,355.2,solar,Aggregated Plant -- operating,elc_spv_028,way/550152207-230,14.177386962221503,100.63945925551404,False
+elc_spv_029,ep_solar_pv_029,742.0,solar,Aggregated Plant -- operating,elc_spv_029,way/334185872-230,15.03716415820191,99.91104379128564,False
+elc_won_003,ep_windon_wind_003,61.0,windon,Aggregated Plant -- operating,elc_won_003,way/550665519-230,14.802454513320734,103.76733556122032,False
+elc_won_008,ep_windon_wind_008,1250.0,windon,Aggregated Plant -- operating,elc_won_008,TH30-230,14.628690458633672,101.56943656589085,False
+elc_won_008,ep_windon_wind_G100000901039,600.0,windon,Jhimpir Power (Energy Absolute) wind farm_1 -- operating,elc_won_008,TH30-230,15.5382,101.5644,False
+elc_won_015,ep_windon_wind_015,90.0,windon,Aggregated Plant -- operating,elc_won_015,TH80-230,9.853257609177522,99.12159593490546,False

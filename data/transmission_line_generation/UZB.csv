@@ -1,0 +1,118 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_gas__ember,21.20000000000033,gas,Aggregated Plant - EMBER Gap_Missing Gas Capacity -- operating,,,,,False
+e_UZ128-220,ep_hydro_UZ128-220__irena,37.53367579908674,hydro,Aggregated Plant - IRENA Gap - UZ128-220_Missing Hydro Capacity -- operating,e_UZ128-220,UZ128-220,40.61533275447554,73.04155094951916,False
+e_UZ128-220,ep_hydro_dam_G100000604011,140.0,hydro,Andijan-1 hydroelectric plant_ -- operating,e_UZ128-220,UZ128-220,40.7702,73.0626,False
+e_UZ128-220,ep_hydro_dam_G100001051780,50.0,hydro,Andijan hydroelectric plant_ -- operating,e_UZ128-220,UZ128-220,40.7688,73.0625,False
+e_UZ144-220,ep_gas_steam_turbine_G100000407377,55.0,gas,Fergana power station_6 -- operating,e_UZ144-220,UZ144-220,40.449089,71.781868,False
+e_UZ144-220,ep_gas_steam_turbine_G100000407378,50.0,gas,Fergana power station_5 -- operating,e_UZ144-220,UZ144-220,40.449089,71.781868,False
+e_UZ144-220,ep_gas_steam_turbine_G100000407379,60.0,gas,Fergana power station_4 -- operating,e_UZ144-220,UZ144-220,40.449089,71.781868,False
+e_UZ144-220,ep_gas_steam_turbine_G100000407380,60.0,gas,Fergana power station_3 -- operating,e_UZ144-220,UZ144-220,40.449089,71.781868,False
+e_UZ144-220,ep_gas_steam_turbine_G100000407381,55.0,gas,Fergana power station_7 -- operating,e_UZ144-220,UZ144-220,40.449089,71.781868,False
+e_UZ144-220,ep_gas_steam_turbine_G100001030377,100.0,gas,Fergana power station_3R -- construction,e_UZ144-220,UZ144-220,40.449089,71.781868,False
+e_UZ165-220,ep_gas_internal_combustion_G100000409724,220.0,gas,Cengiz Energji Sirdaryo power station_1 -- operating,e_UZ165-220,UZ165-220,40.284821,68.834222,False
+e_UZ167-500,ep_gas_combined_cycle_G100000407423,1573.0,gas,Syrdarya II power station_1 -- construction,e_UZ167-500,UZ167-500,40.242115,69.10543,False
+e_UZ185-220,ep_gas_combined_cycle_G100000411938,550.0,gas,Cengiz Enerji Jizzakh CHP power station_1 -- construction,e_UZ185-220,UZ185-220,40.092026,67.943349,False
+e_UZ210-220,ep_gas_internal_combustion_G100000407372,270.0,gas,Bukhara power station_1 -- operating,e_UZ210-220,UZ210-220,39.766944,64.311967,False
+e_UZ262-220,ep_hydro_dam_G100001051781,45.0,hydro,Gissarak hydroelectric plant_ -- operating,e_UZ262-220,UZ262-220,39.0095,66.4582,False
+e_UZ280-220,ep_hydro_UZ280-220__irena,34.57049086757989,hydro,Aggregated Plant - IRENA Gap - UZ280-220_Missing Hydro Capacity -- operating,e_UZ280-220,UZ280-220,38.382148924327424,67.67683452914572,False
+e_UZ280-220,ep_hydro_dam_G100000604890,175.0,hydro,Topalang hydroelectric plant_ -- operating,e_UZ280-220,UZ280-220,38.5786,67.8008,False
+e_UZ318-220,ep_gas_internal_combustion_G100000414335,430.0,gas,Talimercan Combined Cycle Power Plant_1 -- construction,e_UZ318-220,UZ318-220,38.291567,65.558531,False
+e_UZ334-220,ep_gas_combined_cycle_G100000407376,1600.0,gas,Surkhandarya power station_CC1 -- construction,e_UZ334-220,UZ334-220,37.376786,67.252094,False
+e_UZ47-220,ep_hydro_UZ47-220__irena,25.68093607305935,hydro,Aggregated Plant - IRENA Gap - UZ47-220_Missing Hydro Capacity -- operating,e_UZ47-220,UZ47-220,41.484011239211995,69.55256669232902,False
+e_UZ47-220,ep_hydro_ror_G100001027569,70.0,hydro,Tavak hydroelectric plant_ -- operating,e_UZ47-220,UZ47-220,41.5542,69.6811,False
+e_UZ48-220,ep_gas_combined_cycle_G100000407384,240.0,gas,Cengiz Enerji Tashkent power station_1 -- operating,e_UZ48-220,UZ48-220,41.449351,69.503407,False
+e_UZ69-220,ep_hydro_UZ69-220__irena,29.63184931506848,hydro,Aggregated Plant - IRENA Gap - UZ69-220_Missing Hydro Capacity -- operating,e_UZ69-220,UZ69-220,41.002392284916745,61.60423877335513,False
+e_UZ69-220,ep_hydro_dam_G100000604147,150.0,hydro,Tuyamuyun hydroelectric plant_ -- operating,e_UZ69-220,UZ69-220,41.2132,61.4054,False
+e_UZ94-220,ep_coal_subcritical_G100000100203,52.0,coal,Angren power station_Unit 1 -- operating,e_UZ94-220,UZ94-220,41.004897,70.122799,False
+e_UZ94-220,ep_coal_subcritical_G100000100204,55.0,coal,Angren power station_Unit 2 -- operating,e_UZ94-220,UZ94-220,41.004897,70.122799,False
+e_UZ94-220,ep_coal_subcritical_G100000100207,68.0,coal,Angren power station_Unit 5 -- operating,e_UZ94-220,UZ94-220,41.004897,70.122799,False
+e_UZ94-220,ep_coal_subcritical_G100000100208,68.0,coal,Angren power station_Unit 6 -- operating,e_UZ94-220,UZ94-220,41.004897,70.122799,False
+e_UZ94-220,ep_coal_subcritical_G100000100211,150.0,coal,Angren power station_Unit 9 -- operating,e_UZ94-220,UZ94-220,41.004897,70.122799,False
+e_w105261435-220,ep_gas_combined_cycle_G100001030455,96.8,gas,Uz-Kor Gas Chemical power station_СС1 -- operating,e_w105261435-220,way/105261435-220,41.330526,69.26537,False
+e_w1261554653-220,ep_gas_combined_cycle_G100000407425,1500.0,gas,ACWA Power Sirdarya I power station_CC1 -- operating,e_w1261554653-220,way/1261554653-220,40.237699,69.111537,False
+e_w1268818430-500,ep_gas_steam_turbine_G100000407426,325.0,gas,Syrdarya power station_10 -- operating,e_w1268818430-500,way/1268818430-500,40.229622,69.099802,False
+e_w1268818430-500,ep_gas_steam_turbine_G100000407427,325.0,gas,Syrdarya power station_9 -- operating,e_w1268818430-500,way/1268818430-500,40.229622,69.099802,False
+e_w1268818430-500,ep_gas_steam_turbine_G100000407428,300.0,gas,Syrdarya power station_8 -- operating,e_w1268818430-500,way/1268818430-500,40.229622,69.099802,False
+e_w1268818430-500,ep_gas_steam_turbine_G100000407429,300.0,gas,Syrdarya power station_7 -- operating,e_w1268818430-500,way/1268818430-500,40.229622,69.099802,False
+e_w1268818430-500,ep_gas_steam_turbine_G100000407430,325.0,gas,Syrdarya power station_6 -- operating,e_w1268818430-500,way/1268818430-500,40.229622,69.099802,False
+e_w1268818430-500,ep_gas_steam_turbine_G100000407431,325.0,gas,Syrdarya power station_5 -- operating,e_w1268818430-500,way/1268818430-500,40.229622,69.099802,False
+e_w1268818430-500,ep_gas_steam_turbine_G100000407432,325.0,gas,Syrdarya power station_4 -- operating,e_w1268818430-500,way/1268818430-500,40.229622,69.099802,False
+e_w1268818430-500,ep_gas_steam_turbine_G100000407433,325.0,gas,Syrdarya power station_3 -- operating,e_w1268818430-500,way/1268818430-500,40.229622,69.099802,False
+e_w1268818430-500,ep_gas_steam_turbine_G100000407434,325.0,gas,Syrdarya power station_2 -- operating,e_w1268818430-500,way/1268818430-500,40.229622,69.099802,False
+e_w1268818430-500,ep_gas_steam_turbine_G100000407435,325.0,gas,Syrdarya power station_1 -- operating,e_w1268818430-500,way/1268818430-500,40.229622,69.099802,False
+e_w1373206850-220,ep_gas_combined_cycle_G100000409725,174.0,gas,Yangiaryk power station_1 -- operating,e_w1373206850-220,way/1373206850-220,41.349815,60.593368,False
+e_w172196746-220,ep_hydro_dam_G100000604012,666.0,hydro,Charvak hydroelectric plant_ -- operating,e_w172196746-220,way/172196746-220,41.627,69.969,False
+e_w172196746-220,ep_hydro_dam_G100000604013,120.0,hydro,Gazalkent hydroelectric plant_ -- operating,e_w172196746-220,way/172196746-220,41.5787,69.8015,False
+e_w172196746-220,ep_hydro_dam_G100000604014,165.0,hydro,Khodzhikent hydroelectric plant_ -- operating,e_w172196746-220,way/172196746-220,41.5996,69.8643,False
+e_w172196746-220,ep_hydro_dam_G100000604016,76.0,hydro,Uzbekistan Lower Chatkal hydroelectric plant_ -- construction,e_w172196746-220,way/172196746-220,41.5453,70.1318,False
+e_w172196746-220,ep_hydro_dam_G100000604018,400.0,hydro,Pskem hydroelectric plant_ -- construction,e_w172196746-220,way/172196746-220,41.8246,70.2662,False
+e_w172196746-220,ep_hydro_w172196746-220__irena,539.6947488584473,hydro,Aggregated Plant - IRENA Gap - way/172196746-220_Missing Hydro Capacity -- operating,e_w172196746-220,way/172196746-220,41.601260260717815,69.8679449284651,False
+e_w172478992-220,ep_gas_combined_cycle_G100000407420,600.0,gas,Navoi power station_CC3 -- construction,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_combined_cycle_G100000407421,450.0,gas,Navoi power station_CC2 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_combined_cycle_G100000407422,478.0,gas,Navoi power station_CC1 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_steam_turbine_G100000407410,160.0,gas,Navoi power station_ST9 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_steam_turbine_G100000407411,160.0,gas,Navoi power station_ST8 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_steam_turbine_G100000407412,50.0,gas,Navoi power station_ST7 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_steam_turbine_G100000407413,60.0,gas,Navoi power station_ST6 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_steam_turbine_G100000407414,50.0,gas,Navoi power station_ST5 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_steam_turbine_G100000407415,150.0,gas,Navoi power station_ST4 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_steam_turbine_G100000407416,150.0,gas,Navoi power station_ST3 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_steam_turbine_G100000407417,210.0,gas,Navoi power station_ST12 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w172478992-220,ep_gas_steam_turbine_G100000407418,210.0,gas,Navoi power station_ST11 -- operating,e_w172478992-220,way/172478992-220,40.158459,65.311909,False
+e_w186713398-500,ep_gas_combined_cycle_G100000407405,450.0,gas,Talimarjan power station_CC2 -- operating,e_w186713398-500,way/186713398-500,38.481232,65.62977,False
+e_w186713398-500,ep_gas_combined_cycle_G100000407406,450.0,gas,Talimarjan power station_CC1 -- operating,e_w186713398-500,way/186713398-500,38.481232,65.62977,False
+e_w186713398-500,ep_gas_combined_cycle_G100000407407,532.5,gas,Talimarjan power station_CC4 -- construction,e_w186713398-500,way/186713398-500,38.481232,65.62977,False
+e_w186713398-500,ep_gas_combined_cycle_G100000407408,532.5,gas,Talimarjan power station_CC3 -- construction,e_w186713398-500,way/186713398-500,38.481232,65.62977,False
+e_w186713398-500,ep_gas_steam_turbine_G100000407409,800.0,gas,Talimarjan power station_ST1 -- operating,e_w186713398-500,way/186713398-500,38.481232,65.62977,False
+e_w240225498-220,ep_hydro_dam_G100000604146,127.0,hydro,Farkhad hydroelectric plant_ -- operating,e_w240225498-220,way/240225498-220,40.1935,69.3053,False
+e_w240225498-220,ep_hydro_w240225498-220__irena,25.08829908675798,hydro,Aggregated Plant - IRENA Gap - way/240225498-220_Missing Hydro Capacity -- operating,e_w240225498-220,way/240225498-220,40.32318466374404,69.34696383939456,False
+e_w262197266-500,ep_coal_supercritical_G100000107535,300.0,coal,Novo-Angren power station_Unit 1 -- operating,e_w262197266-500,way/262197266-500,40.9233,69.8174,False
+e_w262197266-500,ep_coal_supercritical_G100000107536,300.0,coal,Novo-Angren power station_Unit 2 -- operating,e_w262197266-500,way/262197266-500,40.9233,69.8174,False
+e_w262197266-500,ep_coal_supercritical_G100000107537,300.0,coal,Novo-Angren power station_Unit 3 -- operating,e_w262197266-500,way/262197266-500,40.9233,69.8174,False
+e_w262197266-500,ep_coal_supercritical_G100000107538,300.0,coal,Novo-Angren power station_Unit 4 -- operating,e_w262197266-500,way/262197266-500,40.9233,69.8174,False
+e_w262197266-500,ep_coal_supercritical_G100000107539,300.0,coal,Novo-Angren power station_Unit 5 -- operating,e_w262197266-500,way/262197266-500,40.9233,69.8174,False
+e_w262197266-500,ep_coal_supercritical_G100000107540,300.0,coal,Novo-Angren power station_Unit 6 -- operating,e_w262197266-500,way/262197266-500,40.9233,69.8174,False
+e_w262197266-500,ep_coal_supercritical_G100000107541,300.0,coal,Novo-Angren power station_Unit 7 -- operating,e_w262197266-500,way/262197266-500,40.9233,69.8174,False
+e_w367756308-220,ep_gas_combined_cycle_G100000407398,280.0,gas,Takhiatash power station_CC2 -- operating,e_w367756308-220,way/367756308-220,42.315236,59.554756,False
+e_w367756308-220,ep_gas_combined_cycle_G100000407399,280.0,gas,Takhiatash power station_CC1 -- operating,e_w367756308-220,way/367756308-220,42.315236,59.554756,False
+e_w367756308-220,ep_gas_steam_turbine_G100000407400,210.0,gas,Takhiatash power station_8 -- operating,e_w367756308-220,way/367756308-220,42.315236,59.554756,False
+e_w367756308-220,ep_gas_steam_turbine_G100000407401,210.0,gas,Takhiatash power station_7 -- operating,e_w367756308-220,way/367756308-220,42.315236,59.554756,False
+e_w48295777-220,ep_gas_combined_cycle_G100000407383,240.0,gas,Tashkent (Aksa) power station_1 -- operating,e_w48295777-220,way/48295777-220,41.383017,69.361198,False
+e_w48295777-220,ep_gas_internal_combustion_G100000407382,230.0,gas,Tashkent (Aksa) power station_2 -- operating,e_w48295777-220,way/48295777-220,41.383017,69.361198,False
+e_w48295777-500,ep_gas_combined_cycle_G100000414468,370.0,gas,Tashkent power station_13 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000407397,150.0,gas,Tashkent power station_1 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414460,150.0,gas,Tashkent power station_9 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414461,165.0,gas,Tashkent power station_8 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414462,165.0,gas,Tashkent power station_7 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414463,155.0,gas,Tashkent power station_6 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414464,150.0,gas,Tashkent power station_5 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414465,150.0,gas,Tashkent power station_4 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414466,150.0,gas,Tashkent power station_3 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414467,150.0,gas,Tashkent power station_2 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414469,155.0,gas,Tashkent power station_12 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414470,155.0,gas,Tashkent power station_11 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w48295777-500,ep_gas_steam_turbine_G100000414471,165.0,gas,Tashkent power station_10 -- operating,e_w48295777-500,way/48295777-500,41.3796,69.370217,False
+e_w995932825-220,ep_gas_combined_cycle_G100000407370,450.0,gas,Turakurgan power station_2 -- operating,e_w995932825-220,way/995932825-220,40.997052,71.458276,False
+e_w995932825-220,ep_gas_combined_cycle_G100000407371,450.0,gas,Turakurgan power station_1 -- operating,e_w995932825-220,way/995932825-220,40.997052,71.458276,False
+elc_spv_001,ep_solar_pv_001,101.5,solar,Aggregated Plant -- construction,elc_spv_001,UZ157-500,40.60715454613332,72.0051211643489,False
+elc_spv_002,ep_solar_pv_002,1.8,solar,Aggregated Plant -- operating,elc_spv_002,UZ230-220,39.808359448617345,68.3925549637559,False
+elc_spv_003,ep_solar_pv_003,109.10000000000001,solar,Aggregated Plant -- construction,elc_spv_003,UZ166-220,40.78224471993519,68.88756447248186,False
+elc_spv_006,ep_solar_pv_G100000801575,457.0,solar,Sherabad solar farm_-- -- construction,elc_spv_006,UZ327-500,37.6733,67.0194,False
+elc_spv_007,ep_solar_pv_G100000801188,220.0,solar,Jizzakh solar farm_-- -- construction,elc_spv_007,UZ262-220,40.139,67.5124,False
+elc_spv_009,ep_solar_pv_009,100.0,solar,Aggregated Plant -- operating,elc_spv_009,UZ246-220,39.97140135357175,65.383981623336,False
+elc_spv_009,ep_solar_pv_G100000801516,220.0,solar,Samarkand solar farm_-- -- operating,elc_spv_009,UZ246-220,39.8607,66.4464,False
+elc_spv_010,ep_solar_pv_010,14.3,solar,Aggregated Plant -- operating,elc_spv_010,UZ261-220,38.90381398993709,65.27863191596401,False
+elc_spv_010,ep_solar_pv_G100000835500,500.0,solar,Karaulbazar solar farm_-- -- operating,elc_spv_010,UZ261-220,39.4556,64.7038,False
+elc_spv_010,ep_solar_pv_G100000835503,500.0,solar,Nishan solar farm_-- -- operating,elc_spv_010,UZ261-220,38.539,65.5791,False
+elc_spv_011,ep_solar_pv_011,9.0,solar,Aggregated Plant -- operating,elc_spv_011,UZ8-220,42.963336904784825,59.44665124912952,False
+elc_spv_016,ep_solar_pv_016,9.5,solar,Aggregated Plant -- operating,elc_spv_016,way/799193629-220,43.847670658186225,57.994068646505454,False
+elc_spv_019,ep_solar_pv_019,100.0,solar,Aggregated Plant -- operating,elc_spv_019,UZ249-500,40.21263662587785,63.81398487636015,False
+elc_spv_019,ep_solar_pv_G100000835499,250.0,solar,Nur-Bukhara solar farm_-- -- construction,elc_spv_019,UZ249-500,39.3282,64.0798,False
+elc_spv_024,ep_solar_pv_024,6.8,solar,Aggregated Plant -- operating,elc_spv_024,UZ32-220,41.7371624187008,60.745095010775636,False
+elc_spv_025,ep_solar_pv_025,100.0,solar,Aggregated Plant -- construction,elc_spv_025,UZ86-220,40.94487704686439,62.43224852738599,False
+elc_won_001,ep_windon_001__irena,0.2682107222284257,windon,Aggregated Plant -- operating,elc_won_001,way/799193629-220,43.38601582079617,58.196324119459184,False
+elc_won_005,ep_windon_005__irena,0.23366408881737447,windon,Aggregated Plant -- operating,elc_won_005,way/193549905-220,43.15549046530963,64.37498205169022,False
+elc_won_008,ep_windon_008__irena,0.24812518895419985,windon,Aggregated Plant -- operating,elc_won_008,UZ2-220,43.54036571530512,61.533171422764376,False
+elc_won_015,ep_windon_wind_G100000900815,500.0,windon,Bash wind farm_-- -- operating,elc_won_015,UZ86-220,40.6577,64.7129,False
+elc_won_015,ep_windon_wind_G100000901260,500.0,windon,Dzhankeldy wind farm_-- -- operating,elc_won_015,UZ86-220,40.8838,63.3801,False
+elc_won_016,ep_windon_wind_G100000900987,500.0,windon,Zarafshan wind farm_1 -- construction,elc_won_016,UZ77-220,41.5969,64.3174,False

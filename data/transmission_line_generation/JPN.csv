@@ -1,0 +1,691 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_JP1-275,ep_hydro_JP1-275__irena,173.7598584801357,hydro,Aggregated Plant - IRENA Gap - JP1-275_Missing Hydro Capacity -- operating,e_JP1-275,JP1-275,42.97716910803807,140.95937967717035,False
+e_JP1-275,ep_hydro_ps_G100000602295,400.0,hydro,Kyogoku hydroelectric plant_ -- operating,e_JP1-275,JP1-275,42.9581,140.9493,False
+e_JP1-275,ep_hydro_ps_G100000602296,200.0,hydro,Kyogoku hydroelectric plant_ -- construction,e_JP1-275,JP1-275,42.9581,140.9493,False
+e_JP10-500,ep_bioenergy_G100000200747,75.0,bioenergy,Hachinohe Mill power station_1 -- operating,e_JP10-500,JP10-500,40.567959,141.478536,False
+e_JP10-500,ep_bioenergy_JP10-500__ember,19.94175347114596,bioenergy,Aggregated Plant -- operating,e_JP10-500,JP10-500,40.928844450838774,141.19612211232717,False
+e_JP10-500,ep_gas_gas_turbine_JP10-500,416.0,gas,Aggregated Plant -- operating,e_JP10-500,JP10-500,40.57723009056472,141.12181452504961,False
+e_JP101-500,ep_gas_combined_cycle_JP101-500,104.7,gas,Aggregated Plant -- operating,e_JP101-500,JP101-500,35.539881751475896,140.10821506948454,False
+e_JP102-500,ep_hydro_JP102-500__irena,46.915161789636635,hydro,Aggregated Plant -- operating,e_JP102-500,JP102-500,35.50409361956759,136.66691823422497,False
+e_JP102-500,ep_hydro_dam_G100000602347,162.0,hydro,Tokuyama hydroelectric plant_ -- operating,e_JP102-500,JP102-500,35.6647,136.5075,False
+e_JP106-500,ep_hydro_JP106-500__irena,20.271983489349168,hydro,Aggregated Plant -- operating,e_JP106-500,JP106-500,35.76281189187835,136.50307782122334,False
+e_JP106-500,ep_hydro_dam_G100001027319,70.0,hydro,Yokoyama hydroelectric plant_ -- operating,e_JP106-500,JP106-500,35.5954,136.4563,False
+e_JP107-500,ep_bioenergy_G100000200048,50.0,bioenergy,Shin-Koto Incineration power station_1 -- operating,e_JP107-500,JP107-500,35.6493,139.8338,False
+e_JP107-500,ep_bioenergy_G100000200788,50.0,bioenergy,Shinkoto power station_1 -- operating,e_JP107-500,JP107-500,35.65,139.8346,False
+e_JP107-500,ep_bioenergy_JP107-500__ember,26.589004628194616,bioenergy,Aggregated Plant -- operating,e_JP107-500,JP107-500,35.82276915339155,139.82277496952292,False
+e_JP110-500,ep_gas_JP110-500__ember,16.957155811264762,gas,Aggregated Plant -- operating,e_JP110-500,JP110-500,35.82042933867051,139.83740600288075,False
+e_JP110-500,ep_gas_combined_cycle_G100000404037,500.0,gas,Kawasaki thermal power station_1-1 -- operating,e_JP110-500,JP110-500,35.512801,139.762266,False
+e_JP110-500,ep_gas_combined_cycle_G100000404038,500.0,gas,Kawasaki thermal power station_1-2 -- operating,e_JP110-500,JP110-500,35.512801,139.762266,False
+e_JP110-500,ep_gas_combined_cycle_G100000404039,500.0,gas,Kawasaki thermal power station_1-3 -- operating,e_JP110-500,JP110-500,35.512801,139.762266,False
+e_JP110-500,ep_gas_combined_cycle_G100000404040,500.0,gas,Kawasaki thermal power station_2-1 -- operating,e_JP110-500,JP110-500,35.512801,139.762266,False
+e_JP110-500,ep_gas_combined_cycle_G100000404041,710.0,gas,Kawasaki thermal power station_2-2 -- operating,e_JP110-500,JP110-500,35.512801,139.762266,False
+e_JP110-500,ep_gas_combined_cycle_G100000404042,710.0,gas,Kawasaki thermal power station_2-3 -- operating,e_JP110-500,JP110-500,35.512801,139.762266,False
+e_JP110-500,ep_gas_combined_cycle_JP110-500,276.5,gas,Aggregated Plant -- operating,e_JP110-500,JP110-500,35.4703603577042,139.8591861024251,False
+e_JP110-500,ep_gas_steam_turbine_G100000403991,1000.0,gas,Higashi-Ohgishima thermal power station_1 -- operating,e_JP110-500,JP110-500,35.494918,139.745627,False
+e_JP110-500,ep_gas_steam_turbine_G100000403992,1000.0,gas,Higashi-Ohgishima thermal power station_2 -- operating,e_JP110-500,JP110-500,35.494918,139.745627,False
+e_JP116-500,ep_nuclear_G100000500112,1180.0,nuclear,Ohi nuclear power plant_3 -- operating,e_JP116-500,JP116-500,35.5424,135.6544,False
+e_JP116-500,ep_nuclear_G100000500113,1180.0,nuclear,Ohi nuclear power plant_4 -- operating,e_JP116-500,JP116-500,35.5424,135.6544,False
+e_JP117-500,ep_m_nuclear_G100000500365,820.0,nuclear,Shimane nuclear power plant_2 -- mothballed,e_JP117-500,JP117-500,35.5383,132.9992,False
+e_JP117-500,ep_nuclear_G100000500037,1373.0,nuclear,Shimane nuclear power plant_3 -- construction,e_JP117-500,JP117-500,35.5383,132.9992,False
+e_JP117-500,ep_solar_pv_500,4.9,solar,Aggregated Plant -- operating,e_JP117-500,JP117-500,35.7130807091796,132.94866769496704,False
+e_JP120-500,ep_bioenergy_JP120-500__ember,13.294502314097308,bioenergy,Aggregated Plant -- operating,e_JP120-500,JP120-500,35.70086431302331,135.3092944144861,False
+e_JP120-500,ep_coal_JP120-500__ember,20.728994762143575,coal,Aggregated Plant -- operating,e_JP120-500,JP120-500,35.34444031770124,135.35666111014083,False
+e_JP120-500,ep_coal_ultra-supercritical_G100000106598,900.0,coal,Maizuru power station_Unit 1 -- operating,e_JP120-500,JP120-500,35.52541,135.345587,False
+e_JP120-500,ep_coal_ultra-supercritical_G100000106599,900.0,coal,Maizuru power station_Unit 2 -- operating,e_JP120-500,JP120-500,35.52541,135.345587,False
+e_JP121-500,ep_nuclear_G100000500332,870.0,nuclear,Takahama nuclear power plant_3 -- operating,e_JP121-500,JP121-500,35.5223,135.5036,False
+e_JP121-500,ep_nuclear_G100000500333,870.0,nuclear,Takahama nuclear power plant_4 -- operating,e_JP121-500,JP121-500,35.5223,135.5036,False
+e_JP121-500,ep_nuclear_G100000500358,826.0,nuclear,Takahama nuclear power plant_1 -- operating,e_JP121-500,JP121-500,35.5223,135.5036,False
+e_JP121-500,ep_nuclear_G100000500359,826.0,nuclear,Takahama nuclear power plant_2 -- operating,e_JP121-500,JP121-500,35.5223,135.5036,False
+e_JP137-500,ep_hydro_JP137-500__irena,559.5067443060369,hydro,Aggregated Plant - IRENA Gap - JP137-500_Missing Hydro Capacity -- operating,e_JP137-500,JP137-500,35.18522647492044,134.9615980530086,False
+e_JP137-500,ep_hydro_ps_G100000602320,1932.0,hydro,Okutataragi hydroelectric plant_ -- operating,e_JP137-500,JP137-500,35.2373,134.834,False
+e_JP155-500,ep_hydro_JP155-500__irena,370.6876980909562,hydro,Aggregated Plant - IRENA Gap - JP155-500_Missing Hydro Capacity -- operating,e_JP155-500,JP155-500,35.25324021480994,134.61190098285118,False
+e_JP155-500,ep_hydro_ps_G100000602312,1280.0,hydro,Okawachi hydroelectric plant_ -- operating,e_JP155-500,JP155-500,35.1315,134.7184,False
+e_JP175-500,ep_coal_subcritical_JP175-500,500.0,coal,Aggregated Plant -- operating,e_JP175-500,JP175-500,35.24301976788727,134.5500255959524,False
+e_JP175-500,ep_gas_JP175-500__ember,20.226539507834953,gas,Aggregated Plant -- operating,e_JP175-500,JP175-500,34.89638089516553,134.8248334154665,False
+e_JP175-500,ep_gas_combined_cycle_G100000401004,566.0,gas,T-Point 2 power station_1 -- operating,e_JP175-500,JP175-500,34.746242,134.784815,False
+e_JP175-500,ep_gas_combined_cycle_G100000403993,729.0,gas,Himeji Daiichi power station_5 -- operating,e_JP175-500,JP175-500,34.773005,134.666632,False
+e_JP175-500,ep_gas_combined_cycle_G100000403994,713.0,gas,Himeji Daiichi power station_6 -- operating,e_JP175-500,JP175-500,34.773005,134.666632,False
+e_JP175-500,ep_gas_combined_cycle_G100000404003,622.6,gas,Himeji Natural Gas power station_CC 1 -- construction,e_JP175-500,JP175-500,34.815418,134.685551,False
+e_JP175-500,ep_gas_combined_cycle_G100000404004,622.6,gas,Himeji Natural Gas power station_CC 2 -- construction,e_JP175-500,JP175-500,34.815418,134.685551,False
+e_JP175-500,ep_gas_combined_cycle_JP175-500,2919.0,gas,Aggregated Plant -- operating,e_JP175-500,JP175-500,34.87809931699155,134.3127276835106,False
+e_JP178-500,ep_bioenergy_JP178-500,40.0,bioenergy,Aggregated Plant -- operating,e_JP178-500,JP178-500,35.13995460666008,135.06820183562863,False
+e_JP178-500,ep_bioenergy_JP178-500__ember,10.635601851277846,bioenergy,Aggregated Plant -- operating,e_JP178-500,JP178-500,34.78149142936963,135.09904689565593,False
+e_JP19-500,ep_bioenergy_JP19-500,41.0,bioenergy,Aggregated Plant -- operating,e_JP19-500,JP19-500,38.01868695160735,140.78873030415488,False
+e_JP19-500,ep_bioenergy_JP19-500__ember,10.901491897559794,bioenergy,Aggregated Plant -- operating,e_JP19-500,JP19-500,37.66249187645848,140.7483893578197,False
+e_JP21-500,ep_bioenergy_G100000200028,50.0,bioenergy,Niigata East Port power station_1 -- construction,e_JP21-500,JP21-500,37.9804,139.2502,False
+e_JP21-500,ep_bioenergy_JP21-500__ember,13.294502314097308,bioenergy,Aggregated Plant -- operating,e_JP21-500,JP21-500,38.485867417864945,138.80800444857493,False
+e_JP21-500,ep_gas_JP21-500__ember,21.67146243082063,gas,Aggregated Plant -- operating,e_JP21-500,JP21-500,38.44291922676206,138.96326234049255,False
+e_JP21-500,ep_gas_combined_cycle_G100000403987,605.0,gas,Higashi Niigata thermal power station_3-1 -- operating,e_JP21-500,JP21-500,38.000014,139.241601,False
+e_JP21-500,ep_gas_combined_cycle_G100000403988,605.0,gas,Higashi Niigata thermal power station_3-2 -- operating,e_JP21-500,JP21-500,38.000014,139.241601,False
+e_JP21-500,ep_gas_combined_cycle_G100000403989,850.0,gas,Higashi Niigata thermal power station_4-1 -- operating,e_JP21-500,JP21-500,38.000014,139.241601,False
+e_JP21-500,ep_gas_combined_cycle_G100000403990,850.0,gas,Higashi Niigata thermal power station_4-2 -- operating,e_JP21-500,JP21-500,38.000014,139.241601,False
+e_JP21-500,ep_gas_combined_cycle_G100000404011,572.0,gas,Joetsu power station_1 -- operating,e_JP21-500,JP21-500,37.206141,138.278456,False
+e_JP21-500,ep_gas_combined_cycle_G100000404012,595.0,gas,Joetsu thermal power station_1-1 -- operating,e_JP21-500,JP21-500,37.206141,138.278456,False
+e_JP21-500,ep_gas_combined_cycle_G100000404013,595.0,gas,Joetsu thermal power station_1-2 -- operating,e_JP21-500,JP21-500,37.206141,138.278456,False
+e_JP21-500,ep_gas_combined_cycle_G100000404014,595.0,gas,Joetsu thermal power station_2-1 -- operating,e_JP21-500,JP21-500,37.206141,138.278456,False
+e_JP21-500,ep_gas_combined_cycle_G100000404015,595.0,gas,Joetsu thermal power station_2-2 -- operating,e_JP21-500,JP21-500,37.206141,138.278456,False
+e_JP21-500,ep_gas_combined_cycle_JP21-500,109.0,gas,Aggregated Plant -- operating,e_JP21-500,JP21-500,38.15040814374219,139.40008482328315,False
+e_JP21-500,ep_gas_internal_combustion_JP21-500,109.2,gas,Aggregated Plant -- operating,e_JP21-500,JP21-500,37.44919027698664,139.6790230843744,False
+e_JP21-500,ep_gas_steam_turbine_G100000403985,600.0,gas,Higashi Niigata thermal power station_1 -- operating,e_JP21-500,JP21-500,38.000014,139.241601,False
+e_JP21-500,ep_gas_steam_turbine_G100000403986,600.0,gas,Higashi Niigata thermal power station_2 -- operating,e_JP21-500,JP21-500,38.000014,139.241601,False
+e_JP21-500,ep_hydro_JP21-500__irena,113.23350777622178,hydro,Aggregated Plant - IRENA Gap - JP21-500_Missing Hydro Capacity -- operating,e_JP21-500,JP21-500,36.91131435535244,139.54926507052377,False
+e_JP21-500,ep_hydro_dam_G100000602311,123.0,hydro,Ojiya hydroelectric plant_ -- operating,e_JP21-500,JP21-500,37.3001,138.8079,False
+e_JP21-500,ep_hydro_dam_G100000602332,206.0,hydro,Shin Ojiya hydroelectric plant_ -- operating,e_JP21-500,JP21-500,37.2878,138.8118,False
+e_JP21-500,ep_hydro_dam_G100001051979,62.0,hydro,Kuromatagawa Daiichi hydroelectric plant_ -- operating,e_JP21-500,JP21-500,37.3171,139.0344,False
+e_JP21-500,ep_m_nuclear_G100000500033,1356.0,nuclear,Kashiwazaki Kariwa nuclear power plant_6 -- mothballed,e_JP21-500,JP21-500,37.4259,138.5941,False
+e_JP21-500,ep_m_nuclear_G100000500034,1356.0,nuclear,Kashiwazaki Kariwa nuclear power plant_7 -- mothballed,e_JP21-500,JP21-500,37.4259,138.5941,False
+e_JP21-500,ep_m_nuclear_G100000500139,1100.0,nuclear,Kashiwazaki Kariwa nuclear power plant_1 -- mothballed,e_JP21-500,JP21-500,37.4259,138.5941,False
+e_JP21-500,ep_m_nuclear_G100000500141,1100.0,nuclear,Kashiwazaki Kariwa nuclear power plant_2 -- mothballed,e_JP21-500,JP21-500,37.4259,138.5941,False
+e_JP21-500,ep_m_nuclear_G100000500142,1100.0,nuclear,Kashiwazaki Kariwa nuclear power plant_5 -- mothballed,e_JP21-500,JP21-500,37.4259,138.5941,False
+e_JP21-500,ep_m_nuclear_G100000500143,1100.0,nuclear,Kashiwazaki Kariwa nuclear power plant_3 -- mothballed,e_JP21-500,JP21-500,37.4259,138.5941,False
+e_JP21-500,ep_m_nuclear_G100000500144,1100.0,nuclear,Kashiwazaki Kariwa nuclear power plant_4 -- mothballed,e_JP21-500,JP21-500,37.4259,138.5941,False
+e_JP219-500,ep_bioenergy_G100000200034,75.0,bioenergy,Omaezaki power station_1 -- construction,e_JP219-500,JP219-500,34.6246,138.2137,False
+e_JP219-500,ep_bioenergy_JP219-500__ember,19.94175347114596,bioenergy,Aggregated Plant -- operating,e_JP219-500,JP219-500,35.05845560298374,138.02596603575947,False
+e_JP219-500,ep_geothermal_JP219-500,3.3,geothermal,Aggregated Plant -- operating,e_JP219-500,JP219-500,34.83365550056959,138.54482936162583,False
+e_JP219-500,ep_m_nuclear_G100000500032,1380.0,nuclear,Hamaoka nuclear power plant_5 -- mothballed,e_JP219-500,JP219-500,34.6235,138.1421,False
+e_JP219-500,ep_m_nuclear_G100000500137,1137.0,nuclear,Hamaoka nuclear power plant_4 -- mothballed,e_JP219-500,JP219-500,34.6235,138.1421,False
+e_JP219-500,ep_m_nuclear_G100000500140,1100.0,nuclear,Hamaoka nuclear power plant_3 -- mothballed,e_JP219-500,JP219-500,34.6235,138.1421,False
+e_JP23-500,ep_coal_IGCC_G100000103895,543.0,coal,Hirono power station_IGCC -- operating,e_JP23-500,JP23-500,37.232652,141.013799,False
+e_JP23-500,ep_coal_JP23-500__ember,20.07257659467569,coal,Aggregated Plant -- operating,e_JP23-500,JP23-500,37.356069236485204,141.07678960594302,False
+e_JP23-500,ep_coal_ultra-supercritical_G100000103896,600.0,coal,Hirono power station_Unit 5 -- operating,e_JP23-500,JP23-500,37.232652,141.013799,False
+e_JP23-500,ep_coal_ultra-supercritical_G100000103897,600.0,coal,Hirono power station_Unit 6 -- operating,e_JP23-500,JP23-500,37.232652,141.013799,False
+e_JP23-500,ep_oil_steam_turbine_G100000412704,600.0,oil,Hirono Thermal power station_2 -- operating,e_JP23-500,JP23-500,37.236688,141.015871,False
+e_JP248-500,ep_bioenergy_JP248-500__ember,19.94175347114596,bioenergy,Aggregated Plant -- operating,e_JP248-500,JP248-500,34.22034855522985,134.67355281936926,False
+e_JP248-500,ep_coal_JP248-500__ember,32.245102963334446,coal,Aggregated Plant -- operating,e_JP248-500,JP248-500,33.86512723663952,135.01070498695455,False
+e_JP248-500,ep_coal_ultra-supercritical_G100000104929,1050.0,coal,J-POWER Tachibana-wan power station_Unit 1 -- operating,e_JP248-500,JP248-500,33.858577,134.651346,False
+e_JP248-500,ep_coal_ultra-supercritical_G100000104930,1050.0,coal,J-POWER Tachibana-wan power station_Unit 2 -- operating,e_JP248-500,JP248-500,33.858577,134.651346,False
+e_JP248-500,ep_coal_ultra-supercritical_G100000109267,700.0,coal,Shikoku Tachibana-wan power station_Unit 1 -- operating,e_JP248-500,JP248-500,33.864231,134.654624,False
+e_JP248-500,ep_m_bioenergy_G100000200098,75.0,bioenergy,Anan (Oji Green Energy) power station_1 -- mothballed,e_JP248-500,JP248-500,33.9377,134.6966,False
+e_JP248-500,ep_m_oil_steam_turbine_JP248-500,450.0,oil,Aggregated Plant -- mothballed,e_JP248-500,JP248-500,33.50123250356967,134.67522791415252,False
+e_JP248-500,ep_oil_steam_turbine_JP248-500,450.0,oil,Aggregated Plant -- operating,e_JP248-500,JP248-500,33.82080279233544,134.2922303081861,False
+e_JP25-500,ep_m_nuclear_G100000500035,1206.0,nuclear,Shika nuclear power plant_2 -- mothballed,e_JP25-500,JP25-500,37.0609,136.7265,False
+e_JP25-500,ep_m_nuclear_G100000500438,540.0,nuclear,Shika nuclear power plant_1 -- mothballed,e_JP25-500,JP25-500,37.0609,136.7265,False
+e_JP267-500,ep_bioenergy_G100000200099,50.0,bioenergy,Karatsu power station_1 -- construction,e_JP267-500,JP267-500,33.4644,129.9417,False
+e_JP267-500,ep_bioenergy_JP267-500__ember,13.294502314097308,bioenergy,Aggregated Plant -- operating,e_JP267-500,JP267-500,33.31172126149042,130.06711754310504,False
+e_JP269-500,ep_coal_JP269-500__ember,59.88376264619254,coal,Aggregated Plant -- operating,e_JP269-500,JP269-500,33.61304971815627,129.73995699541766,False
+e_JP269-500,ep_coal_supercritical_G100000106740,500.0,coal,Matsushima power station_Unit 1 -- operating,e_JP269-500,JP269-500,32.940027,129.597169,False
+e_JP269-500,ep_coal_supercritical_G100000106741,500.0,coal,Matsushima power station_Unit 2 -- operating,e_JP269-500,JP269-500,32.940027,129.597169,False
+e_JP269-500,ep_coal_supercritical_G100000106742,700.0,coal,Matsuura Kyushu power station_Unit 1 -- operating,e_JP269-500,JP269-500,33.350364,129.683244,False
+e_JP269-500,ep_coal_supercritical_G100000106744,1000.0,coal,Matsuura J-POWER power station_Unit 1 -- operating,e_JP269-500,JP269-500,33.356383,129.692033,False
+e_JP269-500,ep_coal_ultra-supercritical_G100000106743,1000.0,coal,Matsuura Kyushu power station_Unit 2 -- operating,e_JP269-500,JP269-500,33.350364,129.683244,False
+e_JP269-500,ep_coal_ultra-supercritical_G100000106745,1000.0,coal,Matsuura J-POWER power station_Unit 2 -- operating,e_JP269-500,JP269-500,33.356383,129.692033,False
+e_JP28-1000,ep_hydro_JP28-1000__irena,36.489570280828495,hydro,Aggregated Plant -- operating,e_JP28-1000,JP28-1000,37.08502638232518,138.61338599567955,False
+e_JP28-1000,ep_hydro_dam_G100000602305,126.0,hydro,Nakatsugawa Daiichi hydroelectric plant_ -- operating,e_JP28-1000,JP28-1000,36.9463,138.6616,False
+e_JP28-500,ep_bioenergy_G100000200762,50.0,bioenergy,Itoigawa biomass power station_1 -- operating,e_JP28-500,JP28-500,37.0277,137.8492,False
+e_JP28-500,ep_bioenergy_JP28-500__ember,13.294502314097308,bioenergy,Aggregated Plant -- operating,e_JP28-500,JP28-500,37.07031123983168,138.82543576876208,False
+e_JP29-500,ep_hydro_JP29-500__irena,349.5469153092063,hydro,Aggregated Plant - IRENA Gap - JP29-500_Missing Hydro Capacity -- operating,e_JP29-500,JP29-500,37.12748680235008,139.75835245024965,False
+e_JP29-500,ep_hydro_dam_G100000602319,560.0,hydro,Okutadami hydroelectric plant_ -- operating,e_JP29-500,JP29-500,37.1544,139.2501,False
+e_JP29-500,ep_hydro_dam_G100000602323,182.0,hydro,Otori hydroelectric plant_ -- operating,e_JP29-500,JP29-500,37.2163,139.2136,False
+e_JP29-500,ep_hydro_dam_G100000602339,400.0,hydro,Tagokura hydroelectric plant_ -- operating,e_JP29-500,JP29-500,37.3118,139.2882,False
+e_JP29-500,ep_hydro_dam_G100001027315,65.0,hydro,Tadami hydroelectric plant_ -- operating,e_JP29-500,JP29-500,37.3354,139.3004,False
+e_JP292-500,ep_coal_JP292-500__ember,16.122551481667223,coal,Aggregated Plant -- operating,e_JP292-500,JP292-500,32.75348018817008,130.0156275225227,False
+e_JP292-500,ep_coal_supercritical_G100000108524,700.0,coal,Reihoku power station_Unit 1 -- operating,e_JP292-500,JP292-500,32.485132,130.042115,False
+e_JP292-500,ep_coal_ultra-supercritical_G100000108525,700.0,coal,Reihoku power station_Unit 2 -- operating,e_JP292-500,JP292-500,32.485132,130.042115,False
+e_JP292-500,ep_solar_pv_500,1.9,solar,Aggregated Plant -- operating,e_JP292-500,JP292-500,32.32027012649794,130.25879860056085,False
+e_JP296-500,ep_bioenergy_G100000200038,50.0,bioenergy,Hyuga power station_1 -- construction,e_JP296-500,JP296-500,32.4305,131.6421,False
+e_JP296-500,ep_bioenergy_JP296-500__ember,13.294502314097308,bioenergy,Aggregated Plant -- operating,e_JP296-500,JP296-500,32.837407858920216,131.20478943673194,False
+e_JP296-500,ep_coal_subcritical_JP296-500,110.0,coal,Aggregated Plant -- operating,e_JP296-500,JP296-500,32.65950414751662,131.77400168893877,False
+e_JP296-500,ep_hydro_JP296-500__irena,74.71673914645837,hydro,Aggregated Plant - IRENA Gap - JP296-500_Missing Hydro Capacity -- operating,e_JP296-500,JP296-500,31.953792856163943,131.75420333216314,False
+e_JP296-500,ep_hydro_dam_G100000602284,93.0,hydro,Kamishiiba hydroelectric plant_ -- operating,e_JP296-500,JP296-500,32.4749,131.174,False
+e_JP296-500,ep_hydro_dam_G100001051970,63.0,hydro,Tsukabaru hydroelectric plant_ -- operating,e_JP296-500,JP296-500,32.5051,131.3002,False
+e_JP296-500,ep_hydro_dam_JP296-500,102.00000000000001,hydro,Aggregated Plant -- operating,e_JP296-500,JP296-500,31.778527966407214,131.3230346344799,False
+e_JP3-275,ep_hydro_JP3-275__irena,15.059187734945095,hydro,Aggregated Plant -- operating,e_JP3-275,JP3-275,43.23337219659339,141.15495014718417,False
+e_JP3-275,ep_hydro_dam_JP3-275,52.0,hydro,Aggregated Plant -- operating,e_JP3-275,JP3-275,42.877604437948925,141.16895194713481,False
+e_JP30-500,ep_hydro_JP30-500__irena,456.1196285103563,hydro,Aggregated Plant - IRENA Gap - JP30-500_Missing Hydro Capacity -- operating,e_JP30-500,JP30-500,36.88758195231037,139.78049608072425,False
+e_JP30-500,ep_hydro_ps_G100000602308,675.0,hydro,Numappara hydroelectric plant_ -- operating,e_JP30-500,JP30-500,37.1006,139.9056,False
+e_JP30-500,ep_hydro_ps_G100000602337,900.0,hydro,Shiobara hydroelectric plant_ -- operating,e_JP30-500,JP30-500,36.9954,139.8683,False
+e_JP306-500,ep_bioenergy_JP306-500,98.0,bioenergy,Aggregated Plant -- operating,e_JP306-500,JP306-500,33.49914889382598,129.8034321068629,False
+e_JP306-500,ep_bioenergy_JP306-500__ember,26.057224535630727,bioenergy,Aggregated Plant -- operating,e_JP306-500,JP306-500,33.496178491615424,130.58827643696978,False
+e_JP306-500,ep_coal_JP306-500__ember,12.253139126067088,coal,Aggregated Plant -- operating,e_JP306-500,JP306-500,33.40304099979667,130.8680668918196,False
+e_JP306-500,ep_coal_subcritical_JP306-500,1064.0,coal,Aggregated Plant -- operating,e_JP306-500,JP306-500,32.78291163314499,131.61253012507274,False
+e_JP306-500,ep_gas_combined_cycle_JP306-500,502.0,gas,Aggregated Plant -- operating,e_JP306-500,JP306-500,32.545735359848194,131.7451521815021,False
+e_JP306-500,ep_geothermal_JP306-500,34.99999999999999,geothermal,Aggregated Plant -- operating,e_JP306-500,JP306-500,31.725809335799568,131.89799080143058,False
+e_JP306-500,ep_nuclear_G100000500329,890.0,nuclear,Sendai nuclear power plant_1 -- operating,e_JP306-500,JP306-500,31.8335,130.1887,False
+e_JP306-500,ep_nuclear_G100000500330,890.0,nuclear,Sendai nuclear power plant_2 -- operating,e_JP306-500,JP306-500,31.8335,130.1887,False
+e_JP306-500,ep_oil_gas_turbine_JP306-500,163.0,oil,Aggregated Plant -- operating,e_JP306-500,JP306-500,31.260565000839375,131.80321764998095,False
+e_JP306-500,ep_oil_steam_turbine_JP306-500,375.0,oil,Aggregated Plant -- operating,e_JP306-500,JP306-500,30.468885702006627,131.22544947888355,False
+e_JP306-500,ep_solar_pv_500,7.8,solar,Aggregated Plant -- operating,e_JP306-500,JP306-500,30.227759976098124,130.78771250753292,False
+e_JP306-500,ep_windon_wind_500,20.0,windon,Aggregated Plant -- operating,e_JP306-500,JP306-500,30.175665432451687,130.623124833208,False
+e_JP34-500,ep_hydro_JP34-500__irena,893.7048721161647,hydro,Aggregated Plant - IRENA Gap - JP34-500_Missing Hydro Capacity -- operating,e_JP34-500,JP34-500,37.02306364206616,138.79966051235587,False
+e_JP34-500,ep_hydro_dam_JP34-500,46.0,hydro,Aggregated Plant -- operating,e_JP34-500,JP34-500,36.66819317329156,138.79661251256678,False
+e_JP34-500,ep_hydro_ps_G100000602314,600.0,hydro,Okukiyotsu Daini hydroelectric plant_ -- operating,e_JP34-500,JP34-500,36.8474,138.767,False
+e_JP34-500,ep_hydro_ps_G100000602315,1000.0,hydro,Okukiyotsu hydroelectric plant_ -- operating,e_JP34-500,JP34-500,36.8462,138.7666,False
+e_JP34-500,ep_hydro_ps_G100000602343,1200.0,hydro,Tamahara hydroelectric plant_ -- operating,e_JP34-500,JP34-500,36.8009,139.0468,False
+e_JP34-500,ep_hydro_ps_G100000602350,240.0,hydro,Yagisawa hydroelectric plant_ -- operating,e_JP34-500,JP34-500,36.9112,139.0559,False
+e_JP37-500,ep_hydro_JP37-500__irena,340.85892238519955,hydro,Aggregated Plant - IRENA Gap - JP37-500_Missing Hydro Capacity -- operating,e_JP37-500,JP37-500,36.85676516267568,139.67041480605394,False
+e_JP37-500,ep_hydro_dam_G100000602289,127.0,hydro,Kinugawa hydroelectric plant_ -- operating,e_JP37-500,JP37-500,36.8512,139.6869,False
+e_JP37-500,ep_hydro_ps_G100000602282,1050.0,hydro,Imaichi hydroelectric plant_ -- operating,e_JP37-500,JP37-500,36.8336,139.6696,False
+e_JP4-275,ep_m_nuclear_G100000500328,912.0,nuclear,Tomari nuclear power plant_3 -- mothballed,e_JP4-275,JP4-275,43.0367,140.5125,False
+e_JP4-275,ep_m_nuclear_G100000500432,579.0,nuclear,Tomari nuclear power plant_1 -- mothballed,e_JP4-275,JP4-275,43.0367,140.5125,False
+e_JP4-275,ep_m_nuclear_G100000500433,579.0,nuclear,Tomari nuclear power plant_2 -- mothballed,e_JP4-275,JP4-275,43.0367,140.5125,False
+e_JP5-275,ep_bioenergy_G100000200076,75.0,bioenergy,Muroran power station_1 -- operating,e_JP5-275,JP5-275,42.3575,140.9823,False
+e_JP5-275,ep_bioenergy_JP5-275__ember,33.23625578524327,bioenergy,Aggregated Plant -- operating,e_JP5-275,JP5-275,43.10859926867458,141.0636616663306,False
+e_JP5-275,ep_coal_subcritical_JP5-275,145.0,coal,Aggregated Plant -- operating,e_JP5-275,JP5-275,42.85090357163824,141.3811464991245,False
+e_JP5-275,ep_gas_steam_turbine_JP5-275,100.0,gas,Aggregated Plant -- operating,e_JP5-275,JP5-275,42.38904600644395,141.04179374134836,False
+e_JP5-275,ep_oil_steam_turbine_JP5-275,700.0,oil,Aggregated Plant -- operating,e_JP5-275,JP5-275,42.652023147980906,140.68842318682778,False
+e_JP50-500,ep_hydro_JP50-500__irena,22.588781602417644,hydro,Aggregated Plant -- operating,e_JP50-500,JP50-500,36.36503133121928,138.92070382076943,False
+e_JP50-500,ep_hydro_dam_G100000602325,78.0,hydro,Saku hydroelectric plant_ -- operating,e_JP50-500,JP50-500,36.522,139.0335,False
+e_JP57-500,ep_hydro_JP57-500__irena,269.0381808800768,hydro,Aggregated Plant - IRENA Gap - JP57-500_Missing Hydro Capacity -- operating,e_JP57-500,JP57-500,36.726095857682594,136.90016116584405,False
+e_JP57-500,ep_hydro_dam_G100000602269,265.0,hydro,Arimine Daiichi hydroelectric plant_ -- operating,e_JP57-500,JP57-500,36.5444,137.4516,False
+e_JP57-500,ep_hydro_dam_G100000602283,82.0,hydro,Jinzugawa Daiichi hydroelectric plant_ -- operating,e_JP57-500,JP57-500,36.5068,137.234,False
+e_JP57-500,ep_hydro_dam_G100000602349,122.0,hydro,Wadagawa Daini hydroelectric plant_ -- operating,e_JP57-500,JP57-500,36.5435,137.438,False
+e_JP57-500,ep_hydro_dam_G100001051688,68.0,hydro,Shin Soyama hydroelectric plant_ -- operating,e_JP57-500,JP57-500,36.4778,136.9826,False
+e_JP57-500,ep_hydro_dam_G100001051986,74.0,hydro,Shin Nakachiyama hydroelectric plant_ -- operating,e_JP57-500,JP57-500,36.5614,137.3662,False
+e_JP57-500,ep_hydro_dam_G100001051987,63.0,hydro,Shin Tsubawara hydroelectric plant_ -- operating,e_JP57-500,JP57-500,36.3197,136.9004,False
+e_JP57-500,ep_hydro_dam_JP57-500,204.0,hydro,Aggregated Plant -- operating,e_JP57-500,JP57-500,36.38512431922062,137.11328432636054,False
+e_JP57-500,ep_hydro_ror_JP57-500,51.0,hydro,Aggregated Plant -- operating,e_JP57-500,JP57-500,36.277153658987054,136.65441025752202,False
+e_JP6-275,ep_coal_subcritical_JP6-275,257.0,coal,Aggregated Plant -- operating,e_JP6-275,JP6-275,42.98177474856836,141.81919267435453,False
+e_JP7-275,ep_bioenergy_G100000200785,74.0,bioenergy,Sanix Energy Tomakomai power station_1 -- operating,e_JP7-275,JP7-275,42.619,141.8009,False
+e_JP7-275,ep_bioenergy_G100000200800,75.0,bioenergy,Yufutsu power station_1 -- operating,e_JP7-275,JP7-275,42.6401,141.6317,False
+e_JP7-275,ep_bioenergy_JP7-275,46.4,bioenergy,Aggregated Plant -- operating,e_JP7-275,JP7-275,43.652887798421084,142.09846399087635,False
+e_JP7-275,ep_bioenergy_JP7-275__ember,65.24941735758959,bioenergy,Aggregated Plant - EMBER Gap - JP7-275_Missing Bioenergy Capacity -- operating,e_JP7-275,JP7-275,43.54991877474919,142.34307293455598,False
+e_JP7-275,ep_coal_JP7-275__ember,19.00157853196494,coal,Aggregated Plant -- operating,e_JP7-275,JP7-275,43.216611004327135,142.7010712407148,False
+e_JP7-275,ep_coal_subcritical_JP7-275,350.0,coal,Aggregated Plant -- operating,e_JP7-275,JP7-275,42.54525043425309,142.88348782914187,False
+e_JP7-275,ep_coal_supercritical_G100000110236,600.0,coal,Tomatouatsuma power station_Unit 2 -- operating,e_JP7-275,JP7-275,42.60762,141.80843,False
+e_JP7-275,ep_coal_ultra-supercritical_G100000110237,700.0,coal,Tomatouatsuma power station_Unit 4 -- operating,e_JP7-275,JP7-275,42.60762,141.80843,False
+e_JP7-275,ep_hydro_JP7-275__irena,129.4510945677011,hydro,Aggregated Plant - IRENA Gap - JP7-275_Missing Hydro Capacity -- operating,e_JP7-275,JP7-275,42.01969857872935,142.70853565823938,False
+e_JP7-275,ep_hydro_dam_JP7-275,47.0,hydro,Aggregated Plant -- operating,e_JP7-275,JP7-275,41.578262734309405,142.11915592868348,False
+e_JP7-275,ep_hydro_ps_G100000602307,200.0,hydro,Niikappu hydroelectric plant_ -- operating,e_JP7-275,JP7-275,42.6058,142.5552,False
+e_JP7-275,ep_hydro_ps_G100000602340,200.0,hydro,Takami hydroelectric plant_ -- operating,e_JP7-275,JP7-275,42.4563,142.6364,False
+e_JP7-275,ep_oil_gas_turbine_JP7-275,148.0,oil,Aggregated Plant -- operating,e_JP7-275,JP7-275,41.53160930154436,141.8225245109587,False
+e_JP7-275,ep_oil_steam_turbine_JP7-275,250.0,oil,Aggregated Plant -- operating,e_JP7-275,JP7-275,41.66972562203983,141.27550667512529,False
+e_JP74-500,ep_hydro_JP74-500__irena,120.47350187956076,hydro,Aggregated Plant - IRENA Gap - JP74-500_Missing Hydro Capacity -- operating,e_JP74-500,JP74-500,36.26012388740588,137.0478134795795,False
+e_JP74-500,ep_hydro_dam_G100000602300,215.0,hydro,Miboro hydroelectric plant_ -- operating,e_JP74-500,JP74-500,36.1386,136.9105,False
+e_JP74-500,ep_hydro_dam_G100000602330,142.0,hydro,Shimokotori hydroelectric plant_ -- operating,e_JP74-500,JP74-500,36.249,137.0277,False
+e_JP74-500,ep_hydro_dam_JP74-500,59.0,hydro,Aggregated Plant -- operating,e_JP74-500,JP74-500,35.90370516987489,137.01156280053854,False
+e_JP76-500,ep_hydro_JP76-500__irena,816.6713348566379,hydro,Aggregated Plant - IRENA Gap - JP76-500_Missing Hydro Capacity -- operating,e_JP76-500,JP76-500,36.120886180639204,138.74532081499746,False
+e_JP76-500,ep_hydro_ps_G100000602286,940.0,hydro,Kannagawa hydroelectric plant_ -- operating,e_JP76-500,JP76-500,36.0881,138.7254,False
+e_JP8-275,ep_coal_subcritical_JP8-275,47.6,coal,Aggregated Plant -- operating,e_JP8-275,JP8-275,42.235976274947646,140.5126145371162,False
+e_JP8-275,ep_geothermal_JP8-275,6.5,geothermal,Aggregated Plant -- operating,e_JP8-275,JP8-275,41.984363625194355,140.9536746465128,False
+e_JP8-275,ep_oil_steam_turbine_JP8-275,700.0,oil,Aggregated Plant -- operating,e_JP8-275,JP8-275,41.53372827625107,140.6721688296774,False
+e_JP8-275,ep_solar_pv_275,2.0,solar,Aggregated Plant -- operating,e_JP8-275,JP8-275,41.93166176351484,140.24871560535163,False
+e_JP9-500,ep_nuclear_G100000500036,1383.0,nuclear,Ohma nuclear power plant_1 -- construction,e_JP9-500,JP9-500,41.5099,140.9131,False
+e_JP95-500,ep_hydro_JP95-500__irena,463.3596226136953,hydro,Aggregated Plant - IRENA Gap - JP95-500_Missing Hydro Capacity -- operating,e_JP95-500,JP95-500,35.78549598927272,138.9425037552656,False
+e_JP95-500,ep_hydro_ps_G100000602287,1200.0,hydro,Kazunogawa hydroelectric plant_ -- operating,e_JP95-500,JP95-500,35.7189,138.9324,False
+e_r11529219-500,ep_bioenergy_r11529219-500,37.0,bioenergy,Aggregated Plant -- operating,e_r11529219-500,relation/11529219-500,35.72176405409616,135.80127544069484,False
+e_r13768299-500,ep_hydro_ps_G100000602338,250.0,hydro,Shiroyama hydroelectric plant_ -- operating,e_r13768299-500,relation/13768299-500,35.9575,139.8671,False
+e_r13768299-500,ep_hydro_r13768299-500__irena,72.39994103338988,hydro,Aggregated Plant - IRENA Gap - relation/13768299-500_Missing Hydro Capacity -- operating,e_r13768299-500,relation/13768299-500,35.92830234300201,140.07154330086874,False
+e_r17013811-500,ep_bioenergy_G100000200043,51.0,bioenergy,Fushiki Manyofuto power station_1 -- operating,e_r17013811-500,relation/17013811-500,36.8008703,137.0650023,False
+e_r17013811-500,ep_bioenergy_r17013811-500__ember,13.560392360379254,bioenergy,Aggregated Plant -- operating,e_r17013811-500,relation/17013811-500,37.623105583590856,136.7714673865192,False
+e_r17013811-500,ep_coal_CFB_r17013811-500,149.0,coal,Aggregated Plant -- operating,e_r17013811-500,relation/17013811-500,37.32223458451364,137.37773192297772,False
+e_r17013811-500,ep_coal_r17013811-500__ember,21.293284064001924,coal,Aggregated Plant -- operating,e_r17013811-500,relation/17013811-500,36.81866635067116,137.44322636634087,False
+e_r17013811-500,ep_coal_subcritical_r17013811-500,500.0,coal,Aggregated Plant -- operating,e_r17013811-500,relation/17013811-500,36.474839368543975,137.19313033787367,False
+e_r17013811-500,ep_coal_ultra-supercritical_G100000107213,500.0,coal,Nanao-Ota Shinko power station_Unit 1 -- operating,e_r17013811-500,relation/17013811-500,37.066393,137.003701,False
+e_r17013811-500,ep_coal_ultra-supercritical_G100000107214,700.0,coal,Nanao-Ota Shinko power station_Unit 2 -- operating,e_r17013811-500,relation/17013811-500,37.066393,137.003701,False
+e_r17013811-500,ep_gas_combined_cycle_r17013811-500,424.7,gas,Aggregated Plant -- operating,e_r17013811-500,relation/17013811-500,36.4567662509139,136.51105088176075,False
+e_r17013811-500,ep_hydro_dam_G100000602324,124.0,hydro,Otozawa hydroelectric plant_ -- operating,e_r17013811-500,relation/17013811-500,36.8449,137.5673,False
+e_r17013811-500,ep_hydro_dam_G100000602328,120.0,hydro,Senju hydroelectric plant_ -- operating,e_r17013811-500,relation/17013811-500,36.9463,137.561,False
+e_r17013811-500,ep_hydro_dam_G100000602333,177.0,hydro,Shinanogawa hydroelectric plant_ -- operating,e_r17013811-500,relation/17013811-500,36.9463,137.561,False
+e_r17013811-500,ep_hydro_r17013811-500__irena,121.92150070022856,hydro,Aggregated Plant - IRENA Gap - relation/17013811-500_Missing Hydro Capacity -- operating,e_r17013811-500,relation/17013811-500,36.92993339484122,136.21088141836637,False
+e_r17013811-500,ep_oil_steam_turbine_G100000412641,500.0,oil,Toyama Shinko power station_2 -- operating,e_r17013811-500,relation/17013811-500,36.76566,137.128677,False
+e_r17013811-500,ep_oil_steam_turbine_r17013811-500,490.0,oil,Aggregated Plant -- operating,e_r17013811-500,relation/17013811-500,37.495086220458184,136.4525464103926,False
+e_r2269992-500,ep_bioenergy_r2269992-500,49.0,bioenergy,Aggregated Plant -- operating,e_r2269992-500,relation/2269992-500,35.995174219334444,139.69464151740786,False
+e_r2269992-500,ep_bioenergy_r2269992-500__ember,26.32311458191267,bioenergy,Aggregated Plant -- operating,e_r2269992-500,relation/2269992-500,35.75090998433721,140.13612777500717,False
+e_r2269992-500,ep_gas_combined_cycle_r2269992-500,2783.7999999999997,gas,Aggregated Plant -- operating,e_r2269992-500,relation/2269992-500,35.30179713466752,139.8912299992088,False
+e_r2269992-500,ep_gas_internal_combustion_r2269992-500,109.2,gas,Aggregated Plant -- operating,e_r2269992-500,relation/2269992-500,35.54575218604168,139.4452241926826,False
+e_w1028554758-500,ep_m_nuclear_G100000500145,1100.0,nuclear,Higashidori (Tohoku) nuclear power plant_1 -- mothballed,e_w1028554758-500,way/1028554758-500,41.188,141.3903,False
+e_w1029010255-500,ep_coal_supercritical_G100000110348,500.0,coal,Tsuruga power station_Unit 1 -- operating,e_w1029010255-500,way/1029010255-500,35.6724,136.08154,False
+e_w1029010255-500,ep_coal_ultra-supercritical_G100000110349,700.0,coal,Tsuruga power station_Unit 2 -- operating,e_w1029010255-500,way/1029010255-500,35.6724,136.08154,False
+e_w1029010255-500,ep_coal_w1029010255-500__ember,13.819329841429047,coal,Aggregated Plant -- operating,e_w1029010255-500,way/1029010255-500,35.592168627015276,135.90358972952674,False
+e_w1029010255-500,ep_m_nuclear_G100000500123,1160.0,nuclear,Tsuruga nuclear power plant_2 -- mothballed,e_w1029010255-500,way/1029010255-500,35.7506,136.0197,False
+e_w1029010255-500,ep_nuclear_G100000500360,826.0,nuclear,Mihama nuclear power plant_3 -- operating,e_w1029010255-500,way/1029010255-500,35.7024,135.9634,False
+e_w102958903-500,ep_bioenergy_G100000200783,75.0,bioenergy,Sakaide Biomass power station_1 -- construction,e_w102958903-500,way/102958903-500,34.3332,133.8853,False
+e_w102958903-500,ep_bioenergy_w102958903-500__ember,19.94175347114596,bioenergy,Aggregated Plant -- operating,e_w102958903-500,way/102958903-500,34.65409040532471,133.94005083513068,False
+e_w102958903-500,ep_gas_combined_cycle_w102958903-500,585.0,gas,Aggregated Plant -- operating,e_w102958903-500,way/102958903-500,34.1977578285096,134.207403784878,False
+e_w102958903-500,ep_gas_steam_turbine_w102958903-500,350.0,gas,Aggregated Plant -- operating,e_w102958903-500,way/102958903-500,33.946136174340545,133.8068487235164,False
+e_w102958903-500,ep_oil_steam_turbine_w102958903-500,450.0,oil,Aggregated Plant -- operating,e_w102958903-500,way/102958903-500,34.28775858206417,133.502430328163,False
+e_w1030329139-500,ep_geothermal_G100000700323,65.0,geothermal,Yanatsu Nishiyama geothermal power plant_-- -- operating,e_w1030329139-500,way/1030329139-500,37.4401,139.694,False
+e_w1030329139-500,ep_hydro_dam_G100000602267,108.0,hydro,Akimoto hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.6605,140.199,False
+e_w1030329139-500,ep_hydro_dam_G100000602280,78.0,hydro,Honna hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.4417,139.494,False
+e_w1030329139-500,ep_hydro_dam_G100000602302,94.0,hydro,Miyashita hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.4663,139.6339,False
+e_w1030329139-500,ep_hydro_dam_G100000602342,92.0,hydro,Taki hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.3875,139.3856,False
+e_w1030329139-500,ep_hydro_dam_G100000602351,75.0,hydro,Yanaizu hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.5198,139.7061,False
+e_w1030329139-500,ep_hydro_dam_G100001051692,64.0,hydro,Ueda hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.4836,139.5371,False
+e_w1030329139-500,ep_hydro_dam_G100001051972,62.0,hydro,Inawashiro Daiichi hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.5441,140.0019,False
+e_w1030329139-500,ep_hydro_dam_G100001051990,62.0,hydro,Toyomi Daiichi hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.6979,139.5659,False
+e_w1030329139-500,ep_hydro_dam_w1030329139-500,475.0,hydro,Aggregated Plant -- operating,e_w1030329139-500,way/1030329139-500,37.78826811985597,139.82891000391365,False
+e_w1030329139-500,ep_hydro_ps_G100000602273,460.0,hydro,Daini Numazawa hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.4496,139.6062,False
+e_w1030329139-500,ep_hydro_ps_G100000602309,460.0,hydro,Numazawa Daini hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.4542,139.6062,False
+e_w1030329139-500,ep_hydro_ps_G100000602329,1000.0,hydro,Shimogo hydroelectric plant_ -- operating,e_w1030329139-500,way/1030329139-500,37.3451,139.9083,False
+e_w1030329139-500,ep_hydro_w1030329139-500__irena,877.4872853246853,hydro,Aggregated Plant - IRENA Gap - way/1030329139-500_Missing Hydro Capacity -- operating,e_w1030329139-500,way/1030329139-500,37.369428701501825,140.35826952630703,False
+e_w1037299172-500,ep_bioenergy_G100000200039,50.0,bioenergy,Ozu power station_1 -- construction,e_w1037299172-500,way/1037299172-500,33.6228,132.4987,False
+e_w1037299172-500,ep_bioenergy_w1037299172-500__ember,13.294502314097308,bioenergy,Aggregated Plant -- operating,e_w1037299172-500,way/1037299172-500,33.83599417832743,132.21477588608448,False
+e_w1037299172-500,ep_nuclear_G100000500331,890.0,nuclear,Ikata nuclear power plant_3 -- operating,e_w1037299172-500,way/1037299172-500,33.4909,132.3088,False
+e_w1037299172-500,ep_solar_pv_500,17.4,solar,Aggregated Plant -- operating,e_w1037299172-500,way/1037299172-500,33.537907504891116,132.66899927331798,False
+e_w1037516198-500,ep_bioenergy_w1037516198-500__ember,13.294502314097308,bioenergy,Aggregated Plant -- operating,e_w1037516198-500,way/1037516198-500,33.93782410817695,135.19525002423126,False
+e_w1037516198-500,ep_oil_steam_turbine_G100000412706,600.0,oil,Gobo power station_3 -- operating,e_w1037516198-500,way/1037516198-500,33.86019,135.152454,False
+e_w1037516198-500,ep_oil_steam_turbine_G100000412708,600.0,oil,Gobo power station_1 -- operating,e_w1037516198-500,way/1037516198-500,33.86019,135.152454,False
+e_w1038584990-500,ep_hydro_dam_G100000602306,82.0,hydro,Nanairo hydroelectric plant_ -- operating,e_w1038584990-500,way/1038584990-500,33.9604,136.0026,False
+e_w1038584990-500,ep_hydro_dam_G100000602321,1206.0,hydro,Okuyoshino hydroelectric plant_ -- operating,e_w1038584990-500,way/1038584990-500,34.1137,135.824,False
+e_w1038584990-500,ep_hydro_dam_G100000602348,75.0,hydro,Totsukawa Daiichi hydroelectric plant_ -- operating,e_w1038584990-500,way/1038584990-500,33.9726,135.8073,False
+e_w1038584990-500,ep_hydro_dam_w1038584990-500,58.0,hydro,Aggregated Plant -- operating,e_w1038584990-500,way/1038584990-500,34.29234037942004,135.83972271076112,False
+e_w1038584990-500,ep_hydro_ps_G100000602281,350.0,hydro,Ikehara hydroelectric plant_ -- operating,e_w1038584990-500,way/1038584990-500,34.0476,135.9735,False
+e_w1038584990-500,ep_hydro_w1038584990-500__irena,512.881182280534,hydro,Aggregated Plant - IRENA Gap - way/1038584990-500_Missing Hydro Capacity -- operating,e_w1038584990-500,way/1038584990-500,33.932810437442136,135.82339353654882,False
+e_w104391636-500,ep_bioenergy_G100000200050,75.0,bioenergy,Iwaki Onahama Biomass power station_1 -- operating,e_w104391636-500,way/104391636-500,36.9367,140.8731,False
+e_w104391636-500,ep_bioenergy_G100000200745,112.0,bioenergy,Fukushima Iwaki Biomass power station_1 -- operating,e_w104391636-500,way/104391636-500,37.0802,140.8418,False
+e_w104391636-500,ep_bioenergy_w104391636-500__ember,49.72143865472393,bioenergy,Aggregated Plant -- operating,e_w104391636-500,way/104391636-500,37.405569237287814,140.66380601433272,False
+e_w104391636-500,ep_coal_IGCC_G100000107197,525.0,coal,Nakoso power station_IGCC -- operating,e_w104391636-500,way/104391636-500,36.9128,140.8128,False
+e_w104391636-500,ep_coal_subcritical_w104391636-500,295.0,coal,Aggregated Plant -- operating,e_w104391636-500,way/104391636-500,37.0295486659317,140.9687893311058,False
+e_w104391636-500,ep_coal_supercritical_G100000107199,600.0,coal,Nakoso power station_Unit 8 -- operating,e_w104391636-500,way/104391636-500,36.9128,140.8128,False
+e_w104391636-500,ep_coal_supercritical_G100000107200,600.0,coal,Nakoso power station_Unit 9 -- operating,e_w104391636-500,way/104391636-500,36.9128,140.8128,False
+e_w104391636-500,ep_coal_w104391636-500__ember,23.262538566405564,coal,Aggregated Plant -- operating,e_w104391636-500,way/104391636-500,36.94579746839123,140.53692050632012,False
+e_w105298089-500,ep_bioenergy_G100000200088,52.0,bioenergy,Obayashi Kamisu power station_1 -- operating,e_w105298089-500,way/105298089-500,35.9063,140.7074,False
+e_w105298089-500,ep_bioenergy_G100000200765,50.0,bioenergy,Kamisu Biomass power generation project_1 -- operating,e_w105298089-500,way/105298089-500,35.9073,140.7064,False
+e_w105298089-500,ep_bioenergy_w105298089-500,39.0,bioenergy,Aggregated Plant -- operating,e_w105298089-500,way/105298089-500,36.5835398598196,140.51734969967785,False
+e_w105298089-500,ep_bioenergy_w105298089-500__ember,51.05088888613366,bioenergy,Aggregated Plant - EMBER Gap - way/105298089-500_Missing Bioenergy Capacity -- operating,e_w105298089-500,way/105298089-500,36.40274102702544,140.93826002651764,False
+e_w105298089-500,ep_coal_subcritical_w105298089-500,112.0,coal,Aggregated Plant -- operating,e_w105298089-500,way/105298089-500,35.85668521678647,141.17877265350776,False
+e_w105298089-500,ep_coal_supercritical_G100000109693,522.0,coal,Nippon Steel (NSC) Kashima Works power station_-- -- operating,e_w105298089-500,way/105298089-500,35.947067,140.688737,False
+e_w105298089-500,ep_coal_ultra-supercritical_G100000109694,645.0,coal,Kashima Works power station_-- -- operating,e_w105298089-500,way/105298089-500,35.947067,140.688737,False
+e_w105298089-500,ep_coal_w105298089-500__ember,14.729102389323128,coal,Aggregated Plant -- operating,e_w105298089-500,way/105298089-500,35.237829468963334,140.81274531609483,False
+e_w105298089-500,ep_gas_combined_cycle_w105298089-500,1667.0,gas,Aggregated Plant -- operating,e_w105298089-500,way/105298089-500,35.14466293932817,140.47153648747707,False
+e_w105298089-500,ep_gas_steam_turbine_w105298089-500,700.0,gas,Aggregated Plant -- operating,e_w105298089-500,way/105298089-500,35.3778954956611,139.92714557929202,False
+e_w106076988-500,ep_bioenergy_G100000200743,53.0,bioenergy,Chokainan power station_1 -- construction,e_w106076988-500,way/106076988-500,38.9801,139.8542,False
+e_w106076988-500,ep_bioenergy_G100000200759,75.0,bioenergy,Ishinomaki Hibarino Biomass power station_1 -- operating,e_w106076988-500,way/106076988-500,38.411,141.278,False
+e_w106076988-500,ep_bioenergy_G100000200784,50.0,bioenergy,Sakata power station_1 -- operating,e_w106076988-500,way/106076988-500,38.9606,139.8303,False
+e_w106076988-500,ep_bioenergy_G1000002487,75.0,bioenergy,"Maeda-Ofunato power station_1, timepoint 2 -- operating",e_w106076988-500,way/106076988-500,39.068,141.725222,False
+e_w106076988-500,ep_bioenergy_w106076988-500,40.0,bioenergy,Aggregated Plant -- operating,e_w106076988-500,way/106076988-500,39.14522312028424,140.838835111467,False
+e_w106076988-500,ep_bioenergy_w106076988-500__ember,105.29245832765068,bioenergy,Aggregated Plant - EMBER Gap - way/106076988-500_Missing Bioenergy Capacity -- operating,e_w106076988-500,way/106076988-500,38.9787024744953,141.23926870291743,False
+e_w106076988-500,ep_coal_subcritical_w106076988-500,797.9999999999999,coal,Aggregated Plant -- operating,e_w106076988-500,way/106076988-500,38.474280112125626,141.37348263153424,False
+e_w106076988-500,ep_geothermal_w106076988-500,104.80000000000001,geothermal,Aggregated Plant -- operating,e_w106076988-500,way/106076988-500,38.08149289492492,140.98442230920446,False
+e_w106076988-500,ep_m_nuclear_G100000500363,825.0,nuclear,Onagawa nuclear power plant_2 -- mothballed,e_w106076988-500,way/106076988-500,38.3987,141.5003,False
+e_w106076988-500,ep_m_nuclear_G100000500364,825.0,nuclear,Onagawa nuclear power plant_3 -- mothballed,e_w106076988-500,way/106076988-500,38.3987,141.5003,False
+e_w109834508-500,ep_gas_combined_cycle_w109834508-500,1109.0,gas,Aggregated Plant -- operating,e_w109834508-500,way/109834508-500,34.547154429257176,135.588807582974,False
+e_w116559939-500,ep_hydro_dam_G100000602326,350.0,hydro,Sakuma hydroelectric plant_ -- operating,e_w116559939-500,way/116559939-500,35.0916,137.8071,False
+e_w116559939-500,ep_hydro_dam_w116559939-500,128.0,hydro,Aggregated Plant -- operating,e_w116559939-500,way/116559939-500,35.2514541675082,137.7160889535424,False
+e_w116559939-500,ep_hydro_w116559939-500__irena,138.42868725584145,hydro,Aggregated Plant - IRENA Gap - way/116559939-500_Missing Hydro Capacity -- operating,e_w116559939-500,way/116559939-500,34.89216606634982,137.69041433830654,False
+e_w133641619-500,ep_coal_subcritical_w133641619-500,49.5,coal,Aggregated Plant -- operating,e_w133641619-500,way/133641619-500,36.03997117721124,139.31516969290212,False
+e_w142662111-500,ep_hydro_dam_G100000602275,85.0,hydro,Hatanagi Daini hydroelectric plant_ -- operating,e_w142662111-500,way/142662111-500,35.2676,138.2273,False
+e_w142662111-500,ep_hydro_dam_G100000602276,101.0,hydro,Hiraoka hydroelectric plant_ -- operating,e_w142662111-500,way/142662111-500,35.283,137.8465,False
+e_w142662111-500,ep_hydro_dam_w142662111-500,105.00000000000001,hydro,Aggregated Plant -- operating,e_w142662111-500,way/142662111-500,35.33635158039961,137.7755813227659,False
+e_w142662111-500,ep_hydro_ps_G100000602274,86.0,hydro,Hatanagi Daiichi hydroelectric plant_ -- operating,e_w142662111-500,way/142662111-500,35.3211,138.184,False
+e_w142662111-500,ep_hydro_ps_G100000602336,1125.0,hydro,Shintoyone hydroelectric plant_ -- operating,e_w142662111-500,way/142662111-500,35.1319,137.7905,False
+e_w142662111-500,ep_hydro_w142662111-500__irena,434.9788457286064,hydro,Aggregated Plant - IRENA Gap - way/142662111-500_Missing Hydro Capacity -- operating,e_w142662111-500,way/142662111-500,34.98861501451389,137.77712931687762,False
+e_w150035494-1000,ep_hydro_dam_w150035494-1000,51.0,hydro,Aggregated Plant -- operating,e_w150035494-1000,way/150035494-1000,35.764670777510496,138.84587564122404,False
+e_w150035494-1000,ep_hydro_w150035494-1000__irena,14.769587970811536,hydro,Aggregated Plant -- operating,e_w150035494-1000,way/150035494-1000,35.41032767970247,138.79404245427264,False
+e_w150035494-500,ep_hydro_dam_G100001051984,69.0,hydro,Ontake hydroelectric plant_ -- operating,e_w150035494-500,way/150035494-500,35.7578,138.5654,False
+e_w150035494-500,ep_hydro_w150035494-500__irena,19.982383725215605,hydro,Aggregated Plant -- operating,e_w150035494-500,way/150035494-500,35.854321769945464,138.85958747251212,False
+e_w150065045-500,ep_bioenergy_G100000200781,80.0,bioenergy,Oji Materia power station_1 -- operating,e_w150065045-500,way/150065045-500,35.1526,138.6546,False
+e_w150065045-500,ep_bioenergy_G100000200795,50.0,bioenergy,Tadehara power station_1 -- operating,e_w150065045-500,way/150065045-500,35.1478,138.6698,False
+e_w150065045-500,ep_bioenergy_G1000002489,84.0,bioenergy,"Suzukawa Energy Center_1, timepoint 2 -- operating",e_w150065045-500,way/150065045-500,35.143303,138.714274,False
+e_w150065045-500,ep_bioenergy_w150065045-500__ember,56.90046990433648,bioenergy,Aggregated Plant - EMBER Gap - way/150065045-500_Missing Bioenergy Capacity -- operating,e_w150065045-500,way/150065045-500,35.63050300997515,139.04283237761,False
+e_w150065045-500,ep_hydro_ror_w150065045-500,50.0,hydro,Aggregated Plant -- operating,e_w150065045-500,way/150065045-500,35.31202559593742,139.2266514657651,False
+e_w150065045-500,ep_hydro_w150065045-500__irena,14.479988206677978,hydro,Aggregated Plant -- operating,e_w150065045-500,way/150065045-500,35.24379338504434,138.72537595572635,False
+e_w151379730-500,ep_bioenergy_G100000200062,50.0,bioenergy,Ichihara power station_1 -- operating,e_w151379730-500,way/151379730-500,35.5473,140.0939,False
+e_w151379730-500,ep_bioenergy_G100000200102,75.0,bioenergy,Ichihara Yawatafuto power station_1 -- construction,e_w151379730-500,way/151379730-500,35.5494,140.1044,False
+e_w151379730-500,ep_bioenergy_w151379730-500,49.9,bioenergy,Aggregated Plant -- operating,e_w151379730-500,way/151379730-500,36.114277987326844,140.30506369381888,False
+e_w151379730-500,ep_bioenergy_w151379730-500__ember,46.50416909471239,bioenergy,Aggregated Plant -- operating,e_w151379730-500,way/151379730-500,35.83320455746405,140.7013559163863,False
+e_w151379730-500,ep_gas_combined_cycle_G100000403939,500.0,gas,Chiba thermal power station_3-1 -- operating,e_w151379730-500,way/151379730-500,35.564571,140.105633,False
+e_w151379730-500,ep_gas_combined_cycle_G100000403940,500.0,gas,Chiba thermal power station_3-2 -- operating,e_w151379730-500,way/151379730-500,35.564571,140.105633,False
+e_w151379730-500,ep_gas_combined_cycle_G100000403941,500.0,gas,Chiba thermal power station_3-3 -- operating,e_w151379730-500,way/151379730-500,35.564571,140.105633,False
+e_w151379730-500,ep_gas_combined_cycle_G100000403975,780.0,gas,Shin Goi power station_CC 1 -- operating,e_w151379730-500,way/151379730-500,35.546922,140.072506,False
+e_w151379730-500,ep_gas_combined_cycle_G100000403976,780.0,gas,Shin Goi power station_CC 2 -- construction,e_w151379730-500,way/151379730-500,35.546922,140.072506,False
+e_w151379730-500,ep_gas_combined_cycle_G100000403977,780.0,gas,Shin Goi power station_CC 3 -- construction,e_w151379730-500,way/151379730-500,35.546922,140.072506,False
+e_w151379730-500,ep_gas_combined_cycle_w151379730-500,3581.7000000000003,gas,Aggregated Plant -- operating,e_w151379730-500,way/151379730-500,35.34847485388747,140.77892227799697,False
+e_w151379730-500,ep_gas_steam_turbine_w151379730-500,138.0,gas,Aggregated Plant -- operating,e_w151379730-500,way/151379730-500,34.889741684871524,140.3291263376531,False
+e_w151379730-500,ep_gas_w151379730-500__ember,22.503468934682385,gas,Aggregated Plant -- operating,e_w151379730-500,way/151379730-500,34.88344236753999,140.02970831707532,False
+e_w151379730-500,ep_hydro_dam_w151379730-500,51.0,hydro,Aggregated Plant -- operating,e_w151379730-500,way/151379730-500,35.42995119114439,139.5396986274021,False
+e_w151379730-500,ep_hydro_w151379730-500__irena,14.769587970811536,hydro,Aggregated Plant -- operating,e_w151379730-500,way/151379730-500,35.836876865266404,139.6340202785136,False
+e_w156208858-500,ep_coal_ultra-supercritical_G100000103635,1000.0,coal,Haramachi power station_Unit 1 -- operating,e_w156208858-500,way/156208858-500,37.665675,141.014758,False
+e_w156208858-500,ep_coal_ultra-supercritical_G100000103636,1000.0,coal,Haramachi power station_Unit 2 -- operating,e_w156208858-500,way/156208858-500,37.665675,141.014758,False
+e_w156208858-500,ep_coal_w156208858-500__ember,23.032216402381746,coal,Aggregated Plant -- operating,e_w156208858-500,way/156208858-500,37.61891304137558,140.91603837167358,False
+e_w161870227-500,ep_hydro_dam_G100000602268,92.0,hydro,Amagase hydroelectric plant_ -- operating,e_w161870227-500,way/161870227-500,34.8812,135.8262,False
+e_w161870227-500,ep_hydro_dam_G100000602290,466.0,hydro,Kisenyama hydroelectric plant_ -- operating,e_w161870227-500,way/161870227-500,34.896,135.8592,False
+e_w161870227-500,ep_hydro_w161870227-500__irena,161.5966683865262,hydro,Aggregated Plant - IRENA Gap - way/161870227-500_Missing Hydro Capacity -- operating,e_w161870227-500,way/161870227-500,34.92815102452266,135.9169015294892,False
+e_w161946849-500,ep_hydro_dam_G100000602297,125.0,hydro,Maruyama hydroelectric plant_ -- operating,e_w161946849-500,way/161946849-500,35.4701,137.1608,False
+e_w161946849-500,ep_hydro_dam_G100001051985,63.0,hydro,Shin Maruyama Gifu hydroelectric plant_ -- operating,e_w161946849-500,way/161946849-500,35.4698,137.1625,False
+e_w161946849-500,ep_hydro_w161946849-500__irena,54.444755657109184,hydro,Aggregated Plant -- operating,e_w161946849-500,way/161946849-500,35.570766681763956,136.84695209260695,False
+e_w168839127-500,ep_bioenergy_w168839127-500,43.0,bioenergy,Aggregated Plant -- operating,e_w168839127-500,way/168839127-500,37.24179916925085,140.10741895932307,False
+e_w168839127-500,ep_bioenergy_w168839127-500__ember,24.993664350502943,bioenergy,Aggregated Plant -- operating,e_w168839127-500,way/168839127-500,37.08318095395311,140.60573451432037,False
+e_w168839127-500,ep_coal_ultra-supercritical_G100000103898,650.0,coal,Hitachinaka Generation_-- -- operating,e_w168839127-500,way/168839127-500,36.4368,140.6138,False
+e_w168839127-500,ep_coal_ultra-supercritical_G100000103899,1000.0,coal,Hitachinaka power station_Unit 1 -- operating,e_w168839127-500,way/168839127-500,36.4368,140.6138,False
+e_w168839127-500,ep_coal_ultra-supercritical_G100000103900,1000.0,coal,Hitachinaka power station_Unit 2 -- operating,e_w168839127-500,way/168839127-500,36.4368,140.6138,False
+e_w168839127-500,ep_coal_w168839127-500__ember,30.517686733155813,coal,Aggregated Plant -- operating,e_w168839127-500,way/168839127-500,36.37494243465777,140.85831751985467,False
+e_w168839127-500,ep_gas_combined_cycle_G100000404056,624.1,gas,Moka power plant_1 -- operating,e_w168839127-500,way/168839127-500,36.45724,139.974047,False
+e_w168839127-500,ep_gas_combined_cycle_G100000404057,624.1,gas,Moka power plant_2 -- operating,e_w168839127-500,way/168839127-500,36.45724,139.974047,False
+e_w168839127-500,ep_gas_combined_cycle_w168839127-500,218.79999999999998,gas,Aggregated Plant -- operating,e_w168839127-500,way/168839127-500,36.114981350641486,140.74730430839398,False
+e_w168839127-500,ep_m_nuclear_G100000500138,1100.0,nuclear,Tokai nuclear power plant_2 -- mothballed,e_w168839127-500,way/168839127-500,36.4215,140.6028,False
+e_w168839127-500,ep_oil_gas_turbine_w168839127-500,106.0,oil,Aggregated Plant -- operating,e_w168839127-500,way/168839127-500,35.80238992685258,140.12351647515243,False
+e_w169122898-500,ep_bioenergy_G100000200061,50.0,bioenergy,Cepo Handa power station_1 -- operating,e_w169122898-500,way/169122898-500,34.9006,136.962,False
+e_w169122898-500,ep_bioenergy_G100000200750,75.0,bioenergy,Handa (Summit) power station_1 -- operating,e_w169122898-500,way/169122898-500,34.8702,136.9442,False
+e_w169122898-500,ep_bioenergy_w169122898-500__ember,44.9354178216489,bioenergy,Aggregated Plant -- operating,e_w169122898-500,way/169122898-500,35.3455768390975,137.74692460850133,False
+e_w169122898-500,ep_coal_subcritical_w169122898-500,259.0,coal,Aggregated Plant -- operating,e_w169122898-500,way/169122898-500,34.74322593759039,137.66314718323514,False
+e_w169122898-500,ep_coal_supercritical_G100000103745,700.0,coal,Hekinan power station_Unit 1 -- operating,e_w169122898-500,way/169122898-500,34.834612,136.959336,False
+e_w169122898-500,ep_coal_supercritical_G100000103746,700.0,coal,Hekinan power station_Unit 2 -- operating,e_w169122898-500,way/169122898-500,34.834612,136.959336,False
+e_w169122898-500,ep_coal_ultra-supercritical_G100000103747,700.0,coal,Hekinan power station_Unit 3 -- operating,e_w169122898-500,way/169122898-500,34.834612,136.959336,False
+e_w169122898-500,ep_coal_ultra-supercritical_G100000103748,1000.0,coal,Hekinan power station_Unit 4 -- operating,e_w169122898-500,way/169122898-500,34.834612,136.959336,False
+e_w169122898-500,ep_coal_ultra-supercritical_G100000103749,1000.0,coal,Hekinan power station_Unit 5 -- operating,e_w169122898-500,way/169122898-500,34.834612,136.959336,False
+e_w169122898-500,ep_coal_ultra-supercritical_G100000109873,1070.0,coal,Taketoyo power station_Unit 5 -- operating,e_w169122898-500,way/169122898-500,34.845,136.961667,False
+e_w169122898-500,ep_coal_w169122898-500__ember,115.14611107124719,coal,Aggregated Plant -- operating,e_w169122898-500,way/169122898-500,34.58449772032145,137.4047131346942,False
+e_w169122898-500,ep_gas_combined_cycle_G100000403949,854.0,gas,Chita Daini thermal power station_1 -- operating,e_w169122898-500,way/169122898-500,35.006527,136.86404,False
+e_w169122898-500,ep_gas_combined_cycle_G100000403950,854.0,gas,Chita Daini thermal power station_2 -- operating,e_w169122898-500,way/169122898-500,35.006527,136.86404,False
+e_w169122898-500,ep_gas_combined_cycle_w169122898-500,3058.0,gas,Aggregated Plant -- operating,e_w169122898-500,way/169122898-500,34.84471688508355,136.7891775895108,False
+e_w169122898-500,ep_gas_w169122898-500__ember,14.187273693757195,gas,Aggregated Plant -- operating,e_w169122898-500,way/169122898-500,35.4814902691177,136.8735930384246,False
+e_w169249243-500,ep_hydro_dam_G100000602292,86.0,hydro,Komaki hydroelectric plant_ -- operating,e_w169249243-500,way/169249243-500,36.564,136.997,False
+e_w169249243-500,ep_hydro_w169249243-500__irena,24.90557971548612,hydro,Aggregated Plant -- operating,e_w169249243-500,way/169249243-500,36.654088213962496,136.75563124257533,False
+e_w169359724-500,ep_bioenergy_w169359724-500,32.0,bioenergy,Aggregated Plant -- operating,e_w169359724-500,way/169359724-500,34.86045738207588,135.70959783301495,False
+e_w169359724-500,ep_gas_combined_cycle_w169359724-500,2289.5,gas,Aggregated Plant -- operating,e_w169359724-500,way/169359724-500,34.45337649690394,135.87670571046823,False
+e_w169359724-500,ep_gas_steam_turbine_G100000404059,600.0,gas,Nanko power station_1 -- operating,e_w169359724-500,way/169359724-500,34.616112,135.404557,False
+e_w169359724-500,ep_gas_steam_turbine_G100000404060,600.0,gas,Nanko power station_2 -- operating,e_w169359724-500,way/169359724-500,34.616112,135.404557,False
+e_w169359724-500,ep_gas_steam_turbine_G100000404061,600.0,gas,Nanko power station_3 -- operating,e_w169359724-500,way/169359724-500,34.616112,135.404557,False
+e_w169359724-500,ep_gas_w169359724-500__ember,17.53167193021045,gas,Aggregated Plant -- operating,e_w169359724-500,way/169359724-500,34.45777267424845,135.4164885128406,False
+e_w170247312-500,ep_bioenergy_G100000200067,50.0,bioenergy,Aichi Gamagori power station_1 -- operating,e_w170247312-500,way/170247312-500,34.8052,137.208,False
+e_w170247312-500,ep_bioenergy_G100000200069,112.0,bioenergy,Tahara power station_1 -- construction,e_w170247312-500,way/170247312-500,34.7071,137.2687,False
+e_w170247312-500,ep_bioenergy_G100000200080,50.0,bioenergy,Tahara Biomass power station_1 -- construction,e_w170247312-500,way/170247312-500,34.694,137.2449,False
+e_w170247312-500,ep_bioenergy_G100000200741,75.0,bioenergy,Aichi Tahara power station_1 -- construction,e_w170247312-500,way/170247312-500,34.7004,137.249,False
+e_w170247312-500,ep_bioenergy_G100000200796,50.0,bioenergy,Tahara Green power station_1 -- construction,e_w170247312-500,way/170247312-500,34.697,137.2467,False
+e_w170247312-500,ep_bioenergy_w170247312-500__ember,101.83588772598539,bioenergy,Aggregated Plant - EMBER Gap - way/170247312-500_Missing Bioenergy Capacity -- operating,e_w170247312-500,way/170247312-500,34.71792760163864,137.4015196962285,False
+e_w170247312-500,ep_m_oil_steam_turbine_G100000412600,700.0,oil,Atsumi Thermal power station_3 -- mothballed,e_w170247312-500,way/170247312-500,34.65426,137.06761,False
+e_w170247312-500,ep_oil_steam_turbine_G100000412599,700.0,oil,Atsumi Thermal power station_4 -- operating,e_w170247312-500,way/170247312-500,34.65426,137.06761,False
+e_w170366035-500,ep_hydro_dam_G100000602299,288.0,hydro,Mazegawa Daiichi hydroelectric plant_ -- operating,e_w170366035-500,way/170366035-500,35.7585,137.1568,False
+e_w170366035-500,ep_hydro_dam_G100001027313,66.0,hydro,Mazegawa II hydroelectric plant_ -- operating,e_w170366035-500,way/170366035-500,35.7329,137.1396,False
+e_w170366035-500,ep_hydro_w170366035-500__irena,102.51831650328008,hydro,Aggregated Plant - IRENA Gap - way/170366035-500_Missing Hydro Capacity -- operating,e_w170366035-500,way/170366035-500,35.750348896409655,136.81981445798579,False
+e_w170537514-500,ep_bioenergy_w170537514-500,49.0,bioenergy,Aggregated Plant -- operating,e_w170537514-500,way/170537514-500,35.731312538699164,136.56362215181156,False
+e_w170537514-500,ep_bioenergy_w170537514-500__ember,13.028612267815364,bioenergy,Aggregated Plant -- operating,e_w170537514-500,way/170537514-500,35.49994044244462,136.95950330628287,False
+e_w170537514-500,ep_coal_subcritical_w170537514-500,214.0,coal,Aggregated Plant -- operating,e_w170537514-500,way/170537514-500,34.89345023841702,136.9645080199441,False
+e_w170537514-500,ep_gas_combined_cycle_G100000403947,854.0,gas,Chita thermal power station_5 -- operating,e_w170537514-500,way/170537514-500,34.98686,136.844134,False
+e_w170537514-500,ep_gas_combined_cycle_G100000403948,854.0,gas,Chita thermal power station_6 -- operating,e_w170537514-500,way/170537514-500,34.98686,136.844134,False
+e_w170537514-500,ep_gas_combined_cycle_G100000404073,1188.0,gas,Nishi-Nagoya thermal power station_7-1 -- operating,e_w170537514-500,way/170537514-500,35.031904,136.831966,False
+e_w170537514-500,ep_gas_combined_cycle_G100000404074,1188.0,gas,Nishi-Nagoya thermal power station_7-2 -- operating,e_w170537514-500,way/170537514-500,35.031904,136.831966,False
+e_w170537514-500,ep_gas_combined_cycle_w170537514-500,3987.0,gas,Aggregated Plant -- operating,e_w170537514-500,way/170537514-500,34.660475954316134,136.6072917158123,False
+e_w170537514-500,ep_gas_steam_turbine_G100000404019,700.0,gas,Kawagoe thermal power station_1 -- operating,e_w170537514-500,way/170537514-500,35.007872,136.687295,False
+e_w170537514-500,ep_gas_steam_turbine_G100000404020,700.0,gas,Kawagoe thermal power station_2 -- operating,e_w170537514-500,way/170537514-500,35.007872,136.687295,False
+e_w170537514-500,ep_gas_w170537514-500__ember,32.06276226509835,gas,Aggregated Plant -- operating,e_w170537514-500,way/170537514-500,34.855110600348404,136.09264556769398,False
+e_w170537514-500,ep_oil_steam_turbine_w170537514-500,233.0,oil,Aggregated Plant -- operating,e_w170537514-500,way/170537514-500,35.587785640039144,136.145331156149,False
+e_w170605907-500,ep_coal_supercritical_G100000109285,700.0,coal,Kobe power station_Unit 1 -- operating,e_w170605907-500,way/170605907-500,34.703167,135.239426,False
+e_w170605907-500,ep_coal_supercritical_G100000109286,700.0,coal,Kobe power station_Unit 2 -- operating,e_w170605907-500,way/170605907-500,34.703167,135.239426,False
+e_w170605907-500,ep_coal_ultra-supercritical_G100000105797,650.0,coal,Kobe power station_Unit 3 -- operating,e_w170605907-500,way/170605907-500,34.703167,135.239426,False
+e_w170605907-500,ep_coal_ultra-supercritical_G100000105798,650.0,coal,Kobe power station_Unit 4 -- operating,e_w170605907-500,way/170605907-500,34.703167,135.239426,False
+e_w170605907-500,ep_coal_w170605907-500__ember,31.09349214321536,coal,Aggregated Plant -- operating,e_w170605907-500,way/170605907-500,34.93116805222973,135.26635182248452,False
+e_w170850727-500,ep_hydro_dam_G100001027318,61.0,hydro,Yahagi I hydroelectric plant_ -- operating,e_w170850727-500,way/170850727-500,35.2404,137.3913,False
+e_w170850727-500,ep_hydro_dam_w170850727-500,52.0,hydro,Aggregated Plant -- operating,e_w170850727-500,way/170850727-500,35.38883051265157,137.27426354001432,False
+e_w170850727-500,ep_hydro_ps_G100000602316,323.0,hydro,Okumino Daiichi hydroelectric plant_ -- operating,e_w170850727-500,way/170850727-500,35.1974,137.4744,False
+e_w170850727-500,ep_hydro_ps_G100000602317,780.0,hydro,Okumino Daini hydroelectric plant_ -- operating,e_w170850727-500,way/170850727-500,35.2288,137.4447,False
+e_w170850727-500,ep_hydro_w170850727-500__irena,352.1533131864084,hydro,Aggregated Plant - IRENA Gap - way/170850727-500_Missing Hydro Capacity -- operating,e_w170850727-500,way/170850727-500,35.0300963415034,137.29416928301725,False
+e_w170974371-500,ep_coal_IGCC_w170974371-500,166.0,coal,Aggregated Plant -- operating,e_w170974371-500,way/170974371-500,34.93933764535177,132.71278442358494,False
+e_w170974371-500,ep_coal_subcritical_w170974371-500,185.0,coal,Aggregated Plant -- operating,e_w170974371-500,way/170974371-500,34.69349119732736,133.11070209554262,False
+e_w170974371-500,ep_coal_supercritical_G100000109872,700.0,coal,Takehara power station_Unit 3 -- operating,e_w170974371-500,way/170974371-500,34.3373,132.9572,False
+e_w170974371-500,ep_coal_ultra-supercritical_G100000109869,600.0,coal,Takehara power station_New Unit 1 -- operating,e_w170974371-500,way/170974371-500,34.3373,132.9572,False
+e_w170974371-500,ep_coal_w170974371-500__ember,21.99576666427457,coal,Aggregated Plant -- operating,e_w170974371-500,way/170974371-500,34.171977621792664,133.02949706010236,False
+e_w170974371-500,ep_hydro_ps_G100000602303,620.0,hydro,Nabara hydroelectric plant_ -- operating,e_w170974371-500,way/170974371-500,34.5633,132.5179,False
+e_w170974371-500,ep_hydro_w170974371-500__irena,179.5518537628069,hydro,Aggregated Plant - IRENA Gap - way/170974371-500_Missing Hydro Capacity -- operating,e_w170974371-500,way/170974371-500,34.093097857733966,132.49434464330494,False
+e_w170974371-500,ep_m_coal_subcritical_w170974371-500,259.0,coal,Aggregated Plant -- mothballed,e_w170974371-500,way/170974371-500,34.654610571525794,132.29053192734779,False
+e_w171066843-500,ep_bioenergy_G100000200774,63.0,bioenergy,Daio Mishima Mill power station_1 -- operating,e_w171066843-500,way/171066843-500,33.98952,133.5512,False
+e_w171066843-500,ep_bioenergy_w171066843-500,35.0,bioenergy,Aggregated Plant -- operating,e_w171066843-500,way/171066843-500,34.4847881295926,133.38917263656958,False
+e_w171066843-500,ep_bioenergy_w171066843-500__ember,39.617616896009984,bioenergy,Aggregated Plant -- operating,e_w171066843-500,way/171066843-500,34.279859876159364,133.81875788096977,False
+e_w171066843-500,ep_coal_subcritical_w171066843-500,1147.0,coal,Aggregated Plant -- operating,e_w171066843-500,way/171066843-500,33.661944376938,133.85594740495333,False
+e_w171066843-500,ep_coal_ultra-supercritical_G100000108716,500.0,coal,Saijo power station_Unit 1 Replacement -- operating,e_w171066843-500,way/171066843-500,33.9327,133.1677,False
+e_w171066843-500,ep_coal_w171066843-500__ember,18.96703020736137,coal,Aggregated Plant -- operating,e_w171066843-500,way/171066843-500,33.41321757749596,133.2942153595647,False
+e_w171066843-500,ep_gas_gas_turbine_w171066843-500,150.0,gas,Aggregated Plant -- operating,e_w171066843-500,way/171066843-500,33.56572741682318,133.00914809995857,False
+e_w171066843-500,ep_hydro_ps_G100000602279,615.0,hydro,Hongawa hydroelectric plant_ -- operating,e_w171066843-500,way/171066843-500,33.7663,133.3455,False
+e_w171066843-500,ep_hydro_w171066843-500__irena,178.1038549421391,hydro,Aggregated Plant - IRENA Gap - way/171066843-500_Missing Hydro Capacity -- operating,e_w171066843-500,way/171066843-500,34.23521657523144,132.93943645339013,False
+e_w172144358-500,ep_hydro_dam_G100001051971,64.0,hydro,Yanagimata hydroelectric plant_ -- operating,e_w172144358-500,way/172144358-500,33.3045,130.8851,False
+e_w172144358-500,ep_hydro_w172144358-500__irena,18.53438490454781,hydro,Aggregated Plant -- operating,e_w172144358-500,way/172144358-500,33.6225751639354,130.61183523636123,False
+e_w172907196-500,ep_coal_subcritical_w172907196-500,372.0,coal,Aggregated Plant -- operating,e_w172907196-500,way/172907196-500,33.731408146027725,133.10585335502594,False
+e_w174636874-500,ep_coal_subcritical_w174636874-500,149.0,coal,Aggregated Plant -- operating,e_w174636874-500,way/174636874-500,40.43118826028663,141.05220501724278,False
+e_w174636874-500,ep_coal_supercritical_G100000107525,600.0,coal,Noshiro power station_Unit 1 -- operating,e_w174636874-500,way/174636874-500,40.191016,139.989632,False
+e_w174636874-500,ep_coal_ultra-supercritical_G100000107526,600.0,coal,Noshiro power station_Unit 2 -- operating,e_w174636874-500,way/174636874-500,40.191016,139.989632,False
+e_w174636874-500,ep_coal_ultra-supercritical_G100000107527,600.0,coal,Noshiro power station_Unit 3 -- operating,e_w174636874-500,way/174636874-500,40.1912,139.9911,False
+e_w174636874-500,ep_coal_w174636874-500__ember,22.444894884121013,coal,Aggregated Plant -- operating,e_w174636874-500,way/174636874-500,40.206616607766314,141.62476289242255,False
+e_w174636874-500,ep_geothermal_w174636874-500,185.5,geothermal,Aggregated Plant -- operating,e_w174636874-500,way/174636874-500,39.77913158310027,141.70183065749293,False
+e_w179863079-275,ep_bioenergy_G100000200758,52.0,bioenergy,Ishikari Bay power station_1 -- operating,e_w179863079-275,way/179863079-275,43.1947,141.2998,False
+e_w179863079-275,ep_bioenergy_G100000200776,50.0,bioenergy,Mombetsu power station_1 -- operating,e_w179863079-275,way/179863079-275,44.3356,143.3676,False
+e_w179863079-275,ep_bioenergy_w179863079-275__ember,47.06253819190447,bioenergy,Aggregated Plant -- operating,e_w179863079-275,way/179863079-275,43.86452402156858,141.4295379921933,False
+e_w179863079-275,ep_coal_subcritical_w179863079-275,250.0,coal,Aggregated Plant -- operating,e_w179863079-275,way/179863079-275,43.52976188589564,142.00833306669372,False
+e_w179863079-275,ep_gas_combined_cycle_G100000404008,569.4,gas,Ishikariwan Shinko power station_1 -- operating,e_w179863079-275,way/179863079-275,43.193153,141.275971,False
+e_w179863079-275,ep_hydro_dam_w179863079-275,57.0,hydro,Aggregated Plant -- operating,e_w179863079-275,way/179863079-275,42.93568138523004,142.00668361933347,False
+e_w179863079-275,ep_hydro_w179863079-275__irena,16.507186555612893,hydro,Aggregated Plant -- operating,e_w179863079-275,way/179863079-275,42.66191343947103,141.7159958733914,False
+e_w179863079-275,ep_m_coal_subcritical_w179863079-275,350.0,coal,Aggregated Plant -- mothballed,e_w179863079-275,way/179863079-275,42.611164924287536,141.35405908436644,False
+e_w185029969-500,ep_bioenergy_w185029969-500,46.0,bioenergy,Aggregated Plant -- construction,e_w185029969-500,way/185029969-500,33.61935639050323,129.9541679460324,False
+e_w185029969-500,ep_bioenergy_w185029969-500__ember,12.230942128969524,bioenergy,Aggregated Plant -- operating,e_w185029969-500,way/185029969-500,33.20042498310369,130.15403213414618,False
+e_w185029969-500,ep_hydro_ps_G100000602346,600.0,hydro,Tenzan hydroelectric plant_ -- operating,e_w185029969-500,way/185029969-500,33.3397,130.1112,False
+e_w185029969-500,ep_hydro_w185029969-500__irena,173.7598584801357,hydro,Aggregated Plant - IRENA Gap - way/185029969-500_Missing Hydro Capacity -- operating,e_w185029969-500,way/185029969-500,33.280133949467945,129.66807605614653,False
+e_w186510275-500,ep_nuclear_G100000500114,1180.0,nuclear,Genkai nuclear power plant_3 -- operating,e_w186510275-500,way/186510275-500,33.5152,129.83601,False
+e_w186510275-500,ep_nuclear_G100000500115,1180.0,nuclear,Genkai nuclear power plant_4 -- operating,e_w186510275-500,way/186510275-500,33.5152,129.83601,False
+e_w186510275-500,ep_solar_pv_500,3.0,solar,Aggregated Plant -- operating,e_w186510275-500,way/186510275-500,33.651235016348565,129.97616976017443,False
+e_w187988970-500,ep_bioenergy_G100000200081,75.0,bioenergy,Kanda power station_1 -- operating,e_w187988970-500,way/187988970-500,33.8092,131.0068,False
+e_w187988970-500,ep_bioenergy_G100000200767,75.0,bioenergy,Kanda (KEPCO) power station_1 -- operating,e_w187988970-500,way/187988970-500,33.8091,131.0068,False
+e_w187988970-500,ep_bioenergy_G100000200779,50.0,bioenergy,Nihonkaisui TTS Kanda power station_1 -- operating,e_w187988970-500,way/187988970-500,33.8092,131.0069,False
+e_w187988970-500,ep_bioenergy_G100000200787,75.0,bioenergy,Shimonoseki bioenergy power station_1 -- operating,e_w187988970-500,way/187988970-500,33.9315,130.8962,False
+e_w187988970-500,ep_bioenergy_G1000002486,112.0,bioenergy,"Hibikinada Thermal Power Station_1, timepoint 2 -- construction",e_w187988970-500,way/187988970-500,33.94000001,130.830563,False
+e_w187988970-500,ep_bioenergy_w187988970-500__ember,156.6092372600663,bioenergy,Aggregated Plant - EMBER Gap - way/187988970-500_Missing Bioenergy Capacity -- operating,e_w187988970-500,way/187988970-500,34.341793323978585,130.70811783488668,False
+e_w187988970-500,ep_coal_subcritical_w187988970-500,642.3000000000001,coal,Aggregated Plant -- operating,e_w187988970-500,way/187988970-500,33.969794704614955,131.3208011123089,False
+e_w187988970-500,ep_coal_w187988970-500__ember,12.832399368586989,coal,Aggregated Plant -- operating,e_w187988970-500,way/187988970-500,33.427979509479364,131.1869622165009,False
+e_w187988970-500,ep_gas_steam_turbine_G100000404048,600.0,gas,Shin Kokura thermal power station_3 -- operating,e_w187988970-500,way/187988970-500,33.906636,130.859892,False
+e_w187988970-500,ep_gas_steam_turbine_G100000404050,600.0,gas,Shin Kokura thermal power station_5 -- operating,e_w187988970-500,way/187988970-500,33.906636,130.859892,False
+e_w187988970-500,ep_gas_steam_turbine_w187988970-500,1040.0,gas,Aggregated Plant -- operating,e_w187988970-500,way/187988970-500,33.27787402677935,130.70891708493627,False
+e_w187988970-500,ep_m_coal_subcritical_w187988970-500,112.0,coal,Aggregated Plant -- mothballed,e_w187988970-500,way/187988970-500,33.472261976270026,130.382334278211,False
+e_w187988970-500,ep_m_coal_supercritical_w187988970-500,360.0,coal,Aggregated Plant -- mothballed,e_w187988970-500,way/187988970-500,33.95627771172439,130.28410352345793,False
+e_w193544791-500,ep_bioenergy_w193544791-500,35.0,bioenergy,Aggregated Plant -- operating,e_w193544791-500,way/193544791-500,34.86156723037086,132.2241499718678,False
+e_w193544791-500,ep_coal_CFB_w193544791-500,88.5,coal,Aggregated Plant -- operating,e_w193544791-500,way/193544791-500,34.440478503217236,132.70721860575296,False
+e_w193544791-500,ep_coal_subcritical_w193544791-500,35.0,coal,Aggregated Plant -- operating,e_w193544791-500,way/193544791-500,34.03603735060254,132.50520225669777,False
+e_w193544791-500,ep_hydro_dam_w193544791-500,52.0,hydro,Aggregated Plant -- operating,e_w193544791-500,way/193544791-500,33.9868692861073,132.10979541491483,False
+e_w193544791-500,ep_hydro_w193544791-500__irena,15.059187734945095,hydro,Aggregated Plant -- operating,e_w193544791-500,way/193544791-500,34.641091810294625,131.86958818501722,False
+e_w201293312-500,ep_bioenergy_G100000200046,75.0,bioenergy,Buzen bioenergy power station_1 -- operating,e_w201293312-500,way/201293312-500,33.6242,131.1222,False
+e_w201293312-500,ep_bioenergy_w201293312-500__ember,19.94175347114596,bioenergy,Aggregated Plant -- operating,e_w201293312-500,way/201293312-500,33.87757906147763,130.99643655165562,False
+e_w201293312-500,ep_oil_steam_turbine_G100000412598,500.0,oil,Buzen power station_1 -- operating,e_w201293312-500,way/201293312-500,33.626077,131.118713,False
+e_w204258596-500,ep_bioenergy_G100000200079,75.0,bioenergy,Chofu power station_1 -- construction,e_w204258596-500,way/204258596-500,34.0227,131.0179,False
+e_w204258596-500,ep_bioenergy_w204258596-500__ember,19.94175347114596,bioenergy,Aggregated Plant -- operating,e_w204258596-500,way/204258596-500,34.68677671381875,130.95934971655666,False
+e_w204258596-500,ep_coal_subcritical_w204258596-500,418.0,coal,Aggregated Plant -- operating,e_w204258596-500,way/204258596-500,34.363292090942714,131.59533545468048,False
+e_w204258596-500,ep_coal_supercritical_G100000109280,500.0,coal,Shin Onoda power station_Unit 1 -- operating,e_w204258596-500,way/204258596-500,33.969,131.163403,False
+e_w204258596-500,ep_coal_supercritical_G100000109281,500.0,coal,Shin Onoda power station_Unit 2 -- operating,e_w204258596-500,way/204258596-500,33.969,131.163403,False
+e_w204258596-500,ep_coal_w204258596-500__ember,16.329841429288656,coal,Aggregated Plant -- operating,e_w204258596-500,way/204258596-500,33.79807761827951,131.49193410367263,False
+e_w204258596-500,ep_solar_pv_500,17.3,solar,Aggregated Plant -- operating,e_w204258596-500,way/204258596-500,33.63427034906423,131.2052383327486,False
+e_w209429410-500,ep_hydro_dam_G100000602291,116.0,hydro,Kiso hydroelectric plant_ -- operating,e_w209429410-500,way/209429410-500,35.8198,137.6783,False
+e_w209429410-500,ep_hydro_dam_G100000602352,117.0,hydro,Yomikaki hydroelectric plant_ -- operating,e_w209429410-500,way/209429410-500,35.5888,137.5944,False
+e_w209429410-500,ep_hydro_w209429410-500__irena,67.47674504311937,hydro,Aggregated Plant - IRENA Gap - way/209429410-500_Missing Hydro Capacity -- operating,e_w209429410-500,way/209429410-500,35.57030964475856,137.96649680210606,False
+e_w211412000-500,ep_bioenergy_G100000200035,75.0,bioenergy,Sodegaura power station_1 -- construction,e_w211412000-500,way/211412000-500,35.4529,139.9808,False
+e_w211412000-500,ep_bioenergy_w211412000-500__ember,19.94175347114596,bioenergy,Aggregated Plant -- operating,e_w211412000-500,way/211412000-500,35.81902209959179,140.04050437807769,False
+e_w211412000-500,ep_gas_combined_cycle_G100000403922,650.0,gas,Anegasaki thermal power station_New 1 -- operating,e_w211412000-500,way/211412000-500,35.484866,140.018003,False
+e_w211412000-500,ep_gas_combined_cycle_G100000403923,650.0,gas,Anegasaki thermal power station_New 2 -- operating,e_w211412000-500,way/211412000-500,35.484866,140.018003,False
+e_w211412000-500,ep_gas_combined_cycle_G100000403924,650.0,gas,Anegasaki thermal power station_New 3 -- operating,e_w211412000-500,way/211412000-500,35.484866,140.018003,False
+e_w211412000-500,ep_gas_combined_cycle_w211412000-500,315.3,gas,Aggregated Plant -- operating,e_w211412000-500,way/211412000-500,35.414564224340864,140.33708794969633,False
+e_w211412000-500,ep_gas_internal_combustion_w211412000-500,109.2,gas,Aggregated Plant -- operating,e_w211412000-500,way/211412000-500,35.110729647656115,139.90778909900567,False
+e_w211412000-500,ep_gas_steam_turbine_G100000403929,600.0,gas,Anegasaki thermal power station_5 -- operating,e_w211412000-500,way/211412000-500,35.484866,140.018003,False
+e_w211412000-500,ep_gas_steam_turbine_G100000403930,600.0,gas,Anegasaki thermal power station_6 -- operating,e_w211412000-500,way/211412000-500,35.484866,140.018003,False
+e_w211412000-500,ep_gas_steam_turbine_G100000404110,600.0,gas,Sodegaura thermal power station_1 -- operating,e_w211412000-500,way/211412000-500,35.462566,139.976812,False
+e_w211412000-500,ep_gas_steam_turbine_G100000404111,1000.0,gas,Sodegaura thermal power station_2 -- operating,e_w211412000-500,way/211412000-500,35.462566,139.976812,False
+e_w211412000-500,ep_gas_steam_turbine_G100000404112,1000.0,gas,Sodegaura thermal power station_3 -- operating,e_w211412000-500,way/211412000-500,35.462566,139.976812,False
+e_w211412000-500,ep_gas_steam_turbine_G100000404113,1000.0,gas,Sodegaura thermal power station_4 -- operating,e_w211412000-500,way/211412000-500,35.462566,139.976812,False
+e_w211412000-500,ep_gas_w211412000-500__ember,27.16151464932596,gas,Aggregated Plant -- operating,e_w211412000-500,way/211412000-500,35.371484242754406,139.6317557233711,False
+e_w215451416-500,ep_geothermal_w215451416-500,30.0,geothermal,Aggregated Plant -- operating,e_w215451416-500,way/215451416-500,31.81807559315554,130.88721003500166,False
+e_w215451416-500,ep_hydro_dam_G100000602327,120.0,hydro,Sendaigawa Daiichi hydroelectric plant_ -- operating,e_w215451416-500,way/215451416-500,31.9875,130.495,False
+e_w215451416-500,ep_hydro_w215451416-500__irena,34.75197169602715,hydro,Aggregated Plant -- operating,e_w215451416-500,way/215451416-500,31.797581396976938,130.43788715599575,False
+e_w216502300-500,ep_bioenergy_G100000200103,75.0,bioenergy,Yatsushiro power station_1 -- operating,e_w216502300-500,way/216502300-500,32.5251,130.5488,False
+e_w216502300-500,ep_bioenergy_w216502300-500__ember,19.94175347114596,bioenergy,Aggregated Plant -- operating,e_w216502300-500,way/216502300-500,32.88400084562617,130.81518400029657,False
+e_w216502300-500,ep_coal_subcritical_w216502300-500,75.0,coal,Aggregated Plant -- operating,e_w216502300-500,way/216502300-500,32.52579286915803,131.05472573933932,False
+e_w216502300-500,ep_hydro_dam_G100000602310,500.0,hydro,Ohira hydroelectric plant_ -- operating,e_w216502300-500,way/216502300-500,32.4256,130.7062,False
+e_w216502300-500,ep_hydro_w216502300-500__irena,144.79988206677976,hydro,Aggregated Plant - IRENA Gap - way/216502300-500_Missing Hydro Capacity -- operating,e_w216502300-500,way/216502300-500,32.508469317560476,130.550590079983,False
+e_w216778426-500,ep_bioenergy_G100000200782,50.0,bioenergy,Saiki power station_1 -- operating,e_w216778426-500,way/216778426-500,32.9971,131.8919,False
+e_w216778426-500,ep_bioenergy_w216778426-500__ember,13.294502314097308,bioenergy,Aggregated Plant -- operating,e_w216778426-500,way/216778426-500,33.849314752341535,131.8176741805407,False
+e_w216778426-500,ep_coal_subcritical_w216778426-500,330.0,coal,Aggregated Plant -- operating,e_w216778426-500,way/216778426-500,33.69600300490142,132.18066867756693,False
+e_w216778426-500,ep_gas_combined_cycle_G100000404091,500.0,gas,Shin Oita power station_3-4 -- operating,e_w216778426-500,way/216778426-500,33.26275,131.707746,False
+e_w216778426-500,ep_gas_combined_cycle_w216778426-500,2522.0000000000005,gas,Aggregated Plant -- operating,e_w216778426-500,way/216778426-500,33.05367833642161,132.44566785919997,False
+e_w216778426-500,ep_gas_steam_turbine_w216778426-500,510.0,gas,Aggregated Plant -- operating,e_w216778426-500,way/216778426-500,32.55370790714484,132.15685099985367,False
+e_w216778426-500,ep_gas_w216778426-500__ember,10.513942653451618,gas,Aggregated Plant -- operating,e_w216778426-500,way/216778426-500,32.42507676268609,131.59965400741672,False
+e_w216778426-500,ep_geothermal_w216778426-500,33.6,geothermal,Aggregated Plant -- operating,e_w216778426-500,way/216778426-500,32.655603521069104,131.19040226964393,False
+e_w216953915-500,ep_hydro_dam_G100000602277,180.0,hydro,Hitotsuse hydroelectric plant_ -- operating,e_w216953915-500,way/216953915-500,32.207,131.3028,False
+e_w216953915-500,ep_hydro_ps_G100000602322,1200.0,hydro,Omarugawa hydroelectric plant_ -- operating,e_w216953915-500,way/216953915-500,32.242,131.3913,False
+e_w216953915-500,ep_hydro_w216953915-500__irena,399.64767450431214,hydro,Aggregated Plant - IRENA Gap - way/216953915-500_Missing Hydro Capacity -- operating,e_w216953915-500,way/216953915-500,32.34205850186811,131.40321058567216,False
+e_w216956620-500,ep_hydro_dam_G100001051968,71.0,hydro,Oyodogawa Daini hydroelectric plant_ -- operating,e_w216956620-500,way/216956620-500,31.9349,131.2476,False
+e_w216956620-500,ep_hydro_dam_w216956620-500,56.0,hydro,Aggregated Plant -- operating,e_w216956620-500,way/216956620-500,32.37167188453934,131.17110578280685,False
+e_w216956620-500,ep_hydro_w216956620-500__irena,36.77917004496206,hydro,Aggregated Plant -- operating,e_w216956620-500,way/216956620-500,32.03763134158944,131.62955688862968,False
+e_w241822631-500,ep_bioenergy_G100000200072,75.0,bioenergy,Hirohata power station_1 -- operating,e_w241822631-500,way/241822631-500,34.7785,134.6168,False
+e_w241822631-500,ep_bioenergy_G100000200742,200.0,bioenergy,Aioi power station_2 -- operating,e_w241822631-500,way/241822631-500,34.774809,134.457246,False
+e_w241822631-500,ep_bioenergy_w241822631-500,30.0,bioenergy,Aggregated Plant -- operating,e_w241822631-500,way/241822631-500,35.13084026266516,134.39970879213448,False
+e_w241822631-500,ep_bioenergy_w241822631-500__ember,81.09646411599358,bioenergy,Aggregated Plant - EMBER Gap - way/241822631-500_Missing Bioenergy Capacity -- operating,e_w241822631-500,way/241822631-500,34.70390722246661,134.6452361234081,False
+e_w241822631-500,ep_coal_subcritical_w241822631-500,400.49999999999994,coal,Aggregated Plant -- operating,e_w241822631-500,way/241822631-500,34.67030303603451,134.23523550430895,False
+e_w241822631-500,ep_oil_steam_turbine_G100000412603,600.0,oil,Ako power station_2 -- operating,e_w241822631-500,way/241822631-500,34.751667,134.393056,False
+e_w241822631-500,ep_oil_steam_turbine_G100000412604,600.0,oil,Ako power station_1 -- operating,e_w241822631-500,way/241822631-500,34.751667,134.393056,False
+e_w241828221-500,ep_hydro_ps_G100000602331,303.0,hydro,Shin Narihagawa hydroelectric plant_ -- operating,e_w241828221-500,way/241828221-500,34.8228,133.4019,False
+e_w241828221-500,ep_hydro_w241828221-500__irena,87.74872853246853,hydro,Aggregated Plant - IRENA Gap - way/241828221-500_Missing Hydro Capacity -- operating,e_w241828221-500,way/241828221-500,34.675825625418774,133.43040481452672,False
+e_w242103532-500,ep_bioenergy_G100000200746,53.0,bioenergy,Fukuyama Biomass power station_1 -- construction,e_w242103532-500,way/242103532-500,34.441,133.4295,False
+e_w242103532-500,ep_bioenergy_w242103532-500__ember,14.092172452943146,bioenergy,Aggregated Plant -- operating,e_w242103532-500,way/242103532-500,34.90647164130722,133.74202082144396,False
+e_w242103532-500,ep_coal_subcritical_w242103532-500,112.0,coal,Aggregated Plant -- operating,e_w242103532-500,way/242103532-500,34.71255914038385,134.1547518037234,False
+e_w242103532-500,ep_gas_combined_cycle_w242103532-500,813.0,gas,Aggregated Plant -- operating,e_w242103532-500,way/242103532-500,34.18750282758613,134.14345093009038,False
+e_w242103532-500,ep_gas_steam_turbine_w242103532-500,1647.0,gas,Aggregated Plant -- operating,e_w242103532-500,way/242103532-500,34.088132925900446,133.52594939700384,False
+e_w242103532-500,ep_oil_steam_turbine_G100000412649,500.0,oil,Tamashima power station_3 -- operating,e_w242103532-500,way/242103532-500,34.51647,133.687053,False
+e_w242103532-500,ep_oil_steam_turbine_w242103532-500,350.0,oil,Aggregated Plant -- operating,e_w242103532-500,way/242103532-500,34.69036579768752,133.39735613752964,False
+e_w242253500-500,ep_bioenergy_G100000200753,50.0,bioenergy,Idemitsu Tokuyama Biomass power station_1 -- operating,e_w242253500-500,way/242253500-500,34.0443,131.809,False
+e_w242253500-500,ep_bioenergy_w242253500-500__ember,13.294502314097308,bioenergy,Aggregated Plant -- operating,e_w242253500-500,way/242253500-500,34.6417853436429,131.73787485450453,False
+e_w242253500-500,ep_coal_subcritical_w242253500-500,1744.0,coal,Aggregated Plant -- operating,e_w242253500-500,way/242253500-500,34.36433474697168,132.2457143320337,False
+e_w242253500-500,ep_coal_w242253500-500__ember,20.084092702876884,coal,Aggregated Plant -- operating,e_w242253500-500,way/242253500-500,33.830681888705186,132.0840337668709,False
+e_w242253500-500,ep_gas_combined_cycle_w242253500-500,1578.0,gas,Aggregated Plant -- operating,e_w242253500-500,way/242253500-500,33.78078465521567,131.6616973759528,False
+e_w242253500-500,ep_solar_pv_500,24.5,solar,Aggregated Plant -- operating,e_w242253500-500,way/242253500-500,34.36366371776374,131.40657062593246,False
+e_w250540807-1000,ep_hydro_ps_G100000602298,1200.0,hydro,Matanogawa hydroelectric plant_ -- operating,e_w250540807-1000,way/250540807-1000,36.5748,139.2394,False
+e_w250540807-1000,ep_hydro_ror_G100000602270,120.0,hydro,Arimine Daini hydroelectric plant_ -- operating,e_w250540807-1000,way/250540807-1000,36.5748,139.2394,False
+e_w250540807-1000,ep_hydro_w250540807-1000__irena,382.2716886562985,hydro,Aggregated Plant - IRENA Gap - way/250540807-1000_Missing Hydro Capacity -- operating,e_w250540807-1000,way/250540807-1000,36.648521838107854,139.28573746922442,False
+e_w256682313-500,ep_hydro_dam_G100000602344,250.0,hydro,Tedorigawa Daiichi hydroelectric plant_ -- operating,e_w256682313-500,way/256682313-500,36.2817,136.6448,False
+e_w256682313-500,ep_hydro_dam_G100000602345,87.0,hydro,Tedorigawa Daini hydroelectric plant_ -- operating,e_w256682313-500,way/256682313-500,36.293,136.6414,False
+e_w256682313-500,ep_hydro_w256682313-500__irena,97.59512051300956,hydro,Aggregated Plant - IRENA Gap - way/256682313-500_Missing Hydro Capacity -- operating,e_w256682313-500,way/256682313-500,36.86008057087698,136.69498602504532,False
+e_w291678103-500,ep_bioenergy_w291678103-500__ember,19.94175347114596,bioenergy,Aggregated Plant -- operating,e_w291678103-500,way/291678103-500,34.48039085456556,135.30875663862324,False
+e_w291678103-500,ep_gas_combined_cycle_w291678103-500,148.0,gas,Aggregated Plant -- operating,e_w291678103-500,way/291678103-500,34.12738955743527,135.59396409019726,False
+e_w291678103-500,ep_gas_steam_turbine_w291678103-500,156.0,gas,Aggregated Plant -- operating,e_w291678103-500,way/291678103-500,34.10322100861963,135.08957201117593,False
+e_w307942220-500,ep_bioenergy_G100000200101,75.0,bioenergy,Tokushima Tsuda power station_1 -- operating,e_w307942220-500,way/307942220-500,34.0453,134.5914,False
+e_w307942220-500,ep_bioenergy_w307942220-500__ember,19.94175347114596,bioenergy,Aggregated Plant -- operating,e_w307942220-500,way/307942220-500,34.26195019088094,134.47809271584444,False
+e_w307942220-500,ep_hydro_ps_w307942220-500,47.0,hydro,Aggregated Plant -- operating,e_w307942220-500,way/307942220-500,33.81447471126428,134.60442540249076,False
+e_w307942220-500,ep_hydro_w307942220-500__irena,13.611188914277296,hydro,Aggregated Plant -- operating,e_w307942220-500,way/307942220-500,33.87767387057168,134.1679990392556,False
+e_w315461259-500,ep_bioenergy_w315461259-500,35.0,bioenergy,Aggregated Plant -- operating,e_w315461259-500,way/315461259-500,35.79386088872481,139.85758460668572,False
+e_w315461259-500,ep_coal_ultra-supercritical_G100000104918,600.0,coal,Isogo power station_Unit 1 -- operating,e_w315461259-500,way/315461259-500,35.402755,139.642852,False
+e_w315461259-500,ep_coal_ultra-supercritical_G100000104919,600.0,coal,Isogo power station_Unit 2 -- operating,e_w315461259-500,way/315461259-500,35.402755,139.642852,False
+e_w315461259-500,ep_coal_ultra-supercritical_G100000111425,650.0,coal,Yokosuka power station_Unit 1 -- operating,e_w315461259-500,way/315461259-500,35.215556,139.716389,False
+e_w315461259-500,ep_coal_ultra-supercritical_G100000111426,650.0,coal,Yokosuka power station_Unit 2 -- operating,e_w315461259-500,way/315461259-500,35.215556,139.716389,False
+e_w315461259-500,ep_coal_w315461259-500__ember,28.790270502977183,coal,Aggregated Plant -- operating,e_w315461259-500,way/315461259-500,35.55599048579683,140.23400816195294,False
+e_w315461259-500,ep_gas_combined_cycle_G100000403972,507.0,gas,Futtsu thermal power station_4-1 -- operating,e_w315461259-500,way/315461259-500,35.344714,139.834851,False
+e_w315461259-500,ep_gas_combined_cycle_G100000403973,507.0,gas,Futtsu thermal power station_4-2 -- operating,e_w315461259-500,way/315461259-500,35.344714,139.834851,False
+e_w315461259-500,ep_gas_combined_cycle_G100000403974,507.0,gas,Futtsu thermal power station_4-3 -- operating,e_w315461259-500,way/315461259-500,35.344714,139.834851,False
+e_w315461259-500,ep_gas_combined_cycle_w315461259-500,9085.2,gas,Aggregated Plant -- operating,e_w315461259-500,way/315461259-500,34.9944193334805,140.12081321992727,False
+e_w315461259-500,ep_gas_steam_turbine_w315461259-500,1849.9999999999998,gas,Aggregated Plant -- operating,e_w315461259-500,way/315461259-500,34.94960369591788,139.61881302266542,False
+e_w315461259-500,ep_gas_w315461259-500__ember,102.78420812358443,gas,Aggregated Plant -- operating,e_w315461259-500,way/315461259-500,35.53252885506213,139.42756021422622,False
+e_w315618377-500,ep_bioenergy_w315618377-500,40.53,bioenergy,Aggregated Plant -- operating,e_w315618377-500,way/315618377-500,36.6192950075546,136.3194259160338,False
+e_w315618377-500,ep_bioenergy_w315618377-500__ember,10.776523575807278,bioenergy,Aggregated Plant -- operating,e_w315618377-500,way/315618377-500,36.412969374855564,136.8885967670251,False
+e_w315618377-500,ep_coal_subcritical_w315618377-500,37.8,coal,Aggregated Plant -- operating,e_w315618377-500,way/315618377-500,35.68779403855193,136.96564367658507,False
+e_w315618377-500,ep_hydro_dam_w315618377-500,104.0,hydro,Aggregated Plant -- operating,e_w315618377-500,way/315618377-500,35.46909068017183,136.76193705718956,False
+e_w315618377-500,ep_hydro_ror_w315618377-500,48.0,hydro,Aggregated Plant -- operating,e_w315618377-500,way/315618377-500,35.37426307099429,136.31005587199718,False
+e_w315618377-500,ep_hydro_w315618377-500__irena,44.01916414830105,hydro,Aggregated Plant -- operating,e_w315618377-500,way/315618377-500,35.90195799708398,135.79189382428092,False
+e_w315618377-500,ep_oil_steam_turbine_w315618377-500,250.0,oil,Aggregated Plant -- operating,e_w315618377-500,way/315618377-500,36.51207737631382,136.05300507655096,False
+e_w315662839-500,ep_geothermal_w315662839-500,2.0,geothermal,Aggregated Plant -- operating,e_w315662839-500,way/315662839-500,36.31480994456528,137.91602123065053,False
+e_w315662839-500,ep_hydro_dam_G100000602271,623.0,hydro,Azumi hydroelectric plant_ -- operating,e_w315662839-500,way/315662839-500,36.1332,137.7197,False
+e_w315662839-500,ep_hydro_dam_G100000602293,81.0,hydro,Kurobegawa Daisan hydroelectric plant_ -- operating,e_w315662839-500,way/315662839-500,36.696,137.6591,False
+e_w315662839-500,ep_hydro_dam_G100000602294,335.0,hydro,Kurobegawa Daishi hydroelectric plant_ -- operating,e_w315662839-500,way/315662839-500,36.6441,137.6902,False
+e_w315662839-500,ep_hydro_dam_G100000602334,105.0,hydro,Shinkurobe Daisan hydroelectric plant_ -- operating,e_w315662839-500,way/315662839-500,36.6927,137.661,False
+e_w315662839-500,ep_hydro_dam_G100001051681,75.0,hydro,Kurobegawa Daini hydroelectric plant_ -- operating,e_w315662839-500,way/315662839-500,36.7508,137.6402,False
+e_w315662839-500,ep_hydro_ps_G100000602272,412.0,hydro,Azumi Pumped Storage hydroelectric plant_ -- operating,e_w315662839-500,way/315662839-500,36.1332,137.7197,False
+e_w315662839-500,ep_hydro_ps_G100000602301,245.0,hydro,Midono hydroelectric plant_ -- operating,e_w315662839-500,way/315662839-500,36.1559,137.7525,False
+e_w315662839-500,ep_hydro_ps_G100000602335,1280.0,hydro,Shintakasegawa hydroelectric plant_ -- operating,e_w315662839-500,way/315662839-500,36.4833,137.7212,False
+e_w315662839-500,ep_hydro_ps_G100000602341,340.0,hydro,Takane Daiichi hydroelectric plant_ -- operating,e_w315662839-500,way/315662839-500,36.0353,137.4921,False
+e_w315662839-500,ep_hydro_ror_G100001051683,75.0,hydro,Shin Kurobe Daini hydroelectric plant_ -- operating,e_w315662839-500,way/315662839-500,36.7509,137.6403,False
+e_w315662839-500,ep_hydro_w315662839-500__irena,1034.160757720941,hydro,Aggregated Plant - IRENA Gap - way/315662839-500_Missing Hydro Capacity -- operating,e_w315662839-500,way/315662839-500,35.957446244055134,137.8906311915977,False
+e_w317416612-500,ep_coal_ultra-supercritical_G100000106953,1000.0,coal,Misumi power station_Unit 1 -- operating,e_w317416612-500,way/317416612-500,34.780789,131.921768,False
+e_w317416612-500,ep_coal_ultra-supercritical_G100000106954,1000.0,coal,Misumi power station_Unit 2 -- operating,e_w317416612-500,way/317416612-500,34.7797,131.9215,False
+e_w317416612-500,ep_coal_w317416612-500__ember,23.032216402381746,coal,Aggregated Plant -- operating,e_w317416612-500,way/317416612-500,34.9620055422969,132.03525896053475,False
+e_w317416612-500,ep_solar_pv_500,16.2,solar,Aggregated Plant -- operating,e_w317416612-500,way/317416612-500,34.51379678580319,132.17805254122737,False
+e_w317511904-500,ep_bioenergy_G100000200068,55.0,bioenergy,Yonago power station_1 -- operating,e_w317511904-500,way/317511904-500,35.4843,133.2561,False
+e_w317511904-500,ep_bioenergy_w317511904-500__ember,24.461884257939047,bioenergy,Aggregated Plant -- operating,e_w317511904-500,way/317511904-500,35.29353676960278,133.08088230684933,False
+e_w405626236-500,ep_bioenergy_G1000002488,50.0,bioenergy,"Mikawa power station_1, timepoint 2 -- operating",e_w405626236-500,way/405626236-500,33.019859,130.422645,False
+e_w405626236-500,ep_bioenergy_w405626236-500__ember,13.294502314097308,bioenergy,Aggregated Plant -- operating,e_w405626236-500,way/405626236-500,33.34087217706693,130.77391074075675,False
+e_w405626236-500,ep_coal_subcritical_w405626236-500,175.0,coal,Aggregated Plant -- operating,e_w405626236-500,way/405626236-500,33.01490245724644,131.34058430302645,False
+e_w405626236-500,ep_geothermal_w405626236-500,175.8,geothermal,Aggregated Plant -- operating,e_w405626236-500,way/405626236-500,32.5317130362096,131.1484465155836,False
+e_w405626236-500,ep_hydro_dam_w405626236-500,51.0,hydro,Aggregated Plant -- operating,e_w405626236-500,way/405626236-500,32.556790849921775,130.6221797055819,False
+e_w405626236-500,ep_hydro_w405626236-500__irena,14.769587970811536,hydro,Aggregated Plant -- operating,e_w405626236-500,way/405626236-500,33.1108453878234,130.49989537608994,False
+e_w459476442-500,ep_hydro_dam_G100000602313,94.0,hydro,Okuizumi hydroelectric plant_ -- operating,e_w459476442-500,way/459476442-500,35.1662,138.1426,False
+e_w459476442-500,ep_hydro_dam_G100001027312,62.0,hydro,Ikawa hydroelectric plant_ -- operating,e_w459476442-500,way/459476442-500,35.2121,138.2246,False
+e_w459476442-500,ep_hydro_dam_G100001051983,68.0,hydro,Oigawa hydroelectric plant_ -- operating,e_w459476442-500,way/459476442-500,35.0929,138.1136,False
+e_w459476442-500,ep_hydro_dam_w459476442-500,58.0,hydro,Aggregated Plant -- operating,e_w459476442-500,way/459476442-500,35.0419445624464,138.07278525169156,False
+e_w459476442-500,ep_hydro_w459476442-500__irena,81.66713348566378,hydro,Aggregated Plant - IRENA Gap - way/459476442-500_Missing Hydro Capacity -- operating,e_w459476442-500,way/459476442-500,34.68463539864698,138.02599496514614,False
+e_w505170104-500,ep_bioenergy_w505170104-500__ember,13.560392360379254,bioenergy,Aggregated Plant -- operating,e_w505170104-500,way/505170104-500,36.38372259960007,139.34734480021336,False
+e_w659138214-500,ep_bioenergy_w659138214-500,48.0,bioenergy,Aggregated Plant -- operating,e_w659138214-500,way/659138214-500,38.61428312612404,140.61888005659733,False
+e_w659138214-500,ep_bioenergy_w659138214-500__ember,12.762722221533416,bioenergy,Aggregated Plant -- operating,e_w659138214-500,way/659138214-500,38.25208782537681,141.004381986019,False
+e_w659138214-500,ep_coal_subcritical_w659138214-500,110.8,coal,Aggregated Plant -- operating,e_w659138214-500,way/659138214-500,37.90933650045371,140.74656702452603,False
+e_w659138214-500,ep_hydro_dam_G100000602278,75.0,hydro,Hondoji hydroelectric plant_ -- operating,e_w659138214-500,way/659138214-500,38.4503,140.0442,False
+e_w659138214-500,ep_hydro_dam_G100001051992,60.0,hydro,Yakuwa hydroelectric plant_ -- operating,e_w659138214-500,way/659138214-500,38.5415,139.8058,False
+e_w659138214-500,ep_hydro_w659138214-500__irena,39.09596815803054,hydro,Aggregated Plant -- operating,e_w659138214-500,way/659138214-500,38.208667410523134,140.28663678662622,False
+e_w714627759-500,ep_solar_pv_500,1.0,solar,Aggregated Plant -- operating,e_w714627759-500,way/714627759-500,40.70431251394208,141.07498993208054,False
+e_w722673849-500,ep_hydro_dam_G100001051958,72.0,hydro,Futamata Kochi hydroelectric plant_ -- operating,e_w722673849-500,way/722673849-500,33.5176,134.139,False
+e_w722673849-500,ep_hydro_dam_G100001051960,62.0,hydro,Hinotani hydroelectric plant_ -- operating,e_w722673849-500,way/722673849-500,33.7977,134.4094,False
+e_w722673849-500,ep_hydro_w722673849-500__irena,38.80636839389698,hydro,Aggregated Plant -- operating,e_w722673849-500,way/722673849-500,33.775182281829665,134.75990847274312,False
+e_w785319805-500,ep_bioenergy_G100000200026,112.0,bioenergy,Sendai-ko power station_1 -- construction,e_w785319805-500,way/785319805-500,38.276,141.0234,False
+e_w785319805-500,ep_bioenergy_G100000200096,75.0,bioenergy,Sendai Gamo power station_1 -- operating,e_w785319805-500,way/785319805-500,38.2567,141.005,False
+e_w785319805-500,ep_bioenergy_w785319805-500__ember,49.72143865472393,bioenergy,Aggregated Plant -- operating,e_w785319805-500,way/785319805-500,38.6206699473817,140.78355232919768,False
+e_w785319805-500,ep_coal_subcritical_w785319805-500,112.0,coal,Aggregated Plant -- operating,e_w785319805-500,way/785319805-500,38.290907650434406,141.0147292250563,False
+e_w785319805-500,ep_gas_combined_cycle_G100000404105,523.0,gas,Shin Sendai thermal power station_3-1 -- operating,e_w785319805-500,way/785319805-500,38.276306,141.040774,False
+e_w785319805-500,ep_gas_combined_cycle_G100000404106,523.0,gas,Shin Sendai thermal power station_3-2 -- operating,e_w785319805-500,way/785319805-500,38.276306,141.040774,False
+e_w785319805-500,ep_gas_combined_cycle_w785319805-500,468.0,gas,Aggregated Plant -- operating,e_w785319805-500,way/785319805-500,38.21714873206365,140.5174756490368,False
+e_w801582512-275,ep_geothermal_w801582512-275,27.000000000000004,geothermal,Aggregated Plant -- operating,e_w801582512-275,way/801582512-275,42.63524342028876,140.53473064571327,False
+e_w832823487-500,ep_hydro_dam_G100000602304,220.0,hydro,Nagano hydroelectric plant_ -- operating,e_w832823487-500,way/832823487-500,35.8942,136.693,False
+e_w832823487-500,ep_hydro_dam_G100000602318,1500.0,hydro,Okumino hydroelectric plant_ -- operating,e_w832823487-500,way/832823487-500,35.7348,136.6615,False
+e_w832823487-500,ep_hydro_w832823487-500__irena,498.1115943097224,hydro,Aggregated Plant - IRENA Gap - way/832823487-500_Missing Hydro Capacity -- operating,e_w832823487-500,way/832823487-500,35.793828002188704,136.65375461331396,False
+e_w901872431-500,ep_gas_combined_cycle_G100000403951,590.0,gas,Soma Port Gas power station_1 -- operating,e_w901872431-500,way/901872431-500,37.849198,140.952914,False
+e_w901872431-500,ep_gas_combined_cycle_G100000403952,590.0,gas,Soma Port Gas power station_2 -- operating,e_w901872431-500,way/901872431-500,37.849198,140.952914,False
+e_w901872439-500,ep_coal_subcritical_w901872439-500,112.0,coal,Aggregated Plant -- operating,e_w901872439-500,way/901872439-500,38.017354205595076,140.88949923694648,False
+e_w901872439-500,ep_coal_supercritical_G100000109283,1000.0,coal,Shinchi power station_Unit 1 -- operating,e_w901872439-500,way/901872439-500,37.841115,140.946169,False
+e_w901872439-500,ep_coal_supercritical_G100000109284,1000.0,coal,Shinchi power station_Unit 2 -- operating,e_w901872439-500,way/901872439-500,37.841115,140.946169,False
+e_w901872439-500,ep_coal_w901872439-500__ember,24.322020520915128,coal,Aggregated Plant -- operating,e_w901872439-500,way/901872439-500,37.66455180717805,140.94180189210078,False
+elc_spv_001,ep_solar_pv_001,7.7,solar,Aggregated Plant -- operating,elc_spv_001,JP306-500,30.124488268156128,130.31557188695692,False
+elc_spv_002,ep_solar_pv_002,44.1,solar,Aggregated Plant -- operating,elc_spv_002,JP306-500,30.217304517076382,129.62020331142926,False
+elc_spv_003,ep_solar_pv_003,1322.4,solar,Aggregated Plant -- operating,elc_spv_003,JP269-500,33.1795662110505,129.89524538532064,False
+elc_spv_003,ep_solar_pv_G100000801737,400.0,solar,Ukujima Mega Solar Project_-- -- construction,elc_spv_003,JP269-500,34.6636,129.4387,False
+elc_spv_004,ep_solar_pv_004,309.59999999999997,solar,Aggregated Plant -- operating,elc_spv_004,JP306-500,30.36669877689955,129.30402344001274,False
+elc_spv_005,ep_solar_pv_005,1474.6,solar,Aggregated Plant -- operating,elc_spv_005,JP306-500,31.29745616352216,128.56329642474893,False
+elc_spv_006,ep_solar_006__irena,18133.50491180886,solar,Aggregated Plant - IRENA Gap - 6_Missing Solar Capacity -- operating,elc_spv_006,way/169031998-500,35.35568640816883,137.1839252219704,False
+elc_spv_006,ep_solar_pv_006,3609.2999999999993,solar,Aggregated Plant -- operating,elc_spv_006,way/169031998-500,34.989878519970866,137.39872911921057,False
+elc_spv_007,ep_solar_007__irena,18754.265761297935,solar,Aggregated Plant - IRENA Gap - 7_Missing Solar Capacity -- operating,elc_spv_007,way/87538349-500,34.522500921104275,135.4405205315088,False
+elc_spv_007,ep_solar_pv_007,4118.9,solar,Aggregated Plant -- operating,elc_spv_007,way/87538349-500,34.54276852766117,135.02999281756777,False
+elc_spv_007,ep_solar_pv_G100000801429,258.0,solar,Pacifico Energy Sakuto Mega-Solar Project_-- -- operating,elc_spv_007,way/87538349-500,34.987,134.243,False
+elc_spv_007,ep_solar_pv_G100000801559,235.0,solar,Setouchi Kirei Mega Solar Power Plant_-- -- operating,elc_spv_007,way/87538349-500,34.643,134.159,False
+elc_spv_008,ep_solar_pv_008,1133.7,solar,Aggregated Plant -- operating,elc_spv_008,way/216956620-500,31.550335306430263,131.44901887100684,False
+elc_spv_009,ep_solar_pv_009,2444.5,solar,Aggregated Plant -- operating,elc_spv_009,JP296-500,32.70669270373358,130.9791309621796,False
+elc_spv_010,ep_solar_pv_010,1012.1,solar,Aggregated Plant -- operating,elc_spv_010,way/204258596-500,33.77843886504464,130.7134579632197,False
+elc_spv_011,ep_solar_pv_011,539.3,solar,Aggregated Plant -- operating,elc_spv_011,way/317416612-500,34.58256081124745,131.73518164599295,False
+elc_spv_012,ep_solar_pv_012,135.7,solar,Aggregated Plant -- operating,elc_spv_012,JP6-275,42.55588065203817,142.000977051015,False
+elc_spv_013,ep_solar_pv_013,22.2,solar,Aggregated Plant -- operating,elc_spv_013,JP7-275,41.92148590194771,140.9731303902041,False
+elc_spv_014,ep_solar_pv_014,506.6,solar,Aggregated Plant -- operating,elc_spv_014,JP7-275,42.839326724854665,140.74747684555666,False
+elc_spv_016,ep_solar_pv_016,8.8,solar,Aggregated Plant -- operating,elc_spv_016,way/179863079-275,43.1579806430967,140.82521832621242,False
+elc_spv_017,ep_solar_pv_017,404.4,solar,Aggregated Plant -- operating,elc_spv_017,JP4-275,43.21433768223724,140.92263523349786,False
+elc_spv_018,ep_solar_pv_018,208.29999999999998,solar,Aggregated Plant -- operating,elc_spv_018,way/801582512-275,42.3643246205736,141.14969684304438,False
+elc_spv_019,ep_solar_pv_019,389.1,solar,Aggregated Plant -- operating,elc_spv_019,JP7-275,43.40387663300986,141.06794140260192,False
+elc_spv_020,ep_solar_pv_020,93.7,solar,Aggregated Plant -- operating,elc_spv_020,JP6-275,42.5920183381069,141.54072732314432,False
+elc_spv_021,ep_solar_pv_021,1178.1999999999998,solar,Aggregated Plant -- operating,elc_spv_021,JP219-500,34.32899165986813,137.8058378795305,False
+elc_spv_022,ep_solar_022__irena,17442.5293268932,solar,Aggregated Plant - IRENA Gap - 22_Missing Solar Capacity -- operating,elc_spv_022,way/168727982-500,35.832682171621286,140.27398227565416,False
+elc_spv_022,ep_solar_pv_022,5588.299999999998,solar,Aggregated Plant -- operating,elc_spv_022,way/168727982-500,36.24474924899004,139.9511425454594,False
+elc_spv_023,ep_solar_pv_023,2033.9,solar,Aggregated Plant -- operating,elc_spv_023,way/150035494-500,35.43762019963495,138.5771706523629,False
+elc_spv_024,ep_solar_pv_024,272.6,solar,Aggregated Plant -- operating,elc_spv_024,JP21-500,36.41274847513927,138.97688279355734,False
+elc_spv_025,ep_solar_pv_025,93.5,solar,Aggregated Plant -- operating,elc_spv_025,JP25-500,37.327723509192076,137.18746927829034,False
+elc_spv_026,ep_solar_pv_026,563.6,solar,Aggregated Plant -- operating,elc_spv_026,JP116-500,36.57722305812963,137.0306195189831,False
+elc_spv_027,ep_solar_pv_027,146.50000000000003,solar,Aggregated Plant -- operating,elc_spv_027,JP9-500,41.106503751857716,140.87238669036157,False
+elc_spv_028,ep_solar_pv_028,256.40000000000003,solar,Aggregated Plant -- operating,elc_spv_028,way/106076988-500,38.295489259835136,140.40561906496836,False
+elc_spv_029,ep_solar_pv_029,1391.0,solar,Aggregated Plant -- operating,elc_spv_029,way/106076988-500,38.90007176208377,140.3961780609335,False
+elc_spv_030,ep_solar_pv_030,3190.8,solar,Aggregated Plant -- operating,elc_spv_030,way/1030329139-500,37.35157755433682,139.45808628412442,False
+elc_wof_012,ep_windoff_012__irena,25.812991328850355,windoff,Aggregated Plant -- operating,elc_wof_012,JP306-500,32.05643095091347,128.49267272007455,False
+elc_wof_014,ep_windoff_wind_G100000901417,220.0,windoff,Kitakyushu Hibikinada Offshore wind farm_-- -- construction,elc_wof_014,way/186510275-500,33.9728,130.7346,False
+elc_wof_015,ep_windoff_wind_015,17.0,windoff,Aggregated Plant -- construction,elc_wof_015,JP269-500,33.28632904993027,129.4213235635326,False
+elc_wof_016,ep_windoff_wind_016,112.0,windoff,Aggregated Plant -- operating,elc_wof_016,JP4-275,42.87071373818388,141.11523893694496,False
+elc_wof_016,ep_windoff_wind_G100000901431,1000.0,windoff,Hokkaido Ishikari Bay Offshore wind farm_-- -- construction,elc_wof_016,JP4-275,43.2622,141.2153,False
+elc_wof_022,ep_windoff_022__irena,25.867885588266496,windoff,Aggregated Plant -- operating,elc_wof_022,JP4-275,42.870757536101934,140.5997338066246,False
+elc_wof_025,ep_windoff_wind_025,279.0,windoff,Aggregated Plant -- operating,elc_wof_025,JP21-500,36.91933060726903,137.6428560849779,False
+elc_wof_040,ep_windoff_040__irena,24.319123082883152,windoff,Aggregated Plant -- operating,elc_wof_040,JP219-500,34.71860325465048,137.70552487408034,False
+elc_wof_043,ep_windoff_wind_043,30.0,windoff,Aggregated Plant -- operating,elc_wof_043,way/105298089-500,36.21075632158554,139.82559238707813,False
+elc_won_001,ep_windon_001__irena,230.7460937574068,windon,Aggregated Plant - IRENA Gap - 1_Missing Onshore wind energy Capacity -- operating,elc_won_001,JP306-500,32.21206157115589,128.52066528052262,False
+elc_won_002,ep_windon_002__irena,225.02334051774326,windon,Aggregated Plant - IRENA Gap - 2_Missing Onshore wind energy Capacity -- operating,elc_won_002,JP306-500,33.27307612681017,129.26652505200204,False
+elc_won_002,ep_windon_wind_002,186.0,windon,Aggregated Plant -- operating,elc_won_002,JP306-500,33.542141586056076,130.12750995771606,False
+elc_won_003,ep_windon_wind_003,11.0,windon,Aggregated Plant -- operating,elc_won_003,way/201293312-500,33.46483174015257,130.78639550450688,False
+elc_won_004,ep_windon_wind_004,18.0,windon,Aggregated Plant -- operating,elc_won_004,way/1037299172-500,33.46652794140307,131.95231491798117,False
+elc_won_005,ep_windon_wind_005,47.0,windon,Aggregated Plant -- operating,elc_won_005,JP294-500,33.194898160393286,130.70723931986947,False
+elc_won_007,ep_windon_wind_007,283.0,windon,Aggregated Plant -- operating,elc_won_007,way/169031998-500,35.01317880168216,136.88716933805887,False
+elc_won_010,ep_windon_wind_010,295.00000000000006,windon,Aggregated Plant -- construction,elc_won_010,way/216778426-500,33.657904195686086,131.23448499942194,False
+elc_won_011,ep_windon_wind_011,111.0,windon,Aggregated Plant -- operating,elc_won_011,way/242103481-500,35.32651612291146,134.58505822135123,False
+elc_won_013,ep_windon_wind_013,70.0,windon,Aggregated Plant -- operating,elc_won_013,way/149843487-500,35.79873450983748,140.16704856197512,False
+elc_won_015,ep_windon_wind_015,84.0,windon,Aggregated Plant -- operating,elc_won_015,way/210090094-500,34.63754185753162,138.52715146125766,False
+elc_won_016,ep_windon_wind_016,189.0,windon,Aggregated Plant -- operating,elc_won_016,way/204258596-500,34.31057724370796,130.57321254759378,False
+elc_won_017,ep_windon_wind_017,47.0,windon,Aggregated Plant -- operating,elc_won_017,way/256682313-500,36.412358697164564,136.3675585124878,False
+elc_won_018,ep_windon_wind_018,133.0,windon,Aggregated Plant -- operating,elc_won_018,way/216956620-500,31.971935660954774,130.74659601171416,False
+elc_won_019,ep_windon_wind_019,435.0,windon,Aggregated Plant -- operating,elc_won_019,JP292-500,32.34030674938805,129.81588995332194,False
+elc_won_020,ep_windon_wind_020,239.6,windon,Aggregated Plant -- operating,elc_won_020,JP21-500,37.3420504204384,137.52033719367944,False
+elc_won_021,ep_windon_wind_021,450.40000000000003,windon,Aggregated Plant -- construction,elc_won_021,way/168839127-500,37.12397638307102,139.75577706139975,False
+elc_won_022,ep_windon_wind_022,87.0,windon,Aggregated Plant -- construction,elc_won_022,way/315434358-500,36.72921728352014,139.68445475465512,False
+elc_won_023,ep_windon_wind_023,82.0,windon,Aggregated Plant -- operating,elc_won_023,JP21-500,38.4311562670766,138.20188721623285,False
+elc_won_025,ep_windon_wind_025,308.0,windon,Aggregated Plant -- operating,elc_won_025,way/801582512-275,41.42897406226531,141.11616070620576,False
+elc_won_026,ep_windon_026__irena,259.13056572485016,windon,Aggregated Plant - IRENA Gap - 26_Missing Onshore wind energy Capacity -- operating,elc_won_026,way/801582512-275,41.80976449794525,139.87235445997516,False
+elc_won_026,ep_windon_wind_026,735.5,windon,Aggregated Plant -- operating,elc_won_026,way/801582512-275,42.43216335595098,140.08185816485275,False
+elc_won_027,ep_windon_wind_027,581.0,windon,Aggregated Plant -- operating,elc_won_027,way/174636874-500,40.17387192479212,140.70720507213997,False
+elc_won_030,ep_windon_wind_030,539.2,windon,Aggregated Plant -- operating,elc_won_030,way/179863079-275,43.68093611911975,141.0060427579006,False
+elc_won_031,ep_windon_wind_031,67.4,windon,Aggregated Plant -- operating,elc_won_031,JP7-275,43.584188964988485,141.33054628442588,False

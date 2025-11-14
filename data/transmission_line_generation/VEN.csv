@@ -1,0 +1,95 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,170.0,bioenergy,Aggregated Plant - EMBER Gap_Missing Bioenergy Capacity -- operating,,,,,False
+e_VE16-230,ep_gas_gas_turbine_G100000406937,100.0,gas,José María España power station_13 -- operating,e_VE16-230,VE16-230,10.420934,-66.954939,False
+e_VE16-230,ep_gas_gas_turbine_G100000406940,100.0,gas,José María España power station_10 -- operating,e_VE16-230,VE16-230,10.420934,-66.954939,False
+e_VE16-230,ep_m_gas_gas_turbine_G100000406938,100.0,gas,José María España power station_12 -- mothballed,e_VE16-230,VE16-230,10.420934,-66.954939,False
+e_VE16-230,ep_m_gas_gas_turbine_G100000406939,100.0,gas,José María España power station_11 -- mothballed,e_VE16-230,VE16-230,10.420934,-66.954939,False
+e_VE16-230,ep_m_gas_gas_turbine_G100000406941,100.0,gas,José María España power station_9 -- mothballed,e_VE16-230,VE16-230,10.420934,-66.954939,False
+e_VE23-230,ep_gas_gas_turbine_G100000406580,85.0,gas,La Raisa power station_LR-600 -- operating,e_VE23-230,VE23-230,10.2561,-66.7922,False
+e_VE23-230,ep_gas_gas_turbine_G100000406585,50.0,gas,La Raisa power station_LR-400 -- operating,e_VE23-230,VE23-230,10.2561,-66.7922,False
+e_VE23-230,ep_m_gas_gas_turbine_G100000406579,85.0,gas,La Raisa power station_LR-700 -- mothballed,e_VE23-230,VE23-230,10.2561,-66.7922,False
+e_VE23-230,ep_m_gas_gas_turbine_G100000406581,60.0,gas,La Raisa power station_LR-300 -- mothballed,e_VE23-230,VE23-230,10.2561,-66.7922,False
+e_VE23-230,ep_m_gas_gas_turbine_G100000406582,60.0,gas,La Raisa power station_LR-200 -- mothballed,e_VE23-230,VE23-230,10.2561,-66.7922,False
+e_VE23-230,ep_m_gas_gas_turbine_G100000406583,60.0,gas,La Raisa power station_LR-100 -- mothballed,e_VE23-230,VE23-230,10.2561,-66.7922,False
+e_VE23-230,ep_m_gas_gas_turbine_G100000406584,50.0,gas,La Raisa power station_LR-500 -- mothballed,e_VE23-230,VE23-230,10.2561,-66.7922,False
+e_VE39-230,ep_gas_gas_turbine_G100000406617,70.0,gas,Alfredo Salazar power station_PAS-2 -- operating,e_VE39-230,VE39-230,9.3699,-64.4965,False
+e_VE39-230,ep_m_gas_gas_turbine_G100000406616,70.0,gas,Alfredo Salazar power station_PAS-3 -- mothballed,e_VE39-230,VE39-230,9.3699,-64.4965,False
+e_VE39-230,ep_m_gas_gas_turbine_G100000406618,90.0,gas,Alfredo Salazar power station_PAS-1 -- mothballed,e_VE39-230,VE39-230,9.3699,-64.4965,False
+e_VE39-230,ep_m_gas_gas_turbine_G100000411970,50.0,gas,Alfredo Salazar power station_PAS-5 -- mothballed,e_VE39-230,VE39-230,9.3699,-64.4965,False
+e_VE39-230,ep_m_gas_gas_turbine_G100000411971,50.0,gas,Alfredo Salazar power station_PAS-4 -- mothballed,e_VE39-230,VE39-230,9.3699,-64.4965,False
+e_VE44-230,ep_m_gas_gas_turbine_G100000406564,150.0,gas,San Diego de Cabrutica power station_2 -- mothballed,e_VE44-230,VE44-230,8.414648,-64.891606,False
+e_VE44-230,ep_m_gas_gas_turbine_G100000406565,150.0,gas,San Diego de Cabrutica power station_1 -- mothballed,e_VE44-230,VE44-230,8.414648,-64.891606,False
+e_VE45-400,ep_hydro_dam_G100000604028,480.0,hydro,Macagua 1 hydroelectric plant_ -- operating,e_VE45-400,VE45-400,8.3039,-62.6677,False
+e_VE45-400,ep_hydro_dam_G100000604029,2850.0,hydro,Macagua 2 hydroelectric plant_ -- operating,e_VE45-400,VE45-400,8.3039,-62.6677,False
+e_VE46-400,ep_gas_gas_turbine_G100000411963,50.0,gas,Sidor power station_TSD-2 -- operating,e_VE46-400,VE46-400,8.263644,-62.84605,False
+e_VE46-400,ep_m_gas_gas_turbine_G100000411962,85.0,gas,Sidor power station_TSD-3 -- mothballed,e_VE46-400,VE46-400,8.263644,-62.84605,False
+e_VE46-400,ep_m_gas_gas_turbine_G100000411964,50.0,gas,Sidor power station_TSD-1 -- mothballed,e_VE46-400,VE46-400,8.263644,-62.84605,False
+e_VE47-400,ep_hydro_dam_G100000604021,2160.0,hydro,Caruachi hydroelectric plant_ -- operating,e_VE47-400,VE47-400,8.1609,-62.8001,False
+e_VE49-400,ep_m_hydro_dam_G100000604529,460.0,hydro,La Colorada hydroelectric plant_ -- mothballed,e_VE49-400,VE49-400,7.9121,-71.9532,False
+e_VE53-230,ep_m_hydro_dam_G100000604552,300.0,hydro,Leonardo Ruiz Pineda hydroelectric plant_ -- mothballed,e_VE53-230,VE53-230,7.8535,-71.7146,False
+e_VE54-230,ep_m_hydro_dam_G100000604373,450.0,hydro,Fabricio Ojeda hydroelectric plant_ -- mothballed,e_VE54-230,VE54-230,7.7471,-71.4668,False
+e_w1315070791-230,ep_m_gas_combined_cycle_G100000411966,470.0,gas,"Don Luis Zambrano power plant_LZ-1, LZ-2, LZ-3 -- mothballed",e_w1315070791-230,way/1315070791-230,8.559824,-71.769118,False
+e_w249635068-400,ep_hydro_dam_G100000604023,10200.0,hydro,Guri hydroelectric plant_ -- operating,e_w249635068-400,way/249635068-400,7.7659,-62.9982,False
+e_w264156842-230,ep_m_gas_gas_turbine_G100000406613,90.0,gas,Antonio Nicolás Briceño power station_1 -- mothballed,e_w264156842-230,way/264156842-230,9.783648,-71.077218,False
+e_w264156842-230,ep_m_oil_gas_turbine_G100000406563,100.0,oil,San Timoteo power station_ST-1 -- mothballed,e_w264156842-230,way/264156842-230,9.784397,-71.061567,False
+e_w365007880-230,ep_m_gas_gas_turbine_G100000406557,180.0,gas,Termocarabobo II power station_TEP-4 -- mothballed,e_w365007880-230,way/365007880-230,10.4839,-68.1492,False
+e_w365007880-230,ep_m_gas_gas_turbine_G100000406558,180.0,gas,Termocarabobo II power station_TEP-3 -- mothballed,e_w365007880-230,way/365007880-230,10.4839,-68.1492,False
+e_w365007880-230,ep_m_gas_gas_turbine_G100000406559,180.0,gas,Termocarabobo II power station_TEP-2 -- mothballed,e_w365007880-230,way/365007880-230,10.4839,-68.1492,False
+e_w365007880-230,ep_m_gas_gas_turbine_G100000406560,180.0,gas,Termocarabobo II power station_TEP-1 -- mothballed,e_w365007880-230,way/365007880-230,10.4839,-68.1492,False
+e_w365007880-400,ep_m_gas_steam_turbine_G100000406571,600.0,gas,Planta Centro power station_PC-6 -- mothballed,e_w365007880-400,way/365007880-400,10.4949,-68.1552,False
+e_w365007880-400,ep_m_gas_steam_turbine_G100000406575,400.0,gas,Planta Centro power station_PC-2 -- mothballed,e_w365007880-400,way/365007880-400,10.4949,-68.1552,False
+e_w365007880-400,ep_m_gas_steam_turbine_G100000406576,400.0,gas,Planta Centro power station_PC-1 -- mothballed,e_w365007880-400,way/365007880-400,10.4949,-68.1552,False
+e_w365007880-400,ep_m_oil_steam_turbine_G100000406572,400.0,oil,Planta Centro power station_PC-5 -- mothballed,e_w365007880-400,way/365007880-400,10.4949,-68.1552,False
+e_w365007880-400,ep_m_oil_steam_turbine_G100000406573,400.0,oil,Planta Centro power station_PC-4 -- mothballed,e_w365007880-400,way/365007880-400,10.4949,-68.1552,False
+e_w365007880-400,ep_m_oil_steam_turbine_G100000406574,400.0,oil,Planta Centro power station_PC-3 -- mothballed,e_w365007880-400,way/365007880-400,10.4949,-68.1552,False
+e_w374453219-230,ep_gas_gas_turbine_G100000406561,170.0,gas,Termobarrancas II power station_1 -- operating,e_w374453219-230,way/374453219-230,8.698411,-70.209247,False
+e_w374453219-230,ep_hydro_dam_G100000604025,80.0,hydro,Juan Antonio Rodríguez Domínguez hydroelectric plant_ -- operating,e_w374453219-230,way/374453219-230,8.8899,-70.0362,False
+e_w374453219-230,ep_m_gas_gas_turbine_G100000411968,50.0,gas,Barinas I substation power station_2 -- mothballed,e_w374453219-230,way/374453219-230,8.67847,-70.276292,False
+e_w374453219-230,ep_m_gas_gas_turbine_G100000411969,50.0,gas,Barinas I substation power station_1 -- mothballed,e_w374453219-230,way/374453219-230,8.67847,-70.276292,False
+e_w374453219-230,ep_oil_internal_combustion_G100000411967,99.6,oil,Batalla de Santa Inés power station_1 -- operating,e_w374453219-230,way/374453219-230,8.412017,-70.125321,False
+e_w376845631-230,ep_gas_gas_turbine_G100000406592,175.0,gas,Juan Manuel Valdez power station_1 -- operating,e_w376845631-230,way/376845631-230,10.562024,-62.310042,False
+e_w376845631-230,ep_m_gas_gas_turbine_G100000406591,175.0,gas,Juan Manuel Valdez power station_2 -- mothballed,e_w376845631-230,way/376845631-230,10.562024,-62.310042,False
+e_w392161362-230,ep_gas_gas_turbine_G100000406577,150.0,gas,Pedro Camejo power station_PPC-12 -- operating,e_w392161362-230,way/392161362-230,10.1771,-67.9462,False
+e_w392161362-230,ep_m_gas_gas_turbine_G100000406578,150.0,gas,Pedro Camejo power station_PPC-11 -- mothballed,e_w392161362-230,way/392161362-230,10.1771,-67.9462,False
+e_w502761909-230,ep_m_gas_steam_turbine_G100000406566,160.0,gas,Ramón Laguna power station_RL-17 -- mothballed,e_w502761909-230,way/502761909-230,10.5977,-71.6135,False
+e_w502761909-230,ep_m_gas_steam_turbine_G100000406567,160.0,gas,Ramón Laguna power station_RL-16 -- mothballed,e_w502761909-230,way/502761909-230,10.5977,-71.6135,False
+e_w502761909-230,ep_m_gas_steam_turbine_G100000406568,160.0,gas,Ramón Laguna power station_RL-15 -- mothballed,e_w502761909-230,way/502761909-230,10.5977,-71.6135,False
+e_w502761909-230,ep_m_gas_steam_turbine_G100000406569,90.0,gas,Ramón Laguna power station_RL-5 -- mothballed,e_w502761909-230,way/502761909-230,10.5977,-71.6135,False
+e_w502761909-230,ep_m_gas_steam_turbine_G100000406570,90.0,gas,Ramón Laguna power station_RL-4 -- mothballed,e_w502761909-230,way/502761909-230,10.5977,-71.6135,False
+e_w565534382-230,ep_gas_gas_turbine_G100000406593,85.0,gas,Juan Bautista Arismendi power station_JBA-2 -- operating,e_w565534382-230,way/565534382-230,10.8792,-64.0328,False
+e_w565534382-230,ep_gas_gas_turbine_G100000406615,170.0,gas,Antonio José de Sucre power station_AJS-1 -- operating,e_w565534382-230,way/565534382-230,10.400353,-64.166857,False
+e_w565534382-230,ep_m_gas_gas_turbine_G100000406594,85.0,gas,Juan Bautista Arismendi power station_JBA-1 -- mothballed,e_w565534382-230,way/565534382-230,10.8792,-64.0328,False
+e_w565534382-230,ep_m_gas_gas_turbine_G100000406614,170.0,gas,Antonio José de Sucre power station_AJS-2 -- mothballed,e_w565534382-230,way/565534382-230,10.400353,-64.166857,False
+e_w609494059-230,ep_gas_steam_turbine_G100000406597,460.0,gas,Josefa Joaquina Sánchez Bastidas power station_JJSB-7 -- operating,e_w609494059-230,way/609494059-230,10.58764,-67.079387,False
+e_w609494059-230,ep_m_gas_gas_turbine_G100000406598,68.0,gas,Josefa Joaquina Sánchez Bastidas power station_JJSB-6 -- mothballed,e_w609494059-230,way/609494059-230,10.58764,-67.079387,False
+e_w609494059-230,ep_m_gas_gas_turbine_G100000406599,68.0,gas,Josefa Joaquina Sánchez Bastidas power station_JJSB-5 -- mothballed,e_w609494059-230,way/609494059-230,10.58764,-67.079387,False
+e_w609494059-230,ep_m_gas_gas_turbine_G100000406611,170.0,gas,Barcazas Josefa Rufina y Margarita power station_Margarita -- mothballed,e_w609494059-230,way/609494059-230,10.587631,-67.079538,False
+e_w609494059-230,ep_m_gas_gas_turbine_G100000406612,170.0,gas,Barcazas Josefa Rufina y Margarita power station_Josefa Rufina -- mothballed,e_w609494059-230,way/609494059-230,10.587631,-67.079538,False
+e_w609494059-230,ep_m_gas_steam_turbine_G100000406595,460.0,gas,Josefa Joaquina Sánchez Bastidas power station_JJSB-9 -- mothballed,e_w609494059-230,way/609494059-230,10.58764,-67.079387,False
+e_w609494059-230,ep_m_gas_steam_turbine_G100000406596,460.0,gas,Josefa Joaquina Sánchez Bastidas power station_JJSB-8 -- mothballed,e_w609494059-230,way/609494059-230,10.58764,-67.079387,False
+e_w677150278-230,ep_m_gas_gas_turbine_G100000406603,70.0,gas,Guanta power station_PG-07 -- mothballed,e_w677150278-230,way/677150278-230,10.234964,-64.581287,False
+e_w677150278-230,ep_m_gas_gas_turbine_G100000406619,150.0,gas,Alberto Lovera power station_PAL-02 -- mothballed,e_w677150278-230,way/677150278-230,10.219826,-64.609504,False
+e_w677150278-230,ep_m_gas_gas_turbine_G100000406620,150.0,gas,Alberto Lovera power station_PAL-01 -- mothballed,e_w677150278-230,way/677150278-230,10.219826,-64.609504,False
+e_w677150278-230,ep_m_gas_gas_turbine_G100000411965,70.0,gas,Guanta power station_PG-06 -- mothballed,e_w677150278-230,way/677150278-230,10.234964,-64.581287,False
+e_w686182054-230,ep_gas_combined_cycle_G100000406610,540.0,gas,India Urquia power station_1 -- operating,e_w686182054-230,way/686182054-230,10.290298,-66.68178,False
+e_w686182054-230,ep_m_gas_combined_cycle_G100000406609,540.0,gas,India Urquia power station_2 -- mothballed,e_w686182054-230,way/686182054-230,10.290298,-66.68178,False
+e_w791395098-400,ep_hydro_dam_G100000604602,2700.0,hydro,Manuel Piar hydroelectric plant_ -- construction,e_w791395098-400,way/791395098-400,7.8997,-63.0322,False
+e_w795878094-230,ep_m_gas_gas_turbine_G100000406608,180.0,gas,Ezequiel Zamora power station_1 -- mothballed,e_w795878094-230,way/795878094-230,9.847154,-66.267297,False
+e_w799462016-230,ep_hydro_dam_G100000604024,240.0,hydro,José Antonio Páez hydroelectric plant_ -- operating,e_w799462016-230,way/799462016-230,8.8246,-70.5145,False
+e_w801987822-230,ep_gas_combined_cycle_G100000406556,470.0,gas,Termozulia power station_TZ-1-2-3 -- operating,e_w801987822-230,way/801987822-230,10.488508,-71.633057,False
+e_w801987822-230,ep_gas_combined_cycle_G100000406926,300.0,gas,Termozulia power station_TZ-7-8 -- operating,e_w801987822-230,way/801987822-230,10.488508,-71.633057,False
+e_w801987822-230,ep_m_gas_combined_cycle_G100000406555,470.0,gas,Termozulia power station_TZ-4-5-6 -- mothballed,e_w801987822-230,way/801987822-230,10.488508,-71.633057,False
+e_w801987822-230,ep_m_gas_combined_cycle_G100000406925,140.0,gas,Termozulia power station_TZ-10-11 -- mothballed,e_w801987822-230,way/801987822-230,10.488508,-71.633057,False
+e_w806074207-230,ep_gas_gas_turbine_G100000406586,160.0,gas,La Cabrera power station_CAB-2 -- operating,e_w806074207-230,way/806074207-230,10.254232,-67.676309,False
+e_w806074207-230,ep_gas_gas_turbine_G100000406587,160.0,gas,La Cabrera power station_CAB-1 -- operating,e_w806074207-230,way/806074207-230,10.254232,-67.676309,False
+e_w97261904-230,ep_gas_gas_turbine_G100000406600,160.0,gas,Josefa Camejo power station_PTJC-3 -- operating,e_w97261904-230,way/97261904-230,11.75,-70.1716,False
+e_w97261904-230,ep_gas_gas_turbine_G100000406602,160.0,gas,Josefa Camejo power station_PTJC-1 -- operating,e_w97261904-230,way/97261904-230,11.75,-70.1716,False
+e_w97261904-230,ep_m_gas_gas_turbine_G100000406601,160.0,gas,Josefa Camejo power station_PTJC-2 -- mothballed,e_w97261904-230,way/97261904-230,11.75,-70.1716,False
+e_w97261904-230,ep_m_gas_gas_turbine_G100000406605,105.0,gas,Genevapca power station_GVP-3 -- mothballed,e_w97261904-230,way/97261904-230,11.638502,-70.219035,False
+e_w97261904-230,ep_m_gas_gas_turbine_G100000406606,105.0,gas,Genevapca power station_GVP-2 -- mothballed,e_w97261904-230,way/97261904-230,11.638502,-70.219035,False
+e_w97261904-230,ep_m_gas_gas_turbine_G100000406607,105.0,gas,Genevapca power station_GVP-1 -- mothballed,e_w97261904-230,way/97261904-230,11.638502,-70.219035,False
+elc_spv_017,ep_solar_017__irena,0.6407395490283664,solar,Aggregated Plant -- operating,elc_spv_017,way/791294867-230,6.3995714489867535,-69.54461634275144,False
+elc_spv_020,ep_solar_020__irena,0.5444210126358812,solar,Aggregated Plant -- operating,elc_spv_020,VE44-230,8.459111737247715,-64.8723429486582,False
+elc_spv_025,ep_solar_025__irena,0.5848394383357526,solar,Aggregated Plant -- operating,elc_spv_025,way/441856561-230,8.90493773467729,-67.48100204056071,False
+elc_spv_026,ep_solar_pv_026,1.1,solar,Aggregated Plant -- operating,elc_spv_026,VE31-230,10.118099675442599,-67.30093230589323,False
+elc_won_011,ep_m_windon_wind_011,95.3,windon,Aggregated Plant -- mothballed,elc_won_011,VE1-230,11.500721756564007,-70.88351320039017,False

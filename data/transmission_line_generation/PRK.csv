@@ -1,0 +1,80 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_KP13-220,ep_coal_subcritical_G100000101525,50.0,coal,Chongjin City power station_Unit 1 -- operating,e_KP13-220,KP13-220,41.783681,129.750091,False
+e_KP13-220,ep_coal_subcritical_G100000101526,50.0,coal,Chongjin City power station_Unit 2 -- operating,e_KP13-220,KP13-220,41.783681,129.750091,False
+e_KP13-220,ep_coal_subcritical_G100000101527,50.0,coal,Chongjin City power station_Unit 3 -- operating,e_KP13-220,KP13-220,41.783681,129.750091,False
+e_KP13-220,ep_coal_subcritical_G100000113905,100.0,coal,Sonbong power station_Unit 1 -- operating,e_KP13-220,KP13-220,42.32849,130.382448,False
+e_KP13-220,ep_coal_subcritical_G100000115630,50.0,coal,Sonbong power station_Unit 2 -- operating,e_KP13-220,KP13-220,42.32849,130.382448,False
+e_KP13-220,ep_coal_subcritical_G100000115631,50.0,coal,Sonbong power station_Unit 3 -- operating,e_KP13-220,KP13-220,42.32849,130.382448,False
+e_KP13-220,ep_hydro_KP13-220__irena,757.770002279462,hydro,Aggregated Plant - IRENA Gap - KP13-220_Missing Hydro Capacity -- operating,e_KP13-220,KP13-220,40.1100296435808,127.64859490502874,False
+e_KP13-220,ep_hydro_dam_G100000602892,100.0,hydro,Anbyon Youth hydroelectric plant_ -- operating,e_KP13-220,KP13-220,38.9544,127.5389,False
+e_KP13-220,ep_hydro_dam_G100000602893,100.0,hydro,Anbyon Youth No 2 hydroelectric plant_ -- operating,e_KP13-220,KP13-220,38.9544,127.5389,False
+e_KP13-220,ep_hydro_dam_G100000602894,130.0,hydro,Bujeongang hydroelectric plant_ -- operating,e_KP13-220,KP13-220,40.4911,127.621,False
+e_KP13-220,ep_hydro_dam_G100000602900,381.0,hydro,Jangjingang hydroelectric plant_ -- operating,e_KP13-220,KP13-220,40.0549,127.5781,False
+e_KP13-220,ep_hydro_dam_G100000602902,134.0,hydro,Orangchon hydroelectric plant_ -- operating,e_KP13-220,KP13-220,41.3478,129.3896,False
+e_KP13-220,ep_hydro_dam_G100000602903,100.0,hydro,Paektusan Hero Youth No 3 hydroelectric plant_ -- operating,e_KP13-220,KP13-220,41.4453,128.8433,False
+e_KP13-220,ep_hydro_dam_G100001051861,50.0,hydro,Samsu hydroelectric plant_ -- operating,e_KP13-220,KP13-220,41.2904,128.024,False
+e_KP13-220,ep_hydro_ror_G100000602896,394.0,hydro,Heocheongang hydroelectric plant_ -- operating,e_KP13-220,KP13-220,40.679,128.6126,False
+e_KP14-220,ep_hydro_KP14-220__irena,75.81490768178709,hydro,Aggregated Plant - IRENA Gap - KP14-220_Missing Hydro Capacity -- operating,e_KP14-220,KP14-220,39.91711105214631,126.19579466303857,False
+e_KP14-220,ep_hydro_ror_G100000602907,200.0,hydro,Taedonggang hydroelectric plant_ -- operating,e_KP14-220,KP14-220,39.7735,126.3478,False
+e_KP16-220,ep_coal_subcritical_G100000101409,50.0,coal,Cheongcheon-Gang power station_Unit 1 -- operating,e_KP16-220,KP16-220,39.65655,125.66883,False
+e_KP16-220,ep_coal_subcritical_G100000101410,50.0,coal,Cheongcheon-Gang power station_Unit 2 -- operating,e_KP16-220,KP16-220,39.65655,125.66883,False
+e_KP16-220,ep_coal_subcritical_G100000101411,50.0,coal,Cheongcheon-Gang power station_Unit 3 -- operating,e_KP16-220,KP16-220,39.65655,125.66883,False
+e_KP16-220,ep_coal_subcritical_G100000101412,50.0,coal,Cheongcheon-Gang power station_Unit 4 -- operating,e_KP16-220,KP16-220,39.65655,125.66883,False
+e_KP17-220,ep_coal_subcritical_G100000108207,100.0,coal,Pukchang power station_Unit 10 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108208,100.0,coal,Pukchang power station_Unit 11 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108209,100.0,coal,Pukchang power station_Unit 12 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108210,100.0,coal,Pukchang power station_Unit 13 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108211,100.0,coal,Pukchang power station_Unit 14 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108212,100.0,coal,Pukchang power station_Unit 15 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108213,100.0,coal,Pukchang power station_Unit 16 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108217,100.0,coal,Pukchang power station_Unit 5 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108218,100.0,coal,Pukchang power station_Unit 6 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108219,100.0,coal,Pukchang power station_Unit 7 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108220,100.0,coal,Pukchang power station_Unit 8 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000108221,100.0,coal,Pukchang power station_Unit 9 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000115130,100.0,coal,Pukchang power station_Unit 17 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000115131,100.0,coal,Pukchang power station_Unit 18 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000115132,100.0,coal,Pukchang power station_Unit 19 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_coal_subcritical_G100000115133,100.0,coal,Pukchang power station_Unit 20 -- operating,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_m_coal_subcritical_G100000108206,100.0,coal,Pukchang power station_Unit 1 -- mothballed,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_m_coal_subcritical_G100000108214,100.0,coal,Pukchang power station_Unit 2 -- mothballed,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_m_coal_subcritical_G100000108215,100.0,coal,Pukchang power station_Unit 3 -- mothballed,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP17-220,ep_m_coal_subcritical_G100000108216,100.0,coal,Pukchang power station_Unit 4 -- mothballed,e_KP17-220,KP17-220,39.586142,126.305072,False
+e_KP20-220,ep_coal_subcritical_G100000109716,50.0,coal,Sunchon power station_Unit 1 -- operating,e_KP20-220,KP20-220,39.401456,125.968168,False
+e_KP20-220,ep_coal_subcritical_G100000109717,50.0,coal,Sunchon power station_Unit 2 -- operating,e_KP20-220,KP20-220,39.401456,125.968168,False
+e_KP20-220,ep_coal_subcritical_G100000109718,50.0,coal,Sunchon power station_Unit 3 -- operating,e_KP20-220,KP20-220,39.401456,125.968168,False
+e_KP20-220,ep_coal_subcritical_G100000109719,50.0,coal,Sunchon power station_Unit 4 -- operating,e_KP20-220,KP20-220,39.401456,125.968168,False
+e_KP33-220,ep_coal_subcritical_G100000108257,50.0,coal,Pyongyang power station_Unit 1 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP33-220,ep_coal_subcritical_G100000108258,50.0,coal,Pyongyang power station_Unit 2 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP33-220,ep_coal_subcritical_G100000108259,50.0,coal,Pyongyang power station_Unit 3 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP33-220,ep_coal_subcritical_G100000108260,50.0,coal,Pyongyang power station_Unit 4 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP33-220,ep_coal_subcritical_G100000108261,50.0,coal,Pyongyang power station_Unit 5 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP33-220,ep_coal_subcritical_G100000108262,50.0,coal,Pyongyang power station_Unit 6 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP33-220,ep_coal_subcritical_G100000108263,50.0,coal,Pyongyang power station_Unit 7 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP33-220,ep_coal_subcritical_G100000108264,50.0,coal,Pyongyang power station_Unit 8 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP33-220,ep_coal_subcritical_G100000115134,100.0,coal,Pyongyang power station_Unit 9 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP33-220,ep_coal_subcritical_G100000115135,100.0,coal,Pyongyang power station_Unit 10 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP33-220,ep_coal_subcritical_G100000115136,100.0,coal,Pyongyang power station_Unit 11 -- operating,e_KP33-220,KP33-220,39.009295,125.710939,False
+e_KP37-220,ep_coal_subcritical_G100000102560,50.0,coal,East Pyongyang power station_Unit 1 -- operating,e_KP37-220,KP37-220,38.969298,125.687584,False
+e_KP37-220,ep_coal_subcritical_G100000102561,50.0,coal,East Pyongyang power station_Unit 2 -- operating,e_KP37-220,KP37-220,38.969298,125.687584,False
+e_KP37-220,ep_coal_subcritical_G100000102562,50.0,coal,East Pyongyang power station_Unit 3 -- operating,e_KP37-220,KP37-220,38.969298,125.687584,False
+e_KP37-220,ep_coal_subcritical_G100000102563,50.0,coal,East Pyongyang power station_Unit 4 -- operating,e_KP37-220,KP37-220,38.969298,125.687584,False
+e_KP40-220,ep_m_coal_subcritical_G100000102293,50.0,coal,December (Nampo) power station_-- -- mothballed,e_KP40-220,KP40-220,38.92144,125.56617,False
+e_KP6-220,ep_hydro_KP6-220__irena,829.4150900387507,hydro,Aggregated Plant - IRENA Gap - KP6-220_Missing Hydro Capacity -- operating,e_KP6-220,KP6-220,40.22980810064524,126.51532821044414,False
+e_KP6-220,ep_hydro_dam_G100000602897,150.0,hydro,Huichon 1 hydroelectric plant_ -- operating,e_KP6-220,KP6-220,40.1811,126.3499,False
+e_KP6-220,ep_hydro_dam_G100000602898,150.0,hydro,Huichon 2 hydroelectric plant_ -- operating,e_KP6-220,KP6-220,40.1811,126.3499,False
+e_KP6-220,ep_hydro_dam_G100000602899,120.0,hydro,Huichon 3 -12 hydroelectric plant_ -- operating,e_KP6-220,KP6-220,40.1726,126.2776,False
+e_KP6-220,ep_hydro_dam_G100000602901,218.0,hydro,Kanggye Youth hydroelectric plant_ -- operating,e_KP6-220,KP6-220,40.1802,126.3501,False
+e_KP6-220,ep_hydro_dam_G100000602904,510.0,hydro,Sodusu hydroelectric plant_ -- operating,e_KP6-220,KP6-220,40.3737,127.087,False
+e_KP6-220,ep_hydro_dam_G100000602905,150.0,hydro,Taechon Youth No 1 hydroelectric plant_ -- construction,e_KP6-220,KP6-220,40.3737,127.087,False
+e_KP6-220,ep_hydro_dam_G100000602906,400.0,hydro,Taechon Youth No 2 hydroelectric plant_ -- construction,e_KP6-220,KP6-220,40.3737,127.087,False
+e_KP6-220,ep_hydro_dam_G100000602908,400.0,hydro,Unbong hydroelectric plant_ -- operating,e_KP6-220,KP6-220,41.3821,126.5141,False
+e_KP6-220,ep_hydro_ror_G100000602895,90.0,hydro,Dokrogang hydroelectric plant_ -- operating,e_KP6-220,KP6-220,40.9712,127.1301,False
+e_w543170997-220,ep_nuclear_G100000501227,5.0,nuclear,Nyongbyon nuclear power plant_1 -- operating,e_w543170997-220,way/543170997-220,39.7974,125.7549,False
+e_w543170997-220,ep_nuclear_G100000501229,30.0,nuclear,Nyongbyon nuclear power plant_3 -- construction,e_w543170997-220,way/543170997-220,39.7959,125.7551,False
+elc_spv_004,ep_solar_004__irena,44.05715339149194,solar,Aggregated Plant -- operating,elc_spv_004,KP45-220,38.65041108157996,126.1662766810795,False
+elc_spv_007,ep_solar_007__irena,35.3058367917854,solar,Aggregated Plant -- operating,elc_spv_007,KP5-220,40.032220556504576,124.80063505482572,False
+elc_spv_010,ep_solar_010__irena,36.15900981672266,solar,Aggregated Plant -- operating,elc_spv_010,KP13-220,39.75183086601084,127.82267334167896,False
+elc_won_001,ep_windon_001__irena,0.4951932602625978,windon,Aggregated Plant -- operating,elc_won_001,KP45-220,38.25187067588551,126.37207199041713,False
+elc_won_003,ep_windon_003__irena,0.606685300811724,windon,Aggregated Plant -- operating,elc_won_003,KP45-220,38.251773757136334,125.89829645387368,False
+elc_won_005,ep_windon_005__irena,0.4981214389256783,windon,Aggregated Plant -- operating,elc_won_005,KP13-220,39.77445234292459,127.3120888342679,False

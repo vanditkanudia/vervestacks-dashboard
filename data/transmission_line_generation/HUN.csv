@@ -1,0 +1,83 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_HU10-220,ep_gas_HU10-220__ember,716.4676216408193,gas,Aggregated Plant - EMBER Gap - HU10-220_Missing Gas Capacity -- operating,e_HU10-220,HU10-220,47.8624946898533,21.125980542080534,False
+e_HU10-220,ep_gas_combined_cycle_G100000400320,34.0,gas,TVK Industrial power station_1 -- operating,e_HU10-220,HU10-220,47.9144,21.0236,False
+e_HU14-220,ep_coal_HU14-220__ember,43.65432098765436,coal,Aggregated Plant - EMBER Gap - HU14-220_Missing Coal Capacity -- operating,e_HU14-220,HU14-220,47.96343409052577,20.115550753176876,False
+e_HU14-220,ep_coal_subcritical_G100000106732,100.0,coal,Matra power station_Unit 1 -- operating,e_HU14-220,HU14-220,47.79027,20.06358,False
+e_HU14-220,ep_coal_subcritical_G100000106733,100.0,coal,Matra power station_Unit 2 -- operating,e_HU14-220,HU14-220,47.79027,20.06358,False
+e_HU14-220,ep_coal_subcritical_G100000106734,220.0,coal,Matra power station_Unit 3 -- operating,e_HU14-220,HU14-220,47.79027,20.06358,False
+e_HU14-220,ep_coal_subcritical_G100000106735,232.0,coal,Matra power station_Unit 4 -- operating,e_HU14-220,HU14-220,47.79027,20.06358,False
+e_HU14-220,ep_coal_subcritical_G100000106736,232.0,coal,Matra power station_Unit 5 -- operating,e_HU14-220,HU14-220,47.79027,20.06358,False
+e_HU14-220,ep_gas_HU14-220__ember,491.96519474369603,gas,Aggregated Plant - EMBER Gap - HU14-220_Missing Gas Capacity -- operating,e_HU14-220,HU14-220,47.61333180438554,20.108148328966635,False
+e_HU14-220,ep_gas_gas_turbine_G100000400315,30.0,gas,Matra power station_GT1 -- operating,e_HU14-220,HU14-220,47.79027,20.06358,False
+e_HU14-220,ep_gas_gas_turbine_G100000400316,30.0,gas,Matra power station_GT2 -- operating,e_HU14-220,HU14-220,47.79027,20.06358,False
+e_HU14-220,ep_oil_gas_turbine_G100000406348,173.0,oil,Lőrinci power station_1 -- operating,e_HU14-220,HU14-220,47.716425,19.67776,False
+e_r3340172-220,ep_bioenergy_r3340172-220,40.0,bioenergy,Aggregated Plant -- operating,e_r3340172-220,relation/3340172-220,47.22527781200802,18.94741154222368,False
+e_r3340172-220,ep_bioenergy_r3340172-220__ember,28.405797101449284,bioenergy,Aggregated Plant -- operating,e_r3340172-220,relation/3340172-220,46.8207388177167,19.15834310259102,False
+e_r3340172-220,ep_gas_combined_cycle_G100000410435,64.5,gas,ISD Power station_1 -- operating,e_r3340172-220,relation/3340172-220,46.944381,18.943775,False
+e_r3340172-220,ep_gas_r3340172-220__ember,44.69261276192732,gas,Aggregated Plant - EMBER Gap - relation/3340172-220_Missing Gas Capacity -- operating,e_r3340172-220,relation/3340172-220,46.87497273035128,18.666510561637846,False
+e_r9470706-220,ep_gas_combined_cycle_G100000400313,109.0,gas,Kispesti Erőmű power station_1 -- operating,e_r9470706-220,relation/9470706-220,47.4568,19.1673,False
+e_r9470706-220,ep_gas_combined_cycle_G100000400321,110.0,gas,Újpesti power station_1 -- operating,e_r9470706-220,relation/9470706-220,47.554,19.1023,False
+e_r9470706-220,ep_gas_gas_turbine_G100000406351,50.0,gas,North Buda power station_GT3 -- operating,e_r9470706-220,relation/9470706-220,47.564205,19.037835,False
+e_r9470706-220,ep_gas_r9470706-220__ember,186.3924470226116,gas,Aggregated Plant - EMBER Gap - relation/9470706-220_Missing Gas Capacity -- operating,e_r9470706-220,relation/9470706-220,47.62207777418672,19.160633496744634,False
+e_w100788162-400,ep_nuclear_G100000500454,509.0,nuclear,Paks nuclear power plant_1 -- operating,e_w100788162-400,way/100788162-400,46.57763,18.8532,False
+e_w100788162-400,ep_nuclear_G100000500455,506.0,nuclear,Paks nuclear power plant_2 -- operating,e_w100788162-400,way/100788162-400,46.57763,18.8532,False
+e_w100788162-400,ep_nuclear_G100000500456,506.0,nuclear,Paks nuclear power plant_3 -- operating,e_w100788162-400,way/100788162-400,46.57763,18.8532,False
+e_w100788162-400,ep_nuclear_G100000500457,506.0,nuclear,Paks nuclear power plant_4 -- operating,e_w100788162-400,way/100788162-400,46.57763,18.8532,False
+e_w100804921-220,ep_gas_combined_cycle_G100000400309,297.0,gas,Dunamenti power station_G14 & G15 -- operating,e_w100804921-220,way/100804921-220,47.3283,18.9169,False
+e_w100804921-220,ep_gas_combined_cycle_G100000400310,401.0,gas,Dunamenti power station_G7 & G8 -- operating,e_w100804921-220,way/100804921-220,47.3283,18.9169,False
+e_w100804921-220,ep_gas_w100804921-220__ember,483.6502900438026,gas,Aggregated Plant - EMBER Gap - way/100804921-220_Missing Gas Capacity -- operating,e_w100804921-220,way/100804921-220,47.16212644883366,18.767795667213022,False
+e_w100851012-220,ep_gas_combined_cycle_G100000400307,402.0,gas,Csepel power station_1 -- operating,e_w100851012-220,way/100851012-220,47.428,19.0525,False
+e_w100851012-220,ep_gas_combined_cycle_G100000400312,178.0,gas,Kelenföldi Erőmű power station_1 -- operating,e_w100851012-220,way/100851012-220,47.4624,19.0563,False
+e_w100851012-220,ep_gas_w100851012-220__ember,401.88706049485023,gas,Aggregated Plant - EMBER Gap - way/100851012-220_Missing Gas Capacity -- operating,e_w100851012-220,way/100851012-220,47.36817355361176,19.0738357759943,False
+e_w104033901-220,ep_gas_combined_cycle_G100000400308,95.0,gas,Debrecen power station_1 -- operating,e_w104033901-220,way/104033901-220,47.51682,21.62824,False
+e_w104033901-220,ep_gas_w104033901-220__ember,65.82632887415652,gas,Aggregated Plant - EMBER Gap - way/104033901-220_Missing Gas Capacity -- operating,e_w104033901-220,way/104033901-220,47.625858384038416,21.63975047318246,False
+e_w142106943-400,ep_gas_combined_cycle_G100000400311,427.0,gas,Gönyűi power station_1 -- operating,e_w142106943-400,way/142106943-400,47.7384,17.8033,False
+e_w142106943-400,ep_gas_w142106943-400__ember,295.8720255712088,gas,Aggregated Plant - EMBER Gap - way/142106943-400_Missing Gas Capacity -- operating,e_w142106943-400,way/142106943-400,47.8677500773677,17.726395328550304,False
+e_w155227474-220,ep_oil_gas_turbine_G100000400319,155.0,oil,Sajoszoged power station_1 -- operating,e_w155227474-220,way/155227474-220,47.94,20.968,False
+e_w155803703-400,ep_gas_combined_cycle_G100000400317,64.0,gas,Miskolc Hold power station_1 -- operating,e_w155803703-400,way/155803703-400,48.09488,20.74725,False
+e_w155803703-400,ep_gas_w155803703-400__ember,44.34615839943176,gas,Aggregated Plant - EMBER Gap - way/155803703-400_Missing Gas Capacity -- operating,e_w155803703-400,way/155803703-400,48.169711346040245,20.782037551313156,False
+e_w167896114-400,ep_gas_gas_turbine_G100000400306,50.0,gas,Borsodchem power station_GT1 -- operating,e_w167896114-400,way/167896114-400,48.2453,20.6476,False
+e_w167896114-400,ep_gas_gas_turbine_G100001031367,50.0,gas,Borsodchem power station_GT2 -- operating,e_w167896114-400,way/167896114-400,48.2453,20.6476,False
+e_w167896114-400,ep_gas_w167896114-400__ember,69.29087249911211,gas,Aggregated Plant - EMBER Gap - way/167896114-400_Missing Gas Capacity -- operating,e_w167896114-400,way/167896114-400,48.25488883703099,20.442212062279378,False
+e_w244038276-220,ep_bioenergy_G1000002496,50.0,bioenergy,"Oroszlány power station_1R, timepoint 2 -- construction",e_w244038276-220,way/244038276-220,47.501741,18.271075,False
+e_w244038276-220,ep_bioenergy_G1000002497,50.0,bioenergy,"Oroszlány power station_2R, timepoint 2 -- construction",e_w244038276-220,way/244038276-220,47.501741,18.271075,False
+e_w244038276-220,ep_bioenergy_w244038276-220__ember,71.0144927536232,bioenergy,Aggregated Plant - EMBER Gap - way/244038276-220_Missing Bioenergy Capacity -- operating,e_w244038276-220,way/244038276-220,47.772924510890576,18.279493243276843,False
+e_w244038276-220,ep_coal_w244038276-220__ember,12.34567901234569,coal,Aggregated Plant - EMBER Gap - way/244038276-220_Missing Coal Capacity -- operating,e_w244038276-220,way/244038276-220,47.4199965197473,18.525398603267465,False
+e_w244038276-220,ep_gas_internal_combustion_G100001031368,21.0,gas,Tatabanya power station_ICCC -- operating,e_w244038276-220,way/244038276-220,47.560581,18.428784,False
+e_w244038276-220,ep_gas_w244038276-220__ember,14.551083224813546,gas,Aggregated Plant - EMBER Gap - way/244038276-220_Missing Gas Capacity -- operating,e_w244038276-220,way/244038276-220,47.31199911818431,18.07682831260394,False
+e_w244038276-220,ep_m_coal_subcritical_G100000107677,55.0,coal,"Oroszlány power station_Unit 1, timepoint 1 -- mothballed",e_w244038276-220,way/244038276-220,47.501741,18.271075,False
+e_w244038276-220,ep_m_coal_subcritical_G100000107678,65.0,coal,"Oroszlány power station_Unit 2, timepoint 1 -- mothballed",e_w244038276-220,way/244038276-220,47.501741,18.271075,False
+e_w244038276-220,ep_m_coal_subcritical_G100000107679,65.0,coal,Oroszlány power station_Unit 3 -- mothballed,e_w244038276-220,way/244038276-220,47.501741,18.271075,False
+e_w244038276-220,ep_m_coal_subcritical_G100000107680,65.0,coal,Oroszlány power station_Unit 4 -- mothballed,e_w244038276-220,way/244038276-220,47.501741,18.271075,False
+e_w251018026-220,ep_hydro_w251018026-220__irena,60.0,hydro,Aggregated Plant - IRENA Gap - way/251018026-220_Missing Hydro Capacity -- operating,e_w251018026-220,way/251018026-220,47.92721708705061,21.197937720388257,False
+e_w33846555-400,ep_bioenergy_G100000201404,50.0,bioenergy,Pecs power station_6A -- operating,e_w33846555-400,way/33846555-400,46.064103,18.263048,False
+e_w33846555-400,ep_bioenergy_w33846555-400,35.0,bioenergy,Aggregated Plant -- operating,e_w33846555-400,way/33846555-400,46.4250691701363,18.209025119259387,False
+e_w33846555-400,ep_bioenergy_w33846555-400__ember,60.36231884057973,bioenergy,Aggregated Plant - EMBER Gap - way/33846555-400_Missing Bioenergy Capacity -- operating,e_w33846555-400,way/33846555-400,45.98345864959987,18.65413040976757,False
+e_w464834617-400,ep_geothermal_w464834617-400,3.4,geothermal,Aggregated Plant -- operating,e_w464834617-400,way/464834617-400,47.62098699124035,19.360332744045323,False
+e_w65034002-400,ep_bioenergy_w65034002-400,120.0,bioenergy,Aggregated Plant -- operating,e_w65034002-400,way/65034002-400,47.55521083813845,17.97227395019523,False
+e_w65034002-400,ep_bioenergy_w65034002-400__ember,85.21739130434784,bioenergy,Aggregated Plant - EMBER Gap - way/65034002-400_Missing Bioenergy Capacity -- operating,e_w65034002-400,way/65034002-400,47.12092744311877,18.468431474264843,False
+e_w65034002-400,ep_gas_gas_turbine_G100000400304,57.0,gas,Ajka power station_1 -- operating,e_w65034002-400,way/65034002-400,47.095,17.556,False
+e_w65034002-400,ep_gas_gas_turbine_G100000400305,57.0,gas,Ajka power station_2 -- operating,e_w65034002-400,way/65034002-400,47.095,17.556,False
+e_w65034002-400,ep_gas_w65034002-400__ember,78.9915946489878,gas,Aggregated Plant - EMBER Gap - way/65034002-400_Missing Gas Capacity -- operating,e_w65034002-400,way/65034002-400,46.823992199413325,18.368552350628807,False
+e_w65034002-400,ep_oil_gas_turbine_G100000400314,123.0,oil,Liter power station_1 -- operating,e_w65034002-400,way/65034002-400,47.1075,18.0143,False
+e_w986231091-400,ep_gas_combined_cycle_G100000400318,47.0,gas,Nyíregyházi power station_1 -- operating,e_w986231091-400,way/986231091-400,47.957,21.699,False
+e_w986231091-400,ep_gas_w986231091-400__ember,32.5667100745827,gas,Aggregated Plant - EMBER Gap - way/986231091-400_Missing Gas Capacity -- operating,e_w986231091-400,way/986231091-400,48.07354889487699,21.76522964522743,False
+elc_spv_001,ep_solar_pv_001,55.800000000000004,solar,Aggregated Plant -- operating,elc_spv_001,way/166155511-400,48.00267086746566,16.749514499928743,False
+elc_spv_002,ep_solar_pv_002,502.50000000000006,solar,Aggregated Plant -- operating,elc_spv_002,HU26-400,46.39836804707994,17.09972878672479,False
+elc_spv_003,ep_solar_003__irena,693.4036132267203,solar,Aggregated Plant - IRENA Gap - 3_Missing Solar Capacity -- operating,elc_spv_003,HU10-400,48.1671997674206,21.801977303232164,False
+elc_spv_003,ep_solar_pv_003,348.30000000000007,solar,Aggregated Plant -- operating,elc_spv_003,HU10-400,47.8137496540465,21.765034582253747,False
+elc_spv_003,ep_solar_pv_G100001022658,200.0,solar,Hungary Tokaj solar farm_-- -- operating,elc_spv_003,HU10-400,48.1298,21.3818,False
+elc_spv_004,ep_solar_004__irena,669.6548523267784,solar,Aggregated Plant - IRENA Gap - 4_Missing Solar Capacity -- operating,elc_spv_004,HU24-400,46.5900407747649,21.426174847327466,False
+elc_spv_004,ep_solar_pv_004,23.0,solar,Aggregated Plant -- operating,elc_spv_004,HU24-400,46.242985179918264,21.523188613458363,False
+elc_spv_005,ep_solar_005__irena,640.1415344465013,solar,Aggregated Plant - IRENA Gap - 5_Missing Solar Capacity -- operating,elc_spv_005,way/195168461-400,47.49783179206553,21.45197527274848,False
+elc_spv_005,ep_solar_pv_005,176.8,solar,Aggregated Plant -- operating,elc_spv_005,way/195168461-400,47.139020995528554,21.46063674962846,False
+elc_spv_005,ep_solar_pv_G100001000472,304.0,solar,Mezőcsát solar farm_1 -- operating,elc_spv_005,way/195168461-400,47.7823,20.9247,False
+elc_spv_006,ep_solar_pv_006,244.29999999999995,solar,Aggregated Plant -- operating,elc_spv_006,HU25-400,46.37481357196227,20.22802125365313,False
+elc_spv_007,ep_solar_pv_007,259.29999999999995,solar,Aggregated Plant -- operating,elc_spv_007,way/33846555-400,45.97822492856124,17.96018843096606,False
+elc_spv_008,ep_solar_pv_008,257.9,solar,Aggregated Plant -- operating,elc_spv_008,way/65034002-400,47.254162089836754,17.592422714185084,False
+elc_spv_009,ep_solar_pv_009,216.2,solar,Aggregated Plant -- operating,elc_spv_009,way/142109093-400,47.208171686337906,20.272946670727087,False
+elc_spv_010,ep_solar_pv_010,220.10000000000002,solar,Aggregated Plant -- operating,elc_spv_010,way/100872886-400,48.135584797269836,20.255078540651546,False
+elc_won_004,ep_windon_004__irena,1.7391585766524498,windon,Aggregated Plant -- operating,elc_won_004,way/166155511-400,47.596077567289846,17.05210361742891,False
+elc_won_004,ep_windon_wind_004,319.0,windon,Aggregated Plant -- operating,elc_won_004,way/166155511-400,47.63068632442363,16.57974233317888,False
+elc_won_005,ep_windon_005__irena,1.5860108636551302,windon,Aggregated Plant -- operating,elc_won_005,HU25-400,46.023270195227866,20.14918336393219,False
+elc_won_010,ep_windon_010__irena,1.6748305596924251,windon,Aggregated Plant -- operating,elc_won_010,HU15-220,47.72068156951318,21.2033903313116,False

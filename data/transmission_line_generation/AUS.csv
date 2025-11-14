@@ -1,0 +1,422 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_AU10-275,ep_hydro_AU10-275__irena,235.1712372224179,hydro,Aggregated Plant - IRENA Gap - AU10-275_Missing Hydro Capacity -- operating,e_AU10-275,AU10-275,-21.29682058928174,148.1687544645897,False
+e_AU102-330,ep_hydro_AU102-330__irena,11.16672541416989,hydro,Aggregated Plant - IRENA Gap - AU102-330_Missing Hydro Capacity -- operating,e_AU102-330,AU102-330,-36.09215119857238,148.16145142666014,False
+e_AU102-330,ep_hydro_dam_G100000600073,550.0,hydro,Murray 2 hydroelectric plant_ -- operating,e_AU102-330,AU102-330,-36.2424,148.1361,False
+e_AU103-330,ep_hydro_AU103-330__irena,20.506168487839254,hydro,Aggregated Plant - IRENA Gap - AU103-330_Missing Hydro Capacity -- operating,e_AU103-330,AU103-330,-35.98152457466227,148.1377627355246,False
+e_AU103-330,ep_hydro_dam_G100000600072,950.0,hydro,Murray 1 hydroelectric plant_ -- operating,e_AU103-330,AU103-330,-36.2468,148.1902,False
+e_AU103-330,ep_hydro_dam_G100001031241,60.0,hydro,Guthega hydroelectric plant_ -- operating,e_AU103-330,AU103-330,-36.3501,148.4137,False
+e_AU113-220,ep_gas_AU113-220__ember,255.3027690711988,gas,Aggregated Plant - EMBER Gap - AU113-220_Missing Gas Capacity -- operating,e_AU113-220,AU113-220,-37.88317911635393,144.81493710108194,False
+e_AU113-220,ep_gas_steam_turbine_G100000401532,510.0,gas,Newport power station_1 -- operating,e_AU113-220,AU113-220,-37.8415,144.89472,False
+e_AU126-500,ep_gas_AU126-500__ember,392.4654332388625,gas,Aggregated Plant - EMBER Gap - AU126-500_Missing Gas Capacity -- operating,e_AU126-500,AU126-500,-38.23477584642959,142.72060154769687,False
+e_AU126-500,ep_gas_gas_turbine_G100001018517,292.0,gas,Mortlake power station_1-1 -- operating,e_AU126-500,AU126-500,-38.063057,142.665721,False
+e_AU126-500,ep_gas_gas_turbine_G100001018518,292.0,gas,Mortlake power station_1-2 -- operating,e_AU126-500,AU126-500,-38.063057,142.665721,False
+e_AU129-500,ep_gas_AU129-500__ember,460.54617165784884,gas,Aggregated Plant - EMBER Gap - AU129-500_Missing Gas Capacity -- operating,e_AU129-500,AU129-500,-38.257367433512286,142.39880878566032,False
+e_AU13-220,ep_gas_AU13-220__ember,62.57420810568598,gas,Aggregated Plant -- operating,e_AU13-220,AU13-220,-22.51511959586811,117.35673128383654,False
+e_AU13-220,ep_gas_steam_turbine_G100000413432,125.0,gas,Solomon Hub mine power station_1 -- operating,e_AU13-220,AU13-220,-22.112887,117.882753,False
+e_AU138-220,ep_hydro_dam_G100000600078,363.0,hydro,Poatina hydroelectric plant_ -- operating,e_AU138-220,AU138-220,-41.8159,146.8901,False
+e_AU20-220,ep_gas_AU20-220__ember,125.24853494434105,gas,Aggregated Plant - EMBER Gap - AU20-220_Missing Gas Capacity -- operating,e_AU20-220,AU20-220,-22.897087124551735,119.6651100372269,False
+e_AU20-220,ep_gas_combined_cycle_G100000409798,190.0,gas,Yarnima power station_1 -- operating,e_AU20-220,AU20-220,-23.3422,119.710076,False
+e_AU20-220,ep_gas_internal_combustion_AU20-220,60.2,gas,Aggregated Plant -- operating,e_AU20-220,AU20-220,-23.172803264418064,120.12516343964961,False
+e_AU26-275,ep_coal_AU26-275__ember,107.0505594346764,coal,Aggregated Plant - EMBER Gap - AU26-275_Missing Coal Capacity -- operating,e_AU26-275,AU26-275,-24.167803904236425,150.64388253068938,False
+e_AU26-275,ep_coal_subcritical_G100000101160,350.0,coal,Callide power station_Phase B Unit 1 -- operating,e_AU26-275,AU26-275,-24.347222,150.617115,False
+e_AU26-275,ep_coal_subcritical_G100000101161,350.0,coal,Callide power station_Phase B Unit 2 -- operating,e_AU26-275,AU26-275,-24.347222,150.617115,False
+e_AU26-275,ep_coal_supercritical_G100000101162,460.0,coal,Callide power station_Phase C Unit 3 -- operating,e_AU26-275,AU26-275,-24.347222,150.617115,False
+e_AU26-275,ep_coal_supercritical_G100000101163,460.0,coal,Callide power station_Phase C Unit 4 -- operating,e_AU26-275,AU26-275,-24.347222,150.617115,False
+e_AU26-275,ep_gas_AU26-275__ember,375.4452486341159,gas,Aggregated Plant - EMBER Gap - AU26-275_Missing Gas Capacity -- operating,e_AU26-275,AU26-275,-24.519836464959763,150.66526486670162,False
+e_AU28-275,ep_hydro_AU28-275__irena,40.60627423334505,hydro,Aggregated Plant - IRENA Gap - AU28-275_Missing Hydro Capacity -- operating,e_AU28-275,AU28-275,-26.612417285880476,153.0714081129455,False
+e_AU29-275,ep_coal_AU29-275__ember,121.91869268949257,coal,Aggregated Plant - EMBER Gap - AU29-275_Missing Coal Capacity -- operating,e_AU29-275,AU29-275,-26.815856653820234,151.82231025675043,False
+e_AU29-275,ep_coal_subcritical_G100000109977,350.0,coal,Tarong power station_Unit 1 -- operating,e_AU29-275,AU29-275,-26.783688,151.915274,False
+e_AU29-275,ep_coal_subcritical_G100000109978,350.0,coal,Tarong power station_Unit 3 -- operating,e_AU29-275,AU29-275,-26.783688,151.915274,False
+e_AU29-275,ep_coal_subcritical_G100000114514,350.0,coal,Tarong power station_Unit 2 -- operating,e_AU29-275,AU29-275,-26.783688,151.915274,False
+e_AU29-275,ep_coal_subcritical_G100000114515,350.0,coal,Tarong power station_Unit 4 -- operating,e_AU29-275,AU29-275,-26.783688,151.915274,False
+e_AU29-275,ep_coal_supercritical_G100000109976,445.0,coal,Tarong North power station_Unit 1 -- operating,e_AU29-275,AU29-275,-26.777293,151.914311,False
+e_AU3-220,ep_gas_AU3-220__ember,75.08904972682318,gas,Aggregated Plant -- operating,e_AU3-220,AU3-220,-20.36586497866545,118.61521146831771,False
+e_AU3-220,ep_gas_combined_cycle_G100000401542,150.0,gas,South Hedland power station_1 -- operating,e_AU3-220,AU3-220,-20.427997,118.548111,False
+e_AU35-275,ep_gas_AU35-275__ember,66.0783637596044,gas,Aggregated Plant -- operating,e_AU35-275,AU35-275,-27.638505523870414,152.1864454267911,False
+e_AU50-330,ep_hydro_AU50-330__irena,18.272823405005273,hydro,Aggregated Plant - IRENA Gap - AU50-330_Missing Hydro Capacity -- operating,e_AU50-330,AU50-330,-30.40514104926545,151.7720472870549,False
+e_AU51-220,ep_gas_AU51-220__ember,294.84966859399236,gas,Aggregated Plant - EMBER Gap - AU51-220_Missing Gas Capacity -- operating,e_AU51-220,AU51-220,-30.186093294036066,122.09934841715697,False
+e_AU51-220,ep_gas_gas_turbine_AU51-220,244.0,gas,Aggregated Plant -- operating,e_AU51-220,AU51-220,-30.73083105445189,122.32303717032309,False
+e_AU51-220,ep_gas_gas_turbine_G100000413400,110.0,gas,Parkeston power station_1 -- operating,e_AU51-220,AU51-220,-30.737574,121.506442,False
+e_AU51-220,ep_gas_internal_combustion_G100001018603,150.0,gas,Nickel West gas-fired power station_1 -- operating,e_AU51-220,AU51-220,-27.2796589,120.501876,False
+e_AU53-330,ep_gas_AU53-330__ember,343.6575509164274,gas,Aggregated Plant - EMBER Gap - AU53-330_Missing Gas Capacity -- operating,e_AU53-330,AU53-330,-31.233881510695777,115.69073460868691,False
+e_AU53-330,ep_gas_gas_turbine_G100000401537,116.4,gas,Pinjar power station_7 -- operating,e_AU53-330,AU53-330,-31.5591,115.8208,False
+e_AU53-330,ep_gas_gas_turbine_G100000401538,116.4,gas,Pinjar power station_8 -- operating,e_AU53-330,AU53-330,-31.5591,115.8208,False
+e_AU53-330,ep_gas_gas_turbine_G100000401539,123.7,gas,Pinjar power station_9 -- operating,e_AU53-330,AU53-330,-31.5591,115.8208,False
+e_AU53-330,ep_gas_gas_turbine_G100000409639,165.0,gas,Neerabup power station_1 -- operating,e_AU53-330,AU53-330,-31.6713,115.8021,False
+e_AU53-330,ep_gas_gas_turbine_G100001031348,165.0,gas,Neerabup power station_2 -- operating,e_AU53-330,AU53-330,-31.6713,115.8021,False
+e_AU6-220,ep_gas_AU6-220__ember,65.07717642991341,gas,Aggregated Plant -- operating,e_AU6-220,AU6-220,-20.59695910550264,117.25698345914144,False
+e_AU6-220,ep_gas_combined_cycle_G100000409780,130.0,gas,Cape Lambert power station_1 -- operating,e_AU6-220,AU6-220,-20.6488,117.1407,False
+e_AU61-330,ep_oil_internal_combustion_G100001031067,120.0,oil,Peaking Power Plant_1 -- operating,e_AU61-330,AU61-330,-32.797767,151.002708,False
+e_AU66-330,ep_gas_AU66-330__ember,142.66919448096405,gas,Aggregated Plant - EMBER Gap - AU66-330_Missing Gas Capacity -- operating,e_AU66-330,AU66-330,-32.64027124212931,115.80697739558178,False
+e_AU66-330,ep_gas_combined_cycle_G100000409387,142.5,gas,Pinjarra power station_2 -- operating,e_AU66-330,AU66-330,-32.647305,115.946796,False
+e_AU66-330,ep_gas_combined_cycle_G100000409388,142.5,gas,Pinjarra power station_1 -- operating,e_AU66-330,AU66-330,-32.647305,115.946796,False
+e_AU7-220,ep_gas_AU7-220__ember,295.3502622588378,gas,Aggregated Plant - EMBER Gap - AU7-220_Missing Gas Capacity -- operating,e_AU7-220,AU7-220,-20.75163599974227,116.54380133570707,False
+e_AU7-220,ep_gas_gas_turbine_G100000409774,118.0,gas,Barrow Island LNG power station_5 -- operating,e_AU7-220,AU7-220,-20.77708,115.461583,False
+e_AU7-220,ep_gas_gas_turbine_G100000409775,118.0,gas,Barrow Island LNG power station_4 -- operating,e_AU7-220,AU7-220,-20.77708,115.461583,False
+e_AU7-220,ep_gas_gas_turbine_G100000409776,118.0,gas,Barrow Island LNG power station_3 -- operating,e_AU7-220,AU7-220,-20.77708,115.461583,False
+e_AU7-220,ep_gas_gas_turbine_G100000409777,118.0,gas,Barrow Island LNG power station_2 -- operating,e_AU7-220,AU7-220,-20.77708,115.461583,False
+e_AU7-220,ep_gas_gas_turbine_G100000409778,118.0,gas,Barrow Island LNG power station_1 -- operating,e_AU7-220,AU7-220,-20.77708,115.461583,False
+e_AU70-330,ep_gas_AU70-330__ember,375.4452486341159,gas,Aggregated Plant - EMBER Gap - AU70-330_Missing Gas Capacity -- operating,e_AU70-330,AU70-330,-32.90440438374279,151.6222067065663,False
+e_AU70-330,ep_gas_gas_turbine_G100000409394,375.0,gas,Kurri Kurri power (Snowy Hydro) station_1 -- construction,e_AU70-330,AU70-330,-32.7929753,151.4790847,False
+e_AU70-330,ep_gas_gas_turbine_G100000409397,375.0,gas,Kurri Kurri power (Snowy Hydro) station_2 -- construction,e_AU70-330,AU70-330,-32.7929753,151.4790847,False
+e_AU71-330,ep_gas_AU71-330__ember,190.22559264128535,gas,Aggregated Plant - EMBER Gap - AU71-330_Missing Gas Capacity -- operating,e_AU71-330,AU71-330,-32.93846522814448,115.97595033347599,False
+e_AU71-330,ep_gas_gas_turbine_G100000409800,190.0,gas,Wagerup power station_2 -- operating,e_AU71-330,AU71-330,-32.916,115.9186,False
+e_AU71-330,ep_gas_gas_turbine_G100000409801,190.0,gas,Wagerup power station_1 -- operating,e_AU71-330,AU71-330,-32.916,115.9186,False
+e_AU78-330,ep_coal_CFB_AU78-330,114.0,coal,Aggregated Plant -- operating,e_AU78-330,AU78-330,-33.04624692618874,116.06588458174939,False
+e_AU78-330,ep_coal_subcritical_AU78-330,34.0,coal,Aggregated Plant -- operating,e_AU78-330,AU78-330,-33.4200553733406,116.31827458929901,False
+e_AU78-330,ep_gas_AU78-330__ember,60.071239781458544,gas,Aggregated Plant -- operating,e_AU78-330,AU78-330,-33.39872689677658,115.81116957750801,False
+e_AU78-330,ep_gas_combined_cycle_G100000411126,120.0,gas,Worsley Refinery power station_CC1 -- operating,e_AU78-330,AU78-330,-33.23519,116.068694,False
+e_AU79-330,ep_coal_AU79-330__ember,23.12820728526959,coal,Aggregated Plant -- operating,e_AU79-330,AU79-330,-33.3708216043026,116.3051635005989,False
+e_AU79-330,ep_coal_subcritical_G100000101664,350.0,coal,Collie power station_Unit 1 -- operating,e_AU79-330,AU79-330,-33.343094,116.260847,False
+e_AU80-330,ep_coal_AU80-330__ember,91.85202321864209,coal,Aggregated Plant -- operating,e_AU80-330,AU80-330,-33.44711353757465,150.03400898012137,False
+e_AU80-330,ep_coal_subcritical_G100000107053,730.0,coal,Mount Piper power station_Unit 1 -- operating,e_AU80-330,AU80-330,-33.358087,150.032036,False
+e_AU80-330,ep_coal_subcritical_G100000107054,660.0,coal,Mount Piper power station_Unit 2 -- operating,e_AU80-330,AU80-330,-33.358087,150.032036,False
+e_AU9-220,ep_gas_AU9-220__ember,43.05105517671195,gas,Aggregated Plant -- operating,e_AU9-220,AU9-220,-20.583181188449554,116.85496863246044,False
+e_AU9-220,ep_gas_gas_turbine_AU9-220,86.0,gas,Aggregated Plant -- operating,e_AU9-220,AU9-220,-20.942375381112058,116.83503578832384,False
+e_AU90-275,ep_gas_AU90-275__ember,150.17809945364635,gas,Aggregated Plant - EMBER Gap - AU90-275_Missing Gas Capacity -- operating,e_AU90-275,AU90-275,-34.555837800396425,138.60671706232256,False
+e_AU94-330,ep_hydro_ps_G100000600052,80.0,hydro,Bendeela hydroelectric plant_ -- operating,e_AU94-330,AU94-330,-34.7338,150.467,False
+e_r12101895-330,ep_gas_combined_cycle_G100000401541,160.0,gas,Smithfield Energy Facility power station_4 -- operating,e_r12101895-330,relation/12101895-330,-33.849995,150.947311,False
+e_r12101895-330,ep_gas_r12101895-330__ember,80.09498637527805,gas,Aggregated Plant -- operating,e_r12101895-330,relation/12101895-330,-33.78754704062664,150.97374075694927,False
+e_w1046716011-220,ep_hydro_dam_G100000600079,244.0,hydro,Reece hydroelectric plant_ -- operating,e_w1046716011-220,way/1046716011-220,-41.7238,145.136,False
+e_w1071991895-275,ep_gas_combined_cycle_G100000401536,171.0,gas,Pelican Point power station_1 -- operating,e_w1071991895-275,way/1071991895-275,-34.765425,138.503177,False
+e_w1071991895-275,ep_gas_combined_cycle_G100001018523,358.0,gas,Pelican Point power station_2 -- operating,e_w1071991895-275,way/1071991895-275,-34.765425,138.503177,False
+e_w1071991895-275,ep_gas_w1071991895-275__ember,264.8140487032631,gas,Aggregated Plant - EMBER Gap - way/1071991895-275_Missing Gas Capacity -- operating,e_w1071991895-275,way/1071991895-275,-34.808706589205684,138.56850032026503,False
+e_w107265156-220,ep_hydro_dam_G100001027070,62.0,hydro,West Kiewa hydroelectric plant_ -- operating,e_w107265156-220,way/107265156-220,-36.7601,147.186,False
+e_w1157816987-275,ep_gas_combined_cycle_G100000401535,180.0,gas,Osborne power station_1 -- operating,e_w1157816987-275,way/1157816987-275,-34.798187,138.507166,False
+e_w1157816987-275,ep_gas_internal_combustion_G100000411345,210.0,gas,Barker Inlet power station_1 -- operating,e_w1157816987-275,way/1157816987-275,-34.8068,138.5213,False
+e_w1157816987-275,ep_gas_steam_turbine_G100000401557,200.0,gas,Torrens Island power station_B2 -- operating,e_w1157816987-275,way/1157816987-275,-34.8068,138.5213,False
+e_w1157816987-275,ep_gas_steam_turbine_G100000401558,200.0,gas,Torrens Island power station_B3 -- operating,e_w1157816987-275,way/1157816987-275,-34.8068,138.5213,False
+e_w1157816987-275,ep_gas_steam_turbine_G100000401559,200.0,gas,Torrens Island power station_B4 -- operating,e_w1157816987-275,way/1157816987-275,-34.8068,138.5213,False
+e_w1157816987-275,ep_gas_w1157816987-275__ember,595.7064611661305,gas,Aggregated Plant - EMBER Gap - way/1157816987-275_Missing Gas Capacity -- operating,e_w1157816987-275,way/1157816987-275,-34.66889186446264,138.4207465870829,False
+e_w1157816987-275,ep_m_gas_steam_turbine_G100000401556,200.0,gas,Torrens Island power station_B1 -- mothballed,e_w1157816987-275,way/1157816987-275,-34.8068,138.5213,False
+e_w1169828006-275,ep_coal_supercritical_G100000105802,750.0,coal,Kogan Creek power station_Unit 1 -- operating,e_w1169828006-275,way/1169828006-275,-26.917881,150.750738,False
+e_w1169828006-275,ep_coal_w1169828006-275__ember,49.56044418272056,coal,Aggregated Plant -- operating,e_w1169828006-275,way/1169828006-275,-26.803769291040616,150.61171965463504,False
+e_w119995150-275,ep_hydro_w119995150-275__irena,16.24250969333802,hydro,Aggregated Plant - IRENA Gap - way/119995150-275_Missing Hydro Capacity -- operating,e_w119995150-275,way/119995150-275,-24.286539956621333,150.65854557304124,False
+e_w1226453352-220,ep_hydro_dam_G100000600070,150.0,hydro,McKay Creek hydroelectric plant_ -- operating,e_w1226453352-220,way/1226453352-220,-36.8583,147.2344,False
+e_w1226453986-220,ep_hydro_dam_G100000600059,180.0,hydro,Dartmouth hydroelectric plant_ -- operating,e_w1226453986-220,way/1226453986-220,-36.5567,147.5228,False
+e_w1301640404-275,ep_gas_gas_turbine_w1301640404-275,90.0,gas,Aggregated Plant -- operating,e_w1301640404-275,way/1301640404-275,-33.6050656351131,139.02087537275096,False
+e_w1301640404-275,ep_gas_w1301640404-275__ember,45.053429836093905,gas,Aggregated Plant -- operating,e_w1301640404-275,way/1301640404-275,-33.958267016010055,138.96076676155064,False
+e_w146581911-220,ep_coal_subcritical_G100000106430,560.0,coal,Loy Yang A power station_Unit 1 -- operating,e_w146581911-220,way/146581911-220,-38.252414,146.575334,False
+e_w146581911-220,ep_coal_subcritical_G100000106431,535.0,coal,Loy Yang A power station_Unit 2 -- operating,e_w146581911-220,way/146581911-220,-38.252414,146.575334,False
+e_w146581911-220,ep_coal_subcritical_G100000106432,560.0,coal,Loy Yang A power station_Unit 3 -- operating,e_w146581911-220,way/146581911-220,-38.252414,146.575334,False
+e_w146581911-220,ep_coal_subcritical_G100000106433,560.0,coal,Loy Yang A power station_Unit 4 -- operating,e_w146581911-220,way/146581911-220,-38.252414,146.575334,False
+e_w146581911-220,ep_coal_w146581911-220__ember,146.3685118196347,coal,Aggregated Plant - EMBER Gap - way/146581911-220_Missing Coal Capacity -- operating,e_w146581911-220,way/146581911-220,-38.21722436035079,146.48773968705714,False
+e_w146581911-500,ep_coal_subcritical_G100000106434,513.0,coal,Loy Yang B power station_Unit 1 -- operating,e_w146581911-500,way/146581911-500,-38.255503,146.586018,False
+e_w146581911-500,ep_coal_subcritical_G100000106435,513.0,coal,Loy Yang B power station_Unit 2 -- operating,e_w146581911-500,way/146581911-500,-38.255503,146.586018,False
+e_w146581911-500,ep_coal_w146581911-500__ember,67.79868764196172,coal,Aggregated Plant -- operating,e_w146581911-500,way/146581911-500,-37.99214708846278,146.52196989670037,False
+e_w146581911-500,ep_gas_gas_turbine_w146581911-500,300.0,gas,Aggregated Plant -- operating,e_w146581911-500,way/146581911-500,-38.43963303382764,146.77419259293168,False
+e_w146581911-500,ep_gas_w146581911-500__ember,150.17809945364635,gas,Aggregated Plant - EMBER Gap - way/146581911-500_Missing Gas Capacity -- operating,e_w146581911-500,way/146581911-500,-38.44539211134868,146.38078273279496,False
+e_w153737699-275,ep_hydro_ps_G100000600090,570.0,hydro,Wivenhoe hydroelectric plant_ -- operating,e_w153737699-275,way/153737699-275,-27.3729,152.6323,False
+e_w153737699-275,ep_hydro_w153737699-275__irena,11.572788156503343,hydro,Aggregated Plant - IRENA Gap - way/153737699-275_Missing Hydro Capacity -- operating,e_w153737699-275,way/153737699-275,-27.506767820927035,152.79367420001057,False
+e_w160295596-330,ep_gas_w160295596-330__ember,350.4155653918415,gas,Aggregated Plant - EMBER Gap - way/160295596-330_Missing Gas Capacity -- operating,e_w160295596-330,way/160295596-330,-34.702137223770265,149.96008084721862,False
+e_w165154628-275,ep_gas_w165154628-275__ember,100.11873296909756,gas,Aggregated Plant - EMBER Gap - way/165154628-275_Missing Gas Capacity -- operating,e_w165154628-275,way/165154628-275,-32.73731391500916,138.0487529669247,False
+e_w166113109-275,ep_bioenergy_w166113109-275,40.0,bioenergy,Aggregated Plant -- operating,e_w166113109-275,way/166113109-275,-21.27859213120498,148.7569288176852,False
+e_w166113109-275,ep_bioenergy_w166113109-275__ember,62.5563909774436,bioenergy,Aggregated Plant - EMBER Gap - way/166113109-275_Missing Bioenergy Capacity -- operating,e_w166113109-275,way/166113109-275,-21.62705148010895,149.04348969077452,False
+e_w166113109-275,ep_gas_internal_combustion_w166113109-275,63.8,gas,Aggregated Plant -- operating,e_w166113109-275,way/166113109-275,-21.983621158996257,148.60736880098696,False
+e_w166113109-275,ep_gas_w166113109-275__ember,31.93787581714212,gas,Aggregated Plant -- operating,e_w166113109-275,way/166113109-275,-21.64387613426176,148.32301306618072,False
+e_w167694317-330,ep_coal_subcritical_G100000100679,685.0,coal,Bayswater power station_Unit 1 -- operating,e_w167694317-330,way/167694317-330,-32.3940422,150.9500828,False
+e_w167694317-330,ep_coal_subcritical_G100000100680,660.0,coal,Bayswater power station_Unit 2 -- operating,e_w167694317-330,way/167694317-330,-32.3940422,150.9500828,False
+e_w167694317-330,ep_coal_subcritical_G100000100681,660.0,coal,Bayswater power station_Unit 3 -- operating,e_w167694317-330,way/167694317-330,-32.3940422,150.9500828,False
+e_w167694317-330,ep_coal_subcritical_G100000100682,660.0,coal,Bayswater power station_Unit 4 -- operating,e_w167694317-330,way/167694317-330,-32.3940422,150.9500828,False
+e_w167694317-330,ep_coal_w167694317-330__ember,176.10477832926702,coal,Aggregated Plant - EMBER Gap - way/167694317-330_Missing Coal Capacity -- operating,e_w167694317-330,way/167694317-330,-32.399111405358035,151.0065928389258,False
+e_w167694320-330,ep_hydro_w167694320-330__irena,12.587945012336968,hydro,Aggregated Plant - IRENA Gap - way/167694320-330_Missing Hydro Capacity -- operating,e_w167694320-330,way/167694320-330,-32.36800512823153,151.0876566405039,False
+e_w168810465-220,ep_bioenergy_w168810465-220__ember,109.4736842105263,bioenergy,Aggregated Plant - EMBER Gap - way/168810465-220_Missing Bioenergy Capacity -- operating,e_w168810465-220,way/168810465-220,-38.15940719428889,146.30742541173854,False
+e_w169406848-330,ep_gas_w169406848-330__ember,284.33720163223705,gas,Aggregated Plant - EMBER Gap - way/169406848-330_Missing Gas Capacity -- operating,e_w169406848-330,way/169406848-330,-32.66522075822021,149.19556322305093,False
+e_w169406848-330,ep_hydro_w169406848-330__irena,16.24250969333802,hydro,Aggregated Plant - IRENA Gap - way/169406848-330_Missing Hydro Capacity -- operating,e_w169406848-330,way/169406848-330,-32.58880125908432,148.70006192572035,False
+e_w170833885-330,ep_coal_supercritical_G100000106926,440.0,coal,Millmerran power station_Unit 1 -- operating,e_w170833885-330,way/170833885-330,-27.960696,151.279301,False
+e_w170833885-330,ep_coal_supercritical_G100000106927,440.0,coal,Millmerran power station_Unit 2 -- operating,e_w170833885-330,way/170833885-330,-27.960696,151.279301,False
+e_w170833885-330,ep_coal_w170833885-330__ember,58.15092117439211,coal,Aggregated Plant -- operating,e_w170833885-330,way/170833885-330,-28.016622046624263,151.44184529226214,False
+e_w170842253-275,ep_gas_combined_cycle_G100000401506,644.0,gas,Darling Downs power station_1 -- operating,e_w170842253-275,way/170842253-275,-27.1169,150.8942,False
+e_w170842253-275,ep_gas_w170842253-275__ember,322.38232016049415,gas,Aggregated Plant - EMBER Gap - way/170842253-275_Missing Gas Capacity -- operating,e_w170842253-275,way/170842253-275,-26.95315094442468,150.7312886018863,False
+e_w170842253-330,ep_gas_gas_turbine_G100000401493,188.0,gas,Braemar 1 power station_1 -- operating,e_w170842253-330,way/170842253-330,-27.1109,150.9053,False
+e_w170842253-330,ep_gas_gas_turbine_G100000401494,188.0,gas,Braemar 1 power station_2 -- operating,e_w170842253-330,way/170842253-330,-27.1109,150.9053,False
+e_w170842253-330,ep_gas_gas_turbine_G100000401495,188.0,gas,Braemar 1 power station_3 -- operating,e_w170842253-330,way/170842253-330,-27.1109,150.9053,False
+e_w170842253-330,ep_gas_gas_turbine_G100000401496,173.0,gas,Braemar 2 power station_5 -- operating,e_w170842253-330,way/170842253-330,-27.1128,150.9049,False
+e_w170842253-330,ep_gas_gas_turbine_G100000401497,173.0,gas,Braemar 2 power station_6 -- operating,e_w170842253-330,way/170842253-330,-27.1128,150.9049,False
+e_w170842253-330,ep_gas_gas_turbine_G100000401498,173.0,gas,Braemar 2 power station_7 -- operating,e_w170842253-330,way/170842253-330,-27.1128,150.9049,False
+e_w170842253-330,ep_gas_w170842253-330__ember,542.1429390276633,gas,Aggregated Plant - EMBER Gap - way/170842253-330_Missing Gas Capacity -- operating,e_w170842253-330,way/170842253-330,-26.94232291712049,150.95561226016653,False
+e_w171189090-275,ep_gas_combined_cycle_G100000401560,242.0,gas,Townsville power station_1 -- operating,e_w171189090-275,way/171189090-275,-19.200359,146.616587,False
+e_w171189090-275,ep_gas_w171189090-275__ember,121.14366689260805,gas,Aggregated Plant - EMBER Gap - way/171189090-275_Missing Gas Capacity -- operating,e_w171189090-275,way/171189090-275,-19.570346950289437,146.59861695052612,False
+e_w171189090-275,ep_oil_gas_turbine_G100000411340,135.0,oil,Mt Stuart power station_3 -- operating,e_w171189090-275,way/171189090-275,-19.337745,146.851595,False
+e_w171189090-275,ep_oil_gas_turbine_G100000411341,144.0,oil,Mt Stuart power station_2 -- operating,e_w171189090-275,way/171189090-275,-19.337745,146.851595,False
+e_w171189090-275,ep_oil_gas_turbine_G100000411342,144.0,oil,Mt Stuart power station_1 -- operating,e_w171189090-275,way/171189090-275,-19.337745,146.851595,False
+e_w171484159-275,ep_coal_subcritical_G100000109599,365.0,coal,Stanwell power station_Unit 1 -- operating,e_w171484159-275,way/171484159-275,-23.509114,150.317801,False
+e_w171484159-275,ep_coal_subcritical_G100000109600,365.0,coal,Stanwell power station_Unit 2 -- operating,e_w171484159-275,way/171484159-275,-23.509114,150.317801,False
+e_w171484159-275,ep_coal_subcritical_G100000109601,365.0,coal,Stanwell power station_Unit 3 -- operating,e_w171484159-275,way/171484159-275,-23.509114,150.317801,False
+e_w171484159-275,ep_coal_subcritical_G100000109602,365.0,coal,Stanwell power station_Unit 4 -- operating,e_w171484159-275,way/171484159-275,-23.509114,150.317801,False
+e_w171484159-275,ep_coal_w171484159-275__ember,96.47766467569602,coal,Aggregated Plant -- operating,e_w171484159-275,way/171484159-275,-23.594190776329956,150.4172548306955,False
+e_w171581408-330,ep_bioenergy_w171581408-330,38.0,bioenergy,Aggregated Plant -- operating,e_w171581408-330,way/171581408-330,-28.710826801870184,153.17614368736434,False
+e_w171581408-330,ep_bioenergy_w171581408-330__ember,59.42857142857143,bioenergy,Aggregated Plant - EMBER Gap - way/171581408-330_Missing Bioenergy Capacity -- operating,e_w171581408-330,way/171581408-330,-29.069538790853347,153.20952378300632,False
+e_w171582472-275,ep_gas_combined_cycle_G100000401505,140.0,gas,Condamine power station_1 -- operating,e_w171582472-275,way/171582472-275,-26.668049,150.270033,False
+e_w171582472-275,ep_gas_w171582472-275__ember,70.0831130783683,gas,Aggregated Plant -- operating,e_w171582472-275,way/171582472-275,-26.288977761426672,150.29111034205727,False
+e_w171728751-275,ep_hydro_w171728751-275__irena,40.60627423334505,hydro,Aggregated Plant - IRENA Gap - way/171728751-275_Missing Hydro Capacity -- operating,e_w171728751-275,way/171728751-275,-24.721533845222883,151.83120049388654,False
+e_w171744075-275,ep_coal_w171744075-275__ember,62.4461596702279,coal,Aggregated Plant -- operating,e_w171744075-275,way/171744075-275,-20.142651645167298,147.82596850118045,False
+e_w171853256-330,ep_solar_pv_330,1.1,solar,Aggregated Plant -- operating,e_w171853256-330,way/171853256-330,-30.158110485946064,153.1916458355242,False
+e_w172231145-330,ep_gas_gas_turbine_G100000401562,166.0,gas,Uranquinty power station_11 -- operating,e_w172231145-330,way/172231145-330,-35.179395,147.212839,False
+e_w172231145-330,ep_gas_gas_turbine_G100000401563,166.0,gas,Uranquinty power station_12 -- operating,e_w172231145-330,way/172231145-330,-35.179395,147.212839,False
+e_w172231145-330,ep_gas_gas_turbine_G100000401564,166.0,gas,Uranquinty power station_13 -- operating,e_w172231145-330,way/172231145-330,-35.179395,147.212839,False
+e_w172231145-330,ep_gas_gas_turbine_G100000401565,166.0,gas,Uranquinty power station_14 -- operating,e_w172231145-330,way/172231145-330,-35.179395,147.212839,False
+e_w172231145-330,ep_gas_w172231145-330__ember,332.39419345740396,gas,Aggregated Plant - EMBER Gap - way/172231145-330_Missing Gas Capacity -- operating,e_w172231145-330,way/172231145-330,-35.33521769988737,147.29826654624378,False
+e_w172620016-330,ep_gas_combined_cycle_G100000401548,480.0,gas,Tallawarra power station_A -- operating,e_w172620016-330,way/172620016-330,-34.522525,150.806011,False
+e_w172620016-330,ep_gas_gas_turbine_G100000401549,316.0,gas,Tallawarra power station_B -- operating,e_w172620016-330,way/172620016-330,-34.522525,150.806011,False
+e_w172620016-330,ep_gas_w172620016-330__ember,728.8643760150304,gas,Aggregated Plant - EMBER Gap - way/172620016-330_Missing Gas Capacity -- operating,e_w172620016-330,way/172620016-330,-34.590518284496284,150.8818406205443,False
+e_w172714955-275,ep_gas_gas_turbine_G100000411127,128.0,gas,Quarantine power station_5 -- operating,e_w172714955-275,way/172714955-275,-34.7792212,138.5205492,False
+e_w172714955-275,ep_gas_w172714955-275__ember,146.67394379972797,gas,Aggregated Plant - EMBER Gap - way/172714955-275_Missing Gas Capacity -- operating,e_w172714955-275,way/172714955-275,-34.84710968995163,138.6240961469037,False
+e_w172867384-275,ep_oil_internal_combustion_w172867384-275,64.8,oil,Aggregated Plant -- operating,e_w172867384-275,way/172867384-275,-34.94755837358212,138.6547618638785,False
+e_w172878761-275,ep_gas_gas_turbine_G100000401533,173.0,gas,Oakey power station_1 -- operating,e_w172878761-275,way/172878761-275,-27.418261,151.678831,False
+e_w172878761-275,ep_gas_gas_turbine_G100000401534,173.0,gas,Oakey power station_2 -- operating,e_w172878761-275,way/172878761-275,-27.418261,151.678831,False
+e_w172878761-275,ep_gas_w172878761-275__ember,173.2054080365388,gas,Aggregated Plant - EMBER Gap - way/172878761-275_Missing Gas Capacity -- operating,e_w172878761-275,way/172878761-275,-27.524669204272605,151.7750005774574,False
+e_w179898706-330,ep_hydro_dam_G100001027068,58.0,hydro,Hume hydroelectric plant_ -- operating,e_w179898706-330,way/179898706-330,-36.1066,147.0326,False
+e_w194289858-330,ep_coal_subcritical_G100000107086,200.0,coal,Muja power station_Stage C Unit 6 -- operating,e_w194289858-330,way/194289858-330,-33.445875,116.307528,False
+e_w194289858-330,ep_coal_subcritical_G100000107087,227.0,coal,Muja power station_Stage D Unit 7 -- operating,e_w194289858-330,way/194289858-330,-33.445875,116.307528,False
+e_w194289858-330,ep_coal_subcritical_G100000107088,227.0,coal,Muja power station_Stage D Unit 8 -- operating,e_w194289858-330,way/194289858-330,-33.445875,116.307528,False
+e_w194289858-330,ep_coal_w194289858-330__ember,43.21670732733233,coal,Aggregated Plant -- operating,e_w194289858-330,way/194289858-330,-33.54635609709283,116.40851518373418,False
+e_w196363948-275,ep_hydro_ror_G100001027064,60.0,hydro,Barron Gorge hydroelectric plant_ -- operating,e_w196363948-275,way/196363948-275,-16.8502,145.6465,False
+e_w196363948-275,ep_solar_pv_275,13.1,solar,Aggregated Plant -- operating,e_w196363948-275,way/196363948-275,-16.69083203809797,145.8037803734211,False
+e_w196583889-275,ep_hydro_ps_G100000600065,250.0,hydro,Kidston hydroelectric plant_ -- construction,e_w196583889-275,way/196583889-275,-19.0524,144.1449,False
+e_w196583889-275,ep_hydro_ror_G100000600064,88.0,hydro,Kareeya hydroelectric plant_ -- operating,e_w196583889-275,way/196583889-275,-17.767,145.578,False
+e_w204894935-330,ep_hydro_w204894935-330__irena,20.709199859005974,hydro,Aggregated Plant - IRENA Gap - way/204894935-330_Missing Hydro Capacity -- operating,e_w204894935-330,way/204894935-330,-32.29355718191122,150.91968740200804,False
+e_w205163985-220,ep_gas_w205163985-220__ember,100.11873296909756,gas,Aggregated Plant - EMBER Gap - way/205163985-220_Missing Gas Capacity -- operating,e_w205163985-220,way/205163985-220,-36.41599654651958,146.24855372191766,False
+e_w208360164-330,ep_hydro_dam_G100000600087,287.0,hydro,Tumut 2 hydroelectric plant_ -- operating,e_w208360164-330,way/208360164-330,-35.8751,148.3698,False
+e_w208360164-330,ep_hydro_ps_G100000600081,2000.0,hydro,Snowy 2.0 hydroelectric plant_ -- construction,e_w208360164-330,way/208360164-330,-35.7452,148.6536,False
+e_w208360164-330,ep_hydro_w208360164-330__irena,46.43327458583007,hydro,Aggregated Plant - IRENA Gap - way/208360164-330_Missing Hydro Capacity -- operating,e_w208360164-330,way/208360164-330,-35.89313363557145,148.49811060894694,False
+e_w208364780-330,ep_hydro_dam_G100001027065,80.0,hydro,Blowering hydroelectric plant_ -- operating,e_w208364780-330,way/208364780-330,-35.3986,148.2463,False
+e_w208364780-330,ep_hydro_ps_G100000600088,1800.0,hydro,Tumut 3 hydroelectric plant_ -- operating,e_w208364780-330,way/208364780-330,-35.611,148.292,False
+e_w208364780-330,ep_hydro_w208364780-330__irena,38.169897779344346,hydro,Aggregated Plant - IRENA Gap - way/208364780-330_Missing Hydro Capacity -- operating,e_w208364780-330,way/208364780-330,-35.43229814280789,148.24277742604426,False
+e_w229771692-220,ep_gas_combined_cycle_G100000401507,121.0,gas,Diamantina power station_1 -- operating,e_w229771692-220,way/229771692-220,-20.784184,139.4832,False
+e_w229771692-220,ep_gas_combined_cycle_G100000401508,121.0,gas,Diamantina power station_2 -- operating,e_w229771692-220,way/229771692-220,-20.784184,139.4832,False
+e_w229771692-220,ep_gas_gas_turbine_w229771692-220,60.0,gas,Aggregated Plant -- operating,e_w229771692-220,way/229771692-220,-20.333113691095672,139.42978287697497,False
+e_w229771692-220,ep_gas_internal_combustion_w229771692-220,77.0,gas,Aggregated Plant -- operating,e_w229771692-220,way/229771692-220,-20.770924424130754,139.93723381348917,False
+e_w229771692-220,ep_gas_w229771692-220__ember,189.7249989764399,gas,Aggregated Plant - EMBER Gap - way/229771692-220_Missing Gas Capacity -- operating,e_w229771692-220,way/229771692-220,-21.195493988573514,139.6606938534822,False
+e_w229887636-220,ep_coal_subcritical_G100000111273,360.0,coal,Yallourn W power station_Unit 1 -- operating,e_w229887636-220,way/229887636-220,-38.177284,146.34421,False
+e_w229887636-220,ep_coal_subcritical_G100000111274,360.0,coal,Yallourn W power station_Unit 2 -- operating,e_w229887636-220,way/229887636-220,-38.177284,146.34421,False
+e_w229887636-220,ep_coal_subcritical_G100000111275,380.0,coal,Yallourn W power station_Unit 3 -- operating,e_w229887636-220,way/229887636-220,-38.177284,146.34421,False
+e_w229887636-220,ep_coal_subcritical_G100000111276,380.0,coal,Yallourn W power station_Unit 4 -- operating,e_w229887636-220,way/229887636-220,-38.177284,146.34421,False
+e_w229887636-220,ep_coal_w229887636-220__ember,97.79927652056857,coal,Aggregated Plant -- operating,e_w229887636-220,way/229887636-220,-38.21319548566147,146.22741459476862,False
+e_w24024039-330,ep_gas_gas_turbine_G100000401501,181.0,gas,Colongra power station_1 -- operating,e_w24024039-330,way/24024039-330,-33.209894,151.542652,False
+e_w24024039-330,ep_gas_gas_turbine_G100000401502,181.0,gas,Colongra power station_2 -- operating,e_w24024039-330,way/24024039-330,-33.209894,151.542652,False
+e_w24024039-330,ep_gas_gas_turbine_G100000401503,181.0,gas,Colongra power station_3 -- operating,e_w24024039-330,way/24024039-330,-33.209894,151.542652,False
+e_w24024039-330,ep_gas_gas_turbine_G100000401504,181.0,gas,Colongra power station_4 -- operating,e_w24024039-330,way/24024039-330,-33.209894,151.542652,False
+e_w24024039-330,ep_gas_w24024039-330__ember,362.42981334813317,gas,Aggregated Plant - EMBER Gap - way/24024039-330_Missing Gas Capacity -- operating,e_w24024039-330,way/24024039-330,-33.038615841614686,151.64482698239863,False
+e_w24038114-500,ep_coal_subcritical_G100000102667,720.0,coal,Eraring power station_Unit 1 -- operating,e_w24038114-500,way/24038114-500,-33.06223,151.521359,False
+e_w24038114-500,ep_coal_subcritical_G100000102668,720.0,coal,Eraring power station_Unit 2 -- operating,e_w24038114-500,way/24038114-500,-33.06223,151.521359,False
+e_w24038114-500,ep_coal_subcritical_G100000102669,720.0,coal,Eraring power station_Unit 3 -- operating,e_w24038114-500,way/24038114-500,-33.06223,151.521359,False
+e_w24038114-500,ep_coal_subcritical_G100000102670,720.0,coal,Eraring power station_Unit 4 -- operating,e_w24038114-500,way/24038114-500,-33.06223,151.521359,False
+e_w24038114-500,ep_coal_w24038114-500__ember,200.09203331370375,coal,Aggregated Plant - EMBER Gap - way/24038114-500_Missing Coal Capacity -- operating,e_w24038114-500,way/24038114-500,-33.09507615751545,151.42594829374892,False
+e_w243736783-330,ep_hydro_ps_G100000600063,160.0,hydro,Kangaroo Valley hydroelectric plant_ -- operating,e_w243736783-330,way/243736783-330,-34.7232,150.4796,False
+e_w246978103-275,ep_gas_combined_cycle_G100000401547,385.0,gas,Swanbank-E power station_Swanbank-E -- operating,e_w246978103-275,way/246978103-275,-27.660536,152.812899,False
+e_w246978103-275,ep_gas_w246978103-275__ember,192.7285609655128,gas,Aggregated Plant - EMBER Gap - way/246978103-275_Missing Gas Capacity -- operating,e_w246978103-275,way/246978103-275,-27.798862037612473,152.68652576137882,False
+e_w306840322-220,ep_hydro_dam_G100000600051,81.0,hydro,Bastyan hydroelectric plant_ -- operating,e_w306840322-220,way/306840322-220,-41.736,145.532,False
+e_w306840322-220,ep_hydro_dam_G100000600069,80.0,hydro,Mackintosh hydroelectric plant_ -- operating,e_w306840322-220,way/306840322-220,-41.6997,145.6461,False
+e_w37106533-330,ep_solar_pv_330,1.1,solar,Aggregated Plant -- operating,e_w37106533-330,way/37106533-330,-31.978316671720574,115.66461496973045,False
+e_w376493893-330,ep_coal_subcritical_G100000110540,660.0,coal,Vales Point power station_Phase B Unit 1 -- operating,e_w376493893-330,way/376493893-330,-33.161012,151.545252,False
+e_w376493893-330,ep_coal_subcritical_G100000110541,660.0,coal,Vales Point power station_Phase B Unit 2 -- operating,e_w376493893-330,way/376493893-330,-33.161012,151.545252,False
+e_w376493893-330,ep_coal_w376493893-330__ember,87.22638176158817,coal,Aggregated Plant -- operating,e_w376493893-330,way/376493893-330,-33.06880856180823,151.47593232520487,False
+e_w432510474-275,ep_gas_combined_cycle_G100000401572,180.0,gas,Yarwun power station_1 -- operating,e_w432510474-275,way/432510474-275,-23.831369,151.150241,False
+e_w432510474-275,ep_gas_w432510474-275__ember,90.10685967218781,gas,Aggregated Plant -- operating,e_w432510474-275,way/432510474-275,-23.750060998012316,151.2809278483677,False
+e_w43841766-330,ep_bioenergy_w43841766-330,73.00000000000001,bioenergy,Aggregated Plant -- construction,e_w43841766-330,way/43841766-330,-31.83857948953708,115.79774848065551,False
+e_w43841766-330,ep_bioenergy_w43841766-330__ember,114.16541353383458,bioenergy,Aggregated Plant - EMBER Gap - way/43841766-330_Missing Bioenergy Capacity -- operating,e_w43841766-330,way/43841766-330,-32.1540125234979,116.13413234619225,False
+e_w43841766-330,ep_gas_combined_cycle_G100000401500,240.0,gas,Cockburn power station_1 -- operating,e_w43841766-330,way/43841766-330,-32.2001,115.7737,False
+e_w43841766-330,ep_gas_combined_cycle_G100000401523,320.0,gas,Kwinana Newgen power station_1 -- operating,e_w43841766-330,way/43841766-330,-32.202,115.773,False
+e_w43841766-330,ep_gas_combined_cycle_G100000409792,119.0,gas,Kwinana Refinery cogeneration power station_1 -- operating,e_w43841766-330,way/43841766-330,-32.2226,115.7662,False
+e_w43841766-330,ep_gas_gas_turbine_G100000401521,100.0,gas,Kwinana power station_HEGT1 -- operating,e_w43841766-330,way/43841766-330,-32.198337,115.775155,False
+e_w43841766-330,ep_gas_gas_turbine_G100000401522,100.0,gas,Kwinana power station_HEGT2 -- operating,e_w43841766-330,way/43841766-330,-32.198337,115.775155,False
+e_w43841766-330,ep_gas_gas_turbine_w43841766-330,120.0,gas,Aggregated Plant -- operating,e_w43841766-330,way/43841766-330,-32.55803513285085,115.75506481346558,False
+e_w43841766-330,ep_gas_w43841766-330__ember,500.09307118064237,gas,Aggregated Plant - EMBER Gap - way/43841766-330_Missing Gas Capacity -- operating,e_w43841766-330,way/43841766-330,-32.18137475365044,115.41654333404492,False
+e_w45020488-275,ep_bioenergy_w45020488-275,30.0,bioenergy,Aggregated Plant -- operating,e_w45020488-275,way/45020488-275,-27.915320387180238,153.423698461661,False
+e_w45020488-275,ep_bioenergy_w45020488-275__ember,46.9172932330827,bioenergy,Aggregated Plant -- operating,e_w45020488-275,way/45020488-275,-28.272085886438195,153.37293930897445,False
+e_w45378183-330,ep_hydro_ror_G100001027069,50.0,hydro,Warragamba hydroelectric plant_ -- operating,e_w45378183-330,way/45378183-330,-33.8832,150.5965,False
+e_w46099414-275,ep_bioenergy_w46099414-275,30.0,bioenergy,Aggregated Plant -- operating,e_w46099414-275,way/46099414-275,-27.486289882156864,153.10304343164304,False
+e_w46099414-275,ep_bioenergy_w46099414-275__ember,46.9172932330827,bioenergy,Aggregated Plant -- operating,e_w46099414-275,way/46099414-275,-27.83922632103742,153.08865189093973,False
+e_w480009927-220,ep_gas_gas_turbine_w480009927-220,440.0,gas,Aggregated Plant -- operating,e_w480009927-220,way/480009927-220,-38.10185057807725,146.41113394568518,False
+e_w480009927-220,ep_gas_w480009927-220__ember,220.26121253201464,gas,Aggregated Plant - EMBER Gap - way/480009927-220_Missing Gas Capacity -- operating,e_w480009927-220,way/480009927-220,-38.46108672810445,146.43890763873497,False
+e_w49831064-330,ep_gas_internal_combustion_w49831064-330,55.6,gas,Aggregated Plant -- operating,e_w49831064-330,way/49831064-330,-33.817322320936285,150.73162028348779,False
+e_w49831064-330,ep_gas_w49831064-330__ember,27.833007765409125,gas,Aggregated Plant -- operating,e_w49831064-330,way/49831064-330,-34.199334003365585,151.0112891596048,False
+e_w49831064-330,ep_hydro_w49831064-330__irena,20.303137116672524,hydro,Aggregated Plant - IRENA Gap - way/49831064-330_Missing Hydro Capacity -- operating,e_w49831064-330,way/49831064-330,-34.227011699244,150.53604125067392,False
+e_w506179980-220,ep_hydro_ror_G100000600054,140.0,hydro,Bogong hydroelectric plant_ -- operating,e_w506179980-220,way/506179980-220,-36.8064,147.2252,False
+e_w51542858-220,ep_gas_gas_turbine_G100000401524,156.0,gas,Laverton North power station_1 -- operating,e_w51542858-220,way/51542858-220,-37.84163,144.78873,False
+e_w51542858-220,ep_gas_gas_turbine_G100000401525,156.0,gas,Laverton North power station_2 -- operating,e_w51542858-220,way/51542858-220,-37.84163,144.78873,False
+e_w51542858-220,ep_gas_w51542858-220__ember,156.1852234317922,gas,Aggregated Plant - EMBER Gap - way/51542858-220_Missing Gas Capacity -- operating,e_w51542858-220,way/51542858-220,-37.802870888031414,144.73868909301814,False
+e_w545150725-220,ep_gas_combined_cycle_G100000401550,208.0,gas,Tamar Valley power station_2 -- operating,e_w545150725-220,way/545150725-220,-41.139935,146.903442,False
+e_w545150725-220,ep_gas_gas_turbine_w545150725-220,60.0,gas,Aggregated Plant -- operating,e_w545150725-220,way/545150725-220,-40.948443526316844,146.89575844276806,False
+e_w545150725-220,ep_gas_w545150725-220__ember,134.15910217859073,gas,Aggregated Plant - EMBER Gap - way/545150725-220_Missing Gas Capacity -- operating,e_w545150725-220,way/545150725-220,-41.30395004402201,146.84562469506216,False
+e_w54674751-275,ep_coal_subcritical_G100000103048,280.0,coal,Gladstone power station_Unit 1 -- operating,e_w54674751-275,way/54674751-275,-23.850667,151.219711,False
+e_w54674751-275,ep_coal_subcritical_G100000103049,280.0,coal,Gladstone power station_Unit 2 -- operating,e_w54674751-275,way/54674751-275,-23.850667,151.219711,False
+e_w54674751-275,ep_coal_subcritical_G100000103050,280.0,coal,Gladstone power station_Unit 3 -- operating,e_w54674751-275,way/54674751-275,-23.850667,151.219711,False
+e_w54674751-275,ep_coal_subcritical_G100000103051,280.0,coal,Gladstone power station_Unit 4 -- operating,e_w54674751-275,way/54674751-275,-23.850667,151.219711,False
+e_w54674751-275,ep_coal_subcritical_G100000103052,280.0,coal,Gladstone power station_Unit 5 -- operating,e_w54674751-275,way/54674751-275,-23.850667,151.219711,False
+e_w54674751-275,ep_coal_subcritical_G100000103053,280.0,coal,Gladstone power station_Unit 6 -- operating,e_w54674751-275,way/54674751-275,-23.850667,151.219711,False
+e_w54674751-275,ep_coal_w54674751-275__ember,111.01539496929404,coal,Aggregated Plant - EMBER Gap - way/54674751-275_Missing Coal Capacity -- operating,e_w54674751-275,way/54674751-275,-23.743945196157007,151.20264802605467,False
+e_w547818713-220,ep_hydro_ror_G100001027066,50.0,hydro,Catagunya hydroelectric plant_ -- operating,e_w547818713-220,way/547818713-220,-42.4524,146.5977,False
+e_w547874512-220,ep_hydro_dam_G100000600082,94.0,hydro,Tarraleah hydroelectric plant_ -- operating,e_w547874512-220,way/547874512-220,-42.301,146.4573,False
+e_w547874512-220,ep_hydro_dam_G100000600089,142.0,hydro,Tungatinah hydroelectric plant_ -- operating,e_w547874512-220,way/547874512-220,-42.2968,146.4566,False
+e_w547874512-220,ep_hydro_ror_G100000600068,87.0,hydro,Liapootah hydroelectric plant_ -- operating,e_w547874512-220,way/547874512-220,-42.3764,146.5101,False
+e_w550211808-220,ep_hydro_dam_G100000600061,432.0,hydro,Gordon hydroelectric plant_ -- operating,e_w550211808-220,way/550211808-220,-42.7406,145.9829,False
+e_w552021418-220,ep_hydro_w552021418-220__irena,15.227352837504396,hydro,Aggregated Plant - IRENA Gap - way/552021418-220_Missing Hydro Capacity -- operating,e_w552021418-220,way/552021418-220,-41.574817450104234,146.30230715738327,False
+e_w552021429-220,ep_hydro_ror_G100000600057,100.0,hydro,Cethana hydroelectric plant_ -- operating,e_w552021429-220,way/552021429-220,-41.4799,146.1341,False
+e_w552038078-220,ep_hydro_ror_G100001031268,54.0,hydro,Lemonthyme hydroelectric plant_ -- operating,e_w552038078-220,way/552038078-220,-41.6037,146.139,False
+e_w554358915-330,ep_coal_subcritical_G100000100962,233.0,coal,Bluewaters power station_Unit 1 -- operating,e_w554358915-330,way/554358915-330,-33.332186,116.228023,False
+e_w554358915-330,ep_coal_subcritical_G100000100963,233.0,coal,Bluewaters power station_Unit 2 -- operating,e_w554358915-330,way/554358915-330,-33.332186,116.228023,False
+e_w554358915-330,ep_coal_w554358915-330__ember,30.793555985530368,coal,Aggregated Plant -- operating,e_w554358915-330,way/554358915-330,-33.23150686038993,116.25099450939699,False
+e_w557883073-220,ep_hydro_dam_G100000600085,92.0,hydro,Tribute hydroelectric plant_ -- operating,e_w557883073-220,way/557883073-220,-41.816,145.6498,False
+e_w558447265-220,ep_hydro_dam_G100000600062,145.0,hydro,John Butters hydroelectric plant_ -- operating,e_w558447265-220,way/558447265-220,-42.1549,145.5346,False
+e_w56234037-220,ep_hydro_ror_G100000600060,120.0,hydro,Eildon hydroelectric plant_ -- operating,e_w56234037-220,way/56234037-220,-37.2219,145.9215,False
+e_w583492111-220,ep_gas_combined_cycle_G100000409796,152.0,gas,Sino Iron power station_1 -- operating,e_w583492111-220,way/583492111-220,-21.082658,116.160005,False
+e_w583492111-220,ep_gas_combined_cycle_G100000409922,152.0,gas,Sino Iron power station_3 -- operating,e_w583492111-220,way/583492111-220,-21.082658,116.160005,False
+e_w583492111-220,ep_gas_combined_cycle_G100000409923,152.0,gas,Sino Iron power station_2 -- operating,e_w583492111-220,way/583492111-220,-21.082658,116.160005,False
+e_w583492111-220,ep_gas_gas_turbine_w583492111-220,200.0,gas,Aggregated Plant -- operating,e_w583492111-220,way/583492111-220,-20.584101954248517,116.71820291024639,False
+e_w583492111-220,ep_gas_w583492111-220__ember,328.38944413864004,gas,Aggregated Plant - EMBER Gap - way/583492111-220_Missing Gas Capacity -- operating,e_w583492111-220,way/583492111-220,-20.942696805073524,116.7372102603012,False
+e_w598317777-275,ep_oil_internal_combustion_w598317777-275,51.0,oil,Aggregated Plant -- operating,e_w598317777-275,way/598317777-275,-34.51450710917032,138.94539695324374,False
+e_w598436267-330,ep_hydro_ror_G100000600086,330.0,hydro,Tumut 1 hydroelectric plant_ -- operating,e_w598436267-330,way/598436267-330,-35.9506,148.3637,False
+e_w600259246-275,ep_windon_wind_275,66.0,windon,Aggregated Plant -- operating,e_w600259246-275,way/600259246-275,-33.71421978962043,138.27743554064895,False
+e_w603633301-275,ep_gas_gas_turbine_w603633301-275,156.0,gas,Aggregated Plant -- operating,e_w603633301-275,way/603633301-275,-34.66833128196828,138.57011913685218,False
+e_w603633301-275,ep_gas_w603633301-275__ember,78.0926117158961,gas,Aggregated Plant -- operating,e_w603633301-275,way/603633301-275,-35.02836459008189,138.58362956917662,False
+e_w621258280-330,ep_gas_gas_turbine_G100000401519,155.0,gas,Kemerton power station_1 -- operating,e_w621258280-330,way/621258280-330,-33.1633,115.7805,False
+e_w621258280-330,ep_gas_gas_turbine_G100000401520,155.0,gas,Kemerton power station_2 -- operating,e_w621258280-330,way/621258280-330,-33.1633,115.7805,False
+e_w621258280-330,ep_gas_w621258280-330__ember,155.18403610210123,gas,Aggregated Plant - EMBER Gap - way/621258280-330_Missing Gas Capacity -- operating,e_w621258280-330,way/621258280-330,-32.89380181769381,115.84279905307069,False
+e_w752982717-220,ep_gas_combined_cycle_G100000401499,105.0,gas,Channel Island power station_C4/C5/C6 -- operating,e_w752982717-220,way/752982717-220,-12.555,130.8665,False
+e_w752982717-220,ep_gas_combined_cycle_G100000409789,490.0,gas,Ichthys LNG power station_1 -- operating,e_w752982717-220,way/752982717-220,-12.513898,130.918349,False
+e_w752982717-220,ep_gas_gas_turbine_w752982717-220,116.0,gas,Aggregated Plant -- operating,e_w752982717-220,way/752982717-220,-18.124525980815598,138.77761252234754,False
+e_w752982717-220,ep_gas_w752982717-220__ember,355.9220957051418,gas,Aggregated Plant - EMBER Gap - way/752982717-220_Missing Gas Capacity -- operating,e_w752982717-220,way/752982717-220,-18.270770834881493,139.04514662928105,False
+e_w87325631-220,ep_hydro_ror_G100001031250,45.0,hydro,Wayatinah hydroelectric plant_ -- operating,e_w87325631-220,way/87325631-220,-42.4273,146.535,False
+e_w88187651-220,ep_hydro_ror_G100000600084,103.0,hydro,Trevallyn hydroelectric plant_ -- operating,e_w88187651-220,way/88187651-220,-41.4228,147.1117,False
+e_w88191017-220,ep_hydro_ror_G100001027067,60.0,hydro,Devils Gate hydroelectric plant_ -- operating,e_w88191017-220,way/88191017-220,-41.3505,146.2632,False
+e_w949429976-275,ep_bioenergy_G100000200449,50.0,bioenergy,Invicta Sugar Mill power station_1 -- operating,e_w949429976-275,way/949429976-275,-19.5165,147.1056,False
+e_w949429976-275,ep_bioenergy_G100000200450,68.0,bioenergy,Pioneer Sugar Mill power station_1 -- operating,e_w949429976-275,way/949429976-275,-19.5574,147.3308,False
+e_w949429976-275,ep_bioenergy_w949429976-275__ember,184.54135338345864,bioenergy,Aggregated Plant - EMBER Gap - way/949429976-275_Missing Bioenergy Capacity -- operating,e_w949429976-275,way/949429976-275,-19.732728955768383,147.00511714608717,False
+e_w99848705-330,ep_hydro_w99848705-330__irena,12.181882270003518,hydro,Aggregated Plant - IRENA Gap - way/99848705-330_Missing Hydro Capacity -- operating,e_w99848705-330,way/99848705-330,-30.801540680415194,150.84809419278037,False
+elc_spv_006,ep_solar_pv_006,26.6,solar,Aggregated Plant -- operating,elc_spv_006,way/437417557-220,-22.900479415484288,115.54349345924402,False
+elc_spv_007,ep_solar_pv_007,14.600000000000001,solar,Aggregated Plant -- operating,elc_spv_007,way/388948533-330,-25.232620435514903,115.21593188773497,False
+elc_spv_008,ep_solar_pv_008,3.3,solar,Aggregated Plant -- operating,elc_spv_008,way/621258280-330,-33.25533230956792,116.01643061625549,False
+elc_spv_009,ep_solar_pv_009,40.300000000000004,solar,Aggregated Plant -- operating,elc_spv_009,AU53-330,-32.021878425798825,116.08369307973904,False
+elc_spv_010,ep_solar_pv_010,32.599999999999994,solar,Aggregated Plant -- operating,elc_spv_010,way/951451677-330,-27.413820030055895,115.00481409026737,False
+elc_spv_011,ep_solar_011__irena,6296.5454882463355,solar,Aggregated Plant - IRENA Gap - 11_Missing Solar Capacity -- operating,elc_spv_011,way/831284075-220,-26.451834392443523,142.9294020425751,False
+elc_spv_015,ep_solar_pv_015,93.89999999999999,solar,Aggregated Plant -- operating,elc_spv_015,way/229771692-220,-21.206312877689083,139.34159904245334,False
+elc_spv_016,ep_solar_pv_016,62.2,solar,Aggregated Plant -- operating,elc_spv_016,way/171843734-275,-23.553245532163302,145.74951718439422,False
+elc_spv_017,ep_solar_017__irena,6226.852720393062,solar,Aggregated Plant - IRENA Gap - 17_Missing Solar Capacity -- operating,elc_spv_017,way/229759860-220,-21.477066516088588,142.90214221104338,False
+elc_spv_017,ep_solar_pv_017,50.5,solar,Aggregated Plant -- operating,elc_spv_017,way/229759860-220,-21.825684322299608,143.11580613049884,False
+elc_spv_018,ep_m_solar_pv_018,25.0,solar,Aggregated Plant -- mothballed,elc_spv_018,way/752982717-220,-18.84398960826945,139.23893538195298,False
+elc_spv_021,ep_solar_pv_021,9.6,solar,Aggregated Plant -- operating,elc_spv_021,way/752982717-220,-19.246721348717237,138.98585428831402,False
+elc_spv_022,ep_solar_pv_022,1.4,solar,Aggregated Plant -- operating,elc_spv_022,way/752982717-220,-19.32484602241936,138.39585083246814,False
+elc_spv_023,ep_solar_pv_023,1.3,solar,Aggregated Plant -- operating,elc_spv_023,way/752982717-220,-18.76345104377487,137.9878968422273,False
+elc_spv_024,ep_solar_pv_024,5.8,solar,Aggregated Plant -- operating,elc_spv_024,way/752982716-220,-19.91798149853443,139.70902999306122,False
+elc_spv_025,ep_solar_pv_025,24.0,solar,Aggregated Plant -- operating,elc_spv_025,way/798877610-275,-14.540712036581738,143.8436177450178,False
+elc_spv_028,ep_solar_pv_028,50.0,solar,Aggregated Plant -- operating,elc_spv_028,way/218402190-220,-18.857438871689332,142.43749270535943,False
+elc_spv_032,ep_solar_pv_032,81.60000000000001,solar,Aggregated Plant -- operating,elc_spv_032,way/752982717-220,-18.31118314462211,138.15050925946767,False
+elc_spv_037,ep_solar_pv_037,12.5,solar,Aggregated Plant -- operating,elc_spv_037,AU51-220,-31.356536101172654,122.11741071234306,False
+elc_spv_041,ep_solar_pv_041,85.0,solar,Aggregated Plant -- operating,elc_spv_041,way/503157455-220,-32.440143652342215,144.19946060814564,False
+elc_spv_042,ep_solar_pv_042,53.0,solar,Aggregated Plant -- operating,elc_spv_042,way/172740336-220,-32.20972844626864,142.64459919183682,False
+elc_spv_043,ep_solar_pv_043,988.8000000000001,solar,Aggregated Plant -- operating,elc_spv_043,AU104-220,-36.69202588637071,145.44810766031776,False
+elc_spv_044,ep_solar_pv_044,452.5,solar,Aggregated Plant -- operating,elc_spv_044,way/169793928-220,-34.83660680900393,144.97236416239963,False
+elc_spv_044,ep_solar_pv_G100000806281,275.0,solar,Darlington Point Solar_-- -- operating,elc_spv_044,way/169793928-220,-34.647,146.0368,False
+elc_spv_045,ep_solar_pv_045,525.4000000000001,solar,Aggregated Plant -- operating,elc_spv_045,way/483430155-220,-34.08583271934484,141.2130117639432,False
+elc_spv_045,ep_solar_pv_G100000806275,349.0,solar,Limondale solar farm_-- -- operating,elc_spv_045,way/483430155-220,-34.7755,143.508,False
+elc_spv_045,ep_solar_pv_G100000806284,200.0,solar,Sunraysia solar farm_-- -- operating,elc_spv_045,way/483430155-220,-34.8215,143.5092,False
+elc_spv_045,ep_solar_pv_G100000806323,200.0,solar,Kiamal Solar_1 -- operating,elc_spv_045,way/483430155-220,-35.0205,142.3002,False
+elc_spv_046,ep_solar_pv_046,98.49999999999999,solar,Aggregated Plant -- operating,elc_spv_046,way/165154628-275,-33.298345138079924,137.94166369650864,False
+elc_spv_047,ep_solar_pv_047,383.0,solar,Aggregated Plant -- operating,elc_spv_047,way/165154628-275,-33.052466095525794,137.0175093616631,False
+elc_spv_048,ep_solar_pv_048,50.0,solar,Aggregated Plant -- operating,elc_spv_048,way/164675939-275,-36.125444372238384,140.9337102875499,False
+elc_spv_050,ep_solar_pv_050,3.1,solar,Aggregated Plant -- operating,elc_spv_050,AU127-220,-40.24336697733861,144.62774615406315,False
+elc_spv_051,ep_solar_pv_051,70.80000000000001,solar,Aggregated Plant -- operating,elc_spv_051,AU104-220,-36.14896409784296,144.51390561666395,False
+elc_spv_052,ep_solar_052__irena,6464.901791360605,solar,Aggregated Plant - IRENA Gap - 52_Missing Solar Capacity -- operating,elc_spv_052,way/185835127-275,-24.566734784043557,136.97689655452535,False
+elc_spv_053,ep_solar_pv_053,3.4,solar,Aggregated Plant -- operating,elc_spv_053,way/185835127-275,-24.713840148811652,137.34641687957946,False
+elc_spv_054,ep_solar_pv_054,5.5,solar,Aggregated Plant -- operating,elc_spv_054,way/229771692-220,-20.723066779303185,139.0400267006295,False
+elc_spv_055,ep_solar_pv_055,4.6,solar,Aggregated Plant -- operating,elc_spv_055,way/185835127-275,-25.32979087840439,137.46836602719742,False
+elc_spv_057,ep_solar_pv_057,424.7,solar,Aggregated Plant -- operating,elc_spv_057,way/170413771-275,-31.78310400851793,138.15135149197792,False
+elc_spv_059,ep_solar_pv_059,3.3,solar,Aggregated Plant -- operating,elc_spv_059,way/185835127-275,-25.643876256599135,137.04088244866986,False
+elc_spv_060,ep_solar_pv_060,468.0,solar,Aggregated Plant -- operating,elc_spv_060,way/169416665-330,-34.433985740042985,147.77451275678644,False
+elc_spv_060,ep_solar_pv_G100000806435,245.0,solar,Avonlie solar farm_-- -- operating,elc_spv_060,way/169416665-330,-34.9183,146.6092,False
+elc_spv_061,ep_solar_pv_061,862.1999999999999,solar,Aggregated Plant -- construction,elc_spv_061,way/169416665-220,-31.7129962771241,147.37462154489972,False
+elc_spv_061,ep_solar_pv_G100000806449,425.0,solar,Wellington North solar farm_-- -- operating,elc_spv_061,way/169416665-220,-32.3745,149.2211,False
+elc_spv_061,ep_solar_pv_G100000806453,200.0,solar,Wellington solar farm_-- -- operating,elc_spv_061,way/169416665-220,-32.5207,148.9675,False
+elc_spv_062,ep_solar_pv_062,135.4,solar,Aggregated Plant -- operating,elc_spv_062,way/232109241-330,-35.01528432198575,149.79091729473373,False
+elc_spv_062,ep_solar_pv_G100000806331,280.0,solar,Wollar Solar_-- -- construction,elc_spv_062,way/232109241-330,-33.8738,151.2096,False
+elc_spv_063,ep_solar_pv_063,21.300000000000008,solar,Aggregated Plant -- operating,elc_spv_063,AU77-330,-32.365325347039914,151.51207889895082,False
+elc_spv_064,ep_solar_pv_064,122.2,solar,Aggregated Plant -- operating,elc_spv_064,way/931703186-330,-33.1432522893531,149.75659674341705,False
+elc_spv_064,ep_solar_pv_G100000806526,400.0,solar,Stubbo solar farm_-- -- construction,elc_spv_064,way/931703186-330,-32.2468,149.5814,False
+elc_spv_065,ep_solar_pv_065,8.5,solar,Aggregated Plant -- operating,elc_spv_065,AU145-220,-41.782498348584895,147.23395464853044,False
+elc_spv_066,ep_solar_pv_066,60.599999999999994,solar,Aggregated Plant -- operating,elc_spv_066,way/1226453352-220,-36.302892501568394,148.66679271420927,False
+elc_spv_067,ep_solar_pv_067,34.7,solar,Aggregated Plant -- operating,elc_spv_067,AU105-220,-36.232750648381234,146.86252415060346,False
+elc_spv_067,ep_solar_pv_G100000806420,300.0,solar,Walla Walla solar farm_-- -- operating,elc_spv_067,AU105-220,-35.748,146.9601,False
+elc_spv_067,ep_solar_pv_G100000806467,350.0,solar,Culcairn solar farm_-- -- construction,elc_spv_067,AU105-220,-35.6967,146.973,False
+elc_spv_068,ep_solar_pv_068,46.0,solar,Aggregated Plant -- operating,elc_spv_068,way/480009927-500,-38.32201942068987,146.98182626718042,False
+elc_spv_070,ep_solar_pv_070,263.6,solar,Aggregated Plant -- operating,elc_spv_070,way/223942734-220,-32.694425026103566,118.07557850668977,False
+elc_spv_072,ep_solar_pv_072,10.2,solar,Aggregated Plant -- operating,elc_spv_072,AU51-220,-31.679751408193297,121.49743385416788,False
+elc_spv_074,ep_solar_pv_074,1.1,solar,Aggregated Plant -- operating,elc_spv_074,way/224198124-220,-30.244844857657114,120.02390978935608,False
+elc_spv_075,ep_solar_pv_075,17.0,solar,Aggregated Plant -- operating,elc_spv_075,AU55-330,-30.344259969581735,117.54801298555039,False
+elc_spv_076,ep_solar_pv_076,2.1,solar,Aggregated Plant -- operating,elc_spv_076,way/224198124-220,-30.63510881772262,119.83495446773593,False
+elc_spv_078,ep_solar_pv_078,1.0,solar,Aggregated Plant -- operating,elc_spv_078,AU51-220,-31.53396347962225,120.92760345803374,False
+elc_spv_079,ep_solar_pv_079,50.8,solar,Aggregated Plant -- operating,elc_spv_079,AU51-220,-31.00485667879034,120.55071223783999,False
+elc_spv_081,ep_solar_pv_081,13.6,solar,Aggregated Plant -- operating,elc_spv_081,AU51-220,-30.440630182722142,120.58981576384922,False
+elc_spv_083,ep_solar_pv_083,52.400000000000006,solar,Aggregated Plant -- operating,elc_spv_083,way/583513574-330,-26.420212466361825,120.16807695891784,False
+elc_spv_084,ep_solar_pv_084,198.90000000000003,solar,Aggregated Plant -- operating,elc_spv_084,way/583513574-330,-26.827273252876378,120.59395232437832,False
+elc_spv_085,ep_solar_pv_085,31.2,solar,Aggregated Plant -- operating,elc_spv_085,AU12-220,-21.196211073382297,120.07468298549493,False
+elc_spv_086,ep_solar_pv_086,94.0,solar,Aggregated Plant -- operating,elc_spv_086,AU20-220,-23.697605567143132,119.98988239222099,False
+elc_spv_087,ep_solar_pv_087,87.60000000000001,solar,Aggregated Plant -- operating,elc_spv_087,way/241614998-220,-22.189469978487043,117.69010667945211,False
+elc_spv_088,ep_solar_pv_088,173.0,solar,Aggregated Plant -- operating,elc_spv_088,way/171843734-275,-23.919462910884477,145.2928627724503,False
+elc_spv_089,ep_solar_pv_089,220.0,solar,Aggregated Plant -- operating,elc_spv_089,way/171843734-275,-23.610490649089453,144.6224900831894,False
+elc_spv_089,ep_solar_pv_G100000806268,380.0,solar,Aldoga solar farm_1 -- construction,elc_spv_089,way/171843734-275,-23.8353,151.0713,False
+elc_spv_089,ep_solar_pv_G100000806430,385.0,solar,Broadsound solar farm_-- -- construction,elc_spv_089,way/171843734-275,-22.8114,149.3886,False
+elc_spv_090,ep_solar_pv_090,836.6,solar,Aggregated Plant -- operating,elc_spv_090,way/171744075-275,-20.481713285737563,147.41548239237886,False
+elc_spv_093,ep_solar_pv_093,581.5,solar,Aggregated Plant -- operating,elc_spv_093,way/171582472-275,-26.730841651753977,149.928725287161,False
+elc_spv_093,ep_solar_pv_G100000806353,200.0,solar,Darling Downs solar farm_-- -- operating,elc_spv_093,way/171582472-275,-27.112,150.8819,False
+elc_spv_093,ep_solar_pv_G100000806468,460.0,solar,Western Downs (Neoen) solar farm_-- -- operating,elc_spv_093,way/171582472-275,-26.9578,150.6776,False
+elc_spv_093,ep_solar_pv_G100000806494,204.0,solar,Edenvale Solar Park_-- -- operating,elc_spv_093,way/171582472-275,-26.9365,150.5845,False
+elc_spv_093,ep_solar_pv_G100000806536,200.0,solar,Blue Grass Solar_-- -- operating,elc_spv_093,way/171582472-275,-26.6864,150.4972,False
+elc_spv_094,ep_solar_pv_094,588.2,solar,Aggregated Plant -- operating,elc_spv_094,way/99848705-330,-31.04979342809059,150.60406260252844,False
+elc_spv_094,ep_solar_pv_G100000806326,400.0,solar,New England solar farm_1 -- operating,elc_spv_094,way/99848705-330,-30.6381,151.6001,False
+elc_spv_094,ep_solar_pv_G100000806327,320.0,solar,New England solar farm_2 -- construction,elc_spv_094,way/99848705-330,-30.6211,151.6063,False
+elc_spv_095,ep_solar_pv_095,600.5,solar,Aggregated Plant -- operating,elc_spv_095,way/550224417-275,-25.603770071888654,150.03382814809265,False
+elc_spv_096,ep_solar_pv_096,8.9,solar,Aggregated Plant -- operating,elc_spv_096,way/1293021615-330,-30.349678572928575,152.27948014962863,False
+elc_spv_097,ep_solar_pv_097,277.1,solar,Aggregated Plant -- operating,elc_spv_097,way/458403122-275,-28.248094460430405,152.67009643328228,False
+elc_won_021,ep_windon_wind_021,113.0,windon,Aggregated Plant -- operating,elc_won_021,way/208364780-330,-35.77933978727021,148.33968715132505,False
+elc_won_021,ep_windon_wind_G100000908211,414.0,windon,Uungula wind farm_-- -- construction,elc_won_021,way/208364780-330,-32.5825,149.1772,False
+elc_won_021,ep_windon_wind_G100000908212,244.0,windon,Bango wind farm_-- -- operating,elc_won_021,way/208364780-330,-34.5517,148.7322,False
+elc_won_021,ep_windon_wind_G100000908424,327.0,windon,Rye Park wind farm_-- -- operating,elc_won_021,way/208364780-330,-34.6331,148.9533,False
+elc_won_025,ep_windon_wind_025,895.1,windon,Aggregated Plant -- operating,elc_won_025,way/655511604-330,-34.57993579527027,149.31236500367004,False
+elc_won_025,ep_windon_wind_G100000908379,227.0,windon,Collector wind farm_-- -- operating,elc_won_025,way/655511604-330,-34.8719,149.3967,False
+elc_won_026,ep_windon_wind_026,133.0,windon,Aggregated Plant -- operating,elc_won_026,AU84-330,-32.09434405009969,150.57523388146285,False
+elc_won_030,ep_windon_wind_030,175.0,windon,Aggregated Plant -- operating,elc_won_030,way/704099978-330,-29.78192704060809,151.85636146438407,False
+elc_won_030,ep_windon_wind_G100000908213,270.0,windon,Sapphire wind farm (Australia)_-- -- operating,elc_won_030,way/704099978-330,-29.6998,151.4111,False
+elc_won_031,ep_windon_wind_031,20.0,windon,Aggregated Plant -- operating,elc_won_031,way/1301752258-220,-35.74243147101192,144.61166837094754,False
+elc_won_033,ep_windon_wind_033,197.0,windon,Aggregated Plant -- operating,elc_won_033,way/544861273-275,-31.773546149438673,140.27485122912006,False
+elc_won_037,ep_windon_wind_037,2849.6,windon,Aggregated Plant -- operating,elc_won_037,way/164675939-275,-36.212709145249704,140.21905472774978,False
+elc_won_037,ep_windon_wind_G100000908254,530.0,windon,Stockyard Hill wind farm_-- -- operating,elc_won_037,way/164675939-275,-37.5542,143.3033,False
+elc_won_037,ep_windon_wind_G100000908256,420.0,windon,Macarthur wind farm_-- -- operating,elc_won_037,way/164675939-275,-38.043,142.1784,False
+elc_won_037,ep_windon_wind_G100000908310,218.0,windon,Ryan Corner wind farm_-- -- operating,elc_won_037,way/164675939-275,-38.2708,142.1435,False
+elc_won_037,ep_windon_wind_G100000908334,216.0,windon,Lal Lal wind farm_Yendon -- operating,elc_won_037,way/164675939-275,-37.6352,144.0237,False
+elc_won_037,ep_windon_wind_G100000908345,240.0,windon,Ararat wind farm_-- -- operating,elc_won_037,way/164675939-275,-37.2411,143.0429,False
+elc_won_037,ep_windon_wind_G100000908421,336.0,windon,Dundonnell wind farm_-- -- operating,elc_won_037,way/164675939-275,-37.8412,142.8759,False
+elc_won_037,ep_windon_wind_G100000927834,756.0,windon,Golden Plains wind farm (Australia)_East -- construction,elc_won_037,way/164675939-275,-37.9729,143.783,False
+elc_won_037,ep_windon_wind_G100000927835,574.0,windon,Golden Plains wind farm (Australia)_West -- construction,elc_won_037,way/164675939-275,-37.9222,143.6541,False
+elc_won_038,ep_windon_wind_038,124.0,windon,Aggregated Plant -- operating,elc_won_038,way/165154628-275,-32.649517070299616,137.0834154173931,False
+elc_won_039,ep_windon_wind_039,39.0,windon,Aggregated Plant -- operating,elc_won_039,way/75514732-275,-35.86763652417507,140.3055882895448,False
+elc_won_039,ep_windon_wind_G100000908395,209.0,windon,Murra Warra 2 wind farm_-- -- operating,elc_won_039,way/75514732-275,-36.4326,142.3173,False
+elc_won_039,ep_windon_wind_G100000908396,226.0,windon,Murra Warra wind farm_-- -- operating,elc_won_039,way/75514732-275,-36.4472,142.2898,False
+elc_won_042,ep_windon_wind_042,113.0,windon,Aggregated Plant -- operating,elc_won_042,AU103-330,-36.40601276219998,147.9720621515816,False
+elc_won_043,ep_windon_wind_043,144.0,windon,Aggregated Plant -- operating,elc_won_043,way/558447265-220,-42.00155959984968,147.24291371271536,False
+elc_won_044,ep_windon_wind_044,584.0000000000001,windon,Aggregated Plant -- construction,elc_won_044,AU127-220,-40.66893864349745,144.33595204033563,False
+elc_won_056,ep_windon_wind_056,350.0,windon,Aggregated Plant -- operating,elc_won_056,way/798877610-275,-14.899779499967147,143.8198589437887,False
+elc_won_059,ep_windon_wind_059,302.0,windon,Aggregated Plant -- operating,elc_won_059,way/550224397-275,-27.27409563963168,147.25349256342736,False
+elc_won_059,ep_windon_wind_G100000908378,328.0,windon,Coopers Gap wind farm_2 -- operating,elc_won_059,way/550224397-275,-26.7326,151.4723,False
+elc_won_059,ep_windon_wind_G100000908392,252.0,windon,Wambo Wind Farm Project_1 -- construction,elc_won_059,way/550224397-275,-26.5954,151.2463,False
+elc_won_061,ep_windon_wind_G100000908166,923.0,windon,MacIntyre precinct wind farm_MacIntyre -- operating,elc_won_061,way/171728751-275,-28.2163,152.0327,False
+elc_won_063,ep_windon_wind_063,43.0,windon,Aggregated Plant -- operating,elc_won_063,way/229759860-220,-21.85571449764927,142.61226711798196,False
+elc_won_064,ep_windon_wind_G100000908235,341.0,windon,Lotus Creek wind farm_-- -- construction,elc_won_064,way/121646942-275,-22.365,149.2718,False
+elc_won_064,ep_windon_wind_G100000908281,450.0,windon,Clarke Creek wind farm_1 -- operating,elc_won_064,way/121646942-275,-22.8505,149.4532,False
+elc_won_073,ep_windon_073__irena,139.37420565128096,windon,Aggregated Plant -- operating,elc_won_073,way/611221493-220,-23.329929807819738,128.90679533623586,False
+elc_won_075,ep_windon_075__irena,151.26660970037017,windon,Aggregated Plant -- operating,elc_won_075,AU20-220,-23.242014878137997,119.27065643397665,False
+elc_won_081,ep_windon_081__irena,143.45918464834972,windon,Aggregated Plant -- operating,elc_won_081,way/583513574-330,-27.14741545093954,120.50050865965368,False
+elc_won_081,ep_windon_wind_081,24.0,windon,Aggregated Plant -- construction,elc_won_081,way/583513574-330,-27.21522800547805,119.85607465343038,False
+elc_won_082,ep_windon_wind_082,406.0,windon,Aggregated Plant -- operating,elc_won_082,AU53-330,-31.653763329526797,115.351857984522,False
+elc_won_082,ep_windon_wind_G100000908380,214.0,windon,Yandin wind farm_-- -- operating,elc_won_082,AU53-330,-30.6723,115.703,False
+elc_won_082,ep_windon_wind_G100000908399,222.0,windon,Collgar wind farm_-- -- operating,elc_won_082,AU53-330,-31.5509,118.4443,False
+elc_won_083,ep_windon_wind_083,145.6,windon,Aggregated Plant -- operating,elc_won_083,way/951451677-330,-27.77510926028642,114.74250197691498,False
+elc_won_084,ep_windon_wind_084,54.0,windon,Aggregated Plant -- construction,elc_won_084,way/583513574-330,-26.743871010300847,119.71313953378478,False
+elc_won_085,ep_windon_wind_085,126.8,windon,Aggregated Plant -- operating,elc_won_085,way/621258280-330,-33.30665302732918,115.54392437218559,False
+elc_won_093,ep_windon_wind_093,24.0,windon,Aggregated Plant -- construction,elc_won_093,AU51-220,-30.016678318256627,120.94809990593684,False
+elc_won_095,ep_windon_wind_095,1335.0,windon,Aggregated Plant -- operating,elc_won_095,way/185835127-275,-24.895476585947012,136.47843149394828,False
+elc_won_095,ep_windon_wind_G100000908259,210.0,windon,Port Augusta Renewable Energy Park wind farm_-- -- operating,elc_won_095,way/185835127-275,-32.5954,137.8854,False
+elc_won_095,ep_windon_wind_G100000908479,201.0,windon,Snowtown Ii wind farm_2 -- operating,elc_won_095,way/185835127-275,-33.7317,138.1352,False
+elc_won_095,ep_windon_wind_G100000927836,209.0,windon,Goyder South wind farm_1A -- operating,elc_won_095,way/185835127-275,-33.7848,138.8892,False
+elc_won_095,ep_windon_wind_G100000927837,204.0,windon,Goyder South wind farm_1B -- construction,elc_won_095,way/185835127-275,-33.7703,138.9076,False

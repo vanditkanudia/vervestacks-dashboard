@@ -1,0 +1,99 @@
+# VerveStacks Publication & Narrative Development — Project Map
+
+## 1. Publication Strategy
+- **Two-paper arc**
+  - *Nature paper*: Structural physics of transitions  
+    - Key point: Structural sensitivity >> parametric uncertainty.  
+    - Conceptual breakthrough: “Resolution is destiny.”  
+  - *VerveStacks paper*: Methods/data resource paper  
+    - Offering: fully calibrated, high-resolution, open-use country models.  
+    - Positioning: Turning point → OS moment for ESOMs.  
+- **Journal targeting**
+  - High tier: *Scientific Data* (Nature), *Nature Energy (Methods)*.  
+  - Mid tier: *Environmental Modelling & Software*, *ESSD*, *Energy Strategy Reviews*.  
+- **Requirements for top-tier**
+  - Rigorous validation, reproducibility package, polished figures.  
+
+---
+
+## 2. Title & Positioning
+- Debate around including **“open-use”**, **“country”**, **“multi-region”**, **“high-resolution.”**  
+- Final choice:  
+  **“VerveStacks: An Open-Use Framework for High-Resolution Country Energy System Models.”**  
+- Framing:  
+  - “Open-use” = new paradigm.  
+  - “Country” = concreteness.  
+  - “High-resolution” = rigor.  
+
+---
+
+## 3. Abstract & Introduction Drafts
+- **Abstract evolution**
+  - Initial draft framed pipeline as offering.  
+  - Revised draft clarified: **the models are the offering**, pipeline is enabler.  
+  - Strong points: OS moment, division of labor, superiority over artisanal models.  
+- **Intro skeleton**
+  - Problem: silos, complexity, exclusive guild of modelers.  
+  - Gap: frameworks exist, but no open-use models.  
+  - Contribution: VerveStacks models, builder/user separation.  
+  - Importance: democratization, decision-grade use, structural turning point.  
+
+---
+
+## 4. Validation & Methodology Development
+- **Validation blueprint**
+  - Base-year reconstruction (TWh, mix, capacity).  
+  - Fleet vintages (aggregation diagnostics).  
+  - Hourly load profiles (ERA5 vs observed).  
+  - RE zoning (CF curves, land use constraints).  
+  - Stress-slice adequacy (hourly vs TS emulator).  
+  - Transmission clustering (NTC sanity, sensitivity).  
+- **Metrics and targets**
+  - Demand error ≤ 3–5%.  
+  - Capacity/generation share divergence small (JSD, L1).  
+  - Curtailment/ENS/cost differences within ~5–10%.  
+- **Figures**
+  - Pipeline schematic, coverage map, scatterplots, CF curves, adequacy plots, regional clustering.  
+- **Methodology backbone**
+  - Demand (EMBER, AR6/NGFS, ERA5).  
+  - Supply (GEM, IRENA, EMBER, EPA CCS, NREL, EIA hydro).  
+  - Model configuration (Voronoi clusters, OSM NTC).  
+  - Timeslices (stress identification, hybrid sets).  
+
+---
+
+## 5. Historical Narrative
+- **Pre-VerveStacks blogs**
+  - *Breaking silos*: technical, sectoral, geographical → collaboration is essential.  
+  - *Democratization*: broaden access, empower non-coders, involve stakeholders.  
+  - *Managing complexity*: modular design, intuitive tools, transparency.  
+- **Core shift**
+  - From *improving practice* → to *changing structure*.  
+  - Division of labor: builders vs users.  
+  - OS moment: models usable without building.  
+- **Our Creation timeline**
+  - 1990s: India MARKAL → Canada Multi-Region MARKAL.  
+  - 2000s: SAGE (global MARKAL), EFDA TIMES (global TIMES).  
+  - 2010s: JMRT (Japan), FACETS (US states), PET/EU TIMES.  
+  - 2018–2020: AU-TIMES (Australia), IEMM (parameter-driven, automation begins).  
+  - 2020s: KiNESYS (automation for full ESOMs), Veda Online (cloud usability).  
+  - 2025: VerveStacks (open-use, high-resolution global country models).  
+- **Epochs**
+  - Artisanal era (pre-IEMM).  
+  - Automated rigor (IEMM, KiNESYS).  
+  - Open-use era (VerveStacks).  
+- **Key insight**
+  - Automation increased rigor and granularity — not simplification.  
+
+---
+
+## 6. Website / Communication Assets
+- **Appendix / About page content**
+  - Historical narrative: from artisanal → automation → open-use.  
+  - Positioning VS as culmination of decades of innovation.  
+- **Visuals proposed**
+  - Timeline diagram: 1990s → 2000s → 2010s → 2020s → VerveStacks.  
+  - Three epochs: Artisanal → Automated Rigor → Open-Use.  
+  - Flow diagram for silos → democratization → complexity → OS moment.  
+
+---

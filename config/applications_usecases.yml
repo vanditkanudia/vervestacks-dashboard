@@ -1,0 +1,985 @@
+countries:
+ USA:
+   name: "United States"
+   iso_codes: ["ERCOT", "PJM", "CAISO", "MISO", "SPP", "NYISO", "ISONE"]
+   economy_rank: 1
+   
+   data_sources:
+     global_baseline:
+       - "EIA annual capacity and generation statistics"
+       - "NREL renewable resource potential (ReEDS database)"
+       - "EPA emissions factors and plant characteristics"
+       - "DOE transportation energy consumption patterns"
+     local_premium:
+       - "EIA-930 real-time hourly demand by balancing authority"
+       - "EIA-860 detailed plant-level characteristics and costs"
+       - "NREL WIND/ATB technology cost projections"
+       - "ISO market clearing prices and ancillary service costs"
+       - "State utility integrated resource plans"
+       - "DOT electric vehicle registration by county"
+       note: "Local data sources provide 10x higher resolution and real-time accuracy vs. global baseline"
+   
+   major_issues:
+     - title: "Regional Grid Integration & Federal vs. State Policy Coordination"
+       description: "Complex multi-ISO system with varying state renewable mandates and federal incentives"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "Natural Gas Plant Transition & Infrastructure Repurposing"
+       description: "Large gas fleet requiring decisions on retirement vs. hydrogen conversion vs. CCUS retrofits"
+       priority: "high"
+       target_groups: ["govt", "utilities", "researchers"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "How do different IRA tax credit scenarios affect regional renewable deployment patterns through 2040?"
+         vs_capability: "parametric_policy_analysis"
+         complexity: "ready_to_answer"
+         sectors: ["renewable_deployment", "policy_sensitivity"]
+         timeframe: "2025-2040"
+         tier: "freemium"
+         
+       - question: "Which federal transmission policies most effectively reduce regional renewable curtailment?"
+         vs_capability: "transmission_policy_optimization"
+         complexity: "minor_structural_changes"
+         sectors: ["transmission", "policy", "renewable_integration"]
+         timeframe: "2025-2035"
+         tier: "premium"
+         
+     utilities_operational:
+       - question: "Which transmission projects unlock highest-value renewable resources while maintaining reliability?"
+         vs_capability: "grid_aware_renewable_placement"
+         complexity: "minor_structural_changes"
+         sectors: ["transmission", "renewable_integration", "reliability"]
+         timeframe: "2025-2030"
+         tier: "premium"
+         
+       - question: "How does accelerated gas plant retirement affect grid stability and capacity markets by ISO?"
+         vs_capability: "fossil_fleet_retirement_analysis"
+         complexity: "ready_to_answer"
+         sectors: ["gas_transition", "grid_reliability", "capacity_markets"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+     research_focused:
+       - question: "How does vehicle electrification timing affect locational marginal pricing and congestion patterns?"
+         vs_capability: "ev_grid_integration_detailed"
+         complexity: "structural_modifications"
+         sectors: ["transport", "markets", "congestion"]
+         timeframe: "2025-2035"
+         tier: "enterprise"
+         note: "Requires enhanced spatial resolution - rest of system remains fully functional"
+
+ CHN:
+   name: "China"
+   iso_codes: ["CN_NORTH", "CN_NORTHEAST", "CN_EAST", "CN_CENTRAL", "CN_SOUTH", "CN_NORTHWEST"]
+   economy_rank: 2
+   
+   data_sources:
+     global_baseline:
+       - "IEA China energy statistics"
+       - "Global wind/solar resource databases"
+       - "IRENA renewable capacity statistics"
+       - "BP Statistical Review consumption data"
+     local_premium:
+       - "NEA provincial hourly dispatch data"
+       - "CPIA detailed wind/solar project databases"
+       - "Provincial grid company transmission constraints"
+       - "NDRC regional coal plant retirement schedules"
+       - "Provincial EV adoption and charging infrastructure plans"
+       - "MIIT industrial electricity consumption by sector"
+       note: "Provincial data enables curtailment analysis impossible with global sources"
+   
+   major_issues:
+     - title: "Renewable Curtailment & Provincial Grid Integration"
+       description: "Massive renewable capacity with 15-20% curtailment and inter-provincial transmission constraints"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "Industrial Decarbonization & Coal Plant Transition"
+       description: "World's largest manufacturing sector transitioning from coal while maintaining competitiveness"
+       priority: "high"
+       target_groups: ["govt", "researchers"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "How much curtailed renewable electricity can be productively used for hydrogen production by 2035?"
+         vs_capability: "hydrogen_curtailment_optimization"
+         complexity: "ready_to_answer"
+         sectors: ["hydrogen", "renewable_integration"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+       - question: "Which provinces should prioritize industrial electrification vs. hydrogen vs. renewable exports?"
+         vs_capability: "sector_integration_analysis"
+         complexity: "minor_structural_changes"
+         sectors: ["industry", "hydrogen", "renewable_deployment"]
+         timeframe: "2025-2040"
+         tier: "premium"
+         
+     utilities_operational:
+       - question: "Which inter-provincial transmission upgrades most effectively reduce renewable curtailment?"
+         vs_capability: "transmission_congestion_analysis"
+         complexity: "minor_structural_changes"
+         sectors: ["transmission", "renewable_integration"]
+         timeframe: "2025-2030"
+         tier: "premium"
+         
+       - question: "How does accelerated coal plant retirement affect industrial electricity costs and reliability?"
+         vs_capability: "fossil_fleet_retirement_analysis"
+         complexity: "ready_to_answer"
+         sectors: ["coal_transition", "industry", "grid_reliability"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+     research_focused:
+       - question: "How does industrial demand response coordination affect provincial renewable utilization efficiency?"
+         vs_capability: "industrial_demand_response_optimization"
+         complexity: "structural_modifications"
+         sectors: ["industry", "demand_response", "provincial_coordination"]
+         timeframe: "2025-2030"
+         tier: "enterprise"
+
+ JPN:
+   name: "Japan"
+   iso_codes: ["TEPCO", "KEPCO", "CHUDEN", "KYUDEN", "TOHOKU", "HOKUDEN", "RIKUDEN", "CHUGOKU", "SHIKOKU", "OKINAWA"]
+   economy_rank: 3
+   
+   data_sources:
+     global_baseline:
+       - "IEA Japan energy statistics"
+       - "NEDO renewable resource assessments"
+       - "IEEJ energy demand projections"
+     local_premium:
+       - "TEPCO/utility hourly demand by region"
+       - "NEDO detailed renewable resource maps"
+       - "Nuclear Regulation Authority plant operational status"
+       - "METI LNG import terminals and capacity"
+       - "Regional transmission operator constraints"
+       - "JEMA industrial electricity consumption patterns"
+       note: "Regional utility data reveals inter-area transmission bottlenecks and nuclear coordination needs"
+   
+   major_issues:
+     - title: "Island Grid Constraints & Nuclear Restart Decisions"
+       description: "Limited interconnection between regions and uncertain nuclear capacity affecting renewable integration"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "LNG Import Dependence & Hydrogen Strategy"
+       description: "Heavy reliance on imported LNG with ambitious hydrogen import and domestic production plans"
+       priority: "high"
+       target_groups: ["govt", "researchers"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "How does nuclear restart timing affect optimal renewable deployment and grid flexibility needs?"
+         vs_capability: "nuclear_renewable_coordination"
+         complexity: "ready_to_answer"
+         sectors: ["nuclear", "renewable_integration", "grid_flexibility"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+       - question: "Which regions should prioritize domestic green hydrogen production vs. import infrastructure?"
+         vs_capability: "hydrogen_location_optimization"
+         complexity: "minor_structural_changes"
+         sectors: ["hydrogen", "infrastructure", "trade"]
+         timeframe: "2025-2040"
+         tier: "premium"
+         
+     utilities_operational:
+       - question: "How much offshore wind can be integrated without major transmission upgrades between regions?"
+         vs_capability: "grid_constrained_renewable_analysis"
+         complexity: "minor_structural_changes"
+         sectors: ["offshore_wind", "transmission", "grid_constraints"]
+         timeframe: "2025-2030"
+         tier: "premium"
+         
+       - question: "What gas plant dispatch strategy optimizes LNG costs while maintaining grid reliability?"
+         vs_capability: "gas_dispatch_optimization"
+         complexity: "ready_to_answer"
+         sectors: ["gas", "reliability", "costs"]
+         timeframe: "2025-2030"
+         tier: "freemium"
+         
+     research_focused:
+       - question: "How do stochastic weather patterns affect optimal nuclear-renewable coordination strategies?"
+         vs_capability: "stochastic_nuclear_renewable_analysis"
+         complexity: "structural_modifications"
+         sectors: ["nuclear", "renewable_integration", "weather_correlation"]
+         timeframe: "2025-2040"
+         tier: "enterprise"
+
+ DEU:
+   name: "Germany"
+   iso_codes: ["DE"]
+   economy_rank: 4
+   
+   data_sources:
+     global_baseline:
+       - "IEA Germany energy statistics"
+       - "EU renewable energy database"
+       - "IRENA offshore wind potential"
+     local_premium:
+       - "Bundesnetzagentur hourly demand and generation"
+       - "TSO transmission constraints and congestion data"
+       - "BMWi industrial electricity consumption by sector"
+       - "UBA emissions and efficiency data by plant"
+       - "Destatis regional economic and demographic data"
+       - "VDA electric vehicle deployment statistics"
+       note: "TSO data enables detailed congestion analysis and industrial demand response optimization"
+   
+   major_issues:
+     - title: "Industrial Competitiveness During Renewable Transition"
+       description: "Energy-intensive industries facing high electricity costs while transitioning to renewable-based production"
+       priority: "high"
+       target_groups: ["govt", "researchers"]
+     - title: "Coal Phase-out & Grid Stability Management"
+       description: "Accelerated coal retirement requiring sophisticated balancing with renewable variability"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "Which industrial hydrogen users should locate near offshore wind vs. import hydrogen?"
+         vs_capability: "hydrogen_location_optimization"
+         complexity: "ready_to_answer"
+         sectors: ["hydrogen", "industry", "offshore_wind"]
+         timeframe: "2025-2040"
+         tier: "freemium"
+         
+       - question: "How does accelerated coal retirement affect grid stability and industrial electricity costs?"
+         vs_capability: "fossil_fleet_retirement_analysis"
+         complexity: "ready_to_answer"
+         sectors: ["coal_transition", "grid_stability", "industry"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+     utilities_operational:
+       - question: "What EV charging policies maximize renewable utilization while minimizing grid upgrades?"
+         vs_capability: "ev_renewable_integration"
+         complexity: "minor_structural_changes"
+         sectors: ["transport", "renewable_integration", "grid_planning"]
+         timeframe: "2025-2030"
+         tier: "premium"
+         
+       - question: "How should heat pump deployment be sequenced to minimize winter peak demand impacts?"
+         vs_capability: "heating_electrification_timing"
+         complexity: "minor_structural_changes"
+         sectors: ["buildings", "heating", "grid_planning"]
+         timeframe: "2025-2035"
+         tier: "premium"
+         
+     research_focused:
+       - question: "How do industrial demand response programs interact with renewable forecast errors and grid balancing costs?"
+         vs_capability: "industrial_demand_response_forecasting"
+         complexity: "structural_modifications"
+         sectors: ["industry", "demand_response", "forecasting", "grid_balancing"]
+         timeframe: "2025-2030"
+         tier: "enterprise"
+
+ IND:
+   name: "India"
+   iso_codes: ["IN_NORTH", "IN_WEST", "IN_SOUTH", "IN_EAST", "IN_NORTHEAST"]
+   economy_rank: 5
+   
+   data_sources:
+     global_baseline:
+       - "IEA India energy statistics"
+       - "IRENA renewable capacity data"
+       - "BP Statistical Review consumption patterns"
+     local_premium:
+       - "CEA hourly demand by state and region"
+       - "MNRE renewable potential assessments"
+       - "Coal plant efficiency and age profiles (CEA database)"
+       - "POSOCO interstate transmission constraints"
+       - "Agricultural vs. industrial demand patterns by state"
+       - "NITI Aayog electric vehicle adoption targets"
+       note: "State-level data essential for interstate coordination and coal plant transition analysis"
+   
+   major_issues:
+     - title: "Massive Renewable Scaling & Coal Plant Stranding"
+       description: "500GW renewable target while managing existing coal fleet and ensuring energy access"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "Grid Integration & Interstate Coordination"
+       description: "Connecting renewable-rich states with demand centers across vast distances"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "Which existing coal plants can be economically converted to backup/peaking roles vs. retirement?"
+         vs_capability: "fossil_fleet_retrofit_analysis"
+         complexity: "ready_to_answer"
+         sectors: ["coal_transition", "grid_stability"]
+         timeframe: "2025-2040"
+         tier: "freemium"
+         
+       - question: "How should 500GW solar target be distributed to minimize transmission bottlenecks?"
+         vs_capability: "grid_aware_renewable_placement"
+         complexity: "minor_structural_changes"
+         sectors: ["solar", "transmission", "grid_constraints"]
+         timeframe: "2025-2030"
+         tier: "premium"
+         
+     utilities_operational:
+       - question: "What rural electrification strategy balances grid extension vs. distributed renewables?"
+         vs_capability: "distributed_vs_centralized_access_analysis"
+         complexity: "minor_structural_changes"
+         sectors: ["energy_access", "rural_development", "distributed_energy"]
+         timeframe: "2025-2035"
+         tier: "premium"
+         
+       - question: "How does monsoon hydroelectric variability affect coal plant dispatch and renewable curtailment?"
+         vs_capability: "seasonal_dispatch_optimization"
+         complexity: "ready_to_answer"
+         sectors: ["hydro", "coal", "seasonal_patterns"]
+         timeframe: "2025-2030"
+         tier: "freemium"
+         
+     research_focused:
+       - question: "How does agricultural demand response interact with solar generation patterns and rural grid stability?"
+         vs_capability: "agricultural_demand_response_analysis"
+         complexity: "structural_modifications"
+         sectors: ["agriculture", "demand_response", "rural_grids", "solar"]
+         timeframe: "2025-2035"
+         tier: "enterprise"
+
+ GBR:
+   name: "United Kingdom"
+   iso_codes: ["GB"]
+   economy_rank: 6
+   
+   data_sources:
+     global_baseline:
+       - "IEA UK energy statistics"
+       - "EU renewable energy database"
+       - "Global offshore wind resource maps"
+     local_premium:
+       - "National Grid ESO hourly demand and generation"
+       - "Crown Estate offshore wind pipeline and constraints"
+       - "BEIS heat pump deployment data by region"
+       - "Ofgem gas plant efficiency and flexibility characteristics"
+       - "ONS regional heating demand profiles"
+       - "DfT electric vehicle adoption by local authority"
+       note: "ESO data enables detailed offshore wind integration and heat pump demand modeling"
+   
+   major_issues:
+     - title: "Offshore Wind Leadership & Grid Integration"
+       description: "World's largest offshore wind pipeline requiring massive grid reinforcement and storage"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "Heat Pump Deployment & Gas Network Transition"
+       description: "Ambitious heat pump targets and decisions on hydrogen vs. electrification for heating"
+       priority: "high"
+       target_groups: ["govt", "researchers"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "How much offshore wind can be integrated before significant curtailment or storage requirements?"
+         vs_capability: "renewable_integration_limits"
+         complexity: "ready_to_answer"
+         sectors: ["offshore_wind", "storage", "grid_flexibility"]
+         timeframe: "2025-2040"
+         tier: "freemium"
+         
+       - question: "Which regions should prioritize heat pumps vs. hydrogen heating vs. heat networks?"
+         vs_capability: "heating_technology_optimization"
+         complexity: "minor_structural_changes"
+         sectors: ["buildings", "heating", "hydrogen"]
+         timeframe: "2025-2035"
+         tier: "premium"
+         
+     utilities_operational:
+       - question: "What gas plant retirement timeline maintains reliability while maximizing offshore wind utilization?"
+         vs_capability: "fossil_renewable_coordination"
+         complexity: "ready_to_answer"
+         sectors: ["gas_transition", "offshore_wind", "grid_reliability"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+       - question: "How does accelerated ICE vehicle ban affect EV charging infrastructure and grid investment needs?"
+         vs_capability: "transport_transition_timing"
+         complexity: "minor_structural_changes"
+         sectors: ["transport", "grid_planning", "policy"]
+         timeframe: "2025-2030"
+         tier: "premium"
+         
+     research_focused:
+       - question: "How do correlated offshore wind and heat pump demand patterns affect seasonal storage requirements?"
+         vs_capability: "seasonal_correlation_analysis"
+         complexity: "structural_modifications"
+         sectors: ["offshore_wind", "heating", "seasonal_storage", "correlation"]
+         timeframe: "2025-2040"
+         tier: "enterprise"
+
+ FRA:
+   name: "France"
+   iso_codes: ["FR"]
+   economy_rank: 7
+   
+   data_sources:
+     global_baseline:
+       - "IEA France energy statistics"
+       - "EU renewable energy database"
+       - "IAEA nuclear plant data"
+     local_premium:
+       - "RTE hourly demand and nuclear generation"
+       - "Nuclear plant age and performance characteristics (EDF data)"
+       - "Cross-border electricity flows (ENTSO-E)"
+       - "INSEE industrial electricity demand by sector"
+       - "ADEME offshore wind resource assessments"
+       - "France Hydrogène industrial hydrogen demand projections"
+       note: "RTE data essential for nuclear-renewable coordination and export optimization"
+   
+   major_issues:
+     - title: "Nuclear-Renewable Coordination & Fleet Management"
+       description: "Aging nuclear fleet requiring decisions on extension vs. replacement with renewables"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "Industrial Hydrogen Development & Energy Exports"
+       description: "Leveraging nuclear baseload for hydrogen production while maintaining European electricity exports"
+       priority: "medium"
+       target_groups: ["govt", "researchers"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "How should nuclear plant maintenance schedules coordinate with renewable availability?"
+         vs_capability: "nuclear_renewable_coordination"
+         complexity: "ready_to_answer"
+         sectors: ["nuclear", "renewable_integration", "grid_operations"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+       - question: "Which nuclear plants should be retired vs. extended vs. replaced with SMRs?"
+         vs_capability: "nuclear_fleet_transition_analysis"
+         complexity: "minor_structural_changes"
+         sectors: ["nuclear", "policy", "investment"]
+         timeframe: "2025-2050"
+         tier: "premium"
+         
+     utilities_operational:
+       - question: "How does industrial hydrogen production affect nuclear capacity factors and electricity exports?"
+         vs_capability: "hydrogen_nuclear_interaction"
+         complexity: "minor_structural_changes"
+         sectors: ["hydrogen", "nuclear", "industrial", "trade"]
+         timeframe: "2025-2040"
+         tier: "premium"
+         
+       - question: "What offshore wind development timeline complements nuclear fleet transition?"
+         vs_capability: "technology_transition_sequencing"
+         complexity: "ready_to_answer"
+         sectors: ["offshore_wind", "nuclear", "policy"]
+         timeframe: "2025-2040"
+         tier: "freemium"
+         
+     research_focused:
+       - question: "How do nuclear plant aging curves interact with renewable variability and grid flexibility requirements?"
+         vs_capability: "nuclear_aging_flexibility_analysis"
+         complexity: "structural_modifications"
+         sectors: ["nuclear", "aging", "flexibility", "renewable_integration"]
+         timeframe: "2025-2050"
+         tier: "enterprise"
+
+ ITA:
+   name: "Italy"
+   iso_codes: ["IT_NORTH", "IT_CENTRAL", "IT_SOUTH", "IT_SICILY", "IT_SARDINIA"]
+   economy_rank: 8
+   
+   data_sources:
+     global_baseline:
+       - "IEA Italy energy statistics"
+       - "EU renewable energy database"
+       - "Global gas pipeline capacity data"
+     local_premium:
+       - "Terna hourly demand by zone"
+       - "Gas pipeline capacities and flows (Snam data)"
+       - "Inter-zonal transmission constraints"
+       - "Regional renewable resource potential (GSE data)"
+       - "Gas plant flexibility characteristics (Terna database)"
+       - "ISTAT regional industrial electricity consumption"
+       note: "Zonal data critical for north-south transmission analysis and island integration"
+   
+   major_issues:
+     - title: "Gas Import Dependence & Infrastructure Transition"
+       description: "Heavy reliance on gas imports and pipeline infrastructure requiring diversification strategy"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "North-South Grid Integration & Island Connections"
+       description: "Transmission bottlenecks between regions and integration of Sicily/Sardinia renewable potential"
+       priority: "medium"
+       target_groups: ["utilities", "researchers"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "How does reduced Russian gas availability affect renewable deployment urgency and gas plant utilization?"
+         vs_capability: "gas_supply_renewable_interaction"
+         complexity: "ready_to_answer"
+         sectors: ["gas_transition", "renewable_deployment", "energy_security"]
+         timeframe: "2025-2030"
+         tier: "freemium"
+         
+       - question: "Which gas plants should be converted for hydrogen co-firing vs. retirement vs. maintained for flexibility?"
+         vs_capability: "fossil_fleet_retrofit_analysis"
+         complexity: "ready_to_answer"
+         sectors: ["gas_transition", "hydrogen", "grid_flexibility"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+     utilities_operational:
+       - question: "How much solar PV can be deployed in the South before transmission upgrades to the North are required?"
+         vs_capability: "transmission_constrained_deployment"
+         complexity: "minor_structural_changes"
+         sectors: ["solar", "transmission", "regional_integration"]
+         timeframe: "2025-2030"
+         tier: "premium"
+         
+       - question: "What Sicily/Sardinia renewable development strategy optimizes island vs. mainland grid integration?"
+         vs_capability: "island_grid_optimization"
+         complexity: "minor_structural_changes"
+         sectors: ["renewable_deployment", "transmission", "island_systems"]
+         timeframe: "2025-2035"
+         tier: "premium"
+         
+     research_focused:
+       - question: "How do correlated wind patterns across mainland and islands affect optimal storage allocation?"
+         vs_capability: "spatial_wind_correlation_analysis"
+         complexity: "structural_modifications"
+         sectors: ["wind", "islands", "storage", "spatial_correlation"]
+         timeframe: "2025-2040"
+         tier: "enterprise"
+
+ BRA:
+   name: "Brazil"
+   iso_codes: ["BR_NORTH", "BR_NORTHEAST", "BR_SOUTHEAST", "BR_SOUTH", "BR_CENTRAL"]
+   economy_rank: 9
+   
+   data_sources:
+     global_baseline:
+       - "IEA Brazil energy statistics"
+       - "IRENA renewable capacity data"
+       - "Global biofuel production statistics"
+     local_premium:
+       - "ONS hourly demand by subsystem"
+       - "Reservoir levels and inflow patterns (ONS data)"
+       - "Thermal plant dispatch and marginal costs"
+       - "Sugarcane harvest and processing cycles (UNICA data)"
+       - "Biofuel production and consumption data (ANP)"
+       - "CCEE distributed generation statistics"
+       note: "Subsystem data essential for hydrothermal optimization and biofuel-electricity integration"
+   
+   major_issues:
+     - title: "Hydrothermal System Optimization & Climate Variability"
+       description: "Managing drought cycles in hydro-dependent system while integrating massive renewable additions"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "Biofuel-Electricity Complementarity & Transport Decarbonization"
+       description: "Optimizing sugarcane use between ethanol production and electricity generation from bagasse"
+       priority: "high"
+       target_groups: ["govt", "researchers"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "When should sugarcane bagasse be used for electricity vs. ethanol production based on seasonal patterns?"
+         vs_capability: "biofuel_electricity_optimization"
+         complexity: "ready_to_answer"
+         sectors: ["biofuels", "renewable_generation", "agriculture"]
+         timeframe: "2025-2040"
+         tier: "freemium"
+         
+       - question: "How does offshore wind development affect thermal plant dispatch during dry seasons?"
+         vs_capability: "renewable_thermal_coordination"
+         complexity: "ready_to_answer"
+         sectors: ["offshore_wind", "hydrothermal", "seasonal_storage"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+     utilities_operational:
+       - question: "What green hydrogen production timeline optimizes renewable surplus utilization?"
+         vs_capability: "hydrogen_surplus_utilization"
+         complexity: "minor_structural_changes"
+         sectors: ["hydrogen", "renewable_integration", "energy_storage"]
+         timeframe: "2025-2035"
+         tier: "premium"
+         
+       - question: "How should reservoir management coordinate with wind/solar forecasts and thermal plant commitment?"
+         vs_capability: "hydrothermal_renewable_dispatch"
+         complexity: "minor_structural_changes"
+         sectors: ["hydro", "thermal", "renewable_forecasting"]
+         timeframe: "2025-2030"
+         tier: "premium"
+         
+     research_focused:
+       - question: "How do El Niño/La Niña cycles affect optimal biofuel-electricity allocation and storage investments?"
+         vs_capability: "climate_cycle_energy_optimization"
+         complexity: "structural_modifications"
+         sectors: ["climate", "biofuels", "hydro", "storage"]
+         timeframe: "2025-2050"
+         tier: "enterprise"
+
+ CAN:
+   name: "Canada"
+   iso_codes: ["IESO", "AESO", "BC_HYDRO", "MISO_MB", "NSPI", "NB_POWER"]
+   economy_rank: 10
+   
+   data_sources:
+     global_baseline:
+       - "IEA Canada energy statistics"
+       - "IRENA renewable capacity data"
+       - "Global critical minerals production data"
+     local_premium:
+       - "Provincial utility hourly demand and generation"
+       - "Interprovincial electricity flows (NERC data)"
+       - "Oil sands facility energy consumption (AER data)"
+       - "Hydroelectric reservoir and generation data"
+       - "Natural Resources Canada critical mineral production locations"
+       - "Statistics Canada provincial economic and demographic data"
+       note: "Provincial data essential for interprovincial coordination and oil sands decarbonization"
+   
+   major_issues:
+     - title: "Provincial Grid Coordination & Hydroelectric Export Optimization"
+       description: "Coordinating diverse provincial electricity systems and maximizing clean electricity exports"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "Oil Sands Decarbonization & Critical Mineral Processing"
+       description: "Reducing emissions from oil sands operations while electrifying critical mineral processing"
+       priority: "high"
+       target_groups: ["govt", "researchers"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "How can Quebec/BC hydroelectricity be optimally shared with other provinces to displace fossil generation?"
+         vs_capability: "interprovincial_coordination_analysis"
+         complexity: "ready_to_answer"
+         sectors: ["hydro", "transmission", "provincial_coordination"]
+         timeframe: "2025-2040"
+         tier: "freemium"
+         
+       - question: "What combination of CCUS, hydrogen, and electrification minimizes oil sands emissions most cost-effectively?"
+         vs_capability: "industrial_decarbonization_pathway"
+         complexity: "minor_structural_changes"
+         sectors: ["oil_gas", "hydrogen", "ccus", "electrification"]
+         timeframe: "2025-2040"
+         tier: "premium"
+         
+     utilities_operational:
+       - question: "How does critical mineral processing electrification affect provincial renewable energy priorities?"
+         vs_capability: "industrial_electrification_sequencing"
+         complexity: "minor_structural_changes"
+         sectors: ["mining", "electrification", "critical_minerals"]
+         timeframe: "2025-2035"
+         tier: "premium"
+         
+       - question: "What offshore wind development in Atlantic Canada optimizes domestic supply vs. export potential?"
+         vs_capability: "renewable_trade_optimization"
+         complexity: "ready_to_answer"
+         sectors: ["offshore_wind", "trade", "regional_development"]
+         timeframe: "2025-2040"
+         tier: "freemium"
+         
+     research_focused:
+       - question: "How do correlated hydroelectric patterns across provinces affect optimal storage and transmission investments?"
+         vs_capability: "interprovincial_hydro_correlation_analysis"
+         complexity: "structural_modifications"
+         sectors: ["hydro", "storage", "transmission", "provincial_coordination"]
+         timeframe: "2025-2050"
+         tier: "enterprise"
+
+ GRC:
+   name: "Greece"
+   iso_codes: ["GR"]
+   economy_rank: 51
+   
+   data_sources:
+     global_baseline:
+       - "IEA Greece energy statistics"
+       - "EU renewable energy database"
+       - "Global island energy system data"
+     local_premium:
+       - "IPTO hourly demand by region"
+       - "Island electricity consumption patterns"
+       - "Lignite plant characteristics and retirement plans"
+       - "Interconnection cable capacities and planned projects"
+       - "Solar resource potential by island (CRES data)"
+       - "Tourism seasonal demand patterns"
+       note: "Island-specific data critical for standalone vs. interconnection decisions"
+   
+   major_issues:
+     - title: "Island Grid Integration & Renewable Deployment"
+       description: "Integrating renewable energy across numerous islands while maintaining grid stability"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "Lignite Phase-out & Gas Transition Strategy"
+       description: "Accelerated retirement of lignite plants while ensuring energy security and affordability"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "Which Greek islands should prioritize energy storage vs. interconnection cables for renewable integration?"
+         vs_capability: "island_storage_vs_transmission"
+         complexity: "ready_to_answer"
+         sectors: ["islands", "storage", "transmission", "renewable_integration"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+       - question: "How does lignite plant retirement timing affect gas plant utilization and renewable curtailment?"
+         vs_capability: "coal_retirement_system_impact"
+         complexity: "ready_to_answer"
+         sectors: ["lignite_transition", "gas", "renewable_integration"]
+         timeframe: "2025-2030"
+         tier: "freemium"
+         
+     utilities_operational:
+       - question: "What solar-plus-storage deployment strategy maximizes energy independence for island communities?"
+         vs_capability: "distributed_energy_independence"
+         complexity: "minor_structural_changes"
+         sectors: ["solar", "storage", "energy_access", "islands"]
+         timeframe: "2025-2030"
+         tier: "premium"
+         
+       - question: "How should mainland Greece renewable development coordinate with island interconnection projects?"
+         vs_capability: "coordinated_island_mainland_planning"
+         complexity: "minor_structural_changes"
+         sectors: ["renewable_deployment", "transmission", "regional_coordination"]
+         timeframe: "2025-2035"
+         tier: "premium"
+         
+     research_focused:
+       - question: "How do tourism demand patterns interact with solar generation and storage optimization on islands?"
+         vs_capability: "tourism_solar_optimization"
+         complexity: "structural_modifications"
+         sectors: ["tourism", "solar", "storage", "seasonal_demand"]
+         timeframe: "2025-2040"
+         tier: "enterprise"
+
+ EGY:
+   name: "Egypt"
+   iso_codes: ["EG"]
+   economy_rank: 33
+   
+   data_sources:
+     global_baseline:
+       - "IEA Egypt energy statistics"
+       - "IRENA renewable capacity data"
+       - "Global gas export market data"
+     local_premium:
+       - "EETC hourly demand patterns"
+       - "Solar irradiation maps (NREA data)"
+       - "Gas pipeline and export terminal capacities"
+       - "Transmission network topology and constraints"
+       - "Industrial electricity demand centers (CAPMAS data)"
+       - "Suez Canal energy consumption patterns"
+       note: "NREA solar data enables precise desert development and transmission planning"
+   
+   major_issues:
+     - title: "Massive Solar Development & Grid Integration"
+       description: "Leveraging world-class solar resources while upgrading transmission infrastructure"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "Gas Export vs. Domestic Use Balance"
+       description: "Optimizing natural gas allocation between domestic power generation and export revenues"
+       priority: "high"
+       target_groups: ["govt", "researchers"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "How much solar PV can be developed in the Western Desert before transmission bottlenecks to Cairo/Alexandria?"
+         vs_capability: "transmission_constrained_solar_development"
+         complexity: "ready_to_answer"
+         sectors: ["solar", "transmission", "desert_development"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+       - question: "What gas plant utilization strategy balances export revenues with domestic electricity security?"
+         vs_capability: "gas_export_domestic_optimization"
+         complexity: "ready_to_answer"
+         sectors: ["gas", "exports", "energy_security"]
+         timeframe: "2025-2030"
+         tier: "freemium"
+         
+     utilities_operational:
+       - question: "How should green hydrogen production for export be located relative to solar resources and port infrastructure?"
+         vs_capability: "hydrogen_export_infrastructure_optimization"
+         complexity: "minor_structural_changes"
+         sectors: ["hydrogen", "solar", "exports", "infrastructure"]
+         timeframe: "2025-2040"
+         tier: "premium"
+         
+       - question: "What combination of solar, wind, and storage can reduce dependence on gas-fired generation?"
+         vs_capability: "renewable_portfolio_gas_displacement"
+         complexity: "minor_structural_changes"
+         sectors: ["renewable_mix", "gas_transition", "storage"]
+         timeframe: "2025-2035"
+         tier: "premium"
+         
+     research_focused:
+       - question: "How do dust storm patterns affect optimal solar deployment strategies and cleaning schedules?"
+         vs_capability: "solar_dust_optimization"
+         complexity: "structural_modifications"
+         sectors: ["solar", "weather", "maintenance", "desert_conditions"]
+         timeframe: "2025-2040"
+         tier: "enterprise"
+
+ ZWE:
+   name: "Zimbabwe"
+   iso_codes: ["ZW"]
+   economy_rank: 117
+   
+   data_sources:
+     global_baseline:
+       - "IEA Africa energy statistics"
+       - "IRENA renewable capacity data"
+       - "World Bank energy access indicators"
+     local_premium:
+       - "ZESA hourly demand (limited coverage)"
+       - "Kariba generation and reservoir levels"
+       - "Solar resource potential mapping (UNDP data)"
+       - "Rural electrification coverage statistics"
+       - "Regional power pool trade flows (SAPP data)"
+       - "Mining sector electricity consumption patterns"
+       note: "Regional power pool data critical for energy security and import optimization"
+   
+   major_issues:
+     - title: "Hydroelectric Reliability & Climate Resilience"
+       description: "Kariba dam vulnerability to drought requiring diversification and climate adaptation"
+       priority: "high"
+       target_groups: ["govt", "utilities"]
+     - title: "Energy Access & Rural Electrification Strategy"
+       description: "Expanding electricity access while managing limited generation capacity and infrastructure"
+       priority: "high"
+       target_groups: ["govt", "researchers"]
+   
+   scenario_experiments:
+     govt_strategic:
+       - question: "What combination of solar, mini-grids, and grid extension optimizes rural electrification coverage and costs?"
+         vs_capability: "distributed_vs_centralized_access_analysis"
+         complexity: "ready_to_answer"
+         sectors: ["energy_access", "rural_development", "solar", "mini_grids"]
+         timeframe: "2025-2035"
+         tier: "freemium"
+         
+       - question: "How much solar-plus-storage capacity can reduce dependence on Kariba hydroelectric generation?"
+         vs_capability: "hydro_backup_renewable_sizing"
+         complexity: "ready_to_answer"
+         sectors: ["solar", "storage", "hydro", "climate_resilience"]
+         timeframe: "2025-2030"
+         tier: "freemium"
+         
+     utilities_operational:
+       - question: "Which industrial users should be prioritized for reliable electricity supply vs. demand response programs?"
+         vs_capability: "demand_prioritization_analysis"
+         complexity: "minor_structural_changes"
+         sectors: ["industry", "demand_response", "energy_access"]
+         timeframe: "2025-2030"
+         tier: "premium"
+         
+       - question: "What regional power pool integration strategy maximizes energy security while minimizing costs?"
+         vs_capability: "regional_integration_optimization"
+         complexity: "minor_structural_changes"
+         sectors: ["regional_trade", "energy_security", "transmission"]
+         timeframe: "2025-2040"
+         tier: "premium"
+         
+     research_focused:
+       - question: "How do mining operation schedules interact with solar generation patterns and grid stability?"
+         vs_capability: "mining_solar_coordination"
+         complexity: "structural_modifications"
+         sectors: ["mining", "solar", "industrial_scheduling", "grid_stability"]
+         timeframe: "2025-2035"
+         tier: "enterprise"
+
+# Enhanced capability definitions with structural complexity
+vs_capabilities:
+ ready_to_answer:
+   description: "Analysis possible with current model structure and data"
+   examples: 
+     - "Policy scenario comparisons using parametric features"
+     - "Technology deployment timing and sequencing"
+     - "High-level capacity planning and retirement decisions"
+     - "System-wide renewable integration limits"
+   value_proposition: "Immediate insights without model development time"
+   turnaround: "Same day analysis"
+   
+ minor_structural_changes:
+   description: "Requires specific module updates while preserving full system context"
+   examples:
+     - "Enhanced transmission topology for congestion analysis"
+     - "Detailed storage technology representations"
+     - "Regional demand response program modeling"
+     - "Sector-specific electrification pathways"
+   value_proposition: "Targeted modifications in weeks, not months - full system integrity maintained"
+   turnaround: "2-4 weeks implementation"
+   
+ structural_modifications:
+   description: "Significant model enhancements for specialized research questions"
+   examples:
+     - "Nodal transmission analysis with locational pricing"
+     - "Detailed industrial process modeling with byproduct streams"
+     - "Stochastic renewable resource modeling with weather correlations"
+     - "Behavioral modeling of consumer technology adoption"
+   value_proposition: "Research-grade detail where needed - 80% of model remains production-ready"
+   turnaround: "1-3 months implementation"
+
+# Target group characteristics and priorities
+target_group_focus:
+ govt:
+   priorities: ["policy_effectiveness", "long_term_strategy", "system_wide_impacts", "economic_development"]
+   timeframes: ["2025-2040", "2040-2050"]
+   typical_questions: ["carbon_pricing_impacts", "technology_deployment_targets", "regional_coordination", "industrial_competitiveness"]
+   decision_criteria: ["cost_effectiveness", "employment_impacts", "energy_security", "international_competitiveness"]
+   
+ utilities:
+   priorities: ["operational_reliability", "investment_planning", "market_impacts", "grid_stability"]
+   timeframes: ["2025-2030", "2030-2035"]
+   typical_questions: ["plant_retirement_timing", "transmission_upgrades", "demand_response_programs", "renewable_integration"]
+   decision_criteria: ["reliability", "cost_optimization", "regulatory_compliance", "customer_impacts"]
+   
+ researchers:
+   priorities: ["methodological_innovation", "detailed_analysis", "sensitivity_testing", "theoretical_insights"]
+   timeframes: ["variable", "scenario_dependent"]
+   typical_questions: ["technology_learning_curves", "behavioral_modeling", "uncertainty_quantification", "system_dynamics"]
+   decision_criteria: ["analytical_rigor", "model_validity", "research_contribution", "publication_potential"]
+
+# Feature tier definitions for website CSS and marketing
+feature_tiers:
+ freemium:
+   css_class: "feature-free"
+   icon: "🆓"
+   description: "Available in base VerveStacks models"
+   includes: ["Basic scenario analysis", "Technology deployment optimization", "Policy comparison tools"]
+   
+ premium:
+   css_class: "feature-premium" 
+   icon: "⭐"
+   description: "Enhanced with local data sources and targeted modifications"
+   includes: ["High-resolution local data", "Custom module development", "Advanced grid modeling"]
+   
+ enterprise:
+   css_class: "feature-enterprise"
+   icon: "🏢"
+   description: "Structural modifications with dedicated research support"
+   includes: ["Custom model architecture", "Dedicated analyst support", "Research collaboration"]
+
+# Messaging framework for website content
+messaging:
+ data_sources:
+   title: "Local Data Integration: From Global Baselines to Regional Precision"
+   subtitle: "Commercial feature - local data sources directly replace global defaults for 10x higher resolution"
+   value_prop: "Move from generic global assumptions to your actual operational data"
+   
+ complexity_indicators:
+   ready: 
+     icon: "🟢"
+     label: "Ready to Answer"
+     description: "Launch analysis immediately with existing model"
+   minor:
+     icon: "🟡" 
+     label: "Minor Enhancements"
+     description: "Targeted updates in weeks - full system integrity maintained"
+   structural:
+     icon: "🔴"
+     label: "Research Extensions"
+     description: "Specialized modifications where needed - 80% of model remains production-ready"
+     
+ target_group_value_props:
+   govt: "Test policies across full energy system without waiting for model development"
+   utilities: "Operational insights with your actual data - not generic assumptions"
+   researchers: "Research-grade detail where you need it - production-grade everywhere else"

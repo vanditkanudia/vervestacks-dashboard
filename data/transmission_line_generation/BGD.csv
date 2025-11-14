@@ -1,0 +1,164 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_coal__ember,4.999999999999893,coal,Aggregated Plant -- operating,,,,,False
+e_BD1-230,ep_oil_gas_turbine_G100000411798,150.0,oil,Sayedpur power station_2 -- construction,e_BD1-230,BD1-230,25.782652,88.897118,False
+e_BD11-230,ep_oil_internal_combustion_BD11-230,52.2,oil,Aggregated Plant -- operating,e_BD11-230,BD11-230,24.798480773941314,88.99599859426706,False
+e_BD13-230,ep_gas_combined_cycle_G100000406028,97.0,gas,Fenchuganj power station_1 -- operating,e_BD13-230,BD13-230,24.685359,91.91923,False
+e_BD13-230,ep_gas_combined_cycle_G100000406029,104.0,gas,Fenchuganj power station_2 -- operating,e_BD13-230,BD13-230,24.685359,91.91923,False
+e_BD13-230,ep_gas_combined_cycle_G100000406042,163.0,gas,Kushiara power station_1 -- operating,e_BD13-230,BD13-230,24.684884,91.917388,False
+e_BD13-230,ep_gas_combined_cycle_G100000406063,225.0,gas,Sylhet power station_1 -- operating,e_BD13-230,BD13-230,24.910271,91.828812,False
+e_BD13-230,ep_m_gas_internal_combustion_BD13-230,50.0,gas,Aggregated Plant -- mothballed,e_BD13-230,BD13-230,24.861514241551355,91.86702744948757,False
+e_BD13-230,ep_oil_internal_combustion_BD13-230,55.1,oil,Aggregated Plant -- operating,e_BD13-230,BD13-230,24.511669485037874,91.88447457722677,False
+e_BD14-230,ep_gas_combined_cycle_G100000406047,400.0,gas,Mymensingh power station_2 -- construction,e_BD14-230,BD14-230,24.761578,90.416515,False
+e_BD14-230,ep_gas_combined_cycle_G100000406048,210.0,gas,Mymensingh power station_1 -- operating,e_BD14-230,BD14-230,24.761578,90.416515,False
+e_BD14-230,ep_oil_internal_combustion_G100000411796,163.0,oil,Sreepur power station_1 -- construction,e_BD14-230,BD14-230,24.22987,90.52823,False
+e_BD21-230,ep_bioenergy_BD21-230,42.0,bioenergy,Aggregated Plant -- operating,e_BD21-230,BD21-230,24.167258086076405,90.30538340567244,False
+e_BD21-230,ep_oil_internal_combustion_BD21-230,53.4,oil,Aggregated Plant -- operating,e_BD21-230,BD21-230,23.80998582879453,90.34443347435968,False
+e_BD21-230,ep_oil_internal_combustion_G100000411793,307.4,oil,Summit Gazipur II power station_1 -- operating,e_BD21-230,BD21-230,23.994702,90.337828,False
+e_BD21-230,ep_oil_internal_combustion_G100000411794,147.3,oil,Summit Gazipur I power station_1 -- operating,e_BD21-230,BD21-230,23.99458,90.337796,False
+e_BD21-230,ep_oil_internal_combustion_G100000411801,110.5,oil,RPCL Gazipur power station_1 -- operating,e_BD21-230,BD21-230,23.990993,90.344339,False
+e_BD21-230,ep_oil_internal_combustion_G100000411823,153.5,oil,Kodda power station_1 -- operating,e_BD21-230,BD21-230,23.991123,90.343501,False
+e_BD22-230,ep_oil_internal_combustion_BD22-230,115.8,oil,Aggregated Plant -- operating,e_BD22-230,BD22-230,23.823089939969588,90.00604779843403,False
+e_BD24-230,ep_oil_internal_combustion_G100000411857,105.3,oil,CLC Bosila power station_1 -- operating,e_BD24-230,BD24-230,23.742906,90.342789,False
+e_BD25-230,ep_m_oil_internal_combustion_BD25-230,55.0,oil,Aggregated Plant -- mothballed,e_BD25-230,BD25-230,23.928254791117407,90.45183413149964,False
+e_BD27-230,ep_oil_internal_combustion_BD27-230,266.5,oil,Aggregated Plant -- operating,e_BD27-230,BD27-230,23.809954407227032,90.56274768908182,False
+e_BD27-230,ep_oil_internal_combustion_G100000411791,102.0,oil,Summit Madanganj power plant_1 -- operating,e_BD27-230,BD27-230,23.596184,90.515034,False
+e_BD27-230,ep_oil_internal_combustion_G100000411812,107.1,oil,Orion Gagnagar power station_1 -- operating,e_BD27-230,BD27-230,23.598282,90.485242,False
+e_BD33-230,ep_oil_internal_combustion_BD33-230,60.0,oil,Aggregated Plant -- operating,e_BD33-230,BD33-230,23.564991096726516,90.59905893159821,False
+e_BD33-230,ep_oil_internal_combustion_G100000411865,138.6,oil,Bangla Trac Power Unit-1 power station_1 -- operating,e_BD33-230,BD33-230,23.546548,90.777898,False
+e_BD34-230,ep_oil_internal_combustion_G100000411839,128.9,oil,Feni Lanka power station_1 -- operating,e_BD34-230,BD34-230,23.017307,91.346185,False
+e_BD35-230,ep_gas_combined_cycle_G100000400849,400.0,gas,Rupsha power station_1 -- construction,e_BD35-230,BD35-230,22.853987,89.551191,False
+e_BD35-230,ep_gas_combined_cycle_G100000400850,400.0,gas,Rupsha power station_2 -- construction,e_BD35-230,BD35-230,22.853987,89.551191,False
+e_BD35-230,ep_gas_combined_cycle_G100000400857,330.0,gas,Khulna power station_2 -- operating,e_BD35-230,BD35-230,22.866248,89.536417,False
+e_BD35-230,ep_gas_combined_cycle_G100000406041,225.0,gas,Khulna power station_1 -- operating,e_BD35-230,BD35-230,22.866248,89.536417,False
+e_BD35-230,ep_oil_internal_combustion_G100000411792,119.0,oil,Summit Khulna (KPCL) power station_1 -- operating,e_BD35-230,BD35-230,22.866567,89.538835,False
+e_BD35-230,ep_oil_internal_combustion_G100000411821,110.5,oil,Madhumati power plant_1 -- operating,e_BD35-230,BD35-230,22.934644,89.810976,False
+e_BD35-230,ep_oil_internal_combustion_G100000411862,107.8,oil,Bangla Trac Power Unit-2 power station_1 -- operating,e_BD35-230,BD35-230,23.017703,89.413519,False
+e_BD36-230,ep_oil_internal_combustion_G100000411810,110.5,oil,Orion Power Rupsha power station_1 -- operating,e_BD36-230,BD36-230,22.767114,89.584801,False
+e_BD38-230,ep_oil_internal_combustion_G100000411795,119.5,oil,Summit Barisal power plant_1 -- operating,e_BD38-230,BD38-230,22.659245,90.335928,False
+e_BD41-230,ep_gas_steam_turbine_G100000406049,210.0,gas,Rauzan power station_1 -- operating,e_BD41-230,BD41-230,22.402074,91.939432,False
+e_BD41-230,ep_gas_steam_turbine_G100000406050,210.0,gas,Rauzan power station_2 -- operating,e_BD41-230,BD41-230,22.402074,91.939432,False
+e_BD5-400,ep_oil_internal_combustion_G100000411854,113.0,oil,Confidence Rangpur power station_1 -- operating,e_BD5-400,BD5-400,25.659125,89.272738,False
+e_w1040883470-230,ep_oil_internal_combustion_G100000411836,111.7,oil,Gopalganj power station_1-16 -- operating,e_w1040883470-230,way/1040883470-230,23.030107,89.821256,False
+e_w1041851975-230,ep_oil_internal_combustion_G100000411816,166.5,oil,Mirsarai (Powergen) power station_1 -- operating,e_w1041851975-230,way/1041851975-230,22.782425,91.549886,False
+e_w1043456889-230,ep_gas_combined_cycle_G100000406052,330.0,gas,Shajibazar power station_1 -- operating,e_w1043456889-230,way/1043456889-230,24.252242,91.378674,False
+e_w1043456889-230,ep_gas_gas_turbine_G100000406175,100.0,gas,Shajibazar power station_2 -- operating,e_w1043456889-230,way/1043456889-230,24.252242,91.378674,False
+e_w1043456889-230,ep_gas_internal_combustion_w1043456889-230,128.4,gas,Aggregated Plant -- operating,e_w1043456889-230,way/1043456889-230,24.285169245864168,91.50825877500922,False
+e_w1043456898-230,ep_gas_combined_cycle_G100000406027,163.0,gas,Chandpur power station_1 -- operating,e_w1043456898-230,way/1043456898-230,23.222418,90.669029,False
+e_w1043456898-230,ep_oil_internal_combustion_G100000411851,221.0,oil,Desh Chandpur power station_1 -- operating,e_w1043456898-230,way/1043456898-230,23.224022,90.673872,False
+e_w1043456908-400,ep_coal_ultra-supercritical_G100000105461,660.0,coal,Payra power station (BCPCL)_Phase I Unit 1 -- operating,e_w1043456908-400,way/1043456908-400,21.9999671,90.3056554,False
+e_w1043456908-400,ep_coal_ultra-supercritical_G100000105462,660.0,coal,Payra power station (BCPCL)_Phase I Unit 2 -- operating,e_w1043456908-400,way/1043456908-400,21.9999671,90.3056554,False
+e_w1043456908-400,ep_coal_ultra-supercritical_G100000105463,660.0,coal,Payra power station (BCPCL)_Phase II Unit 1 -- construction,e_w1043456908-400,way/1043456908-400,21.9999671,90.3056554,False
+e_w1043456908-400,ep_coal_ultra-supercritical_G100000105464,660.0,coal,Payra power station (BCPCL)_Phase II Unit 2 -- construction,e_w1043456908-400,way/1043456908-400,21.9999671,90.3056554,False
+e_w1043456908-400,ep_coal_ultra-supercritical_G100000107884,660.0,coal,Patuakhali power station (RPCL/NORINCO)_Phase I Unit 1 -- construction,e_w1043456908-400,way/1043456908-400,22.025149,90.312349,False
+e_w1043456908-400,ep_coal_ultra-supercritical_G100000107885,660.0,coal,Patuakhali power station (RPCL/NORINCO)_Phase I Unit 2 -- construction,e_w1043456908-400,way/1043456908-400,22.025149,90.312349,False
+e_w1098311083-230,ep_gas_combined_cycle_G100000400853,590.0,gas,Meghnaghat-II power station_1 -- operating,e_w1098311083-230,way/1098311083-230,23.608172,90.595154,False
+e_w1098311083-230,ep_gas_combined_cycle_G100000406045,335.0,gas,Meghnaghat-I power station_1 -- operating,e_w1098311083-230,way/1098311083-230,23.608172,90.595154,False
+e_w1098311083-230,ep_oil_internal_combustion_G100000411809,109.8,oil,Orion Power Sonargaon power station_1 -- operating,e_w1098311083-230,way/1098311083-230,23.607029,90.573162,False
+e_w1098311083-230,ep_oil_internal_combustion_G100000411811,107.1,oil,Orion Power Meghnaghat power station_1 -- operating,e_w1098311083-230,way/1098311083-230,23.611555,90.593226,False
+e_w1098311083-230,ep_oil_internal_combustion_w1098311083-230,55.3,oil,Aggregated Plant -- operating,e_w1098311083-230,way/1098311083-230,23.70650245352767,90.74992592267652,False
+e_w1098311083-400,ep_gas_combined_cycle_G100000400848,750.0,gas,Reliance Meghnaghat power station_1 -- construction,e_w1098311083-400,way/1098311083-400,23.607983,90.596336,False
+e_w1098311083-400,ep_gas_combined_cycle_G100000400852,584.0,gas,Unique Meghnaghat power station_1 -- operating,e_w1098311083-400,way/1098311083-400,23.616284,90.613311,False
+e_w1098311083-400,ep_gas_combined_cycle_G100000406043,450.0,gas,Meghnaghat (MPL) power station_1 -- operating,e_w1098311083-400,way/1098311083-400,23.609062,90.599703,False
+e_w1098932512-400,ep_coal_supercritical_G100000101511,660.0,coal,Banshkhali power station (S Alam)_Unit 1 -- operating,e_w1098932512-400,way/1098932512-400,21.970844,91.888932,False
+e_w1098932512-400,ep_coal_supercritical_G100000101512,660.0,coal,Banshkhali power station (S Alam)_Unit 2 -- operating,e_w1098932512-400,way/1098932512-400,21.979067,91.888938,False
+e_w1301517779-400,ep_oil_internal_combustion_G100000411859,107.1,oil,Chapainawabganj power station_1 -- operating,e_w1301517779-400,way/1301517779-400,24.655853,88.404188,False
+e_w1301552541-400,ep_coal_ultra-supercritical_G100000106718,600.0,coal,Matarbari power station_Phase I Unit 1 -- operating,e_w1301552541-400,way/1301552541-400,21.70184,91.8834,False
+e_w1301552541-400,ep_coal_ultra-supercritical_G100000106719,600.0,coal,Matarbari power station_Phase I Unit 2 -- operating,e_w1301552541-400,way/1301552541-400,21.70184,91.8834,False
+e_w1301701550-230,ep_coal_supercritical_G100000108473,660.0,coal,Rampal power station_Unit 1 -- operating,e_w1301701550-230,way/1301701550-230,22.592458,89.556427,False
+e_w1301701550-230,ep_coal_supercritical_G100000108474,660.0,coal,Rampal power station_Unit 2 -- operating,e_w1301701550-230,way/1301701550-230,22.592458,89.556427,False
+e_w1301701558-400,ep_coal_supercritical_G100000113488,350.0,coal,Barisal power station_Unit 1 -- operating,e_w1301701558-400,way/1301701558-400,21.961035,90.062712,False
+e_w1343895135-400,ep_nuclear_G100000500177,1200.0,nuclear,Rooppur nuclear power plant_1 -- construction,e_w1343895135-400,way/1343895135-400,24.0656,89.0453,False
+e_w1343895135-400,ep_nuclear_G100000500178,1200.0,nuclear,Rooppur nuclear power plant_2 -- construction,e_w1343895135-400,way/1343895135-400,24.0656,89.0453,False
+e_w1429611996-230,ep_gas_combined_cycle_G100000400854,590.0,gas,UPGD Anwara power station_1 -- construction,e_w1429611996-230,way/1429611996-230,22.233716,91.865981,False
+e_w1429611996-230,ep_oil_internal_combustion_G100000411788,290.0,oil,UANPL Anwara power station_1 -- operating,e_w1429611996-230,way/1429611996-230,22.231956,91.827789,False
+e_w1429611996-230,ep_oil_internal_combustion_G100000411849,102.0,oil,Dohazari power station_1 -- operating,e_w1429611996-230,way/1429611996-230,22.152248,92.071345,False
+e_w147998606-230,ep_gas_combined_cycle_G100000406034,365.0,gas,Ghorasal power station_7 -- operating,e_w147998606-230,way/147998606-230,23.980072,90.637084,False
+e_w147998606-230,ep_gas_combined_cycle_G100000406037,210.0,gas,Ghorasal power station_Repowered 4 -- operating,e_w147998606-230,way/147998606-230,23.980072,90.637084,False
+e_w147998606-230,ep_gas_gas_turbine_G100000406036,260.0,gas,Ghorasal power station_Repowered 3 -- operating,e_w147998606-230,way/147998606-230,23.980072,90.637084,False
+e_w147998606-230,ep_gas_internal_combustion_G100000411837,113.9,gas,Ghorashal (Regent) power station_1 -- operating,e_w147998606-230,way/147998606-230,23.970687,90.641427,False
+e_w147998606-230,ep_gas_steam_turbine_G100000406033,210.0,gas,Ghorasal power station_5 -- operating,e_w147998606-230,way/147998606-230,23.980072,90.637084,False
+e_w147998642-230,ep_m_oil_internal_combustion_G100000411808,307.2,oil,Pangaon power station_1 -- mothballed,e_w147998642-230,way/147998642-230,23.654365,90.452918,False
+e_w147998642-230,ep_oil_internal_combustion_G100000411805,108.0,oil,PowerPac Keraniganj power station_1 -- operating,e_w147998642-230,way/147998642-230,23.647921,90.347748,False
+e_w147998642-230,ep_oil_internal_combustion_w147998642-230,174.6,oil,Aggregated Plant -- operating,e_w147998642-230,way/147998642-230,23.82518918843049,90.32863504011216,False
+e_w147998689-230,ep_oil_internal_combustion_G100000411819,162.0,oil,Manikganj power station_1-9 -- operating,e_w147998689-230,way/147998689-230,23.793729,90.237605,False
+e_w147998689-230,ep_oil_internal_combustion_w147998689-230,57.9,oil,Aggregated Plant -- operating,e_w147998689-230,way/147998689-230,23.611215750862293,90.35929125475401,False
+e_w148002192-230,ep_gas_combined_cycle_G100000406039,412.0,gas,Haripur power station_1 -- operating,e_w148002192-230,way/148002192-230,23.680401,90.52135,False
+e_w148002192-230,ep_gas_combined_cycle_G100000406056,335.0,gas,Shiddirgonj power station_1 -- operating,e_w148002192-230,way/148002192-230,23.684283,90.516272,False
+e_w148002192-230,ep_gas_gas_turbine_G100000406053,105.0,gas,Shiddhirgonj Peaking power station_1 -- operating,e_w148002192-230,way/148002192-230,23.683172,90.526097,False
+e_w148002192-230,ep_gas_gas_turbine_G100000406054,105.0,gas,Shiddhirgonj Peaking power station_2 -- operating,e_w148002192-230,way/148002192-230,23.683172,90.526097,False
+e_w148002192-230,ep_gas_steam_turbine_G100000408632,210.0,gas,Shiddhirgonj Thermal power station_1 -- operating,e_w148002192-230,way/148002192-230,23.682719,90.525111,False
+e_w148002192-230,ep_m_gas_combined_cycle_G100000406038,360.0,gas,Haripur (HPL) power station_1 -- mothballed,e_w148002192-230,way/148002192-230,23.67774,90.532318,False
+e_w148002192-230,ep_oil_internal_combustion_G100000411815,99.8,oil,Narayanganj power station_1 -- operating,e_w148002192-230,way/148002192-230,23.682574,90.524271,False
+e_w148002192-230,ep_oil_internal_combustion_G100000411846,106.8,oil,Dutch Bangla Siddhirganj power station_1 -- operating,e_w148002192-230,way/148002192-230,23.671144,90.525227,False
+e_w148114245-230,ep_gas_gas_turbine_G100000406064,105.0,gas,Tongi power station_1 -- operating,e_w148114245-230,way/148114245-230,23.896606,90.409989,False
+e_w148155161-230,ep_oil_internal_combustion_w148155161-230,53.5,oil,Aggregated Plant -- operating,e_w148155161-230,way/148155161-230,24.002880457756554,88.92211422816716,False
+e_w166377816-230,ep_oil_internal_combustion_G100000411855,111.3,oil,Confidence Bagura power station_2 -- operating,e_w166377816-230,way/166377816-230,24.768642,89.346059,False
+e_w166377816-230,ep_oil_internal_combustion_G100000411856,111.3,oil,Confidence Bagura power station_1 -- operating,e_w166377816-230,way/166377816-230,24.768642,89.346059,False
+e_w210993464-230,ep_gas_gas_turbine_G100000406021,100.0,gas,Baghabari power station_2 -- operating,e_w210993464-230,way/210993464-230,24.13568,89.590839,False
+e_w210993464-230,ep_oil_internal_combustion_G100000411807,216.0,oil,Paramount Baghabari power station_1 -- operating,e_w210993464-230,way/210993464-230,24.132738,89.594794,False
+e_w210993464-230,ep_oil_internal_combustion_w210993464-230,74.6,oil,Aggregated Plant -- operating,e_w210993464-230,way/210993464-230,24.485083225041848,89.49956125302872,False
+e_w211045454-230,ep_oil_internal_combustion_G100000411858,117.4,oil,Chowmuhani power station_1 -- operating,e_w211045454-230,way/211045454-230,22.973712,91.097491,False
+e_w211045539-230,ep_hydro_dam_G100000600148,230.0,hydro,Karnafuli hydroelectric plant_ -- operating,e_w211045539-230,way/211045539-230,22.4949,92.2254,False
+e_w274387974-230,ep_oil_internal_combustion_G100000411784,147.3,oil,United Payra power plant_1 -- operating,e_w274387974-230,way/274387974-230,22.370304,90.322186,False
+e_w274418294-230,ep_oil_internal_combustion_w274418294-230,55.8,oil,Aggregated Plant -- operating,e_w274418294-230,way/274418294-230,23.76764784184733,89.76406800789654,False
+e_w315574753-230,ep_gas_combined_cycle_G100000406059,225.0,gas,Sirajgonj power station_1 -- operating,e_w315574753-230,way/315574753-230,24.386142,89.743267,False
+e_w315574753-230,ep_gas_combined_cycle_G100000406060,225.0,gas,Sirajgonj power station_2 -- operating,e_w315574753-230,way/315574753-230,24.386142,89.743267,False
+e_w315574753-230,ep_gas_combined_cycle_G100000406061,225.0,gas,Sirajgonj power station_3 -- operating,e_w315574753-230,way/315574753-230,24.386142,89.743267,False
+e_w315574753-230,ep_gas_combined_cycle_G100000406062,414.0,gas,Sirajgonj power station_4 -- operating,e_w315574753-230,way/315574753-230,24.386142,89.743267,False
+e_w315574753-230,ep_oil_internal_combustion_G100000411785,205.4,oil,UMPL Mymensingh power station_1 -- operating,e_w315574753-230,way/315574753-230,24.900503,89.988247,False
+e_w315574753-230,ep_oil_internal_combustion_G100000411786,123.8,oil,UJPL Jamalpur power station_1 -- operating,e_w315574753-230,way/315574753-230,24.901461,89.988298,False
+e_w315574753-230,ep_oil_internal_combustion_G100000411806,107.1,oil,PowerPac Jamalpur power station_1 -- operating,e_w315574753-230,way/315574753-230,24.910505,89.961385,False
+e_w316539667-230,ep_oil_internal_combustion_w316539667-230,53.5,oil,Aggregated Plant -- operating,e_w316539667-230,way/316539667-230,23.349976553444534,91.22749230063853,False
+e_w354100531-230,ep_coal_subcritical_G100000100598,125.0,coal,Barapukuria power station_Unit 1 -- operating,e_w354100531-230,way/354100531-230,25.5537569,88.9486312,False
+e_w354100531-230,ep_coal_subcritical_G100000100599,125.0,coal,Barapukuria power station_Unit 2 -- operating,e_w354100531-230,way/354100531-230,25.5537569,88.9486312,False
+e_w354100531-230,ep_coal_subcritical_G100000100600,275.0,coal,Barapukuria power station_Unit 3 -- operating,e_w354100531-230,way/354100531-230,25.553438,88.95048,False
+e_w354114035-230,ep_gas_combined_cycle_G100000400855,420.0,gas,Ashuganj East power station_1 -- operating,e_w354114035-230,way/354114035-230,24.04477,91.017108,False
+e_w354114035-230,ep_gas_combined_cycle_G100000406012,225.0,gas,Ashuganj power station_CC2 -- operating,e_w354114035-230,way/354114035-230,24.043332,91.014254,False
+e_w354114035-230,ep_gas_combined_cycle_G100000406013,450.0,gas,Ashuganj power station_North -- operating,e_w354114035-230,way/354114035-230,24.043332,91.014254,False
+e_w354114035-230,ep_gas_combined_cycle_G100000406014,450.0,gas,Ashuganj power station_South -- operating,e_w354114035-230,way/354114035-230,24.043332,91.014254,False
+e_w354114035-230,ep_gas_internal_combustion_G100000413086,194.6,gas,Ashuganj (United) power station_1 -- operating,e_w354114035-230,way/354114035-230,24.040892,91.004521,False
+e_w354114035-230,ep_gas_internal_combustion_w354114035-230,112.0,gas,Aggregated Plant -- operating,e_w354114035-230,way/354114035-230,24.222508831678383,91.01086822586203,False
+e_w354114035-230,ep_gas_steam_turbine_G100000406017,150.0,gas,Ashuganj power station_ST3 -- operating,e_w354114035-230,way/354114035-230,24.043332,91.014254,False
+e_w354114035-230,ep_gas_steam_turbine_G100000406018,150.0,gas,Ashuganj power station_ST4 -- operating,e_w354114035-230,way/354114035-230,24.043332,91.014254,False
+e_w354114035-230,ep_oil_internal_combustion_G100000411817,161.3,oil,Midland East Power station_1 -- operating,e_w354114035-230,way/354114035-230,24.027482,90.989066,False
+e_w354114035-230,ep_oil_internal_combustion_w354114035-230,54.6,oil,Aggregated Plant -- operating,e_w354114035-230,way/354114035-230,23.862327849339174,91.00995649424614,False
+e_w354114035-400,ep_gas_internal_combustion_w354114035-400,60.0,gas,Aggregated Plant -- operating,e_w354114035-400,way/354114035-400,24.142060039541196,91.17401232684273,False
+e_w507043939-230,ep_gas_combined_cycle_G100000406025,341.0,gas,Bibiana II (Summit) power station_1 -- operating,e_w507043939-230,way/507043939-230,24.639505,91.65947,False
+e_w507043939-230,ep_gas_combined_cycle_G100000406026,400.0,gas,Bibiana III power station_1 -- operating,e_w507043939-230,way/507043939-230,24.636557,91.656487,False
+e_w507043939-400,ep_gas_combined_cycle_G100000400856,383.0,gas,Bibiyana South power station_1 -- operating,e_w507043939-400,way/507043939-400,24.634998,91.660499,False
+e_w545883606-230,ep_gas_combined_cycle_G100000406022,410.0,gas,Bheramara power station_1 -- operating,e_w545883606-230,way/545883606-230,24.049377,89.017492,False
+e_w585464109-230,ep_oil_internal_combustion_w585464109-230,58.2,oil,Aggregated Plant -- operating,e_w585464109-230,way/585464109-230,23.76744101848415,90.57261922241241,False
+e_w719475018-230,ep_gas_combined_cycle_G100000406023,225.0,gas,Bhola power station_1 -- operating,e_w719475018-230,way/719475018-230,22.479292,90.710957,False
+e_w719475018-230,ep_gas_combined_cycle_G100000406024,220.0,gas,Bhola power station_2 -- operating,e_w719475018-230,way/719475018-230,22.479292,90.710957,False
+e_w757725728-230,ep_oil_internal_combustion_G100000411835,97.9,oil,Hathazari peaking power station_1 -- operating,e_w757725728-230,way/757725728-230,22.491425,91.80549,False
+e_w862825578-230,ep_gas_combined_cycle_G100000406058,225.0,gas,Sikalbaha power station_1 -- operating,e_w862825578-230,way/862825578-230,22.323513,91.863078,False
+e_w862825578-230,ep_gas_gas_turbine_G100000406057,150.0,gas,Sikalbaha Peaking power station_1 -- operating,e_w862825578-230,way/862825578-230,22.323513,91.863078,False
+e_w862825578-230,ep_oil_internal_combustion_G100000411797,110.5,oil,Shikalbaha power station_1 -- operating,e_w862825578-230,way/862825578-230,22.335919,91.877772,False
+e_w862825578-230,ep_oil_internal_combustion_G100000411827,110.5,oil,Karnaphuli power station_1 -- operating,e_w862825578-230,way/862825578-230,22.338476,91.888944,False
+e_w862825578-230,ep_oil_internal_combustion_G100000411830,105.6,oil,Jhulda power plant_3 -- operating,e_w862825578-230,way/862825578-230,22.297091,91.805393,False
+e_w862825578-230,ep_oil_internal_combustion_G100000411831,105.6,oil,Jhulda power plant_2 -- operating,e_w862825578-230,way/862825578-230,22.297091,91.805393,False
+e_w862825578-230,ep_oil_internal_combustion_G100000411832,105.6,oil,Jhulda power plant_1 -- operating,e_w862825578-230,way/862825578-230,22.297091,91.805393,False
+e_w862825578-230,ep_oil_internal_combustion_G100000411842,112.0,oil,EPV Thakurgaon power station_2 -- operating,e_w862825578-230,way/862825578-230,22.334642,91.87643,False
+e_w862825578-230,ep_oil_internal_combustion_G100000411843,112.0,oil,EPV Chittagong power station_1 -- operating,e_w862825578-230,way/862825578-230,22.334642,91.87643,False
+e_w862825578-230,ep_oil_internal_combustion_G100000411866,126.4,oil,Anlima Energy power station_1 -- operating,e_w862825578-230,way/862825578-230,22.329071,91.874191,False
+e_w862825578-230,ep_oil_internal_combustion_w862825578-230,55.7,oil,Aggregated Plant -- operating,e_w862825578-230,way/862825578-230,22.153153858652345,91.92741970511962,False
+e_w957137779-230,ep_oil_internal_combustion_w957137779-230,105.6,oil,Aggregated Plant -- operating,e_w957137779-230,way/957137779-230,24.321388071517738,88.57004928328504,False
+elc_spv_003,ep_solar_pv_003,75.0,solar,Aggregated Plant -- operating,elc_spv_003,way/1428394504-230,22.78747727269661,91.79339860486468,False
+elc_spv_004,ep_solar_pv_004,20.0,solar,Aggregated Plant -- operating,elc_spv_004,way/1301552541-400,21.113554149809634,92.29782457800255,False
+elc_spv_005,ep_solar_pv_005,7.2,solar,Aggregated Plant -- operating,elc_spv_005,way/1098932512-400,21.94288686319509,92.53988850416559,False
+elc_spv_006,ep_solar_006__irena,15.029109398367659,solar,Aggregated Plant -- operating,elc_spv_006,BD1-230,25.824376677052392,89.1973795793143,False
+elc_spv_006,ep_solar_pv_006,42.3,solar,Aggregated Plant -- operating,elc_spv_006,BD1-230,26.10349166622337,88.78848946512859,False
+elc_spv_007,ep_solar_pv_007,30.0,solar,Aggregated Plant -- operating,elc_spv_007,way/1301517779-400,25.129216841291967,88.83611226508236,False
+elc_spv_008,ep_solar_pv_008,218.9,solar,Aggregated Plant -- operating,elc_spv_008,way/210993464-230,24.171781400135316,89.23554181770193,False
+elc_spv_009,ep_solar_pv_009,50.0,solar,Aggregated Plant -- operating,elc_spv_009,BD10-230,24.96264041707191,89.82486518124682,False
+elc_spv_009,ep_solar_pv_G100000801112,200.0,solar,Gaibandha Beximco solar farm_-- -- operating,elc_spv_009,BD10-230,25.3288,89.5417,False
+elc_spv_009,ep_solar_pv_G100000801488,275.0,solar,Sundarganj solar farm_-- -- operating,elc_spv_009,BD10-230,25.5662,89.5174,False
+elc_spv_010,ep_solar_pv_010,106.7,solar,Aggregated Plant -- construction,elc_spv_010,BD16-400,23.964522873923702,88.6439811783008,False
+elc_spv_011,ep_solar_011__irena,14.601654975701718,solar,Aggregated Plant -- operating,elc_spv_011,way/147998784-230,22.839288577326755,89.55294678613625,False
+elc_spv_011,ep_solar_pv_011,269.0,solar,Aggregated Plant -- operating,elc_spv_011,way/147998784-230,23.16635096419789,89.08957965890157,False
+elc_spv_012,ep_solar_012__irena,14.225235625930573,solar,Aggregated Plant -- operating,elc_spv_012,BD14-230,24.6035974992655,91.95455883987302,False
+elc_spv_012,ep_solar_pv_012,36.6,solar,Aggregated Plant -- operating,elc_spv_012,BD14-230,24.695787276942482,91.46856215641508,False
+elc_won_006,ep_windon_006__irena,1.0207395186116344,windon,Aggregated Plant -- operating,elc_won_006,way/1043456908-400,22.322640809461525,90.30304098130095,False
+elc_won_007,ep_windon_007__irena,0.9388187103171804,windon,Aggregated Plant -- operating,elc_won_007,way/1301701550-230,22.068861494033253,89.28663116569537,False
+elc_won_009,ep_windon_009__irena,0.9404417710711847,windon,Aggregated Plant -- operating,elc_won_009,way/1098932512-400,21.82681124889055,91.64378510038961,False
+elc_won_009,ep_windon_wind_009,60.0,windon,Aggregated Plant -- operating,elc_won_009,way/1098932512-400,22.471421913519425,91.59900612468728,False

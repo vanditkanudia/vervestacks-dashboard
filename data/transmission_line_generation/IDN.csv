@@ -1,0 +1,380 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_ID1-275,ep_coal_subcritical_G100000107179,200.0,coal,Nagan Raya power station_Unit 3 -- operating,e_ID1-275,ID1-275,4.1156362,96.2024123,False
+e_ID1-275,ep_coal_subcritical_G100000107180,200.0,coal,Nagan Raya power station_Unit 4 -- operating,e_ID1-275,ID1-275,4.1156362,96.2024123,False
+e_ID1-275,ep_coal_subcritical_ID1-275,220.0,coal,Aggregated Plant -- operating,e_ID1-275,ID1-275,4.288249632580776,96.21831593569195,False
+e_ID1-275,ep_hydro_ID1-275__irena,17.86813808100027,hydro,Aggregated Plant - IRENA Gap - ID1-275_Missing Hydro Capacity -- operating,e_ID1-275,ID1-275,3.9357703368523844,96.14878251652704,False
+e_ID1-275,ep_hydro_ror_G100000602164,88.0,hydro,Peusanga hydroelectric plant_ -- construction,e_ID1-275,ID1-275,4.4495,96.8839,False
+e_ID10-500,ep_coal_subcritical_ID10-500,120.0,coal,Aggregated Plant -- operating,e_ID10-500,ID10-500,-5.843895756285473,105.9396260024832,False
+e_ID10-500,ep_coal_supercritical_G100000100536,660.0,coal,Banten Serang power station_Unit 1 -- operating,e_ID10-500,ID10-500,-5.882972,106.045929,False
+e_ID11-500,ep_coal_subcritical_G100000100537,625.0,coal,Banten Suralaya power station_Unit 08 -- operating,e_ID11-500,ID11-500,-5.8892179,106.0336018,False
+e_ID11-500,ep_coal_subcritical_G100000100539,400.0,coal,Banten Suralaya power station_Phase I Unit 1 -- operating,e_ID11-500,ID11-500,-5.8919073,106.0302341,False
+e_ID11-500,ep_coal_subcritical_G100000100540,400.0,coal,Banten Suralaya power station_Phase I Unit 2 -- operating,e_ID11-500,ID11-500,-5.8919073,106.0302341,False
+e_ID11-500,ep_coal_subcritical_G100000100541,400.0,coal,Banten Suralaya power station_Phase I Unit 3 -- operating,e_ID11-500,ID11-500,-5.8919073,106.0302341,False
+e_ID11-500,ep_coal_subcritical_G100000100542,400.0,coal,Banten Suralaya power station_Phase I Unit 4 -- operating,e_ID11-500,ID11-500,-5.8919073,106.0302341,False
+e_ID11-500,ep_coal_subcritical_G100000100543,600.0,coal,Banten Suralaya power station_Phase II Unit 1 -- operating,e_ID11-500,ID11-500,-5.8919073,106.0302341,False
+e_ID11-500,ep_coal_subcritical_G100000100544,600.0,coal,Banten Suralaya power station_Phase II Unit 2 -- operating,e_ID11-500,ID11-500,-5.8919073,106.0302341,False
+e_ID11-500,ep_coal_subcritical_G100000100545,600.0,coal,Banten Suralaya power station_Phase II Unit 3 -- operating,e_ID11-500,ID11-500,-5.8919073,106.0302341,False
+e_ID11-500,ep_coal_ultra-supercritical_G100000100538,1000.0,coal,Banten Suralaya power station_Unit 09 -- construction,e_ID11-500,ID11-500,-5.8892179,106.0336018,False
+e_ID11-500,ep_coal_ultra-supercritical_G100000113472,1000.0,coal,Banten Suralaya power station_Unit 10 -- construction,e_ID11-500,ID11-500,-5.8892179,106.0336018,False
+e_ID11-500,ep_geothermal_G100000700237,110.0,geothermal,Rajabasa geothermal power plant_1 -- construction,e_ID11-500,ID11-500,-5.7817,105.6256,False
+e_ID11-500,ep_geothermal_G100000700238,110.0,geothermal,Rajabasa geothermal power plant_2 -- construction,e_ID11-500,ID11-500,-5.7817,105.6256,False
+e_ID12-500,ep_coal_ultra-supercritical_G100000104986,991.0,coal,Jawa-7 power station_Unit 1 -- operating,e_ID12-500,ID12-500,-5.991694,106.1008,False
+e_ID12-500,ep_coal_ultra-supercritical_G100000104987,991.0,coal,Jawa-7 power station_Unit 2 -- operating,e_ID12-500,ID12-500,-5.991694,106.1008,False
+e_ID12-500,ep_gas_combined_cycle_G100000404257,740.0,gas,Cilegon power station_1 -- operating,e_ID12-500,ID12-500,-5.9306,106.1042,False
+e_ID13-500,ep_coal_subcritical_G100000101579,140.0,coal,Cikarang Babelan power station_Unit 1 -- operating,e_ID13-500,ID13-500,-6.11607,107.05197,False
+e_ID13-500,ep_coal_subcritical_G100000101580,140.0,coal,Cikarang Babelan power station_Unit 2 -- operating,e_ID13-500,ID13-500,-6.11607,107.05197,False
+e_ID13-500,ep_gas_combined_cycle_G100000404277,615.0,gas,Muara Tawar power station_1 -- operating,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID13-500,ep_gas_combined_cycle_G100000404281,384.0,gas,Muara Tawar power station_5-1 -- operating,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID13-500,ep_gas_combined_cycle_G100000404282,440.0,gas,Muara Tawar power station_2 -- operating,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID13-500,ep_gas_gas_turbine_G100000404279,140.0,gas,Muara Tawar power station_3-1 -- operating,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID13-500,ep_gas_gas_turbine_G100000404280,140.0,gas,Muara Tawar power station_4-1 -- operating,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID13-500,ep_gas_gas_turbine_G100000406226,140.0,gas,Muara Tawar power station_3-3 -- operating,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID13-500,ep_gas_gas_turbine_G100000406227,140.0,gas,Muara Tawar power station_3-2 -- operating,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID13-500,ep_gas_gas_turbine_G100000406228,140.0,gas,Muara Tawar power station_4-3 -- operating,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID13-500,ep_gas_gas_turbine_G100000406229,140.0,gas,Muara Tawar power station_4-2 -- operating,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID13-500,ep_gas_steam_turbine_G100000406223,250.0,gas,Muara Tawar power station_3-0 -- construction,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID13-500,ep_gas_steam_turbine_G100000406225,250.0,gas,Muara Tawar power station_4-0 -- construction,e_ID13-500,ID13-500,-6.0867,106.9987,False
+e_ID14-500,ep_gas_combined_cycle_G100000404283,590.0,gas,Tanjung Priok power station_1 -- operating,e_ID14-500,ID14-500,-6.1102,106.8671,False
+e_ID14-500,ep_gas_combined_cycle_G100000404284,590.0,gas,Tanjung Priok power station_2 -- operating,e_ID14-500,ID14-500,-6.1102,106.8671,False
+e_ID14-500,ep_gas_combined_cycle_G100000404285,750.0,gas,Tanjung Priok power station_3 -- operating,e_ID14-500,ID14-500,-6.1102,106.8671,False
+e_ID14-500,ep_gas_combined_cycle_G100000404286,891.9,gas,Tanjung Priok power station_4 -- operating,e_ID14-500,ID14-500,-6.1102,106.8671,False
+e_ID15-500,ep_gas_combined_cycle_G100000404274,720.0,gas,Muara Karang power station_CC2 -- operating,e_ID15-500,ID15-500,-6.1087,106.7877,False
+e_ID15-500,ep_gas_combined_cycle_G100000404275,509.0,gas,Muara Karang power station_CC1 -- operating,e_ID15-500,ID15-500,-6.1087,106.7877,False
+e_ID15-500,ep_gas_combined_cycle_G100000404276,500.0,gas,Muara Karang power station_CC3 -- operating,e_ID15-500,ID15-500,-6.1087,106.7877,False
+e_ID15-500,ep_gas_steam_turbine_G100000410586,200.0,gas,Muara Karang power station_ST1 -- operating,e_ID15-500,ID15-500,-6.1087,106.7877,False
+e_ID15-500,ep_gas_steam_turbine_G100000410587,200.0,gas,Muara Karang power station_ST2 -- operating,e_ID15-500,ID15-500,-6.1087,106.7877,False
+e_ID2-275,ep_coal_CFB_ID2-275,200.0,coal,Aggregated Plant -- operating,e_ID2-275,ID2-275,1.6202198074441714,110.38558353950572,False
+e_ID2-275,ep_gas_gas_turbine_ID2-275,224.0,gas,Aggregated Plant -- construction,e_ID2-275,ID2-275,1.2060466447770246,110.57540019835746,False
+e_ID2-275,ep_gas_internal_combustion_G100000411327,140.0,gas,Bangkanai II power station_1 -- operating,e_ID2-275,ID2-275,-0.62081,115.114001,False
+e_ID2-275,ep_gas_internal_combustion_G100000411328,144.0,gas,Bangkanai I power station_1 -- operating,e_ID2-275,ID2-275,-0.621886,115.137071,False
+e_ID2-275,ep_hydro_ID2-275__irena,39.681189764299305,hydro,Aggregated Plant - IRENA Gap - ID2-275_Missing Hydro Capacity -- operating,e_ID2-275,ID2-275,1.2422786876278682,110.10151637222646,False
+e_ID2-275,ep_hydro_dam_G100000602137,110.0,hydro,Jatigede hydroelectric plant_ -- operating,e_ID2-275,ID2-275,6.8558,108.0948,False
+e_ID23-500,ep_gas_combined_cycle_G100000400914,880.0,gas,PLTGU Jawa-1 power station_1 -- operating,e_ID23-500,ID23-500,-6.244232,107.588132,False
+e_ID23-500,ep_gas_combined_cycle_G100000410593,880.0,gas,PLTGU Jawa-1 power station_2 -- operating,e_ID23-500,ID23-500,-6.244232,107.588132,False
+e_ID27-500,ep_coal_subcritical_G100000108526,315.0,coal,Rembang power station_Unit 1 -- operating,e_ID27-500,ID27-500,-6.636,111.4749,False
+e_ID27-500,ep_coal_subcritical_G100000108527,315.0,coal,Rembang power station_Unit 2 -- operating,e_ID27-500,ID27-500,-6.636,111.4749,False
+e_ID28-500,ep_coal_subcritical_G100000109956,660.0,coal,Tanjung Jati B power station_Unit 3 -- operating,e_ID28-500,ID28-500,-6.446,110.7423,False
+e_ID28-500,ep_coal_subcritical_G100000109957,660.0,coal,Tanjung Jati B power station_Unit 4 -- operating,e_ID28-500,ID28-500,-6.446,110.7423,False
+e_ID28-500,ep_coal_subcritical_G100000109960,660.0,coal,Tanjung Jati B power station_Unit 1 -- operating,e_ID28-500,ID28-500,-6.4447822,110.743491,False
+e_ID28-500,ep_coal_subcritical_G100000109961,660.0,coal,Tanjung Jati B power station_Unit 2 -- operating,e_ID28-500,ID28-500,-6.4447822,110.743491,False
+e_ID28-500,ep_coal_ultra-supercritical_G100000109958,1000.0,coal,Tanjung Jati B power station_Unit 5 -- operating,e_ID28-500,ID28-500,-6.446488,110.742359,False
+e_ID28-500,ep_coal_ultra-supercritical_G100000109959,1000.0,coal,Tanjung Jati B power station_Unit 6 -- operating,e_ID28-500,ID28-500,-6.446488,110.742359,False
+e_ID29-500,ep_coal_supercritical_G100000101590,660.0,coal,Cirebon power station_Unit 1 -- operating,e_ID29-500,ID29-500,-6.770286,108.614858,False
+e_ID29-500,ep_coal_ultra-supercritical_G100000101591,924.0,coal,Cirebon power station_Unit 2 -- operating,e_ID29-500,ID29-500,-6.770286,108.614858,False
+e_ID3-275,ep_gas_combined_cycle_G100000411307,300.0,gas,Rokan Block power station_1 -- operating,e_ID3-275,ID3-275,0.514049,100.447118,False
+e_ID3-275,ep_hydro_dam_G100000602147,114.0,hydro,Koto Panjang hydroelectric plant_ -- operating,e_ID3-275,ID3-275,0.2901,100.8817,False
+e_ID30-500,ep_coal_ultra-supercritical_G100000101261,950.0,coal,Central Java Power Project_Unit 1 -- operating,e_ID30-500,ID30-500,-6.900828,109.803685,False
+e_ID30-500,ep_coal_ultra-supercritical_G100000101262,950.0,coal,Central Java Power Project_Unit 2 -- operating,e_ID30-500,ID30-500,-6.900828,109.803685,False
+e_ID31-500,ep_geothermal_G100000700061,60.0,geothermal,Dieng geothermal power plant_1 -- operating,e_ID31-500,ID31-500,-7.2261,109.8975,False
+e_ID31-500,ep_geothermal_G100000700062,55.0,geothermal,Dieng geothermal power plant_2 -- construction,e_ID31-500,ID31-500,-7.2261,109.8975,False
+e_ID31-500,ep_geothermal_G100001048305,10.0,geothermal,Dieng Small Scale geothermal power plant_-- -- operating,e_ID31-500,ID31-500,-7.2223119,109.9053785,False
+e_ID31-500,ep_hydro_ID31-500__irena,10.500431794354055,hydro,Aggregated Plant - IRENA Gap - ID31-500_Missing Hydro Capacity -- operating,e_ID31-500,ID31-500,-7.065489646095908,109.9365442354892,False
+e_ID31-500,ep_hydro_dam_G100000602163,181.0,hydro,PB Sudirman hydroelectric plant_ -- operating,e_ID31-500,ID31-500,-7.3927,109.6054,False
+e_ID33-500,ep_geothermal_G100000700056,55.0,geothermal,Darajat geothermal power plant_1 -- operating,e_ID33-500,ID33-500,-7.2173,107.7394,False
+e_ID33-500,ep_geothermal_G100000700057,90.0,geothermal,Darajat geothermal power plant_2 -- operating,e_ID33-500,ID33-500,-7.2173,107.7394,False
+e_ID33-500,ep_geothermal_G100000700058,129.0,geothermal,Darajat geothermal power plant_3 -- operating,e_ID33-500,ID33-500,-7.2173,107.7394,False
+e_ID33-500,ep_geothermal_G100000700229,60.0,geothermal,Patuha geothermal power plant_1 -- operating,e_ID33-500,ID33-500,-7.1838,107.4215,False
+e_ID33-500,ep_geothermal_G100000700230,55.0,geothermal,Patuha geothermal power plant_2 -- construction,e_ID33-500,ID33-500,-7.1838,107.4215,False
+e_ID33-500,ep_geothermal_G100000700319,124.45,geothermal,Wayang Windu geothermal power plant_1 -- operating,e_ID33-500,ID33-500,-7.1966,107.6258,False
+e_ID33-500,ep_geothermal_G100000700320,124.45,geothermal,Wayang Windu geothermal power plant_2 -- operating,e_ID33-500,ID33-500,-7.1966,107.6258,False
+e_ID34-500,ep_coal_CFB_ID34-500,200.0,coal,Aggregated Plant -- construction,e_ID34-500,ID34-500,-6.772129171557951,113.03116295764607,False
+e_ID34-500,ep_coal_subcritical_ID34-500,380.0,coal,Aggregated Plant -- operating,e_ID34-500,ID34-500,-7.420294238329141,113.13613784886996,False
+e_ID34-500,ep_gas_combined_cycle_G100000404265,526.0,gas,Gresik power station_CC1 -- operating,e_ID34-500,ID34-500,-7.1633,112.6615,False
+e_ID34-500,ep_gas_combined_cycle_G100000404266,526.0,gas,Gresik power station_CC2 -- operating,e_ID34-500,ID34-500,-7.1633,112.6615,False
+e_ID34-500,ep_gas_combined_cycle_G100000404267,526.0,gas,Gresik power station_CC3 -- operating,e_ID34-500,ID34-500,-7.1633,112.6615,False
+e_ID34-500,ep_gas_gas_turbine_G100000400918,500.0,gas,Gresik AKR Estate power station_2 -- operating,e_ID34-500,ID34-500,-7.089043,112.606961,False
+e_ID34-500,ep_gas_steam_turbine_G100000404270,200.0,gas,Gresik power station_ST3 -- operating,e_ID34-500,ID34-500,-7.1633,112.6615,False
+e_ID34-500,ep_gas_steam_turbine_G100000404271,200.0,gas,Gresik power station_ST4 -- operating,e_ID34-500,ID34-500,-7.1633,112.6615,False
+e_ID34-500,ep_gas_steam_turbine_ID34-500,300.00000000000006,gas,Aggregated Plant -- operating,e_ID34-500,ID34-500,-7.696661231775486,112.56292527349443,False
+e_ID36-500,ep_hydro_ID36-500__irena,58.013435327922956,hydro,Aggregated Plant - IRENA Gap - ID36-500_Missing Hydro Capacity -- operating,e_ID36-500,ID36-500,-7.8545393484798005,110.67919847003701,False
+e_ID37-500,ep_coal_supercritical_G100000100040,660.0,coal,Adipala power station_Unit 1 -- operating,e_ID37-500,ID37-500,-7.685942,109.13756,False
+e_ID38-500,ep_coal_subcritical_G100000101254,142.0,coal,Celukan Bawang power station_Unit 1 -- operating,e_ID38-500,ID38-500,-8.196295,114.851568,False
+e_ID38-500,ep_coal_subcritical_G100000101255,142.0,coal,Celukan Bawang power station_Unit 2 -- operating,e_ID38-500,ID38-500,-8.196295,114.851568,False
+e_ID38-500,ep_coal_subcritical_G100000101256,142.0,coal,Celukan Bawang power station_Unit 3 -- operating,e_ID38-500,ID38-500,-8.196295,114.851568,False
+e_ID38-500,ep_coal_subcritical_G100000107729,660.0,coal,PLN Paiton Baru power station_Unit 09 -- operating,e_ID38-500,ID38-500,-7.711029,113.570682,False
+e_ID38-500,ep_coal_subcritical_G100000107730,615.0,coal,Paiton-1 power station_Unit 7 -- operating,e_ID38-500,ID38-500,-7.715299,113.585706,False
+e_ID38-500,ep_coal_subcritical_G100000107731,615.0,coal,Paiton-1 power station_Unit 8 -- operating,e_ID38-500,ID38-500,-7.715299,113.585706,False
+e_ID38-500,ep_coal_subcritical_G100000107732,660.0,coal,Paiton-2 power station_Unit 1 -- operating,e_ID38-500,ID38-500,-7.715299,113.585706,False
+e_ID38-500,ep_coal_subcritical_G100000107733,660.0,coal,Paiton-2 power station_Unit 2 -- operating,e_ID38-500,ID38-500,-7.715299,113.585706,False
+e_ID38-500,ep_coal_subcritical_G100000108040,400.0,coal,PLN Paiton power station_Unit 1 -- operating,e_ID38-500,ID38-500,-7.7147,113.585016,False
+e_ID38-500,ep_coal_subcritical_G100000108041,400.0,coal,PLN Paiton power station_Unit 2 -- operating,e_ID38-500,ID38-500,-7.7147,113.585016,False
+e_ID38-500,ep_coal_subcritical_ID38-500,224.0,coal,Aggregated Plant -- construction,e_ID38-500,ID38-500,-7.411125096663145,114.13218204688339,False
+e_ID38-500,ep_coal_supercritical_G100000107734,825.0,coal,Paiton-3 power station_-- -- operating,e_ID38-500,ID38-500,-7.71446,113.58326,False
+e_ID38-500,ep_gas_combined_cycle_G100000411720,450.0,gas,Batu Hijau power station_CC1 -- construction,e_ID38-500,ID38-500,-8.901172,116.738209,False
+e_ID38-500,ep_gas_gas_turbine_ID38-500,134.0,gas,Aggregated Plant -- operating,e_ID38-500,ID38-500,-7.8477077505244885,114.19723317799375,False
+e_ID38-500,ep_gas_internal_combustion_ID38-500,185.0,gas,Aggregated Plant -- operating,e_ID38-500,ID38-500,-8.318663281186723,113.7676704161519,False
+e_ID38-500,ep_geothermal_G100000700022,34.0,geothermal,Blawan Ijen geothermal project_1 -- operating,e_ID38-500,ID38-500,-7.9768,114.1883,False
+e_ID38-500,ep_oil_internal_combustion_G100000411309,199.7,oil,Pesanggaran power station_1 -- operating,e_ID38-500,ID38-500,-8.71645,115.213325,False
+e_ID6-275,ep_coal_CFB_ID6-275,224.0,coal,Aggregated Plant -- operating,e_ID6-275,ID6-275,-0.1403176646681219,100.6323874323703,False
+e_ID6-275,ep_coal_subcritical_ID6-275,200.0,coal,Aggregated Plant -- operating,e_ID6-275,ID6-275,-0.5088545700043645,100.82079153690061,False
+e_ID6-275,ep_hydro_ID6-275__irena,14.097264784685278,hydro,Aggregated Plant - IRENA Gap - ID6-275_Missing Hydro Capacity -- operating,e_ID6-275,ID6-275,-0.5615109752224091,100.35239066660932,False
+e_ID6-275,ep_hydro_dam_G100000602172,175.0,hydro,Singkarak hydroelectric plant_ -- operating,e_ID6-275,ID6-275,-0.6223,100.349,False
+e_ID6-275,ep_hydro_dam_G100001051496,68.0,hydro,Maninjau hydroelectric plant_ -- operating,e_ID6-275,ID6-275,-0.3112,100.1168,False
+e_ID8-275,ep_coal_subcritical_ID8-275,480.0,coal,Aggregated Plant -- operating,e_ID8-275,ID8-275,-3.6680246047879574,103.85643309696967,False
+e_ID8-275,ep_coal_supercritical_G100000100510,660.0,coal,Bangko Tengah power station_Unit 1 -- operating,e_ID8-275,ID8-275,-3.838679,103.804133,False
+e_ID8-275,ep_coal_supercritical_G100000100511,660.0,coal,Bangko Tengah power station_Unit 2 -- operating,e_ID8-275,ID8-275,-3.838679,103.804133,False
+e_ID8-275,ep_gas_combined_cycle_ID8-275,110.0,gas,Aggregated Plant -- operating,e_ID8-275,ID8-275,-4.02139412769289,103.80230046952967,False
+e_w1013653012-500,ep_coal_subcritical_G100000104852,330.0,coal,Indramayu power station_Unit 1 -- operating,e_w1013653012-500,way/1013653012-500,-6.274738,107.97043,False
+e_w1013653012-500,ep_coal_subcritical_G100000104853,330.0,coal,Indramayu power station_Unit 2 -- operating,e_w1013653012-500,way/1013653012-500,-6.274738,107.97043,False
+e_w1013653012-500,ep_coal_subcritical_G100000104854,330.0,coal,Indramayu power station_Unit 3 -- operating,e_w1013653012-500,way/1013653012-500,-6.274738,107.97043,False
+e_w1186182648-500,ep_bioenergy_G100000200738,2134.0,bioenergy,PT Musim Mas power station_1 -- operating,e_w1186182648-500,way/1186182648-500,0.0754,102.0298,False
+e_w1186182648-500,ep_bioenergy_w1186182648-500__ember,785.0243902439023,bioenergy,Aggregated Plant - EMBER Gap - way/1186182648-500_Missing Bioenergy Capacity -- operating,e_w1186182648-500,way/1186182648-500,-0.3522005637385247,101.90826644045563,False
+e_w1193553154-275,ep_hydro_ror_G100001051489,120.0,hydro,Poso Extension Stage 1 hydroelectric plant_ -- operating,e_w1193553154-275,way/1193553154-275,-1.6695,120.6526,False
+e_w1193553154-275,ep_hydro_w1193553154-275__irena,53.372360501689116,hydro,Aggregated Plant - IRENA Gap - way/1193553154-275_Missing Hydro Capacity -- operating,e_w1193553154-275,way/1193553154-275,-1.8311290044070125,120.60452628015508,False
+e_w1312287191-275,ep_geothermal_G100000700188,85.0,geothermal,Muarah Laboh geothermal plant_1 -- operating,e_w1312287191-275,way/1312287191-275,-1.6268,101.1296,False
+e_w1312287191-275,ep_geothermal_G100000700189,75.0,geothermal,Muarah Laboh geothermal plant_2 -- construction,e_w1312287191-275,way/1312287191-275,-1.6268,101.1296,False
+e_w1316786278-275,ep_coal_subcritical_G100000109397,150.0,coal,Shenhua Guohua power station_Unit 1 -- operating,e_w1316786278-275,way/1316786278-275,-3.401381,104.118633,False
+e_w1316786278-275,ep_coal_subcritical_G100000109398,150.0,coal,Shenhua Guohua power station_Unit 2 -- operating,e_w1316786278-275,way/1316786278-275,-3.401381,104.118633,False
+e_w1316786278-275,ep_coal_subcritical_G100000109696,300.0,coal,Sumsel-1 power station_Unit 1 -- construction,e_w1316786278-275,way/1316786278-275,-3.476667,103.999167,False
+e_w1316786278-275,ep_coal_subcritical_G100000109697,300.0,coal,Sumsel-1 power station_Unit 2 -- construction,e_w1316786278-275,way/1316786278-275,-3.476667,103.999167,False
+e_w1316786278-275,ep_coal_subcritical_G100000114207,150.0,coal,Sumbagsel-1 power station_Unit 1 -- construction,e_w1316786278-275,way/1316786278-275,-4.10589,103.99474,False
+e_w1316786278-275,ep_coal_subcritical_G100000114208,150.0,coal,Sumbagsel-1 power station_Unit 2 -- construction,e_w1316786278-275,way/1316786278-275,-4.10589,103.99474,False
+e_w1316876158-275,ep_coal_subcritical_w1316876158-275,400.0,coal,Aggregated Plant -- operating,e_w1316876158-275,way/1316876158-275,-4.72799830811529,105.29851603227596,False
+e_w1316876158-275,ep_geothermal_G100000700306,55.0,geothermal,Ulubelu geothermal power plant_1 -- operating,e_w1316876158-275,way/1316876158-275,-5.3096,104.5733,False
+e_w1316876158-275,ep_geothermal_G100000700307,55.0,geothermal,Ulubelu geothermal power plant_2 -- operating,e_w1316876158-275,way/1316876158-275,-5.3096,104.5733,False
+e_w1316876158-275,ep_geothermal_G100000700308,55.0,geothermal,Ulubelu geothermal power plant_3 -- operating,e_w1316876158-275,way/1316876158-275,-5.305,104.5767,False
+e_w1316876158-275,ep_geothermal_G100000700309,55.0,geothermal,Ulubelu geothermal power plant_4 -- operating,e_w1316876158-275,way/1316876158-275,-5.305,104.5767,False
+e_w1316876158-275,ep_geothermal_w1316876158-275,8.0,geothermal,Aggregated Plant -- operating,e_w1316876158-275,way/1316876158-275,-5.148137090350442,105.66312612843723,False
+e_w1316876158-275,ep_hydro_dam_G100000602182,90.0,hydro,Way Besai hydroelectric plant_ -- operating,e_w1316876158-275,way/1316876158-275,-4.9826,104.4797,False
+e_w1316876158-275,ep_hydro_ror_G100001051492,57.0,hydro,Semangka hydroelectric plant_ -- operating,e_w1316876158-275,way/1316876158-275,-5.3911,104.3854,False
+e_w1316876158-275,ep_oil_internal_combustion_w1316876158-275,87.0,oil,Aggregated Plant -- operating,e_w1316876158-275,way/1316876158-275,-5.542630704994604,105.46674661739455,False
+e_w161960924-500,ep_coal_subcritical_G100000107917,350.0,coal,Pelabuhan Ratu power station_Unit 1 -- operating,e_w161960924-500,way/161960924-500,-7.0242,106.5464,False
+e_w161960924-500,ep_coal_subcritical_G100000107918,350.0,coal,Pelabuhan Ratu power station_Unit 2 -- operating,e_w161960924-500,way/161960924-500,-7.0242,106.5464,False
+e_w161960924-500,ep_coal_subcritical_G100000107919,350.0,coal,Pelabuhan Ratu power station_Unit 3 -- operating,e_w161960924-500,way/161960924-500,-7.0242,106.5464,False
+e_w161960924-500,ep_geothermal_G100000700087,55.0,geothermal,Gunung Salak geothermal power plant_1 -- operating,e_w161960924-500,way/161960924-500,-6.7416,106.648,False
+e_w161960924-500,ep_geothermal_G100000700088,55.0,geothermal,Gunung Salak geothermal power plant_2 -- operating,e_w161960924-500,way/161960924-500,-6.7416,106.648,False
+e_w161960924-500,ep_geothermal_G100000700089,55.0,geothermal,Gunung Salak geothermal power plant_3 -- operating,e_w161960924-500,way/161960924-500,-6.7416,106.648,False
+e_w161960924-500,ep_geothermal_G100000700090,55.0,geothermal,Gunung Salak geothermal power plant_Dayabumi Salak Pratama - 4 -- operating,e_w161960924-500,way/161960924-500,-6.7416,106.648,False
+e_w161960924-500,ep_geothermal_G100000700091,55.0,geothermal,Gunung Salak geothermal power plant_Dayabumi Salak Pratama - 5 -- operating,e_w161960924-500,way/161960924-500,-6.7416,106.648,False
+e_w161960924-500,ep_geothermal_G100000700092,55.0,geothermal,Gunung Salak geothermal power plant_Dayabumi Salak Pratama - 6 -- operating,e_w161960924-500,way/161960924-500,-6.7416,106.648,False
+e_w161960924-500,ep_geothermal_G100000700347,40.0,geothermal,Gunung Salak geothermal power plant_7 -- construction,e_w161960924-500,way/161960924-500,-6.741,106.673,False
+e_w161965853-500,ep_coal_subcritical_G100000100367,150.0,coal,Asahimas Chemical power station_Unit 1 -- operating,e_w161965853-500,way/161965853-500,-6.024754,105.942635,False
+e_w161965853-500,ep_coal_subcritical_G100000100530,300.0,coal,Banten Labuan power station_Unit 1 -- operating,e_w161965853-500,way/161965853-500,-6.392179,105.82778,False
+e_w161965853-500,ep_coal_subcritical_G100000100531,300.0,coal,Banten Labuan power station_Unit 2 -- operating,e_w161965853-500,way/161965853-500,-6.392179,105.82778,False
+e_w161965853-500,ep_coal_subcritical_G100000112731,150.0,coal,Asahimas Chemical power station_Unit 2 -- operating,e_w161965853-500,way/161965853-500,-6.024754,105.942635,False
+e_w161965853-500,ep_coal_subcritical_w161965853-500,40.0,coal,Aggregated Plant -- operating,e_w161965853-500,way/161965853-500,-6.027884149902248,106.37655434483793,False
+e_w161965853-500,ep_gas_combined_cycle_w161965853-500,240.0,gas,Aggregated Plant -- operating,e_w161965853-500,way/161965853-500,-6.338855723893834,106.10271999688959,False
+e_w161965853-500,ep_gas_steam_turbine_w161965853-500,400.0,gas,Aggregated Plant -- operating,e_w161965853-500,way/161965853-500,-5.968944896334667,105.6585226276198,False
+e_w166633831-500,ep_gas_combined_cycle_G100000404292,517.0,gas,Tambak Lorok power station_CC1 -- operating,e_w166633831-500,way/166633831-500,-6.9505,110.434,False
+e_w166633831-500,ep_gas_combined_cycle_G100000404293,517.0,gas,Tambak Lorok power station_CC2 -- operating,e_w166633831-500,way/166633831-500,-6.9505,110.434,False
+e_w166633831-500,ep_gas_combined_cycle_G100000404300,780.0,gas,Tambak Lorok power station_CC3 -- operating,e_w166633831-500,way/166633831-500,-6.9505,110.434,False
+e_w166633831-500,ep_oil_steam_turbine_G100000412581,200.0,oil,Tambak Lorok power station_ST3 -- operating,e_w166633831-500,way/166633831-500,-6.9505,110.434,False
+e_w166633831-500,ep_oil_steam_turbine_w166633831-500,100.0,oil,Aggregated Plant -- operating,e_w166633831-500,way/166633831-500,-7.262195608228253,110.58752899825419,False
+e_w169444592-500,ep_coal_subcritical_G100000100532,315.0,coal,Banten Lontar power station_Unit 1 -- operating,e_w169444592-500,way/169444592-500,-6.058874,106.4643,False
+e_w169444592-500,ep_coal_subcritical_G100000100533,315.0,coal,Banten Lontar power station_Unit 2 -- operating,e_w169444592-500,way/169444592-500,-6.058874,106.4643,False
+e_w169444592-500,ep_coal_subcritical_G100000100534,315.0,coal,Banten Lontar power station_Unit 3 -- operating,e_w169444592-500,way/169444592-500,-6.058874,106.4643,False
+e_w169444592-500,ep_coal_subcritical_w169444592-500,175.0,coal,Aggregated Plant -- operating,e_w169444592-500,way/169444592-500,-6.254202350718566,106.54839729228605,False
+e_w169444592-500,ep_coal_ultra-supercritical_G100000100535,315.0,coal,Banten Lontar power station_Unit 4 -- operating,e_w169444592-500,way/169444592-500,-6.058874,106.4643,False
+e_w264410236-500,ep_coal_subcritical_w264410236-500,30.0,coal,Aggregated Plant -- operating,e_w264410236-500,way/264410236-500,-6.901413233060981,107.66226020870785,False
+e_w264550744-500,ep_hydro_dam_G100000602168,701.0,hydro,Saguling hydroelectric plant_ -- operating,e_w264550744-500,way/264550744-500,-6.9122,107.3661,False
+e_w264550744-500,ep_hydro_ps_G100000604908,1040.0,hydro,Upper Cisokan hydroelectric plant_ -- construction,e_w264550744-500,way/264550744-500,-6.9458,107.2173,False
+e_w264550744-500,ep_hydro_ror_G100001051495,47.0,hydro,Rajamandala hydroelectric plant_ -- operating,e_w264550744-500,way/264550744-500,-6.8573,107.3394,False
+e_w264550744-500,ep_hydro_w264550744-500__irena,103.72802236632624,hydro,Aggregated Plant - IRENA Gap - way/264550744-500_Missing Hydro Capacity -- operating,e_w264550744-500,way/264550744-500,-6.910895077032541,107.48595454032692,False
+e_w265318414-500,ep_coal_subcritical_G100000107720,315.0,coal,Pacitan power station_Unit 1 -- operating,e_w265318414-500,way/265318414-500,-8.257818,111.373558,False
+e_w265318414-500,ep_coal_subcritical_G100000107721,315.0,coal,Pacitan power station_Unit 2 -- operating,e_w265318414-500,way/265318414-500,-8.257818,111.373558,False
+e_w265318414-500,ep_hydro_dam_G100000602174,105.0,hydro,Sutami hydroelectric plant_ -- operating,e_w265318414-500,way/265318414-500,-8.1615,112.4443,False
+e_w265318414-500,ep_hydro_dam_G100001027301,54.0,hydro,Wlingi-Brantas hydroelectric plant_ -- operating,e_w265318414-500,way/265318414-500,-8.0776,112.3311,False
+e_w265568001-500,ep_coal_subcritical_w265568001-500,230.0,coal,Aggregated Plant -- operating,e_w265568001-500,way/265568001-500,-7.420943289191668,112.43668544931536,False
+e_w267626657-500,ep_geothermal_G100000700342,50.0,geothermal,Baturaden geothermal power plant_1 -- construction,e_w267626657-500,way/267626657-500,-7.3001,109.2168,False
+e_w310695690-275,ep_hydro_dam_G100000602176,317.0,hydro,Tangga hydroelectric plant_ -- operating,e_w310695690-275,way/310695690-275,2.561,99.3097,False
+e_w310695690-275,ep_hydro_ror_G100000602126,174.0,hydro,Asahan 3 hydroelectric plant_ -- operating,e_w310695690-275,way/310695690-275,2.5901,99.403,False
+e_w310695690-275,ep_hydro_w310695690-275__irena,28.484596746010173,hydro,Aggregated Plant - IRENA Gap - way/310695690-275_Missing Hydro Capacity -- operating,e_w310695690-275,way/310695690-275,2.6942246666027305,99.30801115740776,False
+e_w310958602-275,ep_hydro_ror_G100000602151,82.0,hydro,Lau Renun hydroelectric plant_ -- operating,e_w310958602-275,way/310958602-275,2.7865,98.5405,False
+e_w314452486-500,ep_geothermal_G100000700124,30.0,geothermal,Karaha geothermal power plant_1 -- operating,e_w314452486-500,way/314452486-500,-7.1477,108.0848,False
+e_w314452486-500,ep_hydro_w314452486-500__irena,73.09692851318293,hydro,Aggregated Plant - IRENA Gap - way/314452486-500_Missing Hydro Capacity -- operating,e_w314452486-500,way/314452486-500,-7.582041756786072,108.2365309964974,False
+e_w337039411-275,ep_bioenergy_w337039411-275,30.0,bioenergy,Aggregated Plant -- operating,e_w337039411-275,way/337039411-275,3.524198652040775,99.48905346235348,False
+e_w337039411-275,ep_bioenergy_w337039411-275__ember,11.035956751320088,bioenergy,Aggregated Plant -- operating,e_w337039411-275,way/337039411-275,3.166600326876602,99.46025690594807,False
+e_w337039411-275,ep_gas_combined_cycle_G100000406292,800.0,gas,Batubara power station_1-2 -- construction,e_w337039411-275,way/337039411-275,3.285553,99.508176,False
+e_w337039411-275,ep_gas_combined_cycle_G100000406293,800.0,gas,Batubara power station_1-1 -- construction,e_w337039411-275,way/337039411-275,3.285553,99.508176,False
+e_w340205049-275,ep_coal_subcritical_w340205049-275,60.0,coal,Aggregated Plant -- operating,e_w340205049-275,way/340205049-275,3.9073099767970048,98.43815703988237,False
+e_w340205049-275,ep_gas_combined_cycle_G100000405913,395.0,gas,Belawan power station_2-1 -- operating,e_w340205049-275,way/340205049-275,3.773148,98.670029,False
+e_w340205049-275,ep_gas_combined_cycle_G100000405914,422.0,gas,Belawan power station_2-2 -- operating,e_w340205049-275,way/340205049-275,3.773148,98.670029,False
+e_w340205049-275,ep_gas_internal_combustion_G100000408639,470.0,gas,Karpowership (Indonesia) Onur Sultan power station_1 -- operating,e_w340205049-275,way/340205049-275,3.775582,98.669767,False
+e_w340205049-275,ep_gas_steam_turbine_w340205049-275,260.0,gas,Aggregated Plant -- operating,e_w340205049-275,way/340205049-275,3.5307546461555357,98.75126428773234,False
+e_w340205049-275,ep_geothermal_G100000700367,10.0,geothermal,Sibayak geothermal power plant_-- -- operating,e_w340205049-275,way/340205049-275,3.2266,98.5004,False
+e_w340205049-275,ep_hydro_ror_G100001051493,47.0,hydro,Wampu hydroelectric plant_ -- operating,e_w340205049-275,way/340205049-275,3.2185,98.2056,False
+e_w340205049-275,ep_oil_internal_combustion_G100000411325,160.0,oil,Belawan Berkat power station_1 -- operating,e_w340205049-275,way/340205049-275,3.771713,98.66769,False
+e_w340205049-275,ep_windon_wind_275,10.0,windon,Aggregated Plant -- operating,e_w340205049-275,way/340205049-275,3.4916370637366785,98.2848131293296,False
+e_w340978681-500,ep_gas_combined_cycle_G100000404258,456.0,gas,Grati power station_1 -- operating,e_w340978681-500,way/340978681-500,-7.6517,113.0244,False
+e_w340978681-500,ep_gas_combined_cycle_G100000405917,450.0,gas,Grati power station_2 -- operating,e_w340978681-500,way/340978681-500,-7.6517,113.0244,False
+e_w340978681-500,ep_gas_combined_cycle_G100000405918,450.0,gas,Grati power station_3-1 -- operating,e_w340978681-500,way/340978681-500,-7.6517,113.0244,False
+e_w398909640-500,ep_coal_subcritical_G100000109946,350.0,coal,Tanjung Awar-Awar power station_Unit 1 -- operating,e_w398909640-500,way/398909640-500,-6.810524,111.995503,False
+e_w398909640-500,ep_coal_subcritical_G100000109947,350.0,coal,Tanjung Awar-Awar power station_Unit 2 -- operating,e_w398909640-500,way/398909640-500,-6.810524,111.995503,False
+e_w399100035-500,ep_coal_subcritical_w399100035-500,96.6,coal,Aggregated Plant -- operating,e_w399100035-500,way/399100035-500,-6.494094757732558,107.37217739421335,False
+e_w399100035-500,ep_hydro_dam_G100000602135,1008.0,hydro,Cirata hydroelectric plant_ -- operating,e_w399100035-500,way/399100035-500,-6.6826,107.3483,False
+e_w399100035-500,ep_hydro_dam_G100000602138,187.0,hydro,Jatiluhur hydroelectric plant_ -- operating,e_w399100035-500,way/399100035-500,-6.5226,107.3892,False
+e_w399100035-500,ep_hydro_w399100035-500__irena,69.32605521686794,hydro,Aggregated Plant - IRENA Gap - way/399100035-500_Missing Hydro Capacity -- operating,e_w399100035-500,way/399100035-500,-6.850022489169824,107.31685591351088,False
+e_w469888049-275,ep_geothermal_G100000700261,45.0,geothermal,Sorik Marapi geothermal power plant_1 -- operating,e_w469888049-275,way/469888049-275,0.7475,99.5751,False
+e_w469888049-275,ep_geothermal_G100000700262,45.0,geothermal,Sorik Marapi geothermal power plant_2 -- operating,e_w469888049-275,way/469888049-275,0.7475,99.5751,False
+e_w469888049-275,ep_geothermal_G100000700263,50.0,geothermal,Sorik Marapi geothermal power plant_3 -- operating,e_w469888049-275,way/469888049-275,0.7475,99.5751,False
+e_w469888049-275,ep_geothermal_G100000700264,50.0,geothermal,Sorik Marapi geothermal power plant_4 -- operating,e_w469888049-275,way/469888049-275,0.7475,99.5751,False
+e_w469888049-275,ep_geothermal_G100000700265,33.0,geothermal,Sorik Marapi geothermal power plant_5 -- operating,e_w469888049-275,way/469888049-275,0.7475,99.5751,False
+e_w527900241-275,ep_coal_subcritical_w527900241-275,270.0,coal,Aggregated Plant -- operating,e_w527900241-275,way/527900241-275,-3.628989006250577,103.65023776733679,False
+e_w528189342-275,ep_coal_subcritical_w528189342-275,200.0,coal,Aggregated Plant -- operating,e_w528189342-275,way/528189342-275,-3.0629403851599335,102.81974013246179,False
+e_w528189342-275,ep_geothermal_G100000700108,55.0,geothermal,Hululais geothermal power plant_1 -- construction,e_w528189342-275,way/528189342-275,-3.2413,102.2782,False
+e_w528189342-275,ep_hydro_ror_G100000602160,210.0,hydro,Musi hydroelectric plant_ -- operating,e_w528189342-275,way/528189342-275,-3.6219,102.4532,False
+e_w528189342-275,ep_hydro_w528189342-275__irena,12.18282141886382,hydro,Aggregated Plant - IRENA Gap - way/528189342-275_Missing Hydro Capacity -- operating,e_w528189342-275,way/528189342-275,-3.41933903161424,102.86632188889772,False
+e_w544403426-230,ep_coal_subcritical_w544403426-230,195.0,coal,Aggregated Plant -- operating,e_w544403426-230,way/544403426-230,-4.852425545921813,136.90050039780002,False
+e_w544403431-230,ep_gas_internal_combustion_w544403431-230,128.0,gas,Aggregated Plant -- operating,e_w544403431-230,way/544403431-230,-4.2325651766283725,137.2168257227449,False
+e_w562061281-275,ep_coal_subcritical_w562061281-275,620.0,coal,Aggregated Plant -- operating,e_w562061281-275,way/562061281-275,0.9794963519633999,109.4606277818282,False
+e_w604684007-500,ep_coal_subcritical_w604684007-500,60.0,coal,Aggregated Plant -- operating,e_w604684007-500,way/604684007-500,-6.422264043151854,106.81888846401091,False
+e_w610198177-275,ep_bioenergy_G100000200739,110.0,bioenergy,Sinar Mas OKI Paper Mill power station_1 -- operating,e_w610198177-275,way/610198177-275,-2.75042011,105.2782015,False
+e_w610198177-275,ep_bioenergy_G100000200740,110.0,bioenergy,Sinar Mas OKI Paper Mill power station_2 -- operating,e_w610198177-275,way/610198177-275,-2.75042011,105.2782015,False
+e_w610198177-275,ep_bioenergy_w610198177-275__ember,80.93034950968064,bioenergy,Aggregated Plant - EMBER Gap - way/610198177-275_Missing Bioenergy Capacity -- operating,e_w610198177-275,way/610198177-275,-2.4862098845047362,104.13579114408469,False
+e_w610198177-275,ep_coal_subcritical_w610198177-275,60.0,coal,Aggregated Plant -- operating,e_w610198177-275,way/610198177-275,-2.7624973173883824,104.53280651175432,False
+e_w610198177-275,ep_gas_combined_cycle_G100000404311,150.0,gas,Palembang Timur power station_1 -- operating,e_w610198177-275,way/610198177-275,-2.926817,104.867665,False
+e_w610198177-275,ep_gas_combined_cycle_w610198177-275,304.0,gas,Aggregated Plant -- operating,e_w610198177-275,way/610198177-275,-3.202150429228107,104.21810802837228,False
+e_w610198177-275,ep_gas_internal_combustion_w610198177-275,56.4,gas,Aggregated Plant -- operating,e_w610198177-275,way/610198177-275,-2.9044483057879464,103.82650729248094,False
+e_w610198177-275,ep_m_gas_combined_cycle_G100000404253,145.0,gas,Keramasan Asta power station_1 -- mothballed,e_w610198177-275,way/610198177-275,-3.030261,104.741981,False
+e_w614955993-230,ep_hydro_w614955993-230__irena,23.495441307808797,hydro,Aggregated Plant - IRENA Gap - way/614955993-230_Missing Hydro Capacity -- operating,e_w614955993-230,way/614955993-230,-4.70683592898453,136.87003210653174,False
+e_w615581232-275,ep_coal_subcritical_G100000109665,150.0,coal,Sulawesi Mining power station_Phase II Unit 1 -- operating,e_w615581232-275,way/615581232-275,-2.827384,122.1552699,False
+e_w615581232-275,ep_coal_subcritical_G100000109666,150.0,coal,Sulawesi Mining power station_Phase II Unit 2 -- operating,e_w615581232-275,way/615581232-275,-2.827384,122.1552699,False
+e_w615581232-275,ep_coal_subcritical_G100000109667,350.0,coal,Sulawesi Mining power station_Phase III Unit 1 -- operating,e_w615581232-275,way/615581232-275,-2.8295432,122.1551372,False
+e_w615581232-275,ep_coal_subcritical_G100000113217,350.0,coal,Sulawesi Mining power station_Phase III Unit 2 -- operating,e_w615581232-275,way/615581232-275,-2.8295432,122.1551372,False
+e_w615581232-275,ep_coal_subcritical_G100000114323,350.0,coal,Sulawesi Mining power station_Phase IV Unit 1 -- operating,e_w615581232-275,way/615581232-275,-2.827384,122.1552699,False
+e_w615581232-275,ep_coal_subcritical_G100000114324,350.0,coal,Sulawesi Mining power station_Phase IV Unit 2 -- operating,e_w615581232-275,way/615581232-275,-2.827384,122.1552699,False
+e_w615581232-275,ep_coal_subcritical_G100000114332,380.0,coal,Delong Nickel Phase II power station_Unit 10 -- operating,e_w615581232-275,way/615581232-275,-3.8274877,122.462752,False
+e_w615581232-275,ep_coal_subcritical_G100000114340,380.0,coal,Delong Nickel Phase II power station_Unit 09 -- operating,e_w615581232-275,way/615581232-275,-3.8274877,122.462752,False
+e_w615581232-275,ep_coal_subcritical_G100000115067,150.0,coal,PT Halmahera Persada Lygend Nickel Smelter power station_Phase II Unit 1 -- operating,e_w615581232-275,way/615581232-275,-1.5614331,127.4210337,False
+e_w615581232-275,ep_coal_subcritical_G100000115068,150.0,coal,PT Halmahera Persada Lygend Nickel Smelter power station_Phase II Unit 2 -- operating,e_w615581232-275,way/615581232-275,-1.5614331,127.4210337,False
+e_w615581232-275,ep_coal_subcritical_G100000115069,150.0,coal,PT Halmahera Persada Lygend Nickel Smelter power station_Phase II Unit 3 -- operating,e_w615581232-275,way/615581232-275,-1.5614331,127.4210337,False
+e_w615581232-275,ep_coal_subcritical_G100000115070,150.0,coal,PT Halmahera Persada Lygend Nickel Smelter power station_Phase II Unit 4 -- operating,e_w615581232-275,way/615581232-275,-1.5614331,127.4210337,False
+e_w615581232-275,ep_coal_subcritical_G100000115259,350.0,coal,Sulawesi Labota power station_Unit 1 -- construction,e_w615581232-275,way/615581232-275,-2.8679078,122.1770864,False
+e_w615581232-275,ep_coal_subcritical_G100000115260,350.0,coal,Sulawesi Labota power station_Unit 2 -- operating,e_w615581232-275,way/615581232-275,-2.8679078,122.1770864,False
+e_w615581232-275,ep_coal_subcritical_G100000115261,380.0,coal,Sulawesi Labota power station_Unit 3 -- construction,e_w615581232-275,way/615581232-275,-2.8679078,122.1770864,False
+e_w615581232-275,ep_coal_subcritical_G100000115349,150.0,coal,Delong Nickel Phase III power station_Unit 08 -- construction,e_w615581232-275,way/615581232-275,-2.0166271,121.4307371,False
+e_w615581232-275,ep_coal_subcritical_G100000115350,300.0,coal,Delong Nickel Phase III power station_Unit 09 -- construction,e_w615581232-275,way/615581232-275,-2.0142686,121.4296885,False
+e_w615581232-275,ep_coal_subcritical_G100000115351,300.0,coal,Delong Nickel Phase III power station_Unit 10 -- construction,e_w615581232-275,way/615581232-275,-2.0142686,121.4296885,False
+e_w615581232-275,ep_coal_subcritical_G100000115352,300.0,coal,Delong Nickel Phase III power station_Unit 11 -- construction,e_w615581232-275,way/615581232-275,-2.0142686,121.4296885,False
+e_w615581232-275,ep_coal_subcritical_G100000115353,300.0,coal,Delong Nickel Phase III power station_Unit 12 -- construction,e_w615581232-275,way/615581232-275,-2.0142686,121.4296885,False
+e_w615581232-275,ep_coal_subcritical_G100000115355,380.0,coal,PT Halmahera Persada Lygend Nickel Smelter power station_Phase III Unit 1 -- operating,e_w615581232-275,way/615581232-275,-1.5614331,127.4210337,False
+e_w615581232-275,ep_coal_subcritical_G100000115356,380.0,coal,PT Halmahera Persada Lygend Nickel Smelter power station_Phase III Unit 2 -- construction,e_w615581232-275,way/615581232-275,-1.5614331,127.4210337,False
+e_w615581232-275,ep_coal_subcritical_G100000115357,380.0,coal,PT Halmahera Persada Lygend Nickel Smelter power station_Phase III Unit 3 -- construction,e_w615581232-275,way/615581232-275,-1.5614331,127.4210337,False
+e_w615581232-275,ep_coal_subcritical_G100000115358,380.0,coal,PT Halmahera Persada Lygend Nickel Smelter power station_Phase III Unit 4 -- construction,e_w615581232-275,way/615581232-275,-1.5614331,127.4210337,False
+e_w615581232-275,ep_coal_subcritical_G100000115363,250.0,coal,Sulawesi Mining power station_Unit 9 -- operating,e_w615581232-275,way/615581232-275,-2.827384,122.1552699,False
+e_w615581232-275,ep_coal_subcritical_G100001031228,330.0,coal,Delong Nickel Phase IV power station_Unit 2 -- construction,e_w615581232-275,way/615581232-275,-2.014,121.431,False
+e_w615581232-275,ep_coal_subcritical_G100001031233,330.0,coal,Delong Nickel Phase IV power station_Unit 3 -- operating,e_w615581232-275,way/615581232-275,-2.014,121.431,False
+e_w615581232-275,ep_coal_subcritical_G100001031294,150.0,coal,PT Halmahera Persada Lygend Nickel Smelter power station_Phase II Unit 5 -- operating,e_w615581232-275,way/615581232-275,-1.5614331,127.4210337,False
+e_w615581232-275,ep_coal_subcritical_w615581232-275,3839.0,coal,Aggregated Plant -- construction,e_w615581232-275,way/615581232-275,-2.2889587653447188,120.72994153340335,False
+e_w615581232-275,ep_coal_supercritical_G100000115123,380.0,coal,Sulawesi Labota power station_Unit 4 -- operating,e_w615581232-275,way/615581232-275,-2.8689871,122.17188,False
+e_w615581232-275,ep_coal_supercritical_G100000115124,380.0,coal,Sulawesi Labota power station_Unit 5 -- operating,e_w615581232-275,way/615581232-275,-2.8689871,122.17188,False
+e_w615581232-275,ep_coal_supercritical_G100000115125,380.0,coal,Sulawesi Labota power station_Unit 6 -- operating,e_w615581232-275,way/615581232-275,-2.8689871,122.17188,False
+e_w615581232-275,ep_coal_supercritical_G100000115360,380.0,coal,Sulawesi Labota power station_Unit 7 -- operating,e_w615581232-275,way/615581232-275,-2.8688307,122.1692807,False
+e_w615581232-275,ep_coal_supercritical_G100000115361,380.0,coal,Sulawesi Labota power station_Unit 8 -- operating,e_w615581232-275,way/615581232-275,-2.8688307,122.1692807,False
+e_w615581232-275,ep_coal_supercritical_G100000115362,380.0,coal,Sulawesi Labota power station_Unit 9 -- operating,e_w615581232-275,way/615581232-275,-2.8688307,122.1692807,False
+e_w615581232-275,ep_hydro_dam_G100000602129,140.0,hydro,Balambano hydroelectric plant_ -- operating,e_w615581232-275,way/615581232-275,-2.6418,121.214,False
+e_w615581232-275,ep_hydro_dam_G100000602150,165.0,hydro,Larona hydroelectric plant_ -- operating,e_w615581232-275,way/615581232-275,-2.666,121.2563,False
+e_w615581232-275,ep_hydro_w615581232-275__irena,17.694097775016502,hydro,Aggregated Plant - IRENA Gap - way/615581232-275_Missing Hydro Capacity -- operating,e_w615581232-275,way/615581232-275,-2.682023947715242,121.0288358230972,False
+e_w615581232-275,ep_oil_internal_combustion_w615581232-275,60.0,oil,Aggregated Plant -- operating,e_w615581232-275,way/615581232-275,-2.6753585209724884,120.55138256858974,False
+e_w615581242-275,ep_coal_subcritical_w615581242-275,980.0,coal,Aggregated Plant -- operating,e_w615581242-275,way/615581242-275,-1.3220019741090048,121.49284351576135,False
+e_w615581242-275,ep_coal_supercritical_G100000114314,250.0,coal,Weda Bay power station_Unit 1 -- operating,e_w615581242-275,way/615581242-275,0.478894,127.984206,False
+e_w615581242-275,ep_coal_supercritical_G100000114315,250.0,coal,Weda Bay power station_Unit 2 -- operating,e_w615581242-275,way/615581242-275,0.478894,127.984206,False
+e_w615581242-275,ep_coal_supercritical_G100000114316,250.0,coal,Weda Bay power station_Unit 3 -- operating,e_w615581242-275,way/615581242-275,0.478894,127.984206,False
+e_w615581242-275,ep_coal_supercritical_G100000114317,250.0,coal,Weda Bay power station_Unit 4 -- operating,e_w615581242-275,way/615581242-275,0.478894,127.984206,False
+e_w615581242-275,ep_coal_supercritical_G100000114896,380.0,coal,Weda Bay power station_Unit 9 -- operating,e_w615581242-275,way/615581242-275,0.478894,127.984206,False
+e_w615581242-275,ep_coal_supercritical_G100000115268,250.0,coal,Weda Bay power station_Unit 5 -- operating,e_w615581242-275,way/615581242-275,0.478894,127.984206,False
+e_w615581242-275,ep_coal_supercritical_G100000115269,250.0,coal,Weda Bay power station_Unit 6 -- operating,e_w615581242-275,way/615581242-275,0.478894,127.984206,False
+e_w615581242-275,ep_coal_supercritical_G100000115270,380.0,coal,Weda Bay power station_Unit 7 -- operating,e_w615581242-275,way/615581242-275,0.478894,127.984206,False
+e_w615581242-275,ep_coal_supercritical_G100000115271,380.0,coal,Weda Bay power station_Unit 8 -- operating,e_w615581242-275,way/615581242-275,0.478894,127.984206,False
+e_w615581242-275,ep_coal_supercritical_G100000115272,380.0,coal,Weda Bay power station_Unit 10 -- operating,e_w615581242-275,way/615581242-275,0.4761609,128.0081471,False
+e_w615581242-275,ep_coal_supercritical_G100000115273,380.0,coal,Weda Bay power station_Unit 11 -- operating,e_w615581242-275,way/615581242-275,0.4761609,128.0081471,False
+e_w615581242-275,ep_coal_supercritical_G100000115364,380.0,coal,Weda Bay power station_Unit 12 -- construction,e_w615581242-275,way/615581242-275,0.4761609,128.0081471,False
+e_w615581242-275,ep_coal_supercritical_G100001000640,380.0,coal,Weda Bay power station_Unit 13 -- construction,e_w615581242-275,way/615581242-275,0.4761609,128.0081471,False
+e_w615581242-275,ep_coal_supercritical_G100001000641,380.0,coal,Weda Bay power station_Unit 14 -- construction,e_w615581242-275,way/615581242-275,0.4761609,128.0081471,False
+e_w615581242-275,ep_gas_combined_cycle_w615581242-275,177.0,gas,Aggregated Plant -- operating,e_w615581242-275,way/615581242-275,-1.8535571457781874,121.52535716372267,False
+e_w615581242-275,ep_gas_gas_turbine_w615581242-275,200.0,gas,Aggregated Plant -- operating,e_w615581242-275,way/615581242-275,-2.3688377426338136,121.18004654718499,False
+e_w615581242-275,ep_gas_internal_combustion_w615581242-275,125.0,gas,Aggregated Plant -- operating,e_w615581242-275,way/615581242-275,-2.538575253220784,120.71910976313148,False
+e_w615581242-275,ep_geothermal_G100000700352,20.0,geothermal,Lahendong geothermal power plant_1 -- operating,e_w615581242-275,way/615581242-275,1.2542,124.8199,False
+e_w615581242-275,ep_geothermal_G100000700353,20.0,geothermal,Lahendong geothermal power plant_2 -- operating,e_w615581242-275,way/615581242-275,1.2542,124.8199,False
+e_w615581242-275,ep_geothermal_G100000700354,20.0,geothermal,Lahendong geothermal power plant_3 -- operating,e_w615581242-275,way/615581242-275,1.2712,124.8354,False
+e_w615581242-275,ep_geothermal_G100000700355,20.0,geothermal,Lahendong geothermal power plant_4 -- operating,e_w615581242-275,way/615581242-275,1.2712,124.8354,False
+e_w615581242-275,ep_geothermal_G100000700356,20.0,geothermal,Lahendong geothermal power plant_5 -- operating,e_w615581242-275,way/615581242-275,1.1745491,124.7953847,False
+e_w615581242-275,ep_geothermal_G100000700357,20.0,geothermal,Lahendong geothermal power plant_6 -- operating,e_w615581242-275,way/615581242-275,1.1745451,124.7953847,False
+e_w615581242-275,ep_hydro_dam_G100000602140,90.0,hydro,Karebbe hydroelectric plant_ -- operating,e_w615581242-275,way/615581242-275,2.6667,121.1813,False
+e_w615581242-275,ep_hydro_dam_G100000604617,1375.0,hydro,Mentarang hydroelectric plant_ -- construction,e_w615581242-275,way/615581242-275,3.5839,116.6478,False
+e_w615581242-275,ep_hydro_ror_G100000602166,195.0,hydro,Poso 2 hydroelectric plant_ -- operating,e_w615581242-275,way/615581242-275,-1.6438,120.6472,False
+e_w615581242-275,ep_hydro_ror_G100001051487,200.0,hydro,Poso Extension Stage 2 hydroelectric plant_ -- operating,e_w615581242-275,way/615581242-275,-1.6442,120.6471,False
+e_w615581242-275,ep_hydro_w615581242-275__irena,683.2822412922767,hydro,Aggregated Plant - IRENA Gap - way/615581242-275_Missing Hydro Capacity -- operating,e_w615581242-275,way/615581242-275,-2.217700321337353,119.95849127105382,False
+e_w615581270-275,ep_coal_CFB_w615581270-275,60.0,coal,Aggregated Plant -- operating,e_w615581270-275,way/615581270-275,-2.736926001527843,121.31449513922918,False
+e_w615581270-275,ep_coal_subcritical_w615581270-275,1510.0,coal,Aggregated Plant -- operating,e_w615581270-275,way/615581270-275,-3.248214178942627,121.32868525351832,False
+e_w615581270-275,ep_gas_combined_cycle_G100000404288,180.0,gas,Sengkang power station_2-1 -- operating,e_w615581270-275,way/615581270-275,-4.175947,120.072159,False
+e_w615581270-275,ep_gas_combined_cycle_w615581270-275,135.0,gas,Aggregated Plant -- operating,e_w615581270-275,way/615581270-275,-4.088964093098711,120.66706198488895,False
+e_w615581270-275,ep_geothermal_w615581270-275,8.0,geothermal,Aggregated Plant -- operating,e_w615581270-275,way/615581270-275,-4.11482308200257,120.60615039246599,False
+e_w615581270-275,ep_hydro_dam_G100000602128,126.0,hydro,Bakaru hydroelectric plant_ -- operating,e_w615581270-275,way/615581270-275,-3.4487,119.6065,False
+e_w615581270-275,ep_hydro_ror_G100000604594,90.0,hydro,Malea hydroelectric plant_ -- operating,e_w615581270-275,way/615581270-275,-3.1281,119.7936,False
+e_w615581270-275,ep_hydro_w615581270-275__irena,103.32192831903079,hydro,Aggregated Plant - IRENA Gap - way/615581270-275_Missing Hydro Capacity -- operating,e_w615581270-275,way/615581270-275,-4.1941880817577735,120.23345214593401,False
+e_w615581270-275,ep_windon_wind_275,75.0,windon,Aggregated Plant -- operating,e_w615581270-275,way/615581270-275,-4.018209421422277,119.55965365626916,False
+e_w629512849-500,ep_coal_subcritical_G100000101586,300.0,coal,Cilacap Sumber power station_Phase I Unit 1 -- operating,e_w629512849-500,way/629512849-500,-7.68575,109.08977,False
+e_w629512849-500,ep_coal_subcritical_G100000101587,300.0,coal,Cilacap Sumber power station_Phase I Unit 2 -- operating,e_w629512849-500,way/629512849-500,-7.68575,109.08977,False
+e_w629512849-500,ep_coal_supercritical_G100000101588,660.0,coal,Cilacap Sumber power station_Phase II Unit 3 -- operating,e_w629512849-500,way/629512849-500,-7.6832417,109.096384,False
+e_w629512849-500,ep_coal_ultra-supercritical_G100000101589,1000.0,coal,Cilacap Sumber power station_Phase III Unit 4 -- operating,e_w629512849-500,way/629512849-500,-7.6832417,109.096384,False
+e_w721674155-275,ep_coal_subcritical_w721674155-275,230.0,coal,Aggregated Plant -- operating,e_w721674155-275,way/721674155-275,2.008114392380047,99.08691455718848,False
+e_w721674155-275,ep_geothermal_G100000700256,110.0,geothermal,Sarulla geothermal power plant_NIL-1 -- operating,e_w721674155-275,way/721674155-275,1.8202,99.0885,False
+e_w721674155-275,ep_geothermal_G100000700257,110.0,geothermal,Sarulla geothermal power plant_NIL-2 -- operating,e_w721674155-275,way/721674155-275,1.8202,99.0885,False
+e_w721674155-275,ep_geothermal_G100000700258,110.0,geothermal,Sarulla geothermal power plant_SIL-3 -- operating,e_w721674155-275,way/721674155-275,1.8202,99.0885,False
+e_w721674155-275,ep_hydro_ror_G100000602130,510.0,hydro,Batang Toru hydroelectric plant_ -- construction,e_w721674155-275,way/721674155-275,1.623,99.1832,False
+e_w721674155-275,ep_hydro_ror_G100001027300,50.0,hydro,Sipansihaporas hydroelectric plant_ -- operating,e_w721674155-275,way/721674155-275,1.7427,98.7792,False
+e_w721674155-275,ep_hydro_w721674155-275__irena,32.48752378363685,hydro,Aggregated Plant - IRENA Gap - way/721674155-275_Missing Hydro Capacity -- operating,e_w721674155-275,way/721674155-275,1.6496638505195946,99.05191408088199,False
+e_w721685825-275,ep_gas_internal_combustion_G100000411329,240.5,gas,Arun II power station_2 -- operating,e_w721685825-275,way/721685825-275,5.214774,97.085577,False
+e_w721685825-275,ep_gas_internal_combustion_G100000411330,184.3,gas,Arun I power station_1 -- operating,e_w721685825-275,way/721685825-275,5.215648,97.090454,False
+e_w736595653-275,ep_gas_gas_turbine_w736595653-275,300.0,gas,Aggregated Plant -- operating,e_w736595653-275,way/736595653-275,0.9277408949327811,101.51224029831585,False
+e_w736595653-275,ep_gas_internal_combustion_w736595653-275,112.0,gas,Aggregated Plant -- operating,e_w736595653-275,way/736595653-275,0.46365287079766754,101.73418255394856,False
+e_w736595653-500,ep_bioenergy_G100000200736,535.0,bioenergy,Kerinci Mill power station_1 -- operating,e_w736595653-500,way/736595653-500,0.4406,101.8883,False
+e_w736595653-500,ep_bioenergy_w736595653-500__ember,196.80789539854155,bioenergy,Aggregated Plant - EMBER Gap - way/736595653-500_Missing Bioenergy Capacity -- operating,e_w736595653-500,way/736595653-500,1.0077260503680783,101.64229386215892,False
+e_w736595653-500,ep_coal_subcritical_G100000107926,150.0,coal,Perawang Mill power station_Unit 10 -- operating,e_w736595653-500,way/736595653-500,0.68932,101.61907,False
+e_w736595653-500,ep_coal_subcritical_G100000107927,150.0,coal,Perawang Mill power station_Unit 11 -- operating,e_w736595653-500,way/736595653-500,0.68932,101.61907,False
+e_w736595653-500,ep_coal_subcritical_G100000107932,150.0,coal,Perawang Mill power station_Unit 09 -- operating,e_w736595653-500,way/736595653-500,0.68932,101.61907,False
+e_w736595653-500,ep_coal_subcritical_w736595653-500,655.0,coal,Aggregated Plant -- operating,e_w736595653-500,way/736595653-500,0.6143104519193624,101.90610236628713,False
+e_w736595653-500,ep_gas_combined_cycle_G100000400921,296.2,gas,Riau (MRPR) power station_1 -- operating,e_w736595653-500,way/736595653-500,0.539138,101.520131,False
+e_w736595653-500,ep_gas_combined_cycle_w736595653-500,284.1,gas,Aggregated Plant -- operating,e_w736595653-500,way/736595653-500,0.3073025254694515,101.62370263887262,False
+e_w736595653-500,ep_gas_internal_combustion_w736595653-500,114.0,gas,Aggregated Plant -- operating,e_w736595653-500,way/736595653-500,0.6850563742507341,101.18914786391498,False
+e_w754073846-275,ep_coal_subcritical_G100000107756,220.0,coal,Pangkalan Susu power station_Unit 1 -- operating,e_w754073846-275,way/754073846-275,4.12071,98.25823,False
+e_w754073846-275,ep_coal_subcritical_G100000107757,220.0,coal,Pangkalan Susu power station_Unit 2 -- operating,e_w754073846-275,way/754073846-275,4.12071,98.25823,False
+e_w754073846-275,ep_coal_subcritical_G100000107758,200.0,coal,Pangkalan Susu power station_Unit 3 -- operating,e_w754073846-275,way/754073846-275,4.12071,98.25823,False
+e_w754073846-275,ep_coal_subcritical_G100000107759,200.0,coal,Pangkalan Susu power station_Unit 4 -- operating,e_w754073846-275,way/754073846-275,4.12071,98.25823,False
+e_w754178666-275,ep_hydro_dam_G100000602170,286.0,hydro,Sigura Gura hydroelectric plant_ -- operating,e_w754178666-275,way/754178666-275,2.5202,99.2798,False
+e_w754178666-275,ep_hydro_w754178666-275__irena,16.591842503785966,hydro,Aggregated Plant - IRENA Gap - way/754178666-275_Missing Hydro Capacity -- operating,e_w754178666-275,way/754178666-275,2.4824272612126097,99.17349556796253,False
+e_w754178667-275,ep_hydro_ror_G100000602125,180.0,hydro,Asahan 1 hydroelectric plant_ -- operating,e_w754178667-275,way/754178667-275,2.5123,99.2628,False
+e_w754178667-275,ep_hydro_w754178667-275__irena,10.442418359026131,hydro,Aggregated Plant - IRENA Gap - way/754178667-275_Missing Hydro Capacity -- operating,e_w754178667-275,way/754178667-275,2.6683224573351314,99.28663497871545,False
+e_w759130125-230,ep_gas_internal_combustion_w759130125-230,57.0,gas,Aggregated Plant -- operating,e_w759130125-230,way/759130125-230,-4.207794201823571,136.94290895608918,False
+e_w769617021-500,ep_geothermal_G100000700119,30.0,geothermal,Kamojang geothermal power plant_1 -- operating,e_w769617021-500,way/769617021-500,-7.1388,107.7851,False
+e_w769617021-500,ep_geothermal_G100000700120,55.0,geothermal,Kamojang geothermal power plant_2 -- operating,e_w769617021-500,way/769617021-500,-7.1388,107.7851,False
+e_w769617021-500,ep_geothermal_G100000700121,55.0,geothermal,Kamojang geothermal power plant_3 -- operating,e_w769617021-500,way/769617021-500,-7.1388,107.7851,False
+e_w769617021-500,ep_geothermal_G100000700122,60.0,geothermal,Kamojang geothermal power plant_4 -- operating,e_w769617021-500,way/769617021-500,-7.1388,107.7851,False
+e_w769617021-500,ep_geothermal_G100000700123,35.0,geothermal,Kamojang geothermal power plant_5 -- operating,e_w769617021-500,way/769617021-500,-7.1388,107.7851,False
+e_w841499143-275,ep_bioenergy_G100000200735,1058.0,bioenergy,Agro Muko power station_1 -- operating,e_w841499143-275,way/841499143-275,-2.7165,101.3702,False
+e_w841499143-275,ep_bioenergy_w841499143-275__ember,389.2014080965551,bioenergy,Aggregated Plant - EMBER Gap - way/841499143-275_Missing Bioenergy Capacity -- operating,e_w841499143-275,way/841499143-275,-1.8688648506913856,102.23154761328354,False
+e_w841499143-275,ep_geothermal_G100000700270,55.0,geothermal,Sungai Penuh geothermal power plant_1 -- construction,e_w841499143-275,way/841499143-275,-2.0625,101.4076,False
+e_w841499143-275,ep_geothermal_G100000700271,55.0,geothermal,Sungai Penuh geothermal power plant_2 -- construction,e_w841499143-275,way/841499143-275,-2.0625,101.4076,False
+e_w841499143-275,ep_hydro_dam_G100000604505,420.0,hydro,Kerinci Merangin hydroelectric plant_ -- construction,e_w841499143-275,way/841499143-275,-2.1806,101.635,False
+e_w841499143-275,ep_hydro_w841499143-275__irena,92.12533530074165,hydro,Aggregated Plant - IRENA Gap - way/841499143-275_Missing Hydro Capacity -- operating,e_w841499143-275,way/841499143-275,-2.2161535179030505,102.22346152731689,False
+e_w928220391-275,ep_oil_internal_combustion_w928220391-275,58.5,oil,Aggregated Plant -- operating,e_w928220391-275,way/928220391-275,5.570401500338714,95.40069586230453,False
+e_w931931133-275,ep_geothermal_G100000700148,55.0,geothermal,Lumut Balai geothermal power plant_1 -- operating,e_w931931133-275,way/931931133-275,-4.1943,103.6403,False
+e_w931931133-275,ep_geothermal_G100000700149,55.0,geothermal,Lumut Balai geothermal power plant_2 -- construction,e_w931931133-275,way/931931133-275,-4.1943,103.6403,False
+e_w931931133-275,ep_geothermal_G100000700240,91.0,geothermal,Rantau Dedep geothermal power plant_1 -- operating,e_w931931133-275,way/931931133-275,-4.2069,103.3857,False
+e_w939542521-275,ep_hydro_w939542521-275__irena,34.22792684347455,hydro,Aggregated Plant - IRENA Gap - way/939542521-275_Missing Hydro Capacity -- operating,e_w939542521-275,way/939542521-275,-0.9866446379041756,101.3200997744959,False
+e_w943539373-275,ep_coal_subcritical_w943539373-275,391.0,coal,Aggregated Plant -- operating,e_w943539373-275,way/943539373-275,-1.73562282714685,103.56005398059399,False
+e_w943539373-500,ep_gas_gas_turbine_w943539373-500,100.0,gas,Aggregated Plant -- operating,e_w943539373-500,way/943539373-500,-1.5119706546513665,103.51361345214232,False
+e_w943539373-500,ep_gas_internal_combustion_w943539373-500,166.4,gas,Aggregated Plant -- operating,e_w943539373-500,way/943539373-500,-1.8657047623365415,103.50280203480263,False
+e_w946191122-275,ep_coal_subcritical_G100000109700,150.0,coal,Sumsel-5 power station_Unit 1 -- operating,e_w946191122-275,way/946191122-275,-2.1562529,103.7552716,False
+e_w946191122-275,ep_coal_subcritical_G100000109701,150.0,coal,Sumsel-5 power station_Unit 2 -- operating,e_w946191122-275,way/946191122-275,-2.1562529,103.7552716,False
+e_w960747902-500,ep_coal_subcritical_w960747902-500,55.0,coal,Aggregated Plant -- operating,e_w960747902-500,way/960747902-500,-5.9779132244821085,107.17707436827477,False
+e_w960747902-500,ep_gas_combined_cycle_G100000404250,755.0,gas,Jababeka Industrial Estate power station_1 -- operating,e_w960747902-500,way/960747902-500,-6.290774,107.120446,False
+e_w960747902-500,ep_gas_combined_cycle_w960747902-500,130.0,gas,Aggregated Plant -- operating,e_w960747902-500,way/960747902-500,-6.41901468524046,107.39705387381483,False
+e_w960747902-500,ep_gas_gas_turbine_w960747902-500,109.0,gas,Aggregated Plant -- operating,e_w960747902-500,way/960747902-500,-6.351235181230943,106.93802831660692,False
+e_w960747936-500,ep_coal_subcritical_w960747936-500,50.0,coal,Aggregated Plant -- operating,e_w960747936-500,way/960747936-500,-6.570992282945622,107.32281443601352,False
+e_w966209515-500,ep_gas_gas_turbine_w966209515-500,82.0,gas,Aggregated Plant -- operating,e_w966209515-500,way/966209515-500,-6.2910557389557304,107.08324983475033,False
+elc_spv_007,ep_solar_007__irena,12.459144531834106,solar,Aggregated Plant -- operating,elc_spv_007,ID28-500,-2.193776457486878,111.47204682051216,False
+elc_spv_019,ep_solar_pv_019,1.6,solar,Aggregated Plant -- operating,elc_spv_019,way/469888049-275,1.6658364120437614,100.37463874531518,False
+elc_spv_025,ep_solar_025__irena,13.045838593969075,solar,Aggregated Plant -- operating,elc_spv_025,way/931931133-275,-4.302775478023557,105.02831485957891,False
+elc_spv_026,ep_solar_026__irena,13.482016874196812,solar,Aggregated Plant -- operating,elc_spv_026,way/930719092-275,-1.7669229452100017,103.56431911665507,False
+elc_spv_050,ep_solar_pv_050,6.6,solar,Aggregated Plant -- operating,elc_spv_050,way/615581270-275,-2.6568288240202174,119.06708694740806,False
+elc_spv_057,ep_solar_pv_057,21.0,solar,Aggregated Plant -- operating,elc_spv_057,way/615581242-275,-1.191537143769921,119.86889398864976,False
+elc_spv_059,ep_solar_pv_059,18.000000000000004,solar,Aggregated Plant -- operating,elc_spv_059,way/615581242-275,-1.0258429852317628,119.99124174694633,False
+elc_spv_061,ep_solar_pv_061,26.3,solar,Aggregated Plant -- operating,elc_spv_061,ID34-500,-6.771502994101118,112.28901229848167,False
+elc_spv_064,ep_solar_pv_064,101.0,solar,Aggregated Plant -- operating,elc_spv_064,ID33-500,-6.99694446906728,108.70292652762546,False
+elc_spv_065,ep_solar_pv_065,250.1,solar,Aggregated Plant -- operating,elc_spv_065,way/1316876158-275,-5.038617367251693,104.78244817866793,False
+elc_spv_067,ep_solar_pv_067,209.7,solar,Aggregated Plant -- operating,elc_spv_067,ID38-500,-8.195018992773063,113.16968513563617,False
+elc_spv_068,ep_solar_pv_068,1.1,solar,Aggregated Plant -- operating,elc_spv_068,way/615581270-275,-2.3632687993653487,119.21231901714926,False
+elc_spv_070,ep_solar_pv_070,4.1,solar,Aggregated Plant -- operating,elc_spv_070,way/615581270-275,-2.0912119503643822,119.4712877324447,False
+elc_won_033,ep_windon_wind_033,72.0,windon,Aggregated Plant -- operating,elc_won_033,ID38-500,-7.439379640403413,113.01391700459351,False

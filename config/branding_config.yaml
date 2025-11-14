@@ -1,0 +1,202 @@
+# VERVESTACKS Branding Configuration
+# Centralized branding settings for all outputs across the platform
+
+branding:
+  name: "VERVESTACKS"
+  version: "2.0"
+  description: "Comprehensive branding system for all VERVESTACKS visual outputs"
+  
+# Typography System
+fonts:
+  primary: "DejaVu Sans"
+  weights:
+    heading: "normal"
+    subheading: "normal"
+    body: "normal"
+    labels: "normal"
+    axis: "normal"
+    numbers: "normal"
+  
+  sizes:
+    title: 16          # Main chart title (in header)
+    subtitle: 12       # Figure suptitle (main chart purpose)
+    heading: 12        # Subplot titles
+    body: 12           # General text
+    labels: 5.5        # Axis labels (reduced to half from 11)
+    axis: 7            # Tick labels (reduced to half from 10)
+    legend: 10         # Legend text
+    numbers: 10        # Number formatting
+    heatmap: 5         # Heatmap cell numbers (smaller to prevent overlap)
+
+# Color Palette - Based on VERVESTACKS Logo
+colors:
+  primary: "#FD275E"      # Bright pink/fuchsia from logo
+  secondary: "#FD626B"    # Coral/salmon pink from logo
+  accent: "#FD994C"       # Bright orange from logo
+  
+  # Neutral colors for backgrounds and text
+  neutral:
+    white: "#FFFFFF"
+    light_gray: "#F8F9FA"
+    gray: "#E9ECEF"
+    dark_gray: "#6C757D"
+    black: "#212529"
+    text: "#212529"       # Default text color
+  
+  # Color theory derived gradients
+  gradients:
+    primary_scale: ["#FD275E", "#FE5A7A", "#FE8A92", "#FEB8B8", "#FEE6E6"]
+    secondary_scale: ["#FD626B", "#FE8A92", "#FEB8B8", "#FEE6E6", "#FFF5F5"]
+    accent_scale: ["#FD994C", "#FEB366", "#FECB8A", "#FEE2AD", "#FFF9F0"]
+    
+    # Complementary colors (color theory)
+    complementary: ["#FD275E", "#00D8A2", "#FD626B", "#02A9F4", "#FD994C"]
+    
+    # Coverage-based colors for energy charts
+    coverage:
+      extreme_shortage: "#FD275E"    # Primary red
+      shortage: "#FD626B"            # Secondary pink
+      moderate: "#FD994C"            # Accent orange
+      adequate: "#00D8A2"            # Complementary green
+      surplus: "#02A9F4"             # Complementary blue
+      no_data: "#F8F9FA"            # Light gray for no data
+
+# Logo Configuration
+logos:
+  vervestacks:
+    path: "assets/logos/vervestacks_logo.png"
+    sizes:
+      small: [24, 24]
+      medium: [48, 48]
+      large: [96, 96]
+    position: "top_left"
+    description: "VERVESTACKS colorful stacked shapes logo"
+    
+  kanors:
+    path: "assets/logos/kanors_logo.png"
+    sizes:
+      small: [24, 24]
+      medium: [48, 48]
+      large: [96, 96]
+    position: "top_right"
+    description: "Kanors EMR logo"
+  
+  # Logo sizing and positioning
+  default_size: [24, 24]
+  target_height_px: 22              # Fixed logo height in pixels (increased for SVG quality)
+
+# Chart Styling
+chart_styling:
+  grid_lines:
+    color: "#E5E5E5"
+    alpha: 0.3
+    linewidth: 0.5
+    style: "solid"
+    
+  borders:
+    color: "#CCCCCC"
+    alpha: 0.5
+    linewidth: 0.8
+    style: "solid"
+    
+  background: "#FFFFFF"
+  
+  spacing:
+    logo_margin: 0.02
+    title_margin: 0.05
+    legend_margin: 0.02
+
+# Header band for logos and title separation
+header_band:
+  enabled: true
+  height_frac: 0.08                 # Fraction of figure height for header band
+  background: "#F8F9FA"             # Light gray background
+  divider_color: "#F0F0F0"          # Very light gray divider line at bottom
+  divider_width: 0.5                # Width of divider line in pixels
+  title_color: "#FD275E"            # Brand primary color for titles
+  title_margin: 0.05                # Extra margin below header band for titles
+  title_size: 20                    # Size of main title in header
+  
+  # Logo positioning within header band (aligned with chart edges)
+  left_logo_pos: [0.125, 0.96]     # [x, y] coordinates for left logo (aligned with chart left)
+  right_logo_pos: [0.90, 0.96]     # [x, y] coordinates for right logo (moved further right)
+  
+  # Title styling for professional hierarchy
+  title_styling:
+    # Main header titles (dashboard titles) - moderately subtle but readable
+    main_header:
+      font_weight: "normal"           # Reduced from bold to normal
+      font_size: 18                   # Reduced from 20 to 18 for subtlety
+      color: "#6C757D"                # Professional dark gray (not too light)
+      alpha: 0.9                      # High opacity for readability
+      font_family: "Verdana"          # Consistent with primary font
+    
+    # Chart titles (subplot titles) - professionally visible
+    chart_title:
+      font_weight: "normal"           # Normal weight for professional look
+      font_size: 11                   # Reduced from 14 to 11 for better proportion
+      color: "#495057"                # Professional dark gray (clearly visible)
+      alpha: 1.0                      # Full opacity for clarity
+      font_family: "Verdana"          # Consistent with primary font
+    
+    # Default fallback for any other titles
+    default:
+      font_weight: "normal"
+      font_size: 16
+      color: "#6C757D"
+      alpha: 0.9
+      font_family: "Verdana"
+
+# Chart Type Specific Styling
+chart_types:
+  calendar_heatmap:
+    aspect_ratio: "equal"
+    cell_padding: 0.1
+    legend_position: "right"
+    statistics_position: "below_legend"
+    
+  monthly_summary:
+    aspect_ratio: "auto"
+    legend_position: "right"
+    statistics_position: "top_left"
+    
+  quarterly_chart:
+    aspect_ratio: "auto"
+    legend_position: "upper_left"
+    grid_style: "light"
+    subplot_spacing: 0.1
+    
+  supply_curve:
+    aspect_ratio: "auto"
+    legend_position: "upper_left"
+    line_width: 2.5
+    grid_style: "light"
+    
+  scenario_analysis:
+    aspect_ratio: "auto"
+    legend_position: "upper_right"
+    grid_style: "light"
+    subplot_spacing: 0.1
+    
+  line_chart:
+    line_width: 2.0
+    marker_size: 6
+    legend_position: "top_right"
+    
+  bar_chart:
+    bar_width: 0.8
+    bar_spacing: 0.1
+    legend_position: "top_right"
+    
+  scatter_plot:
+    marker_size: 50
+    alpha: 0.7
+    legend_position: "top_right"
+
+# Taglines (preserved from existing system)
+taglines:
+  main: "VERVESTACKS - the open USE platform · Powered by data · Shaped by intuition · Accelerated with AI"
+  facets: "VERVESTACKS: Energy modeling reimagined · Hourly simulation for any planned mix"
+  grid: "VERVESTACKS: Spatial energy intelligence · Grid-aware modeling at scale"
+  time: "VERVESTACKS: Time dimension intelligence · Algorithmic temporal analysis"
+  default: "main"

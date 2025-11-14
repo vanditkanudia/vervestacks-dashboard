@@ -1,0 +1,229 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_gas__ember,19.10000000000167,gas,Aggregated Plant - EMBER Gap_Missing Gas Capacity -- operating,,,,,False
+e_UA28-330,ep_gas_steam_turbine_G100000410803,105.0,gas,Kremenchuk CHP power station_4 -- operating,e_UA28-330,UA28-330,49.17079,33.447371,False
+e_UA28-330,ep_gas_steam_turbine_G100000410804,50.0,gas,Kremenchuk CHP power station_3 -- operating,e_UA28-330,UA28-330,49.17079,33.447371,False
+e_UA28-330,ep_gas_steam_turbine_G100000410805,50.0,gas,Kremenchuk CHP power station_2 -- operating,e_UA28-330,UA28-330,49.17079,33.447371,False
+e_UA28-330,ep_gas_steam_turbine_G100000410806,50.0,gas,Kremenchuk CHP power station_1 -- operating,e_UA28-330,UA28-330,49.17079,33.447371,False
+e_r6674938-330,ep_bioenergy_r6674938-330__ember,125.58139534883722,bioenergy,Aggregated Plant - EMBER Gap - relation/6674938-330_Missing Bioenergy Capacity -- operating,e_r6674938-330,relation/6674938-330,50.20241740711844,30.75630026806808,False
+e_r6674938-330,ep_coal_r6674938-330__ember,12.313863123589872,coal,Aggregated Plant - EMBER Gap - relation/6674938-330_Missing Coal Capacity -- operating,e_r6674938-330,relation/6674938-330,50.33164611274633,30.30354869988751,False
+e_r6674938-330,ep_coal_subcritical_G100000101989,50.0,coal,Darnytska power station_Unit 5 -- operating,e_r6674938-330,relation/6674938-330,50.447771,30.642949,False
+e_r6674938-330,ep_coal_subcritical_G100000101990,50.0,coal,Darnytska power station_Unit 6 -- operating,e_r6674938-330,relation/6674938-330,50.447771,30.642949,False
+e_r6674938-330,ep_coal_subcritical_G100000101991,60.0,coal,Darnytska power station_Unit 7 -- operating,e_r6674938-330,relation/6674938-330,50.447771,30.642949,False
+e_r6674938-330,ep_gas_steam_turbine_G100000406977,100.0,gas,Kyiv CHP-5 power station_1 -- operating,e_r6674938-330,relation/6674938-330,50.39317,30.569477,False
+e_r6674938-330,ep_gas_steam_turbine_G100000409636,250.0,gas,Kyiv CHP-5 power station_4 -- operating,e_r6674938-330,relation/6674938-330,50.39317,30.569477,False
+e_r6674938-330,ep_gas_steam_turbine_G100000409637,250.0,gas,Kyiv CHP-5 power station_3 -- operating,e_r6674938-330,relation/6674938-330,50.39317,30.569477,False
+e_r6674938-330,ep_gas_steam_turbine_G100000409638,100.0,gas,Kyiv CHP-5 power station_2 -- operating,e_r6674938-330,relation/6674938-330,50.39317,30.569477,False
+e_r9224222-400,ep_coal_r9224222-400__ember,191.32664828277768,coal,Aggregated Plant - EMBER Gap - relation/9224222-400_Missing Coal Capacity -- operating,e_r9224222-400,relation/9224222-400,49.286227247565485,24.489210328315558,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101122,195.0,coal,Burshtyn power station_Unit 1 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101123,210.0,coal,Burshtyn power station_Unit 10 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101124,195.0,coal,Burshtyn power station_Unit 11 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101125,195.0,coal,Burshtyn power station_Unit 12 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101126,185.0,coal,Burshtyn power station_Unit 2 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101127,185.0,coal,Burshtyn power station_Unit 3 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101128,195.0,coal,Burshtyn power station_Unit 4 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101129,215.0,coal,Burshtyn power station_Unit 5 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101130,195.0,coal,Burshtyn power station_Unit 6 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101131,206.0,coal,Burshtyn power station_Unit 7 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101132,195.0,coal,Burshtyn power station_Unit 8 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9224222-400,ep_m_coal_subcritical_G100000101133,195.0,coal,Burshtyn power station_Unit 9 -- mothballed,e_r9224222-400,relation/9224222-400,49.208629,24.666037,False
+e_r9241264-330,ep_hydro_dam_G100000603728,700.0,hydro,Kremenchuk hydroelectric plant_ -- operating,e_r9241264-330,relation/9241264-330,49.0748,33.2531,False
+e_r9354587-330,ep_gas_steam_turbine_G100000406976,250.0,gas,Kyiv CHP-6 power station_1 -- operating,e_r9354587-330,relation/9354587-330,50.531699,30.662307,False
+e_r9354587-330,ep_gas_steam_turbine_G100000409643,250.0,gas,Kyiv CHP-6 power station_2 -- operating,e_r9354587-330,relation/9354587-330,50.531699,30.662307,False
+e_r9995295-330,ep_hydro_dam_G100000603718,651.0,hydro,Dnipro-1 hydroelectric plant_ -- operating,e_r9995295-330,relation/9995295-330,47.8675,35.0897,False
+e_r9995295-330,ep_hydro_dam_G100000603719,888.0,hydro,Dnipro-2 hydroelectric plant_ -- operating,e_r9995295-330,relation/9995295-330,47.8675,35.0897,False
+e_r9995295-330,ep_hydro_r9995295-330__irena,13.984552476147218,hydro,Aggregated Plant - IRENA Gap - relation/9995295-330_Missing Hydro Capacity -- operating,e_r9995295-330,relation/9995295-330,47.710204745553504,35.12209125481652,False
+e_w1040827524-750,ep_nuclear_G100000500215,1000.0,nuclear,Khmelnitski nuclear power plant_1 -- operating,e_w1040827524-750,way/1040827524-750,50.3024,26.6473,False
+e_w1040827524-750,ep_nuclear_G100000500216,1000.0,nuclear,Khmelnitski nuclear power plant_2 -- operating,e_w1040827524-750,way/1040827524-750,50.3024,26.6473,False
+e_w107808612-330,ep_nuclear_G100000500537,1000.0,nuclear,South Ukraine nuclear power plant_1 -- operating,e_w107808612-330,way/107808612-330,47.81201,31.2201,False
+e_w107808612-330,ep_nuclear_G100000500538,1000.0,nuclear,South Ukraine nuclear power plant_2 -- operating,e_w107808612-330,way/107808612-330,47.81201,31.2201,False
+e_w107808612-330,ep_nuclear_G100000500619,1000.0,nuclear,South Ukraine nuclear power plant_3 -- operating,e_w107808612-330,way/107808612-330,47.81201,31.2201,False
+e_w114311420-220,ep_m_gas_internal_combustion_G100000412971,72.0,gas,Zasyadko mines power station_1-24 -- mothballed,e_w114311420-220,way/114311420-220,48.07055,37.804709,False
+e_w116452049-330,ep_hydro_dam_G100000603727,440.0,hydro,Kiyvska hydroelectric plant_ -- operating,e_w116452049-330,way/116452049-330,50.5883,30.5118,False
+e_w116452049-330,ep_hydro_ps_G100000603729,236.0,hydro,Kyivska hydroelectric plant_ -- operating,e_w116452049-330,way/116452049-330,50.6113,30.4902,False
+e_w129243723-330,ep_gas_combined_cycle_G100000406986,58.5,gas,Saki power station_1 -- operating,e_w129243723-330,way/129243723-330,45.136611,33.553452,False
+e_w129243723-330,ep_gas_combined_cycle_G100000414443,59.4,gas,Saki power station_2 -- operating,e_w129243723-330,way/129243723-330,45.136611,33.553452,False
+e_w136739758-220,ep_m_gas_steam_turbine_G100000406965,50.0,gas,Severodonetsk CHP power station_14 -- mothballed,e_w136739758-220,way/136739758-220,48.937436,38.453162,False
+e_w136739758-220,ep_m_gas_steam_turbine_G100000406966,50.0,gas,Severodonetsk CHP power station_13 -- mothballed,e_w136739758-220,way/136739758-220,48.937436,38.453162,False
+e_w136739758-220,ep_m_gas_steam_turbine_G100000406967,50.0,gas,Severodonetsk CHP power station_12 -- mothballed,e_w136739758-220,way/136739758-220,48.937436,38.453162,False
+e_w150153410-330,ep_hydro_dam_G100000603730,388.0,hydro,Serednodniprovska hydroelectric plant_ -- operating,e_w150153410-330,way/150153410-330,48.5485,34.541,False
+e_w155861891-330,ep_gas_steam_turbine_G100001046542,250.0,gas,Odesa 1 floating power station_1 -- construction,e_w155861891-330,way/155861891-330,46.467212,30.766078,False
+e_w165764729-330,ep_coal_w165764729-330__ember,70.03509651541741,coal,Aggregated Plant - EMBER Gap - way/165764729-330_Missing Coal Capacity -- operating,e_w165764729-330,way/165764729-330,48.676683725171316,35.10160155070548,False
+e_w165764729-330,ep_m_coal_subcritical_G100000108172,150.0,coal,Prydniprovska power station_Unit 10 -- mothballed,e_w165764729-330,way/165764729-330,48.405291,35.111749,False
+e_w165764729-330,ep_m_coal_subcritical_G100000108178,150.0,coal,Prydniprovska power station_Unit 7 -- mothballed,e_w165764729-330,way/165764729-330,48.405291,35.111749,False
+e_w165764729-330,ep_m_coal_subcritical_G100000108179,150.0,coal,Prydniprovska power station_Unit 8 -- mothballed,e_w165764729-330,way/165764729-330,48.405291,35.111749,False
+e_w165764729-330,ep_m_coal_subcritical_G100000108180,150.0,coal,Prydniprovska power station_Unit 9 -- mothballed,e_w165764729-330,way/165764729-330,48.405291,35.111749,False
+e_w165764729-330,ep_m_coal_supercritical_G100000108173,310.0,coal,Prydniprovska power station_Unit 11 -- mothballed,e_w165764729-330,way/165764729-330,48.405291,35.111749,False
+e_w188928648-330,ep_coal_subcritical_G100000101427,60.0,coal,Cherkasy power station_Unit 3 -- operating,e_w188928648-330,way/188928648-330,49.390543,32.067372,False
+e_w188928648-330,ep_coal_subcritical_G100000101428,60.0,coal,Cherkasy power station_Unit 4 -- operating,e_w188928648-330,way/188928648-330,49.390543,32.067372,False
+e_w188928648-330,ep_coal_subcritical_G100000101429,60.0,coal,Cherkasy power station_Unit 5 -- operating,e_w188928648-330,way/188928648-330,49.390543,32.067372,False
+e_w188928648-330,ep_coal_w188928648-330__ember,13.853096014038606,coal,Aggregated Plant - EMBER Gap - way/188928648-330_Missing Coal Capacity -- operating,e_w188928648-330,way/188928648-330,49.53842201879191,32.05475655254695,False
+e_w200395114-220,ep_coal_w200395114-220__ember,39.25043870644272,coal,Aggregated Plant - EMBER Gap - way/200395114-220_Missing Coal Capacity -- operating,e_w200395114-220,way/200395114-220,50.182496078054015,24.436412844370462,False
+e_w200395114-220,ep_m_coal_subcritical_G100000102380,100.0,coal,Dobrotvir power station_Unit 5 -- mothballed,e_w200395114-220,way/200395114-220,50.214293,24.374654,False
+e_w200395114-220,ep_m_coal_subcritical_G100000102381,100.0,coal,Dobrotvir power station_Unit 6 -- mothballed,e_w200395114-220,way/200395114-220,50.214293,24.374654,False
+e_w200395114-220,ep_m_coal_subcritical_G100000102382,150.0,coal,Dobrotvir power station_Unit 7 -- mothballed,e_w200395114-220,way/200395114-220,50.214293,24.374654,False
+e_w200395114-220,ep_m_coal_subcritical_G100000102383,160.0,coal,Dobrotvir power station_Unit 8 -- mothballed,e_w200395114-220,way/200395114-220,50.214293,24.374654,False
+e_w201562662-220,ep_coal_w201562662-220__ember,15.392328904487341,coal,Aggregated Plant - EMBER Gap - way/201562662-220_Missing Coal Capacity -- operating,e_w201562662-220,way/201562662-220,48.90970929932956,24.30530784697625,False
+e_w201562662-220,ep_m_coal_subcritical_G100000105501,50.0,coal,Kalush power station_Unit 1 -- mothballed,e_w201562662-220,way/201562662-220,49.07049,24.318522,False
+e_w201562662-220,ep_m_coal_subcritical_G100000105502,50.0,coal,Kalush power station_Unit 2 -- mothballed,e_w201562662-220,way/201562662-220,49.07049,24.318522,False
+e_w201562662-220,ep_m_coal_subcritical_G100000105503,50.0,coal,Kalush power station_Unit 3 -- mothballed,e_w201562662-220,way/201562662-220,49.07049,24.318522,False
+e_w201562662-220,ep_m_coal_subcritical_G100000105504,50.0,coal,Kalush power station_Unit 4 -- mothballed,e_w201562662-220,way/201562662-220,49.07049,24.318522,False
+e_w207352486-330,ep_bioenergy_w207352486-330__ember,144.4186046511628,bioenergy,Aggregated Plant - EMBER Gap - way/207352486-330_Missing Bioenergy Capacity -- operating,e_w207352486-330,way/207352486-330,49.30230465956172,27.17981544783247,False
+e_w207700515-330,ep_coal_w207700515-330__ember,174.70293306593132,coal,Aggregated Plant - EMBER Gap - way/207700515-330_Missing Coal Capacity -- operating,e_w207700515-330,way/207700515-330,49.4918749270671,36.47839046704869,False
+e_w207700515-330,ep_m_coal_subcritical_G100000111732,185.0,coal,Zmiivska power station_Unit 1 -- mothballed,e_w207700515-330,way/207700515-330,49.586013,36.523875,False
+e_w207700515-330,ep_m_coal_subcritical_G100000111734,185.0,coal,Zmiivska power station_Unit 2 -- mothballed,e_w207700515-330,way/207700515-330,49.586013,36.523875,False
+e_w207700515-330,ep_m_coal_subcritical_G100000111735,185.0,coal,Zmiivska power station_Unit 3 -- mothballed,e_w207700515-330,way/207700515-330,49.586013,36.523875,False
+e_w207700515-330,ep_m_coal_subcritical_G100000111736,185.0,coal,Zmiivska power station_Unit 4 -- mothballed,e_w207700515-330,way/207700515-330,49.586013,36.523875,False
+e_w207700515-330,ep_m_coal_subcritical_G100000111737,185.0,coal,Zmiivska power station_Unit 5 -- mothballed,e_w207700515-330,way/207700515-330,49.586013,36.523875,False
+e_w207700515-330,ep_m_coal_subcritical_G100000111738,185.0,coal,Zmiivska power station_Unit 6 -- mothballed,e_w207700515-330,way/207700515-330,49.586013,36.523875,False
+e_w207700515-330,ep_m_coal_subcritical_G100000111739,285.0,coal,Zmiivska power station_Unit 7 -- mothballed,e_w207700515-330,way/207700515-330,49.586013,36.523875,False
+e_w207700515-330,ep_m_coal_subcritical_G100000111740,325.0,coal,Zmiivska power station_Unit 8R -- mothballed,e_w207700515-330,way/207700515-330,49.586013,36.523875,False
+e_w207700515-330,ep_m_coal_subcritical_G100000111741,275.0,coal,Zmiivska power station_Unit 9 -- mothballed,e_w207700515-330,way/207700515-330,49.586013,36.523875,False
+e_w207700515-330,ep_m_coal_supercritical_G100000111733,275.0,coal,Zmiivska power station_Unit 10 -- mothballed,e_w207700515-330,way/207700515-330,49.586013,36.523875,False
+e_w237836917-330,ep_coal_subcritical_G100000105981,282.0,coal,Kryvorizka power station_Unit 5 -- operating,e_w237836917-330,way/237836917-330,47.543204,33.659513,False
+e_w237836917-330,ep_coal_w237836917-330__ember,160.0032589621459,coal,Aggregated Plant - EMBER Gap - way/237836917-330_Missing Coal Capacity -- operating,e_w237836917-330,way/237836917-330,47.720081614502476,33.639522177776065,False
+e_w237836917-330,ep_m_coal_subcritical_G100000105976,315.0,coal,Kryvorizka power station_Unit 1 -- mothballed,e_w237836917-330,way/237836917-330,47.543204,33.659513,False
+e_w237836917-330,ep_m_coal_subcritical_G100000105977,300.0,coal,Kryvorizka power station_Unit 10 -- mothballed,e_w237836917-330,way/237836917-330,47.543204,33.659513,False
+e_w237836917-330,ep_m_coal_subcritical_G100000105978,300.0,coal,Kryvorizka power station_Unit 2 -- mothballed,e_w237836917-330,way/237836917-330,47.543204,33.659513,False
+e_w237836917-330,ep_m_coal_subcritical_G100000105979,300.0,coal,Kryvorizka power station_Unit 3 -- mothballed,e_w237836917-330,way/237836917-330,47.543204,33.659513,False
+e_w237836917-330,ep_m_coal_subcritical_G100000105980,300.0,coal,Kryvorizka power station_Unit 4 -- mothballed,e_w237836917-330,way/237836917-330,47.543204,33.659513,False
+e_w237836917-330,ep_m_coal_subcritical_G100000105984,282.0,coal,Kryvorizka power station_Unit 8 -- mothballed,e_w237836917-330,way/237836917-330,47.543204,33.659513,False
+e_w269527797-330,ep_m_hydro_dam_G100000604481,335.0,hydro,Kakhovka-1 hydroelectric plant_ -- mothballed,e_w269527797-330,way/269527797-330,46.7786,33.3697,False
+e_w273654552-220,ep_coal_w273654552-220__ember,21.164452243670095,coal,Aggregated Plant - EMBER Gap - way/273654552-220_Missing Coal Capacity -- operating,e_w273654552-220,way/273654552-220,48.388309973584256,38.1122239078959,False
+e_w273654552-220,ep_m_coal_subcritical_G100000107148,100.0,coal,Myronivskyi power station_Unit 2 -- mothballed,e_w273654552-220,way/273654552-220,48.479778,38.284834,False
+e_w273654552-220,ep_m_coal_subcritical_G100000107149,60.0,coal,Myronivskyi power station_Unit 3 -- mothballed,e_w273654552-220,way/273654552-220,48.479778,38.284834,False
+e_w273654552-220,ep_m_coal_subcritical_G100000107150,115.0,coal,Myronivskyi power station_Unit 5 -- mothballed,e_w273654552-220,way/273654552-220,48.479778,38.284834,False
+e_w28877226-750,ep_nuclear_G100000500222,1000.0,nuclear,Zaporizhzhia nuclear power plant_1 -- operating,e_w28877226-750,way/28877226-750,47.5067,34.5851,False
+e_w28877226-750,ep_nuclear_G100000500223,1000.0,nuclear,Zaporizhzhia nuclear power plant_2 -- operating,e_w28877226-750,way/28877226-750,47.5067,34.5851,False
+e_w28877226-750,ep_nuclear_G100000500224,1000.0,nuclear,Zaporizhzhia nuclear power plant_3 -- operating,e_w28877226-750,way/28877226-750,47.5067,34.5851,False
+e_w28877226-750,ep_nuclear_G100000500225,1000.0,nuclear,Zaporizhzhia nuclear power plant_4 -- operating,e_w28877226-750,way/28877226-750,47.5067,34.5851,False
+e_w28877226-750,ep_nuclear_G100000500226,1000.0,nuclear,Zaporizhzhia nuclear power plant_5 -- operating,e_w28877226-750,way/28877226-750,47.5067,34.5851,False
+e_w28877226-750,ep_nuclear_G100000500227,1000.0,nuclear,Zaporizhzhia nuclear power plant_6 -- operating,e_w28877226-750,way/28877226-750,47.5067,34.5851,False
+e_w28877449-330,ep_coal_w28877449-330__ember,96.20205565304589,coal,Aggregated Plant - EMBER Gap - way/28877449-330_Missing Coal Capacity -- operating,e_w28877449-330,way/28877449-330,47.46056417644167,34.6755704521821,False
+e_w28877449-330,ep_m_coal_subcritical_G100000111531,325.0,coal,Zaporizhia power station_Unit 1 -- mothballed,e_w28877449-330,way/28877449-330,47.507238,34.625478,False
+e_w28877449-330,ep_m_coal_subcritical_G100000111532,300.0,coal,Zaporizhia power station_Unit 2 -- mothballed,e_w28877449-330,way/28877449-330,47.507238,34.625478,False
+e_w28877449-330,ep_m_coal_subcritical_G100000111533,325.0,coal,Zaporizhia power station_Unit 3 -- mothballed,e_w28877449-330,way/28877449-330,47.507238,34.625478,False
+e_w28877449-330,ep_m_coal_subcritical_G100000111534,300.0,coal,Zaporizhia power station_Unit 4 -- mothballed,e_w28877449-330,way/28877449-330,47.507238,34.625478,False
+e_w28877449-330,ep_m_gas_steam_turbine_G100000406973,800.0,gas,Zaporizhia power station_7 -- mothballed,e_w28877449-330,way/28877449-330,47.507238,34.625478,False
+e_w28877449-330,ep_m_gas_steam_turbine_G100000406975,800.0,gas,Zaporizhia power station_5 -- mothballed,e_w28877449-330,way/28877449-330,47.507238,34.625478,False
+e_w290158128-220,ep_m_coal_subcritical_G100000105937,60.0,coal,Kramatorskaya power station_Unit 3 -- mothballed,e_w290158128-220,way/290158128-220,48.747705,37.572339,False
+e_w290158128-220,ep_m_coal_subcritical_G100000105938,60.0,coal,Kramatorskaya power station_Unit 4 -- mothballed,e_w290158128-220,way/290158128-220,48.747705,37.572339,False
+e_w292523027-330,ep_coal_w292523027-330__ember,92.35397342692406,coal,Aggregated Plant - EMBER Gap - way/292523027-330_Missing Coal Capacity -- operating,e_w292523027-330,way/292523027-330,48.517434045158105,38.12705924214864,False
+e_w292523027-330,ep_m_coal_subcritical_G100000110664,300.0,coal,Vuglegirska power station_Unit 1 -- mothballed,e_w292523027-330,way/292523027-330,48.464745,38.20266,False
+e_w292523027-330,ep_m_coal_subcritical_G100000110665,300.0,coal,Vuglegirska power station_Unit 2 -- mothballed,e_w292523027-330,way/292523027-330,48.464745,38.20266,False
+e_w292523027-330,ep_m_coal_subcritical_G100000110666,300.0,coal,Vuglegirska power station_Unit 3 -- mothballed,e_w292523027-330,way/292523027-330,48.464745,38.20266,False
+e_w292523027-330,ep_m_coal_subcritical_G100000110667,300.0,coal,Vuglegirska power station_Unit 4 -- mothballed,e_w292523027-330,way/292523027-330,48.464745,38.20266,False
+e_w292523027-330,ep_m_gas_steam_turbine_G100000406968,800.0,gas,Vuglegirska power station_7 -- mothballed,e_w292523027-330,way/292523027-330,48.464745,38.20266,False
+e_w292523027-330,ep_m_gas_steam_turbine_G100000406969,800.0,gas,Vuglegirska power station_6 -- mothballed,e_w292523027-330,way/292523027-330,48.464745,38.20266,False
+e_w292523027-330,ep_m_gas_steam_turbine_G100000406970,800.0,gas,Vuglegirska power station_5 -- mothballed,e_w292523027-330,way/292523027-330,48.464745,38.20266,False
+e_w295367414-330,ep_gas_steam_turbine_G100000412972,57.0,gas,Shostkinska power station_2 -- operating,e_w295367414-330,way/295367414-330,51.8857688,33.4558126,False
+e_w295367414-330,ep_gas_steam_turbine_G100000412973,57.0,gas,Shostkinska power station_1 -- operating,e_w295367414-330,way/295367414-330,51.8857688,33.4558126,False
+e_w295414241-330,ep_gas_steam_turbine_G100001017923,60.0,gas,"Chernihiv power station_Unit 1, timepoint 2 -- operating",e_w295414241-330,way/295414241-330,51.45496,31.260173,False
+e_w295414241-330,ep_gas_steam_turbine_G100001018021,50.0,gas,"Chernihiv power station_Unit 2, timepoint 2 -- operating",e_w295414241-330,way/295414241-330,51.45496,31.260173,False
+e_w295414241-330,ep_gas_steam_turbine_G100001018022,110.0,gas,"Chernihiv power station_Unit 3, timepoint 2 -- operating",e_w295414241-330,way/295414241-330,51.45496,31.260173,False
+e_w295460478-330,ep_coal_w295460478-330__ember,94.27801453998497,coal,Aggregated Plant - EMBER Gap - way/295460478-330_Missing Coal Capacity -- operating,e_w295460478-330,way/295460478-330,50.31159882001497,30.736136658102215,False
+e_w295460478-330,ep_m_coal_subcritical_G100000110340,300.0,coal,Trypilska power station_Unit 1 -- mothballed,e_w295460478-330,way/295460478-330,50.133377,30.74667,False
+e_w295460478-330,ep_m_coal_subcritical_G100000110341,325.0,coal,Trypilska power station_Unit 2 -- mothballed,e_w295460478-330,way/295460478-330,50.133377,30.74667,False
+e_w295460478-330,ep_m_coal_subcritical_G100000110342,300.0,coal,Trypilska power station_Unit 3 -- mothballed,e_w295460478-330,way/295460478-330,50.133377,30.74667,False
+e_w295460478-330,ep_m_coal_subcritical_G100000110343,300.0,coal,Trypilska power station_Unit 4 -- mothballed,e_w295460478-330,way/295460478-330,50.133377,30.74667,False
+e_w295460478-330,ep_m_gas_steam_turbine_G100000406971,300.0,gas,Trypilska power station_6 -- mothballed,e_w295460478-330,way/295460478-330,50.133377,30.74667,False
+e_w295460478-330,ep_m_gas_steam_turbine_G100000406972,300.0,gas,Trypilska power station_5 -- mothballed,e_w295460478-330,way/295460478-330,50.133377,30.74667,False
+e_w331042298-330,ep_coal_w331042298-330__ember,138.53096014038607,coal,Aggregated Plant - EMBER Gap - way/331042298-330_Missing Coal Capacity -- operating,e_w331042298-330,way/331042298-330,48.966188046515995,29.281822926289042,False
+e_w331042298-330,ep_m_coal_subcritical_G100000106089,300.0,coal,Ladyzhyn power station_Unit 1 -- mothballed,e_w331042298-330,way/331042298-330,48.705825,29.218668,False
+e_w331042298-330,ep_m_coal_subcritical_G100000106090,300.0,coal,Ladyzhyn power station_Unit 2 -- mothballed,e_w331042298-330,way/331042298-330,48.705825,29.218668,False
+e_w331042298-330,ep_m_coal_subcritical_G100000106091,300.0,coal,Ladyzhyn power station_Unit 3 -- mothballed,e_w331042298-330,way/331042298-330,48.705825,29.218668,False
+e_w331042298-330,ep_m_coal_subcritical_G100000106092,300.0,coal,Ladyzhyn power station_Unit 4 -- mothballed,e_w331042298-330,way/331042298-330,48.705825,29.218668,False
+e_w331042298-330,ep_m_coal_subcritical_G100000106093,300.0,coal,Ladyzhyn power station_Unit 5 -- mothballed,e_w331042298-330,way/331042298-330,48.705825,29.218668,False
+e_w331042298-330,ep_m_coal_subcritical_G100000106094,300.0,coal,Ladyzhyn power station_Unit 6 -- mothballed,e_w331042298-330,way/331042298-330,48.705825,29.218668,False
+e_w366786338-220,ep_gas_steam_turbine_G100000406987,43.0,gas,Simferopol CHP power station_2 -- operating,e_w366786338-220,way/366786338-220,45.012888,34.035874,False
+e_w366786338-220,ep_gas_steam_turbine_G100000406988,43.0,gas,Simferopol CHP power station_1 -- operating,e_w366786338-220,way/366786338-220,45.012888,34.035874,False
+e_w422204791-330,ep_hydro_ps_G100000603721,1296.0,hydro,Dnister Pumped Storage hydroelectric plant_ -- operating,e_w422204791-330,way/422204791-330,48.5136,27.4733,False
+e_w422204791-330,ep_hydro_ror_G100000603720,702.0,hydro,Dnister hydroelectric plant_ -- operating,e_w422204791-330,way/422204791-330,48.5136,27.4733,False
+e_w422204791-330,ep_hydro_w422204791-330__irena,52.44888686960477,hydro,Aggregated Plant - IRENA Gap - way/422204791-330_Missing Hydro Capacity -- operating,e_w422204791-330,way/422204791-330,48.381884916642704,27.601674151255377,False
+e_w474029524-220,ep_coal_subcritical_G100000106461,210.0,coal,Luganskaya power station_Unit 10 -- operating,e_w474029524-220,way/474029524-220,48.749346,39.261917,False
+e_w474029524-220,ep_coal_subcritical_G100000106464,210.0,coal,Luganskaya power station_Unit 13 -- operating,e_w474029524-220,way/474029524-220,48.749346,39.261917,False
+e_w474029524-220,ep_coal_subcritical_G100000106465,200.0,coal,Luganskaya power station_Unit 14 -- operating,e_w474029524-220,way/474029524-220,48.749346,39.261917,False
+e_w474029524-220,ep_coal_subcritical_G100000106466,200.0,coal,Luganskaya power station_Unit 15 -- operating,e_w474029524-220,way/474029524-220,48.749346,39.261917,False
+e_w474029524-220,ep_coal_w474029524-220__ember,93.89320631737279,coal,Aggregated Plant - EMBER Gap - way/474029524-220_Missing Coal Capacity -- operating,e_w474029524-220,way/474029524-220,48.758157232760354,39.405741776418964,False
+e_w474029524-220,ep_m_coal_subcritical_G100000106462,200.0,coal,Luganskaya power station_Unit 11 -- mothballed,e_w474029524-220,way/474029524-220,48.749346,39.261917,False
+e_w474029524-220,ep_m_coal_subcritical_G100000106467,200.0,coal,Luganskaya power station_Unit 9 -- mothballed,e_w474029524-220,way/474029524-220,48.749346,39.261917,False
+e_w609557942-330,ep_nuclear_G100000500217,1000.0,nuclear,Rivne nuclear power plant_3 -- operating,e_w609557942-330,way/609557942-330,51.3245,25.8974,False
+e_w609557942-330,ep_nuclear_G100000500218,1000.0,nuclear,Rivne nuclear power plant_4 -- operating,e_w609557942-330,way/609557942-330,51.3245,25.8974,False
+e_w609557942-330,ep_nuclear_G100000500487,420.0,nuclear,Rivne nuclear power plant_1 -- operating,e_w609557942-330,way/609557942-330,51.3245,25.8974,False
+e_w609557942-330,ep_nuclear_G100000500489,415.0,nuclear,Rivne nuclear power plant_2 -- operating,e_w609557942-330,way/609557942-330,51.3245,25.8974,False
+e_w696771903-330,ep_hydro_ps_G100000603731,453.0,hydro,Tashlytsky hydroelectric plant_ -- operating,e_w696771903-330,way/696771903-330,47.7968,31.1811,False
+e_w711269960-330,ep_gas_combined_cycle_G100000406983,245.0,gas,Balaklava power station_2 -- operating,e_w711269960-330,way/711269960-330,44.5532,33.6028,False
+e_w711269960-330,ep_gas_combined_cycle_G100000406984,251.0,gas,Balaklava power station_1 -- operating,e_w711269960-330,way/711269960-330,44.5532,33.6028,False
+e_w732421280-330,ep_coal_subcritical_G100000111757,325.0,coal,Zuevskaya power station_Unit 1 -- operating,e_w732421280-330,way/732421280-330,48.034804,38.285213,False
+e_w732421280-330,ep_coal_subcritical_G100000111758,320.0,coal,Zuevskaya power station_Unit 2 -- operating,e_w732421280-330,way/732421280-330,48.034804,38.285213,False
+e_w732421280-330,ep_coal_subcritical_G100000111759,320.0,coal,Zuevskaya power station_Unit 3 -- operating,e_w732421280-330,way/732421280-330,48.034804,38.285213,False
+e_w732421280-330,ep_coal_subcritical_G100000111760,325.0,coal,Zuevskaya power station_Unit 4 -- operating,e_w732421280-330,way/732421280-330,48.034804,38.285213,False
+e_w732421280-330,ep_coal_w732421280-330__ember,99.28052143394336,coal,Aggregated Plant - EMBER Gap - way/732421280-330_Missing Coal Capacity -- operating,e_w732421280-330,way/732421280-330,47.971521360087365,38.433864522374954,False
+e_w732759449-220,ep_coal_w732759449-220__ember,67.7262471797443,coal,Aggregated Plant - EMBER Gap - way/732759449-220_Missing Coal Capacity -- operating,e_w732759449-220,way/732759449-220,48.97261738797939,37.8907612121645,False
+e_w732759449-220,ep_m_coal_subcritical_G100000109480,80.0,coal,Slavyansk power station_Unit 4 -- mothballed,e_w732759449-220,way/732759449-220,48.870681,37.765621,False
+e_w732759449-220,ep_m_coal_subcritical_G100000109481,80.0,coal,Slavyansk power station_Unit 5 -- mothballed,e_w732759449-220,way/732759449-220,48.870681,37.765621,False
+e_w732759449-220,ep_m_coal_supercritical_G100000109482,720.0,coal,Slavyansk power station_Unit 7 -- mothballed,e_w732759449-220,way/732759449-220,48.870681,37.765621,False
+e_w749158903-220,ep_coal_subcritical_G100000109605,200.0,coal,Starobesheve power station_Unit 10 -- operating,e_w749158903-220,way/749158903-220,47.800786,38.005422,False
+e_w749158903-220,ep_coal_subcritical_G100000109606,200.0,coal,Starobesheve power station_Unit 11 -- operating,e_w749158903-220,way/749158903-220,47.800786,38.005422,False
+e_w749158903-220,ep_coal_subcritical_G100000109607,210.0,coal,Starobesheve power station_Unit 12 -- operating,e_w749158903-220,way/749158903-220,47.800786,38.005422,False
+e_w749158903-220,ep_coal_subcritical_G100000109608,210.0,coal,Starobesheve power station_Unit 13 -- operating,e_w749158903-220,way/749158903-220,47.800786,38.005422,False
+e_w749158903-220,ep_coal_subcritical_G100000109609,215.0,coal,Starobesheve power station_Unit 4R -- operating,e_w749158903-220,way/749158903-220,47.800786,38.005422,False
+e_w749158903-220,ep_coal_subcritical_G100000109610,200.0,coal,Starobesheve power station_Unit 5 -- operating,e_w749158903-220,way/749158903-220,47.800786,38.005422,False
+e_w749158903-220,ep_coal_subcritical_G100000109611,200.0,coal,Starobesheve power station_Unit 6 -- operating,e_w749158903-220,way/749158903-220,47.800786,38.005422,False
+e_w749158903-220,ep_coal_subcritical_G100000109612,175.0,coal,Starobesheve power station_Unit 7 -- operating,e_w749158903-220,way/749158903-220,47.800786,38.005422,False
+e_w749158903-220,ep_coal_subcritical_G100000109613,200.0,coal,Starobesheve power station_Unit 8 -- operating,e_w749158903-220,way/749158903-220,47.800786,38.005422,False
+e_w749158903-220,ep_coal_subcritical_G100000109614,200.0,coal,Starobesheve power station_Unit 9 -- operating,e_w749158903-220,way/749158903-220,47.800786,38.005422,False
+e_w749158903-220,ep_coal_w749158903-220__ember,154.6929054900978,coal,Aggregated Plant - EMBER Gap - way/749158903-220_Missing Coal Capacity -- operating,e_w749158903-220,way/749158903-220,47.88588170349615,37.897919849884744,False
+e_w755181336-330,ep_gas_combined_cycle_G100000406981,245.0,gas,Tavri power station_2 -- operating,e_w755181336-330,way/755181336-330,44.942652,34.223752,False
+e_w755181336-330,ep_gas_combined_cycle_G100000406982,245.0,gas,Tavri power station_1 -- operating,e_w755181336-330,way/755181336-330,44.942652,34.223752,False
+e_w912367407-330,ep_hydro_dam_G100000603725,493.0,hydro,Kaniv hydroelectric plant_ -- operating,e_w912367407-330,way/912367407-330,49.7663,31.472,False
+e_w912367407-330,ep_hydro_w912367407-330__irena,13.56656065424808,hydro,Aggregated Plant - IRENA Gap - way/912367407-330_Missing Hydro Capacity -- operating,e_w912367407-330,way/912367407-330,49.94197902058361,31.461123826485462,False
+e_w97754827-330,ep_m_gas_steam_turbine_G100000406978,300.0,gas,Kharkiv CHP-5 power station_3 -- mothballed,e_w97754827-330,way/97754827-330,49.970371,36.107159,False
+e_w97754827-330,ep_m_gas_steam_turbine_G100000406979,120.0,gas,Kharkiv CHP-5 power station_2 -- mothballed,e_w97754827-330,way/97754827-330,49.970371,36.107159,False
+e_w97754827-330,ep_m_gas_steam_turbine_G100000406980,120.0,gas,Kharkiv CHP-5 power station_1 -- mothballed,e_w97754827-330,way/97754827-330,49.970371,36.107159,False
+e_w99234566-330,ep_gas_steam_turbine_G100000412974,60.0,gas,Bilotserkivska CHP power station_2 -- operating,e_w99234566-330,way/99234566-330,49.796949,30.183264,False
+e_w99234566-330,ep_gas_steam_turbine_G100000412975,60.0,gas,Bilotserkivska CHP power station_1 -- operating,e_w99234566-330,way/99234566-330,49.796949,30.183264,False
+elc_spv_001,ep_solar_pv_001,19.4,solar,Aggregated Plant -- operating,elc_spv_001,way/203926610-330,50.02591947615505,37.14037898658786,False
+elc_spv_004,ep_solar_004__irena,816.236627674846,solar,Aggregated Plant - IRENA Gap - 4_Missing Solar Capacity -- operating,elc_spv_004,way/274597272-330,45.87988672834931,33.995238602242765,False
+elc_spv_004,ep_solar_pv_004,345.8,solar,Aggregated Plant -- operating,elc_spv_004,way/274597272-330,45.529798790872725,34.385049373510846,False
+elc_spv_005,ep_solar_pv_005,33.0,solar,Aggregated Plant -- operating,elc_spv_005,way/123451079-330,46.759977669622174,35.92460963123091,False
+elc_spv_007,ep_solar_pv_007,41.900000000000006,solar,Aggregated Plant -- operating,elc_spv_007,way/165767625-330,49.067096332513316,34.389591930452276,False
+elc_spv_008,ep_solar_pv_008,9.0,solar,Aggregated Plant -- operating,elc_spv_008,way/165764729-330,48.28211523552303,35.3543161529791,False
+elc_spv_009,ep_solar_pv_009,700.3,solar,Aggregated Plant -- operating,elc_spv_009,way/303327828-330,47.902255798001136,34.74941780958217,False
+elc_spv_009,ep_solar_pv_G100000806620,240.0,solar,Pokrovs'Ka solar farm_-- -- operating,elc_spv_009,way/303327828-330,47.6597,34.1539,False
+elc_spv_009,ep_solar_pv_G100000807140,246.0,solar,Nikopol solar farm_-- -- operating,elc_spv_009,way/303327828-330,47.6864,34.2612,False
+elc_spv_010,ep_solar_pv_010,140.0,solar,Aggregated Plant -- operating,elc_spv_010,way/221427829-330,48.08539197216223,32.60811097762849,False
+elc_spv_011,ep_solar_pv_011,408.4,solar,Aggregated Plant -- operating,elc_spv_011,way/274597272-330,45.16281470401875,33.98299083135504,False
+elc_spv_014,ep_solar_pv_014,6.9,solar,Aggregated Plant -- operating,elc_spv_014,UA33-220,49.78531545187024,23.125366519805993,False
+elc_spv_015,ep_solar_pv_015,210.10000000000002,solar,Aggregated Plant -- operating,elc_spv_015,way/203815422-220,47.920053742463764,23.050474119851653,False
+elc_spv_016,ep_solar_pv_016,149.10000000000002,solar,Aggregated Plant -- operating,elc_spv_016,way/199304820-220,49.3903580064077,25.32388615490224,False
+elc_spv_017,ep_solar_pv_017,302.4000000000001,solar,Aggregated Plant -- operating,elc_spv_017,relation/10047997-220,48.612250947368054,25.349296725468704,False
+elc_spv_019,ep_solar_pv_019,17.2,solar,Aggregated Plant -- operating,elc_spv_019,way/172156482-330,51.36543987900994,33.048573680989634,False
+elc_spv_021,ep_solar_pv_021,182.79999999999998,solar,Aggregated Plant -- operating,elc_spv_021,way/295460478-330,49.95201058609237,30.759641816411715,False
+elc_spv_022,ep_solar_pv_022,87.0,solar,Aggregated Plant -- operating,elc_spv_022,way/202269421-330,49.666992247920895,32.79679120631367,False
+elc_spv_023,ep_solar_023__irena,775.7448593506728,solar,Aggregated Plant - IRENA Gap - 23_Missing Solar Capacity -- operating,elc_spv_023,way/331042298-330,48.62269547605532,29.48497769202859,False
+elc_spv_023,ep_solar_pv_023,339.9,solar,Aggregated Plant -- operating,elc_spv_023,way/331042298-330,48.551089238211816,29.002039709060565,False
+elc_spv_024,ep_solar_024__irena,841.3185129744807,solar,Aggregated Plant - IRENA Gap - 24_Missing Solar Capacity -- operating,elc_spv_024,UA104-400,46.213278763868644,29.422374327362746,False
+elc_spv_024,ep_solar_pv_024,264.0,solar,Aggregated Plant -- operating,elc_spv_024,UA104-400,45.8641480990584,29.422094538502172,False
+elc_spv_025,ep_solar_pv_025,716.6,solar,Aggregated Plant -- operating,elc_spv_025,way/370225586-220,46.97224160124013,31.366591931661805,False
+elc_spv_026,ep_solar_pv_026,328.5,solar,Aggregated Plant -- operating,elc_spv_026,UA91-330,47.84470098861231,30.380731355404336,False
+elc_spv_027,ep_solar_pv_027,33.0,solar,Aggregated Plant -- operating,elc_spv_027,UA77-330,47.9018691526904,28.54058695736136,False
+elc_spv_028,ep_solar_pv_028,406.6,solar,Aggregated Plant -- operating,elc_spv_028,way/648571752-330,48.91729662780479,26.875434879937107,False
+elc_spv_030,ep_solar_pv_030,398.80000000000007,solar,Aggregated Plant -- operating,elc_spv_030,way/295492533-330,50.03010730832975,28.487657010355086,False
+elc_spv_031,ep_solar_pv_031,2.0,solar,Aggregated Plant -- operating,elc_spv_031,way/207352486-330,49.29403801710834,26.686591127200447,False
+elc_won_003,ep_windon_003__irena,31.28964826849749,windon,Aggregated Plant -- operating,elc_won_003,way/207343642-330,49.760093639333114,27.434403802936476,False
+elc_won_005,ep_windon_wind_005,59.0,windon,Aggregated Plant -- operating,elc_won_005,UA42-220,49.3757287350338,23.16045961578876,False
+elc_won_007,ep_windon_wind_007,20.0,windon,Aggregated Plant -- operating,elc_won_007,way/205759134-330,49.44839606258661,24.764429121877495,False
+elc_won_012,ep_m_windon_wind_012,16.0,windon,Aggregated Plant -- mothballed,elc_won_012,UA95-330,47.50796447885321,30.98632976363343,False
+elc_won_012,ep_windon_wind_012,170.0,windon,Aggregated Plant -- operating,elc_won_012,UA95-330,47.15084570352687,30.943906136801136,False
+elc_won_013,ep_m_windon_wind_013,88.5,windon,Aggregated Plant -- mothballed,elc_won_013,relation/9361062-330,46.46076338312255,30.764489273999203,False
+elc_won_013,ep_windon_wind_013,132.0,windon,Aggregated Plant -- operating,elc_won_013,relation/9361062-330,46.10354941676818,30.807481362264486,False
+elc_won_014,ep_m_windon_wind_014,381.6,windon,Aggregated Plant -- mothballed,elc_won_014,way/228999814-330,47.19393068853517,36.97212047977231,False
+elc_won_015,ep_m_windon_wind_015,682.0,windon,Aggregated Plant -- mothballed,elc_won_015,way/97343458-330,46.578091796234894,35.35678426585835,False
+elc_won_016,ep_windon_wind_016,25.0,windon,Aggregated Plant -- operating,elc_won_016,way/99389922-220,44.99882189919355,34.26465286647732,False
+elc_won_017,ep_windon_wind_017,6.3,windon,Aggregated Plant -- operating,elc_won_017,way/108928068-220,45.198810983335726,35.740371103479944,False
+elc_won_020,ep_windon_wind_020,50.4,windon,Aggregated Plant -- operating,elc_won_020,way/274597272-330,45.49434564031359,33.66541050583893,False
+elc_won_023,ep_windon_wind_023,50.0,windon,Aggregated Plant -- operating,elc_won_023,UA66-330,47.53647089990307,38.16765433768882,False
+elc_won_025,ep_windon_wind_025,14.0,windon,Aggregated Plant -- operating,elc_won_025,way/165764729-330,48.25720425402172,34.8893375729827,False
+elc_won_026,ep_windon_026__irena,32.26471480175084,windon,Aggregated Plant -- operating,elc_won_026,way/172156482-330,51.01060479151553,33.00406957451099,False
+elc_won_029,ep_windon_029__irena,35.64563692975164,windon,Aggregated Plant -- operating,elc_won_029,way/249059252-330,50.02938173700689,34.783227846268694,False
+elc_won_030,ep_m_windon_wind_030,164.0,windon,Aggregated Plant -- mothballed,elc_won_030,way/912367407-330,49.584161679787066,31.499470434785454,False

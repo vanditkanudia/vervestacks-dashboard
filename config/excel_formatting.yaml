@@ -1,0 +1,6 @@
+formatting:
+  mode: fast
+created: '2025-01-15T16:00:00'
+note: Default configuration with fast mode for optimal performance
+last_updated: '2025-09-01T09:15:55.202363'
+command_used: main.py --iso DEU --process-all-tsopts --fast-excel

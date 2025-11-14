@@ -1,0 +1,62 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,60.0,bioenergy,Aggregated Plant - EMBER Gap_Missing Bioenergy Capacity -- operating,,,,,False
+ELC,ep_gas__ember,0.10000000000021103,gas,Aggregated Plant -- operating,,,,,False
+e_MM1-500,ep_hydro_dam_G100000602549,99.0,hydro,Chipwi Nge hydroelectric plant_ -- operating,e_MM1-500,MM1-500,25.8318,98.0801,False
+e_MM1-500,ep_m_hydro_dam_G100000604642,6000.0,hydro,Myitsone hydroelectric plant_ -- mothballed,e_MM1-500,MM1-500,25.6897,97.5177,False
+e_MM10-230,ep_hydro_dam_G100000602599,280.0,hydro,Upper Yeywa hydroelectric plant_ -- construction,e_MM10-230,MM10-230,22.6243,97.3011,False
+e_MM10-230,ep_hydro_dam_G100000604659,100.0,hydro,Nam Tu hydroelectric plant_ -- construction,e_MM10-230,MM10-230,22.7209,97.3194,False
+e_MM17-230,ep_hydro_dam_G100001027335,56.0,hydro,Kinda hydroelectric plant_ -- operating,e_MM17-230,MM17-230,21.8101,95.589,False
+e_MM19-230,ep_hydro_dam_G100000602601,790.0,hydro,Yeywa hydroelectric plant_ -- operating,e_MM19-230,MM19-230,21.6742,96.4741,False
+e_MM2-500,ep_hydro_dam_G100000602550,240.0,hydro,Dapein 1 hydroelectric plant_ -- operating,e_MM2-500,MM2-500,24.4042,97.5006,False
+e_MM22-230,ep_hydro_dam_G100001027334,54.0,hydro,Kengtawn hydroelectric plant_ -- operating,e_MM22-230,MM22-230,20.5856,98.2933,False
+e_MM22-230,ep_hydro_dam_G100001051563,51.0,hydro,Upper Kengtawng hydroelectric plant_ -- construction,e_MM22-230,MM22-230,20.7462,98.1839,False
+e_MM25-230,ep_hydro_dam_G100000602593,111.0,hydro,Tha Htay hydroelectric plant_ -- construction,e_MM25-230,MM25-230,19.5213,94.0072,False
+e_MM28-230,ep_hydro_ror_G100001027337,74.0,hydro,Kyee On Kyee Wa hydroelectric plant_ -- operating,e_MM28-230,MM28-230,18.9001,96.221,False
+e_MM38-230,ep_gas_combined_cycle_G100000404371,154.2,gas,Hlawga power station_1 -- operating,e_MM38-230,MM38-230,16.98,96.125,False
+e_MM44-230,ep_gas_combined_cycle_G100000404373,92.0,gas,Thaketa power station_1 -- operating,e_MM44-230,MM44-230,16.81,96.226,False
+e_MM44-230,ep_gas_combined_cycle_G100000404385,106.0,gas,Thaketa (U Energy) power station_1 -- operating,e_MM44-230,MM44-230,16.812192,96.226075,False
+e_MM44-230,ep_gas_internal_combustion_G100000411300,50.0,gas,Max Power (Thakayta) power station_1 -- operating,e_MM44-230,MM44-230,16.811622,96.226606,False
+e_MM44-230,ep_m_gas_internal_combustion_G100000410485,477.0,gas,Thaketa LNG power station_1 -- mothballed,e_MM44-230,MM44-230,16.824726,96.22445,False
+e_MM49-230,ep_m_gas_internal_combustion_G100000405944,350.0,gas,Thanlyin power station_1 -- mothballed,e_MM49-230,MM49-230,16.664256,96.264737,False
+e_MM9-230,ep_hydro_dam_G100000604813,1050.0,hydro,Shweli 3 hydroelectric plant_ -- construction,e_MM9-230,MM9-230,23.315,96.769,False
+e_w1131599063-230,ep_m_hydro_ror_G100000604774,77.0,hydro,Saing Din hydroelectric plant_ -- mothballed,e_w1131599063-230,way/1131599063-230,20.8938,92.6522,False
+e_w1195544329-230,ep_hydro_ror_G100001051557,66.0,hydro,Mongwa hydroelectric plant_ -- operating,e_w1195544329-230,way/1195544329-230,21.6532,99.9793,False
+e_w1203433274-230,ep_hydro_dam_G100000602586,600.0,hydro,Shweli 1 hydroelectric plant_ -- operating,e_w1203433274-230,way/1203433274-230,23.6682,97.4561,False
+e_w1203770011-230,ep_hydro_dam_G100001027338,65.0,hydro,Phyu Creek hydroelectric plant_ -- operating,e_w1203770011-230,way/1203770011-230,18.5101,96.354,False
+e_w343183785-230,ep_gas_internal_combustion_G100000411301,110.3,gas,Kyaukse power plant_1 -- operating,e_w343183785-230,way/343183785-230,21.60774,96.137409,False
+e_w343183785-230,ep_gas_internal_combustion_G100000411302,145.0,gas,Kyaukse (PowerGen) power plant_1 -- operating,e_w343183785-230,way/343183785-230,21.667691,96.152935,False
+e_w404761266-230,ep_coal_subcritical_G100000110164,60.0,coal,Tigyit power station_Unit 1 -- operating,e_w404761266-230,way/404761266-230,20.431292,96.703524,False
+e_w404761266-230,ep_coal_subcritical_G100000110165,60.0,coal,Tigyit power station_Unit 2 -- operating,e_w404761266-230,way/404761266-230,20.431292,96.703524,False
+e_w405416534-230,ep_hydro_dam_G100000602582,280.0,hydro,Paung Laung hydroelectric plant_ -- operating,e_w405416534-230,way/405416534-230,19.785,96.3332,False
+e_w405724476-230,ep_hydro_dam_G100000602598,140.0,hydro,Upper Paung Laung hydroelectric plant_ -- operating,e_w405724476-230,way/405724476-230,19.756,96.5932,False
+e_w405993340-230,ep_hydro_dam_G100000602595,120.0,hydro,Thaukyegat 2 hydroelectric plant_ -- operating,e_w405993340-230,way/405993340-230,18.9113,96.6166,False
+e_w406136069-230,ep_hydro_dam_G100001027336,60.0,hydro,Kun hydroelectric plant_ -- operating,e_w406136069-230,way/406136069-230,18.4201,96.364,False
+e_w406602758-230,ep_hydro_ror_G100000602585,75.0,hydro,Shwegyin hydroelectric plant_ -- operating,e_w406602758-230,way/406602758-230,17.9682,96.933,False
+e_w407183487-230,ep_coal_subcritical_G100000115063,30.0,coal,Myainggalay Cement power station_-- -- operating,e_w407183487-230,way/407183487-230,16.876601,97.585428,False
+e_w407183487-230,ep_gas_combined_cycle_G100000404375,119.0,gas,Thaton power station_1 -- operating,e_w407183487-230,way/407183487-230,16.964053,97.40665,False
+e_w566117311-230,ep_gas_combined_cycle_G100000404372,225.0,gas,Myingyan power station_1 -- operating,e_w566117311-230,way/566117311-230,21.386872,95.376656,False
+e_w566117311-230,ep_gas_internal_combustion_G100000411299,109.7,gas,Myingyan II power station_1 -- operating,e_w566117311-230,way/566117311-230,21.389598,95.375904,False
+e_w585255101-230,ep_gas_combined_cycle_G100000404374,230.0,gas,Mawlamyine power station_1 -- operating,e_w585255101-230,way/585255101-230,16.46644,97.653662,False
+e_w585255101-230,ep_gas_combined_cycle_G100000405941,200.0,gas,Kanbauk (UPA) power station_1 -- construction,e_w585255101-230,way/585255101-230,14.59421,98.031202,False
+e_w585255103-230,ep_m_coal_subcritical_G100000106759,40.0,coal,Mawlamyine Cement power station_-- -- mothballed,e_w585255103-230,way/585255103-230,16.365184,97.832431,False
+e_w988887307-230,ep_hydro_dam_G100000604280,150.0,hydro,Buywa Upper hydroelectric plant_ -- construction,e_w988887307-230,way/988887307-230,20.4481,94.2471,False
+e_w988887307-230,ep_hydro_ror_G100000602572,75.0,hydro,Mone Chaung hydroelectric plant_ -- operating,e_w988887307-230,way/988887307-230,20.4786,94.254,False
+e_w990085341-230,ep_gas_gas_turbine_G100000404377,120.0,gas,Ywama power station_GT1 -- operating,e_w990085341-230,way/990085341-230,16.9,96.089,False
+e_w990085341-230,ep_gas_gas_turbine_G100000404378,120.0,gas,Ywama power station_GT2 -- operating,e_w990085341-230,way/990085341-230,16.9,96.089,False
+e_w990085341-230,ep_gas_internal_combustion_G100000404376,52.0,gas,Ywama power station_1 -- operating,e_w990085341-230,way/990085341-230,16.9,96.089,False
+e_w990085345-230,ep_gas_combined_cycle_G100000404369,151.5,gas,Ahlone power station_1 -- operating,e_w990085345-230,way/990085345-230,16.7765,96.1306,False
+e_w990085345-230,ep_gas_combined_cycle_G100000404370,121.0,gas,Ahlone (Toyo Thai) power station_1-1 -- operating,e_w990085345-230,way/990085345-230,16.778587,96.130801,False
+e_w990615481-230,ep_hydro_dam_G100000602570,152.0,hydro,Middle Paunglaung hydroelectric plant_ -- construction,e_w990615481-230,way/990615481-230,19.8601,96.508,False
+e_w990623726-230,ep_gas_combined_cycle_G100000404386,135.0,gas,Kyaukphu (PowerChina) power station_1 -- operating,e_w990623726-230,way/990623726-230,19.422155,93.526482,False
+e_w990623726-230,ep_m_gas_internal_combustion_G100000411303,172.2,gas,Kyauk Phyu III power station_1 -- mothballed,e_w990623726-230,way/990623726-230,19.403493,93.4987,False
+e_w99231445-230,ep_hydro_ror_G100000602545,168.0,hydro,Baluchung 2 hydroelectric plant_ -- operating,e_w99231445-230,way/99231445-230,19.556,97.3587,False
+e_w99231445-230,ep_hydro_ror_G100001051555,52.0,hydro,Baluchaung 3 hydroelectric plant_ -- operating,e_w99231445-230,way/99231445-230,19.5442,97.3975,False
+elc_spv_009,ep_solar_pv_009,16.8,solar,Aggregated Plant -- operating,elc_spv_009,way/1203476237-230,22.190032382639792,99.24069659375627,False
+elc_spv_014,ep_solar_pv_014,23.300000000000004,solar,Aggregated Plant -- operating,elc_spv_014,way/292309088-230,22.02818764556997,96.95945701089255,False
+elc_spv_016,ep_solar_pv_016,20.0,solar,Aggregated Plant -- operating,elc_spv_016,way/566122678-230,21.956919957157677,95.05885702583163,False
+elc_spv_019,ep_solar_pv_019,1.1,solar,Aggregated Plant -- operating,elc_spv_019,way/585255101-230,12.803359056230489,99.11874774148849,False
+elc_spv_025,ep_solar_pv_025,178.0,solar,Aggregated Plant -- operating,elc_spv_025,way/563946097-230,20.37071421426301,96.02889497803403,False
+elc_spv_026,ep_solar_pv_026,80.0,solar,Aggregated Plant -- operating,elc_spv_026,way/988887307-230,19.808844112088053,94.97513387261026,False
+elc_spv_027,ep_solar_pv_027,30.0,solar,Aggregated Plant -- operating,elc_spv_027,MM33-230,18.098473834796604,96.16513024017398,False
+elc_spv_030,ep_solar_pv_030,1.7,solar,Aggregated Plant -- operating,elc_spv_030,way/510902192-230,17.000868566410514,95.61804266998382,False
+elc_won_007,ep_windon_wind_G100000927622,210.0,windon,Kyaukpadaung wind farm_-- -- operating,elc_won_007,way/566122678-230,20.9969,95.0446,False

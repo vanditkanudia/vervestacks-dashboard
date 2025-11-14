@@ -1,0 +1,124 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_coal__ember,41.39999999999944,coal,Aggregated Plant - EMBER Gap_Missing Coal Capacity -- operating,,,,,False
+e_CZ10-400,ep_coal_subcritical_G100000101573,205.0,coal,Chvaletice power station_Unit 1 -- operating,e_CZ10-400,CZ10-400,50.028062,15.450504,False
+e_CZ10-400,ep_coal_subcritical_G100000101574,205.0,coal,Chvaletice power station_Unit 2 -- operating,e_CZ10-400,CZ10-400,50.028062,15.450504,False
+e_CZ10-400,ep_coal_subcritical_G100000101575,205.0,coal,Chvaletice power station_Unit 3 -- operating,e_CZ10-400,CZ10-400,50.028062,15.450504,False
+e_CZ10-400,ep_coal_subcritical_G100000101576,205.0,coal,Chvaletice power station_Unit 4 -- operating,e_CZ10-400,CZ10-400,50.028062,15.450504,False
+e_CZ11-400,ep_hydro_CZ11-400__irena,51.89555857385401,hydro,Aggregated Plant - IRENA Gap - CZ11-400_Missing Hydro Capacity -- operating,e_CZ11-400,CZ11-400,50.07868486181152,14.22242691727144,False
+e_CZ11-400,ep_hydro_dam_G100000601488,132.0,hydro,Slapy hydroelectric plant_ -- operating,e_CZ11-400,CZ11-400,49.8238,14.4342,False
+e_CZ11-400,ep_hydro_ps_G100001027224,45.0,hydro,Štěchovice II hydroelectric plant_ -- operating,e_CZ11-400,CZ11-400,49.8465,14.4219,False
+e_CZ13-400,ep_coal_subcritical_G100000110319,32.0,coal,Trinec-E3 power station_Unit 3 -- operating,e_CZ13-400,CZ13-400,49.677778,18.672778,False
+e_CZ16-220,ep_hydro_CZ16-220__irena,105.55028862478783,hydro,Aggregated Plant - IRENA Gap - CZ16-220_Missing Hydro Capacity -- operating,e_CZ16-220,CZ16-220,49.61030786217012,14.071359622051506,False
+e_CZ16-220,ep_hydro_dam_G100000601487,360.0,hydro,Orlík hydroelectric plant_ -- operating,e_CZ16-220,CZ16-220,49.6062,14.1822,False
+e_CZ18-400,ep_gas_combined_cycle_G100000400060,98.0,gas,Červený Mlýn power station_1 -- operating,e_CZ18-400,CZ18-400,49.21617,16.60633,False
+e_CZ2-400,ep_coal_subcritical_G100000106214,110.0,coal,Ledvice power station_Unit 4 -- operating,e_CZ2-400,CZ2-400,50.57658,13.779761,False
+e_CZ2-400,ep_coal_supercritical_G100000106216,660.0,coal,Ledvice power station_Unit 6 -- operating,e_CZ2-400,CZ2-400,50.57658,13.779761,False
+e_CZ20-400,ep_nuclear_G100000500189,1082.0,nuclear,Temelin nuclear power plant_1 -- operating,e_CZ20-400,CZ20-400,49.1796,14.3795,False
+e_CZ20-400,ep_nuclear_G100000500190,1082.0,nuclear,Temelin nuclear power plant_2 -- operating,e_CZ20-400,CZ20-400,49.1796,14.3795,False
+e_CZ21-400,ep_hydro_CZ21-400__irena,138.38815619694404,hydro,Aggregated Plant - IRENA Gap - CZ21-400_Missing Hydro Capacity -- operating,e_CZ21-400,CZ21-400,48.97410305536323,16.182514198659664,False
+e_CZ21-400,ep_hydro_ps_G100000601484,472.0,hydro,Dalešice hydroelectric plant_ -- operating,e_CZ21-400,CZ21-400,49.1245,16.1244,False
+e_CZ23-220,ep_bioenergy_CZ23-220,30.0,bioenergy,Aggregated Plant -- operating,e_CZ23-220,CZ23-220,49.11194597478601,17.349921994994702,False
+e_CZ23-220,ep_bioenergy_CZ23-220__ember,830.0,bioenergy,Aggregated Plant - EMBER Gap - CZ23-220_Missing Bioenergy Capacity -- operating,e_CZ23-220,CZ23-220,48.68679972019837,17.519821986664198,False
+e_CZ23-220,ep_coal_subcritical_G100000103907,50.0,coal,Hodonin power station_Unit 1 -- operating,e_CZ23-220,CZ23-220,48.847759,17.120129,False
+e_CZ23-220,ep_coal_subcritical_G100000103908,57.0,coal,Hodonin power station_Unit 2 -- operating,e_CZ23-220,CZ23-220,48.847759,17.120129,False
+e_CZ23-220,ep_gas_combined_cycle_G100000400065,23.0,gas,Kyjov CHP power station_1 -- operating,e_CZ23-220,CZ23-220,49.00462,17.12882,False
+e_CZ4-400,ep_coal_subcritical_G100000108054,200.0,coal,Pocerady power station_Phase 1 Unit 2 -- operating,e_CZ4-400,CZ4-400,50.4267,13.6747,False
+e_CZ4-400,ep_coal_subcritical_G100000108055,200.0,coal,Pocerady power station_Phase 1 Unit 3 -- operating,e_CZ4-400,CZ4-400,50.4267,13.6747,False
+e_CZ4-400,ep_coal_subcritical_G100000108056,200.0,coal,Pocerady power station_Phase 1 Unit 4 -- operating,e_CZ4-400,CZ4-400,50.4267,13.6747,False
+e_CZ4-400,ep_coal_subcritical_G100000108057,200.0,coal,Pocerady power station_Phase 2 Unit 1 -- operating,e_CZ4-400,CZ4-400,50.4267,13.6747,False
+e_CZ4-400,ep_coal_subcritical_G100000108058,200.0,coal,Pocerady power station_Phase 2 Unit 2 -- operating,e_CZ4-400,CZ4-400,50.4267,13.6747,False
+e_CZ4-400,ep_gas_combined_cycle_G100000400066,847.0,gas,Pocerady power station_GT1 -- operating,e_CZ4-400,CZ4-400,50.4267,13.6747,False
+e_CZ8-220,ep_coal_subcritical_G100000110191,57.0,coal,Tisova power station_Phase 1 Unit 2 -- operating,e_CZ8-220,CZ8-220,50.149402,12.610338,False
+e_CZ8-220,ep_coal_subcritical_G100000110192,57.0,coal,Tisova power station_Phase 1 Unit 3 -- operating,e_CZ8-220,CZ8-220,50.149402,12.610338,False
+e_CZ8-220,ep_coal_subcritical_G100000110193,57.0,coal,Tisova power station_Phase 1 Unit 4 -- operating,e_CZ8-220,CZ8-220,50.149402,12.610338,False
+e_CZ8-220,ep_coal_subcritical_G100000110196,105.0,coal,Tisova power station_Phase 2 Unit 3 -- operating,e_CZ8-220,CZ8-220,50.149402,12.610338,False
+e_CZ8-220,ep_coal_subcritical_G100000115407,32.0,coal,Mondi Steti power station_Unit 3 -- operating,e_CZ8-220,CZ8-220,50.2711,12.2227,False
+e_CZ8-220,ep_coal_subcritical_G100000115408,32.0,coal,Mondi Steti power station_Unit 4 -- operating,e_CZ8-220,CZ8-220,50.2711,12.2227,False
+e_CZ8-220,ep_coal_subcritical_G100000115409,30.0,coal,Mondi Steti power station_Unit 5 -- operating,e_CZ8-220,CZ8-220,50.2711,12.2227,False
+e_w175071712-400,ep_coal_subcritical_G100000102325,200.0,coal,Detmarovice power station_Unit 2 -- operating,e_w175071712-400,way/175071712-400,49.907184,18.464559,False
+e_w175071712-400,ep_coal_subcritical_G100000102326,200.0,coal,Detmarovice power station_Unit 3 -- operating,e_w175071712-400,way/175071712-400,49.907184,18.464559,False
+e_w175071712-400,ep_coal_subcritical_G100000102327,200.0,coal,Detmarovice power station_Unit 4 -- operating,e_w175071712-400,way/175071712-400,49.907184,18.464559,False
+e_w180790873-400,ep_hydro_ps_G100000601485,638.0,hydro,Dlouhé Stráně I hydroelectric plant_ -- operating,e_w180790873-400,way/180790873-400,50.0854,17.1795,False
+e_w180790873-400,ep_hydro_w180790873-400__irena,187.05856706281844,hydro,Aggregated Plant - IRENA Gap - way/180790873-400_Missing Hydro Capacity -- operating,e_w180790873-400,way/180790873-400,50.04961410979013,17.118586899024297,False
+e_w25838372-220,ep_coal_subcritical_G100000106610,55.0,coal,Malesice power station_Unit 3 -- operating,e_w25838372-220,way/25838372-220,50.084967,14.525273,False
+e_w25838372-220,ep_coal_subcritical_G100000106611,55.0,coal,Malesice power station_Unit 2 -- operating,e_w25838372-220,way/25838372-220,50.084967,14.525273,False
+e_w27849030-400,ep_gas_steam_turbine_G100000406316,81.0,gas,Špitálka power station_1 -- operating,e_w27849030-400,way/27849030-400,49.19643,16.622566,False
+e_w28268556-400,ep_coal_subcritical_G100000108081,55.0,coal,Porici power station_Phase 2 Unit 1 -- operating,e_w28268556-400,way/28268556-400,50.572812,15.963992,False
+e_w28268556-400,ep_coal_subcritical_G100000108083,55.0,coal,Porici power station_Phase 2 Unit 3 -- operating,e_w28268556-400,way/28268556-400,50.572812,15.963992,False
+e_w28268556-400,ep_m_coal_subcritical_G100000108082,55.0,coal,Porici power station_Phase 2 Unit 2 -- mothballed,e_w28268556-400,way/28268556-400,50.572812,15.963992,False
+e_w28348269-220,ep_coal_subcritical_G100000107643,60.0,coal,Opatovice power station_Unit 1 -- operating,e_w28348269-220,way/28348269-220,50.12283,15.790765,False
+e_w28348269-220,ep_coal_subcritical_G100000107644,60.0,coal,Opatovice power station_Unit 2 -- operating,e_w28348269-220,way/28348269-220,50.12283,15.790765,False
+e_w28348269-220,ep_coal_subcritical_G100000107645,60.0,coal,Opatovice power station_Unit 3 -- operating,e_w28348269-220,way/28348269-220,50.12283,15.790765,False
+e_w28348269-220,ep_coal_subcritical_G100000107646,60.0,coal,Opatovice power station_Unit 4 -- operating,e_w28348269-220,way/28348269-220,50.12283,15.790765,False
+e_w28348269-220,ep_coal_subcritical_G100000107647,60.0,coal,Opatovice power station_Unit 5 -- operating,e_w28348269-220,way/28348269-220,50.12283,15.790765,False
+e_w28348269-220,ep_coal_subcritical_G100000107648,60.0,coal,Opatovice power station_Unit 6 -- operating,e_w28348269-220,way/28348269-220,50.12283,15.790765,False
+e_w28348269-220,ep_gas_combined_cycle_G100001027894,390.0,gas,Opatovice power station_CC1 -- construction,e_w28348269-220,way/28348269-220,50.12283,15.790765,False
+e_w28457258-400,ep_coal_subcritical_G100000105792,135.0,coal,Kladno power station_Unit TG7 -- operating,e_w28457258-400,way/28457258-400,50.1535,14.12858,False
+e_w28457258-400,ep_coal_subcritical_G100000105793,135.3,coal,Kladno power station_Unit TG4 -- operating,e_w28457258-400,way/28457258-400,50.1535,14.12858,False
+e_w28457258-400,ep_coal_subcritical_G100000105794,135.3,coal,Kladno power station_Unit TG5 -- operating,e_w28457258-400,way/28457258-400,50.1535,14.12858,False
+e_w28457258-400,ep_gas_gas_turbine_G100000400061,51.0,gas,Kladno power station_GT1 -- operating,e_w28457258-400,way/28457258-400,50.1535,14.12858,False
+e_w28475691-220,ep_coal_subcritical_G100000106962,35.0,coal,Sko-Energo power station_Unit 80 -- operating,e_w28475691-220,way/28475691-220,50.4125,14.904444,False
+e_w28475691-220,ep_coal_subcritical_G100000106963,35.0,coal,Sko-Energo power station_Unit 90 -- operating,e_w28475691-220,way/28475691-220,50.4125,14.904444,False
+e_w28476742-400,ep_coal_subcritical_G100000108050,70.0,coal,Plzen CHP power station_Unit TG1 -- operating,e_w28476742-400,way/28476742-400,49.754333,13.398754,False
+e_w28476742-400,ep_coal_subcritical_G100000108051,67.0,coal,Plzen CHP power station_Unit TG2 -- operating,e_w28476742-400,way/28476742-400,49.754333,13.398754,False
+e_w28476742-400,ep_coal_subcritical_G100000108052,32.0,coal,Plzenska energetika ELU III power station_Unit K1 -- operating,e_w28476742-400,way/28476742-400,49.739529,13.345461,False
+e_w28476742-400,ep_coal_subcritical_G100000108053,33.0,coal,Plzenska energetika ELU III power station_Unit K3 -- operating,e_w28476742-400,way/28476742-400,49.739529,13.345461,False
+e_w28478418-220,ep_coal_subcritical_G100000113450,38.0,coal,Pribram power station_Unit 2 -- operating,e_w28478418-220,way/28478418-220,49.696,14.003,False
+e_w28479829-400,ep_hydro_dam_G100000601486,120.0,hydro,Lipno I hydroelectric plant_ -- operating,e_w28479829-400,way/28479829-400,48.6332,14.2373,False
+e_w28479829-400,ep_hydro_w28479829-400__irena,35.183429541595935,hydro,Aggregated Plant - IRENA Gap - way/28479829-400_Missing Hydro Capacity -- operating,e_w28479829-400,way/28479829-400,49.46407882914209,14.320070780884906,False
+e_w28622657-220,ep_gas_internal_combustion_G100001031252,37.0,gas,Plana Nad Luznici power station_IC1 -- operating,e_w28622657-220,way/28622657-220,49.368459,14.702139,False
+e_w28622657-220,ep_gas_internal_combustion_G100001031259,23.0,gas,Plana Nad Luznici power station_IC2 -- operating,e_w28622657-220,way/28622657-220,49.368459,14.702139,False
+e_w28624004-220,ep_coal_subcritical_G100000110310,33.0,coal,Trebovice power station_Unit 33 -- operating,e_w28624004-220,way/28624004-220,49.831905,18.211305,False
+e_w28624004-220,ep_coal_subcritical_G100000110311,72.0,coal,Trebovice power station_Unit 15 -- operating,e_w28624004-220,way/28624004-220,49.831905,18.211305,False
+e_w28624004-220,ep_coal_subcritical_G100000110312,72.0,coal,Trebovice power station_Unit 16 -- operating,e_w28624004-220,way/28624004-220,49.831905,18.211305,False
+e_w28624926-400,ep_coal_subcritical_G100000105604,55.0,coal,Karvina power station_Unit 1 -- operating,e_w28624926-400,way/28624926-400,49.823463,18.480287,False
+e_w28625556-220,ep_coal_subcritical_G100000107623,50.0,coal,"Olomouc power station_Unit 1, timepoint 1 -- operating",e_w28625556-220,way/28625556-220,49.570879,17.304121,False
+e_w28625556-220,ep_gas_gas_turbine_G100000406314,58.0,gas,Prostějov power station_1 -- operating,e_w28625556-220,way/28625556-220,49.462471,17.143524,False
+e_w28625556-220,ep_gas_steam_turbine_G100001022358,50.0,gas,"Olomouc power station_Unit 1, timepoint 2 -- construction",e_w28625556-220,way/28625556-220,49.570879,17.304121,False
+e_w28626812-400,ep_coal_subcritical_G100000113594,30.0,coal,Zlin power station_Unit TG32 -- operating,e_w28626812-400,way/28626812-400,49.225,17.654,False
+e_w330184054-400,ep_nuclear_G100000500465,500.0,nuclear,Dukovany nuclear power plant_1 -- operating,e_w330184054-400,way/330184054-400,49.0852,16.1479,False
+e_w330184054-400,ep_nuclear_G100000500466,500.0,nuclear,Dukovany nuclear power plant_2 -- operating,e_w330184054-400,way/330184054-400,49.0852,16.1479,False
+e_w330184054-400,ep_nuclear_G100000500467,500.0,nuclear,Dukovany nuclear power plant_3 -- operating,e_w330184054-400,way/330184054-400,49.0852,16.1479,False
+e_w330184054-400,ep_nuclear_G100000500468,500.0,nuclear,Dukovany nuclear power plant_4 -- operating,e_w330184054-400,way/330184054-400,49.0852,16.1479,False
+e_w335879573-400,ep_coal_subcritical_G100000106843,60.0,coal,Melnik power station_Phase 1 Unit 1 -- operating,e_w335879573-400,way/335879573-400,50.413132,14.41582,False
+e_w335879573-400,ep_coal_subcritical_G100000106844,60.0,coal,Melnik power station_Phase 1 Unit 2 -- operating,e_w335879573-400,way/335879573-400,50.413132,14.41582,False
+e_w335879573-400,ep_coal_subcritical_G100000106845,60.0,coal,Melnik power station_Phase 1 Unit 3 -- operating,e_w335879573-400,way/335879573-400,50.413132,14.41582,False
+e_w335879573-400,ep_coal_subcritical_G100000106846,60.0,coal,Melnik power station_Phase 1 Unit 4 -- operating,e_w335879573-400,way/335879573-400,50.413132,14.41582,False
+e_w335879573-400,ep_coal_subcritical_G100000106850,110.0,coal,Melnik power station_Phase 2 Unit 4 -- operating,e_w335879573-400,way/335879573-400,50.413132,14.41582,False
+e_w335879573-400,ep_gas_gas_turbine_G100000400064,35.0,gas,Kralupy power station_S3 -- operating,e_w335879573-400,way/335879573-400,50.25877,14.3207,False
+e_w335879573-400,ep_gas_steam_turbine_G100000400062,33.0,gas,Kralupy power station_S1 -- operating,e_w335879573-400,way/335879573-400,50.25877,14.3207,False
+e_w335879573-400,ep_gas_steam_turbine_G100000400063,33.0,gas,Kralupy power station_S2 -- operating,e_w335879573-400,way/335879573-400,50.25877,14.3207,False
+e_w344320517-220,ep_coal_subcritical_G100000105837,35.0,coal,Komorany power station_II Unit 5 -- operating,e_w344320517-220,way/344320517-220,50.522288,13.572102,False
+e_w344320517-220,ep_coal_subcritical_G100000105838,32.0,coal,Komorany power station_II Unit 7 -- operating,e_w344320517-220,way/344320517-220,50.522288,13.572102,False
+e_w344320517-220,ep_coal_subcritical_G100000105839,34.0,coal,Komorany power station_II Unit 6 -- operating,e_w344320517-220,way/344320517-220,50.522288,13.572102,False
+e_w344320517-220,ep_coal_subcritical_G100000105840,32.0,coal,Komorany power station_I Unit 1 -- operating,e_w344320517-220,way/344320517-220,50.522288,13.572102,False
+e_w344320517-220,ep_coal_subcritical_G100000105841,32.0,coal,Komorany power station_I Unit 2 -- operating,e_w344320517-220,way/344320517-220,50.522288,13.572102,False
+e_w344320517-220,ep_coal_subcritical_G100000112489,32.0,coal,Komorany power station_III Unit 8 -- operating,e_w344320517-220,way/344320517-220,50.522288,13.572102,False
+e_w683503374-400,ep_coal_subcritical_G100000110381,200.0,coal,Tusimice power station_Unit 1 -- operating,e_w683503374-400,way/683503374-400,50.381868,13.339973,False
+e_w683503374-400,ep_coal_subcritical_G100000110382,200.0,coal,Tusimice power station_Unit 2 -- operating,e_w683503374-400,way/683503374-400,50.381868,13.339973,False
+e_w683503374-400,ep_coal_subcritical_G100000110383,200.0,coal,Tusimice power station_Unit 3 -- operating,e_w683503374-400,way/683503374-400,50.381868,13.339973,False
+e_w683503374-400,ep_coal_subcritical_G100000110384,200.0,coal,Tusimice power station_Unit 4 -- operating,e_w683503374-400,way/683503374-400,50.381868,13.339973,False
+e_w683503381-220,ep_gas_combined_cycle_G100000411132,200.0,gas,Vřesová power station_2 -- operating,e_w683503381-220,way/683503381-220,50.25648,12.6908,False
+e_w683503381-220,ep_gas_combined_cycle_G100000411133,200.0,gas,Vřesová power station_1 -- operating,e_w683503381-220,way/683503381-220,50.25648,12.6908,False
+e_w693112799-400,ep_coal_subcritical_G100000108159,250.0,coal,Prunerov power station_Phase 2 Unit B23 retrofit -- operating,e_w693112799-400,way/693112799-400,50.418,13.259,False
+e_w693112799-400,ep_coal_subcritical_G100000108160,250.0,coal,Prunerov power station_Phase 2 Unit B24 retrofit -- operating,e_w693112799-400,way/693112799-400,50.418,13.259,False
+e_w693112799-400,ep_coal_subcritical_G100000108161,250.0,coal,Prunerov power station_Phase 2 Unit B25 retrofit -- operating,e_w693112799-400,way/693112799-400,50.418,13.259,False
+elc_spv_001,ep_solar_pv_001,6.7,solar,Aggregated Plant -- operating,elc_spv_001,way/28628927-400,50.21527134161756,17.920076695927072,False
+elc_spv_002,ep_solar_pv_002,97.69999999999999,solar,Aggregated Plant -- operating,elc_spv_002,CZ23-220,48.77388533346111,17.04100099937243,False
+elc_spv_003,ep_solar_003__irena,358.9779768154326,solar,Aggregated Plant - IRENA Gap - 3_Missing Solar Capacity -- operating,elc_spv_003,CZ24-380,49.27046627618367,16.516360502043817,False
+elc_spv_003,ep_solar_pv_003,439.4000000000001,solar,Aggregated Plant -- operating,elc_spv_003,CZ24-380,48.91405649844486,16.49312083193161,False
+elc_spv_004,ep_solar_pv_004,26.900000000000006,solar,Aggregated Plant -- operating,elc_spv_004,way/28470958-400,49.99964698118695,16.34279450422022,False
+elc_spv_005,ep_solar_005__irena,366.6905631739415,solar,Aggregated Plant - IRENA Gap - 5_Missing Solar Capacity -- operating,elc_spv_005,way/28479829-400,49.120845189158125,14.862200493734342,False
+elc_spv_005,ep_solar_pv_005,58.00000000000001,solar,Aggregated Plant -- operating,elc_spv_005,way/28479829-400,48.698015044113355,14.731484701705703,False
+elc_spv_006,ep_solar_pv_006,219.4,solar,Aggregated Plant -- operating,elc_spv_006,way/28477054-220,49.283638638346396,13.604716227320106,False
+elc_spv_007,ep_solar_pv_007,8.0,solar,Aggregated Plant -- operating,elc_spv_007,CZ1-380,50.72480766068601,13.028306091243957,False
+elc_spv_008,ep_solar_pv_008,64.1,solar,Aggregated Plant -- operating,elc_spv_008,way/149306820-220,50.114910125154736,13.235446283335982,False
+elc_spv_009,ep_solar_pv_009,106.00000000000001,solar,Aggregated Plant -- operating,elc_spv_009,CZ11-400,49.71901192468244,14.201254724219794,False
+elc_spv_010,ep_solar_010__irena,376.490460010626,solar,Aggregated Plant - IRENA Gap - 10_Missing Solar Capacity -- operating,elc_spv_010,way/28468576-220,50.343711639181244,15.085103027070241,False
+elc_spv_010,ep_solar_pv_010,275.40000000000003,solar,Aggregated Plant -- operating,elc_spv_010,way/28468576-220,49.98473152202292,15.113456370464952,False
+elc_won_001,ep_windon_wind_001,58.0,windon,Aggregated Plant -- operating,elc_won_001,way/683503381-220,50.37755950144021,13.037858277577616,False
+elc_won_005,ep_windon_005__irena,66.3847542046355,windon,Aggregated Plant -- operating,elc_won_005,way/28628927-400,49.85798158766026,17.92997345801215,False
+elc_won_008,ep_windon_008__irena,65.27578595356766,windon,Aggregated Plant -- operating,elc_won_008,way/197827799-400,50.6406780394789,14.889677788167582,False
+elc_won_008,ep_windon_wind_008,40.0,windon,Aggregated Plant -- operating,elc_won_008,way/197827799-400,50.28611114706342,14.904878666062613,False
+elc_won_010,ep_windon_010__irena,67.43445984179687,windon,Aggregated Plant -- operating,elc_won_010,way/28479829-400,48.698068314026116,14.112453336751182,False
+elc_won_010,ep_windon_wind_010,41.99999999999999,windon,Aggregated Plant -- operating,elc_won_010,way/28479829-400,49.2343215493537,14.02297277171006,False

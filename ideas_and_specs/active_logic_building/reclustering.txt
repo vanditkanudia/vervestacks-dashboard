@@ -1,0 +1,359 @@
+step 1
+import pandas as pd
+import numpy as np
+import geopandas as gpd
+from scipy.spatial import cKDTree
+from scipy.cluster.hierarchy import linkage, fcluster
+import matplotlib.pyplot as plt
+from datetime import datetime
+
+def load_and_reshape_atlite(country_code='BR', year=2013):
+    """
+    Load and reshape the massive atlite dataset efficiently
+    """
+    print("Loading Atlite data...")
+    
+    # Load in chunks to handle the huge file
+    # First, let's get unique grid cells
+    atlite_sample = pd.read_parquet(
+        'atlite_grid_cell_2013.parquet',
+        columns=['grid_cell']
+    )
+    unique_cells = atlite_sample['grid_cell'].unique()
+    n_cells = len(unique_cells)
+    print(f"Found {n_cells:,} unique grid cells")
+    
+    # Now load the full data - you might need to do this in chunks
+    print("Loading full dataset (this may take a while)...")
+    atlite_df = pd.read_parquet('atlite_grid_cell_2013.parquet')
+    
+    # Create datetime column
+    atlite_df['datetime'] = pd.to_datetime(
+        atlite_df[['month', 'day', 'hour']].assign(year=year)
+    )
+    
+    # Create hour index (0-8759)
+    atlite_df['hour_idx'] = (
+        (atlite_df['month'] - 1) * 730 +  # Approximate
+        (atlite_df['day'] - 1) * 24 + 
+        atlite_df['hour']
+    )
+    
+    return atlite_df, unique_cells
+
+# Load the data
+atlite_df, unique_cells = load_and_reshape_atlite()
+
+step 2
+def extract_cell_profiles(atlite_df, cell_subset=None, sample_size=1000):
+    """
+    Extract profiles for a subset of cells (for testing)
+    """
+    
+    # For initial testing, work with a subset
+    if cell_subset is None:
+        unique_cells = atlite_df['grid_cell'].unique()
+        if sample_size and len(unique_cells) > sample_size:
+            print(f"Sampling {sample_size} cells for testing...")
+            cell_subset = np.random.choice(unique_cells, sample_size, replace=False)
+        else:
+            cell_subset = unique_cells
+    
+    print(f"Processing {len(cell_subset)} cells...")
+    
+    # Filter to subset
+    df_subset = atlite_df[atlite_df['grid_cell'].isin(cell_subset)]
+    
+    # Pivot to wide format - this is the key transformation
+    print("Pivoting to wide format...")
+    
+    # We'll create separate arrays for each technology
+    wind_profiles = df_subset.pivot_table(
+        index='grid_cell',
+        columns='hour_idx',
+        values='wind_capacity_factor',
+        aggfunc='mean'
+    ).values
+    
+    solar_profiles = df_subset.pivot_table(
+        index='grid_cell',
+        columns='hour_idx',
+        values='solar_capacity_factor',
+        aggfunc='mean'
+    ).values
+    
+    # Extract coordinates from grid_cell name
+    # Assuming format like "lat_lon" or similar
+    coords = []
+    for cell in cell_subset:
+        # Parse the grid_cell identifier - adjust based on your format
+        # Example: "-23.5_-46.6" or "23.5S_46.6W"
+        parts = str(cell).replace('S', '-').replace('N', '').replace('W', '-').replace('E', '').split('_')
+        try:
+            lat = float(parts[0])
+            lon = float(parts[1])
+            coords.append([lat, lon])
+        except:
+            # If parsing fails, we'll need to see the actual format
+            print(f"Sample grid_cell format: {cell}")
+            break
+    
+    coords = np.array(coords)
+    
+    return {
+        'cells': cell_subset,
+        'coords': coords,
+        'wind': wind_profiles,
+        'solar': solar_profiles
+    }
+
+# Test with a small subset first
+profiles = extract_cell_profiles(atlite_df, sample_size=1000)
+print(f"Wind profile shape: {profiles['wind'].shape}")
+print(f"Solar profile shape: {profiles['solar'].shape}")
+
+step 3
+def process_grid_infrastructure(buses_df, lines_df):
+    """
+    Process the OSM grid data with x,y coordinates
+    """
+    
+    # The x,y are likely in a projected coordinate system
+    # We need to either:
+    # 1. Convert to lat/lon, or
+    # 2. Work in the projected space
+    
+    print("Processing grid infrastructure...")
+    print(f"X range: {buses_df['x'].min():.2f} to {buses_df['x'].max():.2f}")
+    print(f"Y range: {buses_df['y'].min():.2f} to {buses_df['y'].max():.2f}")
+    
+    # Check if these look like lat/lon or projected
+    if buses_df['x'].min() > -180 and buses_df['x'].max() < 180:
+        # Probably lat/lon already, just swapped
+        buses_df['lat'] = buses_df['y']
+        buses_df['lon'] = buses_df['x']
+    else:
+        # Projected coordinates - need to convert
+        # Assuming Web Mercator (EPSG:3857) - common for OSM
+        import pyproj
+        transformer = pyproj.Transformer.from_crs("EPSG:3857", "EPSG:4326")
+        lat, lon = transformer.transform(buses_df['x'].values, buses_df['y'].values)
+        buses_df['lat'] = lat
+        buses_df['lon'] = lon
+    
+    # Clean voltage data
+    buses_df['voltage_kv'] = buses_df['voltage'] / 1000 if buses_df['voltage'].max() > 10000 else buses_df['voltage']
+    
+    # Categorize by voltage level
+    buses_df['voltage_class'] = pd.cut(
+        buses_df['voltage_kv'],
+        bins=[0, 50, 150, 300, 500, 1000],
+        labels=['distribution', 'sub_transmission', 'transmission_low', 
+                'transmission_high', 'extra_high']
+    )
+    
+    print("\nVoltage distribution:")
+    print(buses_df['voltage_class'].value_counts())
+    
+    return buses_df
+
+buses_processed = process_grid_infrastructure(buses, lines)
+
+step 4
+def smart_clustering_pipeline(
+    profiles, 
+    buses_df,
+    n_clusters=200,
+    use_rezoning=False
+):
+    """
+    Complete clustering pipeline for your data
+    """
+    
+    print("\n=== Starting Smart Clustering Pipeline ===")
+    
+    # 1. Calculate grid distances
+    print("Calculating grid distances...")
+    bus_tree = cKDTree(buses_df[['lat', 'lon']].values)
+    distances_deg, nearest_idx = bus_tree.query(profiles['coords'])
+    distances_km = distances_deg * 111.32  # Convert to km
+    
+    print(f"Average distance to grid: {distances_km.mean():.1f} km")
+    print(f"Max distance to grid: {distances_km.max():.1f} km")
+    
+    # 2. Prepare features for clustering
+    print("\nPreparing features...")
+    features = []
+    weights = []
+    
+    # Normalize profiles (focus on shape, not magnitude)
+    if profiles['wind'] is not None and profiles['wind'].shape[1] > 0:
+        wind_norm = profiles['wind'] / (profiles['wind'].mean(axis=1, keepdims=True) + 1e-6)
+        # Reduce dimensionality with PCA if needed
+        if wind_norm.shape[1] > 100:
+            from sklearn.decomposition import PCA
+            pca = PCA(n_components=50)
+            wind_reduced = pca.fit_transform(wind_norm)
+            print(f"Wind PCA explained variance: {pca.explained_variance_ratio_.sum():.2%}")
+        else:
+            wind_reduced = wind_norm
+        features.append(wind_reduced)
+        weights.append(0.35)
+    
+    if profiles['solar'] is not None and profiles['solar'].shape[1] > 0:
+        solar_norm = profiles['solar'] / (profiles['solar'].mean(axis=1, keepdims=True) + 1e-6)
+        # Reduce dimensionality with PCA
+        if solar_norm.shape[1] > 100:
+            from sklearn.decomposition import PCA
+            pca = PCA(n_components=50)
+            solar_reduced = pca.fit_transform(solar_norm)
+            print(f"Solar PCA explained variance: {pca.explained_variance_ratio_.sum():.2%}")
+        else:
+            solar_reduced = solar_norm
+        features.append(solar_reduced)
+        weights.append(0.35)
+    
+    # Grid distance feature
+    grid_dist_norm = (distances_km / distances_km.max()).reshape(-1, 1)
+    features.append(grid_dist_norm)
+    weights.append(0.20)
+    
+    # Spatial coordinates (for contiguity)
+    coords_norm = (profiles['coords'] - profiles['coords'].mean(axis=0)) / profiles['coords'].std(axis=0)
+    features.append(coords_norm)
+    weights.append(0.10)
+    
+    # 3. Combine features with weights
+    print("\nCombining weighted features...")
+    weighted_features = []
+    for feat, w in zip(features, weights):
+        weighted_features.append(feat * np.sqrt(w))  # sqrt for better scaling
+    
+    X = np.hstack(weighted_features)
+    print(f"Final feature matrix: {X.shape}")
+    
+    # 4. Hierarchical clustering
+    print(f"\nPerforming hierarchical clustering ({n_clusters} clusters)...")
+    from scipy.cluster.hierarchy import linkage, fcluster
+    
+    # Use Ward's method
+    Z = linkage(X, method='ward')
+    clusters = fcluster(Z, n_clusters, criterion='maxclust')
+    
+    print(f"Created {len(np.unique(clusters))} clusters")
+    
+    # 5. Calculate cluster statistics
+    cluster_stats = []
+    for c in np.unique(clusters):
+        mask = clusters == c
+        stats = {
+            'cluster_id': c,
+            'n_cells': mask.sum(),
+            'avg_wind_cf': profiles['wind'][mask].mean() if profiles['wind'] is not None else 0,
+            'avg_solar_cf': profiles['solar'][mask].mean() if profiles['solar'] is not None else 0,
+            'avg_grid_dist_km': distances_km[mask].mean(),
+            'min_grid_dist_km': distances_km[mask].min(),
+            'centroid_lat': profiles['coords'][mask, 0].mean(),
+            'centroid_lon': profiles['coords'][mask, 1].mean(),
+        }
+        cluster_stats.append(stats)
+    
+    cluster_df = pd.DataFrame(cluster_stats)
+    print("\nCluster summary:")
+    print(cluster_df.describe())
+    
+    return clusters, cluster_df, Z
+
+# Run the clustering
+clusters, cluster_stats, linkage_matrix = smart_clustering_pipeline(
+    profiles, 
+    buses_processed,
+    n_clusters=200
+)
+
+step 5
+def visualize_and_export(clusters, profiles, cluster_stats, admin_gdf):
+    """
+    Create visualizations and export results
+    """
+    
+    # 1. Map visualization
+    fig, axes = plt.subplots(1, 2, figsize=(20, 10))
+    
+    # Plot clusters
+    ax = axes[0]
+    if admin_gdf is not None:
+        admin_gdf.boundary.plot(ax=ax, color='gray', linewidth=0.5, alpha=0.5)
+    
+    scatter = ax.scatter(
+        profiles['coords'][:, 1],  # lon
+        profiles['coords'][:, 0],  # lat
+        c=clusters,
+        cmap='tab20',
+        s=5,
+        alpha=0.7
+    )
+    ax.set_title(f'{len(np.unique(clusters))} Clusters')
+    ax.set_xlabel('Longitude')
+    ax.set_ylabel('Latitude')
+    
+    # Plot cluster quality metrics
+    ax = axes[1]
+    ax.scatter(
+        cluster_stats['avg_grid_dist_km'],
+        cluster_stats['avg_wind_cf'],
+        s=cluster_stats['n_cells'] * 2,
+        alpha=0.6
+    )
+    ax.set_xlabel('Avg Distance to Grid (km)')
+    ax.set_ylabel('Avg Wind CF')
+    ax.set_title('Cluster Characteristics')
+    
+    plt.tight_layout()
+    plt.savefig('clustering_results.png', dpi=300, bbox_inches='tight')
+    plt.show()
+    
+    # 2. Export for ESOM
+    print("\nExporting results...")
+    
+    # Cell to cluster mapping
+    cell_mapping = pd.DataFrame({
+        'grid_cell': profiles['cells'],
+        'cluster_id': clusters,
+        'lat': profiles['coords'][:, 0],
+        'lon': profiles['coords'][:, 1]
+    })
+    cell_mapping.to_csv('cell_to_cluster_mapping.csv', index=False)
+    
+    # Cluster profiles (aggregate)
+    cluster_profiles = {}
+    for c in np.unique(clusters):
+        mask = clusters == c
+        cluster_profiles[f'cluster_{c}'] = {
+            'wind_profile': profiles['wind'][mask].mean(axis=0),
+            'solar_profile': profiles['solar'][mask].mean(axis=0),
+        }
+    
+    # Save profiles
+    np.savez_compressed(
+        'cluster_profiles.npz',
+        **{f'{k}_wind': v['wind_profile'] for k, v in cluster_profiles.items()},
+        **{f'{k}_solar': v['solar_profile'] for k, v in cluster_profiles.items()}
+    )
+    
+    # Cluster summary
+    cluster_stats.to_csv('cluster_summary.csv', index=False)
+    
+    print("Export complete!")
+    print(f"  - cell_to_cluster_mapping.csv")
+    print(f"  - cluster_profiles.npz")
+    print(f"  - cluster_summary.csv")
+    
+    return cell_mapping
+
+# Visualize and export
+# First, load the admin boundaries properly
+admin_gdf = gpd.read_file('ne_10m_admin_1_states_provinces.shp')  # Adjust path
+brazil_admin = admin_gdf[admin_gdf['iso_a2'] == 'BR']
+
+cell_mapping = visualize_and_export(clusters, profiles, cluster_stats, brazil_admin)

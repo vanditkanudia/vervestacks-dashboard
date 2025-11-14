@@ -1,0 +1,19 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_KG20-500,ep_hydro_dam_G100000602374,1860.0,hydro,Kambarata-1 hydroelectric plant_ -- construction,e_KG20-500,KG20-500,41.7742,73.4367,False
+e_KG22-500,ep_hydro_dam_G100000602376,120.0,hydro,Kambarata-2 hydroelectric plant_ -- operating,e_KG22-500,KG22-500,41.7761,73.3255,False
+e_KG23-500,ep_hydro_dam_G100000602388,1320.0,hydro,Toktogul hydroelectric plant_ -- operating,e_KG23-500,KG23-500,41.6571,72.6358,False
+e_KG24-220,ep_hydro_dam_G100000602386,450.0,hydro,Tash-Kumyr hydroelectric plant_ -- operating,e_KG24-220,KG24-220,41.4027,72.2319,False
+e_KG26-220,ep_hydro_dam_G100000602385,240.0,hydro,Shamaldy-Sai hydroelectric plant_ -- operating,e_KG26-220,KG26-220,41.3121,72.1923,False
+e_KG29-220,ep_hydro_dam_G100000602389,180.0,hydro,Uch-Kurgan hydroelectric plant_ -- operating,e_KG29-220,KG29-220,41.188,72.1607,False
+e_KG6-220,ep_hydro_ror_G100001051725,25.0,hydro,Bala-Saruu hydroelectric plant_ -- operating,e_KG6-220,KG6-220,42.6646,71.5997,False
+e_w332225795-220,ep_hydro_dam_G100000602381,800.0,hydro,Kurpsai hydroelectric plant_ -- operating,e_w332225795-220,way/332225795-220,41.4988,72.3642,False
+e_w550274149-220,ep_coal_subcritical_G100000100922,86.0,coal,"Bishkek power station_Unit 10, timepoint 1 -- operating",e_w550274149-220,way/550274149-220,42.871747,74.654957,False
+e_w550274149-220,ep_coal_subcritical_G100000100923,100.0,coal,"Bishkek power station_Unit 11, timepoint 1 -- operating",e_w550274149-220,way/550274149-220,42.871747,74.654957,False
+e_w550274149-220,ep_coal_subcritical_G100000100924,150.0,coal,"Bishkek power station_Unit 12, timepoint 1 -- operating",e_w550274149-220,way/550274149-220,42.871747,74.654957,False
+e_w550274149-220,ep_coal_subcritical_G100000100925,150.0,coal,"Bishkek power station_Unit 13, timepoint 1 -- operating",e_w550274149-220,way/550274149-220,42.871747,74.654957,False
+e_w550274149-220,ep_coal_subcritical_G100000100928,35.0,coal,Bishkek power station_Unit 5 -- operating,e_w550274149-220,way/550274149-220,42.871747,74.654957,False
+e_w550274149-220,ep_coal_subcritical_G100000100929,86.0,coal,"Bishkek power station_Unit 6, timepoint 1 -- operating",e_w550274149-220,way/550274149-220,42.871747,74.654957,False
+e_w550274149-220,ep_coal_subcritical_G100000100930,60.0,coal,"Bishkek power station_Unit 7, timepoint 1 -- operating",e_w550274149-220,way/550274149-220,42.871747,74.654957,False
+e_w550274149-220,ep_coal_subcritical_G100000100931,60.0,coal,"Bishkek power station_Unit 8, timepoint 1 -- operating",e_w550274149-220,way/550274149-220,42.871747,74.654957,False
+e_w550274149-220,ep_coal_subcritical_G100000100932,86.0,coal,"Bishkek power station_Unit 9, timepoint 1 -- operating",e_w550274149-220,way/550274149-220,42.871747,74.654957,False
+elc_won_011,ep_windon_wind_011,100.0,windon,Aggregated Plant -- construction,elc_won_011,KG22-500,41.872231787469694,74.82263830021475,False

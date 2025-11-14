@@ -1,0 +1,49 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,3.0000000000000027,bioenergy,Aggregated Plant -- operating,,,,,False
+e_AZ22-220,ep_gas_combined_cycle_G100000407939,525.0,gas,Sumgayit power station_1 -- operating,e_AZ22-220,AZ22-220,40.603363,49.633417,False
+e_AZ36-220,ep_gas_combined_cycle_G100000407932,400.0,gas,Shimal power station_2 -- operating,e_AZ36-220,AZ36-220,40.499569,50.209075,False
+e_AZ36-220,ep_gas_combined_cycle_G100000407933,400.0,gas,Shimal power station_1 -- operating,e_AZ36-220,AZ36-220,40.499569,50.209075,False
+e_AZ43-220,ep_bioenergy_AZ43-220,37.0,bioenergy,Aggregated Plant -- operating,e_AZ43-220,AZ43-220,40.38182261682814,50.02520282950837,False
+e_AZ48-220,ep_gas_gas_turbine_G100000407930,53.5,gas,Baku CHP power station_2 -- operating,e_AZ48-220,AZ48-220,40.373564,49.919489,False
+e_AZ48-220,ep_gas_gas_turbine_G100000407931,53.5,gas,Baku CHP power station_1 -- operating,e_AZ48-220,AZ48-220,40.373564,49.919489,False
+e_AZ48-220,ep_gas_internal_combustion_G100000411959,104.4,gas,Baku power station_1 -- operating,e_AZ48-220,AZ48-220,40.4039,49.9157,False
+e_AZ53-220,ep_gas_internal_combustion_G100000411951,307.8,gas,Sangachal power station_1 -- operating,e_AZ53-220,AZ53-220,40.172045,49.473255,False
+e_AZ54-330,ep_hydro_dam_G100001051956,50.0,hydro,Sarsang hydroelectric plant_ -- operating,e_AZ54-330,AZ54-330,40.2083,46.6503,False
+e_AZ57-330,ep_gas_combined_cycle_G100000407940,390.0,gas,Janub power station_2 -- operating,e_AZ57-330,AZ57-330,39.893857,48.918546,False
+e_AZ57-330,ep_gas_combined_cycle_G100000407941,390.0,gas,Janub power station_1 -- operating,e_AZ57-330,AZ57-330,39.893857,48.918546,False
+e_AZ62-220,ep_gas_internal_combustion_G100000411960,87.0,gas,Astara power station_1 -- operating,e_AZ62-220,AZ62-220,38.46698,48.864585,False
+e_w1084683401-330,ep_gas_internal_combustion_G100000411949,104.4,gas,Shahdagh power station_1 -- operating,e_w1084683401-330,way/1084683401-330,41.407708,48.474827,False
+e_w1084683401-330,ep_gas_internal_combustion_G100000411957,87.0,gas,Khachmaz power station_1 -- operating,e_w1084683401-330,way/1084683401-330,41.431651,48.811357,False
+e_w1084683425-330,ep_gas_internal_combustion_G100000411958,384.3,gas,Gobu power station_1 -- operating,e_w1084683425-330,way/1084683425-330,40.419454,49.669808,False
+e_w1084683528-330,ep_hydro_dam_G100000600146,380.0,hydro,Shamkir hydroelectric plant_ -- operating,e_w1084683528-330,way/1084683528-330,40.9472,46.1711,False
+e_w1084683528-330,ep_hydro_dam_G100000600147,150.0,hydro,Yenikend hydroelectric plant_ -- operating,e_w1084683528-330,way/1084683528-330,40.9186,46.2847,False
+e_w1084683528-330,ep_hydro_w1084683528-330__irena,78.58853288364253,hydro,Aggregated Plant - IRENA Gap - way/1084683528-330_Missing Hydro Capacity -- operating,e_w1084683528-330,way/1084683528-330,40.79418132937769,46.272948129163,False
+e_w1265199286-500,ep_gas_gas_turbine_G100000411953,320.0,gas,Mingecevir power station_4 -- construction,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_gas_turbine_G100000411954,320.0,gas,Mingecevir power station_3 -- construction,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_gas_turbine_G100000411955,320.0,gas,Mingecevir power station_2 -- construction,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_gas_turbine_G100000411956,320.0,gas,Mingecevir power station_1 -- construction,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_steam_turbine_G100000407942,300.0,gas,Azerbaijan thermal power plant_8 -- operating,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_steam_turbine_G100000407943,300.0,gas,Azerbaijan thermal power plant_7 -- operating,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_steam_turbine_G100000407944,300.0,gas,Azerbaijan thermal power plant_6 -- operating,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_steam_turbine_G100000407945,300.0,gas,Azerbaijan thermal power plant_5 -- operating,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_steam_turbine_G100000407946,300.0,gas,Azerbaijan thermal power plant_4 -- operating,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_steam_turbine_G100000407947,300.0,gas,Azerbaijan thermal power plant_3 -- operating,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_steam_turbine_G100000407948,300.0,gas,Azerbaijan thermal power plant_2 -- operating,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1265199286-500,ep_gas_steam_turbine_G100000407949,300.0,gas,Azerbaijan thermal power plant_1 -- operating,e_w1265199286-500,way/1265199286-500,40.781034,46.990866,False
+e_w1268606864-330,ep_gas_internal_combustion_G100000411952,87.0,gas,Nakhchivan power station_1 -- operating,e_w1268606864-330,way/1268606864-330,39.15908,45.4866,False
+e_w1268606864-330,ep_hydro_dam_G100000604107,102.0,hydro,Khudafarin (Khoda Afarin) hydroelectric plant_ -- operating,e_w1268606864-330,way/1268606864-330,39.1595,46.9343,False
+e_w1268606864-330,ep_hydro_ror_G100000604414,80.0,hydro,Gyz Galasy hydroelectric plant_ -- operating,e_w1268606864-330,way/1268606864-330,39.1693,47.0165,False
+e_w1268606864-330,ep_hydro_w1268606864-330__irena,24.66053962900507,hydro,Aggregated Plant - IRENA Gap - way/1268606864-330_Missing Hydro Capacity -- operating,e_w1268606864-330,way/1268606864-330,39.52850799263364,46.97114335683716,False
+e_w305654763-220,ep_hydro_dam_G100000600145,424.0,hydro,Mingechevir hydroelectric plant_ -- operating,e_w305654763-220,way/305654763-220,40.7886,47.0281,False
+e_w305654763-220,ep_hydro_w305654763-220__irena,57.45092748735247,hydro,Aggregated Plant - IRENA Gap - way/305654763-220_Missing Hydro Capacity -- operating,e_w305654763-220,way/305654763-220,40.87953187908182,47.121912829406924,False
+e_w305654763-330,ep_gas_internal_combustion_G100000411948,87.0,gas,Shaki power station_1 -- operating,e_w305654763-330,way/305654763-330,41.062545,47.142391,False
+elc_spv_002,ep_solar_pv_002,36.8,solar,Aggregated Plant -- operating,elc_spv_002,way/1268606864-330,39.11244075118193,47.22698614852593,False
+elc_spv_003,ep_solar_pv_003,4.0,solar,Aggregated Plant -- operating,elc_spv_003,AZ5-330,41.16833887977362,45.9451925523009,False
+elc_spv_006,ep_solar_pv_006,8.899999999999999,solar,Aggregated Plant -- operating,elc_spv_006,way/164457706-220,40.37989687744034,50.19158238701716,False
+elc_spv_006,ep_solar_pv_G100000804553,230.0,solar,Garadagh Solar PV Plant_-- -- operating,elc_spv_006,way/164457706-220,40.0453,49.3406,False
+elc_spv_007,ep_solar_pv_007,7.8,solar,Aggregated Plant -- operating,elc_spv_007,AZ29-220,41.462764751773655,48.70518642712391,False
+elc_spv_009,ep_solar_pv_009,3.0,solar,Aggregated Plant -- operating,elc_spv_009,AZ61-220,39.20212332418769,48.02915415407381,False
+elc_won_003,ep_windon_003__irena,5.288938975748776,windon,Aggregated Plant -- operating,elc_won_003,AZ26-220,40.52230122429375,50.051870803248654,False
+elc_won_003,ep_windon_wind_003,50.0,windon,Aggregated Plant -- operating,elc_won_003,AZ26-220,40.47544058092904,49.55452744575104,False
+elc_won_004,ep_windon_004__irena,4.709062805445718,windon,Aggregated Plant -- operating,elc_won_004,way/164457706-220,40.42682891269915,49.4725075806425,False
+elc_won_005,ep_windon_005__irena,4.001998218805504,windon,Aggregated Plant -- operating,elc_won_005,AZ33-220,40.54896495743966,49.01631825239473,False

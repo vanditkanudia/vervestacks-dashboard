@@ -1,0 +1,72 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_SK1-220,ep_bioenergy_SK1-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_SK1-220,SK1-220,49.62878006807716,18.166290850769148,False
+e_SK10-220,ep_bioenergy_SK10-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_SK10-220,SK10-220,48.86654169162674,17.439557443967946,False
+e_SK11-220,ep_bioenergy_SK11-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_SK11-220,SK11-220,48.55940088098264,18.443837169480727,False
+e_SK16-400,ep_gas_SK16-400__ember,406.9114500553032,gas,Aggregated Plant - EMBER Gap - SK16-400_Missing Gas Capacity -- operating,e_SK16-400,SK16-400,48.52990454778581,17.69660905079106,False
+e_SK16-400,ep_gas_combined_cycle_G100000400631,436.0,gas,Malženice power station_1 -- operating,e_SK16-400,SK16-400,48.4296,17.6978,False
+e_SK6-220,ep_bioenergy_SK6-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_SK6-220,SK6-220,49.150777004894444,18.327972752944444,False
+e_r11038054-400,ep_coal_r11038054-400__ember,435.99999999999994,coal,Aggregated Plant - EMBER Gap - relation/11038054-400_Missing Coal Capacity -- operating,e_r11038054-400,relation/11038054-400,48.8000137438758,21.14091469294091,False
+e_r11038054-400,ep_coal_subcritical_G100000105880,66.0,coal,Kosice power station_Unit 2 -- operating,e_r11038054-400,relation/11038054-400,48.698047,21.271726,False
+e_r11038054-400,ep_coal_subcritical_G100000110415,208.0,coal,U.S. Steel Kosice Works power station_-- -- operating,e_r11038054-400,relation/11038054-400,48.615945,21.194562,False
+e_r11038054-400,ep_gas_internal_combustion_G100001031044,37.0,gas,Kosice power station_Unit 1R -- operating,e_r11038054-400,relation/11038054-400,48.698047,21.271726,False
+e_r11038054-400,ep_gas_r11038054-400__ember,34.53147626616105,gas,Aggregated Plant - EMBER Gap - relation/11038054-400_Missing Gas Capacity -- operating,e_r11038054-400,relation/11038054-400,48.450323509672465,21.22657179978424,False
+e_w100979306-220,ep_bioenergy_w100979306-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_w100979306-220,way/100979306-220,49.03254339940667,21.299878089605166,False
+e_w100979306-220,ep_hydro_ps_G100001027416,60.0,hydro,Ružín hydroelectric plant_ -- operating,e_w100979306-220,way/100979306-220,48.8616,21.0911,False
+e_w100979306-220,ep_hydro_w100979306-220__irena,11.02040816326531,hydro,Aggregated Plant - IRENA Gap - way/100979306-220_Missing Hydro Capacity -- operating,e_w100979306-220,way/100979306-220,48.682034926277744,21.216510279362165,False
+e_w100979306-400,ep_geothermal_w100979306-400,6.0,geothermal,Aggregated Plant -- construction,e_w100979306-400,way/100979306-400,48.9285878019927,21.1276835404874,False
+e_w1063211569-400,ep_nuclear_G100000500461,500.0,nuclear,Mochovce nuclear power plant_1 -- operating,e_w1063211569-400,way/1063211569-400,48.2572,18.4553,False
+e_w1063211569-400,ep_nuclear_G100000500462,500.0,nuclear,Mochovce nuclear power plant_2 -- operating,e_w1063211569-400,way/1063211569-400,48.2572,18.4553,False
+e_w1063211569-400,ep_nuclear_G100000500490,471.0,nuclear,Mochovce nuclear power plant_3 -- operating,e_w1063211569-400,way/1063211569-400,48.2572,18.4553,False
+e_w1063211569-400,ep_nuclear_G100000500491,471.0,nuclear,Mochovce nuclear power plant_4 -- construction,e_w1063211569-400,way/1063211569-400,48.2572,18.4553,False
+e_w111687967-400,ep_gas_gas_turbine_G100000400632,49.9,gas,Panické Dravce power station_GT 1 -- operating,e_w111687967-400,way/111687967-400,48.28641,19.61488,False
+e_w111687967-400,ep_gas_w111687967-400__ember,46.570828802200985,gas,Aggregated Plant - EMBER Gap - way/111687967-400_Missing Gas Capacity -- operating,e_w111687967-400,way/111687967-400,48.64451304928665,19.986187727092762,False
+e_w111687967-400,ep_hydro_dam_G100001027413,45.0,hydro,Kráľová hydroelectric plant_ -- operating,e_w111687967-400,way/111687967-400,48.1912,19.8296,False
+e_w111687967-400,ep_hydro_w111687967-400__irena,118.46938775510209,hydro,Aggregated Plant - IRENA Gap - way/111687967-400_Missing Hydro Capacity -- operating,e_w111687967-400,way/111687967-400,48.259060940446275,20.28587053504109,False
+e_w122257444-400,ep_hydro_ps_G100000603344,198.0,hydro,Liptovská Mara hydroelectric plant_ -- operating,e_w122257444-400,way/122257444-400,49.0967,19.4841,False
+e_w122257444-400,ep_hydro_w122257444-400__irena,36.367346938775526,hydro,Aggregated Plant - IRENA Gap - way/122257444-400_Missing Hydro Capacity -- operating,e_w122257444-400,way/122257444-400,49.157279928555205,19.499791639942533,False
+e_w128968280-400,ep_gas_combined_cycle_G100000400630,80.0,gas,Levice power station_1 -- operating,e_w128968280-400,way/128968280-400,48.2022,18.597,False
+e_w128968280-400,ep_gas_w128968280-400__ember,74.66265138629417,gas,Aggregated Plant - EMBER Gap - way/128968280-400_Missing Gas Capacity -- operating,e_w128968280-400,way/128968280-400,48.50098571262299,18.565504172854666,False
+e_w146531966-220,ep_bioenergy_w146531966-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_w146531966-220,way/146531966-220,48.498056564244955,18.673909264211765,False
+e_w199900178-220,ep_bioenergy_w199900178-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_w199900178-220,way/199900178-220,49.02321943466012,17.343479337211342,False
+e_w203232760-400,ep_hydro_ps_G100000603341,734.0,hydro,Čierny Váh hydroelectric plant_ -- operating,e_w203232760-400,way/203232760-400,49.0088,19.9121,False
+e_w203232760-400,ep_hydro_w203232760-400__irena,134.81632653061232,hydro,Aggregated Plant - IRENA Gap - way/203232760-400_Missing Hydro Capacity -- operating,e_w203232760-400,way/203232760-400,49.021362103645,19.9889250039967,False
+e_w239560640-220,ep_bioenergy_w239560640-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_w239560640-220,way/239560640-220,49.26831937150178,18.945992933527336,False
+e_w239560640-220,ep_gas_internal_combustion_G100001031043,27.99,gas,Martinska power station_IC -- operating,e_w239560640-220,way/239560640-220,49.059218,18.907019,False
+e_w239560640-220,ep_gas_w239560640-220__ember,26.12259515377967,gas,Aggregated Plant - EMBER Gap - way/239560640-220_Missing Gas Capacity -- operating,e_w239560640-220,way/239560640-220,48.91290439000336,18.94636877350664,False
+e_w400109175-220,ep_bioenergy_w400109175-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_w400109175-220,way/400109175-220,49.381660459307746,18.3790157837571,False
+e_w400109175-220,ep_gas_combined_cycle_G100000410483,64.0,gas,Považská Bystrica power station_1 -- operating,e_w400109175-220,way/400109175-220,49.1154,18.4246,False
+e_w400109175-220,ep_gas_w400109175-220__ember,59.73012110903533,gas,Aggregated Plant - EMBER Gap - way/400109175-220_Missing Gas Capacity -- operating,e_w400109175-220,way/400109175-220,48.95581887249301,18.64283603009127,False
+e_w400109175-220,ep_hydro_dam_G100001027414,68.0,hydro,Nosice hydroelectric plant_ -- operating,e_w400109175-220,way/400109175-220,49.1275,18.3642,False
+e_w400109175-220,ep_hydro_ror_G100000603345,94.0,hydro,Mikšová hydroelectric plant_ -- operating,e_w400109175-220,way/400109175-220,49.1927,18.5087,False
+e_w400109175-220,ep_hydro_ror_G100001027415,55.0,hydro,Považská Bystrica hydroelectric plant_ -- operating,e_w400109175-220,way/400109175-220,49.1331,18.4538,False
+e_w400109175-220,ep_hydro_w400109175-220__irena,39.85714285714287,hydro,Aggregated Plant - IRENA Gap - way/400109175-220_Missing Hydro Capacity -- operating,e_w400109175-220,way/400109175-220,49.0399090914882,18.165055109308902,False
+e_w5131796-400,ep_gas_combined_cycle_G100000411142,218.0,gas,PPC Bratislava power station_CC1 -- operating,e_w5131796-400,way/5131796-400,48.17744,17.15395,False
+e_w5131796-400,ep_gas_gas_turbine_G100000411137,60.0,gas,Slovnaft Refinery power station_TG5 -- operating,e_w5131796-400,way/5131796-400,48.1199,17.1803,False
+e_w5131796-400,ep_gas_gas_turbine_G100000411138,25.0,gas,Slovnaft Refinery power station_TG4 -- operating,e_w5131796-400,way/5131796-400,48.1199,17.1803,False
+e_w5131796-400,ep_gas_gas_turbine_G100000411139,25.0,gas,Slovnaft Refinery power station_TG3 -- operating,e_w5131796-400,way/5131796-400,48.1199,17.1803,False
+e_w5131796-400,ep_gas_gas_turbine_G100000411140,24.0,gas,Slovnaft Refinery power station_TG2 -- operating,e_w5131796-400,way/5131796-400,48.1199,17.1803,False
+e_w5131796-400,ep_gas_gas_turbine_G100000411141,29.0,gas,Slovnaft Refinery power station_TG1 -- operating,e_w5131796-400,way/5131796-400,48.1199,17.1803,False
+e_w5131796-400,ep_gas_w5131796-400__ember,355.580877227226,gas,Aggregated Plant - EMBER Gap - way/5131796-400_Missing Gas Capacity -- operating,e_w5131796-400,way/5131796-400,48.466611175589165,17.285301243328817,False
+e_w51982806-220,ep_bioenergy_w51982806-220__ember,102.00000000000006,bioenergy,Aggregated Plant - EMBER Gap - way/51982806-220_Missing Bioenergy Capacity -- operating,e_w51982806-220,way/51982806-220,48.162925917583415,17.74113133128242,False
+e_w639671352-220,ep_bioenergy_w639671352-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_w639671352-220,way/639671352-220,49.099488724150305,19.34858949131171,False
+e_w648002755-400,ep_hydro_ror_G100000603342,720.0,hydro,Gabčíkovo hydroelectric plant_ -- operating,e_w648002755-400,way/648002755-400,47.8801,17.5388,False
+e_w648002755-400,ep_hydro_w648002755-400__irena,132.24489795918373,hydro,Aggregated Plant - IRENA Gap - way/648002755-400_Missing Hydro Capacity -- operating,e_w648002755-400,way/648002755-400,47.92477856607636,17.666520018572538,False
+e_w656435549-220,ep_bioenergy_w656435549-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_w656435549-220,way/656435549-220,48.35563071497242,17.766974731199706,False
+e_w672771472-400,ep_hydro_ror_G100001052141,72.0,hydro,Zilina hydroelectric plant_ -- operating,e_w672771472-400,way/672771472-400,49.2153,18.7775,False
+e_w672771472-400,ep_hydro_w672771472-400__irena,13.224489795918371,hydro,Aggregated Plant - IRENA Gap - way/672771472-400_Missing Hydro Capacity -- operating,e_w672771472-400,way/672771472-400,49.27813756446696,18.709557339419277,False
+e_w783483874-220,ep_bioenergy_w783483874-220__ember,14.0,bioenergy,Aggregated Plant -- operating,e_w783483874-220,way/783483874-220,48.7347840105366,22.115907334724493,False
+e_w93468022-400,ep_nuclear_G100000500459,500.0,nuclear,Bohunice nuclear power plant_3 -- operating,e_w93468022-400,way/93468022-400,48.4968,17.6907,False
+e_w93468022-400,ep_nuclear_G100000500460,500.0,nuclear,Bohunice nuclear power plant_4 -- operating,e_w93468022-400,way/93468022-400,48.4968,17.6907,False
+elc_spv_001,ep_solar_pv_001,6.800000000000001,solar,Aggregated Plant -- operating,elc_spv_001,way/175052362-400,48.4614048753181,21.90917911802303,False
+elc_spv_004,ep_solar_pv_004,11.100000000000001,solar,Aggregated Plant -- operating,elc_spv_004,way/111687967-400,48.21745194665691,19.82899899304109,False
+elc_spv_005,ep_solar_005__irena,32.04295235803357,solar,Aggregated Plant -- operating,elc_spv_005,SK19-400,48.72075291611257,21.033778837724448,False
+elc_spv_005,ep_solar_pv_005,114.40000000000003,solar,Aggregated Plant -- operating,elc_spv_005,SK19-400,48.371815220773534,21.123355262025026,False
+elc_spv_006,ep_solar_pv_006,46.30000000000001,solar,Aggregated Plant -- operating,elc_spv_006,way/5131796-400,48.018130554485765,17.56549026065206,False
+elc_spv_007,ep_solar_007__irena,33.697974587166286,solar,Aggregated Plant -- operating,elc_spv_007,way/199900178-220,48.31746956765319,17.483103544022672,False
+elc_spv_007,ep_solar_pv_007,20.6,solar,Aggregated Plant -- operating,elc_spv_007,way/199900178-220,48.578238399060126,17.042663946909837,False
+elc_spv_009,ep_solar_pv_009,59.19999999999999,solar,Aggregated Plant -- operating,elc_spv_009,way/229685438-400,48.385657256172294,18.790266494796953,False
+elc_spv_010,ep_solar_010__irena,34.059073054800145,solar,Aggregated Plant -- operating,elc_spv_010,way/128968280-400,48.070141729260776,18.819033812009806,False
+elc_spv_010,ep_solar_pv_010,190.79999999999995,solar,Aggregated Plant -- operating,elc_spv_010,way/128968280-400,48.073712284493446,18.385627469007723,False
+elc_won_007,ep_windon_007__irena,1.4490068379657004,windon,Aggregated Plant -- operating,elc_won_007,way/5131796-400,48.0965103618437,16.857744668483203,False
+elc_won_008,ep_windon_008__irena,1.3519496244726763,windon,Aggregated Plant -- operating,elc_won_008,SK10-220,48.506277373887556,17.446822588035428,False
+elc_won_010,ep_windon_010__irena,1.1990435375616233,windon,Aggregated Plant -- operating,elc_won_010,way/666404730-400,49.2031260238681,21.359383796800333,False

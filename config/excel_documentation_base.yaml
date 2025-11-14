@@ -1,0 +1,382 @@
+# Excel Workbooks Documentation
+# Structure: filename -> sheet_name -> documentation components
+# Used by ExcelManager to add standardized documentation to all Excel outputs
+
+vervestacks_ISO:  # e.g., vervestacks_CHE.xlsx
+  hourly_demand_data:
+    data_source: >
+      ERA5 hourly demand profiles (2013) + IEA sectoral consumption statistics
+    methodology_paragraph: >
+      Hourly electricity demand disaggregated into residential, commercial, and industrial sectors using 
+      ERA5 climate-driven profiles and IEA consumption shares. Industrial loads have minimal hourly variation 
+      while residential/commercial show strong daily and seasonal patterns. Complete 8,760-hour coverage with 
+      realistic peak timing - see online documentation for detailed calculation methods and sector definitions.
+    purpose_paragraph: >
+      Provides realistic hourly electricity demand patterns for energy system modeling, enabling accurate 
+      assessment of peak demand timing, seasonal variations, and sectoral consumption patterns. Essential 
+      for renewable energy integration analysis, storage sizing, and grid flexibility requirements.
+
+  hourly_resource_shapes:
+    data_source: >
+      European satellite solar irradiance (SARAH) and meteorological reanalysis (ERA5), 2013 reference year, 
+      processed through PVGIS optimization for local PV conditions and Vestas V117-3.3MW wind turbine power curves
+    methodology_paragraph: >
+      METHODOLOGY: Hourly renewable energy capacity factors converted to normalized fractions for time-slice modeling. 
+      Wind speeds extrapolated from 10m to 91.5m hub height using power law (α=0.143), then applied to Vestas V117-3.3MW 
+      power curve (3-25 m/s operating range). Solar processing uses PVGIS-calculated power output for fixed-tilt PV systems 
+      optimized per location. Both wind and solar capacity factors normalized so hourly fractions sum to 1.0 annually, 
+      enabling direct time-slice aggregation in VEDA/TIMES models. Complete 8,760-hour coverage with no missing data. 
+      All capacity factors physically constrained (0-100%). Seasonal patterns validated (summer solar peaks, winter wind maxima). 
+      Mathematical consistency verified (annual normalization ±0.001 tolerance). Hourly fractions feed time-slice design 
+      algorithms and renewable energy process definitions. Preserves natural variability patterns for energy storage sizing 
+      and system flexibility requirements in energy system optimization models.
+    purpose_paragraph: >
+      Enables accurate modeling of renewable energy variability for capacity planning, energy storage sizing, 
+      and system flexibility analysis. Provides foundation for time-slice design and renewable energy integration 
+      studies in national energy system models.
+
+  calibration:
+    data_source: >
+      GEM plant database + IRENA/EMBER statistics + UNSD energy balances
+    methodology_paragraph: >
+      Comprehensive calibration analysis comparing capacity and generation data across three authoritative sources.
+      Table 1 shows installed capacity by technology from GEM vs IRENA/EMBER statistics.
+      Table 2 compares calculated generation using capacity and utilization factors.
+      Table 3 provides detailed metrics including efficiency, utilization factors, and fuel consumption estimates.
+      All data reconciled for base year 2022 - see online documentation for complete validation methodology.
+    purpose_paragraph: >
+      Validates model input data quality and ensures consistency across multiple authoritative sources. 
+      Essential for building confidence in model results and identifying data gaps or discrepancies 
+      that require attention before energy system analysis.
+    column_documentation:
+      iso_code:
+        purpose: "Unique country identification for data organization and model linkage"
+        description: "Three-letter ISO country code"
+        calculation: "Direct from source data"
+        data_source: "ISO 3166-1 alpha-3 standard"
+        methodology: "Standardized country identification"
+        quality_notes: "Verified against official ISO registry"
+      model_fuel:
+        purpose: "Technology categorization for energy system modeling and analysis"
+        description: "Standardized fuel/technology category"
+        calculation: "Mapped from source technology classifications"
+        data_source: "GEM/IRENA/EMBER technology categories"
+        methodology: "Harmonized technology mapping across all sources"
+        quality_notes: "Consistent categorization ensures comparability"
+      capacity_gw_gem:
+        description: "Installed capacity from Global Energy Monitor"
+        calculation: "Sum of individual plant capacities by technology"
+        data_source: "GEM Global Power Plant Tracker"
+        methodology: "Facility-level data aggregated by fuel type"
+        quality_notes: "Most granular source with individual plant details"
+      capacity_gw_irena:
+        description: "Installed capacity from IRENA statistics"
+        calculation: "National statistics by technology category"
+        data_source: "IRENA Renewable Energy Statistics"
+        methodology: "Official government reporting aggregated by IRENA"
+        quality_notes: "Authoritative for renewables, may include distributed generation"
+      capacity_gw_ember:
+        description: "Installed capacity from Ember statistics"
+        calculation: "National statistics by technology category"
+        data_source: "Ember Global Electricity Review"
+        methodology: "Statistical analysis of electricity sector data"
+        quality_notes: "Focus on electricity sector, excludes some industrial capacity"
+      generation_twh_gem_irena:
+        description: "Calculated generation using GEM capacity × IRENA utilization"
+        calculation: "capacity_gw_gem × utilization_factor_irena × 8.76"
+        data_source: "GEM capacity + IRENA utilization factors"
+        methodology: "Cross-source validation of generation potential"
+        quality_notes: "Hybrid approach combining detailed capacity with statistical utilization"
+      generation_twh_gem_ember:
+        description: "Calculated generation using GEM capacity × Ember utilization"
+        calculation: "capacity_gw_gem × utilization_factor_ember × 8.76"
+        data_source: "GEM capacity + Ember utilization factors"
+        methodology: "Alternative generation calculation for validation"
+        quality_notes: "Second validation path using different utilization source"
+      generation_twh_irena:
+        description: "Actual generation reported by IRENA"
+        calculation: "Direct from IRENA statistics"
+        data_source: "IRENA Renewable Energy Statistics"
+        methodology: "Official generation reporting"
+        quality_notes: "Authoritative for renewables, may exclude some sources"
+      generation_twh_ember:
+        description: "Actual generation reported by Ember"
+        calculation: "Direct from Ember statistics"
+        data_source: "Ember Global Electricity Review"
+        methodology: "Statistical analysis of electricity generation"
+        quality_notes: "Comprehensive electricity sector coverage"
+      utilization_factor_irena:
+        description: "Capacity utilization factor from IRENA"
+        calculation: "generation_twh / (capacity_gw × 8.76)"
+        data_source: "IRENA statistics"
+        methodology: "Derived from generation and capacity data"
+        quality_notes: "Reflects real-world operational performance"
+      utilization_factor_ember:
+        description: "Capacity utilization factor from Ember"
+        calculation: "generation_twh / (capacity_gw × 8.76)"
+        data_source: "Ember statistics"
+        methodology: "Derived from generation and capacity data"
+        quality_notes: "Alternative utilization benchmark"
+      avg_efficiency:
+        description: "Capacity-weighted average efficiency"
+        calculation: "Sum(capacity × efficiency) / Sum(capacity)"
+        data_source: "GEM plant-level efficiency data"
+        methodology: "Weighted average of individual plant efficiencies"
+        quality_notes: "Based on design efficiency, not operational performance"
+      fuel_consumed_twh_irena:
+        description: "Estimated fuel consumption using IRENA generation"
+        calculation: "generation_twh_gem_irena / avg_efficiency"
+        data_source: "Calculated from generation and efficiency"
+        methodology: "Thermal energy input based on electrical output and efficiency"
+        quality_notes: "Theoretical consumption, excludes transmission losses"
+      fuel_consumed_twh_ember:
+        description: "Estimated fuel consumption using Ember generation"
+        calculation: "generation_twh_gem_ember / avg_efficiency"
+        data_source: "Calculated from generation and efficiency"
+        methodology: "Alternative fuel consumption estimate"
+        quality_notes: "Cross-validation of fuel requirements"
+
+  existing_stock:
+    data_source: >
+      Global Energy Monitor plant database + IRENA/EMBER statistics with spatial gap-filling
+    methodology_paragraph: >
+      Complete power plant inventory combining GEM facility-level data with statistical capacity gaps from IRENA 
+      (renewables) and EMBER (thermal). Missing capacity distributed spatially using resource quality rankings 
+      and existing plant locations. Technology costs calculated as capacity-weighted averages with regional and 
+      size adjustments. All parameters validated against realistic ranges. Hover over column headers for detailed 
+      calculation methods - see online documentation for complete methodology.
+    purpose_paragraph: >
+      Provides comprehensive baseline power plant inventory for energy system modeling, enabling accurate 
+      representation of existing generation capacity, costs, and performance characteristics. Foundation 
+      for capacity expansion planning, retirement analysis, and policy impact assessment.
+    
+    column_documentation:
+      "Plant Name":
+        purpose: "Unique plant identification for inventory tracking and spatial analysis"
+        description: "Power plant facility name or aggregated plant identifier"
+        calculation: "Direct from GEM database or generated for gap-filled capacity"
+        data_source: "GEM Global-Integrated-Power database, auto-generated for IRENA/EMBER gaps"
+        methodology: "GEM plants use original names. Gap plants named 'Aggregated Plant - [Source] Gap - [Location]'"
+        quality_notes: "All names validated for uniqueness within country. Gap plants clearly identified."
+        
+      "model_fuel":
+        description: "Standardized fuel type for VEDA/TIMES model compatibility"
+        calculation: "Technology mapping from GEM fuel types to model categories"
+        data_source: "VS_mappings.xlsx (gem_fuel_mapping sheet)"
+        methodology: "GEM fuel types mapped to standard categories: nuclear, gas, coal, hydro, solar, wind, etc."
+        quality_notes: "All fuel types validated against VEDA conventions. Unmapped fuels flagged for review."
+        
+      "Capacity (MW)":
+        purpose: "Generation capacity for energy system modeling and capacity planning analysis"
+        description: "Net electrical capacity in megawatts"
+        calculation: "Direct from GEM or calculated from IRENA/EMBER statistical gaps"
+        data_source: "GEM database primary, IRENA-C.xlsx and EMBER yearly_electricity_data.csv for gaps"
+        methodology: "GEM capacity used directly. Gaps = IRENA/EMBER 2022 - GEM cumulative ≤2022, distributed spatially"
+        quality_notes: "All capacities >0 MW. Gap distribution preserves realistic plant sizes (≥10 MW threshold)."
+        
+      "Start year":
+        description: "Plant commissioning year for retirement scheduling"
+        calculation: "GEM commissioning date or estimated for gap-filled plants"
+        data_source: "GEM database, gap plants assigned 2022 (latest statistical year)"
+        methodology: "Historical plants use GEM dates. Gap plants represent recent additions not in GEM"
+        quality_notes: "Years validated against realistic ranges (1900-2025). Future plants excluded."
+        
+      "comm-out":
+        description: "Output commodity for VEDA/TIMES model linkage"
+        calculation: "Country-level commodity assignment based on technology type"
+        data_source: "Generated from country codes and technology classifications"
+        methodology: "Standard assignments: elc_sol-CHE (renewables), ELC (thermal/other)"
+        quality_notes: "All assignments verified against model conventions. Commodity names follow VEDA standards."
+        
+      "capex":
+        description: "Capital expenditure in $/kW (capacity-weighted average)"
+        calculation: "Multi-factor: Base cost × Size multiplier × Regional multiplier"
+        data_source: "ep_technoeconomic_assumptions.xlsx (costs, size_multipliers, regional_multipliers sheets)"
+        methodology: "Weighted average: SUM(MW × capex) / SUM(MW) by technology group and vintage"
+        quality_notes: "Values validated against international benchmarks. Outliers investigated and documented."
+        
+      "fixom":
+        description: "Fixed O&M costs in $/kW-year (capacity-weighted average)"
+        calculation: "Multi-factor: Base cost × Size multiplier × Regional multiplier"
+        data_source: "ep_technoeconomic_assumptions.xlsx (costs, size_multipliers, regional_multipliers sheets)"
+        methodology: "Weighted average: SUM(MW × fixom) / SUM(MW) by technology group and vintage"
+        quality_notes: "Includes maintenance, insurance, and fixed labor costs. Regional adjustments applied."
+        
+      "varom":
+        description: "Variable O&M costs in $/MWh (capacity-weighted average)"
+        calculation: "Multi-factor: Base cost × Size multiplier × Regional multiplier"
+        data_source: "ep_technoeconomic_assumptions.xlsx (costs, size_multipliers, regional_multipliers sheets)"
+        methodology: "Weighted average: SUM(MW × varom) / SUM(MW) by technology group and vintage"
+        quality_notes: "Excludes fuel costs. Covers variable maintenance and consumables only."
+        
+      "efficiency":
+        description: "Thermal efficiency - electrical output / fuel input (capacity-weighted average)"
+        calculation: "Vintage-based efficiency × Regional multiplier, capacity-weighted"
+        data_source: "ep_technoeconomic_assumptions.xlsx (thermal_eff, regional_multipliers sheets)"
+        methodology: "Efficiency by commissioning year and size class. Weighted: SUM(MW × eff) / SUM(MW)"
+        quality_notes: "Range validated (0.25-0.65 for thermal plants). Technology-specific realistic bounds applied."
+
+  ccs_retrofits:
+    data_source: >
+      Existing thermal power plants from GEM database filtered for CCS retrofit eligibility based on plant age, 
+      size, and technology type, with retrofit cost parameters from technology assumption tables
+    methodology_paragraph: >
+      METHODOLOGY: CCS retrofit eligibility determined by plant commissioning year (≥2000), minimum capacity (≥100 MW), 
+      and compatible technology (coal, gas, biomass). Retrofit costs calculated as incremental CAPEX, FIXOM, and efficiency 
+      penalties. Cost parameters derived from technology assumption tables with size and regional multipliers applied. 
+      Efficiency penalties reflect parasitic energy consumption for CO2 capture (8-12% depending on technology). Capture 
+      rates set at 90% for all eligible technologies. Maintains original plant locations and grid connections. Retrofit 
+      processes create new technology variants (e.g., EGAS01_CCS) with modified cost and performance characteristics while 
+      preserving spatial commodity assignments. Only plants with sufficient remaining operational life considered eligible. 
+      Retrofit costs validated against international benchmarks. Efficiency penalties consistent with commercial CCS 
+      technology performance. Enables analysis of CCS deployment strategies, carbon pricing impacts, and retrofit economics. 
+      Supports policy scenarios for existing fleet decarbonization and stranded asset risk assessment.
+    purpose_paragraph: >
+      Enables analysis of carbon capture and storage retrofit options for existing thermal power plants. 
+      Critical for evaluating decarbonization pathways, stranded asset risks, and the economic viability 
+      of CCS technology deployment in different carbon pricing scenarios.
+
+  weo_pg:
+    data_source: >
+      World Energy Outlook technology cost projections and regional multipliers from IEA databases, mapped to 
+      country-specific economic regions and adjusted for local cost conditions
+    methodology_paragraph: >
+      METHODOLOGY: Future technology costs from WEO projections applied to standardized technology definitions. Regional 
+      cost multipliers account for labor, materials, and economic conditions. Learning curves embedded in temporal cost 
+      reductions. Technology parameters include CAPEX, FIXOM, VAROM, and efficiency for new build options. Size multipliers 
+      applied based on typical deployment scales. Regional mapping ensures appropriate cost levels for each country's 
+      economic development stage. Cost trajectories reflect expected technological learning, economies of scale, and market 
+      maturation. Renewable costs decline over time while conventional technologies remain stable or increase with environmental 
+      regulations. Cost parameters validated against recent auction results and commercial project data. Regional multipliers 
+      calibrated to observed cost differences across global markets. Technology definitions aligned with VEDA/TIMES conventions. 
+      Provides future technology options for capacity expansion planning. Enables analysis of technology competition, optimal 
+      deployment timing, and policy support requirements for emerging technologies.
+    purpose_paragraph: >
+      Provides future technology cost and performance parameters for capacity expansion planning and 
+      technology competition analysis. Essential for long-term energy system planning, investment timing 
+      decisions, and policy support mechanism design for emerging technologies.
+
+  iamc_data:
+    data_source: >
+      Integrated Assessment Model Consortium (IAMC) scenario database with NGFS climate scenarios, filtered for 
+      country-specific pathways and key energy system variables
+    methodology_paragraph: >
+      METHODOLOGY: NGFS climate scenarios provide exogenous constraints and targets for energy system modeling. Key variables 
+      include emissions pathways, carbon prices, and sectoral transformation rates. Data harmonized to model time periods 
+      and regional definitions. Scenario selection based on policy relevance and data completeness. Orderly transition, 
+      disorderly transition, and hot house world pathways provide range of climate policy stringency. Variables interpolated 
+      to model time steps using appropriate methods. IAMC data provides boundary conditions rather than prescriptive technology 
+      choices. Carbon price trajectories influence technology competition. Emissions constraints ensure climate policy consistency 
+      without predetermining optimal solutions. Scenario data validated for internal consistency and physical feasibility. 
+      Regional aggregation preserves global totals where applicable. Time series smoothed to avoid artificial discontinuities 
+      in model optimization. Enables climate policy analysis aligned with international scenarios. Supports NDC implementation 
+      studies, carbon pricing impact assessment, and long-term decarbonization pathway analysis.
+    purpose_paragraph: >
+      Provides climate policy constraints and carbon pricing scenarios for energy system modeling aligned with 
+      international climate scenarios. Essential for NDC implementation analysis, climate policy impact assessment, 
+      and ensuring model results are consistent with global decarbonization pathways.
+
+  historical_data_long:
+    data_source: >
+      EMBER electricity generation and capacity statistics, IRENA renewable energy statistics, combined and 
+      harmonized for consistent historical time series by technology and fuel type
+    methodology_paragraph: >
+      METHODOLOGY: Historical data provides model calibration and validation benchmarks. Generation and capacity data 
+      harmonized across sources to resolve discrepancies. Technology mappings ensure consistency with model definitions. 
+      Time series validation includes trend analysis, outlier detection, and cross-source comparison. Missing data interpolated 
+      using neighboring countries or technology-specific growth rates. Units standardized to model conventions (GW, TWh). 
+      Data completeness assessed by technology and time period. Capacity factors calculated and validated against expected 
+      ranges. Sudden changes investigated and documented. Regional aggregation preserves national totals. Historical capacity 
+      factors inform technology performance assumptions. Generation patterns validate renewable resource assessments. Retirement 
+      patterns calibrate plant lifetime assumptions and policy impact timing. Provides baseline for model validation and 
+      scenario development. Historical trends inform future projection assumptions. Enables backcasting analysis to test 
+      model accuracy against known outcomes.
+    purpose_paragraph: >
+      Provides historical benchmarks for model calibration, validation, and trend analysis. Essential for 
+      establishing baseline conditions, validating model accuracy through backcasting, and informing 
+      future projection assumptions based on observed historical patterns.
+
+scen_par_ngfs:  # NGFS scenario parameter files
+  Veda:
+    data_source: >
+      Electricity trade capacity data from European network transmission capacity (NTC) databases, aggregated by 
+      country and converted to VEDA/TIMES process definitions
+    methodology_paragraph: >
+      METHODOLOGY: Net Transfer Capacity (NTC) data provides maximum electricity exchange limits between countries. 
+      Forward and backward capacities summed to determine total import/export potential. Data converted from MW to GW 
+      and pivoted by year. Trade processes created as import (Trd_electricity_imp) and export (Trd_electricity_exp) 
+      with capacity bounds. Regional aggregation sums bilateral connections to provide total trade potential per country. 
+      Missing connections assumed zero capacity. Multi-year NTC data captures infrastructure development over time. 
+      Capacity expansions reflected in increasing trade limits. Interconnector commissioning and decommissioning tracked 
+      through time series. NTC values validated against published transmission system operator data. Symmetry checks 
+      ensure import/export balance across borders. Capacity factors set to enable full utilization when economically 
+      optimal. Enables electricity trade optimization in regional energy system models. Supports analysis of market 
+      integration, renewable energy sharing, and transmission infrastructure value.
+    purpose_paragraph: >
+      Enables electricity trade modeling and regional market integration analysis. Essential for assessing 
+      cross-border renewable energy sharing, transmission infrastructure value, and regional energy security 
+      through interconnected electricity markets.
+
+veda_model_files:  # Various VEDA model template files
+  SubRES_New_RE_and_Conventional:
+    data_source: >
+      Technology cost and performance parameters from multiple sources including WEO projections, IRENA cost databases, 
+      and regional economic multipliers
+    methodology_paragraph: >
+      METHODOLOGY: Comprehensive technology database covering all major electricity generation options. Cost parameters 
+      include CAPEX, FIXOM, VAROM with temporal evolution and regional variations. Performance parameters include efficiency, 
+      availability, and lifetime. Technology definitions standardized for VEDA/TIMES compatibility. Size classes reflect 
+      typical deployment scales. Regional multipliers account for local economic conditions. Learning curves embedded in 
+      cost trajectories over time. Solar PV, onshore/offshore wind, hydro, geothermal, and biomass with resource-specific 
+      performance characteristics. Capacity factors derived from high-resolution resource assessments. Grid integration 
+      costs included where applicable. Coal, gas, nuclear, and oil-fired generation with vintage-specific efficiency and 
+      emissions. CCS options included with appropriate cost premiums and performance penalties. Flexibility characteristics 
+      defined for system services. Provides complete technology option set for capacity expansion planning. Enables technology 
+      competition analysis, optimal deployment timing, and policy impact assessment across all generation technologies.
+    purpose_paragraph: >
+      Provides comprehensive technology options for capacity expansion planning and technology competition analysis. 
+      Essential for evaluating optimal technology deployment timing, policy support requirements, and long-term 
+      energy system transformation pathways across all generation technologies.
+
+  BY_Trans:
+    data_source: >
+      Base year electricity generation, capacity, and consumption data from national statistics, EMBER, and IRENA databases, 
+      harmonized for model calibration
+    methodology_paragraph: >
+      METHODOLOGY: Base year data establishes model starting point and calibration targets. Generation by technology matched 
+      to capacity and capacity factors. Demand sectors calibrated to statistical consumption data. Data harmonization resolves 
+      discrepancies between sources using hierarchical validation. National statistics prioritized where available, supplemented 
+      by international databases. Technology mappings ensure model consistency. Generation patterns, capacity utilization, 
+      and demand profiles validated against historical observations. Model parameters adjusted to reproduce base year conditions 
+      within acceptable tolerances. Mass and energy balances verified. Capacity factors checked against technology-specific 
+      ranges. Seasonal and diurnal patterns preserved where data resolution permits. Provides validated starting point for 
+      scenario analysis. Enables model validation through historical reproduction. Supports policy analysis by establishing 
+      realistic baseline conditions.
+    purpose_paragraph: >
+      Establishes validated baseline conditions for energy system modeling and scenario analysis. Essential for 
+      model calibration, ensuring realistic starting conditions, and providing reference point for policy 
+      impact assessment and future scenario development.
+
+vervestacks_ISO:  # Additional sheets for vervestacks_ISO workbooks
+  buildrates:
+    data_source: >
+      World Bank GDP (2024), UN population statistics, IRENA renewable capacity statistics, IAEA PRIS nuclear database, 
+      IEA energy statistics, and historical deployment rates from BloombergNEF and GlobalData, with resource quality adjustments 
+      from Global Solar Atlas and Global Wind Atlas.
+    methodology_paragraph: >
+      METHODOLOGY: The build rate estimates combine GDP-based scaling ($0.5-2B per GW solar, $0.3-1.5B per GW wind) 
+      and population-based scaling (1 GW solar + 0.5 GW wind per 10M people) methodologies, taking the higher value 
+      and applying regional adjustments for resource quality (e.g., +20-30% solar for MENA regions, +20-30% wind for 
+      Northern Europe). Hydro estimates reflect geographic constraints and site depletion, with only countries having 
+      major river systems and ongoing projects (China, Brazil, India, Ethiopia) reaching 2-15 GW/year, while most 
+      developed nations are limited to 0-0.5 GW/year as prime sites are already exploited. Nuclear estimates account 
+      for long construction times (5-15 years), massive capital requirements ($5-10B per GW), and limited global vendor 
+      capacity, with only countries having active programs (China, India, Russia) achieving 2-15 GW/year, while new 
+      entrants and reviving programs are limited to 0.5-3 GW/year, assuming optimistic scenarios including SMR deployment 
+      and streamlined permitting. All estimates are capped by demonstrated global peaks (China's 100 GW/year solar, 
+      60 GW/year wind, 10 GW/year nuclear) and validated against recent historical performance, representing roughly 
+      1.5-2x recent achievements for renewables and assuming resolution of current supply chain and workforce constraints.
+    purpose_paragraph: >
+      Provides realistic capacity deployment rate constraints for energy system modeling, ensuring scenario results 
+      reflect achievable build rates based on economic capacity, resource availability, and demonstrated historical 
+      performance. Essential for feasible transition pathway analysis and infrastructure planning.

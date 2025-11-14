@@ -1,0 +1,60 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_hydro__irena,68.584,hydro,Aggregated Plant - IRENA Gap_Missing Hydro Capacity -- operating,,,,,False
+e_CU1-220,ep_gas_CU1-220__ember,60.53909465020575,gas,Aggregated Plant - EMBER Gap - CU1-220_Missing Gas Capacity -- operating,e_CU1-220,CU1-220,23.007574818761196,-81.97744406109562,False
+e_CU1-220,ep_gas_combined_cycle_G100000406687,313.0,gas,Boca de Jaruco power station_1 -- operating,e_CU1-220,CU1-220,23.1822,-82.0171,False
+e_CU5-220,ep_bioenergy_CU5-220__ember,216.66666666666666,bioenergy,Aggregated Plant - EMBER Gap - CU5-220_Missing Bioenergy Capacity -- operating,e_CU5-220,CU5-220,22.969308424535132,-81.60297686156213,False
+e_CU7-220,ep_m_oil_steam_turbine_G100000412091,158.0,oil,CTE Carlos Manuel de Céspedes power station_3 -- mothballed,e_CU7-220,CU7-220,22.160736,-80.455671,False
+e_CU7-220,ep_oil_internal_combustion_G100000412099,84.0,oil,Camilo Cienfuegos power station_1-40 -- operating,e_CU7-220,CU7-220,22.1999,-80.53088,False
+e_CU7-220,ep_oil_steam_turbine_G100000412090,158.0,oil,CTE Carlos Manuel de Céspedes power station_4 -- operating,e_CU7-220,CU7-220,22.160736,-80.455671,False
+e_w147108772-220,ep_gas_combined_cycle_G100000406686,173.0,gas,Varadero power station_1 -- operating,e_w147108772-220,way/147108772-220,23.087568,-81.268878,False
+e_w147108772-220,ep_gas_w147108772-220__ember,33.460905349794224,gas,Aggregated Plant - EMBER Gap - way/147108772-220_Missing Gas Capacity -- operating,e_w147108772-220,way/147108772-220,23.28114375998812,-81.54749430411138,False
+e_w147108772-220,ep_m_oil_steam_turbine_G100000412106,330.0,oil,Antonio Guiteras Thermoelectric Power Plant (CTE)_1 -- mothballed,e_w147108772-220,way/147108772-220,23.102632,-81.529444,False
+e_w147156670-220,ep_m_oil_steam_turbine_G100000412093,125.0,oil,CT 10 de Octubre power station_5 -- mothballed,e_w147156670-220,way/147156670-220,21.567037,-77.271583,False
+e_w147156670-220,ep_m_oil_steam_turbine_G100000412095,64.0,oil,CT 10 de Octubre power station_3 -- mothballed,e_w147156670-220,way/147156670-220,21.567037,-77.271583,False
+e_w147156670-220,ep_m_oil_steam_turbine_G100000412096,64.0,oil,CT 10 de Octubre power station_2 -- mothballed,e_w147156670-220,way/147156670-220,21.567037,-77.271583,False
+e_w147156670-220,ep_m_oil_steam_turbine_G100000412097,64.0,oil,CT 10 de Octubre power station_1 -- mothballed,e_w147156670-220,way/147156670-220,21.567037,-77.271583,False
+e_w147156670-220,ep_oil_steam_turbine_G100000412092,125.0,oil,CT 10 de Octubre power station_6 -- operating,e_w147156670-220,way/147156670-220,21.567037,-77.271583,False
+e_w147156670-220,ep_oil_steam_turbine_G100000412094,125.0,oil,CT 10 de Octubre power station_4 -- operating,e_w147156670-220,way/147156670-220,21.567037,-77.271583,False
+e_w147580686-220,ep_m_oil_steam_turbine_G100000412088,230.0,oil,CTE Lidio Ramón Pérez power station_2 -- mothballed,e_w147580686-220,way/147580686-220,20.727357,-75.596748,False
+e_w147580686-220,ep_oil_internal_combustion_G100000412081,60.0,oil,EG Felton Fuel Oil power station_1 -- operating,e_w147580686-220,way/147580686-220,20.727387,-75.596645,False
+e_w147580686-220,ep_oil_steam_turbine_G100000412089,250.0,oil,CTE Lidio Ramón Pérez power station_1 -- operating,e_w147580686-220,way/147580686-220,20.727357,-75.596748,False
+e_w235919441-220,ep_bioenergy_w235919441-220__ember,216.66666666666666,bioenergy,Aggregated Plant - EMBER Gap - way/235919441-220_Missing Bioenergy Capacity -- operating,e_w235919441-220,way/235919441-220,21.67176630195442,-78.12328929567224,False
+e_w318881388-220,ep_m_oil_steam_turbine_G100000412102,95.0,oil,Antonio Maceo Thermoelectric Power Plant_5 -- mothballed,e_w318881388-220,way/318881388-220,19.995485,-75.871003,False
+e_w318881388-220,ep_m_oil_steam_turbine_G100000412104,50.0,oil,Antonio Maceo Thermoelectric Power Plant_2 -- mothballed,e_w318881388-220,way/318881388-220,19.995485,-75.871003,False
+e_w318881388-220,ep_m_oil_steam_turbine_G100000412105,50.0,oil,Antonio Maceo Thermoelectric Power Plant_1 -- mothballed,e_w318881388-220,way/318881388-220,19.995485,-75.871003,False
+e_w318881388-220,ep_oil_internal_combustion_G100000412078,130.0,oil,Powership Erin Sultan power station_1 -- operating,e_w318881388-220,way/318881388-220,19.990986,-75.876693,False
+e_w318881388-220,ep_oil_steam_turbine_G100000412100,95.0,oil,Antonio Maceo Thermoelectric Power Plant_7 -- operating,e_w318881388-220,way/318881388-220,19.995485,-75.871003,False
+e_w318881388-220,ep_oil_steam_turbine_G100000412101,95.0,oil,Antonio Maceo Thermoelectric Power Plant_6 -- operating,e_w318881388-220,way/318881388-220,19.995485,-75.871003,False
+e_w318881388-220,ep_oil_steam_turbine_G100000412103,95.0,oil,Antonio Maceo Thermoelectric Power Plant_4 -- operating,e_w318881388-220,way/318881388-220,19.995485,-75.871003,False
+e_w353352033-220,ep_bioenergy_G100000200214,60.0,bioenergy,Ciro Redondo power station_1 -- operating,e_w353352033-220,way/353352033-220,22.0091,-78.7052,False
+e_w353352033-220,ep_bioenergy_w353352033-220__ember,259.99999999999994,bioenergy,Aggregated Plant - EMBER Gap - way/353352033-220_Missing Bioenergy Capacity -- operating,e_w353352033-220,way/353352033-220,21.985316576139045,-78.7354187889028,False
+e_w353352034-220,ep_m_oil_internal_combustion_G100000413140,147.4,oil,EG Mariel power station_1 -- mothballed,e_w353352034-220,way/353352034-220,23.019133,-82.748875,False
+e_w353352034-220,ep_m_oil_steam_turbine_G100000412073,95.0,oil,Termoeléctrica de Santa Cruz power station_3 -- mothballed,e_w353352034-220,way/353352034-220,23.019234,-82.74887,False
+e_w353352034-220,ep_m_oil_steam_turbine_G100000412074,100.0,oil,Termoeléctrica de Santa Cruz power station_2 -- mothballed,e_w353352034-220,way/353352034-220,23.019234,-82.74887,False
+e_w353352034-220,ep_m_oil_steam_turbine_G100000412075,100.0,oil,Termoeléctrica de Santa Cruz power station_1 -- mothballed,e_w353352034-220,way/353352034-220,23.019234,-82.74887,False
+e_w353352034-220,ep_m_oil_steam_turbine_G100000412084,90.0,oil,CTE Máximo Gómez power station_7 -- mothballed,e_w353352034-220,way/353352034-220,23.019234,-82.74887,False
+e_w353352034-220,ep_m_oil_steam_turbine_G100000412086,90.0,oil,CTE Máximo Gómez power station_5 -- mothballed,e_w353352034-220,way/353352034-220,23.019234,-82.74887,False
+e_w353352034-220,ep_oil_internal_combustion_G100000412079,80.0,oil,Powership Ela Sultan power station_1 -- operating,e_w353352034-220,way/353352034-220,23.01663,-82.752115,False
+e_w353352034-220,ep_oil_steam_turbine_G100000412083,90.0,oil,CTE Máximo Gómez power station_8 -- operating,e_w353352034-220,way/353352034-220,23.019234,-82.74887,False
+e_w353352034-220,ep_oil_steam_turbine_G100000412085,100.0,oil,CTE Máximo Gómez power station_6 -- operating,e_w353352034-220,way/353352034-220,23.019234,-82.74887,False
+e_w38489261-220,ep_oil_internal_combustion_G100000412076,240.0,oil,Powership Suheyla Sultan power station_1 -- operating,e_w38489261-220,way/38489261-220,23.122239,-82.352993,False
+e_w38489261-220,ep_oil_steam_turbine_G100000412080,60.0,oil,Otto Parellada power station_7 -- operating,e_w38489261-220,way/38489261-220,23.125426,-82.35898,False
+e_w38538083-220,ep_oil_internal_combustion_G100001008741,63.0,oil,Powership Erol Bey power station_1 -- operating,e_w38538083-220,way/38538083-220,23.116564,-82.337582,False
+e_w38668448-220,ep_oil_internal_combustion_G100000412082,174.0,oil,EG Punta Gorda power station_1 -- operating,e_w38668448-220,way/38668448-220,20.63041,-74.858639,False
+e_w733325755-220,ep_oil_internal_combustion_G100000412098,184.0,oil,Central Eléctrica Diésel Moa power station_1-10 -- operating,e_w733325755-220,way/733325755-220,20.681826,-74.972022,False
+e_w786471381-220,ep_bioenergy_w786471381-220__ember,216.66666666666666,bioenergy,Aggregated Plant - EMBER Gap - way/786471381-220_Missing Bioenergy Capacity -- operating,e_w786471381-220,way/786471381-220,22.701602332974097,-82.64745675763561,False
+elc_spv_001,ep_solar_001__irena,58.69832910205643,solar,Aggregated Plant -- operating,elc_spv_001,way/147518032-220,20.499379083973707,-76.01194279139665,False
+elc_spv_001,ep_solar_pv_001,20.0,solar,Aggregated Plant -- construction,elc_spv_001,way/147518032-220,20.14180022016371,-75.96921950258793,False
+elc_spv_004,ep_solar_004__irena,57.20445807306936,solar,Aggregated Plant -- operating,elc_spv_004,way/235919441-220,21.28104758861353,-77.8104368916045,False
+elc_spv_004,ep_solar_pv_004,22.5,solar,Aggregated Plant -- operating,elc_spv_004,way/235919441-220,21.225968010919196,-78.24196950417851,False
+elc_spv_006,ep_solar_pv_006,4.4,solar,Aggregated Plant -- operating,elc_spv_006,CU7-220,22.201783130391973,-79.95446619585923,False
+elc_spv_007,ep_solar_pv_007,9.000000000000002,solar,Aggregated Plant -- construction,elc_spv_007,way/783350096-220,21.428503031935392,-79.01570313089024,False
+elc_spv_009,ep_solar_pv_009,92.9,solar,Aggregated Plant -- operating,elc_spv_009,way/88674172-220,22.521297236663713,-82.86495739478804,False
+elc_spv_011,ep_solar_011__irena,53.253212824874204,solar,Aggregated Plant -- operating,elc_spv_011,way/38491455-220,22.390508915739584,-81.56857557956046,False
+elc_spv_011,ep_solar_pv_011,13.799999999999999,solar,Aggregated Plant -- operating,elc_spv_011,way/38491455-220,22.660499606838506,-81.8296943858206,False
+elc_spv_013,ep_solar_pv_013,5.0,solar,Aggregated Plant -- operating,elc_spv_013,CU5-220,22.612673589381874,-81.62733764437229,False
+elc_won_002,ep_windon_wind_002,1.6,windon,Aggregated Plant -- operating,elc_won_002,way/88674172-220,22.518667235682297,-83.3293039076366,False
+elc_won_005,ep_windon_005__irena,1.6583555507915404,windon,Aggregated Plant -- operating,elc_won_005,way/147108772-220,22.92723701854465,-81.5771426763537,False
+elc_won_011,ep_windon_011__irena,1.6813033238987312,windon,Aggregated Plant -- operating,elc_won_011,way/353352033-220,21.633062610313054,-78.66140866991094,False
+elc_won_012,ep_windon_012__irena,1.460341125309729,windon,Aggregated Plant -- operating,elc_won_012,way/147156670-220,20.83463003828764,-75.78250787587717,False
+elc_won_012,ep_windon_wind_012,160.60000000000002,windon,Aggregated Plant -- operating,elc_won_012,way/147156670-220,20.846271976835602,-76.2470546320716,False

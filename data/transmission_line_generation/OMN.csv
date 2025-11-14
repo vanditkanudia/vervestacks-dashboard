@@ -1,0 +1,67 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_OM1-400,ep_gas_internal_combustion_G100000410539,120.0,gas,Musandam power plant_1 -- operating,e_OM1-400,OM1-400,26.056121,56.089118,False
+e_OM10-220,ep_gas_combined_cycle_G100000404685,456.0,gas,Barka I Independent Water and power plant_1 -- operating,e_OM10-220,OM10-220,23.7073,57.9845,False
+e_OM10-220,ep_gas_combined_cycle_G100000404686,688.0,gas,Barka II Independent Water and power plant_1 -- operating,e_OM10-220,OM10-220,23.707,57.9816,False
+e_OM10-220,ep_gas_combined_cycle_G100000404687,766.0,gas,Barka III Independent power plant_1 -- operating,e_OM10-220,OM10-220,23.707375,57.977055,False
+e_OM17-220,ep_gas_gas_turbine_G100000404689,90.0,gas,Manah power plant_2-1 -- operating,e_OM17-220,OM17-220,22.7067,57.5779,False
+e_OM17-220,ep_gas_gas_turbine_G100000404690,90.0,gas,Manah power plant_2-2 -- operating,e_OM17-220,OM17-220,22.7067,57.5779,False
+e_OM2-400,ep_oil_internal_combustion_G100000411534,84.0,oil,Khasab New power plant_1 -- operating,e_OM2-400,OM2-400,26.0883,56.23274,False
+e_w1100731217-400,ep_gas_combined_cycle_G100000404714,110.0,gas,Lekhwair power station_CC1 -- operating,e_w1100731217-400,way/1100731217-400,22.842128,55.4021,False
+e_w1226343137-400,ep_gas_combined_cycle_G100000404700,445.0,gas,Salalah Independent Water and power plant_CC1 -- operating,e_w1226343137-400,way/1226343137-400,17.038657,54.490113,False
+e_w1226343137-400,ep_gas_combined_cycle_G100000404702,225.0,gas,Salalah 2 Independent power plant_CC1 -- operating,e_w1226343137-400,way/1226343137-400,16.938682,53.972467,False
+e_w1226343137-400,ep_gas_combined_cycle_G100000408542,67.0,gas,Haima West power station_1 -- operating,e_w1226343137-400,way/1226343137-400,19.954732,56.267661,False
+e_w1226343137-400,ep_gas_combined_cycle_G100000411169,225.0,gas,Salalah 2 Independent power plant_CC2 -- operating,e_w1226343137-400,way/1226343137-400,16.938682,53.972467,False
+e_w1226343137-400,ep_gas_gas_turbine_G100000404708,126.0,gas,Amal power plant_1 -- operating,e_w1226343137-400,way/1226343137-400,18.333796,55.68432,False
+e_w1226343137-400,ep_gas_gas_turbine_G100000404709,126.0,gas,Amal power plant_2 -- operating,e_w1226343137-400,way/1226343137-400,18.333796,55.68432,False
+e_w1226343137-400,ep_gas_gas_turbine_G100000404710,132.0,gas,Amal power plant_3 -- construction,e_w1226343137-400,way/1226343137-400,18.333796,55.68432,False
+e_w1226343137-400,ep_gas_gas_turbine_G100000404715,126.0,gas,Mukhaizna power plant_1 -- operating,e_w1226343137-400,way/1226343137-400,19.3422,56.461109,False
+e_w1226343137-400,ep_gas_gas_turbine_G100000404716,126.0,gas,Mukhaizna power plant_2 -- operating,e_w1226343137-400,way/1226343137-400,19.3422,56.461109,False
+e_w1226343137-400,ep_gas_gas_turbine_G100000404723,75.0,gas,Rabab Harweel Project power plant_1 -- operating,e_w1226343137-400,way/1226343137-400,18.028623,54.640978,False
+e_w1226343137-400,ep_gas_gas_turbine_G100000404724,75.0,gas,Rabab Harweel Project power plant_2 -- operating,e_w1226343137-400,way/1226343137-400,18.028623,54.640978,False
+e_w1226560867-400,ep_oil_internal_combustion_G100000411533,57.6,oil,Masirah New power plant_1 -- operating,e_w1226560867-400,way/1226560867-400,20.467862,58.801624,False
+e_w1226560872-400,ep_gas_combined_cycle_G100000404711,326.0,gas,Duqm Independent Water and power plant_1 -- operating,e_w1226560872-400,way/1226560872-400,19.530361,57.615728,False
+e_w1226623891-400,ep_gas_combined_cycle_G100000404722,185.0,gas,Saih Rawl power plant_CC1 -- operating,e_w1226623891-400,way/1226623891-400,21.359443,56.731778,False
+e_w1226623891-400,ep_gas_gas_turbine_G100000404717,70.0,gas,Qarn Alam power plant_1 -- operating,e_w1226623891-400,way/1226623891-400,21.297364,57.098022,False
+e_w1226623891-400,ep_gas_gas_turbine_G100000404718,70.0,gas,Qarn Alam power plant_2 -- operating,e_w1226623891-400,way/1226623891-400,21.297364,57.098022,False
+e_w1226623891-400,ep_gas_gas_turbine_G100000404719,125.0,gas,Qarn Alam power plant_3 -- operating,e_w1226623891-400,way/1226623891-400,21.297364,57.098022,False
+e_w1226623891-400,ep_gas_gas_turbine_G100000404720,126.0,gas,Qarn Alam power plant_4 -- operating,e_w1226623891-400,way/1226623891-400,21.297364,57.098022,False
+e_w1226623891-400,ep_gas_gas_turbine_G100000404721,132.0,gas,Qarn Alam power plant_5 -- operating,e_w1226623891-400,way/1226623891-400,21.297364,57.098022,False
+e_w1227240144-400,ep_gas_gas_turbine_G100000404698,93.0,gas,Rusail power plant_7 -- operating,e_w1227240144-400,way/1227240144-400,23.5542,58.1993,False
+e_w1227240144-400,ep_gas_gas_turbine_G100000404699,93.0,gas,Rusail power plant_8 -- operating,e_w1227240144-400,way/1227240144-400,23.5542,58.1993,False
+e_w1227240144-400,ep_m_gas_gas_turbine_G100000404692,80.0,gas,Rusail power plant_1 -- mothballed,e_w1227240144-400,way/1227240144-400,23.5542,58.1993,False
+e_w1227240144-400,ep_m_gas_gas_turbine_G100000404693,80.0,gas,Rusail power plant_2 -- mothballed,e_w1227240144-400,way/1227240144-400,23.5542,58.1993,False
+e_w1227240144-400,ep_m_gas_gas_turbine_G100000404694,80.0,gas,Rusail power plant_3 -- mothballed,e_w1227240144-400,way/1227240144-400,23.5542,58.1993,False
+e_w1227240144-400,ep_m_gas_gas_turbine_G100000404695,80.0,gas,Rusail power plant_4 -- mothballed,e_w1227240144-400,way/1227240144-400,23.5542,58.1993,False
+e_w1227240144-400,ep_m_gas_gas_turbine_G100000404696,80.0,gas,Rusail power plant_5 -- mothballed,e_w1227240144-400,way/1227240144-400,23.5542,58.1993,False
+e_w1227240144-400,ep_m_gas_gas_turbine_G100000404697,80.0,gas,Rusail power plant_6 -- mothballed,e_w1227240144-400,way/1227240144-400,23.5542,58.1993,False
+e_w1305639475-220,ep_gas_combined_cycle_G100000404706,870.5,gas,Sohar III power plant_1 -- operating,e_w1305639475-220,way/1305639475-220,24.4885,56.6135,False
+e_w1305639475-220,ep_gas_combined_cycle_G100000411167,870.5,gas,Sohar III power plant_2 -- operating,e_w1305639475-220,way/1305639475-220,24.4885,56.6135,False
+e_w1305639475-400,ep_gas_combined_cycle_G100000404703,500.0,gas,Sohar Aluminum power plant_1 -- operating,e_w1305639475-400,way/1305639475-400,24.467949,56.637836,False
+e_w1305639475-400,ep_gas_combined_cycle_G100000404704,597.0,gas,Sohar power plant_1 -- operating,e_w1305639475-400,way/1305639475-400,24.472185,56.633203,False
+e_w1305639475-400,ep_gas_combined_cycle_G100000404705,766.0,gas,Sohar II power plant_1 -- operating,e_w1305639475-400,way/1305639475-400,24.470496,56.634902,False
+e_w1305639475-400,ep_gas_combined_cycle_G100000411168,500.0,gas,Sohar Aluminum power plant_2 -- operating,e_w1305639475-400,way/1305639475-400,24.467949,56.637836,False
+e_w570225834-400,ep_gas_combined_cycle_G100000404707,800.0,gas,Sur Independent power plant_1 -- operating,e_w570225834-400,way/570225834-400,22.655898,59.416961,False
+e_w570225834-400,ep_gas_combined_cycle_G100000411165,400.0,gas,Sur Independent power plant_3 -- operating,e_w570225834-400,way/570225834-400,22.655898,59.416961,False
+e_w570225834-400,ep_gas_combined_cycle_G100000411166,800.0,gas,Sur Independent power plant_2 -- operating,e_w570225834-400,way/570225834-400,22.655898,59.416961,False
+e_w570225834-400,ep_gas_gas_turbine_G100000404682,95.0,gas,Al Kamil power plant_GT1 -- operating,e_w570225834-400,way/570225834-400,22.3903,59.0695,False
+e_w570225834-400,ep_gas_gas_turbine_G100000404683,95.0,gas,Al Kamil power plant_GT2 -- operating,e_w570225834-400,way/570225834-400,22.3903,59.0695,False
+e_w570225834-400,ep_gas_gas_turbine_G100000404684,95.0,gas,Al Kamil power plant_GT3 -- operating,e_w570225834-400,way/570225834-400,22.3903,59.0695,False
+e_w570225834-400,ep_gas_gas_turbine_G100000410072,280.0,gas,Qalhat LNG power station_1 -- operating,e_w570225834-400,way/570225834-400,22.65971,59.405567,False
+e_w570225834-400,ep_gas_internal_combustion_G100000411532,119.7,gas,New Qalhat LNG power station_1 -- operating,e_w570225834-400,way/570225834-400,22.65971,59.405567,False
+e_w830305306-220,ep_gas_combined_cycle_G100000404688,1539.0,gas,Ibri Independent power plant_1 -- operating,e_w830305306-220,way/830305306-220,23.365562,56.283718,False
+elc_spv_001,ep_solar_pv_001,100.0,solar,Aggregated Plant -- construction,elc_spv_001,OM16-400,23.691441863468103,56.77348455267478,False
+elc_spv_001,ep_solar_pv_G100000804670,500.0,solar,Ibri 2 Solar_-- -- operating,elc_spv_001,OM16-400,23.3683,56.2313,False
+elc_spv_003,ep_solar_pv_G100000804728,500.0,solar,Manah solar farm_1 -- construction,elc_spv_003,way/1225683415-400,22.6043,57.6639,False
+elc_spv_003,ep_solar_pv_G100000804729,500.0,solar,Manah solar farm_2 -- operating,elc_spv_003,way/1225683415-400,22.6043,57.6639,False
+elc_spv_005,ep_solar_pv_005,4.4,solar,Aggregated Plant -- operating,elc_spv_005,OM14-400,23.311365076847725,58.01664971026584,False
+elc_spv_005,ep_solar_thermal_005,100.0,solar,Aggregated Plant -- operating,elc_spv_005,OM14-400,23.3621602850304,57.59247353788656,False
+elc_spv_005,ep_solar_thermal_G100000811453,300.0,solar,Miraah solar farm_2 -- construction,elc_spv_005,OM14-400,23.6056,58.236,False
+elc_spv_005,ep_solar_thermal_G100000811454,621.0,solar,Miraah solar farm_3 -- construction,elc_spv_005,OM14-400,23.6056,58.236,False
+elc_spv_006,ep_solar_pv_G100000804685,500.0,solar,Scatec-Duqm Solar_1 -- construction,elc_spv_006,way/1226560872-400,19.6395,57.6779,False
+elc_spv_007,ep_solar_pv_007,100.0,solar,Aggregated Plant -- construction,elc_spv_007,way/1226343137-400,21.328705566391772,56.84634623576452,False
+elc_spv_009,ep_solar_pv_009,17.0,solar,Aggregated Plant -- operating,elc_spv_009,way/1226560867-400,21.943302303453073,58.52777962611483,False
+elc_spv_012,ep_solar_pv_012,25.0,solar,Aggregated Plant -- operating,elc_spv_012,OM7-220,24.070739162708044,55.636033389114615,False
+elc_spv_016,ep_solar_pv_016,105.0,solar,Aggregated Plant -- operating,elc_spv_016,way/1226343137-400,20.44980467004197,57.4382812764271,False
+elc_spv_020,ep_solar_pv_G100000834609,558.0,solar,Al Mazyunah solar farm_-- -- operating,elc_spv_020,way/1226343137-400,17.8391,52.6576,False
+elc_won_009,ep_windon_wind_009,100.0,windon,Aggregated Plant -- construction,elc_won_009,way/1226560867-400,21.585540841657878,58.56384778828948,False
+elc_won_010,ep_windon_wind_010,50.0,windon,Aggregated Plant -- operating,elc_won_010,way/1226343137-400,20.513999168250788,56.25549735644183,False

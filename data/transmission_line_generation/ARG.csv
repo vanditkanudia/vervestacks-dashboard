@@ -1,0 +1,192 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_coal__ember,5.000000000000004,coal,Aggregated Plant -- operating,,,,,False
+e_AR1-345,ep_solar_pv_345,208.0,solar,Aggregated Plant -- operating,e_AR1-345,AR1-345,-24.197193927825126,-68.57010233157567,False
+e_AR10-500,ep_hydro_dam_G100000604098,270.0,hydro,Brazo Aña Cuá hydroelectric plant_ -- construction,e_AR10-500,AR10-500,-27.4823,-56.7213,False
+e_AR10-500,ep_hydro_dam_G100000604100,3100.0,hydro,Yacyretá hydroelectric plant_ -- operating,e_AR10-500,AR10-500,-27.4823,-56.7212,False
+e_AR12-500,ep_gas_gas_turbine_G100000406915,60.0,gas,Frias power station_1 -- operating,e_AR12-500,AR12-500,-28.6072,-65.1228,False
+e_AR13-500,ep_bioenergy_AR13-500,80.0,bioenergy,Aggregated Plant -- operating,e_AR13-500,AR13-500,-28.077215680091893,-55.644393851205734,False
+e_AR13-500,ep_bioenergy_AR13-500__ember,63.03030303030303,bioenergy,Aggregated Plant - EMBER Gap - AR13-500_Missing Bioenergy Capacity -- operating,e_AR13-500,AR13-500,-28.433298570712594,-55.69943413789517,False
+e_AR15-220,ep_gas_internal_combustion_G100000412239,50.0,gas,Villa Ocampo thermal power station_1 -- operating,e_AR15-220,AR15-220,-28.516149,-59.345729,False
+e_AR22-500,ep_hydro_dam_G100000604101,1890.0,hydro,Salto Grande hydroelectric plant_ -- operating,e_AR22-500,AR22-500,-31.2751,-57.9385,False
+e_AR25-500,ep_gas_AR25-500__ember,11.8282959108431,gas,Aggregated Plant -- operating,e_AR25-500,AR25-500,-31.459345910655234,-63.7864447458373,False
+e_AR25-500,ep_gas_combined_cycle_G100000406870,466.0,gas,Bicentenario power station_CC -- operating,e_AR25-500,AR25-500,-31.66766,-63.8337,False
+e_AR27-500,ep_gas_gas_turbine_G100000406544,292.0,gas,Brigadier López power station_BLOPTG01 -- operating,e_AR27-500,AR27-500,-31.71091,-60.7806,False
+e_AR27-500,ep_gas_steam_turbine_G100000406934,140.0,gas,Brigadier López power station_ST1 -- construction,e_AR27-500,AR27-500,-31.71091,-60.7806,False
+e_AR27-500,ep_hydro_ror_G100001027063,45.0,hydro,Quebrada De Ullum hydroelectric plant_ -- operating,e_AR27-500,AR27-500,-31.2567,-61.5203,False
+e_AR29-500,ep_gas_gas_turbine_G100000406881,50.0,gas,Modesto Maranzana power station_TG8 -- operating,e_AR29-500,AR29-500,-33.1607,-64.3649,False
+e_AR29-500,ep_gas_gas_turbine_G100000406882,60.0,gas,Modesto Maranzana power station_MMARTG05 -- operating,e_AR29-500,AR29-500,-33.1607,-64.3649,False
+e_AR29-500,ep_gas_gas_turbine_G100000406883,60.0,gas,Modesto Maranzana power station_MMARTG04 -- operating,e_AR29-500,AR29-500,-33.1607,-64.3649,False
+e_AR29-500,ep_gas_gas_turbine_G100000406884,60.0,gas,Modesto Maranzana power station_MMARTG03 -- operating,e_AR29-500,AR29-500,-33.1607,-64.3649,False
+e_AR29-500,ep_gas_gas_turbine_G100000410873,50.0,gas,Modesto Maranzana power station_7 -- operating,e_AR29-500,AR29-500,-33.1607,-64.3649,False
+e_AR29-500,ep_gas_gas_turbine_G100000410874,50.0,gas,Modesto Maranzana power station_6 -- operating,e_AR29-500,AR29-500,-33.1607,-64.3649,False
+e_AR29-500,ep_gas_steam_turbine_G100000410872,125.0,gas,Modesto Maranzana power station_TV9 -- construction,e_AR29-500,AR29-500,-33.1607,-64.3649,False
+e_AR29-500,ep_nuclear_G100000500385,656.0,nuclear,Embalse nuclear power plant_-- -- operating,e_AR29-500,AR29-500,-32.2316,-64.4422,False
+e_AR32-500,ep_gas_AR32-500__ember,14.136589223698165,gas,Aggregated Plant -- operating,e_AR32-500,AR32-500,-32.43223292990854,-60.95349366683149,False
+e_AR32-500,ep_gas_combined_cycle_G100000406850,865.0,gas,Timbúes power station_1 -- operating,e_AR32-500,AR32-500,-32.577915,-60.790519,False
+e_AR32-500,ep_gas_gas_turbine_G100000406851,170.0,gas,Timbúes cogeneration power station_1 -- operating,e_AR32-500,AR32-500,-32.58697,-60.791719,False
+e_AR32-500,ep_oil_combined_cycle_G100000406845,841.0,oil,Vuelta De Obligado power station_1 -- operating,e_AR32-500,AR32-500,-32.579366,-60.788444,False
+e_AR33-500,ep_gas_combined_cycle_G100000409767,391.0,gas,Terminal 6 San Lorenzo cogeneration plant_1 -- operating,e_AR33-500,AR33-500,-32.663009,-60.749203,False
+e_AR34-500,ep_gas_internal_combustion_G100000412245,65.0,gas,Cañada de Gómez thermal power station_1 -- operating,e_AR34-500,AR34-500,-32.781845,-61.41844,False
+e_AR35-220,ep_gas_internal_combustion_G100000412241,80.0,gas,Pérez thermal power station_1 -- operating,e_AR35-220,AR35-220,-33.018938,-60.823985,False
+e_AR35-500,ep_gas_steam_turbine_G100000406853,140.0,gas,Sorrento power station_SORRTV13 -- operating,e_AR35-500,AR35-500,-32.90519,-60.680324,False
+e_AR37-220,ep_gas_combined_cycle_G100000406888,306.0,gas,Luján De Cuyo power station_CC -- operating,e_AR37-220,AR37-220,-33.055644,-68.982588,False
+e_AR37-220,ep_gas_combined_cycle_G100000406889,95.0,gas,Luján De Cuyo power station_cogen (LDCUTV26/27) -- operating,e_AR37-220,AR37-220,-33.055644,-68.982588,False
+e_AR37-220,ep_gas_steam_turbine_G100000406890,60.0,gas,Luján De Cuyo power station_LDCUTV12 -- operating,e_AR37-220,AR37-220,-33.055644,-68.982588,False
+e_AR37-220,ep_gas_steam_turbine_G100000406891,60.0,gas,Luján De Cuyo power station_LDCUTV11 -- operating,e_AR37-220,AR37-220,-33.055644,-68.982588,False
+e_AR37-220,ep_hydro_dam_G100000600022,120.0,hydro,Cacheuta Nueva hydroelectric plant_ -- operating,e_AR37-220,AR37-220,-33.0291,-69.1109,False
+e_AR37-220,ep_hydro_ror_G100001027057,51.0,hydro,Alvarez Condarco hydroelectric plant_ -- operating,e_AR37-220,AR37-220,-33.0452,-69.0516,False
+e_AR39-220,ep_gas_gas_turbine_G100000406549,54.0,gas,Arroyo Seco Dreyfus power station_TG1 -- operating,e_AR39-220,AR39-220,-33.124617,-60.521965,False
+e_AR39-220,ep_gas_gas_turbine_G100000412247,54.0,gas,Arroyo Seco Dreyfus power station_TG2 -- operating,e_AR39-220,AR39-220,-33.124617,-60.521965,False
+e_AR42-500,ep_coal_subcritical_G100000108783,375.0,coal,San Nicolás power station_Unit 5 -- operating,e_AR42-500,AR42-500,-33.35492,-60.172917,False
+e_AR42-500,ep_gas_AR42-500__ember,15.980492165919662,gas,Aggregated Plant -- operating,e_AR42-500,AR42-500,-33.25795288452415,-60.12135356887854,False
+e_AR42-500,ep_gas_combined_cycle_G100000406554,870.0,gas,AES Paraná power station_1 -- operating,e_AR42-500,AR42-500,-33.354957,-60.171573,False
+e_AR42-500,ep_gas_steam_turbine_G100000406857,75.0,gas,San Nicolás power station_Unit 4 -- operating,e_AR42-500,AR42-500,-33.35492,-60.172917,False
+e_AR42-500,ep_gas_steam_turbine_G100000406858,75.0,gas,San Nicolás power station_Unit 3 -- operating,e_AR42-500,AR42-500,-33.35492,-60.172917,False
+e_AR42-500,ep_gas_steam_turbine_G100000406859,75.0,gas,San Nicolás power station_Unit 2 -- operating,e_AR42-500,AR42-500,-33.35492,-60.172917,False
+e_AR42-500,ep_gas_steam_turbine_G100000406860,75.0,gas,San Nicolás power station_Unit 1 -- operating,e_AR42-500,AR42-500,-33.35492,-60.172917,False
+e_AR43-220,ep_gas_gas_turbine_G100000406550,163.0,gas,Argener power station_ARGETG01 -- operating,e_AR43-220,AR43-220,-33.36605,-60.1478,False
+e_AR47-220,ep_gas_gas_turbine_G100000406895,51.0,gas,Las Palmas power station (Argentina)_TG1 -- operating,e_AR47-220,AR47-220,-34.080097,-59.127184,False
+e_AR47-220,ep_gas_gas_turbine_G100000410878,50.0,gas,Las Palmas power station (Argentina)_TG4 -- operating,e_AR47-220,AR47-220,-34.080097,-59.127184,False
+e_AR47-220,ep_gas_gas_turbine_G100000410879,50.0,gas,Las Palmas power station (Argentina)_TG3 -- operating,e_AR47-220,AR47-220,-34.080097,-59.127184,False
+e_AR47-220,ep_gas_gas_turbine_G100000410880,51.0,gas,Las Palmas power station (Argentina)_TG2 -- operating,e_AR47-220,AR47-220,-34.080097,-59.127184,False
+e_AR47-220,ep_m_nuclear_G100000500600,29.0,nuclear,CAREM nuclear power plant_-- -- mothballed,e_AR47-220,AR47-220,-33.9678,-59.21301,False
+e_AR47-220,ep_nuclear_G100000500382,745.0,nuclear,Atucha nuclear power plant_2 -- operating,e_AR47-220,AR47-220,-33.9672,-59.2073,False
+e_AR47-220,ep_nuclear_G100000500502,362.0,nuclear,Atucha nuclear power plant_1 -- operating,e_AR47-220,AR47-220,-33.96701,-59.2095,False
+e_AR48-220,ep_gas_gas_turbine_G100000412240,60.0,gas,Salto II power station_1 -- operating,e_AR48-220,AR48-220,-34.304577,-60.224063,False
+e_AR49-220,ep_m_gas_gas_turbine_G100000406880,64.0,gas,Matheu III power station_TG1 -- mothballed,e_AR49-220,AR49-220,-34.397804,-58.837117,False
+e_AR49-220,ep_m_gas_gas_turbine_G100000410699,64.0,gas,Matheu III power station_TG2 -- mothballed,e_AR49-220,AR49-220,-34.397804,-58.837117,False
+e_AR49-220,ep_m_gas_gas_turbine_G100000410875,63.0,gas,Matheu III power station_TG4 -- mothballed,e_AR49-220,AR49-220,-34.397804,-58.837117,False
+e_AR49-220,ep_m_gas_gas_turbine_G100000410876,63.0,gas,Matheu III power station_TG3 -- mothballed,e_AR49-220,AR49-220,-34.397804,-58.837117,False
+e_AR49-220,ep_oil_internal_combustion_G100000412242,99.6,oil,Parque Pilar thermal power plant_1 -- operating,e_AR49-220,AR49-220,-34.403245,-58.966139,False
+e_AR52-220,ep_hydro_dam_G100000600018,150.0,hydro,Agua Del Toro hydroelectric plant_ -- operating,e_AR52-220,AR52-220,-34.5839,-69.0362,False
+e_AR55-220,ep_hydro_dam_G100000600033,224.0,hydro,Los Reyunos hydroelectric plant_ -- operating,e_AR55-220,AR55-220,-34.6015,-68.641,False
+e_AR56-220,ep_gas_AR56-220__ember,23.86146992637748,gas,Aggregated Plant -- operating,e_AR56-220,AR56-220,-34.710320145205614,-58.19396804351156,False
+e_AR56-220,ep_gas_combined_cycle_G100000406874,798.0,gas,Puerto power station_Puerto CC -- operating,e_AR56-220,AR56-220,-34.571796,-58.384489,False
+e_AR56-220,ep_gas_steam_turbine_G100000406865,250.0,gas,Puerto power station_Puerto Nuevo PNUETV09 -- operating,e_AR56-220,AR56-220,-34.571796,-58.384489,False
+e_AR56-220,ep_gas_steam_turbine_G100000406866,194.0,gas,Puerto power station_Puerto Nuevo PNUETV08 -- operating,e_AR56-220,AR56-220,-34.571796,-58.384489,False
+e_AR56-220,ep_gas_steam_turbine_G100000406867,145.0,gas,Puerto power station_Puerto Nuevo PNUETV07 -- operating,e_AR56-220,AR56-220,-34.571796,-58.384489,False
+e_AR56-220,ep_gas_steam_turbine_G100000406875,250.0,gas,Puerto power station_Nuevo Puerto NPUETV06 -- operating,e_AR56-220,AR56-220,-34.571796,-58.384489,False
+e_AR56-220,ep_gas_steam_turbine_G100000406876,110.0,gas,Puerto power station_Nuevo Puerto NPUETV05 -- operating,e_AR56-220,AR56-220,-34.571796,-58.384489,False
+e_AR57-220,ep_gas_AR57-220__ember,191.76727184506726,gas,Aggregated Plant - EMBER Gap - AR57-220_Missing Gas Capacity -- operating,e_AR57-220,AR57-220,-34.460450164442285,-58.26591613024928,False
+e_AR57-220,ep_gas_combined_cycle_G100000406534,861.0,gas,Dock Sud power station_1 -- operating,e_AR57-220,AR57-220,-34.6529,-58.3419,False
+e_AR57-220,ep_gas_combined_cycle_G100000406541,851.0,gas,Costanera power station_CC2 -- operating,e_AR57-220,AR57-220,-34.6254,-58.3392,False
+e_AR57-220,ep_gas_combined_cycle_G100000406543,322.0,gas,Costanera power station_CC1 -- operating,e_AR57-220,AR57-220,-34.6254,-58.3392,False
+e_AR57-220,ep_gas_steam_turbine_G100000406535,350.0,gas,Costanera power station_COSTTV05 -- operating,e_AR57-220,AR57-220,-34.6254,-58.3392,False
+e_AR57-220,ep_gas_steam_turbine_G100000406536,310.0,gas,Costanera power station_COSTTV06 -- operating,e_AR57-220,AR57-220,-34.6254,-58.3392,False
+e_AR57-220,ep_gas_steam_turbine_G100000406537,123.0,gas,Costanera power station_COSTTV01 -- operating,e_AR57-220,AR57-220,-34.6254,-58.3392,False
+e_AR57-220,ep_gas_steam_turbine_G100000406538,120.0,gas,Costanera power station_COSTTV04 -- operating,e_AR57-220,AR57-220,-34.6254,-58.3392,False
+e_AR57-220,ep_gas_steam_turbine_G100000406539,116.0,gas,Costanera power station_COSTTV02 -- operating,e_AR57-220,AR57-220,-34.6254,-58.3392,False
+e_AR57-220,ep_gas_steam_turbine_G100000406540,112.0,gas,Costanera power station_COSTTV03 -- operating,e_AR57-220,AR57-220,-34.6254,-58.3392,False
+e_AR67-220,ep_gas_AR67-220__ember,14.560003973393473,gas,Aggregated Plant -- operating,e_AR67-220,AR67-220,-34.78845840166653,-57.9554938173737,False
+e_AR67-220,ep_gas_combined_cycle_G100000406921,848.0,gas,Ensenada Barragán power station_TG01/TG02/TV01 -- operating,e_AR67-220,AR67-220,-34.858613,-57.952353,False
+e_AR67-220,ep_gas_gas_turbine_G100000406896,128.0,gas,La Plata Cogeneración power station_LPC I -- operating,e_AR67-220,AR67-220,-34.890435,-57.922766,False
+e_AR67-220,ep_gas_gas_turbine_G100000406897,90.0,gas,La Plata Cogeneración power station_LPC II -- operating,e_AR67-220,AR67-220,-34.890435,-57.922766,False
+e_AR68-220,ep_gas_combined_cycle_G100001006646,304.0,gas,Ezeiza power station_CC -- operating,e_AR68-220,AR68-220,-34.903289,-58.616194,False
+e_AR69-500,ep_gas_AR69-500__ember,21.21171310570362,gas,Aggregated Plant -- operating,e_AR69-500,AR69-500,-34.969543680797386,-58.6264758556183,False
+e_AR69-500,ep_gas_combined_cycle_G100000406912,684.0,gas,Genelba power station_CC-1 -- operating,e_AR69-500,AR69-500,-34.9022,-58.7333,False
+e_AR69-500,ep_gas_combined_cycle_G100000406913,569.0,gas,Genelba power station_CC-2 -- operating,e_AR69-500,AR69-500,-34.9022,-58.7333,False
+e_AR70-220,ep_hydro_dam_G100000600035,131.0,hydro,Nihuil 2 hydroelectric plant_ -- operating,e_AR70-220,AR70-220,-34.9125,-68.6237,False
+e_AR70-220,ep_hydro_ror_G100001027061,74.0,hydro,Nihuil I hydroelectric plant_ -- operating,e_AR70-220,AR70-220,-34.9907,-68.6237,False
+e_AR70-220,ep_hydro_ror_G100001027062,52.0,hydro,Nihuil III hydroelectric plant_ -- operating,e_AR70-220,AR70-220,-34.8821,-68.576,False
+e_AR78-500,ep_gas_gas_turbine_G100000406848,82.0,gas,Oscar Smith power station_TG18 -- operating,e_AR78-500,AR78-500,-37.2479,-56.9966,False
+e_AR78-500,ep_gas_gas_turbine_G100000410178,50.0,gas,9 de Julio power station_24 -- operating,e_AR78-500,AR78-500,-38.049648,-57.545527,False
+e_AR78-500,ep_gas_gas_turbine_G100000410179,50.0,gas,9 de Julio power station_23 -- operating,e_AR78-500,AR78-500,-38.049648,-57.545527,False
+e_AR79-330,ep_gas_combined_cycle_G100000406545,250.0,gas,Barker power station_CC -- operating,e_AR79-330,AR79-330,-37.547725,-59.455135,False
+e_AR79-330,ep_gas_steam_turbine_G100000406879,66.0,gas,Necochea power station_NECOTV03 -- operating,e_AR79-330,AR79-330,-38.5785,-58.7109,False
+e_AR81-500,ep_gas_AR81-500__ember,13.344393885558556,gas,Aggregated Plant -- operating,e_AR81-500,AR81-500,-38.30026368988216,-68.39807167075301,False
+e_AR81-500,ep_gas_combined_cycle_G100000406892,555.0,gas,Loma de la Lata power station_CC -- operating,e_AR81-500,AR81-500,-38.5127,-68.6061,False
+e_AR81-500,ep_gas_gas_turbine_G100000406893,105.0,gas,Loma de la Lata power station_GT 2 -- operating,e_AR81-500,AR81-500,-38.5127,-68.6061,False
+e_AR81-500,ep_gas_gas_turbine_G100000406894,105.0,gas,Loma de la Lata power station_GT 1 -- operating,e_AR81-500,AR81-500,-38.5127,-68.6061,False
+e_AR81-500,ep_gas_gas_turbine_G100000406962,107.0,gas,Loma Campana power station_2 -- operating,e_AR81-500,AR81-500,-38.359958,-68.714725,False
+e_AR81-500,ep_gas_gas_turbine_G100000406963,105.0,gas,Loma Campana power station_1 -- operating,e_AR81-500,AR81-500,-38.359958,-68.714725,False
+e_AR81-500,ep_hydro_dam_G100000600038,486.0,hydro,Planicie Banderita hydroelectric plant_ -- operating,e_AR81-500,AR81-500,-38.5595,-68.4744,False
+e_AR83-500,ep_gas_gas_turbine_G100000406903,288.0,gas,Guillermo Brown power station_GT-12 -- operating,e_AR83-500,AR83-500,-38.686484,-62.418512,False
+e_AR83-500,ep_gas_gas_turbine_G100000406904,288.0,gas,Guillermo Brown power station_GT-11 -- operating,e_AR83-500,AR83-500,-38.686484,-62.418512,False
+e_AR84-500,ep_gas_combined_cycle_G100000406862,190.0,gas,Roca power station_ROCATG01 -- operating,e_AR84-500,AR84-500,-38.945996,-67.602989,False
+e_AR84-500,ep_hydro_ror_G100001027058,60.0,hydro,Casa De Piedra hydroelectric plant_ -- operating,e_AR84-500,AR84-500,-38.2143,-67.1908,False
+e_AR85-500,ep_gas_combined_cycle_G100000406553,672.0,gas,Agua Del Cajón power station_1 -- operating,e_AR85-500,AR85-500,-38.9362,-68.357,False
+e_AR86-500,ep_hydro_dam_G100000600025,1200.0,hydro,Chocón hydroelectric plant_ -- operating,e_AR86-500,AR86-500,-39.2653,-68.7556,False
+e_AR87-500,ep_hydro_dam_G100000600036,285.0,hydro,Pichi Picun Leufu hydroelectric plant_ -- operating,e_AR87-500,AR87-500,-40.0123,-69.9838,False
+e_AR89-500,ep_hydro_dam_G100000600037,1424.0,hydro,Piedra Del Aguila hydroelectric plant_ -- operating,e_AR89-500,AR89-500,-40.1901,-69.9934,False
+e_AR9-500,ep_bioenergy_AR9-500,81.99999999999999,bioenergy,Aggregated Plant -- operating,e_AR9-500,AR9-500,-27.005291255946275,-55.81811628290928,False
+e_AR9-500,ep_bioenergy_AR9-500__ember,64.6060606060606,bioenergy,Aggregated Plant - EMBER Gap - AR9-500_Missing Bioenergy Capacity -- operating,e_AR9-500,AR9-500,-27.222858362967244,-55.526506772704074,False
+e_AR9-500,ep_hydro_dam_G100000600041,120.0,hydro,Urugua-í hydroelectric plant_ -- operating,e_AR9-500,AR9-500,-25.8766,-54.5687,False
+e_AR90-500,ep_hydro_dam_G100000600019,1040.0,hydro,Alicura hydroelectric plant_ -- operating,e_AR90-500,AR90-500,-40.5841,-70.7476,False
+e_AR91-330,ep_gas_combined_cycle_G100000406551,465.0,gas,Aluar Puerto Madryn power station_3 -- operating,e_AR91-330,AR91-330,-42.7368,-65.055,False
+e_AR91-330,ep_gas_combined_cycle_G100000406552,120.0,gas,Aluar Puerto Madryn power station_2 -- operating,e_AR91-330,AR91-330,-42.7368,-65.055,False
+e_AR92-330,ep_gas_combined_cycle_G100000406873,125.0,gas,Patagonia power station_1 -- operating,e_AR92-330,AR92-330,-45.7926,-67.5139,False
+e_AR92-330,ep_gas_combined_cycle_G100000406922,63.0,gas,Electropatagonia power station_1 -- operating,e_AR92-330,AR92-330,-45.814397,-67.444311,False
+e_AR92-330,ep_gas_internal_combustion_G100000412243,58.5,gas,Manantiales Behr power station_1 -- operating,e_AR92-330,AR92-330,-45.660234,-67.809741,False
+e_AR93-500,ep_hydro_dam_G100000600028,950.0,hydro,Jorge Cepernic hydroelectric plant_ -- construction,e_AR93-500,AR93-500,-50.1859,-70.1245,False
+e_AR94-1320,ep_hydro_dam_G100000600034,360.0,hydro,Néstor Kirchner hydroelectric plant_ -- construction,e_AR94-1320,AR94-1320,-50.2128,-70.7833,False
+e_AR95-220,ep_coal_subcritical_G100000108586,120.0,coal,Río Turbio power station_Unit 2 -- construction,e_AR95-220,AR95-220,-51.546015,-72.231256,False
+e_AR95-220,ep_m_coal_subcritical_G100000108585,120.0,coal,Río Turbio power station_Unit 1 -- mothballed,e_AR95-220,AR95-220,-51.546015,-72.231256,False
+e_w193412175-220,ep_gas_combined_cycle_G100000406910,250.0,gas,General Rojo power station_CC -- operating,e_w193412175-220,way/193412175-220,-33.455263,-60.283586,False
+e_w194575899-500,ep_gas_gas_turbine_G100000406864,60.0,gas,Río Tercero power station_1 -- operating,e_w194575899-500,way/194575899-500,-32.161159,-64.154752,False
+e_w194575899-500,ep_hydro_ror_G100001027060,59.0,hydro,Los Molinos I hydroelectric plant_ -- operating,e_w194575899-500,way/194575899-500,-31.838,-64.4452,False
+e_w199287768-220,ep_m_gas_gas_turbine_G100000406887,64.0,gas,Luján power station_TG1 -- mothballed,e_w199287768-220,way/199287768-220,-34.557034,-59.03702,False
+e_w199287768-220,ep_m_gas_gas_turbine_G100000410877,63.0,gas,Luján power station_TG2 -- mothballed,e_w199287768-220,way/199287768-220,-34.557034,-59.03702,False
+e_w213578175-500,ep_hydro_ps_G100000600040,750.0,hydro,Rio Grande hydroelectric plant_ -- operating,e_w213578175-500,way/213578175-500,-32.224,-64.5673,False
+e_w215284916-500,ep_gas_combined_cycle_G100000406909,868.0,gas,Manuel Belgrano I power station_1 -- operating,e_w215284916-500,way/215284916-500,-34.1845,-59.006,False
+e_w215284916-500,ep_gas_w215284916-500__ember,22.919030644797605,gas,Aggregated Plant -- operating,e_w215284916-500,way/215284916-500,-34.20219911490465,-59.16387237192628,False
+e_w216301432-330,ep_gas_combined_cycle_G100000406542,160.0,gas,Cerro Dragón power station_1 -- operating,e_w216301432-330,way/216301432-330,-45.76302,-68.297974,False
+e_w216301432-330,ep_hydro_dam_G100000600027,472.0,hydro,Futaleufú hydroelectric plant_ -- operating,e_w216301432-330,way/216301432-330,-43.129,-71.6299,False
+e_w247820688-345,ep_gas_combined_cycle_G100000406852,643.0,gas,TermoAndes power station_TANDTG01 -- operating,e_w247820688-345,way/247820688-345,-24.744,-65.0519,False
+e_w247820688-345,ep_hydro_dam_G100000600021,104.0,hydro,Cabra Corral hydroelectric plant_ -- operating,e_w247820688-345,way/247820688-345,-25.2716,-65.3299,False
+e_w247820688-500,ep_gas_gas_turbine_G100000406906,100.0,gas,Güemes power station_GUEMTG01 -- operating,e_w247820688-500,way/247820688-500,-24.6893,-65.042,False
+e_w247820688-500,ep_gas_steam_turbine_G100000406905,135.0,gas,Güemes power station_GUEMTV13 -- operating,e_w247820688-500,way/247820688-500,-24.6893,-65.042,False
+e_w247820688-500,ep_gas_steam_turbine_G100000406907,63.0,gas,Güemes power station_GUEMTV12 -- operating,e_w247820688-500,way/247820688-500,-24.6893,-65.042,False
+e_w247820688-500,ep_gas_steam_turbine_G100000406908,63.0,gas,Güemes power station_GUEMTV11 -- operating,e_w247820688-500,way/247820688-500,-24.6893,-65.042,False
+e_w277132135-220,ep_gas_combined_cycle_G100001006641,208.5,gas,San Pedro power station (Argentina)_CC -- operating,e_w277132135-220,way/277132135-220,-33.777779,-59.728923,False
+e_w303134158-330,ep_hydro_ror_G100001027059,60.0,hydro,Florentino Ameghino hydroelectric plant_ -- operating,e_w303134158-330,way/303134158-330,-43.6996,-66.4815,False
+e_w305103439-500,ep_gas_gas_turbine_G100000406863,50.0,gas,Riojana power station_1 -- operating,e_w305103439-500,way/305103439-500,-29.382547,-66.833677,False
+e_w305103439-500,ep_windon_wind_500,252.8,windon,Aggregated Plant -- operating,e_w305103439-500,way/305103439-500,-29.576520118292397,-66.53453048862087,False
+e_w314578738-500,ep_gas_gas_turbine_G100000406854,60.0,gas,Solalban Energía power station_2 -- operating,e_w314578738-500,way/314578738-500,-38.773819,-62.289998,False
+e_w314578738-500,ep_gas_gas_turbine_G100000406855,60.0,gas,Solalban Energía power station_1 -- operating,e_w314578738-500,way/314578738-500,-38.773819,-62.289998,False
+e_w314578738-500,ep_gas_steam_turbine_G100000406547,310.0,gas,Piedra Buena power station_BBLATV30 -- operating,e_w314578738-500,way/314578738-500,-38.7875,-62.2537,False
+e_w314578738-500,ep_gas_steam_turbine_G100000406548,310.0,gas,Piedra Buena power station_BBLATV29 -- operating,e_w314578738-500,way/314578738-500,-38.7875,-62.2537,False
+e_w314578738-500,ep_gas_w314578738-500__ember,10.107319831436367,gas,Aggregated Plant -- operating,e_w314578738-500,way/314578738-500,-38.61303591758029,-62.12328699528617,False
+e_w314578738-500,ep_oil_internal_combustion_G100000412244,99.6,oil,Ingeniero White thermal power plant_1 -- operating,e_w314578738-500,way/314578738-500,-38.784889,-62.252908,False
+e_w402574013-220,ep_hydro_dam_G100000600032,125.0,hydro,Los Caracoles hydroelectric plant_ -- operating,e_w402574013-220,way/402574013-220,-31.5192,-68.9814,False
+e_w402574013-220,ep_hydro_ror_G100001048222,65.0,hydro,Punta Negra hydroelectric plant_ -- construction,e_w402574013-220,way/402574013-220,-31.519,-68.8168,False
+e_w413038969-500,ep_hydro_dam_G100000600020,128.0,hydro,Arroyito hydroelectric plant_ -- operating,e_w413038969-500,way/413038969-500,-39.1067,-68.5857,False
+e_w432445320-500,ep_bioenergy_w432445320-500,40.0,bioenergy,Aggregated Plant -- operating,e_w432445320-500,way/432445320-500,-24.460207854555968,-64.64703216440358,False
+e_w432445320-500,ep_bioenergy_w432445320-500__ember,31.515151515151516,bioenergy,Aggregated Plant -- operating,e_w432445320-500,way/432445320-500,-24.731362432269254,-65.0601972562073,False
+e_w432445320-500,ep_solar_pv_500,315.0,solar,Aggregated Plant -- operating,e_w432445320-500,way/432445320-500,-24.278766976813188,-65.34439004161743,False
+e_w514047574-500,ep_gas_combined_cycle_G100000406846,250.0,gas,Villa María power station_CC -- operating,e_w514047574-500,way/514047574-500,-32.426774,-63.174047,False
+e_w624087559-220,ep_gas_combined_cycle_G100000406849,447.0,gas,Tucumán power station_Tucumán -- operating,e_w624087559-220,way/624087559-220,-26.9935,-65.1684,False
+e_w624087559-220,ep_gas_combined_cycle_G100000406861,382.0,gas,Tucumán power station_San Miguel de Tucumán -- operating,e_w624087559-220,way/624087559-220,-26.9935,-65.1684,False
+e_w624087559-220,ep_gas_combined_cycle_G100000406923,473.0,gas,Tucumán power station_El Bracho -- operating,e_w624087559-220,way/624087559-220,-26.9935,-65.1684,False
+e_w624087559-220,ep_gas_w624087559-220__ember,17.78341948720291,gas,Aggregated Plant -- operating,e_w624087559-220,way/624087559-220,-27.0961255255104,-65.06762639193379,False
+e_w624087559-500,ep_bioenergy_w624087559-500,62.0,bioenergy,Aggregated Plant -- construction,e_w624087559-500,way/624087559-500,-26.723816725464424,-65.17719479950851,False
+e_w624087559-500,ep_bioenergy_w624087559-500__ember,48.84848484848485,bioenergy,Aggregated Plant -- operating,e_w624087559-500,way/624087559-500,-27.169252908338528,-64.95958356046208,False
+e_w624087559-500,ep_gas_gas_turbine_G100000406898,60.0,gas,Independencia power station_INDETG02 -- operating,e_w624087559-500,way/624087559-500,-26.866453,-65.224112,False
+e_w624087559-500,ep_gas_gas_turbine_G100000406899,60.0,gas,Independencia power station_INDETG01 -- operating,e_w624087559-500,way/624087559-500,-26.866453,-65.224112,False
+e_w624087559-500,ep_gas_gas_turbine_G100000406900,50.0,gas,Independencia power station_4 -- operating,e_w624087559-500,way/624087559-500,-26.866453,-65.224112,False
+e_w624087559-500,ep_gas_gas_turbine_G100000406901,50.0,gas,Independencia power station_3 -- operating,e_w624087559-500,way/624087559-500,-26.866453,-65.224112,False
+e_w624087559-500,ep_gas_gas_turbine_G100000410176,122.5,gas,Cruz Alta power station_2 -- operating,e_w624087559-500,way/624087559-500,-26.994465,-65.161621,False
+e_w624087559-500,ep_gas_gas_turbine_G100000410177,122.5,gas,Cruz Alta power station_1 -- operating,e_w624087559-500,way/624087559-500,-26.994465,-65.161621,False
+elc_spv_010,ep_solar_pv_010,71.5,solar,Aggregated Plant -- operating,elc_spv_010,way/306717418-500,-33.84173408122517,-66.28523386915332,False
+elc_spv_011,ep_solar_pv_011,197.79999999999998,solar,Aggregated Plant -- operating,elc_spv_011,AR70-220,-35.81678061230763,-65.61747143652522,False
+elc_spv_013,ep_solar_pv_013,90.0,solar,Aggregated Plant -- construction,elc_spv_013,AR81-500,-38.702094984071955,-68.24281694236088,False
+elc_spv_018,ep_solar_pv_018,1.0,solar,Aggregated Plant -- construction,elc_spv_018,AR87-500,-35.93477248054048,-70.74192077213985,False
+elc_spv_026,ep_solar_pv_026,20.0,solar,Aggregated Plant -- operating,elc_spv_026,way/514047574-500,-30.090048361609274,-62.888025451046914,False
+elc_spv_036,ep_solar_pv_036,39.0,solar,Aggregated Plant -- operating,elc_spv_036,AR12-500,-28.44604979479329,-64.66421250690831,False
+elc_spv_037,ep_solar_pv_037,7.5,solar,Aggregated Plant -- construction,elc_spv_037,way/624087559-500,-27.081757017887757,-65.42074254159196,False
+elc_spv_038,ep_solar_pv_038,47.0,solar,Aggregated Plant -- operating,elc_spv_038,way/253226994-500,-30.732224133094753,-65.89424978087564,False
+elc_spv_039,ep_solar_pv_039,772.2,solar,Aggregated Plant -- operating,elc_spv_039,AR37-220,-32.84517236154868,-69.096388437101,False
+elc_spv_040,ep_solar_pv_040,159.0,solar,Aggregated Plant -- construction,elc_spv_040,AR7-220,-26.955942280306363,-66.80122338270412,False
+elc_spv_041,ep_solar_pv_041,290.7,solar,Aggregated Plant -- operating,elc_spv_041,AR26-220,-29.61247622192739,-67.66087602783162,False
+elc_spv_042,ep_solar_pv_042,10.0,solar,Aggregated Plant -- operating,elc_spv_042,AR9-500,-27.184919367045232,-56.286968054064516,False
+elc_spv_046,ep_solar_pv_046,150.0,solar,Aggregated Plant -- operating,elc_spv_046,AR4-500,-26.54073408826408,-61.57295667893018,False
+elc_won_008,ep_windon_wind_008,100.0,windon,Aggregated Plant -- operating,elc_won_008,AR87-500,-36.29296287977361,-70.7050446649674,False
+elc_won_010,ep_windon_wind_010,52.0,windon,Aggregated Plant -- operating,elc_won_010,AR92-330,-39.7886489862077,-63.35182351766691,False
+elc_won_011,ep_windon_wind_011,1373.5000000000002,windon,Aggregated Plant -- operating,elc_won_011,AR82-500,-38.35920809578402,-61.73383192788805,False
+elc_won_014,ep_windon_wind_014,113.0,windon,Aggregated Plant -- operating,elc_won_014,way/26119134-500,-38.1679312701423,-65.46087104834284,False
+elc_won_015,ep_windon_wind_015,1199.0,windon,Aggregated Plant -- operating,elc_won_015,way/303134158-330,-43.4089480211362,-66.34625018392957,False
+elc_won_022,ep_windon_wind_022,521.3,windon,Aggregated Plant -- operating,elc_won_022,AR93-500,-47.0784423458953,-68.84643043247736,False
+elc_won_023,ep_windon_wind_023,399.5,windon,Aggregated Plant -- operating,elc_won_023,AR79-330,-37.41032955185783,-58.02181209038224,False
+elc_won_027,ep_windon_wind_027,155.0,windon,Aggregated Plant -- operating,elc_won_027,AR74-500,-34.9349196593311,-62.06276406611179,False
+elc_won_029,ep_windon_wind_029,336.99999999999994,windon,Aggregated Plant -- operating,elc_won_029,way/257673618-500,-36.50652150298709,-60.480065807347295,False
+elc_won_034,ep_windon_wind_034,320.5,windon,Aggregated Plant -- operating,elc_won_034,AR70-220,-35.815602707765215,-66.01115985418382,False
+elc_won_036,ep_windon_wind_036,40.0,windon,Aggregated Plant -- operating,elc_won_036,AR81-500,-38.67344005149203,-68.71804904698841,False

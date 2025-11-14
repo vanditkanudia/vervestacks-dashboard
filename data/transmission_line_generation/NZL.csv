@@ -1,0 +1,115 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_NZ11-220,ep_hydro_NZ11-220__irena,13.172625127681309,hydro,Aggregated Plant - IRENA Gap - NZ11-220_Missing Hydro Capacity -- operating,e_NZ11-220,NZ11-220,-37.85233129189091,175.53691252530896,False
+e_NZ11-220,ep_hydro_dam_G100000602854,96.0,hydro,Karāpiro hydroelectric plant_ -- operating,e_NZ11-220,NZ11-220,-37.924,175.5394,False
+e_NZ12-220,ep_hydro_NZ12-220__irena,22.503234593122237,hydro,Aggregated Plant - IRENA Gap - NZ12-220_Missing Hydro Capacity -- operating,e_NZ12-220,NZ12-220,-37.843222770651664,175.54178882326008,False
+e_NZ12-220,ep_hydro_dam_G100000602849,164.0,hydro,Arapuni hydroelectric plant_ -- operating,e_NZ12-220,NZ12-220,-38.071,175.6439,False
+e_NZ13-220,ep_hydro_NZ13-220__irena,10.97718760640109,hydro,Aggregated Plant - IRENA Gap - NZ13-220_Missing Hydro Capacity -- operating,e_NZ13-220,NZ13-220,-37.99140901738964,176.6444553339522,False
+e_NZ13-220,ep_hydro_dam_G100000604605,80.0,hydro,Matahina hydroelectric plant_ -- operating,e_NZ13-220,NZ13-220,-38.114,176.8141,False
+e_NZ14-220,ep_hydro_NZ14-220__irena,17.426285325161732,hydro,Aggregated Plant - IRENA Gap - NZ14-220_Missing Hydro Capacity -- operating,e_NZ14-220,NZ14-220,-38.58138220699172,175.85713830411004,False
+e_NZ14-220,ep_hydro_dam_G100000602867,127.0,hydro,Whakamaru hydroelectric plant_ -- operating,e_NZ14-220,NZ14-220,-38.4194,175.8076,False
+e_NZ15-220,ep_geothermal_G100000700183,55.0,geothermal,Mōkai geothermal power plant_1 -- operating,e_NZ15-220,NZ15-220,-38.5312,175.9268,False
+e_NZ15-220,ep_geothermal_G100001048516,39.0,geothermal,Mōkai geothermal power plant_2 -- operating,e_NZ15-220,NZ15-220,-38.5312,175.9268,False
+e_NZ15-220,ep_geothermal_G100001048517,17.0,geothermal,Mōkai geothermal power plant_1A -- operating,e_NZ15-220,NZ15-220,-38.5312,175.9268,False
+e_NZ16-220,ep_geothermal_G100000700234,50.0,geothermal,Poihipi Road geothermal power station_-- -- operating,e_NZ16-220,NZ16-220,-38.6298,176.0413,False
+e_NZ17-220,ep_geothermal_G100000700279,174.0,geothermal,Tauhara geothermal power plant_-- -- operating,e_NZ17-220,NZ17-220,-38.6667,176.1567,False
+e_NZ17-220,ep_geothermal_G100001030946,51.0,geothermal,Te Huka geothermal power plant_3 -- operating,e_NZ17-220,NZ17-220,-38.6672208,176.1166394,False
+e_NZ17-220,ep_geothermal_G100001030947,28.0,geothermal,Te Huka geothermal power plant_1 -- operating,e_NZ17-220,NZ17-220,-38.6672208,176.1166394,False
+e_NZ22-220,ep_hydro_NZ22-220__irena,16.465781409601636,hydro,Aggregated Plant - IRENA Gap - NZ22-220_Missing Hydro Capacity -- operating,e_NZ22-220,NZ22-220,-39.12177853786146,175.81471613989856,False
+e_NZ22-220,ep_hydro_dam_G100000602862,120.0,hydro,Rangipo hydroelectric plant_ -- operating,e_NZ22-220,NZ22-220,-39.2095,175.7784,False
+e_NZ30-220,ep_hydro_NZ30-220__irena,21.95437521280218,hydro,Aggregated Plant - IRENA Gap - NZ30-220_Missing Hydro Capacity -- operating,e_NZ30-220,NZ30-220,-44.00765282423633,170.20511937170045,False
+e_NZ30-220,ep_hydro_dam_G100000602864,160.0,hydro,Tekapo B hydroelectric plant_ -- operating,e_NZ30-220,NZ30-220,-44.1228,170.2119,False
+e_NZ33-220,ep_hydro_NZ33-220__irena,36.2247191011236,hydro,Aggregated Plant - IRENA Gap - NZ33-220_Missing Hydro Capacity -- operating,e_NZ33-220,NZ33-220,-44.18240004089425,169.958013318648,False
+e_NZ33-220,ep_hydro_dam_G100000602859,264.0,hydro,Ohau A hydroelectric plant_ -- operating,e_NZ33-220,NZ33-220,-44.2647,170.0328,False
+e_NZ35-220,ep_hydro_NZ35-220__irena,29.089547156962887,hydro,Aggregated Plant - IRENA Gap - NZ35-220_Missing Hydro Capacity -- operating,e_NZ35-220,NZ35-220,-44.132756685144685,170.12197987004518,False
+e_NZ35-220,ep_hydro_dam_G100000602860,212.0,hydro,Ohau B hydroelectric plant_ -- operating,e_NZ35-220,NZ35-220,-44.2994,170.1125,False
+e_NZ40-220,ep_hydro_NZ40-220__irena,59.27681307456589,hydro,Aggregated Plant - IRENA Gap - NZ40-220_Missing Hydro Capacity -- operating,e_NZ40-220,NZ40-220,-45.00069166855764,169.3121093571518,False
+e_NZ40-220,ep_hydro_dam_G100000602853,432.0,hydro,Clyde hydroelectric plant_ -- operating,e_NZ40-220,NZ40-220,-45.1812,169.3066,False
+e_r17609399-220,ep_gas_combined_cycle_G100000407351,377.0,gas,Stratford power station_CC1 -- operating,e_r17609399-220,relation/17609399-220,-39.330476,174.319736,False
+e_r17609399-220,ep_gas_combined_cycle_G100000407366,70.0,gas,Whareroa power station_1 -- operating,e_r17609399-220,relation/17609399-220,-39.609873,174.29859,False
+e_r17609399-220,ep_gas_gas_turbine_G100000407347,50.0,gas,McKee power station_2 -- operating,e_r17609399-220,relation/17609399-220,-39.097626,174.335981,False
+e_r17609399-220,ep_gas_gas_turbine_G100000407348,50.0,gas,McKee power station_1 -- operating,e_r17609399-220,relation/17609399-220,-39.097626,174.335981,False
+e_r17609399-220,ep_gas_gas_turbine_G100000407349,105.0,gas,Stratford power station_Peaker 2 -- operating,e_r17609399-220,relation/17609399-220,-39.330476,174.319736,False
+e_r17609399-220,ep_gas_gas_turbine_G100000407350,105.0,gas,Stratford power station_Peaker 1 -- operating,e_r17609399-220,relation/17609399-220,-39.330476,174.319736,False
+e_r17609399-220,ep_gas_gas_turbine_G100000407364,50.0,gas,Junction Road power station_2 -- operating,e_r17609399-220,relation/17609399-220,-39.11684,174.103595,False
+e_r17609399-220,ep_gas_gas_turbine_G100000407365,50.0,gas,Junction Road power station_1 -- operating,e_r17609399-220,relation/17609399-220,-39.11684,174.103595,False
+e_r17609399-220,ep_gas_r17609399-220__ember,238.88334268087488,gas,Aggregated Plant - EMBER Gap - relation/17609399-220_Missing Gas Capacity -- operating,e_r17609399-220,relation/17609399-220,-38.88467401167943,174.2898846053682,False
+e_w148300699-220,ep_geothermal_G100000700128,100.0,geothermal,Kawerau geothermal power plant_1 -- operating,e_w148300699-220,way/148300699-220,-38.0631,176.7272,False
+e_w148300699-220,ep_geothermal_G100001005326,26.0,geothermal,Te Ahi O Maui geothermal power plant_-- -- operating,e_w148300699-220,way/148300699-220,-38.0631426,176.7022563,False
+e_w148300699-220,ep_geothermal_G100001005327,24.0,geothermal,TOPP1 geothermal power plant_-- -- operating,e_w148300699-220,way/148300699-220,-38.0608344,176.7218307,False
+e_w148300699-220,ep_geothermal_w148300699-220,23.2,geothermal,Aggregated Plant -- operating,e_w148300699-220,way/148300699-220,-37.95187918201075,176.55440135677833,False
+e_w167285260-220,ep_geothermal_G100000700314,30.0,geothermal,Wairakei geothermal power plant_B-11 -- operating,e_w167285260-220,way/167285260-220,-38.6266,176.1055,False
+e_w167285260-220,ep_geothermal_G100000700315,30.0,geothermal,Wairakei geothermal power plant_B-12 -- operating,e_w167285260-220,way/167285260-220,-38.6266,176.1055,False
+e_w167285260-220,ep_geothermal_G100000700316,30.0,geothermal,Wairakei geothermal power plant_B-13 -- operating,e_w167285260-220,way/167285260-220,-38.6266,176.1055,False
+e_w167285260-220,ep_geothermal_G100001048518,15.0,geothermal,Wairakei Binary geothermal power plant_-- -- operating,e_w167285260-220,way/167285260-220,-38.62637159,176.102453436894,False
+e_w167285260-220,ep_geothermal_G100001048519,98.0,geothermal,Wairakei geothermal power plant_A -- operating,e_w167285260-220,way/167285260-220,-38.6266,176.1055,False
+e_w167285260-220,ep_geothermal_w167285260-220,3.5,geothermal,Aggregated Plant -- operating,e_w167285260-220,way/167285260-220,-38.73733385716563,176.15067167447134,False
+e_w167293888-220,ep_coal_subcritical_G100000407368,250.0,coal,Huntly power station_1 -- operating,e_w167293888-220,way/167293888-220,-37.54447,175.148805,False
+e_w167293888-220,ep_coal_subcritical_G100000410346,250.0,coal,Huntly power station_2 -- operating,e_w167293888-220,way/167293888-220,-37.54447,175.148805,False
+e_w167293888-220,ep_coal_subcritical_G100001018372,250.0,coal,Huntly power station_4 -- operating,e_w167293888-220,way/167293888-220,-37.54447,175.148805,False
+e_w167293888-220,ep_gas_combined_cycle_G100000410345,403.0,gas,Huntly power station_5 -- operating,e_w167293888-220,way/167293888-220,-37.54447,175.148805,False
+e_w167293888-220,ep_gas_gas_turbine_G100000407367,51.0,gas,Huntly power station_6 -- operating,e_w167293888-220,way/167293888-220,-37.54447,175.148805,False
+e_w167293888-220,ep_gas_w167293888-220__ember,126.54963544587771,gas,Aggregated Plant - EMBER Gap - way/167293888-220_Missing Gas Capacity -- operating,e_w167293888-220,way/167293888-220,-37.47719564152585,174.996140409179,False
+e_w169512273-220,ep_hydro_ror_G100001027345,54.0,hydro,Waipapa hydroelectric plant_ -- operating,e_w169512273-220,way/169512273-220,-38.292,175.6835,False
+e_w180514007-220,ep_hydro_dam_G100000602863,320.0,hydro,Roxburgh hydroelectric plant_ -- operating,e_w180514007-220,way/180514007-220,-45.4761,169.3217,False
+e_w180514007-220,ep_hydro_w180514007-220__irena,204.72454885938032,hydro,Aggregated Plant - IRENA Gap - way/180514007-220_Missing Hydro Capacity -- operating,e_w180514007-220,way/180514007-220,-45.52051871918709,169.2900651393701,False
+e_w188180344-220,ep_gas_combined_cycle_G100000411125,112.0,gas,Glenbrook power station_1 -- operating,e_w188180344-220,way/188180344-220,-37.201568,174.755057,False
+e_w188180344-220,ep_gas_w188180344-220__ember,31.219293325855293,gas,Aggregated Plant - EMBER Gap - way/188180344-220_Missing Gas Capacity -- operating,e_w188180344-220,way/188180344-220,-37.05623567769896,174.58884016512332,False
+e_w255873374-220,ep_geothermal_G100000700202,20.5,geothermal,Ngatamariki geothermal power plant_1 -- operating,e_w255873374-220,way/255873374-220,-38.5731,176.1953,False
+e_w255873374-220,ep_geothermal_G100001005321,20.5,geothermal,Ngatamariki geothermal power plant_2 -- operating,e_w255873374-220,way/255873374-220,-38.5731,176.1953,False
+e_w255873374-220,ep_geothermal_G100001005322,20.5,geothermal,Ngatamariki geothermal power plant_3 -- operating,e_w255873374-220,way/255873374-220,-38.5731,176.1953,False
+e_w255873374-220,ep_geothermal_G100001005323,20.5,geothermal,Ngatamariki geothermal power plant_4 -- operating,e_w255873374-220,way/255873374-220,-38.5731,176.1953,False
+e_w255873374-220,ep_geothermal_G100001005324,50.0,geothermal,Ngatamariki geothermal power plant_5 -- construction,e_w255873374-220,way/255873374-220,-38.5731,176.1953,False
+e_w270018358-220,ep_hydro_ror_G100000602850,78.0,hydro,Aratiatia hydroelectric plant_ -- operating,e_w270018358-220,way/270018358-220,-38.6158,176.1421,False
+e_w270018358-220,ep_hydro_w270018358-220__irena,10.702757916241062,hydro,Aggregated Plant - IRENA Gap - way/270018358-220_Missing Hydro Capacity -- operating,e_w270018358-220,way/270018358-220,-38.493867930511065,176.26370956934704,False
+e_w270521928-220,ep_hydro_dam_G100001031157,58.0,hydro,Waipori IIA hydroelectric plant_ -- operating,e_w270521928-220,way/270521928-220,-45.5582,169.9775,False
+e_w270554679-220,ep_geothermal_G100000700201,140.0,geothermal,Nga Awa Purua geothermal power plant_-- -- operating,e_w270554679-220,way/270554679-220,-38.6143,176.1825,False
+e_w270554679-220,ep_geothermal_G100000700246,34.0,geothermal,Rotokawa I geothermal power plant_-- -- operating,e_w270554679-220,way/270554679-220,-38.6125,176.1932,False
+e_w270556206-220,ep_geothermal_G100000700209,104.0,geothermal,Ohaaki geothermal power plant_-- -- operating,e_w270556206-220,way/270556206-220,-38.5279,176.2937,False
+e_w272522517-220,ep_hydro_dam_G100000602858,106.0,hydro,Ohakuri hydroelectric plant_ -- operating,e_w272522517-220,way/272522517-220,-38.408,176.0886,False
+e_w272522517-220,ep_hydro_w272522517-220__irena,14.544773578481443,hydro,Aggregated Plant - IRENA Gap - way/272522517-220_Missing Hydro Capacity -- operating,e_w272522517-220,way/272522517-220,-38.57721210234029,175.92751131408636,False
+e_w275188676-220,ep_geothermal_G100000700280,83.0,geothermal,Te Mihi geothermal power plant_1 -- operating,e_w275188676-220,way/275188676-220,-38.6164,176.038,False
+e_w275188676-220,ep_geothermal_G100000700281,83.0,geothermal,Te Mihi geothermal power plant_2 -- operating,e_w275188676-220,way/275188676-220,-38.6164,176.038,False
+e_w412589726-220,ep_hydro_dam_G100000602855,800.0,hydro,Manapouri hydroelectric plant_ -- operating,e_w412589726-220,way/412589726-220,-45.5214,167.2778,False
+e_w412589726-220,ep_hydro_w412589726-220__irena,109.77187606401091,hydro,Aggregated Plant - IRENA Gap - way/412589726-220_Missing Hydro Capacity -- operating,e_w412589726-220,way/412589726-220,-45.40326445737257,167.4051388491991,False
+e_w87928925-220,ep_bioenergy_w87928925-220,39.0,bioenergy,Aggregated Plant -- operating,e_w87928925-220,way/87928925-220,-38.09141263391467,175.66405336744555,False
+e_w87928925-220,ep_bioenergy_w87928925-220__ember,650.5652173913044,bioenergy,Aggregated Plant - EMBER Gap - way/87928925-220_Missing Bioenergy Capacity -- operating,e_w87928925-220,way/87928925-220,-38.517970317896605,175.9536316459923,False
+e_w87928925-220,ep_hydro_dam_G100000602856,176.0,hydro,Maraetai I hydroelectric plant_ -- operating,e_w87928925-220,way/87928925-220,-38.3518,175.7463,False
+e_w87928925-220,ep_hydro_dam_G100000602857,176.0,hydro,Maraetai II hydroelectric plant_ -- operating,e_w87928925-220,way/87928925-220,-38.3517,175.7409,False
+e_w87928925-220,ep_hydro_w87928925-220__irena,48.2996254681648,hydro,Aggregated Plant - IRENA Gap - way/87928925-220_Missing Hydro Capacity -- operating,e_w87928925-220,way/87928925-220,-38.47800397285512,175.5034587875607,False
+e_w89411122-220,ep_hydro_dam_G100000602865,240.0,hydro,Tokaanu hydroelectric plant_ -- operating,e_w89411122-220,way/89411122-220,-38.9812,175.7685,False
+e_w89411122-220,ep_hydro_w89411122-220__irena,32.93156281920327,hydro,Aggregated Plant - IRENA Gap - way/89411122-220_Missing Hydro Capacity -- operating,e_w89411122-220,way/89411122-220,-39.1188192299434,175.7820484738139,False
+e_w89636266-220,ep_hydro_dam_G100000602861,212.0,hydro,Ohau C hydroelectric plant_ -- operating,e_w89636266-220,way/89636266-220,-44.3418,170.1825,False
+e_w89636266-220,ep_hydro_w89636266-220__irena,29.089547156962887,hydro,Aggregated Plant - IRENA Gap - way/89636266-220_Missing Hydro Capacity -- operating,e_w89636266-220,way/89636266-220,-44.34161771645419,170.09466240104993,False
+e_w89637173-220,ep_hydro_dam_G100000602866,105.0,hydro,Waitaki hydroelectric plant_ -- operating,e_w89637173-220,way/89637173-220,-44.6908,170.426,False
+e_w89637173-220,ep_hydro_w89637173-220__irena,14.407558733401432,hydro,Aggregated Plant - IRENA Gap - way/89637173-220_Missing Hydro Capacity -- operating,e_w89637173-220,way/89637173-220,-44.682775641423405,170.30057740267026,False
+e_w89637174-220,ep_hydro_dam_G100000602851,220.0,hydro,Aviemore hydroelectric plant_ -- operating,e_w89637174-220,way/89637174-220,-44.6564,170.3544,False
+e_w89637174-220,ep_hydro_w89637174-220__irena,30.187265917603,hydro,Aggregated Plant - IRENA Gap - way/89637174-220_Missing Hydro Capacity -- operating,e_w89637174-220,way/89637174-220,-44.75648174174401,170.32237029401364,False
+e_w89664063-220,ep_hydro_dam_G100000602852,540.0,hydro,Benmore hydroelectric plant_ -- operating,e_w89664063-220,way/89664063-220,-44.5656,170.1901,False
+e_w89664063-220,ep_hydro_w89664063-220__irena,74.09601634320735,hydro,Aggregated Plant - IRENA Gap - way/89664063-220_Missing Hydro Capacity -- operating,e_w89664063-220,way/89664063-220,-44.567548805056695,170.0570564305207,False
+e_w89943957-220,ep_geothermal_G100000700203,32.0,geothermal,Ngāwhā geothermal power station_OEC4 -- operating,e_w89943957-220,way/89943957-220,-35.4176,173.8522,False
+e_w89943957-220,ep_geothermal_G100001030949,10.0,geothermal,Ngāwhā geothermal power station_1 -- operating,e_w89943957-220,way/89943957-220,-35.4176,173.8522,False
+e_w89943957-220,ep_geothermal_G100001030950,15.0,geothermal,Ngāwhā geothermal power station_OEC3 -- operating,e_w89943957-220,way/89943957-220,-35.4176,173.8522,False
+e_w93556808-220,ep_hydro_dam_G100001027343,74.0,hydro,Atiamuri hydroelectric plant_ -- operating,e_w93556808-220,way/93556808-220,-38.3918,176.0222,False
+e_w93556808-220,ep_hydro_w93556808-220__irena,10.153898535921009,hydro,Aggregated Plant - IRENA Gap - way/93556808-220_Missing Hydro Capacity -- operating,e_w93556808-220,way/93556808-220,-38.36686304667462,176.11732537557216,False
+e_w94053861-220,ep_gas_w94053861-220__ember,100.34772854739202,gas,Aggregated Plant - EMBER Gap - way/94053861-220_Missing Gas Capacity -- operating,e_w94053861-220,way/94053861-220,-37.71809827557664,175.41312847609132,False
+e_w94840399-220,ep_bioenergy_w94840399-220__ember,500.4347826086957,bioenergy,Aggregated Plant - EMBER Gap - way/94840399-220_Missing Bioenergy Capacity -- operating,e_w94840399-220,way/94840399-220,-45.11290832780017,170.6457300406184,False
+e_w95512216-220,ep_hydro_dam_G100001027344,60.0,hydro,Tuai hydroelectric plant_ -- operating,e_w95512216-220,way/95512216-220,-38.8068,177.1508,False
+elc_spv_001,ep_solar_001__irena,86.74034098951654,solar,Aggregated Plant -- operating,elc_spv_001,way/93419960-220,-39.588088431819884,177.08225262717167,False
+elc_spv_001,ep_solar_pv_001,38.1,solar,Aggregated Plant -- operating,elc_spv_001,way/93419960-220,-39.591093743371644,176.64580233059877,False
+elc_spv_002,ep_solar_pv_002,83.8,solar,Aggregated Plant -- operating,elc_spv_002,way/89943957-220,-36.02814840030516,174.60744700087218,False
+elc_spv_003,ep_solar_003__irena,82.62331302057255,solar,Aggregated Plant -- operating,elc_spv_003,way/26671244-220,-37.85727123931143,175.30938016228765,False
+elc_spv_003,ep_solar_pv_003,38.4,solar,Aggregated Plant -- operating,elc_spv_003,way/26671244-220,-37.555485371245624,175.04280756918084,False
+elc_spv_004,ep_solar_pv_004,2.5,solar,Aggregated Plant -- operating,elc_spv_004,way/95046918-220,-41.215285246718274,175.71667158820907,False
+elc_spv_006,ep_solar_006__irena,84.83634598991091,solar,Aggregated Plant -- operating,elc_spv_006,relation/17609399-220,-39.614245765028116,173.96739800050992,False
+elc_spv_006,ep_solar_pv_006,1.9,solar,Aggregated Plant -- operating,elc_spv_006,relation/17609399-220,-39.242663316513614,173.87907045876895,False
+elc_spv_012,ep_solar_pv_012,222.0,solar,Aggregated Plant -- construction,elc_spv_012,way/1099619174-220,-43.4080180643103,172.13677019824607,False
+elc_spv_014,ep_solar_pv_014,49.0,solar,Aggregated Plant -- construction,elc_spv_014,way/95046918-220,-40.71452595147727,175.03661560182695,False
+elc_won_001,ep_windon_wind_001,203.0,windon,Aggregated Plant -- operating,elc_won_001,way/167705537-220,-41.40364351011473,175.31088075012872,False
+elc_won_002,ep_windon_002__irena,30.560828423135728,windon,Aggregated Plant -- operating,elc_won_002,way/95048289-220,-40.32223096077775,175.51838876501515,False
+elc_won_002,ep_windon_wind_002,653.0,windon,Aggregated Plant -- operating,elc_won_002,way/95048289-220,-39.92772976326955,175.1058048482518,False
+elc_won_003,ep_windon_003__irena,26.870398650777304,windon,Aggregated Plant -- operating,elc_won_003,way/89943957-220,-35.85862138032298,173.44712048795958,False
+elc_won_003,ep_windon_wind_003,64.0,windon,Aggregated Plant -- operating,elc_won_003,way/89943957-220,-35.198265959073225,173.697385018622,False
+elc_won_005,ep_windon_wind_005,176.0,windon,Aggregated Plant -- operating,elc_won_005,way/93419960-220,-39.084616500851524,176.42473552842745,False
+elc_won_007,ep_windon_wind_007,36.0,windon,Aggregated Plant -- operating,elc_won_007,way/90092620-220,-45.924402542508716,169.7247757356859,False
+elc_won_009,ep_windon_009__irena,25.568772926086933,windon,Aggregated Plant -- operating,elc_won_009,NZ41-220,-46.35714923800696,168.64112537175137,False
+elc_won_009,ep_windon_wind_009,256.0,windon,Aggregated Plant -- construction,elc_won_009,NZ41-220,-46.4054629116724,168.15484415449689,False

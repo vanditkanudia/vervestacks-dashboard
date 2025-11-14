@@ -1,0 +1,79 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_hydro__irena,6.644,hydro,Aggregated Plant -- operating,,,,,False
+e_DK14-220,ep_windoff_wind_220,160.0,windoff,Aggregated Plant -- operating,e_DK14-220,DK14-220,55.86770650597461,7.717175686570046,False
+e_DK14-220,ep_windoff_wind_G100000919760,209.0,windoff,Horns Rev Offshore wind farm_2 -- operating,e_DK14-220,DK14-220,55.6084,7.6114,False
+e_DK14-220,ep_windoff_wind_G100000919975,407.0,windoff,Horns Rev Offshore wind farm_3 -- operating,e_DK14-220,DK14-220,55.6825,7.7729,False
+e_DK18-400,ep_gas_gas_turbine_G100000400068,25.0,gas,Esbjerg Reserve power station_1 -- operating,e_DK18-400,DK18-400,55.46181,8.46562,False
+e_DK21-400,ep_bioenergy_DK21-400,35.0,bioenergy,Aggregated Plant -- operating,e_DK21-400,DK21-400,55.608087075015675,10.40548250169174,False
+e_DK21-400,ep_gas_DK21-400__ember,78.20274786483469,gas,Aggregated Plant - EMBER Gap - DK21-400_Missing Gas Capacity -- operating,e_DK21-400,DK21-400,55.250935296421794,10.376042484182447,False
+e_DK21-400,ep_gas_steam_turbine_G100001018032,362.0,gas,"Fyns power station_Unit 7, timepoint 2 -- operating",e_DK21-400,DK21-400,55.429412,10.410212,False
+e_DK23-220,ep_bioenergy_DK23-220,37.0,bioenergy,Aggregated Plant -- operating,e_DK23-220,DK23-220,55.31707701472625,12.976827538154346,False
+e_DK23-220,ep_solar_pv_220,14.0,solar,Aggregated Plant -- operating,e_DK23-220,DK23-220,54.8522042394074,13.130998982326478,False
+e_DK27-400,ep_gas_gas_turbine_G100000409393,52.0,gas,Sønderborg Kraftvarmeværk CHP power station_GT1 -- operating,e_DK27-400,DK27-400,54.930277,9.781908,False
+e_DK4-400,ep_gas_combined_cycle_G100000410478,25.0,gas,Akzo Mariager power station_1 -- operating,e_DK4-400,DK4-400,56.681337,10.042186,False
+e_DK6-220,ep_gas_gas_turbine_G100000400069,25.0,gas,Grenaa Reserve power station_1 -- operating,e_DK6-220,DK6-220,56.42181,10.89476,False
+e_w1271587268-400,ep_gas_combined_cycle_G100000400073,108.2,gas,Silkeborgvaerket power station_1 -- operating,e_w1271587268-400,way/1271587268-400,56.201,9.558,False
+e_w1271587268-400,ep_gas_w1271587268-400__ember,12.535610842926095,gas,Aggregated Plant - EMBER Gap - way/1271587268-400_Missing Gas Capacity -- operating,e_w1271587268-400,way/1271587268-400,56.30707862047472,9.602064450583052,False
+e_w1271587272,ep_gas_combined_cycle_G100000400074,55.0,gas,Viborg power station_1 -- operating,e_w1271587272,way/1271587272,56.47377,9.41262,False
+e_w133082281-400,ep_m_oil_combined_cycle_G100001000181,260.0,oil,Kyndby power station_Blok 21 -- mothballed,e_w133082281-400,way/133082281-400,55.8124,11.8793,False
+e_w133082281-400,ep_m_oil_combined_cycle_G100001000182,260.0,oil,Kyndby power station_Blok 22 -- mothballed,e_w133082281-400,way/133082281-400,55.8124,11.8793,False
+e_w133082281-400,ep_oil_gas_turbine_G100001000179,63.0,oil,Kyndby power station_GT51 -- operating,e_w133082281-400,way/133082281-400,55.8124,11.8793,False
+e_w133082281-400,ep_oil_gas_turbine_G100001000180,63.0,oil,Kyndby power station_GT52 -- operating,e_w133082281-400,way/133082281-400,55.8124,11.8793,False
+e_w133555503-400,ep_bioenergy_G100000201365,95.0,bioenergy,Skaerbaek power station_3 -- operating,e_w133555503-400,way/133555503-400,55.5123,9.6188,False
+e_w199713891-400,ep_bioenergy_G100000201362,585.0,bioenergy,Avedore power station_2 -- operating,e_w199713891-400,way/199713891-400,55.60216,12.479064,False
+e_w199713891-400,ep_bioenergy_G1000002505,250.0,bioenergy,"Avedore power station_1, timepoint 2 -- operating",e_w199713891-400,way/199713891-400,55.60216,12.479064,False
+e_w199713891-400,ep_bioenergy_G100001000178,585.0,bioenergy,Avedore power station_CC -- operating,e_w199713891-400,way/199713891-400,55.60216,12.479064,False
+e_w25637523-400,ep_gas_combined_cycle_G100000400067,38.0,gas,DTU Cogeneration power station_1 -- operating,e_w25637523-400,way/25637523-400,55.78469,12.52276,False
+e_w301369285-400,ep_bioenergy_G100000200242,63.0,bioenergy,Amager Bakke power station_1 -- operating,e_w301369285-400,way/301369285-400,55.6842,12.6193,False
+e_w301369285-400,ep_bioenergy_G100000200243,150.0,bioenergy,Amager power station_4 -- operating,e_w301369285-400,way/301369285-400,55.686777,12.627702,False
+e_w301369285-400,ep_bioenergy_G1000002504,68.0,bioenergy,"Amager power station_1, timepoint 2 -- operating",e_w301369285-400,way/301369285-400,55.686777,12.627702,False
+e_w301369285-400,ep_gas_combined_cycle_G100000410795,273.0,gas,H.C. Ørsted Works power station_CHP -- operating,e_w301369285-400,way/301369285-400,55.650523,12.533432,False
+e_w301369285-400,ep_gas_steam_turbine_G100000400070,21.0,gas,H.C. Ørsted power station_1 -- operating,e_w301369285-400,way/301369285-400,55.65685,12.55696,False
+e_w301369285-400,ep_gas_w301369285-400__ember,34.06164129223911,gas,Aggregated Plant - EMBER Gap - way/301369285-400_Missing Gas Capacity -- operating,e_w301369285-400,way/301369285-400,55.50377652700671,12.447967227692212,False
+e_w93624851-400,ep_bioenergy_G1000002507,362.0,bioenergy,"Studstrup power station_3, timepoint 2 -- operating",e_w93624851-400,way/93624851-400,56.250196,10.344861,False
+e_w94092312-400,ep_bioenergy_w94092312-400,30.0,bioenergy,Aggregated Plant -- operating,e_w94092312-400,way/94092312-400,55.82327082203694,11.234397056073995,False
+e_w95713495-400,ep_gas_combined_cycle_G100000410477,34.0,gas,Horsens power station_1 -- operating,e_w95713495-400,way/95713495-400,55.851905,9.857664,False
+e_w95868396-400,ep_bioenergy_G100000200229,80.0,bioenergy,Herning power station_1 -- operating,e_w95868396-400,way/95868396-400,56.1214,9.0068,False
+e_w97010538-400,ep_windoff_wind_400,170.0,windoff,Aggregated Plant -- operating,e_w97010538-400,way/97010538-400,57.154600647773954,8.661316466647715,False
+e_w98212652-400,ep_coal_ultra-supercritical_G100000107496,411.0,coal,Nordjylland power station_Unit 3 -- operating,e_w98212652-400,way/98212652-400,57.073694,10.040779,False
+e_w98212652-400,ep_coal_w98212652-400__ember,1149.0,coal,Aggregated Plant - EMBER Gap - way/98212652-400_Missing Coal Capacity -- operating,e_w98212652-400,way/98212652-400,57.432595651880476,9.9888409543043,False
+e_w98212652-400,ep_gas_combined_cycle_G100000400072,59.0,gas,Hjørring Cogeneration power station_1 -- operating,e_w98212652-400,way/98212652-400,57.46417,9.98229,False
+e_w98524305-400,ep_bioenergy_G1000002506,52.0,bioenergy,"Randers power station_1, timepoint 2 -- operating",e_w98524305-400,way/98524305-400,56.4579,10.0466,False
+e_w98526640-220,ep_bioenergy_w98526640-220,37.0,bioenergy,Aggregated Plant -- operating,e_w98526640-220,way/98526640-220,56.3766518724613,10.229904237966103,False
+elc_spv_001,ep_solar_pv_001,453.99999999999994,solar,Aggregated Plant -- operating,elc_spv_001,way/142321228,54.681980856974,11.932180077566036,False
+elc_spv_002,ep_solar_002__irena,341.99433747535033,solar,Aggregated Plant - IRENA Gap - 2_Missing Solar Capacity -- operating,elc_spv_002,way/160792651-400,56.04961684358036,12.178686690815876,False
+elc_spv_002,ep_solar_pv_002,76.0,solar,Aggregated Plant -- operating,elc_spv_002,way/160792651-400,55.60575072061728,12.313967071745859,False
+elc_spv_003,ep_solar_pv_003,295.70000000000005,solar,Aggregated Plant -- construction,elc_spv_003,way/97010538-400,56.290453364102476,9.361461494071252,False
+elc_spv_003,ep_solar_pv_G100000806597,207.0,solar,Heartland solar farm_-- -- operating,elc_spv_003,way/97010538-400,56.377,8.4734,False
+elc_spv_004,ep_solar_pv_004,138.0,solar,Aggregated Plant -- construction,elc_spv_004,way/97010538-400,55.79828409345601,9.146083845616738,False
+elc_spv_005,ep_solar_pv_005,70.0,solar,Aggregated Plant -- operating,elc_spv_005,way/98212652-400,57.01531483123621,10.403392034185414,False
+elc_spv_005,ep_solar_thermal_005,5.5,solar,Aggregated Plant -- operating,elc_spv_005,way/98212652-400,56.723246566716746,10.116094086430353,False
+elc_spv_006,ep_solar_006__irena,341.4062281554705,solar,Aggregated Plant - IRENA Gap - 6_Missing Solar Capacity -- operating,elc_spv_006,way/98524305-400,57.1791747882137,10.02185310527148,False
+elc_spv_006,ep_solar_pv_006,73.0,solar,Aggregated Plant -- operating,elc_spv_006,way/98524305-400,56.72911497240618,10.467738699745404,False
+elc_spv_007,ep_solar_pv_007,32.0,solar,Aggregated Plant -- operating,elc_spv_007,way/69424173-400,56.546981690399996,10.167073873910253,False
+elc_spv_008,ep_solar_pv_008,45.0,solar,Aggregated Plant -- operating,elc_spv_008,way/69424173-400,55.76854071209254,10.700241103051166,False
+elc_spv_009,ep_solar_009__irena,390.49943436917937,solar,Aggregated Plant - IRENA Gap - 9_Missing Solar Capacity -- operating,elc_spv_009,DK15-400,55.73655319262365,9.563282990100825,False
+elc_spv_009,ep_solar_pv_009,459.5,solar,Aggregated Plant -- operating,elc_spv_009,DK15-400,55.40282096110712,9.323104110202273,False
+elc_spv_010,ep_solar_pv_010,33.0,solar,Aggregated Plant -- operating,elc_spv_010,DK26-400,55.22163591338461,9.231244177656576,False
+elc_spv_010,ep_solar_pv_G100000818834,300.0,solar,Kassø solar farm_-- -- operating,elc_spv_010,DK26-400,55.025,9.2561,False
+elc_wof_001,ep_windoff_wind_001,259.0,windoff,Aggregated Plant -- operating,elc_wof_001,way/1384028957-400,55.10745589092518,10.855939174385673,False
+elc_wof_001,ep_windoff_wind_G100000919758,207.0,windoff,Rødsand wind farm_2 -- operating,elc_wof_001,way/1384028957-400,54.5265,11.617,False
+elc_wof_003,ep_windoff_003__irena,4.633713159037619,windoff,Aggregated Plant -- operating,elc_wof_003,DK23-220,54.937233557033075,12.699131967724668,False
+elc_wof_003,ep_windoff_wind_G100000920046,605.0,windoff,Kriegers Flak Offshore wind farm_-- -- operating,elc_wof_003,DK23-220,54.9855,12.9965,False
+elc_wof_004,ep_windoff_004__irena,4.434570974838929,windoff,Aggregated Plant -- operating,elc_wof_004,way/97010538-400,55.59445721537898,8.84438809853315,False
+elc_wof_004,ep_windoff_wind_004,10.6,windoff,Aggregated Plant -- operating,elc_wof_004,way/97010538-400,55.55456694029273,8.401262713298616,False
+elc_wof_006,ep_windoff_wind_G100000919953,400.0,windoff,Anholt wind farm_-- -- operating,elc_wof_006,way/214266451-220,56.5897,11.1827,False
+elc_wof_008,ep_windoff_wind_008,224.99999999999997,windoff,Aggregated Plant -- operating,elc_wof_008,way/97010538-400,56.51783126651715,7.759443524441561,False
+elc_wof_010,ep_windoff_010__irena,4.631715866123498,windoff,Aggregated Plant -- operating,elc_wof_010,DK14-220,55.51011064912357,7.681364995792817,False
+elc_won_001,ep_windon_wind_001,641.8000000000001,windon,Aggregated Plant -- operating,elc_won_001,way/97010538-400,56.9085630528181,7.9641804890387595,False
+elc_won_002,ep_windon_wind_002,47.0,windon,Aggregated Plant -- operating,elc_won_002,way/98212652-400,57.02707912741907,9.691523807717644,False
+elc_won_003,ep_windon_wind_003,355.09999999999997,windon,Aggregated Plant -- operating,elc_won_003,way/98524305-400,56.85437049136604,9.763005833563284,False
+elc_won_004,ep_windon_004__irena,773.6144285830156,windon,Aggregated Plant - IRENA Gap - 4_Missing Onshore wind energy Capacity -- operating,elc_won_004,way/142321228,54.81505357354814,11.439271769406055,False
+elc_won_004,ep_windon_wind_004,38.00000000000001,windon,Aggregated Plant -- operating,elc_won_004,way/142321228,55.14477682572442,11.333610356201937,False
+elc_won_005,ep_windon_wind_005,23.0,windon,Aggregated Plant -- operating,elc_won_005,way/160792651-400,55.716723850108984,11.852824120248505,False
+elc_won_006,ep_windon_006__irena,752.7650812976326,windon,Aggregated Plant - IRENA Gap - 6_Missing Onshore wind energy Capacity -- operating,elc_won_006,way/69424173-400,55.46848880635055,10.23603924361885,False
+elc_won_006,ep_windon_wind_006,215.0,windon,Aggregated Plant -- operating,elc_won_006,way/69424173-400,55.65740371276599,9.805099842261873,False
+elc_won_007,ep_windon_wind_007,33.0,windon,Aggregated Plant -- operating,elc_won_007,way/69424173-400,56.31460275178775,9.770335493491862,False
+elc_won_008,ep_windon_008__irena,901.0384901193514,windon,Aggregated Plant - IRENA Gap - 8_Missing Onshore wind energy Capacity -- operating,elc_won_008,DK15-400,55.833303633643496,8.334373288746148,False
+elc_won_008,ep_windon_wind_008,795.0,windon,Aggregated Plant -- operating,elc_won_008,DK15-400,56.39069408017596,8.541935536001647,False
+elc_won_010,ep_windon_wind_010,202.8,windon,Aggregated Plant -- operating,elc_won_010,DK26-400,54.87292992739418,9.218031526145095,False

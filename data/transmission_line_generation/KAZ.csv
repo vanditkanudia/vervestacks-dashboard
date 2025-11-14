@@ -1,0 +1,204 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,10.0,bioenergy,Aggregated Plant -- operating,,,,,False
+ELC,ep_coal__ember,38.9999999999997,coal,Aggregated Plant - EMBER Gap_Missing Coal Capacity -- operating,,,,,False
+e_KZ111-220,ep_windon_wind_220,52.0,windon,Aggregated Plant -- operating,e_KZ111-220,KZ111-220,47.00186754073523,50.85665641525358,False
+e_KZ113-220,ep_gas_gas_turbine_G100000407483,60.0,gas,Atyrau CHP power station_GTU-60 -- operating,e_KZ113-220,KZ113-220,47.081773,51.942246,False
+e_KZ113-220,ep_gas_gas_turbine_G100000407484,100.0,gas,Atyrau CHP power station_12 -- operating,e_KZ113-220,KZ113-220,47.081773,51.942246,False
+e_KZ113-220,ep_gas_gas_turbine_G100001006162,65.0,gas,Atyrau CHP power station_13 -- operating,e_KZ113-220,KZ113-220,47.081773,51.942246,False
+e_KZ113-220,ep_gas_steam_turbine_G100000407486,60.0,gas,Atyrau CHP power station_6 -- operating,e_KZ113-220,KZ113-220,47.081773,51.942246,False
+e_KZ113-220,ep_gas_steam_turbine_G100000407487,60.0,gas,Atyrau CHP power station_5 -- operating,e_KZ113-220,KZ113-220,47.081773,51.942246,False
+e_KZ113-220,ep_gas_steam_turbine_G100000413209,65.0,gas,Atyrau CHP power station_6R -- construction,e_KZ113-220,KZ113-220,47.081773,51.942246,False
+e_KZ114-220,ep_gas_combined_cycle_G100000407478,119.0,gas,Kashagan power station_2 -- operating,e_KZ114-220,KZ114-220,46.205393,51.693335,False
+e_KZ114-220,ep_gas_combined_cycle_G100000407479,119.0,gas,Kashagan power station_1 -- operating,e_KZ114-220,KZ114-220,46.205393,51.693335,False
+e_KZ152-220,ep_coal_subcritical_G100000100133,80.0,coal,"Almaty-2 power station_Unit 1, timepoint 1 -- operating",e_KZ152-220,KZ152-220,43.29292,76.798519,False
+e_KZ152-220,ep_coal_subcritical_G100000100134,80.0,coal,"Almaty-2 power station_Unit 2, timepoint 1 -- operating",e_KZ152-220,KZ152-220,43.29292,76.798519,False
+e_KZ152-220,ep_coal_subcritical_G100000100135,80.0,coal,"Almaty-2 power station_Unit 3, timepoint 1 -- operating",e_KZ152-220,KZ152-220,43.29292,76.798519,False
+e_KZ152-220,ep_coal_subcritical_G100000100136,50.0,coal,"Almaty-2 power station_Unit 4, timepoint 1 -- operating",e_KZ152-220,KZ152-220,43.29292,76.798519,False
+e_KZ152-220,ep_coal_subcritical_G100000114140,110.0,coal,"Almaty-2 power station_Unit 5, timepoint 1 -- operating",e_KZ152-220,KZ152-220,43.29292,76.798519,False
+e_KZ152-220,ep_coal_subcritical_G100000114141,110.0,coal,"Almaty-2 power station_Unit 6, timepoint 1 -- operating",e_KZ152-220,KZ152-220,43.29292,76.798519,False
+e_KZ152-220,ep_gas_combined_cycle_G100000409737,200.0,gas,Almaty-2 power station_CC1 -- construction,e_KZ152-220,KZ152-220,43.29292,76.798519,False
+e_KZ152-220,ep_gas_gas_turbine_G100000411946,179.0,gas,Almaty-2 power station_GT2 -- construction,e_KZ152-220,KZ152-220,43.29292,76.798519,False
+e_KZ152-220,ep_gas_gas_turbine_G100000411947,179.0,gas,Almaty-2 power station_GT1 -- construction,e_KZ152-220,KZ152-220,43.29292,76.798519,False
+e_KZ37-220,ep_coal_subcritical_G100000107894,60.0,coal,Pavlodar-2 power station_Unit 3 -- operating,e_KZ37-220,KZ37-220,52.322482,76.966342,False
+e_KZ37-220,ep_coal_subcritical_G100000107895,65.0,coal,Pavlodar-3 power station_Unit 1R -- operating,e_KZ37-220,KZ37-220,52.366612,76.934487,False
+e_KZ37-220,ep_coal_subcritical_G100000107896,65.0,coal,Pavlodar-3 power station_Unit 2R -- operating,e_KZ37-220,KZ37-220,52.366612,76.934487,False
+e_KZ37-220,ep_coal_subcritical_G100000107897,130.0,coal,Pavlodar-3 power station_Unit 4 -- operating,e_KZ37-220,KZ37-220,52.366612,76.934487,False
+e_KZ37-220,ep_coal_subcritical_G100000107898,130.0,coal,Pavlodar-3 power station_Unit 5 -- operating,e_KZ37-220,KZ37-220,52.366612,76.934487,False
+e_KZ37-220,ep_coal_subcritical_G100000107899,125.0,coal,Pavlodar-3 power station_Unit 6 -- operating,e_KZ37-220,KZ37-220,52.366612,76.934487,False
+e_KZ37-220,ep_coal_subcritical_G100000115115,50.0,coal,Pavlodar-3 power station_Unit 3 -- operating,e_KZ37-220,KZ37-220,52.366612,76.934487,False
+e_KZ92-220,ep_hydro_KZ92-220__irena,69.57138092061368,hydro,Aggregated Plant - IRENA Gap - KZ92-220_Missing Hydro Capacity -- operating,e_KZ92-220,KZ92-220,49.58963735412363,83.54155767580075,False
+e_KZ92-220,ep_hydro_dam_G100000602353,675.0,hydro,Bukhtarma hydroelectric plant_ -- operating,e_KZ92-220,KZ92-220,49.6608,83.3481,False
+e_r16166574-220,ep_gas_steam_turbine_G100001017928,60.0,gas,"Almaty-1 power station_Unit 10, timepoint 2 -- operating",e_r16166574-220,relation/16166574-220,43.281259,76.930565,False
+e_r16166574-220,ep_gas_steam_turbine_G100001017929,60.0,gas,"Almaty-1 power station_Unit 9, timepoint 2 -- operating",e_r16166574-220,relation/16166574-220,43.281259,76.930565,False
+e_w1001747089-220,ep_coal_subcritical_G100000114152,30.0,coal,Ridder power station_Unit 5 -- operating,e_w1001747089-220,way/1001747089-220,50.354659,83.488417,False
+e_w1001747089-220,ep_coal_subcritical_G100000115117,50.0,coal,Sogrinsk power station_Unit 1 -- operating,e_w1001747089-220,way/1001747089-220,50.029566,82.769842,False
+e_w1103905577-220,ep_windon_wind_220,60.0,windon,Aggregated Plant -- operating,e_w1103905577-220,way/1103905577-220,43.55410255222429,78.1979655174014,False
+e_w1249403159-220,ep_hydro_ror_G100000602358,126.0,hydro,Shardara hydroelectric plant_ -- operating,e_w1249403159-220,way/1249403159-220,41.2489,67.9667,False
+e_w1249403159-220,ep_hydro_w1249403159-220__irena,12.986657771847886,hydro,Aggregated Plant - IRENA Gap - way/1249403159-220_Missing Hydro Capacity -- operating,e_w1249403159-220,way/1249403159-220,41.32555048423389,68.69174104260334,False
+e_w1284613092-500,ep_coal_supercritical_G100000102603,500.0,coal,Ekibastuz-1 power station_Unit 1 -- operating,e_w1284613092-500,way/1284613092-500,51.886137,75.376928,False
+e_w1284613092-500,ep_coal_supercritical_G100000102604,500.0,coal,Ekibastuz-1 power station_Unit 2 -- operating,e_w1284613092-500,way/1284613092-500,51.886137,75.376928,False
+e_w1284613092-500,ep_coal_supercritical_G100000102605,500.0,coal,Ekibastuz-1 power station_Unit 3 -- operating,e_w1284613092-500,way/1284613092-500,51.886137,75.376928,False
+e_w1284613092-500,ep_coal_supercritical_G100000102606,500.0,coal,Ekibastuz-1 power station_Unit 4 -- operating,e_w1284613092-500,way/1284613092-500,51.886137,75.376928,False
+e_w1284613092-500,ep_coal_supercritical_G100000102607,500.0,coal,Ekibastuz-1 power station_Unit 5 -- operating,e_w1284613092-500,way/1284613092-500,51.886137,75.376928,False
+e_w1284613092-500,ep_coal_supercritical_G100000102608,500.0,coal,Ekibastuz-1 power station_Unit 6 -- operating,e_w1284613092-500,way/1284613092-500,51.886137,75.376928,False
+e_w1284613092-500,ep_coal_supercritical_G100000113444,500.0,coal,Ekibastuz-1 power station_Unit 7 -- operating,e_w1284613092-500,way/1284613092-500,51.886137,75.376928,False
+e_w1284613092-500,ep_coal_supercritical_G100000113445,500.0,coal,Ekibastuz-1 power station_Unit 8 -- operating,e_w1284613092-500,way/1284613092-500,51.886137,75.376928,False
+e_w1367650964-500,ep_gas_combined_cycle_G100000411098,250.0,gas,Turkistan power station_1 -- construction,e_w1367650964-500,way/1367650964-500,42.18287,69.882497,False
+e_w1367650964-500,ep_gas_combined_cycle_G100000411942,250.0,gas,Turkistan power station_4 -- construction,e_w1367650964-500,way/1367650964-500,42.18287,69.882497,False
+e_w1367650964-500,ep_gas_combined_cycle_G100000411943,250.0,gas,Turkistan power station_3 -- construction,e_w1367650964-500,way/1367650964-500,42.18287,69.882497,False
+e_w1367650964-500,ep_gas_combined_cycle_G100000411944,250.0,gas,Turkistan power station_2 -- construction,e_w1367650964-500,way/1367650964-500,42.18287,69.882497,False
+e_w1377315747-220,ep_gas_combined_cycle_G100000407477,240.0,gas,Kyzylorda CHP power station_CC1 -- construction,e_w1377315747-220,way/1377315747-220,44.865748,65.45722,False
+e_w1377325782-220,ep_gas_combined_cycle_G100000407455,121.0,gas,Tengizchevroil 3 power station_2 -- operating,e_w1377325782-220,way/1377325782-220,46.152062,53.410514,False
+e_w1377325782-220,ep_gas_combined_cycle_G100000407456,121.0,gas,Tengizchevroil 3 power station_1 -- operating,e_w1377325782-220,way/1377325782-220,46.152062,53.410514,False
+e_w1377325782-220,ep_gas_gas_turbine_G100000407450,130.0,gas,Tengizchevroil Future Growth Project power station_5 -- construction,e_w1377325782-220,way/1377325782-220,46.133878,53.374988,False
+e_w1377325782-220,ep_gas_gas_turbine_G100000407451,130.0,gas,Tengizchevroil Future Growth Project power station_4 -- construction,e_w1377325782-220,way/1377325782-220,46.133878,53.374988,False
+e_w1377325782-220,ep_gas_gas_turbine_G100000407452,130.0,gas,Tengizchevroil Future Growth Project power station_3 -- construction,e_w1377325782-220,way/1377325782-220,46.133878,53.374988,False
+e_w1377325782-220,ep_gas_gas_turbine_G100000407453,130.0,gas,Tengizchevroil Future Growth Project power station_2 -- construction,e_w1377325782-220,way/1377325782-220,46.133878,53.374988,False
+e_w1377325782-220,ep_gas_gas_turbine_G100000407454,130.0,gas,Tengizchevroil Future Growth Project power station_1 -- construction,e_w1377325782-220,way/1377325782-220,46.133878,53.374988,False
+e_w1377332419-220,ep_gas_combined_cycle_G100000407480,155.0,gas,Karabatan power station_2 -- operating,e_w1377332419-220,way/1377332419-220,47.34422,52.277177,False
+e_w1377332419-220,ep_gas_combined_cycle_G100000407481,155.0,gas,Karabatan power station_1 -- operating,e_w1377332419-220,way/1377332419-220,47.34422,52.277177,False
+e_w170541548-220,ep_coal_subcritical_G100000110516,50.0,coal,Ust-Kamenogorsk TETS power station_Unit 10 -- operating,e_w170541548-220,way/170541548-220,49.982959,82.614333,False
+e_w170541548-220,ep_coal_subcritical_G100000110517,100.0,coal,Ust-Kamenogorsk TETS power station_Unit 11 -- operating,e_w170541548-220,way/170541548-220,49.982959,82.614333,False
+e_w170541548-220,ep_coal_subcritical_G100000110518,120.0,coal,Ust-Kamenogorsk TETS power station_Unit 12 -- operating,e_w170541548-220,way/170541548-220,49.982959,82.614333,False
+e_w170541548-220,ep_coal_subcritical_G100000110519,38.0,coal,Ust-Kamenogorsk TETS power station_Unit 9 -- operating,e_w170541548-220,way/170541548-220,49.982959,82.614333,False
+e_w170541548-220,ep_hydro_dam_G100000602357,331.0,hydro,Oskemen hydroelectric plant_ -- operating,e_w170541548-220,way/170541548-220,49.9006,82.7181,False
+e_w170541548-220,ep_hydro_w170541548-220__irena,34.11574382921945,hydro,Aggregated Plant - IRENA Gap - way/170541548-220_Missing Hydro Capacity -- operating,e_w170541548-220,way/170541548-220,50.14509411557094,82.65270524851144,False
+e_w171989528-220,ep_coal_subcritical_G100000105629,60.0,coal,Kazakhmys Balkhash power station_Unit 7 -- operating,e_w171989528-220,way/171989528-220,46.828965,74.949256,False
+e_w171989528-220,ep_coal_subcritical_G100000115023,30.0,coal,Kazakhmys Balkhash power station_Unit 3R -- operating,e_w171989528-220,way/171989528-220,46.828965,74.949256,False
+e_w171989528-220,ep_coal_subcritical_G100001000645,30.0,coal,Kazakhmys Balkhash power station_Unit 2 -- operating,e_w171989528-220,way/171989528-220,46.828965,74.949256,False
+e_w182727989-220,ep_hydro_dam_G100000602359,702.0,hydro,Shulbi hydroelectric plant_ -- operating,e_w182727989-220,way/182727989-220,50.3989,81.0675,False
+e_w182727989-220,ep_hydro_w182727989-220__irena,123.88859239492983,hydro,Aggregated Plant - IRENA Gap - way/182727989-220_Missing Hydro Capacity -- operating,e_w182727989-220,way/182727989-220,50.433472000777336,80.89788043210567,False
+e_w196532941-220,ep_coal_subcritical_G100000114153,58.0,coal,"Rudny power station_Unit 1, timepoint 1 -- operating",e_w196532941-220,way/196532941-220,52.989616,63.129804,False
+e_w196532941-220,ep_coal_subcritical_G100000114154,50.0,coal,"Rudny power station_Unit 2, timepoint 1 -- operating",e_w196532941-220,way/196532941-220,52.989616,63.129804,False
+e_w196532941-220,ep_coal_subcritical_G100000114155,34.0,coal,Rudny power station_Unit 3 -- operating,e_w196532941-220,way/196532941-220,52.989616,63.129804,False
+e_w196532941-220,ep_coal_subcritical_G100000114156,63.0,coal,"Rudny power station_Unit 6, timepoint 1 -- operating",e_w196532941-220,way/196532941-220,52.989616,63.129804,False
+e_w196940475-220,ep_hydro_dam_G100000602354,364.0,hydro,Kapshagay hydroelectric plant_ -- operating,e_w196940475-220,way/196940475-220,43.9222,77.0978,False
+e_w196940475-220,ep_hydro_w196940475-220__irena,37.517011340893895,hydro,Aggregated Plant - IRENA Gap - way/196940475-220_Missing Hydro Capacity -- operating,e_w196940475-220,way/196940475-220,44.057987336067065,77.12596104858902,False
+e_w201214269-220,ep_coal_subcritical_G100000107886,60.0,coal,Pavlodar-1 power station_Unit 1 -- operating,e_w201214269-220,way/201214269-220,52.249928,77.059423,False
+e_w201214269-220,ep_coal_subcritical_G100000107887,60.0,coal,Pavlodar-1 power station_Unit 2 -- operating,e_w201214269-220,way/201214269-220,52.249928,77.059423,False
+e_w201214269-220,ep_coal_subcritical_G100000107888,50.0,coal,Pavlodar-1 power station_Unit 3 -- operating,e_w201214269-220,way/201214269-220,52.249928,77.059423,False
+e_w201214269-220,ep_coal_subcritical_G100000107889,50.0,coal,Pavlodar-1 power station_Unit 4 -- operating,e_w201214269-220,way/201214269-220,52.249928,77.059423,False
+e_w201214269-220,ep_coal_subcritical_G100000107890,50.0,coal,Pavlodar-1 power station_Unit 5 -- operating,e_w201214269-220,way/201214269-220,52.249928,77.059423,False
+e_w201214269-220,ep_coal_subcritical_G100000107891,80.0,coal,Pavlodar-1 power station_Unit 6 -- operating,e_w201214269-220,way/201214269-220,52.249928,77.059423,False
+e_w219554423-220,ep_gas_steam_turbine_G100000407457,80.0,gas,Shymkent CHP-3 power station_ST2 -- operating,e_w219554423-220,way/219554423-220,42.27335,69.693644,False
+e_w219554423-220,ep_gas_steam_turbine_G100000407458,80.0,gas,Shymkent CHP-3 power station_ST1 -- operating,e_w219554423-220,way/219554423-220,42.27335,69.693644,False
+e_w224369699-220,ep_gas_steam_turbine_G100000407463,215.0,gas,MAEK 3 power station_3 -- operating,e_w224369699-220,way/224369699-220,43.597002,51.289326,False
+e_w224369699-220,ep_gas_steam_turbine_G100000407464,210.0,gas,MAEK 3 power station_2 -- operating,e_w224369699-220,way/224369699-220,43.597002,51.289326,False
+e_w224369699-220,ep_gas_steam_turbine_G100000407465,200.0,gas,MAEK 3 power station_1 -- operating,e_w224369699-220,way/224369699-220,43.597002,51.289326,False
+e_w224369699-220,ep_gas_steam_turbine_G100000407466,60.0,gas,MAEK 2 power station_ST1 -- operating,e_w224369699-220,way/224369699-220,43.606344,51.281217,False
+e_w224369699-220,ep_gas_steam_turbine_G100000407467,60.0,gas,MAEK 2 power station_ST8 -- operating,e_w224369699-220,way/224369699-220,43.606344,51.281217,False
+e_w224369699-220,ep_gas_steam_turbine_G100000407469,50.0,gas,MAEK 2 power station_ST6 -- operating,e_w224369699-220,way/224369699-220,43.606344,51.281217,False
+e_w224369699-220,ep_gas_steam_turbine_G100000407470,50.0,gas,MAEK 2 power station_ST7 -- operating,e_w224369699-220,way/224369699-220,43.606344,51.281217,False
+e_w224369699-220,ep_gas_steam_turbine_G100000407471,100.0,gas,MAEK 2 power station_ST2 -- operating,e_w224369699-220,way/224369699-220,43.606344,51.281217,False
+e_w224369699-220,ep_gas_steam_turbine_G100000407472,60.0,gas,MAEK 2 power station_ST3 -- operating,e_w224369699-220,way/224369699-220,43.606344,51.281217,False
+e_w224369699-220,ep_gas_steam_turbine_G100000407474,80.0,gas,MAEK 2 power station_ST10 -- operating,e_w224369699-220,way/224369699-220,43.606344,51.281217,False
+e_w226831318-220,ep_gas_combined_cycle_G100001006302,120.0,gas,Eni hybrid power station_1 -- construction,e_w226831318-220,way/226831318-220,43.356306,52.85355,False
+e_w229063057-500,ep_coal_supercritical_G100000102609,500.0,coal,Ekibastuz-2 power station_Unit 1 -- operating,e_w229063057-500,way/229063057-500,52.023972,75.47625,False
+e_w229063057-500,ep_coal_supercritical_G100000102610,500.0,coal,Ekibastuz-2 power station_Unit 2 -- operating,e_w229063057-500,way/229063057-500,52.023972,75.47625,False
+e_w293194781-220,ep_coal_subcritical_G100000115805,35.0,coal,Stepnogorsk power station_Unit 1 -- operating,e_w293194781-220,way/293194781-220,52.483962,72.03196,False
+e_w293194781-220,ep_coal_subcritical_G100000115806,35.0,coal,Stepnogorsk power station_Unit 2 -- operating,e_w293194781-220,way/293194781-220,52.483962,72.03196,False
+e_w293194781-220,ep_coal_subcritical_G100000115809,60.0,coal,Stepnogorsk power station_Unit 5 -- operating,e_w293194781-220,way/293194781-220,52.483962,72.03196,False
+e_w325213763-220,ep_coal_subcritical_G100000111681,50.0,coal,"Zhezkazgan power station_Unit 4, timepoint 1 -- operating",e_w325213763-220,way/325213763-220,47.786036,67.744086,False
+e_w325213763-220,ep_coal_subcritical_G100000111682,42.0,coal,Zhezkazgan power station_Unit 5 -- operating,e_w325213763-220,way/325213763-220,47.786036,67.744086,False
+e_w325213763-220,ep_coal_subcritical_G100000111683,50.0,coal,"Zhezkazgan power station_Unit 6, timepoint 1 -- operating",e_w325213763-220,way/325213763-220,47.786036,67.744086,False
+e_w325213763-220,ep_coal_subcritical_G100000111684,60.0,coal,"Zhezkazgan power station_Unit 7, timepoint 1 -- operating",e_w325213763-220,way/325213763-220,47.786036,67.744086,False
+e_w325213763-220,ep_coal_subcritical_G100000115116,50.0,coal,"Zhezkazgan power station_Unit 8, timepoint 1 -- operating",e_w325213763-220,way/325213763-220,47.786036,67.744086,False
+e_w325213763-220,ep_m_coal_subcritical_G100000112193,30.0,coal,Zhezkazgan power station_Unit 3 -- mothballed,e_w325213763-220,way/325213763-220,47.786036,67.744086,False
+e_w348367053-220,ep_hydro_dam_G100000602356,300.0,hydro,Moynak hydroelectric plant_ -- operating,e_w348367053-220,way/348367053-220,43.1022,78.7801,False
+e_w348367053-220,ep_hydro_w348367053-220__irena,30.920613742494968,hydro,Aggregated Plant - IRENA Gap - way/348367053-220_Missing Hydro Capacity -- operating,e_w348367053-220,way/348367053-220,42.95791432623873,78.94164140055013,False
+e_w427389719-220,ep_gas_combined_cycle_G100000407505,135.0,gas,Akturbo power station_1 -- operating,e_w427389719-220,way/427389719-220,50.336352,57.139243,False
+e_w427389719-220,ep_gas_combined_cycle_G100000407506,57.0,gas,Aktobe CHP power station_7 -- operating,e_w427389719-220,way/427389719-220,50.336398,57.140192,False
+e_w457161129-220,ep_gas_gas_turbine_G100001006268,100.0,gas,GTPP-500 Uralsk power station_1 -- operating,e_w457161129-220,way/457161129-220,51.266769,51.100892,False
+e_w515743813-220,ep_gas_steam_turbine_G100000407441,80.0,gas,Zhanazhol 3 power station_2 -- operating,e_w515743813-220,way/515743813-220,48.386782,57.433541,False
+e_w515743813-220,ep_gas_steam_turbine_G100000407442,80.0,gas,Zhanazhol 3 power station_1 -- operating,e_w515743813-220,way/515743813-220,48.386782,57.433541,False
+e_w556085223-220,ep_coal_subcritical_G100000105564,100.0,coal,Karaganda State Regional power station-2_Unit 4 -- operating,e_w556085223-220,way/556085223-220,49.51333,72.79861,False
+e_w556085223-220,ep_coal_subcritical_G100000105565,100.0,coal,Karaganda State Regional power station-2_Unit 5 -- operating,e_w556085223-220,way/556085223-220,49.51333,72.79861,False
+e_w556085223-220,ep_coal_subcritical_G100000105566,86.0,coal,Karaganda State Regional power station-2_Unit 6 -- operating,e_w556085223-220,way/556085223-220,49.51333,72.79861,False
+e_w556085223-220,ep_coal_subcritical_G100000105567,86.0,coal,Karaganda State Regional power station-2_Unit 7 -- operating,e_w556085223-220,way/556085223-220,49.51333,72.79861,False
+e_w556085223-220,ep_coal_subcritical_G100000105568,86.0,coal,Karaganda State Regional power station-2_Unit 8 -- operating,e_w556085223-220,way/556085223-220,49.51333,72.79861,False
+e_w556085223-220,ep_coal_subcritical_G100000114148,55.0,coal,Karaganda State Regional power station-2_Unit 1 -- operating,e_w556085223-220,way/556085223-220,49.51333,72.79861,False
+e_w556085223-220,ep_coal_subcritical_G100000115113,130.0,coal,Karaganda State Regional power station-2_Unit 2R -- operating,e_w556085223-220,way/556085223-220,49.51333,72.79861,False
+e_w556085223-220,ep_coal_subcritical_G100000115114,130.0,coal,Karaganda State Regional power station-2_Unit 3R -- construction,e_w556085223-220,way/556085223-220,49.51333,72.79861,False
+e_w556085223-220,ep_m_coal_subcritical_G100000105563,100.0,coal,Karaganda State Regional power station-2_Unit 3 -- mothballed,e_w556085223-220,way/556085223-220,49.51333,72.79861,False
+e_w556283082-220,ep_coal_subcritical_G100000107945,63.0,coal,Petropavlovsk-2 power station_Unit 1R -- operating,e_w556283082-220,way/556283082-220,54.897942,69.187372,False
+e_w556283082-220,ep_coal_subcritical_G100000107946,60.0,coal,Petropavlovsk-2 power station_Unit 2 -- operating,e_w556283082-220,way/556283082-220,54.897942,69.187372,False
+e_w556283082-220,ep_coal_subcritical_G100000107947,60.0,coal,Petropavlovsk-2 power station_Unit 3R -- operating,e_w556283082-220,way/556283082-220,54.897942,69.187372,False
+e_w556283082-220,ep_coal_subcritical_G100000107948,63.0,coal,Petropavlovsk-2 power station_Unit 4 -- operating,e_w556283082-220,way/556283082-220,54.897942,69.187372,False
+e_w556283082-220,ep_coal_subcritical_G100000107949,95.0,coal,Petropavlovsk-2 power station_Unit 5 -- operating,e_w556283082-220,way/556283082-220,54.897942,69.187372,False
+e_w556283082-220,ep_coal_subcritical_G100000107950,100.0,coal,Petropavlovsk-2 power station_Unit 6 -- operating,e_w556283082-220,way/556283082-220,54.897942,69.187372,False
+e_w556283082-220,ep_coal_subcritical_G100000107951,100.0,coal,Petropavlovsk-2 power station_Unit 7 -- operating,e_w556283082-220,way/556283082-220,54.897942,69.187372,False
+e_w568243972-220,ep_gas_steam_turbine_G100000407443,210.0,gas,Zhambyl GRES power station_6 -- operating,e_w568243972-220,way/568243972-220,42.844943,71.477415,False
+e_w568243972-220,ep_gas_steam_turbine_G100000407444,210.0,gas,Zhambyl GRES power station_5 -- operating,e_w568243972-220,way/568243972-220,42.844943,71.477415,False
+e_w568243972-220,ep_gas_steam_turbine_G100000407445,210.0,gas,Zhambyl GRES power station_4 -- operating,e_w568243972-220,way/568243972-220,42.844943,71.477415,False
+e_w568243972-220,ep_gas_steam_turbine_G100000407446,200.0,gas,Zhambyl GRES power station_3 -- operating,e_w568243972-220,way/568243972-220,42.844943,71.477415,False
+e_w568243972-220,ep_gas_steam_turbine_G100000407447,200.0,gas,Zhambyl GRES power station_2 -- operating,e_w568243972-220,way/568243972-220,42.844943,71.477415,False
+e_w568243972-220,ep_gas_steam_turbine_G100000407448,200.0,gas,Zhambyl GRES power station_1 -- operating,e_w568243972-220,way/568243972-220,42.844943,71.477415,False
+e_w631035955-220,ep_coal_subcritical_G100000105569,100.0,coal,"Karaganda TPS-2 power station_Unit 1, timepoint 1 -- operating",e_w631035955-220,way/631035955-220,50.04667,73.053235,False
+e_w631035955-220,ep_coal_subcritical_G100000105570,100.0,coal,"Karaganda TPS-2 power station_Unit 2, timepoint 1 -- operating",e_w631035955-220,way/631035955-220,50.04667,73.053235,False
+e_w631035955-220,ep_coal_subcritical_G100000105571,100.0,coal,"Karaganda TPS-2 power station_Unit 3, timepoint 1 -- operating",e_w631035955-220,way/631035955-220,50.04667,73.053235,False
+e_w631035955-220,ep_coal_subcritical_G100000105572,135.0,coal,"Karaganda TPS-2 power station_Unit 4, timepoint 1 -- operating",e_w631035955-220,way/631035955-220,50.04667,73.053235,False
+e_w631035955-220,ep_coal_subcritical_G100000114146,42.0,coal,Karaganda GRES-1 power station_Unit 1 -- operating,e_w631035955-220,way/631035955-220,50.089267,72.918005,False
+e_w631035955-220,ep_coal_subcritical_G100000114147,42.0,coal,Karaganda GRES-1 power station_Unit 2 -- operating,e_w631035955-220,way/631035955-220,50.089267,72.918005,False
+e_w631035955-220,ep_coal_subcritical_G100000114149,65.0,coal,"Karaganda Steel Works power station_Unit 3, timepoint 1 -- operating",e_w631035955-220,way/631035955-220,50.048073,73.022351,False
+e_w631035955-220,ep_coal_subcritical_G100000114150,60.0,coal,"Karaganda Steel Works power station_Unit 4, timepoint 1 -- operating",e_w631035955-220,way/631035955-220,50.048073,73.022351,False
+e_w631035955-220,ep_coal_subcritical_G100000114151,60.0,coal,"Karaganda Steel Works power station_Unit 5, timepoint 1 -- operating",e_w631035955-220,way/631035955-220,50.048073,73.022351,False
+e_w631035955-220,ep_gas_steam_turbine_G100001017876,100.0,gas,"Karaganda TPS-2 power station_Unit 3, timepoint 2 -- construction",e_w631035955-220,way/631035955-220,50.04667,73.053235,False
+e_w631035955-220,ep_gas_steam_turbine_G100001017880,100.0,gas,"Karaganda TPS-2 power station_Unit 2, timepoint 2 -- construction",e_w631035955-220,way/631035955-220,50.04667,73.053235,False
+e_w631035955-220,ep_gas_steam_turbine_G100001017881,100.0,gas,"Karaganda TPS-2 power station_Unit 1, timepoint 2 -- construction",e_w631035955-220,way/631035955-220,50.04667,73.053235,False
+e_w631035955-220,ep_gas_steam_turbine_G100001017950,135.0,gas,"Karaganda TPS-2 power station_Unit 4, timepoint 2 -- construction",e_w631035955-220,way/631035955-220,50.04667,73.053235,False
+e_w631035955-220,ep_gas_steam_turbine_G100001017970,65.0,gas,"Karaganda Steel Works power station_Unit 3, timepoint 2 -- construction",e_w631035955-220,way/631035955-220,50.048073,73.022351,False
+e_w631035955-220,ep_gas_steam_turbine_G100001018023,60.0,gas,"Karaganda Steel Works power station_Unit 5, timepoint 2 -- construction",e_w631035955-220,way/631035955-220,50.048073,73.022351,False
+e_w631035955-220,ep_gas_steam_turbine_G100001018024,60.0,gas,"Karaganda Steel Works power station_Unit 4, timepoint 2 -- construction",e_w631035955-220,way/631035955-220,50.048073,73.022351,False
+e_w732219283-220,ep_coal_subcritical_G100000105573,110.0,coal,Karaganda TPS-3 power station_Unit 1 -- operating,e_w732219283-220,way/732219283-220,49.916732,73.237172,False
+e_w732219283-220,ep_coal_subcritical_G100000105574,110.0,coal,Karaganda TPS-3 power station_Unit 2 -- operating,e_w732219283-220,way/732219283-220,49.916732,73.237172,False
+e_w732219283-220,ep_coal_subcritical_G100000105575,110.0,coal,Karaganda TPS-3 power station_Unit 3 -- operating,e_w732219283-220,way/732219283-220,49.916732,73.237172,False
+e_w732219283-220,ep_coal_subcritical_G100000105576,110.0,coal,Karaganda TPS-3 power station_Unit 4 -- operating,e_w732219283-220,way/732219283-220,49.916732,73.237172,False
+e_w732219283-220,ep_coal_subcritical_G100000105577,120.0,coal,Karaganda TPS-3 power station_Unit 5 -- operating,e_w732219283-220,way/732219283-220,49.916732,73.237172,False
+e_w732219283-220,ep_coal_subcritical_G100000115021,110.0,coal,Karaganda TPS-3 power station_Unit 6 -- operating,e_w732219283-220,way/732219283-220,49.916732,73.237172,False
+e_w749470468-220,ep_coal_subcritical_G100000114142,41.0,coal,Almaty-3 power station_Unit 1 -- operating,e_w749470468-220,way/749470468-220,43.42417,77.00667,False
+e_w749470468-220,ep_coal_subcritical_G100000114143,41.0,coal,Almaty-3 power station_Unit 2 -- operating,e_w749470468-220,way/749470468-220,43.42417,77.00667,False
+e_w749470468-220,ep_coal_subcritical_G100000114144,41.0,coal,Almaty-3 power station_Unit 3 -- operating,e_w749470468-220,way/749470468-220,43.42417,77.00667,False
+e_w749470468-220,ep_coal_subcritical_G100000114145,50.0,coal,Almaty-3 power station_Unit 4 -- operating,e_w749470468-220,way/749470468-220,43.42417,77.00667,False
+e_w815433215-220,ep_coal_supercritical_CCS_G100000100104,325.0,coal,Aksu power station_Unit 5 -- operating,e_w815433215-220,way/815433215-220,52.120048,76.875002,False
+e_w815433215-220,ep_coal_supercritical_G100000100100,300.0,coal,Aksu power station_Unit 1 -- operating,e_w815433215-220,way/815433215-220,52.120048,76.875002,False
+e_w815433215-220,ep_coal_supercritical_G100000100101,325.0,coal,Aksu power station_Unit 2 -- operating,e_w815433215-220,way/815433215-220,52.120048,76.875002,False
+e_w815433215-220,ep_coal_supercritical_G100000100102,325.0,coal,Aksu power station_Unit 3 -- operating,e_w815433215-220,way/815433215-220,52.120048,76.875002,False
+e_w815433215-220,ep_coal_supercritical_G100000100103,310.0,coal,Aksu power station_Unit 4 -- operating,e_w815433215-220,way/815433215-220,52.120048,76.875002,False
+e_w815433215-220,ep_coal_supercritical_G100000100105,325.0,coal,Aksu power station_Unit 6 -- operating,e_w815433215-220,way/815433215-220,52.120048,76.875002,False
+e_w815433215-220,ep_coal_supercritical_G100000100106,300.0,coal,Aksu power station_Unit 7 -- operating,e_w815433215-220,way/815433215-220,52.120048,76.875002,False
+e_w815433215-220,ep_coal_supercritical_G100000100107,300.0,coal,Aksu power station_Unit 8 -- operating,e_w815433215-220,way/815433215-220,52.120048,76.875002,False
+e_w858735202-500,ep_coal_subcritical_G100000100383,80.0,coal,Astana-2 power station_Unit 1 -- operating,e_w858735202-500,way/858735202-500,51.188293,71.510303,False
+e_w858735202-500,ep_coal_subcritical_G100000100384,80.0,coal,Astana-2 power station_Unit 2 -- operating,e_w858735202-500,way/858735202-500,51.188293,71.510303,False
+e_w858735202-500,ep_coal_subcritical_G100000100385,80.0,coal,Astana-2 power station_Unit 3 -- operating,e_w858735202-500,way/858735202-500,51.188293,71.510303,False
+e_w858735202-500,ep_coal_subcritical_G100000100386,120.0,coal,Astana-2 power station_Unit 4 -- operating,e_w858735202-500,way/858735202-500,51.188293,71.510303,False
+e_w858735202-500,ep_coal_subcritical_G100000115085,120.0,coal,Astana-2 power station_Unit 5 -- operating,e_w858735202-500,way/858735202-500,51.188293,71.510303,False
+e_w858735202-500,ep_coal_subcritical_G100000115086,120.0,coal,Astana-2 power station_Unit 6 -- operating,e_w858735202-500,way/858735202-500,51.188293,71.510303,False
+elc_spv_011,ep_solar_pv_011,100.0,solar,Aggregated Plant -- operating,elc_spv_011,way/279715722-220,51.404319274597505,69.82840506473397,False
+elc_spv_029,ep_solar_pv_029,30.0,solar,Aggregated Plant -- operating,elc_spv_029,way/223868477-220,49.415414972819256,79.76365558856727,False
+elc_spv_037,ep_solar_pv_037,4.5,solar,Aggregated Plant -- operating,elc_spv_037,way/919675545-220,46.482283426422285,78.8073347460386,False
+elc_spv_039,ep_solar_pv_039,90.0,solar,Aggregated Plant -- operating,elc_spv_039,way/171989528-220,46.677968579362215,76.45611760508761,False
+elc_spv_040,ep_solar_pv_040,100.0,solar,Aggregated Plant -- operating,elc_spv_040,KZ100-220,48.843021913593724,72.4853531608754,False
+elc_spv_043,ep_solar_pv_043,76.0,solar,Aggregated Plant -- operating,elc_spv_043,way/556085225-220,47.13870136041578,72.37490003349966,False
+elc_spv_046,ep_solar_pv_046,121.4,solar,Aggregated Plant -- operating,elc_spv_046,KZ166-220,43.45919502917219,72.99203545076433,False
+elc_spv_048,ep_solar_pv_048,158.70000000000002,solar,Aggregated Plant -- operating,elc_spv_048,KZ169-220,44.15601706481661,77.10278217098472,False
+elc_spv_056,ep_solar_pv_056,314.0,solar,Aggregated Plant -- operating,elc_spv_056,way/1249403159-220,40.97343845485411,68.6962624103336,False
+elc_spv_058,ep_solar_pv_058,90.00000000000001,solar,Aggregated Plant -- operating,elc_spv_058,way/252145111-220,43.076384330662854,66.75560722775711,False
+elc_spv_059,ep_solar_pv_059,10.0,solar,Aggregated Plant -- operating,elc_spv_059,way/325240950-220,47.6018858429226,67.56513303765459,False
+elc_spv_060,ep_solar_pv_060,63.0,solar,Aggregated Plant -- operating,elc_spv_060,way/358189165-220,45.84264803704279,67.68609164961332,False
+elc_spv_067,ep_solar_pv_067,3.6,solar,Aggregated Plant -- operating,elc_spv_067,way/224369699-220,44.18114556592428,52.31822947514302,False
+elc_spv_071,ep_solar_pv_071,28.0,solar,Aggregated Plant -- operating,elc_spv_071,way/172514677-220,44.06750586807511,64.85173224291148,False
+elc_spv_074,ep_solar_pv_074,50.0,solar,Aggregated Plant -- operating,elc_spv_074,way/172458539-220,44.989778215912054,61.63080108482132,False
+elc_won_013,ep_windon_wind_013,96.0,windon,Aggregated Plant -- operating,elc_won_013,way/1377323690-220,49.77181235087927,59.71888365235943,False
+elc_won_016,ep_windon_wind_016,65.0,windon,Aggregated Plant -- operating,elc_won_016,way/931086439-220,50.66039849033202,65.44655498992076,False
+elc_won_020,ep_windon_wind_020,50.0,windon,Aggregated Plant -- operating,elc_won_020,KZ35-220,53.66047671006095,62.74521313430469,False
+elc_won_023,ep_windon_023__irena,98.09986279382272,windon,Aggregated Plant -- operating,elc_won_023,KZ34-220,54.03870186478699,70.65934443132797,False
+elc_won_023,ep_windon_wind_023,18.2,windon,Aggregated Plant -- operating,elc_won_023,KZ34-220,53.682323910179356,70.71243337808585,False
+elc_won_025,ep_windon_wind_025,389.0,windon,Aggregated Plant -- operating,elc_won_025,KZ76-220,51.85232327234738,73.34401350647597,False
+elc_won_027,ep_windon_wind_027,43.0,windon,Aggregated Plant -- operating,elc_won_027,way/224369699-220,43.82814876926807,52.25757547502172,False
+elc_won_037,ep_windon_037__irena,90.19995866776783,windon,Aggregated Plant -- operating,elc_won_037,way/181270259-220,45.01854023037466,55.786391398627984,False
+elc_won_038,ep_windon_038__irena,91.7501785384095,windon,Aggregated Plant -- operating,elc_won_038,way/515743813-220,48.05634479284802,58.034738490857116,False
+elc_won_047,ep_windon_wind_047,51.7,windon,Aggregated Plant -- operating,elc_won_047,way/1377302246-220,43.35366470523841,73.78319335783434,False
+elc_won_049,ep_windon_wind_049,100.0,windon,Aggregated Plant -- operating,elc_won_049,KZ130-220,45.75919335723022,70.84971782087466,False
+elc_won_050,ep_windon_wind_050,100.0,windon,Aggregated Plant -- operating,elc_won_050,way/252145110-220,44.02906059334403,69.45767251746686,False
+elc_won_064,ep_windon_wind_064,150.00000000000003,windon,Aggregated Plant -- operating,elc_won_064,way/394294503-220,47.578202047278246,79.6838054819995,False
+elc_won_066,ep_windon_wind_066,50.0,windon,Aggregated Plant -- operating,elc_won_066,way/920058919-220,46.22578061047142,79.96969714100294,False

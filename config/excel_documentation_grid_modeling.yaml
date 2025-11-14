@@ -1,0 +1,38 @@
+# Excel Documentation - Grid Modeling Flavor
+# Contains ONLY grid modeling specific documentation that overrides/extends base documentation
+# Used when grid_modeling=True in processing parameters
+
+vervestacks_ISO:  # e.g., vervestacks_CHE.xlsx
+  hourly_resource_shapes:
+    methodology_paragraph: >
+      METHODOLOGY: Hourly renewable energy capacity factors converted to normalized fractions for time-slice modeling. 
+      Wind speeds extrapolated from 10m to 91.5m hub height using power law (α=0.143), then applied to Vestas V117-3.3MW 
+      power curve (3-25 m/s operating range). Solar processing uses PVGIS-calculated power output for fixed-tilt PV systems 
+      optimized per location. Both wind and solar capacity factors normalized so hourly fractions sum to 1.0 annually 
+      per spatial unit, enabling direct time-slice aggregation in VEDA/TIMES models. Grid modeling ON produces individual 
+      profiles per 50×50km renewable energy zone (grid_cell). Grid modeling OFF aggregates to single country-level profile. 
+      High-resolution mode enables transmission network analysis; national mode streamlines policy studies. Complete 8,760-hour 
+      coverage with no missing data. All capacity factors physically constrained (0-100%). Seasonal patterns validated 
+      (summer solar peaks, winter wind maxima). Mathematical consistency verified (annual normalization ±0.001 tolerance). 
+      Hourly fractions feed time-slice design algorithms and renewable energy process definitions. Preserves natural 
+      variability patterns for grid integration analysis, energy storage sizing, and system flexibility requirements 
+      in energy system optimization models.
+    purpose_paragraph: >
+      Enables high-resolution spatial analysis of renewable energy variability for transmission network planning, 
+      grid integration studies, and renewable energy zone optimization. Supports detailed assessment of grid 
+      flexibility requirements and energy storage sizing at 50×50km resolution.
+
+  existing_stock:
+    purpose_paragraph: >
+      Provides spatially-resolved power plant inventory for transmission network modeling, grid constraint analysis, 
+      and renewable energy zone planning. Enables detailed assessment of existing generation distribution and 
+      grid integration requirements at high spatial resolution.
+    
+    column_documentation:
+      "comm-out":
+        description: "Output commodity for VEDA/TIMES model linkage with spatial grid resolution"
+        calculation: "Spatial assignment based on grid modeling mode and technology type"
+        data_source: "Generated from REZoning zones (grid ON) or country codes (grid OFF)"
+        methodology: "Grid ON: elc_spv-CHE_001 (renewables), e_w123 (thermal). Grid OFF: elc_sol-CHE, ELC"
+        quality_notes: "All assignments verified against spatial boundaries. Commodity names follow VEDA conventions."
+        purpose: "Links power plants to specific grid zones for transmission network analysis and spatial optimization"

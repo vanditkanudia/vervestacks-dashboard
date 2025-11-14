@@ -1,0 +1,16 @@
+option 1
+
+C:\Veda\VerveStacks\ts_design>python scripts\stress_period_analyzer.py <ISO>
+
+C:\Veda\VerveStacks\1_grids>python extract_country_pypsa_network_clustered.py --country <ISO> --visualize
+
+C:\Veda\VerveStacks>python main.py --iso <ISO> --process-all-tsopts
+
+C:\Veda\VerveStacks>python main.py --iso <ISO> --grid-modeling --tsopt ts48_clu,ts24_clu,ts12_clu,s1_d 
+
+
+option 2
+
+C:\Veda\VerveStacks\ts_design>python scripts\stress_period_analyzer.py <ISO>
+
+C:\Veda\VerveStacks>python main.py --iso <ISO> --process-all-tsopts

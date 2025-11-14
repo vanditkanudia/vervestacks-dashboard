@@ -1,0 +1,330 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_coal__ember,3.0000000000001137,coal,Aggregated Plant -- operating,,,,,False
+ELC,ep_gas__ember,3.9999999999995595,gas,Aggregated Plant -- operating,,,,,False
+e_VN1008-500,ep_solar_pv_500,43.2,solar,Aggregated Plant -- operating,e_VN1008-500,VN1008-500,11.367660685323173,108.8876722349413,False
+e_VN1010-500,ep_solar_pv_500,89.0,solar,Aggregated Plant -- operating,e_VN1010-500,VN1010-500,11.266180089751968,108.78332593072612,False
+e_VN1013-220,ep_hydro_VN1013-220__irena,138.3982487922705,hydro,Aggregated Plant - IRENA Gap - VN1013-220_Missing Hydro Capacity -- operating,e_VN1013-220,VN1013-220,11.325414102657556,107.70085405523017,False
+e_VN1013-220,ep_hydro_dam_G100000604044,175.0,hydro,Da Mi hydroelectric plant_ -- operating,e_VN1013-220,VN1013-220,11.3261,107.9336,False
+e_VN1013-220,ep_hydro_dam_G100000604057,300.0,hydro,Ham Thuan hydroelectric plant_ -- operating,e_VN1013-220,VN1013-220,11.336,107.9349,False
+e_VN1014-500,ep_solar_pv_500,93.0,solar,Aggregated Plant -- operating,e_VN1014-500,VN1014-500,11.272496480445996,108.68104769020083,False
+e_VN1015-500,ep_solar_pv_500,1.2,solar,Aggregated Plant -- operating,e_VN1015-500,VN1015-500,11.358605511009864,108.3703137350659,False
+e_VN1020-500,ep_solar_pv_500,43.6,solar,Aggregated Plant -- operating,e_VN1020-500,VN1020-500,11.35387451456772,108.73691408653256,False
+e_VN1022-500,ep_solar_pv_500,1.4,solar,Aggregated Plant -- operating,e_VN1022-500,VN1022-500,11.208881993620842,108.54267696601235,False
+e_VN1023-500,ep_solar_pv_500,6.9,solar,Aggregated Plant -- operating,e_VN1023-500,VN1023-500,11.09764552301271,108.50485689637922,False
+e_VN1025-500,ep_solar_pv_500,1.6,solar,Aggregated Plant -- operating,e_VN1025-500,VN1025-500,11.268892341141509,108.3555826319253,False
+e_VN1054-500,ep_bioenergy_VN1054-500,30.0,bioenergy,Aggregated Plant -- construction,e_VN1054-500,VN1054-500,11.23720377473796,106.98636408516685,False
+e_VN1054-500,ep_bioenergy_VN1054-500__ember,69.51219512195121,bioenergy,Aggregated Plant - EMBER Gap - VN1054-500_Missing Bioenergy Capacity -- operating,e_VN1054-500,VN1054-500,10.88704326909536,106.98309389333309,False
+e_VN11-220,ep_hydro_VN11-220__irena,17.481884057971012,hydro,Aggregated Plant - IRENA Gap - VN11-220_Missing Hydro Capacity -- operating,e_VN11-220,VN11-220,22.141496697898322,104.51773468036413,False
+e_VN11-220,ep_hydro_ror_G100001051655,60.0,hydro,Song Lo 6 hydroelectric plant_ -- operating,e_VN11-220,VN11-220,22.2948,104.9182,False
+e_VN1137-500,ep_gas_gas_turbine_G100000404527,260.0,gas,Hiep Phuoc power station_1-4 -- construction,e_VN1137-500,VN1137-500,10.641677,106.745602,False
+e_VN1137-500,ep_gas_gas_turbine_G100001021309,260.0,gas,Hiep Phuoc power station_1-5 -- construction,e_VN1137-500,VN1137-500,10.641677,106.745602,False
+e_VN1137-500,ep_gas_gas_turbine_G100001021310,260.0,gas,Hiep Phuoc power station_1-6 -- construction,e_VN1137-500,VN1137-500,10.641677,106.745602,False
+e_VN1137-500,ep_gas_steam_turbine_G100000404524,125.0,gas,Hiep Phuoc power station_1-1 -- operating,e_VN1137-500,VN1137-500,10.641677,106.745602,False
+e_VN1137-500,ep_gas_steam_turbine_G100000404525,125.0,gas,Hiep Phuoc power station_1-2 -- operating,e_VN1137-500,VN1137-500,10.641677,106.745602,False
+e_VN1137-500,ep_gas_steam_turbine_G100000404526,125.0,gas,Hiep Phuoc power station_1-3 -- operating,e_VN1137-500,VN1137-500,10.641677,106.745602,False
+e_VN1140-500,ep_coal_subcritical_G100000110053,60.0,coal,Vedan Vietnam Cogeneration power station_-- -- operating,e_VN1140-500,VN1140-500,10.66075,107.02451,False
+e_VN1157-220,ep_gas_combined_cycle_G100000404514,389.0,gas,Ba Ria power station_1 -- operating,e_VN1157-220,VN1157-220,10.489019,107.166468,False
+e_VN1199-500,ep_gas_steam_turbine_G100000404529,330.0,gas,O Mon Power Complex_1-1 -- operating,e_VN1199-500,VN1199-500,10.134916,105.669325,False
+e_VN1199-500,ep_gas_steam_turbine_G100000404530,330.0,gas,O Mon Power Complex_1-2 -- operating,e_VN1199-500,VN1199-500,10.134916,105.669325,False
+e_VN1219-220,ep_coal_subcritical_G100000114158,50.0,coal,Hau Giang Lee & Man power station_Unit 1 -- operating,e_VN1219-220,VN1219-220,9.944849,105.874521,False
+e_VN1219-220,ep_coal_subcritical_G100000114159,75.0,coal,Hau Giang Lee & Man power station_Unit 2 -- operating,e_VN1219-220,VN1219-220,9.944849,105.874521,False
+e_VN1219-220,ep_coal_supercritical_G100000109514,600.0,coal,Song Hau Thermal Power Plant_Unit 1-1 -- operating,e_VN1219-220,VN1219-220,9.95266,105.86071,False
+e_VN1219-220,ep_coal_supercritical_G100000109515,600.0,coal,Song Hau Thermal Power Plant_Unit 1-2 -- operating,e_VN1219-220,VN1219-220,9.95266,105.86071,False
+e_VN1223-500,ep_coal_supercritical_G100000106395,600.0,coal,Long Phu Power Centre_Unit 1-1 -- construction,e_VN1223-500,VN1223-500,9.70894,106.08183,False
+e_VN1223-500,ep_coal_supercritical_G100000106396,600.0,coal,Long Phu Power Centre_Unit 1-2 -- construction,e_VN1223-500,VN1223-500,9.70894,106.08183,False
+e_VN1228-220,ep_windoff_wind_220,576.0000000000001,windoff,Aggregated Plant -- construction,e_VN1228-220,VN1228-220,9.42720972779054,106.35567705230004,False
+e_VN141-500,ep_hydro_VN141-500__irena,19.23007246376811,hydro,Aggregated Plant - IRENA Gap - VN141-500_Missing Hydro Capacity -- operating,e_VN141-500,VN141-500,21.316109819211093,104.70400157559612,False
+e_VN141-500,ep_hydro_ror_G100001051665,66.0,hydro,Suoi Sap 2A hydroelectric plant_ -- operating,e_VN141-500,VN141-500,21.2317,104.5044,False
+e_VN167-220,ep_coal_CFB_G100000107153,110.0,coal,Na Duong power station_Phase 2 Unit 1 -- construction,e_VN167-220,VN167-220,21.6975,106.9765,False
+e_VN167-220,ep_coal_CFB_G100000109506,110.0,coal,Son Dong power station_Unit 1 -- operating,e_VN167-220,VN167-220,21.179288,106.780143,False
+e_VN167-220,ep_coal_CFB_G100000109507,110.0,coal,Son Dong power station_Unit 2 -- operating,e_VN167-220,VN167-220,21.179288,106.780143,False
+e_VN167-220,ep_coal_subcritical_G100000107151,50.0,coal,Na Duong power station_Phase 1 Unit 1 -- operating,e_VN167-220,VN167-220,21.698111,106.975852,False
+e_VN167-220,ep_coal_subcritical_G100000107152,50.0,coal,Na Duong power station_Phase 1 Unit 2 -- operating,e_VN167-220,VN167-220,21.698111,106.975852,False
+e_VN187-500,ep_hydro_VN187-500__irena,437.0471014492753,hydro,Aggregated Plant - IRENA Gap - VN187-500_Missing Hydro Capacity -- operating,e_VN187-500,VN187-500,21.18460545885494,104.21097295221553,False
+e_VN2-220,ep_hydro_VN2-220__irena,39.334239130434774,hydro,Aggregated Plant - IRENA Gap - VN2-220_Missing Hydro Capacity -- operating,e_VN2-220,VN2-220,22.435307112903004,104.07511366822314,False
+e_VN2-220,ep_hydro_ror_G100001027573,84.0,hydro,Ngoi Phat hydroelectric plant_ -- operating,e_VN2-220,VN2-220,22.5546,103.7434,False
+e_VN2-220,ep_hydro_ror_G100001051656,51.0,hydro,Pa Vai Su hydroelectric plant_ -- construction,e_VN2-220,VN2-220,22.5877,103.3678,False
+e_VN22-220,ep_hydro_VN22-220__irena,64.10024154589371,hydro,Aggregated Plant - IRENA Gap - VN22-220_Missing Hydro Capacity -- operating,e_VN22-220,VN22-220,21.898491166735592,103.79721465755166,False
+e_VN22-220,ep_hydro_dam_G100000604037,220.0,hydro,Ban Chat hydroelectric plant_ -- operating,e_VN22-220,VN22-220,21.8601,103.8286,False
+e_VN23-220,ep_hydro_VN23-220__irena,16.60778985507246,hydro,Aggregated Plant - IRENA Gap - VN23-220_Missing Hydro Capacity -- operating,e_VN23-220,VN23-220,21.74649455431103,104.91044621602353,False
+e_VN23-220,ep_hydro_ror_G100001051679,57.0,hydro,Van Chan hydroelectric plant_ -- operating,e_VN23-220,VN23-220,21.6812,104.549,False
+e_VN230-220,ep_coal_subcritical_G100000108384,300.0,coal,Quang Ninh power station_Phase 1 Unit 1 -- operating,e_VN230-220,VN230-220,21.01182,107.12883,False
+e_VN230-220,ep_coal_subcritical_G100000108385,300.0,coal,Quang Ninh power station_Phase 1 Unit 2 -- operating,e_VN230-220,VN230-220,21.01182,107.12883,False
+e_VN230-220,ep_coal_subcritical_G100000108386,300.0,coal,Quang Ninh power station_Phase 2 Unit 1 -- operating,e_VN230-220,VN230-220,21.01182,107.12883,False
+e_VN230-220,ep_coal_subcritical_G100000108387,300.0,coal,Quang Ninh power station_Phase 2 Unit 2 -- operating,e_VN230-220,VN230-220,21.01182,107.12883,False
+e_VN252-220,ep_coal_subcritical_G100000103546,300.0,coal,Hai Phong Thermal Power Station_Phase I Unit 1 -- operating,e_VN252-220,VN252-220,20.9427817,106.7578707,False
+e_VN252-220,ep_coal_subcritical_G100000103547,300.0,coal,Hai Phong Thermal Power Station_Phase I Unit 2 -- operating,e_VN252-220,VN252-220,20.9427817,106.7578707,False
+e_VN252-220,ep_coal_subcritical_G100000103548,300.0,coal,Hai Phong Thermal Power Station_Phase II Unit 3 -- operating,e_VN252-220,VN252-220,20.9397669,106.7549156,False
+e_VN252-220,ep_coal_subcritical_G100000103549,300.0,coal,Hai Phong Thermal Power Station_Phase II Unit 4 -- operating,e_VN252-220,VN252-220,20.9397669,106.7549156,False
+e_VN315-500,ep_hydro_VN315-500__irena,23.309178743961347,hydro,Aggregated Plant - IRENA Gap - VN315-500_Missing Hydro Capacity -- operating,e_VN315-500,VN315-500,20.240294363962708,105.62214187066279,False
+e_VN315-500,ep_hydro_ror_G100000604035,80.0,hydro,Ba Thuoc 2 hydroelectric plant_ -- operating,e_VN315-500,VN315-500,20.321,105.3281,False
+e_VN32-220,ep_hydro_VN32-220__irena,34.963768115942024,hydro,Aggregated Plant - IRENA Gap - VN32-220_Missing Hydro Capacity -- operating,e_VN32-220,VN32-220,21.588743401018593,104.91623435232277,False
+e_VN32-220,ep_hydro_dam_G100000604081,120.0,hydro,Thac Ba hydroelectric plant_ -- operating,e_VN32-220,VN32-220,21.7479,105.025,False
+e_VN321-220,ep_hydro_VN321-220__irena,93.81944444444443,hydro,Aggregated Plant - IRENA Gap - VN321-220_Missing Hydro Capacity -- operating,e_VN321-220,VN321-220,20.053738171909945,105.51177580230511,False
+e_VN321-220,ep_hydro_dam_G100000604043,97.0,hydro,Cua Dat hydroelectric plant_ -- operating,e_VN321-220,VN321-220,19.8782,105.2731,False
+e_VN321-220,ep_hydro_dam_G100000604060,180.0,hydro,Hua Na hydroelectric plant_ -- operating,e_VN321-220,VN321-220,19.8381,105.0846,False
+e_VN321-220,ep_hydro_dam_G100001051658,45.0,hydro,Nhan Hac -A hydroelectric plant_ -- operating,e_VN321-220,VN321-220,19.5383,104.9577,False
+e_VN4-220,ep_hydro_VN4-220__irena,83.33031400966182,hydro,Aggregated Plant - IRENA Gap - VN4-220_Missing Hydro Capacity -- operating,e_VN4-220,VN4-220,22.575978323499164,105.40779712996479,False
+e_VN4-220,ep_hydro_dam_G100000604068,110.0,hydro,Nho Que 3 hydroelectric plant_ -- operating,e_VN4-220,VN4-220,23.1432,105.5154,False
+e_VN4-220,ep_hydro_dam_G100000604083,82.0,hydro,Thai An hydroelectric plant_ -- operating,e_VN4-220,VN4-220,22.9992,105.0659,False
+e_VN4-220,ep_hydro_dam_G100001051650,46.0,hydro,Bao Lam 3 hydroelectric plant_ -- operating,e_VN4-220,VN4-220,23.0129,105.4899,False
+e_VN4-220,ep_hydro_dam_G100001051654,48.0,hydro,Nho Que 2 hydroelectric plant_ -- operating,e_VN4-220,VN4-220,23.1781,105.4852,False
+e_VN410-220,ep_coal_subcritical_G100000103517,150.0,coal,Ha Tinh Formosa Plastics Steel Complex power station_Unit 1 -- operating,e_VN410-220,VN410-220,18.02883,106.44555,False
+e_VN410-220,ep_coal_subcritical_G100000103519,150.0,coal,Ha Tinh Formosa Plastics Steel Complex power station_Unit 2 -- operating,e_VN410-220,VN410-220,18.02883,106.44555,False
+e_VN410-220,ep_coal_subcritical_G100000103520,150.0,coal,Ha Tinh Formosa Plastics Steel Complex power station_Unit 5 -- operating,e_VN410-220,VN410-220,18.02883,106.44555,False
+e_VN473-500,ep_gas_combined_cycle_G100000405995,1500.0,gas,Hai Lang power station_1-1 -- construction,e_VN473-500,VN473-500,16.994429,107.115361,False
+e_VN476-500,ep_hydro_VN476-500__irena,18.64734299516908,hydro,Aggregated Plant - IRENA Gap - VN476-500_Missing Hydro Capacity -- operating,e_VN476-500,VN476-500,16.618369134279448,106.8916165357343,False
+e_VN476-500,ep_hydro_dam_G100001051664,64.0,hydro,Quang Tri hydroelectric plant_ -- operating,e_VN476-500,VN476-500,16.6624,106.6984,False
+e_VN49-500,ep_hydro_VN49-500__irena,699.2753623188405,hydro,Aggregated Plant - IRENA Gap - VN49-500_Missing Hydro Capacity -- operating,e_VN49-500,VN49-500,21.340349574564325,103.86537340587438,False
+e_VN49-500,ep_hydro_dam_G100000604074,2400.0,hydro,Son La hydroelectric plant_ -- operating,e_VN49-500,VN49-500,21.4984,103.9965,False
+e_VN495-500,ep_hydro_VN495-500__irena,23.600543478260867,hydro,Aggregated Plant - IRENA Gap - VN495-500_Missing Hydro Capacity -- operating,e_VN495-500,VN495-500,16.439606219435383,107.50024220482737,False
+e_VN495-500,ep_hydro_dam_G100000604062,81.0,hydro,Huong Dien hydroelectric plant_ -- operating,e_VN495-500,VN495-500,16.4601,107.4233,False
+e_VN504-500,ep_hydro_VN504-500__irena,12.820048309178741,hydro,Aggregated Plant - IRENA Gap - VN504-500_Missing Hydro Capacity -- operating,e_VN504-500,VN504-500,16.482972964979016,107.60658174956673,False
+e_VN504-500,ep_hydro_dam_G100001051668,44.0,hydro,Binh Dien hydroelectric plant_ -- operating,e_VN504-500,VN504-500,16.3174,107.5022,False
+e_VN556-500,ep_hydro_VN556-500__irena,18.355978260869563,hydro,Aggregated Plant - IRENA Gap - VN556-500_Missing Hydro Capacity -- operating,e_VN556-500,VN556-500,15.862102779491401,107.97940291970073,False
+e_VN556-500,ep_hydro_ror_G100001027577,63.0,hydro,Song Con 2 hydroelectric plant_ -- operating,e_VN556-500,VN556-500,15.9332,107.8081,False
+e_VN563-220,ep_hydro_VN563-220__irena,120.91636473429949,hydro,Aggregated Plant - IRENA Gap - VN563-220_Missing Hydro Capacity -- operating,e_VN563-220,VN563-220,15.806629331001728,107.72154880896188,False
+e_VN563-220,ep_hydro_dam_G100000604033,210.0,hydro,A Vuong hydroelectric plant_ -- operating,e_VN563-220,VN563-220,15.7998,107.6172,False
+e_VN563-220,ep_hydro_dam_G100000604077,156.0,hydro,Song Bung 4 hydroelectric plant_ -- operating,e_VN563-220,VN563-220,15.7258,107.6512,False
+e_VN563-220,ep_hydro_dam_G100001027575,49.0,hydro,Song Bung 4A hydroelectric plant_ -- operating,e_VN563-220,VN563-220,15.7646,107.6802,False
+e_VN569-220,ep_hydro_VN569-220__irena,29.136473429951685,hydro,Aggregated Plant - IRENA Gap - VN569-220_Missing Hydro Capacity -- operating,e_VN569-220,VN569-220,15.657623380222908,107.61289821171765,False
+e_VN569-220,ep_hydro_ror_G100000604076,100.0,hydro,Song Bung 2 hydroelectric plant_ -- operating,e_VN569-220,VN569-220,15.7001,107.4847,False
+e_VN571-500,ep_coal_subcritical_G100000107494,30.0,coal,Nong Son power station_-- -- operating,e_VN571-500,VN571-500,15.716308,108.031015,False
+e_VN584-500,ep_hydro_VN584-500__irena,18.064613526570046,hydro,Aggregated Plant - IRENA Gap - VN584-500_Missing Hydro Capacity -- operating,e_VN584-500,VN584-500,15.34665559062912,107.99617807630023,False
+e_VN584-500,ep_hydro_dam_G100001027579,62.0,hydro,Song Tranh 3 hydroelectric plant_ -- operating,e_VN584-500,VN584-500,15.4443,108.143,False
+e_VN608-500,ep_windon_wind_500,50.0,windon,Aggregated Plant -- construction,e_VN608-500,VN608-500,15.119035896313315,107.6924084730084,False
+e_VN638-500,ep_hydro_VN638-500__irena,23.309178743961347,hydro,Aggregated Plant - IRENA Gap - VN638-500_Missing Hydro Capacity -- operating,e_VN638-500,VN638-500,14.695919872106428,108.39472127903659,False
+e_VN643-500,ep_hydro_VN643-500__irena,64.10024154589371,hydro,Aggregated Plant - IRENA Gap - VN643-500_Missing Hydro Capacity -- operating,e_VN643-500,VN643-500,14.726332319623188,108.1561669913627,False
+e_VN643-500,ep_hydro_dam_G100000604084,220.0,hydro,Thuong Kon Tum hydroelectric plant_ -- operating,e_VN643-500,VN643-500,14.6921,108.2294,False
+e_VN684-220,ep_hydro_VN684-220__irena,75.7548309178744,hydro,Aggregated Plant - IRENA Gap - VN684-220_Missing Hydro Capacity -- operating,e_VN684-220,VN684-220,14.066995890485273,107.68400251331275,False
+e_VN684-220,ep_hydro_dam_G100000604071,260.0,hydro,Se San 3 hydroelectric plant_ -- operating,e_VN684-220,VN684-220,14.2157,107.7219,False
+e_VN685-220,ep_hydro_VN685-220__irena,19.23007246376811,hydro,Aggregated Plant - IRENA Gap - VN685-220_Missing Hydro Capacity -- operating,e_VN685-220,VN685-220,14.199464165022519,108.87191670639282,False
+e_VN685-220,ep_hydro_dam_G100001027583,66.0,hydro,Vinh Son hydroelectric plant_ -- operating,e_VN685-220,VN685-220,14.3656,108.6943,False
+e_VN707-220,ep_hydro_VN707-220__irena,46.618357487922694,hydro,Aggregated Plant - IRENA Gap - VN707-220_Missing Hydro Capacity -- operating,e_VN707-220,VN707-220,14.137480650498068,108.82869846258603,False
+e_VN707-220,ep_hydro_dam_G100000604034,160.0,hydro,An Khe hydroelectric plant_ -- operating,e_VN707-220,VN707-220,14.0147,108.6797,False
+e_VN753-220,ep_hydro_VN753-220__irena,103.14311594202896,hydro,Aggregated Plant - IRENA Gap - VN753-220_Missing Hydro Capacity -- operating,e_VN753-220,VN753-220,13.217304001693627,108.84677840175223,False
+e_VN753-220,ep_hydro_dam_G100000604075,220.0,hydro,Song Ba Ha hydroelectric plant_ -- operating,e_VN753-220,VN753-220,13.023,108.904,False
+e_VN753-220,ep_hydro_dam_G100001027578,70.0,hydro,Song Hinh hydroelectric plant_ -- operating,e_VN753-220,VN753-220,12.9281,108.9936,False
+e_VN753-220,ep_hydro_dam_G100001051660,64.0,hydro,Krong H’nang hydroelectric plant_ -- operating,e_VN753-220,VN753-220,12.927,108.9465,False
+e_VN8-500,ep_hydro_VN8-500__irena,349.63768115942025,hydro,Aggregated Plant - IRENA Gap - VN8-500_Missing Hydro Capacity -- operating,e_VN8-500,VN8-500,21.987492516682476,103.15026141798906,False
+e_VN8-500,ep_hydro_dam_G100000604065,1200.0,hydro,Lai Chau hydroelectric plant_ -- operating,e_VN8-500,VN8-500,22.1395,102.9847,False
+e_VN907-220,ep_hydro_VN907-220__irena,52.44565217391304,hydro,Aggregated Plant - IRENA Gap - VN907-220_Missing Hydro Capacity -- operating,e_VN907-220,VN907-220,11.890383308992394,107.81721441282515,False
+e_VN907-220,ep_hydro_dam_G100000604053,180.0,hydro,Dong Nai 3 hydroelectric plant_ -- operating,e_VN907-220,VN907-220,11.8741,107.8754,False
+e_VN915-220,ep_hydro_VN915-220__irena,349.63768115942025,hydro,Aggregated Plant - IRENA Gap - VN915-220_Missing Hydro Capacity -- operating,e_VN915-220,VN915-220,11.705509896475983,108.9965875740543,False
+e_VN915-220,ep_hydro_ps_G100000604036,1200.0,hydro,Bac Ai hydroelectric plant_ -- construction,e_VN915-220,VN915-220,11.8873,108.7884,False
+e_VN930-500,ep_hydro_VN930-500__irena,88.28351449275361,hydro,Aggregated Plant - IRENA Gap - VN930-500_Missing Hydro Capacity -- operating,e_VN930-500,VN930-500,11.704145721849915,107.07415564032628,False
+e_VN930-500,ep_hydro_dam_G100000604082,225.0,hydro,Thac Mo hydroelectric plant_ -- operating,e_VN930-500,VN930-500,11.8591,107.0138,False
+e_VN930-500,ep_hydro_ror_G100000604041,78.0,hydro,Can Don hydroelectric plant_ -- operating,e_VN930-500,VN930-500,11.9689,106.8435,False
+e_VN932-500,ep_hydro_VN932-500__irena,87.40942028985506,hydro,Aggregated Plant - IRENA Gap - VN932-500_Missing Hydro Capacity -- operating,e_VN932-500,VN932-500,11.882793414553108,108.06732386682006,False
+e_VN932-500,ep_hydro_dam_G100000604046,300.0,hydro,Dai Ninh hydroelectric plant_ -- operating,e_VN932-500,VN932-500,11.6498,108.3203,False
+e_VN976-500,ep_hydro_VN976-500__irena,21.852355072463766,hydro,Aggregated Plant - IRENA Gap - VN976-500_Missing Hydro Capacity -- operating,e_VN976-500,VN976-500,11.663439045717956,107.92326952060114,False
+e_VN976-500,ep_hydro_ror_G100000604052,75.0,hydro,Dam'Bri hydroelectric plant_ -- operating,e_VN976-500,VN976-500,11.5827,107.6726,False
+e_VN98-220,ep_bioenergy_G100000200059,67.0,bioenergy,Soc Son Waste-to-Energy power station_3 -- construction,e_VN98-220,VN98-220,21.3398,105.8357,False
+e_VN98-220,ep_bioenergy_VN98-220,30.0,bioenergy,Aggregated Plant -- construction,e_VN98-220,VN98-220,21.525886235061996,105.88205655224294,False
+e_VN98-220,ep_bioenergy_VN98-220__ember,224.75609756097558,bioenergy,Aggregated Plant - EMBER Gap - VN98-220_Missing Bioenergy Capacity -- operating,e_VN98-220,VN98-220,21.167374400304624,105.88232326226827,False
+e_w1009757707-220,ep_hydro_dam_G100000604061,520.0,hydro,Huoi Quang hydroelectric plant_ -- operating,e_w1009757707-220,way/1009757707-220,21.6954,103.8767,False
+e_w1009757707-220,ep_hydro_w1009757707-220__irena,151.5096618357488,hydro,Aggregated Plant - IRENA Gap - way/1009757707-220_Missing Hydro Capacity -- operating,e_w1009757707-220,way/1009757707-220,21.706305418789235,103.9052284142259,False
+e_w1044469623-220,ep_coal_subcritical_G100000110041,300.0,coal,Thai Binh Power Center_Unit 1-1 -- operating,e_w1044469623-220,way/1044469623-220,20.4809977,106.5604517,False
+e_w1044469623-220,ep_coal_subcritical_G100000110042,300.0,coal,Thai Binh Power Center_Unit 1-2 -- operating,e_w1044469623-220,way/1044469623-220,20.4809977,106.5604517,False
+e_w1044469623-220,ep_coal_supercritical_G100000110043,600.0,coal,Thai Binh Power Center_Unit 2-1 -- operating,e_w1044469623-220,way/1044469623-220,20.4828445,106.563262,False
+e_w1044469623-220,ep_coal_supercritical_G100000110044,600.0,coal,Thai Binh Power Center_Unit 2-2 -- operating,e_w1044469623-220,way/1044469623-220,20.4828445,106.563262,False
+e_w1046230185-220,ep_bioenergy_w1046230185-220,37.0,bioenergy,Aggregated Plant -- construction,e_w1046230185-220,way/1046230185-220,21.304031358443822,105.41554681299854,False
+e_w1046230185-220,ep_bioenergy_w1046230185-220__ember,85.73170731707317,bioenergy,Aggregated Plant - EMBER Gap - way/1046230185-220_Missing Bioenergy Capacity -- operating,e_w1046230185-220,way/1046230185-220,20.955598000904697,105.42588880367218,False
+e_w1050835279-220,ep_hydro_dam_G100000604038,320.0,hydro,Ban Ve hydroelectric plant_ -- operating,e_w1050835279-220,way/1050835279-220,19.3413,104.4878,False
+e_w1050835279-220,ep_hydro_dam_G100000604064,100.0,hydro,Khe Bo hydroelectric plant_ -- operating,e_w1050835279-220,way/1050835279-220,19.1812,104.6633,False
+e_w1050835279-220,ep_hydro_w1050835279-220__irena,122.37318840579708,hydro,Aggregated Plant - IRENA Gap - way/1050835279-220_Missing Hydro Capacity -- operating,e_w1050835279-220,way/1050835279-220,19.603062466435727,104.51860188460675,False
+e_w1050854663-220,ep_hydro_dam_G100001027576,57.0,hydro,Song Bung 5 hydroelectric plant_ -- operating,e_w1050854663-220,way/1050854663-220,15.8077,107.7472,False
+e_w1050854663-220,ep_hydro_w1050854663-220__irena,16.60778985507246,hydro,Aggregated Plant - IRENA Gap - way/1050854663-220_Missing Hydro Capacity -- operating,e_w1050854663-220,way/1050854663-220,15.921315070873119,107.81840361420058,False
+e_w1051382594-220,ep_hydro_ror_G100001027581,51.0,hydro,Srok Phu Mieng hydroelectric plant_ -- operating,e_w1051382594-220,way/1051382594-220,11.7689,106.7564,False
+e_w1051382594-220,ep_hydro_w1051382594-220__irena,14.85960144927536,hydro,Aggregated Plant - IRENA Gap - way/1051382594-220_Missing Hydro Capacity -- operating,e_w1051382594-220,way/1051382594-220,11.55944806464242,106.51614872308087,False
+e_w1051605925-220,ep_windon_wind_220,50.0,windon,Aggregated Plant -- operating,e_w1051605925-220,way/1051605925-220,11.355750305041603,106.22454290310634,False
+e_w1183902227-500,ep_coal_supercritical_G100000108390,701.0,coal,Quang Trach Power Center_Unit 1-1 -- construction,e_w1183902227-500,way/1183902227-500,17.9504,106.50425,False
+e_w1183902227-500,ep_coal_supercritical_G100000108391,702.0,coal,Quang Trach Power Center_Unit 1-2 -- construction,e_w1183902227-500,way/1183902227-500,17.9504,106.50425,False
+e_w1192268300-220,ep_hydro_dam_G100000604051,82.0,hydro,Dakr Tih 1 hydroelectric plant_ -- operating,e_w1192268300-220,way/1192268300-220,11.9939,107.6394,False
+e_w1192268300-220,ep_hydro_w1192268300-220__irena,23.89190821256038,hydro,Aggregated Plant - IRENA Gap - way/1192268300-220_Missing Hydro Capacity -- operating,e_w1192268300-220,way/1192268300-220,12.113391704239936,107.80172446061937,False
+e_w1205504405-220,ep_hydro_dam_G100000604054,340.0,hydro,Dong Nai 4 hydroelectric plant_ -- operating,e_w1205504405-220,way/1205504405-220,11.8846,107.7282,False
+e_w1205504405-220,ep_hydro_dam_G100000604055,150.0,hydro,Dong Nai 5 hydroelectric plant_ -- operating,e_w1205504405-220,way/1205504405-220,11.7921,107.5538,False
+e_w1205504405-220,ep_hydro_w1205504405-220__irena,142.76871980676324,hydro,Aggregated Plant - IRENA Gap - way/1205504405-220_Missing Hydro Capacity -- operating,e_w1205504405-220,way/1205504405-220,11.834635871137946,107.70602159114088,False
+e_w1211783783-220,ep_hydro_ror_G100000604078,190.0,hydro,Song Tranh 2 hydroelectric plant_ -- operating,e_w1211783783-220,way/1211783783-220,15.3313,108.148,False
+e_w1211783783-220,ep_hydro_w1211783783-220__irena,55.35929951690821,hydro,Aggregated Plant - IRENA Gap - way/1211783783-220_Missing Hydro Capacity -- operating,e_w1211783783-220,way/1211783783-220,15.256804123670564,108.17497764648762,False
+e_w1215089886-220,ep_hydro_dam_G100001051653,62.0,hydro,DakRTih-2 hydroelectric plant_ -- operating,e_w1215089886-220,way/1215089886-220,11.9132,107.672,False
+e_w1215089886-220,ep_hydro_w1215089886-220__irena,18.064613526570046,hydro,Aggregated Plant - IRENA Gap - way/1215089886-220_Missing Hydro Capacity -- operating,e_w1215089886-220,way/1215089886-220,11.877041851486766,107.64132753390567,False
+e_w1216970886-220,ep_gas_combined_cycle_G100000404531,1118.0,gas,Phu My 1 Thermal power station_1 -- operating,e_w1216970886-220,way/1216970886-220,10.605605,107.034511,False
+e_w1216970886-500,ep_gas_combined_cycle_G100000404532,473.0,gas,Phu My 2.1 Thermal power station_1 -- operating,e_w1216970886-500,way/1216970886-500,10.6041,107.04,False
+e_w1216970886-500,ep_gas_combined_cycle_G100000404533,473.0,gas,Phu My 2.1 Thermal power station_2 -- operating,e_w1216970886-500,way/1216970886-500,10.6041,107.04,False
+e_w1216970886-500,ep_gas_combined_cycle_G100000404534,733.0,gas,Phu My 2.2 Thermal power station_1 -- operating,e_w1216970886-500,way/1216970886-500,10.603,107.04,False
+e_w1216970886-500,ep_gas_combined_cycle_G100000404535,733.0,gas,Phu My 3 Thermal power station_1 -- operating,e_w1216970886-500,way/1216970886-500,10.5975,107.0352,False
+e_w1216970886-500,ep_gas_combined_cycle_G100000404536,477.0,gas,Phu My 4 Thermal power station_1 -- operating,e_w1216970886-500,way/1216970886-500,10.604,107.037,False
+e_w1233471417-220,ep_hydro_dam_G100000604047,125.0,hydro,Dak Drinh hydroelectric plant_ -- operating,e_w1233471417-220,way/1233471417-220,14.9792,108.3016,False
+e_w1233471417-220,ep_hydro_w1233471417-220__irena,36.42059178743961,hydro,Aggregated Plant - IRENA Gap - way/1233471417-220_Missing Hydro Capacity -- operating,e_w1233471417-220,way/1233471417-220,15.204059181300632,108.3372222037888,False
+e_w1263027975-220,ep_hydro_dam_G100001051661,63.0,hydro,Dak Mi 3 hydroelectric plant_ -- operating,e_w1263027975-220,way/1263027975-220,15.3369,107.8325,False
+e_w1263027975-220,ep_hydro_ror_G100001051663,60.0,hydro,Dak Re hydroelectric plant_ -- operating,e_w1263027975-220,way/1263027975-220,15.3193,107.8252,False
+e_w1263027975-220,ep_hydro_w1263027975-220__irena,35.83786231884057,hydro,Aggregated Plant - IRENA Gap - way/1263027975-220_Missing Hydro Capacity -- operating,e_w1263027975-220,way/1263027975-220,15.37820652860335,108.01049489025188,False
+e_w1263497522-220,ep_hydro_dam_G100000604066,200.0,hydro,Nam Chien 1 hydroelectric plant_ -- operating,e_w1263497522-220,way/1263497522-220,21.5936,104.1442,False
+e_w1263497522-220,ep_hydro_dam_G100001027572,48.0,hydro,Ngoi Hut 2 hydroelectric plant_ -- operating,e_w1263497522-220,way/1263497522-220,21.7938,104.3324,False
+e_w1263497522-220,ep_hydro_w1263497522-220__irena,72.25845410628018,hydro,Aggregated Plant - IRENA Gap - way/1263497522-220_Missing Hydro Capacity -- operating,e_w1263497522-220,way/1263497522-220,21.42286240022154,103.92742973813738,False
+e_w1263839761-220,ep_hydro_ror_G100001027582,60.0,hydro,Ta Thang hydroelectric plant_ -- operating,e_w1263839761-220,way/1263839761-220,22.2987,104.0221,False
+e_w1263839761-220,ep_hydro_w1263839761-220__irena,17.481884057971012,hydro,Aggregated Plant - IRENA Gap - way/1263839761-220_Missing Hydro Capacity -- operating,e_w1263839761-220,way/1263839761-220,22.415689286639317,104.13705699906416,False
+e_w1264568832-220,ep_hydro_dam_G100000604087,342.0,hydro,Tuyen Quang hydroelectric plant_ -- operating,e_w1264568832-220,way/1264568832-220,22.3602,105.3994,False
+e_w1264568832-220,ep_hydro_ror_G100001051671,48.0,hydro,Chiem Hoa hydroelectric plant_ -- operating,e_w1264568832-220,way/1264568832-220,22.1967,105.3285,False
+e_w1264568832-220,ep_hydro_w1264568832-220__irena,113.63224637681158,hydro,Aggregated Plant - IRENA Gap - way/1264568832-220_Missing Hydro Capacity -- operating,e_w1264568832-220,way/1264568832-220,22.287273897488017,105.55098228389969,False
+e_w1265274426-500,ep_coal_CFB_G100000110054,300.0,coal,Thang Long power station_Unit 1 -- operating,e_w1265274426-500,way/1265274426-500,21.02184,107.04815,False
+e_w1265274426-500,ep_coal_CFB_G100000110055,300.0,coal,Thang Long power station_Unit 2 -- operating,e_w1265274426-500,way/1265274426-500,21.02184,107.04815,False
+e_w1265851967-220,ep_coal_subcritical_G100000103540,600.0,coal,Hai Duong Thermal Power Plant_Unit 1 -- operating,e_w1265851967-220,way/1265851967-220,21.0335,106.41218,False
+e_w1265851967-220,ep_coal_subcritical_G100000103541,600.0,coal,Hai Duong Thermal Power Plant_Unit 2 -- operating,e_w1265851967-220,way/1265851967-220,21.0335,106.41218,False
+e_w1267181647-220,ep_hydro_ror_G100000604059,102.0,hydro,Hoi Xuan hydroelectric plant_ -- construction,e_w1267181647-220,way/1267181647-220,20.4459,105.0531,False
+e_w1267181647-220,ep_hydro_ror_G100001051666,60.0,hydro,Ba Thuoc 1 hydroelectric plant_ -- operating,e_w1267181647-220,way/1267181647-220,20.3205,105.1724,False
+e_w1267181647-220,ep_hydro_w1267181647-220__irena,47.201086956521735,hydro,Aggregated Plant - IRENA Gap - way/1267181647-220_Missing Hydro Capacity -- operating,e_w1267181647-220,way/1267181647-220,20.60697892631005,105.12753781413788,False
+e_w1270938992-220,ep_hydro_dam_G100000604032,170.0,hydro,A Luoi hydroelectric plant_ -- operating,e_w1270938992-220,way/1270938992-220,16.2266,107.2728,False
+e_w1270938992-220,ep_hydro_w1270938992-220__irena,49.53200483091787,hydro,Aggregated Plant - IRENA Gap - way/1270938992-220_Missing Hydro Capacity -- operating,e_w1270938992-220,way/1270938992-220,16.106024318952528,107.54719996947026,False
+e_w1270939017-220,ep_hydro_dam_G100000604048,98.0,hydro,Dak Mi 2 hydroelectric plant_ -- operating,e_w1270939017-220,way/1270939017-220,15.2954,107.8192,False
+e_w1270939017-220,ep_hydro_w1270939017-220__irena,28.55374396135265,hydro,Aggregated Plant - IRENA Gap - way/1270939017-220_Missing Hydro Capacity -- operating,e_w1270939017-220,way/1270939017-220,15.393431413223908,107.75205529600652,False
+e_w1271285978-220,ep_hydro_dam_G100000604070,100.0,hydro,Plei Krong hydroelectric plant_ -- operating,e_w1271285978-220,way/1271285978-220,14.4083,107.862,False
+e_w1271285978-220,ep_hydro_w1271285978-220__irena,29.136473429951685,hydro,Aggregated Plant - IRENA Gap - way/1271285978-220_Missing Hydro Capacity -- operating,e_w1271285978-220,way/1271285978-220,14.567647412603847,108.07271570991792,False
+e_w1273328710-220,ep_hydro_ror_G100001027580,64.0,hydro,Sre Pok 4A hydroelectric plant_ -- operating,e_w1273328710-220,way/1273328710-220,12.8935,107.8123,False
+e_w1273328710-220,ep_hydro_w1273328710-220__irena,18.64734299516908,hydro,Aggregated Plant - IRENA Gap - way/1273328710-220_Missing Hydro Capacity -- operating,e_w1273328710-220,way/1273328710-220,13.167132567767933,107.82163739663747,False
+e_w1273948690-220,ep_solar_pv_220,40.0,solar,Aggregated Plant -- operating,e_w1273948690-220,way/1273948690-220,11.220620622786258,108.33589594386022,False
+e_w1316610167-500,ep_hydro_dam_G100000604058,2400.0,hydro,Hoa Binh hydroelectric plant_ -- operating,e_w1316610167-500,way/1316610167-500,20.8087,105.3236,False
+e_w1316610167-500,ep_hydro_w1316610167-500__irena,699.2753623188405,hydro,Aggregated Plant - IRENA Gap - way/1316610167-500_Missing Hydro Capacity -- operating,e_w1316610167-500,way/1316610167-500,20.99499579042101,105.38787328394737,False
+e_w1320784083-500,ep_coal_subcritical_G100000107410,300.0,coal,Nghi Son power station_Phase 1 Unit 1 -- operating,e_w1320784083-500,way/1320784083-500,19.31581,105.80026,False
+e_w1320784083-500,ep_coal_subcritical_G100000107411,300.0,coal,Nghi Son power station_Phase 1 Unit 2 -- operating,e_w1320784083-500,way/1320784083-500,19.31581,105.80026,False
+e_w1320784083-500,ep_coal_supercritical_G100000107412,660.0,coal,Nghi Son power station_Phase 2 Unit 1 -- operating,e_w1320784083-500,way/1320784083-500,19.31581,105.80026,False
+e_w1320784083-500,ep_coal_supercritical_G100000107413,660.0,coal,Nghi Son power station_Phase 2 Unit 2 -- operating,e_w1320784083-500,way/1320784083-500,19.31581,105.80026,False
+e_w1376430795-500,ep_coal_supercritical_G100000110552,716.0,coal,Van Phong power station_Phase 1 Unit 1 -- operating,e_w1376430795-500,way/1376430795-500,12.47704,109.29244,False
+e_w1376430795-500,ep_coal_supercritical_G100000110553,716.0,coal,Van Phong power station_Phase 1 Unit 2 -- operating,e_w1376430795-500,way/1376430795-500,12.47704,109.29244,False
+e_w1385239486-500,ep_hydro_dam_G100000604063,360.0,hydro,Ialy hydroelectric plant_ -- operating,e_w1385239486-500,way/1385239486-500,14.2222,107.8332,False
+e_w1385239486-500,ep_hydro_w1385239486-500__irena,104.89130434782608,hydro,Aggregated Plant - IRENA Gap - way/1385239486-500_Missing Hydro Capacity -- operating,e_w1385239486-500,way/1385239486-500,14.1243225821039,107.93970639521056,False
+e_w183249722-220,ep_hydro_dam_G100000604039,280.0,hydro,Buon Kuop hydroelectric plant_ -- operating,e_w183249722-220,way/183249722-220,12.5305,107.9243,False
+e_w183249722-220,ep_hydro_w183249722-220__irena,81.58212560386472,hydro,Aggregated Plant - IRENA Gap - way/183249722-220_Missing Hydro Capacity -- operating,e_w183249722-220,way/183249722-220,12.640866216983074,107.77365894198681,False
+e_w306295540-220,ep_gas_combined_cycle_G100000404520,465.0,gas,Nhon Trach power station_1 -- operating,e_w306295540-220,way/306295540-220,10.6428,106.84,False
+e_w306295540-220,ep_gas_combined_cycle_G100000404521,750.0,gas,Nhon Trach power station_2 -- operating,e_w306295540-220,way/306295540-220,10.6428,106.84,False
+e_w306295540-220,ep_gas_combined_cycle_G100000404522,812.0,gas,Nhon Trach power station_3 -- construction,e_w306295540-220,way/306295540-220,10.6428,106.84,False
+e_w306295540-220,ep_gas_combined_cycle_G100000404523,812.0,gas,Nhon Trach power station_4 -- construction,e_w306295540-220,way/306295540-220,10.6428,106.84,False
+e_w306440155-220,ep_hydro_dam_G100000604085,400.0,hydro,Tri An hydroelectric plant_ -- operating,e_w306440155-220,way/306440155-220,11.1049,106.9845,False
+e_w306440155-220,ep_hydro_w306440155-220__irena,116.54589371980674,hydro,Aggregated Plant - IRENA Gap - way/306440155-220_Missing Hydro Capacity -- operating,e_w306440155-220,way/306440155-220,11.140133747034014,106.83667339316513,False
+e_w315766007-220,ep_coal_subcritical_G100000107414,150.0,coal,Nhon Trach Formosa power station_Unit 1 -- operating,e_w315766007-220,way/315766007-220,10.73264,106.9354,False
+e_w315766007-220,ep_coal_subcritical_G100000113233,150.0,coal,Nhon Trach Formosa power station_Unit 2 -- operating,e_w315766007-220,way/315766007-220,10.73264,106.9354,False
+e_w315766007-220,ep_coal_subcritical_G100000113234,150.0,coal,Nhon Trach Formosa power station_Unit 3 -- operating,e_w315766007-220,way/315766007-220,10.73264,106.9354,False
+e_w400413519-220,ep_hydro_ror_G100000604080,80.0,hydro,Sre Pok 4 hydroelectric plant_ -- operating,e_w400413519-220,way/400413519-220,12.8072,107.8551,False
+e_w400413519-220,ep_hydro_w400413519-220__irena,23.309178743961347,hydro,Aggregated Plant - IRENA Gap - way/400413519-220_Missing Hydro Capacity -- operating,e_w400413519-220,way/400413519-220,12.95200369588647,107.9109920314743,False
+e_w400413521-220,ep_hydro_dam_G100000604079,220.0,hydro,Sre Pok 3 hydroelectric plant_ -- operating,e_w400413521-220,way/400413521-220,12.7525,107.8768,False
+e_w400413521-220,ep_hydro_w400413521-220__irena,64.10024154589371,hydro,Aggregated Plant - IRENA Gap - way/400413521-220_Missing Hydro Capacity -- operating,e_w400413521-220,way/400413521-220,12.89061778422216,107.94114408458957,False
+e_w400474243-220,ep_hydro_dam_G100000604045,243.0,hydro,Da Nhim hydroelectric plant_ -- operating,e_w400474243-220,way/400474243-220,11.8517,108.6126,False
+e_w400474243-220,ep_hydro_w400474243-220__irena,70.80163043478261,hydro,Aggregated Plant - IRENA Gap - way/400474243-220_Missing Hydro Capacity -- operating,e_w400474243-220,way/400474243-220,11.943106414555215,108.83633001036108,False
+e_w401532710-220,ep_hydro_dam_G100000604073,360.0,hydro,Se San 4 hydroelectric plant_ -- operating,e_w401532710-220,way/401532710-220,13.9686,107.4945,False
+e_w401532710-220,ep_hydro_w401532710-220__irena,104.89130434782608,hydro,Aggregated Plant - IRENA Gap - way/401532710-220_Missing Hydro Capacity -- operating,e_w401532710-220,way/401532710-220,14.02303879338524,107.50670916924452,False
+e_w439941742-220,ep_hydro_dam_G100000604049,148.0,hydro,Dak Mi 4A hydroelectric plant_ -- operating,e_w439941742-220,way/439941742-220,15.4441,107.8925,False
+e_w439941742-220,ep_hydro_w439941742-220__irena,43.1219806763285,hydro,Aggregated Plant - IRENA Gap - way/439941742-220_Missing Hydro Capacity -- operating,e_w439941742-220,way/439941742-220,15.803755575022656,107.873250639477,False
+e_w481965040-220,ep_hydro_dam_G100000604042,90.0,hydro,Coc Ly hydroelectric plant_ -- operating,e_w481965040-220,way/481965040-220,22.506,104.1935,False
+e_w481965040-220,ep_hydro_w481965040-220__irena,26.22282608695652,hydro,Aggregated Plant - IRENA Gap - way/481965040-220_Missing Hydro Capacity -- operating,e_w481965040-220,way/481965040-220,22.347980813519676,104.28295796766234,False
+e_w483057097-220,ep_coal_CFB_G100000100190,50.0,coal,An Khanh power station_Phase 1 Unit 1 -- operating,e_w483057097-220,way/483057097-220,21.596912,105.766609,False
+e_w483057097-220,ep_coal_CFB_G100000100191,50.0,coal,An Khanh power station_Phase 1 Unit 2 -- operating,e_w483057097-220,way/483057097-220,21.596912,105.766609,False
+e_w483057097-220,ep_coal_subcritical_G100000101199,57.5,coal,Cao Ngan power station_Unit 1 -- operating,e_w483057097-220,way/483057097-220,21.612998,105.815102,False
+e_w483057097-220,ep_coal_subcritical_G100000101200,57.5,coal,Cao Ngan power station_Unit 2 -- operating,e_w483057097-220,way/483057097-220,21.612998,105.815102,False
+e_w548210485-220,ep_hydro_dam_G100000604040,86.0,hydro,Buon Tua Srah hydroelectric plant_ -- operating,e_w548210485-220,way/548210485-220,12.2852,108.0383,False
+e_w548210485-220,ep_hydro_w548210485-220__irena,25.057367149758452,hydro,Aggregated Plant - IRENA Gap - way/548210485-220_Missing Hydro Capacity -- operating,e_w548210485-220,way/548210485-220,12.385000721228092,108.03732154510472,False
+e_w548717060-220,ep_solar_pv_220,14.2,solar,Aggregated Plant -- operating,e_w548717060-220,way/548717060-220,11.431722413836015,108.830202981948,False
+e_w548717060-500,ep_coal_subcritical_G100000110611,600.0,coal,Vinh Tan power station_Phase 1 Unit 1 -- operating,e_w548717060-500,way/548717060-500,11.317,108.808,False
+e_w548717060-500,ep_coal_subcritical_G100000110612,600.0,coal,Vinh Tan power station_Phase 1 Unit 2 -- operating,e_w548717060-500,way/548717060-500,11.317,108.808,False
+e_w548717060-500,ep_coal_supercritical_G100000110613,622.0,coal,Vinh Tan power station_Phase 2 Unit 1 -- operating,e_w548717060-500,way/548717060-500,11.317,108.808,False
+e_w548717060-500,ep_coal_supercritical_G100000110614,622.0,coal,Vinh Tan power station_Phase 2 Unit 2 -- operating,e_w548717060-500,way/548717060-500,11.317,108.808,False
+e_w548717060-500,ep_coal_supercritical_G100000110619,600.0,coal,Vinh Tan power station_Phase 4 Unit 1 -- operating,e_w548717060-500,way/548717060-500,11.317,108.808,False
+e_w548717060-500,ep_coal_supercritical_G100000110620,600.0,coal,Vinh Tan power station_Phase 4 Unit 2 -- operating,e_w548717060-500,way/548717060-500,11.317,108.808,False
+e_w548717060-500,ep_coal_ultra-supercritical_G100000110618,600.0,coal,Vinh Tan power station_Phase 4 extension -- operating,e_w548717060-500,way/548717060-500,11.317,108.808,False
+e_w548717060-500,ep_solar_pv_500,49.2,solar,Aggregated Plant -- operating,e_w548717060-500,way/548717060-500,11.29731821371258,108.94357534568893,False
+e_w548970101-220,ep_windoff_wind_220,531.5,windoff,Aggregated Plant -- operating,e_w548970101-220,way/548970101-220,9.136486640613105,105.76659978111365,False
+e_w548970103-220,ep_windoff_wind_220,164.99999999999997,windoff,Aggregated Plant -- operating,e_w548970103-220,way/548970103-220,10.175144598130236,105.53095159183138,False
+e_w548970109-220,ep_gas_combined_cycle_G100000404517,750.0,gas,Ca Mau power station_1 -- operating,e_w548970109-220,way/548970109-220,9.242,105.06,False
+e_w548970109-220,ep_gas_combined_cycle_G100000404518,750.0,gas,Ca Mau power station_2 -- operating,e_w548970109-220,way/548970109-220,9.242,105.06,False
+e_w549380074-220,ep_hydro_dam_G100001027574,63.0,hydro,Se San 4A hydroelectric plant_ -- operating,e_w549380074-220,way/549380074-220,13.9308,107.4678,False
+e_w549380074-220,ep_hydro_w549380074-220__irena,18.355978260869563,hydro,Aggregated Plant - IRENA Gap - way/549380074-220_Missing Hydro Capacity -- operating,e_w549380074-220,way/549380074-220,13.861980395564984,107.37250739687079,False
+e_w549914184-220,ep_coal_subcritical_G100000107959,110.0,coal,Pha Lai Power Complex_Phase I Unit 1 -- operating,e_w549914184-220,way/549914184-220,21.116894,106.305873,False
+e_w549914184-220,ep_coal_subcritical_G100000107960,110.0,coal,Pha Lai Power Complex_Phase I Unit 2 -- operating,e_w549914184-220,way/549914184-220,21.116894,106.305873,False
+e_w549914184-220,ep_coal_subcritical_G100000107961,110.0,coal,Pha Lai Power Complex_Phase I Unit 3 -- operating,e_w549914184-220,way/549914184-220,21.116894,106.305873,False
+e_w549914184-220,ep_coal_subcritical_G100000107962,110.0,coal,Pha Lai Power Complex_Phase I Unit 4 -- operating,e_w549914184-220,way/549914184-220,21.116894,106.305873,False
+e_w549914184-220,ep_coal_subcritical_G100000107963,300.0,coal,Pha Lai Power Complex_Phase II Unit 1 -- operating,e_w549914184-220,way/549914184-220,21.117004,106.308581,False
+e_w549914184-220,ep_coal_subcritical_G100000107964,300.0,coal,Pha Lai Power Complex_Phase II Unit 2 -- operating,e_w549914184-220,way/549914184-220,21.117004,106.308581,False
+e_w549941555-220,ep_coal_CFB_G100000106640,220.0,coal,Mao Khe power station_Unit 1 -- operating,e_w549941555-220,way/549941555-220,21.09069,106.57731,False
+e_w549941555-220,ep_coal_CFB_G100000106641,220.0,coal,Mao Khe power station_Unit 2 -- operating,e_w549941555-220,way/549941555-220,21.09069,106.57731,False
+e_w549959350-220,ep_coal_subcritical_G100000110485,50.0,coal,Uong Bi power station_Unit 5 -- operating,e_w549959350-220,way/549959350-220,21.039,106.786,False
+e_w549959350-220,ep_coal_subcritical_G100000110486,55.0,coal,Uong Bi power station_Unit 6 -- operating,e_w549959350-220,way/549959350-220,21.039,106.786,False
+e_w549959350-220,ep_coal_subcritical_G100000110487,300.0,coal,Uong Bi power station_Unit 7 -- operating,e_w549959350-220,way/549959350-220,21.039,106.786,False
+e_w549959350-220,ep_coal_subcritical_G100000110488,330.0,coal,Uong Bi power station_Unit 8 -- operating,e_w549959350-220,way/549959350-220,21.039,106.786,False
+e_w630750798-220,ep_coal_subcritical_G100000110668,600.0,coal,Vung Ang power station_Phase 1 Unit 1 -- operating,e_w630750798-220,way/630750798-220,18.09792,106.38123,False
+e_w630750798-220,ep_coal_subcritical_G100000110669,600.0,coal,Vung Ang power station_Phase 1 Unit 2 -- operating,e_w630750798-220,way/630750798-220,18.09792,106.38123,False
+e_w630750798-220,ep_coal_ultra-supercritical_G100000110670,665.0,coal,Vung Ang power station_Phase 2 Unit 1 -- construction,e_w630750798-220,way/630750798-220,18.09792,106.38123,False
+e_w630750798-220,ep_coal_ultra-supercritical_G100000110671,665.0,coal,Vung Ang power station_Phase 2 Unit 2 -- construction,e_w630750798-220,way/630750798-220,18.09792,106.38123,False
+e_w636253156-220,ep_hydro_dam_G100000604072,108.0,hydro,Se San 3A hydroelectric plant_ -- operating,e_w636253156-220,way/636253156-220,14.1063,107.6585,False
+e_w636253156-220,ep_hydro_w636253156-220__irena,31.46739130434782,hydro,Aggregated Plant - IRENA Gap - way/636253156-220_Missing Hydro Capacity -- operating,e_w636253156-220,way/636253156-220,14.118514252839125,107.67564072640343,False
+e_w715041211-220,ep_coal_CFB_G100000101164,340.0,coal,Cam Pha power station_Phase I -- operating,e_w715041211-220,way/715041211-220,21.006288,107.358044,False
+e_w715041211-220,ep_coal_CFB_G100000101165,340.0,coal,Cam Pha power station_Phase II -- operating,e_w715041211-220,way/715041211-220,21.006288,107.358044,False
+e_w744217936-220,ep_windoff_wind_220,258.0,windoff,Aggregated Plant -- operating,e_w744217936-220,way/744217936-220,10.223959045778809,107.07268586778008,False
+e_w827889590-500,ep_coal_subcritical_G100000106993,540.0,coal,Mong Duong power station_Phase 1 Unit 1 -- operating,e_w827889590-500,way/827889590-500,21.07324,107.34847,False
+e_w827889590-500,ep_coal_subcritical_G100000106994,540.0,coal,Mong Duong power station_Phase 1 Unit 2 -- operating,e_w827889590-500,way/827889590-500,21.07324,107.34847,False
+e_w827889590-500,ep_coal_subcritical_G100000106995,620.0,coal,Mong Duong power station_Phase 2 Unit 1 -- operating,e_w827889590-500,way/827889590-500,21.07324,107.34847,False
+e_w827889590-500,ep_coal_subcritical_G100000106996,620.0,coal,Mong Duong power station_Phase 2 Unit 2 -- operating,e_w827889590-500,way/827889590-500,21.07324,107.34847,False
+e_w827889600-500,ep_coal_subcritical_G100000102530,622.5,coal,Duyen Hai Power Generation Complex_Unit 1-1 -- operating,e_w827889600-500,way/827889600-500,9.58517,106.52809,False
+e_w827889600-500,ep_coal_subcritical_G100000102531,622.5,coal,Duyen Hai Power Generation Complex_Unit 1-2 -- operating,e_w827889600-500,way/827889600-500,9.58517,106.52809,False
+e_w827889600-500,ep_coal_subcritical_G100000102532,600.0,coal,Duyen Hai Power Generation Complex_Unit 2-1 -- operating,e_w827889600-500,way/827889600-500,9.58517,106.52809,False
+e_w827889600-500,ep_coal_subcritical_G100000114509,600.0,coal,Duyen Hai Power Generation Complex_Unit 2-2 -- operating,e_w827889600-500,way/827889600-500,9.58517,106.52809,False
+e_w827889600-500,ep_coal_supercritical_G100000102534,688.0,coal,Duyen Hai Power Generation Complex_Unit 3 Extension -- operating,e_w827889600-500,way/827889600-500,9.58517,106.52809,False
+e_w827889600-500,ep_coal_supercritical_G100000102535,622.5,coal,Duyen Hai Power Generation Complex_Unit 3-1 -- operating,e_w827889600-500,way/827889600-500,9.58517,106.52809,False
+e_w827889600-500,ep_coal_supercritical_G100000102536,622.5,coal,Duyen Hai Power Generation Complex_Unit 3-2 -- operating,e_w827889600-500,way/827889600-500,9.58517,106.52809,False
+e_w827889648-220,ep_hydro_dam_G100001027570,70.0,hydro,Dong Nai 2 hydroelectric plant_ -- operating,e_w827889648-220,way/827889648-220,11.7129,108.0579,False
+e_w827889648-220,ep_hydro_w827889648-220__irena,20.39553140096618,hydro,Aggregated Plant - IRENA Gap - way/827889648-220_Missing Hydro Capacity -- operating,e_w827889648-220,way/827889648-220,11.722869072401142,108.12389808249213,False
+e_w846270016-500,ep_hydro_dam_G100000604067,84.0,hydro,Nam Na 3 hydroelectric plant_ -- operating,e_w846270016-500,way/846270016-500,22.2985,103.1613,False
+e_w846270016-500,ep_hydro_w846270016-500__irena,24.474637681159415,hydro,Aggregated Plant - IRENA Gap - way/846270016-500_Missing Hydro Capacity -- operating,e_w846270016-500,way/846270016-500,22.06633665416652,102.94662177316616,False
+e_w857794232-220,ep_hydro_dam_G100000604086,260.0,hydro,Trung Son hydroelectric plant_ -- operating,e_w857794232-220,way/857794232-220,20.6102,104.8397,False
+e_w857794232-220,ep_hydro_w857794232-220__irena,75.7548309178744,hydro,Aggregated Plant - IRENA Gap - way/857794232-220_Missing Hydro Capacity -- operating,e_w857794232-220,way/857794232-220,20.623938546195234,104.98121643208776,False
+e_w893223532-220,ep_hydro_ror_G100001027571,66.0,hydro,Nam Na 2 hydroelectric plant_ -- operating,e_w893223532-220,way/893223532-220,22.4932,103.234,False
+e_w893223532-220,ep_hydro_ror_G100001051657,54.0,hydro,Nam Cum 4 hydroelectric plant_ -- construction,e_w893223532-220,way/893223532-220,22.5181,102.5786,False
+e_w893223532-220,ep_hydro_w893223532-220__irena,75.7548309178744,hydro,Aggregated Plant - IRENA Gap - way/893223532-220_Missing Hydro Capacity -- operating,e_w893223532-220,way/893223532-220,22.438993130003485,102.74422601788709,False
+elc_spv_001,ep_solar_pv_001,311.5,solar,Aggregated Plant -- operating,elc_spv_001,VN477-500,16.834086940583024,106.98042279167267,False
+elc_spv_002,ep_solar_pv_002,289.59999999999997,solar,Aggregated Plant -- operating,elc_spv_002,way/439941742-220,15.385602218115153,107.5395226296963,False
+elc_spv_003,ep_solar_pv_003,729.2,solar,Aggregated Plant -- operating,elc_spv_003,VN770-500,12.75608040745596,108.63705149779598,False
+elc_spv_003,ep_solar_pv_G100000801154,268.0,solar,Hoa Hoi solar farm_-- -- operating,elc_spv_003,VN770-500,13.0698,109.0998,False
+elc_spv_003,ep_solar_pv_G100000801463,257.0,solar,Phú Yên solar farm_-- -- operating,elc_spv_003,VN770-500,13.0615,109.0961,False
+elc_spv_004,ep_solar_pv_004,196.4,solar,Aggregated Plant -- operating,elc_spv_004,VN738-500,13.567491997848046,107.35066070239179,False
+elc_spv_004,ep_solar_pv_G100000801085,831.0,solar,Ea Súp Xuân Thiện solar farm_1 -- operating,elc_spv_004,VN738-500,13.2988,107.7299,False
+elc_spv_005,ep_solar_pv_005,604.0,solar,Aggregated Plant -- operating,elc_spv_005,VN614-220,13.977674285560893,108.44724431891402,False
+elc_spv_006,ep_solar_006__irena,713.8221513526375,solar,Aggregated Plant - IRENA Gap - 6_Missing Solar Capacity -- operating,elc_spv_006,way/548970103-220,9.15466786777811,106.1364587413352,False
+elc_spv_006,ep_solar_pv_006,294.50000000000006,solar,Aggregated Plant -- operating,elc_spv_006,way/548970103-220,8.461044431403286,105.8420731547545,False
+elc_spv_007,ep_solar_007__irena,745.1702492663967,solar,Aggregated Plant - IRENA Gap - 7_Missing Solar Capacity -- operating,elc_spv_007,VN1206-220,10.694671971927532,105.18823719992591,False
+elc_spv_007,ep_solar_pv_007,639.5,solar,Aggregated Plant -- operating,elc_spv_007,VN1206-220,10.309785797367352,105.47985145832713,False
+elc_spv_008,ep_solar_008__irena,874.0975993809693,solar,Aggregated Plant - IRENA Gap - 8_Missing Solar Capacity -- operating,elc_spv_008,VN1130-500,11.154642283540714,106.89142022835208,False
+elc_spv_008,ep_solar_pv_008,2309.1999999999994,solar,Aggregated Plant -- operating,elc_spv_008,VN1130-500,11.20591560456495,106.41814377514392,False
+elc_spv_008,ep_solar_pv_G100000801068,240.0,solar,Dau Tieng solar farm_2 -- operating,elc_spv_008,VN1130-500,11.335,106.275,False
+elc_spv_008,ep_solar_pv_G100000801278,350.0,solar,Lộc Ninh (Sungrow) solar farm_-- -- operating,elc_spv_008,VN1130-500,11.8233,106.6052,False
+elc_spv_008,ep_solar_pv_G100000801279,200.0,solar,Lộc Ninh solar farm_1 -- operating,elc_spv_008,VN1130-500,11.934,106.459,False
+elc_spv_008,ep_solar_pv_G100000801280,200.0,solar,Lộc Ninh solar farm_2 -- operating,elc_spv_008,VN1130-500,11.934,106.459,False
+elc_spv_008,ep_solar_pv_G100000801282,200.0,solar,Lộc Ninh solar farm_4 -- operating,elc_spv_008,VN1130-500,11.8233,106.6052,False
+elc_spv_008,ep_solar_pv_G100000801773,250.0,solar,Xinghai 4/5 solar farm_-- -- operating,elc_spv_008,VN1130-500,11.904,106.489,False
+elc_spv_008,ep_solar_pv_G100000835520,200.0,solar,Dầu Tiếng (Xuan Cau) solar farm_2 -- operating,elc_spv_008,VN1130-500,11.4866,106.1982,False
+elc_spv_009,ep_solar_pv_009,429.20000000000005,solar,Aggregated Plant -- operating,elc_spv_009,VN900-500,12.074852070232721,107.79097968305734,False
+elc_spv_010,ep_solar_pv_010,3841.4,solar,Aggregated Plant -- operating,elc_spv_010,VN1152-220,10.803013362378746,107.97108443847421,False
+elc_spv_010,ep_solar_pv_G100000801384,250.0,solar,Ninh Thuận BIM solar farm_2 -- operating,elc_spv_010,VN1152-220,11.453,108.872,False
+elc_spv_010,ep_solar_pv_G100000801701,204.0,solar,Thuận Bắc solar farm_-- -- operating,elc_spv_010,VN1152-220,11.701,109.031,False
+elc_spv_010,ep_solar_pv_G100000801702,273.0,solar,Thuận Bắc Xuân Thiện solar farm_1 -- operating,elc_spv_010,VN1152-220,11.6866,109.0049,False
+elc_spv_010,ep_solar_pv_G100000801704,450.0,solar,Thuận Nam (Trung Nam) solar farm_-- -- operating,elc_spv_010,VN1152-220,11.441,108.844,False
+elc_spv_010,ep_solar_pv_G100000801721,255.0,solar,Trung Nam solar farm_-- -- operating,elc_spv_010,VN1152-220,11.7439,109.0589,False
+elc_spv_012,ep_solar_pv_012,4.1,solar,Aggregated Plant -- operating,elc_spv_012,VN310-220,20.843672551350075,106.69372675282494,False
+elc_spv_016,ep_solar_pv_016,6.1,solar,Aggregated Plant -- operating,elc_spv_016,VN117-500,21.812875931151808,104.5622521207481,False
+elc_spv_017,ep_solar_pv_017,2.5,solar,Aggregated Plant -- operating,elc_spv_017,VN39-500,21.403946096195085,103.46238940616057,False
+elc_spv_019,ep_solar_pv_019,40.099999999999994,solar,Aggregated Plant -- operating,elc_spv_019,VN321-220,19.983606567313174,104.66446771674464,False
+elc_spv_020,ep_solar_pv_020,17.4,solar,Aggregated Plant -- operating,elc_spv_020,way/1050835279-220,19.140400005669388,104.67120367762789,False
+elc_spv_022,ep_solar_pv_022,153.60000000000002,solar,Aggregated Plant -- operating,elc_spv_022,VN390-500,17.9193046355152,106.20444368731233,False
+elc_wof_002,ep_windoff_wind_002,50.0,windoff,Aggregated Plant -- operating,elc_wof_002,way/548970103-220,8.237266389481125,105.54091189413913,False
+elc_wof_003,ep_windoff_wind_003,536.0,windoff,Aggregated Plant -- operating,elc_wof_003,way/548970103-220,8.532903081672933,104.20872293760829,False
+elc_wof_004,ep_windoff_wind_004,90.0,windoff,Aggregated Plant -- operating,elc_wof_004,VN994-500,11.45599682604874,109.67014224742779,False
+elc_wof_005,ep_windoff_wind_005,130.0,windoff,Aggregated Plant -- construction,elc_wof_005,way/548752026-220,9.842223807975161,109.12239059235681,False
+elc_won_005,ep_windon_wind_005,790.8000000000001,windon,Aggregated Plant -- operating,elc_won_005,way/548970103-220,10.083866440351054,104.42870544707749,False
+elc_won_009,ep_windon_wind_009,107.0,windon,Aggregated Plant -- operating,elc_won_009,VN648-500,13.662456157596237,108.55555132078746,False
+elc_won_009,ep_windon_wind_G100000901492,200.0,windon,Phú Yên HBRE wind farm_1 -- operating,elc_won_009,VN648-500,13.2548,109.2106,False
+elc_won_010,ep_windon_wind_010,50.0,windon,Aggregated Plant -- construction,elc_won_010,way/775832889-220,11.94335264571275,107.1317534406736,False
+elc_won_011,ep_windon_wind_011,2300.0,windon,Aggregated Plant -- operating,elc_won_011,way/1273328710-220,12.79428904832336,107.47016505035558,False
+elc_won_011,ep_windon_wind_G100000901504,200.0,windon,Chu Pu wind farm_-- -- operating,elc_won_011,way/1273328710-220,13.7964,108.2608,False
+elc_won_011,ep_windon_wind_G100000901647,700.0,windon,Chu Se wind farm_-- -- operating,elc_won_011,way/1273328710-220,12.6874,108.0549,False
+elc_won_011,ep_windon_wind_G100000901648,200.0,windon,Cư An wind farm_-- -- operating,elc_won_011,way/1273328710-220,13.9569,107.9828,False
+elc_won_011,ep_windon_wind_G100001022344,400.0,windon,Ea Nam Da Lak wind farm_-- -- operating,elc_won_011,way/1273328710-220,13.1389,108.2548,False
+elc_won_012,ep_windon_wind_012,675.0,windon,Aggregated Plant -- operating,elc_won_012,VN384-500,16.859027298890314,106.35901889743859,False
+elc_won_012,ep_windon_wind_G100000901259,252.0,windon,Quảng Bình B&T Province wind farm_-- -- operating,elc_won_012,VN384-500,17.2541,106.4938,False

@@ -1,0 +1,59 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_KE10-220,ep_oil_internal_combustion_G100000411370,53.0,oil,Iberafrica power station_1 -- operating,e_KE10-220,KE10-220,-1.293577,36.81985,False
+e_KE11-220,ep_oil_internal_combustion_G100000411371,83.2,oil,Athi Triumph power station_1-10 -- operating,e_KE11-220,KE11-220,-1.462157,36.955511,False
+e_KE11-220,ep_oil_internal_combustion_G100000411372,80.0,oil,Athi River power station_1 -- operating,e_KE11-220,KE11-220,-1.453087,37.005026,False
+e_KE12-400,ep_windon_wind_400,100.0,windon,Aggregated Plant -- operating,e_KE12-400,KE12-400,-1.6630869892851714,36.68061572664593,False
+e_KE15-220,ep_oil_internal_combustion_G100000411367,116.9,oil,Kipevu III power station_3 -- operating,e_KE15-220,KE15-220,-4.038673,39.636099,False
+e_KE2-220,ep_bioenergy_KE2-220,34.0,bioenergy,Aggregated Plant -- operating,e_KE2-220,KE2-220,0.7991002109973726,34.481895615699244,False
+e_KE2-220,ep_bioenergy_KE2-220__ember,437.26582278481015,bioenergy,Aggregated Plant - EMBER Gap - KE2-220_Missing Bioenergy Capacity -- operating,e_KE2-220,KE2-220,0.34426633398767703,34.6772016293734,False
+e_KE4-220,ep_hydro_ror_G100001030409,60.0,hydro,Arror Multipurpose Dam hydroelectric plant_ -- construction,e_KE4-220,KE4-220,0.7098,35.6288,False
+e_KE6-220,ep_hydro_KE6-220__irena,25.34106484149858,hydro,Aggregated Plant - IRENA Gap - KE6-220_Missing Hydro Capacity -- operating,e_KE6-220,KE6-220,-0.6216901353161632,37.70592424531222,False
+e_KE6-220,ep_hydro_dam_G100001027320,72.0,hydro,Kindaruma hydroelectric plant_ -- operating,e_KE6-220,KE6-220,-0.806,37.811,False
+e_KE6-220,ep_hydro_ror_G100000602360,225.0,hydro,Gitaru hydroelectric plant_ -- operating,e_KE6-220,KE6-220,-0.7942,37.7523,False
+e_KE7-220,ep_geothermal_G100000700210,70.0,geothermal,Olkaria 1 geothermal power plant_4 -- operating,e_KE7-220,KE7-220,-0.891,36.2961,False
+e_KE7-220,ep_geothermal_G100000700211,70.0,geothermal,Olkaria 1 geothermal power plant_5 -- operating,e_KE7-220,KE7-220,-0.891,36.2961,False
+e_KE7-220,ep_geothermal_G100000700212,83.0,geothermal,Olkaria 1 geothermal power plant_6 -- operating,e_KE7-220,KE7-220,-0.8893,36.2557,False
+e_KE7-220,ep_geothermal_G100000700216,59.0,geothermal,Olkaria 3 geothermal power plant_1 -- operating,e_KE7-220,KE7-220,-0.889,36.2562,False
+e_KE7-220,ep_geothermal_G100000700217,36.0,geothermal,Olkaria 3 geothermal power plant_2 -- operating,e_KE7-220,KE7-220,-0.889,36.2562,False
+e_KE7-220,ep_geothermal_G100000700384,21.0,geothermal,Olkaria 1 geothermal power plant_1RP -- construction,e_KE7-220,KE7-220,-0.8893,36.2557,False
+e_KE7-220,ep_geothermal_G100000700385,21.0,geothermal,Olkaria 1 geothermal power plant_2RP -- construction,e_KE7-220,KE7-220,-0.8893,36.2557,False
+e_KE7-220,ep_geothermal_G100000700386,21.0,geothermal,Olkaria 1 geothermal power plant_3RP -- construction,e_KE7-220,KE7-220,-0.8893,36.2557,False
+e_KE7-220,ep_geothermal_G100000700387,26.0,geothermal,Olkaria 3 geothermal power plant_3 -- operating,e_KE7-220,KE7-220,-0.889,36.2562,False
+e_KE7-220,ep_geothermal_G100000700388,26.0,geothermal,Olkaria 3 geothermal power plant_4 -- operating,e_KE7-220,KE7-220,-0.889,36.2562,False
+e_KE9-220,ep_oil_internal_combustion_G100000411364,87.0,oil,Thika Power Plant_1 -- operating,e_KE9-220,KE9-220,-1.059973,37.050233,False
+e_w1115312336-220,ep_hydro_ror_G100001027321,60.0,hydro,Sondu Miriu hydroelectric plant_ -- operating,e_w1115312336-220,way/1115312336-220,-0.3426,34.8521,False
+e_w1115312336-220,ep_hydro_w1115312336-220__irena,11.786541786743523,hydro,Aggregated Plant - IRENA Gap - way/1115312336-220_Missing Hydro Capacity -- operating,e_w1115312336-220,way/1115312336-220,0.1466426900768707,34.80953513031123,False
+e_w1115312336-220,ep_oil_internal_combustion_G100000411366,60.0,oil,Muhoroni power station_1 -- operating,e_w1115312336-220,way/1115312336-220,-0.207979,35.15207,False
+e_w180021151-220,ep_windon_wind_220,36.5,windon,Aggregated Plant -- operating,e_w180021151-220,way/180021151-220,-1.541960251071533,36.69612180548238,False
+e_w220540545-220,ep_hydro_dam_G100000602362,94.0,hydro,Kamburu hydroelectric plant_ -- operating,e_w220540545-220,way/220540545-220,-0.8064,37.6861,False
+e_w457973270-400,ep_geothermal_G100000700172,35.0,geothermal,Menengai 1 geothermal power plant_3 -- construction,e_w457973270-400,way/457973270-400,-0.2137,36.0591,False
+e_w457973270-400,ep_geothermal_G100000700173,35.0,geothermal,Menengai 1 geothermal power plant_2 -- construction,e_w457973270-400,way/457973270-400,-0.2137,36.0591,False
+e_w457973270-400,ep_geothermal_G100000700174,35.0,geothermal,Menengai 1 geothermal power plant_1 -- operating,e_w457973270-400,way/457973270-400,-0.2137,36.0591,False
+e_w457973270-400,ep_geothermal_G100000700213,35.0,geothermal,Olkaria 2 geothermal power plant_1 -- operating,e_w457973270-400,way/457973270-400,-0.8644,36.2985,False
+e_w457973270-400,ep_geothermal_G100000700214,35.0,geothermal,Olkaria 2 geothermal power plant_2 -- operating,e_w457973270-400,way/457973270-400,-0.8644,36.2985,False
+e_w457973270-400,ep_geothermal_G100000700215,35.0,geothermal,Olkaria 2 geothermal power plant_3 -- operating,e_w457973270-400,way/457973270-400,-0.8644,36.2985,False
+e_w457973270-400,ep_geothermal_G100001031148,35.0,geothermal,OrPower 22 geothermal power plant_-- -- construction,e_w457973270-400,way/457973270-400,-0.215054,36.0745596,False
+e_w457973270-400,ep_geothermal_w457973270-400,2.5,geothermal,Aggregated Plant -- operating,e_w457973270-400,way/457973270-400,-0.914900086571389,36.31854426034641,False
+e_w578140339-220,ep_windon_wind_220,50.0,windon,Aggregated Plant -- operating,e_w578140339-220,way/578140339-220,-1.9539819604162267,36.853440790915876,False
+e_w579310367-220,ep_hydro_dam_G100000602365,103.0,hydro,Turkwel hydroelectric plant_ -- operating,e_w579310367-220,way/579310367-220,1.8981,35.334,False
+e_w669510376-220,ep_geothermal_G100000700218,70.0,geothermal,Olkaria 4 geothermal power plant_1 -- operating,e_w669510376-220,way/669510376-220,-0.9186,36.3338,False
+e_w669510376-220,ep_geothermal_G100000700219,70.0,geothermal,Olkaria 4 geothermal power plant_2 -- operating,e_w669510376-220,way/669510376-220,-0.9186,36.3338,False
+e_w669510376-220,ep_geothermal_G100000700220,82.0,geothermal,Olkaria 5 geothermal power plant_1 -- operating,e_w669510376-220,way/669510376-220,-0.907,36.3232,False
+e_w669510376-220,ep_geothermal_G100000700221,82.0,geothermal,Olkaria 5 geothermal power plant_2 -- operating,e_w669510376-220,way/669510376-220,-0.907,36.3232,False
+e_w669520367-220,ep_hydro_dam_G100000602363,168.0,hydro,Kiambere hydroelectric plant_ -- operating,e_w669520367-220,way/669520367-220,-0.6404,37.9094,False
+e_w669520367-220,ep_hydro_w669520367-220__irena,99.20339337175798,hydro,Aggregated Plant - IRENA Gap - way/669520367-220_Missing Hydro Capacity -- operating,e_w669520367-220,way/669520367-220,-0.5523351188255015,38.33627529329548,False
+e_w86402221-220,ep_bioenergy_w86402221-220__ember,578.7341772151899,bioenergy,Aggregated Plant - EMBER Gap - way/86402221-220_Missing Bioenergy Capacity -- operating,e_w86402221-220,way/86402221-220,-1.4367401868203993,36.87613342155479,False
+e_w953567827-220,ep_oil_internal_combustion_G100000411365,85.0,oil,Rabai power station_1-5 -- operating,e_w953567827-220,way/953567827-220,-2.990681,40.113392,False
+elc_spv_004,ep_solar_004__irena,22.195369641804074,solar,Aggregated Plant -- operating,elc_spv_004,way/579310367-220,3.350473953534359,35.23891668831094,False
+elc_spv_007,ep_solar_pv_007,40.0,solar,Aggregated Plant -- construction,elc_spv_007,KE7-220,-0.30514118895958575,36.8611178570632,False
+elc_spv_009,ep_solar_pv_009,120.0,solar,Aggregated Plant -- operating,elc_spv_009,relation/14923640-220,1.2603122931649677,35.803699590541555,False
+elc_spv_012,ep_solar_pv_012,51.00000000000001,solar,Aggregated Plant -- construction,elc_spv_012,way/1115312336-220,-0.21219277882940848,34.84154940941945,False
+elc_spv_016,ep_solar_016__irena,19.490684055002717,solar,Aggregated Plant -- operating,elc_spv_016,way/563813243-400,2.9793494723941514,40.41492150925075,False
+elc_spv_017,ep_solar_pv_017,40.0,solar,Aggregated Plant -- operating,elc_spv_017,KE15-220,-3.493357237488589,39.488197711378845,False
+elc_spv_022,ep_solar_022__irena,19.760946303193187,solar,Aggregated Plant -- operating,elc_spv_022,way/563813243-400,2.5727416553925444,40.93805659553777,False
+elc_spv_023,ep_solar_pv_023,54.0,solar,Aggregated Plant -- operating,elc_spv_023,way/669520367-220,-0.9343036136785092,38.190282355615146,False
+elc_spv_024,ep_solar_pv_024,32.0,solar,Aggregated Plant -- operating,elc_spv_024,way/669520367-220,-0.4190439663457386,37.4758591454923,False
+elc_won_003,ep_windon_wind_003,36.0,windon,Aggregated Plant -- operating,elc_won_003,KE15-220,-3.8517109199707726,39.52447444017805,False
+elc_won_011,ep_windon_wind_G100000900108,300.0,windon,Bubisa wind farm_-- -- construction,elc_won_011,way/563813243-400,2.7053,38.087,False
+elc_won_013,ep_windon_wind_013,50.0,windon,Aggregated Plant -- operating,elc_won_013,way/563813243-400,2.2341999271223885,40.153942925804614,False
+elc_won_013,ep_windon_wind_G100000900043,260.0,windon,Lake Turkana wind farm_2 -- operating,elc_won_013,way/563813243-400,2.4891,36.7932,False

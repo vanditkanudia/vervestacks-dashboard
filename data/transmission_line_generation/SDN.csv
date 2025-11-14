@@ -1,0 +1,35 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_SD7-220,ep_bioenergy_SD7-220,62.0,bioenergy,Aggregated Plant -- operating,e_SD7-220,SD7-220,14.144302662412866,32.38160814662715,False
+e_SD7-220,ep_bioenergy_SD7-220__ember,27.855072463768117,bioenergy,Aggregated Plant -- operating,e_SD7-220,SD7-220,13.786963756572618,32.42808973689324,False
+e_w126103631-220,ep_gas_gas_turbine_G100000410068,187.0,gas,Port Sudan power station_1-2 -- operating,e_w126103631-220,way/126103631-220,19.626296,37.217713,False
+e_w126103631-220,ep_gas_gas_turbine_G100000410069,187.0,gas,Port Sudan power station_1 -- operating,e_w126103631-220,way/126103631-220,19.626296,37.217713,False
+e_w126103631-220,ep_gas_steam_turbine_G100000410067,170.0,gas,Port Sudan power station_1-3 -- construction,e_w126103631-220,way/126103631-220,19.626296,37.217713,False
+e_w126103631-220,ep_oil_steam_turbine_G100001018716,150.0,oil,Karadeniz Powership_1 -- operating,e_w126103631-220,way/126103631-220,19.609512,37.228398,False
+e_w1265633459-220,ep_hydro_dam_G100000603446,320.0,hydro,Rumela hydroelectric plant_ -- operating,e_w1265633459-220,way/1265633459-220,14.2767,35.8969,False
+e_w179151461-220,ep_oil_internal_combustion_G100000411402,256.9,oil,Kilo-X Dit power plant_1 -- operating,e_w179151461-220,way/179151461-220,15.648236,32.563096,False
+e_w179151461-220,ep_oil_steam_turbine_G100000411403,100.0,oil,Mahmoud Sharif power station_3-2 -- operating,e_w179151461-220,way/179151461-220,15.651704,32.56277,False
+e_w179151461-220,ep_oil_steam_turbine_G100000411404,100.0,oil,Mahmoud Sharif power station_3-1 -- operating,e_w179151461-220,way/179151461-220,15.651704,32.56277,False
+e_w179151461-220,ep_oil_steam_turbine_G100000411405,60.0,oil,Mahmoud Sharif power station_2-2 -- operating,e_w179151461-220,way/179151461-220,15.651704,32.56277,False
+e_w179151461-220,ep_oil_steam_turbine_G100000411406,60.0,oil,Mahmoud Sharif power station_2-1 -- operating,e_w179151461-220,way/179151461-220,15.651704,32.56277,False
+e_w186397874-220,ep_hydro_dam_G100000603445,280.0,hydro,Roseires Dam hydroelectric plant_ -- operating,e_w186397874-220,way/186397874-220,11.7981,34.3875,False
+e_w230637768-220,ep_hydro_dam_G100000603444,1250.0,hydro,Merowe Dam hydroelectric plant_ -- operating,e_w230637768-220,way/230637768-220,18.6689,32.0503,False
+e_w237070026-220,ep_bioenergy_G100000201699,76.0,bioenergy,Kenana power station_1 -- operating,e_w237070026-220,way/237070026-220,13.0743,32.9279,False
+e_w237070026-220,ep_bioenergy_w237070026-220__ember,34.14492753623188,bioenergy,Aggregated Plant -- operating,e_w237070026-220,way/237070026-220,13.067071753592487,32.67038957893483,False
+e_w237070026-220,ep_oil_steam_turbine_G100000411398,125.0,oil,Kosti power plant_4 -- operating,e_w237070026-220,way/237070026-220,13.208986,32.823243,False
+e_w237070026-220,ep_oil_steam_turbine_G100000411399,125.0,oil,Kosti power plant_3 -- operating,e_w237070026-220,way/237070026-220,13.208986,32.823243,False
+e_w237070026-220,ep_oil_steam_turbine_G100000411400,125.0,oil,Kosti power plant_2 -- operating,e_w237070026-220,way/237070026-220,13.208986,32.823243,False
+e_w237070026-220,ep_oil_steam_turbine_G100000411401,125.0,oil,Kosti power plant_1 -- operating,e_w237070026-220,way/237070026-220,13.208986,32.823243,False
+e_w627215575-220,ep_gas_combined_cycle_G100000411412,110.0,gas,Garri 2 Power Plant_2 -- operating,e_w627215575-220,way/627215575-220,16.119496,32.696871,False
+e_w627215575-220,ep_gas_combined_cycle_G100000411413,110.0,gas,Garri 2 Power Plant_1 -- operating,e_w627215575-220,way/627215575-220,16.119496,32.696871,False
+e_w627215575-220,ep_gas_combined_cycle_G100000411414,110.0,gas,Garri 1 Power Plant_2 -- operating,e_w627215575-220,way/627215575-220,16.120165,32.691961,False
+e_w627215575-220,ep_gas_combined_cycle_G100000411415,110.0,gas,Garri 1 Power Plant_1 -- operating,e_w627215575-220,way/627215575-220,16.120165,32.691961,False
+e_w627215575-220,ep_gas_gas_turbine_G100000411409,187.0,gas,Garri 3 Power Plant_3 -- construction,e_w627215575-220,way/627215575-220,16.117383,32.697406,False
+e_w627215575-220,ep_gas_gas_turbine_G100000411410,187.0,gas,Garri 3 Power Plant_2 -- construction,e_w627215575-220,way/627215575-220,16.117383,32.697406,False
+e_w627215575-220,ep_gas_gas_turbine_G100000411411,187.0,gas,Garri 3 Power Plant_1 -- construction,e_w627215575-220,way/627215575-220,16.117383,32.697406,False
+e_w627215575-220,ep_oil_steam_turbine_G100000411407,55.0,oil,Garri 4 Power Plant_2 -- operating,e_w627215575-220,way/627215575-220,16.117416,32.701705,False
+e_w627215575-220,ep_oil_steam_turbine_G100000411408,55.0,oil,Garri 4 Power Plant_1 -- operating,e_w627215575-220,way/627215575-220,16.117416,32.701705,False
+elc_spv_002,ep_solar_pv_002,5.4,solar,Aggregated Plant -- operating,elc_spv_002,SD20-220,10.843289748739435,25.44350775413434,False
+elc_spv_009,ep_solar_009__irena,62.77414911572818,solar,Aggregated Plant -- operating,elc_spv_009,SD20-220,10.391089725941809,25.86453755529185,False
+elc_spv_014,ep_solar_pv_014,5.6,solar,Aggregated Plant -- operating,elc_spv_014,SD20-220,10.131205289566056,25.542278317266586,False
+elc_spv_043,ep_solar_043__irena,59.370341916627694,solar,Aggregated Plant -- operating,elc_spv_043,way/207625982-220,20.233932914562207,31.3635760591104,False
+elc_spv_044,ep_solar_044__irena,56.715508967644105,solar,Aggregated Plant -- operating,elc_spv_044,SD15-220,17.512164830936833,28.662960443634354,False

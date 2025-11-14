@@ -1,0 +1,36 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,10.0,bioenergy,Aggregated Plant -- operating,,,,,False
+ELC,ep_hydro__irena,3.6,hydro,Aggregated Plant -- operating,,,,,False
+e_JO4-400,ep_gas_combined_cycle_G100000404603,400.0,gas,Amman East power plant_1 -- operating,e_JO4-400,JO4-400,31.899056,36.079778,False
+e_JO4-400,ep_gas_internal_combustion_G100000411580,240.0,gas,IPP4 Al-Manakher power plant_1 -- operating,e_JO4-400,JO4-400,31.89712,36.079674,False
+e_JO5-400,ep_gas_internal_combustion_G100000411581,573.8,gas,IPP3 ICE power plant_1 -- operating,e_JO5-400,JO5-400,31.955219,35.945031,False
+e_JO8-400,ep_oil_steam_turbine_G100000411582,235.0,oil,Attarat power plant_2 -- operating,e_JO8-400,JO8-400,31.28562,36.52137,False
+e_JO8-400,ep_oil_steam_turbine_G100000411583,235.0,oil,Attarat power plant_1 -- operating,e_JO8-400,JO8-400,31.28562,36.52137,False
+e_w108283856-400,ep_gas_combined_cycle_G100000404602,373.0,gas,Al Qatrana power plant_1 -- operating,e_w108283856-400,way/108283856-400,31.2226,36.0197,False
+e_w108283856-400,ep_oil_internal_combustion_G100000411584,50.0,oil,Al Qatrana Cement power plant_1 -- operating,e_w108283856-400,way/108283856-400,31.22304,36.02482,False
+e_w1425536196-400,ep_gas_combined_cycle_G100000404609,300.0,gas,Rehab power plant_CC -- operating,e_w1425536196-400,way/1425536196-400,32.3311,36.0506,False
+e_w1425536196-400,ep_gas_combined_cycle_G100000404612,300.0,gas,Samra power plant_CC1 -- operating,e_w1425536196-400,way/1425536196-400,32.1433,36.1418,False
+e_w1425536196-400,ep_gas_combined_cycle_G100000404613,300.0,gas,Samra power plant_CC2 -- operating,e_w1425536196-400,way/1425536196-400,32.1433,36.1418,False
+e_w1425536196-400,ep_gas_combined_cycle_G100000404614,429.0,gas,Samra power plant_CC3 -- operating,e_w1425536196-400,way/1425536196-400,32.1433,36.1418,False
+e_w1425536196-400,ep_gas_combined_cycle_G100000404615,212.0,gas,Samra power plant_CC4 -- operating,e_w1425536196-400,way/1425536196-400,32.1433,36.1418,False
+e_w1425536196-400,ep_gas_combined_cycle_G100000404616,485.0,gas,Zarqa power plant_1 -- operating,e_w1425536196-400,way/1425536196-400,32.119,36.125,False
+e_w900996180-400,ep_gas_steam_turbine_G100000404606,130.0,gas,Aqaba power plant_3 -- operating,e_w900996180-400,way/900996180-400,29.377778,34.972778,False
+e_w900996180-400,ep_gas_steam_turbine_G100000404607,130.0,gas,Aqaba power plant_4 -- operating,e_w900996180-400,way/900996180-400,29.377778,34.972778,False
+e_w900996180-400,ep_gas_steam_turbine_G100000404608,130.0,gas,Aqaba power plant_5 -- operating,e_w900996180-400,way/900996180-400,29.377778,34.972778,False
+elc_spv_001,ep_solar_001__irena,128.41136968750735,solar,Aggregated Plant -- operating,elc_spv_001,JO10-400,31.254923760734517,36.73514559794809,False
+elc_spv_001,ep_solar_pv_001,50.0,solar,Aggregated Plant -- operating,elc_spv_001,JO10-400,30.895027317478934,37.207258355544994,False
+elc_spv_002,ep_solar_002__irena,132.45915324130067,solar,Aggregated Plant -- operating,elc_spv_002,JO10-400,30.38307748643044,36.92215746797361,False
+elc_spv_003,ep_solar_pv_003,154.70000000000002,solar,Aggregated Plant -- operating,elc_spv_003,JO10-400,30.436948205701313,36.50682627671758,False
+elc_spv_004,ep_solar_pv_004,361.0,solar,Aggregated Plant -- operating,elc_spv_004,way/130578594-400,29.903285488062018,36.093200731260886,False
+elc_spv_005,ep_solar_pv_005,44.699999999999996,solar,Aggregated Plant -- operating,elc_spv_005,way/896502779-400,32.37125147220084,35.61529271774329,False
+elc_spv_006,ep_solar_pv_006,301.1,solar,Aggregated Plant -- operating,elc_spv_006,way/1425536196-400,32.238270959833706,36.35754394799734,False
+elc_spv_007,ep_solar_pv_007,390.1,solar,Aggregated Plant -- operating,elc_spv_007,JO9-400,31.64543342294271,36.15761193823682,False
+elc_spv_007,ep_solar_pv_G100000804623,200.0,solar,Baynouna Solar Plant_-- -- operating,elc_spv_007,JO9-400,31.877,36.213,False
+elc_spv_008,ep_solar_008__irena,140.75447707119167,solar,Aggregated Plant -- operating,elc_spv_008,JO8-400,32.615051006355976,37.54464621833227,False
+elc_spv_008,ep_solar_pv_008,108.60000000000001,solar,Aggregated Plant -- operating,elc_spv_008,JO8-400,32.276559120682286,37.895489202618165,False
+elc_won_001,ep_windon_wind_001,80.0,windon,Aggregated Plant -- operating,elc_won_001,JO10-400,30.83771802512237,36.316492903894705,False
+elc_won_002,ep_windon_wind_002,86.0,windon,Aggregated Plant -- operating,elc_won_002,way/130578594-400,29.553235024105366,36.007910270515275,False
+elc_won_003,ep_windon_wind_003,454.99999999999994,windon,Aggregated Plant -- operating,elc_won_003,JO9-400,31.287009886474937,36.15916257702789,False
+elc_won_007,ep_windon_007__irena,3.7922587632819864,windon,Aggregated Plant -- operating,elc_won_007,JO1-400,32.39100004251032,38.543254048334376,False
+elc_won_009,ep_windon_009__irena,3.3873866583810646,windon,Aggregated Plant -- operating,elc_won_009,JO8-400,31.89454637005312,37.52699909167459,False
+elc_won_010,ep_windon_010__irena,3.9303545783370133,windon,Aggregated Plant -- operating,elc_won_010,JO8-400,32.18784880023703,37.181699986606525,False

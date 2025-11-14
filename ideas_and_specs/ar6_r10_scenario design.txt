@@ -1,0 +1,12 @@
+context: the ISO models should be tested under different climate scenarios to reveal the structural physics. we have selected 5 climate categories from the ar6 results and derived co2 prices, elec demand growth
+and sector shares. hydrogen will be projected as a share of elec demand as seed values are tiny.
+
+This methodology should be explained and written to the readme file - along wtih some highlights of the stats related to these metrics in the relevant r10 region. seed values will come from IEA balances.
+
+
+I want to write a new script create_ar6_r10_scenario.py
+- input ISO
+- write to Scen_Par-AR6_R10.xlsx
+- read the data for iso from iea_electricity_summary_2018_2022 and write to iea_data sheet. clear sheet before writing. sheet will already exist.
+- read the data for iso from ar6_r10_scenario_drivers and write to ar6_r10 sheet. clear sheet before writing. sheet will already exist. pick the region corresponding to the ISO - ar6 r10 - ISO mapping in vs_mappings.
+

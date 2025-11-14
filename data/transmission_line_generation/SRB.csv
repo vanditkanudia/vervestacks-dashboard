@@ -1,0 +1,52 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_coal__ember,3.0000000000001137,coal,Aggregated Plant -- operating,,,,,False
+ELC,ep_gas__ember,1.0000000000000009,gas,Aggregated Plant -- operating,,,,,False
+e_RS10-400,ep_hydro_RS10-400__irena,48.84091024191725,hydro,Aggregated Plant - IRENA Gap - RS10-400_Missing Hydro Capacity -- operating,e_RS10-400,RS10-400,44.61471391631724,18.793243351438907,False
+e_RS10-400,ep_hydro_ror_G100000603338,126.0,hydro,Zvornik hydroelectric plant_ -- operating,e_RS10-400,RS10-400,44.368,19.1068,False
+e_RS13-220,ep_hydro_RS13-220__irena,400.8055650011304,hydro,Aggregated Plant - IRENA Gap - RS13-220_Missing Hydro Capacity -- operating,e_RS13-220,RS13-220,44.14236138981532,19.390862875175884,False
+e_RS13-220,ep_hydro_ps_G100000604142,614.0,hydro,Bajina Bašta Pumped Storage hydroelectric plant_ -- operating,e_RS13-220,RS13-220,43.9647,19.4101,False
+e_RS13-220,ep_hydro_ror_G100000604141,420.0,hydro,Bajina Bašta hydroelectric plant_ -- operating,e_RS13-220,RS13-220,43.9647,19.4101,False
+e_RS17-220,ep_hydro_RS17-220__irena,303.51137078905714,hydro,Aggregated Plant - IRENA Gap - RS17-220_Missing Hydro Capacity -- operating,e_RS17-220,RS17-220,43.48564587454278,19.58190672494883,False
+e_RS17-220,ep_hydro_dam_G100000603335,102.0,hydro,Bistrica Eps hydroelectric plant_ -- operating,e_RS17-220,RS17-220,43.4705,19.6546,False
+e_RS17-220,ep_hydro_dam_G100001030679,51.0,hydro,Potpeć hydroelectric plant_ -- operating,e_RS17-220,RS17-220,43.524,19.5773,False
+e_RS19-400,ep_hydro_RS19-400__irena,31.01010174089984,hydro,Aggregated Plant - IRENA Gap - RS19-400_Missing Hydro Capacity -- operating,e_RS19-400,RS19-400,42.89060748078466,22.899647847771416,False
+e_RS19-400,ep_hydro_dam_G100000603337,80.0,hydro,Pirot hydroelectric plant_ -- operating,e_RS19-400,RS19-400,43.1579,22.6154,False
+e_w144936638-220,ep_gas_steam_turbine_G100000406996,110.0,gas,Novi Sad power station_A2 -- operating,e_w144936638-220,way/144936638-220,45.267969,19.885331,False
+e_w144936638-220,ep_gas_steam_turbine_G100000406997,140.0,gas,Novi Sad power station_A1 -- operating,e_w144936638-220,way/144936638-220,45.267969,19.885331,False
+e_w174921474-400,ep_coal_subcritical_G100000105887,100.0,coal,Kostolac power station_Phase A Unit 1 -- operating,e_w174921474-400,way/174921474-400,44.723674,21.171605,False
+e_w174921474-400,ep_coal_subcritical_G100000105888,210.0,coal,Kostolac power station_Phase A Unit 2 -- operating,e_w174921474-400,way/174921474-400,44.723674,21.171605,False
+e_w174921474-400,ep_coal_subcritical_G100000105889,350.0,coal,Kostolac power station_Phase B Unit 1 -- operating,e_w174921474-400,way/174921474-400,44.730686,21.211403,False
+e_w174921474-400,ep_coal_subcritical_G100000105890,350.0,coal,Kostolac power station_Phase B Unit 2 -- operating,e_w174921474-400,way/174921474-400,44.730686,21.211403,False
+e_w174921474-400,ep_coal_supercritical_G100000105886,350.0,coal,Kostolac power station_Phase B Unit 3 -- operating,e_w174921474-400,way/174921474-400,44.72954,21.212146,False
+e_w238952272-400,ep_hydro_w238952272-400__irena,930.3030522269953,hydro,Aggregated Plant - IRENA Gap - way/238952272-400_Missing Hydro Capacity -- operating,e_w238952272-400,way/238952272-400,44.72202608338351,22.688549149901323,False
+e_w239998425-400,ep_bioenergy_w239998425-400,30.0,bioenergy,Aggregated Plant -- operating,e_w239998425-400,way/239998425-400,44.916066266067105,20.5787163861438,False
+e_w239998425-400,ep_bioenergy_w239998425-400__ember,40.0,bioenergy,Aggregated Plant -- operating,e_w239998425-400,way/239998425-400,44.563694712641876,20.640009827632692,False
+e_w254397982-220,ep_gas_combined_cycle_G100000406998,189.0,gas,Pančevo power station_1 -- operating,e_w254397982-220,way/254397982-220,44.831206,20.679887,False
+e_w273601208-220,ep_gas_steam_turbine_G100000406994,110.0,gas,Zrenjanin power station_1 -- operating,e_w273601208-220,way/273601208-220,45.35717,20.415949,False
+e_w498961839-400,ep_coal_subcritical_G100000107012,120.0,coal,Morava power station_Unit 1 -- operating,e_w498961839-400,way/498961839-400,44.223826,21.163148,False
+e_w52564762-220,ep_coal_subcritical_G100000105819,32.0,coal,Kolubara A power station_Unit 1 -- operating,e_w52564762-220,way/52564762-220,44.480312,20.293538,False
+e_w52564762-220,ep_coal_subcritical_G100000105820,32.0,coal,Kolubara A power station_Unit 2 -- operating,e_w52564762-220,way/52564762-220,44.480312,20.293538,False
+e_w52564762-220,ep_coal_subcritical_G100000105821,65.0,coal,Kolubara A power station_Unit 3 -- operating,e_w52564762-220,way/52564762-220,44.480312,20.293538,False
+e_w52564762-220,ep_coal_subcritical_G100000105823,110.0,coal,Kolubara A power station_Unit 5 -- operating,e_w52564762-220,way/52564762-220,44.480312,20.293538,False
+e_w52564762-220,ep_m_coal_subcritical_G100000105822,32.0,coal,Kolubara A power station_Unit 4 -- mothballed,e_w52564762-220,way/52564762-220,44.480312,20.293538,False
+e_w52564762-400,ep_coal_subcritical_G100000107438,210.0,coal,Nikola Tesla power station_Phase A Unit 1 -- operating,e_w52564762-400,way/52564762-400,44.671341,20.158418,False
+e_w52564762-400,ep_coal_subcritical_G100000107439,210.0,coal,Nikola Tesla power station_Phase A Unit 2 -- operating,e_w52564762-400,way/52564762-400,44.671341,20.158418,False
+e_w52564762-400,ep_coal_subcritical_G100000107440,329.0,coal,Nikola Tesla power station_Phase A Unit 3 -- operating,e_w52564762-400,way/52564762-400,44.671341,20.158418,False
+e_w52564762-400,ep_coal_subcritical_G100000107441,329.0,coal,Nikola Tesla power station_Phase A Unit 4 -- operating,e_w52564762-400,way/52564762-400,44.671341,20.158418,False
+e_w52564762-400,ep_coal_subcritical_G100000107442,340.0,coal,Nikola Tesla power station_Phase A Unit 5 -- operating,e_w52564762-400,way/52564762-400,44.671341,20.158418,False
+e_w52564762-400,ep_coal_subcritical_G100000107443,348.0,coal,Nikola Tesla power station_Phase A Unit 6 -- operating,e_w52564762-400,way/52564762-400,44.671341,20.158418,False
+e_w52564762-400,ep_coal_subcritical_G100000107444,650.0,coal,Nikola Tesla power station_Phase B Unit 1 -- operating,e_w52564762-400,way/52564762-400,44.653833,20.004848,False
+e_w52564762-400,ep_coal_subcritical_G100000107445,650.0,coal,Nikola Tesla power station_Phase B Unit 2 -- operating,e_w52564762-400,way/52564762-400,44.653833,20.004848,False
+elc_spv_004,ep_solar_pv_004,1.2,solar,Aggregated Plant -- operating,elc_spv_004,way/273601208-220,45.37777310377574,20.437557137817322,False
+elc_spv_005,ep_solar_005__irena,36.31223207655419,solar,Aggregated Plant -- operating,elc_spv_005,way/236110936-220,44.89773360339262,19.987017589756867,False
+elc_spv_005,ep_solar_pv_005,8.4,solar,Aggregated Plant -- operating,elc_spv_005,way/236110936-220,44.778783043048165,19.542945018345232,False
+elc_spv_009,ep_solar_pv_009,5.1,solar,Aggregated Plant -- operating,elc_spv_009,way/307090968-220,44.76689555194337,20.859361926300004,False
+elc_spv_015,ep_solar_pv_015,3.8,solar,Aggregated Plant -- operating,elc_spv_015,RS25-400,42.27343859790067,21.702433062484225,False
+elc_spv_016,ep_solar_016__irena,36.592338219827425,solar,Aggregated Plant -- operating,elc_spv_016,way/616236270-220,42.99074515353075,22.005368588652047,False
+elc_spv_016,ep_solar_pv_016,2.3,solar,Aggregated Plant -- operating,elc_spv_016,way/616236270-220,42.72553681630381,21.68655008129415,False
+elc_spv_017,ep_solar_pv_017,3.0,solar,Aggregated Plant -- operating,elc_spv_017,way/238249884-400,44.229219557020016,22.303349927011173,False
+elc_spv_018,ep_solar_018__irena,40.29342970361837,solar,Aggregated Plant -- operating,elc_spv_018,way/411530745-220,43.67590927003619,21.951134216200973,False
+elc_spv_018,ep_solar_pv_018,11.8,solar,Aggregated Plant -- operating,elc_spv_018,way/411530745-220,43.68929467146303,21.4786247235312,False
+elc_won_001,ep_windon_wind_001,105.6,windon,Aggregated Plant -- operating,elc_won_001,way/174921474-400,44.427460586921775,21.154822470793157,False
+elc_won_002,ep_windon_wind_002,561.5,windon,Aggregated Plant -- operating,elc_won_002,way/330729178-220,44.744918508218575,20.66957015436686,False
+elc_won_005,ep_windon_wind_005,10.0,windon,Aggregated Plant -- operating,elc_won_005,way/238954545-400,45.80010168409214,19.058159508100935,False

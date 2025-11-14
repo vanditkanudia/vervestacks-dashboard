@@ -1,0 +1,157 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_AE1-220,ep_bioenergy_AE1-220,30.0,bioenergy,Aggregated Plant -- operating,e_AE1-220,AE1-220,25.432176512673948,55.69894073926067,False
+e_AE11-400,ep_gas_AE11-400__ember,98.79554207921703,gas,Aggregated Plant - EMBER Gap - AE11-400_Missing Gas Capacity -- operating,e_AE11-400,AE11-400,25.025332845920705,54.900005780786934,False
+e_AE11-400,ep_gas_steam_turbine_G100001017844,600.0,gas,Hassyan Clean-Coal Power Project_Unit 4 (gas) -- operating,e_AE11-400,AE11-400,24.911516,54.915494,False
+e_AE11-400,ep_gas_steam_turbine_G100001018043,600.0,gas,"Hassyan Clean-Coal Power Project_Unit 2, timepoint 2 -- operating",e_AE11-400,AE11-400,24.911516,54.915494,False
+e_AE11-400,ep_gas_steam_turbine_G100001018044,600.0,gas,Hassyan Clean-Coal Power Project_Unit 3 (gas) -- operating,e_AE11-400,AE11-400,24.911516,54.915494,False
+e_AE11-400,ep_gas_steam_turbine_G100001018045,600.0,gas,"Hassyan Clean-Coal Power Project_Unit 1, timepoint 2 -- operating",e_AE11-400,AE11-400,24.911516,54.915494,False
+e_AE13-400,ep_gas_AE13-400__ember,256.45676131396755,gas,Aggregated Plant - EMBER Gap - AE13-400_Missing Gas Capacity -- operating,e_AE13-400,AE13-400,24.898291761205186,54.88214482494266,False
+e_AE13-400,ep_gas_combined_cycle_G100000410082,1550.0,gas,Emirates Aluminum Smelter Complex power station_2-1 -- operating,e_AE13-400,AE13-400,24.726727,54.680249,False
+e_AE13-400,ep_gas_combined_cycle_G100000410085,825.0,gas,Emirates Aluminum Smelter Complex power station_CC2 -- operating,e_AE13-400,AE13-400,24.726727,54.680249,False
+e_AE13-400,ep_gas_combined_cycle_G100000410086,825.0,gas,Emirates Aluminum Smelter Complex power station_CC1 -- operating,e_AE13-400,AE13-400,24.726727,54.680249,False
+e_AE13-400,ep_gas_gas_turbine_G100000410083,265.0,gas,Emirates Aluminum Smelter Complex power station_1-2 -- operating,e_AE13-400,AE13-400,24.726727,54.680249,False
+e_AE13-400,ep_gas_gas_turbine_G100000410084,265.0,gas,Emirates Aluminum Smelter Complex power station_1-1 -- operating,e_AE13-400,AE13-400,24.726727,54.680249,False
+e_AE19-220,ep_gas_AE19-220__ember,102.9120229991844,gas,Aggregated Plant - EMBER Gap - AE19-220_Missing Gas Capacity -- operating,e_AE19-220,AE19-220,24.22790942492626,54.63151385227291,False
+e_AE40-220,ep_gas_AE40-220__ember,61.74721379951065,gas,Aggregated Plant - EMBER Gap - AE40-220_Missing Gas Capacity -- operating,e_AE40-220,AE40-220,23.49835161322336,53.77254174818343,False
+e_w1264942732-220,ep_gas_w1264942732-220__ember,102.9120229991844,gas,Aggregated Plant - EMBER Gap - way/1264942732-220_Missing Gas Capacity -- operating,e_w1264942732-220,way/1264942732-220,24.198926392395546,54.06956241119831,False
+e_w1264993337-400,ep_nuclear_G100000500018,1417.0,nuclear,Barakah nuclear power plant_1 -- operating,e_w1264993337-400,way/1264993337-400,23.9695,52.2361,False
+e_w1264993337-400,ep_nuclear_G100000500020,1417.0,nuclear,Barakah nuclear power plant_3 -- operating,e_w1264993337-400,way/1264993337-400,23.9695,52.2361,False
+e_w1264993337-400,ep_nuclear_G100000500021,1417.0,nuclear,Barakah nuclear power plant_4 -- operating,e_w1264993337-400,way/1264993337-400,23.9695,52.2361,False
+e_w1264993337-400,ep_nuclear_G100000500022,1417.0,nuclear,Barakah nuclear power plant_2 -- operating,e_w1264993337-400,way/1264993337-400,23.9695,52.2361,False
+e_w132517028-220,ep_gas_gas_turbine_G100000405043,162.5,gas,Ruwais General Utilities Plant_1 -- operating,e_w132517028-220,way/132517028-220,24.13497,52.73181,False
+e_w132517028-220,ep_gas_gas_turbine_G100000405044,162.5,gas,Ruwais General Utilities Plant_2 -- operating,e_w132517028-220,way/132517028-220,24.13497,52.73181,False
+e_w132517028-220,ep_gas_gas_turbine_G100000410075,66.0,gas,Zirku ADMA-OPCO power station_5 -- operating,e_w132517028-220,way/132517028-220,24.890061,53.065688,False
+e_w132517028-220,ep_gas_gas_turbine_G100000410076,66.0,gas,Zirku ADMA-OPCO power station_4 -- operating,e_w132517028-220,way/132517028-220,24.890061,53.065688,False
+e_w132517028-220,ep_gas_gas_turbine_G100000410077,66.0,gas,Zirku ADMA-OPCO power station_3 -- operating,e_w132517028-220,way/132517028-220,24.890061,53.065688,False
+e_w132517028-220,ep_gas_gas_turbine_G100000410078,66.0,gas,Zirku ADMA-OPCO power station_2 -- operating,e_w132517028-220,way/132517028-220,24.890061,53.065688,False
+e_w132517028-220,ep_gas_gas_turbine_G100000410079,66.0,gas,Zirku ADMA-OPCO power station_1 -- operating,e_w132517028-220,way/132517028-220,24.890061,53.065688,False
+e_w132517028-220,ep_gas_gas_turbine_G100000410088,162.5,gas,Ruwais General Utilities Plant_4 -- operating,e_w132517028-220,way/132517028-220,24.13497,52.73181,False
+e_w132517028-220,ep_gas_gas_turbine_G100000410089,162.5,gas,Ruwais General Utilities Plant_3 -- operating,e_w132517028-220,way/132517028-220,24.13497,52.73181,False
+e_w132517028-220,ep_gas_steam_turbine_G100000410087,230.0,gas,Ruwais General Utilities Plant_CC -- construction,e_w132517028-220,way/132517028-220,24.13497,52.73181,False
+e_w132517028-220,ep_gas_w132517028-220__ember,49.80941913160525,gas,Aggregated Plant -- operating,e_w132517028-220,way/132517028-220,24.152388190833893,52.60295190918769,False
+e_w1348312852-400,ep_gas_combined_cycle_G100000405037,345.0,gas,Layyah power station_CC-Phase 1 -- operating,e_w1348312852-400,way/1348312852-400,25.3527,55.3705,False
+e_w1348312852-400,ep_gas_combined_cycle_G100000410091,345.0,gas,Layyah power station_CC-Phase 2 -- operating,e_w1348312852-400,way/1348312852-400,25.3527,55.3705,False
+e_w1348312852-400,ep_gas_gas_turbine_G100000405031,123.0,gas,Layyah power station_GT-1 -- operating,e_w1348312852-400,way/1348312852-400,25.3527,55.3705,False
+e_w1348312852-400,ep_gas_gas_turbine_G100000405032,123.0,gas,Layyah power station_GT-2 -- operating,e_w1348312852-400,way/1348312852-400,25.3527,55.3705,False
+e_w1348312852-400,ep_gas_steam_turbine_G100000405033,75.0,gas,Layyah power station_ST1 -- operating,e_w1348312852-400,way/1348312852-400,25.3527,55.3705,False
+e_w1348312852-400,ep_gas_steam_turbine_G100000405034,75.0,gas,Layyah power station_ST2 -- operating,e_w1348312852-400,way/1348312852-400,25.3527,55.3705,False
+e_w1348312852-400,ep_gas_steam_turbine_G100000405035,75.0,gas,Layyah power station_ST3 -- operating,e_w1348312852-400,way/1348312852-400,25.3527,55.3705,False
+e_w1348312852-400,ep_gas_steam_turbine_G100000405036,75.0,gas,Layyah power station_ST4 -- operating,e_w1348312852-400,way/1348312852-400,25.3527,55.3705,False
+e_w1348312852-400,ep_gas_steam_turbine_G100000410090,336.0,gas,Layyah power station_CC-Phase 3 -- operating,e_w1348312852-400,way/1348312852-400,25.3527,55.3705,False
+e_w1348312852-400,ep_gas_w1348312852-400__ember,64.71108006188716,gas,Aggregated Plant - EMBER Gap - way/1348312852-400_Missing Gas Capacity -- operating,e_w1348312852-400,way/1348312852-400,25.304952488711344,55.32905417654808,False
+e_w1366982708-400,ep_bioenergy_G100000200360,190.0,bioenergy,Dubai Waste Management Centre power station_1 -- operating,e_w1366982708-400,way/1366982708-400,25.1588,55.4434,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000404995,101.2,gas,Al Aweer H Power and Desalination Station_1-GT1 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000404996,101.2,gas,Al Aweer H Power and Desalination Station_1-GT2 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000404997,101.2,gas,Al Aweer H Power and Desalination Station_1-GT3 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000404998,101.2,gas,Al Aweer H Power and Desalination Station_1-GT4 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000404999,101.2,gas,Al Aweer H Power and Desalination Station_1-GT5 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405000,101.2,gas,Al Aweer H Power and Desalination Station_1-GT6 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405001,140.3,gas,Al Aweer H Power and Desalination Station_2-GT1 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405002,140.3,gas,Al Aweer H Power and Desalination Station_2-GT2 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405003,140.3,gas,Al Aweer H Power and Desalination Station_2-GT3 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405004,242.0,gas,Al Aweer H Power and Desalination Station_3-GT1 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405005,242.0,gas,Al Aweer H Power and Desalination Station_3-GT2 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405006,242.0,gas,Al Aweer H Power and Desalination Station_3-GT3 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405007,242.0,gas,Al Aweer H Power and Desalination Station_3-GT4 -- operating,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405008,271.7,gas,Al Aweer H Power and Desalination Station_4-GT1 -- construction,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405009,271.7,gas,Al Aweer H Power and Desalination Station_4-GT2 -- construction,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_gas_turbine_G100000405010,271.7,gas,Al Aweer H Power and Desalination Station_4-GT3 -- construction,e_w1366982708-400,way/1366982708-400,25.1493,55.4268,False
+e_w1366982708-400,ep_gas_w1366982708-400__ember,115.72251162212287,gas,Aggregated Plant - EMBER Gap - way/1366982708-400_Missing Gas Capacity -- operating,e_w1366982708-400,way/1366982708-400,24.990292851430276,55.514867320154416,False
+e_w260963603-400,ep_hydro_dam_G100000603732,250.0,hydro,Al Hattawi Dam hydroelectric plant_ -- construction,e_w260963603-400,way/260963603-400,24.7836,56.1142,False
+e_w29497443-400,ep_gas_combined_cycle_G100000405018,1027.0,gas,Jebel Ali D Power and Desalination Station_1 -- operating,e_w29497443-400,way/29497443-400,25.0659,55.1235,False
+e_w29497443-400,ep_gas_combined_cycle_G100000405019,616.0,gas,Jebel Ali E Power and Desalination Station_1 -- operating,e_w29497443-400,way/29497443-400,25.06411,55.12033,False
+e_w29497443-400,ep_gas_combined_cycle_G100000405021,948.0,gas,Jebel Ali K Power and Desalination Station_1 -- operating,e_w29497443-400,way/29497443-400,25.0587,55.1168,False
+e_w29497443-400,ep_gas_combined_cycle_G100000405024,969.0,gas,Jebel Ali L Power and Desalination Station_1 -- operating,e_w29497443-400,way/29497443-400,25.0493,55.1116,False
+e_w29497443-400,ep_gas_combined_cycle_G100000405025,1432.0,gas,Jebel Ali L Power and Desalination Station_2 -- operating,e_w29497443-400,way/29497443-400,25.0493,55.1116,False
+e_w29497443-400,ep_gas_combined_cycle_G100000405026,728.3,gas,Jebel Ali M Power and Desalination Station_1 -- operating,e_w29497443-400,way/29497443-400,25.046427,55.105557,False
+e_w29497443-400,ep_gas_combined_cycle_G100000405027,728.0,gas,Jebel Ali M Power and Desalination Station_2 -- operating,e_w29497443-400,way/29497443-400,25.046427,55.105557,False
+e_w29497443-400,ep_gas_combined_cycle_G100000405028,728.3,gas,Jebel Ali M Power and Desalination Station_3 -- operating,e_w29497443-400,way/29497443-400,25.046427,55.105557,False
+e_w29497443-400,ep_gas_combined_cycle_G100000405029,700.0,gas,Jebel Ali M Power and Desalination Station_4 -- operating,e_w29497443-400,way/29497443-400,25.046427,55.105557,False
+e_w29497443-400,ep_gas_gas_turbine_G100000405020,818.0,gas,Jebel Ali G Power and Desalination Station_1 -- operating,e_w29497443-400,way/29497443-400,25.0553,55.1151,False
+e_w29497443-400,ep_gas_gas_turbine_G100000405022,290.0,gas,Jebel Ali K Power and Desalination Station_3-GT1 -- construction,e_w29497443-400,way/29497443-400,25.0587,55.1168,False
+e_w29497443-400,ep_gas_gas_turbine_G100000405023,290.0,gas,Jebel Ali K Power and Desalination Station_3-GT2 -- construction,e_w29497443-400,way/29497443-400,25.0587,55.1168,False
+e_w29497443-400,ep_gas_w29497443-400__ember,381.7871394032943,gas,Aggregated Plant - EMBER Gap - way/29497443-400_Missing Gas Capacity -- operating,e_w29497443-400,way/29497443-400,25.14332343825251,54.964037624338715,False
+e_w301647038-220,ep_gas_combined_cycle_G100000405048,1615.0,gas,Shuweihat S1 power plant_1 -- operating,e_w301647038-220,way/301647038-220,24.165085,52.569724,False
+e_w301647038-220,ep_gas_combined_cycle_G100000405049,820.5,gas,Shuweihat S2 power plant_1 -- operating,e_w301647038-220,way/301647038-220,24.156936,52.569199,False
+e_w301647038-220,ep_gas_combined_cycle_G100000405050,820.5,gas,Shuweihat S2 power plant_2 -- operating,e_w301647038-220,way/301647038-220,24.156936,52.569199,False
+e_w301647038-220,ep_gas_combined_cycle_G100000405051,823.5,gas,Shuweihat S3 power plant_1 -- operating,e_w301647038-220,way/301647038-220,24.1535,52.566208,False
+e_w301647038-220,ep_gas_combined_cycle_G100000405052,823.5,gas,Shuweihat S3 power plant_2 -- operating,e_w301647038-220,way/301647038-220,24.1535,52.566208,False
+e_w301647038-220,ep_gas_w301647038-220__ember,201.83105950600046,gas,Aggregated Plant - EMBER Gap - way/301647038-220_Missing Gas Capacity -- operating,e_w301647038-220,way/301647038-220,24.012982361788076,52.485955322837405,False
+e_w301911494-400,ep_gas_combined_cycle_G100000405011,882.0,gas,Fujairah F1 Integrated Water and power plant_1 -- operating,e_w301911494-400,way/301911494-400,25.31416,56.3728,False
+e_w301911494-400,ep_gas_combined_cycle_G100000405012,867.0,gas,Fujairah F2 Integrated Water and power plant_1 -- operating,e_w301911494-400,way/301911494-400,25.301931,56.370353,False
+e_w301911494-400,ep_gas_combined_cycle_G100000405013,432.0,gas,Fujairah F2 Integrated Water and power plant_2 -- operating,e_w301911494-400,way/301911494-400,25.301931,56.370353,False
+e_w301911494-400,ep_gas_combined_cycle_G100000405014,867.0,gas,Fujairah F2 Integrated Water and power plant_3 -- operating,e_w301911494-400,way/301911494-400,25.301931,56.370353,False
+e_w301911494-400,ep_gas_combined_cycle_G100000405015,2400.0,gas,Fujairah F3 Integrated Water and power plant_1 -- construction,e_w301911494-400,way/301911494-400,25.301931,56.370353,False
+e_w301911494-400,ep_gas_w301911494-400__ember,224.26588051982264,gas,Aggregated Plant - EMBER Gap - way/301911494-400_Missing Gas Capacity -- operating,e_w301911494-400,way/301911494-400,25.240290239921695,56.29371400206341,False
+e_w354339381-220,ep_gas_gas_turbine_G100000405074,100.0,gas,Wasit power station_GT 1 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100000405075,100.0,gas,Wasit power station_GT2 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100000405076,100.0,gas,Wasit power station_GT 3 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100000405077,100.0,gas,Wasit power station_GT 4 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100000405078,100.0,gas,Wasit power station_GT 5 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100000405079,80.0,gas,Wasit power station_GT 6 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100000405080,80.0,gas,Wasit power station_GT 7 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100000405081,50.0,gas,Wasit power station_GT 8 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100000405082,50.0,gas,Wasit power station_GT 9 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100001006634,100.0,gas,Wasit power station_GT10 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100001006635,100.0,gas,Wasit power station_GT11 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_gas_turbine_G100001006636,100.0,gas,Wasit power station_GT12 -- operating,e_w354339381-220,way/354339381-220,25.3732,55.4611,False
+e_w354339381-220,ep_gas_w354339381-220__ember,43.63469775165419,gas,Aggregated Plant -- operating,e_w354339381-220,way/354339381-220,25.435269868470648,55.29668346381541,False
+e_w354339381-400,ep_gas_combined_cycle_G100000405045,600.0,gas,Hamriyah IPP power station_1 -- operating,e_w354339381-400,way/354339381-400,25.459488,55.478473,False
+e_w354339381-400,ep_gas_combined_cycle_G100000405046,600.0,gas,Hamriyah IPP power station_2 -- operating,e_w354339381-400,way/354339381-400,25.459488,55.478473,False
+e_w354339381-400,ep_gas_combined_cycle_G100000405047,600.0,gas,Hamriyah IPP power station_3 -- operating,e_w354339381-400,way/354339381-400,25.459488,55.478473,False
+e_w354339381-400,ep_gas_gas_turbine_G100000404993,100.0,gas,Al-Zawra power plant_2-GT1 -- operating,e_w354339381-400,way/354339381-400,25.447778,55.474722,False
+e_w354339381-400,ep_gas_gas_turbine_G100000404994,100.0,gas,Al-Zawra power plant_2-GT2 -- operating,e_w354339381-400,way/354339381-400,25.447778,55.474722,False
+e_w354339381-400,ep_gas_gas_turbine_G100000405016,126.0,gas,Hamriyah power station_1 -- operating,e_w354339381-400,way/354339381-400,25.459488,55.478473,False
+e_w354339381-400,ep_gas_gas_turbine_G100000405017,126.0,gas,Hamriyah power station_2 -- operating,e_w354339381-400,way/354339381-400,25.459488,55.478473,False
+e_w354339381-400,ep_gas_gas_turbine_G100001006712,126.0,gas,Hamriyah power station_3 -- operating,e_w354339381-400,way/354339381-400,25.459488,55.478473,False
+e_w354339381-400,ep_gas_gas_turbine_G100001006713,126.0,gas,Hamriyah power station_4 -- operating,e_w354339381-400,way/354339381-400,25.459488,55.478473,False
+e_w354339381-400,ep_gas_w354339381-400__ember,103.0766822359831,gas,Aggregated Plant - EMBER Gap - way/354339381-400_Missing Gas Capacity -- operating,e_w354339381-400,way/354339381-400,25.312001218104918,55.36553376930855,False
+e_w526194855-220,ep_gas_combined_cycle_G100000405038,1337.0,gas,Mirfa Independent Water and Power Project_CC -- operating,e_w526194855-220,way/526194855-220,24.121,53.447,False
+e_w526194855-220,ep_gas_gas_turbine_G100000405039,90.0,gas,Mirfa Independent Water and Power Project_1 -- operating,e_w526194855-220,way/526194855-220,24.121,53.447,False
+e_w526194855-220,ep_gas_gas_turbine_G100000405040,90.0,gas,Mirfa Independent Water and Power Project_2 -- operating,e_w526194855-220,way/526194855-220,24.121,53.447,False
+e_w526194855-220,ep_gas_gas_turbine_G100000405041,90.0,gas,Mirfa Independent Water and Power Project_3 -- operating,e_w526194855-220,way/526194855-220,24.121,53.447,False
+e_w526194855-220,ep_gas_gas_turbine_G100000405042,90.0,gas,Mirfa Independent Water and Power Project_4 -- operating,e_w526194855-220,way/526194855-220,24.121,53.447,False
+e_w526194855-220,ep_gas_w526194855-220__ember,69.85668121184638,gas,Aggregated Plant - EMBER Gap - way/526194855-220_Missing Gas Capacity -- operating,e_w526194855-220,way/526194855-220,24.230251446693412,53.58538932712324,False
+e_w801739686-400,ep_gas_combined_cycle_G100000410080,640.0,gas,Emirates Global Aluminum Smelter power station_H -- operating,e_w801739686-400,way/801739686-400,25.044801,55.155846,False
+e_w801739686-400,ep_gas_combined_cycle_G100000410081,2350.0,gas,Emirates Global Aluminum Smelter power station_1 -- operating,e_w801739686-400,way/801739686-400,25.044801,55.155846,False
+e_w801739686-400,ep_gas_w801739686-400__ember,123.08277950702454,gas,Aggregated Plant - EMBER Gap - way/801739686-400_Missing Gas Capacity -- operating,e_w801739686-400,way/801739686-400,24.860345683708818,55.03138885143024,False
+e_w94816851-400,ep_gas_gas_turbine_G100000411381,187.0,gas,Al Nakheel power station_1 -- operating,e_w94816851-400,way/94816851-400,25.796913,55.956615,False
+e_w94816851-400,ep_gas_gas_turbine_G100000411709,100.0,gas,Al Nakheel power station_3 -- operating,e_w94816851-400,way/94816851-400,25.796913,55.956615,False
+e_w94816851-400,ep_gas_gas_turbine_G100000411710,100.0,gas,Al Nakheel power station_2 -- operating,e_w94816851-400,way/94816851-400,25.796913,55.956615,False
+e_w94816851-400,ep_gas_steam_turbine_G100001006814,60.0,gas,Al Hamra Independent Power Plant_2 -- operating,e_w94816851-400,way/94816851-400,25.686305,55.798446,False
+e_w94816851-400,ep_gas_w94816851-400__ember,18.40066971225417,gas,Aggregated Plant -- operating,e_w94816851-400,way/94816851-400,25.576189097910905,56.00479899691611,False
+e_w94950807-400,ep_gas_combined_cycle_G100000410458,1706.0,gas,Umm Al Nar West and East Integrated Water and power plant_CC1 -- operating,e_w94950807-400,way/94950807-400,24.434804,54.487617,False
+e_w94950807-400,ep_gas_w94950807-400__ember,70.22716449464343,gas,Aggregated Plant - EMBER Gap - way/94950807-400_Missing Gas Capacity -- operating,e_w94950807-400,way/94950807-400,24.410327534213184,54.34616191334637,False
+e_w94950821-400,ep_gas_combined_cycle_G100000405053,1672.5,gas,Taweelah A1 power plant_1 -- operating,e_w94950821-400,way/94950821-400,24.760381,54.679744,False
+e_w94950821-400,ep_gas_combined_cycle_G100000405055,337.9,gas,Taweelah B Power and Desalination Station_Initial B EXT -- operating,e_w94950821-400,way/94950821-400,24.76581,54.686594,False
+e_w94950821-400,ep_gas_combined_cycle_G100000405062,1041.0,gas,Taweelah B Power and Desalination Station_New B EXT -- operating,e_w94950821-400,way/94950821-400,24.76581,54.686594,False
+e_w94950821-400,ep_gas_steam_turbine_G100000405056,146.0,gas,Taweelah B Power and Desalination Station_ST11 -- operating,e_w94950821-400,way/94950821-400,24.76581,54.686594,False
+e_w94950821-400,ep_gas_steam_turbine_G100000405057,146.0,gas,Taweelah B Power and Desalination Station_ST21 -- operating,e_w94950821-400,way/94950821-400,24.76581,54.686594,False
+e_w94950821-400,ep_gas_steam_turbine_G100000405058,146.0,gas,Taweelah B Power and Desalination Station_ST31 -- operating,e_w94950821-400,way/94950821-400,24.76581,54.686594,False
+e_w94950821-400,ep_gas_steam_turbine_G100000405059,146.0,gas,Taweelah B Power and Desalination Station_ST41 -- operating,e_w94950821-400,way/94950821-400,24.76581,54.686594,False
+e_w94950821-400,ep_gas_steam_turbine_G100000405060,146.0,gas,Taweelah B Power and Desalination Station_ST51 -- operating,e_w94950821-400,way/94950821-400,24.76581,54.686594,False
+e_w94950821-400,ep_gas_steam_turbine_G100000405061,146.0,gas,Taweelah B Power and Desalination Station_ST61 -- operating,e_w94950821-400,way/94950821-400,24.76581,54.686594,False
+e_w94950821-400,ep_gas_w94950821-400__ember,161.67067165079874,gas,Aggregated Plant - EMBER Gap - way/94950821-400_Missing Gas Capacity -- operating,e_w94950821-400,way/94950821-400,25.122030763141275,54.651002376379516,False
+elc_spv_002,ep_solar_pv_002,19.1,solar,Aggregated Plant -- operating,elc_spv_002,way/309146009-400,24.387736300699444,51.94565570472327,False
+elc_spv_003,ep_solar_pv_G100000804601,2000.0,solar,Al Dhafra solar farm_2 -- operating,elc_spv_003,AE32-220,24.1456,54.5139,False
+elc_spv_005,ep_solar_thermal_005,100.0,solar,Aggregated Plant -- operating,elc_spv_005,way/395805805-220,23.39330066203427,53.75663275187086,False
+elc_spv_006,ep_solar_pv_006,129.0,solar,Aggregated Plant -- operating,elc_spv_006,way/94950821-400,24.845735774707748,54.34061654539652,False
+elc_spv_007,ep_solar_pv_007,83.99999999999999,solar,Aggregated Plant -- construction,elc_spv_007,way/1255406048-400,24.99086826577766,55.71371863435301,False
+elc_spv_007,ep_solar_pv_G100000804688,200.0,solar,Mohammed Bin Rashid Al Maktoum Solar Park_2 -- operating,elc_spv_007,way/1255406048-400,24.759,55.383,False
+elc_spv_007,ep_solar_pv_G100000811473,299.0,solar,Shams Dubai solar farm_-- -- operating,elc_spv_007,way/1255406048-400,25.0722,55.257,False
+elc_spv_008,ep_solar_pv_008,19.5,solar,Aggregated Plant -- operating,elc_spv_008,AE39-220,24.12914777383567,55.733625830087824,False
+elc_spv_008,ep_solar_pv_G100000804603,300.0,solar,Mohammed Bin Rashid Al Maktoum Solar Park_5c -- operating,elc_spv_008,AE39-220,24.7268,55.4111,False
+elc_spv_008,ep_solar_pv_G100000804604,300.0,solar,Mohammed Bin Rashid Al Maktoum Solar Park_5a -- operating,elc_spv_008,AE39-220,24.7268,55.4111,False
+elc_spv_008,ep_solar_pv_G100000804631,250.0,solar,Mohammed Bin Rashid Al Maktoum Solar Park_4c -- operating,elc_spv_008,AE39-220,24.7497,55.443,False
+elc_spv_008,ep_solar_pv_G100000804690,300.0,solar,Mohammed Bin Rashid Al Maktoum Solar Park_3b -- operating,elc_spv_008,AE39-220,24.755,55.421,False
+elc_spv_008,ep_solar_pv_G100000804691,300.0,solar,Mohammed Bin Rashid Al Maktoum Solar Park_3c -- operating,elc_spv_008,AE39-220,24.737,55.421,False
+elc_spv_008,ep_solar_pv_G100000804694,1177.0,solar,Noor Abu Dhabi solar farm_-- -- operating,elc_spv_008,AE39-220,24.5361,55.4321,False
+elc_spv_008,ep_solar_pv_G100000835493,300.0,solar,Mohammed Bin Rashid Al Maktoum Solar Park_5b -- operating,elc_spv_008,AE39-220,24.7268,55.4111,False
+elc_spv_008,ep_solar_thermal_008,283.0,solar,Aggregated Plant -- operating,elc_spv_008,AE39-220,23.7689641074701,55.74466079494445,False
+elc_spv_008,ep_solar_thermal_G100000804629,417.0,solar,Mohammed Bin Rashid Al Maktoum Solar Park_4a -- operating,elc_spv_008,AE39-220,24.7493,55.4427,False
+elc_spv_009,ep_solar_pv_009,22.3,solar,Aggregated Plant -- operating,elc_spv_009,way/1225109215-400,23.973455940959692,55.04803410018357,False
+elc_spv_009,ep_solar_pv_G100000804689,200.0,solar,Mohammed Bin Rashid Al Maktoum Solar Park_3a -- operating,elc_spv_009,way/1225109215-400,24.747,55.385,False
+elc_won_001,ep_windon_001__irena,0.004886543968405235,windon,Aggregated Plant -- operating,elc_won_001,way/132159930-220,23.61759283493422,52.39977084809607,False
+elc_won_002,ep_windon_002__irena,0.004414713200749202,windon,Aggregated Plant -- operating,elc_won_002,way/132159930-220,23.24195953475867,52.5815962819442,False
+elc_won_002,ep_windon_wind_002,99.0,windon,Aggregated Plant -- operating,elc_won_002,way/132159930-220,23.259771618423137,52.08310995062912,False
+elc_won_003,ep_windon_003__irena,0.0056987428308455605,windon,Aggregated Plant -- operating,elc_won_003,way/395805805-220,23.03603934595733,53.786413236526315,False

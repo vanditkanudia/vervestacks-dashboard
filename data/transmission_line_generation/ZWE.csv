@@ -1,0 +1,56 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_ZW1-330,ep_hydro_ZW1-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - ZW1-330_Missing Hydro Capacity -- operating,e_ZW1-330,ZW1-330,-15.591104689278042,32.620239213911745,False
+e_ZW2-330,ep_coal_subcritical_G100000104802,120.0,coal,Hwange power station_Unit 1 -- operating,e_ZW2-330,ZW2-330,-18.3831971,26.4696382,False
+e_ZW2-330,ep_coal_subcritical_G100000104803,120.0,coal,Hwange power station_Unit 2 -- operating,e_ZW2-330,ZW2-330,-18.3831971,26.4696382,False
+e_ZW2-330,ep_coal_subcritical_G100000104804,120.0,coal,Hwange power station_Unit 3 -- operating,e_ZW2-330,ZW2-330,-18.3831971,26.4696382,False
+e_ZW2-330,ep_coal_subcritical_G100000104805,120.0,coal,Hwange power station_Unit 4 -- operating,e_ZW2-330,ZW2-330,-18.3831971,26.4696382,False
+e_ZW2-330,ep_coal_subcritical_G100000104806,220.0,coal,Hwange power station_Unit 5 -- operating,e_ZW2-330,ZW2-330,-18.3831971,26.4696382,False
+e_ZW2-330,ep_coal_subcritical_G100000104807,220.0,coal,Hwange power station_Unit 6 -- operating,e_ZW2-330,ZW2-330,-18.3831971,26.4696382,False
+e_ZW2-330,ep_coal_subcritical_G100000104808,335.0,coal,Hwange power station_Unit 7 -- operating,e_ZW2-330,ZW2-330,-18.3835,26.47,False
+e_ZW2-330,ep_coal_subcritical_G100000104809,335.0,coal,Hwange power station_Unit 8 -- operating,e_ZW2-330,ZW2-330,-18.3835,26.47,False
+e_ZW2-330,ep_coal_subcritical_G100000114859,50.0,coal,ZhongXin power station_Unit 1 -- operating,e_ZW2-330,ZW2-330,-18.328292,26.404754,False
+e_ZW2-330,ep_coal_subcritical_G100000114860,135.0,coal,ZhongXin power station_Unit 2 -- construction,e_ZW2-330,ZW2-330,-18.328292,26.404754,False
+e_ZW2-330,ep_coal_subcritical_G100000114861,135.0,coal,ZhongXin power station_Unit 3 -- construction,e_ZW2-330,ZW2-330,-18.328292,26.404754,False
+e_ZW2-330,ep_hydro_ZW2-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - ZW2-330_Missing Hydro Capacity -- operating,e_ZW2-330,ZW2-330,-18.20465454439909,26.502309096708228,False
+e_ZW3-330,ep_hydro_ZW3-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - ZW3-330_Missing Hydro Capacity -- operating,e_ZW3-330,ZW3-330,-18.821823948971872,29.757584605461712,False
+e_ZW4-330,ep_hydro_ZW4-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - ZW4-330_Missing Hydro Capacity -- operating,e_ZW4-330,ZW4-330,-19.517274062625585,28.44239050181138,False
+e_ZW5-220,ep_hydro_ZW5-220__irena,198.9501315789474,hydro,Aggregated Plant - IRENA Gap - ZW5-220_Missing Hydro Capacity -- operating,e_ZW5-220,ZW5-220,-20.632591468332798,27.640160118322836,False
+e_ZW6-400,ep_hydro_ZW6-400__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - ZW6-400_Missing Hydro Capacity -- operating,e_ZW6-400,ZW6-400,-21.796531289801937,27.628345905841464,False
+e_r9249245-330,ep_hydro_r9249245-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - relation/9249245-330_Missing Hydro Capacity -- operating,e_r9249245-330,relation/9249245-330,-18.39633845139668,29.779536395734137,False
+e_r9249246-330,ep_hydro_r9249246-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - relation/9249246-330_Missing Hydro Capacity -- operating,e_r9249246-330,relation/9249246-330,-17.8905041760469,30.597850134698174,False
+e_w108032724-330,ep_hydro_w108032724-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/108032724-330_Missing Hydro Capacity -- operating,e_w108032724-330,way/108032724-330,-19.886203510573583,28.575361302537488,False
+e_w108032724-400,ep_hydro_w108032724-400__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/108032724-400_Missing Hydro Capacity -- operating,e_w108032724-400,way/108032724-400,-20.21080205153455,28.3979614641741,False
+e_w1159113084-330,ep_hydro_w1159113084-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/1159113084-330_Missing Hydro Capacity -- operating,e_w1159113084-330,way/1159113084-330,-18.131971715729097,26.57124241959543,False
+e_w1159113084-400,ep_hydro_w1159113084-400__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/1159113084-400_Missing Hydro Capacity -- operating,e_w1159113084-400,way/1159113084-400,-18.259052408629387,26.38542568285378,False
+e_w148918132-220,ep_hydro_w148918132-220__irena,198.9501315789474,hydro,Aggregated Plant - IRENA Gap - way/148918132-220_Missing Hydro Capacity -- operating,e_w148918132-220,way/148918132-220,-19.780053900844685,28.729120717879685,False
+e_w148918132-330,ep_hydro_w148918132-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/148918132-330_Missing Hydro Capacity -- operating,e_w148918132-330,way/148918132-330,-19.98391745629845,28.69807511510749,False
+e_w179121057-330,ep_hydro_w179121057-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/179121057-330_Missing Hydro Capacity -- operating,e_w179121057-330,way/179121057-330,-16.35308896033632,28.81302067286257,False
+e_w179184234-330,ep_hydro_w179184234-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/179184234-330_Missing Hydro Capacity -- operating,e_w179184234-330,way/179184234-330,-17.041388689485913,31.40865048784507,False
+e_w194106238-330,ep_hydro_w194106238-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/194106238-330_Missing Hydro Capacity -- operating,e_w194106238-330,way/194106238-330,-19.30728106076958,29.683526136125934,False
+e_w194257376-330,ep_hydro_w194257376-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/194257376-330_Missing Hydro Capacity -- operating,e_w194257376-330,way/194257376-330,-17.495955795184194,30.839100673318004,False
+e_w200772947-330,ep_hydro_w200772947-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/200772947-330_Missing Hydro Capacity -- operating,e_w200772947-330,way/200772947-330,-17.880301125036123,31.186994406162164,False
+e_w200797322-330,ep_coal_subcritical_G100000103639,30.0,coal,Harare power station_Unit 3 -- operating,e_w200797322-330,way/200797322-330,-17.845,31.031667,False
+e_w200797322-330,ep_hydro_w200797322-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/200797322-330_Missing Hydro Capacity -- operating,e_w200797322-330,way/200797322-330,-17.85897142237843,31.109398464061172,False
+e_w211766541-330,ep_hydro_w211766541-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/211766541-330_Missing Hydro Capacity -- operating,e_w211766541-330,way/211766541-330,-17.249466356514873,30.13428990993957,False
+e_w211926951-330,ep_hydro_w211926951-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/211926951-330_Missing Hydro Capacity -- operating,e_w211926951-330,way/211926951-330,-18.233494315595912,30.422665432388794,False
+e_w211927848-330,ep_hydro_w211927848-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/211927848-330_Missing Hydro Capacity -- operating,e_w211927848-330,way/211927848-330,-19.094191128623194,32.70712301345449,False
+e_w211930404-330,ep_bioenergy_w211930404-330,74.0,bioenergy,Aggregated Plant -- operating,e_w211930404-330,way/211930404-330,-20.42751842873591,31.181494777044406,False
+e_w211930404-330,ep_bioenergy_w211930404-330__ember,26.00000000000001,bioenergy,Aggregated Plant -- operating,e_w211930404-330,way/211930404-330,-20.779668904292684,31.923959100056873,False
+e_w211930404-330,ep_coal_subcritical_G100001000271,600.0,coal,Prestige power station_Unit 1 -- construction,e_w211930404-330,way/211930404-330,-22.121243,29.863446,False
+e_w211930404-330,ep_coal_subcritical_G100001022705,600.0,coal,Prestige power station_Unit 2 -- construction,e_w211930404-330,way/211930404-330,-22.121243,29.863446,False
+e_w211930404-330,ep_hydro_w211930404-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/211930404-330_Missing Hydro Capacity -- operating,e_w211930404-330,way/211930404-330,-21.303177247183424,31.918874428777254,False
+e_w368962904-330,ep_hydro_w368962904-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/368962904-330_Missing Hydro Capacity -- operating,e_w368962904-330,way/368962904-330,-16.901713811143733,30.73628139804036,False
+e_w675773526-330,ep_hydro_w675773526-330__irena,28.42144736842106,hydro,Aggregated Plant - IRENA Gap - way/675773526-330_Missing Hydro Capacity -- operating,e_w675773526-330,way/675773526-330,-19.982524615902243,30.580158696214244,False
+elc_spv_002,ep_solar_pv_002,4.3999999999999995,solar,Aggregated Plant -- operating,elc_spv_002,way/211930404-330,-21.657722103723714,31.2429645663249,False
+elc_spv_003,ep_solar_pv_003,12.0,solar,Aggregated Plant -- operating,elc_spv_003,way/211930404-330,-20.57593687446614,30.91622854385205,False
+elc_spv_007,ep_solar_pv_007,34.99999999999999,solar,Aggregated Plant -- construction,elc_spv_007,way/108032724-330,-20.585566894463202,28.605581686988092,False
+elc_spv_011,ep_solar_pv_G100000831335,300.0,solar,Karo Platinum Mine solar farm_-- -- construction,elc_spv_011,relation/9249245-330,-18.3952,30.4506,False
+elc_spv_012,ep_solar_pv_012,127.5,solar,Aggregated Plant -- construction,elc_spv_012,way/194257376-330,-17.83915255952677,30.536540689059905,False
+elc_spv_013,ep_solar_pv_013,2.5,solar,Aggregated Plant -- operating,elc_spv_013,way/179184234-330,-17.376091535048953,31.11455483534889,False
+elc_spv_015,ep_solar_pv_015,16.7,solar,Aggregated Plant -- operating,elc_spv_015,way/368962904-330,-17.35091719137593,30.477617272825395,False
+elc_spv_016,ep_solar_pv_016,35.0,solar,Aggregated Plant -- construction,elc_spv_016,way/179121057-330,-16.703652628621203,28.73161864435954,False
+elc_spv_017,ep_solar_pv_017,25.0,solar,Aggregated Plant -- construction,elc_spv_017,ZW2-330,-18.559239359567048,26.43818694257104,False
+elc_spv_018,ep_solar_pv_018,145.9,solar,Aggregated Plant -- construction,elc_spv_018,ZW4-330,-20.375489260841224,28.261917914156193,False
+elc_spv_019,ep_solar_pv_019,60.0,solar,Aggregated Plant -- operating,elc_spv_019,way/148918132-220,-20.05944692171818,28.270526447723487,False
+elc_spv_021,ep_solar_pv_021,4.4,solar,Aggregated Plant -- operating,elc_spv_021,ZW5-220,-21.041181049933275,27.02451314571389,False
+elc_spv_022,ep_solar_pv_022,5.0,solar,Aggregated Plant -- operating,elc_spv_022,way/1159113084-330,-18.528779555226773,26.26042279801876,False

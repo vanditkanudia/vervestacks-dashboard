@@ -1,0 +1,47 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_gas__ember,3.0000000000001137,gas,Aggregated Plant -- operating,,,,,False
+ELC,ep_hydro__irena,2.2,hydro,Aggregated Plant -- operating,,,,,False
+e_TM15-220,ep_gas_gas_turbine_G100000411939,70.0,gas,Turkmenbashi oil processing complex power station_2 -- operating,e_TM15-220,TM15-220,40.02169,52.96461,False
+e_TM15-220,ep_gas_gas_turbine_G100000411940,70.0,gas,Turkmenbashi oil processing complex power station_1 -- operating,e_TM15-220,TM15-220,40.02169,52.96461,False
+e_TM16-220,ep_gas_gas_turbine_G100000407705,127.0,gas,Avazin power station_2 -- operating,e_TM16-220,TM16-220,40.011028,52.845721,False
+e_TM16-220,ep_gas_gas_turbine_G100000407706,127.0,gas,Avazin power station_1 -- operating,e_TM16-220,TM16-220,40.011028,52.845721,False
+e_TM17-220,ep_gas_steam_turbine_G100000407676,210.0,gas,Turkmenbashi CHP power station_5 -- operating,e_TM17-220,TM17-220,40.009874,52.927035,False
+e_TM17-220,ep_gas_steam_turbine_G100000407677,210.0,gas,Turkmenbashi CHP power station_4 -- operating,e_TM17-220,TM17-220,40.009874,52.927035,False
+e_TM33-220,ep_gas_combined_cycle_G100000411941,787.0,gas,Balkan power station_CC1 -- construction,e_TM33-220,TM33-220,39.83555,54.85227,False
+e_TM33-220,ep_gas_combined_cycle_G100001005119,787.0,gas,Balkan power station_CC2 -- construction,e_TM33-220,TM33-220,39.83555,54.85227,False
+e_TM33-220,ep_gas_gas_turbine_G100000407702,127.0,gas,Balkanabad power station_3-2 -- operating,e_TM33-220,TM33-220,39.5105,54.3273,False
+e_TM33-220,ep_gas_gas_turbine_G100000407703,127.0,gas,Balkanabad power station_3-1 -- operating,e_TM33-220,TM33-220,39.5105,54.3273,False
+e_TM35-500,ep_gas_steam_turbine_G100000407681,80.0,gas,Seydi CHP power station_2 -- operating,e_TM35-500,TM35-500,39.4294,62.855,False
+e_TM35-500,ep_gas_steam_turbine_G100000407682,80.0,gas,Seydi CHP power station_1 -- operating,e_TM35-500,TM35-500,39.4294,62.855,False
+e_TM46-220,ep_gas_gas_turbine_G100000407670,50.0,gas,Lebap power station_3 -- operating,e_TM46-220,TM46-220,38.9763077,63.4660952,False
+e_TM46-220,ep_gas_gas_turbine_G100000407671,50.0,gas,Lebap power station_2 -- operating,e_TM46-220,TM46-220,38.9763077,63.4660952,False
+e_TM46-220,ep_gas_gas_turbine_G100000407672,50.0,gas,Lebap power station_1 -- operating,e_TM46-220,TM46-220,38.9763077,63.4660952,False
+e_TM46-220,ep_gas_gas_turbine_G100000407673,144.0,gas,Lebap power station_6 -- operating,e_TM46-220,TM46-220,38.9763077,63.4660952,False
+e_TM46-220,ep_gas_gas_turbine_G100000407674,144.0,gas,Lebap power station_5 -- operating,e_TM46-220,TM46-220,38.9763077,63.4660952,False
+e_TM46-220,ep_gas_gas_turbine_G100000407675,144.0,gas,Lebap power station_4 -- operating,e_TM46-220,TM46-220,38.9763077,63.4660952,False
+e_TM70-220,ep_gas_gas_turbine_G100000407668,127.0,gas,Watan power station_2 -- operating,e_TM70-220,TM70-220,37.930342,65.640553,False
+e_TM70-220,ep_gas_gas_turbine_G100000407669,127.0,gas,Watan power station_1 -- operating,e_TM70-220,TM70-220,37.930342,65.640553,False
+e_TM74-220,ep_gas_gas_turbine_G100000407713,127.0,gas,Ashgabat State power station_2 -- operating,e_TM74-220,TM74-220,37.82868,58.383856,False
+e_TM74-220,ep_gas_gas_turbine_G100000407714,127.0,gas,Ashgabat State power station_1 -- operating,e_TM74-220,TM74-220,37.82868,58.383856,False
+e_TM78-220,ep_gas_combined_cycle_G100000407683,787.0,gas,Mary power station_CC2 -- operating,e_TM78-220,TM78-220,37.550344,61.841215,False
+e_TM78-220,ep_gas_combined_cycle_G100000407684,787.0,gas,Mary power station_CC1 -- operating,e_TM78-220,TM78-220,37.550344,61.841215,False
+e_TM78-220,ep_gas_steam_turbine_G100000407685,215.0,gas,Mary power station_1-8 -- operating,e_TM78-220,TM78-220,37.550344,61.841215,False
+e_TM78-220,ep_gas_steam_turbine_G100000407686,210.0,gas,Mary power station_1-7 -- operating,e_TM78-220,TM78-220,37.550344,61.841215,False
+e_TM78-220,ep_gas_steam_turbine_G100000407687,210.0,gas,Mary power station_1-6 -- operating,e_TM78-220,TM78-220,37.550344,61.841215,False
+e_TM78-220,ep_gas_steam_turbine_G100000407688,210.0,gas,Mary power station_1-5 -- operating,e_TM78-220,TM78-220,37.550344,61.841215,False
+e_TM78-220,ep_gas_steam_turbine_G100000407689,210.0,gas,Mary power station_1-4 -- operating,e_TM78-220,TM78-220,37.550344,61.841215,False
+e_TM78-220,ep_gas_steam_turbine_G100000407690,210.0,gas,Mary power station_1-3 -- operating,e_TM78-220,TM78-220,37.550344,61.841215,False
+e_TM78-220,ep_gas_steam_turbine_G100000407691,210.0,gas,Mary power station_1-2 -- operating,e_TM78-220,TM78-220,37.550344,61.841215,False
+e_TM78-220,ep_gas_steam_turbine_G100000407692,210.0,gas,Mary power station_1-1 -- operating,e_TM78-220,TM78-220,37.550344,61.841215,False
+e_w229819519-220,ep_gas_gas_turbine_G100000407715,123.0,gas,Abadan State power station_2-2 -- operating,e_w229819519-220,way/229819519-220,38.059377,58.165243,False
+e_w229819519-220,ep_gas_gas_turbine_G100000407717,123.0,gas,Abadan State power station_2-1 -- operating,e_w229819519-220,way/229819519-220,38.059377,58.165243,False
+e_w229820100-220,ep_gas_gas_turbine_G100000407698,127.0,gas,Dashoguz State power station_2 -- operating,e_w229820100-220,way/229820100-220,41.858484,59.912417,False
+e_w229820100-220,ep_gas_gas_turbine_G100000407699,127.0,gas,Dashoguz State power station_1 -- operating,e_w229820100-220,way/229820100-220,41.858484,59.912417,False
+e_w725838658-220,ep_gas_gas_turbine_G100000407693,126.0,gas,Dervezin State power station_4 -- operating,e_w725838658-220,way/725838658-220,38.1504,58.3937,False
+e_w725838658-220,ep_gas_gas_turbine_G100000407694,126.0,gas,Dervezin State power station_3 -- operating,e_w725838658-220,way/725838658-220,38.1504,58.3937,False
+e_w725838658-220,ep_gas_gas_turbine_G100000407695,126.0,gas,Dervezin State power station_2 -- operating,e_w725838658-220,way/725838658-220,38.1504,58.3937,False
+e_w725838658-220,ep_gas_gas_turbine_G100000407696,126.0,gas,Dervezin State power station_1 -- operating,e_w725838658-220,way/725838658-220,38.1504,58.3937,False
+e_w725838659-220,ep_gas_gas_turbine_G100000407707,126.0,gas,Akhal power station_2-2 -- operating,e_w725838659-220,way/725838659-220,37.94198,58.56243,False
+e_w725838659-220,ep_gas_gas_turbine_G100000407708,126.0,gas,Akhal power station_2-1 -- operating,e_w725838659-220,way/725838659-220,37.94198,58.56243,False
+e_w725838659-220,ep_gas_gas_turbine_G100000407710,127.0,gas,Akhal power station_1-2 -- operating,e_w725838659-220,way/725838659-220,37.94198,58.56243,False
+e_w725838659-220,ep_gas_gas_turbine_G100000407711,127.0,gas,Akhal power station_1-1 -- operating,e_w725838659-220,way/725838659-220,37.94198,58.56243,False

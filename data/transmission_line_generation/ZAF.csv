@@ -1,0 +1,196 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,260.0,bioenergy,Aggregated Plant - EMBER Gap_Missing Bioenergy Capacity -- operating,,,,,False
+ELC,ep_gas__ember,5.0000000000001155,gas,Aggregated Plant -- operating,,,,,False
+e_ZA14-400,ep_m_coal_subcritical_G100000108622,60.0,coal,Rooiwal power station_Unit 1 -- mothballed,e_ZA14-400,ZA14-400,-25.55501,28.237573,False
+e_ZA14-400,ep_m_coal_subcritical_G100000108623,60.0,coal,Rooiwal power station_Unit 2 -- mothballed,e_ZA14-400,ZA14-400,-25.55501,28.237573,False
+e_ZA14-400,ep_m_coal_subcritical_G100000108624,60.0,coal,Rooiwal power station_Unit 3 -- mothballed,e_ZA14-400,ZA14-400,-25.55501,28.237573,False
+e_ZA14-400,ep_m_coal_subcritical_G100000108625,60.0,coal,Rooiwal power station_Unit 4 -- mothballed,e_ZA14-400,ZA14-400,-25.55501,28.237573,False
+e_ZA14-400,ep_m_coal_subcritical_G100000108626,60.0,coal,Rooiwal power station_Unit 5 -- mothballed,e_ZA14-400,ZA14-400,-25.55501,28.237573,False
+e_ZA18-400,ep_coal_supercritical_G100000106039,800.0,coal,Kusile power station_Unit 1 -- operating,e_ZA18-400,ZA18-400,-25.92007,28.924942,False
+e_ZA18-400,ep_coal_supercritical_G100000106040,800.0,coal,Kusile power station_Unit 2 -- operating,e_ZA18-400,ZA18-400,-25.92007,28.924942,False
+e_ZA18-400,ep_coal_supercritical_G100000106041,800.0,coal,Kusile power station_Unit 3 -- operating,e_ZA18-400,ZA18-400,-25.92007,28.924942,False
+e_ZA18-400,ep_coal_supercritical_G100000106042,800.0,coal,Kusile power station_Unit 4 -- operating,e_ZA18-400,ZA18-400,-25.92007,28.924942,False
+e_ZA18-400,ep_coal_supercritical_G100000106043,800.0,coal,Kusile power station_Unit 5 -- operating,e_ZA18-400,ZA18-400,-25.92007,28.924942,False
+e_ZA18-400,ep_coal_supercritical_G100000106044,800.0,coal,Kusile power station_Unit 6 -- construction,e_ZA18-400,ZA18-400,-25.92007,28.924942,False
+e_ZA22-400,ep_coal_subcritical_G100000105964,500.0,coal,Kriel power station_Unit 1 -- operating,e_ZA22-400,ZA22-400,-26.253937,29.178465,False
+e_ZA22-400,ep_coal_subcritical_G100000105965,500.0,coal,Kriel power station_Unit 2 -- operating,e_ZA22-400,ZA22-400,-26.253937,29.178465,False
+e_ZA22-400,ep_coal_subcritical_G100000105966,500.0,coal,Kriel power station_Unit 3 -- operating,e_ZA22-400,ZA22-400,-26.253937,29.178465,False
+e_ZA22-400,ep_coal_subcritical_G100000105967,500.0,coal,Kriel power station_Unit 4 -- operating,e_ZA22-400,ZA22-400,-26.253937,29.178465,False
+e_ZA22-400,ep_coal_subcritical_G100000105968,500.0,coal,Kriel power station_Unit 5 -- operating,e_ZA22-400,ZA22-400,-26.253937,29.178465,False
+e_ZA22-400,ep_coal_subcritical_G100000105969,500.0,coal,Kriel power station_Unit 6 -- operating,e_ZA22-400,ZA22-400,-26.253937,29.178465,False
+e_ZA26-400,ep_hydro_ps_G100000603352,1332.0,hydro,Ingula hydroelectric plant_ -- operating,e_ZA26-400,ZA26-400,-28.2809,29.588,False
+e_r17287657-400,ep_oil_gas_turbine_G100000411349,57.0,oil,Port Rex power station_6 -- operating,e_r17287657-400,relation/17287657-400,-33.028021,27.881751,False
+e_r17287657-400,ep_oil_gas_turbine_G100000411350,57.0,oil,Port Rex power station_5 -- operating,e_r17287657-400,relation/17287657-400,-33.028021,27.881751,False
+e_r17287657-400,ep_oil_gas_turbine_G100000411351,57.0,oil,Port Rex power station_4 -- operating,e_r17287657-400,relation/17287657-400,-33.028021,27.881751,False
+e_w102682082-400,ep_hydro_ps_G100000603353,400.0,hydro,Palmiet hydroelectric plant_ -- operating,e_w102682082-400,way/102682082-400,-34.1985,18.9746,False
+e_w102682082-400,ep_hydro_ps_G100000603354,160.0,hydro,Steenbras hydroelectric plant_ -- operating,e_w102682082-400,way/102682082-400,-34.152,18.8982,False
+e_w105759402-400,ep_hydro_ps_G100000603350,1000.0,hydro,Drakensberg hydroelectric plant_ -- operating,e_w105759402-400,way/105759402-400,-28.566,29.0834,False
+e_w105811523-400,ep_coal_subcritical_G100000106240,618.0,coal,Lethabo power station_Unit 1 -- operating,e_w105811523-400,way/105811523-400,-26.742032,27.976892,False
+e_w105811523-400,ep_coal_subcritical_G100000106241,618.0,coal,Lethabo power station_Unit 2 -- operating,e_w105811523-400,way/105811523-400,-26.742032,27.976892,False
+e_w105811523-400,ep_coal_subcritical_G100000106242,618.0,coal,Lethabo power station_Unit 3 -- operating,e_w105811523-400,way/105811523-400,-26.742032,27.976892,False
+e_w105811523-400,ep_coal_subcritical_G100000106243,618.0,coal,Lethabo power station_Unit 4 -- operating,e_w105811523-400,way/105811523-400,-26.742032,27.976892,False
+e_w105811523-400,ep_coal_subcritical_G100000106244,618.0,coal,Lethabo power station_Unit 5 -- operating,e_w105811523-400,way/105811523-400,-26.742032,27.976892,False
+e_w105811523-400,ep_coal_subcritical_G100000106245,618.0,coal,Lethabo power station_Unit 6 -- operating,e_w105811523-400,way/105811523-400,-26.742032,27.976892,False
+e_w107391770-400,ep_gas_gas_turbine_G100000408559,167.5,gas,Avon power station_1 -- operating,e_w107391770-400,way/107391770-400,-29.418913,31.157693,False
+e_w107391770-400,ep_gas_gas_turbine_G100000414449,167.5,gas,Avon power station_4 -- operating,e_w107391770-400,way/107391770-400,-29.418913,31.157693,False
+e_w107391770-400,ep_gas_gas_turbine_G100000414450,167.5,gas,Avon power station_3 -- operating,e_w107391770-400,way/107391770-400,-29.418913,31.157693,False
+e_w107391770-400,ep_gas_gas_turbine_G100000414451,167.5,gas,Avon power station_2 -- operating,e_w107391770-400,way/107391770-400,-29.418913,31.157693,False
+e_w120941269-400,ep_coal_subcritical_G100000108568,38.0,coal,Richards Bay Mill power station_Unit 1 -- operating,e_w120941269-400,way/120941269-400,-28.76208,31.99352,False
+e_w120941269-400,ep_coal_subcritical_G100000108569,34.3,coal,Richards Bay Mill power station_Unit 2 -- operating,e_w120941269-400,way/120941269-400,-28.76208,31.99352,False
+e_w142414070-765,ep_hydro_dam_G100000603351,360.0,hydro,Gariep hydroelectric plant_ -- operating,e_w142414070-765,way/142414070-765,-30.6233,25.5067,False
+e_w142414070-765,ep_hydro_dam_G100000603356,240.0,hydro,Vanderkloof hydroelectric plant_ -- operating,e_w142414070-765,way/142414070-765,-29.9911,24.7317,False
+e_w169647963-400,ep_gas_combined_cycle_G100000408558,335.0,gas,Dedisa power station_1 -- operating,e_w169647963-400,way/169647963-400,-33.743385,25.672819,False
+e_w169789536-400,ep_oil_gas_turbine_G100000408557,148.0,oil,Gourikwa power station_1 -- operating,e_w169789536-400,way/169789536-400,-34.166755,21.960715,False
+e_w169789536-400,ep_oil_gas_turbine_G100000410884,148.0,oil,Gourikwa power station_5 -- operating,e_w169789536-400,way/169789536-400,-34.166755,21.960715,False
+e_w169789536-400,ep_oil_gas_turbine_G100000410885,148.0,oil,Gourikwa power station_4 -- operating,e_w169789536-400,way/169789536-400,-34.166755,21.960715,False
+e_w169789536-400,ep_oil_gas_turbine_G100000410886,148.0,oil,Gourikwa power station_3 -- operating,e_w169789536-400,way/169789536-400,-34.166755,21.960715,False
+e_w169789536-400,ep_oil_gas_turbine_G100000410887,148.0,oil,Gourikwa power station_2 -- operating,e_w169789536-400,way/169789536-400,-34.166755,21.960715,False
+e_w179140081-400,ep_gas_combined_cycle_G100000407268,280.0,gas,Secunda power station_CC1 -- operating,e_w179140081-400,way/179140081-400,-26.560117,29.168645,False
+e_w182042518-400,ep_oil_gas_turbine_G100000408556,149.2,oil,Ankerlig power station_1-1 -- operating,e_w182042518-400,way/182042518-400,-33.589479,18.461496,False
+e_w182042518-400,ep_oil_gas_turbine_G100000413925,148.3,oil,Ankerlig power station_2-1 -- operating,e_w182042518-400,way/182042518-400,-33.589479,18.461496,False
+e_w182042518-400,ep_oil_gas_turbine_G100000414351,148.3,oil,Ankerlig power station_2-5 -- operating,e_w182042518-400,way/182042518-400,-33.589479,18.461496,False
+e_w182042518-400,ep_oil_gas_turbine_G100000414352,148.3,oil,Ankerlig power station_2-4 -- operating,e_w182042518-400,way/182042518-400,-33.589479,18.461496,False
+e_w182042518-400,ep_oil_gas_turbine_G100000414353,148.3,oil,Ankerlig power station_2-3 -- operating,e_w182042518-400,way/182042518-400,-33.589479,18.461496,False
+e_w182042518-400,ep_oil_gas_turbine_G100000414354,148.3,oil,Ankerlig power station_2-2 -- operating,e_w182042518-400,way/182042518-400,-33.589479,18.461496,False
+e_w182042518-400,ep_oil_gas_turbine_G100000414355,149.2,oil,Ankerlig power station_1-4 -- operating,e_w182042518-400,way/182042518-400,-33.589479,18.461496,False
+e_w182042518-400,ep_oil_gas_turbine_G100000414356,149.2,oil,Ankerlig power station_1-3 -- operating,e_w182042518-400,way/182042518-400,-33.589479,18.461496,False
+e_w182042518-400,ep_oil_gas_turbine_G100000414357,149.2,oil,Ankerlig power station_1-2 -- operating,e_w182042518-400,way/182042518-400,-33.589479,18.461496,False
+e_w182408147-400,ep_coal_subcritical_G100000106720,665.0,coal,Matimba power station_Unit 1 -- operating,e_w182408147-400,way/182408147-400,-23.668833,27.610838,False
+e_w182408147-400,ep_coal_subcritical_G100000106721,665.0,coal,Matimba power station_Unit 2 -- operating,e_w182408147-400,way/182408147-400,-23.668833,27.610838,False
+e_w182408147-400,ep_coal_subcritical_G100000106722,665.0,coal,Matimba power station_Unit 3 -- operating,e_w182408147-400,way/182408147-400,-23.668833,27.610838,False
+e_w182408147-400,ep_coal_subcritical_G100000106723,665.0,coal,Matimba power station_Unit 4 -- operating,e_w182408147-400,way/182408147-400,-23.668833,27.610838,False
+e_w182408147-400,ep_coal_subcritical_G100000106724,665.0,coal,Matimba power station_Unit 5 -- operating,e_w182408147-400,way/182408147-400,-23.668833,27.610838,False
+e_w182408147-400,ep_coal_subcritical_G100000106725,665.0,coal,Matimba power station_Unit 6 -- operating,e_w182408147-400,way/182408147-400,-23.668833,27.610838,False
+e_w185171518-400,ep_coal_subcritical_G100000102524,600.0,coal,Duvha power station_Unit 1 -- operating,e_w185171518-400,way/185171518-400,-25.961261,29.339713,False
+e_w185171518-400,ep_coal_subcritical_G100000102525,600.0,coal,Duvha power station_Unit 2 -- operating,e_w185171518-400,way/185171518-400,-25.961261,29.339713,False
+e_w185171518-400,ep_coal_subcritical_G100000102527,600.0,coal,Duvha power station_Unit 4 -- operating,e_w185171518-400,way/185171518-400,-25.961261,29.339713,False
+e_w185171518-400,ep_coal_subcritical_G100000102528,600.0,coal,Duvha power station_Unit 5 -- operating,e_w185171518-400,way/185171518-400,-25.961261,29.339713,False
+e_w185171518-400,ep_coal_subcritical_G100000102529,600.0,coal,Duvha power station_Unit 6 -- operating,e_w185171518-400,way/185171518-400,-25.961261,29.339713,False
+e_w185171518-400,ep_m_coal_subcritical_G100000102526,600.0,coal,Duvha power station_Unit 3 -- mothballed,e_w185171518-400,way/185171518-400,-25.961261,29.339713,False
+e_w185497473-400,ep_coal_subcritical_G100000105663,686.0,coal,Kendal power station_Unit 1 -- operating,e_w185497473-400,way/185497473-400,-26.090285,28.968796,False
+e_w185497473-400,ep_coal_subcritical_G100000105664,686.0,coal,Kendal power station_Unit 2 -- operating,e_w185497473-400,way/185497473-400,-26.090285,28.968796,False
+e_w185497473-400,ep_coal_subcritical_G100000105665,686.0,coal,Kendal power station_Unit 3 -- operating,e_w185497473-400,way/185497473-400,-26.090285,28.968796,False
+e_w185497473-400,ep_coal_subcritical_G100000105666,686.0,coal,Kendal power station_Unit 4 -- operating,e_w185497473-400,way/185497473-400,-26.090285,28.968796,False
+e_w185497473-400,ep_coal_subcritical_G100000105667,686.0,coal,Kendal power station_Unit 5 -- operating,e_w185497473-400,way/185497473-400,-26.090285,28.968796,False
+e_w185497473-400,ep_coal_subcritical_G100000105668,686.0,coal,Kendal power station_Unit 6 -- operating,e_w185497473-400,way/185497473-400,-26.090285,28.968796,False
+e_w200232961-400,ep_coal_supercritical_G100000106780,794.8,coal,Medupi power station_Unit 1 -- operating,e_w200232961-400,way/200232961-400,-23.704973,27.563839,False
+e_w200232961-400,ep_coal_supercritical_G100000106781,794.8,coal,Medupi power station_Unit 2 -- operating,e_w200232961-400,way/200232961-400,-23.704973,27.563839,False
+e_w200232961-400,ep_coal_supercritical_G100000106782,794.8,coal,Medupi power station_Unit 3 -- operating,e_w200232961-400,way/200232961-400,-23.704973,27.563839,False
+e_w200232961-400,ep_coal_supercritical_G100000106783,794.8,coal,Medupi power station_Unit 4 -- operating,e_w200232961-400,way/200232961-400,-23.704973,27.563839,False
+e_w200232961-400,ep_coal_supercritical_G100000106784,794.8,coal,Medupi power station_Unit 5 -- operating,e_w200232961-400,way/200232961-400,-23.704973,27.563839,False
+e_w200232961-400,ep_coal_supercritical_G100000106785,794.8,coal,Medupi power station_Unit 6 -- operating,e_w200232961-400,way/200232961-400,-23.704973,27.563839,False
+e_w209365700-400,ep_coal_subcritical_G100000110396,609.0,coal,Tutuka power station_Unit 1 -- operating,e_w209365700-400,way/209365700-400,-26.777156,29.352376,False
+e_w209365700-400,ep_coal_subcritical_G100000110397,609.0,coal,Tutuka power station_Unit 2 -- operating,e_w209365700-400,way/209365700-400,-26.777156,29.352376,False
+e_w209365700-400,ep_coal_subcritical_G100000110398,609.0,coal,Tutuka power station_Unit 3 -- operating,e_w209365700-400,way/209365700-400,-26.777156,29.352376,False
+e_w209365700-400,ep_coal_subcritical_G100000110399,609.0,coal,Tutuka power station_Unit 4 -- operating,e_w209365700-400,way/209365700-400,-26.777156,29.352376,False
+e_w209365700-400,ep_coal_subcritical_G100000110400,609.0,coal,Tutuka power station_Unit 5 -- operating,e_w209365700-400,way/209365700-400,-26.777156,29.352376,False
+e_w209365700-400,ep_coal_subcritical_G100000110401,609.0,coal,Tutuka power station_Unit 6 -- operating,e_w209365700-400,way/209365700-400,-26.777156,29.352376,False
+e_w209976655-400,ep_coal_subcritical_G100000103807,200.0,coal,Hendrina power station_Unit 10 -- operating,e_w209976655-400,way/209976655-400,-26.032044,29.601613,False
+e_w209976655-400,ep_coal_subcritical_G100000103808,200.0,coal,Hendrina power station_Unit 2 -- operating,e_w209976655-400,way/209976655-400,-26.032044,29.601613,False
+e_w209976655-400,ep_coal_subcritical_G100000103810,200.0,coal,Hendrina power station_Unit 4 -- operating,e_w209976655-400,way/209976655-400,-26.032044,29.601613,False
+e_w209976655-400,ep_coal_subcritical_G100000103811,200.0,coal,Hendrina power station_Unit 5 -- operating,e_w209976655-400,way/209976655-400,-26.032044,29.601613,False
+e_w209976655-400,ep_coal_subcritical_G100000103812,200.0,coal,Hendrina power station_Unit 6 -- operating,e_w209976655-400,way/209976655-400,-26.032044,29.601613,False
+e_w209976655-400,ep_coal_subcritical_G100000103813,200.0,coal,Hendrina power station_Unit 7 -- operating,e_w209976655-400,way/209976655-400,-26.032044,29.601613,False
+e_w209976655-400,ep_m_coal_subcritical_G100000103806,200.0,coal,Hendrina power station_Unit 1 -- mothballed,e_w209976655-400,way/209976655-400,-26.032044,29.601613,False
+e_w209976655-400,ep_m_coal_subcritical_G100000103809,200.0,coal,Hendrina power station_Unit 3 -- mothballed,e_w209976655-400,way/209976655-400,-26.032044,29.601613,False
+e_w209976655-400,ep_m_coal_subcritical_G100000103814,200.0,coal,Hendrina power station_Unit 8 -- mothballed,e_w209976655-400,way/209976655-400,-26.032044,29.601613,False
+e_w209976655-400,ep_m_coal_subcritical_G100000103815,200.0,coal,Hendrina power station_Unit 9 -- mothballed,e_w209976655-400,way/209976655-400,-26.032044,29.601613,False
+e_w213181313-400,ep_coal_subcritical_G100000106600,665.0,coal,Majuba power station_Unit 1 -- operating,e_w213181313-400,way/213181313-400,-27.10061,29.770963,False
+e_w213181313-400,ep_coal_subcritical_G100000106601,665.0,coal,Majuba power station_Unit 2 -- operating,e_w213181313-400,way/213181313-400,-27.10061,29.770963,False
+e_w213181313-400,ep_coal_subcritical_G100000106602,665.0,coal,Majuba power station_Unit 3 -- operating,e_w213181313-400,way/213181313-400,-27.10061,29.770963,False
+e_w213181313-400,ep_coal_subcritical_G100000106603,716.0,coal,Majuba power station_Unit 4 -- operating,e_w213181313-400,way/213181313-400,-27.10061,29.770963,False
+e_w213181313-400,ep_coal_subcritical_G100000106604,716.0,coal,Majuba power station_Unit 5 -- operating,e_w213181313-400,way/213181313-400,-27.10061,29.770963,False
+e_w213181313-400,ep_coal_subcritical_G100000106605,716.0,coal,Majuba power station_Unit 6 -- operating,e_w213181313-400,way/213181313-400,-27.10061,29.770963,False
+e_w220129604-400,ep_coal_subcritical_G100000100348,370.0,coal,Arnot power station_Unit 1 -- operating,e_w220129604-400,way/220129604-400,-25.943807,29.79204,False
+e_w220129604-400,ep_coal_subcritical_G100000100349,390.0,coal,Arnot power station_Unit 2 -- operating,e_w220129604-400,way/220129604-400,-25.943807,29.79204,False
+e_w220129604-400,ep_coal_subcritical_G100000100350,396.0,coal,Arnot power station_Unit 3 -- operating,e_w220129604-400,way/220129604-400,-25.943807,29.79204,False
+e_w220129604-400,ep_coal_subcritical_G100000100351,396.0,coal,Arnot power station_Unit 4 -- operating,e_w220129604-400,way/220129604-400,-25.943807,29.79204,False
+e_w220129604-400,ep_coal_subcritical_G100000100352,400.0,coal,Arnot power station_Unit 5 -- operating,e_w220129604-400,way/220129604-400,-25.943807,29.79204,False
+e_w220129604-400,ep_coal_subcritical_G100000100353,400.0,coal,Arnot power station_Unit 6 -- operating,e_w220129604-400,way/220129604-400,-25.943807,29.79204,False
+e_w238322344-400,ep_coal_subcritical_G100000101168,200.0,coal,Camden power station_Unit 1 -- operating,e_w238322344-400,way/238322344-400,-26.621477,30.090074,False
+e_w238322344-400,ep_coal_subcritical_G100000101169,200.0,coal,Camden power station_Unit 2 -- operating,e_w238322344-400,way/238322344-400,-26.621477,30.090074,False
+e_w238322344-400,ep_coal_subcritical_G100000101170,200.0,coal,Camden power station_Unit 3 -- operating,e_w238322344-400,way/238322344-400,-26.621477,30.090074,False
+e_w238322344-400,ep_coal_subcritical_G100000101171,200.0,coal,Camden power station_Unit 4 -- operating,e_w238322344-400,way/238322344-400,-26.621477,30.090074,False
+e_w238322344-400,ep_coal_subcritical_G100000101172,200.0,coal,Camden power station_Unit 5 -- operating,e_w238322344-400,way/238322344-400,-26.621477,30.090074,False
+e_w238322344-400,ep_coal_subcritical_G100000101173,200.0,coal,Camden power station_Unit 6 -- operating,e_w238322344-400,way/238322344-400,-26.621477,30.090074,False
+e_w238322344-400,ep_coal_subcritical_G100000101174,200.0,coal,Camden power station_Unit 7 -- operating,e_w238322344-400,way/238322344-400,-26.621477,30.090074,False
+e_w238322344-400,ep_coal_subcritical_G100000101175,200.0,coal,Camden power station_Unit 8 -- operating,e_w238322344-400,way/238322344-400,-26.621477,30.090074,False
+e_w455498147-400,ep_m_coal_subcritical_G100000113799,30.0,coal,Pretoria West power station_Unit 1 -- mothballed,e_w455498147-400,way/455498147-400,-25.75839,28.14667,False
+e_w455498147-400,ep_m_coal_subcritical_G100000113800,30.0,coal,Pretoria West power station_Unit 2 -- mothballed,e_w455498147-400,way/455498147-400,-25.75839,28.14667,False
+e_w455498147-400,ep_m_coal_subcritical_G100000113801,30.0,coal,Pretoria West power station_Unit 3 -- mothballed,e_w455498147-400,way/455498147-400,-25.75839,28.14667,False
+e_w455498147-400,ep_m_coal_subcritical_G100000113802,30.0,coal,Pretoria West power station_Unit 4 -- mothballed,e_w455498147-400,way/455498147-400,-25.75839,28.14667,False
+e_w455498147-400,ep_m_coal_subcritical_G100000113803,30.0,coal,Pretoria West power station_Unit 5 -- mothballed,e_w455498147-400,way/455498147-400,-25.75839,28.14667,False
+e_w455498147-400,ep_m_coal_subcritical_G100000113804,30.0,coal,Pretoria West power station_Unit 6 -- mothballed,e_w455498147-400,way/455498147-400,-25.75839,28.14667,False
+e_w62193952-400,ep_oil_gas_turbine_G100000411352,57.0,oil,Acacia power station_3 -- operating,e_w62193952-400,way/62193952-400,-33.883115,18.535834,False
+e_w62193952-400,ep_oil_gas_turbine_G100000411353,57.0,oil,Acacia power station_2 -- operating,e_w62193952-400,way/62193952-400,-33.883115,18.535834,False
+e_w62193952-400,ep_oil_gas_turbine_G100000411354,57.0,oil,Acacia power station_1 -- operating,e_w62193952-400,way/62193952-400,-33.883115,18.535834,False
+e_w631673098-400,ep_hydro_ror_G100001030331,42.0,hydro,Collywobbles hydroelectric plant_ -- operating,e_w631673098-400,way/631673098-400,-32.0011,28.5819,False
+e_w65600948-400,ep_coal_subcritical_G100000106726,600.0,coal,Matla power station_Unit 1 -- operating,e_w65600948-400,way/65600948-400,-26.281332,29.141506,False
+e_w65600948-400,ep_coal_subcritical_G100000106727,600.0,coal,Matla power station_Unit 2 -- operating,e_w65600948-400,way/65600948-400,-26.281332,29.141506,False
+e_w65600948-400,ep_coal_subcritical_G100000106728,600.0,coal,Matla power station_Unit 3 -- operating,e_w65600948-400,way/65600948-400,-26.281332,29.141506,False
+e_w65600948-400,ep_coal_subcritical_G100000106729,600.0,coal,Matla power station_Unit 4 -- operating,e_w65600948-400,way/65600948-400,-26.281332,29.141506,False
+e_w65600948-400,ep_coal_subcritical_G100000106730,600.0,coal,Matla power station_Unit 5 -- operating,e_w65600948-400,way/65600948-400,-26.281332,29.141506,False
+e_w65600948-400,ep_coal_subcritical_G100000106731,600.0,coal,Matla power station_Unit 6 -- operating,e_w65600948-400,way/65600948-400,-26.281332,29.141506,False
+e_w83525879-400,ep_coal_subcritical_G100000105646,60.0,coal,Kelvin power station_Phase B Unit 10 -- operating,e_w83525879-400,way/83525879-400,-26.115776,28.194019,False
+e_w83525879-400,ep_coal_subcritical_G100000105647,60.0,coal,Kelvin power station_Phase B Unit 11 -- operating,e_w83525879-400,way/83525879-400,-26.115776,28.194019,False
+e_w83525879-400,ep_coal_subcritical_G100000105648,60.0,coal,Kelvin power station_Phase B Unit 12 -- operating,e_w83525879-400,way/83525879-400,-26.115776,28.194019,False
+e_w83525879-400,ep_coal_subcritical_G100000105649,60.0,coal,Kelvin power station_Phase B Unit 13 -- operating,e_w83525879-400,way/83525879-400,-26.115776,28.194019,False
+e_w83525879-400,ep_coal_subcritical_G100000105650,60.0,coal,Kelvin power station_Phase B Unit 7 -- operating,e_w83525879-400,way/83525879-400,-26.115776,28.194019,False
+e_w83525879-400,ep_coal_subcritical_G100000105651,60.0,coal,Kelvin power station_Phase B Unit 8 -- operating,e_w83525879-400,way/83525879-400,-26.115776,28.194019,False
+e_w83525879-400,ep_coal_subcritical_G100000105652,60.0,coal,Kelvin power station_Phase B Unit 9 -- operating,e_w83525879-400,way/83525879-400,-26.115776,28.194019,False
+e_w836844162-400,ep_nuclear_G100000500317,970.0,nuclear,Koeberg nuclear power plant_1 -- operating,e_w836844162-400,way/836844162-400,-33.6746,18.4321,False
+e_w836844162-400,ep_nuclear_G100000500318,970.0,nuclear,Koeberg nuclear power plant_2 -- operating,e_w836844162-400,way/836844162-400,-33.6746,18.4321,False
+e_w98231311-400,ep_coal_subcritical_G100000103136,200.0,coal,Grootvlei power station_Unit 1 -- operating,e_w98231311-400,way/98231311-400,-26.768494,28.497758,False
+e_w98231311-400,ep_coal_subcritical_G100000103137,200.0,coal,Grootvlei power station_Unit 2 -- operating,e_w98231311-400,way/98231311-400,-26.768494,28.497758,False
+e_w98231311-400,ep_coal_subcritical_G100000103138,200.0,coal,Grootvlei power station_Unit 3 -- operating,e_w98231311-400,way/98231311-400,-26.768494,28.497758,False
+e_w98231311-400,ep_m_coal_subcritical_G100000103139,200.0,coal,Grootvlei power station_Unit 4 -- mothballed,e_w98231311-400,way/98231311-400,-26.768494,28.497758,False
+e_w98231311-400,ep_m_coal_subcritical_G100000103140,190.0,coal,Grootvlei power station_Unit 5 -- mothballed,e_w98231311-400,way/98231311-400,-26.768494,28.497758,False
+e_w98231311-400,ep_m_coal_subcritical_G100000103141,200.0,coal,Grootvlei power station_Unit 6 -- mothballed,e_w98231311-400,way/98231311-400,-26.768494,28.497758,False
+elc_spv_001,ep_solar_pv_001,75.0,solar,Aggregated Plant -- operating,elc_spv_001,way/200757306-400,-25.336108212202618,24.17836777053398,False
+elc_spv_002,ep_solar_002__irena,1035.355785220858,solar,Aggregated Plant - IRENA Gap - 2_Missing Solar Capacity -- operating,elc_spv_002,way/200757306-400,-25.72685073339756,24.54072392324508,False
+elc_spv_002,ep_solar_pv_002,587.0999999999999,solar,Aggregated Plant -- construction,elc_spv_002,way/200757306-400,-26.05494335118467,24.21831829056884,False
+elc_spv_002,ep_solar_thermal_002,200.0,solar,Aggregated Plant -- operating,elc_spv_002,way/200757306-400,-25.65929329886266,23.82320862502297,False
+elc_spv_003,ep_solar_pv_003,206.7,solar,Aggregated Plant -- operating,elc_spv_003,way/193977981-765,-30.77726864483957,23.387082239890635,False
+elc_spv_004,ep_solar_pv_004,367.5,solar,Aggregated Plant -- operating,elc_spv_004,way/142414070-765,-30.601117559532682,25.493315481873246,False
+elc_spv_004,ep_solar_pv_G100000814214,216.0,solar,Mulilo Total Hydra solar farm_-- -- construction,elc_spv_004,way/142414070-765,-30.6781,24.0671,False
+elc_spv_004,ep_solar_pv_G100001022129,342.0,solar,SunCentral solar farm_1 -- construction,elc_spv_004,way/142414070-765,-30.8538,24.2184,False
+elc_spv_005,ep_solar_pv_005,452.99999999999994,solar,Aggregated Plant -- operating,elc_spv_005,way/142414070-765,-30.974420703430166,24.77764189735444,False
+elc_spv_006,ep_solar_006__irena,887.569000796357,solar,Aggregated Plant - IRENA Gap - 6_Missing Solar Capacity -- operating,elc_spv_006,way/162871098-400,-29.093012685567366,19.599554148647336,False
+elc_spv_006,ep_solar_pv_006,145.5,solar,Aggregated Plant -- operating,elc_spv_006,way/162871098-400,-29.45712731823876,19.909639959190375,False
+elc_spv_006,ep_solar_thermal_006,200.0,solar,Aggregated Plant -- operating,elc_spv_006,way/162871098-400,-29.44479161065046,19.40318766106996,False
+elc_spv_009,ep_solar_009__irena,1074.5092139827843,solar,Aggregated Plant - IRENA Gap - 9_Missing Solar Capacity -- operating,elc_spv_009,ZA25-400,-28.12531969825982,21.613132040987516,False
+elc_spv_009,ep_solar_pv_009,1220.9,solar,Aggregated Plant -- operating,elc_spv_009,ZA25-400,-28.484076219263752,21.352303027832864,False
+elc_spv_009,ep_solar_thermal_009,200.0,solar,Aggregated Plant -- operating,elc_spv_009,ZA25-400,-28.03421991781772,20.90779214583291,False
+elc_spv_010,ep_solar_pv_010,21.2,solar,Aggregated Plant -- operating,elc_spv_010,way/836844162-400,-32.99030351536178,18.399922335359264,False
+elc_spv_011,ep_solar_pv_011,384.6,solar,Aggregated Plant -- operating,elc_spv_011,way/177800991-400,-32.36844996756718,19.852375198695132,False
+elc_spv_012,ep_solar_pv_012,10.200000000000001,solar,Aggregated Plant -- operating,elc_spv_012,way/193465369-400,-30.530132338026863,18.258796929498654,False
+elc_spv_013,ep_solar_pv_013,86.0,solar,Aggregated Plant -- operating,elc_spv_013,way/125754107-400,-30.660747599018965,19.51108330288785,False
+elc_spv_015,ep_solar_pv_015,5.1000000000000005,solar,Aggregated Plant -- operating,elc_spv_015,way/90454383-400,-33.77130703991911,24.97471470019112,False
+elc_spv_019,ep_solar_pv_019,1.2,solar,Aggregated Plant -- operating,elc_spv_019,way/177800991-400,-32.62303894646904,20.258834316352612,False
+elc_spv_020,ep_solar_pv_020,3.5,solar,Aggregated Plant -- operating,elc_spv_020,way/169789536-400,-32.986227139893614,22.96761546374112,False
+elc_spv_023,ep_solar_pv_023,4.3,solar,Aggregated Plant -- operating,elc_spv_023,ZA23-400,-25.213795282680493,31.50204283271739,False
+elc_spv_024,ep_solar_pv_024,1.2,solar,Aggregated Plant -- operating,elc_spv_024,way/208749745-400,-22.908198100036696,31.309495301631745,False
+elc_spv_025,ep_solar_pv_025,148.0,solar,Aggregated Plant -- construction,elc_spv_025,way/208749745-400,-23.262185210216277,31.306895518105062,False
+elc_spv_026,ep_solar_pv_026,2.7,solar,Aggregated Plant -- operating,elc_spv_026,way/179140081-400,-26.53088066667551,29.507654634996392,False
+elc_spv_032,ep_solar_pv_032,3.1000000000000005,solar,Aggregated Plant -- operating,elc_spv_032,way/631673098-400,-31.03117507982373,29.882096947636594,False
+elc_spv_035,ep_solar_pv_035,2.5,solar,Aggregated Plant -- operating,elc_spv_035,way/107937167-400,-31.14351161257516,26.652262977246608,False
+elc_spv_036,ep_solar_pv_036,1.2,solar,Aggregated Plant -- operating,elc_spv_036,way/169647963-400,-32.79725809395249,26.61940202460699,False
+elc_spv_038,ep_solar_pv_038,308.0,solar,Aggregated Plant -- operating,elc_spv_038,way/693869805-400,-25.159343564128424,27.222553479649868,False
+elc_spv_039,ep_solar_pv_039,103.3,solar,Aggregated Plant -- operating,elc_spv_039,ZA2-400,-23.288438248034026,28.45664829459179,False
+elc_spv_040,ep_solar_pv_040,60.60000000000001,solar,Aggregated Plant -- operating,elc_spv_040,way/685294883-400,-24.58097327774639,29.234536643789504,False
+elc_spv_041,ep_solar_pv_041,541.0,solar,Aggregated Plant -- operating,elc_spv_041,way/107937167-400,-31.51349909587915,26.369555866718876,False
+elc_spv_042,ep_solar_pv_042,419.3,solar,Aggregated Plant -- operating,elc_spv_042,way/167540668-400,-27.029407246200865,26.894231980891977,False
+elc_spv_043,ep_solar_pv_043,13.500000000000002,solar,Aggregated Plant -- operating,elc_spv_043,way/102925909-400,-27.37128866688173,28.58403929261749,False
+elc_won_002,ep_windon_wind_002,240.00000000000003,windon,Aggregated Plant -- operating,elc_won_002,way/89173873-400,-31.710920004539155,25.896178136153083,False
+elc_won_005,ep_windon_wind_005,678.0,windon,Aggregated Plant -- operating,elc_won_005,way/90454383-400,-33.85196485731589,24.499232959600686,False
+elc_won_006,ep_windon_wind_006,964.0,windon,Aggregated Plant -- operating,elc_won_006,way/586032034-765,-32.53062092510341,21.479281795959476,False
+elc_won_009,ep_windon_wind_009,155.0,windon,Aggregated Plant -- construction,elc_won_009,way/98231311-400,-26.649763626997572,29.405875681090496,False
+elc_won_011,ep_windon_wind_011,140.0,windon,Aggregated Plant -- construction,elc_won_011,ZA29-400,-27.78241852037182,30.349387641713164,False
+elc_won_012,ep_windon_wind_012,204.0,windon,Aggregated Plant -- operating,elc_won_012,way/169647963-400,-33.14671810685584,26.60513405584394,False
+elc_won_013,ep_windon_wind_013,32.0,windon,Aggregated Plant -- operating,elc_won_013,way/177800991-400,-32.698685650207054,19.55332912197322,False
+elc_won_014,ep_windon_wind_014,626.0,windon,Aggregated Plant -- operating,elc_won_014,way/169789536-400,-33.2585857688983,22.633201116265806,False
+elc_won_029,ep_windon_wind_029,34.0,windon,Aggregated Plant -- operating,elc_won_029,way/142414070-765,-30.518067293731303,24.602074740256473,False
+elc_won_035,ep_windon_wind_035,426.00000000000006,windon,Aggregated Plant -- operating,elc_won_035,way/193465369-400,-30.815369939269736,18.541390808140992,False
+elc_won_036,ep_windon_wind_036,698.0,windon,Aggregated Plant -- operating,elc_won_036,way/193465369-400,-30.88411238678895,17.827144850517993,False
+elc_won_039,ep_windon_wind_039,321.0,windon,Aggregated Plant -- operating,elc_won_039,way/125754107-400,-31.025247902262556,19.29448240941036,False
+elc_won_040,ep_windon_wind_040,544.0,windon,Aggregated Plant -- operating,elc_won_040,way/183402339-400,-30.63910054001355,24.5623371507405,False

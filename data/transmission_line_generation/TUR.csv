@@ -1,0 +1,500 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_TR10-380,ep_gas_combined_cycle_G100000405867,61.0,gas,Delta Enerji power station_1 -- operating,e_TR10-380,TR10-380,41.291517,27.561279,False
+e_TR104-380,ep_coal_subcritical_G100000100067,340.0,coal,Afşin-Elbistan power stations_Unit A1 -- operating,e_TR104-380,TR104-380,38.3472108,37.0260017,False
+e_TR104-380,ep_coal_subcritical_G100000100068,340.0,coal,Afşin-Elbistan power stations_Unit A2 -- operating,e_TR104-380,TR104-380,38.3472108,37.0260017,False
+e_TR104-380,ep_coal_subcritical_G100000100069,340.0,coal,Afşin-Elbistan power stations_Unit A3 -- operating,e_TR104-380,TR104-380,38.3472108,37.0260017,False
+e_TR104-380,ep_coal_subcritical_G100000100071,360.0,coal,Afşin-Elbistan power stations_Unit B1 -- operating,e_TR104-380,TR104-380,38.353291,36.9810789,False
+e_TR104-380,ep_coal_subcritical_G100000100072,360.0,coal,Afşin-Elbistan power stations_Unit B2 -- operating,e_TR104-380,TR104-380,38.353291,36.9810789,False
+e_TR104-380,ep_coal_subcritical_G100000100073,360.0,coal,Afşin-Elbistan power stations_Unit B3 -- operating,e_TR104-380,TR104-380,38.353291,36.9810789,False
+e_TR104-380,ep_coal_subcritical_G100000100074,360.0,coal,Afşin-Elbistan power stations_Unit B4 -- operating,e_TR104-380,TR104-380,38.353291,36.9810789,False
+e_TR104-380,ep_m_coal_subcritical_G100000100070,335.0,coal,Afşin-Elbistan power stations_Unit A4 -- mothballed,e_TR104-380,TR104-380,38.3472108,37.0260017,False
+e_TR105-380,ep_windon_wind_380,53.0,windon,Aggregated Plant -- operating,e_TR105-380,TR105-380,38.422547778195266,42.76976307858635,False
+e_TR108-380,ep_hydro_TR108-380__irena,10.850381518343156,hydro,Aggregated Plant -- operating,e_TR108-380,TR108-380,38.42064727053628,35.16155727533022,False
+e_TR108-380,ep_hydro_dam_TR108-380,47.0,hydro,Aggregated Plant -- operating,e_TR108-380,TR108-380,38.0655952594503,35.168176321637134,False
+e_TR109-380,ep_hydro_TR109-380__irena,415.5465262344187,hydro,Aggregated Plant - IRENA Gap - TR109-380_Missing Hydro Capacity -- operating,e_TR109-380,TR109-380,38.3122004039666,39.09690490429563,False
+e_TR109-380,ep_hydro_dam_G100000603668,1800.0,hydro,Karakaya hydroelectric plant_ -- operating,e_TR109-380,TR109-380,38.2264,39.1353,False
+e_TR110-380,ep_coal_CFB_G100000110352,150.0,coal,Tufanbeyli power station_Unit 1 -- operating,e_TR110-380,TR110-380,38.18562,36.26994,False
+e_TR110-380,ep_coal_CFB_G100000110353,150.0,coal,Tufanbeyli power station_Unit 2 -- operating,e_TR110-380,TR110-380,38.18562,36.26994,False
+e_TR110-380,ep_coal_CFB_G100000110354,150.0,coal,Tufanbeyli power station_Unit 3 -- operating,e_TR110-380,TR110-380,38.18562,36.26994,False
+e_TR110-380,ep_hydro_TR110-380__irena,18.930452861790187,hydro,Aggregated Plant -- operating,e_TR110-380,TR110-380,38.548115807099585,36.24258969875052,False
+e_TR110-380,ep_hydro_ror_G100001051816,82.0,hydro,Yamanlı II hydroelectric plant_ -- operating,e_TR110-380,TR110-380,37.9374,36.2039,False
+e_TR111-380,ep_hydro_TR111-380__irena,19.392171224272875,hydro,Aggregated Plant -- operating,e_TR111-380,TR111-380,38.351115520551424,35.771862927310465,False
+e_TR111-380,ep_hydro_ror_G100000603640,84.0,hydro,Çamlıca I hydroelectric plant_ -- operating,e_TR111-380,TR111-380,37.9211,35.4938,False
+e_TR111-380,ep_windon_wind_380,274.0,windon,Aggregated Plant -- operating,e_TR111-380,TR111-380,37.80230442403674,35.66119493631088,False
+e_TR113-380,ep_hydro_TR113-380__irena,105.0409274648114,hydro,Aggregated Plant - IRENA Gap - TR113-380_Missing Hydro Capacity -- operating,e_TR113-380,TR113-380,37.846833526485334,44.04812837742319,False
+e_TR114-380,ep_hydro_TR114-380__irena,63.71713402261088,hydro,Aggregated Plant - IRENA Gap - TR114-380_Missing Hydro Capacity -- operating,e_TR114-380,TR114-380,37.83242345549087,42.062107835549256,False
+e_TR114-380,ep_hydro_dam_G100000603620,276.0,hydro,Alkumru hydroelectric plant_ -- operating,e_TR114-380,TR114-380,37.9592,42.0928,False
+e_TR115-380,ep_geothermal_TR115-380,33.0,geothermal,Aggregated Plant -- operating,e_TR115-380,TR115-380,38.185772414384815,27.700881259551306,False
+e_TR115-380,ep_m_gas_internal_combustion_TR115-380,58.0,gas,Aggregated Plant -- mothballed,e_TR115-380,TR115-380,37.77459905806121,27.906234084412013,False
+e_TR115-380,ep_windon_wind_380,42.0,windon,Aggregated Plant -- operating,e_TR115-380,TR115-380,37.760806704958235,27.45545527346627,False
+e_TR116-380,ep_hydro_TR116-380__irena,14.313269236963311,hydro,Aggregated Plant -- operating,e_TR116-380,TR116-380,38.25113649903113,29.357039190122048,False
+e_TR116-380,ep_hydro_dam_G100001051743,62.0,hydro,Adigüzel I hydroelectric plant_ -- operating,e_TR116-380,TR116-380,38.1543,29.2068,False
+e_TR116-380,ep_m_gas_internal_combustion_TR116-380,35.0,gas,Aggregated Plant -- mothballed,e_TR116-380,TR116-380,37.86120527500893,29.67191785718057,False
+e_TR117-380,ep_gas_combined_cycle_G100000405869,205.5,gas,Denizli Saraykoy power station_1 -- operating,e_TR117-380,TR117-380,37.913637,28.904767,False
+e_TR117-380,ep_geothermal_G100000700130,80.0,geothermal,Kızıldere-2 geothermal power plant_-- -- operating,e_TR117-380,TR117-380,37.9499,28.8354,False
+e_TR117-380,ep_geothermal_G100000700131,66.0,geothermal,Kızıldere-3 geothermal power plant_2 -- operating,e_TR117-380,TR117-380,37.9498838,28.8432151,False
+e_TR117-380,ep_geothermal_G100000700132,100.0,geothermal,Kızıldere-3 geothermal power plant_1 -- operating,e_TR117-380,TR117-380,37.9498838,28.8432151,False
+e_TR117-380,ep_geothermal_TR117-380,752.8000000000001,geothermal,Aggregated Plant -- operating,e_TR117-380,TR117-380,37.59607567708949,29.468205305972088,False
+e_TR117-380,ep_windon_wind_380,138.2,windon,Aggregated Plant -- operating,e_TR117-380,TR117-380,37.39557101388761,29.320091516672417,False
+e_TR118-380,ep_gas_TR118-380__ember,19.73207791227854,gas,Aggregated Plant -- operating,e_TR118-380,TR118-380,37.68040891766177,29.568115711840044,False
+e_TR118-380,ep_gas_combined_cycle_G100000405901,797.4,gas,Turcas Denizli Doğalgaz S. power station_1 -- operating,e_TR118-380,TR118-380,37.8504,29.4152,False
+e_TR119-380,ep_gas_combined_cycle_G100000405866,63.0,gas,Cine Ales power station_1 -- operating,e_TR119-380,TR119-380,37.636976,27.974789,False
+e_TR119-380,ep_geothermal_TR119-380,156.04999999999998,geothermal,Aggregated Plant -- operating,e_TR119-380,TR119-380,37.981642909290436,28.183164622111978,False
+e_TR119-380,ep_windon_wind_380,18.0,windon,Aggregated Plant -- operating,e_TR119-380,TR119-380,37.42549927321185,27.953346270912554,False
+e_TR12-380,ep_gas_combined_cycle_G100000405864,60.2,gas,Cerkezkoy Ugur power station_1 -- operating,e_TR12-380,TR12-380,41.292719,27.956255,False
+e_TR12-380,ep_windon_wind_380,157.0,windon,Aggregated Plant -- operating,e_TR12-380,TR12-380,41.21644230444458,28.244271913575577,False
+e_TR122-380,ep_coal_CFB_TR122-380,55.0,coal,Aggregated Plant -- operating,e_TR122-380,TR122-380,37.999580144108634,27.560968728670083,False
+e_TR122-380,ep_geothermal_TR122-380,37.2,geothermal,Aggregated Plant -- operating,e_TR122-380,TR122-380,37.64719557674469,27.54411070369047,False
+e_TR124-380,ep_gas_combined_cycle_G100000405868,63.0,gas,Denizli Honaz power station_1 -- operating,e_TR124-380,TR124-380,37.808975,29.257713,False
+e_TR124-380,ep_hydro_TR124-380__irena,28.626538473926622,hydro,Aggregated Plant -- operating,e_TR124-380,TR124-380,37.656540312353236,29.12194802100776,False
+e_TR128-380,ep_gas_gas_turbine_TR128-380,31.0,gas,Aggregated Plant -- operating,e_TR128-380,TR128-380,37.66032293375743,38.3278963170083,False
+e_TR128-380,ep_hydro_TR128-380__irena,555.2163308854317,hydro,Aggregated Plant - IRENA Gap - TR128-380_Missing Hydro Capacity -- operating,e_TR128-380,TR128-380,37.307764492416574,38.364952613117765,False
+e_TR128-380,ep_hydro_dam_G100000603629,2405.0,hydro,Ataturk hydroelectric plant_ -- operating,e_TR128-380,TR128-380,37.4819,38.3189,False
+e_TR129-380,ep_windon_wind_380,24.0,windon,Aggregated Plant -- operating,e_TR129-380,TR129-380,37.64893875462674,31.851942628939696,False
+e_TR13-380,ep_hydro_TR13-380__irena,18.699593680548844,hydro,Aggregated Plant -- operating,e_TR13-380,TR13-380,41.23065897572843,42.27597085242633,False
+e_TR130-380,ep_hydro_TR130-380__irena,112.19756208329306,hydro,Aggregated Plant - IRENA Gap - TR130-380_Missing Hydro Capacity -- operating,e_TR130-380,TR130-380,37.65895491571081,35.520924009573505,False
+e_TR130-380,ep_hydro_dam_G100000603670,76.0,hydro,Karakuz hydroelectric plant_ -- operating,e_TR130-380,TR130-380,37.3627,35.124,False
+e_TR130-380,ep_hydro_dam_G100000603698,310.0,hydro,Sanibey hydroelectric plant_ -- operating,e_TR130-380,TR130-380,37.4016,35.4437,False
+e_TR130-380,ep_hydro_ror_TR130-380,100.0,hydro,Aggregated Plant -- operating,e_TR130-380,TR130-380,37.20340987096591,35.63048628981523,False
+e_TR130-380,ep_windon_wind_380,32.0,windon,Aggregated Plant -- operating,e_TR130-380,TR130-380,37.206010051331916,35.256135936343526,False
+e_TR132-380,ep_windon_wind_380,66.0,windon,Aggregated Plant -- operating,e_TR132-380,TR132-380,37.1535184885948,37.295076495257,False
+e_TR133-380,ep_hydro_TR133-380__irena,253.48338100299546,hydro,Aggregated Plant - IRENA Gap - TR133-380_Missing Hydro Capacity -- operating,e_TR133-380,TR133-380,37.426034123031876,30.60350621784388,False
+e_TR133-380,ep_hydro_dam_TR133-380,51.0,hydro,Aggregated Plant -- operating,e_TR133-380,TR133-380,37.03549639747526,30.868417665749302,False
+e_TR133-380,ep_hydro_ror_TR133-380,47.0,hydro,Aggregated Plant -- operating,e_TR133-380,TR133-380,37.03238182648305,30.386945775869403,False
+e_TR134-380,ep_coal_subcritical_G100000111354,210.0,coal,Yeniköy power station_Unit 1 -- operating,e_TR134-380,TR134-380,37.14019,27.87154,False
+e_TR134-380,ep_coal_subcritical_G100000111355,210.0,coal,Yeniköy power station_Unit 2 -- operating,e_TR134-380,TR134-380,37.14019,27.87154,False
+e_TR136-380,ep_gas_TR136-380__ember,28.457348381139106,gas,Aggregated Plant -- operating,e_TR136-380,TR136-380,37.301560910045964,30.633932992833575,False
+e_TR136-380,ep_gas_combined_cycle_G100000405843,900.0,gas,Aksa Antalya power station_2 -- operating,e_TR136-380,TR136-380,37.1203,30.6016,False
+e_TR136-380,ep_m_gas_combined_cycle_G100000405842,250.0,gas,Aksa Antalya power station_1 -- mothballed,e_TR136-380,TR136-380,37.1203,30.6016,False
+e_TR137-380,ep_hydro_TR137-380__irena,31.85856701130544,hydro,Aggregated Plant -- operating,e_TR137-380,TR137-380,37.00761968094033,36.087006842473826,False
+e_TR137-380,ep_hydro_dam_G100000603628,138.0,hydro,Aslantas hydroelectric plant_ -- operating,e_TR137-380,TR137-380,37.2716,36.2718,False
+e_TR140-380,ep_hydro_TR140-380__irena,124.66395787032562,hydro,Aggregated Plant - IRENA Gap - TR140-380_Missing Hydro Capacity -- operating,e_TR140-380,TR140-380,37.01172030307792,31.412269530512386,False
+e_TR140-380,ep_hydro_dam_G100000603692,540.0,hydro,Oymapinar hydroelectric plant_ -- operating,e_TR140-380,TR140-380,36.9086,31.5321,False
+e_TR142-380,ep_hydro_TR142-380__irena,11.081240699584498,hydro,Aggregated Plant -- operating,e_TR142-380,TR142-380,37.04455556196035,31.595333101652546,False
+e_TR142-380,ep_hydro_dam_TR142-380,48.0,hydro,Aggregated Plant -- operating,e_TR142-380,TR142-380,36.6891691621653,31.535860096837805,False
+e_TR143-380,ep_hydro_TR143-380__irena,23.778495667858408,hydro,Aggregated Plant -- operating,e_TR143-380,TR143-380,37.2089504877785,30.62346220681172,False
+e_TR143-380,ep_hydro_dam_G100001051751,60.0,hydro,Eşen I hydroelectric plant_ -- operating,e_TR143-380,TR143-380,36.804,29.4237,False
+e_TR143-380,ep_hydro_ror_TR143-380,43.0,hydro,Aggregated Plant -- operating,e_TR143-380,TR143-380,36.772663375690016,30.943946015185304,False
+e_TR143-380,ep_windon_wind_380,35.0,windon,Aggregated Plant -- operating,e_TR143-380,TR143-380,36.4938959591717,30.536549310140057,False
+e_TR145-380,ep_hydro_TR145-380__irena,11.312099880825844,hydro,Aggregated Plant -- operating,e_TR145-380,TR145-380,36.913807054677484,32.4746277348267,False
+e_TR145-380,ep_hydro_dam_TR145-380,49.0,hydro,Aggregated Plant -- operating,e_TR145-380,TR145-380,36.56861391592162,32.4731847179367,False
+e_TR148-380,ep_coal_supercritical_G100000100401,600.0,coal,Atlas Enerji İskenderun power station_Unit 1 -- operating,e_TR148-380,TR148-380,36.69028,36.20909,False
+e_TR148-380,ep_coal_supercritical_G100000114501,600.0,coal,Atlas Enerji İskenderun power station_Unit 2 -- operating,e_TR148-380,TR148-380,36.69028,36.20909,False
+e_TR15-380,ep_hydro_TR15-380__irena,18.23787531806616,hydro,Aggregated Plant -- operating,e_TR15-380,TR15-380,41.383250912426284,31.618932535108534,False
+e_TR15-380,ep_hydro_dam_G100000603682,79.0,hydro,Köprübaşı hydroelectric plant_ -- operating,e_TR15-380,TR15-380,40.9851,31.9098,False
+e_TR151-380,ep_hydro_TR151-380__irena,96.96085612136437,hydro,Aggregated Plant - IRENA Gap - TR151-380_Missing Hydro Capacity -- operating,e_TR151-380,TR151-380,36.31509206498267,33.383706783082765,False
+e_TR151-380,ep_nuclear_G100000500181,1200.0,nuclear,Akkuyu nuclear power plant_1 -- construction,e_TR151-380,TR151-380,36.1447,33.5402,False
+e_TR151-380,ep_nuclear_G100000500182,1200.0,nuclear,Akkuyu nuclear power plant_2 -- construction,e_TR151-380,TR151-380,36.1447,33.5402,False
+e_TR151-380,ep_nuclear_G100000500183,1200.0,nuclear,Akkuyu nuclear power plant_3 -- construction,e_TR151-380,TR151-380,36.1447,33.5402,False
+e_TR151-380,ep_nuclear_G100000500184,1200.0,nuclear,Akkuyu nuclear power plant_4 -- construction,e_TR151-380,TR151-380,36.1447,33.5402,False
+e_TR16-380,ep_bioenergy_G100000200829,85.0,bioenergy,Eyüp Kemerburgaz power station_1 -- operating,e_TR16-380,TR16-380,41.2245,28.8148,False
+e_TR16-380,ep_bioenergy_TR16-380__ember,2436.6666666666665,bioenergy,Aggregated Plant - EMBER Gap - TR16-380_Missing Bioenergy Capacity -- operating,e_TR16-380,TR16-380,41.387488786001285,28.68433062173774,False
+e_TR17-380,ep_hydro_TR17-380__irena,10.388663155860469,hydro,Aggregated Plant -- operating,e_TR17-380,TR17-380,41.37817584587301,41.81237971497907,False
+e_TR17-380,ep_hydro_ror_TR17-380,45.0,hydro,Aggregated Plant -- operating,e_TR17-380,TR17-380,41.02353443174144,41.83632740790253,False
+e_TR20-380,ep_hydro_TR20-380__irena,154.67565143170032,hydro,Aggregated Plant - IRENA Gap - TR20-380_Missing Hydro Capacity -- operating,e_TR20-380,TR20-380,41.117628454440734,41.707680210494175,False
+e_TR20-380,ep_hydro_dam_G100000603649,670.0,hydro,Deriner hydroelectric plant_ -- operating,e_TR20-380,TR20-380,41.1706,41.8696,False
+e_TR25-380,ep_hydro_TR25-380__irena,48.94214642316488,hydro,Aggregated Plant -- operating,e_TR25-380,TR25-380,41.30698836725112,42.66878880219955,False
+e_TR25-380,ep_hydro_dam_G100000603612,87.0,hydro,Akinci Cildir hydroelectric plant_ -- operating,e_TR25-380,TR25-380,41.2235,43.1035,False
+e_TR25-380,ep_hydro_dam_G100000603683,75.0,hydro,Köroğlu hydroelectric plant_ -- operating,e_TR25-380,TR25-380,41.1677,42.9573,False
+e_TR25-380,ep_hydro_dam_TR25-380,50.0,hydro,Aggregated Plant -- operating,e_TR25-380,TR25-380,40.951298991846464,42.69202550612125,False
+e_TR28-380,ep_gas_combined_cycle_G100000405890,133.2,gas,Luleburgaz Zorlu power station_1 -- operating,e_TR28-380,TR28-380,41.277524,27.588236,False
+e_TR28-380,ep_gas_gas_turbine_TR28-380,100.0,gas,Aggregated Plant -- operating,e_TR28-380,TR28-380,41.28190145636768,27.715744467437315,False
+e_TR28-380,ep_m_gas_combined_cycle_TR28-380,56.0,gas,Aggregated Plant -- mothballed,e_TR28-380,TR28-380,40.93015074515006,27.714060366136007,False
+e_TR31-380,ep_solar_pv_380,1.5,solar,Aggregated Plant -- operating,e_TR31-380,TR31-380,40.97370797654993,29.00643753794496,False
+e_TR34-380,ep_gas_internal_combustion_TR34-380,48.0,gas,Aggregated Plant -- operating,e_TR34-380,TR34-380,41.06909844266029,27.611115359636507,False
+e_TR36-380,ep_gas_combined_cycle_G100000405893,65.0,gas,Marmara Çebi power station_1 -- operating,e_TR36-380,TR36-380,41.020091,29.046048,False
+e_TR40-380,ep_windon_wind_380,10.0,windon,Aggregated Plant -- operating,e_TR40-380,TR40-380,40.95225435078964,30.22989360848651,False
+e_TR41-380,ep_hydro_TR41-380__irena,131.82059248880728,hydro,Aggregated Plant - IRENA Gap - TR41-380_Missing Hydro Capacity -- operating,e_TR41-380,TR41-380,41.11595958616274,36.682436007428635,False
+e_TR41-380,ep_hydro_dam_G100000603663,500.0,hydro,Hasan Ugurlu hydroelectric plant_ -- operating,e_TR41-380,TR41-380,40.9365,36.6462,False
+e_TR41-380,ep_hydro_dam_G100001051772,71.0,hydro,Tepekışla hydroelectric plant_ -- operating,e_TR41-380,TR41-380,40.6598,36.7006,False
+e_TR41-380,ep_windon_wind_380,12.0,windon,Aggregated Plant -- operating,e_TR41-380,TR41-380,40.764553064467876,36.691126642407525,False
+e_TR42-380,ep_hydro_TR42-380__irena,76.64524817212612,hydro,Aggregated Plant - IRENA Gap - TR42-380_Missing Hydro Capacity -- operating,e_TR42-380,TR42-380,40.979078433465624,41.80275899624279,False
+e_TR42-380,ep_hydro_dam_G100000603625,332.0,hydro,Artvin hydroelectric plant_ -- operating,e_TR42-380,TR42-380,40.9356,41.7681,False
+e_TR47-380,ep_gas_gas_turbine_TR47-380,26.0,gas,Aggregated Plant -- operating,e_TR47-380,TR47-380,40.76630780785321,30.07132165594442,False
+e_TR48-380,ep_hydro_TR48-380__irena,10.619522337101811,hydro,Aggregated Plant -- operating,e_TR48-380,TR48-380,41.00496552774227,30.734497857883515,False
+e_TR48-380,ep_hydro_ror_TR48-380,46.0,hydro,Aggregated Plant -- operating,e_TR48-380,TR48-380,40.65471193049339,30.818858224160497,False
+e_TR52-380,ep_gas_TR52-380__ember,32.57500296428828,gas,Aggregated Plant -- operating,e_TR52-380,TR52-380,41.08599341089257,29.580267275019164,False
+e_TR52-380,ep_gas_combined_cycle_G100000405878,253.4,gas,Gebze Dilovasi power station_1 -- operating,e_TR52-380,TR52-380,40.801514,29.551808,False
+e_TR52-380,ep_gas_combined_cycle_G100000405879,865.0,gas,Gebze Yeni power station_1 -- operating,e_TR52-380,TR52-380,40.81655,29.57319,False
+e_TR52-380,ep_gas_gas_turbine_TR52-380,40.0,gas,Aggregated Plant -- operating,e_TR52-380,TR52-380,40.67426536197862,29.804397434986022,False
+e_TR52-380,ep_m_gas_combined_cycle_G100000413000,60.0,gas,Hereke Cement Works power station_2-2 -- mothballed,e_TR52-380,TR52-380,40.782,29.6025,False
+e_TR52-380,ep_m_gas_combined_cycle_G100000413001,60.0,gas,Hereke Cement Works power station_2-1 -- mothballed,e_TR52-380,TR52-380,40.782,29.6025,False
+e_TR52-380,ep_m_gas_combined_cycle_TR52-380,38.0,gas,Aggregated Plant -- mothballed,e_TR52-380,TR52-380,40.74196872844529,29.314152754398027,False
+e_TR53-380,ep_gas_combined_cycle_G100001017791,112.0,gas,İzmit-Köseköy power station_1R -- operating,e_TR53-380,TR53-380,40.773055,29.94696,False
+e_TR53-380,ep_gas_combined_cycle_TR53-380,40.0,gas,Aggregated Plant -- operating,e_TR53-380,TR53-380,40.76754914711007,29.862846492808004,False
+e_TR56-380,ep_hydro_TR56-380__irena,14.313269236963311,hydro,Aggregated Plant -- operating,e_TR56-380,TR56-380,40.920812405254,30.291387232525008,False
+e_TR56-380,ep_hydro_dam_G100001051815,62.0,hydro,Doğançay hydroelectric plant_ -- operating,e_TR56-380,TR56-380,40.6398,30.3407,False
+e_TR56-380,ep_windon_wind_380,23.0,windon,Aggregated Plant -- operating,e_TR56-380,TR56-380,40.56387984492817,30.295499840209988,False
+e_TR6-400,ep_gas_TR6-400__ember,24.0526457621454,gas,Aggregated Plant -- operating,e_TR6-400,TR6-400,41.68787563223186,27.141516484757073,False
+e_TR6-400,ep_gas_combined_cycle_G100000405887,82.0,gas,Kırklareli Alarko power station_1 -- operating,e_TR6-400,TR6-400,41.7781,27.1921,False
+e_TR6-400,ep_gas_combined_cycle_G100000412992,890.0,gas,Kirklareli power station_CC -- construction,e_TR6-400,TR6-400,41.7565,27.214,False
+e_TR61-380,ep_hydro_TR61-380__irena,51.48159741681966,hydro,Aggregated Plant -- operating,e_TR61-380,TR61-380,40.48153351117245,41.13004317122127,False
+e_TR61-380,ep_hydro_ror_G100001051771,63.0,hydro,Uzundere I hydroelectric plant_ -- operating,e_TR61-380,TR61-380,40.9018,40.7663,False
+e_TR63-380,ep_hydro_TR63-380__irena,44.555821979579335,hydro,Aggregated Plant -- operating,e_TR63-380,TR63-380,40.62973944573196,40.74742473007295,False
+e_TR63-380,ep_hydro_ror_G100000603644,91.0,hydro,Cevizlik hydroelectric plant_ -- operating,e_TR63-380,TR63-380,40.7993,40.5479,False
+e_TR63-380,ep_windon_wind_380,32.0,windon,Aggregated Plant -- operating,e_TR63-380,TR63-380,40.27305850716174,40.7201414432846,False
+e_TR65-380,ep_coal_ultra-supercritical_G100000101259,660.0,coal,Cenal power station_Unit 1 -- operating,e_TR65-380,TR65-380,40.4167,27.31829,False
+e_TR65-380,ep_coal_ultra-supercritical_G100000101260,660.0,coal,Cenal power station_Unit 2 -- operating,e_TR65-380,TR65-380,40.4167,27.31829,False
+e_TR66-380,ep_hydro_TR66-380__irena,43.632385254613965,hydro,Aggregated Plant -- operating,e_TR66-380,TR66-380,40.43659867613789,37.42249896239988,False
+e_TR66-380,ep_hydro_dam_G100000603680,90.0,hydro,Köklüce hydroelectric plant_ -- operating,e_TR66-380,TR66-380,40.4942,36.9269,False
+e_TR66-380,ep_hydro_ror_G100000603613,99.0,hydro,Akıncı hydroelectric plant_ -- operating,e_TR66-380,TR66-380,40.4399,37.1148,False
+e_TR70-380,ep_hydro_TR70-380__irena,84.72531951557316,hydro,Aggregated Plant - IRENA Gap - TR70-380_Missing Hydro Capacity -- operating,e_TR70-380,TR70-380,40.31758035378404,37.67843011876228,False
+e_TR70-380,ep_hydro_dam_G100000603679,120.0,hydro,Kilickaya hydroelectric plant_ -- operating,e_TR70-380,TR70-380,40.242,38.1859,False
+e_TR70-380,ep_hydro_dam_G100001051764,74.0,hydro,Darıca 2 hydroelectric plant_ -- operating,e_TR70-380,TR70-380,40.4621,37.7752,False
+e_TR70-380,ep_hydro_ror_G100000603648,110.0,hydro,Darıca 1 hydroelectric plant_ -- operating,e_TR70-380,TR70-380,40.4622,37.7684,False
+e_TR70-380,ep_hydro_ror_G100001051806,63.0,hydro,Koyulhisar hydroelectric plant_ -- operating,e_TR70-380,TR70-380,40.2907,37.7824,False
+e_TR74-380,ep_bioenergy_TR74-380,35.0,bioenergy,Aggregated Plant -- operating,e_TR74-380,TR74-380,40.43465959905583,30.823129956185934,False
+e_TR74-380,ep_bioenergy_TR74-380__ember,1003.3333333333334,bioenergy,Aggregated Plant - EMBER Gap - TR74-380_Missing Bioenergy Capacity -- operating,e_TR74-380,TR74-380,40.0796743926238,30.771107069618253,False
+e_TR74-380,ep_coal_subcritical_G100000101003,135.0,coal,Bolu Göynük power station_Unit 1 -- operating,e_TR74-380,TR74-380,40.2514,30.8129,False
+e_TR74-380,ep_coal_subcritical_G100000101004,135.0,coal,Bolu Göynük power station_Unit 2 -- operating,e_TR74-380,TR74-380,40.2514,30.8129,False
+e_TR76-380,ep_windon_wind_380,188.0,windon,Aggregated Plant -- operating,e_TR76-380,TR76-380,40.31831800935464,36.388856286519086,False
+e_TR78-380,ep_m_gas_steam_turbine_G100000410035,132.0,gas,Bozüyük power station_1 -- mothballed,e_TR78-380,TR78-380,40.151522,29.981798,False
+e_TR8-380,ep_coal_subcritical_G100000111552,160.0,coal,ZETES power stations_Phase 1 Unit 1 -- operating,e_TR8-380,TR8-380,41.5074712,31.8949115,False
+e_TR8-380,ep_coal_supercritical_G100000111553,615.0,coal,ZETES power stations_Phase 2 Unit 1 -- operating,e_TR8-380,TR8-380,41.5035684,31.8871813,False
+e_TR8-380,ep_coal_supercritical_G100000111554,615.0,coal,ZETES power stations_Phase 2 Unit 2 -- operating,e_TR8-380,TR8-380,41.5035684,31.8871813,False
+e_TR8-380,ep_coal_supercritical_G100000111555,700.0,coal,ZETES power stations_Phase 3 Unit 1 -- operating,e_TR8-380,TR8-380,41.5137599,31.9092184,False
+e_TR8-380,ep_coal_supercritical_G100000111556,700.0,coal,ZETES power stations_Phase 3 Unit 2 -- operating,e_TR8-380,TR8-380,41.5137599,31.9092184,False
+e_TR80-380,ep_coal_subcritical_G100000101242,150.0,coal,Çayırhan power station_Unit 1 -- operating,e_TR80-380,TR80-380,40.097,31.695,False
+e_TR80-380,ep_coal_subcritical_G100000101243,150.0,coal,Çayırhan power station_Unit 2 -- operating,e_TR80-380,TR80-380,40.097,31.695,False
+e_TR80-380,ep_coal_subcritical_G100000101244,160.0,coal,Çayırhan power station_Unit 3 -- operating,e_TR80-380,TR80-380,40.097,31.695,False
+e_TR80-380,ep_coal_subcritical_G100000101245,160.0,coal,Çayırhan power station_Unit 4 -- operating,e_TR80-380,TR80-380,40.097,31.695,False
+e_TR82-380,ep_coal_subcritical_G100000111500,145.0,coal,Yunus Emre power station_Unit 1 -- operating,e_TR82-380,TR82-380,39.984309,31.635639,False
+e_TR82-380,ep_hydro_TR82-380__irena,60.02338712274937,hydro,Aggregated Plant - IRENA Gap - TR82-380_Missing Hydro Capacity -- operating,e_TR82-380,TR82-380,40.16642863815439,31.64467096807549,False
+e_TR82-380,ep_hydro_dam_G100000603699,160.0,hydro,Sariyar H Polatkan hydroelectric plant_ -- operating,e_TR82-380,TR82-380,40.0401,31.4144,False
+e_TR82-380,ep_hydro_ror_G100000603671,100.0,hydro,Kargi Limak hydroelectric plant_ -- operating,e_TR82-380,TR82-380,39.9677,31.7389,False
+e_TR82-380,ep_m_coal_subcritical_G100000111501,145.0,coal,Yunus Emre power station_Unit 2 -- mothballed,e_TR82-380,TR82-380,39.984309,31.635639,False
+e_TR84-380,ep_gas_TR84-380__ember,22.948995555363833,gas,Aggregated Plant -- operating,e_TR84-380,TR84-380,39.741859491261245,33.29597211879828,False
+e_TR84-380,ep_gas_combined_cycle_G100000405904,927.4,gas,Yahsihan power station_1 -- operating,e_TR84-380,TR84-380,39.841979,33.487988,False
+e_TR86-380,ep_gas_combined_cycle_TR86-380,57.0,gas,Aggregated Plant -- operating,e_TR86-380,TR86-380,39.656631195031956,29.480094656300054,False
+e_TR92-380,ep_gas_internal_combustion_G100000413013,270.0,gas,Aliaga Alosbi power station_CC2 -- operating,e_TR92-380,TR92-380,38.8147,27.0644,False
+e_TR92-380,ep_gas_internal_combustion_G100000413014,68.0,gas,Aliaga Alosbi power station_CC1 -- operating,e_TR92-380,TR92-380,38.8147,27.0644,False
+e_TR94-380,ep_coal_supercritical_G100000113786,370.0,coal,İzdemir Enerji power station_Unit 1 -- operating,e_TR94-380,TR94-380,38.74173,26.92917,False
+e_TR95-380,ep_gas_TR95-380__ember,189.99115600061728,gas,Aggregated Plant - EMBER Gap - TR95-380_Missing Gas Capacity -- operating,e_TR95-380,TR95-380,38.914018795351446,27.005286265428794,False
+e_TR95-380,ep_gas_combined_cycle_G100000405844,870.0,gas,Aliaga Energy power station_1 -- operating,e_TR95-380,TR95-380,38.742202,26.943086,False
+e_TR95-380,ep_gas_combined_cycle_G100000405845,240.0,gas,Aliaga Habas power station_1 -- operating,e_TR95-380,TR95-380,38.742202,26.943086,False
+e_TR95-380,ep_gas_combined_cycle_G100000405873,790.0,gas,Enka İzmir power station_1 -- operating,e_TR95-380,TR95-380,38.7467,26.9563,False
+e_TR95-380,ep_gas_combined_cycle_G100000405874,790.0,gas,Enka İzmir power station_2 -- operating,e_TR95-380,TR95-380,38.7467,26.9563,False
+e_TR95-380,ep_gas_combined_cycle_G100000413012,180.0,gas,Aliaga EUAS power station_CC -- operating,e_TR95-380,TR95-380,38.7987,26.945,False
+e_TR95-380,ep_gas_gas_turbine_G100000405898,226.0,gas,Petkim power station_1 -- operating,e_TR95-380,TR95-380,38.795,26.970278,False
+e_TR95-380,ep_gas_gas_turbine_TR95-380,54.0,gas,Aggregated Plant -- operating,e_TR95-380,TR95-380,38.562956220764086,26.979029366091535,False
+e_w1044820495-380,ep_geothermal_w1044820495-380,24.0,geothermal,Aggregated Plant -- operating,e_w1044820495-380,way/1044820495-380,37.7006507599028,28.963406937162457,False
+e_w1149534302-380,ep_gas_combined_cycle_G100000405880,610.0,gas,Hamitabat power station_1 -- operating,e_w1149534302-380,way/1149534302-380,41.4827,27.3366,False
+e_w1149534302-380,ep_gas_combined_cycle_G100000405881,610.0,gas,Hamitabat power station_2 -- operating,e_w1149534302-380,way/1149534302-380,41.4827,27.3366,False
+e_w1149534302-380,ep_gas_w1149534302-380__ember,30.189534804338876,gas,Aggregated Plant -- operating,e_w1149534302-380,way/1149534302-380,41.469084352513725,27.22369524559832,False
+e_w117562840-380,ep_coal_subcritical_G100000105653,210.0,coal,Kemerköy power station_Unit 1 -- operating,e_w117562840-380,way/117562840-380,37.035362,27.900592,False
+e_w117562840-380,ep_coal_subcritical_G100000105654,210.0,coal,Kemerköy power station_Unit 2 -- operating,e_w117562840-380,way/117562840-380,37.035362,27.900592,False
+e_w117562840-380,ep_coal_subcritical_G100000105655,210.0,coal,Kemerköy power station_Unit 3 -- operating,e_w117562840-380,way/117562840-380,37.035362,27.900592,False
+e_w1186669778-380,ep_hydro_w1186669778-380__irena,35.78317309240828,hydro,Aggregated Plant -- operating,e_w1186669778-380,way/1186669778-380,36.61376838617253,31.460482720860544,False
+e_w123798015-380,ep_gas_combined_cycle_G100000405846,451.0,gas,Ambarlı A power station_1 -- operating,e_w123798015-380,way/123798015-380,40.9834,28.6921,False
+e_w123798015-380,ep_gas_combined_cycle_G100000405847,451.0,gas,Ambarlı A power station_2 -- operating,e_w123798015-380,way/123798015-380,40.9834,28.6921,False
+e_w123798015-380,ep_gas_combined_cycle_G100000405848,451.0,gas,Ambarlı A power station_3 -- operating,e_w123798015-380,way/123798015-380,40.9834,28.6921,False
+e_w123798015-380,ep_gas_combined_cycle_G100000405849,816.0,gas,Ambarlı B power station_1 -- operating,e_w123798015-380,way/123798015-380,40.9793,28.6994,False
+e_w123798015-380,ep_gas_w123798015-380__ember,53.673033598861494,gas,Aggregated Plant -- operating,e_w123798015-380,way/123798015-380,40.81520547009048,28.563837824821373,False
+e_w1266640135-380,ep_gas_combined_cycle_G100000405862,238.9,gas,Cengiz Enerji Samsun power station_2B -- operating,e_w1266640135-380,way/1266640135-380,41.2393,36.4799,False
+e_w1266640135-380,ep_gas_combined_cycle_G100000405863,610.0,gas,Cengiz Enerji Samsun power station_3 -- operating,e_w1266640135-380,way/1266640135-380,41.2393,36.4799,False
+e_w1266640135-380,ep_gas_internal_combustion_G100000412976,72.0,gas,Yesilyurt power station_IC13-17 -- operating,e_w1266640135-380,way/1266640135-380,41.2363,36.4416,False
+e_w1266640135-380,ep_gas_internal_combustion_G100000412977,162.0,gas,Yesilyurt power station_IC1-12 -- operating,e_w1266640135-380,way/1266640135-380,41.2363,36.4416,False
+e_w1266640135-380,ep_gas_w1266640135-380__ember,26.79692396690047,gas,Aggregated Plant -- operating,e_w1266640135-380,way/1266640135-380,41.28474558416874,36.55140870563591,False
+e_w1266640135-380,ep_oil_internal_combustion_G100000413005,132.0,oil,Cengiz Enerji Samsun power station_2A -- operating,e_w1266640135-380,way/1266640135-380,41.2393,36.4799,False
+e_w1266640135-380,ep_oil_internal_combustion_G100000413006,132.0,oil,Cengiz Enerji Samsun power station_1 -- operating,e_w1266640135-380,way/1266640135-380,41.2393,36.4799,False
+e_w127790110-380,ep_coal_subcritical_G100000104915,605.0,coal,İsken Sugözü power station_Unit 1 -- operating,e_w127790110-380,way/127790110-380,36.83502,35.879104,False
+e_w127790110-380,ep_coal_subcritical_G100000104916,605.0,coal,İsken Sugözü power station_Unit 2 -- operating,e_w127790110-380,way/127790110-380,36.83502,35.879104,False
+e_w127790110-380,ep_coal_ultra-supercritical_G100000102624,660.0,coal,EMBA Hunutlu power station_Unit 1 -- operating,e_w127790110-380,way/127790110-380,36.81609,35.85481,False
+e_w127790110-380,ep_coal_ultra-supercritical_G100000102625,660.0,coal,EMBA Hunutlu power station_Unit 2 -- operating,e_w127790110-380,way/127790110-380,36.81609,35.85481,False
+e_w127886746-380,ep_coal_subcritical_G100000111333,210.0,coal,Yatağan power station_Unit 1 -- operating,e_w127886746-380,way/127886746-380,37.330905,28.102377,False
+e_w127886746-380,ep_coal_subcritical_G100000111334,210.0,coal,Yatağan power station_Unit 2 -- operating,e_w127886746-380,way/127886746-380,37.330905,28.102377,False
+e_w127886746-380,ep_coal_subcritical_G100000111335,210.0,coal,Yatağan power station_Unit 3 -- operating,e_w127886746-380,way/127886746-380,37.330905,28.102377,False
+e_w127886746-380,ep_hydro_dam_G100000603647,115.0,hydro,Akköprü hydroelectric plant_ -- operating,e_w127886746-380,way/127886746-380,36.8983,28.8948,False
+e_w127886746-380,ep_hydro_dam_w127886746-380,94.0,hydro,Aggregated Plant -- operating,e_w127886746-380,way/127886746-380,37.59168329028646,28.179320455130927,False
+e_w127886746-380,ep_hydro_w127886746-380__irena,48.249568879440844,hydro,Aggregated Plant -- operating,e_w127886746-380,way/127886746-380,37.186932672537964,28.327032217413162,False
+e_w127886746-380,ep_windon_wind_380,20.0,windon,Aggregated Plant -- operating,e_w127886746-380,way/127886746-380,37.1877978721223,27.87213801095492,False
+e_w127968754-380,ep_coal_subcritical_G100000107675,210.0,coal,Orhaneli power station_Unit 1 -- operating,e_w127968754-380,way/127968754-380,39.950224,28.870214,False
+e_w127968754-380,ep_gas_combined_cycle_G100000405854,79.0,gas,Bosen Bursa power station_1 -- operating,e_w127968754-380,way/127968754-380,40.2377,28.9534,False
+e_w127968754-380,ep_gas_combined_cycle_G100000405855,64.0,gas,Bosen Bursa power station_2 -- operating,e_w127968754-380,way/127968754-380,40.2377,28.9534,False
+e_w127968754-380,ep_gas_combined_cycle_G100000405856,120.0,gas,Bosen Bursa power station_3 -- operating,e_w127968754-380,way/127968754-380,40.2377,28.9534,False
+e_w127968754-380,ep_gas_w127968754-380__ember,18.559140248568983,gas,Aggregated Plant -- operating,e_w127968754-380,way/127968754-380,40.56425565102649,29.391841725085254,False
+e_w127968754-380,ep_hydro_dam_G100000603705,100.0,hydro,Uluabat hydroelectric plant_ -- operating,e_w127968754-380,way/127968754-380,40.1533,28.7238,False
+e_w127968754-380,ep_hydro_w127968754-380__irena,23.085918124134373,hydro,Aggregated Plant -- operating,e_w127968754-380,way/127968754-380,39.945573096259544,29.422929315723643,False
+e_w127968754-380,ep_m_gas_combined_cycle_G100000405857,180.0,gas,Bursa - Bis Energi power station_1 -- mothballed,e_w127968754-380,way/127968754-380,40.2394,28.9518,False
+e_w127968754-380,ep_m_gas_combined_cycle_G100000405858,183.0,gas,Bursa - Bis Energi power station_2 -- mothballed,e_w127968754-380,way/127968754-380,40.2394,28.9518,False
+e_w127968754-380,ep_m_gas_combined_cycle_G100000405859,124.0,gas,Bursa - Bis Energi power station_3 -- mothballed,e_w127968754-380,way/127968754-380,40.2394,28.9518,False
+e_w127968754-380,ep_windon_wind_380,160.4,windon,Aggregated Plant -- operating,e_w127968754-380,way/127968754-380,39.70093731875152,28.867827805887657,False
+e_w127986151-380,ep_coal_subcritical_G100000109496,165.0,coal,Soma power station_Phase B Unit 1 -- operating,e_w127986151-380,way/127986151-380,39.194462,27.635204,False
+e_w127986151-380,ep_coal_subcritical_G100000109497,165.0,coal,Soma power station_Phase B Unit 2 -- operating,e_w127986151-380,way/127986151-380,39.194462,27.635204,False
+e_w127986151-380,ep_coal_subcritical_G100000109498,165.0,coal,Soma power station_Phase B Unit 3 -- operating,e_w127986151-380,way/127986151-380,39.194462,27.635204,False
+e_w127986151-380,ep_coal_subcritical_G100000109499,165.0,coal,Soma power station_Phase B Unit 4 -- operating,e_w127986151-380,way/127986151-380,39.194462,27.635204,False
+e_w127986151-380,ep_coal_subcritical_G100000109500,165.0,coal,Soma power station_Phase B Unit 5 -- operating,e_w127986151-380,way/127986151-380,39.194462,27.635204,False
+e_w127986151-380,ep_coal_subcritical_G100000109501,165.0,coal,Soma power station_Phase B Unit 6 -- operating,e_w127986151-380,way/127986151-380,39.194462,27.635204,False
+e_w127986151-380,ep_gas_combined_cycle_G100001018868,89.0,gas,Cemdağ Akhisar power station_CC1 -- operating,e_w127986151-380,way/127986151-380,38.90711,27.83879,False
+e_w1281442200-380,ep_hydro_dam_G100000603695,130.0,hydro,Pembelik hydroelectric plant_ -- operating,e_w1281442200-380,way/1281442200-380,39.0835,39.8965,False
+e_w1281442200-380,ep_hydro_dam_G100000603703,128.0,hydro,Tatar Elazig hydroelectric plant_ -- operating,e_w1281442200-380,way/1281442200-380,38.8625,39.8142,False
+e_w1281442200-380,ep_hydro_dam_G100000603706,84.0,hydro,Uzunçayır hydroelectric plant_ -- operating,e_w1281442200-380,way/1281442200-380,38.9829,39.5309,False
+e_w1281442200-380,ep_hydro_dam_w1281442200-380,56.0,hydro,Aggregated Plant -- operating,e_w1281442200-380,way/1281442200-380,39.247529111139876,40.089884671251674,False
+e_w1281442200-380,ep_hydro_w1281442200-380__irena,91.88195413405481,hydro,Aggregated Plant - IRENA Gap - way/1281442200-380_Missing Hydro Capacity -- operating,e_w1281442200-380,way/1281442200-380,38.90787150003765,40.27766133991584,False
+e_w1281442200-380,ep_windon_wind_380,36.0,windon,Aggregated Plant -- operating,e_w1281442200-380,way/1281442200-380,38.87453330368358,39.77323361750824,False
+e_w128531803-380,ep_hydro_dam_G100000603634,510.0,hydro,Berke hydroelectric plant_ -- operating,e_w128531803-380,way/128531803-380,37.3726,36.4617,False
+e_w128531803-380,ep_hydro_dam_G100000603702,284.0,hydro,Sir hydroelectric plant_ -- operating,e_w128531803-380,way/128531803-380,37.5008,36.5959,False
+e_w128531803-380,ep_hydro_w128531803-380__irena,183.30218990562693,hydro,Aggregated Plant - IRENA Gap - way/128531803-380_Missing Hydro Capacity -- operating,e_w128531803-380,way/128531803-380,37.777843806962615,36.35003762879702,False
+e_w128531803-380,ep_windon_wind_380,24.0,windon,Aggregated Plant -- operating,e_w128531803-380,way/128531803-380,37.41990564718648,36.334000068682194,False
+e_w129319599-380,ep_gas_combined_cycle_G100000410028,147.1,gas,Şanlıurfa OSB power station_1 -- operating,e_w129319599-380,way/129319599-380,37.1103,38.652,False
+e_w129319599-380,ep_gas_combined_cycle_G100000412984,140.0,gas,Odas power station_CC -- operating,e_w129319599-380,way/129319599-380,37.19509,38.88849,False
+e_w129319599-380,ep_hydro_dam_w129319599-380,52.0,hydro,Aggregated Plant -- operating,e_w129319599-380,way/129319599-380,37.3329131412063,38.89917952996824,False
+e_w129319599-380,ep_hydro_w129319599-380__irena,12.004677424549877,hydro,Aggregated Plant -- operating,e_w129319599-380,way/129319599-380,36.985495378590365,38.89818706930591,False
+e_w129553303-380,ep_hydro_dam_G100000603650,110.0,hydro,Dicle hydroelectric plant_ -- operating,e_w129553303-380,way/129553303-380,38.2308,40.1766,False
+e_w129553303-380,ep_hydro_dam_G100000603685,95.0,hydro,Krallızı hydroelectric plant_ -- operating,e_w129553303-380,way/129553303-380,38.3484,40.022,False
+e_w129553303-380,ep_hydro_w129553303-380__irena,47.32613215447547,hydro,Aggregated Plant -- operating,e_w129553303-380,way/129553303-380,37.98890946917974,39.97718939242202,False
+e_w129693131-380,ep_hydro_dam_G100000603632,198.0,hydro,Batman hydroelectric plant_ -- operating,e_w129693131-380,way/129693131-380,38.1598,41.2025,False
+e_w129693131-380,ep_hydro_dam_G100000603701,160.0,hydro,Silvan hydroelectric plant_ -- construction,e_w129693131-380,way/129693131-380,38.2934,41.0218,False
+e_w129693131-380,ep_hydro_w129693131-380__irena,82.64758688440106,hydro,Aggregated Plant - IRENA Gap - way/129693131-380_Missing Hydro Capacity -- operating,e_w129693131-380,way/129693131-380,37.89125805207866,41.08721411764251,False
+e_w130444135-380,ep_gas_combined_cycle_G100000405885,380.0,gas,Kazan Soda Elektrik power station_1 -- operating,e_w130444135-380,way/130444135-380,40.104893,32.501232,False
+e_w130513966-380,ep_m_gas_combined_cycle_w130513966-380,41.0,gas,Aggregated Plant -- mothballed,e_w130513966-380,way/130513966-380,40.21567472307103,32.65982843601029,False
+e_w1305467208-400,ep_hydro_dam_G100000604316,336.0,hydro,Cizre hydroelectric plant_ -- construction,e_w1305467208-400,way/1305467208-400,37.3631,42.1547,False
+e_w1305467208-400,ep_hydro_w1305467208-400__irena,77.5686848970915,hydro,Aggregated Plant - IRENA Gap - way/1305467208-400_Missing Hydro Capacity -- operating,e_w1305467208-400,way/1305467208-400,37.30472351507934,42.13802191589544,False
+e_w130569382-380,ep_gas_combined_cycle_w130569382-380,45.0,gas,Aggregated Plant -- operating,e_w130569382-380,way/130569382-380,38.55414322827614,27.299021355541726,False
+e_w130663470-380,ep_geothermal_G100000700440,123.3,geothermal,Germencik geothermal power plant_-- -- operating,e_w130663470-380,way/130663470-380,37.8665910421474,27.6460138262017,False
+e_w130663470-380,ep_geothermal_w130663470-380,282.8,geothermal,Aggregated Plant -- operating,e_w130663470-380,way/130663470-380,37.96398107024924,27.59880433425883,False
+e_w130740157-380,ep_gas_combined_cycle_G100000413007,143.0,gas,Cay power station_CC2 -- operating,e_w130740157-380,way/130740157-380,38.59391,31.04345,False
+e_w130740157-380,ep_geothermal_w130740157-380,2.76,geothermal,Aggregated Plant -- operating,e_w130740157-380,way/130740157-380,39.05727281263008,30.530017968745632,False
+e_w130740157-380,ep_windon_wind_380,228.99999999999997,windon,Aggregated Plant -- operating,e_w130740157-380,way/130740157-380,38.72166485817697,30.841946149121924,False
+e_w132022308-380,ep_gas_combined_cycle_G100000405860,716.0,gas,Bursa B power station_1 -- operating,e_w132022308-380,way/132022308-380,40.2952,29.0736,False
+e_w132022308-380,ep_gas_combined_cycle_G100000405861,716.0,gas,Bursa B power station_2 -- operating,e_w132022308-380,way/132022308-380,40.2952,29.0736,False
+e_w132022308-380,ep_gas_w132022308-380__ember,35.43558511460104,gas,Aggregated Plant -- operating,e_w132022308-380,way/132022308-380,40.37079421743563,29.169632491155383,False
+e_w132022308-380,ep_oil_combined_cycle_G100000413008,90.0,oil,Bursa Korteks power station_CC -- operating,e_w132022308-380,way/132022308-380,40.2705,29.0739,False
+e_w132128807-380,ep_windon_wind_380,255.0,windon,Aggregated Plant -- operating,e_w132128807-380,way/132128807-380,40.56972407733262,30.33580826114523,False
+e_w132139320-380,ep_gas_combined_cycle_G100000405870,820.0,gas,Enka Adapazarı power station_1 -- operating,e_w132139320-380,way/132139320-380,40.866,30.3873,False
+e_w132139320-380,ep_gas_combined_cycle_G100000405871,800.0,gas,Enka Gebze power station_1 -- operating,e_w132139320-380,way/132139320-380,40.867057,30.38757,False
+e_w132139320-380,ep_gas_combined_cycle_G100000405872,800.0,gas,Enka Gebze power station_2 -- operating,e_w132139320-380,way/132139320-380,40.867057,30.38757,False
+e_w132139320-380,ep_gas_w132139320-380__ember,59.884159202049254,gas,Aggregated Plant -- operating,e_w132139320-380,way/132139320-380,40.70786815359268,30.525036587579752,False
+e_w139418679-380,ep_gas_gas_turbine_G100000405892,140.0,gas,Manisa OSB cogeneration power station_1 -- operating,e_w139418679-380,way/139418679-380,38.616891,27.344618,False
+e_w139418679-380,ep_geothermal_w139418679-380,69.0,geothermal,Aggregated Plant -- operating,e_w139418679-380,way/139418679-380,38.786462574028796,27.401412188746168,False
+e_w139418679-380,ep_hydro_dam_G100001051817,69.0,hydro,Demirköprü hydroelectric plant_ -- operating,e_w139418679-380,way/139418679-380,38.6029,28.2906,False
+e_w139418679-380,ep_hydro_w139418679-380__irena,15.92928350565272,hydro,Aggregated Plant -- operating,e_w139418679-380,way/139418679-380,38.43465773367464,27.32958199856516,False
+e_w149996303-380,ep_coal_subcritical_G100000108943,150.0,coal,Seyitömer power station_Unit 1 -- operating,e_w149996303-380,way/149996303-380,39.572967,29.88164,False
+e_w149996303-380,ep_coal_subcritical_G100000108944,150.0,coal,Seyitömer power station_Unit 2 -- operating,e_w149996303-380,way/149996303-380,39.572967,29.88164,False
+e_w149996303-380,ep_coal_subcritical_G100000108945,150.0,coal,Seyitömer power station_Unit 3 -- operating,e_w149996303-380,way/149996303-380,39.572967,29.88164,False
+e_w149996303-380,ep_coal_subcritical_G100000108946,150.0,coal,Seyitömer power station_Unit 4 -- operating,e_w149996303-380,way/149996303-380,39.572967,29.88164,False
+e_w149996303-380,ep_gas_combined_cycle_w149996303-380,39.0,gas,Aggregated Plant -- operating,e_w149996303-380,way/149996303-380,39.754349359280006,29.88684214880084,False
+e_w149996303-380,ep_windon_wind_380,90.0,windon,Aggregated Plant -- operating,e_w149996303-380,way/149996303-380,39.39855303773275,29.924114202177314,False
+e_w169679398-380,ep_windon_wind_380,279.0,windon,Aggregated Plant -- operating,e_w169679398-380,way/169679398-380,41.01672054370461,35.80472675148932,False
+e_w170655124-380,ep_coal_subcritical_G100000105539,150.0,coal,Kangal power station_Unit 1 -- operating,e_w170655124-380,way/170655124-380,39.077483,37.294973,False
+e_w170655124-380,ep_coal_subcritical_G100000105540,150.0,coal,Kangal power station_Unit 2 -- operating,e_w170655124-380,way/170655124-380,39.077483,37.294973,False
+e_w170655124-380,ep_coal_subcritical_G100000105541,157.0,coal,Kangal power station_Unit 3 -- operating,e_w170655124-380,way/170655124-380,39.077483,37.294973,False
+e_w171263413-380,ep_hydro_dam_G100000603667,208.0,hydro,Kandil hydroelectric plant_ -- operating,e_w171263413-380,way/171263413-380,37.9754,37.0225,False
+e_w171263413-380,ep_hydro_dam_G100000603700,100.0,hydro,Sarıgüzel hydroelectric plant_ -- operating,e_w171263413-380,way/171263413-380,37.9336,36.9705,False
+e_w171263413-380,ep_hydro_w171263413-380__irena,71.10462782233387,hydro,Aggregated Plant - IRENA Gap - way/171263413-380_Missing Hydro Capacity -- operating,e_w171263413-380,way/171263413-380,38.11104244969904,36.53361241582439,False
+e_w172277775-380,ep_gas_combined_cycle_G100000410027,136.0,gas,Taha power station_1 -- operating,e_w172277775-380,way/172277775-380,37.311882,40.733017,False
+e_w172934497-380,ep_coal_subcritical_w172934497-380,37.0,coal,Aggregated Plant -- operating,e_w172934497-380,way/172934497-380,37.96987221779507,32.78701651849547,False
+e_w173348127-380,ep_gas_combined_cycle_G100000405902,478.0,gas,Tekirdağ power station_A -- operating,e_w173348127-380,way/173348127-380,41.0072,27.9736,False
+e_w173348127-380,ep_gas_combined_cycle_G100000410026,478.0,gas,Tekirdağ power station_B -- operating,e_w173348127-380,way/173348127-380,41.0072,27.9736,False
+e_w173348127-380,ep_gas_w173348127-380__ember,23.656717436842598,gas,Aggregated Plant -- operating,e_w173348127-380,way/173348127-380,41.183919697082686,28.01340350661736,False
+e_w173348127-380,ep_windon_wind_380,48.0,windon,Aggregated Plant -- operating,e_w173348127-380,way/173348127-380,40.829033205392456,27.955707927051254,False
+e_w175096848-380,ep_coal_subcritical_G100000104822,135.0,coal,İÇDAŞ Biga power station_Unit 1 -- operating,e_w175096848-380,way/175096848-380,40.4438,27.13067,False
+e_w175096848-380,ep_coal_subcritical_G100000104823,135.0,coal,İÇDAŞ Biga power station_Unit 2 -- operating,e_w175096848-380,way/175096848-380,40.4438,27.13067,False
+e_w175096848-380,ep_coal_subcritical_G100000104824,135.0,coal,İÇDAŞ Biga power station_Unit 3 -- operating,e_w175096848-380,way/175096848-380,40.4438,27.13067,False
+e_w176009144-380,ep_gas_combined_cycle_G100000405853,770.0,gas,Baymina Ankara power station_1 -- operating,e_w176009144-380,way/176009144-380,39.7773,32.4022,False
+e_w176009144-380,ep_gas_w176009144-380__ember,19.05405065519749,gas,Aggregated Plant -- operating,e_w176009144-380,way/176009144-380,39.65470044526838,32.27340733008038,False
+e_w176230414-380,ep_coal_subcritical_G100000100097,100.0,coal,Aksa Akrilik power station_-- -- operating,e_w176230414-380,way/176230414-380,40.68927,29.40495,False
+e_w176230414-380,ep_coal_subcritical_G100000102972,190.0,coal,Gebze Çolakoğlu power station_Unit 1 -- operating,e_w176230414-380,way/176230414-380,40.77758,29.538564,False
+e_w176230414-380,ep_gas_combined_cycle_w176230414-380,45.0,gas,Aggregated Plant -- operating,e_w176230414-380,way/176230414-380,40.79206922404373,29.888475386343767,False
+e_w176230414-380,ep_gas_gas_turbine_G100001017792,123.0,gas,Çolakoğlu-1 power station_GT1 -- operating,e_w176230414-380,way/176230414-380,40.77743,29.53205,False
+e_w176230414-380,ep_windon_wind_380,15.6,windon,Aggregated Plant -- operating,e_w176230414-380,way/176230414-380,40.43592588616476,29.631400651395268,False
+e_w176441305-380,ep_hydro_dam_G100000603657,278.0,hydro,Gokcekaya hydroelectric plant_ -- operating,e_w176441305-380,way/176441305-380,40.0334,31.0183,False
+e_w176441305-380,ep_hydro_w176441305-380__irena,387.3817061229748,hydro,Aggregated Plant - IRENA Gap - way/176441305-380_Missing Hydro Capacity -- operating,e_w176441305-380,way/176441305-380,39.946444048760455,31.19383409443621,False
+e_w176441327-380,ep_coal_subcritical_G100000110360,150.0,coal,Tunçbilek power station_Unit 4 -- operating,e_w176441327-380,way/176441327-380,39.6291973,29.4623364,False
+e_w176441327-380,ep_coal_subcritical_G100000110361,150.0,coal,Tunçbilek power station_Unit 5 -- operating,e_w176441327-380,way/176441327-380,39.6291973,29.4623364,False
+e_w176441327-380,ep_m_coal_subcritical_G100000110359,65.0,coal,Tunçbilek power station_Unit 3 -- mothballed,e_w176441327-380,way/176441327-380,39.6291973,29.4623364,False
+e_w176441327-380,ep_windon_wind_380,120.4,windon,Aggregated Plant -- operating,e_w176441327-380,way/176441327-380,39.885985064227334,29.542795373743324,False
+e_w176441329-380,ep_coal_CFB_w176441329-380,51.0,coal,Aggregated Plant -- operating,e_w176441329-380,way/176441329-380,39.79842783019111,29.45357720496724,False
+e_w176441329-380,ep_windon_wind_380,50.0,windon,Aggregated Plant -- operating,e_w176441329-380,way/176441329-380,39.4383645889425,29.438946748370025,False
+e_w176801181-380,ep_gas_combined_cycle_G100000405865,125.0,gas,Cigli Ataer power station_1 -- operating,e_w176801181-380,way/176801181-380,38.476301,27.028606,False
+e_w176801181-380,ep_gas_internal_combustion_w176801181-380,40.0,gas,Aggregated Plant -- operating,e_w176801181-380,way/176801181-380,38.53017006308519,27.11705582448268,False
+e_w176801181-380,ep_geothermal_w176801181-380,12.0,geothermal,Aggregated Plant -- operating,e_w176801181-380,way/176801181-380,38.17363762140033,27.068914067713155,False
+e_w177818606-380,ep_windon_wind_380,130.0,windon,Aggregated Plant -- operating,e_w177818606-380,way/177818606-380,36.872155258205595,36.29420682033386,False
+e_w180431765-380,ep_coal_subcritical_w180431765-380,46.7,coal,Aggregated Plant -- operating,e_w180431765-380,way/180431765-380,40.24592978119003,28.12277558041643,False
+e_w180431765-380,ep_gas_combined_cycle_G100000405851,936.2,gas,Bandırma power station_1 -- operating,e_w180431765-380,way/180431765-380,40.30835,27.76863,False
+e_w180431765-380,ep_gas_combined_cycle_G100000405852,607.2,gas,Bandırma power station_2 -- operating,e_w180431765-380,way/180431765-380,40.30835,27.76863,False
+e_w180431765-380,ep_gas_w180431765-380__ember,38.19223607952183,gas,Aggregated Plant -- operating,e_w180431765-380,way/180431765-380,39.942472394654644,27.789594277745827,False
+e_w180431765-380,ep_windon_wind_380,310.0,windon,Aggregated Plant -- operating,e_w180431765-380,way/180431765-380,40.35827489705324,27.410864819298993,False
+e_w180552569-380,ep_coal_subcritical_w180552569-380,40.0,coal,Aggregated Plant -- operating,e_w180552569-380,way/180552569-380,39.82374824563955,28.05724065969315,False
+e_w180552569-380,ep_gas_internal_combustion_w180552569-380,72.2,gas,Aggregated Plant -- operating,e_w180552569-380,way/180552569-380,39.467361758412785,28.02114195822892,False
+e_w184424032-380,ep_hydro_dam_G100000603659,122.0,hydro,Göktaş I hydroelectric plant_ -- operating,e_w184424032-380,way/184424032-380,37.7256,35.4734,False
+e_w184424032-380,ep_hydro_dam_G100000603660,153.0,hydro,Göktaş II hydroelectric plant_ -- operating,e_w184424032-380,way/184424032-380,37.6231,35.5779,False
+e_w184424032-380,ep_hydro_dam_G100000603674,191.0,hydro,Kavşak Bendi hydroelectric plant_ -- operating,e_w184424032-380,way/184424032-380,37.5628,35.5282,False
+e_w184424032-380,ep_hydro_dam_G100000603681,156.0,hydro,Köprü hydroelectric plant_ -- operating,e_w184424032-380,way/184424032-380,37.6203,35.6116,False
+e_w184424032-380,ep_hydro_dam_G100000603688,89.0,hydro,Menge hydroelectric plant_ -- operating,e_w184424032-380,way/184424032-380,37.7044,35.7223,False
+e_w184424032-380,ep_hydro_ror_G100001051796,70.0,hydro,Feke II hydroelectric plant_ -- operating,e_w184424032-380,way/184424032-380,37.7441,35.8646,False
+e_w184424032-380,ep_hydro_w184424032-380__irena,180.30102054948946,hydro,Aggregated Plant - IRENA Gap - way/184424032-380_Missing Hydro Capacity -- operating,e_w184424032-380,way/184424032-380,37.643244584017665,35.661653398859855,False
+e_w184450507-380,ep_gas_combined_cycle_G100000405841,131.0,gas,Adana power station_1 -- operating,e_w184450507-380,way/184450507-380,36.988153,35.204129,False
+e_w184450507-380,ep_hydro_dam_G100000603641,169.0,hydro,Catalan hydroelectric plant_ -- operating,e_w184450507-380,way/184450507-380,37.1983,35.2825,False
+e_w184450507-380,ep_hydro_dam_G100001051820,60.0,hydro,Seyhan 1 hydroelectric plant_ -- operating,e_w184450507-380,way/184450507-380,37.0338,35.3449,False
+e_w184450507-380,ep_hydro_w184450507-380__irena,52.86675250426772,hydro,Aggregated Plant -- operating,e_w184450507-380,way/184450507-380,37.4609488384305,35.44749206860207,False
+e_w184960108-380,ep_gas_combined_cycle_G100000410034,191.1,gas,Karadeniz Ereğli Zonguldak power station_1 -- operating,e_w184960108-380,way/184960108-380,41.261469,31.420106,False
+e_w189248643-380,ep_hydro_dam_G100000603614,104.0,hydro,Akkoy I hydroelectric plant_ -- operating,e_w189248643-380,way/189248643-380,40.655,39.1427,False
+e_w189248643-380,ep_hydro_dam_G100000603615,104.0,hydro,Akköy I hydroelectric plant_ -- operating,e_w189248643-380,way/189248643-380,40.6825,39.1251,False
+e_w189248643-380,ep_hydro_dam_G100000603616,234.0,hydro,Akkoy II hydroelectric plant_ -- operating,e_w189248643-380,way/189248643-380,40.7379,38.9909,False
+e_w189248643-380,ep_hydro_dam_G100000603686,84.0,hydro,Kürtün hydroelectric plant_ -- operating,e_w189248643-380,way/189248643-380,40.6826,39.125,False
+e_w189248643-380,ep_hydro_dam_G100000603704,106.0,hydro,Torul hydroelectric plant_ -- operating,e_w189248643-380,way/189248643-380,40.6352,39.2311,False
+e_w189248643-380,ep_hydro_dam_G100001051765,75.0,hydro,Doğankent hydroelectric plant_ -- operating,e_w189248643-380,way/189248643-380,40.8039,38.9154,False
+e_w189248643-380,ep_hydro_dam_w189248643-380,49.0,hydro,Aggregated Plant -- operating,e_w189248643-380,way/189248643-380,41.18599910396739,38.86891078780111,False
+e_w189248643-380,ep_hydro_ror_G100000603627,120.0,hydro,Aslancik hydroelectric plant_ -- operating,e_w189248643-380,way/189248643-380,40.9101,38.8468,False
+e_w189248643-380,ep_hydro_ror_G100001051756,69.0,hydro,Büyükdüz hydroelectric plant_ -- operating,e_w189248643-380,way/189248643-380,40.6336,39.1122,False
+e_w189248643-380,ep_hydro_ror_G100001051805,62.0,hydro,Dereli hydroelectric plant_ -- operating,e_w189248643-380,way/189248643-380,40.6868,38.4388,False
+e_w189248643-380,ep_hydro_w189248643-380__irena,232.47519551003316,hydro,Aggregated Plant - IRENA Gap - way/189248643-380_Missing Hydro Capacity -- operating,e_w189248643-380,way/189248643-380,40.82567488381959,38.87398656134045,False
+e_w190555262-380,ep_gas_combined_cycle_G100000412986,65.0,gas,Mersin power station_CC -- operating,e_w190555262-380,way/190555262-380,36.8681,34.7549,False
+e_w190555262-380,ep_gas_gas_turbine_G100000405894,125.0,gas,Mersin Camis power station_1 -- operating,e_w190555262-380,way/190555262-380,36.814451,34.734962,False
+e_w190555262-380,ep_gas_gas_turbine_G100000405895,125.0,gas,Mersin Camis power station_2 -- operating,e_w190555262-380,way/190555262-380,36.814451,34.734962,False
+e_w191530942-380,ep_hydro_dam_G100000603669,100.0,hydro,Karakurt hydroelectric plant_ -- operating,e_w191530942-380,way/191530942-380,40.144,42.6967,False
+e_w191530942-380,ep_hydro_w191530942-380__irena,23.085918124134373,hydro,Aggregated Plant -- operating,e_w191530942-380,way/191530942-380,39.643054259081836,43.334253077877854,False
+e_w191530942-380,ep_windon_wind_380,24.0,windon,Aggregated Plant -- operating,e_w191530942-380,way/191530942-380,39.375657093581175,42.978469919099204,False
+e_w191731811-380,ep_m_gas_combined_cycle_G100000410362,110.0,gas,Gaziantip Industrial power station_GT1 -- mothballed,e_w191731811-380,way/191731811-380,36.9957,37.3841,False
+e_w194508537-380,ep_windon_wind_380,28.0,windon,Aggregated Plant -- operating,e_w194508537-380,way/194508537-380,38.27783661330268,39.49168421168777,False
+e_w194678745-380,ep_hydro_dam_G100000603678,138.0,hydro,Kigi hydroelectric plant_ -- operating,e_w194678745-380,way/194678745-380,39.3683,40.3519,False
+e_w194678745-380,ep_hydro_dam_G100000603693,170.0,hydro,Ozluce hydroelectric plant_ -- operating,e_w194678745-380,way/194678745-380,39.1297,40.0878,False
+e_w194678745-380,ep_hydro_w194678745-380__irena,90.7276582278481,hydro,Aggregated Plant - IRENA Gap - way/194678745-380_Missing Hydro Capacity -- operating,e_w194678745-380,way/194678745-380,39.08870829563571,40.02427412808042,False
+e_w213128259-380,ep_hydro_ror_G100001051821,69.0,hydro,Suat Uğurlu hydroelectric plant_ -- operating,e_w213128259-380,way/213128259-380,41.0776,36.6758,False
+e_w213128259-380,ep_hydro_w213128259-380__irena,15.92928350565272,hydro,Aggregated Plant -- operating,e_w213128259-380,way/213128259-380,40.94212117956755,36.53065338971583,False
+e_w216496632-380,ep_coal_supercritical_G100000104820,600.0,coal,İÇDAŞ Bekirli power station_Unit 1 -- operating,e_w216496632-380,way/216496632-380,40.39953,27.04973,False
+e_w216496632-380,ep_coal_supercritical_G100000104821,600.0,coal,İÇDAŞ Bekirli power station_Unit 2 -- operating,e_w216496632-380,way/216496632-380,40.39953,27.04973,False
+e_w233873984-380,ep_hydro_dam_G100000603676,1330.0,hydro,Keban hydroelectric plant_ -- operating,e_w233873984-380,way/233873984-380,38.8055,38.7591,False
+e_w233873984-380,ep_hydro_w233873984-380__irena,307.0427110509872,hydro,Aggregated Plant - IRENA Gap - way/233873984-380_Missing Hydro Capacity -- operating,e_w233873984-380,way/233873984-380,38.71019782309733,38.85889722267343,False
+e_w277026561-380,ep_hydro_dam_G100000603639,513.0,hydro,Boyabat Kepez hydroelectric plant_ -- operating,e_w277026561-380,way/277026561-380,41.3396,35.0016,False
+e_w277026561-380,ep_hydro_dam_G100000603672,102.0,hydro,Kargi Statkraft hydroelectric plant_ -- operating,e_w277026561-380,way/277026561-380,41.1064,34.659,False
+e_w277026561-380,ep_hydro_dam_G100000603691,211.0,hydro,Obruk hydroelectric plant_ -- operating,e_w277026561-380,way/277026561-380,40.7702,34.7913,False
+e_w277026561-380,ep_hydro_w277026561-380__irena,190.68968370534995,hydro,Aggregated Plant - IRENA Gap - way/277026561-380_Missing Hydro Capacity -- operating,e_w277026561-380,way/277026561-380,41.613065894833454,35.01450105002977,False
+e_w277026561-380,ep_windon_wind_380,1.2,windon,Aggregated Plant -- operating,e_w277026561-380,way/277026561-380,41.22123507560519,35.23674491583184,False
+e_w277884805-380,ep_hydro_dam_G100000603655,302.0,hydro,Ermenek hydroelectric plant_ -- operating,e_w277884805-380,way/277884805-380,36.5681,32.968,False
+e_w277884805-380,ep_hydro_dam_G100000603656,159.0,hydro,Gezende hydroelectric plant_ -- operating,e_w277884805-380,way/277884805-380,36.5285,33.1943,False
+e_w277884805-380,ep_hydro_dam_w277884805-380,49.0,hydro,Aggregated Plant -- operating,e_w277884805-380,way/277884805-380,36.9349174995944,33.01004534000821,False
+e_w277884805-380,ep_hydro_w277884805-380__irena,117.73818243308531,hydro,Aggregated Plant - IRENA Gap - way/277884805-380_Missing Hydro Capacity -- operating,e_w277884805-380,way/277884805-380,36.68193733680566,33.40132043374185,False
+e_w346404079-380,ep_gas_combined_cycle_w346404079-380,40.0,gas,Aggregated Plant -- operating,e_w346404079-380,way/346404079-380,39.924302204333465,30.77794573794732,False
+e_w346404079-380,ep_gas_steam_turbine_w346404079-380,20.0,gas,Aggregated Plant -- operating,e_w346404079-380,way/346404079-380,39.46898749011083,30.51300208955157,False
+e_w346404079-380,ep_windon_wind_380,120.0,windon,Aggregated Plant -- operating,e_w346404079-380,way/346404079-380,39.770293325087046,30.07604008840137,False
+e_w371966805-380,ep_coal_CFB_G100000109467,135.0,coal,Şırnak Silopi (CİNER) power station_Unit 1 -- operating,e_w371966805-380,way/371966805-380,37.310025,42.594696,False
+e_w371966805-380,ep_coal_CFB_G100000109468,135.0,coal,Şırnak Silopi (CİNER) power station_Unit 2 -- operating,e_w371966805-380,way/371966805-380,37.310025,42.594696,False
+e_w371966805-380,ep_coal_CFB_G100000109469,135.0,coal,Şırnak Silopi (CİNER) power station_Unit 3 -- operating,e_w371966805-380,way/371966805-380,37.310025,42.594696,False
+e_w371966805-380,ep_hydro_w371966805-380__irena,64.64057074757625,hydro,Aggregated Plant - IRENA Gap - way/371966805-380_Missing Hydro Capacity -- operating,e_w371966805-380,way/371966805-380,37.22509439196256,42.72684725215945,False
+e_w371966805-380,ep_oil_internal_combustion_G100000412981,182.0,oil,Silopi power station_CC -- operating,e_w371966805-380,way/371966805-380,37.24155,42.4149,False
+e_w426785758-380,ep_hydro_dam_G100000603665,1209.0,hydro,Ilisu hydroelectric plant_ -- operating,e_w426785758-380,way/426785758-380,37.5328,41.8434,False
+e_w426785758-380,ep_hydro_w426785758-380__irena,279.10875012078463,hydro,Aggregated Plant - IRENA Gap - way/426785758-380_Missing Hydro Capacity -- operating,e_w426785758-380,way/426785758-380,37.80048208629022,41.8319118860337,False
+e_w466610916-380,ep_hydro_dam_G100000603623,703.0,hydro,Altinkaya hydroelectric plant_ -- operating,e_w466610916-380,way/466610916-380,41.3668,35.7245,False
+e_w466610916-380,ep_hydro_dam_w466610916-380,56.0,hydro,Aggregated Plant -- operating,e_w466610916-380,way/466610916-380,41.53861585824881,35.7739826855409,False
+e_w466610916-380,ep_hydro_w466610916-380__irena,175.2221185621799,hydro,Aggregated Plant - IRENA Gap - way/466610916-380_Missing Hydro Capacity -- operating,e_w466610916-380,way/466610916-380,41.18801677442622,35.69100422696821,False
+e_w47982509-380,ep_gas_combined_cycle_w47982509-380,36.5,gas,Aggregated Plant -- operating,e_w47982509-380,way/47982509-380,39.8571048451059,32.69356463613939,False
+e_w609169810-380,ep_gas_combined_cycle_G100000405883,853.0,gas,İç Anadolu power station_1 -- operating,e_w609169810-380,way/609169810-380,39.7575,33.448,False
+e_w609169810-380,ep_gas_w609169810-380__ember,21.10792884270579,gas,Aggregated Plant -- operating,e_w609169810-380,way/609169810-380,40.0241927482405,33.49291522582414,False
+e_w609169810-380,ep_hydro_dam_G100000603664,128.0,hydro,Hirfanli hydroelectric plant_ -- operating,e_w609169810-380,way/609169810-380,39.2731,33.5184,False
+e_w609169810-380,ep_hydro_dam_w609169810-380,54.0,hydro,Aggregated Plant -- operating,e_w609169810-380,way/609169810-380,39.660386000543504,33.70038529100926,False
+e_w609169810-380,ep_hydro_ror_G100000603677,76.0,hydro,Kesikköprü hydroelectric plant_ -- operating,e_w609169810-380,way/609169810-380,39.3968,33.4204,False
+e_w609169810-380,ep_hydro_w609169810-380__irena,59.56166876026669,hydro,Aggregated Plant -- operating,e_w609169810-380,way/609169810-380,39.686828515427045,33.18739274483662,False
+e_w621764967-380,ep_hydro_dam_G100000603684,81.0,hydro,Kozbükü hydroelectric plant_ -- operating,e_w621764967-380,way/621764967-380,40.7954,37.868,False
+e_w621764967-380,ep_hydro_dam_G100001051822,61.0,hydro,Topçam hydroelectric plant_ -- operating,e_w621764967-380,way/621764967-380,40.6546,37.7954,False
+e_w621764967-380,ep_hydro_w621764967-380__irena,32.78200373627081,hydro,Aggregated Plant -- operating,e_w621764967-380,way/621764967-380,41.001071315793645,37.89682338286676,False
+e_w624118216-380,ep_hydro_dam_G100000603708,627.0,hydro,Yukari Kalekoy hydroelectric plant_ -- operating,e_w624118216-380,way/624118216-380,38.8229,41.0283,False
+e_w624118216-380,ep_hydro_w624118216-380__irena,144.74870663832255,hydro,Aggregated Plant - IRENA Gap - way/624118216-380_Missing Hydro Capacity -- operating,e_w624118216-380,way/624118216-380,38.99808398101456,41.07185790589879,False
+e_w624118216-380,ep_windon_wind_380,49.7,windon,Aggregated Plant -- operating,e_w624118216-380,way/624118216-380,38.64391901112371,41.04721690435547,False
+e_w667027865-380,ep_gas_combined_cycle_G100000405896,445.0,gas,Bilgin Samsun gas power station_1 -- operating,e_w667027865-380,way/667027865-380,41.14543,37.15637,False
+e_w667027865-380,ep_gas_combined_cycle_G100000405897,445.0,gas,Bilgin Samsun gas power station_2 -- operating,e_w667027865-380,way/667027865-380,41.14543,37.15637,False
+e_w667027865-380,ep_gas_w667027865-380__ember,22.02351309496853,gas,Aggregated Plant -- operating,e_w667027865-380,way/667027865-380,41.316002117048804,37.207919776675936,False
+e_w667027865-380,ep_windon_wind_380,40.0,windon,Aggregated Plant -- operating,e_w667027865-380,way/667027865-380,40.96818772808133,37.11409994980378,False
+e_w687802661-380,ep_hydro_dam_G100000603631,140.0,hydro,Bağıştaş I hydroelectric plant_ -- operating,e_w687802661-380,way/687802661-380,39.4497,38.5216,False
+e_w687802661-380,ep_hydro_ror_w687802661-380,50.0,hydro,Aggregated Plant -- operating,e_w687802661-380,way/687802661-380,39.81319602508697,38.50335866178847,False
+e_w687802661-380,ep_hydro_w687802661-380__irena,43.86324443585531,hydro,Aggregated Plant -- operating,e_w687802661-380,way/687802661-380,39.4555749632027,38.85160303778389,False
+e_w693406206-380,ep_hydro_ror_w693406206-380,48.0,hydro,Aggregated Plant -- operating,e_w693406206-380,way/693406206-380,38.15232653623682,41.93975953556316,False
+e_w693406206-380,ep_hydro_w693406206-380__irena,49.86558314813025,hydro,Aggregated Plant -- operating,e_w693406206-380,way/693406206-380,37.793300432561104,41.9696349898997,False
+e_w709224922-380,ep_windon_wind_380,4.8,windon,Aggregated Plant -- operating,e_w709224922-380,way/709224922-380,38.33671131269863,42.211854948784286,False
+e_w781587366-380,ep_hydro_dam_G100000603635,582.0,hydro,Beyhan 1 hydroelectric plant_ -- operating,e_w781587366-380,way/781587366-380,38.7458,40.2061,False
+e_w781587366-380,ep_hydro_w781587366-380__irena,243.3255770283763,hydro,Aggregated Plant - IRENA Gap - way/781587366-380_Missing Hydro Capacity -- operating,e_w781587366-380,way/781587366-380,38.671003206595415,40.11548264682942,False
+e_w782681464-380,ep_coal_subcritical_G100000101181,160.0,coal,Çan (18 Mart) power station_Unit 1 -- operating,e_w782681464-380,way/782681464-380,40.02324,26.976837,False
+e_w782681464-380,ep_coal_subcritical_G100000101182,160.0,coal,Çan (18 Mart) power station_Unit 2 -- operating,e_w782681464-380,way/782681464-380,40.02324,26.976837,False
+e_w782681464-380,ep_coal_subcritical_G100000101183,330.0,coal,Çan-2 power station_-- -- operating,e_w782681464-380,way/782681464-380,40.034352,26.950574,False
+e_w782681464-380,ep_geothermal_w782681464-380,30.7,geothermal,Aggregated Plant -- operating,e_w782681464-380,way/782681464-380,39.95747561046188,27.301926137062058,False
+e_w783006365-380,ep_hydro_dam_G100000603624,245.0,hydro,Arkun hydroelectric plant_ -- operating,e_w783006365-380,way/783006365-380,40.7185,41.4158,False
+e_w783006365-380,ep_hydro_w783006365-380__irena,98.1151520275711,hydro,Aggregated Plant - IRENA Gap - way/783006365-380_Missing Hydro Capacity -- operating,e_w783006365-380,way/783006365-380,40.5418102820713,41.561517703716966,False
+e_w783028600-380,ep_coal_subcritical_G100000101238,157.0,coal,Çatalağzı power station_Unit B-1 -- operating,e_w783028600-380,way/783028600-380,41.517402,31.900198,False
+e_w783028600-380,ep_coal_subcritical_G100000101239,157.0,coal,Çatalağzı power station_Unit B-2 -- operating,e_w783028600-380,way/783028600-380,41.517402,31.900198,False
+e_w783028600-380,ep_coal_subcritical_G100000105557,77.5,coal,Kardemir Karabük Demir Çelik power station_-- -- operating,e_w783028600-380,way/783028600-380,41.514274,31.909608,False
+e_w783716197-380,ep_hydro_dam_G100000603626,500.0,hydro,Asagi Kalekoy hydroelectric plant_ -- operating,e_w783716197-380,way/783716197-380,38.8303,40.7066,False
+e_w783716197-380,ep_hydro_w783716197-380__irena,115.42959062067186,hydro,Aggregated Plant - IRENA Gap - way/783716197-380_Missing Hydro Capacity -- operating,e_w783716197-380,way/783716197-380,38.838266783016024,40.80962102888356,False
+e_w785705110-380,ep_gas_combined_cycle_G100000405875,904.0,gas,Erzin power station_1 -- operating,e_w785705110-380,way/785705110-380,36.9271,36.0534,False
+e_w785705110-380,ep_gas_w785705110-380__ember,22.36995037960848,gas,Aggregated Plant -- operating,e_w785705110-380,way/785705110-380,36.77372733346301,35.9114531619822,False
+e_w787680631-380,ep_hydro_ror_G100000603617,81.0,hydro,Akocak hydroelectric plant_ -- operating,e_w787680631-380,way/787680631-380,40.6108,39.9141,False
+e_w787680631-380,ep_hydro_w787680631-380__irena,18.699593680548844,hydro,Aggregated Plant -- operating,e_w787680631-380,way/787680631-380,40.35214426787597,39.507163792292296,False
+e_w787686599-380,ep_hydro_dam_G100000603661,96.0,hydro,Güllübağ hydroelectric plant_ -- operating,e_w787686599-380,way/787686599-380,40.5218,41.0216,False
+e_w787686599-380,ep_hydro_w787686599-380__irena,22.162481399168996,hydro,Aggregated Plant -- operating,e_w787686599-380,way/787686599-380,40.415882171956206,40.867220289392066,False
+e_w788280038-380,ep_hydro_dam_G100000603643,420.0,hydro,Cetin Main hydroelectric plant_ -- operating,e_w788280038-380,way/788280038-380,37.9744,42.377,False
+e_w788280038-380,ep_hydro_w788280038-380__irena,218.1619262730698,hydro,Aggregated Plant - IRENA Gap - way/788280038-380_Missing Hydro Capacity -- operating,e_w788280038-380,way/788280038-380,37.98623051557598,42.318907778358835,False
+e_w810318487-380,ep_hydro_dam_G100000603630,130.0,hydro,Ayvali hydroelectric plant_ -- operating,e_w810318487-380,way/810318487-380,37.5771,37.137,False
+e_w810318487-380,ep_hydro_dam_G100000603689,124.0,hydro,Menzelet hydroelectric plant_ -- operating,e_w810318487-380,way/810318487-380,37.6741,36.8491,False
+e_w810318487-380,ep_hydro_dam_w810318487-380,54.0,hydro,Aggregated Plant -- operating,e_w810318487-380,way/810318487-380,37.72808722291146,37.0730853659404,False
+e_w810318487-380,ep_hydro_ror_G100000603662,142.0,hydro,Hacınınoğlu hydroelectric plant_ -- operating,e_w810318487-380,way/810318487-380,37.8297,36.9708,False
+e_w810318487-380,ep_hydro_w810318487-380__irena,103.88663155860468,hydro,Aggregated Plant - IRENA Gap - way/810318487-380_Missing Hydro Capacity -- operating,e_w810318487-380,way/810318487-380,37.30842135688834,37.241321224029456,False
+e_w810318487-380,ep_windon_wind_380,308.00000000000006,windon,Aggregated Plant -- operating,e_w810318487-380,way/810318487-380,37.29145185320344,36.81098305878378,False
+e_w823254276-380,ep_hydro_dam_G100000603707,104.0,hydro,Yamula hydroelectric plant_ -- operating,e_w823254276-380,way/823254276-380,38.9022,35.2708,False
+e_w823254276-380,ep_hydro_w823254276-380__irena,24.009354849099754,hydro,Aggregated Plant -- operating,e_w823254276-380,way/823254276-380,39.031354949690574,35.616125450341166,False
+e_w823254276-380,ep_oil_internal_combustion_w823254276-380,30.0,oil,Aggregated Plant -- operating,e_w823254276-380,way/823254276-380,38.68415028799187,35.62638504179215,False
+e_w824934495-380,ep_coal_CFB_G100000109494,255.0,coal,Soma Kolin power station_Unit 1 -- operating,e_w824934495-380,way/824934495-380,39.316608,27.748899,False
+e_w824934495-380,ep_coal_CFB_G100000113111,255.0,coal,Soma Kolin power station_Unit 2 -- operating,e_w824934495-380,way/824934495-380,39.316608,27.748899,False
+e_w854994731-380,ep_hydro_dam_G100000604976,540.0,hydro,Yusifeli hydroelectric plant_ -- operating,e_w854994731-380,way/854994731-380,40.8195,41.659,False
+e_w854994731-380,ep_hydro_w854994731-380__irena,124.66395787032562,hydro,Aggregated Plant - IRENA Gap - way/854994731-380_Missing Hydro Capacity -- operating,e_w854994731-380,way/854994731-380,40.573878104340935,41.759978093216,False
+e_w893192811-380,ep_gas_combined_cycle_G100000405876,180.0,gas,Esenyurt power station_1 -- operating,e_w893192811-380,way/893192811-380,41.065154,28.668154,False
+e_w893192811-380,ep_windon_wind_380,101.1,windon,Aggregated Plant -- operating,e_w893192811-380,way/893192811-380,40.945047346962404,28.689402837815905,False
+e_w893192811-380,ep_windon_wind_G100000926495,211.2,windon,Dirkshof Universal wind farm_-- -- operating,e_w893192811-380,way/893192811-380,41.1458,28.4591,False
+e_w902347576-380,ep_m_gas_internal_combustion_G100000405903,115.0,gas,Van CCGE power station_1 -- mothballed,e_w902347576-380,way/902347576-380,38.573745,43.311898,False
+e_w919774836-380,ep_hydro_dam_G100000603621,160.0,hydro,Alpaslan I hydroelectric plant_ -- operating,e_w919774836-380,way/919774836-380,39.0487,41.8179,False
+e_w919774836-380,ep_hydro_dam_G100000603622,280.0,hydro,Alpaslan II hydroelectric plant_ -- operating,e_w919774836-380,way/919774836-380,39.0348,41.5192,False
+e_w919774836-380,ep_hydro_w919774836-380__irena,101.57803974619125,hydro,Aggregated Plant - IRENA Gap - way/919774836-380_Missing Hydro Capacity -- operating,e_w919774836-380,way/919774836-380,39.212030968840615,41.537122589970835,False
+e_w92135333-380,ep_hydro_dam_G100000603637,672.0,hydro,Birecik hydroelectric plant_ -- operating,e_w92135333-380,way/92135333-380,37.0525,37.8889,False
+e_w92135333-380,ep_hydro_dam_G100000603673,189.0,hydro,Karkamis hydroelectric plant_ -- operating,e_w92135333-380,way/92135333-380,36.8697,38.0307,False
+e_w92135333-380,ep_hydro_w92135333-380__irena,198.76975504879695,hydro,Aggregated Plant - IRENA Gap - way/92135333-380_Missing Hydro Capacity -- operating,e_w92135333-380,way/92135333-380,37.397949684575465,37.79473099061855,False
+e_w96580455-380,ep_hydro_dam_G100000603638,301.0,hydro,Borçka hydroelectric plant_ -- operating,e_w96580455-380,way/96580455-380,41.352,41.6876,False
+e_w96580455-380,ep_hydro_dam_G100000603690,115.0,hydro,Muratli Artvin hydroelectric plant_ -- operating,e_w96580455-380,way/96580455-380,41.4674,41.7146,False
+e_w96580455-380,ep_hydro_w96580455-380__irena,96.03741939639902,hydro,Aggregated Plant - IRENA Gap - way/96580455-380_Missing Hydro Capacity -- operating,e_w96580455-380,way/96580455-380,41.31545217465663,41.839968157164215,False
+elc_spv_001,ep_solar_pv_001,150.7,solar,Aggregated Plant -- operating,elc_spv_001,TR119-380,37.87029592107676,27.309653343506795,False
+elc_spv_002,ep_solar_pv_002,87.79999999999998,solar,Aggregated Plant -- operating,elc_spv_002,way/195003676-380,37.801026090056936,27.417372737891885,False
+elc_spv_003,ep_solar_pv_003,101.29999999999998,solar,Aggregated Plant -- operating,elc_spv_003,TR136-380,36.9509802898379,30.64652696705248,False
+elc_spv_004,ep_solar_pv_004,38.6,solar,Aggregated Plant -- operating,elc_spv_004,way/117562840-380,36.801447958681614,30.149903788269818,False
+elc_spv_005,ep_solar_pv_005,61.1,solar,Aggregated Plant -- operating,elc_spv_005,TR87-380,39.15914450956589,30.78196300436879,False
+elc_spv_006,ep_solar_pv_006,286.19999999999993,solar,Aggregated Plant -- operating,elc_spv_006,TR117-380,38.34733897186809,28.492882911390982,False
+elc_spv_007,ep_solar_pv_007,23.5,solar,Aggregated Plant -- operating,elc_spv_007,way/174078394-380,41.25622136293003,32.16961038349208,False
+elc_spv_008,ep_solar_pv_008,100.89999999999999,solar,Aggregated Plant -- operating,elc_spv_008,way/176230414-380,40.88655870035508,29.18365906634284,False
+elc_spv_009,ep_solar_pv_009,55.8,solar,Aggregated Plant -- operating,elc_spv_009,way/176441327-380,39.456657350383296,29.253950602508667,False
+elc_spv_011,ep_solar_pv_011,123.0,solar,Aggregated Plant -- operating,elc_spv_011,way/824934495-380,40.023108338010815,28.17694916064709,False
+elc_spv_012,ep_solar_pv_012,109.39999999999999,solar,Aggregated Plant -- operating,elc_spv_012,way/782681464-380,40.12888034003171,26.602168753644047,False
+elc_spv_013,ep_solar_pv_013,10.0,solar,Aggregated Plant -- operating,elc_spv_013,way/191530942-380,39.799163013092624,42.6312982598127,False
+elc_spv_015,ep_solar_pv_015,115.6,solar,Aggregated Plant -- operating,elc_spv_015,way/426785758-380,37.46662463012907,41.56411563746227,False
+elc_spv_018,ep_solar_pv_018,55.8,solar,Aggregated Plant -- operating,elc_spv_018,way/919774836-380,38.85615870505821,41.483249115965904,False
+elc_spv_019,ep_solar_pv_019,64.4,solar,Aggregated Plant -- operating,elc_spv_019,way/687802661-380,39.470988420204456,38.13133853916608,False
+elc_spv_022,ep_solar_pv_022,63.8,solar,Aggregated Plant -- operating,elc_spv_022,way/232160028-380,41.4984310388365,35.14745183165404,False
+elc_spv_023,ep_solar_pv_023,35.3,solar,Aggregated Plant -- operating,elc_spv_023,way/169679398-380,40.23035557664487,36.03208424905758,False
+elc_spv_024,ep_solar_pv_024,61.599999999999994,solar,Aggregated Plant -- operating,elc_spv_024,way/169679398-380,40.77855614847501,35.33775292927991,False
+elc_spv_025,ep_solar_025__irena,1959.477507401819,solar,Aggregated Plant - IRENA Gap - 25_Missing Solar Capacity -- operating,elc_spv_025,way/172934516-380,37.50203338935794,33.01307950687197,False
+elc_spv_025,ep_solar_pv_025,216.3,solar,Aggregated Plant -- operating,elc_spv_025,way/172934516-380,37.82126911966035,32.611239327569564,False
+elc_spv_026,ep_solar_pv_026,315.8,solar,Aggregated Plant -- operating,elc_spv_026,TR144-380,36.47214920769267,34.5537944349898,False
+elc_spv_026,ep_solar_thermal_026,1.4,solar,Aggregated Plant -- operating,elc_spv_026,TR144-380,36.91204665919085,34.273131039855286,False
+elc_spv_027,ep_solar_pv_027,86.6,solar,Aggregated Plant -- operating,elc_spv_027,TR82-380,39.806227121111256,31.634219719958796,False
+elc_spv_028,ep_solar_pv_028,81.8,solar,Aggregated Plant -- operating,elc_spv_028,way/782468527-380,39.89309690949598,33.7774826850079,False
+elc_spv_029,ep_solar_029__irena,1879.1389336036093,solar,Aggregated Plant - IRENA Gap - 29_Missing Solar Capacity -- operating,elc_spv_029,TR127-380,37.789687237011414,34.320939140097124,False
+elc_spv_029,ep_solar_pv_029,407.6,solar,Aggregated Plant -- operating,elc_spv_029,TR127-380,38.07024779536466,33.99835162884793,False
+elc_spv_029,ep_solar_pv_G100000835306,271.0,solar,Karapınar Yeka solar farm_1 -- operating,elc_spv_029,TR127-380,37.756,33.5599,False
+elc_spv_029,ep_solar_pv_G100001020120,1079.0,solar,Karapınar Yeka solar farm_2 -- operating,elc_spv_029,TR127-380,37.756,33.5599,False
+elc_spv_030,ep_solar_030__irena,2250.923558994573,solar,Aggregated Plant - IRENA Gap - 30_Missing Solar Capacity -- operating,elc_spv_030,way/92135333-380,36.69565504719719,37.953133598178965,False
+elc_spv_030,ep_solar_pv_030,126.3,solar,Aggregated Plant -- operating,elc_spv_030,way/92135333-380,37.12724511111899,37.53822920601338,False
+elc_spv_031,ep_solar_pv_031,35.699999999999996,solar,Aggregated Plant -- operating,elc_spv_031,way/194508537-380,38.11674018240051,38.78924316434111,False
+elc_spv_032,ep_solar_pv_032,218.3,solar,Aggregated Plant -- operating,elc_spv_032,way/172277775-380,37.22229135096652,40.57755268854342,False
+elc_spv_033,ep_solar_pv_033,192.7,solar,Aggregated Plant -- operating,elc_spv_033,TR111-380,38.417765634123676,34.783806225054164,False
+elc_spv_034,ep_solar_pv_034,314.79999999999995,solar,Aggregated Plant -- operating,elc_spv_034,way/184450507-380,37.029698890807374,35.158950979682366,False
+elc_won_001,ep_windon_wind_001,250.49999999999994,windon,Aggregated Plant -- operating,elc_won_001,TR129-380,37.2975198044729,31.81789624327044,False
+elc_won_002,ep_windon_wind_002,315.8,windon,Aggregated Plant -- operating,elc_won_002,TR116-380,37.954264456259146,28.957809082543374,False
+elc_won_004,ep_windon_wind_004,38.4,windon,Aggregated Plant -- operating,elc_won_004,way/130740157-380,38.68317503994328,30.333485252780665,False
+elc_won_005,ep_windon_wind_005,169.7,windon,Aggregated Plant -- operating,elc_won_005,TR110-380,37.83341884145428,36.21141137347696,False
+elc_won_006,ep_windon_wind_006,303.8,windon,Aggregated Plant -- operating,elc_won_006,way/277884805-380,36.524306471163854,32.7000048710804,False
+elc_won_008,ep_windon_wind_008,60.0,windon,Aggregated Plant -- operating,elc_won_008,TR110-380,38.23569129436395,35.91345691986523,False
+elc_won_009,ep_windon_wind_009,167.99999999999997,windon,Aggregated Plant -- operating,elc_won_009,way/273496143-380,39.10520164740047,35.02234897992261,False
+elc_won_013,ep_windon_wind_013,2137.4,windon,Aggregated Plant -- operating,elc_won_013,way/902642770-380,39.157552774088444,27.543592791388253,False
+elc_won_014,ep_windon_wind_014,1914.0,windon,Aggregated Plant -- operating,elc_won_014,way/195003676-380,38.25470453651888,26.736030142516956,False
+elc_won_015,ep_windon_wind_015,566.8,windon,Aggregated Plant -- operating,elc_won_015,way/127968754-380,40.597457333456106,28.566039397425847,False
+elc_won_016,ep_windon_wind_016,1942.3999999999999,windon,Aggregated Plant -- operating,elc_won_016,TR71-380,40.822020736777446,26.579276038632962,False
+elc_won_016,ep_windon_wind_G100000926553,200.0,windon,Istanbul wind farm_1 -- operating,elc_won_016,TR71-380,41.4486,28.2652,False
+elc_won_017,ep_windon_wind_017,422.5,windon,Aggregated Plant -- operating,elc_won_017,TR143-380,36.8578643453389,30.231701255403138,False
+elc_won_018,ep_windon_wind_018,703.5,windon,Aggregated Plant -- operating,elc_won_018,way/117562840-380,36.79152206368869,29.27766667224061,False
+elc_won_020,ep_windon_wind_020,40.1,windon,Aggregated Plant -- operating,elc_won_020,way/277026561-380,41.20289488346892,34.76484031295699,False

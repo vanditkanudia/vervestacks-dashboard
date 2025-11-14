@@ -1,0 +1,98 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,140.0,bioenergy,Aggregated Plant - EMBER Gap_Missing Bioenergy Capacity -- operating,,,,,False
+ELC,ep_hydro__irena,96.2,hydro,Aggregated Plant - IRENA Gap_Missing Hydro Capacity -- operating,,,,,False
+e_BY12-220,ep_gas_BY12-220__ember,50.18285937398322,gas,Aggregated Plant - EMBER Gap - BY12-220_Missing Gas Capacity -- operating,e_BY12-220,BY12-220,53.541822333708275,23.86044424467831,False
+e_BY12-220,ep_gas_gas_turbine_G100000407038,122.0,gas,Grodno CHP-2 power station_4 -- operating,e_BY12-220,BY12-220,53.66726,23.927656,False
+e_BY12-220,ep_gas_steam_turbine_G100000407039,70.0,gas,Grodno CHP-2 power station_2 -- operating,e_BY12-220,BY12-220,53.66726,23.927656,False
+e_BY12-220,ep_gas_steam_turbine_G100000407040,70.0,gas,Grodno CHP-2 power station_1 -- operating,e_BY12-220,BY12-220,53.66726,23.927656,False
+e_BY12-220,ep_gas_steam_turbine_G100000410813,50.0,gas,Grodno CHP-2 power station_3 -- operating,e_BY12-220,BY12-220,53.66726,23.927656,False
+e_w112459307-220,ep_gas_steam_turbine_G100000407010,60.0,gas,Mogilev CHP-2 power station_1 -- operating,e_w112459307-220,way/112459307-220,53.812496,30.341175,False
+e_w112459307-220,ep_gas_steam_turbine_G100000409626,135.0,gas,Mogilev CHP-2 power station_5 -- operating,e_w112459307-220,way/112459307-220,53.812496,30.341175,False
+e_w112459307-220,ep_gas_steam_turbine_G100000409627,50.0,gas,Mogilev CHP-2 power station_4 -- operating,e_w112459307-220,way/112459307-220,53.812496,30.341175,False
+e_w112459307-220,ep_gas_steam_turbine_G100000409629,50.0,gas,Mogilev CHP-2 power station_2 -- operating,e_w112459307-220,way/112459307-220,53.812496,30.341175,False
+e_w112459307-220,ep_gas_w112459307-220__ember,47.448536908093104,gas,Aggregated Plant - EMBER Gap - way/112459307-220_Missing Gas Capacity -- operating,e_w112459307-220,way/112459307-220,53.99256976740311,30.475357734399918,False
+e_w192882077-330,ep_gas_combined_cycle_G100000407003,67.0,gas,Orsha CHP power station_1 -- operating,e_w192882077-330,way/192882077-330,54.480488,30.392643,False
+e_w192882077-330,ep_gas_w192882077-330__ember,10.77644736556691,gas,Aggregated Plant - EMBER Gap - way/192882077-330_Missing Gas Capacity -- operating,e_w192882077-330,way/192882077-330,54.71017986369195,30.016852887405165,False
+e_w230059284-220,ep_gas_steam_turbine_G100000407002,60.0,gas,Svetlogorsk CHP power station_5 -- operating,e_w230059284-220,way/230059284-220,52.627747,29.769968,False
+e_w230059284-220,ep_gas_steam_turbine_G100000409618,50.0,gas,Svetlogorsk CHP power station_6 -- operating,e_w230059284-220,way/230059284-220,52.627747,29.769968,False
+e_w230059284-220,ep_gas_w230059284-220__ember,17.692674779288957,gas,Aggregated Plant - EMBER Gap - way/230059284-220_Missing Gas Capacity -- operating,e_w230059284-220,way/230059284-220,52.637953384579255,29.907948636823907,False
+e_w230273188-330,ep_gas_steam_turbine_G100000407008,135.0,gas,Mozyr CHP power station_2 -- operating,e_w230273188-330,way/230273188-330,51.904409,29.314637,False
+e_w230273188-330,ep_gas_steam_turbine_G100000407009,70.0,gas,Mozyr CHP power station_1 -- operating,e_w230273188-330,way/230273188-330,51.904409,29.314637,False
+e_w230273188-330,ep_gas_w230273188-330__ember,32.972712088674875,gas,Aggregated Plant - EMBER Gap - way/230273188-330_Missing Gas Capacity -- operating,e_w230273188-330,way/230273188-330,51.913269584389894,29.334007258428333,False
+e_w25465034-330,ep_gas_steam_turbine_G100000407019,250.0,gas,Minsk CHP-4 power station_6 -- operating,e_w25465034-330,way/25465034-330,53.871934,27.402339,False
+e_w25465034-330,ep_gas_steam_turbine_G100000407020,250.0,gas,Minsk CHP-4 power station_5 -- operating,e_w25465034-330,way/25465034-330,53.871934,27.402339,False
+e_w25465034-330,ep_gas_steam_turbine_G100000407021,250.0,gas,Minsk CHP-4 power station_4 -- operating,e_w25465034-330,way/25465034-330,53.871934,27.402339,False
+e_w25465034-330,ep_gas_steam_turbine_G100000407022,60.0,gas,Minsk CHP-4 power station_1 -- operating,e_w25465034-330,way/25465034-330,53.871934,27.402339,False
+e_w25465034-330,ep_gas_steam_turbine_G100000409630,110.0,gas,Minsk CHP-4 power station_3 -- operating,e_w25465034-330,way/25465034-330,53.871934,27.402339,False
+e_w25465034-330,ep_gas_steam_turbine_G100000409631,110.0,gas,Minsk CHP-4 power station_2 -- operating,e_w25465034-330,way/25465034-330,53.871934,27.402339,False
+e_w25465034-330,ep_gas_w25465034-330__ember,165.66777293334206,gas,Aggregated Plant - EMBER Gap - way/25465034-330_Missing Gas Capacity -- operating,e_w25465034-330,way/25465034-330,53.78868421073642,27.434467505524402,False
+e_w289290674-330,ep_gas_gas_turbine_G100000407004,51.6,gas,Novopolotsk CHP power station_10 -- operating,e_w289290674-330,way/289290674-330,55.526435,28.549775,False
+e_w289290674-330,ep_gas_gas_turbine_G100000407005,51.6,gas,Novopolotsk CHP power station_9 -- operating,e_w289290674-330,way/289290674-330,55.526435,28.549775,False
+e_w289290674-330,ep_gas_steam_turbine_G100000407006,60.0,gas,Novopolotsk CHP power station_2 -- operating,e_w289290674-330,way/289290674-330,55.526435,28.549775,False
+e_w289290674-330,ep_gas_steam_turbine_G100000407007,60.0,gas,Novopolotsk CHP power station_1 -- operating,e_w289290674-330,way/289290674-330,55.526435,28.549775,False
+e_w289290674-330,ep_gas_steam_turbine_G100000409621,50.0,gas,Novopolotsk CHP power station_6 -- operating,e_w289290674-330,way/289290674-330,55.526435,28.549775,False
+e_w289290674-330,ep_gas_steam_turbine_G100000409622,50.0,gas,Novopolotsk CHP power station_5 -- operating,e_w289290674-330,way/289290674-330,55.526435,28.549775,False
+e_w289290674-330,ep_gas_steam_turbine_G100000409623,50.0,gas,Novopolotsk CHP power station_4 -- operating,e_w289290674-330,way/289290674-330,55.526435,28.549775,False
+e_w289290674-330,ep_gas_w289290674-330__ember,60.02642025118762,gas,Aggregated Plant - EMBER Gap - way/289290674-330_Missing Gas Capacity -- operating,e_w289290674-330,way/289290674-330,55.514593773563995,28.36693663875418,False
+e_w300180022-330,ep_gas_combined_cycle_G100000407041,184.0,gas,Gomel CHP-2 power station_3 -- operating,e_w300180022-330,way/300180022-330,52.449302,30.817934,False
+e_w300180022-330,ep_gas_combined_cycle_G100000407042,180.0,gas,Gomel CHP-2 power station_2 -- operating,e_w300180022-330,way/300180022-330,52.449302,30.817934,False
+e_w300180022-330,ep_gas_combined_cycle_G100000407043,180.0,gas,Gomel CHP-2 power station_1 -- operating,e_w300180022-330,way/300180022-330,52.449302,30.817934,False
+e_w300180022-330,ep_gas_w300180022-330__ember,87.49831890848357,gas,Aggregated Plant - EMBER Gap - way/300180022-330_Missing Gas Capacity -- operating,e_w300180022-330,way/300180022-330,52.3218636301342,30.934976621445198,False
+e_w300347040-330,ep_gas_steam_turbine_G100000407045,60.0,gas,Bobruisk CHP-2 power station_3 -- operating,e_w300347040-330,way/300347040-330,53.189504,29.205753,False
+e_w300347040-330,ep_gas_steam_turbine_G100000407046,60.0,gas,Bobruisk CHP-2 power station_2 -- operating,e_w300347040-330,way/300347040-330,53.189504,29.205753,False
+e_w300347040-330,ep_gas_steam_turbine_G100000407047,60.0,gas,Bobruisk CHP-2 power station_1 -- operating,e_w300347040-330,way/300347040-330,53.189504,29.205753,False
+e_w300347040-330,ep_gas_w300347040-330__ember,28.951649638836475,gas,Aggregated Plant - EMBER Gap - way/300347040-330_Missing Gas Capacity -- operating,e_w300347040-330,way/300347040-330,53.253455894801284,28.982361404983795,False
+e_w303000490-330,ep_gas_combined_cycle_G100000407053,427.0,gas,Berezovskaya (Belarus) power station_CC7 -- operating,e_w303000490-330,way/303000490-330,52.453863,25.193031,False
+e_w303000490-330,ep_gas_combined_cycle_G100000407054,238.0,gas,Berezovskaya (Belarus) power station_CC5 -- operating,e_w303000490-330,way/303000490-330,52.453863,25.193031,False
+e_w303000490-330,ep_gas_combined_cycle_G100000407055,215.0,gas,Berezovskaya (Belarus) power station_CC4 -- operating,e_w303000490-330,way/303000490-330,52.453863,25.193031,False
+e_w303000490-330,ep_gas_combined_cycle_G100000407056,215.0,gas,Berezovskaya (Belarus) power station_CC3 -- operating,e_w303000490-330,way/303000490-330,52.453863,25.193031,False
+e_w303000490-330,ep_gas_gas_turbine_G100000407048,57.0,gas,Berezovskaya (Belarus) power station_GT5 -- operating,e_w303000490-330,way/303000490-330,52.453863,25.193031,False
+e_w303000490-330,ep_gas_gas_turbine_G100000407049,57.0,gas,Berezovskaya (Belarus) power station_GT4 -- operating,e_w303000490-330,way/303000490-330,52.453863,25.193031,False
+e_w303000490-330,ep_gas_gas_turbine_G100000407050,57.0,gas,Berezovskaya (Belarus) power station_GT3 -- operating,e_w303000490-330,way/303000490-330,52.453863,25.193031,False
+e_w303000490-330,ep_gas_gas_turbine_G100000407051,57.0,gas,Berezovskaya (Belarus) power station_GT2 -- operating,e_w303000490-330,way/303000490-330,52.453863,25.193031,False
+e_w303000490-330,ep_gas_gas_turbine_G100000407052,57.0,gas,Berezovskaya (Belarus) power station_GT1 -- operating,e_w303000490-330,way/303000490-330,52.453863,25.193031,False
+e_w303000490-330,ep_gas_w303000490-330__ember,221.96264723107964,gas,Aggregated Plant - EMBER Gap - way/303000490-330_Missing Gas Capacity -- operating,e_w303000490-330,way/303000490-330,52.54831970696621,25.25511184605807,False
+e_w429151634-330,ep_gas_combined_cycle_G100000407044,65.0,gas,Borisov CHP power station_1 -- operating,e_w429151634-330,way/429151634-330,54.190048,28.486291,False
+e_w429151634-330,ep_gas_w429151634-330__ember,10.454762369579838,gas,Aggregated Plant - EMBER Gap - way/429151634-330_Missing Gas Capacity -- operating,e_w429151634-330,way/429151634-330,54.1047014108286,28.286121328792177,False
+e_w75423694-330,ep_gas_combined_cycle_G100000407023,222.0,gas,Minsk CHP-3 power station_3 -- operating,e_w75423694-330,way/75423694-330,53.880102,27.649027,False
+e_w75423694-330,ep_gas_combined_cycle_G100000407025,65.0,gas,Minsk CHP-2 power station_CC1 -- operating,e_w75423694-330,way/75423694-330,53.883435,27.574414,False
+e_w75423694-330,ep_gas_steam_turbine_G100000409614,115.0,gas,Minsk CHP-3 power station_8 -- operating,e_w75423694-330,way/75423694-330,53.880102,27.649027,False
+e_w75423694-330,ep_gas_steam_turbine_G100000409632,115.0,gas,Minsk CHP-3 power station_7 -- operating,e_w75423694-330,way/75423694-330,53.880102,27.649027,False
+e_w75423694-330,ep_gas_steam_turbine_G100000410811,60.0,gas,Minsk CHP-3 power station_6 -- operating,e_w75423694-330,way/75423694-330,53.880102,27.649027,False
+e_w75423694-330,ep_gas_w75423694-330__ember,92.80612134227027,gas,Aggregated Plant - EMBER Gap - way/75423694-330_Missing Gas Capacity -- operating,e_w75423694-330,way/75423694-330,53.87516964898044,27.411341267213988,False
+e_w817704473-330,ep_nuclear_G100000500159,1194.0,nuclear,Astravets nuclear power plant_1 -- operating,e_w817704473-330,way/817704473-330,54.7598,26.0937,False
+e_w817704473-330,ep_nuclear_G100000500179,1194.0,nuclear,Astravets nuclear power plant_2 -- operating,e_w817704473-330,way/817704473-330,54.7598,26.0937,False
+e_w863913652-330,ep_gas_combined_cycle_G100000407018,400.0,gas,Minsk CHP-5 power station_CC2 -- operating,e_w863913652-330,way/863913652-330,53.610837,27.952824,False
+e_w863913652-330,ep_gas_gas_turbine_G100000407012,54.0,gas,Minsk CHP-5 power station_GT6 -- operating,e_w863913652-330,way/863913652-330,53.610837,27.952824,False
+e_w863913652-330,ep_gas_gas_turbine_G100000407013,54.0,gas,Minsk CHP-5 power station_GT5 -- operating,e_w863913652-330,way/863913652-330,53.610837,27.952824,False
+e_w863913652-330,ep_gas_gas_turbine_G100000407014,54.0,gas,Minsk CHP-5 power station_GT4 -- operating,e_w863913652-330,way/863913652-330,53.610837,27.952824,False
+e_w863913652-330,ep_gas_gas_turbine_G100000407015,54.0,gas,Minsk CHP-5 power station_GT3 -- operating,e_w863913652-330,way/863913652-330,53.610837,27.952824,False
+e_w863913652-330,ep_gas_gas_turbine_G100000407016,54.0,gas,Minsk CHP-5 power station_GT2 -- operating,e_w863913652-330,way/863913652-330,53.610837,27.952824,False
+e_w863913652-330,ep_gas_gas_turbine_G100000407017,54.0,gas,Minsk CHP-5 power station_GT1 -- operating,e_w863913652-330,way/863913652-330,53.610837,27.952824,False
+e_w863913652-330,ep_gas_steam_turbine_G100000407011,320.0,gas,Minsk CHP-5 power station_ST1 -- operating,e_w863913652-330,way/863913652-330,53.610837,27.952824,False
+e_w863913652-330,ep_gas_w863913652-330__ember,167.91956790525157,gas,Aggregated Plant - EMBER Gap - way/863913652-330_Missing Gas Capacity -- operating,e_w863913652-330,way/863913652-330,53.77981744065299,27.96959188231184,False
+e_w863913657-330,ep_gas_combined_cycle_G100000407029,427.0,gas,Lukoml GRES power station_9 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_gas_turbine_G100000407026,52.0,gas,Lukoml GRES power station_12 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_gas_turbine_G100000407027,52.0,gas,Lukoml GRES power station_11 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_gas_turbine_G100000407028,52.0,gas,Lukoml GRES power station_10 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_steam_turbine_G100000407030,300.0,gas,Lukoml GRES power station_8 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_steam_turbine_G100000407031,300.0,gas,Lukoml GRES power station_7 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_steam_turbine_G100000407032,300.0,gas,Lukoml GRES power station_6 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_steam_turbine_G100000407033,300.0,gas,Lukoml GRES power station_5 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_steam_turbine_G100000407034,315.0,gas,Lukoml GRES power station_4 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_steam_turbine_G100000407035,310.0,gas,Lukoml GRES power station_3 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_steam_turbine_G100000407036,315.0,gas,Lukoml GRES power station_2 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_steam_turbine_G100000407037,315.0,gas,Lukoml GRES power station_1 -- operating,e_w863913657-330,way/863913657-330,54.679953,29.13331,False
+e_w863913657-330,ep_gas_w863913657-330__ember,488.6395089043623,gas,Aggregated Plant - EMBER Gap - way/863913657-330_Missing Gas Capacity -- operating,e_w863913657-330,way/863913657-330,54.81183902805687,28.98446742056634,False
+elc_spv_003,ep_solar_pv_003,1.2,solar,Aggregated Plant -- operating,elc_spv_003,BY13-330,53.202511494956674,24.229760695506414,False
+elc_spv_005,ep_solar_pv_005,6.2,solar,Aggregated Plant -- operating,elc_spv_005,way/625272914-220,53.3353526090243,25.462518353209767,False
+elc_spv_006,ep_solar_pv_006,24.200000000000003,solar,Aggregated Plant -- operating,elc_spv_006,way/245414984-330,54.82910673578838,27.005469247288552,False
+elc_spv_009,ep_solar_pv_009,1.6,solar,Aggregated Plant -- operating,elc_spv_009,way/405472760-330,54.45786457116564,28.75547496787209,False
+elc_spv_010,ep_solar_pv_010,116.6,solar,Aggregated Plant -- operating,elc_spv_010,way/302862370-330,54.12083489492674,31.036732900252872,False
+elc_spv_011,ep_solar_pv_011,85.3,solar,Aggregated Plant -- operating,elc_spv_011,BY29-330,52.08603576767949,30.46239176290703,False
+elc_spv_012,ep_solar_pv_012,23.4,solar,Aggregated Plant -- operating,elc_spv_012,way/726552202-330,52.80126480914703,31.218859371146248,False
+elc_spv_013,ep_solar_pv_013,1.6,solar,Aggregated Plant -- operating,elc_spv_013,BY15-220,53.53458920283705,26.969336786588276,False
+elc_spv_016,ep_solar_pv_016,16.7,solar,Aggregated Plant -- operating,elc_spv_016,way/745272019-330,52.50934762376466,28.775037628468795,False
+elc_won_003,ep_windon_003__irena,41.56299777241087,windon,Aggregated Plant -- operating,elc_won_003,BY15-220,53.17967723211886,26.958873683412172,False
+elc_won_014,ep_windon_014__irena,38.35274558027585,windon,Aggregated Plant -- operating,elc_won_014,way/302578595-330,53.434892817546555,31.824705593860415,False
+elc_won_015,ep_windon_015__irena,40.084256647313275,windon,Aggregated Plant -- operating,elc_won_015,BY29-330,51.73201424009074,30.4622613477978,False

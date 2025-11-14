@@ -1,0 +1,75 @@
+## Phase I Data Integration Approach
+
+### Core Philosophy
+We use **authoritative, specialized databases** for the fundamental energy infrastructure (plants, resources, terminals), and **OSM solely for the connecting tissue** - the transport networks and transmission corridors that link these elements together.
+
+### The Data Stack
+
+**Foundation Layer - Energy Infrastructure (from specialized sources)**
+- **Power Plants**: GEM database provides exact locations, capacities, fuel types, vintage, and operational status for every significant power plant
+- **Renewable Resources**: REZoning gives us wind and solar resource regions with capacity factors, land availability, and development potential
+- **Coal Supply**: GEM coal mines database has production capacities, coal quality, and mine locations
+- **Import Infrastructure**: GEM terminals database covers coal ports and LNG terminals with their capacities and locations
+- **Demand Centers**: City populations and industrial facilities from worldcities or national statistics
+
+**Connectivity Layer - Transport Networks (from OSM)**
+- **Railway Networks**: Identify which coal plants have rail spurs, which connect to mainlines, distance to mines
+- **Gas Pipeline Networks**: Trace pipeline routes from entry points/LNG terminals to gas power plants, identify which plants have pipeline access
+- **Transmission Corridors**: Extract high-voltage lines between regions to estimate Net Transfer Capacity
+- **Waterways**: Identify navigable rivers and canals for coal barge transport
+- **Ports Access**: Determine which plants are near ports for coal imports
+
+### The Integration Process
+
+**Step 1: Create Physical Regions**
+Cluster the GEM plants and REZoning areas into meaningful physical regions - not administrative boundaries but energy-relevant zones like "Northern wind region" or "Coastal gas plant cluster" or "Industrial demand center"
+
+**Step 2: Characterize Fuel Access**
+For each GEM power plant, use OSM to determine its fuel supply options:
+- Coal plants: Check proximity to railways, ports, mines, and waterways to assign likely coal delivery mode and associated costs
+- Gas plants: Verify pipeline connectivity or proximity to LNG terminals
+- This creates differentiated fuel costs based on actual infrastructure
+
+**Step 3: Estimate Transmission Capacity**
+Between each pair of regions, query OSM for transmission lines:
+- Count the number of high-voltage corridors
+- Use voltage levels to estimate capacity per corridor
+- Aggregate to get Net Transfer Capacity between regions
+- This reveals bottlenecks like Italy's Sicily cable or Germany's North-South constraint
+
+**Step 4: Assign Assets to Regions**
+- Each GEM plant goes to its appropriate regional cluster
+- REZoning cells aggregate to their resource regions
+- Demand distributes across demand regions based on cities/industrial areas
+- Fuel infrastructure connects to relevant regions
+
+### What Makes This Powerful
+
+**Physical Reality**: We're not using arbitrary administrative regions but actual energy geography - where resources are, where demand is, how they're connected
+
+**Differentiated Costs**: Two identical coal plants have different economics if one has rail access and another needs truck delivery. Two gas plants differ if one has pipeline gas and another relies on LNG.
+
+**Revealed Constraints**: Transmission bottlenecks emerge naturally from actual infrastructure, not assumed constraints. The physics of the system reveals itself.
+
+**Scalable Aggregation**: Start with many regions for detail, aggregate to fewer for computational efficiency, but always preserving the critical physical constraints
+
+### The Key Innovation
+
+We're creating **multi-layered regional models** where:
+- Generation regions follow plant clusters and resource zones
+- Demand regions follow population and industrial centers  
+- Fuel supply regions follow mines, ports, and pipeline networks
+- All connected by actual transport and transmission infrastructure
+
+This is fundamentally different from traditional models that either use administrative regions (missing physics) or detailed grid models (too complex). We're capturing the **essential physical structure** while remaining computationally tractable.
+
+### For the Five Phase I Countries
+
+Each country gets this treatment, revealing its unique structural challenges:
+- **Germany**: North wind, South demand, weak transmission
+- **Japan**: Frequency split, island constraints
+- **Italy**: Peninsula structure, island bottlenecks
+- **USA/ERCOT**: Isolated grid, distant wind resources
+- **India**: Weak East-West corridor, monsoon seasonality
+
+The same systematic approach applied to different geographies reveals completely different structural physics - which is exactly what the paper needs to demonstrate.

@@ -1,0 +1,33 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_gas__ember,0.9999999999998899,gas,Aggregated Plant -- operating,,,,,False
+ELC,ep_hydro__irena,0.08999999999992347,hydro,Aggregated Plant -- operating,,,,,False
+e_GH9-330,ep_gas_internal_combustion_G100000408641,450.0,gas,Karpowership (Ghana) Osman Khan power station_1 -- operating,e_GH9-330,GH9-330,4.93844,-1.696663,False
+e_r15772152-330,ep_bioenergy_G100000201689,60.0,bioenergy,Atebubu power station_1 -- construction,e_r15772152-330,relation/15772152-330,7.7542,-0.9844,False
+e_r15772152-330,ep_bioenergy_r15772152-330__ember,10.0,bioenergy,Aggregated Plant -- operating,e_r15772152-330,relation/15772152-330,8.526104772019043,-1.6020812457967246,False
+e_r15772152-330,ep_hydro_dam_G100000601768,404.0,hydro,Bui hydroelectric plant_ -- operating,e_r15772152-330,relation/15772152-330,8.2792,-2.2356,False
+e_w1246170585-330,ep_gas_combined_cycle_G100000407094,350.0,gas,Kpone IPP (KIPP) power station_1 -- operating,e_w1246170585-330,way/1246170585-330,5.681203,0.041086,False
+e_w1246170585-330,ep_gas_combined_cycle_G100000407099,200.0,gas,Sunon Asogli power station_1 -- operating,e_w1246170585-330,way/1246170585-330,5.6803,0.047054,False
+e_w1246170585-330,ep_gas_combined_cycle_G100000407100,360.0,gas,Sunon Asogli power station_2 -- operating,e_w1246170585-330,way/1246170585-330,5.6803,0.047054,False
+e_w282578857-330,ep_gas_combined_cycle_G100000407086,194.0,gas,Bridge power station_1 -- operating,e_w282578857-330,way/282578857-330,5.677739,0.019369,False
+e_w282578857-330,ep_gas_gas_turbine_G100000407095,110.0,gas,Kpone Thermal power plant_GT1 -- operating,e_w282578857-330,way/282578857-330,5.734624,0.009259,False
+e_w282578857-330,ep_gas_gas_turbine_G100000407096,110.0,gas,Kpone Thermal power plant_GT2 -- operating,e_w282578857-330,way/282578857-330,5.734624,0.009259,False
+e_w282578857-330,ep_gas_gas_turbine_G100000407104,110.0,gas,Tema CENIT Thermal power plant (TCTPP)_1 -- operating,e_w282578857-330,way/282578857-330,5.674457,0.012238,False
+e_w282578857-330,ep_gas_gas_turbine_G100000407105,110.0,gas,Tema Thermal Power Complex_1 -- operating,e_w282578857-330,way/282578857-330,5.673994,0.010585,False
+e_w282578857-330,ep_gas_gas_turbine_G100000410017,80.0,gas,Tema Thermal Power Complex_2 -- operating,e_w282578857-330,way/282578857-330,5.673994,0.010585,False
+e_w282578857-330,ep_hydro_dam_G100000601767,1020.0,hydro,Aksombo hydroelectric plant_ -- operating,e_w282578857-330,way/282578857-330,6.2999,0.0557,False
+e_w282578857-330,ep_hydro_ror_G100000601770,160.0,hydro,Kpong hydroelectric plant_ -- operating,e_w282578857-330,way/282578857-330,6.1187,0.1238,False
+e_w282578857-330,ep_oil_steam_turbine_G100000413980,370.0,oil,Aksa Ghana HFO power plant_1 -- operating,e_w282578857-330,way/282578857-330,5.692748,0.021523,False
+e_w672526714-330,ep_gas_combined_cycle_G100000407079,203.0,gas,Amandi power station_1 -- operating,e_w672526714-330,way/672526714-330,4.968201,-1.667387,False
+e_w672526714-330,ep_gas_combined_cycle_G100000407101,330.0,gas,Takoradi (TAPCO) 1 Thermal power plant_1 -- operating,e_w672526714-330,way/672526714-330,4.971862,-1.658276,False
+e_w672526714-330,ep_gas_combined_cycle_G100000407102,132.0,gas,Takoradi (TAPCO) 3 Thermal power plant_1 -- operating,e_w672526714-330,way/672526714-330,4.974647,-1.657951,False
+e_w672526714-330,ep_gas_combined_cycle_G100000407103,320.0,gas,Takoradi (TICO) Thermal power plant_2 -- operating,e_w672526714-330,way/672526714-330,4.971632,-1.659773,False
+elc_spv_001,ep_solar_pv_001,150.00000000000003,solar,Aggregated Plant -- operating,elc_spv_001,way/930744195-330,10.521450614060099,-0.37261606087836346,False
+elc_spv_002,ep_solar_pv_002,43.1,solar,Aggregated Plant -- operating,elc_spv_002,GH4-330,10.538435424988835,-1.9726642554496534,False
+elc_spv_003,ep_solar_pv_003,101.70000000000002,solar,Aggregated Plant -- operating,elc_spv_003,relation/15772152-330,7.770607902561896,-2.0258274380911034,False
+elc_spv_006,ep_solar_pv_006,50.0,solar,Aggregated Plant -- operating,elc_spv_006,GH4-330,10.542170464404906,-2.664190203089449,False
+elc_spv_009,ep_solar_pv_009,200.0,solar,Aggregated Plant -- construction,elc_spv_009,way/1155380911-330,7.865896085495075,-0.08161632255267462,False
+elc_spv_010,ep_solar_pv_010,1.7,solar,Aggregated Plant -- operating,elc_spv_010,way/1155380911-330,7.776744500948703,-0.5148162301147365,False
+elc_spv_017,ep_solar_pv_017,61.800000000000004,solar,Aggregated Plant -- operating,elc_spv_017,way/672526714-330,5.390856702100324,-0.64765796622877,False
+elc_won_003,ep_windon_003__irena,0.007127744247476388,windon,Aggregated Plant -- operating,elc_won_003,way/930744195-225,10.905339674170675,-0.2797654612895203,False
+elc_won_004,ep_windon_004__irena,0.006417232048408033,windon,Aggregated Plant -- operating,elc_won_004,way/930744195-225,10.447314043251456,-0.024480361817288465,False
+elc_won_005,ep_windon_005__irena,0.006455023704115584,windon,Aggregated Plant -- operating,elc_won_005,way/930744195-225,10.46607651600794,-0.4125571023032676,False

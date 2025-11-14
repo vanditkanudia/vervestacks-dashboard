@@ -1,0 +1,28 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_w1028402165-220,ep_hydro_ror_G100000600017,2070.0,hydro,Laúca hydroelectric plant_ -- operating,e_w1028402165-220,way/1028402165-220,-9.7449,15.1251,False
+e_w1028402165-220,ep_hydro_w1028402165-220__irena,51.03344838976051,hydro,Aggregated Plant - IRENA Gap - way/1028402165-220_Missing Hydro Capacity -- operating,e_w1028402165-220,way/1028402165-220,-9.843783588105378,14.95351273508552,False
+e_w194073418-220,ep_hydro_dam_G100001030660,60.0,hydro,Gove Dam hydroelectric plant_ -- operating,e_w194073418-220,way/194073418-220,-13.452,15.8709,False
+e_w202428546-220,ep_bioenergy_G100000201683,100.0,bioenergy,Biocom power station_1 -- operating,e_w202428546-220,way/202428546-220,-9.5806,15.7225,False
+e_w202428546-220,ep_hydro_dam_G100000600015,520.0,hydro,Capanda hydroelectric plant_ -- operating,e_w202428546-220,way/202428546-220,-9.7933,15.4635,False
+e_w202428546-220,ep_hydro_w202428546-220__irena,12.819996696944669,hydro,Aggregated Plant - IRENA Gap - way/202428546-220_Missing Hydro Capacity -- operating,e_w202428546-220,way/202428546-220,-9.973213635479889,15.461936479536124,False
+e_w532469450-220,ep_oil_internal_combustion_G100000413546,125.0,oil,Central Caminho de Ferro de Luanda (CFL) power station_1 -- operating,e_w532469450-220,way/532469450-220,-8.82779,13.27575,False
+e_w663579738-220,ep_hydro_ror_G100000600013,180.0,hydro,Cambambe I hydroelectric plant_ -- operating,e_w663579738-220,way/663579738-220,-9.7503,14.4819,False
+e_w663579738-400,ep_hydro_ror_G100000600014,700.0,hydro,Cambambe II hydroelectric plant_ -- operating,e_w663579738-400,way/663579738-400,-9.7383,14.4854,False
+e_w663579738-400,ep_hydro_w663579738-400__irena,17.25768786127167,hydro,Aggregated Plant - IRENA Gap - way/663579738-400_Missing Hydro Capacity -- operating,e_w663579738-400,way/663579738-400,-9.784362953193206,14.664855752167542,False
+e_w663579748-400,ep_hydro_ror_G100000600012,2172.0,hydro,Caculo Cabaça hydroelectric plant_ -- construction,e_w663579748-400,way/663579748-400,-9.7296,14.8163,False
+e_w663579748-400,ep_hydro_w663579748-400__irena,68.1678670520231,hydro,Aggregated Plant - IRENA Gap - way/663579748-400_Missing Hydro Capacity -- operating,e_w663579748-400,way/663579748-400,-9.809737544035446,15.204145361489509,False
+e_w663880504-220,ep_windon_wind_220,50.0,windon,Aggregated Plant -- operating,e_w663880504-220,way/663880504-220,-12.132798878963278,14.19931735553266,False
+e_w663880517-220,ep_hydro_ror_G100001030661,50.0,hydro,Lomaúm hydroelectric plant_ -- operating,e_w663880517-220,way/663880517-220,-12.7254,14.3857,False
+e_w664696152-220,ep_oil_internal_combustion_G100000413531,84.0,oil,Central de Quileva power plant_1 -- operating,e_w664696152-220,way/664696152-220,-12.38199,13.5921,False
+e_w770860821-400,ep_gas_combined_cycle_G100000407062,360.0,gas,Soyo power station_1-1 -- operating,e_w770860821-400,way/770860821-400,-6.181824,12.325453,False
+e_w770860821-400,ep_gas_combined_cycle_G100000407063,360.0,gas,Soyo power station_1-2 -- operating,e_w770860821-400,way/770860821-400,-6.181824,12.325453,False
+e_w770860821-400,ep_gas_combined_cycle_G100000407065,375.0,gas,Soyo power station_2-2 -- construction,e_w770860821-400,way/770860821-400,-6.181824,12.325453,False
+elc_spv_002,ep_solar_pv_002,1.6,solar,Aggregated Plant -- operating,elc_spv_002,way/663880517-220,-13.275694585630953,14.695417852064287,False
+elc_spv_003,ep_solar_pv_003,2.8,solar,Aggregated Plant -- operating,elc_spv_003,way/663880504-220,-12.62531618190917,14.353230232754344,False
+elc_spv_004,ep_solar_pv_004,146.00000000000003,solar,Aggregated Plant -- operating,elc_spv_004,way/663880504-220,-13.655442205450106,13.365354296448803,False
+elc_spv_005,ep_solar_pv_005,45.00000000000001,solar,Aggregated Plant -- construction,elc_spv_005,way/663880504-220,-12.75101450493468,12.37580905695254,False
+elc_spv_006,ep_solar_pv_006,300.09999999999997,solar,Aggregated Plant -- operating,elc_spv_006,way/663880517-220,-12.234146355595396,13.99129570604342,False
+elc_spv_027,ep_solar_pv_027,2.0,solar,Aggregated Plant -- operating,elc_spv_027,way/663891014-220,-6.930304598086751,16.089068229039693,False
+elc_spv_035,ep_solar_pv_035,2.6,solar,Aggregated Plant -- operating,elc_spv_035,way/591162360-220,-12.783063385787194,17.195526125800395,False
+elc_spv_038,ep_solar_pv_038,52.3,solar,Aggregated Plant -- operating,elc_spv_038,way/591162360-220,-12.815137022839169,16.64090427655256,False
+elc_spv_043,ep_solar_pv_043,7.2,solar,Aggregated Plant -- operating,elc_spv_043,way/591162360-220,-12.201906488085669,16.518571516895793,False

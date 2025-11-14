@@ -1,0 +1,45 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,70.0,bioenergy,Aggregated Plant - EMBER Gap_Missing Bioenergy Capacity -- operating,,,,,False
+ELC,ep_coal__ember,4.0000000000000036,coal,Aggregated Plant -- operating,,,,,False
+e_PA1-230,ep_hydro_PA1-230__irena,60.90501193317422,hydro,Aggregated Plant - IRENA Gap - PA1-230_Missing Hydro Capacity -- operating,e_PA1-230,PA1-230,9.62190786283962,-82.94881716998874,False
+e_PA12-230,ep_hydro_PA12-230__irena,33.715274463007155,hydro,Aggregated Plant - IRENA Gap - PA12-230_Missing Hydro Capacity -- operating,e_PA12-230,PA12-230,8.933499409009114,-82.95709709123004,False
+e_PA12-230,ep_hydro_ror_G100001031175,72.0,hydro,El Alto hydroelectric plant_ -- operating,e_PA12-230,PA12-230,8.7592,-82.834,False
+e_PA12-230,ep_hydro_ror_G100001031176,52.0,hydro,Monte Lirio hydroelectric plant_ -- operating,e_PA12-230,PA12-230,8.7694,-82.8208,False
+e_PA14-230,ep_hydro_PA14-230__irena,15.498150357995225,hydro,Aggregated Plant - IRENA Gap - PA14-230_Missing Hydro Capacity -- operating,e_PA14-230,PA14-230,8.571765634700792,-82.94479743939716,False
+e_PA14-230,ep_hydro_ror_G100001031174,57.0,hydro,Bajo de Mina hydroelectric plant_ -- operating,e_PA14-230,PA14-230,8.7163,-82.8325,False
+e_PA15-230,ep_solar_pv_230,20.0,solar,Aggregated Plant -- operating,e_PA15-230,PA15-230,8.592486339058818,-79.91698043907364,False
+e_PA19-230,ep_m_coal_subcritical_G100000101632,153.0,coal,Cobre Panamá power station_Unit 1 -- mothballed,e_PA19-230,PA19-230,9.005716,-80.689504,False
+e_PA19-230,ep_m_coal_subcritical_G100000101633,153.0,coal,"Cobre Panamá power station_Unit 2, timepoint 1 -- mothballed",e_PA19-230,PA19-230,9.005716,-80.689504,False
+e_PA20-230,ep_hydro_PA20-230__irena,15.770047732696895,hydro,Aggregated Plant - IRENA Gap - PA20-230_Missing Hydro Capacity -- operating,e_PA20-230,PA20-230,8.455088067818856,-82.66787495405617,False
+e_PA20-230,ep_hydro_ror_G100001031179,58.0,hydro,Bajo Frío hydroelectric plant_ -- operating,e_PA20-230,PA20-230,8.5947,-82.7865,False
+e_PA22-230,ep_hydro_PA22-230__irena,33.171479713603816,hydro,Aggregated Plant - IRENA Gap - PA22-230_Missing Hydro Capacity -- operating,e_PA22-230,PA22-230,8.540209295523933,-82.20640828997216,False
+e_PA22-230,ep_hydro_ror_G100001031178,63.0,hydro,Burica hydroelectric plant_ -- construction,e_PA22-230,PA22-230,8.3986,-82.3187,False
+e_PA22-230,ep_hydro_ror_G100001031181,59.0,hydro,Prudencia hydroelectric plant_ -- operating,e_PA22-230,PA22-230,8.4241,-82.3435,False
+e_PA4-230,ep_gas_combined_cycle_G100000406669,381.0,gas,AES Colón power station_1 -- operating,e_PA4-230,PA4-230,9.337361,-79.909361,False
+e_PA4-230,ep_gas_combined_cycle_G100000406931,670.0,gas,Gatún power station_1 -- operating,e_PA4-230,PA4-230,9.33313,-79.904951,False
+e_PA6-230,ep_oil_combined_cycle_G100000411982,150.0,oil,Termocolón power station_1 -- operating,e_PA6-230,PA6-230,9.374819,-79.822758,False
+e_PA6-230,ep_oil_internal_combustion_G100001000240,90.0,oil,Cativá power station_1 -- operating,e_PA6-230,PA6-230,9.379612,-79.821886,False
+e_w1256475106-230,ep_hydro_dam_G100000603101,260.0,hydro,Bayano hydroelectric plant_ -- operating,e_w1256475106-230,way/1256475106-230,9.1771,-78.8844,False
+e_w1256475106-230,ep_hydro_w1256475106-230__irena,70.69331742243438,hydro,Aggregated Plant - IRENA Gap - way/1256475106-230_Missing Hydro Capacity -- operating,e_w1256475106-230,way/1256475106-230,9.350312366625367,-78.83463543779511,False
+e_w192795259-230,ep_hydro_dam_G100000603104,120.0,hydro,Estí hydroelectric plant_ -- operating,e_w192795259-230,way/192795259-230,8.543,-82.298,False
+e_w192795259-230,ep_hydro_w192795259-230__irena,32.62768496420048,hydro,Aggregated Plant - IRENA Gap - way/192795259-230_Missing Hydro Capacity -- operating,e_w192795259-230,way/192795259-230,8.612749454775624,-82.11838161698137,False
+e_w192795260-230,ep_hydro_dam_G100000603105,300.0,hydro,Fortuna hydroelectric plant_ -- operating,e_w192795260-230,way/192795260-230,8.679,-82.2626,False
+e_w192795260-230,ep_hydro_dam_G100001027393,55.0,hydro,Los Valles hydroelectric plant_ -- operating,e_w192795260-230,way/192795260-230,8.6777,-82.3476,False
+e_w192795260-230,ep_hydro_ror_G100001027392,47.0,hydro,La Estrella hydroelectric plant_ -- operating,e_w192795260-230,way/192795260-230,8.7164,-82.3646,False
+e_w192795260-230,ep_hydro_w192795260-230__irena,109.3027446300716,hydro,Aggregated Plant - IRENA Gap - way/192795260-230_Missing Hydro Capacity -- operating,e_w192795260-230,way/192795260-230,8.77010134989561,-82.16965550120003,False
+e_w223114515-230,ep_solar_pv_230,25.9,solar,Aggregated Plant -- operating,e_w223114515-230,way/223114515-230,8.247630375184565,-82.77590679619438,False
+e_w229562218-230,ep_hydro_dam_G100000603103,221.0,hydro,Changuinola 1 hydroelectric plant_ -- operating,e_w229562218-230,way/229562218-230,9.2703,-82.5154,False
+e_w229562218-230,ep_hydro_w229562218-230__irena,60.08931980906921,hydro,Aggregated Plant - IRENA Gap - way/229562218-230_Missing Hydro Capacity -- operating,e_w229562218-230,way/229562218-230,9.352504563402896,-82.63797108181413,False
+e_w330661639-230,ep_oil_internal_combustion_G100000411983,149.4,oil,Pan Am power station_1 -- operating,e_w330661639-230,way/330661639-230,8.908849,-79.780809,False
+e_w674487532-230,ep_hydro_ror_G100001031180,88.0,hydro,Baitún hydroelectric plant_ -- operating,e_w674487532-230,way/674487532-230,8.6145,-82.7933,False
+e_w674487532-230,ep_hydro_w674487532-230__irena,23.926968973747016,hydro,Aggregated Plant - IRENA Gap - way/674487532-230_Missing Hydro Capacity -- operating,e_w674487532-230,way/674487532-230,8.77447466815213,-82.93766913760015,False
+elc_spv_001,ep_solar_001__irena,23.269119595681452,solar,Aggregated Plant -- operating,elc_spv_001,way/1256475106-230,9.000646706792631,-78.84877292811511,False
+elc_spv_004,ep_solar_004__irena,20.822306326114806,solar,Aggregated Plant -- operating,elc_spv_004,way/388150206-230,7.6113649475073,-80.19958492609041,False
+elc_spv_004,ep_solar_pv_004,58.2,solar,Aggregated Plant -- operating,elc_spv_004,way/388150206-230,7.371408122537698,-80.71752481419051,False
+elc_spv_005,ep_solar_pv_005,276.3,solar,Aggregated Plant -- operating,elc_spv_005,PA21-230,8.611227135234705,-82.92774010578773,False
+elc_spv_006,ep_solar_pv_006,46.6,solar,Aggregated Plant -- operating,elc_spv_006,way/634006807-230,7.747622779101214,-81.48486756459057,False
+elc_spv_007,ep_solar_pv_007,6.3,solar,Aggregated Plant -- construction,elc_spv_007,PA9-230,9.00253755465177,-79.18080926238534,False
+elc_spv_008,ep_solar_008__irena,20.298574078203853,solar,Aggregated Plant -- operating,elc_spv_008,way/496478568-230,8.529895015320657,-80.09904079138256,False
+elc_spv_008,ep_solar_pv_008,141.9,solar,Aggregated Plant -- construction,elc_spv_008,way/496478568-230,8.845535142414263,-80.48862416811544,False
+elc_spv_010,ep_solar_pv_010,200.6,solar,Aggregated Plant -- operating,elc_spv_010,way/193155027-230,8.544139996960777,-81.40622983050966,False
+elc_won_008,ep_windon_wind_008,380.50000000000006,windon,Aggregated Plant -- construction,elc_won_008,way/388150206-230,8.140760514600826,-81.1393371026018,False

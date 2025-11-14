@@ -1,0 +1,48 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,40.0,bioenergy,Aggregated Plant -- operating,,,,,False
+e_LK10-220,ep_hydro_LK10-220__irena,145.34604782608693,hydro,Aggregated Plant - IRENA Gap - LK10-220_Missing Hydro Capacity -- operating,e_LK10-220,LK10-220,6.919027055882057,80.82422909591179,False
+e_LK10-220,ep_hydro_dam_G100000603435,201.0,hydro,Kotmale hydroelectric plant_ -- operating,e_LK10-220,LK10-220,7.0585,80.5959,False
+e_LK10-220,ep_hydro_ror_G100000603442,150.0,hydro,Upper Kotmale hydroelectric plant_ -- operating,e_LK10-220,LK10-220,6.9415,80.6639,False
+e_LK11-220,ep_gas_LK11-220__ember,137.57523645743768,gas,Aggregated Plant - EMBER Gap - LK11-220_Missing Gas Capacity -- operating,e_LK11-220,LK11-220,6.86260238443257,79.8226485628319,False
+e_LK11-220,ep_gas_combined_cycle_G100000407328,300.0,gas,Yugadanavi power station_1 -- operating,e_LK11-220,LK11-220,7.01088,79.874379,False
+e_LK11-220,ep_gas_gas_turbine_G100001027708,220.0,gas,Kerawalapitiya LNG power station_1-b -- operating,e_LK11-220,LK11-220,6.991547,79.869995,False
+e_LK11-220,ep_gas_steam_turbine_G100000407326,130.0,gas,Kerawalapitiya LNG power station_1-a -- construction,e_LK11-220,LK11-220,6.991547,79.869995,False
+e_LK12-220,ep_oil_internal_combustion_G100000411724,80.0,oil,Sapugaskanda power station_2-1:8 -- operating,e_LK12-220,LK12-220,6.961286,79.961319,False
+e_LK12-220,ep_oil_internal_combustion_G100000411725,80.0,oil,Sapugaskanda power station_1-1:4 -- operating,e_LK12-220,LK12-220,6.961286,79.961319,False
+e_LK13-220,ep_gas_LK13-220__ember,22.424763542562346,gas,Aggregated Plant - EMBER Gap - LK13-220_Missing Gas Capacity -- operating,e_LK13-220,LK13-220,7.0576530400062465,79.94573545865842,False
+e_LK13-220,ep_gas_combined_cycle_G100000409995,163.0,gas,Sojitz Kelanitissa power station_1 -- operating,e_LK13-220,LK13-220,6.952865,79.878581,False
+e_LK13-220,ep_oil_combined_cycle_G100000411735,165.0,oil,Kelanitissa Combined Cycle power plant_1 -- operating,e_LK13-220,LK13-220,6.952769,79.879101,False
+e_LK13-220,ep_oil_internal_combustion_G100000411736,62.4,oil,Colombo Port Power Station_1 -- operating,e_LK13-220,LK13-220,6.953801,79.855858,False
+e_LK14-220,ep_hydro_LK14-220__irena,53.83186956521738,hydro,Aggregated Plant - IRENA Gap - LK14-220_Missing Hydro Capacity -- operating,e_LK14-220,LK14-220,6.898515817647681,80.34170606521238,False
+e_LK14-220,ep_hydro_ror_G100000603436,70.0,hydro,Kukule Ganga hydroelectric plant_ -- operating,e_LK14-220,LK14-220,6.6038,80.2846,False
+e_LK14-220,ep_hydro_ror_G100001027449,60.0,hydro,Canyon hydroelectric plant_ -- operating,e_LK14-220,LK14-220,6.8691,80.5277,False
+e_LK15-220,ep_hydro_LK15-220__irena,49.69095652173912,hydro,Aggregated Plant - IRENA Gap - LK15-220_Missing Hydro Capacity -- operating,e_LK15-220,LK15-220,6.662859468086826,80.46458697824453,False
+e_LK15-220,ep_hydro_dam_G100000603440,120.0,hydro,Samanalawewa hydroelectric plant_ -- operating,e_LK15-220,LK15-220,6.6808,80.7993,False
+e_LK16-220,ep_oil_internal_combustion_G100000411737,105.0,oil,Ace Embilipitiya power station_1:14 -- operating,e_LK16-220,LK16-220,6.285029,80.849308,False
+e_LK3-220,ep_coal_subcritical_G100000106125,300.0,coal,Lakvijaya Power Plant_Unit 1 -- operating,e_LK3-220,LK3-220,8.0172,79.7225,False
+e_LK3-220,ep_coal_subcritical_G100000106126,300.0,coal,Lakvijaya Power Plant_Unit 2 -- operating,e_LK3-220,LK3-220,8.0172,79.7225,False
+e_LK3-220,ep_coal_subcritical_G100000106127,300.0,coal,Lakvijaya Power Plant_Unit 3 -- operating,e_LK3-220,LK3-220,8.0172,79.7225,False
+e_LK5-220,ep_hydro_LK5-220__irena,86.95917391304347,hydro,Aggregated Plant - IRENA Gap - LK5-220_Missing Hydro Capacity -- operating,e_LK5-220,LK5-220,7.378962515199515,80.78598867913554,False
+e_LK5-220,ep_hydro_dam_G100000603443,210.0,hydro,Sri Lanka Victoria hydroelectric plant_ -- operating,e_LK5-220,LK5-220,7.2001,80.8062,False
+e_w1206495966-220,ep_hydro_dam_G100001027450,50.0,hydro,Old Laxapana hydroelectric plant_ -- operating,e_w1206495966-220,way/1206495966-220,9.919,80.4894,False
+e_w1206495966-220,ep_hydro_w1206495966-220__irena,20.704565217391302,hydro,Aggregated Plant - IRENA Gap - way/1206495966-220_Missing Hydro Capacity -- operating,e_w1206495966-220,way/1206495966-220,9.32654127706923,79.80586382498285,False
+e_w1355185916-220,ep_solar_pv_220,50.0,solar,Aggregated Plant -- construction,e_w1355185916-220,way/1355185916-220,8.396637083439591,81.14081287554583,False
+e_w442071643-220,ep_hydro_dam_G100000604904,120.0,hydro,Uma Oya hydroelectric plant_ -- operating,e_w442071643-220,way/442071643-220,6.914,80.9333,False
+e_w442071643-220,ep_hydro_dam_G100001027451,52.0,hydro,Rantembe hydroelectric plant_ -- operating,e_w442071643-220,way/442071643-220,7.2013,80.9506,False
+e_w442071643-220,ep_hydro_w442071643-220__irena,71.22370434782607,hydro,Aggregated Plant - IRENA Gap - way/442071643-220_Missing Hydro Capacity -- operating,e_w442071643-220,way/442071643-220,7.549976224539278,80.85965735700692,False
+e_w442071651-220,ep_hydro_dam_G100000603439,122.0,hydro,Randenigala hydroelectric plant_ -- operating,e_w442071651-220,way/442071651-220,7.2021,80.9268,False
+e_w442071651-220,ep_hydro_w442071651-220__irena,50.51913913043477,hydro,Aggregated Plant - IRENA Gap - way/442071651-220_Missing Hydro Capacity -- operating,e_w442071651-220,way/442071651-220,7.071821379394233,80.9611712801095,False
+e_w703205679-220,ep_hydro_dam_G100000603437,100.0,hydro,New Laxapana hydroelectric plant_ -- operating,e_w703205679-220,way/703205679-220,6.9184,80.4915,False
+e_w703205679-220,ep_hydro_dam_G100000603438,75.0,hydro,Polpitiya hydroelectric plant_ -- operating,e_w703205679-220,way/703205679-220,6.978,80.4566,False
+e_w703205679-220,ep_hydro_dam_G100001027452,50.0,hydro,Wimalasurendra hydroelectric plant_ -- operating,e_w703205679-220,way/703205679-220,6.9083,80.5247,False
+e_w703205679-220,ep_hydro_w703205679-220__irena,93.17054347826085,hydro,Aggregated Plant - IRENA Gap - way/703205679-220_Missing Hydro Capacity -- operating,e_w703205679-220,way/703205679-220,7.079010437236,80.47160436390584,False
+elc_spv_001,ep_solar_001__irena,245.9359108962998,solar,Aggregated Plant - IRENA Gap - 1_Missing Solar Capacity -- operating,elc_spv_001,LK2-220,8.420534613067002,80.62805648870307,False
+elc_spv_002,ep_solar_002__irena,242.83324432006012,solar,Aggregated Plant - IRENA Gap - 2_Missing Solar Capacity -- operating,elc_spv_002,way/1355185916-220,7.824948104024499,80.23464779759738,False
+elc_spv_002,ep_solar_pv_002,12.6,solar,Aggregated Plant -- operating,elc_spv_002,way/1355185916-220,8.181333442098984,80.20187790180013,False
+elc_spv_008,ep_solar_pv_008,30.0,solar,Aggregated Plant -- operating,elc_spv_008,LK16-220,6.47909892008486,81.03959139693676,False
+elc_spv_009,ep_solar_009__irena,268.80484478364,solar,Aggregated Plant - IRENA Gap - 9_Missing Solar Capacity -- operating,elc_spv_009,way/442071643-220,7.285013508431558,80.60002747236175,False
+elc_won_001,ep_windon_001__irena,14.497968369330401,windon,Aggregated Plant -- operating,elc_won_001,LK1-220,8.755190771889675,80.39370677169548,False
+elc_won_001,ep_windon_wind_001,135.0,windon,Aggregated Plant -- operating,elc_won_001,LK1-220,8.779744039678544,79.96640646186027,False
+elc_won_002,ep_windon_002__irena,12.66032056516175,windon,Aggregated Plant -- operating,elc_won_002,LK2-220,8.690451648330718,80.17380455469001,False
+elc_won_008,ep_windon_008__irena,14.841711065507857,windon,Aggregated Plant -- operating,elc_won_008,LK3-220,8.026953785395875,80.32604945739502,False
+elc_won_008,ep_windon_wind_008,90.0,windon,Aggregated Plant -- operating,elc_won_008,LK3-220,8.016645153442543,79.80986345540673,False

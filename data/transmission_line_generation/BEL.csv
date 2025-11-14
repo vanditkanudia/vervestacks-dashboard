@@ -1,0 +1,102 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_windoff__irena,5.800000000000249,windoff,Aggregated Plant -- operating,,,,,False
+e_BE1-220,ep_windoff_wind_220,330.0,windoff,Aggregated Plant -- operating,e_BE1-220,BE1-220,51.58991163975665,2.9474409865016966,False
+e_BE1-220,ep_windoff_wind_G100000919768,216.0,windoff,Northwind wind farm_-- -- operating,e_BE1-220,BE1-220,51.619,2.901,False
+e_BE1-220,ep_windoff_wind_G100000919772,219.0,windoff,The Northwester 2 Offshore Wind Project_-- -- operating,e_BE1-220,BE1-220,51.686,2.757,False
+e_BE1-220,ep_windoff_wind_G100000919789,235.0,windoff,Seamade Mermaid wind farm_-- -- operating,e_BE1-220,BE1-220,51.63,2.86,False
+e_BE1-220,ep_windoff_wind_G100000919818,252.0,windoff,Seamade Seastar wind farm_-- -- operating,e_BE1-220,BE1-220,51.72,2.74,False
+e_BE11-380,ep_gas_steam_turbine_G100000406276,43.0,gas,Sappi Lanaken power station_1 -- operating,e_BE11-380,BE11-380,50.8827,5.64195,False
+e_BE13-380,ep_m_oil_combined_cycle_G100001000099,40.0,oil,Clabecq Steel Works power station_CC1 -- mothballed,e_BE13-380,BE13-380,50.6813,4.2188,False
+e_BE3-220,ep_windoff_wind_220,325.0,windoff,Aggregated Plant -- operating,e_BE3-220,BE3-220,51.41763995262934,2.903468237062217,False
+e_BE3-220,ep_windoff_wind_G100000919893,309.0,windoff,Rentel wind farm_-- -- operating,e_BE3-220,BE3-220,51.59,2.94,False
+e_BE4-220,ep_windoff_wind_G100000919934,370.0,windoff,Norther Offshore Wind Project_-- -- operating,e_BE4-220,BE4-220,51.5281,3.0158,False
+e_w103041283-220,ep_gas_combined_cycle_G100000406271,870.0,gas,Seraing power station_CC2 -- construction,e_w103041283-220,way/103041283-220,50.603,5.4917,False
+e_w103041283-220,ep_gas_gas_turbine_G100000400035,150.0,gas,Seraing power station_GT1 -- operating,e_w103041283-220,way/103041283-220,50.603,5.4917,False
+e_w103041283-220,ep_gas_gas_turbine_G100001030246,150.0,gas,Seraing power station_GT2 -- operating,e_w103041283-220,way/103041283-220,50.603,5.4917,False
+e_w103041283-220,ep_gas_steam_turbine_G100001030247,170.0,gas,Seraing power station_ST1 -- operating,e_w103041283-220,way/103041283-220,50.603,5.4917,False
+e_w103041283-220,ep_gas_w103041283-220__ember,266.89515247236045,gas,Aggregated Plant - EMBER Gap - way/103041283-220_Missing Gas Capacity -- operating,e_w103041283-220,way/103041283-220,50.779209306781624,5.430076041962981,False
+e_w103455240-225,ep_gas_combined_cycle_G100000400017,451.0,gas,Amercoeur power station_1 -- operating,e_w103455240-225,way/103455240-225,50.4304,4.3955,False
+e_w103455240-225,ep_gas_combined_cycle_G100000400031,413.0,gas,Marcinelle Energie (Carsid) power station_1 -- operating,e_w103455240-225,way/103455240-225,50.4138,4.4067,False
+e_w103455240-225,ep_gas_w103455240-225__ember,158.92309561414157,gas,Aggregated Plant - EMBER Gap - way/103455240-225_Missing Gas Capacity -- operating,e_w103455240-225,way/103455240-225,50.291156425207134,4.329294594230446,False
+e_w103455240-225,ep_hydro_ps_G100000600151,144.0,hydro,La Plate Taille hydroelectric plant_ -- operating,e_w103455240-225,way/103455240-225,50.1884,4.3862,False
+e_w104524889-380,ep_nuclear_G100000500205,1089.0,nuclear,Tihange nuclear power plant_3 -- operating,e_w104524889-380,way/104524889-380,50.5334,5.2714,False
+e_w104524889-380,ep_nuclear_G100000500257,1008.9999999999999,nuclear,Tihange nuclear power plant_1 -- operating,e_w104524889-380,way/104524889-380,50.5334,5.2714,False
+e_w121085954-220,ep_bioenergy_w121085954-220,35.0,bioenergy,Aggregated Plant -- operating,e_w121085954-220,way/121085954-220,49.82112558615555,5.529877097266604,False
+e_w121085954-220,ep_bioenergy_w121085954-220__ember,167.99999999999997,bioenergy,Aggregated Plant - EMBER Gap - way/121085954-220_Missing Bioenergy Capacity -- operating,e_w121085954-220,way/121085954-220,49.40366468319774,5.740605081321926,False
+e_w19783816-380,ep_bioenergy_w19783816-380,40.0,bioenergy,Aggregated Plant -- operating,e_w19783816-380,way/19783816-380,51.57029121118874,4.332354705065886,False
+e_w19783816-380,ep_bioenergy_w19783816-380__ember,192.0,bioenergy,Aggregated Plant - EMBER Gap - way/19783816-380_Missing Bioenergy Capacity -- operating,e_w19783816-380,way/19783816-380,51.235147246536386,4.569337933885993,False
+e_w19783816-380,ep_gas_combined_cycle_G100000400028,138.0,gas,Inesco power station_1 -- operating,e_w19783816-380,way/19783816-380,51.24125,4.32567,False
+e_w19783816-380,ep_gas_combined_cycle_G100000400030,42.0,gas,Lillo Degussa power station_1 -- operating,e_w19783816-380,way/19783816-380,51.30953,4.30402,False
+e_w19783816-380,ep_gas_combined_cycle_G100000400040,58.0,gas,Zwijndrecht Lanxess power station_1 -- operating,e_w19783816-380,way/19783816-380,51.2382,4.3408,False
+e_w19783816-380,ep_gas_combined_cycle_G100000410396,43.0,gas,Lillo Degussa power station_2 -- operating,e_w19783816-380,way/19783816-380,51.30953,4.30402,False
+e_w19783816-380,ep_gas_gas_turbine_G100000406275,43.0,gas,Covestro Oorderen power station_1 -- operating,e_w19783816-380,way/19783816-380,51.297024,4.319065,False
+e_w19783816-380,ep_gas_gas_turbine_G100000406277,43.0,gas,Wilmarsdonk Total power station_3 -- operating,e_w19783816-380,way/19783816-380,51.271661,4.326202,False
+e_w19783816-380,ep_gas_gas_turbine_G100000406278,43.0,gas,Wilmarsdonk Total power station_2 -- operating,e_w19783816-380,way/19783816-380,51.271661,4.326202,False
+e_w19783816-380,ep_gas_gas_turbine_G100000406279,43.0,gas,Wilmarsdonk Total power station_1 -- operating,e_w19783816-380,way/19783816-380,51.271661,4.326202,False
+e_w19783816-380,ep_gas_gas_turbine_G100001030346,23.8,gas,"Beveren Ineos Phenolchemie power station_Unit 1, timepoint 2 -- operating",e_w19783816-380,way/19783816-380,51.29091,4.27025,False
+e_w19783816-380,ep_gas_steam_turbine_G100000400034,140.0,gas,Scheldelaan Exxonmobil power station_1 -- operating,e_w19783816-380,way/19783816-380,51.254,4.334,False
+e_w19783816-380,ep_gas_steam_turbine_G100000406274,43.0,gas,Monsanto Oud-Lillo power station_1 -- operating,e_w19783816-380,way/19783816-380,51.315531,4.289613,False
+e_w19783816-380,ep_gas_w19783816-380__ember,121.36279917385487,gas,Aggregated Plant - EMBER Gap - way/19783816-380_Missing Gas Capacity -- operating,e_w19783816-380,way/19783816-380,51.167386551161655,4.0724348815202145,False
+e_w23136343-380,ep_gas_combined_cycle_G100000400038,386.2,gas,Zandvliet power station_1 -- operating,e_w23136343-380,way/23136343-380,51.36895,4.26419,False
+e_w23136343-380,ep_gas_w23136343-380__ember,71.03715222937672,gas,Aggregated Plant - EMBER Gap - way/23136343-380_Missing Gas Capacity -- operating,e_w23136343-380,way/23136343-380,51.5399978758304,4.158547484560629,False
+e_w23136868-380,ep_nuclear_G100000500234,1090.0,nuclear,Doel nuclear power plant_4 -- operating,e_w23136868-380,way/23136868-380,51.3254,4.2597,False
+e_w23136868-380,ep_nuclear_G100000500499,454.0,nuclear,Doel nuclear power plant_1 -- operating,e_w23136868-380,way/23136868-380,51.3254,4.2597,False
+e_w23136868-380,ep_nuclear_G100000500500,454.0,nuclear,Doel nuclear power plant_2 -- operating,e_w23136868-380,way/23136868-380,51.3254,4.2597,False
+e_w23175771-380,ep_gas_combined_cycle_G100000400016,48.0,gas,Aalst Syral power station_1 -- operating,e_w23175771-380,way/23175771-380,50.93547,4.04516,False
+e_w23176013-380,ep_gas_combined_cycle_G100000400024,460.0,gas,Drogenbos power station_1 -- operating,e_w23176013-380,way/23176013-380,50.8023,4.299,False
+e_w23176013-380,ep_gas_w23176013-380__ember,84.61183331308465,gas,Aggregated Plant - EMBER Gap - way/23176013-380_Missing Gas Capacity -- operating,e_w23176013-380,way/23176013-380,51.33078398522056,4.4211142458935715,False
+e_w23176013-380,ep_m_oil_steam_turbine_G100001000100,112.0,oil,Drogenbos power station_ST -- mothballed,e_w23176013-380,way/23176013-380,50.8023,4.299,False
+e_w23208935-380,ep_gas_w23208935-380__ember,46.9043858583404,gas,Aggregated Plant - EMBER Gap - way/23208935-380_Missing Gas Capacity -- operating,e_w23208935-380,way/23208935-380,50.92283807539807,4.420701339068803,False
+e_w23208935-380,ep_m_gas_gas_turbine_G100000400037,255.0,gas,Vilvoorde power station_GT1 -- mothballed,e_w23208935-380,way/23208935-380,50.9414,4.4246,False
+e_w24552827-220,ep_gas_combined_cycle_G100001020389,875.0,gas,Awirs power station_CC1 -- construction,e_w24552827-220,way/24552827-220,50.5851,5.418,False
+e_w24552827-220,ep_gas_w24552827-220__ember,160.94642206293275,gas,Aggregated Plant - EMBER Gap - way/24552827-220_Missing Gas Capacity -- operating,e_w24552827-220,way/24552827-220,50.59890489672456,5.327392735347226,False
+e_w32002039-380,ep_oil_internal_combustion_G100001000101,33.0,oil,Beerse power station_IC -- operating,e_w32002039-380,way/32002039-380,51.32613,4.853,False
+e_w392090271-220,ep_hydro_w392090271-220__irena,36.202906350914915,hydro,Aggregated Plant - IRENA Gap - way/392090271-220_Missing Hydro Capacity -- operating,e_w392090271-220,way/392090271-220,51.23800392882126,3.1322947764837754,False
+e_w500788534-380,ep_gas_combined_cycle_G100000400027,465.0,gas,Herdersbrug power station_1 -- operating,e_w500788534-380,way/500788534-380,51.2629,3.2112,False
+e_w500788534-380,ep_gas_w500788534-380__ember,85.53152715344426,gas,Aggregated Plant - EMBER Gap - way/500788534-380_Missing Gas Capacity -- operating,e_w500788534-380,way/500788534-380,51.70507205901504,3.113608075701174,False
+e_w87761208-380,ep_gas_combined_cycle_G100000400033,350.0,gas,Saint-Ghislain power station_1 -- operating,e_w87761208-380,way/87761208-380,50.4719,3.8248,False
+e_w87761208-380,ep_gas_w87761208-380__ember,64.37856882517309,gas,Aggregated Plant - EMBER Gap - way/87761208-380_Missing Gas Capacity -- operating,e_w87761208-380,way/87761208-380,50.83636026726851,4.264339846595782,False
+e_w87763325-380,ep_bioenergy_w87763325-380,45.0,bioenergy,Aggregated Plant -- operating,e_w87763325-380,way/87763325-380,51.39136064014906,3.848434213143393,False
+e_w87763325-380,ep_bioenergy_w87763325-380__ember,216.0,bioenergy,Aggregated Plant - EMBER Gap - way/87763325-380_Missing Bioenergy Capacity -- operating,e_w87763325-380,way/87763325-380,50.993181064788686,4.00781621168987,False
+e_w87763325-380,ep_gas_combined_cycle_G100000400032,385.0,gas,Ringvaart power station_1 -- operating,e_w87763325-380,way/87763325-380,51.1049,3.7257,False
+e_w87763325-380,ep_gas_combined_cycle_G100000406272,43.0,gas,Ham (Gent) power station_1 -- operating,e_w87763325-380,way/87763325-380,51.0596,3.7364,False
+e_w87763325-380,ep_gas_gas_turbine_G100000400025,58.0,gas,Ham (Gent) power station_31 -- operating,e_w87763325-380,way/87763325-380,51.0596,3.7364,False
+e_w87763325-380,ep_gas_gas_turbine_G100000400026,58.0,gas,Ham (Gent) power station_32 -- operating,e_w87763325-380,way/87763325-380,51.0596,3.7364,False
+e_w87763325-380,ep_gas_steam_turbine_G100000409988,315.0,gas,Zelzate 2 Knippegroen power station_1 -- operating,e_w87763325-380,way/87763325-380,51.1587,3.8068,False
+e_w87763325-380,ep_gas_w87763325-380__ember,158.00340177378197,gas,Aggregated Plant - EMBER Gap - way/87763325-380_Missing Gas Capacity -- operating,e_w87763325-380,way/87763325-380,50.93984224360857,3.5844905381969108,False
+e_w87807194-380,ep_gas_combined_cycle_G100000400036,422.0,gas,T-power Beringen power station_1 -- operating,e_w87807194-380,way/87807194-380,51.0586,5.1056,False
+e_w87807194-380,ep_gas_w87807194-380__ember,243.1670513910824,gas,Aggregated Plant - EMBER Gap - way/87807194-380_Missing Gas Capacity -- operating,e_w87807194-380,way/87807194-380,51.073730363922266,5.149172625349714,False
+e_w88799385-380,ep_hydro_ps_G100000600149,474.0,hydro,Coo I hydroelectric plant_ -- operating,e_w88799385-380,way/88799385-380,50.3846,5.8616,False
+e_w88799385-380,ep_hydro_ps_G100000600150,690.0,hydro,Coo II hydroelectric plant_ -- operating,e_w88799385-380,way/88799385-380,50.3846,5.8616,False
+e_w88799385-380,ep_hydro_w88799385-380__irena,86.09709364908494,hydro,Aggregated Plant - IRENA Gap - way/88799385-380_Missing Hydro Capacity -- operating,e_w88799385-380,way/88799385-380,50.32713155153194,5.942577968317942,False
+e_w91142310-220,ep_bioenergy_w91142310-220,30.0,bioenergy,Aggregated Plant -- operating,e_w91142310-220,way/91142310-220,50.82465455485878,5.619153259269387,False
+e_w91142310-220,ep_bioenergy_w91142310-220__ember,144.0,bioenergy,Aggregated Plant - EMBER Gap - way/91142310-220_Missing Bioenergy Capacity -- operating,e_w91142310-220,way/91142310-220,50.46631108844768,5.592393575019633,False
+e_w93056461-380,ep_gas_gas_turbine_G100000406280,20.0,gas,Izegem power station_1 -- operating,e_w93056461-380,way/93056461-380,50.923778,3.212979,False
+e_w94155586-220,ep_gas_gas_turbine_G100000400018,25.0,gas,Angleur power station_31 -- operating,e_w94155586-220,way/94155586-220,50.6177,5.5837,False
+e_w94155586-220,ep_gas_gas_turbine_G100000400019,25.0,gas,Angleur power station_32 -- operating,e_w94155586-220,way/94155586-220,50.6177,5.5837,False
+e_w94155586-220,ep_gas_gas_turbine_G100000400020,64.0,gas,Angleur power station_41 -- operating,e_w94155586-220,way/94155586-220,50.6177,5.5837,False
+e_w94155586-220,ep_gas_gas_turbine_G100000400021,64.0,gas,Angleur power station_42 -- operating,e_w94155586-220,way/94155586-220,50.6177,5.5837,False
+e_w94155586-220,ep_gas_w94155586-220__ember,32.74110071680232,gas,Aggregated Plant - EMBER Gap - way/94155586-220_Missing Gas Capacity -- operating,e_w94155586-220,way/94155586-220,50.43649521358552,5.646091071798011,False
+e_w98410713-380,ep_gas_combined_cycle_G100000400029,106.0,gas,Jemeppe-sur-Sambre power station_1 -- operating,e_w98410713-380,way/98410713-380,50.44772,4.66122,False
+e_w98410713-380,ep_gas_w98410713-380__ember,19.497509415623856,gas,Aggregated Plant - EMBER Gap - way/98410713-380_Missing Gas Capacity -- operating,e_w98410713-380,way/98410713-380,50.4654637941913,4.426569665903083,False
+elc_spv_001,ep_solar_pv_001,7.300000000000001,solar,Aggregated Plant -- operating,elc_spv_001,BE21-400,50.33543413371254,4.525150084016024,False
+elc_spv_002,ep_solar_002__irena,2101.7894721995854,solar,Aggregated Plant - IRENA Gap - 2_Missing Solar Capacity -- operating,elc_spv_002,BE15-400,51.01382100801649,3.769203823521712,False
+elc_spv_002,ep_solar_pv_002,68.1,solar,Aggregated Plant -- operating,elc_spv_002,BE15-400,50.29782366927603,4.244231483915215,False
+elc_spv_003,ep_solar_003__irena,2109.6176958415335,solar,Aggregated Plant - IRENA Gap - 3_Missing Solar Capacity -- operating,elc_spv_003,way/23176013-380,50.98158866829512,4.811593239423168,False
+elc_spv_003,ep_solar_pv_003,28.999999999999996,solar,Aggregated Plant -- operating,elc_spv_003,way/23176013-380,50.462337833744975,4.720249377367203,False
+elc_spv_004,ep_solar_pv_004,217.20000000000002,solar,Aggregated Plant -- operating,elc_spv_004,way/87529551-400,51.06216326037644,3.880554313092171,False
+elc_spv_005,ep_solar_005__irena,2085.6928319588815,solar,Aggregated Plant - IRENA Gap - 5_Missing Solar Capacity -- operating,elc_spv_005,BE15-400,49.56251499767943,3.819500835943654,False
+elc_spv_005,ep_solar_pv_005,76.5,solar,Aggregated Plant -- operating,elc_spv_005,BE15-400,49.53835307856368,3.0964133439271198,False
+elc_spv_006,ep_solar_pv_006,5.2,solar,Aggregated Plant -- operating,elc_spv_006,way/33814632-220,50.108160731780416,5.761505258654912,False
+elc_spv_007,ep_solar_pv_007,5.9,solar,Aggregated Plant -- operating,elc_spv_007,way/121085954-220,49.45283244886177,5.262535462060339,False
+elc_spv_008,ep_solar_pv_008,86.5,solar,Aggregated Plant -- operating,elc_spv_008,way/1001478336-220,51.03843705903137,5.737137561548236,False
+elc_spv_009,ep_solar_pv_009,8.4,solar,Aggregated Plant -- operating,elc_spv_009,way/104524889-380,50.65838960593495,5.063324617389792,False
+elc_won_001,ep_windon_001__irena,513.9025068660877,windon,Aggregated Plant - IRENA Gap - 1_Missing Onshore wind energy Capacity -- operating,elc_won_001,way/88373135-400,49.91537743471671,5.544084117588392,False
+elc_won_001,ep_windon_wind_001,212.0,windon,Aggregated Plant -- operating,elc_won_001,way/88373135-400,50.38051353170122,5.206307036891966,False
+elc_won_006,ep_windon_wind_006,140.0,windon,Aggregated Plant -- operating,elc_won_006,way/23176013-380,51.037577460188864,3.8138188971886837,False
+elc_won_007,ep_windon_wind_007,243.0,windon,Aggregated Plant -- operating,elc_won_007,way/16584741-380,50.99849558369522,4.8493676396690795,False
+elc_won_008,ep_windon_008__irena,511.1457226398606,windon,Aggregated Plant - IRENA Gap - 8_Missing Onshore wind energy Capacity -- operating,elc_won_008,way/500788534-380,50.96800534059836,2.8708785918040047,False
+elc_won_008,ep_windon_wind_008,417.0,windon,Aggregated Plant -- operating,elc_won_008,way/500788534-380,51.37177190087119,2.7719783630979995,False
+elc_won_009,ep_windon_wind_009,440.0,windon,Aggregated Plant -- operating,elc_won_009,way/87761208-380,50.39907022677694,3.9818346793719455,False
+elc_won_010,ep_windon_010__irena,537.5517704940513,windon,Aggregated Plant - IRENA Gap - 10_Missing Onshore wind energy Capacity -- operating,elc_won_010,BE15-400,50.42117160527149,2.636074696224889,False
+elc_won_010,ep_windon_wind_010,119.00000000000001,windon,Aggregated Plant -- operating,elc_won_010,BE15-400,50.82469884626305,2.8370816167877146,False

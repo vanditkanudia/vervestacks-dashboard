@@ -1,0 +1,100 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_gas__ember,38.000000000000256,gas,Aggregated Plant - EMBER Gap_Missing Gas Capacity -- operating,,,,,False
+e_LY10-400,ep_oil_gas_turbine_G100000411553,100.0,oil,South Tripoli power station_5 -- operating,e_LY10-400,LY10-400,32.776,13.0983,False
+e_LY10-400,ep_oil_gas_turbine_G100000411554,100.0,oil,South Tripoli power station_4 -- operating,e_LY10-400,LY10-400,32.776,13.0983,False
+e_LY10-400,ep_oil_gas_turbine_G100000411555,100.0,oil,South Tripoli power station_3 -- operating,e_LY10-400,LY10-400,32.776,13.0983,False
+e_LY10-400,ep_oil_gas_turbine_G100000411556,100.0,oil,South Tripoli power station_2 -- operating,e_LY10-400,LY10-400,32.776,13.0983,False
+e_LY10-400,ep_oil_gas_turbine_G100000411557,100.0,oil,South Tripoli power station_1 -- operating,e_LY10-400,LY10-400,32.776,13.0983,False
+e_LY39-220,ep_gas_combined_cycle_G100000408476,820.0,gas,North Benghazi power station_CC2 -- operating,e_LY39-220,LY39-220,32.201923,20.132608,False
+e_LY39-220,ep_gas_combined_cycle_G100000408479,915.0,gas,North Benghazi power station_CC1 -- operating,e_LY39-220,LY39-220,32.201923,20.132608,False
+e_LY39-400,ep_gas_gas_turbine_G100001018475,340.0,gas,Benghazi Simple Cycle Power Plant_1 -- construction,e_LY39-400,LY39-400,32.206863,20.152995,False
+e_LY39-400,ep_gas_gas_turbine_G100001021305,340.0,gas,Benghazi Simple Cycle Power Plant_2 -- construction,e_LY39-400,LY39-400,32.206863,20.152995,False
+e_LY39-400,ep_gas_gas_turbine_G100001021307,340.0,gas,Benghazi Simple Cycle Power Plant_3 -- construction,e_LY39-400,LY39-400,32.206863,20.152995,False
+e_LY39-400,ep_gas_gas_turbine_G100001021308,340.0,gas,Benghazi Simple Cycle Power Plant_4 -- construction,e_LY39-400,LY39-400,32.206863,20.152995,False
+e_LY44-220,ep_gas_gas_turbine_G100000408150,185.0,gas,Tobruk power station_4 -- operating,e_LY44-220,LY44-220,32.059427,23.981335,False
+e_LY44-220,ep_gas_gas_turbine_G100000408151,185.0,gas,Tobruk power station_3 -- operating,e_LY44-220,LY44-220,32.059427,23.981335,False
+e_LY44-220,ep_gas_gas_turbine_G100000408152,185.0,gas,Tobruk power station_2 -- operating,e_LY44-220,LY44-220,32.059427,23.981335,False
+e_LY44-220,ep_gas_gas_turbine_G100000408153,185.0,gas,Tobruk power station_1 -- operating,e_LY44-220,LY44-220,32.059427,23.981335,False
+e_LY44-220,ep_oil_steam_turbine_G100000411551,65.0,oil,Tobruk Thermal power station_ST2 -- operating,e_LY44-220,LY44-220,32.059544,23.980872,False
+e_LY44-220,ep_oil_steam_turbine_G100000411552,65.0,oil,Tobruk Thermal power station_ST1 -- operating,e_LY44-220,LY44-220,32.059544,23.980872,False
+e_LY53-220,ep_oil_internal_combustion_G100000411558,220.0,oil,Samnu Power plant_1 -- operating,e_LY53-220,LY53-220,27.221992,14.889664,False
+e_LY53-220,ep_oil_internal_combustion_G100000411567,100.0,oil,GECOL power plant 1_1 -- operating,e_LY53-220,LY53-220,27.221319,14.889865,False
+e_LY56-220,ep_oil_gas_turbine_G100000408569,160.0,oil,Ubari power station_4 -- operating,e_LY56-220,LY56-220,26.56378,12.679494,False
+e_LY56-220,ep_oil_gas_turbine_G100000408570,160.0,oil,Ubari power station_3 -- operating,e_LY56-220,LY56-220,26.56378,12.679494,False
+e_LY56-220,ep_oil_gas_turbine_G100000408571,160.0,oil,Ubari power station_2 -- operating,e_LY56-220,LY56-220,26.56378,12.679494,False
+e_LY56-220,ep_oil_gas_turbine_G100000408572,160.0,oil,Ubari power station_1 -- operating,e_LY56-220,LY56-220,26.56378,12.679494,False
+e_LY9-220,ep_oil_steam_turbine_G100000411568,65.0,oil,Derna Thermal power station_ST2 -- operating,e_LY9-220,LY9-220,32.780805,22.586663,False
+e_LY9-220,ep_oil_steam_turbine_G100000411569,65.0,oil,Derna Thermal power station_ST1 -- operating,e_LY9-220,LY9-220,32.780805,22.586663,False
+e_w103283231-220,ep_gas_gas_turbine_G100000410495,174.0,gas,Zliten power plant_1 -- construction,e_w103283231-220,way/103283231-220,32.463889,14.5725,False
+e_w103283231-220,ep_gas_gas_turbine_G100000413705,174.0,gas,Zliten power plant_6 -- construction,e_w103283231-220,way/103283231-220,32.463889,14.5725,False
+e_w103283231-220,ep_gas_gas_turbine_G100000413706,174.0,gas,Zliten power plant_5 -- construction,e_w103283231-220,way/103283231-220,32.463889,14.5725,False
+e_w103283231-220,ep_gas_gas_turbine_G100000413707,174.0,gas,Zliten power plant_4 -- construction,e_w103283231-220,way/103283231-220,32.463889,14.5725,False
+e_w103283231-220,ep_gas_gas_turbine_G100000413708,174.0,gas,Zliten power plant_3 -- construction,e_w103283231-220,way/103283231-220,32.463889,14.5725,False
+e_w103283231-220,ep_gas_gas_turbine_G100000413709,174.0,gas,Zliten power plant_2 -- construction,e_w103283231-220,way/103283231-220,32.463889,14.5725,False
+e_w1132089775-400,ep_gas_combined_cycle_G100000408488,480.0,gas,Al Zawiya power station_3 -- operating,e_w1132089775-400,way/1132089775-400,32.7882,12.674,False
+e_w1132089775-400,ep_gas_combined_cycle_G100000408489,480.0,gas,Al Zawiya power station_2 -- operating,e_w1132089775-400,way/1132089775-400,32.7882,12.674,False
+e_w1132089775-400,ep_gas_combined_cycle_G100000408490,480.0,gas,Al Zawiya power station_1 -- operating,e_w1132089775-400,way/1132089775-400,32.7882,12.674,False
+e_w1132089775-400,ep_gas_gas_turbine_G100001023012,50.0,gas,Al Zawiya power station_4-Mobile -- operating,e_w1132089775-400,way/1132089775-400,32.7882,12.674,False
+e_w1132089775-400,ep_gas_gas_turbine_G100001023013,50.0,gas,Al Zawiya power station_5-Mobile -- operating,e_w1132089775-400,way/1132089775-400,32.7882,12.674,False
+e_w128825607-220,ep_gas_gas_turbine_G100000411562,330.0,gas,New South Tripoli Gas power station_4 -- construction,e_w128825607-220,way/128825607-220,32.874532,13.19596,False
+e_w128825607-220,ep_gas_gas_turbine_G100000411563,330.0,gas,New South Tripoli Gas power station_3 -- construction,e_w128825607-220,way/128825607-220,32.874532,13.19596,False
+e_w128825607-220,ep_gas_gas_turbine_G100000411564,330.0,gas,New South Tripoli Gas power station_2 -- construction,e_w128825607-220,way/128825607-220,32.874532,13.19596,False
+e_w128825607-220,ep_gas_gas_turbine_G100000411565,330.0,gas,New South Tripoli Gas power station_1 -- construction,e_w128825607-220,way/128825607-220,32.874532,13.19596,False
+e_w128825607-220,ep_oil_internal_combustion_G100000411566,100.0,oil,GECOL power plant 2_1 -- operating,e_w128825607-220,way/128825607-220,32.88645,13.19172,False
+e_w1428384594-220,ep_gas_gas_turbine_G100000408491,265.0,gas,Al Khums power station_2-1 -- operating,e_w1428384594-220,way/1428384594-220,32.623535,14.329622,False
+e_w1428384594-220,ep_gas_gas_turbine_G100000408492,265.0,gas,Al Khums power station_2-2 -- operating,e_w1428384594-220,way/1428384594-220,32.623535,14.329622,False
+e_w1428384594-220,ep_gas_gas_turbine_G100000408493,150.0,gas,Al Khums power station_1-8 -- operating,e_w1428384594-220,way/1428384594-220,32.623535,14.329622,False
+e_w1428384594-220,ep_gas_gas_turbine_G100000408495,150.0,gas,Al Khums power station_1-7 -- operating,e_w1428384594-220,way/1428384594-220,32.623535,14.329622,False
+e_w1428384594-220,ep_gas_gas_turbine_G100000408497,150.0,gas,Al Khums power station_1-6 -- operating,e_w1428384594-220,way/1428384594-220,32.623535,14.329622,False
+e_w1428384594-220,ep_gas_gas_turbine_G100000408499,150.0,gas,Al Khums power station_1-5 -- operating,e_w1428384594-220,way/1428384594-220,32.623535,14.329622,False
+e_w1428384594-220,ep_gas_steam_turbine_G100000408494,120.0,gas,Al Khums power station_1-4 -- operating,e_w1428384594-220,way/1428384594-220,32.623535,14.329622,False
+e_w1428384594-220,ep_gas_steam_turbine_G100000408496,120.0,gas,Al Khums power station_1-3 -- operating,e_w1428384594-220,way/1428384594-220,32.623535,14.329622,False
+e_w1428384594-220,ep_gas_steam_turbine_G100000408498,120.0,gas,Al Khums power station_1-2 -- operating,e_w1428384594-220,way/1428384594-220,32.623535,14.329622,False
+e_w1428384594-220,ep_gas_steam_turbine_G100000408500,120.0,gas,Al Khums power station_1-1 -- operating,e_w1428384594-220,way/1428384594-220,32.623535,14.329622,False
+e_w1428389890-220,ep_gas_gas_turbine_G100000411159,750.0,gas,Sabha 2 power plant_GT -- operating,e_w1428389890-220,way/1428389890-220,27.038047,14.431053,False
+e_w1428793165-220,ep_gas_gas_turbine_G100000408457,285.0,gas,Zueitina power station_GT6 -- operating,e_w1428793165-220,way/1428793165-220,30.955452,20.116529,False
+e_w1428793165-220,ep_gas_gas_turbine_G100000408458,285.0,gas,Zueitina power station_GT5 -- operating,e_w1428793165-220,way/1428793165-220,30.955452,20.116529,False
+e_w1428793165-220,ep_gas_gas_turbine_G100000408459,50.0,gas,Zueitina power station_GT4 -- operating,e_w1428793165-220,way/1428793165-220,30.955452,20.116529,False
+e_w1428793165-220,ep_gas_gas_turbine_G100000408460,50.0,gas,Zueitina power station_GT3 -- operating,e_w1428793165-220,way/1428793165-220,30.955452,20.116529,False
+e_w1428793165-220,ep_gas_gas_turbine_G100000408461,50.0,gas,Zueitina power station_GT2 -- operating,e_w1428793165-220,way/1428793165-220,30.955452,20.116529,False
+e_w1428793165-220,ep_gas_gas_turbine_G100000408462,50.0,gas,Zueitina power station_GT1 -- operating,e_w1428793165-220,way/1428793165-220,30.955452,20.116529,False
+e_w1428793165-220,ep_gas_steam_turbine_G100000408456,250.0,gas,Zueitina power station_CC -- construction,e_w1428793165-220,way/1428793165-220,30.955452,20.116529,False
+e_w1429003571-220,ep_oil_steam_turbine_G100000411545,120.0,oil,West Tripoli Thermal power station_ST6 -- operating,e_w1429003571-220,way/1429003571-220,32.822983,12.97455,False
+e_w1429003571-220,ep_oil_steam_turbine_G100000411546,120.0,oil,West Tripoli Thermal power station_ST5 -- operating,e_w1429003571-220,way/1429003571-220,32.822983,12.97455,False
+e_w1429003571-220,ep_oil_steam_turbine_G100000411547,65.0,oil,West Tripoli Thermal power station_ST4 -- operating,e_w1429003571-220,way/1429003571-220,32.822983,12.97455,False
+e_w1429003571-220,ep_oil_steam_turbine_G100000411548,65.0,oil,West Tripoli Thermal power station_ST3 -- operating,e_w1429003571-220,way/1429003571-220,32.822983,12.97455,False
+e_w1429003571-220,ep_oil_steam_turbine_G100000411549,65.0,oil,West Tripoli Thermal power station_ST2 -- operating,e_w1429003571-220,way/1429003571-220,32.822983,12.97455,False
+e_w1429003571-220,ep_oil_steam_turbine_G100000411550,65.0,oil,West Tripoli Thermal power station_ST1 -- operating,e_w1429003571-220,way/1429003571-220,32.822983,12.97455,False
+e_w1429003571-400,ep_gas_gas_turbine_G100000408146,168.0,gas,West Tripoli power station_GT4 -- construction,e_w1429003571-400,way/1429003571-400,32.826719,12.977791,False
+e_w1429003571-400,ep_gas_gas_turbine_G100000408147,168.0,gas,West Tripoli power station_GT3 -- construction,e_w1429003571-400,way/1429003571-400,32.826719,12.977791,False
+e_w1429003571-400,ep_gas_gas_turbine_G100000408148,167.0,gas,West Tripoli power station_GT2 -- operating,e_w1429003571-400,way/1429003571-400,32.826719,12.977791,False
+e_w1429003571-400,ep_gas_gas_turbine_G100000408149,167.0,gas,West Tripoli power station_GT1 -- operating,e_w1429003571-400,way/1429003571-400,32.826719,12.977791,False
+e_w1429003571-400,ep_gas_steam_turbine_G100000408573,350.0,gas,West Tripoli power station_ST4 -- construction,e_w1429003571-400,way/1429003571-400,32.826719,12.977791,False
+e_w1429003571-400,ep_gas_steam_turbine_G100000408574,350.0,gas,West Tripoli power station_ST3 -- construction,e_w1429003571-400,way/1429003571-400,32.826719,12.977791,False
+e_w1429003571-400,ep_gas_steam_turbine_G100000408575,350.0,gas,West Tripoli power station_ST2 -- construction,e_w1429003571-400,way/1429003571-400,32.826719,12.977791,False
+e_w1429003571-400,ep_gas_steam_turbine_G100000408576,350.0,gas,West Tripoli power station_ST1 -- construction,e_w1429003571-400,way/1429003571-400,32.826719,12.977791,False
+e_w171416195-225,ep_gas_gas_turbine_G100000408463,156.0,gas,Western Mountain power plant_GT6 -- operating,e_w171416195-225,way/171416195-225,31.955532,11.145284,False
+e_w171416195-225,ep_gas_gas_turbine_G100000408464,156.0,gas,Western Mountain power plant_GT5 -- operating,e_w171416195-225,way/171416195-225,31.955532,11.145284,False
+e_w171416195-225,ep_gas_gas_turbine_G100000408465,156.0,gas,Western Mountain power plant_GT4 -- operating,e_w171416195-225,way/171416195-225,31.955532,11.145284,False
+e_w171416195-225,ep_gas_gas_turbine_G100000408466,156.0,gas,Western Mountain power plant_GT3 -- operating,e_w171416195-225,way/171416195-225,31.955532,11.145284,False
+e_w171416195-225,ep_gas_gas_turbine_G100000408467,156.0,gas,Western Mountain power plant_GT2 -- operating,e_w171416195-225,way/171416195-225,31.955532,11.145284,False
+e_w171416195-225,ep_gas_gas_turbine_G100000408468,156.0,gas,Western Mountain power plant_GT1 -- operating,e_w171416195-225,way/171416195-225,31.955532,11.145284,False
+e_w171952539-220,ep_gas_gas_turbine_G100000411022,1000.0,gas,Mellitah power plant_1 -- construction,e_w171952539-220,way/171952539-220,32.933333,12.083333,False
+e_w177038810-220,ep_gas_steam_turbine_G100000408487,350.0,gas,Gulf Steam power station_1 -- operating,e_w177038810-220,way/177038810-220,31.2174,16.347,False
+e_w177038810-220,ep_gas_steam_turbine_G100000408581,350.0,gas,Gulf Steam power station_2 -- construction,e_w177038810-220,way/177038810-220,31.2174,16.347,False
+e_w177539635-400,ep_gas_combined_cycle_G100000408164,820.0,gas,Misurata power station_1-1 -- operating,e_w177539635-400,way/177539635-400,32.332424,15.244122,False
+e_w177539635-400,ep_gas_gas_turbine_G100000408162,325.0,gas,Misurata power station_2-2 -- operating,e_w177539635-400,way/177539635-400,32.332424,15.244122,False
+e_w177539635-400,ep_gas_gas_turbine_G100000408163,325.0,gas,Misurata power station_2-1 -- operating,e_w177539635-400,way/177539635-400,32.332424,15.244122,False
+e_w177539635-400,ep_gas_steam_turbine_G100000408156,84.5,gas,Misurata (LISCO) power station_6 -- operating,e_w177539635-400,way/177539635-400,32.3326,15.2319,False
+e_w177539635-400,ep_gas_steam_turbine_G100000408157,84.5,gas,Misurata (LISCO) power station_5 -- operating,e_w177539635-400,way/177539635-400,32.3326,15.2319,False
+e_w177539635-400,ep_gas_steam_turbine_G100000408158,84.5,gas,Misurata (LISCO) power station_4 -- operating,e_w177539635-400,way/177539635-400,32.3326,15.2319,False
+e_w177539635-400,ep_gas_steam_turbine_G100000408159,84.5,gas,Misurata (LISCO) power station_3 -- operating,e_w177539635-400,way/177539635-400,32.3326,15.2319,False
+e_w177539635-400,ep_gas_steam_turbine_G100000408160,84.5,gas,Misurata (LISCO) power station_2 -- operating,e_w177539635-400,way/177539635-400,32.3326,15.2319,False
+e_w177539635-400,ep_gas_steam_turbine_G100000408161,84.5,gas,Misurata (LISCO) power station_1 -- operating,e_w177539635-400,way/177539635-400,32.3326,15.2319,False
+e_w606155906-220,ep_gas_gas_turbine_G100000408165,285.0,gas,Sarir power station_3 -- operating,e_w606155906-220,way/606155906-220,26.909488,22.095786,False
+e_w606155906-220,ep_gas_gas_turbine_G100000408166,285.0,gas,Sarir power station_2 -- operating,e_w606155906-220,way/606155906-220,26.909488,22.095786,False
+e_w606155906-220,ep_gas_gas_turbine_G100000408167,285.0,gas,Sarir power station_1 -- operating,e_w606155906-220,way/606155906-220,26.909488,22.095786,False
+elc_spv_007,ep_solar_007__irena,2.0375005560374286,solar,Aggregated Plant -- operating,elc_spv_007,way/193807037-220,25.94282247158093,15.704820120806664,False
+elc_spv_024,ep_solar_024__irena,2.004237719227183,solar,Aggregated Plant -- operating,elc_spv_024,way/273385074-220,23.914123007197166,21.58047869304384,False
+elc_spv_027,ep_solar_027__irena,2.291261724735389,solar,Aggregated Plant -- operating,elc_spv_027,way/219241202-220,21.012513128297705,23.75279084689263,False
+elc_spv_032,ep_solar_pv_G100000800403,500.0,solar,Sadada (Total Energies) solar farm_-- -- operating,elc_spv_032,LY53-220,26.8234,18.1237,False

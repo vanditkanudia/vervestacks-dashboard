@@ -1,0 +1,20 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_gas__ember,4.0000000000000036,gas,Aggregated Plant -- operating,,,,,False
+e_TJ26-500,ep_hydro_dam_G100000603585,126.0,hydro,Kairakkum hydroelectric plant_ -- operating,e_TJ26-500,TJ26-500,40.2759,69.815,False
+e_TJ30-500,ep_coal_subcritical_G100000102517,50.0,coal,Dushanbe-2 power station_Unit 1 -- operating,e_TJ30-500,TJ30-500,38.610817,68.771867,False
+e_TJ30-500,ep_coal_subcritical_G100000102518,50.0,coal,Dushanbe-2 power station_Unit 2 -- operating,e_TJ30-500,TJ30-500,38.610817,68.771867,False
+e_TJ30-500,ep_coal_subcritical_G100000113809,150.0,coal,Dushanbe-2 power station_Unit 3 -- operating,e_TJ30-500,TJ30-500,38.610817,68.771867,False
+e_TJ30-500,ep_coal_subcritical_G100000113810,150.0,coal,Dushanbe-2 power station_Unit 4 -- operating,e_TJ30-500,TJ30-500,38.610817,68.771867,False
+e_TJ30-500,ep_gas_steam_turbine_G100000407440,86.0,gas,Dushanbe-1 power station_3 -- operating,e_TJ30-500,TJ30-500,38.55642,68.775919,False
+e_w1016951696-500,ep_gas_steam_turbine_G100000407437,60.0,gas,Yavan power station_2 -- operating,e_w1016951696-500,way/1016951696-500,38.29656,68.931589,False
+e_w1016951696-500,ep_gas_steam_turbine_G100000407438,60.0,gas,Yavan power station_1 -- operating,e_w1016951696-500,way/1016951696-500,38.29656,68.931589,False
+e_w1016951696-500,ep_hydro_dam_G100000603583,600.0,hydro,Baipaza hydroelectric plant_ -- operating,e_w1016951696-500,way/1016951696-500,38.2674,69.1237,False
+e_w1016951696-500,ep_hydro_dam_G100000603586,2700.0,hydro,Nurek hydroelectric plant_ -- operating,e_w1016951696-500,way/1016951696-500,38.3717,69.3481,False
+e_w1373384046-500,ep_hydro_dam_G100000603590,670.0,hydro,Sangtuda-1 hydroelectric plant_ -- operating,e_w1373384046-500,way/1373384046-500,38.0435,69.0583,False
+e_w1373384046-500,ep_hydro_dam_G100000603591,220.0,hydro,Sangtuda-2 hydroelectric plant_ -- operating,e_w1373384046-500,way/1373384046-500,37.9708,69.0269,False
+e_w1373384046-500,ep_hydro_dam_G100000603593,240.0,hydro,Sarband hydroelectric plant_ -- operating,e_w1373384046-500,way/1373384046-500,37.8839,68.937,False
+e_w799346816-500,ep_hydro_dam_G100000603589,1200.0,hydro,Rogun hydroelectric plant_ -- operating,e_w799346816-500,way/799346816-500,38.6819,69.7714,False
+e_w799346816-500,ep_hydro_dam_G100001051929,2400.0,hydro,Rogun hydroelectric plant_ -- construction,e_w799346816-500,way/799346816-500,38.6819,69.7714,False
+elc_spv_005,ep_solar_005__irena,0.06905325351514047,solar,Aggregated Plant -- operating,elc_spv_005,way/1373384046-500,37.27636109204864,69.15262189769331,False
+elc_spv_006,ep_solar_006__irena,0.07428222051276774,solar,Aggregated Plant -- operating,elc_spv_006,TJ46-500,37.13482897077828,68.06705571223127,False
+elc_spv_008,ep_solar_008__irena,0.0766645259720918,solar,Aggregated Plant -- operating,elc_spv_008,TJ20-500,40.34565644231153,70.08742196040748,False

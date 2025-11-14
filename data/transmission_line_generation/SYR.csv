@@ -1,0 +1,53 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,10.0,bioenergy,Aggregated Plant -- operating,,,,,False
+e_SY33-230,ep_m_gas_combined_cycle_G100000411149,488.0,gas,Zayzoun CCGT power plant_CC -- mothballed,e_SY33-230,SY33-230,35.932216,36.633551,False
+e_SY51-230,ep_gas_steam_turbine_G100000408125,165.0,gas,Mehardeh power plant_ST1 -- operating,e_SY51-230,SY51-230,35.263249,36.584817,False
+e_SY51-230,ep_gas_steam_turbine_G100000408545,150.0,gas,Mehardeh power plant_ST4 -- operating,e_SY51-230,SY51-230,35.263249,36.584817,False
+e_SY51-230,ep_gas_steam_turbine_G100000408546,150.0,gas,Mehardeh power plant_ST3 -- operating,e_SY51-230,SY51-230,35.263249,36.584817,False
+e_SY51-230,ep_gas_steam_turbine_G100000408547,165.0,gas,Mehardeh power plant_ST2 -- operating,e_SY51-230,SY51-230,35.263249,36.584817,False
+e_SY85-230,ep_gas_combined_cycle_G100000408126,450.0,gas,Teshreen power station_CC1 -- operating,e_SY85-230,SY85-230,33.41945,36.688722,False
+e_SY85-230,ep_gas_gas_turbine_G100000408127,113.0,gas,Teshreen power station_GT1 -- operating,e_SY85-230,SY85-230,33.41945,36.688722,False
+e_SY85-230,ep_gas_gas_turbine_G100000408548,113.0,gas,Teshreen power station_GT2 -- operating,e_SY85-230,SY85-230,33.41945,36.688722,False
+e_SY85-230,ep_gas_steam_turbine_G100000408128,200.0,gas,Teshreen power station_ST2 -- operating,e_SY85-230,SY85-230,33.41945,36.688722,False
+e_SY85-230,ep_gas_steam_turbine_G100000408537,200.0,gas,Teshreen power station_ST4 -- construction,e_SY85-230,SY85-230,33.41945,36.688722,False
+e_SY85-230,ep_gas_steam_turbine_G100000408538,200.0,gas,Teshreen power station_ST3 -- construction,e_SY85-230,SY85-230,33.41945,36.688722,False
+e_SY85-230,ep_gas_steam_turbine_G100000408549,200.0,gas,Teshreen power station_ST1 -- operating,e_SY85-230,SY85-230,33.41945,36.688722,False
+e_w124803179-230,ep_gas_steam_turbine_G100000408133,220.0,gas,Al-Zara power plant_3 -- operating,e_w124803179-230,way/124803179-230,34.959189,36.661889,False
+e_w124803179-230,ep_gas_steam_turbine_G100000408134,220.0,gas,Al-Zara power plant_2 -- operating,e_w124803179-230,way/124803179-230,34.959189,36.661889,False
+e_w124803179-230,ep_gas_steam_turbine_G100000408135,220.0,gas,Al-Zara power plant_1 -- operating,e_w124803179-230,way/124803179-230,34.959189,36.661889,False
+e_w1302950765-400,ep_gas_combined_cycle_G100000408454,750.0,gas,Deir Ali power station_CC3- EXT1 -- construction,e_w1302950765-400,way/1302950765-400,33.268416,36.328777,False
+e_w1302950765-400,ep_gas_combined_cycle_G100000408455,750.0,gas,Deir Ali power station_CC1 -- operating,e_w1302950765-400,way/1302950765-400,33.268416,36.328777,False
+e_w1302950765-400,ep_gas_combined_cycle_G100000408555,750.0,gas,Deir Ali power station_CC2 -- operating,e_w1302950765-400,way/1302950765-400,33.268416,36.328777,False
+e_w130804491-230,ep_gas_combined_cycle_G100000411388,750.0,gas,Deir El Zor power plant_Deir Ali- Ext 2 -- construction,e_w130804491-230,way/130804491-230,35.338836,40.131667,False
+e_w133331795-230,ep_gas_steam_turbine_G100000408130,213.0,gas,Aleppo power plant_ST1 -- operating,e_w133331795-230,way/133331795-230,36.175527,37.437828,False
+e_w133331795-230,ep_gas_steam_turbine_G100000408550,213.0,gas,Aleppo power plant_ST5 -- operating,e_w133331795-230,way/133331795-230,36.175527,37.437828,False
+e_w133331795-230,ep_m_gas_steam_turbine_G100000408551,213.0,gas,Aleppo power plant_ST4 -- mothballed,e_w133331795-230,way/133331795-230,36.175527,37.437828,False
+e_w133331795-230,ep_m_gas_steam_turbine_G100000408552,213.0,gas,Aleppo power plant_ST3 -- mothballed,e_w133331795-230,way/133331795-230,36.175527,37.437828,False
+e_w133331795-230,ep_m_gas_steam_turbine_G100000408553,213.0,gas,Aleppo power plant_ST2 -- mothballed,e_w133331795-230,way/133331795-230,36.175527,37.437828,False
+e_w150638744-230,ep_gas_combined_cycle_G100000408122,703.0,gas,Jandar Gas power plant_1 -- operating,e_w150638744-230,way/150638744-230,34.465977,36.783316,False
+e_w150638744-230,ep_gas_combined_cycle_G100000408123,480.0,gas,Jandar Gas power plant_EXT1 -- operating,e_w150638744-230,way/150638744-230,34.465977,36.783316,False
+e_w150638744-230,ep_gas_combined_cycle_G100000411152,450.0,gas,Jandar Gas power plant_EXT2 -- construction,e_w150638744-230,way/150638744-230,34.465977,36.783316,False
+e_w163808669-230,ep_gas_combined_cycle_G100000408136,487.5,gas,Nasrieh Gas power plant_1 -- operating,e_w163808669-230,way/163808669-230,33.801408,36.682851,False
+e_w163808669-230,ep_gas_gas_turbine_G100000411150,100.0,gas,Nasrieh Gas power plant_GT1-2 -- operating,e_w163808669-230,way/163808669-230,33.801408,36.682851,False
+e_w163808669-230,ep_gas_gas_turbine_G100001028327,100.0,gas,Nasrieh Gas power plant_GT2- 2 -- construction,e_w163808669-230,way/163808669-230,33.801408,36.682851,False
+e_w164725546-230,ep_hydro_dam_G100000603569,630.0,hydro,Tishrin Dam hydroelectric plant_ -- operating,e_w164725546-230,way/164725546-230,36.3814,38.1833,False
+e_w164725546-230,ep_m_coal_subcritical_G100000108863,30.0,coal,SCC Cement power station_Unit 1 -- mothballed,e_w164725546-230,way/164725546-230,36.542217,38.586943,False
+e_w164725546-230,ep_m_coal_subcritical_G100000108864,30.0,coal,SCC Cement power station_Unit 2 -- mothballed,e_w164725546-230,way/164725546-230,36.542217,38.586943,False
+e_w168164591-230,ep_hydro_dam_G100000603568,880.0,hydro,Tabqa Dam hydroelectric plant_ -- operating,e_w168164591-230,way/168164591-230,35.8722,38.5667,False
+e_w446821737-230,ep_gas_gas_turbine_G100000408132,138.0,gas,Banias power plant_EXT1 -- operating,e_w446821737-230,way/446821737-230,35.171559,35.927567,False
+e_w446821737-230,ep_gas_gas_turbine_G100000408554,138.0,gas,Banias power plant_EXT2 -- operating,e_w446821737-230,way/446821737-230,35.171559,35.927567,False
+e_w446821737-230,ep_oil_steam_turbine_G100000411390,170.0,oil,Banias Thermal power plant_ST4 -- operating,e_w446821737-230,way/446821737-230,35.171223,35.928151,False
+e_w446821737-230,ep_oil_steam_turbine_G100000411391,170.0,oil,Banias Thermal power plant_ST3 -- operating,e_w446821737-230,way/446821737-230,35.171223,35.928151,False
+e_w446821737-230,ep_oil_steam_turbine_G100000411392,170.0,oil,Banias Thermal power plant_ST2 -- operating,e_w446821737-230,way/446821737-230,35.171223,35.928151,False
+e_w446821737-230,ep_oil_steam_turbine_G100000411395,170.0,oil,Banias Thermal power plant_ST1 -- operating,e_w446821737-230,way/446821737-230,35.171223,35.928151,False
+e_w447311123-230,ep_gas_gas_turbine_G100000408124,183.0,gas,Latakia power station_GT1 -- operating,e_w447311123-230,way/447311123-230,35.532672,35.799198,False
+e_w447311123-230,ep_gas_gas_turbine_G100000411385,183.0,gas,Latakia power station_GT2 -- operating,e_w447311123-230,way/447311123-230,35.532672,35.799198,False
+e_w447311123-230,ep_gas_steam_turbine_G100000411384,160.0,gas,Latakia power station_ST1 -- construction,e_w447311123-230,way/447311123-230,35.532672,35.799198,False
+e_w451243216-230,ep_hydro_dam_G100000603567,75.0,hydro,Baath hydroelectric plant_ -- operating,e_w451243216-230,way/451243216-230,35.8852,38.7472,False
+elc_spv_005,ep_solar_pv_005,3.2,solar,Aggregated Plant -- operating,elc_spv_005,SY51-230,35.78682371045617,37.11212642979845,False
+elc_spv_006,ep_solar_pv_006,133.20000000000002,solar,Aggregated Plant -- operating,elc_spv_006,SY84-230,33.95360028045597,36.952244934371,False
+elc_spv_008,ep_solar_pv_008,22.9,solar,Aggregated Plant -- operating,elc_spv_008,SY87-230,32.750546757189774,36.30601694239671,False
+elc_spv_010,ep_solar_pv_010,100.0,solar,Aggregated Plant -- operating,elc_spv_010,way/133331795-230,36.555427457303104,38.727678121839574,False
+elc_won_013,ep_windon_013__irena,0.1830745824532887,windon,Aggregated Plant -- operating,elc_won_013,SY66-400,34.16005598014119,39.437557024160434,False
+elc_won_014,ep_windon_014__irena,0.2038893740851929,windon,Aggregated Plant -- operating,elc_won_014,way/130805767-230,35.10170473311457,40.13059615139888,False
+elc_won_015,ep_windon_015__irena,0.21303604346151833,windon,Aggregated Plant -- operating,elc_won_015,SY66-400,33.804286599331796,39.41514933416742,False

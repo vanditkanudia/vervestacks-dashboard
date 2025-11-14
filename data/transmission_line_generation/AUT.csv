@@ -1,0 +1,166 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_AT20-380,ep_hydro_AT20-380__irena,25.338360655737695,hydro,Aggregated Plant - IRENA Gap - AT20-380_Missing Hydro Capacity -- operating,e_AT20-380,AT20-380,47.34419457874015,13.162440732606433,False
+e_AT20-380,ep_hydro_dam_G100000600114,120.0,hydro,Kaprun Schwarzach hydroelectric plant_ -- operating,e_AT20-380,AT20-380,47.3149,13.1394,False
+e_AT25-380,ep_hydro_AT25-380__irena,320.3191092896173,hydro,Aggregated Plant - IRENA Gap - AT25-380_Missing Hydro Capacity -- operating,e_AT25-380,AT25-380,47.24843769973508,12.826319848114183,False
+e_AT25-380,ep_hydro_ps_G100000600111,480.0,hydro,Kaprun Limberg II hydroelectric plant_ -- operating,e_AT25-380,AT25-380,47.1971,12.7193,False
+e_AT25-380,ep_hydro_ps_G100000600112,480.0,hydro,Kaprun Limberg III hydroelectric plant_ -- construction,e_AT25-380,AT25-380,47.1992,12.7245,False
+e_AT25-380,ep_hydro_ps_G100000600113,260.0,hydro,Kaprun Oberstufe hydroelectric plant_ -- operating,e_AT25-380,AT25-380,47.1971,12.7193,False
+e_AT25-380,ep_hydro_ps_G100000600139,170.0,hydro,Tauernmoos hydroelectric plant_ -- construction,e_AT25-380,AT25-380,47.1592,12.6328,False
+e_AT25-380,ep_hydro_ror_G100000600098,81.0,hydro,Enzingerboden hydroelectric plant_ -- operating,e_AT25-380,AT25-380,47.1697,12.6266,False
+e_AT26-220,ep_hydro_AT26-220__irena,76.01508196721309,hydro,Aggregated Plant - IRENA Gap - AT26-220_Missing Hydro Capacity -- operating,e_AT26-220,AT26-220,46.97325157061909,11.857976004845712,False
+e_AT26-220,ep_hydro_ps_G100000600105,360.0,hydro,Häusling hydroelectric plant_ -- operating,e_AT26-220,AT26-220,47.1462,11.9673,False
+e_AT29-220,ep_hydro_AT29-220__irena,80.2381420765027,hydro,Aggregated Plant - IRENA Gap - AT29-220_Missing Hydro Capacity -- operating,e_AT29-220,AT29-220,46.87131123494573,10.131343885527206,False
+e_AT29-220,ep_hydro_ps_G100000600126,380.0,hydro,Obervermunt II hydroelectric plant_ -- operating,e_AT29-220,AT29-220,46.9349,10.0595,False
+e_AT3-220,ep_hydro_AT3-220__irena,27.872196721311465,hydro,Aggregated Plant - IRENA Gap - AT3-220_Missing Hydro Capacity -- operating,e_AT3-220,AT3-220,48.50386361262197,13.62232439957053,False
+e_AT3-220,ep_hydro_ror_G100000604104,132.0,hydro,Jochenstein hydroelectric plant_ -- operating,e_AT3-220,AT3-220,48.5173,13.7069,False
+e_AT30-220,ep_hydro_AT30-220__irena,192.36038797814197,hydro,Aggregated Plant - IRENA Gap - AT30-220_Missing Hydro Capacity -- operating,e_AT30-220,AT30-220,47.02878431452436,13.231378997612168,False
+e_AT30-220,ep_hydro_dam_G100000600106,107.0,hydro,Hintermuhr hydroelectric plant_ -- operating,e_AT30-220,AT30-220,47.1029,13.4779,False
+e_AT30-220,ep_hydro_ps_G100000600100,140.0,hydro,Feldsee hydroelectric plant_ -- operating,e_AT30-220,AT30-220,47.0036,13.0562,False
+e_AT30-220,ep_hydro_ps_G100000600109,114.0,hydro,Innerfragant Oschenik hydroelectric plant_ -- operating,e_AT30-220,AT30-220,46.9773,13.0517,False
+e_AT30-220,ep_hydro_ps_G100000600123,120.0,hydro,Malta Oberstufe hydroelectric plant_ -- operating,e_AT30-220,AT30-220,47.0659,13.3528,False
+e_AT30-220,ep_hydro_ps_G100000600132,430.0,hydro,Reissek II hydroelectric plant_ -- operating,e_AT30-220,AT30-220,46.8934,13.3432,False
+e_AT33-220,ep_hydro_AT33-220__irena,238.3917431693988,hydro,Aggregated Plant - IRENA Gap - AT33-220_Missing Hydro Capacity -- operating,e_AT33-220,AT33-220,46.44633599650297,15.079700129074157,False
+e_AT33-220,ep_hydro_dam_G100001052091,50.0,hydro,Koralpe hydroelectric plant_ -- operating,e_AT33-220,AT33-220,46.6339,14.9555,False
+e_AT33-220,ep_hydro_ror_G100000600137,79.0,hydro,Schwabeck hydroelectric plant_ -- operating,e_AT33-220,AT33-220,46.6583,14.8749,False
+e_AT33-220,ep_windon_wind_220,26.0,windon,Aggregated Plant -- operating,e_AT33-220,AT33-220,46.42712714000186,14.60305964825436,False
+e_AT34-220,ep_hydro_AT34-220__irena,15.83647540983606,hydro,Aggregated Plant - IRENA Gap - AT34-220_Missing Hydro Capacity -- operating,e_AT34-220,AT34-220,46.64216693183063,14.307282908086401,False
+e_AT34-220,ep_hydro_ror_G100000600101,75.0,hydro,Ferlach Maria Rain hydroelectric plant_ -- operating,e_AT34-220,AT34-220,46.5465,14.2988,False
+e_AT5-220,ep_hydro_AT5-220__irena,21.11530054644808,hydro,Aggregated Plant - IRENA Gap - AT5-220_Missing Hydro Capacity -- operating,e_AT5-220,AT5-220,48.62368829386832,12.99235003366341,False
+e_AT5-220,ep_hydro_ror_G100000604102,100.0,hydro,Braunau-Simbach hydroelectric plant_ -- operating,e_AT5-220,AT5-220,48.2451,13.0065,False
+e_w100602290-220,ep_hydro_dam_G100000600130,392.0,hydro,Prutz hydroelectric plant_ -- operating,e_w100602290-220,way/100602290-220,47.0673,10.6652,False
+e_w100602290-220,ep_hydro_ror_G100000600131,89.0,hydro,Prutz Ried hydroelectric plant_ -- operating,e_w100602290-220,way/100602290-220,47.0619,10.6626,False
+e_w100602290-220,ep_hydro_w100602290-220__irena,291.60230054644796,hydro,Aggregated Plant - IRENA Gap - way/100602290-220_Missing Hydro Capacity -- operating,e_w100602290-220,way/100602290-220,47.137190377739714,10.537859338669213,False
+e_w101997887-220,ep_hydro_w101997887-220__irena,211.15300546448077,hydro,Aggregated Plant - IRENA Gap - way/101997887-220_Missing Hydro Capacity -- operating,e_w101997887-220,way/101997887-220,47.1399688139332,9.631556066981048,False
+e_w105065132-220,ep_hydro_ror_G100001027076,52.0,hydro,St. Pantaleon hydroelectric plant_ -- operating,e_w105065132-220,way/105065132-220,48.0076,12.8942,False
+e_w105065132-220,ep_hydro_w105065132-220__irena,10.979956284153001,hydro,Aggregated Plant - IRENA Gap - way/105065132-220_Missing Hydro Capacity -- operating,e_w105065132-220,way/105065132-220,47.78614860058863,12.934106912812092,False
+e_w118091356-220,ep_hydro_dam_G100000600093,328.0,hydro,Altenwörth hydroelectric plant_ -- operating,e_w118091356-220,way/118091356-220,48.376,15.857,False
+e_w118091356-220,ep_hydro_w118091356-220__irena,69.25818579234969,hydro,Aggregated Plant - IRENA Gap - way/118091356-220_Missing Hydro Capacity -- operating,e_w118091356-220,way/118091356-220,48.50238481752675,15.871465230196474,False
+e_w119489306-400,ep_gas_combined_cycle_G100000400003,140.0,gas,Leopoldau power station_1 -- operating,e_w119489306-400,way/119489306-400,48.2767,16.4339,False
+e_w1203160522-220,ep_bioenergy_G100000410438,70.0,bioenergy,Lenzing Energy power station_1 -- operating,e_w1203160522-220,way/1203160522-220,47.97671,13.6195,False
+e_w1203160522-220,ep_bioenergy_w1203160522-220__ember,1130.0,bioenergy,Aggregated Plant - EMBER Gap - way/1203160522-220_Missing Bioenergy Capacity -- operating,e_w1203160522-220,way/1203160522-220,48.34959119854481,13.742052681454368,False
+e_w1203160522-220,ep_gas_combined_cycle_G100000400013,405.0,gas,Timelkam power station_1 -- operating,e_w1203160522-220,way/1203160522-220,48.0122,13.5895,False
+e_w1203160522-220,ep_gas_w1203160522-220__ember,21.87855402112104,gas,Aggregated Plant - EMBER Gap - way/1203160522-220_Missing Gas Capacity -- operating,e_w1203160522-220,way/1203160522-220,47.99489071999287,13.680831504078382,False
+e_w123176540-220,ep_hydro_ps_G100000600120,280.0,hydro,Lunersee hydroelectric plant_ -- operating,e_w123176540-220,way/123176540-220,47.0738,9.874,False
+e_w123176540-220,ep_hydro_w123176540-220__irena,59.12284153005462,hydro,Aggregated Plant - IRENA Gap - way/123176540-220_Missing Hydro Capacity -- operating,e_w123176540-220,way/123176540-220,46.959787197283774,9.835721304777604,False
+e_w138407040-380,ep_gas_combined_cycle_G100000400010,840.0,gas,Simmering power station_Sim1 -- operating,e_w138407040-380,way/138407040-380,48.1815,16.4334,False
+e_w138407040-380,ep_gas_combined_cycle_G100000400011,340.0,gas,Simmering power station_Sim3 -- operating,e_w138407040-380,way/138407040-380,48.1815,16.4334,False
+e_w138407040-380,ep_gas_gas_turbine_G100000400000,395.0,gas,"Donaustadt power station_Unit 1, timepoint 1 -- operating",e_w138407040-380,way/138407040-380,48.2,16.4633,False
+e_w138407040-380,ep_gas_w138407040-380__ember,114.90292445166533,gas,Aggregated Plant - EMBER Gap - way/138407040-380_Missing Gas Capacity -- operating,e_w138407040-380,way/138407040-380,48.3585760706701,16.468456364358953,False
+e_w138407040-380,ep_hydro_dam_G100000600102,172.0,hydro,Freudenau hydroelectric plant_ -- operating,e_w138407040-380,way/138407040-380,48.1753,16.4808,False
+e_w138407040-380,ep_hydro_w138407040-380__irena,36.3183169398907,hydro,Aggregated Plant - IRENA Gap - way/138407040-380_Missing Hydro Capacity -- operating,e_w138407040-380,way/138407040-380,48.003444046928706,16.45389438895018,False
+e_w138407040-380,ep_oil_steam_turbine_G100001000105,60.0,oil,Simmering power station_Sim2 -- operating,e_w138407040-380,way/138407040-380,48.1815,16.4334,False
+e_w140375658-380,ep_hydro_dam_G100000600103,200.0,hydro,Gerlos hydroelectric plant_ -- operating,e_w140375658-380,way/140375658-380,47.233,11.8992,False
+e_w140375658-380,ep_hydro_w140375658-380__irena,42.23060109289616,hydro,Aggregated Plant - IRENA Gap - way/140375658-380_Missing Hydro Capacity -- operating,e_w140375658-380,way/140375658-380,47.17539359268235,11.855073819157695,False
+e_w152245073-220,ep_hydro_w152245073-220__irena,63.34590163934424,hydro,Aggregated Plant - IRENA Gap - way/152245073-220_Missing Hydro Capacity -- operating,e_w152245073-220,way/152245073-220,47.877565337907505,13.986304681111566,False
+e_w162826525-220,ep_hydro_ror_G100001027071,60.0,hydro,Amlach hydroelectric plant_ -- operating,e_w162826525-220,way/162826525-220,46.8142,12.7618,False
+e_w162826525-220,ep_hydro_w162826525-220__irena,12.669180327868848,hydro,Aggregated Plant - IRENA Gap - way/162826525-220_Missing Hydro Capacity -- operating,e_w162826525-220,way/162826525-220,46.72790455525194,12.661501363886842,False
+e_w210191809-220,ep_hydro_ror_G100000604103,84.0,hydro,Egglfing-Obernberg hydroelectric plant_ -- operating,e_w210191809-220,way/210191809-220,48.3186,13.3199,False
+e_w210191809-220,ep_hydro_ror_G100000604105,96.0,hydro,Passau-Ingling hydroelectric plant_ -- operating,e_w210191809-220,way/210191809-220,48.5536,13.4369,False
+e_w210191809-220,ep_hydro_ror_G100000604106,100.0,hydro,Schärding Neuhaus hydroelectric plant_ -- operating,e_w210191809-220,way/210191809-220,48.4355,13.4399,False
+e_w210191809-220,ep_hydro_w210191809-220__irena,59.12284153005462,hydro,Aggregated Plant - IRENA Gap - way/210191809-220_Missing Hydro Capacity -- operating,e_w210191809-220,way/210191809-220,48.25775587308748,13.59912651345252,False
+e_w219909160-220,ep_hydro_dam_G100000600140,157.0,hydro,Vermunt hydroelectric plant_ -- operating,e_w219909160-220,way/219909160-220,46.9692,10.056,False
+e_w219909160-220,ep_hydro_ps_G100000600115,288.0,hydro,Kops I hydroelectric plant_ -- operating,e_w219909160-220,way/219909160-220,46.9707,10.0571,False
+e_w219909160-220,ep_hydro_ps_G100000600116,525.0,hydro,Kops II hydroelectric plant_ -- operating,e_w219909160-220,way/219909160-220,46.9756,10.043,False
+e_w219909160-220,ep_hydro_w219909160-220__irena,204.81841530054635,hydro,Aggregated Plant - IRENA Gap - way/219909160-220_Missing Hydro Capacity -- operating,e_w219909160-220,way/219909160-220,47.046923237218344,10.095869808972575,False
+e_w219909161-220,ep_hydro_ps_G100000600133,198.0,hydro,Rodund I hydroelectric plant_ -- operating,e_w219909161-220,way/219909161-220,47.0854,9.8826,False
+e_w219909161-220,ep_hydro_ps_G100000600134,295.0,hydro,Rodund II hydroelectric plant_ -- operating,e_w219909161-220,way/219909161-220,47.0844,9.8749,False
+e_w219909161-220,ep_hydro_w219909161-220__irena,104.09843169398903,hydro,Aggregated Plant - IRENA Gap - way/219909161-220_Missing Hydro Capacity -- operating,e_w219909161-220,way/219909161-220,46.92825469491809,9.706978977292476,False
+e_w23899163-220,ep_hydro_ror_G100001027075,60.0,hydro,Oberaudorf Ebbs hydroelectric plant_ -- operating,e_w23899163-220,way/23899163-220,47.6413,12.1989,False
+e_w23899163-220,ep_hydro_w23899163-220__irena,12.669180327868848,hydro,Aggregated Plant - IRENA Gap - way/23899163-220_Missing Hydro Capacity -- operating,e_w23899163-220,way/23899163-220,47.679088413482354,12.205105445925366,False
+e_w24253250-380,ep_m_gas_combined_cycle_G100000410439,158.0,gas,Korneuberg power station_1 -- mothballed,e_w24253250-380,way/24253250-380,48.3325,16.34,False
+e_w27763479-220,ep_hydro_ror_G100001052090,72.0,hydro,Großraming hydroelectric plant_ -- operating,e_w27763479-220,way/27763479-220,47.893,14.5122,False
+e_w27763479-220,ep_hydro_w27763479-220__irena,15.203016393442615,hydro,Aggregated Plant - IRENA Gap - way/27763479-220_Missing Hydro Capacity -- operating,e_w27763479-220,way/27763479-220,48.12273035680081,14.493903088212308,False
+e_w27763479-380,ep_gas_combined_cycle_G100000400004,103.0,gas,Linz Mitte power station_1a -- operating,e_w27763479-380,way/27763479-380,48.29922,14.32294,False
+e_w27763479-380,ep_gas_combined_cycle_G100000400005,114.0,gas,Linz Mitte power station_1b -- operating,e_w27763479-380,way/27763479-380,48.29922,14.32294,False
+e_w27763479-380,ep_gas_combined_cycle_G100000400006,172.0,gas,Linz Süd power station_1 & 2 -- operating,e_w27763479-380,way/27763479-380,48.26789,14.3469,False
+e_w27763479-380,ep_gas_gas_turbine_G100000400015,153.0,gas,Werk Linz power station_Block 7 -- operating,e_w27763479-380,way/27763479-380,48.299,14.324,False
+e_w27763479-380,ep_gas_w27763479-380__ember,29.27944760357433,gas,Aggregated Plant - EMBER Gap - way/27763479-380_Missing Gas Capacity -- operating,e_w27763479-380,way/27763479-380,48.30260326681549,14.44341885724591,False
+e_w27763479-380,ep_hydro_dam_G100000600091,168.0,hydro,Abwinden-Asten hydroelectric plant_ -- operating,e_w27763479-380,way/27763479-380,48.248,14.4302,False
+e_w27763479-380,ep_hydro_w27763479-380__irena,35.47370491803277,hydro,Aggregated Plant - IRENA Gap - way/27763479-380_Missing Hydro Capacity -- operating,e_w27763479-380,way/27763479-380,47.944895413074626,14.469301653009357,False
+e_w28596524-220,ep_hydro_ps_G100000600124,355.0,hydro,Mayrhofen hydroelectric plant_ -- operating,e_w28596524-220,way/28596524-220,47.1583,11.851,False
+e_w28596524-220,ep_hydro_w28596524-220__irena,74.95931693989068,hydro,Aggregated Plant - IRENA Gap - way/28596524-220_Missing Hydro Capacity -- operating,e_w28596524-220,way/28596524-220,47.17088812035838,11.686010925226745,False
+e_w318616912-380,ep_hydro_dam_G100001052101,66.0,hydro,Uttendorf II hydroelectric plant_ -- operating,e_w318616912-380,way/318616912-380,47.2622,12.5675,False
+e_w318616912-380,ep_hydro_w318616912-380__irena,13.936098360655732,hydro,Aggregated Plant - IRENA Gap - way/318616912-380_Missing Hydro Capacity -- operating,e_w318616912-380,way/318616912-380,47.231396150122414,12.583292264786298,False
+e_w33041399-220,ep_gas_combined_cycle_G100000400009,84.0,gas,Salzburg Mitte power station_1 -- operating,e_w33041399-220,way/33041399-220,47.80929,13.03819,False
+e_w33631653-220,ep_hydro_dam_G100000600104,293.0,hydro,Greifenstein hydroelectric plant_ -- operating,e_w33631653-220,way/33631653-220,48.3562,16.2424,False
+e_w33631653-220,ep_hydro_w33631653-220__irena,61.86783060109286,hydro,Aggregated Plant - IRENA Gap - way/33631653-220_Missing Hydro Capacity -- operating,e_w33631653-220,way/33631653-220,48.25207906959698,16.4176398972028,False
+e_w347968939-220,ep_hydro_ps_G100000600136,231.0,hydro,Rosshag hydroelectric plant_ -- operating,e_w347968939-220,way/347968939-220,47.0867,11.7738,False
+e_w347968939-220,ep_hydro_w347968939-220__irena,48.77634426229506,hydro,Aggregated Plant - IRENA Gap - way/347968939-220_Missing Hydro Capacity -- operating,e_w347968939-220,way/347968939-220,47.203242828771074,11.775791170504396,False
+e_w38821658-380,ep_hydro_dam_G100000600110,260.0,hydro,Kaprun Haupstufe hydroelectric plant_ -- operating,e_w38821658-380,way/38821658-380,47.2594,12.7385,False
+e_w38821658-380,ep_hydro_w38821658-380__irena,54.899781420765,hydro,Aggregated Plant - IRENA Gap - way/38821658-380_Missing Hydro Capacity -- operating,e_w38821658-380,way/38821658-380,47.24329313560804,12.92163794168811,False
+e_w47001881-380,ep_gas_combined_cycle_G100000400012,260.0,gas,Theiss power station_B1 -- operating,e_w47001881-380,way/47001881-380,48.39486,15.71015,False
+e_w47001881-380,ep_gas_combined_cycle_G100000410145,225.0,gas,Theiss power station_B2 -- operating,e_w47001881-380,way/47001881-380,48.39486,15.71015,False
+e_w47001881-380,ep_gas_internal_combustion_G100001000103,41.0,gas,Krems Industriepark power station_IC1-4 -- operating,e_w47001881-380,way/47001881-380,48.40738,15.63577,False
+e_w47001881-380,ep_gas_w47001881-380__ember,41.38017871649066,gas,Aggregated Plant - EMBER Gap - way/47001881-380_Missing Gas Capacity -- operating,e_w47001881-380,way/47001881-380,48.51080859948014,15.631006442492325,False
+e_w47001881-380,ep_m_gas_combined_cycle_G100000410471,240.0,gas,Theiss power station_E -- mothballed,e_w47001881-380,way/47001881-380,48.39486,15.71015,False
+e_w50650855-220,ep_hydro_ror_G100001052100,46.0,hydro,Traun-Pucking hydroelectric plant_ -- operating,e_w50650855-220,way/50650855-220,48.2062,14.2234,False
+e_w694695942-380,ep_gas_combined_cycle_G100000400007,421.0,gas,Mellach power station_10 -- operating,e_w694695942-380,way/694695942-380,46.90819,15.49231,False
+e_w694695942-380,ep_gas_combined_cycle_G100000400008,417.0,gas,Mellach power station_20 -- operating,e_w694695942-380,way/694695942-380,46.90819,15.49231,False
+e_w694695942-380,ep_gas_steam_turbine_G100001018037,246.0,gas,"Mellach power station_Unit 1, timepoint 2 -- operating",e_w694695942-380,way/694695942-380,46.90819,15.49231,False
+e_w694695942-380,ep_gas_w694695942-380__ember,58.55889520714866,gas,Aggregated Plant - EMBER Gap - way/694695942-380_Missing Gas Capacity -- operating,e_w694695942-380,way/694695942-380,47.061732821495724,15.44153106449323,False
+e_w70497801-220,ep_hydro_dam_G100000600125,187.0,hydro,Melk hydroelectric plant_ -- operating,e_w70497801-220,way/70497801-220,48.223,15.3041,False
+e_w70497801-220,ep_hydro_dam_G100000600144,237.0,hydro,Ybbs-Persenbeug hydroelectric plant_ -- operating,e_w70497801-220,way/70497801-220,48.1894,15.068,False
+e_w70497801-220,ep_hydro_w70497801-220__irena,89.52887431693985,hydro,Aggregated Plant - IRENA Gap - way/70497801-220_Missing Hydro Capacity -- operating,e_w70497801-220,way/70497801-220,48.08821932109409,15.191822029752576,False
+e_w727225348-220,ep_hydro_ror_G100000600108,89.0,hydro,Imst hydroelectric plant_ -- operating,e_w727225348-220,way/727225348-220,47.2122,10.7215,False
+e_w727225348-220,ep_hydro_w727225348-220__irena,18.79261748633879,hydro,Aggregated Plant - IRENA Gap - way/727225348-220_Missing Hydro Capacity -- operating,e_w727225348-220,way/727225348-220,47.26622002074185,10.894173483536896,False
+e_w727225348-380,ep_hydro_w727225348-380__irena,20.481841530054638,hydro,Aggregated Plant - IRENA Gap - way/727225348-380_Missing Hydro Capacity -- operating,e_w727225348-380,way/727225348-380,47.24370637477247,11.01648348287528,False
+e_w758728343-220,ep_hydro_ps_G100000600118,190.0,hydro,Kühtai 2 hydroelectric plant_ -- construction,e_w758728343-220,way/758728343-220,47.1981,11.0055,False
+e_w758728343-220,ep_hydro_ps_G100000600119,289.0,hydro,Kühtai hydroelectric plant_ -- operating,e_w758728343-220,way/758728343-220,47.2061,11.0046,False
+e_w758728343-220,ep_hydro_w758728343-220__irena,101.1422896174863,hydro,Aggregated Plant - IRENA Gap - way/758728343-220_Missing Hydro Capacity -- operating,e_w758728343-220,way/758728343-220,47.28339643226651,10.944862146421096,False
+e_w765101679-220,ep_oil_steam_turbine_G100001000104,170.0,oil,Schwechat Refinery power station_ST1-8 -- operating,e_w765101679-220,way/765101679-220,48.1434,16.4981,False
+e_w81540198-380,ep_hydro_ror_G100001027072,72.0,hydro,Ering-Frauenstein hydroelectric plant_ -- operating,e_w81540198-380,way/81540198-380,48.2912,13.1593,False
+e_w81540198-380,ep_hydro_w81540198-380__irena,15.203016393442615,hydro,Aggregated Plant - IRENA Gap - way/81540198-380_Missing Hydro Capacity -- operating,e_w81540198-380,way/81540198-380,48.245867512993875,13.194318629218342,False
+e_w83529203-220,ep_hydro_dam_G100001052095,73.0,hydro,Langenegg hydroelectric plant_ -- operating,e_w83529203-220,way/83529203-220,47.4702,9.8641,False
+e_w83529203-220,ep_hydro_w83529203-220__irena,15.414169398907095,hydro,Aggregated Plant - IRENA Gap - way/83529203-220_Missing Hydro Capacity -- operating,e_w83529203-220,way/83529203-220,47.526496482932885,9.843080444411527,False
+e_w83740194-380,ep_gas_combined_cycle_G100000400001,70.0,gas,Gratkorn Mill power station_1 -- operating,e_w83740194-380,way/83740194-380,47.13505,15.33541,False
+e_w83740194-380,ep_windon_wind_380,39.0,windon,Aggregated Plant -- operating,e_w83740194-380,way/83740194-380,46.88783689237788,15.325168894225541,False
+e_w83805040-220,ep_hydro_dam_G100000600096,100.0,hydro,Ausserfragant hydroelectric plant_ -- operating,e_w83805040-220,way/83805040-220,46.9349,13.1098,False
+e_w83805040-220,ep_hydro_dam_G100001027074,45.0,hydro,Kreuzeck hydroelectric plant_ -- operating,e_w83805040-220,way/83805040-220,46.8727,13.3117,False
+e_w83805040-220,ep_hydro_dam_G100001052097,68.0,hydro,Reißeck hydroelectric plant_ -- operating,e_w83805040-220,way/83805040-220,46.8728,13.3116,False
+e_w83805040-220,ep_hydro_ps_G100000600122,730.0,hydro,Malta Hauptstufe hydroelectric plant_ -- operating,e_w83805040-220,way/83805040-220,46.8701,13.329,False
+e_w83805040-220,ep_hydro_w83805040-220__irena,199.11728415300536,hydro,Aggregated Plant - IRENA Gap - way/83805040-220_Missing Hydro Capacity -- operating,e_w83805040-220,way/83805040-220,47.04950084644399,13.303543470717486,False
+e_w84789829-220,ep_hydro_dam_G100000600092,79.0,hydro,Achensee Jenbach hydroelectric plant_ -- operating,e_w84789829-220,way/84789829-220,47.389,11.7573,False
+e_w84789829-220,ep_hydro_w84789829-220__irena,16.68108743169398,hydro,Aggregated Plant - IRENA Gap - way/84789829-220_Missing Hydro Capacity -- operating,e_w84789829-220,way/84789829-220,47.23811321763305,11.676213936885803,False
+e_w852324809-220,ep_hydro_dam_G100000600142,86.0,hydro,Walgauwerk hydroelectric plant_ -- operating,e_w852324809-220,way/852324809-220,47.1989,9.6697,False
+e_w852324809-220,ep_hydro_w852324809-220__irena,18.15915846994535,hydro,Aggregated Plant - IRENA Gap - way/852324809-220_Missing Hydro Capacity -- operating,e_w852324809-220,way/852324809-220,47.24435154615713,9.718687402023619,False
+e_w86119428-220,ep_hydro_ror_G100000600135,86.0,hydro,Rosegg St Jakob hydroelectric plant_ -- operating,e_w86119428-220,way/86119428-220,46.5696,14.0268,False
+e_w86119428-220,ep_hydro_w86119428-220__irena,18.15915846994535,hydro,Aggregated Plant - IRENA Gap - way/86119428-220_Missing Hydro Capacity -- operating,e_w86119428-220,way/86119428-220,46.42371700476167,13.91185372794068,False
+e_w86119456-220,ep_hydro_ror_G100000600099,88.0,hydro,Feistritz-Ludmannsdorf hydroelectric plant_ -- operating,e_w86119456-220,way/86119456-220,46.5343,14.1711,False
+e_w86119456-220,ep_hydro_w86119456-220__irena,18.58146448087431,hydro,Aggregated Plant - IRENA Gap - way/86119456-220_Missing Hydro Capacity -- operating,e_w86119456-220,way/86119456-220,46.39869381978216,14.319443700282465,False
+e_w87365703-220,ep_hydro_ror_G100000600094,90.0,hydro,Annabrücke hydroelectric plant_ -- operating,e_w87365703-220,way/87365703-220,46.5613,14.4794,False
+e_w87365703-220,ep_hydro_ror_G100000600097,87.0,hydro,Edling hydroelectric plant_ -- operating,e_w87365703-220,way/87365703-220,46.6292,14.7015,False
+e_w87365703-220,ep_hydro_w87365703-220__irena,37.3740819672131,hydro,Aggregated Plant - IRENA Gap - way/87365703-220_Missing Hydro Capacity -- operating,e_w87365703-220,way/87365703-220,46.75370933840773,14.563890727034629,False
+e_w88680218-220,ep_hydro_dam_G100001027073,63.0,hydro,Hieflau hydroelectric plant_ -- operating,e_w88680218-220,way/88680218-220,47.6001,14.7333,False
+e_w88680218-220,ep_hydro_w88680218-220__irena,13.302639344262287,hydro,Aggregated Plant - IRENA Gap - way/88680218-220_Missing Hydro Capacity -- operating,e_w88680218-220,way/88680218-220,47.66679701486603,15.039361882446574,False
+e_w88684218-220,ep_windon_wind_220,31.0,windon,Aggregated Plant -- operating,e_w88684218-220,way/88684218-220,47.12228985345968,14.882577491634475,False
+e_w89451551-220,ep_hydro_dam_G100001052099,61.0,hydro,Sölk hydroelectric plant_ -- operating,e_w89451551-220,way/89451551-220,47.4337,13.9491,False
+e_w89451551-220,ep_hydro_w89451551-220__irena,12.880333333333327,hydro,Aggregated Plant - IRENA Gap - way/89451551-220_Missing Hydro Capacity -- operating,e_w89451551-220,way/89451551-220,47.5350743178409,14.034439661730651,False
+e_w92873353-220,ep_hydro_dam_G100000600095,287.0,hydro,Aschach hydroelectric plant_ -- operating,e_w92873353-220,way/92873353-220,48.3852,14.0229,False
+e_w92873353-220,ep_hydro_dam_G100000600127,179.0,hydro,Ottensheim-Wilhering hydroelectric plant_ -- operating,e_w92873353-220,way/92873353-220,48.3178,14.1503,False
+e_w92873353-220,ep_hydro_w92873353-220__irena,98.39730054644805,hydro,Aggregated Plant - IRENA Gap - way/92873353-220_Missing Hydro Capacity -- operating,e_w92873353-220,way/92873353-220,48.433843458917245,13.96087927114463,False
+e_w93077882-220,ep_gas_combined_cycle_G100000400002,60.0,gas,Laakirchen Paper Mill power station_1 -- operating,e_w93077882-220,way/93077882-220,47.98188,13.82166,False
+e_w93077882-220,ep_gas_steam_turbine_G100000410442,40.0,gas,Steyrermuhl Paper Mill power station_1 -- operating,e_w93077882-220,way/93077882-220,47.97963,13.81614,False
+e_w95812231-220,ep_hydro_dam_G100000600138,500.0,hydro,Silz hydroelectric plant_ -- operating,e_w95812231-220,way/95812231-220,47.2689,10.9682,False
+e_w95812231-220,ep_hydro_w95812231-220__irena,105.57650273224039,hydro,Aggregated Plant - IRENA Gap - way/95812231-220_Missing Hydro Capacity -- operating,e_w95812231-220,way/95812231-220,47.19377912878446,10.91717391607904,False
+e_w95837658-220,ep_hydro_dam_G100000600143,210.0,hydro,Wallsee-Mitterkirchen hydroelectric plant_ -- operating,e_w95837658-220,way/95837658-220,48.1665,14.6952,False
+e_w95837658-220,ep_hydro_w95837658-220__irena,44.34213114754097,hydro,Aggregated Plant - IRENA Gap - way/95837658-220_Missing Hydro Capacity -- operating,e_w95837658-220,way/95837658-220,48.51815759085392,14.762541335316044,False
+elc_spv_001,ep_solar_001__irena,1243.3592972723548,solar,Aggregated Plant - IRENA Gap - 1_Missing Solar Capacity -- operating,elc_spv_001,AT28-380,47.267822538008126,16.359261236975968,False
+elc_spv_001,ep_solar_pv_001,205.09999999999997,solar,Aggregated Plant -- operating,elc_spv_001,AT28-380,46.91240805325601,16.299765152539198,False
+elc_spv_002,ep_solar_pv_002,38.900000000000006,solar,Aggregated Plant -- operating,elc_spv_002,way/83831570-380,46.80765789872428,15.175884496578702,False
+elc_spv_003,ep_solar_003__irena,1198.8923055313285,solar,Aggregated Plant - IRENA Gap - 3_Missing Solar Capacity -- operating,elc_spv_003,AT5-220,48.18094919337281,13.405138366983092,False
+elc_spv_003,ep_solar_pv_003,1.2,solar,Aggregated Plant -- operating,elc_spv_003,AT5-220,47.920033044300936,12.965543855440657,False
+elc_spv_004,ep_solar_pv_004,3.0,solar,Aggregated Plant -- operating,elc_spv_004,way/95837658-220,48.21886236226512,15.051216653875159,False
+elc_spv_005,ep_solar_005__irena,1073.6523971963168,solar,Aggregated Plant - IRENA Gap - 5_Missing Solar Capacity -- operating,elc_spv_005,way/1001640574-380,48.68292423757158,16.280644733608437,False
+elc_spv_005,ep_solar_pv_005,99.6,solar,Aggregated Plant -- operating,elc_spv_005,way/1001640574-380,48.3188023638211,16.597754661401897,False
+elc_spv_007,ep_solar_pv_007,8.9,solar,Aggregated Plant -- operating,elc_spv_007,way/83805040-220,46.69720336122896,13.280076404373421,False
+elc_spv_009,ep_solar_pv_009,19.8,solar,Aggregated Plant -- operating,elc_spv_009,way/1051033055-380,47.67499955350044,13.422012035913607,False
+elc_spv_010,ep_solar_pv_010,9.0,solar,Aggregated Plant -- operating,elc_spv_010,way/145583866-220,47.78476500645129,11.968941800779355,False
+elc_won_001,ep_windon_wind_001,177.0,windon,Aggregated Plant -- operating,elc_won_001,way/88680218-220,47.25419865891268,14.7915803642899,False
+elc_won_002,ep_windon_002__irena,300.65642748205255,windon,Aggregated Plant - IRENA Gap - 2_Missing Onshore wind energy Capacity -- operating,elc_won_002,AT7-380,48.19798770327674,16.80637662341884,False
+elc_won_002,ep_windon_wind_002,2539.0,windon,Aggregated Plant -- operating,elc_won_002,AT7-380,48.28153064571516,16.3568788297285,False
+elc_won_003,ep_windon_wind_003,90.0,windon,Aggregated Plant -- operating,elc_won_003,way/1001640574-380,48.22983183369546,16.156604274577735,False
+elc_won_004,ep_windon_004__irena,276.684935883835,windon,Aggregated Plant - IRENA Gap - 4_Missing Onshore wind energy Capacity -- operating,elc_won_004,way/81684898-380,47.45974675315983,16.642550794583713,False
+elc_won_004,ep_windon_wind_004,115.0,windon,Aggregated Plant -- operating,elc_won_004,way/81684898-380,47.10936224754587,16.65639176657468,False
+elc_won_008,ep_windon_008__irena,266.7616366341125,windon,Aggregated Plant - IRENA Gap - 8_Missing Onshore wind energy Capacity -- operating,elc_won_008,way/95837658-220,47.80513613816639,14.664227942298913,False
+elc_won_008,ep_windon_wind_008,52.00000000000001,windon,Aggregated Plant -- operating,elc_won_008,way/95837658-220,48.257798966691524,14.347043093653008,False
+elc_won_009,ep_windon_wind_009,15.0,windon,Aggregated Plant -- operating,elc_won_009,AT5-220,48.22440956876494,12.69808620077953,False

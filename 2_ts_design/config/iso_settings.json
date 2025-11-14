@@ -1,0 +1,43 @@
+{
+  "USA": {
+    "max_timeslices": 600,
+    "description": "United States - Complex grid, needs high resolution",
+    "special_processing": {
+      "include_storage_analysis": true,
+      "extended_stress_periods": true
+    }
+  },
+  "CHN": {
+    "max_timeslices": 400,
+    "description": "China - Large system with distinct regional patterns",
+    "special_processing": {
+      "focus_on_seasonal_variation": true
+    }
+  },
+  "GER": {
+    "max_timeslices": 350,
+    "description": "Germany - High renewable penetration",
+    "special_processing": {
+      "emphasize_renewable_integration": true,
+      "include_ramping_analysis": true
+    }
+  },
+  "JPN": {
+    "max_timeslices": 300,
+    "description": "Japan - Island system with unique constraints"
+  },
+  "BOL": {
+    "max_timeslices": 200,
+    "description": "Bolivia - Smaller system, hydro-dominated",
+    "special_processing": {
+      "focus_on_hydro_patterns": true
+    }
+  },
+  "IND": {
+    "max_timeslices": 450,
+    "description": "India - Large diverse system with monsoon patterns",
+    "special_processing": {
+      "seasonal_monsoon_focus": true
+    }
+  }
+}

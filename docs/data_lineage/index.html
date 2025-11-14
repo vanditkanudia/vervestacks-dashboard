@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerveStacks Data Lineage & Assumptions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        
+        .overview {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .overview h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .table-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .table-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            border-left: 5px solid #667eea;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .table-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .table-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .table-description {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .table-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            font-size: 0.8em;
+            color: #666;
+        }
+        
+        .sources-used {
+            margin-top: 15px;
+        }
+        
+        .source-tag {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin: 2px;
+            color: #495057;
+        }
+        
+        .complexity-indicator {
+            float: right;
+            margin-top: -5px;
+        }
+        
+        .complexity-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-left: 3px;
+        }
+        
+        .complexity-low { background: #28a745; }
+        .complexity-medium { background: #ffc107; }
+        .complexity-high { background: #dc3545; }
+        
+        .source-overview {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .source-overview h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .sources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .source-card {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .source-card h4 {
+            color: #495057;
+            margin-bottom: 10px;
+        }
+        
+        .source-card .file-path {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            background: #e9ecef;
+            padding: 5px;
+            border-radius: 3px;
+            margin: 5px 0;
+        }
+        
+        .breadcrumb {
+            background: #e9ecef;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">📚 Documentation Home</a> → 📊 Data Lineage & Assumptions
+        </div>
+        
+        <div class="header">
+            <h1>📊 Data Lineage & Assumptions</h1>
+            <div class="subtitle">Transparent Documentation: From Global Datasets to VEDA Models</div>
+        </div>
+        
+        <div class="overview">
+            <h2>🎯 What This Documentation Shows You</h2>
+            <p>This documentation provides <strong>complete transparency</strong> into how VerveStacks transforms global energy data into country-specific VEDA/TIMES models. For each output table, you can trace:</p>
+            <ul style="margin: 15px 0; padding-left: 20px;">
+                <li><strong>Source files</strong> - Exact files and sheets used</li>
+                <li><strong>Transformations</strong> - Every filtering, calculation, and mapping step</li>
+                <li><strong>Assumptions</strong> - All modeling decisions and default values</li>
+                <li><strong>Sample data</strong> - Real examples showing before/after transformations</li>
+                <li><strong>Quality metrics</strong> - Data coverage and validation results</li>
+            </ul>
+            <p><em>Perfect for model validation, peer review, and understanding the energy data processing pipeline.</em></p>
+        </div>
+        
+        <div class="table-gallery">
+            <h2 style="grid-column: 1 / -1; color: #667eea; margin-bottom: 10px; font-size: 2em;">🗂️ Output Tables - Click to Explore</h2>
+            
+            <a href="existing_stock_lineage.html" class="table-card">
+                <div class="complexity-indicator">
+                    <span class="complexity-dot complexity-high"></span>
+                    <span class="complexity-dot complexity-high"></span>
+                    <span class="complexity-dot complexity-high"></span>
+                </div>
+                <h3>📋 existing_stock</h3>
+                <div class="table-description">
+                    Complete power plant inventory with spatial distribution and gap filling from multiple global databases.
+                </div>
+                <div class="table-stats">
+                    <div class="stat">
+                        <div class="stat-number">156</div>
+                        <div class="stat-label">Plants (CHE)</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Data Sources</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Transform Steps</div>
+                    </div>
+                </div>
+                <div class="sources-used">
+                    <span class="source-tag">GEM</span>
+                    <span class="source-tag">IRENA</span>
+                    <span class="source-tag">EMBER</span>
+                    <span class="source-tag">REZoning</span>
+                </div>
+            </a>
+            
+            <div class="table-card" style="opacity: 0.7; cursor: not-allowed;">
+                <div class="complexity-indicator">
+                    <span class="complexity-dot complexity-medium"></span>
+                    <span class="complexity-dot complexity-medium"></span>
+                </div>
+                <h3>📊 solar_profiles <em style="color: #999;">(Coming Soon)</em></h3>
+                <div class="table-description">
+                    Hourly solar generation profiles aggregated by time-slice and spatial zone.
+                </div>
+                <div class="table-stats">
+                    <div class="stat">
+                        <div class="stat-number">8760</div>
+                        <div class="stat-label">Hours/Year</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">26</div>
+                        <div class="stat-label">REZ Zones</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Time Slices</div>
+                    </div>
+                </div>
+                <div class="sources-used">
+                    <span class="source-tag">SARAH</span>
+                    <span class="source-tag">REZoning</span>
+                </div>
+            </div>
+            
+            <div class="table-card" style="opacity: 0.7; cursor: not-allowed;">
+                <div class="complexity-indicator">
+                    <span class="complexity-dot complexity-medium"></span>
+                    <span class="complexity-dot complexity-medium"></span>
+                </div>
+                <h3>🌪️ wind_profiles <em style="color: #999;">(Coming Soon)</em></h3>
+                <div class="table-description">
+                    Hourly wind generation profiles with capacity factors by region and time-slice.
+                </div>
+                <div class="table-stats">
+                    <div class="stat">
+                        <div class="stat-number">8760</div>
+                        <div class="stat-label">Hours/Year</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">26</div>
+                        <div class="stat-label">REZ Zones</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Time Slices</div>
+                    </div>
+                </div>
+                <div class="sources-used">
+                    <span class="source-tag">ERA5</span>
+                    <span class="source-tag">REZoning</span>
+                </div>
+            </div>
+            
+            <a href="assumption_tables_lineage.html" class="table-card">
+                <div class="complexity-indicator">
+                    <span class="complexity-dot complexity-medium"></span>
+                    <span class="complexity-dot complexity-medium"></span>
+                </div>
+                <h3>📊 Assumption Tables</h3>
+                <div class="table-description">
+                    Technology cost & efficiency parameters with multi-factor calculations and regional multipliers.
+                </div>
+                <div class="table-stats">
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Tables</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Multipliers</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">190+</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                </div>
+                <div class="sources-used">
+                    <span class="source-tag">ep_technoeconomic</span>
+                    <span class="source-tag">WEO</span>
+                    <span class="source-tag">Regional Data</span>
+                </div>
+            </a>
+            
+            <div class="table-card" style="opacity: 0.7; cursor: not-allowed;">
+                <div class="complexity-indicator">
+                    <span class="complexity-dot complexity-medium"></span>
+                </div>
+                <h3>📈 utilization_factors <em style="color: #999;">(Coming Soon)</em></h3>
+                <div class="table-description">
+                    Historical capacity factors calculated from IRENA/EMBER generation and capacity data.
+                </div>
+                <div class="table-stats">
+                    <div class="stat">
+                        <div class="stat-number">0.65</div>
+                        <div class="stat-label">Avg CF</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">Years</div>
+                    </div>
+                </div>
+                <div class="sources-used">
+                    <span class="source-tag">IRENA</span>
+                    <span class="source-tag">EMBER</span>
+                </div>
+            </div>
+            
+            <div class="table-card" style="opacity: 0.7; cursor: not-allowed;">
+                <div class="complexity-indicator">
+                    <span class="complexity-dot complexity-low"></span>
+                </div>
+                <h3>🔗 grid_topology <em style="color: #999;">(Coming Soon)</em></h3>
+                <div class="table-description">
+                    Transmission network topology with bus connections and capacity limits (grid modeling only).
+                </div>
+                <div class="table-stats">
+                    <div class="stat">
+                        <div class="stat-number">154</div>
+                        <div class="stat-label">Buses</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">89</div>
+                        <div class="stat-label">Lines</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Voltage Levels</div>
+                    </div>
+                </div>
+                <div class="sources-used">
+                    <span class="source-tag">OSM</span>
+                    <span class="source-tag">PyPSA</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="source-overview">
+            <h2>📁 Global Data Sources</h2>
+            <p>VerveStacks integrates data from leading international energy databases to ensure comprehensive and up-to-date country models.</p>
+            
+            <div class="sources-grid">
+                <div class="source-card">
+                    <h4>🏭 Global Energy Monitor (GEM)</h4>
+                    <div class="file-path">Global-Integrated-Power-April-2025.xlsx</div>
+                    <p><strong>Content:</strong> 151,000+ power plants worldwide with detailed technical specifications</p>
+                    <p><strong>Update:</strong> Monthly</p>
+                    <p><strong>Used for:</strong> Existing plant inventory, technology mapping</p>
+                </div>
+                
+                <div class="source-card">
+                    <h4>🌱 IRENA Statistics</h4>
+                    <div class="file-path">IRENASTAT-C.xlsx, IRENASTAT-G.xlsx</div>
+                    <p><strong>Content:</strong> Renewable energy capacity and generation by country</p>
+                    <p><strong>Update:</strong> Annual</p>
+                    <p><strong>Used for:</strong> Renewable capacity targets, gap analysis</p>
+                </div>
+                
+                <div class="source-card">
+                    <h4>⚡ EMBER Electricity Data</h4>
+                    <div class="file-path">yearly_electricity_data.csv</div>
+                    <p><strong>Content:</strong> Thermal capacity and generation statistics</p>
+                    <p><strong>Update:</strong> Annual</p>
+                    <p><strong>Used for:</strong> Thermal capacity validation, gap filling</p>
+                </div>
+                
+                <div class="source-card">
+                    <h4>🗺️ REZoning Resource Data</h4>
+                    <div class="file-path">REZoning_Solar.csv, REZoning_WindOnshore.csv</div>
+                    <p><strong>Content:</strong> 50x50km renewable resource potential grid</p>
+                    <p><strong>Update:</strong> Static analysis</p>
+                    <p><strong>Used for:</strong> Spatial distribution, capacity factors</p>
+                </div>
+                
+                <div class="source-card">
+                    <h4>🌦️ Weather Data (SARAH/ERA5)</h4>
+                    <div class="file-path">sarah_grid_weather_2013.csv</div>
+                    <p><strong>Content:</strong> Hourly solar/wind profiles by grid cell</p>
+                    <p><strong>Update:</strong> Historical data (2013 reference year)</p>
+                    <p><strong>Used for:</strong> Time-slice profiles, variability analysis</p>
+                </div>
+                
+                <div class="source-card">
+                    <h4>🎛️ VerveStacks Mappings</h4>
+                    <div class="file-path">VS_mappings.xlsx</div>
+                    <p><strong>Content:</strong> Technology mappings, regional definitions</p>
+                    <p><strong>Update:</strong> Maintained by VerveStacks team</p>
+                    <p><strong>Used for:</strong> Standardization, model compatibility</p>
+                </div>
+                
+                <div class="source-card">
+                    <h4>💰 Technology Assumptions</h4>
+                    <div class="file-path">ep_technoeconomic_assumptions.xlsx</div>
+                    <p><strong>Content:</strong> CAPEX, FIXOM, VAROM, efficiency, regional multipliers (5 sheets)</p>
+                    <p><strong>Update:</strong> Curated by VerveStacks team</p>
+                    <p><strong>Used for:</strong> Cost calculations, efficiency parameters</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

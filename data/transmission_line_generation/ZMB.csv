@@ -1,0 +1,18 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_ZM7-220,ep_hydro_dam_G100000604089,120.0,hydro,Itezhi Tezhi hydroelectric plant_ -- operating,e_ZM7-220,ZM7-220,-15.7601,26.0213,False
+e_ZM8-330,ep_hydro_dam_G100000604091,990.0,hydro,Kafue Gorge Upper hydroelectric plant_ -- operating,e_ZM8-330,ZM8-330,-15.8067,28.4216,False
+e_ZM9-330,ep_coal_CFB_G100000106530,150.0,coal,Maamba power station_Unit 1 -- operating,e_ZM9-330,ZM9-330,-17.352722,27.18594,False
+e_ZM9-330,ep_coal_CFB_G100000106531,150.0,coal,Maamba power station_Unit 2 -- operating,e_ZM9-330,ZM9-330,-17.352722,27.18594,False
+e_ZM9-330,ep_coal_CFB_G100000106532,150.0,coal,Maamba power station_Unit 3 -- construction,e_ZM9-330,ZM9-330,-17.352722,27.18594,False
+e_ZM9-330,ep_coal_CFB_G100000106533,150.0,coal,Maamba power station_Unit 4 -- construction,e_ZM9-330,ZM9-330,-17.352722,27.18594,False
+e_w1163785941-330,ep_hydro_dam_G100000604090,750.0,hydro,Kafue Gorge Lower hydroelectric plant_ -- operating,e_w1163785941-330,way/1163785941-330,-15.8959,28.5601,False
+e_w179121038-330,ep_hydro_dam_G100000604149,2130.0,hydro,Kariba Dam hydroelectric plant_ -- operating,e_w179121038-330,way/179121038-330,-16.5225,28.7621,False
+e_w179121070-330,ep_bioenergy_w179121070-330,40.0,bioenergy,Aggregated Plant -- operating,e_w179121070-330,way/179121070-330,-15.660348823954308,28.490329154966314,False
+e_w198090281-330,ep_hydro_ror_G100000604096,108.0,hydro,Victoria Falls hydroelectric plant_ -- operating,e_w198090281-330,way/198090281-330,-17.9305,25.8598,False
+e_w211942765-220,ep_coal_subcritical_G100000107339,30.0,coal,Ndola Cement Plant power station_-- -- operating,e_w211942765-220,way/211942765-220,-13.027011,28.779202,False
+e_w211942765-220,ep_oil_internal_combustion_G100000413542,105.0,oil,Ndola Energy (HFO) power station_1 -- operating,e_w211942765-220,way/211942765-220,-13.014766,28.661669,False
+elc_spv_016,ep_solar_pv_016,1.0,solar,Aggregated Plant -- operating,elc_spv_016,way/562786476-330,-10.04716570168339,30.501550863431753,False
+elc_spv_018,ep_solar_pv_018,200.0,solar,Aggregated Plant -- construction,elc_spv_018,way/253140953-330,-11.45606663760637,30.172541844717095,False
+elc_spv_028,ep_solar_pv_028,97.0,solar,Aggregated Plant -- operating,elc_spv_028,way/211942765-220,-13.045488600868316,28.26383200688085,False
+elc_spv_032,ep_solar_pv_032,88.0,solar,Aggregated Plant -- operating,elc_spv_032,way/179121070-330,-15.705057213171756,27.78000603279385,False
+elc_won_002,ep_windon_wind_G100000920691,200.0,windon,FQM Kansanshi and Sentinel mines wind farm_-- -- construction,elc_won_002,way/561378450-330,-12.0859,26.3746,False

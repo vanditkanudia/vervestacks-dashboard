@@ -1,0 +1,217 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_IQ11-400,ep_oil_internal_combustion_G100000411600,340.0,oil,Samarra Diesel power plant_1 -- operating,e_IQ11-400,IQ11-400,34.090186,43.985088,False
+e_IQ11-400,ep_oil_steam_turbine_G100000400974,630.0,oil,Salahuddin power station_1 -- operating,e_IQ11-400,IQ11-400,34.088318,43.972092,False
+e_IQ11-400,ep_oil_steam_turbine_G100000400975,630.0,oil,Salahuddin power station_2 -- operating,e_IQ11-400,IQ11-400,34.088318,43.972092,False
+e_IQ13-400,ep_gas_combined_cycle_G100001027724,275.0,gas,Al-Anbar power station_1-ST1 -- construction,e_IQ13-400,IQ13-400,33.534044,43.023417,False
+e_IQ13-400,ep_gas_combined_cycle_G100001027725,273.0,gas,Al-Anbar power station_2-GT1 -- construction,e_IQ13-400,IQ13-400,33.534044,43.023417,False
+e_IQ13-400,ep_gas_combined_cycle_G100001027726,273.0,gas,Al-Anbar power station_2-GT2 -- construction,e_IQ13-400,IQ13-400,33.534044,43.023417,False
+e_IQ13-400,ep_gas_combined_cycle_G100001027727,275.0,gas,Al-Anbar power station_2-ST1 -- construction,e_IQ13-400,IQ13-400,33.534044,43.023417,False
+e_IQ13-400,ep_gas_gas_turbine_G100000411039,273.0,gas,Al-Anbar power station_1-GT2 -- construction,e_IQ13-400,IQ13-400,33.534044,43.023417,False
+e_IQ13-400,ep_gas_gas_turbine_G100000411040,273.0,gas,Al-Anbar power station_1-GT1 -- construction,e_IQ13-400,IQ13-400,33.534044,43.023417,False
+e_IQ16-400,ep_oil_internal_combustion_IQ16-400,121.0,oil,Aggregated Plant -- operating,e_IQ16-400,IQ16-400,33.35764687366903,44.412045068941325,False
+e_IQ23-400,ep_oil_internal_combustion_IQ23-400,75.0,oil,Aggregated Plant -- operating,e_IQ23-400,IQ23-400,30.76659018515737,47.41441870847778,False
+e_IQ26-400,ep_gas_steam_turbine_G100000407765,200.0,gas,Haritha power station_2 -- operating,e_IQ26-400,IQ26-400,30.67749,47.754375,False
+e_IQ26-400,ep_gas_steam_turbine_G100000407766,200.0,gas,Haritha power station_1 -- operating,e_IQ26-400,IQ26-400,30.67749,47.754375,False
+e_IQ26-400,ep_gas_steam_turbine_G100000407805,200.0,gas,Haritha power station_4 -- operating,e_IQ26-400,IQ26-400,30.67749,47.754375,False
+e_IQ26-400,ep_gas_steam_turbine_G100000407806,200.0,gas,Haritha power station_3 -- operating,e_IQ26-400,IQ26-400,30.67749,47.754375,False
+e_IQ31-400,ep_oil_steam_turbine_G100000411670,350.0,oil,Al Faw power plant_8 -- construction,e_IQ31-400,IQ31-400,29.980193,48.470317,False
+e_IQ31-400,ep_oil_steam_turbine_G100000411671,350.0,oil,Al Faw power plant_7 -- construction,e_IQ31-400,IQ31-400,29.980193,48.470317,False
+e_IQ31-400,ep_oil_steam_turbine_G100000411672,350.0,oil,Al Faw power plant_6 -- construction,e_IQ31-400,IQ31-400,29.980193,48.470317,False
+e_IQ31-400,ep_oil_steam_turbine_G100000411673,350.0,oil,Al Faw power plant_5 -- construction,e_IQ31-400,IQ31-400,29.980193,48.470317,False
+e_IQ31-400,ep_oil_steam_turbine_G100000411674,350.0,oil,Al Faw power plant_4 -- construction,e_IQ31-400,IQ31-400,29.980193,48.470317,False
+e_IQ31-400,ep_oil_steam_turbine_G100000411675,350.0,oil,Al Faw power plant_3 -- construction,e_IQ31-400,IQ31-400,29.980193,48.470317,False
+e_IQ31-400,ep_oil_steam_turbine_G100000411676,350.0,oil,Al Faw power plant_2 -- construction,e_IQ31-400,IQ31-400,29.980193,48.470317,False
+e_IQ31-400,ep_oil_steam_turbine_G100000411677,350.0,oil,Al Faw power plant_1 -- construction,e_IQ31-400,IQ31-400,29.980193,48.470317,False
+e_IQ32-400,ep_gas_combined_cycle_G100000407895,380.0,gas,Shatt Al-Basra power station_CC2 -- operating,e_IQ32-400,IQ32-400,30.477545,47.734033,False
+e_IQ32-400,ep_gas_combined_cycle_G100000407902,380.0,gas,Shatt Al-Basra power station_CC4 -- operating,e_IQ32-400,IQ32-400,30.477545,47.734033,False
+e_IQ32-400,ep_gas_combined_cycle_G100000407903,380.0,gas,Shatt Al-Basra power station_CC3 -- operating,e_IQ32-400,IQ32-400,30.477545,47.734033,False
+e_IQ32-400,ep_gas_combined_cycle_G100000407904,380.0,gas,Shatt Al-Basra power station_CC1 -- operating,e_IQ32-400,IQ32-400,30.477545,47.734033,False
+e_IQ32-400,ep_gas_gas_turbine_G100000400986,185.0,gas,Zubair Field power station_1 -- operating,e_IQ32-400,IQ32-400,30.405654,47.589106,False
+e_IQ32-400,ep_gas_gas_turbine_G100000400987,185.0,gas,Zubair Field power station_2 -- operating,e_IQ32-400,IQ32-400,30.405654,47.589106,False
+e_IQ32-400,ep_gas_gas_turbine_G100000407830,185.0,gas,Zubair Field power station_4 -- operating,e_IQ32-400,IQ32-400,30.405654,47.589106,False
+e_IQ32-400,ep_gas_gas_turbine_G100000407831,185.0,gas,Zubair Field power station_3 -- operating,e_IQ32-400,IQ32-400,30.405654,47.589106,False
+e_IQ32-400,ep_gas_gas_turbine_G100000407899,380.0,gas,Shatt Al-Basra power station_CC5 -- operating,e_IQ32-400,IQ32-400,30.477545,47.734033,False
+e_IQ33-400,ep_gas_gas_turbine_G100001027881,167.0,gas,ZPPG Power Plant_1 -- operating,e_IQ33-400,IQ33-400,30.391232,47.640058,False
+e_IQ33-400,ep_gas_gas_turbine_G100001027882,167.0,gas,ZPPG Power Plant_2 -- operating,e_IQ33-400,IQ33-400,30.391232,47.640058,False
+e_IQ33-400,ep_gas_gas_turbine_G100001027883,167.0,gas,ZPPG Power Plant_3 -- operating,e_IQ33-400,IQ33-400,30.391232,47.640058,False
+e_IQ33-400,ep_gas_gas_turbine_G100001027884,167.0,gas,ZPPG Power Plant_4 -- operating,e_IQ33-400,IQ33-400,30.391232,47.640058,False
+e_IQ6-400,ep_gas_gas_turbine_IQ6-400,750.0,gas,Aggregated Plant -- operating,e_IQ6-400,IQ6-400,35.96938130888844,43.27043456786883,False
+e_IQ6-400,ep_gas_steam_turbine_G100000411042,375.0,gas,Al Qayyarah power station_ST -- construction,e_IQ6-400,IQ6-400,35.78818,43.2521,False
+e_IQ7-400,ep_gas_gas_turbine_G100000407783,160.0,gas,New Dibis power station_2 -- operating,e_IQ7-400,IQ7-400,35.681507,44.066305,False
+e_IQ7-400,ep_gas_gas_turbine_G100000407784,160.0,gas,New Dibis power station_1 -- operating,e_IQ7-400,IQ7-400,35.681507,44.066305,False
+e_IQ7-400,ep_gas_gas_turbine_G100001027824,169.0,gas,New Dibis power station_4 -- construction,e_IQ7-400,IQ7-400,35.681507,44.066305,False
+e_IQ7-400,ep_gas_gas_turbine_G100001027826,169.0,gas,New Dibis power station_3 -- construction,e_IQ7-400,IQ7-400,35.681507,44.066305,False
+e_IQ7-400,ep_gas_steam_turbine_G100001018128,160.0,gas,New Dibis power station_5 -- construction,e_IQ7-400,IQ7-400,35.681507,44.066305,False
+e_IQ7-400,ep_hydro_dam_G100000602207,400.0,hydro,Dokan Dam hydroelectric plant_ -- operating,e_IQ7-400,IQ7-400,35.9544,44.9528,False
+e_IQ9-400,ep_hydro_dam_G100000602208,660.0,hydro,Haditha Dam hydroelectric plant_ -- operating,e_IQ9-400,IQ9-400,34.2072,42.355,False
+e_r19179535-400,ep_gas_combined_cycle_G100000407738,750.0,gas,Besmaya power station_3-1 -- operating,e_r19179535-400,relation/19179535-400,33.166744,44.662947,False
+e_r19179535-400,ep_gas_combined_cycle_G100000407739,750.0,gas,Besmaya power station_2-2 -- operating,e_r19179535-400,relation/19179535-400,33.166744,44.662947,False
+e_r19179535-400,ep_gas_combined_cycle_G100000407740,750.0,gas,Besmaya power station_2-1 -- operating,e_r19179535-400,relation/19179535-400,33.166744,44.662947,False
+e_r19179535-400,ep_gas_combined_cycle_G100000407741,750.0,gas,Besmaya power station_1-2 -- operating,e_r19179535-400,relation/19179535-400,33.166744,44.662947,False
+e_r19179535-400,ep_gas_combined_cycle_G100000407742,750.0,gas,Besmaya power station_1-1 -- operating,e_r19179535-400,relation/19179535-400,33.166744,44.662947,False
+e_r19179535-400,ep_gas_combined_cycle_G100000407791,750.0,gas,Besmaya power station_3-2 -- operating,e_r19179535-400,relation/19179535-400,33.166744,44.662947,False
+e_w1084302645-400,ep_oil_steam_turbine_G100000411639,350.0,oil,Al-Shemal Thermal power station_4 -- operating,e_w1084302645-400,way/1084302645-400,36.055452,43.298237,False
+e_w1084302645-400,ep_oil_steam_turbine_G100000411640,350.0,oil,Al-Shemal Thermal power station_3 -- operating,e_w1084302645-400,way/1084302645-400,36.055452,43.298237,False
+e_w1084302645-400,ep_oil_steam_turbine_G100000411641,350.0,oil,Al-Shemal Thermal power station_2 -- operating,e_w1084302645-400,way/1084302645-400,36.055452,43.298237,False
+e_w1084302645-400,ep_oil_steam_turbine_G100000411642,350.0,oil,Al-Shemal Thermal power station_1 -- operating,e_w1084302645-400,way/1084302645-400,36.055452,43.298237,False
+e_w1084302645-400,ep_oil_steam_turbine_G100001018160,350.0,oil,Al-Shemal Thermal power station_5 -- operating,e_w1084302645-400,way/1084302645-400,36.055452,43.298237,False
+e_w1084302645-400,ep_oil_steam_turbine_G100001018161,350.0,oil,Al-Shemal Thermal power station_6 -- operating,e_w1084302645-400,way/1084302645-400,36.055452,43.298237,False
+e_w1197964516-400,ep_gas_combined_cycle_G100000407767,750.0,gas,Erbil power station_2 -- operating,e_w1197964516-400,way/1197964516-400,36.00787,43.917326,False
+e_w1197964516-400,ep_gas_combined_cycle_G100000407768,750.0,gas,Erbil power station_1 -- operating,e_w1197964516-400,way/1197964516-400,36.00787,43.917326,False
+e_w1197964516-400,ep_gas_internal_combustion_G100000410298,162.0,gas,Sarqala power plant_GT -- operating,e_w1197964516-400,way/1197964516-400,36.4103,44.3872,False
+e_w1288857403-400,ep_hydro_dam_G100000604591,250.0,hydro,Makhoul Dam hydroelectric plant_ -- construction,e_w1288857403-400,way/1288857403-400,35.2495,43.4243,False
+e_w1305046931-400,ep_gas_combined_cycle_G100000411037,257.0,gas,Bazian Combine Cycle power plant_CC -- operating,e_w1305046931-400,way/1305046931-400,30.2331,47.7687,False
+e_w1305046931-400,ep_gas_gas_turbine_w1305046931-400,502.0,gas,Aggregated Plant -- operating,e_w1305046931-400,way/1305046931-400,30.391136253668396,47.79621148763764,False
+e_w1305046931-400,ep_gas_steam_turbine_w1305046931-400,125.0,gas,Aggregated Plant -- construction,e_w1305046931-400,way/1305046931-400,30.033087537911072,47.83671090414152,False
+e_w1305075772-400,ep_gas_gas_turbine_G100000407857,182.0,gas,Mansurya power station_4 -- operating,e_w1305075772-400,way/1305075772-400,34.144823,44.941243,False
+e_w1305075772-400,ep_gas_gas_turbine_G100000407858,182.0,gas,Mansurya power station_3 -- operating,e_w1305075772-400,way/1305075772-400,34.144823,44.941243,False
+e_w1305075772-400,ep_gas_gas_turbine_G100000407859,182.0,gas,Mansurya power station_2 -- operating,e_w1305075772-400,way/1305075772-400,34.144823,44.941243,False
+e_w1305075772-400,ep_gas_gas_turbine_G100000407860,182.0,gas,Mansurya power station_1 -- operating,e_w1305075772-400,way/1305075772-400,34.144823,44.941243,False
+e_w1305075772-400,ep_gas_steam_turbine_G100000407856,181.0,gas,Mansurya power station_5 -- construction,e_w1305075772-400,way/1305075772-400,34.144823,44.941243,False
+e_w1305075772-400,ep_gas_steam_turbine_G100000411611,181.0,gas,Mansurya power station_6 -- construction,e_w1305075772-400,way/1305075772-400,34.144823,44.941243,False
+e_w1305075772-400,ep_hydro_dam_G100001027303,50.0,hydro,Hemrin hydroelectric plant_ -- operating,e_w1305075772-400,way/1305075772-400,34.1115,44.9737,False
+e_w1305102371-400,ep_gas_gas_turbine_w1305102371-400,500.0,gas,Aggregated Plant -- operating,e_w1305102371-400,way/1305102371-400,30.750959977210794,47.78486237788215,False
+e_w1305102371-400,ep_oil_steam_turbine_w1305102371-400,200.0,oil,Aggregated Plant -- operating,e_w1305102371-400,way/1305102371-400,30.39200375033799,47.76647582040515,False
+e_w1305104548-400,ep_gas_gas_turbine_w1305104548-400,500.0,gas,Aggregated Plant -- operating,e_w1305104548-400,way/1305104548-400,31.671239171427008,45.25977719941453,False
+e_w1305104548-400,ep_gas_steam_turbine_G100000407905,250.0,gas,Samawah power station_2-1 -- construction,e_w1305104548-400,way/1305104548-400,31.222926,45.271197,False
+e_w1305104548-400,ep_m_oil_internal_combustion_w1305104548-400,60.0,oil,Aggregated Plant -- mothballed,e_w1305104548-400,way/1305104548-400,31.357075661924913,45.70181577775602,False
+e_w1305104548-400,ep_oil_internal_combustion_w1305104548-400,50.0,oil,Aggregated Plant -- operating,e_w1305104548-400,way/1305104548-400,30.91116708127133,45.59942275424556,False
+e_w1305108645-400,ep_oil_internal_combustion_w1305108645-400,112.8,oil,Aggregated Plant -- operating,e_w1305108645-400,way/1305108645-400,32.85294774679463,44.42414042353299,False
+e_w1305108645-400,ep_oil_steam_turbine_G100000411680,160.0,oil,Al Dora power plant_4 -- operating,e_w1305108645-400,way/1305108645-400,33.257213,44.378034,False
+e_w1305108645-400,ep_oil_steam_turbine_G100000411681,160.0,oil,Al Dora power plant_3 -- operating,e_w1305108645-400,way/1305108645-400,33.257213,44.378034,False
+e_w1305108645-400,ep_oil_steam_turbine_G100000411682,160.0,oil,Al Dora power plant_2 -- operating,e_w1305108645-400,way/1305108645-400,33.257213,44.378034,False
+e_w1305108645-400,ep_oil_steam_turbine_G100000411683,160.0,oil,Al Dora power plant_1 -- operating,e_w1305108645-400,way/1305108645-400,33.257213,44.378034,False
+e_w1305108645-400,ep_oil_steam_turbine_w1305108645-400,246.0,oil,Aggregated Plant -- operating,e_w1305108645-400,way/1305108645-400,33.188951090542076,44.00144337874278,False
+e_w1305109678-400,ep_gas_gas_turbine_w1305109678-400,500.0,gas,Aggregated Plant -- operating,e_w1305109678-400,way/1305109678-400,32.904632137628624,44.19275649793929,False
+e_w1305109678-400,ep_oil_steam_turbine_G100000411644,320.0,oil,Al-Mussaib Thermal power plant_4 -- operating,e_w1305109678-400,way/1305109678-400,32.842483,44.276027,False
+e_w1305109678-400,ep_oil_steam_turbine_G100000411645,320.0,oil,Al-Mussaib Thermal power plant_3 -- operating,e_w1305109678-400,way/1305109678-400,32.842483,44.276027,False
+e_w1305109678-400,ep_oil_steam_turbine_G100000411646,320.0,oil,Al-Mussaib Thermal power plant_2 -- operating,e_w1305109678-400,way/1305109678-400,32.842483,44.276027,False
+e_w1305109678-400,ep_oil_steam_turbine_G100000411647,320.0,oil,Al-Mussaib Thermal power plant_1 -- operating,e_w1305109678-400,way/1305109678-400,32.842483,44.276027,False
+e_w1305137070-400,ep_gas_gas_turbine_G100000407756,169.0,gas,Baiji Gas power station_2-6 محطة كهرباء بيجي الغازية الثانية -- construction,e_w1305137070-400,way/1305137070-400,35.029766,43.559171,False
+e_w1305137070-400,ep_gas_gas_turbine_G100000407757,169.0,gas,Baiji Gas power station_2-5 محطة كهرباء بيجي الغازية الثانية -- construction,e_w1305137070-400,way/1305137070-400,35.029766,43.559171,False
+e_w1305137070-400,ep_gas_gas_turbine_G100000407758,169.0,gas,Baiji Gas power station_2-4 محطة كهرباء بيجي الغازية الثانية -- construction,e_w1305137070-400,way/1305137070-400,35.029766,43.559171,False
+e_w1305137070-400,ep_gas_gas_turbine_G100000407759,169.0,gas,Baiji Gas power station_2-3 محطة كهرباء بيجي الغازية الثانية -- construction,e_w1305137070-400,way/1305137070-400,35.029766,43.559171,False
+e_w1305137070-400,ep_gas_gas_turbine_G100000407760,169.0,gas,Baiji Gas power station_2-2 محطة كهرباء بيجي الغازية الثانية -- construction,e_w1305137070-400,way/1305137070-400,35.029766,43.559171,False
+e_w1305137070-400,ep_gas_gas_turbine_G100000407761,169.0,gas,Baiji Gas power station_2-1 محطة كهرباء بيجي الغازية الثانية -- construction,e_w1305137070-400,way/1305137070-400,35.029766,43.559171,False
+e_w1305137070-400,ep_gas_gas_turbine_w1305137070-400,636.0,gas,Aggregated Plant -- construction,e_w1305137070-400,way/1305137070-400,35.20406834581254,43.53131494949666,False
+e_w1305137070-400,ep_oil_steam_turbine_G100000411623,220.0,oil,Baiji Thermal power station_6 -- operating,e_w1305137070-400,way/1305137070-400,35.037142,43.558741,False
+e_w1305137070-400,ep_oil_steam_turbine_G100000411624,220.0,oil,Baiji Thermal power station_5 -- operating,e_w1305137070-400,way/1305137070-400,35.037142,43.558741,False
+e_w1305137070-400,ep_oil_steam_turbine_G100000411625,220.0,oil,Baiji Thermal power station_4 -- operating,e_w1305137070-400,way/1305137070-400,35.037142,43.558741,False
+e_w1305137070-400,ep_oil_steam_turbine_G100000411626,220.0,oil,Baiji Thermal power station_3 -- operating,e_w1305137070-400,way/1305137070-400,35.037142,43.558741,False
+e_w1305137070-400,ep_oil_steam_turbine_G100000411627,220.0,oil,Baiji Thermal power station_2 -- operating,e_w1305137070-400,way/1305137070-400,35.037142,43.558741,False
+e_w1305137070-400,ep_oil_steam_turbine_G100000411628,220.0,oil,Baiji Thermal power station_1 -- operating,e_w1305137070-400,way/1305137070-400,35.037142,43.558741,False
+e_w1305138271-400,ep_gas_combined_cycle_G100000407888,750.0,gas,Sulaymaniyah power station_2 -- operating,e_w1305138271-400,way/1305138271-400,35.586688,44.884351,False
+e_w1305138271-400,ep_gas_combined_cycle_G100000407889,750.0,gas,Sulaymaniyah power station_1 -- operating,e_w1305138271-400,way/1305138271-400,35.586688,44.884351,False
+e_w1305138271-400,ep_gas_gas_turbine_G100000407825,292.0,gas,Kirkuk Taza power station_2-2 -- operating,e_w1305138271-400,way/1305138271-400,35.328009,44.321853,False
+e_w1305138271-400,ep_gas_gas_turbine_G100000407826,260.0,gas,Kirkuk Taza power station_2-1 -- operating,e_w1305138271-400,way/1305138271-400,35.328009,44.321853,False
+e_w1305138271-400,ep_gas_gas_turbine_G100000411035,257.0,gas,Bazian power plant 2_2 -- operating,e_w1305138271-400,way/1305138271-400,35.591363,45.139346,False
+e_w1305138271-400,ep_gas_gas_turbine_G100000411036,257.0,gas,Bazian power plant 2_1 -- operating,e_w1305138271-400,way/1305138271-400,35.591363,45.139346,False
+e_w1305138271-400,ep_gas_gas_turbine_w1305138271-400,567.0,gas,Aggregated Plant -- operating,e_w1305138271-400,way/1305138271-400,35.50678868334051,44.32846467028944,False
+e_w1305138271-400,ep_gas_steam_turbine_G100000407743,250.0,gas,Bazian power station_5 -- operating,e_w1305138271-400,way/1305138271-400,35.6687298,45.0025632,False
+e_w1305138271-400,ep_gas_steam_turbine_G100000407824,278.0,gas,Kirkuk Taza power station_2-3 -- construction,e_w1305138271-400,way/1305138271-400,35.328009,44.321853,False
+e_w1305138271-400,ep_hydro_dam_G100000602206,240.0,hydro,Darbandikhan Dam hydroelectric plant_ -- operating,e_w1305138271-400,way/1305138271-400,35.1129,45.7064,False
+e_w1305138271-400,ep_oil_internal_combustion_w1305138271-400,51.0,oil,Aggregated Plant -- operating,e_w1305138271-400,way/1305138271-400,35.147893200355995,44.34731515949285,False
+e_w1305231218-400,ep_gas_combined_cycle_G100000400979,987.0,gas,Maisan Oil Energy power station_1 -- operating,e_w1305231218-400,way/1305231218-400,31.837901,47.142068,False
+e_w1305231218-400,ep_gas_combined_cycle_G100000407736,750.0,gas,Al Amarh power plant_CC -- operating,e_w1305231218-400,way/1305231218-400,31.696394,47.254028,False
+e_w1305231218-400,ep_gas_gas_turbine_w1305231218-400,270.0,gas,Aggregated Plant -- operating,e_w1305231218-400,way/1305231218-400,31.731948958898485,47.306043056726,False
+e_w1305231218-400,ep_oil_internal_combustion_G100000411607,201.6,oil,North Al Amarah Diesel power station_1 -- operating,e_w1305231218-400,way/1305231218-400,31.89989,47.141753,False
+e_w1305622931-400,ep_gas_steam_turbine_G100000407799,250.0,gas,Haydariya power station_1-5 -- construction,e_w1305622931-400,way/1305622931-400,32.23273,44.26806,False
+e_w1305622931-400,ep_oil_gas_turbine_G100000407800,162.0,oil,Haydariya power station_2-1 -- operating,e_w1305622931-400,way/1305622931-400,32.23273,44.26806,False
+e_w1305622931-400,ep_oil_gas_turbine_w1305622931-400,500.0,oil,Aggregated Plant -- operating,e_w1305622931-400,way/1305622931-400,32.49968757867026,44.288873727599345,False
+e_w1305622931-400,ep_oil_steam_turbine_w1305622931-400,50.0,oil,Aggregated Plant -- operating,e_w1305622931-400,way/1305622931-400,32.0422159339973,44.46278070484627,False
+e_w1305622949-400,ep_gas_gas_turbine_w1305622949-400,1250.0,gas,Aggregated Plant -- operating,e_w1305622949-400,way/1305622949-400,32.77849627555148,44.36037680143129,False
+e_w1305622949-400,ep_gas_steam_turbine_G100000411038,625.0,gas,Al-Khairat power station_ST -- construction,e_w1305622949-400,way/1305622949-400,32.428716,44.278623,False
+e_w1305622949-400,ep_gas_steam_turbine_w1305622949-400,132.0,gas,Aggregated Plant -- construction,e_w1305622949-400,way/1305622949-400,32.4953705673372,44.63181571264752,False
+e_w1305622949-400,ep_oil_gas_turbine_w1305622949-400,250.0,oil,Aggregated Plant -- operating,e_w1305622949-400,way/1305622949-400,32.06765232563376,44.26308809496525,False
+e_w1305622949-400,ep_oil_steam_turbine_w1305622949-400,200.0,oil,Aggregated Plant -- operating,e_w1305622949-400,way/1305622949-400,32.45292068208226,43.91838693817879,False
+e_w1305626862-400,ep_gas_gas_turbine_w1305626862-400,70.0,gas,Aggregated Plant -- operating,e_w1305626862-400,way/1305626862-400,31.59342323016063,45.998940172882065,False
+e_w1322105737-400,ep_gas_gas_turbine_G100000407726,172.0,gas,Al Quds power station_6 -- operating,e_w1322105737-400,way/1322105737-400,33.49091,44.36159,False
+e_w1322105737-400,ep_gas_gas_turbine_G100000414054,172.0,gas,Al Quds power station_9 -- operating,e_w1322105737-400,way/1322105737-400,33.49091,44.36159,False
+e_w1322105737-400,ep_gas_gas_turbine_G100000414055,172.0,gas,Al Quds power station_8 -- operating,e_w1322105737-400,way/1322105737-400,33.49091,44.36159,False
+e_w1322105737-400,ep_gas_gas_turbine_G100000414056,172.0,gas,Al Quds power station_7 -- operating,e_w1322105737-400,way/1322105737-400,33.49091,44.36159,False
+e_w1322105737-400,ep_gas_gas_turbine_w1322105737-400,1242.0,gas,Aggregated Plant -- operating,e_w1322105737-400,way/1322105737-400,33.424526547195626,44.339890617721935,False
+e_w1322105737-400,ep_gas_steam_turbine_G100000407719,250.0,gas,Al Quds power station_ST1 -- construction,e_w1322105737-400,way/1322105737-400,33.49091,44.36159,False
+e_w1322105737-400,ep_gas_steam_turbine_G100000411041,250.0,gas,Al Quds power station_ST2 -- construction,e_w1322105737-400,way/1322105737-400,33.49091,44.36159,False
+e_w1322118061-400,ep_oil_internal_combustion_G100000411606,201.6,oil,North Al Diwaniyah Diesel power station_1 -- operating,e_w1322118061-400,way/1322118061-400,32.028886,44.900994,False
+e_w1322118061-400,ep_oil_internal_combustion_G100000411620,218.4,oil,East Al Diwaniyah Diesel power station_1 -- operating,e_w1322118061-400,way/1322118061-400,32.018589,44.928891,False
+e_w223082235-400,ep_gas_internal_combustion_w223082235-400,143.0,gas,Aggregated Plant -- operating,e_w223082235-400,way/223082235-400,36.80473967331866,42.83486694161073,False
+e_w223082235-400,ep_hydro_dam_G100000602209,1052.0,hydro,Mosul Dam hydroelectric plant_ -- operating,e_w223082235-400,way/223082235-400,36.6303,42.8231,False
+e_w223082235-400,ep_hydro_dam_G100001027304,62.0,hydro,Mosul Dam Regulator hydroelectric plant_ -- operating,e_w223082235-400,way/223082235-400,36.6254,42.8179,False
+e_w223082235-400,ep_oil_internal_combustion_w223082235-400,143.0,oil,Aggregated Plant -- operating,e_w223082235-400,way/223082235-400,36.44710896075759,42.79168501561073,False
+e_w223083377-400,ep_gas_gas_turbine_w223083377-400,250.0,gas,Aggregated Plant -- operating,e_w223083377-400,way/223083377-400,34.0905674593946,41.17739973569329,False
+e_w223083377-400,ep_oil_internal_combustion_G100000411618,230.0,oil,Haditha power station_1 -- operating,e_w223083377-400,way/223083377-400,32.461723,41.408647,False
+e_w223087824-400,ep_gas_gas_turbine_G100000407862,160.0,gas,Sadr Gas power plant_1-2 -- operating,e_w223087824-400,way/223087824-400,33.4178,44.4653,False
+e_w223087824-400,ep_gas_gas_turbine_G100000407863,160.0,gas,Sadr Gas power plant_1-1 -- operating,e_w223087824-400,way/223087824-400,33.4178,44.4653,False
+e_w223087824-400,ep_gas_gas_turbine_G100000407865,169.0,gas,Sadr Gas power plant_2-2 -- operating,e_w223087824-400,way/223087824-400,33.4178,44.4653,False
+e_w223087824-400,ep_gas_gas_turbine_G100000407866,169.0,gas,Sadr Gas power plant_2-1 -- operating,e_w223087824-400,way/223087824-400,33.4178,44.4653,False
+e_w223087824-400,ep_gas_steam_turbine_G100000407861,160.0,gas,Sadr Gas power plant_1-3 -- construction,e_w223087824-400,way/223087824-400,33.4178,44.4653,False
+e_w223087824-400,ep_gas_steam_turbine_G100000407864,169.0,gas,Sadr Gas power plant_2-3 -- construction,e_w223087824-400,way/223087824-400,33.4178,44.4653,False
+e_w223203344-400,ep_m_hydro_ror_G100000604220,170.0,hydro,Badoush Dam hydroelectric plant_ -- mothballed,e_w223203344-400,way/223203344-400,36.4661,42.9668,False
+e_w292142691-400,ep_hydro_dam_G100000602210,84.0,hydro,Samarra hydroelectric plant_ -- operating,e_w292142691-400,way/292142691-400,34.1943,43.8542,False
+e_w307589893-400,ep_oil_steam_turbine_G100000411662,210.0,oil,Al- Yusufiyah power plant_8 -- construction,e_w307589893-400,way/307589893-400,33.091434,44.116158,False
+e_w307589893-400,ep_oil_steam_turbine_G100000411663,210.0,oil,Al- Yusufiyah power plant_7 -- construction,e_w307589893-400,way/307589893-400,33.091434,44.116158,False
+e_w307589893-400,ep_oil_steam_turbine_G100000411664,210.0,oil,Al- Yusufiyah power plant_6 -- construction,e_w307589893-400,way/307589893-400,33.091434,44.116158,False
+e_w307589893-400,ep_oil_steam_turbine_G100000411665,210.0,oil,Al- Yusufiyah power plant_5 -- construction,e_w307589893-400,way/307589893-400,33.091434,44.116158,False
+e_w307589893-400,ep_oil_steam_turbine_G100000411666,210.0,oil,Al- Yusufiyah power plant_4 -- construction,e_w307589893-400,way/307589893-400,33.091434,44.116158,False
+e_w307589893-400,ep_oil_steam_turbine_G100000411667,210.0,oil,Al- Yusufiyah power plant_3 -- construction,e_w307589893-400,way/307589893-400,33.091434,44.116158,False
+e_w307589893-400,ep_oil_steam_turbine_G100000411668,210.0,oil,Al- Yusufiyah power plant_2 -- construction,e_w307589893-400,way/307589893-400,33.091434,44.116158,False
+e_w307589893-400,ep_oil_steam_turbine_G100000411669,210.0,oil,Al- Yusufiyah power plant_1 -- construction,e_w307589893-400,way/307589893-400,33.091434,44.116158,False
+e_w382767472-230,ep_gas_gas_turbine_w382767472-230,1000.0,gas,Aggregated Plant -- operating,e_w382767472-230,way/382767472-230,36.91200914567417,42.44116906910273,False
+e_w385870453-400,ep_gas_gas_turbine_w385870453-400,250.0,gas,Aggregated Plant -- operating,e_w385870453-400,way/385870453-400,33.57592293702354,44.4466662784959,False
+e_w385870453-400,ep_gas_steam_turbine_w385870453-400,125.0,gas,Aggregated Plant -- construction,e_w385870453-400,way/385870453-400,33.14876570000608,44.735568934376495,False
+e_w385870453-400,ep_oil_steam_turbine_w385870453-400,165.0,oil,Aggregated Plant -- operating,e_w385870453-400,way/385870453-400,33.23552641594973,44.26629527554856,False
+e_w460245088-400,ep_oil_steam_turbine_w460245088-400,300.0,oil,Aggregated Plant -- operating,e_w460245088-400,way/460245088-400,35.89495879502547,43.92193848312402,False
+e_w460252853-400,ep_gas_gas_turbine_w460252853-400,930.0,gas,Aggregated Plant -- operating,e_w460252853-400,way/460252853-400,35.8103963319377,43.6156956756248,False
+e_w723605546-400,ep_gas_steam_turbine_w723605546-400,125.0,gas,Aggregated Plant -- construction,e_w723605546-400,way/723605546-400,32.7178873283338,44.26258446812734,False
+e_w723605546-400,ep_oil_gas_turbine_w723605546-400,250.0,oil,Aggregated Plant -- operating,e_w723605546-400,way/723605546-400,32.36445371164794,44.32644935139947,False
+e_w723605546-400,ep_oil_internal_combustion_G100000411619,300.0,oil,East Karbla Diesel power station_1 -- operating,e_w723605546-400,way/723605546-400,32.644815,43.993679,False
+e_w723605546-400,ep_oil_steam_turbine_G100000400970,350.0,oil,Al-Khairat-2 power station_1-1 -- construction,e_w723605546-400,way/723605546-400,32.650971,43.981639,False
+e_w723605546-400,ep_oil_steam_turbine_G100000400971,350.0,oil,Al-Khairat-2 power station_1-2 -- construction,e_w723605546-400,way/723605546-400,32.650971,43.981639,False
+e_w723605546-400,ep_oil_steam_turbine_G100000400972,350.0,oil,Al-Khairat-2 power station_1-3 -- construction,e_w723605546-400,way/723605546-400,32.650971,43.981639,False
+e_w723605546-400,ep_oil_steam_turbine_G100000400973,350.0,oil,Al-Khairat-2 power station_1-4 -- construction,e_w723605546-400,way/723605546-400,32.650971,43.981639,False
+e_w723605546-400,ep_oil_steam_turbine_G100000411658,350.0,oil,Al-Khairat-2 power station_2-4 -- construction,e_w723605546-400,way/723605546-400,32.650971,43.981639,False
+e_w723605546-400,ep_oil_steam_turbine_G100000411659,350.0,oil,Al-Khairat-2 power station_2-3 -- construction,e_w723605546-400,way/723605546-400,32.650971,43.981639,False
+e_w723605546-400,ep_oil_steam_turbine_G100000411660,350.0,oil,Al-Khairat-2 power station_2-2 -- construction,e_w723605546-400,way/723605546-400,32.650971,43.981639,False
+e_w723605546-400,ep_oil_steam_turbine_G100000411661,350.0,oil,Al-Khairat-2 power station_2-1 -- construction,e_w723605546-400,way/723605546-400,32.650971,43.981639,False
+e_w730868948-400,ep_gas_gas_turbine_w730868948-400,500.0,gas,Aggregated Plant -- operating,e_w730868948-400,way/730868948-400,31.217367836903065,46.19652898432101,False
+e_w730868948-400,ep_gas_steam_turbine_G100000407834,250.0,gas,Nasiriyah New power station_1-1e -- construction,e_w730868948-400,way/730868948-400,31.034427,46.202403,False
+e_w730868948-400,ep_oil_steam_turbine_G100000407839,210.0,oil,Nasiriyah power station_1-4 -- operating,e_w730868948-400,way/730868948-400,31.037046,46.195038,False
+e_w730868948-400,ep_oil_steam_turbine_G100000407840,210.0,oil,Nasiriyah power station_1-3 -- operating,e_w730868948-400,way/730868948-400,31.037046,46.195038,False
+e_w730868948-400,ep_oil_steam_turbine_G100000407841,210.0,oil,Nasiriyah power station_1-2 -- operating,e_w730868948-400,way/730868948-400,31.037046,46.195038,False
+e_w730868948-400,ep_oil_steam_turbine_G100000407842,210.0,oil,Nasiriyah power station_1-1 -- operating,e_w730868948-400,way/730868948-400,31.037046,46.195038,False
+e_w904510982-400,ep_gas_steam_turbine_G100000407910,610.0,gas,Wasset power station_2-2 -- operating,e_w904510982-400,way/904510982-400,32.77497,45.08464,False
+e_w904510982-400,ep_gas_steam_turbine_G100000407911,610.0,gas,Wasset power station_2-1 -- operating,e_w904510982-400,way/904510982-400,32.77497,45.08464,False
+e_w904510982-400,ep_gas_steam_turbine_G100000407912,330.0,gas,Wasset power station_1-4 -- operating,e_w904510982-400,way/904510982-400,32.77497,45.08464,False
+e_w904510982-400,ep_gas_steam_turbine_G100000407913,330.0,gas,Wasset power station_1-3 -- operating,e_w904510982-400,way/904510982-400,32.77497,45.08464,False
+e_w904510982-400,ep_gas_steam_turbine_G100000407914,330.0,gas,Wasset power station_1-2 -- operating,e_w904510982-400,way/904510982-400,32.77497,45.08464,False
+e_w904510982-400,ep_gas_steam_turbine_G100000407915,330.0,gas,Wasset power station_1-1 -- operating,e_w904510982-400,way/904510982-400,32.77497,45.08464,False
+e_w906289167-400,ep_gas_combined_cycle_G100000407870,520.0,gas,New Rumaila power station_3 -- operating,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_combined_cycle_G100000407871,520.0,gas,New Rumaila power station_2 -- operating,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_combined_cycle_G100000407872,520.0,gas,New Rumaila power station_1 -- operating,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_gas_turbine_G100000407867,185.0,gas,New Rumaila power station_5-1 -- operating,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_gas_turbine_G100000407868,185.0,gas,New Rumaila power station_4-1 -- operating,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_gas_turbine_G100000411608,185.0,gas,New Rumaila power station_6-1 -- operating,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_gas_turbine_G100001018147,185.0,gas,New Rumaila power station_4-2 -- operating,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_gas_turbine_G100001018154,185.0,gas,New Rumaila power station_5-2 -- operating,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_gas_turbine_G100001018158,185.0,gas,New Rumaila power station_6-2 -- operating,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_steam_turbine_G100001018148,160.0,gas,New Rumaila power station_4-3 -- construction,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_steam_turbine_G100001018157,160.0,gas,New Rumaila power station_5-3 -- construction,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906289167-400,ep_gas_steam_turbine_G100001018159,160.0,gas,New Rumaila power station_6-3 -- construction,e_w906289167-400,way/906289167-400,30.54569,47.406037,False
+e_w906293788-400,ep_gas_combined_cycle_G100000411602,430.0,gas,Rumaila Combined power station_2 -- operating,e_w906293788-400,way/906293788-400,30.554475,47.387955,False
+e_w906293788-400,ep_gas_combined_cycle_G100000411603,300.0,gas,Rumaila Combined power station_1 -- operating,e_w906293788-400,way/906293788-400,30.554475,47.387955,False
+e_w906293788-400,ep_gas_gas_turbine_G100000407873,321.2,gas,Rumaila power station_5 -- operating,e_w906293788-400,way/906293788-400,30.554475,47.387955,False
+e_w906293788-400,ep_gas_gas_turbine_G100000407874,321.2,gas,Rumaila power station_4 -- operating,e_w906293788-400,way/906293788-400,30.554475,47.387955,False
+e_w906293788-400,ep_gas_gas_turbine_G100000407875,321.2,gas,Rumaila power station_3 -- operating,e_w906293788-400,way/906293788-400,30.554475,47.387955,False
+e_w906293788-400,ep_gas_gas_turbine_G100000407876,321.2,gas,Rumaila power station_2 -- operating,e_w906293788-400,way/906293788-400,30.554475,47.387955,False
+e_w906293788-400,ep_gas_gas_turbine_G100000407877,321.2,gas,Rumaila power station_1 -- operating,e_w906293788-400,way/906293788-400,30.554475,47.387955,False
+e_w906293788-400,ep_gas_gas_turbine_w906293788-400,250.0,gas,Aggregated Plant -- operating,e_w906293788-400,way/906293788-400,30.826554964181586,47.430548473063396,False
+e_w906335194-400,ep_gas_gas_turbine_w906335194-400,744.0,gas,Aggregated Plant -- operating,e_w906335194-400,way/906335194-400,32.23901228631545,44.76663616793777,False
+e_w906335194-400,ep_gas_steam_turbine_G100000407778,250.0,gas,Diwaniyah power station_ST1 -- construction,e_w906335194-400,way/906335194-400,31.97951,44.69328,False
+e_w906335194-400,ep_gas_steam_turbine_w906335194-400,132.0,gas,Aggregated Plant -- construction,e_w906335194-400,way/906335194-400,31.795061290649723,44.89198590093088,False
+e_w906335194-400,ep_oil_gas_turbine_w906335194-400,250.0,oil,Aggregated Plant -- operating,e_w906335194-400,way/906335194-400,31.856415826684,44.45274547245138,False
+elc_spv_008,ep_solar_pv_008,86.9,solar,Aggregated Plant -- construction,elc_spv_008,IQ6-400,35.61184623744353,43.22630737787404,False
+elc_spv_015,ep_solar_pv_015,6.7,solar,Aggregated Plant -- operating,elc_spv_015,way/906293788-400,30.49796392036813,47.12748122203746,False
+elc_spv_015,ep_solar_pv_G100000804696,250.0,solar,Total-Artawi Solar PV Park_1 -- construction,elc_spv_015,way/906293788-400,30.5001,47.8001,False
+elc_spv_018,ep_solar_pv_018,60.1,solar,Aggregated Plant -- construction,elc_spv_018,way/1305622931-400,32.16928553757042,44.00525563005294,False
+elc_spv_023,ep_solar_pv_G100000811422,350.0,solar,Ramadi solar farm_1 -- operating,elc_spv_023,way/223083377-400,33.4206,43.3078,False
+elc_spv_023,ep_solar_pv_G100000811423,350.0,solar,Ramadi solar farm_2 -- operating,elc_spv_023,way/223083377-400,33.4206,43.3078,False

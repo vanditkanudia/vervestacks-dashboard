@@ -1,0 +1,80 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,10.0,bioenergy,Aggregated Plant -- operating,,,,,False
+e_MA21-225,ep_oil_gas_turbine_G100000411542,105.0,oil,Kenitra power plant_3 -- operating,e_MA21-225,MA21-225,34.34408,-6.5709,False
+e_MA21-225,ep_oil_gas_turbine_G100000411543,105.0,oil,Kenitra power plant_2 -- operating,e_MA21-225,MA21-225,34.34408,-6.5709,False
+e_MA21-225,ep_oil_gas_turbine_G100000411544,105.0,oil,Kenitra power plant_1 -- operating,e_MA21-225,MA21-225,34.34408,-6.5709,False
+e_MA25-225,ep_hydro_MA25-225__irena,36.53857425742572,hydro,Aggregated Plant - IRENA Gap - MA25-225_Missing Hydro Capacity -- operating,e_MA25-225,MA25-225,33.97570683042491,-4.73340858514637,False
+e_MA35-225,ep_coal_MA35-225__ember,12.316715542522005,coal,Aggregated Plant - EMBER Gap - MA35-225_Missing Coal Capacity -- operating,e_MA35-225,MA35-225,33.71287734792795,-7.3437115263190185,False
+e_MA35-225,ep_coal_subcritical_G100000106974,150.0,coal,Mohammedia power station_Unit 3 -- operating,e_MA35-225,MA35-225,33.681854,-7.434761,False
+e_MA35-225,ep_coal_subcritical_G100000106975,150.0,coal,Mohammedia power station_Unit 4 -- operating,e_MA35-225,MA35-225,33.681854,-7.434761,False
+e_MA35-225,ep_oil_gas_turbine_G100000411535,100.0,oil,Mohammedia 2 Power Plant_3 -- operating,e_MA35-225,MA35-225,33.68086,-7.4363,False
+e_MA35-225,ep_oil_gas_turbine_G100000411536,100.0,oil,Mohammedia 2 Power Plant_2 -- operating,e_MA35-225,MA35-225,33.68086,-7.4363,False
+e_MA35-225,ep_oil_gas_turbine_G100000411537,100.0,oil,Mohammedia 2 Power Plant_1 -- operating,e_MA35-225,MA35-225,33.68086,-7.4363,False
+e_MA35-225,ep_oil_gas_turbine_G100000411538,150.0,oil,Mohammedia power station_2 -- operating,e_MA35-225,MA35-225,33.681854,-7.434761,False
+e_MA35-225,ep_oil_gas_turbine_G100000411539,150.0,oil,Mohammedia power station_1 -- operating,e_MA35-225,MA35-225,33.681854,-7.434761,False
+e_MA54-225,ep_coal_MA54-225__ember,84.41055718475081,coal,Aggregated Plant - EMBER Gap - MA54-225_Missing Coal Capacity -- operating,e_MA54-225,MA54-225,32.945162158196865,-8.727582743601788,False
+e_MA54-225,ep_coal_subcritical_G100000105349,330.0,coal,Jorf Lasfar power station_Unit 1 -- operating,e_MA54-225,MA54-225,33.1047305,-8.6376352,False
+e_MA54-225,ep_coal_subcritical_G100000105350,330.0,coal,Jorf Lasfar power station_Unit 2 -- operating,e_MA54-225,MA54-225,33.1047305,-8.6376352,False
+e_MA54-225,ep_coal_subcritical_G100000105351,348.0,coal,Jorf Lasfar power station_Unit 3 -- operating,e_MA54-225,MA54-225,33.1047305,-8.6376352,False
+e_MA54-225,ep_coal_subcritical_G100000105352,348.0,coal,Jorf Lasfar power station_Unit 4 -- operating,e_MA54-225,MA54-225,33.1047305,-8.6376352,False
+e_MA54-225,ep_coal_subcritical_G100000105353,350.0,coal,Jorf Lasfar power station_Unit 5 -- operating,e_MA54-225,MA54-225,33.1048,-8.6367,False
+e_MA54-225,ep_coal_subcritical_G100000105354,350.0,coal,Jorf Lasfar power station_Unit 6 -- operating,e_MA54-225,MA54-225,33.1048,-8.6367,False
+e_MA67-225,ep_windon_wind_G100000900190,210.0,windon,Midelt wind farm_-- -- operating,e_MA67-225,MA67-225,32.722,-4.6565,False
+e_MA68-225,ep_hydro_MA68-225__irena,11.205162772277221,hydro,Aggregated Plant - IRENA Gap - MA68-225_Missing Hydro Capacity -- operating,e_MA68-225,MA68-225,32.70544098642112,-5.8118897404823935,False
+e_MA68-225,ep_hydro_dam_G100000602530,92.0,hydro,Ahmed El Hansali hydroelectric plant_ -- operating,e_MA68-225,MA68-225,32.6933,-5.8885,False
+e_MA71-400,ep_coal_MA71-400__ember,56.90322580645166,coal,Aggregated Plant - EMBER Gap - MA71-400_Missing Coal Capacity -- operating,e_MA71-400,MA71-400,31.974644602936344,-9.41042552923287,False
+e_MA71-400,ep_coal_ultra-supercritical_G100000108700,693.0,coal,Safi power station_Unit 1 -- operating,e_MA71-400,MA71-400,32.149115,-9.282294,False
+e_MA71-400,ep_coal_ultra-supercritical_G100000108701,693.0,coal,Safi power station_Unit 2 -- operating,e_MA71-400,MA71-400,32.149115,-9.282294,False
+e_w108482559-225,ep_hydro_dam_G100000602532,128.0,hydro,Al Massira hydroelectric plant_ -- operating,e_w108482559-225,way/108482559-225,32.4764,-7.6377,False
+e_w108482559-225,ep_hydro_w108482559-225__irena,15.58979168316831,hydro,Aggregated Plant - IRENA Gap - way/108482559-225_Missing Hydro Capacity -- operating,e_w108482559-225,way/108482559-225,32.48877217958437,-7.55017496899694,False
+e_w143699506-225,ep_hydro_dam_G100000602533,240.0,hydro,Al Wahda hydroelectric plant_ -- operating,e_w143699506-225,way/143699506-225,34.5978,-5.201,False
+e_w143699506-225,ep_hydro_w143699506-225__irena,29.230859405940578,hydro,Aggregated Plant - IRENA Gap - way/143699506-225_Missing Hydro Capacity -- operating,e_w143699506-225,way/143699506-225,34.455209075536764,-5.329926915890996,False
+e_w163471767-225,ep_hydro_dam_G100000602534,240.0,hydro,Allal Al Fassi hydroelectric plant_ -- operating,e_w163471767-225,way/163471767-225,33.9318,-4.6768,False
+e_w163471767-225,ep_hydro_w163471767-225__irena,29.230859405940578,hydro,Aggregated Plant - IRENA Gap - way/163471767-225_Missing Hydro Capacity -- operating,e_w163471767-225,way/163471767-225,33.94046519883786,-4.657483724197517,False
+e_w163720061-225,ep_hydro_w163720061-225__irena,36.53857425742572,hydro,Aggregated Plant - IRENA Gap - way/163720061-225_Missing Hydro Capacity -- operating,e_w163720061-225,way/163720061-225,35.042488616715275,-5.161151628990347,False
+e_w200913450-225,ep_hydro_ps_G100000602528,335.0,hydro,Abdelmoumen hydroelectric plant_ -- construction,e_w200913450-225,way/200913450-225,30.4751,-8.8052,False
+e_w200913450-225,ep_hydro_w200913450-225__irena,40.80140792079206,hydro,Aggregated Plant - IRENA Gap - way/200913450-225_Missing Hydro Capacity -- operating,e_w200913450-225,way/200913450-225,30.290262072195617,-8.80517417600373,False
+e_w208137370-225,ep_gas_combined_cycle_G100000408004,470.0,gas,Ain Beni Mathar power plant_1 -- operating,e_w208137370-225,way/208137370-225,34.0705,-2.1049,False
+e_w216888494-225,ep_hydro_dam_G100000602531,94.0,hydro,Ait Ouarda hydroelectric plant_ -- operating,e_w216888494-225,way/216888494-225,32.1089,-6.5095,False
+e_w216888494-225,ep_hydro_dam_G100000602535,135.0,hydro,Bin El Ouidane hydroelectric plant_ -- operating,e_w216888494-225,way/216888494-225,32.1069,-6.4641,False
+e_w216888494-225,ep_hydro_ps_G100000602529,466.0,hydro,Afourer hydroelectric plant_ -- operating,e_w216888494-225,way/216888494-225,32.2077,-6.5317,False
+e_w216888494-225,ep_hydro_w216888494-225__irena,92.80797861386134,hydro,Aggregated Plant - IRENA Gap - way/216888494-225_Missing Hydro Capacity -- operating,e_w216888494-225,way/216888494-225,32.37632644103147,-6.526879153880064,False
+e_w216888494-225,ep_windon_wind_225,100.0,windon,Aggregated Plant -- construction,e_w216888494-225,way/216888494-225,32.02036669497288,-6.49569541974688,False
+e_w250862291-225,ep_hydro_w250862291-225__irena,15.58979168316831,hydro,Aggregated Plant - IRENA Gap - way/250862291-225_Missing Hydro Capacity -- operating,e_w250862291-225,way/250862291-225,32.771681800886725,-5.748281603966681,False
+e_w285708473-225,ep_hydro_dam_G100001027333,67.0,hydro,Hassan I hydroelectric plant_ -- operating,e_w285708473-225,way/285708473-225,31.846,-7.0783,False
+e_w547146060-400,ep_oil_internal_combustion_G100000411540,116.0,oil,Tan Tan power plant_1 -- operating,e_w547146060-400,way/547146060-400,28.43905,-11.09704,False
+e_w834066956-225,ep_coal_supercritical_G100000105021,350.0,coal,Jerada power station_Unit 4 -- operating,e_w834066956-225,way/834066956-225,34.3096,-2.1908,False
+e_w834066956-225,ep_coal_w834066956-225__ember,14.36950146627567,coal,Aggregated Plant - EMBER Gap - way/834066956-225_Missing Coal Capacity -- operating,e_w834066956-225,way/834066956-225,34.40849755211479,-2.1436383194241313,False
+e_w879054614-400,ep_gas_combined_cycle_G100000408001,400.0,gas,Tahaddart power plant_1 -- operating,e_w879054614-400,way/879054614-400,35.589177,-5.986626,False
+e_w879054614-400,ep_gas_combined_cycle_G100000411148,457.0,gas,Tahaddart power plant_2 -- construction,e_w879054614-400,way/879054614-400,35.589177,-5.986626,False
+elc_spv_001,ep_solar_001__irena,11.307023903752395,solar,Aggregated Plant -- operating,elc_spv_001,way/216820526-225,31.655703383541972,-3.254885054604777,False
+elc_spv_002,ep_solar_pv_002,2.6,solar,Aggregated Plant -- operating,elc_spv_002,MA10-225,34.802949468773235,-3.244012495717045,False
+elc_spv_004,ep_solar_pv_004,69.0,solar,Aggregated Plant -- construction,elc_spv_004,MA22-400,33.37869105875252,-2.7437748241164095,False
+elc_spv_004,ep_solar_thermal_004,20.0,solar,Aggregated Plant -- operating,elc_spv_004,MA22-400,33.488387363020365,-3.1896116105831993,False
+elc_spv_006,ep_solar_pv_006,93.5,solar,Aggregated Plant -- construction,elc_spv_006,MA67-225,32.72788893876844,-4.398254269801953,False
+elc_spv_006,ep_solar_pv_G100000814166,400.0,solar,Noor Midelt solar farm_1-PV -- construction,elc_spv_006,MA67-225,32.8838,-4.7101,False
+elc_spv_008,ep_solar_pv_008,271.0,solar,Aggregated Plant -- operating,elc_spv_008,way/208002693-225,32.16992779498274,-7.199454275326174,False
+elc_spv_009,ep_solar_pv_009,1.2,solar,Aggregated Plant -- operating,elc_spv_009,way/144011573-225,33.4094011464223,-7.335391946411792,False
+elc_spv_010,ep_solar_pv_010,6.2,solar,Aggregated Plant -- operating,elc_spv_010,way/320483882-225,32.97732563360225,-8.294883683350228,False
+elc_spv_011,ep_solar_pv_011,3.7,solar,Aggregated Plant -- operating,elc_spv_011,MA21-225,34.602522635870464,-6.151679713871989,False
+elc_spv_012,ep_solar_pv_012,34.0,solar,Aggregated Plant -- operating,elc_spv_012,way/167908818-225,34.95424246987063,-5.917159648558202,False
+elc_spv_015,ep_solar_015__irena,12.280921984323005,solar,Aggregated Plant -- operating,elc_spv_015,way/1208434041-225,30.99082604216484,-4.79954950635651,False
+elc_spv_015,ep_solar_pv_015,40.0,solar,Aggregated Plant -- operating,elc_spv_015,way/1208434041-225,30.68456211668007,-4.453187614161615,False
+elc_spv_016,ep_solar_pv_016,111.99999999999999,solar,Aggregated Plant -- operating,elc_spv_016,way/1208434041-225,30.2705447219807,-4.824245173918725,False
+elc_spv_016,ep_solar_thermal_016,310.0,solar,Aggregated Plant -- operating,elc_spv_016,way/1208434041-225,30.61629403181683,-5.169561373405075,False
+elc_spv_016,ep_solar_thermal_G100000800292,200.0,solar,Noor Ouarzazate solar farm_2 -- operating,elc_spv_016,way/1208434041-225,31.0377,-6.8696,False
+elc_spv_017,ep_solar_pv_017,100.0,solar,Aggregated Plant -- construction,elc_spv_017,MA85-225,31.131672609653197,-6.033389394468253,False
+elc_spv_021,ep_solar_pv_021,48.5,solar,Aggregated Plant -- construction,elc_spv_021,way/197830862-225,31.540371955500778,-8.314428313119542,False
+elc_spv_022,ep_solar_022__irena,11.11205411192467,solar,Aggregated Plant -- operating,elc_spv_022,MA94-225,28.748542973191526,-8.16572265834579,False
+elc_spv_022,ep_solar_pv_022,1.6,solar,Aggregated Plant -- operating,elc_spv_022,MA94-225,28.82049864621042,-8.641225352808073,False
+elc_won_001,ep_windon_wind_001,517.0,windon,Aggregated Plant -- operating,elc_won_001,MA21-225,34.175392682881196,-6.403754659197399,False
+elc_won_001,ep_windon_wind_G100000900141,300.0,windon,Tarfaya wind farm_-- -- operating,elc_won_001,MA21-225,35.611,-5.432,False
+elc_won_001,ep_windon_wind_G100000900166,200.0,windon,Al Koudia wind farm_Expansion -- construction,elc_won_001,MA21-225,35.8184,-5.4538,False
+elc_won_005,ep_windon_wind_005,87.0,windon,Aggregated Plant -- operating,elc_won_005,way/143767119-225,34.17543771402676,-3.403121362630552,False
+elc_won_012,ep_windon_012__irena,74.86874137263507,windon,Aggregated Plant -- operating,elc_won_012,way/591932584-225,32.21278709106901,-4.048535820254012,False
+elc_won_016,ep_windon_wind_016,60.0,windon,Aggregated Plant -- operating,elc_won_016,MA84-225,31.685637676597423,-9.208462894040549,False
+elc_won_018,ep_windon_wind_018,143.00000000000003,windon,Aggregated Plant -- operating,elc_won_018,MA80-225,32.41136431448775,-8.210049636400065,False
+elc_won_018,ep_windon_wind_G100000900139,270.0,windon,Jbel Lahdid wind farm_-- -- construction,elc_won_018,MA80-225,31.6634,-7.8741,False
+elc_won_020,ep_windon_020__irena,100.25480303057562,windon,Aggregated Plant -- operating,elc_won_020,way/547146060-400,28.2038606320157,-9.701863105927288,False
+elc_won_021,ep_windon_021__irena,91.87645559678941,windon,Aggregated Plant -- operating,elc_won_021,way/703510867-225,27.991821741278812,-11.28839019825233,False
+elc_won_021,ep_windon_wind_021,202.0,windon,Aggregated Plant -- operating,elc_won_021,way/703510867-225,27.939788360954545,-11.772735268814733,False

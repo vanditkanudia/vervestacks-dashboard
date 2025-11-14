@@ -1,0 +1,64 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_DO3-345,ep_coal_subcritical_G100000104921,128.0,coal,Itabo power station_Unit 1 -- operating,e_DO3-345,DO3-345,18.405797,-70.027169,False
+e_DO3-345,ep_coal_subcritical_G100000104922,132.0,coal,Itabo power station_Unit 2 -- operating,e_DO3-345,DO3-345,18.405797,-70.027169,False
+e_DO3-345,ep_hydro_DO3-345__irena,28.350871794871814,hydro,Aggregated Plant - IRENA Gap - DO3-345_Missing Hydro Capacity -- operating,e_DO3-345,DO3-345,18.380523057763018,-70.04862087779776,False
+e_DO3-345,ep_hydro_dam_G100000601489,98.0,hydro,Jigüey hydroelectric plant_ -- operating,e_DO3-345,DO3-345,18.5112,-70.3321,False
+e_DO3-345,ep_hydro_ror_G100001031112,60.0,hydro,Aguacate hydroelectric plant_ -- operating,e_DO3-345,DO3-345,18.4288,-70.2581,False
+e_DO3-345,ep_oil_gas_turbine_G100000412062,100.0,oil,Río Haina power station_1 -- operating,e_DO3-345,DO3-345,18.424206,-70.020622,False
+e_DO3-345,ep_oil_internal_combustion_G100000412066,107.0,oil,Palamara power station_1 -- operating,e_DO3-345,DO3-345,18.555709,-70.012859,False
+e_w1034666194-230,ep_hydro_dam_G100000601492,90.0,hydro,Palomino hydroelectric plant_ -- operating,e_w1034666194-230,way/1034666194-230,18.8078,-70.9872,False
+e_w1034666194-230,ep_hydro_ror_G100001031129,50.0,hydro,Pinalito hydroelectric plant_ -- operating,e_w1034666194-230,way/1034666194-230,18.9165,-70.625,False
+e_w1034666194-230,ep_hydro_w1034666194-230__irena,25.121025641025657,hydro,Aggregated Plant - IRENA Gap - way/1034666194-230_Missing Hydro Capacity -- operating,e_w1034666194-230,way/1034666194-230,19.270023119622913,-70.36168563757589,False
+e_w1034666194-345,ep_oil_steam_turbine_G100000412069,66.0,oil,Falcondo mine power station_3 -- operating,e_w1034666194-345,way/1034666194-345,18.927174,-70.35488,False
+e_w1034666194-345,ep_oil_steam_turbine_G100000412070,66.0,oil,Falcondo mine power station_2 -- operating,e_w1034666194-345,way/1034666194-345,18.927174,-70.35488,False
+e_w1034666194-345,ep_oil_steam_turbine_G100000412071,66.0,oil,Falcondo mine power station_1 -- operating,e_w1034666194-345,way/1034666194-345,18.927174,-70.35488,False
+e_w1058735225-345,ep_gas_combined_cycle_G100000406682,359.0,gas,Los Mina power station_1 -- operating,e_w1058735225-345,way/1058735225-345,18.499396,-69.868562,False
+e_w1058735225-345,ep_gas_combined_cycle_G100000406683,150.0,gas,Estrella del Mar III power station_1 -- operating,e_w1058735225-345,way/1058735225-345,18.48307,-69.88298,False
+e_w1058735225-345,ep_gas_combined_cycle_G100000406685,319.0,gas,Andrés power station_1 -- operating,e_w1058735225-345,way/1058735225-345,18.4074,-69.6343,False
+e_w1058735225-345,ep_gas_gas_turbine_G100000412061,210.0,gas,Siba power station_1 -- operating,e_w1058735225-345,way/1058735225-345,18.45692,-69.62015,False
+e_w1058735225-345,ep_gas_internal_combustion_G100000406684,111.0,gas,Estrella del Mar II power station_1 -- operating,e_w1058735225-345,way/1058735225-345,18.483971,-69.883154,False
+e_w1058735225-345,ep_gas_steam_turbine_G100000412060,70.0,gas,Siba power station_2 -- construction,e_w1058735225-345,way/1058735225-345,18.45692,-69.62015,False
+e_w192707574-345,ep_gas_combined_cycle_G100000406942,420.0,gas,Manzanillo Gas & Power power station_1 -- construction,e_w192707574-345,way/192707574-345,19.6956157,-71.7341945,False
+e_w192707574-345,ep_gas_combined_cycle_G100000410186,432.0,gas,Manzanillo Power Land power station_1 -- construction,e_w192707574-345,way/192707574-345,19.68089,-71.69965,False
+e_w192707574-345,ep_gas_combined_cycle_G100000410637,420.0,gas,Manzanillo Energy power station_1 -- construction,e_w192707574-345,way/192707574-345,19.6764776,-71.7003302,False
+e_w192707574-345,ep_hydro_dam_G100000601493,80.0,hydro,Tavera hydroelectric plant_ -- operating,e_w192707574-345,way/192707574-345,19.2879,-70.7238,False
+e_w192707574-345,ep_hydro_dam_G100000604544,191.0,hydro,Las Placetas hydroelectric plant_ -- construction,e_w192707574-345,way/192707574-345,19.4504,-70.6909,False
+e_w192707574-345,ep_hydro_ror_G100001031125,52.0,hydro,Monción hydroelectric plant_ -- operating,e_w192707574-345,way/192707574-345,19.428,-71.089,False
+e_w192707574-345,ep_hydro_w192707574-345__irena,86.48810256410262,hydro,Aggregated Plant - IRENA Gap - way/192707574-345_Missing Hydro Capacity -- operating,e_w192707574-345,way/192707574-345,20.9971467493862,-70.43286844538197,False
+e_w192707574-345,ep_oil_internal_combustion_G100000412068,94.5,oil,La Vega power station_1 -- operating,e_w192707574-345,way/192707574-345,19.24821,-70.55008,False
+e_w319768440-230,ep_bioenergy_w319768440-230,30.0,bioenergy,Aggregated Plant -- operating,e_w319768440-230,way/319768440-230,19.01128132555451,-69.19388837508097,False
+e_w319768440-230,ep_bioenergy_w319768440-230__ember,60.0,bioenergy,Aggregated Plant - EMBER Gap - way/319768440-230_Missing Bioenergy Capacity -- operating,e_w319768440-230,way/319768440-230,18.676786756738096,-68.84082239835539,False
+e_w319768440-230,ep_gas_combined_cycle_G100000406679,100.0,gas,San Pedro de Macorís power station_CESPM 1 -- operating,e_w319768440-230,way/319768440-230,18.494942,-69.341686,False
+e_w319768440-230,ep_gas_combined_cycle_G100000411249,100.0,gas,San Pedro de Macorís power station_CESPM 3 -- operating,e_w319768440-230,way/319768440-230,18.494942,-69.341686,False
+e_w319768440-230,ep_gas_combined_cycle_G100000411250,100.0,gas,San Pedro de Macorís power station_CESPM 2 -- operating,e_w319768440-230,way/319768440-230,18.494942,-69.341686,False
+e_w319768440-230,ep_gas_internal_combustion_G100000406680,225.0,gas,Quisqueya 2 power station_1 -- operating,e_w319768440-230,way/319768440-230,18.492199,-69.350228,False
+e_w319768440-230,ep_gas_internal_combustion_G100000406681,225.0,gas,Quisqueya 1 power station_1 -- operating,e_w319768440-230,way/319768440-230,18.49377,-69.35089,False
+e_w319768440-230,ep_gas_internal_combustion_G100000412072,51.0,gas,Bavaro power station_1 -- operating,e_w319768440-230,way/319768440-230,18.663841,-68.433317,False
+e_w319768440-230,ep_gas_internal_combustion_G100000413139,60.7,gas,Los Orígenes power station_1 -- operating,e_w319768440-230,way/319768440-230,18.467603,-69.318922,False
+e_w319768440-230,ep_oil_internal_combustion_G100000412059,153.9,oil,Sultana del Este power station_1 -- operating,e_w319768440-230,way/319768440-230,18.44793,-69.313378,False
+e_w319768440-230,ep_solar_pv_230,7.2,solar,Aggregated Plant -- operating,e_w319768440-230,way/319768440-230,18.332805626141727,-68.83329495548253,False
+e_w488523874-230,ep_gas_internal_combustion_G100000412065,51.0,gas,Pimentel 3 power station_1 -- operating,e_w488523874-230,way/488523874-230,19.20378,-70.09403,False
+e_w806254040-345,ep_coal_subcritical_G100000100596,52.0,coal,Barahona power station_-- -- operating,e_w806254040-345,way/806254040-345,18.221103,-71.086721,False
+e_w806254040-345,ep_coal_subcritical_G100000108241,376.0,coal,Punta Catalina power station_Unit 1 -- operating,e_w806254040-345,way/806254040-345,18.232641,-70.237669,False
+e_w806254040-345,ep_coal_subcritical_G100000108242,376.0,coal,Punta Catalina power station_Unit 2 -- operating,e_w806254040-345,way/806254040-345,18.232641,-70.237669,False
+e_w806254040-345,ep_gas_internal_combustion_G100000412063,73.8,gas,Powership Azua power station_KPS 60 (Esra Sultan) -- operating,e_w806254040-345,way/806254040-345,18.346437,-70.83867,False
+e_w806254040-345,ep_gas_internal_combustion_G100000412064,102.8,gas,Powership Azua power station_KPS 26 (Irem Sultan) -- operating,e_w806254040-345,way/806254040-345,18.346437,-70.83867,False
+e_w806254040-345,ep_hydro_ror_G100001031131,54.0,hydro,Valdesia hydroelectric plant_ -- operating,e_w806254040-345,way/806254040-345,18.3917,-70.2762,False
+e_w806254040-345,ep_oil_internal_combustion_G100000412067,101.4,oil,Monte Rio power station_1 -- operating,e_w806254040-345,way/806254040-345,18.35137,-70.8325,False
+elc_spv_002,ep_solar_pv_002,173.0,solar,Aggregated Plant -- operating,elc_spv_002,way/192707574-345,19.452699322280377,-69.13847893438914,False
+elc_spv_003,ep_solar_003__irena,65.81668763031259,solar,Aggregated Plant -- operating,elc_spv_003,way/192707574-345,17.871560283039535,-70.24310752025248,False
+elc_spv_003,ep_solar_pv_003,58.0,solar,Aggregated Plant -- operating,elc_spv_003,way/192707574-345,17.837522168797996,-71.16058012172174,False
+elc_spv_004,ep_solar_004__irena,59.48849040130775,solar,Aggregated Plant -- operating,elc_spv_004,way/806254040-345,18.358287646105442,-70.45505596318502,False
+elc_spv_004,ep_solar_pv_004,42.0,solar,Aggregated Plant -- construction,elc_spv_004,way/806254040-345,17.723378790918247,-70.59326513702148,False
+elc_spv_005,ep_solar_pv_005,286.6,solar,Aggregated Plant -- operating,elc_spv_005,way/806254040-345,17.91934960543875,-72.01115078331087,False
+elc_spv_006,ep_solar_pv_006,72.2,solar,Aggregated Plant -- operating,elc_spv_006,way/1034666194-230,18.9239030792882,-70.72607980020284,False
+elc_spv_007,ep_solar_007__irena,60.66382196837959,solar,Aggregated Plant -- operating,elc_spv_007,way/1058735225-345,18.338015464799668,-69.58748261692409,False
+elc_spv_007,ep_solar_pv_007,604.0000000000001,solar,Aggregated Plant -- operating,elc_spv_007,way/1058735225-345,18.597122474094466,-69.83724881655291,False
+elc_spv_009,ep_solar_pv_009,3.0,solar,Aggregated Plant -- operating,elc_spv_009,way/192707574-345,18.132793068286112,-71.76028449592053,False
+elc_spv_010,ep_solar_pv_010,50.0,solar,Aggregated Plant -- operating,elc_spv_010,way/488523874-230,19.03917986296437,-70.3589949877663,False
+elc_won_002,ep_windon_wind_002,34.0,windon,Aggregated Plant -- operating,elc_won_002,way/806254040-345,18.193118819312023,-72.06082576611648,False
+elc_won_005,ep_windon_wind_005,185.29999999999998,windon,Aggregated Plant -- operating,elc_won_005,way/806254040-345,18.9420100027655,-71.57425525993449,False
+elc_won_007,ep_windon_wind_007,46.0,windon,Aggregated Plant -- operating,elc_won_007,way/192707574-345,18.532647755839957,-72.12408572725683,False
+elc_won_008,ep_windon_wind_008,8.2,windon,Aggregated Plant -- operating,elc_won_008,way/192707574-345,19.422275006623828,-72.38107054268747,False
+elc_won_009,ep_windon_wind_009,346.0,windon,Aggregated Plant -- construction,elc_won_009,way/192707574-345,20.34339023449748,-72.08469477107812,False
+elc_won_010,ep_windon_wind_010,50.0,windon,Aggregated Plant -- operating,elc_won_010,way/192707574-345,20.88767097407089,-71.4247013371009,False

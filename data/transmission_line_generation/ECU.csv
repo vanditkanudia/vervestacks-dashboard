@@ -1,0 +1,76 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_EC11-230,ep_hydro_ror_G100000601553,48.0,hydro,Pilaton-Sarapullo hydroelectric plant_ -- operating,e_EC11-230,EC11-230,-0.3677,-78.915,False
+e_EC11-230,ep_hydro_ror_G100000601565,19.0,hydro,Sigchos hydroelectric plant_ -- operating,e_EC11-230,EC11-230,-0.6482,-78.9095,False
+e_EC13-230,ep_hydro_dam_G100000601508,160.0,hydro,Agoyàn hydroelectric plant_ -- operating,e_EC13-230,EC13-230,-1.3981,-78.3822,False
+e_EC13-230,ep_hydro_ror_G100000601555,38.0,hydro,Pusuno hydroelectric plant_ -- operating,e_EC13-230,EC13-230,-1.0071,-77.6017,False
+e_EC13-230,ep_hydro_ror_G100000601559,10.0,hydro,Rio Verde Chico hydroelectric plant_ -- operating,e_EC13-230,EC13-230,-1.3704,-78.4042,False
+e_EC13-230,ep_hydro_ror_G100000601560,230.0,hydro,San Francisco hydroelectric plant (Ecuador)_ -- operating,e_EC13-230,EC13-230,-1.4129,-78.2705,False
+e_EC13-230,ep_hydro_ror_G100000601570,29.0,hydro,Topo hydroelectric plant_ -- operating,e_EC13-230,EC13-230,-1.3706,-78.2125,False
+e_EC14-500,ep_hydro_ror_G100000601564,15.0,hydro,Sibimbe hydroelectric plant_ -- operating,e_EC14-500,EC14-500,-1.4377,-79.3774,False
+e_EC17-230,ep_bioenergy_EC17-230,30.0,bioenergy,Aggregated Plant -- operating,e_EC17-230,EC17-230,-2.2796699377100955,-79.27104345891198,False
+e_EC17-230,ep_bioenergy_EC17-230__ember,31.643835616438352,bioenergy,Aggregated Plant -- operating,e_EC17-230,EC17-230,-2.6351166620228557,-79.3298598856465,False
+e_EC18-230,ep_hydro_ror_G100000601547,26.0,hydro,Ocaña I hydroelectric plant_ -- operating,e_EC18-230,EC18-230,-2.5002,-79.2464,False
+e_EC19-230,ep_hydro_ror_G100000601506,38.0,hydro,Abanico hydroelectric plant (Ecuador)_ -- operating,e_EC19-230,EC19-230,-2.256,-78.1982,False
+e_EC19-230,ep_hydro_ror_G100000601531,50.0,hydro,Hidronormandía hydroelectric plant_ -- operating,e_EC19-230,EC19-230,-2.2257,-78.2701,False
+e_EC19-230,ep_hydro_ror_G100000601532,50.0,hydro,Hidrosanbartolo hydroelectric plant_ -- operating,e_EC19-230,EC19-230,-2.7489,-78.4135,False
+e_EC19-230,ep_hydro_ror_G100000601566,487.0,hydro,Sopladora hydroelectric plant_ -- operating,e_EC19-230,EC19-230,-2.5942,-78.4484,False
+e_EC20-230,ep_hydro_dam_G100000601541,170.0,hydro,Mazàr hydroelectric plant_ -- operating,e_EC20-230,EC20-230,-2.5964,-78.6207,False
+e_EC23-230,ep_gas_EC23-230__ember,308.8145539906103,gas,Aggregated Plant - EMBER Gap - EC23-230_Missing Gas Capacity -- operating,e_EC23-230,EC23-230,-3.203740174852295,-79.82443429842498,False
+e_EC23-230,ep_gas_gas_turbine_G100000406676,65.0,gas,Termogas Machala 1 power station_6FA2 -- operating,e_EC23-230,EC23-230,-3.116985,-79.879169,False
+e_EC23-230,ep_gas_gas_turbine_G100000406677,65.0,gas,Termogas Machala 1 power station_6FA1 -- operating,e_EC23-230,EC23-230,-3.116985,-79.879169,False
+e_EC26-230,ep_hydro_ror_G100000601542,276.0,hydro,Minas San Francisco hydroelectric plant_ -- operating,e_EC26-230,EC26-230,-3.3166,-79.5834,False
+e_EC26-230,ep_windon_wind_230,66.0,windon,Aggregated Plant -- operating,e_EC26-230,EC26-230,-3.409765565431739,-79.85088907707787,False
+e_EC5-230,ep_hydro_ror_G100000601527,64.0,hydro,Due hydroelectric plant_ -- operating,e_EC5-230,EC5-230,0.0382,-77.3939,False
+e_EC8-230,ep_oil_internal_combustion_G100000413137,75.8,oil,TPP Andes Petro power station_1 -- operating,e_EC8-230,EC8-230,-0.118293,-76.341853,False
+e_EC8-230,ep_oil_internal_combustion_G100000413138,119.6,oil,Eden Yuturi power station_1 -- operating,e_EC8-230,EC8-230,-0.528791,-76.126258,False
+e_EC9-500,ep_hydro_ror_G100000601523,1500.0,hydro,Coca Codo Sinclair hydroelectric plant_ -- operating,e_EC9-500,EC9-500,-0.1993,-77.6839,False
+e_w1022455421-230,ep_hydro_ror_G100000601526,180.0,hydro,Delsitanisagua hydroelectric plant_ -- operating,e_w1022455421-230,way/1022455421-230,-4.0456,-78.9847,False
+e_w1066507117-230,ep_hydro_ror_G100000601574,10.0,hydro,Victoria hydroelectric plant (Ecuador)_ -- operating,e_w1066507117-230,way/1066507117-230,-0.4167,-78.0242,False
+e_w1066507117-500,ep_hydro_dam_G100000601530,21.0,hydro,Guangopolo hydroelectric plant_ -- operating,e_w1066507117-500,way/1066507117-500,-0.2615,-78.4543,False
+e_w1066507117-500,ep_hydro_ror_G100000601558,15.0,hydro,Recuperadora hydroelectric plant_ -- operating,e_w1066507117-500,way/1066507117-500,-0.2641,-78.2844,False
+e_w1066507117-500,ep_oil_internal_combustion_G100000412048,52.4,oil,Guangopolo II power station_1 -- operating,e_w1066507117-500,way/1066507117-500,-0.270816,-78.451134,False
+e_w1280444666-230,ep_gas_internal_combustion_G100001028053,135.0,gas,Pascuales power station_1 -- construction,e_w1280444666-230,way/1280444666-230,-2.052696,-79.949389,False
+e_w1280444666-230,ep_gas_w1280444666-230__ember,131.51408450704224,gas,Aggregated Plant - EMBER Gap - way/1280444666-230_Missing Gas Capacity -- operating,e_w1280444666-230,way/1280444666-230,-2.1806894594389172,-79.82687339893438,False
+e_w1280444666-230,ep_oil_gas_turbine_G100000412053,102.0,oil,Enrique Garcia thermal power station_1 -- operating,e_w1280444666-230,way/1280444666-230,-2.052191,-79.94804,False
+e_w1280444670-230,ep_oil_internal_combustion_G100000412058,149.3,oil,Central Jaramijó power station_1 -- operating,e_w1280444670-230,way/1280444670-230,-0.981065,-80.641787,False
+e_w1280444670-230,ep_oil_internal_combustion_G100001028052,100.0,oil,San Juan de Manta power station_1 -- construction,e_w1280444670-230,way/1280444670-230,-1.013365,-80.759344,False
+e_w1280444670-230,ep_solar_pv_230,1.6,solar,Aggregated Plant -- operating,e_w1280444670-230,way/1280444670-230,-0.7952064372712704,-80.06460528892669,False
+e_w1280695345-230,ep_bioenergy_w1280695345-230,43.0,bioenergy,Aggregated Plant -- operating,e_w1280695345-230,way/1280695345-230,-2.004080158012961,-79.56539134409107,False
+e_w1280695345-230,ep_bioenergy_w1280695345-230__ember,45.35616438356165,bioenergy,Aggregated Plant -- operating,e_w1280695345-230,way/1280695345-230,-2.3607550123453116,-79.52106111627972,False
+e_w1284177607-230,ep_oil_internal_combustion_G100001028054,120.0,oil,Durán power station_-- -- construction,e_w1284177607-230,way/1284177607-230,-2.211055,-79.725751,False
+e_w1382350423-230,ep_hydro_ror_G100000601513,42.0,hydro,Baba hydroelectric plant_ -- operating,e_w1382350423-230,way/1382350423-230,-0.6728,-79.4685,False
+e_w205248251-230,ep_hydro_ror_G100000601525,40.0,hydro,Cumbayá hydroelectric plant_ -- operating,e_w205248251-230,way/205248251-230,-0.1855,-78.4169,False
+e_w205248251-230,ep_hydro_ror_G100000601546,30.0,hydro,Nayón hydroelectric plant_ -- operating,e_w205248251-230,way/205248251-230,-0.1637,-78.4128,False
+e_w229297163-230,ep_hydro_dam_G100000601554,73.0,hydro,Pucará hydroelectric plant (Ecuador)_ -- operating,e_w229297163-230,way/229297163-230,-1.0793,-78.4552,False
+e_w232634480-230,ep_oil_internal_combustion_G100001028029,101.4,oil,Karpowership (Ecuador) Emre Bey_1 -- operating,e_w232634480-230,way/232634480-230,-2.23998,-79.882865,False
+e_w232634480-230,ep_oil_internal_combustion_G100001028033,100.0,oil,El Salitral power station_-- -- construction,e_w232634480-230,way/232634480-230,-2.19616,-79.953525,False
+e_w232634480-230,ep_oil_steam_turbine_G100000412042,133.0,oil,Trinitaria power station_1 -- operating,e_w232634480-230,way/232634480-230,-2.251483,-79.909954,False
+e_w232634480-230,ep_oil_steam_turbine_G100000412049,73.0,oil,Gonzalo Zevallos power station_2 -- operating,e_w232634480-230,way/232634480-230,-2.195811,-79.954066,False
+e_w232634480-230,ep_oil_steam_turbine_G100000412050,73.0,oil,Gonzalo Zevallos power station_1 -- operating,e_w232634480-230,way/232634480-230,-2.195811,-79.954066,False
+e_w232831521-230,ep_hydro_dam_G100000601540,213.0,hydro,Marcel Laniado hydroelectric plant_ -- operating,e_w232831521-230,way/232831521-230,-0.9273,-79.7551,False
+e_w232831521-230,ep_hydro_ror_G100000601514,17.0,hydro,Calope hydroelectric plant_ -- operating,e_w232831521-230,way/232831521-230,-0.9941,-79.2388,False
+e_w232831521-230,ep_oil_internal_combustion_G100001028032,50.0,oil,Quevedo IC power station_1 -- construction,e_w232831521-230,way/232831521-230,-1.043226,-79.484263,False
+e_w402640581-230,ep_m_oil_gas_turbine_G100000412041,115.0,oil,Victoria II power station_1 -- mothballed,e_w402640581-230,way/402640581-230,-2.266244,-79.861298,False
+e_w402640581-230,ep_oil_internal_combustion_G100001028055,250.0,oil,Esclusas II power station_-- -- construction,e_w402640581-230,way/402640581-230,-2.263989,-79.860955,False
+e_w405581868-230,ep_gas_w405581868-230__ember,389.6713615023474,gas,Aggregated Plant - EMBER Gap - way/405581868-230_Missing Gas Capacity -- operating,e_w405581868-230,way/405581868-230,-1.9472849439564188,-79.98468426397314,False
+e_w405581868-230,ep_oil_internal_combustion_G100000412046,90.1,oil,Santa Elena II power station_1 -- operating,e_w405581868-230,way/405581868-230,-2.242021,-80.846375,False
+e_w412606583-230,ep_oil_internal_combustion_G100000412051,100.2,oil,Esmeraldas II Thermoelectric Power Plant_1 -- operating,e_w412606583-230,way/412606583-230,0.926702,-79.687717,False
+e_w412606583-230,ep_oil_internal_combustion_G100001028034,91.0,oil,Esmeraldas IC power station_-- -- construction,e_w412606583-230,way/412606583-230,0.926179,-79.684519,False
+e_w412606583-230,ep_oil_internal_combustion_G100001028051,150.0,oil,Esmeraldas IV power station_1 -- construction,e_w412606583-230,way/412606583-230,0.929505,-79.682684,False
+e_w412606583-230,ep_oil_steam_turbine_G100000412052,132.5,oil,Esmeraldas I Thermoelectric Power Plant_1 -- operating,e_w412606583-230,way/412606583-230,0.926702,-79.687717,False
+e_w512033583-230,ep_hydro_dam_G100000601539,63.0,hydro,Manduriacu hydroelectric plant_ -- operating,e_w512033583-230,way/512033583-230,0.2148,-78.9124,False
+e_w512033583-230,ep_hydro_ror_G100000601535,10.0,hydro,Ipnegal hydroelectric plant_ -- operating,e_w512033583-230,way/512033583-230,0.1831,-78.6926,False
+e_w549418087-230,ep_hydro_ror_G100000601562,24.0,hydro,Saucay hydroelectric plant_ -- operating,e_w549418087-230,way/549418087-230,-2.7549,-79.0131,False
+e_w549418087-230,ep_hydro_ror_G100000601563,16.0,hydro,Saymirín hydroelectric plant_ -- operating,e_w549418087-230,way/549418087-230,-2.8003,-79.0076,False
+e_w549802616-230,ep_hydro_dam_G100000601552,1075.0,hydro,Paute Molino hydroelectric plant_ -- operating,e_w549802616-230,way/549802616-230,-2.5756,-78.5102,False
+e_w790957552-230,ep_hydro_dam_G100000601568,204.0,hydro,Toachi-Alluriquin hydroelectric plant_ -- operating,e_w790957552-230,way/790957552-230,-0.3135,-78.9698,False
+e_w79795593-230,ep_hydro_ror_G100000601509,11.0,hydro,Alao hydroelectric plant_ -- operating,e_w79795593-230,way/79795593-230,-1.8115,-78.5968,False
+elc_spv_001,ep_solar_pv_001,9.299999999999999,solar,Aggregated Plant -- operating,elc_spv_001,EC12-230,-0.003220910846145189,-78.52528755439955,False
+elc_spv_006,ep_solar_pv_006,23.000000000000004,solar,Aggregated Plant -- operating,elc_spv_006,EC27-230,-3.272164439134422,-80.16266672450045,False
+elc_spv_007,ep_solar_pv_007,4.0,solar,Aggregated Plant -- operating,elc_spv_007,EC3-230,0.8899291585285889,-79.37281455508032,False
+elc_spv_008,ep_solar_pv_008,1.6,solar,Aggregated Plant -- operating,elc_spv_008,way/1280444670-230,-1.299837747425809,-80.1074808225186,False
+elc_spv_010,ep_solar_pv_010,2.0,solar,Aggregated Plant -- operating,elc_spv_010,way/405581868-230,-2.305599947419195,-79.9592165759167,False
+elc_spv_012,ep_solar_pv_012,2.9,solar,Aggregated Plant -- operating,elc_spv_012,way/663245932-230,-1.9794335576476338,-80.00505710932279,False
+elc_won_001,ep_windon_001__irena,1.9607452530584248,windon,Aggregated Plant -- operating,elc_won_001,way/1280444670-230,-1.4300678129393374,-80.63455419577531,False
+elc_won_008,ep_windon_008__irena,1.6615878960797437,windon,Aggregated Plant -- operating,elc_won_008,way/412606583-230,0.7260356630129059,-79.91139536818544,False
+elc_won_009,ep_windon_009__irena,1.52766685086183,windon,Aggregated Plant -- operating,elc_won_009,way/1280444670-230,-0.9700142733963808,-80.90534002024238,False

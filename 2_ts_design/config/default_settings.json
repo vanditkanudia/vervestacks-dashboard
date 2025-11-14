@@ -1,0 +1,30 @@
+{
+  "max_timeslices": 500,
+  "base_aggregates": 12,
+  "use_enhanced_lcoe": true,
+  "data_path": "../data/",
+  "output_base_dir": "./outputs/",
+  "scenario_types": {
+    "short_spans": {
+      "description": "High-resolution for critical periods",
+      "max_timeslices": 300
+    },
+    "medium_spans": {
+      "description": "Balanced resolution",
+      "max_timeslices": 500
+    },
+    "long_spans": {
+      "description": "Seasonal aggregation",
+      "max_timeslices": 100
+    }
+  },
+  "technology_costs": {
+    "wind": 1500,
+    "solar": 700
+  },
+  "processing_options": {
+    "save_individual_plots": true,
+    "save_summary_stats": true,
+    "create_analysis_plots": true
+  }
+}

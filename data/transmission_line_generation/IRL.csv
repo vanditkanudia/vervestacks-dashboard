@@ -1,0 +1,93 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_coal__ember,5.000000000000004,coal,Aggregated Plant -- operating,,,,,False
+e_IE4-220,ep_gas_gas_turbine_G100000410431,65.0,gas,Corduff Flexgen power station_GT1 -- construction,e_IE4-220,IE4-220,53.3911,-6.3748,False
+e_IE6-220,ep_bioenergy_G100000200263,68.0,bioenergy,Dublin Waste-to-Energy power station_1 -- operating,e_IE6-220,IE6-220,53.3387,-6.2004,False
+e_IE6-220,ep_bioenergy_IE6-220__ember,42.00000000000001,bioenergy,Aggregated Plant -- operating,e_IE6-220,IE6-220,53.366909403973004,-6.1336323609947305,False
+e_IE6-220,ep_gas_combined_cycle_G100000400326,405.0,gas,Dublin Bay power station_1 -- operating,e_IE6-220,IE6-220,53.34,-6.2049,False
+e_IE6-220,ep_gas_combined_cycle_G100000400330,245.0,gas,Poolbeg power station_A -- operating,e_IE6-220,IE6-220,53.3396,-6.1867,False
+e_IE6-220,ep_gas_combined_cycle_G100000400331,245.0,gas,Poolbeg power station_B -- operating,e_IE6-220,IE6-220,53.3396,-6.1867,False
+e_IE6-220,ep_gas_gas_turbine_G100000410139,65.0,gas,Poolbeg power station_Flexgen -- construction,e_IE6-220,IE6-220,53.3396,-6.1867,False
+e_IE6-220,ep_gas_gas_turbine_G100001000038,35.0,gas,North Wall power station_GT1 -- operating,e_IE6-220,IE6-220,53.3502,-6.2111,False
+e_IE6-220,ep_gas_gas_turbine_G100001001066,65.0,gas,Ringsend Flexgen power station_1 -- construction,e_IE6-220,IE6-220,53.338684,-6.2048617,False
+e_IE6-220,ep_gas_gas_turbine_G100001019989,35.0,gas,North Wall power station_GT2 -- operating,e_IE6-220,IE6-220,53.3502,-6.2111,False
+e_IE6-220,ep_gas_gas_turbine_G100001019990,35.0,gas,North Wall power station_GT3 -- operating,e_IE6-220,IE6-220,53.3502,-6.2111,False
+e_IE6-220,ep_gas_gas_turbine_G100001019991,35.0,gas,North Wall power station_GT4 -- operating,e_IE6-220,IE6-220,53.3502,-6.2111,False
+e_IE6-220,ep_gas_gas_turbine_G100001019992,35.0,gas,North Wall power station_GT5 -- operating,e_IE6-220,IE6-220,53.3502,-6.2111,False
+e_IE6-220,ep_gas_gas_turbine_G100001019993,35.0,gas,North Wall power station_GT6 -- operating,e_IE6-220,IE6-220,53.3502,-6.2111,False
+e_IE6-220,ep_m_gas_gas_turbine_G100000410140,108.0,gas,North Wall power station_5 -- mothballed,e_IE6-220,IE6-220,53.3502,-6.2111,False
+e_IE6-220,ep_m_gas_gas_turbine_G100000410141,108.0,gas,North Wall power station_4 -- mothballed,e_IE6-220,IE6-220,53.3502,-6.2111,False
+e_IE7-220,ep_gas_gas_turbine_G100000409891,52.0,gas,Rhode power station_2 -- operating,e_IE7-220,IE7-220,53.359139,-7.213056,False
+e_IE7-220,ep_gas_gas_turbine_G100000409892,52.0,gas,Rhode power station_1 -- operating,e_IE7-220,IE7-220,53.359139,-7.213056,False
+e_IE7-220,ep_gas_gas_turbine_G100000410432,55.0,gas,"Castlelost Flexgen power station_GT1, timepoint 1 -- operating",e_IE7-220,IE7-220,53.3994,-7.3207,False
+e_IE7-220,ep_gas_gas_turbine_G100001028101,55.0,gas,"Castlelost Flexgen power station_GT2, timepoint 1 -- operating",e_IE7-220,IE7-220,53.3994,-7.3207,False
+e_IE7-220,ep_gas_gas_turbine_G100001028102,55.0,gas,"Castlelost Flexgen power station_GT3, timepoint 1 -- operating",e_IE7-220,IE7-220,53.3994,-7.3207,False
+e_IE7-220,ep_gas_gas_turbine_G100001028103,55.0,gas,"Castlelost Flexgen power station_GT4, timepoint 1 -- operating",e_IE7-220,IE7-220,53.3994,-7.3207,False
+e_IE7-220,ep_gas_gas_turbine_G100001028104,55.0,gas,"Castlelost Flexgen power station_GT5, timepoint 1 -- operating",e_IE7-220,IE7-220,53.3994,-7.3207,False
+e_w104388599-220,ep_gas_combined_cycle_G100000400325,431.0,gas,Aghada power station_Unit 2 -- operating,e_w104388599-220,way/104388599-220,51.8347,-8.2362,False
+e_w104388599-220,ep_gas_gas_turbine_G100000400322,90.0,gas,Aghada power station_AT 1 -- operating,e_w104388599-220,way/104388599-220,51.8347,-8.2362,False
+e_w104388599-220,ep_gas_gas_turbine_G100000400323,90.0,gas,Aghada power station_AT 2 -- operating,e_w104388599-220,way/104388599-220,51.8347,-8.2362,False
+e_w104388599-220,ep_gas_gas_turbine_G100000400324,90.0,gas,Aghada power station_AT 4 -- operating,e_w104388599-220,way/104388599-220,51.8347,-8.2362,False
+e_w1154822210-220,ep_gas_combined_cycle_G100000400327,460.0,gas,Great Island power station_1 -- operating,e_w1154822210-220,way/1154822210-220,52.281,-6.991,False
+e_w180637986-220,ep_hydro_ror_G100000602211,85.0,hydro,Ardnacrusha hydroelectric plant_ -- operating,e_w180637986-220,way/180637986-220,52.7056,-8.6131,False
+e_w180637986-220,ep_hydro_w180637986-220__irena,67.04603580562662,hydro,Aggregated Plant - IRENA Gap - way/180637986-220_Missing Hydro Capacity -- operating,e_w180637986-220,way/180637986-220,52.81811846329205,-8.573551492183345,False
+e_w185902319-220,ep_hydro_dam_G100001051741,45.0,hydro,Cathaleen's Fall hydroelectric plant_ -- operating,e_w185902319-220,way/185902319-220,54.4995,-8.1741,False
+e_w185902319-220,ep_oil_gas_turbine_G100000409889,52.0,oil,Tawnaghmore power station_2 -- operating,e_w185902319-220,way/185902319-220,54.193458,-9.220422,False
+e_w185902319-220,ep_oil_gas_turbine_G100000409890,52.0,oil,Tawnaghmore power station_1 -- operating,e_w185902319-220,way/185902319-220,54.193458,-9.220422,False
+e_w194614470-220,ep_gas_combined_cycle_G100000400334,404.0,gas,Tynagh power station_1 -- operating,e_w194614470-220,way/194614470-220,53.1658,-8.381,False
+e_w197846408-220,ep_gas_internal_combustion_G100000400988,100.0,gas,Monksland power station_GT -- construction,e_w197846408-220,way/197846408-220,53.42285,-7.98857,False
+e_w197846408-220,ep_oil_gas_turbine_G100001000360,33.0,oil,Shannonbridge power station_GT1 -- construction,e_w197846408-220,way/197846408-220,53.2723,-8.0393,False
+e_w197846408-220,ep_oil_gas_turbine_G100001019981,33.0,oil,Shannonbridge power station_GT2 -- construction,e_w197846408-220,way/197846408-220,53.2723,-8.0393,False
+e_w197846408-220,ep_oil_gas_turbine_G100001019982,33.0,oil,Shannonbridge power station_GT3 -- construction,e_w197846408-220,way/197846408-220,53.2723,-8.0393,False
+e_w197846408-220,ep_oil_gas_turbine_G100001019983,33.0,oil,Shannonbridge power station_GT4 -- construction,e_w197846408-220,way/197846408-220,53.2723,-8.0393,False
+e_w197846408-220,ep_oil_gas_turbine_G100001019984,33.0,oil,Shannonbridge power station_GT5 -- construction,e_w197846408-220,way/197846408-220,53.2723,-8.0393,False
+e_w197846408-220,ep_oil_gas_turbine_G100001019985,33.0,oil,Shannonbridge power station_GT6 -- construction,e_w197846408-220,way/197846408-220,53.2723,-8.0393,False
+e_w197846408-220,ep_oil_gas_turbine_G100001019986,33.0,oil,Shannonbridge power station_GT7 -- construction,e_w197846408-220,way/197846408-220,53.2723,-8.0393,False
+e_w197846408-220,ep_oil_gas_turbine_G100001019987,33.0,oil,Shannonbridge power station_GT8 -- construction,e_w197846408-220,way/197846408-220,53.2723,-8.0393,False
+e_w207331199-220,ep_gas_gas_turbine_G100000400332,85.0,gas,Sealrock power station_3 -- operating,e_w207331199-220,way/207331199-220,52.6324,-9.0596,False
+e_w207331199-220,ep_gas_gas_turbine_G100000400333,85.0,gas,Sealrock power station_4 -- operating,e_w207331199-220,way/207331199-220,52.6324,-9.0596,False
+e_w207339053-220,ep_coal_subcritical_G100000106987,305.0,coal,"Moneypoint power station_Unit 1, timepoint 1 -- operating",e_w207339053-220,way/207339053-220,52.60795,-9.424255,False
+e_w207339053-220,ep_coal_subcritical_G100000106988,305.0,coal,"Moneypoint power station_Unit 2, timepoint 1 -- operating",e_w207339053-220,way/207339053-220,52.60795,-9.424255,False
+e_w207339053-220,ep_coal_subcritical_G100000106989,305.0,coal,"Moneypoint power station_Unit 3, timepoint 1 -- operating",e_w207339053-220,way/207339053-220,52.60795,-9.424255,False
+e_w27144164-220,ep_gas_combined_cycle_G100000400328,342.0,gas,Huntstown power station_1 -- operating,e_w27144164-220,way/27144164-220,53.4119,-6.3261,False
+e_w27144164-220,ep_gas_combined_cycle_G100000400329,400.0,gas,Huntstown power station_2 -- operating,e_w27144164-220,way/27144164-220,53.4119,-6.3261,False
+e_w27144164-220,ep_gas_gas_turbine_G100001000039,50.0,gas,Huntstown power station_GT1 -- operating,e_w27144164-220,way/27144164-220,53.4119,-6.3261,False
+e_w288283900-220,ep_hydro_ps_G100000602213,292.0,hydro,Turlough Hill hydroelectric plant_ -- operating,e_w288283900-220,way/288283900-220,53.031,-6.397,False
+e_w288283900-220,ep_hydro_w288283900-220__irena,39.95396419437341,hydro,Aggregated Plant - IRENA Gap - way/288283900-220_Missing Hydro Capacity -- operating,e_w288283900-220,way/288283900-220,52.935994638217885,-6.327616451945823,False
+e_w361261945-220,ep_gas_combined_cycle_G100000400335,445.0,gas,Whitegate power station_1 -- operating,e_w361261945-220,way/361261945-220,51.8161,-8.2511,False
+e_w710981639-220,ep_gas_internal_combustion_G100001000020,120.0,gas,Clondalkin power station_DUB10 -- construction,e_w710981639-220,way/710981639-220,53.3218,-6.4432,False
+e_w710981639-220,ep_gas_internal_combustion_G100001000027,24.0,gas,Grange Castle Business Park power station_DUB11 -- operating,e_w710981639-220,way/710981639-220,53.32254,-6.44026,False
+e_w710981639-220,ep_gas_internal_combustion_G100001000028,24.0,gas,Grange Castle Business Park power station_DUB12 -- operating,e_w710981639-220,way/710981639-220,53.32254,-6.44026,False
+e_w710981639-220,ep_gas_internal_combustion_G100001000029,24.0,gas,Grange Castle Business Park power station_DUB10 -- operating,e_w710981639-220,way/710981639-220,53.32254,-6.44026,False
+e_w710981639-220,ep_gas_internal_combustion_G100001000030,24.0,gas,Grange Castle Business Park power station_DUB09 -- operating,e_w710981639-220,way/710981639-220,53.32254,-6.44026,False
+e_w710981639-220,ep_gas_internal_combustion_G100001000031,24.0,gas,Grange Castle Business Park power station_DUB08 -- operating,e_w710981639-220,way/710981639-220,53.32254,-6.44026,False
+e_w710981639-220,ep_gas_internal_combustion_G100001000032,24.0,gas,Grange Castle Business Park power station_DUB07 -- operating,e_w710981639-220,way/710981639-220,53.32254,-6.44026,False
+e_w710981639-220,ep_gas_internal_combustion_G100001000033,24.0,gas,Grange Castle Business Park power station_DUB06 -- operating,e_w710981639-220,way/710981639-220,53.32254,-6.44026,False
+e_w710981639-220,ep_gas_internal_combustion_G100001000034,24.0,gas,Grange Castle Business Park power station_DUB13 -- operating,e_w710981639-220,way/710981639-220,53.32254,-6.44026,False
+e_w710981639-220,ep_gas_internal_combustion_G100001020015,100.0,gas,Profile Park power station_ICCC -- construction,e_w710981639-220,way/710981639-220,53.3139,-6.4489,False
+e_w710981639-220,ep_gas_internal_combustion_G100001031366,60.1,gas,Winthrop Dublin power station_ICCC -- operating,e_w710981639-220,way/710981639-220,53.31793,-6.46189,False
+e_w710981639-220,ep_oil_internal_combustion_G100001000035,47.0,oil,Grange Castle Business Park power station_DB3 -- operating,e_w710981639-220,way/710981639-220,53.32254,-6.44026,False
+e_w88144450-220,ep_oil_gas_turbine_G100000410143,56.0,oil,Cushaling power station_2 -- operating,e_w88144450-220,way/88144450-220,53.29034,-7.08705,False
+e_w88144450-220,ep_oil_gas_turbine_G100000410144,56.0,oil,Cushaling power station_1 -- operating,e_w88144450-220,way/88144450-220,53.29034,-7.08705,False
+elc_spv_001,ep_solar_pv_001,441.79999999999995,solar,Aggregated Plant -- construction,elc_spv_001,way/104388599-220,52.157119519282034,-7.7710407417329606,False
+elc_spv_003,ep_solar_pv_003,68.2,solar,Aggregated Plant -- operating,elc_spv_003,way/819997192-220,52.79169114416595,-8.789373690134054,False
+elc_spv_004,ep_solar_pv_004,14.700000000000001,solar,Aggregated Plant -- operating,elc_spv_004,way/264852019-220,53.955034954061304,-6.969285897572551,False
+elc_spv_005,ep_solar_pv_005,609.6,solar,Aggregated Plant -- construction,elc_spv_005,way/89760546-220,52.820420528482906,-7.25263285452033,False
+elc_spv_005,ep_solar_pv_G100000825828,200.0,solar,Ballymacarney solar farm_-- -- operating,elc_spv_005,way/89760546-220,53.449,-6.3793,False
+elc_wof_007,ep_windoff_007__irena,0.06526412222618772,windoff,Aggregated Plant -- operating,elc_wof_007,way/1154822210-220,51.89353746871755,-6.266269670655371,False
+elc_wof_007,ep_windoff_wind_007,25.0,windoff,Aggregated Plant -- operating,elc_wof_007,way/1154822210-220,51.545555568050496,-6.256212452260382,False
+elc_wof_014,ep_windoff_014__irena,0.0667270055384408,windoff,Aggregated Plant -- operating,elc_wof_014,way/207339053-220,55.15716993600588,-9.577621099344494,False
+elc_wof_017,ep_windoff_017__irena,0.0680088722353703,windoff,Aggregated Plant -- operating,elc_wof_017,way/207339053-220,54.67798421947955,-9.456095146900239,False
+elc_won_001,ep_windon_wind_001,315.79999999999995,windon,Aggregated Plant -- operating,elc_won_001,way/180637986-220,52.46492808447265,-8.58772389062013,False
+elc_won_002,ep_m_windon_wind_002,26.0,windon,Aggregated Plant -- mothballed,elc_won_002,way/819997192-220,51.574831597734445,-8.719254769963868,False
+elc_won_002,ep_windon_wind_002,1066.5,windon,Aggregated Plant -- operating,elc_won_002,way/819997192-220,51.6358641170323,-9.24505196290671,False
+elc_won_003,ep_windon_wind_003,181.0,windon,Aggregated Plant -- operating,elc_won_003,way/150124101-220,52.49537395224589,-6.116927396638441,False
+elc_won_004,ep_windon_wind_004,462.0,windon,Aggregated Plant -- operating,elc_won_004,way/150124101-220,52.557012121613454,-6.903843836459511,False
+elc_won_005,ep_windon_005__irena,174.40997863358916,windon,Aggregated Plant -- operating,elc_won_005,way/194575030-220,53.99041990582699,-7.022484207853007,False
+elc_won_005,ep_windon_wind_005,148.10000000000002,windon,Aggregated Plant -- operating,elc_won_005,way/194575030-220,54.27470071537479,-7.414046702402918,False
+elc_won_006,ep_windon_wind_006,348.5,windon,Aggregated Plant -- operating,elc_won_006,way/197846408-220,53.38086889978344,-7.863877783436565,False
+elc_won_007,ep_windon_007__irena,155.1786643638621,windon,Aggregated Plant -- operating,elc_won_007,way/42998577-220,53.360710584759836,-8.876629313740986,False
+elc_won_007,ep_windon_wind_007,227.99999999999997,windon,Aggregated Plant -- operating,elc_won_007,way/42998577-220,53.801059413002456,-9.289929713238662,False
+elc_won_008,ep_windon_wind_008,704.0,windon,Aggregated Plant -- operating,elc_won_008,way/185902319-220,54.78183860312447,-8.06164209514233,False
+elc_won_009,ep_windon_009__irena,160.8423570025479,windon,Aggregated Plant -- operating,elc_won_009,way/207339053-220,54.466622181883025,-10.629339764117361,False
+elc_won_009,ep_windon_wind_009,203.0,windon,Aggregated Plant -- operating,elc_won_009,way/207339053-220,55.24916160738032,-10.494946088504228,False
+elc_won_010,ep_windon_wind_010,1062.3,windon,Aggregated Plant -- operating,elc_won_010,way/819997192-220,52.67001166393926,-9.3055169916424,False

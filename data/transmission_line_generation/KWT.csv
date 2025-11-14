@@ -1,0 +1,68 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+e_KW13-275,ep_gas_combined_cycle_G100000404671,875.5,gas,Shuaiba North power plant_1 -- operating,e_KW13-275,KW13-275,29.0359,48.1536,False
+e_KW13-275,ep_oil_steam_turbine_G100000404672,134.0,oil,Shuaiba South power plant_ST1 -- operating,e_KW13-275,KW13-275,29.032237,48.154679,False
+e_KW13-275,ep_oil_steam_turbine_G100000404673,134.0,oil,Shuaiba South power plant_ST2 -- operating,e_KW13-275,KW13-275,29.032237,48.154679,False
+e_KW13-275,ep_oil_steam_turbine_G100000404674,134.0,oil,Shuaiba South power plant_ST3 -- operating,e_KW13-275,KW13-275,29.032237,48.154679,False
+e_KW13-275,ep_oil_steam_turbine_G100000404675,134.0,oil,Shuaiba South power plant_ST4 -- operating,e_KW13-275,KW13-275,29.032237,48.154679,False
+e_KW13-275,ep_oil_steam_turbine_G100000404676,134.0,oil,Shuaiba South power plant_ST5 -- operating,e_KW13-275,KW13-275,29.032237,48.154679,False
+e_KW13-275,ep_oil_steam_turbine_G100000404677,134.0,oil,Shuaiba South power plant_ST6 -- operating,e_KW13-275,KW13-275,29.032237,48.154679,False
+e_w1028791761-400,ep_gas_combined_cycle_G100000404665,656.0,gas,Sabiya power plant_CC1-1 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_combined_cycle_G100000404666,750.0,gas,Sabiya power plant_SBOC-8 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_combined_cycle_G100000404670,935.0,gas,Sabiya power plant_CC5 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_combined_cycle_G100000408585,656.0,gas,Sabiya power plant_CC1-3 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_combined_cycle_G100000408586,656.0,gas,Sabiya power plant_CC1-2 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_combined_cycle_G100000411029,900.0,gas,Sabiya power plant_CC4 -- construction,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_gas_turbine_G100000404661,62.5,gas,Sabiya power plant_2-GT1 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_gas_turbine_G100000404662,62.5,gas,Sabiya power plant_2-GT2 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_gas_turbine_G100000404663,62.5,gas,Sabiya power plant_2-GT3 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_gas_turbine_G100000404664,62.5,gas,Sabiya power plant_2-GT4 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_gas_turbine_G100000404668,250.0,gas,Sabiya power plant_4-GT1 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_gas_turbine_G100000404669,250.0,gas,Sabiya power plant_4-GT2 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_steam_turbine_G100000404653,300.0,gas,Sabiya power plant_ST1 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_steam_turbine_G100000404654,300.0,gas,Sabiya power plant_ST2 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_steam_turbine_G100000404655,300.0,gas,Sabiya power plant_ST3 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_steam_turbine_G100000404656,300.0,gas,Sabiya power plant_ST4 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_steam_turbine_G100000404657,300.0,gas,Sabiya power plant_ST5 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_steam_turbine_G100000404658,300.0,gas,Sabiya power plant_ST6 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_steam_turbine_G100000404659,300.0,gas,Sabiya power plant_ST7 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791761-400,ep_gas_steam_turbine_G100000404660,300.0,gas,Sabiya power plant_ST8 -- operating,e_w1028791761-400,way/1028791761-400,29.564206,48.170653,False
+e_w1028791809-275,ep_gas_combined_cycle_G100000404630,800.0,gas,Az Zour South power plant_CC1-2 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_combined_cycle_G100000404631,800.0,gas,Az Zour South power plant_CC1-1 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_combined_cycle_G100000404632,750.0,gas,Az Zour South power plant_CC3 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_combined_cycle_G100000408582,515.0,gas,Az Zour South power plant_CC2-2 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_combined_cycle_G100000408583,680.0,gas,Az Zour South power plant_CC2-1 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_steam_turbine_G100000404622,300.0,gas,Az Zour South power plant_ST1 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_steam_turbine_G100000404623,300.0,gas,Az Zour South power plant_ST2 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_steam_turbine_G100000404624,300.0,gas,Az Zour South power plant_ST3 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_steam_turbine_G100000404625,300.0,gas,Az Zour South power plant_ST4 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_steam_turbine_G100000404626,300.0,gas,Az Zour South power plant_ST5 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_steam_turbine_G100000404627,300.0,gas,Az Zour South power plant_ST6 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_steam_turbine_G100000404628,300.0,gas,Az Zour South power plant_ST7 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-275,ep_gas_steam_turbine_G100000404629,300.0,gas,Az Zour South power plant_ST8 -- operating,e_w1028791809-275,way/1028791809-275,28.705483,48.370116,False
+e_w1028791809-400,ep_gas_combined_cycle_G100000404634,929.0,gas,Az Zour North power plant_CC1-1 -- operating,e_w1028791809-400,way/1028791809-400,28.7135,48.3806,False
+e_w1028791809-400,ep_gas_combined_cycle_G100000408594,703.0,gas,Az Zour North power plant_CC1-2 -- operating,e_w1028791809-400,way/1028791809-400,28.7135,48.3806,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404637,150.0,gas,Doha East power plant_ST1 -- operating,e_w160398714-275,way/160398714-275,29.3682,47.7963,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404638,150.0,gas,Doha East power plant_ST2 -- operating,e_w160398714-275,way/160398714-275,29.3682,47.7963,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404639,150.0,gas,Doha East power plant_ST3 -- operating,e_w160398714-275,way/160398714-275,29.3682,47.7963,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404640,150.0,gas,Doha East power plant_ST4 -- operating,e_w160398714-275,way/160398714-275,29.3682,47.7963,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404641,150.0,gas,Doha East power plant_ST5 -- operating,e_w160398714-275,way/160398714-275,29.3682,47.7963,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404642,150.0,gas,Doha East power plant_ST6 -- operating,e_w160398714-275,way/160398714-275,29.3682,47.7963,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404643,150.0,gas,Doha East power plant_ST7 -- operating,e_w160398714-275,way/160398714-275,29.3682,47.7963,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404645,300.0,gas,Doha West power station_ST1 -- operating,e_w160398714-275,way/160398714-275,29.3678,47.7865,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404646,300.0,gas,Doha West power station_ST2 -- operating,e_w160398714-275,way/160398714-275,29.3678,47.7865,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404647,300.0,gas,Doha West power station_ST3 -- operating,e_w160398714-275,way/160398714-275,29.3678,47.7865,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404648,300.0,gas,Doha West power station_ST4 -- operating,e_w160398714-275,way/160398714-275,29.3678,47.7865,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404649,300.0,gas,Doha West power station_ST5 -- operating,e_w160398714-275,way/160398714-275,29.3678,47.7865,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404650,300.0,gas,Doha West power station_ST6 -- operating,e_w160398714-275,way/160398714-275,29.3678,47.7865,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404651,300.0,gas,Doha West power station_ST7 -- operating,e_w160398714-275,way/160398714-275,29.3678,47.7865,False
+e_w160398714-275,ep_gas_steam_turbine_G100000404652,300.0,gas,Doha West power station_ST8 -- operating,e_w160398714-275,way/160398714-275,29.3678,47.7865,False
+elc_spv_006,ep_solar_006__irena,9.957660751636622,solar,Aggregated Plant -- operating,elc_spv_006,way/1028791769-400,29.712989832966613,46.786447748868746,False
+elc_spv_008,ep_solar_008__irena,11.767879579897155,solar,Aggregated Plant -- operating,elc_spv_008,way/203226640-275,29.314328453378984,47.73055583293839,False
+elc_spv_008,ep_solar_pv_008,10.0,solar,Aggregated Plant -- operating,elc_spv_008,way/203226640-275,28.67865967051037,47.55352033506409,False
+elc_spv_009,ep_solar_pv_009,10.0,solar,Aggregated Plant -- operating,elc_spv_009,way/1028791774-400,29.122079517171215,46.875170750694174,False
+elc_spv_009,ep_solar_thermal_009,50.0,solar,Aggregated Plant -- operating,elc_spv_009,way/1028791774-400,28.717108461340395,47.06735301397938,False
+elc_spv_010,ep_solar_010__irena,9.936459668466219,solar,Aggregated Plant -- operating,elc_spv_010,way/1028791774-400,28.757635514531298,46.582625211107,False
+elc_won_002,ep_windon_002__irena,0.7516535269012496,windon,Aggregated Plant -- operating,elc_won_002,way/1028943997-275,29.815408721242374,47.477061944970046,False
+elc_won_003,ep_windon_003__irena,0.8634789855155266,windon,Aggregated Plant -- operating,elc_won_003,way/203226640-275,28.711292036435303,47.086098088040316,False
+elc_won_003,ep_windon_wind_003,10.0,windon,Aggregated Plant -- operating,elc_won_003,way/203226640-275,29.109458174375344,46.89719933882027,False
+elc_won_006,ep_windon_006__irena,0.7848674875832232,windon,Aggregated Plant -- operating,elc_won_006,way/1028791784-400,28.995672770488156,48.00835267157945,False

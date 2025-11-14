@@ -1,0 +1,114 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,30.0,bioenergy,Aggregated Plant -- operating,,,,,False
+ELC,ep_hydro__irena,6.000000000000005,hydro,Aggregated Plant -- operating,,,,,False
+e_IL1-400,ep_hydro_ps_G100000602215,156.0,hydro,Manara hydroelectric plant_ -- construction,e_IL1-400,IL1-400,33.1898,35.5555,False
+e_IL1-400,ep_windon_wind_400,102.0,windon,Aggregated Plant -- operating,e_IL1-400,IL1-400,32.77063345011979,35.47557475820813,False
+e_IL1-400,ep_windon_wind_G100000908139,207.0,windon,Genesis Spirit wind farm_-- -- operating,e_IL1-400,IL1-400,32.9614,35.8636,False
+e_IL11-400,ep_gas_combined_cycle_G100000405144,148.0,gas,Hadera OPC power station_1 -- operating,e_IL11-400,IL11-400,32.453057,34.913859,False
+e_IL11-400,ep_gas_combined_cycle_G100000414041,120.0,gas,Hadera Paper power plant_1 -- operating,e_IL11-400,IL11-400,32.457634,34.917378,False
+e_IL14-400,ep_gas_IL14-400__ember,25.2889683096202,gas,Aggregated Plant - EMBER Gap - IL14-400_Missing Gas Capacity -- operating,e_IL14-400,IL14-400,32.14450722289037,34.97354388927483,False
+e_IL15-400,ep_gas_IL15-400__ember,15.173380985772118,gas,Aggregated Plant - EMBER Gap - IL15-400_Missing Gas Capacity -- operating,e_IL15-400,IL15-400,32.29478446373887,34.973799508986204,False
+e_IL15-400,ep_gas_steam_turbine_G100000410118,780.0,gas,Kesem Energy power station_1 -- construction,e_IL15-400,IL15-400,32.11749,34.943218,False
+e_IL16-400,ep_gas_combined_cycle_G100000405120,120.0,gas,Nesher Ramla power station_1 -- operating,e_IL16-400,IL16-400,31.9138,34.8912,False
+e_IL24-400,ep_gas_gas_turbine_G100000410117,73.0,gas,Kiryat Gat power plant_1 -- operating,e_IL24-400,IL24-400,31.598338,34.779548,False
+e_IL25-400,ep_coal_subcritical_G100000108673,575.0,coal,"Rutenberg power station_Unit 2, timepoint 1 -- operating",e_IL25-400,IL25-400,31.630697,34.520237,False
+e_IL25-400,ep_coal_subcritical_G100000108674,550.0,coal,"Rutenberg power station_Unit 3, timepoint 1 -- operating",e_IL25-400,IL25-400,31.630697,34.520237,False
+e_IL25-400,ep_coal_subcritical_G100000108675,550.0,coal,"Rutenberg power station_Unit 4, timepoint 1 -- operating",e_IL25-400,IL25-400,31.630697,34.520237,False
+e_IL25-400,ep_gas_IL25-400__ember,53.437535343482054,gas,Aggregated Plant - EMBER Gap - IL25-400_Missing Gas Capacity -- operating,e_IL25-400,IL25-400,31.718606395155255,34.475168136568335,False
+e_IL25-400,ep_gas_combined_cycle_G100000405100,430.0,gas,Dorad power station_1 -- operating,e_IL25-400,IL25-400,31.635964,34.531124,False
+e_IL25-400,ep_gas_combined_cycle_G100000405101,430.0,gas,Dorad power station_2 -- operating,e_IL25-400,IL25-400,31.635964,34.531124,False
+e_IL25-400,ep_gas_combined_cycle_G100000411586,650.0,gas,Dorad power station_Expansion -- construction,e_IL25-400,IL25-400,31.635964,34.531124,False
+e_IL25-400,ep_gas_steam_turbine_G100000405141,87.0,gas,Ashkelon Delek power station_1 -- operating,e_IL25-400,IL25-400,31.635071,34.524457,False
+e_IL25-400,ep_gas_steam_turbine_G100001017925,575.0,gas,"Rutenberg power station_Unit 1, timepoint 2 -- construction",e_IL25-400,IL25-400,31.630697,34.520237,False
+e_IL31-400,ep_gas_IL31-400__ember,13.539324571919735,gas,Aggregated Plant - EMBER Gap - IL31-400_Missing Gas Capacity -- operating,e_IL31-400,IL31-400,31.240960562494653,35.17992025315062,False
+e_IL31-400,ep_gas_combined_cycle_G100000405099,230.0,gas,Dead Sea Works power station_1 -- operating,e_IL31-400,IL31-400,31.0303,35.3644,False
+e_IL31-400,ep_gas_combined_cycle_G100000405143,466.0,gas,Rotem OPC power station_1 -- operating,e_IL31-400,IL31-400,31.055076,35.175162,False
+e_IL34-400,ep_gas_steam_turbine_G100000411585,50.0,gas,Eilat power plant_1 -- operating,e_IL34-400,IL34-400,29.574712,34.946128,False
+e_IL5-400,ep_gas_IL5-400__ember,14.375805831391789,gas,Aggregated Plant - EMBER Gap - IL5-400_Missing Gas Capacity -- operating,e_IL5-400,IL5-400,32.480358461543204,35.504687564853114,False
+e_IL5-400,ep_gas_combined_cycle_G100000405095,373.0,gas,Alon Tavor power station_CC -- operating,e_IL5-400,IL5-400,32.6339,35.3676,False
+e_IL5-400,ep_gas_gas_turbine_G100000405093,110.0,gas,Alon Tavor power station_GT1 -- operating,e_IL5-400,IL5-400,32.6339,35.3676,False
+e_IL5-400,ep_gas_gas_turbine_G100000405094,110.0,gas,Alon Tavor power station_GT2 -- operating,e_IL5-400,IL5-400,32.6339,35.3676,False
+e_IL5-400,ep_gas_gas_turbine_G100000405096,73.0,gas,Alon Tavor cogeneration power station_1 -- operating,e_IL5-400,IL5-400,32.63272,35.3642,False
+e_IL5-400,ep_gas_gas_turbine_G100000405097,73.0,gas,Ramat Gabriel power station_1 -- operating,e_IL5-400,IL5-400,32.687279,35.251222,False
+e_IL6-400,ep_hydro_ps_G100000602214,344.0,hydro,Kokhav Hayarden hydroelectric plant_ -- operating,e_IL6-400,IL6-400,32.5083,35.4935,False
+e_IL6-400,ep_hydro_ps_G100000602216,300.0,hydro,Mount Gilboa hydroelectric plant_ -- operating,e_IL6-400,IL6-400,32.4781,35.4384,False
+e_IL6-400,ep_windon_wind_400,22.0,windon,Aggregated Plant -- operating,e_IL6-400,IL6-400,32.69213909413416,35.50183853866133,False
+e_w1138000016-400,ep_coal_subcritical_G100000107681,375.0,coal,Orot Rabin power station_Unit 1 -- operating,e_w1138000016-400,way/1138000016-400,32.469902,34.886297,False
+e_w1138000016-400,ep_coal_subcritical_G100000107682,375.0,coal,Orot Rabin power station_Unit 2 -- operating,e_w1138000016-400,way/1138000016-400,32.469902,34.886297,False
+e_w1138000016-400,ep_coal_subcritical_G100000107683,375.0,coal,Orot Rabin power station_Unit 3 -- operating,e_w1138000016-400,way/1138000016-400,32.469902,34.886297,False
+e_w1138000016-400,ep_coal_subcritical_G100000107684,375.0,coal,Orot Rabin power station_Unit 4 -- operating,e_w1138000016-400,way/1138000016-400,32.469902,34.886297,False
+e_w1138000016-400,ep_coal_subcritical_G100000107685,575.0,coal,"Orot Rabin power station_Unit 5, timepoint 1 -- operating",e_w1138000016-400,way/1138000016-400,32.469902,34.886297,False
+e_w1138000016-400,ep_coal_subcritical_G100000107686,575.0,coal,"Orot Rabin power station_Unit 6, timepoint 1 -- operating",e_w1138000016-400,way/1138000016-400,32.469902,34.886297,False
+e_w1138000016-400,ep_gas_combined_cycle_G100000405137,630.0,gas,Orot Rabin power station_CC1 -- operating,e_w1138000016-400,way/1138000016-400,32.469902,34.886297,False
+e_w1138000016-400,ep_gas_combined_cycle_G100000405138,630.0,gas,Orot Rabin power station_CC2 -- operating,e_w1138000016-400,way/1138000016-400,32.469902,34.886297,False
+e_w1138000016-400,ep_gas_w1138000016-400__ember,46.88185663552667,gas,Aggregated Plant - EMBER Gap - way/1138000016-400_Missing Gas Capacity -- operating,e_w1138000016-400,way/1138000016-400,32.353471425236535,34.76936761069158,False
+e_w1278397367-400,ep_gas_combined_cycle_G100000405098,55.0,gas,Ashdod Energy power station_1 -- operating,e_w1278397367-400,way/1278397367-400,31.1472,34.7876,False
+e_w1278397367-400,ep_gas_combined_cycle_G100000405121,366.0,gas,Ramat Hovav power station_CC1 -- operating,e_w1278397367-400,way/1278397367-400,31.1536,34.8146,False
+e_w1278397367-400,ep_gas_combined_cycle_G100000405126,120.0,gas,Ramat Negev Energy power station_1 -- operating,e_w1278397367-400,way/1278397367-400,31.1498,34.7895,False
+e_w1278397367-400,ep_gas_combined_cycle_G100000410116,335.0,gas,Ramat Hovav power station_CC2 -- operating,e_w1278397367-400,way/1278397367-400,31.1536,34.8146,False
+e_w1278397367-400,ep_gas_gas_turbine_G100000405122,110.0,gas,Ramat Hovav power station_1 -- operating,e_w1278397367-400,way/1278397367-400,31.1536,34.8146,False
+e_w1278397367-400,ep_gas_gas_turbine_G100000405123,110.0,gas,Ramat Hovav power station_2 -- operating,e_w1278397367-400,way/1278397367-400,31.1536,34.8146,False
+e_w1278397367-400,ep_gas_gas_turbine_G100000405124,118.0,gas,Ramat Hovav power station_6 -- operating,e_w1278397367-400,way/1278397367-400,31.1536,34.8146,False
+e_w1278397367-400,ep_gas_gas_turbine_G100000405125,118.0,gas,Ramat Hovav power station_7 -- operating,e_w1278397367-400,way/1278397367-400,31.1536,34.8146,False
+e_w1278397367-400,ep_gas_w1278397367-400__ember,25.911465991087773,gas,Aggregated Plant - EMBER Gap - way/1278397367-400_Missing Gas Capacity -- operating,e_w1278397367-400,way/1278397367-400,31.305792237693108,34.774928171941795,False
+e_w1279258689-400,ep_gas_gas_turbine_G100000405145,67.0,gas,Zomet power station_1 -- operating,e_w1279258689-400,way/1279258689-400,31.609654,34.74192,False
+e_w1279258689-400,ep_gas_gas_turbine_G100000405146,67.0,gas,Zomet power station_2 -- operating,e_w1279258689-400,way/1279258689-400,31.609654,34.74192,False
+e_w1279258689-400,ep_gas_gas_turbine_G100000405147,67.0,gas,Zomet power station_3 -- operating,e_w1279258689-400,way/1279258689-400,31.609654,34.74192,False
+e_w1279258689-400,ep_gas_gas_turbine_G100000405148,67.0,gas,Zomet power station_4 -- operating,e_w1279258689-400,way/1279258689-400,31.609654,34.74192,False
+e_w1279258689-400,ep_gas_gas_turbine_G100000405149,67.0,gas,Zomet power station_5 -- operating,e_w1279258689-400,way/1279258689-400,31.609654,34.74192,False
+e_w1279258689-400,ep_gas_gas_turbine_G100000405150,67.0,gas,Zomet power station_6 -- operating,e_w1279258689-400,way/1279258689-400,31.609654,34.74192,False
+e_w1281457668-400,ep_gas_combined_cycle_G100000405106,377.0,gas,Eshkol power station_CC1 -- operating,e_w1281457668-400,way/1281457668-400,31.8388,34.6551,False
+e_w1281457668-400,ep_gas_combined_cycle_G100000405142,450.0,gas,Be'er Tuvia power station_1 -- operating,e_w1281457668-400,way/1281457668-400,31.721631,34.752921,False
+e_w1281457668-400,ep_gas_combined_cycle_G100000410182,394.0,gas,Eshkol power station_CC2 -- operating,e_w1281457668-400,way/1281457668-400,31.8388,34.6551,False
+e_w1281457668-400,ep_gas_gas_turbine_G100000405140,60.0,gas,Ashdod Refinery power station_1 -- operating,e_w1281457668-400,way/1281457668-400,31.841737,34.685617,False
+e_w1281457668-400,ep_gas_gas_turbine_G100000410119,186.0,gas,Etgal Ashdod power station_1 -- operating,e_w1281457668-400,way/1281457668-400,31.826607,34.648599,False
+e_w1281457668-400,ep_gas_internal_combustion_G100000414043,99.5,gas,Ashdod Desalination power plant_1 -- construction,e_w1281457668-400,way/1281457668-400,31.832732,34.655591,False
+e_w1281457668-400,ep_gas_steam_turbine_G100000405102,228.0,gas,Eshkol power station_A -- operating,e_w1281457668-400,way/1281457668-400,31.8388,34.6551,False
+e_w1281457668-400,ep_gas_steam_turbine_G100000405103,228.0,gas,Eshkol power station_B -- operating,e_w1281457668-400,way/1281457668-400,31.8388,34.6551,False
+e_w1281457668-400,ep_gas_steam_turbine_G100000405104,228.0,gas,Eshkol power station_C -- operating,e_w1281457668-400,way/1281457668-400,31.8388,34.6551,False
+e_w1281457668-400,ep_gas_steam_turbine_G100000405105,228.0,gas,Eshkol power station_D -- operating,e_w1281457668-400,way/1281457668-400,31.8388,34.6551,False
+e_w1281457668-400,ep_gas_w1281457668-400__ember,109.74439593747871,gas,Aggregated Plant - EMBER Gap - way/1281457668-400_Missing Gas Capacity -- operating,e_w1281457668-400,way/1281457668-400,31.741908300221812,34.8944536387007,False
+e_w195201089-400,ep_gas_combined_cycle_G100000405116,370.0,gas,Haifa power station_CC3 -- operating,e_w195201089-400,way/195201089-400,32.811807,35.019611,False
+e_w195201089-400,ep_gas_combined_cycle_G100000405117,370.0,gas,Haifa power station_CC4 -- operating,e_w195201089-400,way/195201089-400,32.811807,35.019611,False
+e_w195201089-400,ep_gas_gas_turbine_G100000405118,141.0,gas,Haifa power station_GT1 -- operating,e_w195201089-400,way/195201089-400,32.811807,35.019611,False
+e_w195201089-400,ep_gas_gas_turbine_G100000405119,141.0,gas,Haifa power station_GT2 -- operating,e_w195201089-400,way/195201089-400,32.811807,35.019611,False
+e_w195201089-400,ep_gas_steam_turbine_G100000412252,118.0,gas,Haifa Refinery power station_1 -- operating,e_w195201089-400,way/195201089-400,32.794356,34.982615,False
+e_w195201089-400,ep_gas_w195201089-400__ember,22.176479902282328,gas,Aggregated Plant - EMBER Gap - way/195201089-400_Missing Gas Capacity -- operating,e_w195201089-400,way/195201089-400,33.023878314672814,35.01342882531259,False
+e_w224843057-400,ep_gas_combined_cycle_G100000405129,140.0,gas,Sorek power station_1 -- operating,e_w224843057-400,way/224843057-400,31.9367,34.7118,False
+e_w224843057-400,ep_gas_steam_turbine_G100000410115,87.0,gas,Sorek-2 cogeneration power station_1 -- construction,e_w224843057-400,way/224843057-400,31.943541,34.732901,False
+e_w224843057-400,ep_gas_w224843057-400__ember,21.923590219186124,gas,Aggregated Plant - EMBER Gap - way/224843057-400_Missing Gas Capacity -- operating,e_w224843057-400,way/224843057-400,32.12673076754639,34.827535289643734,False
+e_w667278596-400,ep_gas_combined_cycle_G100000405107,370.0,gas,Gezer power station_CC3 -- operating,e_w667278596-400,way/667278596-400,31.9153,34.9188,False
+e_w667278596-400,ep_gas_combined_cycle_G100000405108,370.0,gas,Gezer power station_CC4 -- operating,e_w667278596-400,way/667278596-400,31.9153,34.9188,False
+e_w667278596-400,ep_gas_gas_turbine_G100000405109,140.0,gas,Gezer power station_GT11 -- operating,e_w667278596-400,way/667278596-400,31.9153,34.9188,False
+e_w667278596-400,ep_gas_gas_turbine_G100000405110,140.0,gas,Gezer power station_GT12 -- operating,e_w667278596-400,way/667278596-400,31.9153,34.9188,False
+e_w667278596-400,ep_gas_gas_turbine_G100000405111,140.0,gas,Gezer power station_GT21 -- operating,e_w667278596-400,way/667278596-400,31.9153,34.9188,False
+e_w667278596-400,ep_gas_gas_turbine_G100000405112,140.0,gas,Gezer power station_GT22 -- operating,e_w667278596-400,way/667278596-400,31.9153,34.9188,False
+e_w667278596-400,ep_gas_w667278596-400__ember,25.2889683096202,gas,Aggregated Plant - EMBER Gap - way/667278596-400_Missing Gas Capacity -- operating,e_w667278596-400,way/667278596-400,31.872293950000472,34.88446317506566,False
+e_w682226951-400,ep_gas_combined_cycle_G100000405113,330.0,gas,Hagit power station_CC1 -- operating,e_w682226951-400,way/682226951-400,32.6172,35.0431,False
+e_w682226951-400,ep_gas_combined_cycle_G100000405114,330.0,gas,Hagit power station_CC2 -- operating,e_w682226951-400,way/682226951-400,32.6172,35.0431,False
+e_w682226951-400,ep_gas_combined_cycle_G100000405115,370.0,gas,Hagit power station_CC3 -- operating,e_w682226951-400,way/682226951-400,32.6172,35.0431,False
+e_w682226951-400,ep_gas_gas_turbine_G100000410180,372.0,gas,Hagit power station_CT1 -- operating,e_w682226951-400,way/682226951-400,32.6172,35.0431,False
+e_w682226951-400,ep_gas_w682226951-400__ember,27.27317966929809,gas,Aggregated Plant - EMBER Gap - way/682226951-400_Missing Gas Capacity -- operating,e_w682226951-400,way/682226951-400,32.549814105919644,34.93546539492632,False
+e_w726587933-400,ep_gas_combined_cycle_G100000405130,370.0,gas,Tzafit power station_CC -- operating,e_w726587933-400,way/726587933-400,31.7123,34.8423,False
+e_w726587933-400,ep_gas_combined_cycle_G100000405133,450.0,gas,Tzafit (Dalia) power station_1 -- operating,e_w726587933-400,way/726587933-400,31.7148,34.8422,False
+e_w726587933-400,ep_gas_combined_cycle_G100000410018,450.0,gas,Tzafit (Dalia) power station_2 -- operating,e_w726587933-400,way/726587933-400,31.7148,34.8422,False
+e_w726587933-400,ep_gas_gas_turbine_G100000405131,110.0,gas,Tzafit power station_GT1 -- operating,e_w726587933-400,way/726587933-400,31.7123,34.8423,False
+e_w726587933-400,ep_gas_gas_turbine_G100000405132,110.0,gas,Tzafit power station_GT2 -- operating,e_w726587933-400,way/726587933-400,31.7123,34.8423,False
+e_w726587933-400,ep_gas_w726587933-400__ember,28.985048293333918,gas,Aggregated Plant - EMBER Gap - way/726587933-400_Missing Gas Capacity -- operating,e_w726587933-400,way/726587933-400,31.869881498016387,34.67912667265272,False
+elc_spv_001,ep_solar_001__irena,995.7748721739971,solar,Aggregated Plant - IRENA Gap - 1_Missing Solar Capacity -- operating,elc_spv_001,IL30-400,30.598918735956353,35.177848340411884,False
+elc_spv_001,ep_solar_pv_001,159.4,solar,Aggregated Plant -- operating,elc_spv_001,IL30-400,30.252293156281105,35.38251143273753,False
+elc_spv_002,ep_solar_002__irena,958.1848205028856,solar,Aggregated Plant - IRENA Gap - 2_Missing Solar Capacity -- operating,elc_spv_002,IL34-400,30.661233218012956,35.143143891820856,False
+elc_spv_002,ep_solar_pv_002,59.9,solar,Aggregated Plant -- operating,elc_spv_002,IL34-400,30.30424262167489,35.19204431436959,False
+elc_spv_003,ep_solar_pv_003,385.29999999999995,solar,Aggregated Plant -- operating,elc_spv_003,IL30-400,29.353378490862916,34.70679929252997,False
+elc_spv_003,ep_solar_thermal_003,231.0,solar,Aggregated Plant -- operating,elc_spv_003,IL30-400,29.551706229333288,34.18735420947348,False
+elc_spv_004,ep_solar_pv_004,128.3,solar,Aggregated Plant -- construction,elc_spv_004,way/195201089-400,32.57583348423703,35.275964293170055,False
+elc_spv_005,ep_solar_pv_005,207.7,solar,Aggregated Plant -- operating,elc_spv_005,IL8-400,32.60803367693932,35.17440650463886,False
+elc_spv_006,ep_solar_pv_006,28.7,solar,Aggregated Plant -- operating,elc_spv_006,IL15-400,31.938209402438396,34.938622861637924,False
+elc_spv_007,ep_solar_pv_007,410.2,solar,Aggregated Plant -- operating,elc_spv_007,way/459027479-400,31.02840559719998,35.08980796688729,False
+elc_spv_008,ep_solar_pv_008,82.0,solar,Aggregated Plant -- operating,elc_spv_008,IL31-400,30.882935331757476,35.14314516027717,False
+elc_spv_009,ep_solar_009__irena,939.8403073231168,solar,Aggregated Plant - IRENA Gap - 9_Missing Solar Capacity -- operating,elc_spv_009,IL28-400,31.246030768015917,34.812654425705986,False
+elc_spv_009,ep_solar_pv_009,419.4,solar,Aggregated Plant -- operating,elc_spv_009,IL28-400,31.265031079740194,34.31506412435957,False
+elc_spv_010,ep_solar_pv_010,22.599999999999998,solar,Aggregated Plant -- operating,elc_spv_010,way/224843057-400,31.774743187793565,34.760000263600034,False
+elc_won_001,ep_windon_001__irena,4.806508854867792,windon,Aggregated Plant -- operating,elc_won_001,IL30-400,30.103921294868947,33.96416806193016,False
+elc_won_005,ep_windon_005__irena,3.912870423682317,windon,Aggregated Plant -- operating,elc_won_005,IL30-400,30.5248722149531,34.12218564447051,False
+elc_won_010,ep_windon_010__irena,3.5306207214499046,windon,Aggregated Plant -- operating,elc_won_010,way/195201089-400,32.594886733635256,34.867494828951706,False

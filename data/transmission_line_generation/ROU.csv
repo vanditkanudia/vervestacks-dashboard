@@ -1,0 +1,147 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_gas__ember,5.199999999999871,gas,Aggregated Plant -- operating,,,,,False
+e_RO29-220,ep_hydro_RO29-220__irena,30.548321497651294,hydro,Aggregated Plant - IRENA Gap - RO29-220_Missing Hydro Capacity -- operating,e_RO29-220,RO29-220,45.52761630428737,24.66099667662269,False
+e_RO29-220,ep_hydro_dam_G100000603264,219.0,hydro,Vidraru hydroelectric plant_ -- operating,e_RO29-220,RO29-220,45.3666,24.6306,False
+e_RO33-400,ep_m_oil_steam_turbine_G100000412775,330.0,oil,Braila power station_ST4 -- mothballed,e_RO33-400,RO33-400,45.165033,27.923383,False
+e_RO33-400,ep_m_oil_steam_turbine_G100000412776,210.0,oil,Braila power station_ST3 -- mothballed,e_RO33-400,RO33-400,45.165033,27.923383,False
+e_RO33-400,ep_m_oil_steam_turbine_G100000412777,210.0,oil,Braila power station_ST2 -- mothballed,e_RO33-400,RO33-400,45.165033,27.923383,False
+e_RO33-400,ep_m_oil_steam_turbine_G100000412778,210.0,oil,Braila power station_ST1 -- mothballed,e_RO33-400,RO33-400,45.165033,27.923383,False
+e_RO34-220,ep_hydro_ror_G100001052106,48.0,hydro,Râureni hydroelectric plant_ -- operating,e_RO34-220,RO34-220,45.0714,24.3616,False
+e_RO38-220,ep_gas_combined_cycle_G100000410369,108.0,gas,Chimcomplex power station_2 -- construction,e_RO38-220,RO38-220,45.039955,24.297764,False
+e_RO38-220,ep_hydro_ror_G100001052105,46.0,hydro,Govora hydroelectric plant_ -- operating,e_RO38-220,RO38-220,45.0094,24.2968,False
+e_RO42-220,ep_coal_RO42-220__ember,139.15662650602417,coal,Aggregated Plant - EMBER Gap - RO42-220_Missing Coal Capacity -- operating,e_RO42-220,RO42-220,45.088592921026944,23.150720020983805,False
+e_RO42-220,ep_coal_subcritical_G100000108646,330.0,coal,Rovinari power station_Unit 4 -- operating,e_RO42-220,RO42-220,44.910633,23.134754,False
+e_RO42-220,ep_coal_subcritical_G100000108647,330.0,coal,Rovinari power station_Unit 5 -- operating,e_RO42-220,RO42-220,44.910633,23.134754,False
+e_RO42-220,ep_coal_subcritical_G100000108648,330.0,coal,Rovinari power station_Unit 6 -- operating,e_RO42-220,RO42-220,44.910633,23.134754,False
+e_RO42-220,ep_hydro_RO42-220__irena,21.62095813760708,hydro,Aggregated Plant - IRENA Gap - RO42-220_Missing Hydro Capacity -- operating,e_RO42-220,RO42-220,44.72863378465374,23.13908946420556,False
+e_RO42-220,ep_hydro_dam_G100000603263,105.0,hydro,Tismana hydroelectric plant_ -- operating,e_RO42-220,RO42-220,45.0444,22.9474,False
+e_RO42-220,ep_hydro_ror_G100001052131,50.0,hydro,Motru hydroelectric plant_ -- operating,e_RO42-220,RO42-220,44.7918,22.9698,False
+e_RO48-400,ep_coal_RO48-400__ember,131.2048192771085,coal,Aggregated Plant - EMBER Gap - RO48-400_Missing Coal Capacity -- operating,e_RO48-400,RO48-400,44.71365773844057,23.269800413578878,False
+e_RO48-400,ep_coal_subcritical_G100000110366,330.0,coal,Turceni power station_Unit 4 -- operating,e_RO48-400,RO48-400,44.669722,23.407778,False
+e_RO48-400,ep_coal_subcritical_G100000110367,330.0,coal,Turceni power station_Unit 5 -- operating,e_RO48-400,RO48-400,44.669722,23.407778,False
+e_RO48-400,ep_m_coal_subcritical_G100000110369,330.0,coal,Turceni power station_Unit 7 -- mothballed,e_RO48-400,RO48-400,44.669722,23.407778,False
+e_RO49-400,ep_hydro_RO49-400__irena,348.7251312517271,hydro,Aggregated Plant - IRENA Gap - RO49-400_Missing Hydro Capacity -- operating,e_RO49-400,RO49-400,44.924072255740484,22.447873652641885,False
+e_RO49-400,ep_hydro_ror_G100000604138,2306.0,hydro,Iron Gate I hydroelectric plant_ -- operating,e_RO49-400,RO49-400,44.6705,22.5282,False
+e_RO54-220,ep_hydro_RO54-220__irena,13.949005250069083,hydro,Aggregated Plant - IRENA Gap - RO54-220_Missing Hydro Capacity -- operating,e_RO54-220,RO54-220,44.65845556925077,26.070482705279026,False
+e_RO54-220,ep_hydro_dam_G100000603258,100.0,hydro,Remeti hydroelectric plant_ -- operating,e_RO54-220,RO54-220,44.5886,26.5669,False
+e_RO56-400,ep_hydro_RO56-400__irena,13.25155498756563,hydro,Aggregated Plant - IRENA Gap - RO56-400_Missing Hydro Capacity -- operating,e_RO56-400,RO56-400,44.51391342513007,24.413869953723765,False
+e_RO56-400,ep_hydro_ror_G100001052103,45.0,hydro,Drăgăşani hydroelectric plant_ -- operating,e_RO56-400,RO56-400,44.6817,24.2935,False
+e_RO56-400,ep_hydro_ror_G100001052107,50.0,hydro,Strejeşti hydroelectric plant_ -- operating,e_RO56-400,RO56-400,44.5358,24.3223,False
+e_RO63-220,ep_gas_combined_cycle_G100000400601,50.0,gas,Bucharest Progresu power station_1 -- operating,e_RO63-220,RO63-220,44.3717,26.10628,False
+e_RO63-220,ep_gas_combined_cycle_G100000400602,50.0,gas,Bucharest Progresu power station_2 -- operating,e_RO63-220,RO63-220,44.3717,26.10628,False
+e_RO63-220,ep_gas_combined_cycle_G100000400603,50.0,gas,Bucharest Progresu power station_3 -- operating,e_RO63-220,RO63-220,44.3717,26.10628,False
+e_RO63-220,ep_gas_combined_cycle_G100000400604,50.0,gas,Bucharest Progresu power station_4 -- operating,e_RO63-220,RO63-220,44.3717,26.10628,False
+e_RO69-400,ep_hydro_RO69-400__irena,73.92972782536616,hydro,Aggregated Plant - IRENA Gap - RO69-400_Missing Hydro Capacity -- operating,e_RO69-400,RO69-400,44.21933592142409,27.464564331033806,False
+e_w100654585-400,ep_nuclear_G100000500375,706.0,nuclear,Cernavodă nuclear power plant_1 -- operating,e_w100654585-400,way/100654585-400,44.3205,28.0598,False
+e_w100654585-400,ep_nuclear_G100000500377,705.0,nuclear,Cernavodă nuclear power plant_2 -- operating,e_w100654585-400,way/100654585-400,44.3218,28.0586,False
+e_w101158766-220,ep_gas_internal_combustion_G100001020354,21.0,gas,Arad power station_CHP -- operating,e_w101158766-220,way/101158766-220,46.222424,21.328771,False
+e_w1066158995-220,ep_coal_subcritical_G100000107846,150.0,coal,Paroseni power station_Unit 4 -- operating,e_w1066158995-220,way/1066158995-220,45.366101,23.261351,False
+e_w1066158995-220,ep_coal_w1066158995-220__ember,19.879518072289166,coal,Aggregated Plant - EMBER Gap - way/1066158995-220_Missing Coal Capacity -- operating,e_w1066158995-220,way/1066158995-220,45.23740679801558,23.439959845997986,False
+e_w1066402288-220,ep_gas_steam_turbine_G100000400615,105.0,gas,Galati power station_TA3 -- operating,e_w1066402288-220,way/1066402288-220,45.436,27.9814,False
+e_w1066402288-220,ep_gas_steam_turbine_G100000400616,105.0,gas,Galati power station_TA6 -- operating,e_w1066402288-220,way/1066402288-220,45.436,27.9814,False
+e_w1066402288-220,ep_gas_steam_turbine_G100000410366,105.0,gas,Galati power station_TA5 -- operating,e_w1066402288-220,way/1066402288-220,45.436,27.9814,False
+e_w1066402288-220,ep_gas_steam_turbine_G100000410367,60.0,gas,Galati power station_TA4 -- operating,e_w1066402288-220,way/1066402288-220,45.436,27.9814,False
+e_w125672002-400,ep_hydro_ror_G100001052133,45.0,hydro,Racaciuni hydroelectric plant_ -- operating,e_w125672002-400,way/125672002-400,46.323,27.0545,False
+e_w182886368-220,ep_hydro_dam_G100001052128,54.0,hydro,Izbiceni hydroelectric plant_ -- operating,e_w182886368-220,way/182886368-220,43.8122,24.6968,False
+e_w182886368-220,ep_hydro_ror_G100001052138,53.0,hydro,Rusanesti hydroelectric plant_ -- operating,e_w182886368-220,way/182886368-220,43.9163,24.627,False
+e_w182886368-220,ep_hydro_w182886368-220__irena,14.925435617573921,hydro,Aggregated Plant - IRENA Gap - way/182886368-220_Missing Hydro Capacity -- operating,e_w182886368-220,way/182886368-220,43.80932724142275,24.827014852287675,False
+e_w191363648-400,ep_gas_gas_turbine_G100000400628,45.5,gas,Oradea power station_GT1 -- operating,e_w191363648-400,way/191363648-400,47.084677,21.892868,False
+e_w196654364-220,ep_hydro_dam_G100000603254,149.0,hydro,Gilceag hydroelectric plant_ -- operating,e_w196654364-220,way/196654364-220,45.5879,23.6279,False
+e_w196654364-220,ep_hydro_dam_G100000603261,149.0,hydro,Susag hydroelectric plant_ -- operating,e_w196654364-220,way/196654364-220,45.6892,23.6094,False
+e_w196654364-220,ep_hydro_w196654364-220__irena,41.568035645205875,hydro,Aggregated Plant - IRENA Gap - way/196654364-220_Missing Hydro Capacity -- operating,e_w196654364-220,way/196654364-220,45.748846373904094,23.52076350853132,False
+e_w198777680-220,ep_coal_w198777680-220__ember,41.746987951807256,coal,Aggregated Plant - EMBER Gap - way/198777680-220_Missing Coal Capacity -- operating,e_w198777680-220,way/198777680-220,44.42277268985759,23.897009202783284,False
+e_w198777680-220,ep_m_coal_subcritical_G100000104909,315.0,coal,Isalnita power station_Unit 7 -- mothballed,e_w198777680-220,way/198777680-220,44.38763,23.718195,False
+e_w198777681-220,ep_coal_subcritical_G100000101821,150.0,coal,Craiova II power station_Unit 1 -- operating,e_w198777681-220,way/198777681-220,44.34294,23.81076,False
+e_w198777681-220,ep_coal_subcritical_G100000101822,150.0,coal,Craiova II power station_Unit 2 -- operating,e_w198777681-220,way/198777681-220,44.34294,23.81076,False
+e_w198777681-220,ep_coal_w198777681-220__ember,39.75903614457833,coal,Aggregated Plant - EMBER Gap - way/198777681-220_Missing Coal Capacity -- operating,e_w198777681-220,way/198777681-220,44.26478794609995,23.997157916303472,False
+e_w198777681-220,ep_gas_internal_combustion_G100001031025,200.0,gas,"ClusterPower Craiova power station_ICCC, timepoint 1 -- construction",e_w198777681-220,way/198777681-220,44.37858,23.85121,False
+e_w198901559-220,ep_hydro_dam_G100000603257,210.0,hydro,Raul Mare hydroelectric plant_ -- operating,e_w198901559-220,way/198901559-220,45.3391,22.7213,False
+e_w198901559-220,ep_hydro_w198901559-220__irena,29.292911025145074,hydro,Aggregated Plant - IRENA Gap - way/198901559-220_Missing Hydro Capacity -- operating,e_w198901559-220,way/198901559-220,45.48525765751398,22.988260353517358,False
+e_w202461729-220,ep_coal_subcritical_G100000104810,60.0,coal,Iasi-2 power station_Unit 1 -- operating,e_w202461729-220,way/202461729-220,47.147296,27.717157,False
+e_w202461729-220,ep_gas_steam_turbine_G100000400620,25.0,gas,Iasi-1 power station_1 -- operating,e_w202461729-220,way/202461729-220,47.14977,27.6073,False
+e_w202461729-220,ep_m_gas_steam_turbine_G100000412773,25.0,gas,Iasi-1 power station_2 -- mothballed,e_w202461729-220,way/202461729-220,47.14977,27.6073,False
+e_w202948507-400,ep_bioenergy_w202948507-400,30.0,bioenergy,Aggregated Plant -- operating,e_w202948507-400,way/202948507-400,47.79897047572397,26.2325875084278,False
+e_w202948507-400,ep_bioenergy_w202948507-400__ember,150.0,bioenergy,Aggregated Plant - EMBER Gap - way/202948507-400_Missing Bioenergy Capacity -- operating,e_w202948507-400,way/202948507-400,47.44100377590001,26.271257074600253,False
+e_w204969810-400,ep_hydro_dam_G100001052102,57.0,hydro,Drăgănești hydroelectric plant_ -- operating,e_w204969810-400,way/204969810-400,44.1637,24.4832,False
+e_w204969810-400,ep_hydro_ror_G100001052108,57.0,hydro,Frunzaru hydroelectric plant_ -- operating,e_w204969810-400,way/204969810-400,44.0418,24.5744,False
+e_w204969810-400,ep_hydro_ror_G100001052126,57.0,hydro,Ipotesti hydroelectric plant_ -- operating,e_w204969810-400,way/204969810-400,44.2641,24.4041,False
+e_w204969810-400,ep_hydro_w204969810-400__irena,23.852798977618132,hydro,Aggregated Plant - IRENA Gap - way/204969810-400_Missing Hydro Capacity -- operating,e_w204969810-400,way/204969810-400,44.00855112962493,24.66749967034383,False
+e_w204983664-220,ep_hydro_dam_G100000603259,138.0,hydro,Ruieni hydroelectric plant_ -- operating,e_w204983664-220,way/204983664-220,45.4028,22.2963,False
+e_w204983664-220,ep_hydro_w204983664-220__irena,19.24962724509534,hydro,Aggregated Plant - IRENA Gap - way/204983664-220_Missing Hydro Capacity -- operating,e_w204983664-220,way/204983664-220,45.48853517025279,22.11053383815605,False
+e_w206558254-220,ep_hydro_dam_G100000603253,100.0,hydro,Bradisor hydroelectric plant_ -- operating,e_w206558254-220,way/206558254-220,45.3522,24.118,False
+e_w206558254-220,ep_hydro_dam_G100000603255,509.0,hydro,Lotru hydroelectric plant_ -- operating,e_w206558254-220,way/206558254-220,45.447,23.7682,False
+e_w206558254-220,ep_hydro_w206558254-220__irena,84.94944197292072,hydro,Aggregated Plant - IRENA Gap - way/206558254-220_Missing Hydro Capacity -- operating,e_w206558254-220,way/206558254-220,45.39386255608623,24.088179336328196,False
+e_w208045778-220,ep_hydro_dam_G100000603260,151.0,hydro,Stejaru hydroelectric plant_ -- operating,e_w208045778-220,way/208045778-220,46.9386,26.1029,False
+e_w208045778-220,ep_hydro_w208045778-220__irena,21.062997927604318,hydro,Aggregated Plant - IRENA Gap - way/208045778-220_Missing Hydro Capacity -- operating,e_w208045778-220,way/208045778-220,46.94015403544677,26.134183625553753,False
+e_w208294493-220,ep_coal_subcritical_G100000113461,50.0,coal,Govora power station_Unit 3 -- operating,e_w208294493-220,way/208294493-220,45.039047,24.287572,False
+e_w208294493-220,ep_coal_subcritical_G100000113462,50.0,coal,Govora power station_Unit 4 -- operating,e_w208294493-220,way/208294493-220,45.039047,24.287572,False
+e_w208294493-220,ep_coal_w208294493-220__ember,13.253012048192778,coal,Aggregated Plant - EMBER Gap - way/208294493-220_Missing Coal Capacity -- operating,e_w208294493-220,way/208294493-220,45.09035820135692,24.123439029117623,False
+e_w208294493-220,ep_gas_gas_turbine_G100000400618,50.0,gas,Govora power station_3 -- operating,e_w208294493-220,way/208294493-220,45.039047,24.287572,False
+e_w208294493-220,ep_gas_gas_turbine_G100000400619,50.0,gas,Govora power station_4 -- operating,e_w208294493-220,way/208294493-220,45.039047,24.287572,False
+e_w208744453-220,ep_hydro_ror_G100000604139,591.0,hydro,Iron Gate II hydroelectric plant_ -- operating,e_w208744453-220,way/208744453-220,44.3042,22.5648,False
+e_w208744453-220,ep_hydro_ror_G100001052109,54.0,hydro,Gogosu hydroelectric plant_ -- operating,e_w208744453-220,way/208744453-220,44.405,22.5198,False
+e_w208744453-220,ep_hydro_w208744453-220__irena,89.97108386294559,hydro,Aggregated Plant - IRENA Gap - way/208744453-220_Missing Hydro Capacity -- operating,e_w208744453-220,way/208744453-220,44.65270519599352,22.734762371642553,False
+e_w209067387-400,ep_gas_combined_cycle_G100000400629,860.0,gas,Petrom Brazi power station_CC1 -- operating,e_w209067387-400,way/209067387-400,44.880334,25.99896,False
+e_w209067387-400,ep_gas_gas_turbine_G100000400598,26.0,gas,Brazi power station_8 -- operating,e_w209067387-400,way/209067387-400,44.88306,26.00915,False
+e_w209067387-400,ep_gas_steam_turbine_G100000400596,105.0,gas,Brazi power station_5 -- operating,e_w209067387-400,way/209067387-400,44.88306,26.00915,False
+e_w209067387-400,ep_gas_steam_turbine_G100000400597,105.0,gas,Brazi power station_6 -- operating,e_w209067387-400,way/209067387-400,44.88306,26.00915,False
+e_w209067387-400,ep_oil_combined_cycle_G100000412768,60.0,oil,Petrom Brazi power station_GT1&2 -- operating,e_w209067387-400,way/209067387-400,44.880334,25.99896,False
+e_w209067387-400,ep_oil_steam_turbine_G100000412774,50.0,oil,Brazi power station_7 -- operating,e_w209067387-400,way/209067387-400,44.88306,26.00915,False
+e_w234876695-400,ep_gas_combined_cycle_G100000400626,430.0,gas,Iernut power station_CC -- construction,e_w234876695-400,way/234876695-400,46.4677,24.1833,False
+e_w234876695-400,ep_gas_steam_turbine_G100000400624,200.0,gas,Iernut power station_5 -- operating,e_w234876695-400,way/234876695-400,46.4677,24.1833,False
+e_w234876695-400,ep_m_gas_steam_turbine_G100000400623,100.0,gas,Iernut power station_4 -- mothballed,e_w234876695-400,way/234876695-400,46.4677,24.1833,False
+e_w23575521-400,ep_gas_combined_cycle_G100000400614,186.3,gas,Bucharest-Vest power station_3+4 -- operating,e_w23575521-400,way/23575521-400,44.40582,26.15565,False
+e_w23575521-400,ep_gas_steam_turbine_G100000400612,125.0,gas,Bucharest-Vest power station_2.1 -- operating,e_w23575521-400,way/23575521-400,44.40582,26.15565,False
+e_w23575521-400,ep_gas_steam_turbine_G100000400613,125.0,gas,Bucharest-Vest power station_2.2 -- operating,e_w23575521-400,way/23575521-400,44.40582,26.15565,False
+e_w24710999-220,ep_gas_internal_combustion_G100000410371,50.0,gas,"Bucharest-Titan power station_ICCC, timepoint 1 -- construction",e_w24710999-220,way/24710999-220,44.43642,26.18081,False
+e_w267616969-220,ep_hydro_dam_G100000603256,215.0,hydro,Mariselu hydroelectric plant_ -- operating,e_w267616969-220,way/267616969-220,46.6679,23.059,False
+e_w267616969-220,ep_hydro_dam_G100001052140,45.0,hydro,Tarnita hydroelectric plant_ -- operating,e_w267616969-220,way/267616969-220,46.7271,23.3008,False
+e_w267616969-220,ep_hydro_ror_G100001052132,50.0,hydro,Munteni 1 hydroelectric plant_ -- operating,e_w267616969-220,way/267616969-220,46.7899,22.7195,False
+e_w267616969-220,ep_hydro_w267616969-220__irena,182.731968775905,hydro,Aggregated Plant - IRENA Gap - way/267616969-220_Missing Hydro Capacity -- operating,e_w267616969-220,way/267616969-220,46.969317805601094,23.190819905327903,False
+e_w267616969-220,ep_windon_wind_220,12.0,windon,Aggregated Plant -- operating,e_w267616969-220,way/267616969-220,46.611565287315756,23.436725137056374,False
+e_w28251692-400,ep_gas_steam_turbine_G100000400599,50.0,gas,Bucharest Grozavesti power station_1 -- operating,e_w28251692-400,way/28251692-400,44.44028,26.06257,False
+e_w28251692-400,ep_gas_steam_turbine_G100000400600,50.0,gas,Bucharest Grozavesti power station_2 -- operating,e_w28251692-400,way/28251692-400,44.44028,26.06257,False
+e_w28251692-400,ep_gas_steam_turbine_G100000400608,100.0,gas,Bucharest-Sud power station_3 -- operating,e_w28251692-400,way/28251692-400,44.4233,25.979,False
+e_w28251692-400,ep_gas_steam_turbine_G100000400609,100.0,gas,Bucharest-Sud power station_4 -- operating,e_w28251692-400,way/28251692-400,44.4233,25.979,False
+e_w28251692-400,ep_m_gas_steam_turbine_G100000400606,50.0,gas,Bucharest-Sud power station_1 -- mothballed,e_w28251692-400,way/28251692-400,44.4233,25.979,False
+e_w28251692-400,ep_m_gas_steam_turbine_G100000400607,50.0,gas,Bucharest-Sud power station_2 -- mothballed,e_w28251692-400,way/28251692-400,44.4233,25.979,False
+e_w28251692-400,ep_m_gas_steam_turbine_G100000400610,125.0,gas,Bucharest-Sud power station_5 -- mothballed,e_w28251692-400,way/28251692-400,44.4233,25.979,False
+e_w28251692-400,ep_m_gas_steam_turbine_G100000400611,125.0,gas,Bucharest-Sud power station_6 -- mothballed,e_w28251692-400,way/28251692-400,44.4233,25.979,False
+e_w30621463-220,ep_gas_steam_turbine_G100000412767,61.0,gas,Ploesti power station_ST4 -- operating,e_w30621463-220,way/30621463-220,44.9474,26.0862,False
+e_w39524931-400,ep_gas_combined_cycle_G100000410364,40.0,gas,Petromidia Refinery power station_CC2 -- construction,e_w39524931-400,way/39524931-400,44.3431,28.651,False
+e_w39524931-400,ep_gas_combined_cycle_G100000410365,40.0,gas,Petromidia Refinery power station_CC1 -- construction,e_w39524931-400,way/39524931-400,44.3431,28.651,False
+e_w39524931-400,ep_oil_steam_turbine_G100000412770,50.0,oil,Palas power station_2 -- operating,e_w39524931-400,way/39524931-400,44.1585,28.60767,False
+e_w39524931-400,ep_oil_steam_turbine_G100000412771,50.0,oil,Palas power station_1 -- operating,e_w39524931-400,way/39524931-400,44.1585,28.60767,False
+elc_spv_001,ep_solar_001__irena,114.8499055051355,solar,Aggregated Plant -- operating,elc_spv_001,RO64-220,44.87847213343201,27.16440921700746,False
+elc_spv_001,ep_solar_pv_001,59.099999999999994,solar,Aggregated Plant -- operating,elc_spv_001,RO64-220,44.525361168098925,27.109798338206158,False
+elc_spv_002,ep_solar_pv_002,34.4,solar,Aggregated Plant -- operating,elc_spv_002,RO72-400,44.54284792509218,28.754139237397684,False
+elc_spv_004,ep_solar_004__irena,113.35278261677131,solar,Aggregated Plant -- operating,elc_spv_004,way/230377203-220,46.09349241430811,27.610420103287698,False
+elc_spv_004,ep_solar_pv_004,23.299999999999997,solar,Aggregated Plant -- operating,elc_spv_004,way/230377203-220,45.727028571966315,27.9196119703675,False
+elc_spv_005,ep_solar_005__irena,113.1173118780935,solar,Aggregated Plant -- operating,elc_spv_005,way/205384220-220,44.04771302500628,26.000416979431296,False
+elc_spv_005,ep_solar_pv_005,850.5999999999999,solar,Aggregated Plant -- operating,elc_spv_005,way/205384220-220,44.03961381741943,25.613261149773297,False
+elc_spv_006,ep_solar_pv_006,309.7000000000001,solar,Aggregated Plant -- operating,elc_spv_006,RO49-400,44.49654671606638,22.31335286540856,False
+elc_spv_007,ep_solar_pv_007,39.800000000000004,solar,Aggregated Plant -- operating,elc_spv_007,way/228718321-400,44.85097738924892,23.50074278918903,False
+elc_spv_008,ep_solar_pv_008,140.4,solar,Aggregated Plant -- operating,elc_spv_008,way/208872170-220,46.01339531691708,20.798687551596554,False
+elc_spv_009,ep_solar_pv_009,16.5,solar,Aggregated Plant -- operating,elc_spv_009,RO41-400,45.044016813903355,21.517128126452974,False
+elc_spv_010,ep_solar_pv_010,68.9,solar,Aggregated Plant -- operating,elc_spv_010,way/191363648-400,47.56147851104746,22.74127008328999,False
+elc_spv_011,ep_solar_pv_011,204.9,solar,Aggregated Plant -- operating,elc_spv_011,RO5-400,46.706019223260896,21.85486880519235,False
+elc_spv_012,ep_solar_pv_012,138.1,solar,Aggregated Plant -- operating,elc_spv_012,RO29-220,45.17689481887146,24.682838429484683,False
+elc_spv_013,ep_solar_pv_013,3.0,solar,Aggregated Plant -- operating,elc_spv_013,way/266629200-220,47.56654006738339,26.038160184366586,False
+elc_spv_015,ep_solar_pv_015,19.3,solar,Aggregated Plant -- operating,elc_spv_015,way/208452701-220,46.846136801424265,25.028572015838748,False
+elc_spv_016,ep_solar_pv_016,202.8,solar,Aggregated Plant -- construction,elc_spv_016,RO24-220,45.814272731475015,23.893458378237884,False
+elc_spv_017,ep_solar_pv_017,65.3,solar,Aggregated Plant -- operating,elc_spv_017,way/267616969-220,46.56313982485475,22.94755450485924,False
+elc_won_004,ep_windon_wind_004,210.0,windon,Aggregated Plant -- operating,elc_won_004,way/686646896-400,47.47287532797895,27.397660804545843,False
+elc_won_004,ep_windon_wind_G100000919777,226.0,windon,Cwp Independenta I Wind Farm wind farm_1 -- operating,elc_won_004,way/686646896-400,46.9111,27.2408,False
+elc_won_005,ep_windon_wind_005,1896.0,windon,Aggregated Plant -- operating,elc_won_005,way/57888909-400,44.40176215513897,28.40820026816727,False
+elc_won_005,ep_windon_wind_G100000919820,252.0,windon,Fântânele – Cogealac wind farm_2 -- operating,elc_won_005,way/57888909-400,44.6091,28.567,False
+elc_won_005,ep_windon_wind_G100000919832,262.0,windon,Fântânele wind farm_2 -- operating,elc_won_005,way/57888909-400,44.6091,28.567,False
+elc_won_006,ep_windon_wind_006,20.0,windon,Aggregated Plant -- operating,elc_won_006,way/198310955-220,44.78858584139901,27.18693462174419,False
+elc_won_007,ep_windon_wind_007,229.99999999999997,windon,Aggregated Plant -- operating,elc_won_007,way/230377203-220,45.6964088904665,27.43457469371241,False
+elc_won_008,ep_windon_wind_008,65.0,windon,Aggregated Plant -- operating,elc_won_008,RO5-400,46.35365771244641,21.859712914805883,False
+elc_won_009,ep_windon_wind_009,84.0,windon,Aggregated Plant -- operating,elc_won_009,RO8-400,46.19271059676018,21.01673612072901,False
+elc_won_010,ep_windon_wind_010,48.0,windon,Aggregated Plant -- operating,elc_won_010,way/208872170-220,45.67871670739571,20.51597275256295,False
+elc_won_011,ep_windon_wind_011,1112.0,windon,Aggregated Plant -- operating,elc_won_011,way/208452701-220,46.49672351493682,25.04241352136724,False
+elc_won_011,ep_windon_wind_G100000919766,214.0,windon,Iberdrola Cogealac wind farm_1 -- operating,elc_won_011,way/208452701-220,45.9852,24.6859,False
+elc_won_011,ep_windon_wind_G100000919861,300.0,windon,Banca wind farm_1 -- operating,elc_won_011,way/208452701-220,45.9852,24.6859,False
+elc_won_011,ep_windon_wind_G100000919999,484.0,windon,Adamdel wind farm_1 -- operating,elc_won_011,way/208452701-220,45.9852,24.6859,False
+elc_won_014,ep_windon_wind_014,69.0,windon,Aggregated Plant -- operating,elc_won_014,way/807600590-220,44.04413861045028,25.185724506389235,False

@@ -1,0 +1,64 @@
+{
+  "_description": "VerveStacks Batch Processing Configuration Template",
+  "_usage": "Copy this file to batch_config.json and modify as needed, then run: python batch_process_models.py --config batch_config.json",
+  
+  "processing": {
+    "iso_selection": {
+      "method": "group",
+      "_method_options": ["isos", "group", "all"],
+      "isos": ["JPN", "DEU", "USA"],
+      "group": "SAMPLE",
+      "_group_options": ["EU", "G7", "G20", "BRICS", "ASEAN", "SAMPLE"]
+    },
+    
+    "parameters": {
+      "capacity_threshold": 100,
+      "efficiency_adjustment_gas": 1.0,
+      "efficiency_adjustment_coal": 1.0,
+      "tsopt": "ts12_clu",
+      "_tsopt_options": ["ts12_clu", "ts24_clu", "s1_d"]
+    },
+    
+    "options": {
+      "skip_timeslices": false,
+      "process_all_tsopts": false,
+      "grid_modeling": false,
+      "skip_re_shapes": false,
+      "auto_commit": true,
+      "overwrite_existing": false,
+      "force_reload": false
+    },
+    
+    "performance": {
+      "parallel_processing": false,
+      "max_workers": 3,
+      "_parallel_warning": "Parallel processing may cause issues with Excel/xlwings on some systems"
+    }
+  },
+  
+  "directories": {
+    "output_dir": "output",
+    "cache_dir": "cache", 
+    "log_dir": "batch_logs"
+  },
+  
+  "country_groups": {
+    "_description": "Custom country groups can be defined here",
+    "CUSTOM_EU_CORE": ["DEU", "FRA", "ITA", "ESP", "NLD"],
+    "CUSTOM_NORDIC": ["SWE", "DNK", "FIN", "NOR"],
+    "CUSTOM_LARGE_ECONOMIES": ["USA", "CHN", "JPN", "DEU", "IND", "GBR", "FRA", "BRA"]
+  },
+  
+  "error_handling": {
+    "continue_on_error": true,
+    "max_retries": 0,
+    "retry_delay_seconds": 60
+  },
+  
+  "notifications": {
+    "_description": "Future feature - email/webhook notifications on completion",
+    "enabled": false,
+    "email": "your-email@example.com",
+    "webhook_url": ""
+  }
+}

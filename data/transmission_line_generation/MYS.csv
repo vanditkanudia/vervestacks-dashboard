@@ -1,0 +1,155 @@
+comm-out,model_name,Capacity (MW),model_fuel,model_description,comm_id,bus_id,Latitude,Longitude,is_new_tech
+ELC,ep_bioenergy__ember,900.0,bioenergy,Aggregated Plant - EMBER Gap_Missing Bioenergy Capacity -- operating,,,,,False
+e_MY11-275,ep_gas_combined_cycle_G100000404359,220.0,gas,Kulim power station_1 -- operating,e_MY11-275,MY11-275,5.4312,100.6005,False
+e_MY13-275,ep_solar_pv_275,27.5,solar,Aggregated Plant -- operating,e_MY13-275,MY13-275,5.2735549082334545,100.57173444167294,False
+e_MY15-275,ep_hydro_dam_G100000602471,120.0,hydro,Kenering hydroelectric plant_ -- operating,e_MY15-275,MY15-275,5.2157,101.0982,False
+e_MY16-275,ep_hydro_ror_G100000602487,75.0,hydro,Tenom Pangi hydroelectric plant_ -- operating,e_MY16-275,MY16-275,5.1156,115.9125,False
+e_MY17-275,ep_solar_pv_275,6.6,solar,Aggregated Plant -- operating,e_MY17-275,MY17-275,5.160121094190261,102.78357847814829,False
+e_MY18-275,ep_hydro_dam_G100000602482,400.0,hydro,Sultan Mahmud Kenyir hydroelectric plant_ -- operating,e_MY18-275,MY18-275,5.024,102.9102,False
+e_MY18-275,ep_solar_pv_275,130.0,solar,Aggregated Plant -- operating,e_MY18-275,MY18-275,4.885645006561539,102.87424040659404,False
+e_MY2-275,ep_solar_pv_275,104.00000000000001,solar,Aggregated Plant -- operating,e_MY2-275,MY2-275,5.778605948707495,100.53424097959096,False
+e_MY20-275,ep_solar_pv_275,2.2,solar,Aggregated Plant -- operating,e_MY20-275,MY20-275,4.855924186324967,100.67342449578163,False
+e_MY24-275,ep_solar_pv_275,8.1,solar,Aggregated Plant -- operating,e_MY24-275,MY24-275,3.2419400520732835,101.52640121739843,False
+e_MY27-275,ep_solar_pv_275,13.6,solar,Aggregated Plant -- operating,e_MY27-275,MY27-275,3.3207450861497576,101.31920161004672,False
+e_MY28-275,ep_solar_pv_275,17.7,solar,Aggregated Plant -- operating,e_MY28-275,MY28-275,3.3156511458134172,101.52626659232628,False
+e_MY3-275,ep_solar_pv_275,45.0,solar,Aggregated Plant -- operating,e_MY3-275,MY3-275,5.888384724840999,102.03383024635063,False
+e_MY4-275,ep_hydro_dam_G100000602479,600.0,hydro,Pergau hydroelectric plant_ -- operating,e_MY4-275,MY4-275,5.6235,101.7061,False
+e_MY40-275,ep_coal_subcritical_G100000109681,300.0,coal,Sultan Aziz power station_Unit 3 -- operating,e_MY40-275,MY40-275,3.117221,101.320369,False
+e_MY40-275,ep_coal_subcritical_G100000109682,300.0,coal,Sultan Aziz power station_Unit 4 -- operating,e_MY40-275,MY40-275,3.117221,101.320369,False
+e_MY40-275,ep_coal_subcritical_G100000109683,500.0,coal,Sultan Aziz power station_Unit 5 -- operating,e_MY40-275,MY40-275,3.117221,101.320369,False
+e_MY40-275,ep_coal_subcritical_G100000109684,500.0,coal,Sultan Aziz power station_Unit 6 -- operating,e_MY40-275,MY40-275,3.117221,101.320369,False
+e_MY40-275,ep_gas_combined_cycle_G100000404367,600.0,gas,Palua Indah power station_1 -- construction,e_MY40-275,MY40-275,2.940219,101.262108,False
+e_MY40-275,ep_gas_combined_cycle_G100000404368,600.0,gas,Palua Indah power station_2 -- construction,e_MY40-275,MY40-275,2.940219,101.262108,False
+e_MY40-275,ep_gas_steam_turbine_G100000406296,282.0,gas,Sultan Aziz power station_2 -- operating,e_MY40-275,MY40-275,3.117221,101.320369,False
+e_MY40-275,ep_gas_steam_turbine_G100000406297,282.0,gas,Sultan Aziz power station_1 -- operating,e_MY40-275,MY40-275,3.117221,101.320369,False
+e_MY46-275,ep_gas_combined_cycle_G100000404319,375.0,gas,Connaught Bridge power station_CC2 -- operating,e_MY46-275,MY46-275,3.0433,101.4696,False
+e_MY48-275,ep_solar_pv_275,50.0,solar,Aggregated Plant -- construction,e_MY48-275,MY48-275,2.936220204799404,101.65004551094634,False
+e_MY50-275,ep_gas_gas_turbine_G100000404342,135.0,gas,Putrajaya power station_4 -- operating,e_MY50-275,MY50-275,2.9659,101.6847,False
+e_MY50-275,ep_gas_gas_turbine_G100000404343,135.0,gas,Putrajaya power station_5 -- operating,e_MY50-275,MY50-275,2.9659,101.6847,False
+e_MY50-275,ep_solar_pv_275,5.6,solar,Aggregated Plant -- operating,e_MY50-275,MY50-275,3.0923530666080916,101.68740527561093,False
+e_MY55-275,ep_solar_pv_275,50.0,solar,Aggregated Plant -- operating,e_MY55-275,MY55-275,2.630335368950633,101.66864159481823,False
+e_MY56-275,ep_solar_pv_275,30.5,solar,Aggregated Plant -- operating,e_MY56-275,MY56-275,2.711300326334913,101.8533370298239,False
+e_MY57-275,ep_gas_combined_cycle_G100000404333,720.0,gas,Kuala Langat power station_1 -- operating,e_MY57-275,MY57-275,2.79773,101.649744,False
+e_MY57-275,ep_solar_pv_275,10.0,solar,Aggregated Plant -- operating,e_MY57-275,MY57-275,2.90541950687946,101.82502642069258,False
+e_MY59-275,ep_hydro_dam_G100000602476,944.0,hydro,Murum hydroelectric plant_ -- operating,e_MY59-275,MY59-275,2.6493,114.3675,False
+e_MY60-500,ep_solar_pv_500,8.0,solar,Aggregated Plant -- operating,e_MY60-500,MY60-500,2.5400563250820603,101.59959235225942,False
+e_MY61-275,ep_solar_pv_275,2.0,solar,Aggregated Plant -- operating,e_MY61-275,MY61-275,2.544495179643373,101.78855602042329,False
+e_MY62-275,ep_gas_combined_cycle_G100000404353,750.0,gas,Tuanku Jaafar power station_1 -- operating,e_MY62-275,MY62-275,2.533,101.7912,False
+e_MY62-275,ep_gas_combined_cycle_G100000404354,750.0,gas,Tuanku Jaafar power station_2 -- operating,e_MY62-275,MY62-275,2.533,101.7912,False
+e_MY63-275,ep_solar_pv_275,6.2,solar,Aggregated Plant -- operating,e_MY63-275,MY63-275,2.1024318409634044,103.37932349345229,False
+e_MY65-275,ep_solar_pv_275,29.0,solar,Aggregated Plant -- operating,e_MY65-275,MY65-275,1.4378606869975263,103.76541177394508,False
+e_MY72-500,ep_solar_pv_500,2.5,solar,Aggregated Plant -- operating,e_MY72-500,MY72-500,1.278959767037302,103.42082959012065,False
+e_MY73-275,ep_gas_combined_cycle_G100000401008,720.0,gas,Pasir Gudang SIPP power station_1 -- operating,e_MY73-275,MY73-275,1.447111,103.883145,False
+e_MY73-275,ep_gas_combined_cycle_G100000401009,720.0,gas,Pasir Gudang SIPP power station_2 -- operating,e_MY73-275,MY73-275,1.447111,103.883145,False
+e_MY73-275,ep_m_gas_combined_cycle_G100000404362,275.0,gas,Pasir Gudang (TNB) power station_CC1 -- mothballed,e_MY73-275,MY73-275,1.4494,103.8812,False
+e_MY76-275,ep_gas_combined_cycle_G100000401010,950.0,gas,Pengerang Co-generation plant_1 -- operating,e_MY76-275,MY76-275,1.376965,104.174396,False
+e_MY76-275,ep_gas_combined_cycle_G100000401011,950.0,gas,Pengerang Co-generation plant_2 -- operating,e_MY76-275,MY76-275,1.376965,104.174396,False
+e_MY76-275,ep_solar_pv_275,19.8,solar,Aggregated Plant -- operating,e_MY76-275,MY76-275,1.534125294138266,104.11787599129467,False
+e_MY8-275,ep_hydro_dam_G100001027324,72.0,hydro,Bersia hydroelectric plant_ -- operating,e_MY8-275,MY8-275,5.4297,101.2092,False
+e_r16800772-275,ep_solar_pv_275,1.7,solar,Aggregated Plant -- operating,e_r16800772-275,relation/16800772-275,3.1698500961480964,101.73405913916058,False
+e_w1137308780-500,ep_solar_pv_500,8.7,solar,Aggregated Plant -- operating,e_w1137308780-500,way/1137308780-500,2.881154770512808,102.6574057496338,False
+e_w1137665609-275,ep_coal_CFB_G100000100481,300.0,coal,Balingian New power station_Phase I Unit 1 -- operating,e_w1137665609-275,way/1137665609-275,2.740897,112.47292,False
+e_w1137665609-275,ep_coal_CFB_G100000100482,300.0,coal,Balingian New power station_Phase I Unit 2 -- operating,e_w1137665609-275,way/1137665609-275,2.740897,112.47292,False
+e_w1137665609-275,ep_coal_subcritical_G100000107089,135.0,coal,Mukah coal power station_Unit 1 -- operating,e_w1137665609-275,way/1137665609-275,2.968499,112.323865,False
+e_w1137665609-275,ep_coal_subcritical_G100000107090,135.0,coal,Mukah coal power station_Unit 2 -- operating,e_w1137665609-275,way/1137665609-275,2.968499,112.323865,False
+e_w1285211558-275,ep_gas_combined_cycle_G100000404337,112.0,gas,Patau-Patau power station_1 -- operating,e_w1285211558-275,way/1285211558-275,5.31694,115.142799,False
+e_w1324718458-275,ep_gas_combined_cycle_G100000404322,310.0,gas,Gelugor power station_1 -- operating,e_w1324718458-275,way/1324718458-275,5.3803,100.3147,False
+e_w1324718458-275,ep_gas_combined_cycle_G100000404338,350.0,gas,Prai power station_1 -- operating,e_w1324718458-275,way/1324718458-275,5.3752,100.374,False
+e_w1324718458-275,ep_gas_combined_cycle_G100000404351,536.0,gas,Prai (TNB) power station_1 -- operating,e_w1324718458-275,way/1324718458-275,5.3744,100.3746,False
+e_w1324718458-275,ep_gas_combined_cycle_G100000404352,536.0,gas,Prai (TNB) power station_2 -- operating,e_w1324718458-275,way/1324718458-275,5.3744,100.3746,False
+e_w1324718458-275,ep_solar_pv_275,1.8,solar,Aggregated Plant -- operating,e_w1324718458-275,way/1324718458-275,5.244552359160312,100.42043358990377,False
+e_w162362039-500,ep_coal_subcritical_G100000105183,700.0,coal,Jimah power station_Unit 1 -- operating,e_w162362039-500,way/162362039-500,2.592342,101.731356,False
+e_w162362039-500,ep_coal_subcritical_G100000105184,700.0,coal,Jimah power station_Unit 2 -- operating,e_w162362039-500,way/162362039-500,2.592342,101.731356,False
+e_w162362039-500,ep_coal_ultra-supercritical_G100000105181,1000.0,coal,Jimah East power station_Unit 1 -- operating,e_w162362039-500,way/162362039-500,2.590259,101.724593,False
+e_w162362039-500,ep_coal_ultra-supercritical_G100000105182,1000.0,coal,Jimah East power station_Unit 2 -- operating,e_w162362039-500,way/162362039-500,2.590259,101.724593,False
+e_w235501402-500,ep_solar_pv_500,6.6,solar,Aggregated Plant -- operating,e_w235501402-500,way/235501402-500,1.8263059165078206,103.60282394078824,False
+e_w235851822-500,ep_coal_subcritical_G100000109948,700.0,coal,Tanjung Bin power station_Unit 1 -- operating,e_w235851822-500,way/235851822-500,1.334,103.5422,False
+e_w235851822-500,ep_coal_subcritical_G100000109949,700.0,coal,Tanjung Bin power station_Unit 2 -- operating,e_w235851822-500,way/235851822-500,1.334,103.5422,False
+e_w235851822-500,ep_coal_subcritical_G100000109950,700.0,coal,Tanjung Bin power station_Unit 3 -- operating,e_w235851822-500,way/235851822-500,1.334,103.5422,False
+e_w235851822-500,ep_coal_ultra-supercritical_G100000109951,1000.0,coal,Tanjung Bin power station_Unit 4 -- operating,e_w235851822-500,way/235851822-500,1.334,103.5422,False
+e_w235951698-275,ep_coal_subcritical_G100000108909,50.0,coal,Sejingkat power station_Unit 1 -- operating,e_w235951698-275,way/235951698-275,1.637733,110.465402,False
+e_w235951698-275,ep_coal_subcritical_G100000108910,50.0,coal,Sejingkat power station_Unit 2 -- operating,e_w235951698-275,way/235951698-275,1.637733,110.465402,False
+e_w235951698-275,ep_coal_subcritical_G100000108911,55.0,coal,Sejingkat power station_Unit 3 -- operating,e_w235951698-275,way/235951698-275,1.637733,110.465402,False
+e_w235951698-275,ep_coal_subcritical_G100000108912,55.0,coal,Sejingkat power station_Unit 4 -- operating,e_w235951698-275,way/235951698-275,1.637733,110.465402,False
+e_w273399306-275,ep_solar_pv_275,1.0,solar,Aggregated Plant -- operating,e_w273399306-275,way/273399306-275,2.945927127059365,101.69231011858368,False
+e_w286559638-275,ep_gas_combined_cycle_G100000404350,650.0,gas,Perlis power station_1 -- operating,e_w286559638-275,way/286559638-275,6.3404,100.1568,False
+e_w286559638-275,ep_solar_pv_275,8.7,solar,Aggregated Plant -- operating,e_w286559638-275,way/286559638-275,6.266496198754116,100.09146482985,False
+e_w286559640-275,ep_solar_pv_275,63.5,solar,Aggregated Plant -- operating,e_w286559640-275,way/286559640-275,6.335270603528207,100.38378522964172,False
+e_w313430364-275,ep_hydro_ror_G100001027325,54.0,hydro,Sungai Piah Lower hydroelectric plant_ -- operating,e_w313430364-275,way/313430364-275,4.3945,101.1947,False
+e_w313430364-275,ep_solar_pv_275,101.0,solar,Aggregated Plant -- construction,e_w313430364-275,way/313430364-275,4.566839826037092,101.00936913376671,False
+e_w314846699-275,ep_solar_pv_275,104.00000000000001,solar,Aggregated Plant -- operating,e_w314846699-275,way/314846699-275,5.818511711317317,102.3080956634796,False
+e_w316035705-500,ep_coal_subcritical_G100000106629,700.0,coal,Manjung power station_Unit 1 -- operating,e_w316035705-500,way/316035705-500,4.1586,100.6423,False
+e_w316035705-500,ep_coal_subcritical_G100000106630,700.0,coal,Manjung power station_Unit 2 -- operating,e_w316035705-500,way/316035705-500,4.1586,100.6423,False
+e_w316035705-500,ep_coal_subcritical_G100000106631,700.0,coal,Manjung power station_Unit 3 -- operating,e_w316035705-500,way/316035705-500,4.1586,100.6423,False
+e_w316035705-500,ep_coal_ultra-supercritical_G100000106632,1000.0,coal,Manjung power station_Unit 4 -- operating,e_w316035705-500,way/316035705-500,4.1586,100.6423,False
+e_w316035705-500,ep_coal_ultra-supercritical_G100000106633,1000.0,coal,Manjung power station_Unit 5 -- operating,e_w316035705-500,way/316035705-500,4.1586,100.6423,False
+e_w316035705-500,ep_solar_pv_500,14.599999999999998,solar,Aggregated Plant -- operating,e_w316035705-500,way/316035705-500,3.9902246049995016,100.56246978604733,False
+e_w317124038-275,ep_solar_pv_275,54.1,solar,Aggregated Plant -- operating,e_w317124038-275,way/317124038-275,4.684282807812929,101.07209363556908,False
+e_w320246940-275,ep_hydro_dam_G100000602468,108.0,hydro,Batang Ai hydroelectric plant_ -- operating,e_w320246940-275,way/320246940-275,1.1472,111.8742,False
+e_w320730394-275,ep_hydro_dam_G100000602486,348.0,hydro,Temenggor hydroelectric plant_ -- operating,e_w320730394-275,way/320730394-275,5.4056,101.2983,False
+e_w320730394-275,ep_solar_pv_275,1.2,solar,Aggregated Plant -- operating,e_w320730394-275,way/320730394-275,5.474083278512353,101.15782215902608,False
+e_w326097227-275,ep_solar_pv_275,8.7,solar,Aggregated Plant -- operating,e_w326097227-275,way/326097227-275,6.083793344569519,100.28712460057913,False
+e_w342946809-275,ep_solar_pv_275,8.0,solar,Aggregated Plant -- operating,e_w342946809-275,way/342946809-275,2.832616005842522,101.97030009733501,False
+e_w342946809-500,ep_solar_pv_500,4.5,solar,Aggregated Plant -- operating,e_w342946809-500,way/342946809-500,2.752396360808711,101.79776680499278,False
+e_w396464338-275,ep_solar_pv_275,58.300000000000004,solar,Aggregated Plant -- operating,e_w396464338-275,way/396464338-275,4.103120389931262,103.2294166649827,False
+e_w397123940-275,ep_solar_pv_275,31.0,solar,Aggregated Plant -- operating,e_w397123940-275,way/397123940-275,1.6642182017482623,103.74465105205924,False
+e_w450080688-275,ep_gas_combined_cycle_G100000404345,190.0,gas,Ranhill Powertron power station_I -- operating,e_w450080688-275,way/450080688-275,6.0918,116.163,False
+e_w450080688-275,ep_gas_combined_cycle_G100000404346,190.0,gas,Ranhill Powertron power station_II -- operating,e_w450080688-275,way/450080688-275,6.0918,116.163,False
+e_w450080688-275,ep_gas_combined_cycle_G100000404349,113.8,gas,Sepangar Bay Power Corporation (IPP) power station_1 -- operating,e_w450080688-275,way/450080688-275,6.0909,116.1667,False
+e_w460916219-275,ep_solar_pv_275,112.10000000000001,solar,Aggregated Plant -- operating,e_w460916219-275,way/460916219-275,5.5458770306530045,100.4597897654624,False
+e_w513270613-275,ep_solar_pv_275,5.7,solar,Aggregated Plant -- operating,e_w513270613-275,way/513270613-275,3.4247591299725952,101.65557045316554,False
+e_w513610290-275,ep_hydro_dam_G100000602466,1285.0,hydro,Baleh hydroelectric plant_ -- construction,e_w513610290-275,way/513610290-275,1.8058,113.7724,False
+e_w513610290-275,ep_hydro_dam_G100000604225,2400.0,hydro,Bakun hydroelectric plant_ -- operating,e_w513610290-275,way/513610290-275,2.7634,114.0551,False
+e_w513610290-275,ep_hydro_w513610290-275__irena,53.04452597098708,hydro,Aggregated Plant - IRENA Gap - way/513610290-275_Missing Hydro Capacity -- operating,e_w513610290-275,way/513610290-275,2.925605474651387,114.07986393173036,False
+e_w513950834-275,ep_gas_gas_turbine_G100000404325,104.0,gas,Miri power station_1 -- operating,e_w513950834-275,way/513950834-275,4.421462,114.01836,False
+e_w551727678-275,ep_solar_pv_275,211.60000000000002,solar,Aggregated Plant -- operating,e_w551727678-275,way/551727678-275,5.061737733609785,100.46922992691755,False
+e_w552589219-275,ep_gas_combined_cycle_G100000404347,652.0,gas,Lumut SEV power station_1 -- operating,e_w552589219-275,way/552589219-275,4.3908,100.5894,False
+e_w552589219-275,ep_gas_combined_cycle_G100000404348,652.0,gas,Lumut SEV power station_2 -- operating,e_w552589219-275,way/552589219-275,4.3908,100.5894,False
+e_w552589219-275,ep_m_gas_combined_cycle_G100000404321,640.0,gas,Lumut GB3 power station_1 -- mothballed,e_w552589219-275,way/552589219-275,4.3923,100.5897,False
+e_w552589219-275,ep_solar_pv_275,12.0,solar,Aggregated Plant -- operating,e_w552589219-275,way/552589219-275,4.568730252307496,100.62673176409814,False
+e_w552681748-275,ep_gas_steam_turbine_G100001030269,55.0,gas,Eastern Steel Kemaman plant power station_1 -- operating,e_w552681748-275,way/552681748-275,4.285062,103.432551,False
+e_w552681748-275,ep_gas_steam_turbine_G100001030270,50.0,gas,Eastern Steel Kemaman plant power station_2 -- operating,e_w552681748-275,way/552681748-275,4.285062,103.432551,False
+e_w552681748-275,ep_gas_steam_turbine_G100001030271,50.0,gas,Eastern Steel Kemaman plant power station_3 -- operating,e_w552681748-275,way/552681748-275,4.285062,103.432551,False
+e_w552780098-275,ep_solar_pv_275,215.00000000000003,solar,Aggregated Plant -- operating,e_w552780098-275,way/552780098-275,4.479407215065898,103.39691212035548,False
+e_w552820941-275,ep_solar_pv_275,31.2,solar,Aggregated Plant -- operating,e_w552820941-275,way/552820941-275,5.868789283304877,102.38645513901253,False
+e_w554295894-275,ep_gas_combined_cycle_G100000404327,322.0,gas,Pahlawan power station_1 -- operating,e_w554295894-275,way/554295894-275,2.2238,102.1519,False
+e_w554295894-275,ep_gas_combined_cycle_G100000404361,150.0,gas,Melaka Refinery power station_1 -- operating,e_w554295894-275,way/554295894-275,2.2704,102.1306,False
+e_w554456729-275,ep_gas_combined_cycle_G100000404332,720.0,gas,Telok Gong 2 power station_1 -- operating,e_w554456729-275,way/554456729-275,2.346181,102.050754,False
+e_w554456729-275,ep_gas_gas_turbine_G100000411110,110.0,gas,Powertek power station_4 -- operating,e_w554456729-275,way/554456729-275,2.345587,102.050544,False
+e_w554456729-275,ep_gas_gas_turbine_G100000411111,110.0,gas,Powertek power station_3 -- operating,e_w554456729-275,way/554456729-275,2.345587,102.050544,False
+e_w554456729-275,ep_gas_gas_turbine_G100000411112,110.0,gas,Powertek power station_2 -- operating,e_w554456729-275,way/554456729-275,2.345587,102.050544,False
+e_w554456729-275,ep_gas_gas_turbine_G100000411113,110.0,gas,Powertek power station_1 -- operating,e_w554456729-275,way/554456729-275,2.345587,102.050544,False
+e_w554456729-275,ep_solar_pv_275,7.3,solar,Aggregated Plant -- operating,e_w554456729-275,way/554456729-275,2.1914145656042243,101.8940320387154,False
+e_w554497441-275,ep_solar_pv_275,6.6,solar,Aggregated Plant -- operating,e_w554497441-275,way/554497441-275,2.474418810751173,101.95021652597045,False
+e_w554938963-275,ep_gas_combined_cycle_G100000401005,747.4,gas,Alor Gajah (Melaka) power station_1 -- operating,e_w554938963-275,way/554938963-275,2.382211,102.211561,False
+e_w554938963-275,ep_gas_combined_cycle_G100000401006,747.4,gas,Alor Gajah (Melaka) power station_2 -- operating,e_w554938963-275,way/554938963-275,2.382211,102.211561,False
+e_w554938963-275,ep_gas_combined_cycle_G100000401007,747.4,gas,Alor Gajah (Melaka) power station_3 -- operating,e_w554938963-275,way/554938963-275,2.382211,102.211561,False
+e_w554938963-275,ep_solar_pv_275,79.5,solar,Aggregated Plant -- operating,e_w554938963-275,way/554938963-275,2.1885494344458776,102.24135672530163,False
+e_w556802417-275,ep_solar_pv_275,321.0,solar,Aggregated Plant -- operating,e_w556802417-275,way/556802417-275,5.410940191773296,100.63537371855578,False
+e_w559750680-275,ep_solar_pv_275,261.0,solar,Aggregated Plant -- operating,e_w559750680-275,way/559750680-275,3.64401723339259,103.43047627819807,False
+e_w562298165-275,ep_gas_combined_cycle_G100000404355,95.0,gas,Kimanis power station_1 -- operating,e_w562298165-275,way/562298165-275,5.6483,115.8897,False
+e_w562298165-275,ep_gas_combined_cycle_G100000404356,95.0,gas,Kimanis power station_2 -- operating,e_w562298165-275,way/562298165-275,5.6483,115.8897,False
+e_w562298165-275,ep_gas_combined_cycle_G100000404357,95.0,gas,Kimanis power station_3 -- operating,e_w562298165-275,way/562298165-275,5.6483,115.8897,False
+e_w562298165-275,ep_gas_combined_cycle_G100000404358,100.0,gas,Kimanis SPR power station_1 -- operating,e_w562298165-275,way/562298165-275,5.657655,115.909262,False
+e_w662315251-275,ep_hydro_dam_G100000602477,300.0,hydro,Nenggiri hydroelectric plant_ -- construction,e_w662315251-275,way/662315251-275,4.1501,101.934,False
+e_w662315251-275,ep_hydro_dam_G100000602490,372.0,hydro,Ulu Jelai hydroelectric plant_ -- operating,e_w662315251-275,way/662315251-275,4.4351,101.5438,False
+e_w691633796-275,ep_gas_combined_cycle_G100000401015,421.0,gas,Tanjung Kidurong power station_CC2 -- operating,e_w691633796-275,way/691633796-275,3.2899,113.0942,False
+e_w691633796-275,ep_gas_combined_cycle_G100000401016,421.0,gas,Tanjung Kidurong power station_CC3 -- operating,e_w691633796-275,way/691633796-275,3.2899,113.0942,False
+e_w691633796-275,ep_gas_combined_cycle_G100000404326,317.0,gas,Tanjung Kidurong power station_CC1 -- operating,e_w691633796-275,way/691633796-275,3.2899,113.0942,False
+e_w755036990-275,ep_hydro_dam_G100000602480,150.0,hydro,Sultan Idris II Woh hydroelectric plant_ -- operating,e_w755036990-275,way/755036990-275,4.2375,101.3264,False
+e_w755036990-275,ep_hydro_dam_G100000602481,150.0,hydro,Sultan Idris Woh hydroelectric plant_ -- operating,e_w755036990-275,way/755036990-275,4.231,101.3229,False
+e_w755036990-275,ep_hydro_dam_G100000602483,100.0,hydro,Sultan Yussuf Jor hydroelectric plant_ -- operating,e_w755036990-275,way/755036990-275,4.3736,101.3364,False
+e_w755036990-275,ep_solar_pv_275,40.800000000000004,solar,Aggregated Plant -- operating,e_w755036990-275,way/755036990-275,4.304604011603714,101.12492537526181,False
+e_w755700381-275,ep_solar_pv_275,24.0,solar,Aggregated Plant -- operating,e_w755700381-275,way/755700381-275,4.423149043596533,103.29724260891868,False
+e_w892365043-275,ep_hydro_dam_G100000602470,265.0,hydro,Hulu Terengganu hydroelectric plant_ -- operating,e_w892365043-275,way/892365043-275,5.1519,102.6075,False
+e_w892365043-275,ep_hydro_w892365043-275__irena,15.940474029012549,hydro,Aggregated Plant - IRENA Gap - way/892365043-275_Missing Hydro Capacity -- operating,e_w892365043-275,way/892365043-275,5.3159517517196155,102.44864151534972,False
+elc_spv_001,ep_solar_pv_001,10.9,solar,Aggregated Plant -- operating,elc_spv_001,way/328415531-275,5.720572061724717,118.4743332795951,False
+elc_spv_002,ep_solar_pv_002,13.4,solar,Aggregated Plant -- operating,elc_spv_002,way/328415531-275,5.373157281049685,118.37903816344264,False
+elc_spv_003,ep_solar_pv_003,51.8,solar,Aggregated Plant -- operating,elc_spv_003,way/450080688-275,6.858519920242921,117.19996716846505,False
+elc_spv_006,ep_solar_006__irena,70.41786051112827,solar,Aggregated Plant -- operating,elc_spv_006,way/399307647-275,2.7496541763232467,112.83703535096596,False
+elc_spv_009,ep_solar_pv_009,1.9,solar,Aggregated Plant -- operating,elc_spv_009,MY68-275,1.973472741894431,112.01747634408295,False
+elc_spv_010,ep_solar_010__irena,70.44925479770421,solar,Aggregated Plant -- operating,elc_spv_010,way/691239971-275,1.2994838796365533,111.51751922463303,False
+elc_spv_010,ep_solar_pv_010,50.0,solar,Aggregated Plant -- construction,elc_spv_010,way/691239971-275,1.2339194028484963,111.09286187050742,False
+elc_spv_011,ep_solar_pv_011,17.9,solar,Aggregated Plant -- operating,elc_spv_011,way/1285211558-275,5.4508236917909905,115.91889956952706,False
+elc_spv_012,ep_solar_pv_012,1.3,solar,Aggregated Plant -- operating,elc_spv_012,way/1137665620-500,4.363826325130151,114.99534834815172,False
+elc_spv_015,ep_solar_015__irena,77.01888469116801,solar,Aggregated Plant -- operating,elc_spv_015,MY25-500,3.71466059227569,114.12195670770286,False
