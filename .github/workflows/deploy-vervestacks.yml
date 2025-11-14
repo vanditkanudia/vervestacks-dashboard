@@ -1,0 +1,130 @@
+name: Build & Deploy VerveStacks
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+env:
+  DEPLOY_ROOT: "C:\\inetpub\\vervestacks\\vervestacks-dashboard"
+  FRONTEND_DIR: "frontend"
+  BACKEND_DIR: "backend"
+  PYTHON_DIR: "python-service"
+
+  IIS_SITE_NAME: "vervestacks"
+
+  # Your actual Python path:
+  PYTHON_EXE: "D:\\Pyvenvs\\Scripts\\python.exe"
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ------------------------------
+      # BACKEND (no build, just deps)
+      # ------------------------------
+      - name: Install backend dependencies
+        shell: powershell
+        run: |
+          cd $env:BACKEND_DIR
+          npm install
+
+      # ------------------------------
+      # PYTHON SERVICE (using your python.exe)
+      # ------------------------------
+      - name: Setup python-service
+        shell: powershell
+        run: |
+          Write-Host "=== Python service setup ==="
+          cd $env:PYTHON_DIR
+
+          if (-not (Test-Path ".venv")) {
+            Write-Host "Creating venv using $env:PYTHON_EXE"
+            & $env:PYTHON_EXE -m venv .venv
+          }
+
+          Write-Host "Installing Python dependencies..."
+          .\.venv\Scripts\python.exe -m pip install --upgrade pip
+          .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+      # ------------------------------
+      # FRONTEND BUILD (CI=false to ignore warnings)
+      # ------------------------------
+      - name: Build frontend (prod)
+        shell: powershell
+        run: |
+          cd $env:FRONTEND_DIR
+          npm install
+
+          # Disable CI mode so React does NOT treat warnings as errors
+          $env:CI="false"
+
+          npm run build:prod
+
+      # ------------------------------
+      # STOP IIS
+      # ------------------------------
+      - name: Stop IIS site
+        shell: powershell
+        run: |
+          Import-Module WebAdministration
+          Stop-Website -Name $env:IIS_SITE_NAME -ErrorAction SilentlyContinue
+
+      # ------------------------------
+      # DEPLOY FRONTEND
+      # ------------------------------
+      - name: Deploy frontend to IIS
+        shell: powershell
+        run: |
+          $sourceBuild = Join-Path $env:FRONTEND_DIR "build"
+          $targetBuild = Join-Path $env:DEPLOY_ROOT "frontend\\build"
+          
+          if (-not (Test-Path $sourceBuild)) {
+            Write-Error "Frontend build folder missing: $sourceBuild"
+            exit 1
+          }
+
+          if (-not (Test-Path $targetBuild)) {
+            New-Item -ItemType Directory -Path $targetBuild | Out-Null
+          }
+
+          robocopy $sourceBuild $targetBuild /MIR /NFL /NDL /NJH /NJS /NP
+          if ($LASTEXITCODE -ge 8) { exit $LASTEXITCODE }
+
+      # ------------------------------
+      # DEPLOY BACKEND + PYTHON
+      # ------------------------------
+      - name: Deploy backend & python-service
+        shell: powershell
+        run: |
+          $backendTarget = Join-Path $env:DEPLOY_ROOT "backend"
+          $pythonTarget  = Join-Path $env:DEPLOY_ROOT "python-service"
+
+          if (-not (Test-Path $backendTarget)) {
+            New-Item -ItemType Directory -Path $backendTarget | Out-Null
+          }
+
+          if (-not (Test-Path $pythonTarget)) {
+            New-Item -ItemType Directory -Path $pythonTarget | Out-Null
+          }
+
+          Write-Host "=== Deploying backend ==="
+          robocopy $env:BACKEND_DIR $backendTarget /MIR /NFL /NDL /NJH /NJS /NP
+          if ($LASTEXITCODE -ge 8) { exit $LASTEXITCODE }
+
+          Write-Host "=== Deploying python-service ==="
+          robocopy $env:PYTHON_DIR $pythonTarget /MIR /NFL /NDL /NJH /NJS /NP
+          if ($LASTEXITCODE -ge 8) { exit $LASTEXITCODE }
+
+      # ------------------------------
+      # START IIS
+      # ------------------------------
+      - name: Start IIS Site
+        shell: powershell
+        run: |
+          Import-Module WebAdministration
+          Start-Website -Name $env:IIS_SITE_NAME
