@@ -80,15 +80,30 @@ jobs:
       - name: Deploy frontend to IIS
         shell: powershell
         run: |
+          Write-Host "=== Checking frontend build path ==="
+          Write-Host "FRONTEND_DIR = $env:FRONTEND_DIR"
+
           $sourceBuild = Join-Path $env:FRONTEND_DIR "build"
+          Write-Host "Source build folder should be: $sourceBuild"
+
+          if (-not (Test-Path $sourceBuild)) {
+            Write-Error "ERROR: Frontend build folder NOT found at $sourceBuild"
+            Write-Error "Check if npm run build:prod actually created a build folder."
+            exit 1
+          }
+
           $targetBuild = Join-Path $env:DEPLOY_ROOT "frontend\\build"
+          Write-Host "Deploying to: $targetBuild"
 
           if (-not (Test-Path $targetBuild)) {
             New-Item -ItemType Directory -Path $targetBuild | Out-Null
           }
 
           robocopy $sourceBuild $targetBuild /MIR /NFL /NDL /NJH /NJS /NP
-          if ($LASTEXITCODE -ge 8) { exit $LASTEXITCODE }
+          if ($LASTEXITCODE -ge 8) {
+            Write-Error "Robocopy failed with exit code $LASTEXITCODE"
+            exit $LASTEXITCODE
+          }
 
       # ------------------------------
       # DEPLOY BACKEND + PYTHON
