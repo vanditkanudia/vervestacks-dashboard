@@ -100,10 +100,16 @@ jobs:
           }
 
           robocopy $sourceBuild $targetBuild /MIR /NFL /NDL /NJH /NJS /NP
-          if ($LASTEXITCODE -ge 8) {
-            Write-Error "Robocopy failed with exit code $LASTEXITCODE"
-            exit $LASTEXITCODE
+          $rc = $LASTEXITCODE
+          Write-Host "Robocopy exited with code $rc"
+
+          if ($rc -ge 8) {
+            Write-Error "Robocopy failed with exit code $rc"
+            exit $rc
           }
+
+          # Normalize robocopy success exit codes (0–7) to 0 for GitHub Actions
+          exit 0
 
       # ------------------------------
       # DEPLOY BACKEND + PYTHON
@@ -121,11 +127,28 @@ jobs:
             New-Item -ItemType Directory -Path $pythonTarget | Out-Null
           }
 
+          Write-Host "=== Deploying backend ==="
           robocopy $env:BACKEND_DIR $backendTarget /MIR /NFL /NDL /NJH /NJS /NP
-          if ($LASTEXITCODE -ge 8) { exit $LASTEXITCODE }
+          $rcBackend = $LASTEXITCODE
+          Write-Host "Backend robocopy exited with code $rcBackend"
 
+          if ($rcBackend -ge 8) {
+            Write-Error "Backend robocopy failed with exit code $rcBackend"
+            exit $rcBackend
+          }
+
+          Write-Host "=== Deploying python-service ==="
           robocopy $env:PYTHON_DIR $pythonTarget /MIR /NFL /NDL /NJH /NJS /NP
-          if ($LASTEXITCODE -ge 8) { exit $LASTEXITCODE }
+          $rcPy = $LASTEXITCODE
+          Write-Host "Python-service robocopy exited with code $rcPy"
+
+          if ($rcPy -ge 8) {
+            Write-Error "Python-service robocopy failed with exit code $rcPy"
+            exit $rcPy
+          }
+
+          # Normalize 0–7 as success
+          exit 0
 
       # ------------------------------
       # START IIS
