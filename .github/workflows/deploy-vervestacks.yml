@@ -57,6 +57,7 @@ jobs:
 
           # Remove existing mapping if any
           net use \\192.168.0.7\kanvault /delete /y 2>$null | Out-Null
+          $global:LASTEXITCODE = 0
 
           # Map using credentials
           net use \\192.168.0.7\kanvault /user:amit $env:KANVAULT_PASSWORD
