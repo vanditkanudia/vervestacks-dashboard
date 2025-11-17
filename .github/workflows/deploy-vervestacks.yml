@@ -1,4 +1,4 @@
-name: Build & Deploy VerveStacks
+name: Build & Deploy VerveStacks (LOCAL)
 
 on:
   push:
@@ -6,21 +6,20 @@ on:
   workflow_dispatch: {}
 
 env:
-  DEPLOY_ROOT: "C:\\inetpub\\vervestacks\\vervestacks-dashboard"
+  # Local IIS deployment path (Option B)
+  DEPLOY_ROOT: "C:\\inetpub\\VerveStacks\\vervestacks-dashboard"
 
-  # Correct paths (your project is under vervestacks-dashboard)
+  # Project folders inside your repo
   BACKEND_DIR: "vervestacks-dashboard/backend"
   FRONTEND_DIR: "vervestacks-dashboard/frontend"
   PYTHON_DIR: "vervestacks-dashboard/python-service"
 
-  IIS_SITE_NAME: "vervestacks"
-
-  # Your server's Python executable
+  # Local Python interpreter
   PYTHON_EXE: "D:\\Pyvenvs\\Scripts\\python.exe"
 
 jobs:
-  build-and-deploy:
-    runs-on: self-hosted
+  build-and-deploy-local:
+    runs-on: self-hosted   # your local Windows runner
 
     steps:
       - name: Checkout repository
@@ -32,6 +31,8 @@ jobs:
       - name: Install backend dependencies
         shell: powershell
         run: |
+          Write-Host "=== Backend: npm install ==="
+          Write-Host "BACKEND_DIR = $env:BACKEND_DIR"
           cd $env:BACKEND_DIR
           npm install
 
@@ -41,11 +42,18 @@ jobs:
       - name: Setup python-service
         shell: powershell
         run: |
+          Write-Host "=== Python service: venv + requirements ==="
+          Write-Host "PYTHON_DIR  = $env:PYTHON_DIR"
+          Write-Host "PYTHON_EXE  = $env:PYTHON_EXE"
+
           cd $env:PYTHON_DIR
 
           if (-not (Test-Path ".venv")) {
-            Write-Host "Creating venv using $env:PYTHON_EXE"
+            Write-Host "Creating virtual environment using $env:PYTHON_EXE ..."
             & $env:PYTHON_EXE -m venv .venv
+          }
+          else {
+            Write-Host "Virtual environment .venv already exists, reusing it."
           }
 
           .\.venv\Scripts\python.exe -m pip install --upgrade pip
@@ -57,77 +65,79 @@ jobs:
       - name: Build frontend (CI=false)
         shell: powershell
         run: |
+          Write-Host "=== Frontend: npm install + build:prod ==="
+          Write-Host "FRONTEND_DIR = $env:FRONTEND_DIR"
+
           cd $env:FRONTEND_DIR
           npm install
 
-          # Disable warnings-as-errors
-          $env:CI="false"
+          # Prevent eslint warnings from failing the build
+          $env:CI = "false"
 
           npm run build:prod
 
       # ------------------------------
-      # STOP IIS
+      # DEPLOY FRONTEND TO LOCAL IIS FOLDER
       # ------------------------------
-      - name: Stop IIS site
+      - name: Deploy frontend to local IIS folder
         shell: powershell
         run: |
-          Import-Module WebAdministration
-          Stop-Website -Name $env:IIS_SITE_NAME -ErrorAction SilentlyContinue
-
-      # ------------------------------
-      # DEPLOY FRONTEND
-      # ------------------------------
-      - name: Deploy frontend to IIS
-        shell: powershell
-        run: |
-          Write-Host "=== Checking frontend build path ==="
+          Write-Host "=== Deploying frontend locally ==="
           Write-Host "FRONTEND_DIR = $env:FRONTEND_DIR"
+          Write-Host "DEPLOY_ROOT  = $env:DEPLOY_ROOT"
 
           $sourceBuild = Join-Path $env:FRONTEND_DIR "build"
-          Write-Host "Source build folder should be: $sourceBuild"
+          Write-Host "Source build folder: $sourceBuild"
 
           if (-not (Test-Path $sourceBuild)) {
             Write-Error "ERROR: Frontend build folder NOT found at $sourceBuild"
-            Write-Error "Check if npm run build:prod actually created a build folder."
             exit 1
           }
 
-          $targetBuild = Join-Path $env:DEPLOY_ROOT "frontend\\build"
-          Write-Host "Deploying to: $targetBuild"
-
-          if (-not (Test-Path $targetBuild)) {
-            New-Item -ItemType Directory -Path $targetBuild | Out-Null
+          # For Option B: index.html goes directly under vervestacks-dashboard
+          $targetRoot = $env:DEPLOY_ROOT
+          if (-not (Test-Path $targetRoot)) {
+            Write-Host "DEPLOY_ROOT not found, creating: $targetRoot"
+            New-Item -ItemType Directory -Path $targetRoot | Out-Null
           }
 
-          robocopy $sourceBuild $targetBuild /MIR /NFL /NDL /NJH /NJS /NP
+          Write-Host "Running robocopy from $sourceBuild to $targetRoot ..."
+          robocopy $sourceBuild $targetRoot /MIR /NFL /NDL /NJH /NJS /NP
           $rc = $LASTEXITCODE
-          Write-Host "Robocopy exited with code $rc"
+          Write-Host "Frontend robocopy exited with code $rc"
 
           if ($rc -ge 8) {
-            Write-Error "Robocopy failed with exit code $rc"
+            Write-Error "Frontend robocopy failed with exit code $rc"
             exit $rc
           }
 
-          # Normalize robocopy success exit codes (0–7) to 0 for GitHub Actions
+          # Normalize robocopy success codes 0–7 to 0 for GitHub Actions
           exit 0
 
       # ------------------------------
-      # DEPLOY BACKEND + PYTHON
+      # DEPLOY BACKEND + PYTHON FILES LOCALLY
       # ------------------------------
-      - name: Deploy backend & python-service
+      - name: Deploy backend & python-service locally
         shell: powershell
         run: |
+          Write-Host "=== Deploying backend & python-service locally ==="
+          Write-Host "DEPLOY_ROOT  = $env:DEPLOY_ROOT"
+          Write-Host "BACKEND_DIR  = $env:BACKEND_DIR"
+          Write-Host "PYTHON_DIR   = $env:PYTHON_DIR"
+
           $backendTarget = Join-Path $env:DEPLOY_ROOT "backend"
           $pythonTarget  = Join-Path $env:DEPLOY_ROOT "python-service"
 
           if (-not (Test-Path $backendTarget)) {
+            Write-Host "Creating backend target folder: $backendTarget"
             New-Item -ItemType Directory -Path $backendTarget | Out-Null
           }
           if (-not (Test-Path $pythonTarget)) {
+            Write-Host "Creating python-service target folder: $pythonTarget"
             New-Item -ItemType Directory -Path $pythonTarget | Out-Null
           }
 
-          Write-Host "=== Deploying backend ==="
+          Write-Host "Copying backend files..."
           robocopy $env:BACKEND_DIR $backendTarget /MIR /NFL /NDL /NJH /NJS /NP
           $rcBackend = $LASTEXITCODE
           Write-Host "Backend robocopy exited with code $rcBackend"
@@ -137,7 +147,7 @@ jobs:
             exit $rcBackend
           }
 
-          Write-Host "=== Deploying python-service ==="
+          Write-Host "Copying python-service files..."
           robocopy $env:PYTHON_DIR $pythonTarget /MIR /NFL /NDL /NJH /NJS /NP
           $rcPy = $LASTEXITCODE
           Write-Host "Python-service robocopy exited with code $rcPy"
@@ -149,12 +159,3 @@ jobs:
 
           # Normalize 0–7 as success
           exit 0
-
-      # ------------------------------
-      # START IIS
-      # ------------------------------
-      - name: Start IIS Site
-        shell: powershell
-        run: |
-          Import-Module WebAdministration
-          Start-Website -Name $env:IIS_SITE_NAME
