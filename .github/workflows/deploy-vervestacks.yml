@@ -1,4 +1,4 @@
-name: Build & Deploy VerveStacks (LOCAL)
+name: Build & Deploy VerveStacks (LOCAL + FUTURE HETZNER)
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch: {}
 
 env:
-  # Local IIS deployment path (Option B)
+  # Local IIS deployment path (your Option B)
   DEPLOY_ROOT: "C:\\inetpub\\VerveStacks\\vervestacks-dashboard"
 
   # Project folders inside your repo
@@ -17,13 +17,116 @@ env:
   # Local Python interpreter
   PYTHON_EXE: "D:\\Pyvenvs\\Scripts\\python.exe"
 
+  # ===== ENVIRONMENT FLAGS =====
+  # Whether to update local IIS site (this machine)
+  Update_Data_On_Local: "true"
+
+  # Whether to update Hetzner server (remote) - for future use
+  Update_Data_On_Hetzner: "false"
+
+  # ===== UNC source paths on kanvault =====
+  SOURCE_OSM_HARISH: '\\\\192.168.0.7\\kanvault\\KanORS_Data\\VerveStacks\\OSM-kan-prebuilt\\harish'
+  SOURCE_TRANSMISSION: '\\\\192.168.0.7\\kanvault\\KanORS_Data\\VerveStacks\\transmission_line_generation'
+  SOURCE_ATLITE: '\\\\192.168.0.7\\kanvault\\KanORS_Data\\REZoning data\\Atlite_data\\Atlite_data_optimized'
+  SOURCE_REZONING_WORLD: '\\\\192.168.0.7\\kanvault\\KanORS_Data\\REZoning data\\REZoning_world_data'
+
+  # ===== Local destination data paths =====
+  DEST_OSM: 'C:\\inetpub\\VerveStacks\\data\\OSM-kan-prebuilt'
+  DEST_TRANSMISSION: 'C:\\inetpub\\VerveStacks\\data\\transmission_line_generation'
+  DEST_ATLITE: 'C:\\inetpub\\VerveStacks\\data\\hourly_profiles\\Atlite_data'
+  DEST_REZONING: 'C:\\inetpub\\VerveStacks\\data\\REZoning'
+
 jobs:
-  build-and-deploy-local:
+  build-and-deploy:
     runs-on: self-hosted   # your local Windows runner
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      # ------------------------------
+      # MAP KANVAULT SHARE
+      # ------------------------------
+      - name: Map kanvault share (UNC path)
+        if: env.Update_Data_On_Local == 'true'
+        shell: powershell
+        env:
+          KANVAULT_PASSWORD: ${{ secrets.KANVAULT_PASSWORD }}
+        run: |
+          Write-Host "=== Mapping \\192.168.0.7\kanvault with user 'amit' ==="
+
+          # Remove existing mapping if any
+          net use \\192.168.0.7\kanvault /delete /y 2>$null | Out-Null
+
+          # Map using credentials
+          net use \\192.168.0.7\kanvault /user:amit $env:KANVAULT_PASSWORD
+
+          if ($LASTEXITCODE -ne 0) {
+            Write-Error "Failed to map \\192.168.0.7\kanvault. Exit code: $LASTEXITCODE"
+            exit $LASTEXITCODE
+          }
+
+          Write-Host "Network share mapped successfully."
+
+      # ------------------------------
+      # SYNC UNC DATA -> LOCAL DATA FOLDERS
+      # ------------------------------
+      - name: Sync kanvault data to local data folders
+        if: env.Update_Data_On_Local == 'true'
+        shell: powershell
+        run: |
+          Write-Host "=== Syncing data from kanvault UNC to local C:\\inetpub\\VerveStacks\\data ==="
+
+          # Ensure parent data folders exist
+          $destRoots = @(
+            $env:DEST_OSM,
+            $env:DEST_TRANSMISSION,
+            $env:DEST_ATLITE,
+            $env:DEST_REZONING
+          )
+
+          foreach ($d in $destRoots) {
+            if (-not (Test-Path $d)) {
+              Write-Host "Creating local data folder: $d"
+              New-Item -ItemType Directory -Path $d -Force | Out-Null
+            }
+          }
+
+          # 1) OSM-kan-prebuilt\harish  ->  C:\inetpub\VerveStacks\data\OSM-kan-prebuilt
+          Write-Host "Syncing OSM-kan-prebuilt (harish)..."
+          robocopy $env:SOURCE_OSM_HARISH $env:DEST_OSM /MIR /NFL /NDL /NJH /NJS /NP
+          $rc1 = $LASTEXITCODE
+          Write-Host "harish robocopy exit code: $rc1"
+
+          # 2) transmission_line_generation  ->  C:\inetpub\VerveStacks\data\transmission_line_generation
+          Write-Host "Syncing transmission_line_generation..."
+          robocopy $env:SOURCE_TRANSMISSION $env:DEST_TRANSMISSION /MIR /NFL /NDL /NJH /NJS /NP
+          $rc2 = $LASTEXITCODE
+          Write-Host "transmission_line_generation robocopy exit code: $rc2"
+
+          # 3) Atlite_data_optimized  ->  C:\inetpub\VerveStacks\data\hourly_profiles\Atlite_data
+          Write-Host "Syncing Atlite_data_optimized..."
+          robocopy $env:SOURCE_ATLITE $env:DEST_ATLITE /MIR /NFL /NDL /NJH /NJS /NP
+          $rc3 = $LASTEXITCODE
+          Write-Host "Atlite_data_optimized robocopy exit code: $rc3"
+
+          # 4) REZoning_world_data  ->  C:\inetpub\VerveStacks\data\REZoning
+          Write-Host "Syncing REZoning_world_data..."
+          robocopy $env:SOURCE_REZONING_WORLD $env:DEST_REZONING /MIR /NFL /NDL /NJH /NJS /NP
+          $rc4 = $LASTEXITCODE
+          Write-Host "REZoning_world_data robocopy exit code: $rc4"
+
+          # Evaluate robocopy exit codes
+          $codes = @($rc1, $rc2, $rc3, $rc4)
+          $maxCode = ($codes | Measure-Object -Maximum).Maximum
+
+          if ($maxCode -ge 8) {
+            Write-Error "At least one data sync robocopy failed. Highest exit code: $maxCode"
+            exit $maxCode
+          }
+
+          # Normalize 0–7 as success
+          exit 0
 
       # ------------------------------
       # BACKEND (npm install only)
@@ -77,12 +180,37 @@ jobs:
           npm run build:prod
 
       # ------------------------------
-      # DEPLOY FRONTEND TO LOCAL IIS FOLDER
+      # RUN start.bat BEFORE DEPLOY
       # ------------------------------
-      - name: Deploy frontend to local IIS folder
+      - name: Run start.bat to verify latest changes
+        if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
-          Write-Host "=== Deploying frontend locally ==="
+          Write-Host "=== Running start.bat before deployment ==="
+          $scriptPath = Join-Path $env:GITHUB_WORKSPACE 'vervestacks-dashboard\start.bat'
+          if (-not (Test-Path $scriptPath)) {
+            Write-Error "start.bat not found at $scriptPath"
+            exit 1
+          }
+
+          Write-Host "Executing $scriptPath ..."
+          & $scriptPath
+
+          if ($LASTEXITCODE -ne 0) {
+            Write-Error "start.bat failed with exit code $LASTEXITCODE. Aborting deployment."
+            exit $LASTEXITCODE
+          }
+
+          Write-Host "start.bat completed successfully. Proceeding to deployment."
+
+      # ------------------------------
+      # DEPLOY TO LOCAL IIS (controlled by Update_Data_On_Local)
+      # ------------------------------
+      - name: Deploy frontend to local IIS folder
+        if: env.Update_Data_On_Local == 'true'
+        shell: powershell
+        run: |
+          Write-Host "=== Deploying frontend to LOCAL IIS ==="
           Write-Host "FRONTEND_DIR = $env:FRONTEND_DIR"
           Write-Host "DEPLOY_ROOT  = $env:DEPLOY_ROOT"
 
@@ -94,7 +222,7 @@ jobs:
             exit 1
           }
 
-          # For Option B: index.html goes directly under vervestacks-dashboard
+          # Option B: index.html goes directly under vervestacks-dashboard
           $targetRoot = $env:DEPLOY_ROOT
           if (-not (Test-Path $targetRoot)) {
             Write-Host "DEPLOY_ROOT not found, creating: $targetRoot"
@@ -111,16 +239,14 @@ jobs:
             exit $rc
           }
 
-          # Normalize robocopy success codes 0–7 to 0 for GitHub Actions
+          # Normalize robocopy success codes 0–7 as success
           exit 0
 
-      # ------------------------------
-      # DEPLOY BACKEND + PYTHON FILES LOCALLY
-      # ------------------------------
-      - name: Deploy backend & python-service locally
+      - name: Deploy backend & python-service to LOCAL IIS folder
+        if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
-          Write-Host "=== Deploying backend & python-service locally ==="
+          Write-Host "=== Deploying backend & python-service to LOCAL IIS ==="
           Write-Host "DEPLOY_ROOT  = $env:DEPLOY_ROOT"
           Write-Host "BACKEND_DIR  = $env:BACKEND_DIR"
           Write-Host "PYTHON_DIR   = $env:PYTHON_DIR"
@@ -159,3 +285,13 @@ jobs:
 
           # Normalize 0–7 as success
           exit 0
+
+      # ------------------------------
+      # FUTURE: DEPLOY TO HETZNER
+      # ------------------------------
+      - name: Deploy to Hetzner server (placeholder)
+        if: env.Update_Data_On_Hetzner == 'true'
+        shell: powershell
+        run: |
+          Write-Host "=== Update_Data_On_Hetzner == true ==="
+          Write-Host "Hetzner deployment steps are not implemented yet."
