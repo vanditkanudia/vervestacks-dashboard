@@ -1,305 +1,175 @@
-name: Build & Deploy VerveStacks (LOCAL + FUTURE HETZNER)
+name: Deploy VerveStacks Dashboard
 
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch: {}
+    branches: [ "main" ]
 
 env:
-  # Local IIS deployment path (your Option B)
-  DEPLOY_ROOT: "C:\\inetpub\\VerveStacks\\vervestacks-dashboard"
-
-  # Project folders inside your repo
-  BACKEND_DIR: "vervestacks-dashboard/backend"
-  FRONTEND_DIR: "vervestacks-dashboard/frontend"
-  PYTHON_DIR: "vervestacks-dashboard/python-service"
-
-  # Local Python interpreter
-  PYTHON_EXE: "D:\\Pyvenvs\\Scripts\\python.exe"
-
-  # ===== ENVIRONMENT FLAGS =====
-  # Whether to update local IIS site (this machine)
+  # Deployment Flags
   Update_Data_On_Local: "true"
-
-  # Whether to update Hetzner server (remote) - for future use
   Update_Data_On_Hetzner: "false"
 
-  # ===== UNC source paths on kanvault =====
-  SOURCE_OSM_HARISH: '\\\\192.168.0.7\\kanvault\\KanORS_Data\\VerveStacks\\OSM-kan-prebuilt\\harish'
-  SOURCE_TRANSMISSION: '\\\\192.168.0.7\\kanvault\\KanORS_Data\\VerveStacks\\transmission_line_generation'
-  SOURCE_ATLITE: '\\\\192.168.0.7\\kanvault\\KanORS_Data\\REZoning data\\Atlite_data\\Atlite_data_optimized'
-  SOURCE_REZONING_WORLD: '\\\\192.168.0.7\\kanvault\\KanORS_Data\\REZoning data\\REZoning_world_data'
+  # Local Paths
 
-  # ===== Local destination data paths =====
-  DEST_OSM: 'C:\\inetpub\\VerveStacks\\data\\OSM-kan-prebuilt'
-  DEST_TRANSMISSION: 'C:\\inetpub\\VerveStacks\\data\\transmission_line_generation'
-  DEST_ATLITE: 'C:\\inetpub\\VerveStacks\\data\\hourly_profiles\\Atlite_data'
-  DEST_REZONING: 'C:\\inetpub\\VerveStacks\\data\\REZoning'
+  # Source UNC paths
+
+  # Destination Paths
+  DEPLOY_ROOT: 'C:\inetpub\VerveStacks\vervestacks-dashboard'
+  DATA_ROOT: 'C:\inetpub\VerveStacks\data'
+
+  # Source UNC paths
+  SOURCE_OSM_HARISH: '\\192.168.0.7\kanvault\KanORS_Data\VerveStacks\OSM-kan-prebuilt\harish'
+  SOURCE_TRANSMISSION: '\\192.168.0.7\kanvault\KanORS_Data\VerveStacks\transmission_line_generation'
+  SOURCE_ATLITE: '\\192.168.0.7\kanvault\KanORS_Data\REZoning data\Atlite_data\Atlite_data_optimized'
+  SOURCE_REZONING_WORLD: '\\192.168.0.7\kanvault\KanORS_Data\REZoning data\REZoning_world_data'
+
+  # Destination Paths
+  DEST_OSM: 'C:\inetpub\VerveStacks\data\OSM-kan-prebuilt'
+  DEST_TRANSMISSION: 'C:\inetpub\VerveStacks\data\transmission_line_generation'
+  DEST_ATLITE: 'C:\inetpub\VerveStacks\data\hourly_profiles\Atlite_data'
+  DEST_REZONING: 'C:\inetpub\VerveStacks\data\REZoning'
+
+  # Code folders
+  BACKEND_DIR: vervestacks-dashboard/backend
+  FRONTEND_DIR: vervestacks-dashboard/frontend
+  PYTHON_DIR: vervestacks-dashboard/python-service
+
+  # Python executable
+  PYTHON_EXE: "D:\\Pyvenvs\\Scripts\\python.exe"
 
 jobs:
-  build-and-deploy:
-    runs-on: self-hosted   # your local Windows runner
+  deploy:
+    runs-on: self-hosted
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout Code
+      uses: actions/checkout@v4
 
-      # ------------------------------
-      # MAP KANVAULT SHARE
-      # ------------------------------
-      - name: Map kanvault share (UNC path)
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        env:
-          KANVAULT_PASSWORD: ${{ secrets.KANVAULT_PASSWORD }}
-        run: |
-          Write-Host "=== Mapping \\192.168.0.7\kanvault with user 'amit' ==="
+    # =========================================
+    # MAP UNC SHARE WITH CREDENTIALS
+    # =========================================
+    - name: Map kanvault drive
+      if: env.Update_Data_On_Local == 'true'
+      shell: powershell
+      env:
+        KANVAULT_PASSWORD: ${{ secrets.KANVAULT_PASSWORD }}
+      run: |
+        Write-Host "=== Mapping \\192.168.0.7\kanvault ==="
 
-          # Remove existing mapping if any
-          try { 
-             net use \\192.168.0.7\kanvault /delete /y 2>$null | Out-Null
+        try {
+          net use \\192.168.0.7\kanvault /delete /y 2>$null | Out-Null
+        } catch {
+          Write-Host "No existing mapping found. Continuing..."
+        }
+        $global:LASTEXITCODE = 0
+
+        net use \\192.168.0.7\kanvault /user:amit $env:KANVAULT_PASSWORD
+
+        if ($LASTEXITCODE -ne 0) {
+          Write-Error "Failed to map UNC share"
+          exit $LASTEXITCODE
+        }
+
+        Write-Host "UNC network share mapped successfully."
+
+    # =========================================
+    # SYNC KANVAULT DATA TO LOCAL DESTINATIONS
+    # =========================================
+    - name: Sync kanvault data → local data folders
+      if: env.Update_Data_On_Local == 'true'
+      shell: powershell
+      run: |
+        Write-Host "=== Syncing kanvault data to local data folders ==="
+
+        $destRoots = @(
+          $env:DEST_OSM,
+          $env:DEST_TRANSMISSION,
+          $env:DEST_ATLITE,
+          $env:DEST_REZONING
+        )
+
+        foreach ($d in $destRoots) {
+          if (-not (Test-Path $d)) {
+            Write-Host "Creating folder: $d"
+            [System.IO.Directory]::CreateDirectory($d) | Out-Null
           }
-          catch {
-            Write-Host "No existing mapping to delete (or delete failed). Ignoring and continuing."
-          }
+        }
 
-          $global:LASTEXITCODE = 0
+        Write-Host "Syncing OSM-kan-prebuilt/harish → DEST_OSM"
+        robocopy $env:SOURCE_OSM_HARISH $env:DEST_OSM /MIR /NFL /NDL /NJH /NJS /NP
 
-             # Map using credentials
-          net use \\192.168.0.7\kanvault /user:amit $env:KANVAULT_PASSWORD
+        Write-Host "Syncing transmission_line_generation → DEST_TRANSMISSION"
+        robocopy $env:SOURCE_TRANSMISSION $env:DEST_TRANSMISSION /MIR /NFL /NDL /NJH /NJS /NP
 
-          $exitcode = $LASTEXITCODE
-          if ($LASTEXITCODE -ne 0) {
-            Write-Error "Failed to map \\192.168.0.7\kanvault. Exit code: $LASTEXITCODE"
-            exit $LASTEXITCODE
-          }
+        Write-Host "Syncing Atlite_data_optimized → DEST_ATLITE"
+        robocopy $env:SOURCE_ATLITE $env:DEST_ATLITE /MIR /NFL /NDL /NJH /NJS /NP
 
-          Write-Host "Network share mapped successfully."
+        Write-Host "Syncing REZoning_world_data → DEST_REZONING"
+        robocopy $env:SOURCE_REZONING_WORLD $env:DEST_REZONING /MIR /NFL /NDL /NJH /NJS /NP
 
-      # ------------------------------
-      # SYNC UNC DATA -> LOCAL DATA FOLDERS
-      # ------------------------------
-      - name: Sync kanvault data to local data folders
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        run: |
-          Write-Host "=== Syncing data from kanvault UNC to local C:\\inetpub\\VerveStacks\\data ==="
+    # =========================================
+    # RUN START.BAT BEFORE DEPLOYMENT
+    # =========================================
+    - name: Run start.bat before deployment
+      shell: powershell
+      run: |
+        Write-Host "=== Running start.bat BEFORE deployment ==="
+        & "D:\GitHub\VerveStacks\vervestacks-dashboard\start.bat"
 
-          # Ensure parent data folders exist
-          $destRoots = @(
-            $env:DEST_OSM,
-            $env:DEST_TRANSMISSION,
-            $env:DEST_ATLITE,
-            $env:DEST_REZONING
-          )
+    # =========================================
+    # FRONTEND BUILD (CI=FALSE)
+    # =========================================
+    - name: Install frontend dependencies
+      shell: powershell
+      run: |
+        cd $env:FRONTEND_DIR
+        npm install
 
-          foreach ($d in $destRoots) {
-            if (-not (Test-Path $d)) {
-              Write-Host "Creating local data folder: $d"
-              New-Item -ItemType Directory -Path $d -Force | Out-Null
-            }
-          }
+    - name: Build frontend (ignore ESLint warnings)
+      shell: powershell
+      run: |
+        cd $env:FRONTEND_DIR
+        set CI=false
+        npm run build:prod
 
-          # 1) OSM-kan-prebuilt\harish  ->  C:\inetpub\VerveStacks\data\OSM-kan-prebuilt
-          Write-Host "Syncing OSM-kan-prebuilt (harish)..."
-          robocopy $env:SOURCE_OSM_HARISH $env:DEST_OSM /MIR /NFL /NDL /NJH /NJS /NP
-          $rc1 = $LASTEXITCODE
-          Write-Host "harish robocopy exit code: $rc1"
+    - name: Deploy frontend build
+      shell: powershell
+      run: |
+        $src = Join-Path $env:FRONTEND_DIR "build"
+        $dst = Join-Path $env:DEPLOY_ROOT "frontend\build"
 
-          # 2) transmission_line_generation  ->  C:\inetpub\VerveStacks\data\transmission_line_generation
-          Write-Host "Syncing transmission_line_generation..."
-          robocopy $env:SOURCE_TRANSMISSION $env:DEST_TRANSMISSION /MIR /NFL /NDL /NJH /NJS /NP
-          $rc2 = $LASTEXITCODE
-          Write-Host "transmission_line_generation robocopy exit code: $rc2"
+        if (-not (Test-Path $dst)) {
+          New-Item -ItemType Directory -Path $dst -Force | Out-Null
+        }
 
-          # 3) Atlite_data_optimized  ->  C:\inetpub\VerveStacks\data\hourly_profiles\Atlite_data
-          Write-Host "Syncing Atlite_data_optimized..."
-          robocopy $env:SOURCE_ATLITE $env:DEST_ATLITE /MIR /NFL /NDL /NJH /NJS /NP
-          $rc3 = $LASTEXITCODE
-          Write-Host "Atlite_data_optimized robocopy exit code: $rc3"
+        robocopy $src $dst /MIR /NFL /NDL /NJH /NJS /NP
 
-          # 4) REZoning_world_data  ->  C:\inetpub\VerveStacks\data\REZoning
-          Write-Host "Syncing REZoning_world_data..."
-          robocopy $env:SOURCE_REZONING_WORLD $env:DEST_REZONING /MIR /NFL /NDL /NJH /NJS /NP
-          $rc4 = $LASTEXITCODE
-          Write-Host "REZoning_world_data robocopy exit code: $rc4"
+    # =========================================
+    # BACKEND DEPLOY
+    # =========================================
+    - name: Deploy backend
+      shell: powershell
+      run: |
+        $src = $env:BACKEND_DIR
+        $dst = Join-Path $env:DEPLOY_ROOT "backend"
 
-          # Evaluate robocopy exit codes
-          $codes = @($rc1, $rc2, $rc3, $rc4)
-          $maxCode = ($codes | Measure-Object -Maximum).Maximum
+        if (-not (Test-Path $dst)) {
+          New-Item -ItemType Directory -Path $dst -Force | Out-Null
+        }
 
-          if ($maxCode -ge 8) {
-            Write-Error "At least one data sync robocopy failed. Highest exit code: $maxCode"
-            exit $maxCode
-          }
+        robocopy $src $dst /MIR /NFL /NDL /NJH /NJS /NP
 
-          # Normalize 0–7 as success
-          exit 0
+    # =========================================
+    # PYTHON SERVICE DEPLOY
+    # =========================================
+    - name: Deploy python service
+      shell: powershell
+      run: |
+        $src = $env:PYTHON_DIR
+        $dst = Join-Path $env:DEPLOY_ROOT "python-service"
 
-      # ------------------------------
-      # BACKEND (npm install only)
-      # ------------------------------
-      - name: Install backend dependencies
-        shell: powershell
-        run: |
-          Write-Host "=== Backend: npm install ==="
-          Write-Host "BACKEND_DIR = $env:BACKEND_DIR"
-          cd $env:BACKEND_DIR
-          npm install
+        if (-not (Test-Path $dst)) {
+          New-Item -ItemType Directory -Path $dst -Force | Out-Null
+        }
 
-      # ------------------------------
-      # PYTHON SERVICE (venv + requirements)
-      # ------------------------------
-      - name: Setup python-service
-        shell: powershell
-        run: |
-          Write-Host "=== Python service: venv + requirements ==="
-          Write-Host "PYTHON_DIR  = $env:PYTHON_DIR"
-          Write-Host "PYTHON_EXE  = $env:PYTHON_EXE"
-
-          cd $env:PYTHON_DIR
-
-          if (-not (Test-Path ".venv")) {
-            Write-Host "Creating virtual environment using $env:PYTHON_EXE ..."
-            & $env:PYTHON_EXE -m venv .venv
-          }
-          else {
-            Write-Host "Virtual environment .venv already exists, reusing it."
-          }
-
-          .\.venv\Scripts\python.exe -m pip install --upgrade pip
-          .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-
-      # ------------------------------
-      # FRONTEND BUILD (CI=false)
-      # ------------------------------
-      - name: Build frontend (CI=false)
-        shell: powershell
-        run: |
-          Write-Host "=== Frontend: npm install + build:prod ==="
-          Write-Host "FRONTEND_DIR = $env:FRONTEND_DIR"
-
-          cd $env:FRONTEND_DIR
-          npm install
-
-          # Prevent eslint warnings from failing the build
-          $env:CI = "false"
-
-          npm run build:prod
-
-      # ------------------------------
-      # RUN start.bat BEFORE DEPLOY
-      # ------------------------------
-      - name: Run start.bat to verify latest changes
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        run: |
-          Write-Host "=== Running start.bat before deployment ==="
-          $scriptPath = Join-Path $env:GITHUB_WORKSPACE 'vervestacks-dashboard\start.bat'
-          if (-not (Test-Path $scriptPath)) {
-            Write-Error "start.bat not found at $scriptPath"
-            exit 1
-          }
-
-          Write-Host "Executing $scriptPath ..."
-          & $scriptPath
-
-          if ($LASTEXITCODE -ne 0) {
-            Write-Error "start.bat failed with exit code $LASTEXITCODE. Aborting deployment."
-            exit $LASTEXITCODE
-          }
-
-          Write-Host "start.bat completed successfully. Proceeding to deployment."
-
-      # ------------------------------
-      # DEPLOY TO LOCAL IIS (controlled by Update_Data_On_Local)
-      # ------------------------------
-      - name: Deploy frontend to local IIS folder
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        run: |
-          Write-Host "=== Deploying frontend to LOCAL IIS ==="
-          Write-Host "FRONTEND_DIR = $env:FRONTEND_DIR"
-          Write-Host "DEPLOY_ROOT  = $env:DEPLOY_ROOT"
-
-          $sourceBuild = Join-Path $env:FRONTEND_DIR "build"
-          Write-Host "Source build folder: $sourceBuild"
-
-          if (-not (Test-Path $sourceBuild)) {
-            Write-Error "ERROR: Frontend build folder NOT found at $sourceBuild"
-            exit 1
-          }
-
-          # Option B: index.html goes directly under vervestacks-dashboard
-          $targetRoot = $env:DEPLOY_ROOT
-          if (-not (Test-Path $targetRoot)) {
-            Write-Host "DEPLOY_ROOT not found, creating: $targetRoot"
-            New-Item -ItemType Directory -Path $targetRoot | Out-Null
-          }
-
-          Write-Host "Running robocopy from $sourceBuild to $targetRoot ..."
-          robocopy $sourceBuild $targetRoot /MIR /NFL /NDL /NJH /NJS /NP
-          $rc = $LASTEXITCODE
-          Write-Host "Frontend robocopy exited with code $rc"
-
-          if ($rc -ge 8) {
-            Write-Error "Frontend robocopy failed with exit code $rc"
-            exit $rc
-          }
-
-          # Normalize robocopy success codes 0–7 as success
-          exit 0
-
-      - name: Deploy backend & python-service to LOCAL IIS folder
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        run: |
-          Write-Host "=== Deploying backend & python-service to LOCAL IIS ==="
-          Write-Host "DEPLOY_ROOT  = $env:DEPLOY_ROOT"
-          Write-Host "BACKEND_DIR  = $env:BACKEND_DIR"
-          Write-Host "PYTHON_DIR   = $env:PYTHON_DIR"
-
-          $backendTarget = Join-Path $env:DEPLOY_ROOT "backend"
-          $pythonTarget  = Join-Path $env:DEPLOY_ROOT "python-service"
-
-          if (-not (Test-Path $backendTarget)) {
-            Write-Host "Creating backend target folder: $backendTarget"
-            New-Item -ItemType Directory -Path $backendTarget | Out-Null
-          }
-          if (-not (Test-Path $pythonTarget)) {
-            Write-Host "Creating python-service target folder: $pythonTarget"
-            New-Item -ItemType Directory -Path $pythonTarget | Out-Null
-          }
-
-          Write-Host "Copying backend files..."
-          robocopy $env:BACKEND_DIR $backendTarget /MIR /NFL /NDL /NJH /NJS /NP
-          $rcBackend = $LASTEXITCODE
-          Write-Host "Backend robocopy exited with code $rcBackend"
-
-          if ($rcBackend -ge 8) {
-            Write-Error "Backend robocopy failed with exit code $rcBackend"
-            exit $rcBackend
-          }
-
-          Write-Host "Copying python-service files..."
-          robocopy $env:PYTHON_DIR $pythonTarget /MIR /NFL /NDL /NJH /NJS /NP
-          $rcPy = $LASTEXITCODE
-          Write-Host "Python-service robocopy exited with code $rcPy"
-
-          if ($rcPy -ge 8) {
-            Write-Error "Python-service robocopy failed with exit code $rcPy"
-            exit $rcPy
-          }
-
-          # Normalize 0–7 as success
-          exit 0
-
-      # ------------------------------
-      # FUTURE: DEPLOY TO HETZNER
-      # ------------------------------
-      - name: Deploy to Hetzner server (placeholder)
-        if: env.Update_Data_On_Hetzner == 'true'
-        shell: powershell
-        run: |
-          Write-Host "=== Update_Data_On_Hetzner == true ==="
-          Write-Host "Hetzner deployment steps are not implemented yet."
+        robocopy $src $dst /MIR /NFL /NDL /NJH /NJS /NP
