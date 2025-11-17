@@ -56,12 +56,19 @@ jobs:
           Write-Host "=== Mapping \\192.168.0.7\kanvault with user 'amit' ==="
 
           # Remove existing mapping if any
-          net use \\192.168.0.7\kanvault /delete /y 2>$null | Out-Null
+          try { 
+             net use \\192.168.0.7\kanvault /delete /y 2>$null | Out-Null
+          }
+          catch {
+            Write-Host "No existing mapping to delete (or delete failed). Ignoring and continuing."
+          }
+
           $global:LASTEXITCODE = 0
 
-          # Map using credentials
+             # Map using credentials
           net use \\192.168.0.7\kanvault /user:amit $env:KANVAULT_PASSWORD
 
+          $exitcode = $LASTEXITCODE
           if ($LASTEXITCODE -ne 0) {
             Write-Error "Failed to map \\192.168.0.7\kanvault. Exit code: $LASTEXITCODE"
             exit $LASTEXITCODE
