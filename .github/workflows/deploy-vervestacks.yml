@@ -137,30 +137,6 @@ jobs:
           exit 0
 
       # =========================================
-      # RUN start.bat BEFORE DEPLOYMENT
-      # =========================================
-      - name: Run start.bat before deployment
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        run: |
-          Write-Host "=== Running start.bat BEFORE deployment ==="
-          $scriptPath = "D:\GitHub\VerveStacks\vervestacks-dashboard\start.bat"
-          if (-not (Test-Path $scriptPath)) {
-            Write-Error "start.bat not found at $scriptPath"
-            exit 1
-          }
-
-          & $scriptPath
-          $rc = $LASTEXITCODE
-
-          if ($rc -ne 0) {
-            Write-Error "start.bat failed with exit code $rc. Aborting deployment."
-            exit $rc
-          }
-
-          Write-Host "start.bat completed successfully."
-
-      # =========================================
       # BACKEND: INSTALL DEPENDENCIES
       # =========================================
       - name: Install backend dependencies
@@ -329,3 +305,27 @@ jobs:
         run: |
           Write-Host "=== Update_Data_On_Hetzner == true ==="
           Write-Host "Hetzner deployment not implemented yet."
+
+      # =========================================
+      # RUN start.bat AT THE END (AFTER DEPLOY)
+      # =========================================
+      - name: Run start.bat after deployment
+        if: env.Update_Data_On_Local == 'true'
+        shell: powershell
+        run: |
+          Write-Host "=== Running start.bat AFTER deployment ==="
+          $scriptPath = "D:\GitHub\VerveStacks\vervestacks-dashboard\start.bat"
+          if (-not (Test-Path $scriptPath)) {
+            Write-Error "start.bat not found at $scriptPath"
+            exit 1
+          }
+
+          & $scriptPath
+          $rc = $LASTEXITCODE
+
+          if ($rc -ne 0) {
+            Write-Error "start.bat failed with exit code $rc."
+            exit $rc
+          }
+
+          Write-Host "start.bat completed successfully."
