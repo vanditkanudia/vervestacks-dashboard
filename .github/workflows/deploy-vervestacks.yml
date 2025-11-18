@@ -17,11 +17,8 @@ env:
   # Local data source root (your main local data source)
   LOCAL_DATA_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\data"
 
-  # Source UNC paths (kanvault)
-  SOURCE_OSM_HARISH: "\\\\192.168.0.7\\kanvault\\KanORS_Data\\VerveStacks\\OSM-kan-prebuilt\\harish"
-  SOURCE_TRANSMISSION: "\\\\192.168.0.7\\kanvault\\KanORS_Data\\VerveStacks\\transmission_line_generation"
-  SOURCE_ATLITE: "\\\\192.168.0.7\\kanvault\\KanORS_Data\\REZoning data\\Atlite_data\\Atlite_data_optimized"
-  SOURCE_REZONING_WORLD: "\\\\192.168.0.7\\kanvault\\KanORS_Data\\REZoning data\\REZoning_world_data"
+  # Base UNC share
+  KANVAULT_SHARE: "\\\\192.168.0.7\\kanvault"
 
   # Destination data paths
   DEST_OSM: "C:\\inetpub\\VerveStacks\\data\\OSM-kan-prebuilt"
@@ -57,27 +54,27 @@ jobs:
         env:
           KANVAULT_PASSWORD: ${{ secrets.KANVAULT_PASSWORD }}
         run: |
-          Write-Host "=== Mapping \\192.168.0.7\kanvault with user 'amit' ==="
+          Write-Host "=== Mapping $env:KANVAULT_SHARE with user 'amit' ==="
 
           try {
-            net use \\192.168.0.7\kanvault /delete /y 2>$null | Out-Null
+            net use $env:KANVAULT_SHARE /delete /y 2>$null | Out-Null
           }
           catch {
             Write-Host "No existing mapping to delete (or delete failed). Ignoring and continuing."
           }
 
           $global:LASTEXITCODE = 0
-          net use \\192.168.0.7\kanvault /user:amit $env:KANVAULT_PASSWORD
+          net use $env:KANVAULT_SHARE /user:amit $env:KANVAULT_PASSWORD
           $exitCode = $LASTEXITCODE
           if ($exitCode -ne 0) {
-            Write-Error "Failed to map \\192.168.0.7\kanvault. Exit code: $exitCode"
+            Write-Error "Failed to map $env:KANVAULT_SHARE. Exit code: $exitCode"
             exit $exitCode
           }
 
           Write-Host "UNC network share mapped successfully."
 
       # -------------------------------------------------
-      # 1) SYNC 4 FOLDERS FROM KANVAULT → IIS DATA (overwrite only)
+      # 1) SYNC KANVAULT → IIS DATA (loop over 4 folders)
       # -------------------------------------------------
       - name: Sync kanvault data to local data folders
         if: env.Update_Data_On_Local == 'true'
@@ -85,51 +82,86 @@ jobs:
         run: |
           Write-Host "=== Syncing data from kanvault to C:\inetpub\VerveStacks\data ==="
 
-          $destRoots = @(
-            $env:DEST_OSM,
-            $env:DEST_TRANSMISSION,
-            $env:DEST_ATLITE,
-            $env:DEST_REZONING
+          # Build roots from the shared kanvault base
+          $shareRoot = $env:KANVAULT_SHARE
+          $verveRoot = Join-Path $shareRoot "KanORS_Data\VerveStacks"
+          $rezRoot   = Join-Path $shareRoot "KanORS_Data\REZoning data"
+
+          Write-Host "VerveStacks UNC root = $verveRoot"
+          Write-Host "REZoning UNC root    = $rezRoot"
+
+          # Define sync jobs as a list of Name/Source/Dest
+          $syncJobs = @(
+            @{
+              Name   = "OSM-kan-prebuilt (harish)"
+              Source = Join-Path $verveRoot "OSM-kan-prebuilt\harish"
+              Dest   = $env:DEST_OSM
+            },
+            @{
+              Name   = "transmission_line_generation"
+              Source = Join-Path $verveRoot "transmission_line_generation"
+              Dest   = $env:DEST_TRANSMISSION
+            },
+            @{
+              Name   = "Atlite_data_optimized"
+              Source = Join-Path $rezRoot "Atlite_data\Atlite_data_optimized"
+              Dest   = $env:DEST_ATLITE
+            },
+            @{
+              Name   = "REZoning_world_data"
+              Source = Join-Path $rezRoot "REZoning_world_data"
+              Dest   = $env:DEST_REZONING
+            }
           )
 
-          foreach ($d in $destRoots) {
-            if (-not [string]::IsNullOrWhiteSpace($d)) {
-              if (-not (Test-Path $d)) {
-                Write-Host "Creating local data folder (with parents if needed): $d"
-                [System.IO.Directory]::CreateDirectory($d) | Out-Null
+          $exitCodes = @()
+
+          foreach ($job in $syncJobs) {
+            $name   = $job.Name
+            $source = $job.Source
+            $dest   = $job.Dest
+
+            Write-Host "----"
+            Write-Host "Job: $name"
+            Write-Host "  Source: $source"
+            Write-Host "  Dest  : $dest"
+
+            # Ensure destination exists (create full path with parents)
+            if (-not [string]::IsNullOrWhiteSpace($dest)) {
+              if (-not (Test-Path $dest)) {
+                Write-Host "Creating local data folder (with parents if needed): $dest"
+                [System.IO.Directory]::CreateDirectory($dest) | Out-Null
               }
             }
+
+            # If source missing, warn and skip this job
+            if (-not (Test-Path $source)) {
+              Write-Warning "Source path does not exist for job '$name': $source. Skipping this job."
+              $exitCodes += 0
+              continue
+            }
+
+            Write-Host "Syncing $name ..."
+            robocopy $source $dest /E /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
+            $rc = $LASTEXITCODE
+            Write-Host "Robocopy exit code for '$name': $rc"
+            $exitCodes += $rc
           }
 
-          Write-Host "Syncing OSM-kan-prebuilt/harish → DEST_OSM"
-          robocopy $env:SOURCE_OSM_HARISH $env:DEST_OSM /E /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
-          $rc1 = $LASTEXITCODE
-          Write-Host "harish robocopy exit code: $rc1"
-
-          Write-Host "Syncing transmission_line_generation → DEST_TRANSMISSION"
-          robocopy $env:SOURCE_TRANSMISSION $env:DEST_TRANSMISSION /E /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
-          $rc2 = $LASTEXITCODE
-          Write-Host "transmission_line_generation robocopy exit code: $rc2"
-
-          Write-Host "Syncing Atlite_data_optimized → DEST_ATLITE"
-          robocopy $env:SOURCE_ATLITE $env:DEST_ATLITE /E /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
-          $rc3 = $LASTEXITCODE
-          Write-Host "Atlite_data_optimized robocopy exit code: $rc3"
-
-          Write-Host "Syncing REZoning_world_data → DEST_REZONING"
-          robocopy $env:SOURCE_REZONING_WORLD $env:DEST_REZONING /E /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
-          $rc4 = $LASTEXITCODE
-          Write-Host "REZoning_world_data robocopy exit code: $rc4"
-
-          $codes = @($rc1, $rc2, $rc3, $rc4)
-          $maxCode = ($codes | Measure-Object -Maximum).Maximum
+          # Evaluate robocopy exit codes (treat 0–7 as success)
+          if ($exitCodes.Count -gt 0) {
+            $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
+          }
+          else {
+            $maxCode = 0
+          }
 
           if ($maxCode -ge 8) {
-            Write-Error "At least one data sync robocopy failed. Highest exit code: $maxCode"
+            Write-Error "At least one kanvault data sync robocopy failed. Highest exit code: $maxCode"
             exit $maxCode
           }
 
-          Write-Host "UNC data sync completed successfully with robocopy max code: $maxCode"
+          Write-Host "UNC data sync completed successfully with maximum robocopy code: $maxCode"
           exit 0
 
       # -------------------------------------------------
