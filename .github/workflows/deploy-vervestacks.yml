@@ -26,10 +26,8 @@ env:
   DEST_ATLITE: "C:\\inetpub\\VerveStacks\\data\\hourly_profiles\\Atlite_data"
   DEST_REZONING: "C:\\inetpub\\VerveStacks\\data\\REZoning"
 
-  # Deployed app subfolders (under DEPLOY_ROOT)
-  BACKEND_SUBDIR: "vervestacks-dashboard\\backend"
-  FRONTEND_SUBDIR: "vervestacks-dashboard\\frontend"
-  PYTHON_SUBDIR: "vervestacks-dashboard\\python-service"
+  # App root (under DEPLOY_ROOT)
+  APP_SUBROOT: "vervestacks-dashboard"
 
   # Python executable on the runner
   PYTHON_EXE: "D:\\Pyvenvs\\Scripts\\python.exe"
@@ -73,15 +71,16 @@ jobs:
 
           Write-Host "UNC network share mapped successfully."
 
-      # -------------------------------------------------
-      # 1) SYNC KANVAULT → IIS DATA (loop over 4 folders)
-      # -------------------------------------------------
-      - name: Sync kanvault data to local data folders
+      # ==========================================================
+      # 1) ALL DATA SYNC (KANVAULT + LOCAL) IN ONE STEP
+      # ==========================================================
+      - name: Sync all data (kanvault + local) to IIS
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
-          Write-Host "=== Syncing data from kanvault to C:\inetpub\VerveStacks\data ==="
+          Write-Host "=== [PART 1] Syncing data from kanvault to C:\inetpub\VerveStacks\data ==="
 
+          # ---------- KANVAULT SYNC ----------
           $shareRoot = $env:KANVAULT_SHARE
           $verveRoot = Join-Path $shareRoot "KanORS_Data\VerveStacks"
           $rezRoot   = Join-Path $shareRoot "KanORS_Data\REZoning data"
@@ -144,11 +143,10 @@ jobs:
             $exitCodes += $rc
           }
 
-          if ($exitCodes.Count -gt 0) {
-            $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
-          }
-          else {
-            $maxCode = 0
+          $maxCode = if ($exitCodes.Count -gt 0) {
+            ($exitCodes | Measure-Object -Maximum).Maximum
+          } else {
+            0
           }
 
           if ($maxCode -ge 8) {
@@ -156,48 +154,45 @@ jobs:
             exit $maxCode
           }
 
-          Write-Host "UNC data sync completed successfully with maximum robocopy code: $maxCode"
-          exit 0
+          Write-Host "UNC (kanvault) data sync completed successfully with maximum robocopy code: $maxCode"
 
-      # -------------------------------------------------
-      # 2) SYNC LOCAL VerveStacks\data → IIS data (all remaining folders)
-      # -------------------------------------------------
-      - name: Sync local VerveStacks data root to IIS data
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        run: |
-          Write-Host "=== Syncing LOCAL data from D:\GitHub\VerveStacks\data → C:\inetpub\VerveStacks\data ==="
-          $src = $env:LOCAL_DATA_SOURCE_ROOT
-          $dst = $env:DATA_ROOT
+          # ---------- LOCAL DATA SYNC ----------
+          Write-Host ""
+          Write-Host "=== [PART 2] Syncing LOCAL data from D:\GitHub\VerveStacks\data → C:\inetpub\VerveStacks\data ==="
 
-          Write-Host "Local data source     : $src"
-          Write-Host "IIS data destination  : $dst"
+          $srcLocal = $env:LOCAL_DATA_SOURCE_ROOT
+          $dstLocal = $env:DATA_ROOT
 
-          if (-not (Test-Path $src)) {
-            Write-Host "WARNING: Local data source folder does not exist: $src"
+          Write-Host "Local data source     : $srcLocal"
+          Write-Host "IIS data destination  : $dstLocal"
+
+          if (-not (Test-Path $srcLocal)) {
+            Write-Host "WARNING: Local data source folder does not exist: $srcLocal"
             Write-Host "Nothing to sync from local; continuing."
-            exit 0
+          }
+          else {
+            if (-not (Test-Path $dstLocal)) {
+              Write-Host "Creating IIS data root: $dstLocal"
+              [System.IO.Directory]::CreateDirectory($dstLocal) | Out-Null
+            }
+
+            robocopy $srcLocal $dstLocal /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
+            $codeLocal = $LASTEXITCODE
+            Write-Host "Local data robocopy exit code: $codeLocal"
+
+            if ($codeLocal -ge 8) {
+              Write-Error "Local data sync failed with robocopy exit code $codeLocal"
+              exit $codeLocal
+            }
+
+            Write-Host "Local data sync completed successfully."
           }
 
-          if (-not (Test-Path $dst)) {
-            Write-Host "Creating IIS data root: $dst"
-            [System.IO.Directory]::CreateDirectory($dst) | Out-Null
-          }
-
-          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
-          $code = $LASTEXITCODE
-          Write-Host "Local data robocopy exit code: $code"
-
-          if ($code -ge 8) {
-            Write-Error "Local data sync failed with robocopy exit code $code"
-            exit $code
-          }
-
-          Write-Host "Local data sync completed successfully."
+          Write-Host "=== All data sync (kanvault + local) finished successfully. ==="
           exit 0
 
       # ==========================================================
-      # 3) DEPLOY ENTIRE REPO → C:\inetpub\VerveStacks
+      # 2) DEPLOY ENTIRE REPO → C:\inetpub\VerveStacks
       # ==========================================================
       - name: Deploy entire VerveStacks to IIS (overwrite only, no git folders)
         if: env.Update_Data_On_Local == 'true'
@@ -221,7 +216,6 @@ jobs:
             New-Item -ItemType Directory -Path $dst -Force | Out-Null
           }
 
-          Write-Host "Copying full directory tree (excluding .git/.github folders)..."
           robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
           Write-Host "App robocopy exit code: $code"
@@ -235,31 +229,57 @@ jobs:
           exit 0
 
       # =========================================
-      # 4) BACKEND: INSTALL DEPENDENCIES (ON DESTINATION)
+      # 3) BACKEND + FRONTEND (npm) ON DESTINATION
       # =========================================
-      - name: Install backend dependencies on deployed folder
+      - name: Install JS deps and build frontend on DEPLOY_ROOT
         shell: powershell
         run: |
-          Write-Host "=== Backend: npm install (on DEPLOY_ROOT) ==="
-          $backendPath = Join-Path $env:DEPLOY_ROOT $env:BACKEND_SUBDIR
-          Write-Host "Backend path = $backendPath"
+          Write-Host "=== JS apps: backend install + frontend install+build on DEPLOY_ROOT ==="
 
-          if (-not (Test-Path $backendPath)) {
-            Write-Error "Backend path does not exist: $backendPath"
-            exit 1
+          $appRoot   = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $backend   = Join-Path $appRoot "backend"
+          $frontend  = Join-Path $appRoot "frontend"
+
+          $apps = @(
+            @{ Name = "Backend"; Path = $backend; Build = $false },
+            @{ Name = "Frontend"; Path = $frontend; Build = $true }
+          )
+
+          foreach ($app in $apps) {
+            $name  = $app.Name
+            $path  = $app.Path
+            $build = $app.Build
+
+            Write-Host "----"
+            Write-Host "$name: Path = $path"
+
+            if (-not (Test-Path $path)) {
+              Write-Error "$name path does not exist: $path"
+              exit 1
+            }
+
+            cd $path
+            Write-Host "$name: running npm install..."
+            npm install
+
+            if ($build) {
+              Write-Host "$name: running build:prod with CI=false..."
+              $env:CI = "false"
+              npm run build:prod
+            }
           }
 
-          cd $backendPath
-          npm install
-
       # =========================================
-      # 5) PYTHON SERVICE: VENV + REQUIREMENTS (ON DESTINATION)
+      # 4) PYTHON SERVICE (venv + requirements) ON DEST
       # =========================================
       - name: Setup python service on deployed folder
         shell: powershell
         run: |
           Write-Host "=== Python-service: venv + requirements (on DEPLOY_ROOT) ==="
-          $pythonPath = Join-Path $env:DEPLOY_ROOT $env:PYTHON_SUBDIR
+
+          $appRoot    = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $pythonPath = Join-Path $appRoot "python-service"
+
           Write-Host "Python service path = $pythonPath"
           Write-Host "PYTHON_EXE         = $env:PYTHON_EXE"
 
@@ -282,41 +302,7 @@ jobs:
           .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 
       # =========================================
-      # 6) FRONTEND BUILD (CI = false, ON DESTINATION)
-      # =========================================
-      - name: Install frontend dependencies on deployed folder
-        shell: powershell
-        run: |
-          Write-Host "=== Frontend: npm install (on DEPLOY_ROOT) ==="
-          $frontendPath = Join-Path $env:DEPLOY_ROOT $env:FRONTEND_SUBDIR
-          Write-Host "Frontend path = $frontendPath"
-
-          if (-not (Test-Path $frontendPath)) {
-            Write-Error "Frontend path does not exist: $frontendPath"
-            exit 1
-          }
-
-          cd $frontendPath
-          npm install
-
-      - name: Build frontend (CI=false, on deployed folder)
-        shell: powershell
-        run: |
-          Write-Host "=== Frontend: build:prod with CI=false (on DEPLOY_ROOT) ==="
-          $frontendPath = Join-Path $env:DEPLOY_ROOT $env:FRONTEND_SUBDIR
-          Write-Host "Frontend path = $frontendPath"
-
-          if (-not (Test-Path $frontendPath)) {
-            Write-Error "Frontend path does not exist: $frontendPath"
-            exit 1
-          }
-
-          cd $frontendPath
-          $env:CI = "false"
-          npm run build:prod
-
-      # =========================================
-      # PLACEHOLDER: HETZNER DEPLOY (FUTURE)
+      # 5) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
       # =========================================
       - name: Deploy to Hetzner (placeholder)
         if: env.Update_Data_On_Hetzner == 'true'
@@ -326,14 +312,15 @@ jobs:
           Write-Host "Hetzner deployment not implemented yet."
 
       # =========================================
-      # 7) RUN start.bat AT THE END (FROM DEPLOY_ROOT)
+      # 6) RUN start.bat AT THE END (FROM DEPLOY_ROOT)
       # =========================================
       - name: Run start.bat after deployment
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
           Write-Host "=== Running start.bat AFTER deployment (from DEPLOY_ROOT) ==="
-          $scriptPath = Join-Path $env:DEPLOY_ROOT "vervestacks-dashboard\start.bat"
+
+          $scriptPath = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
           Write-Host "Expected start.bat path: $scriptPath"
 
           if (-not (Test-Path $scriptPath)) {
