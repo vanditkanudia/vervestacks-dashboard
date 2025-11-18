@@ -102,22 +102,22 @@ jobs:
           }
 
           Write-Host "Syncing OSM-kan-prebuilt/harish → DEST_OSM"
-          robocopy $env:SOURCE_OSM_HARISH $env:DEST_OSM /E /XD ".git" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
+          robocopy $env:SOURCE_OSM_HARISH $env:DEST_OSM /E /XD ".git" ".github" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
           $rc1 = $LASTEXITCODE
           Write-Host "harish robocopy exit code: $rc1"
 
           Write-Host "Syncing transmission_line_generation → DEST_TRANSMISSION"
-          robocopy $env:SOURCE_TRANSMISSION $env:DEST_TRANSMISSION /E /XD ".git" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
+          robocopy $env:SOURCE_TRANSMISSION $env:DEST_TRANSMISSION /E /XD ".git" ".github" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
           $rc2 = $LASTEXITCODE
           Write-Host "transmission_line_generation robocopy exit code: $rc2"
 
           Write-Host "Syncing Atlite_data_optimized → DEST_ATLITE"
-          robocopy $env:SOURCE_ATLITE $env:DEST_ATLITE /E /XD ".git" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
+          robocopy $env:SOURCE_ATLITE $env:DEST_ATLITE /E /XD ".git" ".github" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
           $rc3 = $LASTEXITCODE
           Write-Host "Atlite_data_optimized robocopy exit code: $rc3"
 
           Write-Host "Syncing REZoning_world_data → DEST_REZONING"
-          robocopy $env:SOURCE_REZONING_WORLD $env:DEST_REZONING /E /XD ".git" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
+          robocopy $env:SOURCE_REZONING_WORLD $env:DEST_REZONING /E /XD ".git" ".github" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
           $rc4 = $LASTEXITCODE
           Write-Host "REZoning_world_data robocopy exit code: $rc4"
 
@@ -157,8 +157,8 @@ jobs:
             [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
-          # /E: copy all subdirs and files (no deletions), exclude any .git stuff
-          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
+          # /E: copy all subdirs and files (no deletions), exclude any .git/.github stuff
+          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
           Write-Host "Local data robocopy exit code: $code"
 
@@ -227,9 +227,9 @@ jobs:
 
       # ==========================================================
       # 3) DEPLOY ENTIRE REPO (VerveStacks) → C:\inetpub\VerveStacks
-      # Overwrite changed files, keep extra files, exclude .git
+      # Overwrite changed files, keep extra files, exclude git stuff
       # ==========================================================
-      - name: Deploy entire VerveStacks to IIS (overwrite only, no .git)
+      - name: Deploy entire VerveStacks to IIS (overwrite only, no git folders)
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
@@ -251,8 +251,8 @@ jobs:
             New-Item -ItemType Directory -Path $dst -Force | Out-Null
           }
 
-          Write-Host "Copying full directory tree (excluding any .git files/folders)..."
-          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
+          Write-Host "Copying full directory tree (excluding any .git/.github files/folders)..."
+          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /XF ".gitignore" ".gitattributes" ".gitmodules" /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
           Write-Host "App robocopy exit code: $code"
 
