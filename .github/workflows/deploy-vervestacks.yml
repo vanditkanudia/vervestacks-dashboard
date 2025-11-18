@@ -26,10 +26,10 @@ env:
   DEST_ATLITE: "C:\\inetpub\\VerveStacks\\data\\hourly_profiles\\Atlite_data"
   DEST_REZONING: "C:\\inetpub\\VerveStacks\\data\\REZoning"
 
-  # Code folders (relative to repo root)
-  BACKEND_DIR: "vervestacks-dashboard/backend"
-  FRONTEND_DIR: "vervestacks-dashboard/frontend"
-  PYTHON_DIR: "vervestacks-dashboard/python-service"
+  # Deployed app subfolders (under DEPLOY_ROOT)
+  BACKEND_SUBDIR: "vervestacks-dashboard\\backend"
+  FRONTEND_SUBDIR: "vervestacks-dashboard\\frontend"
+  PYTHON_SUBDIR: "vervestacks-dashboard\\python-service"
 
   # Python executable on the runner
   PYTHON_EXE: "D:\\Pyvenvs\\Scripts\\python.exe"
@@ -82,7 +82,6 @@ jobs:
         run: |
           Write-Host "=== Syncing data from kanvault to C:\inetpub\VerveStacks\data ==="
 
-          # Build roots from the shared kanvault base
           $shareRoot = $env:KANVAULT_SHARE
           $verveRoot = Join-Path $shareRoot "KanORS_Data\VerveStacks"
           $rezRoot   = Join-Path $shareRoot "KanORS_Data\REZoning data"
@@ -90,7 +89,6 @@ jobs:
           Write-Host "VerveStacks UNC root = $verveRoot"
           Write-Host "REZoning UNC root    = $rezRoot"
 
-          # Define sync jobs as a list of Name/Source/Dest
           $syncJobs = @(
             @{
               Name   = "OSM-kan-prebuilt (harish)"
@@ -126,7 +124,6 @@ jobs:
             Write-Host "  Source: $source"
             Write-Host "  Dest  : $dest"
 
-            # Ensure destination exists (create full path with parents)
             if (-not [string]::IsNullOrWhiteSpace($dest)) {
               if (-not (Test-Path $dest)) {
                 Write-Host "Creating local data folder (with parents if needed): $dest"
@@ -134,7 +131,6 @@ jobs:
               }
             }
 
-            # If source missing, warn and skip this job
             if (-not (Test-Path $source)) {
               Write-Warning "Source path does not exist for job '$name': $source. Skipping this job."
               $exitCodes += 0
@@ -148,7 +144,6 @@ jobs:
             $exitCodes += $rc
           }
 
-          # Evaluate robocopy exit codes (treat 0–7 as success)
           if ($exitCodes.Count -gt 0) {
             $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
           }
@@ -189,7 +184,6 @@ jobs:
             [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
-          # /E: copy all subdirs and files (no deletions), exclude .git/.github dirs
           robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
           Write-Host "Local data robocopy exit code: $code"
@@ -202,64 +196,8 @@ jobs:
           Write-Host "Local data sync completed successfully."
           exit 0
 
-      # =========================================
-      # BACKEND: INSTALL DEPENDENCIES
-      # =========================================
-      - name: Install backend dependencies
-        shell: powershell
-        run: |
-          Write-Host "=== Backend: npm install ==="
-          Write-Host "BACKEND_DIR = $env:BACKEND_DIR"
-          cd $env:BACKEND_DIR
-          npm install
-
-      # =========================================
-      # PYTHON SERVICE: VENV + REQUIREMENTS
-      # =========================================
-      - name: Setup python service (venv + requirements)
-        shell: powershell
-        run: |
-          Write-Host "=== Python-service: venv + requirements ==="
-          Write-Host "PYTHON_DIR  = $env:PYTHON_DIR"
-          Write-Host "PYTHON_EXE  = $env:PYTHON_EXE"
-
-          cd $env:PYTHON_DIR
-
-          if (-not (Test-Path ".venv")) {
-            Write-Host "Creating virtual environment using $env:PYTHON_EXE ..."
-            & $env:PYTHON_EXE -m venv .venv
-          }
-          else {
-            Write-Host "Virtual environment .venv already exists, reusing it."
-          }
-
-          .\.venv\Scripts\python.exe -m pip install --upgrade pip
-          .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-
-      # =========================================
-      # FRONTEND BUILD (CI = false)
-      # =========================================
-      - name: Install frontend dependencies
-        shell: powershell
-        run: |
-          Write-Host "=== Frontend: npm install ==="
-          Write-Host "FRONTEND_DIR = $env:FRONTEND_DIR"
-          cd $env:FRONTEND_DIR
-          npm install
-
-      - name: Build frontend (ignore ESLint warnings)
-        shell: powershell
-        run: |
-          Write-Host "=== Frontend: build:prod with CI=false ==="
-          Write-Host "FRONTEND_DIR = $env:FRONTEND_DIR"
-          cd $env:FRONTEND_DIR
-
-          $env:CI = "false"
-          npm run build:prod
-
       # ==========================================================
-      # 3) DEPLOY ENTIRE REPO (VerveStacks) → C:\inetpub\VerveStacks
-      # Overwrite changed files, keep extra files, exclude git dirs
+      # 3) DEPLOY ENTIRE REPO → C:\inetpub\VerveStacks
       # ==========================================================
       - name: Deploy entire VerveStacks to IIS (overwrite only, no git folders)
         if: env.Update_Data_On_Local == 'true'
@@ -297,6 +235,87 @@ jobs:
           exit 0
 
       # =========================================
+      # 4) BACKEND: INSTALL DEPENDENCIES (ON DESTINATION)
+      # =========================================
+      - name: Install backend dependencies on deployed folder
+        shell: powershell
+        run: |
+          Write-Host "=== Backend: npm install (on DEPLOY_ROOT) ==="
+          $backendPath = Join-Path $env:DEPLOY_ROOT $env:BACKEND_SUBDIR
+          Write-Host "Backend path = $backendPath"
+
+          if (-not (Test-Path $backendPath)) {
+            Write-Error "Backend path does not exist: $backendPath"
+            exit 1
+          }
+
+          cd $backendPath
+          npm install
+
+      # =========================================
+      # 5) PYTHON SERVICE: VENV + REQUIREMENTS (ON DESTINATION)
+      # =========================================
+      - name: Setup python service on deployed folder
+        shell: powershell
+        run: |
+          Write-Host "=== Python-service: venv + requirements (on DEPLOY_ROOT) ==="
+          $pythonPath = Join-Path $env:DEPLOY_ROOT $env:PYTHON_SUBDIR
+          Write-Host "Python service path = $pythonPath"
+          Write-Host "PYTHON_EXE         = $env:PYTHON_EXE"
+
+          if (-not (Test-Path $pythonPath)) {
+            Write-Error "Python service path does not exist: $pythonPath"
+            exit 1
+          }
+
+          cd $pythonPath
+
+          if (-not (Test-Path ".venv")) {
+            Write-Host "Creating virtual environment using $env:PYTHON_EXE ..."
+            & $env:PYTHON_EXE -m venv .venv
+          }
+          else {
+            Write-Host "Virtual environment .venv already exists, reusing it."
+          }
+
+          .\.venv\Scripts\python.exe -m pip install --upgrade pip
+          .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+      # =========================================
+      # 6) FRONTEND BUILD (CI = false, ON DESTINATION)
+      # =========================================
+      - name: Install frontend dependencies on deployed folder
+        shell: powershell
+        run: |
+          Write-Host "=== Frontend: npm install (on DEPLOY_ROOT) ==="
+          $frontendPath = Join-Path $env:DEPLOY_ROOT $env:FRONTEND_SUBDIR
+          Write-Host "Frontend path = $frontendPath"
+
+          if (-not (Test-Path $frontendPath)) {
+            Write-Error "Frontend path does not exist: $frontendPath"
+            exit 1
+          }
+
+          cd $frontendPath
+          npm install
+
+      - name: Build frontend (CI=false, on deployed folder)
+        shell: powershell
+        run: |
+          Write-Host "=== Frontend: build:prod with CI=false (on DEPLOY_ROOT) ==="
+          $frontendPath = Join-Path $env:DEPLOY_ROOT $env:FRONTEND_SUBDIR
+          Write-Host "Frontend path = $frontendPath"
+
+          if (-not (Test-Path $frontendPath)) {
+            Write-Error "Frontend path does not exist: $frontendPath"
+            exit 1
+          }
+
+          cd $frontendPath
+          $env:CI = "false"
+          npm run build:prod
+
+      # =========================================
       # PLACEHOLDER: HETZNER DEPLOY (FUTURE)
       # =========================================
       - name: Deploy to Hetzner (placeholder)
@@ -307,7 +326,7 @@ jobs:
           Write-Host "Hetzner deployment not implemented yet."
 
       # =========================================
-      # RUN start.bat AT THE END (FROM DEPLOY_ROOT)
+      # 7) RUN start.bat AT THE END (FROM DEPLOY_ROOT)
       # =========================================
       - name: Run start.bat after deployment
         if: env.Update_Data_On_Local == 'true'
