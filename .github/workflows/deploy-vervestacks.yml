@@ -11,7 +11,7 @@ env:
   Update_Data_On_Hetzner: "false"
 
   # Deployment roots
-  DEPLOY_ROOT: "C:\\inetpub\\VerveStacks\\vervestacks-dashboard"
+  DEPLOY_ROOT: "C:\\inetpub\\VerveStacks"        # now repo root, not just dashboard
   DATA_ROOT: "C:\\inetpub\\VerveStacks\\data"
 
   # Source UNC paths (kanvault)
@@ -39,12 +39,15 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      # =====================
+      # CHECKOUT REPOSITORY
+      # =====================
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # =========================================
-      # MAP UNC SHARE WITH CREDENTIALS
-      # =========================================
+      # =====================
+      # MAP UNC SHARE
+      # =====================
       - name: Map kanvault share
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
@@ -53,7 +56,6 @@ jobs:
         run: |
           Write-Host "=== Mapping \\192.168.0.7\kanvault with user 'amit' ==="
 
-          # Try to remove existing mapping, ignore errors
           try {
             net use \\192.168.0.7\kanvault /delete /y 2>$null | Out-Null
           }
@@ -63,7 +65,6 @@ jobs:
 
           $global:LASTEXITCODE = 0
 
-          # Map using credentials
           net use \\192.168.0.7\kanvault /user:amit $env:KANVAULT_PASSWORD
 
           $exitCode = $LASTEXITCODE
@@ -75,7 +76,8 @@ jobs:
           Write-Host "UNC network share mapped successfully."
 
       # =========================================
-      # SYNC KANVAULT DATA -> LOCAL DATA FOLDERS
+      # SYNC KANVAULT DATA → C:\inetpub\VerveStacks\data
+      # (overwrite-only, no deletions)
       # =========================================
       - name: Sync kanvault data to local data folders
         if: env.Update_Data_On_Local == 'true'
@@ -83,7 +85,6 @@ jobs:
         run: |
           Write-Host "=== Syncing data from kanvault to C:\inetpub\VerveStacks\data ==="
 
-          # Ensure destination folders exist (creates parents too)
           $destRoots = @(
             $env:DEST_OSM,
             $env:DEST_TRANSMISSION,
@@ -102,29 +103,28 @@ jobs:
 
           # 1) OSM-kan-prebuilt\harish  ->  DEST_OSM
           Write-Host "Syncing OSM-kan-prebuilt/harish → DEST_OSM"
-          robocopy $env:SOURCE_OSM_HARISH $env:DEST_OSM /MIR /NFL /NDL /NJH /NJS /NP
+          robocopy $env:SOURCE_OSM_HARISH $env:DEST_OSM /E /NFL /NDL /NJH /NJS /NP
           $rc1 = $LASTEXITCODE
           Write-Host "harish robocopy exit code: $rc1"
 
           # 2) transmission_line_generation  ->  DEST_TRANSMISSION
           Write-Host "Syncing transmission_line_generation → DEST_TRANSMISSION"
-          robocopy $env:SOURCE_TRANSMISSION $env:DEST_TRANSMISSION /MIR /NFL /NDL /NJH /NJS /NP
+          robocopy $env:SOURCE_TRANSMISSION $env:DEST_TRANSMISSION /E /NFL /NDL /NJH /NJS /NP
           $rc2 = $LASTEXITCODE
           Write-Host "transmission_line_generation robocopy exit code: $rc2"
 
           # 3) Atlite_data_optimized  ->  DEST_ATLITE
           Write-Host "Syncing Atlite_data_optimized → DEST_ATLITE"
-          robocopy $env:SOURCE_ATLITE $env:DEST_ATLITE /MIR /NFL /NDL /NJH /NJS /NP
+          robocopy $env:SOURCE_ATLITE $env:DEST_ATLITE /E /NFL /NDL /NJH /NJS /NP
           $rc3 = $LASTEXITCODE
           Write-Host "Atlite_data_optimized robocopy exit code: $rc3"
 
           # 4) REZoning_world_data  ->  DEST_REZONING
           Write-Host "Syncing REZoning_world_data → DEST_REZONING"
-          robocopy $env:SOURCE_REZONING_WORLD $env:DEST_REZONING /MIR /NFL /NDL /NJH /NJS /NP
+          robocopy $env:SOURCE_REZONING_WORLD $env:DEST_REZONING /E /NFL /NDL /NJH /NJS /NP
           $rc4 = $LASTEXITCODE
           Write-Host "REZoning_world_data robocopy exit code: $rc4"
 
-          # Evaluate robocopy exit codes (0–7 = success/info, 8+ = failure)
           $codes = @($rc1, $rc2, $rc3, $rc4)
           $maxCode = ($codes | Measure-Object -Maximum).Maximum
 
@@ -191,109 +191,43 @@ jobs:
           $env:CI = "false"
           npm run build:prod
 
-      # =========================================
-      # DEPLOY FRONTEND
-      # =========================================
-      - name: Deploy frontend build
+      # ==========================================================
+      # DEPLOY ENTIRE REPO (VerveStacks) → C:\inetpub\VerveStacks
+      # Overwrite changed files, keep extra files, exclude .git
+      # ==========================================================
+      - name: Deploy entire VerveStacks to IIS (overwrite only)
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
-          Write-Host "=== Deploying frontend to LOCAL IIS ==="
-          Write-Host "DEPLOY_ROOT  = $env:DEPLOY_ROOT"
-          Write-Host "FRONTEND_DIR = $env:FRONTEND_DIR"
+          Write-Host "=== Deploying entire VerveStacks repo to LOCAL IIS ==="
 
-          $src = Join-Path $env:FRONTEND_DIR "build"
-          $dst = Join-Path $env:DEPLOY_ROOT "frontend\\build"
+          $src = "$env:GITHUB_WORKSPACE"
+          $dst = $env:DEPLOY_ROOT
+
+          Write-Host "Source folder     : $src"
+          Write-Host "Destination folder: $dst"
 
           if (-not (Test-Path $src)) {
-            Write-Error "Frontend build folder not found at $src"
+            Write-Error "Source folder does not exist: $src"
             exit 1
           }
 
           if (-not (Test-Path $dst)) {
-            Write-Host "Creating frontend target folder: $dst"
-            [System.IO.Directory]::CreateDirectory($dst) | Out-Null
+            Write-Host "Creating IIS deployment folder: $dst"
+            New-Item -ItemType Directory -Path $dst -Force | Out-Null
           }
 
-          robocopy $src $dst /MIR /NFL /NDL /NJH /NJS /NP
-          $rc = $LASTEXITCODE
-          Write-Host "Frontend robocopy exit code: $rc"
+          Write-Host "Copying full directory tree (excluding .git)..."
+          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" /NFL /NDL /NJH /NJS /NP
+          $code = $LASTEXITCODE
+          Write-Host "Robocopy exit code: $code"
 
-          if ($rc -ge 8) {
-            Write-Error "Frontend deployment failed with robocopy exit code $rc"
-            exit $rc
+          if ($code -ge 8) {
+            Write-Error "Deployment failed with robocopy exit code $code"
+            exit $code
           }
 
-          exit 0
-
-      # =========================================
-      # DEPLOY BACKEND
-      # =========================================
-      - name: Deploy backend
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        run: |
-          Write-Host "=== Deploying backend to LOCAL IIS ==="
-          Write-Host "DEPLOY_ROOT = $env:DEPLOY_ROOT"
-          Write-Host "BACKEND_DIR = $env:BACKEND_DIR"
-
-          $src = $env:BACKEND_DIR
-          $dst = Join-Path $env:DEPLOY_ROOT "backend"
-
-          if (-not (Test-Path $src)) {
-            Write-Error "Backend source folder not found at $src"
-            exit 1
-          }
-
-          if (-not (Test-Path $dst)) {
-            Write-Host "Creating backend target folder: $dst"
-            [System.IO.Directory]::CreateDirectory($dst) | Out-Null
-          }
-
-          robocopy $src $dst /MIR /NFL /NDL /NJH /NJS /NP
-          $rc = $LASTEXITCODE
-          Write-Host "Backend robocopy exit code: $rc"
-
-          if ($rc -ge 8) {
-            Write-Error "Backend deployment failed with robocopy exit code $rc"
-            exit $rc
-          }
-
-          exit 0
-
-      # =========================================
-      # DEPLOY PYTHON SERVICE
-      # =========================================
-      - name: Deploy python service
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        run: |
-          Write-Host "=== Deploying python-service to LOCAL IIS ==="
-          Write-Host "DEPLOY_ROOT = $env:DEPLOY_ROOT"
-          Write-Host "PYTHON_DIR  = $env:PYTHON_DIR"
-
-          $src = $env:PYTHON_DIR
-          $dst = Join-Path $env:DEPLOY_ROOT "python-service"
-
-          if (-not (Test-Path $src)) {
-            Write-Error "Python-service source folder not found at $src"
-            exit 1
-          }
-
-          if (-not (Test-Path $dst)) {
-            Write-Host "Creating python-service target folder: $dst"
-            [System.IO.Directory]::CreateDirectory($dst) | Out-Null
-          }
-
-          robocopy $src $dst /MIR /NFL /NDL /NJH /NJS /NP
-          $rc = $LASTEXITCODE
-          Write-Host "Python-service robocopy exit code: $rc"
-
-          if ($rc -ge 8) {
-            Write-Error "Python-service deployment failed with robocopy exit code $rc"
-            exit $rc
-          }
-
+          Write-Host "Deployment completed successfully."
           exit 0
 
       # =========================================
@@ -307,7 +241,7 @@ jobs:
           Write-Host "Hetzner deployment not implemented yet."
 
       # =========================================
-      # RUN start.bat AT THE END (AFTER DEPLOY)
+      # RUN start.bat AT THE END
       # =========================================
       - name: Run start.bat after deployment
         if: env.Update_Data_On_Local == 'true'
