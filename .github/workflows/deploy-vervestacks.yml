@@ -278,6 +278,18 @@ jobs:
           if ($log) {
             Start-Transcript -Path $log -Append | Out-Null
           }
+
+          # Make all errors terminating so trap can catch them
+          $ErrorActionPreference = 'Stop'
+
+          # Global error handler for this step
+          trap {
+            Write-Host "### FATAL ERROR in JS apps step: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
           Write-Host "=== JS apps: backend install + frontend install+build on DEPLOY_ROOT ==="
 
           $appRoot   = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
@@ -298,19 +310,46 @@ jobs:
             Write-Host ("{0}: Path = {1}" -f $name, $path)
 
             if (-not (Test-Path $path)) {
-              Write-Error ("{0} path does not exist: {1}" -f $name, $path)
+              Write-Host ("ERROR: {0} path does not exist: {1}" -f $name, $path)
               if ($log) { Stop-Transcript | Out-Null }
               exit 1
             }
 
             cd $path
+
+            # Clean node_modules to avoid corrupted dependencies
+            $nodeModules = Join-Path $path "node_modules"
+            if (Test-Path $nodeModules) {
+              Write-Host ("{0}: Removing existing node_modules to ensure clean install..." -f $name)
+              try {
+                Remove-Item -Recurse -Force $nodeModules
+              }
+              catch {
+                Write-Host ("ERROR: {0}: Failed to delete node_modules: {1}" -f $name, $_.Exception.Message)
+                if ($log) { Stop-Transcript | Out-Null }
+                exit 1
+              }
+            }
+
+            # npm install
             Write-Host ("{0}: running npm install..." -f $name)
             npm install
+            if ($LASTEXITCODE -ne 0) {
+              Write-Host ("ERROR: {0}: npm install failed with exit code {1}" -f $name, $LASTEXITCODE)
+              if ($log) { Stop-Transcript | Out-Null }
+              exit 1
+            }
 
+            # npm run build:prod (only for frontend)
             if ($build) {
               Write-Host ("{0}: running build:prod with CI=false..." -f $name)
               $env:CI = "false"
               npm run build:prod
+              if ($LASTEXITCODE -ne 0) {
+                Write-Host ("ERROR: {0}: npm run build:prod failed with exit code {1}" -f $name, $LASTEXITCODE)
+                if ($log) { Stop-Transcript | Out-Null }
+                exit 1
+              }
             }
           }
 
