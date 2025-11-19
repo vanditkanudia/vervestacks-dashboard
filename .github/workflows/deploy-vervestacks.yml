@@ -113,10 +113,10 @@ jobs:
           Write-Host "Mapping $env:KANVAULT_SHARE with user 'amit'"
 
           try {
-            Write-Host "Attempting to delete existing mapping..."
+            Write-Host 'Attempting to delete existing mapping...'
             net use $env:KANVAULT_SHARE /delete /y
           } catch {
-            Write-Host "No existing mapping or delete failed. Continuing."
+            Write-Host 'No existing mapping or delete failed. Continuing.'
           }
 
           net use $env:KANVAULT_SHARE /user:amit $env:KANVAULT_PASSWORD
@@ -126,7 +126,7 @@ jobs:
             exit $LASTEXITCODE
           }
 
-          Write-Host "UNC network share mapped successfully."
+          Write-Host 'UNC network share mapped successfully.'
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
@@ -146,22 +146,22 @@ jobs:
           $ErrorActionPreference = 'Stop'
 
           trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host ('### STEP FAILED: {0}' -f $stepName)
+            Write-Host ('### ERROR: {0}' -f $_.Exception.Message)
             Write-Host $_.ScriptStackTrace
-            
+
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          Write-Host "=== [$stepName] ==="
+          Write-Host ('=== [{0}] ===' -f $stepName)
 
           $shareRoot = $env:KANVAULT_SHARE
           $verveRoot = Join-Path $shareRoot 'KanORS_Data\VerveStacks'
           $rezRoot   = Join-Path $shareRoot 'KanORS_Data\REZoning data'
 
-          Write-Host "VerveStacks UNC root = $verveRoot"
-          Write-Host "REZoning UNC root    = $rezRoot"
+          Write-Host ('VerveStacks UNC root = {0}' -f $verveRoot)
+          Write-Host ('REZoning UNC root    = {0}' -f $rezRoot)
 
           $syncJobs = @(
             @{ Name = 'OSM-kan-prebuilt'
@@ -188,47 +188,45 @@ jobs:
             $source = $job.Source
             $dest   = $job.Dest
 
-            Write-Host "----"
-            Write-Host "Job: $name"
-            Write-Host "  Source: $source"
-            Write-Host "  Dest  : $dest"
+            Write-Host '----'
+            Write-Host ('Job: {0}' -f $name)
+            Write-Host ('  Source: {0}' -f $source)
+            Write-Host ('  Dest  : {0}' -f $dest)
 
             if (-not (Test-Path $dest)) {
-              Write-Host "Creating destination folder: $dest"
+              Write-Host ('Creating destination folder: {0}' -f $dest)
               New-Item -ItemType Directory -Path $dest | Out-Null
             }
 
             if (-not (Test-Path $source)) {
-              Write-Host "WARNING: Source does not exist: $source"
+              Write-Host ('WARNING: Source does not exist: {0}' -f $source)
               continue
             }
 
-            Write-Host "Starting robocopy for '$name'..."
+            Write-Host ("Starting robocopy for '{0}'..." -f $name)
             robocopy $source $dest /E /Z /R:3 /W:5 /ETA /NP
             $exitCodes += $LASTEXITCODE
 
-            Write-Host "Robocopy exit code: $LASTEXITCODE"
+            Write-Host ('Robocopy exit code: {0}' -f $LASTEXITCODE)
           }
 
           $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
 
-          Write-Host "Max robocopy code = $maxCode"
-          Write-Host "INFO: 0–7 success, 8+ failure"
+          Write-Host ('Max robocopy code = {0}' -f $maxCode)
+          Write-Host 'INFO: 0–7 success, 8+ failure'
 
           if ($maxCode -ge 8) {
-            Write-Host "### ERROR DETAIL: One or more sync jobs failed."
+            Write-Host '### ERROR DETAIL: One or more sync jobs failed.'
             if ($log) { Stop-Transcript | Out-Null }
             exit $maxCode
           }
 
-          Write-Host "All data sync jobs completed successfully."
+          Write-Host 'All data sync jobs completed successfully.'
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
-      # ==========================================================
-      # 🚫 REMOVED APP DEPLOY STEP — AS YOU REQUESTED
-      # ==========================================================
+      # 🚫 APP DEPLOY STEP REMOVED ON PURPOSE
 
       # ==========================================================
       # 3) BACKEND + FRONTEND (npm)
@@ -268,29 +266,32 @@ jobs:
             $path  = $a.Path
             $build = $a.Build
 
-            Write-Host "----"
-            Write-Host "$name: Path = $path"
+            Write-Host '----'
+            Write-Host ("{0}: Path = {1}" -f $name, $path)
 
             if (-not (Test-Path $path)) {
-              Write-Host "ERROR: $name path does not exist: $path"
+              Write-Host ("ERROR: {0} path does not exist: {1}" -f $name, $path)
+              if ($log) { Stop-Transcript | Out-Null }
               exit 1
             }
 
             cd $path
 
-            Write-Host "$name: running npm install..."
+            Write-Host ("{0}: running npm install..." -f $name)
             npm install
             if ($LASTEXITCODE -ne 0) {
-              Write-Host "$name: npm install failed"
+              Write-Host ("{0}: npm install failed with exit code {1}" -f $name, $LASTEXITCODE)
+              if ($log) { Stop-Transcript | Out-Null }
               exit 1
             }
 
             if ($build) {
-              Write-Host "$name: running build:prod..."
-              $env:CI = "false"
+              Write-Host ("{0}: running build:prod with CI=false..." -f $name)
+              $env:CI = 'false'
               npm run build:prod
               if ($LASTEXITCODE -ne 0) {
-                Write-Host "$name: React build failed"
+                Write-Host ("{0}: npm run build:prod failed with exit code {1}" -f $name, $LASTEXITCODE)
+                if ($log) { Stop-Transcript | Out-Null }
                 exit 1
               }
             }
@@ -326,25 +327,28 @@ jobs:
           $appRoot  = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
           $buildDir = Join-Path $appRoot 'frontend\build'
 
-          Write-Host "App root  = $appRoot"
-          Write-Host "Build dir = $buildDir"
+          Write-Host ("App root  = {0}" -f $appRoot)
+          Write-Host ("Build dir = {0}" -f $buildDir)
 
           if (-not (Test-Path $buildDir)) {
-            Write-Host "### ERROR DETAIL: React build folder not found."
+            Write-Host '### ERROR DETAIL: Frontend build directory not found. React build probably failed.'
+            if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
           robocopy $buildDir $appRoot /E /R:3 /W:5 /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
 
-          Write-Host "Robocopy exit code: $code"
+          Write-Host ("Robocopy exit code (publish build) = {0}" -f $code)
+          Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
 
           if ($code -ge 8) {
-            Write-Host "### ERROR: Publishing build failed."
+            Write-Host ("### ERROR DETAIL: Failed to publish frontend build to IIS root (code {0})." -f $code)
+            if ($log) { Stop-Transcript | Out-Null }
             exit $code
           }
 
-          Write-Host "Frontend build published successfully."
+          Write-Host 'Frontend build published to IIS root successfully.'
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
@@ -376,19 +380,23 @@ jobs:
           $appRoot    = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
           $pythonPath = Join-Path $appRoot 'python-service'
 
-          Write-Host "Python service path = $pythonPath"
-          Write-Host "PYTHON_EXE         = $env:PYTHON_EXE"
+          Write-Host ("Python service path = {0}" -f $pythonPath)
+          Write-Host ("PYTHON_EXE         = {0}" -f $env:PYTHON_EXE)
 
           if (-not (Test-Path $pythonPath)) {
-            Write-Host "ERROR: python-service folder not found"
+            Write-Host '### ERROR DETAIL: python-service folder not found under app root.'
+            if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
           cd $pythonPath
 
           if (-not (Test-Path '.venv')) {
-            Write-Host "Creating virtual environment..."
+            Write-Host 'Creating virtual environment in .venv...'
             & $env:PYTHON_EXE -m venv .venv
+          }
+          else {
+            Write-Host 'Virtual environment .venv already exists, reusing it.'
           }
 
           .\.venv\Scripts\python.exe -m pip install --upgrade pip
@@ -404,7 +412,7 @@ jobs:
         if: env.Update_Data_On_Hetzner == 'true'
         shell: powershell
         run: |
-          Write-Host "Hetzner deploy not implemented."
+          Write-Host 'Hetzner deploy not implemented.'
           exit 0
 
       # ==========================================================
@@ -433,21 +441,24 @@ jobs:
           Write-Host "=== [$stepName] ==="
 
           $scriptPath = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
-
-          Write-Host "start.bat path: $scriptPath"
+          Write-Host ("Expected start.bat path: {0}" -f $scriptPath)
 
           if (-not (Test-Path $scriptPath)) {
-            Write-Host "ERROR: start.bat not found"
+            Write-Host '### ERROR DETAIL: start.bat not found. Check that it exists in the app root.'
+            if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
           & $scriptPath
-          if ($LASTEXITCODE -ne 0) {
-            Write-Host "ERROR: start.bat failed."
-            exit $LASTEXITCODE
+          $rc = $LASTEXITCODE
+
+          if ($rc -ne 0) {
+            Write-Host ("### ERROR DETAIL: start.bat exited with code {0}." -f $rc)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $rc
           }
 
-          Write-Host "start.bat completed successfully."
+          Write-Host 'start.bat completed successfully.'
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
