@@ -26,8 +26,8 @@ env:
   DEST_ATLITE: "C:\\inetpub\\VerveStacks\\data\\Atlite_data_optimized"
   DEST_REZONING: "C:\\inetpub\\VerveStacks\\data\\REZoning_world_data"
 
-  # Application subroot (beneath DEPLOY_ROOT)
-  APP_SUBROOT: "dashboard"
+  # Application subroot (beneath DEPLOY_ROOT)  <-- CHANGED
+  APP_SUBROOT: "vervestacks-dashboard"
 
   # Python service settings
   PYTHON_EXE: "C:\\Python312\\python.exe"
@@ -425,8 +425,7 @@ jobs:
         run: |
           $log = $env:LOG_FILE
           if ($log) {
-            Start-Transcript -Path $log -Append | Out-Null
-          }
+            Start-Transcript -Path $log -Append | Out-Null }
           Write-Host "=== Running start.bat AFTER deployment (from DEPLOY_ROOT) ==="
 
           $scriptPath = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
