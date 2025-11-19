@@ -267,8 +267,8 @@ jobs:
             [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
-          Write-Host 'Running robocopy for application deployment (excluding .git & .github folders)...'
-          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
+          Write-Host 'Running robocopy for application deployment (excluding .git, .github, and node_modules folders)...'
+          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" "node_modules" /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
 
           Write-Host ('App robocopy exit code: {0}' -f $code)
@@ -339,6 +339,20 @@ jobs:
             }
 
             cd $path
+
+            # 💣 Clean node_modules to avoid corrupted/incomplete installs
+            $nodeModules = Join-Path $path 'node_modules'
+            if (Test-Path $nodeModules) {
+              Write-Host ("{0}: Removing existing node_modules for a clean install..." -f $name)
+              try {
+                Remove-Item -Recurse -Force $nodeModules
+              }
+              catch {
+                Write-Host ("ERROR: {0}: Failed to delete node_modules: {1}" -f $name, $_.Exception.Message)
+                if ($log) { Stop-Transcript | Out-Null }
+                exit 1
+              }
+            }
 
             Write-Host ("{0}: running npm install..." -f $name)
             npm install
