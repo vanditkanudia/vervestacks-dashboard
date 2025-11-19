@@ -23,14 +23,17 @@ env:
   # Destination data paths
   DEST_OSM: "C:\\inetpub\\VerveStacks\\data\\OSM-kan-prebuilt"
   DEST_TRANSMISSION: "C:\\inetpub\\VerveStacks\\data\\transmission_line_generation"
-  DEST_ATLITE: "C:\\inetpub\\VerveStacks\\data\\hourly_profiles\\Atlite_data"
-  DEST_REZONING: "C:\\inetpub\\VerveStacks\\data\\REZoning"
+  DEST_ATLITE: "C:\\inetpub\\VerveStacks\\data\\Atlite_data_optimized"
+  DEST_REZONING: "C:\\inetpub\\VerveStacks\\data\\REZoning_world_data"
 
-  # App root (under DEPLOY_ROOT)
-  APP_SUBROOT: "vervestacks-dashboard"
+  # Application subroot (beneath DEPLOY_ROOT)
+  APP_SUBROOT: "dashboard"
 
-  # Python executable on the runner
-  PYTHON_EXE: "D:\\Pyvenvs\\Scripts\\python.exe"
+  # Python service settings
+  PYTHON_EXE: "C:\\Python312\\python.exe"
+
+  # App source root (what you copy from)
+  APP_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\vervestacks-dashboard"
 
 jobs:
   deploy:
@@ -44,6 +47,35 @@ jobs:
         uses: actions/checkout@v4
 
       # =====================
+      # INIT WORKFLOW RUN LOG
+      # =====================
+      - name: Init workflow run log file
+        shell: powershell
+        run: |
+          $logRoot = "D:\GitHub\VerveStacks_Logs"
+
+          if (-not (Test-Path $logRoot)) {
+            New-Item -ItemType Directory -Path $logRoot | Out-Null
+          }
+
+          $timestamp = Get-Date -Format "yyyy-MM-ddTHH-mm-ss"
+          $fileName  = "${{ github.workflow }}_${{ github.run_number }}_${{ github.job }}_$timestamp.log"
+          $safeName  = ($fileName -replace '[\\/:*?"<>|]', '_')
+          $logFile   = Join-Path $logRoot $safeName
+
+          "Workflow : $env:GITHUB_WORKFLOW"          | Out-File -FilePath $logFile -Encoding UTF8
+          "Run ID   : $env:GITHUB_RUN_ID"           | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Job      : $env:GITHUB_JOB"              | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Repo     : $env:GITHUB_REPOSITORY"       | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Commit   : $env:GITHUB_SHA"              | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Actor    : $env:GITHUB_ACTOR"            | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Workspace: $env:GITHUB_WORKSPACE"        | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Started  : $(Get-Date -Format o)"        | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "--------------------------------------"  | Out-File -FilePath $logFile -Encoding UTF8 -Append
+
+          "LOG_FILE=$logFile" | Out-File -FilePath $env:GITHUB_ENV -Encoding UTF8 -Append
+
+      # =====================
       # MAP UNC SHARE (kanvault)
       # =====================
       - name: Map kanvault share
@@ -52,10 +84,16 @@ jobs:
         env:
           KANVAULT_PASSWORD: ${{ secrets.KANVAULT_PASSWORD }}
         run: |
+          $log = $env:LOG_FILE
+          if ($log) {
+            Start-Transcript -Path $log -Append | Out-Null
+          }
           Write-Host "=== Mapping $env:KANVAULT_SHARE with user 'amit' ==="
 
           try {
-            net use $env:KANVAULT_SHARE /delete /y 2>$null | Out-Null
+            # Delete any existing mapping for this share (ignore errors)
+            Write-Host "Attempting to delete existing mapping for $env:KANVAULT_SHARE..."
+            net use $env:KANVAULT_SHARE /delete /y
           }
           catch {
             Write-Host "No existing mapping to delete (or delete failed). Ignoring and continuing."
@@ -66,10 +104,15 @@ jobs:
           $exitCode = $LASTEXITCODE
           if ($exitCode -ne 0) {
             Write-Error "Failed to map $env:KANVAULT_SHARE. Exit code: $exitCode"
+            if ($log) { Stop-Transcript | Out-Null }
             exit $exitCode
           }
 
           Write-Host "UNC network share mapped successfully."
+
+          if ($log) {
+            Stop-Transcript | Out-Null
+          }
 
       # ==========================================================
       # 1) ALL DATA SYNC (KANVAULT + LOCAL) IN ONE STEP
@@ -78,6 +121,10 @@ jobs:
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
+          $log = $env:LOG_FILE
+          if ($log) {
+            Start-Transcript -Path $log -Append | Out-Null
+          }
           Write-Host "=== [PART 1] Syncing data from kanvault to C:\inetpub\VerveStacks\data ==="
 
           # ---------- KANVAULT SYNC ----------
@@ -89,6 +136,11 @@ jobs:
           Write-Host "REZoning UNC root    = $rezRoot"
 
           $syncJobs = @(
+            @{
+              Name   = "OSM-kan-prebuilt"
+              Source = Join-Path $verveRoot "OSM-kan-prebuilt"
+              Dest   = $env:DEST_OSM
+            },
             @{
               Name   = "OSM-kan-prebuilt (harish)"
               Source = Join-Path $verveRoot "OSM-kan-prebuilt\harish"
@@ -131,102 +183,82 @@ jobs:
             }
 
             if (-not (Test-Path $source)) {
-              Write-Warning "Source path does not exist for job '$name': $source. Skipping this job."
-              $exitCodes += 0
+              Write-Host "WARNING: Source path does not exist: $source"
               continue
             }
 
-            Write-Host "Syncing $name ..."
-            robocopy $source $dest /E /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
-            $rc = $LASTEXITCODE
-            Write-Host "Robocopy exit code for '$name': $rc"
-            $exitCodes += $rc
+            if (-not (Test-Path $dest)) {
+              Write-Host "WARNING: Destination path does not exist after attempted creation: $dest"
+              continue
+            }
+
+            Write-Host "Starting robocopy for '$name'..."
+            robocopy $source $dest /E /Z /R:3 /W:5 /NFL /NDL /NJH /NJS /NP
+            $code = $LASTEXITCODE
+            Write-Host "Robocopy exit code for '$name' = $code"
+            $exitCodes += $code
           }
 
-          $maxCode = if ($exitCodes.Count -gt 0) {
-            ($exitCodes | Measure-Object -Maximum).Maximum
-          } else {
-            0
-          }
-
+          $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
+          Write-Host "Max robocopy code among data sync jobs = $maxCode"
           if ($maxCode -ge 8) {
-            Write-Error "At least one kanvault data sync robocopy failed. Highest exit code: $maxCode"
+            Write-Error "One or more data sync jobs failed with robocopy exit code $maxCode"
+            if ($log) { Stop-Transcript | Out-Null }
             exit $maxCode
           }
 
-          Write-Host "UNC (kanvault) data sync completed successfully with maximum robocopy code: $maxCode"
+          Write-Host "All data sync jobs completed successfully (no critical robocopy errors)."
 
-          # ---------- LOCAL DATA SYNC ----------
-          Write-Host ""
-          Write-Host "=== [PART 2] Syncing LOCAL data from D:\GitHub\VerveStacks\data → C:\inetpub\VerveStacks\data ==="
-
-          $srcLocal = $env:LOCAL_DATA_SOURCE_ROOT
-          $dstLocal = $env:DATA_ROOT
-
-          Write-Host "Local data source     : $srcLocal"
-          Write-Host "IIS data destination  : $dstLocal"
-
-          if (-not (Test-Path $srcLocal)) {
-            Write-Host "WARNING: Local data source folder does not exist: $srcLocal"
-            Write-Host "Nothing to sync from local; continuing."
-          }
-          else {
-            if (-not (Test-Path $dstLocal)) {
-              Write-Host "Creating IIS data root: $dstLocal"
-              [System.IO.Directory]::CreateDirectory($dstLocal) | Out-Null
-            }
-
-            robocopy $srcLocal $dstLocal /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
-            $codeLocal = $LASTEXITCODE
-            Write-Host "Local data robocopy exit code: $codeLocal"
-
-            if ($codeLocal -ge 8) {
-              Write-Error "Local data sync failed with robocopy exit code $codeLocal"
-              exit $codeLocal
-            }
-
-            Write-Host "Local data sync completed successfully."
+          if ($log) {
+            Stop-Transcript | Out-Null
           }
 
-          Write-Host "=== All data sync (kanvault + local) finished successfully. ==="
-          exit 0
-
       # ==========================================================
-      # 2) DEPLOY ENTIRE REPO → C:\inetpub\VerveStacks
+      # 2) APP DEPLOY (COPY APP SOURCE TO DEPLOY_ROOT\APP_SUBROOT)
       # ==========================================================
-      - name: Deploy entire VerveStacks to IIS (overwrite only, no git folders)
+      - name: Deploy app from APP_SOURCE_ROOT to DEPLOY_ROOT\APP_SUBROOT
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
-          Write-Host "=== Deploying entire VerveStacks repo to LOCAL IIS ==="
+          $log = $env:LOG_FILE
+          if ($log) {
+            Start-Transcript -Path $log -Append | Out-Null
+          }
+          Write-Host "=== Deploying VerveStacks app from APP_SOURCE_ROOT to DEPLOY_ROOT\\APP_SUBROOT ==="
 
-          $src = "$env:GITHUB_WORKSPACE"
-          $dst = $env:DEPLOY_ROOT
+          $src = $env:APP_SOURCE_ROOT
+          $dst = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
 
-          Write-Host "Source folder     : $src"
-          Write-Host "Destination folder: $dst"
+          Write-Host "Source (APP_SOURCE_ROOT) = $src"
+          Write-Host "Destination (APP_SUBROOT) = $dst"
 
           if (-not (Test-Path $src)) {
-            Write-Error "Source folder does not exist: $src"
+            Write-Error "APP_SOURCE_ROOT does not exist: $src"
+            if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
           if (-not (Test-Path $dst)) {
-            Write-Host "Creating IIS deployment folder: $dst"
-            New-Item -ItemType Directory -Path $dst -Force | Out-Null
+            Write-Host "Creating deployment folder (with parents if needed): $dst"
+            [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
+          Write-Host "Running robocopy for application deployment..."
           robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
           Write-Host "App robocopy exit code: $code"
 
           if ($code -ge 8) {
             Write-Error "Deployment failed with robocopy exit code $code"
+            if ($log) { Stop-Transcript | Out-Null }
             exit $code
           }
 
           Write-Host "Deployment completed successfully."
-          exit 0
+
+          if ($log) {
+            Stop-Transcript | Out-Null
+          }
 
       # =========================================
       # 3) BACKEND + FRONTEND (npm) ON DESTINATION
@@ -234,6 +266,10 @@ jobs:
       - name: Install JS deps and build frontend on DEPLOY_ROOT
         shell: powershell
         run: |
+          $log = $env:LOG_FILE
+          if ($log) {
+            Start-Transcript -Path $log -Append | Out-Null
+          }
           Write-Host "=== JS apps: backend install + frontend install+build on DEPLOY_ROOT ==="
 
           $appRoot   = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
@@ -245,16 +281,17 @@ jobs:
             @{ Name = "Frontend"; Path = $frontend; Build = $true }
           )
 
-          foreach ($app in $apps) {
-            $name  = $app.Name
-            $path  = $app.Path
-            $build = $app.Build
+          foreach ($a in $apps) {
+            $name  = $a.Name
+            $path  = $a.Path
+            $build = $a.Build
 
             Write-Host "----"
             Write-Host "$name: Path = $path"
 
             if (-not (Test-Path $path)) {
               Write-Error "$name path does not exist: $path"
+              if ($log) { Stop-Transcript | Out-Null }
               exit 1
             }
 
@@ -269,12 +306,20 @@ jobs:
             }
           }
 
+          if ($log) {
+            Stop-Transcript | Out-Null
+          }
+
       # =========================================
-      # 4) PYTHON SERVICE (venv + requirements) ON DEST
+      # 4) PYTHON SERVICE SETUP
       # =========================================
       - name: Setup python service on deployed folder
         shell: powershell
         run: |
+          $log = $env:LOG_FILE
+          if ($log) {
+            Start-Transcript -Path $log -Append | Out-Null
+          }
           Write-Host "=== Python-service: venv + requirements (on DEPLOY_ROOT) ==="
 
           $appRoot    = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
@@ -284,14 +329,15 @@ jobs:
           Write-Host "PYTHON_EXE         = $env:PYTHON_EXE"
 
           if (-not (Test-Path $pythonPath)) {
-            Write-Error "Python service path does not exist: $pythonPath"
+            Write-Error "Python service folder does not exist: $pythonPath"
+            if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
           cd $pythonPath
 
           if (-not (Test-Path ".venv")) {
-            Write-Host "Creating virtual environment using $env:PYTHON_EXE ..."
+            Write-Host "Creating virtual environment in .venv..."
             & $env:PYTHON_EXE -m venv .venv
           }
           else {
@@ -301,6 +347,10 @@ jobs:
           .\.venv\Scripts\python.exe -m pip install --upgrade pip
           .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 
+          if ($log) {
+            Stop-Transcript | Out-Null
+          }
+
       # =========================================
       # 5) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
       # =========================================
@@ -308,8 +358,16 @@ jobs:
         if: env.Update_Data_On_Hetzner == 'true'
         shell: powershell
         run: |
+          $log = $env:LOG_FILE
+          if ($log) {
+            Start-Transcript -Path $log -Append | Out-Null
+          }
           Write-Host "=== Update_Data_On_Hetzner == true ==="
           Write-Host "Hetzner deployment not implemented yet."
+
+          if ($log) {
+            Stop-Transcript | Out-Null
+          }
 
       # =========================================
       # 6) RUN start.bat AT THE END (FROM DEPLOY_ROOT)
@@ -318,6 +376,10 @@ jobs:
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
+          $log = $env:LOG_FILE
+          if ($log) {
+            Start-Transcript -Path $log -Append | Out-Null
+          }
           Write-Host "=== Running start.bat AFTER deployment (from DEPLOY_ROOT) ==="
 
           $scriptPath = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
@@ -325,6 +387,7 @@ jobs:
 
           if (-not (Test-Path $scriptPath)) {
             Write-Error "start.bat not found at $scriptPath"
+            if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
@@ -333,7 +396,21 @@ jobs:
 
           if ($rc -ne 0) {
             Write-Error "start.bat failed with exit code $rc."
+            if ($log) { Stop-Transcript | Out-Null }
             exit $rc
           }
 
           Write-Host "start.bat completed successfully."
+          if ($log) {
+            Stop-Transcript | Out-Null
+          }
+
+      # =========================================
+      # 7) OPTIONAL: UPLOAD LOG AS GITHUB ARTIFACT
+      # =========================================
+      # - name: Upload workflow log artifact
+      #   if: always()
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: run-log-${{ github.run_number }}
+      #     path: ${{ env.LOG_FILE }}
