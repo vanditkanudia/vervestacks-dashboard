@@ -17,7 +17,7 @@ env:
   # Local data source root (your main local data source)
   LOCAL_DATA_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\data"
 
-  # Base UNC share
+  # Base UNC share (YAML-escaped; runtime value is \\192.168.0.7\kanvault)
   KANVAULT_SHARE: "\\\\192.168.0.7\\kanvault"
 
   # Destination data paths
@@ -193,7 +193,8 @@ jobs:
             }
 
             Write-Host "Starting robocopy for '$name'..."
-            robocopy $source $dest /E /Z /R:3 /W:5 /NFL /NDL /NJH /NJS /NP
+            # Show progress & ETA; not fully silent
+            robocopy $source $dest /E /Z /R:3 /W:5 /ETA /NP
             $code = $LASTEXITCODE
             Write-Host "Robocopy exit code for '$name' = $code"
             $exitCodes += $code
@@ -201,10 +202,11 @@ jobs:
 
           $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
           Write-Host "Max robocopy code among data sync jobs = $maxCode"
+
           if ($maxCode -ge 8) {
             Write-Error "One or more data sync jobs failed with robocopy exit code $maxCode"
             if ($log) { Stop-Transcript | Out-Null }
-            exit $maxCode
+            exit $maxCode   # real failure
           }
 
           Write-Host "All data sync jobs completed successfully (no critical robocopy errors)."
@@ -212,6 +214,9 @@ jobs:
           if ($log) {
             Stop-Transcript | Out-Null
           }
+
+          # IMPORTANT: force success exit code for GitHub even if robocopy returned 1–7
+          exit 0
 
       # ==========================================================
       # 2) APP DEPLOY (COPY APP SOURCE TO DEPLOY_ROOT\APP_SUBROOT)
@@ -259,6 +264,9 @@ jobs:
           if ($log) {
             Stop-Transcript | Out-Null
           }
+
+          # Force a clean success exit even if robocopy returned 1–7
+          exit 0
 
       # =========================================
       # 3) BACKEND + FRONTEND (npm) ON DESTINATION
