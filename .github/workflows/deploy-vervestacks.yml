@@ -55,6 +55,14 @@ jobs:
           $stepName = 'Init workflow run log file'
           $logRoot = 'D:\GitHub\VerveStacks_Logs'
 
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            exit 1
+          }
+
           if (-not (Test-Path $logRoot)) {
             New-Item -ItemType Directory -Path $logRoot | Out-Null
           }
@@ -76,6 +84,8 @@ jobs:
           '--------------------------------------' | Out-File -FilePath $logFile -Encoding UTF8 -Append
 
           "LOG_FILE=$logFile" | Out-File -FilePath $env:GITHUB_ENV -Encoding UTF8 -Append
+
+          exit 0
 
       # =====================
       # MAP UNC SHARE (kanvault)
@@ -123,6 +133,8 @@ jobs:
           Write-Host 'UNC network share mapped successfully.'
 
           if ($log) { Stop-Transcript | Out-Null }
+
+          exit 0
 
       # ==========================================================
       # 1) ALL DATA SYNC (KANVAULT + LOCAL) IN ONE STEP
@@ -366,6 +378,8 @@ jobs:
 
           if ($log) { Stop-Transcript | Out-Null }
 
+          exit 0
+
       # =========================================
       # 3b) PUBLISH FRONTEND BUILD TO IIS ROOT
       # =========================================
@@ -413,6 +427,8 @@ jobs:
           Write-Host 'Frontend build published to IIS root successfully.'
 
           if ($log) { Stop-Transcript | Out-Null }
+
+          exit 0
 
       # =========================================
       # 4) PYTHON SERVICE SETUP
@@ -462,6 +478,8 @@ jobs:
 
           if ($log) { Stop-Transcript | Out-Null }
 
+          exit 0
+
       # =========================================
       # 5) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
       # =========================================
@@ -485,7 +503,9 @@ jobs:
           Write-Host "=== [$stepName] ==="
           Write-Host 'Update_Data_On_Hetzner == true, but remote deploy logic is not implemented yet.'
 
-          if ($log) { Stop-Transcript -Path $log | Out-Null }
+          if ($log) { Stop-Transcript | Out-Null }
+
+          exit 0
 
       # =========================================
       # 6) RUN start.bat AT THE END (FROM DEPLOY_ROOT)
@@ -529,6 +549,8 @@ jobs:
 
           Write-Host 'start.bat completed successfully.'
           if ($log) { Stop-Transcript | Out-Null }
+
+          exit 0
 
       # =========================================
       # 7) OPTIONAL: UPLOAD LOG AS GITHUB ARTIFACT
