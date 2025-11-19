@@ -26,7 +26,7 @@ env:
   DEST_ATLITE: "C:\\inetpub\\VerveStacks\\data\\Atlite_data_optimized"
   DEST_REZONING: "C:\\inetpub\\VerveStacks\\data\\REZoning_world_data"
 
-  # Application subroot (beneath DEPLOY_ROOT)  <-- CHANGED
+  # Application subroot (beneath DEPLOY_ROOT)
   APP_SUBROOT: "vervestacks-dashboard"
 
   # Python service settings
@@ -52,6 +52,7 @@ jobs:
       - name: Init workflow run log file
         shell: powershell
         run: |
+          $stepName = "Init workflow run log file"
           $logRoot = "D:\GitHub\VerveStacks_Logs"
 
           if (-not (Test-Path $logRoot)) {
@@ -63,7 +64,8 @@ jobs:
           $safeName  = ($fileName -replace '[\\/:*?"<>|]', '_')
           $logFile   = Join-Path $logRoot $safeName
 
-          "Workflow : $env:GITHUB_WORKFLOW"          | Out-File -FilePath $logFile -Encoding UTF8
+          "STEP     : $stepName"                      | Out-File -FilePath $logFile -Encoding UTF8
+          "Workflow : $env:GITHUB_WORKFLOW"          | Out-File -FilePath $logFile -Encoding UTF8 -Append
           "Run ID   : $env:GITHUB_RUN_ID"           | Out-File -FilePath $logFile -Encoding UTF8 -Append
           "Job      : $env:GITHUB_JOB"              | Out-File -FilePath $logFile -Encoding UTF8 -Append
           "Repo     : $env:GITHUB_REPOSITORY"       | Out-File -FilePath $logFile -Encoding UTF8 -Append
@@ -84,14 +86,23 @@ jobs:
         env:
           KANVAULT_PASSWORD: ${{ secrets.KANVAULT_PASSWORD }}
         run: |
+          $stepName = "Map kanvault share"
           $log = $env:LOG_FILE
-          if ($log) {
-            Start-Transcript -Path $log -Append | Out-Null
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
           }
-          Write-Host "=== Mapping $env:KANVAULT_SHARE with user 'amit' ==="
+
+          Write-Host "=== [$stepName] ==="
+          Write-Host "Mapping $env:KANVAULT_SHARE with user 'amit'"
 
           try {
-            # Delete any existing mapping for this share (ignore errors)
             Write-Host "Attempting to delete existing mapping for $env:KANVAULT_SHARE..."
             net use $env:KANVAULT_SHARE /delete /y
           }
@@ -103,16 +114,15 @@ jobs:
           net use $env:KANVAULT_SHARE /user:amit $env:KANVAULT_PASSWORD
           $exitCode = $LASTEXITCODE
           if ($exitCode -ne 0) {
-            Write-Error "Failed to map $env:KANVAULT_SHARE. Exit code: $exitCode"
+            Write-Host "### ERROR DETAIL: 'net use' failed with exit code $exitCode."
+            Write-Host "This usually means wrong credentials, share unreachable, or firewall issue."
             if ($log) { Stop-Transcript | Out-Null }
             exit $exitCode
           }
 
           Write-Host "UNC network share mapped successfully."
 
-          if ($log) {
-            Stop-Transcript | Out-Null
-          }
+          if ($log) { Stop-Transcript | Out-Null }
 
       # ==========================================================
       # 1) ALL DATA SYNC (KANVAULT + LOCAL) IN ONE STEP
@@ -121,13 +131,21 @@ jobs:
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
+          $stepName = "Sync all data (kanvault + local) to IIS"
           $log = $env:LOG_FILE
-          if ($log) {
-            Start-Transcript -Path $log -Append | Out-Null
-          }
-          Write-Host "=== [PART 1] Syncing data from kanvault to C:\inetpub\VerveStacks\data ==="
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
 
-          # ---------- KANVAULT SYNC ----------
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          Write-Host "=== [$stepName] ==="
+
           $shareRoot = $env:KANVAULT_SHARE
           $verveRoot = Join-Path $shareRoot "KanORS_Data\VerveStacks"
           $rezRoot   = Join-Path $shareRoot "KanORS_Data\REZoning data"
@@ -136,31 +154,21 @@ jobs:
           Write-Host "REZoning UNC root    = $rezRoot"
 
           $syncJobs = @(
-            @{
-              Name   = "OSM-kan-prebuilt"
-              Source = Join-Path $verveRoot "OSM-kan-prebuilt"
-              Dest   = $env:DEST_OSM
-            },
-            @{
-              Name   = "OSM-kan-prebuilt (harish)"
-              Source = Join-Path $verveRoot "OSM-kan-prebuilt\harish"
-              Dest   = $env:DEST_OSM
-            },
-            @{
-              Name   = "transmission_line_generation"
-              Source = Join-Path $verveRoot "transmission_line_generation"
-              Dest   = $env:DEST_TRANSMISSION
-            },
-            @{
-              Name   = "Atlite_data_optimized"
-              Source = Join-Path $rezRoot "Atlite_data\Atlite_data_optimized"
-              Dest   = $env:DEST_ATLITE
-            },
-            @{
-              Name   = "REZoning_world_data"
-              Source = Join-Path $rezRoot "REZoning_world_data"
-              Dest   = $env:DEST_REZONING
-            }
+            @{ Name = "OSM-kan-prebuilt"
+               Source = Join-Path $verveRoot "OSM-kan-prebuilt"
+               Dest   = $env:DEST_OSM },
+            @{ Name = "OSM-kan-prebuilt (harish)"
+               Source = Join-Path $verveRoot "OSM-kan-prebuilt\harish"
+               Dest   = $env:DEST_OSM },
+            @{ Name = "transmission_line_generation"
+               Source = Join-Path $verveRoot "transmission_line_generation"
+               Dest   = $env:DEST_TRANSMISSION },
+            @{ Name = "Atlite_data_optimized"
+               Source = Join-Path $rezRoot "Atlite_data\Atlite_data_optimized"
+               Dest   = $env:DEST_ATLITE },
+            @{ Name = "REZoning_world_data"
+               Source = Join-Path $rezRoot "REZoning_world_data"
+               Dest   = $env:DEST_REZONING }
           )
 
           $exitCodes = @()
@@ -183,17 +191,16 @@ jobs:
             }
 
             if (-not (Test-Path $source)) {
-              Write-Host "WARNING: Source path does not exist: $source"
+              Write-Host "WARNING: Source path does not exist: $source. Skipping this job."
               continue
             }
 
             if (-not (Test-Path $dest)) {
-              Write-Host "WARNING: Destination path does not exist after attempted creation: $dest"
+              Write-Host "WARNING: Destination path still does not exist after creation: $dest. Skipping this job."
               continue
             }
 
             Write-Host ("Starting robocopy for '{0}'..." -f $name)
-            # Show progress & ETA; not fully silent
             robocopy $source $dest /E /Z /R:3 /W:5 /ETA /NP
             $code = $LASTEXITCODE
             Write-Host ("Robocopy exit code for '{0}' = {1}" -f $name, $code)
@@ -202,20 +209,19 @@ jobs:
 
           $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
           Write-Host ("Max robocopy code among data sync jobs = {0}" -f $maxCode)
+          Write-Host "INFO: Robocopy 0–7 = success/acceptable. 8+ = failure."
 
           if ($maxCode -ge 8) {
-            Write-Error "One or more data sync jobs failed with robocopy exit code $maxCode"
+            Write-Host "### ERROR DETAIL: One or more data sync jobs failed (max robocopy code = $maxCode)."
+            Write-Host "See robocopy documentation for the exact meaning of this code."
             if ($log) { Stop-Transcript | Out-Null }
-            exit $maxCode   # real failure
+            exit $maxCode
           }
 
           Write-Host "All data sync jobs completed successfully (no critical robocopy errors)."
 
-          if ($log) {
-            Stop-Transcript | Out-Null
-          }
+          if ($log) { Stop-Transcript | Out-Null }
 
-          # IMPORTANT: force success exit code for GitHub even if robocopy returned 1–7
           exit 0
 
       # ==========================================================
@@ -225,11 +231,20 @@ jobs:
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
+          $stepName = "Deploy app files to IIS folder"
           $log = $env:LOG_FILE
-          if ($log) {
-            Start-Transcript -Path $log -Append | Out-Null
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
           }
-          Write-Host "=== Deploying VerveStacks app from APP_SOURCE_ROOT to DEPLOY_ROOT\\APP_SUBROOT ==="
+
+          Write-Host "=== [$stepName] ==="
 
           $src = $env:APP_SOURCE_ROOT
           $dst = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
@@ -238,7 +253,7 @@ jobs:
           Write-Host ("Destination (APP_SUBROOT) = {0}" -f $dst)
 
           if (-not (Test-Path $src)) {
-            Write-Error "APP_SOURCE_ROOT does not exist: $src"
+            Write-Host "### ERROR DETAIL: Source app folder does not exist. Check APP_SOURCE_ROOT."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -252,20 +267,18 @@ jobs:
           robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
           Write-Host ("App robocopy exit code: {0}" -f $code)
+          Write-Host "INFO: Robocopy 0–7 = success/acceptable. 8+ = failure."
 
           if ($code -ge 8) {
-            Write-Error "Deployment failed with robocopy exit code $code"
+            Write-Host "### ERROR DETAIL: Deployment robocopy failed (code $code). Files may be partially copied."
             if ($log) { Stop-Transcript | Out-Null }
             exit $code
           }
 
           Write-Host "Deployment completed successfully."
 
-          if ($log) {
-            Stop-Transcript | Out-Null
-          }
+          if ($log) { Stop-Transcript | Out-Null }
 
-          # Force a clean success exit even if robocopy returned 1–7
           exit 0
 
       # =========================================
@@ -274,23 +287,20 @@ jobs:
       - name: Install JS deps and build frontend on DEPLOY_ROOT
         shell: powershell
         run: |
+          $stepName = "Install JS deps and build frontend"
           $log = $env:LOG_FILE
-          if ($log) {
-            Start-Transcript -Path $log -Append | Out-Null
-          }
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
 
-          # Make all errors terminating so trap can catch them
           $ErrorActionPreference = 'Stop'
-
-          # Global error handler for this step
           trap {
-            Write-Host "### FATAL ERROR in JS apps step: $($_.Exception.Message)"
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
             Write-Host $_.ScriptStackTrace
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          Write-Host "=== JS apps: backend install + frontend install+build on DEPLOY_ROOT ==="
+          Write-Host "=== [$stepName] ==="
 
           $appRoot   = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
           $backend   = Join-Path $appRoot "backend"
@@ -311,13 +321,13 @@ jobs:
 
             if (-not (Test-Path $path)) {
               Write-Host ("ERROR: {0} path does not exist: {1}" -f $name, $path)
+              Write-Host "### ERROR DETAIL: This usually means deployment did not copy the folder correctly."
               if ($log) { Stop-Transcript | Out-Null }
               exit 1
             }
 
             cd $path
 
-            # Clean node_modules to avoid corrupted dependencies
             $nodeModules = Join-Path $path "node_modules"
             if (Test-Path $nodeModules) {
               Write-Host ("{0}: Removing existing node_modules to ensure clean install..." -f $name)
@@ -326,36 +336,83 @@ jobs:
               }
               catch {
                 Write-Host ("ERROR: {0}: Failed to delete node_modules: {1}" -f $name, $_.Exception.Message)
+                Write-Host "### ERROR DETAIL: Manually delete node_modules on the server and rerun."
                 if ($log) { Stop-Transcript | Out-Null }
                 exit 1
               }
             }
 
-            # npm install
             Write-Host ("{0}: running npm install..." -f $name)
             npm install
             if ($LASTEXITCODE -ne 0) {
               Write-Host ("ERROR: {0}: npm install failed with exit code {1}" -f $name, $LASTEXITCODE)
+              Write-Host "### ERROR DETAIL: Check package.json / package-lock.json and Node/npm versions."
               if ($log) { Stop-Transcript | Out-Null }
               exit 1
             }
 
-            # npm run build:prod (only for frontend)
             if ($build) {
               Write-Host ("{0}: running build:prod with CI=false..." -f $name)
               $env:CI = "false"
               npm run build:prod
               if ($LASTEXITCODE -ne 0) {
                 Write-Host ("ERROR: {0}: npm run build:prod failed with exit code {1}" -f $name, $LASTEXITCODE)
+                Write-Host "### ERROR DETAIL: React build failed. See the preceding stack trace and error output."
                 if ($log) { Stop-Transcript | Out-Null }
                 exit 1
               }
             }
           }
 
-          if ($log) {
-            Stop-Transcript | Out-Null
+          if ($log) { Stop-Transcript | Out-Null }
+
+      # =========================================
+      # 3b) PUBLISH FRONTEND BUILD TO IIS ROOT
+      # =========================================
+      - name: Publish frontend build to IIS root
+        shell: powershell
+        run: |
+          $stepName = "Publish frontend build to IIS root"
+          $log = $env:LOG_FILE
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
           }
+
+          Write-Host "=== [$stepName] ==="
+
+          $appRoot  = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $buildDir = Join-Path $appRoot "frontend\build"
+
+          Write-Host ("App root  = {0}" -f $appRoot)
+          Write-Host ("Build dir = {0}" -f $buildDir)
+
+          if (-not (Test-Path $buildDir)) {
+            Write-Host "### ERROR DETAIL: Frontend build directory not found. React build probably failed."
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          robocopy $buildDir $appRoot /E /R:3 /W:5 /NFL /NDL /NJH /NJS /NP
+          $code = $LASTEXITCODE
+          Write-Host ("Robocopy exit code (publish build) = {0}" -f $code)
+          Write-Host "INFO: Robocopy 0–7 = success/acceptable. 8+ = failure."
+
+          if ($code -ge 8) {
+            Write-Host "### ERROR DETAIL: Failed to publish frontend build to IIS root (code $code)."
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $code
+          }
+
+          Write-Host "Frontend build published to IIS root successfully."
+
+          if ($log) { Stop-Transcript | Out-Null }
 
       # =========================================
       # 4) PYTHON SERVICE SETUP
@@ -363,11 +420,20 @@ jobs:
       - name: Setup python service on deployed folder
         shell: powershell
         run: |
+          $stepName = "Setup python service"
           $log = $env:LOG_FILE
-          if ($log) {
-            Start-Transcript -Path $log -Append | Out-Null
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
           }
-          Write-Host "=== Python-service: venv + requirements (on DEPLOY_ROOT) ==="
+
+          Write-Host "=== [$stepName] ==="
 
           $appRoot    = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
           $pythonPath = Join-Path $appRoot "python-service"
@@ -376,7 +442,7 @@ jobs:
           Write-Host ("PYTHON_EXE         = {0}" -f $env:PYTHON_EXE)
 
           if (-not (Test-Path $pythonPath)) {
-            Write-Error "Python service folder does not exist: $pythonPath"
+            Write-Host "### ERROR DETAIL: python-service folder not found under app root."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -394,9 +460,7 @@ jobs:
           .\.venv\Scripts\python.exe -m pip install --upgrade pip
           .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 
-          if ($log) {
-            Stop-Transcript | Out-Null
-          }
+          if ($log) { Stop-Transcript | Out-Null }
 
       # =========================================
       # 5) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
@@ -405,16 +469,23 @@ jobs:
         if: env.Update_Data_On_Hetzner == 'true'
         shell: powershell
         run: |
+          $stepName = "Deploy to Hetzner (placeholder)"
           $log = $env:LOG_FILE
-          if ($log) {
-            Start-Transcript -Path $log -Append | Out-Null
-          }
-          Write-Host "=== Update_Data_On_Hetzner == true ==="
-          Write-Host "Hetzner deployment not implemented yet."
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
 
-          if ($log) {
-            Stop-Transcript | Out-Null
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
           }
+
+          Write-Host "=== [$stepName] ==="
+          Write-Host "Update_Data_On_Hetzner == true, but remote deploy logic is not implemented yet."
+
+          if ($log) { Stop-Transcript | Out-Null }
 
       # =========================================
       # 6) RUN start.bat AT THE END (FROM DEPLOY_ROOT)
@@ -423,16 +494,26 @@ jobs:
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
+          $stepName = "Run start.bat"
           $log = $env:LOG_FILE
-          if ($log) {
-            Start-Transcript -Path $log -Append | Out-Null }
-          Write-Host "=== Running start.bat AFTER deployment (from DEPLOY_ROOT) ==="
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          Write-Host "=== [$stepName] ==="
 
           $scriptPath = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
           Write-Host ("Expected start.bat path: {0}" -f $scriptPath)
 
           if (-not (Test-Path $scriptPath)) {
-            Write-Error "start.bat not found at $scriptPath"
+            Write-Host "### ERROR DETAIL: start.bat not found. Check that it exists in the app root."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -441,15 +522,13 @@ jobs:
           $rc = $LASTEXITCODE
 
           if ($rc -ne 0) {
-            Write-Error "start.bat failed with exit code $rc."
+            Write-Host "### ERROR DETAIL: start.bat exited with code $rc. See any messages printed by the script above."
             if ($log) { Stop-Transcript | Out-Null }
             exit $rc
           }
 
           Write-Host "start.bat completed successfully."
-          if ($log) {
-            Stop-Transcript | Out-Null
-          }
+          if ($log) { Stop-Transcript | Out-Null }
 
       # =========================================
       # 7) OPTIONAL: UPLOAD LOG AS GITHUB ARTIFACT
