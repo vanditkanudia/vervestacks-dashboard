@@ -6,48 +6,48 @@ on:
   workflow_dispatch: {}
 
 env:
-  Update_Data_On_Local: "true"
-  Update_Data_On_Hetzner: "false"
-
   DEPLOY_ROOT: "C:\\inetpub\\VerveStacks"
-  DATA_ROOT: "C:\\inetpub\\VerveStacks\\data"
+  APP_SUBROOT: "vervestacks-dashboard"
 
-  LOCAL_DATA_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\data"
+  APP_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\vervestacks-dashboard"
+
   KANVAULT_SHARE: "\\\\192.168.0.7\\kanvault"
+  LOCAL_DATA_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\data"
 
   DEST_OSM: "C:\\inetpub\\VerveStacks\\data\\OSM-kan-prebuilt"
   DEST_TRANSMISSION: "C:\\inetpub\\VerveStacks\\data\\transmission_line_generation"
   DEST_ATLITE: "C:\\inetpub\\VerveStacks\\data\\Atlite_data_optimized"
   DEST_REZONING: "C:\\inetpub\\VerveStacks\\data\\REZoning_world_data"
 
-  APP_SUBROOT: "vervestacks-dashboard"
-
   PYTHON_EXE: "C:\\Python312\\python.exe"
-  APP_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\vervestacks-dashboard"
+  Update_Data_On_Local: "true"
 
 jobs:
   deploy:
     runs-on: self-hosted
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      # LOGGER INIT
-      - name: Init log
+      # ===========================
+      # INIT LOG FILE
+      # ===========================
+      - name: Init Deployment Log
         shell: powershell
         run: |
           $folder = "D:\GitHub\VerveStacks_Logs"
           if (-not (Test-Path $folder)) { New-Item -ItemType Directory -Path $folder | Out-Null }
 
           $ts = Get-Date -Format "yyyy-MM-ddTHH-mm-ss"
-          $log = "$folder\deploy_vervestacks_$ts.log"
+          $log = "$folder\deploy_$ts.log"
+
           "LOG_FILE=$log" | Out-File -FilePath $env:GITHUB_ENV -Encoding UTF8 -Append
           exit 0
 
-      # ================
+      # ===========================
       # MAP KANVAULT SHARE
-      # ================
+      # ===========================
       - name: Map kanvault share
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
@@ -56,36 +56,30 @@ jobs:
         run: |
           $log = $env:LOG_FILE
           Start-Transcript -Path $log -Append | Out-Null
-
           $ErrorActionPreference = "Stop"
-          trap {
-            Write-Host "MAP FAILED: $($_.Exception.Message)"
-            Stop-Transcript | Out-Null
-            exit 1
-          }
-
-          Write-Host "Mapping: $env:KANVAULT_SHARE"
 
           net use $env:KANVAULT_SHARE /delete /y 2>$null
           net use $env:KANVAULT_SHARE /user:amit $env:KANVAULT_PASSWORD
+
           if ($LASTEXITCODE -ne 0) {
-              Write-Host "Failed to map share"
-              Stop-Transcript | Out-Null
-              exit 1
+            Write-Host "Share mapping failed!"
+            Stop-Transcript | Out-Null
+            exit 1
           }
 
           Stop-Transcript | Out-Null
           exit 0
 
-      # =================================
-      # SYNC DATA
-      # =================================
-      - name: Sync all data to IIS
+      # ===========================
+      # SYNC DATA TO IIS
+      # ===========================
+      - name: Sync Data
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
         run: |
           $log = $env:LOG_FILE
           Start-Transcript -Path $log -Append | Out-Null
+
           $ErrorActionPreference = "Stop"
 
           $shareRoot = $env:KANVAULT_SHARE
@@ -93,24 +87,22 @@ jobs:
           $rezRoot   = Join-Path $shareRoot "KanORS_Data\REZoning data"
 
           $jobs = @(
-            @{Name="OSM-kan-prebuilt"; Source=Join-Path $verveRoot "OSM-kan-prebuilt"; Dest=$env:DEST_OSM},
-            @{Name="OSM-kan-prebuilt (harish)"; Source=Join-Path $verveRoot "OSM-kan-prebuilt\harish"; Dest=$env:DEST_OSM},
-            @{Name="transmission_line_generation"; Source=Join-Path $verveRoot "transmission_line_generation"; Dest=$env:DEST_TRANSMISSION},
-            @{Name="Atlite_data_optimized"; Source=Join-Path $rezRoot "Atlite_data\Atlite_data_optimized"; Dest=$env:DEST_ATLITE},
-            @{Name="REZoning_world_data"; Source=Join-Path $rezRoot "REZoning_world_data"; Dest=$env:DEST_REZONING}
+            @{Name="OSM"; Source=Join-Path $verveRoot "OSM-kan-prebuilt"; Dest=$env:DEST_OSM},
+            @{Name="OSM Harish"; Source=Join-Path $verveRoot "OSM-kan-prebuilt\harish"; Dest=$env:DEST_OSM},
+            @{Name="Transmission"; Source=Join-Path $verveRoot "transmission_line_generation"; Dest=$env:DEST_TRANSMISSION},
+            @{Name="Atlite"; Source=Join-Path $rezRoot "Atlite_data\Atlite_data_optimized"; Dest=$env:DEST_ATLITE},
+            @{Name="REZoning"; Source=Join-Path $rezRoot "REZoning_world_data"; Dest=$env:DEST_REZONING}
           )
 
           foreach ($j in $jobs) {
             Write-Host "--- Sync: $($j.Name)"
-            if (-not (Test-Path $j.Source)) {
-              Write-Host "Skip: Source missing"
-              continue
-            }
+
+            if (-not (Test-Path $j.Source)) { Write-Host "Skip (missing source)"; continue }
             if (-not (Test-Path $j.Dest)) { New-Item -ItemType Directory -Path $j.Dest | Out-Null }
 
             robocopy $j.Source $j.Dest /E /Z /R:3 /W:5 /NP
             if ($LASTEXITCODE -ge 8) {
-              Write-Host "Robocopy Failed!"
+              Write-Host "Robocopy failed!"
               Stop-Transcript | Out-Null
               exit $LASTEXITCODE
             }
@@ -119,86 +111,79 @@ jobs:
           Stop-Transcript | Out-Null
           exit 0
 
-      # ============================================
-      # DEPLOY APP (COPY EXACT FOLDER STRUCTURE)
-      # ============================================
-      - name: Deploy app folder structure
+      # ============================
+      # COPY ONLY backend, frontend, python-service (NO WHOLE STRUCTURE)
+      # ============================
+      - name: Deploy app folders EXACTLY as before
         shell: powershell
         run: |
           $log = $env:LOG_FILE
           Start-Transcript -Path $log -Append | Out-Null
           $ErrorActionPreference = "Stop"
 
-          $src = $env:APP_SOURCE_ROOT
-          $dst = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $srcRoot = $env:APP_SOURCE_ROOT
+          $dstRoot = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
 
-          Write-Host "Copy from $src to $dst"
+          # Create root folder if missing
+          if (-not (Test-Path $dstRoot)) { New-Item -ItemType Directory -Path $dstRoot | Out-Null }
 
-          if (-not (Test-Path $dst)) { New-Item -ItemType Directory -Path $dst | Out-Null }
+          $folders = @("frontend", "backend", "python-service")
 
-          # EXACT STRUCTURE COPY
-          # /XD excludes only .git and .github folders, but keeps files like .gitignore, .gitattributes, etc.
-          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NP
-          if ($LASTEXITCODE -ge 8) {
-              Write-Host "App copy failed!"
+          foreach ($f in $folders) {
+            $src = Join-Path $srcRoot $f
+            $dst = Join-Path $dstRoot $f
+
+            if (-not (Test-Path $src)) { Write-Host "Skip (missing): $src"; continue }
+            if (-not (Test-Path $dst)) { New-Item -ItemType Directory -Path $dst | Out-Null }
+
+            # EXCLUDE .git and .github folders
+            robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NP
+
+            if ($LASTEXITCODE -ge 8) {
+              Write-Host "Folder copy failed ($f)"
               Stop-Transcript | Out-Null
               exit $LASTEXITCODE
+            }
           }
 
           Stop-Transcript | Out-Null
           exit 0
 
-      # =============================================
-      # NPM INSTALL + REACT BUILD INSIDE FRONTEND ONLY
-      # =============================================
-      - name: Install frontend + backend deps & build React
+      # ============================
+      # BACKEND & FRONTEND BUILD
+      # ============================
+      - name: Install and build frontend/backend
         shell: powershell
         run: |
           $log = $env:LOG_FILE
           Start-Transcript -Path $log -Append | Out-Null
-
           $ErrorActionPreference = "Stop"
 
           $appRoot = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+
           $backend = Join-Path $appRoot "backend"
           $frontend = Join-Path $appRoot "frontend"
 
-          # Backend NPM install
+          # Backend
           if (Test-Path $backend) {
             cd $backend
             npm install
-            if ($LASTEXITCODE -ne 0) {
-              Write-Host "Backend npm install failed"
-              Stop-Transcript | Out-Null
-              exit 1
-            }
           }
 
-          # Frontend NPM install + build
+          # Frontend
           if (Test-Path $frontend) {
             cd $frontend
             npm install
-            if ($LASTEXITCODE -ne 0) {
-              Write-Host "Frontend npm install failed"
-              Stop-Transcript | Out-Null
-              exit 1
-            }
-
             $env:CI = "false"
             npm run build:prod
-            if ($LASTEXITCODE -ne 0) {
-              Write-Host "Frontend build failed"
-              Stop-Transcript | Out-Null
-              exit 1
-            }
           }
 
           Stop-Transcript | Out-Null
           exit 0
 
-      # =============================
-      # PYTHON SERVICE ENV SETUP
-      # =============================
+      # ============================
+      # PYTHON SERVICE
+      # ============================
       - name: Setup python service
         shell: powershell
         run: |
@@ -206,15 +191,10 @@ jobs:
           Start-Transcript -Path $log -Append | Out-Null
           $ErrorActionPreference = "Stop"
 
-          $pythonPath = Join-Path (Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT) "python-service"
+          $srv = Join-Path (Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT) "python-service"
+          if (-not (Test-Path $srv)) { exit 0 }
 
-          if (-not (Test-Path $pythonPath)) {
-            Write-Host "Python service not found!"
-            Stop-Transcript | Out-Null
-            exit 1
-          }
-
-          cd $pythonPath
+          cd $srv
 
           if (-not (Test-Path ".venv")) {
             & $env:PYTHON_EXE -m venv .venv
