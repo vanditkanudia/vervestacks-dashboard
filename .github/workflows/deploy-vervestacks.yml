@@ -171,9 +171,9 @@ jobs:
             $dest   = $job.Dest
 
             Write-Host "----"
-            Write-Host "Job: $name"
-            Write-Host "  Source: $source"
-            Write-Host "  Dest  : $dest"
+            Write-Host ("Job: {0}" -f $name)
+            Write-Host ("  Source: {0}" -f $source)
+            Write-Host ("  Dest  : {0}" -f $dest)
 
             if (-not [string]::IsNullOrWhiteSpace($dest)) {
               if (-not (Test-Path $dest)) {
@@ -192,16 +192,16 @@ jobs:
               continue
             }
 
-            Write-Host "Starting robocopy for '$name'..."
+            Write-Host ("Starting robocopy for '{0}'..." -f $name)
             # Show progress & ETA; not fully silent
             robocopy $source $dest /E /Z /R:3 /W:5 /ETA /NP
             $code = $LASTEXITCODE
-            Write-Host "Robocopy exit code for '$name' = $code"
+            Write-Host ("Robocopy exit code for '{0}' = {1}" -f $name, $code)
             $exitCodes += $code
           }
 
           $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
-          Write-Host "Max robocopy code among data sync jobs = $maxCode"
+          Write-Host ("Max robocopy code among data sync jobs = {0}" -f $maxCode)
 
           if ($maxCode -ge 8) {
             Write-Error "One or more data sync jobs failed with robocopy exit code $maxCode"
@@ -234,8 +234,8 @@ jobs:
           $src = $env:APP_SOURCE_ROOT
           $dst = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
 
-          Write-Host "Source (APP_SOURCE_ROOT) = $src"
-          Write-Host "Destination (APP_SUBROOT) = $dst"
+          Write-Host ("Source (APP_SOURCE_ROOT) = {0}" -f $src)
+          Write-Host ("Destination (APP_SUBROOT) = {0}" -f $dst)
 
           if (-not (Test-Path $src)) {
             Write-Error "APP_SOURCE_ROOT does not exist: $src"
@@ -244,14 +244,14 @@ jobs:
           }
 
           if (-not (Test-Path $dst)) {
-            Write-Host "Creating deployment folder (with parents if needed): $dst"
+            Write-Host ("Creating deployment folder (with parents if needed): {0}" -f $dst)
             [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
           Write-Host "Running robocopy for application deployment..."
           robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
-          Write-Host "App robocopy exit code: $code"
+          Write-Host ("App robocopy exit code: {0}" -f $code)
 
           if ($code -ge 8) {
             Write-Error "Deployment failed with robocopy exit code $code"
@@ -295,20 +295,20 @@ jobs:
             $build = $a.Build
 
             Write-Host "----"
-            Write-Host "$name: Path = $path"
+            Write-Host ("{0}: Path = {1}" -f $name, $path)
 
             if (-not (Test-Path $path)) {
-              Write-Error "$name path does not exist: $path"
+              Write-Error ("{0} path does not exist: {1}" -f $name, $path)
               if ($log) { Stop-Transcript | Out-Null }
               exit 1
             }
 
             cd $path
-            Write-Host "$name: running npm install..."
+            Write-Host ("{0}: running npm install..." -f $name)
             npm install
 
             if ($build) {
-              Write-Host "$name: running build:prod with CI=false..."
+              Write-Host ("{0}: running build:prod with CI=false..." -f $name)
               $env:CI = "false"
               npm run build:prod
             }
@@ -333,8 +333,8 @@ jobs:
           $appRoot    = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
           $pythonPath = Join-Path $appRoot "python-service"
 
-          Write-Host "Python service path = $pythonPath"
-          Write-Host "PYTHON_EXE         = $env:PYTHON_EXE"
+          Write-Host ("Python service path = {0}" -f $pythonPath)
+          Write-Host ("PYTHON_EXE         = {0}" -f $env:PYTHON_EXE)
 
           if (-not (Test-Path $pythonPath)) {
             Write-Error "Python service folder does not exist: $pythonPath"
@@ -391,7 +391,7 @@ jobs:
           Write-Host "=== Running start.bat AFTER deployment (from DEPLOY_ROOT) ==="
 
           $scriptPath = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
-          Write-Host "Expected start.bat path: $scriptPath"
+          Write-Host ("Expected start.bat path: {0}" -f $scriptPath)
 
           if (-not (Test-Path $scriptPath)) {
             Write-Error "start.bat not found at $scriptPath"
