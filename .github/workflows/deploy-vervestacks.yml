@@ -66,14 +66,14 @@ jobs:
 
           "STEP     : $stepName"                      | Out-File -FilePath $logFile -Encoding UTF8
           "Workflow : $env:GITHUB_WORKFLOW"          | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Run ID   : $env:GITHUB_RUN_ID"           | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Job      : $env:GITHUB_JOB"              | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Repo     : $env:GITHUB_REPOSITORY"       | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Commit   : $env:GITHUB_SHA"              | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Actor    : $env:GITHUB_ACTOR"            | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Workspace: $env:GITHUB_WORKSPACE"        | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Started  : $(Get-Date -Format o)"        | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "--------------------------------------"  | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Run ID   : $env:GITHUB_RUN_ID"            | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Job      : $env:GITHUB_JOB"               | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Repo     : $env:GITHUB_REPOSITORY"        | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Commit   : $env:GITHUB_SHA"               | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Actor    : $env:GITHUB_ACTOR"             | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Workspace: $env:GITHUB_WORKSPACE"         | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "Started  : $(Get-Date -Format o)"         | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          "--------------------------------------"   | Out-File -FilePath $logFile -Encoding UTF8 -Append
 
           "LOG_FILE=$logFile" | Out-File -FilePath $env:GITHUB_ENV -Encoding UTF8 -Append
 
@@ -209,16 +209,16 @@ jobs:
 
           $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
           Write-Host ("Max robocopy code among data sync jobs = {0}" -f $maxCode)
-          Write-Host "INFO: Robocopy 0–7 = success/acceptable. 8+ = failure."
+          Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
 
           if ($maxCode -ge 8) {
-            Write-Host "### ERROR DETAIL: One or more data sync jobs failed (max robocopy code = $maxCode)."
-            Write-Host "See robocopy documentation for the exact meaning of this code."
+            Write-Host ("### ERROR DETAIL: One or more data sync jobs failed (max robocopy code = {0})." -f $maxCode)
+            Write-Host 'See robocopy documentation for the exact meaning of this exit code.'
             if ($log) { Stop-Transcript | Out-Null }
             exit $maxCode
           }
 
-          Write-Host "All data sync jobs completed successfully (no critical robocopy errors)."
+          Write-Host 'All data sync jobs completed successfully (no critical robocopy errors).'
 
           if ($log) { Stop-Transcript | Out-Null }
 
