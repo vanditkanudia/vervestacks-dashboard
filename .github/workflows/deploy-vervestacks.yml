@@ -35,6 +35,9 @@ env:
   # App source root (what you copy from)
   APP_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\vervestacks-dashboard"
 
+  # NEW: full repo root (what you asked to copy 1:1)
+  REPO_SOURCE_ROOT: "D:\\GitHub\\VerveStacks"
+
 jobs:
   deploy:
     runs-on: self-hosted
@@ -222,6 +225,65 @@ jobs:
           }
 
           Write-Host 'All data sync jobs completed successfully.'
+
+          if ($log) { Stop-Transcript | Out-Null }
+          exit 0
+
+      # ==========================================================
+      # 1b) NEW – SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
+      # ==========================================================
+      - name: Sync full VerveStacks repo to DEPLOY_ROOT
+        if: env.Update_Data_On_Local == 'true'
+        shell: powershell
+        run: |
+          $stepName = 'Sync full VerveStacks repo to DEPLOY_ROOT'
+          $log = $env:LOG_FILE
+
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host ('### STEP FAILED: {0}' -f $stepName)
+            Write-Host ('### ERROR: {0}' -f $_.Exception.Message)
+            Write-Host $_.ScriptStackTrace
+
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          Write-Host ('=== [{0}] ===' -f $stepName)
+
+          $src = $env:REPO_SOURCE_ROOT
+          $dst = $env:DEPLOY_ROOT
+
+          Write-Host ('Source (REPO_SOURCE_ROOT) = {0}' -f $src)
+          Write-Host ('Destination (DEPLOY_ROOT) = {0}' -f $dst)
+
+          if (-not (Test-Path $src)) {
+            Write-Host '### ERROR DETAIL: REPO_SOURCE_ROOT does not exist. Check D:\GitHub\VerveStacks.'
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          if (-not (Test-Path $dst)) {
+            Write-Host ('Creating DEPLOY_ROOT (with parents if needed): {0}' -f $dst)
+            [System.IO.Directory]::CreateDirectory($dst) | Out-Null
+          }
+
+          Write-Host 'Running robocopy for FULL VerveStacks sync (excluding .git and .github folders)...'
+          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
+          $code = $LASTEXITCODE
+
+          Write-Host ('Full repo robocopy exit code: {0}' -f $code)
+          Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
+
+          if ($code -ge 8) {
+            Write-Host ("### ERROR DETAIL: Full repo robocopy failed (code {0}). Files may be partially copied." -f $code)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $code
+          }
+
+          Write-Host 'Full VerveStacks repo sync to DEPLOY_ROOT completed successfully.'
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
