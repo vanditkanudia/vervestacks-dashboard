@@ -10,6 +10,11 @@ env:
   Update_Data_On_Local: "true"
   Update_Data_On_Hetzner: "false"
 
+  # NEW: control whether start.bat opens visible consoles
+  # 'false' = run inline and check exit code (CI mode)
+  # 'true'  = Start-Process -> separate window(s), no exit-code check
+  SHOW_START_CONSOLES: "false"
+
   # Deployment roots
   DEPLOY_ROOT: "C:\\inetpub\\VerveStacks"
   DATA_ROOT: "C:\\inetpub\\VerveStacks\\data"
@@ -35,7 +40,7 @@ env:
   # App source root (what you copy from)
   APP_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\vervestacks-dashboard"
 
-  # NEW: full repo root (what you asked to copy 1:1)
+  # Full repo root (what you asked to copy 1:1)
   REPO_SOURCE_ROOT: "D:\\GitHub\\VerveStacks"
 
 jobs:
@@ -57,10 +62,11 @@ jobs:
         run: |
           $stepName = 'Init workflow run log file'
           $logRoot = 'D:\GitHub\VerveStacks_Logs'
+
           $ErrorActionPreference = 'Stop'
           trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host '### STEP FAILED: Init workflow run log file'
+            Write-Host ('### ERROR: {0}' -f $_.Exception.Message)
             Write-Host $_.ScriptStackTrace
             exit 1
           }
@@ -70,20 +76,21 @@ jobs:
           }
 
           $timestamp = Get-Date -Format 'yyyy-MM-ddTHH-mm-ss'
-          $fileName  = "${{ github.workflow }}_${{ github.run_number }}_${{ github.job }}_$timestamp.log"
-          $safeName  = ($fileName -replace '[\\/:*?"<>|]', '_')
+          # CHANGED: simpler log file name: Deploy_<timestamp>.log
+          $fileName  = "Deploy_$timestamp.log"
+          $safeName  = ($fileName -replace '[\\/:*?""<>|]', '_')
           $logFile   = Join-Path $logRoot $safeName
 
-          "STEP     : $stepName"                | Out-File -FilePath $logFile -Encoding UTF8
-          "Workflow : $env:GITHUB_WORKFLOW"     | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Run ID   : $env:GITHUB_RUN_ID"       | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Job      : $env:GITHUB_JOB"          | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Repo     : $env:GITHUB_REPOSITORY"   | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Commit   : $env:GITHUB_SHA"          | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Actor    : $env:GITHUB_ACTOR"        | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Workspace: $env:GITHUB_WORKSPACE"    | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          "Started  : $(Get-Date -Format o)"    | Out-File -FilePath $logFile -Encoding UTF8 -Append
-          '--------------------------------------' | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          'STEP     : Init workflow run log file' | Out-File -FilePath $logFile -Encoding UTF8
+          ('Workflow : {0}' -f $env:GITHUB_WORKFLOW)   | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          ('Run ID   : {0}' -f $env:GITHUB_RUN_ID)     | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          ('Job      : {0}' -f $env:GITHUB_JOB)        | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          ('Repo     : {0}' -f $env:GITHUB_REPOSITORY) | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          ('Commit   : {0}' -f $env:GITHUB_SHA)        | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          ('Actor    : {0}' -f $env:GITHUB_ACTOR)      | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          ('Workspace: {0}' -f $env:GITHUB_WORKSPACE)  | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          ('Started  : {0}' -f (Get-Date -Format o))   | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          '--------------------------------------'     | Out-File -FilePath $logFile -Encoding UTF8 -Append
 
           "LOG_FILE=$logFile" | Out-File -FilePath $env:GITHUB_ENV -Encoding UTF8 -Append
           exit 0
@@ -104,16 +111,15 @@ jobs:
 
           $ErrorActionPreference = 'Stop'
           trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host ('### STEP FAILED: {0}' -f $stepName)
+            Write-Host ('### ERROR: {0}' -f $_.Exception.Message)
             Write-Host $_.ScriptStackTrace
-
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          Write-Host "=== [$stepName] ==="
-          Write-Host "Mapping $env:KANVAULT_SHARE with user 'amit'"
+          Write-Host ('=== [{0}] ===' -f $stepName)
+          Write-Host ("Mapping {0} with user 'amit'" -f $env:KANVAULT_SHARE)
 
           try {
             Write-Host 'Attempting to delete existing mapping...'
@@ -124,7 +130,7 @@ jobs:
 
           net use $env:KANVAULT_SHARE /user:amit $env:KANVAULT_PASSWORD
           if ($LASTEXITCODE -ne 0) {
-            Write-Host "### ERROR DETAIL: net use failed with exit code $LASTEXITCODE."
+            Write-Host ("### ERROR DETAIL: net use failed with exit code {0}." -f $LASTEXITCODE)
             if ($log) { Stop-Transcript | Out-Null }
             exit $LASTEXITCODE
           }
@@ -147,12 +153,10 @@ jobs:
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
 
           $ErrorActionPreference = 'Stop'
-
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
             Write-Host ('### ERROR: {0}' -f $_.Exception.Message)
             Write-Host $_.ScriptStackTrace
-
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -192,17 +196,17 @@ jobs:
             $dest   = $job.Dest
 
             Write-Host '----'
-            Write-Host ('Job: {0}' -f $name)
-            Write-Host ('  Source: {0}' -f $source)
-            Write-Host ('  Dest  : {0}' -f $dest)
+            Write-Host ("Job: {0}" -f $name)
+            Write-Host ("  Source: {0}" -f $source)
+            Write-Host ("  Dest  : {0}" -f $dest)
 
             if (-not (Test-Path $dest)) {
-              Write-Host ('Creating destination folder: {0}' -f $dest)
+              Write-Host ("Creating destination folder: {0}" -f $dest)
               New-Item -ItemType Directory -Path $dest | Out-Null
             }
 
             if (-not (Test-Path $source)) {
-              Write-Host ('WARNING: Source does not exist: {0}' -f $source)
+              Write-Host ("WARNING: Source does not exist: {0}" -f $source)
               continue
             }
 
@@ -210,12 +214,12 @@ jobs:
             robocopy $source $dest /E /Z /R:3 /W:5 /ETA /NP
             $exitCodes += $LASTEXITCODE
 
-            Write-Host ('Robocopy exit code: {0}' -f $LASTEXITCODE)
+            Write-Host ("Robocopy exit code: {0}" -f $LASTEXITCODE)
           }
 
           $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
 
-          Write-Host ('Max robocopy code = {0}' -f $maxCode)
+          Write-Host ("Max robocopy code = {0}" -f $maxCode)
           Write-Host 'INFO: 0–7 success, 8+ failure'
 
           if ($maxCode -ge 8) {
@@ -230,7 +234,7 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 1b) NEW – SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
+      # 1b) SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
       # ==========================================================
       - name: Sync full VerveStacks repo to DEPLOY_ROOT
         if: env.Update_Data_On_Local == 'true'
@@ -246,7 +250,6 @@ jobs:
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
             Write-Host ('### ERROR: {0}' -f $_.Exception.Message)
             Write-Host $_.ScriptStackTrace
-
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -256,8 +259,8 @@ jobs:
           $src = $env:REPO_SOURCE_ROOT
           $dst = $env:DEPLOY_ROOT
 
-          Write-Host ('Source (REPO_SOURCE_ROOT) = {0}' -f $src)
-          Write-Host ('Destination (DEPLOY_ROOT) = {0}' -f $dst)
+          Write-Host ("Source (REPO_SOURCE_ROOT) = {0}" -f $src)
+          Write-Host ("Destination (DEPLOY_ROOT) = {0}" -f $dst)
 
           if (-not (Test-Path $src)) {
             Write-Host '### ERROR DETAIL: REPO_SOURCE_ROOT does not exist. Check D:\GitHub\VerveStacks.'
@@ -266,7 +269,7 @@ jobs:
           }
 
           if (-not (Test-Path $dst)) {
-            Write-Host ('Creating DEPLOY_ROOT (with parents if needed): {0}' -f $dst)
+            Write-Host ("Creating DEPLOY_ROOT (with parents if needed): {0}" -f $dst)
             [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
@@ -274,7 +277,7 @@ jobs:
           robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
 
-          Write-Host ('Full repo robocopy exit code: {0}' -f $code)
+          Write-Host ("Full repo robocopy exit code: {0}" -f $code)
           Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
 
           if ($code -ge 8) {
@@ -305,7 +308,6 @@ jobs:
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
             Write-Host ('### ERROR: {0}' -f $_.Exception.Message)
             Write-Host $_.ScriptStackTrace
-
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -315,8 +317,8 @@ jobs:
           $src = $env:APP_SOURCE_ROOT
           $dst = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
 
-          Write-Host ('Source (APP_SOURCE_ROOT) = {0}' -f $src)
-          Write-Host ('Destination (DEPLOY_ROOT\APP_SUBROOT) = {0}' -f $dst)
+          Write-Host ("Source (APP_SOURCE_ROOT) = {0}" -f $src)
+          Write-Host ("Destination (DEPLOY_ROOT\APP_SUBROOT) = {0}" -f $dst)
 
           if (-not (Test-Path $src)) {
             Write-Host '### ERROR DETAIL: Source app folder does not exist. Check APP_SOURCE_ROOT.'
@@ -325,7 +327,7 @@ jobs:
           }
 
           if (-not (Test-Path $dst)) {
-            Write-Host ('Creating deployment folder (with parents if needed): {0}' -f $dst)
+            Write-Host ("Creating deployment folder (with parents if needed): {0}" -f $dst)
             [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
@@ -333,7 +335,7 @@ jobs:
           robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
 
-          Write-Host ('App robocopy exit code: {0}' -f $code)
+          Write-Host ("App robocopy exit code: {0}" -f $code)
           Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
 
           if ($code -ge 8) {
@@ -359,12 +361,10 @@ jobs:
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
 
           $ErrorActionPreference = 'Stop'
-
           trap {
             Write-Host "### STEP FAILED: $stepName"
             Write-Host "### ERROR: $($_.Exception.Message)"
             Write-Host $_.ScriptStackTrace
-            
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -402,7 +402,6 @@ jobs:
 
             cd $path
 
-            # Clean node_modules to avoid corrupted/incomplete installs
             $nodeModules = Join-Path $path 'node_modules'
             if (Test-Path $nodeModules) {
               Write-Host ("{0}: Removing existing node_modules for a clean install..." -f $name)
@@ -451,12 +450,10 @@ jobs:
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
 
           $ErrorActionPreference = 'Stop'
-
           trap {
             Write-Host "### STEP FAILED: $stepName"
             Write-Host "### ERROR: $($_.Exception.Message)"
             Write-Host $_.ScriptStackTrace
-            
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -504,12 +501,10 @@ jobs:
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
 
           $ErrorActionPreference = 'Stop'
-
           trap {
             Write-Host "### STEP FAILED: $stepName"
             Write-Host "### ERROR: $($_.Exception.Message)"
             Write-Host $_.ScriptStackTrace
-            
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -580,20 +575,21 @@ jobs:
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
 
           $ErrorActionPreference = 'Stop'
-
           trap {
             Write-Host "### STEP FAILED: $stepName"
             Write-Host "### ERROR: $($_.Exception.Message)"
             Write-Host $_.ScriptStackTrace
-
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
           Write-Host "=== [$stepName] ==="
 
-          $scriptPath = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
+          $scriptPath   = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
+          $showConsoles = ($env:SHOW_START_CONSOLES -eq 'true')
+
           Write-Host ("Expected start.bat path: {0}" -f $scriptPath)
+          Write-Host ("SHOW_START_CONSOLES   : {0}" -f $env:SHOW_START_CONSOLES)
 
           if (-not (Test-Path $scriptPath)) {
             Write-Host '### ERROR DETAIL: start.bat not found. Check that it exists in the app root.'
@@ -601,16 +597,24 @@ jobs:
             exit 1
           }
 
-          & $scriptPath
-          $rc = $LASTEXITCODE
-
-          if ($rc -ne 0) {
-            Write-Host ("### ERROR DETAIL: start.bat exited with code {0}. See any messages printed by the script above." -f $rc)
+          if ($showConsoles) {
+            Write-Host 'SHOW_START_CONSOLES == true, launching start.bat in a separate window and NOT waiting for it.'
+            $workingDir = Split-Path -Parent $scriptPath
+            Start-Process -FilePath $scriptPath -WorkingDirectory $workingDir
+            # Do NOT wait for completion; assume success for CI purposes.
             if ($log) { Stop-Transcript | Out-Null }
-            exit $rc
+            exit 0
           }
-
-          Write-Host 'start.bat completed successfully.'
-
-          if ($log) { Stop-Transcript | Out-Null }
-          exit 0
+          else {
+            Write-Host 'SHOW_START_CONSOLES == false, running start.bat inline and waiting for exit code.'
+            & $scriptPath
+            $rc = $LASTEXITCODE
+            if ($rc -ne 0) {
+              Write-Host ("### ERROR DETAIL: start.bat exited with code {0}. See any messages printed by the script above." -f $rc)
+              if ($log) { Stop-Transcript | Out-Null }
+              exit $rc
+            }
+            Write-Host 'start.bat completed successfully.'
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 0
+          }
