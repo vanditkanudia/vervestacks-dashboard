@@ -563,7 +563,7 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 6) RUN start.bat AFTER DEPLOYMENT
+      # 6) RUN start.bat AFTER DEPLOYMENT (NON-BLOCKING WHEN CONSOLES SHOWN)
       # ==========================================================
       - name: Run start.bat after deployment
         if: env.Update_Data_On_Local == 'true'
@@ -585,11 +585,12 @@ jobs:
 
           Write-Host "=== [$stepName] ==="
 
-          $scriptPath   = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
-          $showConsoles = ($env:SHOW_START_CONSOLES -eq 'true')
+          # Path to start.bat in deployed folder
+          $scriptPath = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
+          $showConsoles = $env:SHOW_START_CONSOLES
 
           Write-Host ("Expected start.bat path: {0}" -f $scriptPath)
-          Write-Host ("SHOW_START_CONSOLES   : {0}" -f $env:SHOW_START_CONSOLES)
+          Write-Host ("SHOW_START_CONSOLES   : {0}" -f $showConsoles)
 
           if (-not (Test-Path $scriptPath)) {
             Write-Host '### ERROR DETAIL: start.bat not found. Check that it exists in the app root.'
@@ -597,24 +598,28 @@ jobs:
             exit 1
           }
 
-          if ($showConsoles) {
+          if ($showConsoles -eq 'true') {
             Write-Host 'SHOW_START_CONSOLES == true, launching start.bat in a separate window and NOT waiting for it.'
-            $workingDir = Split-Path -Parent $scriptPath
-            Start-Process -FilePath $scriptPath -WorkingDirectory $workingDir
-            # Do NOT wait for completion; assume success for CI purposes.
+
+            # Launch start.bat via cmd.exe in a separate window. Do NOT wait.
+            $cmdArgs = "/c `"`"$scriptPath`"`""
+            Start-Process -FilePath "cmd.exe" -ArgumentList $cmdArgs -WindowStyle Normal | Out-Null
+
             if ($log) { Stop-Transcript | Out-Null }
             exit 0
           }
           else {
-            Write-Host 'SHOW_START_CONSOLES == false, running start.bat inline and waiting for exit code.'
+            Write-Host 'SHOW_START_CONSOLES != true, running start.bat inline and waiting for it to finish.'
             & $scriptPath
             $rc = $LASTEXITCODE
+
             if ($rc -ne 0) {
               Write-Host ("### ERROR DETAIL: start.bat exited with code {0}. See any messages printed by the script above." -f $rc)
               if ($log) { Stop-Transcript | Out-Null }
               exit $rc
             }
-            Write-Host 'start.bat completed successfully.'
+
+            Write-Host "start.bat completed successfully."
             if ($log) { Stop-Transcript | Out-Null }
             exit 0
           }
