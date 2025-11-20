@@ -13,7 +13,7 @@ env:
   # NEW: control whether start.bat opens visible consoles
   # 'false' = run inline and check exit code (CI mode)
   # 'true'  = Start-Process -> separate window(s), no exit-code check
-  SHOW_START_CONSOLES: "false"
+  SHOW_START_CONSOLES: "true"
 
   # Deployment roots
   DEPLOY_ROOT: "C:\\inetpub\\VerveStacks"
