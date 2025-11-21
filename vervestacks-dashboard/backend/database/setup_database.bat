@@ -1,166 +1,218 @@
 @echo off
 REM ========================================
-REM VerveStacks Database Setup - Password Prompt Version
+REM VerveStacks Database Setup - CI + Interactive
 REM ========================================
-REM This script sets up the complete VerveStacks database with all data
-REM Run from: vervestacks-dashboard/backend/database/
 
-setlocal enabledelayedexpansion
+setlocal ENABLEDELAYEDEXPANSION
 
-REM Database configuration
-set PG_HOST=localhost
-set PG_PORT=5432
-set PG_USER=postgres
-set DB_NAME=vervestacks_dashboard
+REM ----------------------------------------
+REM 1) Database configuration
+REM ----------------------------------------
+set "DB_NAME=vervestacks_dashboard"
+set "PG_HOST=localhost"
+set "PG_PORT=5432"
+set "PG_USER=postgres"
 
-echo.
+REM ----------------------------------------
+REM 2) Detect CI / non-interactive mode
+REM    (GitHub Actions step sets DB_SETUP_NONINTERACTIVE=true)
+REM ----------------------------------------
+if /I "%DB_SETUP_NONINTERACTIVE%"=="true" (
+    set "NONINTERACTIVE=1"
+) else (
+    set "NONINTERACTIVE=0"
+)
+
 echo ========================================
 echo VerveStacks Database Setup
 echo ========================================
 echo Current directory: %CD%
 echo.
 
-REM Check if required data files exist
+REM ----------------------------------------
+REM 3) Check CSV data files
+REM ----------------------------------------
 echo Checking data files...
-if not exist "data\worldcities.csv" (
-    echo ERROR: data\worldcities.csv not found
-    pause
-    exit /b 1
+
+if not exist "data\regions.csv" (
+    echo ERROR: data\regions.csv not found
+    goto :ERROR_END
 )
 
-if not exist "data\onshore_zones.csv" (
-    echo ERROR: data\onshore_zones.csv not found
-    echo Please run: python convert_geojson.py
-    pause
-    exit /b 1
+if not exist "data\resources.csv" (
+    echo ERROR: data\resources.csv not found
+    goto :ERROR_END
 )
 
-if not exist "data\offshore_zones.csv" (
-    echo ERROR: data\offshore_zones.csv not found
-    echo Please run: python convert_geojson.py
-    pause
-    exit /b 1
+if not exist "data\renewable_zones.csv" (
+    echo ERROR: data\renewable_zones.csv not found
+    goto :ERROR_END
 )
 
-if not exist "data\data_overview_tab.csv" (
-    echo ERROR: data\data_overview_tab.csv not found
-    pause
-    exit /b 1
+if not exist "data\data_overview.csv" (
+    echo ERROR: data\data_overview.csv not found
+    goto :ERROR_END
 )
 
-echo All data files found!
+echo All data files found
 echo.
 
-REM Check if SQL files exist
+REM ----------------------------------------
+REM 4) Check SQL schema files
+REM ----------------------------------------
 echo Checking SQL files...
-if not exist "schema\setup_schema.sql" (
-    echo ERROR: schema\setup_schema.sql not found
-    pause
-    exit /b 1
+
+if not exist "schema\create_database.sql" (
+    echo ERROR: schema\create_database.sql not found
+    goto :ERROR_END
 )
 
-if not exist "schema\import_worldcities.sql" (
-    echo ERROR: schema\import_worldcities.sql not found
-    pause
-    exit /b 1
+if not exist "schema\create_tables.sql" (
+    echo ERROR: schema\create_tables.sql not found
+    goto :ERROR_END
+)
+
+if not exist "schema\import_regions.sql" (
+    echo ERROR: schema\import_regions.sql not found
+    goto :ERROR_END
+)
+
+if not exist "schema\import_resources.sql" (
+    echo ERROR: schema\import_resources.sql not found
+    goto :ERROR_END
 )
 
 if not exist "schema\import_renewable_zones.sql" (
     echo ERROR: schema\import_renewable_zones.sql not found
-    pause
-    exit /b 1
+    goto :ERROR_END
 )
 
 if not exist "schema\import_data_overview.sql" (
     echo ERROR: schema\import_data_overview.sql not found
-    pause
-    exit /b 1
+    goto :ERROR_END
 )
 
-echo All SQL files found!
+echo All SQL files found
 echo.
 
+REM ----------------------------------------
+REM 5) Show config and handle password
+REM ----------------------------------------
 echo ========================================
 echo Ready to setup database
 echo ========================================
 echo Database: %DB_NAME%
-echo Host: %PG_HOST%:%PG_PORT%
-echo User: %PG_USER%
+echo Host    : %PG_HOST%:%PG_PORT%
+echo User    : %PG_USER%
 echo.
 
-REM Prompt for password ONLY if PGPASSWORD is not already set (e.g. from CI/workflow)
-if not defined PGPASSWORD (
-    echo.
-    set /p PGPASSWORD="Enter PostgreSQL password for user '%PG_USER%': "
-    echo.
+REM Password handling:
+REM - In CI: DB_SETUP_NONINTERACTIVE=true and PGPASSWORD is set by workflow.
+REM - Local/manual: prompt if PGPASSWORD is empty.
+if "%NONINTERACTIVE%"=="1" (
+    if "%PGPASSWORD%"=="" (
+        echo ERROR: DB_SETUP_NONINTERACTIVE is true but PGPASSWORD is not set.
+        goto :ERROR_END
+    ) else (
+        echo Using PGPASSWORD from environment (non-interactive mode)...
+        echo.
+    )
 ) else (
-    echo.
-    echo Using PGPASSWORD from environment (no prompt).
+    echo Enter PostgreSQL password for user '%PG_USER%':
+    set /p "PGPASSWORD=Password: "
     echo.
 )
 
-REM Set password environment variable
-set PGPASSWORD=%PG_PASSWORD%
-
-echo.
+REM ----------------------------------------
+REM 6) Test connection
+REM ----------------------------------------
 echo Testing connection...
-psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d postgres -c "SELECT 'Connection successful' as status;" >nul 2>&1
+psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -c "SELECT 1;" >nul 2>&1
 if errorlevel 1 (
-    echo ERROR: PostgreSQL connection failed
-    echo Please check your password and ensure PostgreSQL is running
-    pause
-    exit /b 1
+    echo ERROR: Unable to connect to PostgreSQL with the provided credentials.
+    goto :ERROR_END
 )
 
-echo Connection successful!
+echo Connection successful.
 echo.
 
-REM Step 1: Create database schema
-echo Step 1: Creating database schema...
-psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d postgres -f schema/setup_schema.sql
+REM ----------------------------------------
+REM 7) Create database and schema
+REM ----------------------------------------
+echo ========================================
+echo Step 1: Creating database and schema...
+echo ========================================
+psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -f schema\create_database.sql
 if errorlevel 1 (
-    echo ERROR: Schema creation failed
-    pause
-    exit /b 1
+    echo ERROR: Failed to create database
+    goto :ERROR_END
 )
-
-REM Step 2: Import worldcities data
 echo.
-echo Step 2: Importing worldcities data...
-psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema/import_worldcities.sql
+
+REM ----------------------------------------
+REM 8) Create tables
+REM ----------------------------------------
+echo Step 2: Creating tables...
+psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema\create_tables.sql
 if errorlevel 1 (
-    echo ERROR: Failed to import worldcities data
-    pause
-    exit /b 1
+    echo ERROR: Failed to create tables
+    goto :ERROR_END
 )
-
-REM Step 3: Import renewable zones data
 echo.
-echo Step 3: Importing renewable zones data...
-psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema/import_renewable_zones.sql
+
+REM ----------------------------------------
+REM 9) Import regions data
+REM ----------------------------------------
+echo Step 3: Importing regions data...
+psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema\import_regions.sql
+if errorlevel 1 (
+    echo ERROR: Failed to import regions data
+    goto :ERROR_END
+)
+echo.
+
+REM ----------------------------------------
+REM 10) Import resources data
+REM ----------------------------------------
+echo Step 4: Importing resources data...
+psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema\import_resources.sql
+if errorlevel 1 (
+    echo ERROR: Failed to import resources data
+    goto :ERROR_END
+)
+echo.
+
+REM ----------------------------------------
+REM 11) Import renewable zones data
+REM ----------------------------------------
+echo Step 5: Importing renewable zones data...
+psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema\import_renewable_zones.sql
 if errorlevel 1 (
     echo ERROR: Failed to import renewable zones data
-    pause
-    exit /b 1
+    goto :ERROR_END
 )
-
-REM Step 4: Import data overview data
 echo.
-echo Step 4: Importing data overview data...
-psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema/import_data_overview.sql
+
+REM ----------------------------------------
+REM 12) Import data overview data
+REM ----------------------------------------
+echo Step 6: Importing data overview data...
+psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema\import_data_overview.sql
 if errorlevel 1 (
     echo ERROR: Failed to import data overview data
-    pause
-    exit /b 1
+    goto :ERROR_END
 )
-
 echo.
+
+REM ----------------------------------------
+REM 13) Success
+REM ----------------------------------------
 echo ========================================
 echo Setup Complete - SUCCESS!
 echo ========================================
 echo Database: %DB_NAME%
-echo Schema: vervestacks
-echo All data imported successfully
+echo Schema  : vervestacks
+echo All data imported successfully.
 echo.
 echo Your VerveStacks dashboard database is ready!
 echo.
@@ -168,4 +220,27 @@ echo.
 REM Clear password from environment
 set PGPASSWORD=
 
-pause
+if not "%NONINTERACTIVE%"=="1" (
+    echo.
+    pause
+)
+
+endlocal
+exit /b 0
+
+REM ----------------------------------------
+REM ERROR HANDLER
+REM ----------------------------------------
+:ERROR_END
+echo.
+echo ========================================
+echo Setup FAILED
+echo ========================================
+REM Clear password
+set PGPASSWORD=
+if not "%NONINTERACTIVE%"=="1" (
+    echo.
+    pause
+)
+endlocal
+exit /b 1
