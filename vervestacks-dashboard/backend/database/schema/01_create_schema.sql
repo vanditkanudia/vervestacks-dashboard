@@ -12,7 +12,7 @@ CREATE SCHEMA IF NOT EXISTS vervestacks;
 SET search_path TO vervestacks, public;
 
 -- Create extension for PostGIS (for geographic data)
-CREATE EXTENSION IF NOT EXISTS postgis;
+-- CREATE EXTENSION IF NOT EXISTS postgis;
 
 -- Show schema creation status
 SELECT 'VerveStacks schema created successfully!' as status;
