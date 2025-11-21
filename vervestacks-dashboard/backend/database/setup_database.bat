@@ -240,7 +240,9 @@ REM Clear password
 set PGPASSWORD=
 if not "%NONINTERACTIVE%"=="1" (
     echo.
-    pause
+echo.
+echo Press any key to close this window...
+pause >nul
+exit /B 0    
 )
-endlocal
-exit /b 1
+pause

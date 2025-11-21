@@ -76,7 +76,7 @@ jobs:
           }
 
           $timestamp = Get-Date -Format 'yyyy-MM-ddTHH-mm-ss'
-          # simpler log file name: Deploy_<timestamp>.log
+          # Log file name: Deploy_<timestamp>.log
           $fileName  = "Deploy_$timestamp.log"
           $safeName  = ($fileName -replace '[\\/:*?""<>|]', '_')
           $logFile   = Join-Path $logRoot $safeName
@@ -540,7 +540,30 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 5) RUN DATABASE SETUP (INTERACTIVE CMD WINDOW)
+      # 5) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
+      # ==========================================================
+      - name: Deploy to Hetzner (placeholder)
+        if: env.Update_Data_On_Hetzner == 'true'
+        shell: powershell
+        run: |
+          $stepName = 'Deploy to Hetzner (placeholder)'
+          $log = $env:LOG_FILE
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+          Write-Host "=== [$stepName] ==="
+          Write-Host 'Update_Data_On_Hetzner == true, but remote deploy logic is not implemented yet.'
+          if ($log) { Stop-Transcript | Out-Null }
+          exit 0
+
+      # ==========================================================
+      # 6) RUN database setup (setup_database.bat) - NON-BLOCKING
       # ==========================================================
       - name: Run database setup (setup_database.bat)
         if: env.Update_Data_On_Local == 'true'
@@ -562,60 +585,35 @@ jobs:
 
           Write-Host "=== [$stepName] ==="
 
-          $dbFolder   = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\backend\database"
-          $setupPath  = Join-Path $dbFolder "setup_database.bat"
+          $dbFolder  = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\backend\database"
+          $setupPath = Join-Path $dbFolder "setup_database.bat"
 
           Write-Host ("DB folder path      = {0}" -f $dbFolder)
           Write-Host ("DB setup batch path = {0}" -f $setupPath)
 
           if (-not (Test-Path $dbFolder)) {
-            Write-Host "### ERROR DETAIL: Database folder not found. Expected: $dbFolder"
+            Write-Host "### ERROR DETAIL: DB folder path not found."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
           if (-not (Test-Path $setupPath)) {
-            Write-Host "### ERROR DETAIL: setup_database.bat not found in database folder."
+            Write-Host "### ERROR DETAIL: setup_database.bat not found."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
           Write-Host "A new CMD window will open for database setup."
           Write-Host "Please type the PostgreSQL password there when prompted."
-          Write-Host "This workflow step will NOT wait for completion and will NOT check the exit code."
+          Write-Host "The workflow will NOT wait for completion and will NOT fail on its exit code."
 
-          # Launch interactive CMD window with correct working directory.
+          # Launch interactive CMD window for DB setup; do not wait
           Start-Process -FilePath "cmd.exe" `
                         -ArgumentList "/k `"`"setup_database.bat`"`"" `
                         -WorkingDirectory $dbFolder `
                         -WindowStyle Normal | Out-Null
 
-          Write-Host "setup_database.bat has been launched in a separate window."
-          Write-Host "Complete the DB setup in that window if needed."
-
-          if ($log) { Stop-Transcript | Out-Null }
-          exit 0
-
-      # ==========================================================
-      # 6) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
-      # ==========================================================
-      - name: Deploy to Hetzner (placeholder)
-        if: env.Update_Data_On_Hetzner == 'true'
-        shell: powershell
-        run: |
-          $stepName = 'Deploy to Hetzner (placeholder)'
-          $log = $env:LOG_FILE
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-          $ErrorActionPreference = 'Stop'
-          trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
-            Write-Host $_.ScriptStackTrace
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-          Write-Host "=== [$stepName] ==="
-          Write-Host 'Update_Data_On_Hetzner == true, but remote deploy logic is not implemented yet.'
+          Write-Host "setup_database.bat launched in a separate window."
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
