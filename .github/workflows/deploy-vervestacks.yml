@@ -540,13 +540,11 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 5) RUN DATABASE SETUP (NON-INTERACTIVE VIA PGPASSWORD)
+      # 5) RUN DATABASE SETUP (setup_database.bat) INTERACTIVELY
       # ==========================================================
       - name: Run database setup (setup_database.bat)
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
-        env:
-          POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
         run: |
           $stepName = 'Run database setup (setup_database.bat)'
           $log = $env:LOG_FILE
@@ -565,29 +563,40 @@ jobs:
           Write-Host "=== [$stepName] ==="
 
           $dbFolder   = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\backend\database"
-          $dbSetupBat = Join-Path $dbFolder "setup_database.bat"
+          $dbSetupBat = Join-Path $dbFolder 'setup_database.bat'
 
           Write-Host ("DB folder path      = {0}" -f $dbFolder)
           Write-Host ("DB setup batch path = {0}" -f $dbSetupBat)
 
+          if (-not (Test-Path $dbFolder)) {
+            Write-Host "### ERROR DETAIL: Database folder not found."
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
           if (-not (Test-Path $dbSetupBat)) {
-            Write-Host "### ERROR DETAIL: setup_database.bat not found in backend\database."
+            Write-Host "### ERROR DETAIL: setup_database.bat not found."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          if (-not $env:POSTGRES_PASSWORD) {
-            Write-Host "### ERROR DETAIL: POSTGRES_PASSWORD secret is not set in GitHub."
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
+          Write-Host ""
+          Write-Host "A new CMD window will open for database setup."
+          Write-Host "Please type the PostgreSQL password there when prompted and wait until it finishes."
+          Write-Host ""
 
-          # Pass password to batch via PGPASSWORD so psql does NOT prompt
-          $env:PGPASSWORD = $env:POSTGRES_PASSWORD
+          $cmdArgs = "/c `"`"$dbSetupBat`"`""
 
-          cd $dbFolder
-          & $dbSetupBat
-          $rc = $LASTEXITCODE
+          $proc = Start-Process -FilePath "cmd.exe" `
+                                -ArgumentList $cmdArgs `
+                                -WorkingDirectory $dbFolder `
+                                -WindowStyle Normal `
+                                -PassThru
+
+          $proc.WaitForExit()
+          $rc = $proc.ExitCode
+
+          Write-Host ("setup_database.bat exit code = {0}" -f $rc)
 
           if ($rc -ne 0) {
             Write-Host ("### ERROR DETAIL: setup_database.bat exited with code {0}." -f $rc)
@@ -595,7 +604,7 @@ jobs:
             exit $rc
           }
 
-          Write-Host "Database setup batch completed successfully."
+          Write-Host "Database setup completed successfully."
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
