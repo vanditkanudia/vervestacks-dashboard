@@ -540,11 +540,13 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 5) RUN DATABASE SETUP (INTERACTIVE PASSWORD PROMPT)
+      # 5) RUN DATABASE SETUP (NON-INTERACTIVE VIA PGPASSWORD)
       # ==========================================================
       - name: Run database setup (setup_database.bat)
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
+        env:
+          POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
         run: |
           $stepName = 'Run database setup (setup_database.bat)'
           $log = $env:LOG_FILE
@@ -574,8 +576,14 @@ jobs:
             exit 1
           }
 
-          Write-Host "Runner is INTERACTIVE. When setup_database.bat asks for the PostgreSQL password,"
-          Write-Host "type the password in the runner console window and press Enter."
+          if (-not $env:POSTGRES_PASSWORD) {
+            Write-Host "### ERROR DETAIL: POSTGRES_PASSWORD secret is not set in GitHub."
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          # Pass password to batch via PGPASSWORD so psql does NOT prompt
+          $env:PGPASSWORD = $env:POSTGRES_PASSWORD
 
           cd $dbFolder
           & $dbSetupBat

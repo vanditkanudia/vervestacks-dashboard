@@ -88,8 +88,16 @@ echo Host: %PG_HOST%:%PG_PORT%
 echo User: %PG_USER%
 echo.
 
-REM Prompt for password
-set /p PG_PASSWORD="Enter PostgreSQL password for user '%PG_USER%': "
+REM Prompt for password ONLY if PGPASSWORD is not already set (e.g. from CI/workflow)
+if not defined PGPASSWORD (
+    echo.
+    set /p PGPASSWORD="Enter PostgreSQL password for user '%PG_USER%': "
+    echo.
+) else (
+    echo.
+    echo Using PGPASSWORD from environment (no prompt).
+    echo.
+)
 
 REM Set password environment variable
 set PGPASSWORD=%PG_PASSWORD%
