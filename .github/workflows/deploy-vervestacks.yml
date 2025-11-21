@@ -548,7 +548,7 @@ jobs:
         env:
           DB_PASSWORD: ${{ secrets.VERVESTACKS_DB_PASSWORD }}
         run: |
-          $stepName = 'Run database setup (setup_database_ci.bat)'
+          $stepName = 'Run database setup (setup_database.bat)'
           $log = $env:LOG_FILE
 
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
@@ -566,7 +566,7 @@ jobs:
 
           $appRoot  = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
           $dbPath   = Join-Path $appRoot 'backend\database'
-          $batPath  = Join-Path $dbPath 'setup_database_ci.bat'
+          $batPath  = Join-Path $dbPath 'setup_database.bat'
 
           Write-Host ("DB folder path      = {0}" -f $dbPath)
           Write-Host ("DB setup batch path = {0}" -f $batPath)
@@ -578,7 +578,7 @@ jobs:
           }
 
           if (-not (Test-Path $batPath)) {
-            Write-Host '### ERROR DETAIL: setup_database_ci.bat not found.'
+            Write-Host '### ERROR DETAIL: setup_database.bat not found.'
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
