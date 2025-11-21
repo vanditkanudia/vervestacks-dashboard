@@ -1,17 +1,14 @@
 -- Create VerveStacks Dashboard Database
--- Run this first: psql -h localhost -U postgres -d postgres -f 00_create_database.sql
+-- Run this first:
+--   psql -h localhost -U postgres -d postgres -f 00_create_database.sql
 
--- Check if database exists and create if it doesn't
-SELECT 'Creating VerveStacks database...' as status;
+\echo 'Ensuring database "vervestacks_dashboard" exists...'
 
--- Create database (this will fail gracefully if it already exists)
-DO $$
-BEGIN
-    IF NOT EXISTS (SELECT 1 FROM pg_database WHERE datname = 'vervestacks_dashboard') THEN
-        CREATE DATABASE vervestacks_dashboard;
-    END IF;
-END
-$$;
+-- This SELECT returns the text "CREATE DATABASE ..." only if the DB is missing.
+-- \gexec tells psql: take the output rows and execute them as SQL.
+SELECT 'CREATE DATABASE vervestacks_dashboard'
+WHERE NOT EXISTS (
+    SELECT 1 FROM pg_database WHERE datname = 'vervestacks_dashboard'
+);\gexec
 
--- If we get here, the database was created successfully
-SELECT 'Database vervestacks_dashboard created successfully!' as status;
+\echo 'Database check/creation finished.'
