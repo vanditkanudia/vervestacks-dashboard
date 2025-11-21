@@ -10,7 +10,7 @@ env:
   Update_Data_On_Local: "true"
   Update_Data_On_Hetzner: "false"
 
-  # NEW: control whether start.bat opens visible consoles
+  # control whether start.bat opens visible consoles
   # 'false' = run inline and check exit code (CI mode)
   # 'true'  = Start-Process -> separate window(s), no exit-code check
   SHOW_START_CONSOLES: "true"
@@ -76,10 +76,9 @@ jobs:
           }
 
           $timestamp = Get-Date -Format 'yyyy-MM-ddTHH-mm-ss'
-          # Simpler log file name: Deploy_<timestamp>.log
+          # simpler log file name: Deploy_<timestamp>.log
           $fileName  = "Deploy_$timestamp.log"
-          # FIXED: regex char class (no double "")
-          $safeName  = ($fileName -replace '[\\/:*?"<>|]', '_')
+          $safeName  = ($fileName -replace '[\\/:*?""<>|]', '_')
           $logFile   = Join-Path $logRoot $safeName
 
           'STEP     : Init workflow run log file' | Out-File -FilePath $logFile -Encoding UTF8
@@ -541,12 +540,11 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 4b) RUN DATABASE SETUP (setup_database_ci.bat)
+      # 5) RUN DATABASE SETUP (INTERACTIVE PASSWORD PROMPT)
       # ==========================================================
-      - name: Run database setup (setup_database_ci.bat)
+      - name: Run database setup (setup_database.bat)
+        if: env.Update_Data_On_Local == 'true'
         shell: powershell
-        env:
-          DB_PASSWORD: ${{ secrets.VERVESTACKS_DB_PASSWORD }}
         run: |
           $stepName = 'Run database setup (setup_database.bat)'
           $log = $env:LOG_FILE
@@ -564,53 +562,38 @@ jobs:
 
           Write-Host "=== [$stepName] ==="
 
-          $appRoot  = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
-          $dbPath   = Join-Path $appRoot 'backend\database'
-          $batPath  = Join-Path $dbPath 'setup_database.bat'
+          $dbFolder   = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\backend\database"
+          $dbSetupBat = Join-Path $dbFolder "setup_database.bat"
 
-          Write-Host ("DB folder path      = {0}" -f $dbPath)
-          Write-Host ("DB setup batch path = {0}" -f $batPath)
+          Write-Host ("DB folder path      = {0}" -f $dbFolder)
+          Write-Host ("DB setup batch path = {0}" -f $dbSetupBat)
 
-          if (-not (Test-Path $dbPath)) {
-            Write-Host '### ERROR DETAIL: Database folder not found under backend\database.'
+          if (-not (Test-Path $dbSetupBat)) {
+            Write-Host "### ERROR DETAIL: setup_database.bat not found in backend\database."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          if (-not (Test-Path $batPath)) {
-            Write-Host '### ERROR DETAIL: setup_database.bat not found.'
+          Write-Host "Runner is INTERACTIVE. When setup_database.bat asks for the PostgreSQL password,"
+          Write-Host "type the password in the runner console window and press Enter."
+
+          cd $dbFolder
+          & $dbSetupBat
+          $rc = $LASTEXITCODE
+
+          if ($rc -ne 0) {
+            Write-Host ("### ERROR DETAIL: setup_database.bat exited with code {0}." -f $rc)
             if ($log) { Stop-Transcript | Out-Null }
-            exit 1
+            exit $rc
           }
 
-          if ([string]::IsNullOrWhiteSpace($env:DB_PASSWORD)) {
-            Write-Host '### ERROR DETAIL: DB_PASSWORD environment variable is empty. Set secrets.VERVESTACKS_DB_PASSWORD in GitHub.'
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          Write-Host 'Running database setup batch (CI mode)...'
-          cd $dbPath
-
-          # Pass password as first argument (adjust if your script expects differently)
-          & $batPath $env:DB_PASSWORD
-          $code = $LASTEXITCODE
-
-          Write-Host ("Database setup batch exit code = {0}" -f $code)
-
-          if ($code -ne 0) {
-            Write-Host ("### ERROR DETAIL: Database setup failed (exit code {0}). Check batch output above." -f $code)
-            if ($log) { Stop-Transcript | Out-Null }
-            exit $code
-          }
-
-          Write-Host 'Database setup completed successfully.'
+          Write-Host "Database setup batch completed successfully."
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
       # ==========================================================
-      # 5) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
+      # 6) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
       # ==========================================================
       - name: Deploy to Hetzner (placeholder)
         if: env.Update_Data_On_Hetzner == 'true'
@@ -633,7 +616,7 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 6) RUN start.bat AFTER DEPLOYMENT (NON-BLOCKING WHEN CONSOLES SHOWN)
+      # 7) RUN start.bat AFTER DEPLOYMENT (NON-BLOCKING WHEN CONSOLES SHOWN)
       # ==========================================================
       - name: Run start.bat after deployment
         if: env.Update_Data_On_Local == 'true'
