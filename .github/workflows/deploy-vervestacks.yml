@@ -76,9 +76,10 @@ jobs:
           }
 
           $timestamp = Get-Date -Format 'yyyy-MM-ddTHH-mm-ss'
-          # CHANGED: simpler log file name: Deploy_<timestamp>.log
+          # Simpler log file name: Deploy_<timestamp>.log
           $fileName  = "Deploy_$timestamp.log"
-          $safeName  = ($fileName -replace '[\\/:*?""<>|]', '_')
+          # FIXED: regex char class (no double "")
+          $safeName  = ($fileName -replace '[\\/:*?"<>|]', '_')
           $logFile   = Join-Path $logRoot $safeName
 
           'STEP     : Init workflow run log file' | Out-File -FilePath $logFile -Encoding UTF8
@@ -535,6 +536,75 @@ jobs:
 
           .\.venv\Scripts\python.exe -m pip install --upgrade pip
           .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+          if ($log) { Stop-Transcript | Out-Null }
+          exit 0
+
+      # ==========================================================
+      # 4b) RUN DATABASE SETUP (setup_database_ci.bat)
+      # ==========================================================
+      - name: Run database setup (setup_database_ci.bat)
+        shell: powershell
+        env:
+          DB_PASSWORD: ${{ secrets.VERVESTACKS_DB_PASSWORD }}
+        run: |
+          $stepName = 'Run database setup (setup_database_ci.bat)'
+          $log = $env:LOG_FILE
+
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          Write-Host "=== [$stepName] ==="
+
+          $appRoot  = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $dbPath   = Join-Path $appRoot 'backend\database'
+          $batPath  = Join-Path $dbPath 'setup_database_ci.bat'
+
+          Write-Host ("DB folder path      = {0}" -f $dbPath)
+          Write-Host ("DB setup batch path = {0}" -f $batPath)
+
+          if (-not (Test-Path $dbPath)) {
+            Write-Host '### ERROR DETAIL: Database folder not found under backend\database.'
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          if (-not (Test-Path $batPath)) {
+            Write-Host '### ERROR DETAIL: setup_database_ci.bat not found.'
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          if ([string]::IsNullOrWhiteSpace($env:DB_PASSWORD)) {
+            Write-Host '### ERROR DETAIL: DB_PASSWORD environment variable is empty. Set secrets.VERVESTACKS_DB_PASSWORD in GitHub.'
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          Write-Host 'Running database setup batch (CI mode)...'
+          cd $dbPath
+
+          # Pass password as first argument (adjust if your script expects differently)
+          & $batPath $env:DB_PASSWORD
+          $code = $LASTEXITCODE
+
+          Write-Host ("Database setup batch exit code = {0}" -f $code)
+
+          if ($code -ne 0) {
+            Write-Host ("### ERROR DETAIL: Database setup failed (exit code {0}). Check batch output above." -f $code)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $code
+          }
+
+          Write-Host 'Database setup completed successfully.'
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
