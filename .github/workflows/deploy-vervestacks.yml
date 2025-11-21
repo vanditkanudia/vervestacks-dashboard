@@ -10,7 +10,7 @@ env:
   Update_Data_On_Local: "true"
   Update_Data_On_Hetzner: "false"
 
-  # control whether start.bat opens visible consoles
+  # Control whether start.bat opens visible consoles
   # 'false' = run inline and check exit code (CI mode)
   # 'true'  = Start-Process -> separate window(s), no exit-code check
   SHOW_START_CONSOLES: "true"
@@ -540,7 +540,7 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 5) RUN DATABASE SETUP (setup_database.bat) INTERACTIVELY
+      # 5) RUN DATABASE SETUP (INTERACTIVE CMD WINDOW)
       # ==========================================================
       - name: Run database setup (setup_database.bat)
         if: env.Update_Data_On_Local == 'true'
@@ -563,48 +563,35 @@ jobs:
           Write-Host "=== [$stepName] ==="
 
           $dbFolder   = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\backend\database"
-          $dbSetupBat = Join-Path $dbFolder 'setup_database.bat'
+          $setupPath  = Join-Path $dbFolder "setup_database.bat"
 
           Write-Host ("DB folder path      = {0}" -f $dbFolder)
-          Write-Host ("DB setup batch path = {0}" -f $dbSetupBat)
+          Write-Host ("DB setup batch path = {0}" -f $setupPath)
 
           if (-not (Test-Path $dbFolder)) {
-            Write-Host "### ERROR DETAIL: Database folder not found."
+            Write-Host "### ERROR DETAIL: Database folder not found. Expected: $dbFolder"
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          if (-not (Test-Path $dbSetupBat)) {
-            Write-Host "### ERROR DETAIL: setup_database.bat not found."
+          if (-not (Test-Path $setupPath)) {
+            Write-Host "### ERROR DETAIL: setup_database.bat not found in database folder."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          Write-Host ""
           Write-Host "A new CMD window will open for database setup."
-          Write-Host "Please type the PostgreSQL password there when prompted and wait until it finishes."
-          Write-Host ""
+          Write-Host "Please type the PostgreSQL password there when prompted."
+          Write-Host "This workflow step will NOT wait for completion and will NOT check the exit code."
 
-          $cmdArgs = "/c `"`"$dbSetupBat`"`""
+          # Launch interactive CMD window with correct working directory.
+          Start-Process -FilePath "cmd.exe" `
+                        -ArgumentList "/k `"`"setup_database.bat`"`"" `
+                        -WorkingDirectory $dbFolder `
+                        -WindowStyle Normal | Out-Null
 
-          $proc = Start-Process -FilePath "cmd.exe" `
-                                -ArgumentList $cmdArgs `
-                                -WorkingDirectory $dbFolder `
-                                -WindowStyle Normal `
-                                -PassThru
-
-          $proc.WaitForExit()
-          $rc = $proc.ExitCode
-
-          Write-Host ("setup_database.bat exit code = {0}" -f $rc)
-
-          if ($rc -ne 0) {
-            Write-Host ("### ERROR DETAIL: setup_database.bat exited with code {0}." -f $rc)
-            if ($log) { Stop-Transcript | Out-Null }
-            exit $rc
-          }
-
-          Write-Host "Database setup completed successfully."
+          Write-Host "setup_database.bat has been launched in a separate window."
+          Write-Host "Complete the DB setup in that window if needed."
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
