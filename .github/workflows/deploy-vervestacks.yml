@@ -35,7 +35,7 @@ env:
   APP_SUBROOT: "vervestacks-dashboard"
 
   # Python service settings
-  PYTHON_EXE: "C:\\Users\\Vandit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+  PYTHON_EXE: "C:\\Users\\Vandit\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
 
   # App source root (what you copy from)
   APP_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\vervestacks-dashboard"
