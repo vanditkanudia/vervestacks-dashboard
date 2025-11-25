@@ -10,7 +10,7 @@ env:
   Update_Data_On_Local: "true"
   Update_Data_On_Hetzner: "false"
 
-  # Control whether start.bat opens visible consoles
+  # NEW: control whether start.bat opens visible consoles
   # 'false' = run inline and check exit code (CI mode)
   # 'true'  = Start-Process -> separate window(s), no exit-code check
   SHOW_START_CONSOLES: "true"
@@ -76,7 +76,7 @@ jobs:
           }
 
           $timestamp = Get-Date -Format 'yyyy-MM-ddTHH-mm-ss'
-          # Log file name: Deploy_<timestamp>.log
+          # simpler log file name: Deploy_<timestamp>.log
           $fileName  = "Deploy_$timestamp.log"
           $safeName  = ($fileName -replace '[\\/:*?""<>|]', '_')
           $logFile   = Join-Path $logRoot $safeName
@@ -235,6 +235,7 @@ jobs:
 
       # ==========================================================
       # 1b) SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
+      #     (EXCLUDING .git, .github, .venv, node_modules)
       # ==========================================================
       - name: Sync full VerveStacks repo to DEPLOY_ROOT
         if: env.Update_Data_On_Local == 'true'
@@ -273,8 +274,10 @@ jobs:
             [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
-          Write-Host 'Running robocopy for FULL VerveStacks sync (excluding .git and .github folders)...'
-          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
+          Write-Host 'Running robocopy for FULL VerveStacks sync (excluding .git, .github, .venv, node_modules)...'
+          robocopy $src $dst /E /Z /R:3 /W:5 `
+            /XD ".git" ".github" ".venv" "node_modules" `
+            /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
 
           Write-Host ("Full repo robocopy exit code: {0}" -f $code)
@@ -293,6 +296,7 @@ jobs:
 
       # ==========================================================
       # 2) APP DEPLOY (COPY APP SOURCE TO DEPLOY_ROOT\APP_SUBROOT)
+      #     (EXCLUDING .git, .github, .venv, node_modules)
       # ==========================================================
       - name: Deploy app from APP_SOURCE_ROOT to DEPLOY_ROOT\APP_SUBROOT
         if: env.Update_Data_On_Local == 'true'
@@ -331,8 +335,10 @@ jobs:
             [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
-          Write-Host 'Running robocopy for application deployment (excluding .git & .github folders)...'
-          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
+          Write-Host 'Running robocopy for application deployment (excluding .git, .github, .venv, node_modules)...'
+          robocopy $src $dst /E /Z /R:3 /W:5 `
+            /XD ".git" ".github" ".venv" "node_modules" `
+            /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
 
           Write-Host ("App robocopy exit code: {0}" -f $code)
@@ -490,7 +496,7 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 4) PYTHON SERVICE SETUP
+      # 4) PYTHON SERVICE SETUP (ALWAYS RECREATE .venv)
       # ==========================================================
       - name: Setup python service on deployed folder
         shell: powershell
@@ -525,22 +531,103 @@ jobs:
 
           cd $pythonPath
 
-          if (-not (Test-Path '.venv')) {
-            Write-Host 'Creating virtual environment in .venv...'
-            & $env:PYTHON_EXE -m venv .venv
-          }
-          else {
-            Write-Host 'Virtual environment .venv already exists, reusing it.'
+          # Always recreate venv so it matches current requirements.txt
+          if (Test-Path '.venv') {
+            Write-Host 'Removing existing virtual environment .venv...'
+            try {
+              Remove-Item -Recurse -Force '.venv'
+            }
+            catch {
+              Write-Host ("### ERROR: Failed to delete old .venv: {0}" -f $_.Exception.Message)
+              if ($log) { Stop-Transcript | Out-Null }
+              exit 1
+            }
           }
 
+          Write-Host 'Creating virtual environment in .venv using PYTHON_EXE...'
+          & $env:PYTHON_EXE -m venv .venv
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host ("### ERROR: python -m venv .venv failed with exit code {0}" -f $LASTEXITCODE)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $LASTEXITCODE
+          }
+
+          Write-Host 'Installing/Updating Python dependencies from requirements.txt...'
           .\.venv\Scripts\python.exe -m pip install --upgrade pip
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host ("### ERROR: pip upgrade failed with exit code {0}" -f $LASTEXITCODE)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $LASTEXITCODE
+          }
+
           .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host ("### ERROR: pip install -r requirements.txt failed with exit code {0}" -f $LASTEXITCODE)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $LASTEXITCODE
+          }
+
+          Write-Host 'Python virtual environment created and dependencies installed successfully.'
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
       # ==========================================================
-      # 5) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
+      # 5) RUN DATABASE SETUP (OPEN CMD WINDOW, DO NOT FAIL WORKFLOW)
+      # ==========================================================
+      - name: Run database setup (setup_database.bat)
+        if: env.Update_Data_On_Local == 'true'
+        shell: powershell
+        run: |
+          $stepName = 'Run database setup (setup_database.bat)'
+          $log = $env:LOG_FILE
+
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            # Even if something goes wrong here, do NOT fail the whole workflow hard.
+            exit 0
+          }
+
+          Write-Host "=== [$stepName] ==="
+
+          $appRoot   = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $dbFolder  = Join-Path $appRoot 'backend\database'
+          $dbBatch   = Join-Path $dbFolder 'setup_database.bat'
+
+          Write-Host ("DB folder path      = {0}" -f $dbFolder)
+          Write-Host ("DB setup batch path = {0}" -f $dbBatch)
+
+          if (-not (Test-Path $dbBatch)) {
+            Write-Host "WARNING: setup_database.bat not found. Skipping DB setup step."
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 0
+          }
+
+          Write-Host "A new CMD window will open for database setup."
+          Write-Host "Please type the PostgreSQL password there when prompted and follow the instructions."
+          Write-Host "This workflow step will NOT fail even if the batch exits with an error code."
+
+          $psi = New-Object System.Diagnostics.ProcessStartInfo
+          $psi.FileName = "cmd.exe"
+          $psi.Arguments = "/k `"`"$dbBatch`"`""
+          $psi.WorkingDirectory = $dbFolder
+          $psi.UseShellExecute = $true
+
+          [System.Diagnostics.Process]::Start($psi) | Out-Null
+
+          Write-Host "setup_database.bat launched in its own CMD window. Complete it manually if needed."
+
+          if ($log) { Stop-Transcript | Out-Null }
+          exit 0
+
+      # ==========================================================
+      # 6) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
       # ==========================================================
       - name: Deploy to Hetzner (placeholder)
         if: env.Update_Data_On_Hetzner == 'true'
@@ -559,61 +646,6 @@ jobs:
           }
           Write-Host "=== [$stepName] ==="
           Write-Host 'Update_Data_On_Hetzner == true, but remote deploy logic is not implemented yet.'
-          if ($log) { Stop-Transcript | Out-Null }
-          exit 0
-
-      # ==========================================================
-      # 6) RUN database setup (setup_database.bat) - NON-BLOCKING
-      # ==========================================================
-      - name: Run database setup (setup_database.bat)
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        run: |
-          $stepName = 'Run database setup (setup_database.bat)'
-          $log = $env:LOG_FILE
-
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-
-          $ErrorActionPreference = 'Stop'
-          trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
-            Write-Host $_.ScriptStackTrace
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          Write-Host "=== [$stepName] ==="
-
-          $dbFolder  = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\backend\database"
-          $setupPath = Join-Path $dbFolder "setup_database.bat"
-
-          Write-Host ("DB folder path      = {0}" -f $dbFolder)
-          Write-Host ("DB setup batch path = {0}" -f $setupPath)
-
-          if (-not (Test-Path $dbFolder)) {
-            Write-Host "### ERROR DETAIL: DB folder path not found."
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          if (-not (Test-Path $setupPath)) {
-            Write-Host "### ERROR DETAIL: setup_database.bat not found."
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          Write-Host "A new CMD window will open for database setup."
-          Write-Host "Please type the PostgreSQL password there when prompted."
-          Write-Host "The workflow will NOT wait for completion and will NOT fail on its exit code."
-
-          # Launch interactive CMD window for DB setup; do not wait
-          Start-Process -FilePath "cmd.exe" `
-                        -ArgumentList "/k `"`"setup_database.bat`"`"" `
-                        -WorkingDirectory $dbFolder `
-                        -WindowStyle Normal | Out-Null
-
-          Write-Host "setup_database.bat launched in a separate window."
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
