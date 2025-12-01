@@ -31,11 +31,17 @@ echo Database: %DB_NAME%
 echo ================================================
 echo.
 
-REM Prompt for password
-if "%PGPASSWORD%"=="" (
-    set /p PGPASSWORD="Enter PostgreSQL password for user '%PG_USER%': "
-    echo.
+REM psql reads this env var automatically
+set "PGPASSWORD=%DB_PASSWORD%"
+
+REM === Use password injected from GitHub Actions (DB_PASSWORD) ===
+IF "%PGPASSWORD%"=="" (
+    REM Prompt for password
+    set /p PG_PASSWORD="Enter PostgreSQL password for user '%PG_USER%': "
 )
+
+REM Set password environment variable
+set "PGPASSWORD=%PG_PASSWORD%"
 
 REM Verify SQL files exist
 if not exist "schema\import_renewable_capacity_factors.sql" (
