@@ -303,37 +303,45 @@ class VerveStacksService:
                 "error": f"Failed to get transmission data: {str(e)}"
             }
 
-    def get_transmission_network_data(self, iso_code: str) -> Dict:
-        """Get transmission network data from load_network_components for dashboard visualization."""
-        if not self.energy_analyzer:
-            raise Exception("Energy metrics analyzer not available")
-        
-        try:
-            result = self.energy_analyzer.get_transmission_network_data(iso_code)
-            return result
-        except Exception as e:
-            self.logger.error(f"Error getting transmission network data for {iso_code}: {e}")
-            return {
-                "success": False,
-                "data": None,
-                "error": f"Failed to get transmission network data: {str(e)}"
-            }
+    # DEPRECATED: Transmission network data now comes from PostgreSQL
+    # via tables vervestacks.transmission_buses and vervestacks.transmission_lines
+    # using stored procedure usp_get_transmission_network_data().
+    # Backend route: /api/transmission/network/:isoCode (Node.js -> PostgreSQL)
+    # def get_transmission_network_data(self, iso_code: str) -> Dict:
+    #     """Legacy helper that loaded OSM data via load_network_components."""
+    #     if not self.energy_analyzer:
+    #         raise Exception("Energy metrics analyzer not available")
+    #     
+    #     try:
+    #         result = self.energy_analyzer.get_transmission_network_data(iso_code)
+    #         return result
+    #     except Exception as e:
+    #         self.logger.error(f"Error getting transmission network data for {iso_code}: {e}")
+    #         return {
+    #             "success": False,
+    #             "data": None,
+    #             "error": f"Failed to get transmission network data: {str(e)}"
+    #         }
 
-    def get_transmission_generation_data(self, iso_code: str) -> Dict:
-        """Get transmission generation data from power plants CSV files for dashboard visualization."""
-        if not self.energy_analyzer:
-            raise Exception("Energy metrics analyzer not available")
-        
-        try:
-            result = self.energy_analyzer.get_transmission_generation_data(iso_code)
-            return result
-        except Exception as e:
-            self.logger.error(f"Error getting transmission generation data for {iso_code}: {e}")
-            return {
-                "success": False,
-                "data": None,
-                "error": f"Failed to get transmission generation data: {str(e)}"
-            }
+    # DEPRECATED: This function has been migrated to PostgreSQL
+    # Generation plants data is now served from vervestacks.transmission_generation_plants table
+    # via stored procedure usp_get_transmission_generation_plants()
+    # Backend route: /api/transmission/generation/:isoCode (Node.js -> PostgreSQL)
+    # def get_transmission_generation_data(self, iso_code: str) -> Dict:
+    #     """Get transmission generation data from power plants CSV files for dashboard visualization."""
+    #     if not self.energy_analyzer:
+    #         raise Exception("Energy metrics analyzer not available")
+    #     
+    #     try:
+    #         result = self.energy_analyzer.get_transmission_generation_data(iso_code)
+    #         return result
+    #     except Exception as e:
+    #         self.logger.error(f"Error getting transmission generation data for {iso_code}: {e}")
+    #         return {
+    #             "success": False,
+    #             "data": None,
+    #             "error": f"Failed to get transmission generation data: {str(e)}"
+    #         }
 
     def get_fuel_colors(self) -> Dict:
         """Get fuel colors from Python energy_colors.py file via dashboard data analyzer."""

@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const PythonExecutor = require('../utils/pythonExecutor');
-
-const pythonExecutor = new PythonExecutor();
+const db = require('../database/connection');
 
 /**
  * GET /api/renewable-potential/solar-zones/:isoCode
@@ -19,33 +17,26 @@ router.get('/solar-zones/:isoCode', async (req, res) => {
       });
     }
 
-    // Check Python service availability
-    const pythonAvailable = await pythonExecutor.checkPythonAvailability();
-    if (!pythonAvailable) {
-      return res.status(503).json({
+    // Call PostgreSQL stored procedure
+    const result = await db.query(
+      'SELECT * FROM vervestacks.usp_get_solar_zones($1)',
+      [isoCode.toUpperCase()]
+    );
+
+    // Check if result exists and has data
+    if (!result.rows || result.rows.length === 0) {
+      return res.status(500).json({
         success: false,
-        error: 'Python service is not available. Please try again later.'
+        error: 'Database query returned no results'
       });
     }
 
-    // Call Python service for solar zones data
-    const pythonServiceUrl = process.env.PYTHON_SERVICE_URL;
-    const pythonResponse = await fetch(`${pythonServiceUrl}/renewable-potential/solar-zones/${isoCode}`);
+    const data = result.rows[0].usp_get_solar_zones;
     
-    if (!pythonResponse.ok) {
-      const errorData = await pythonResponse.json().catch(() => ({}));
-      return res.status(pythonResponse.status).json({
-        success: false,
-        error: errorData.detail || `Python service error: ${pythonResponse.statusText}`
-      });
-    }
-
-    const data = await pythonResponse.json();
-    
-    if (!data.success) {
+    if (!data || !data.success) {
       return res.status(404).json({
         success: false,
-        error: data.error || 'No solar renewable zones data found for this country'
+        error: data?.error || 'No solar renewable zones data found for this country'
       });
     }
 
@@ -91,33 +82,26 @@ router.get('/wind-zones/:isoCode', async (req, res) => {
       });
     }
 
-    // Check Python service availability
-    const pythonAvailable = await pythonExecutor.checkPythonAvailability();
-    if (!pythonAvailable) {
-      return res.status(503).json({
+    // Call PostgreSQL stored procedure
+    const result = await db.query(
+      'SELECT * FROM vervestacks.usp_get_wind_zones($1, $2)',
+      [isoCode.toUpperCase(), wind_type]
+    );
+
+    // Check if result exists and has data
+    if (!result.rows || result.rows.length === 0) {
+      return res.status(500).json({
         success: false,
-        error: 'Python service is not available. Please try again later.'
+        error: 'Database query returned no results'
       });
     }
 
-    // Call Python service for wind zones data
-    const pythonServiceUrl = process.env.PYTHON_SERVICE_URL;
-    const pythonResponse = await fetch(`${pythonServiceUrl}/renewable-potential/wind-zones/${isoCode}?wind_type=${wind_type}`);
+    const data = result.rows[0].usp_get_wind_zones;
     
-    if (!pythonResponse.ok) {
-      const errorData = await pythonResponse.json().catch(() => ({}));
-      return res.status(pythonResponse.status).json({
-        success: false,
-        error: errorData.detail || `Python service error: ${pythonResponse.statusText}`
-      });
-    }
-
-    const data = await pythonResponse.json();
-    
-    if (!data.success) {
+    if (!data || !data.success) {
       return res.status(404).json({
         success: false,
-        error: data.error || `No ${wind_type} wind renewable zones data found for this country`
+        error: data?.error || `No ${wind_type} wind renewable zones data found for this country`
       });
     }
 
@@ -147,11 +131,13 @@ router.get('/wind-zones/:isoCode', async (req, res) => {
  */
 router.get('/health', async (req, res) => {
   try {
-    const pythonAvailable = await pythonExecutor.checkPythonAvailability();
+    // Check PostgreSQL connection
+    const dbCheck = await db.query('SELECT 1 as health');
+    const dbHealthy = dbCheck.rows.length > 0;
     
     res.json({
       success: true,
-      pythonService: pythonAvailable,
+      database: dbHealthy,
       timestamp: new Date().toISOString(),
       endpoints: [
         'GET /api/renewable-potential/solar-zones/:isoCode',

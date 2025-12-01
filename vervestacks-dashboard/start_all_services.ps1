@@ -17,7 +17,6 @@ Write-Host "Script location: $scriptDir" -ForegroundColor Cyan
 $pythonDir = Join-Path $scriptDir "python-service"
 $backendDir = Join-Path $scriptDir "backend"
 $frontendDir = Join-Path $scriptDir "frontend"
-$venvPython = Join-Path $pythonDir ".venv\Scripts\python.exe"
 
 if (-not (Test-Path $pythonDir)) {
     Write-Host "ERROR: python-service directory not found!" -ForegroundColor Red
@@ -65,7 +64,7 @@ Write-Host ""
 
 # Start Python FastAPI service
 Write-Host "Starting Python FastAPI service..." -ForegroundColor Green
-$pythonCmd = "cd `"$pythonDir`"; & `"$venvPython`" api_server.py"
+$pythonCmd = "cd '$pythonDir'; `$env:PYTHON_ENV='development'; python api_server.py"
 Start-Process powershell -ArgumentList "-NoExit", "-Command", $pythonCmd -WindowStyle Normal
 Start-Sleep -Seconds 3
 

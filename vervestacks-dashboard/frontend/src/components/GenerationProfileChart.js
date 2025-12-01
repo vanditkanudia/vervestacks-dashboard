@@ -54,6 +54,7 @@ const GenerationProfileChart = ({ countryIso }) => {
   const simulatorWindMapRef = React.useRef(null);
   const simulatorWindLayerRef = React.useRef(null);
   const [windSelectedCells, setWindSelectedCells] = useState(null);
+  const [enableDataGrouping, setEnableDataGrouping] = useState(false); // Toggle for data grouping
 
   // Sidebar generation summaries (GW)
   const solarAvgGW = useMemo(() => {
@@ -307,6 +308,69 @@ const GenerationProfileChart = ({ countryIso }) => {
     }
   };
 
+  // Handler for Solar "Go" button
+  const handleSolarGo = async () => {
+    const cap = parseFloat(solarInputGW);
+    if (!isNaN(cap) && cap > 0) {
+      setSolarLoading(true);
+      setSolarError(null);
+      setSolarSelectedCells(null);
+      try {
+        const solarResp = await generationProfileAPI.getSolarHourly(countryIso, formData.year, cap);
+        if (solarResp?.success && Array.isArray(solarResp.profile)) {
+          console.log('[Solar] API profile received', {
+            iso: countryIso,
+            year: formData.year,
+            capacityGW: cap,
+            points: solarResp.profile.length,
+            sample: solarResp.profile.slice(0, 24)
+          });
+          setSolarProfile(solarResp.profile);
+          setSolarCapacityGW(cap);
+          setSolarSelectedCells(solarResp.selected_cells || null);
+        } else {
+          setSolarError('Solar profile endpoint returned no data');
+          setSolarProfile(null);
+          setSolarSelectedCells(null);
+        }
+      } catch (e) {
+        console.error('❌ Error fetching solar hourly profile:', e);
+        setSolarError(e?.response?.data?.message || e.message || 'Failed to fetch solar profile');
+        setSolarProfile(null);
+      } finally {
+        setSolarLoading(false);
+      }
+    }
+  };
+
+  // Handler for Wind "Go" button
+  const handleWindGo = async () => {
+    const cap = parseFloat(windInputGW);
+    if (!isNaN(cap) && cap > 0) {
+      setWindLoading(true);
+      setWindError(null);
+      setWindSelectedCells(null);
+      try {
+        const windResp = await generationProfileAPI.getWindHourly(countryIso, formData.year, cap);
+        if (windResp?.success && Array.isArray(windResp.profile)) {
+          setWindProfile(windResp.profile);
+          setWindCapacityGW(cap);
+          setWindSelectedCells(windResp.selected_cells || null);
+        } else {
+          setWindError('Wind profile endpoint returned no data');
+          setWindProfile(null);
+          setWindSelectedCells(null);
+        }
+      } catch (e) {
+        console.error('❌ Error fetching wind hourly profile:', e);
+        setWindError(e?.response?.data?.message || e.message || 'Failed to fetch wind profile');
+        setWindProfile(null);
+      } finally {
+        setWindLoading(false);
+      }
+    }
+  };
+
   // Stable fetch function for capacity
   const fetchCapacityData = useCallback(async () => {
     if (!countryIso || !formData.year) return;
@@ -515,16 +579,114 @@ const GenerationProfileChart = ({ countryIso }) => {
 
   // Prepare chart data and options
   const chartOptions = useMemo(() => {
+    // Show chart if at least Timeline data exists (partial data support)
     if (!chartData || !chartData.hourlyProfile) {
       return null;
     }
 
-    const timeData = chartData.hourlyProfile.map((value, index) => {
-      const date = new Date(chartData.year, 0, 1, index % 24, 0, 0);
-      date.setDate(date.getDate() + Math.floor(index / 24));
-      // Convert MW to GW for display
-      return [date.getTime(), value / 1000];
-    });
+    const year = formData.year || chartData.year || 2022;
+    
+    // Helper function to convert hourly data to time series
+    const createTimeSeries = (profileData) => {
+      if (!profileData || !Array.isArray(profileData)) return null;
+      return profileData.map((value, index) => {
+        const date = new Date(year, 0, 1, index % 24, 0, 0);
+        date.setDate(date.getDate() + Math.floor(index / 24));
+        // Convert MW to GW for display
+        return [date.getTime(), value / 1000];
+      });
+    };
+
+    // Create time series for each data source
+    const totalTimeData = createTimeSeries(chartData.hourlyProfile);
+    const solarTimeData = createTimeSeries(solarProfile);
+    const windTimeData = createTimeSeries(windProfile);
+
+    // Build series array conditionally (show what's available)
+    const series = [];
+    
+    // Solar Generation (stacked bar, if available) - drawn first (bottom layer)
+    if (solarTimeData) {
+      series.push({
+        name: 'Solar Generation',
+        data: solarTimeData,
+        type: 'column',
+        color: '#FCD34D',
+        stacking: 'normal',
+        borderWidth: 0,
+        zIndex: 1,
+        dataGrouping: enableDataGrouping ? {
+          enabled: true,
+          approximation: 'sum', // Sum values when grouping (for stacked bars)
+          groupPixelWidth: 50,
+          units: [
+            ['hour', [1, 6, 12, 24]],
+            ['day', [1, 7, 30]],
+            ['week', [1, 4]],
+            ['month', [1, 3, 6]]
+          ]
+        } : {
+          enabled: false
+        }
+      });
+    }
+    
+    // Wind Generation (stacked bar, if available) - drawn on top of Solar
+    if (windTimeData) {
+      series.push({
+        name: 'Wind Generation',
+        data: windTimeData,
+        type: 'column',
+        color: '#10B981',
+        stacking: 'normal',
+        borderWidth: 0,
+        zIndex: 2,
+        dataGrouping: enableDataGrouping ? {
+          enabled: true,
+          approximation: 'sum', // Sum values when grouping (for stacked bars)
+          groupPixelWidth: 50,
+          units: [
+            ['hour', [1, 6, 12, 24]],
+            ['day', [1, 7, 30]],
+            ['week', [1, 4]],
+            ['month', [1, 3, 6]]
+          ]
+        } : {
+          enabled: false
+        }
+      });
+    }
+    
+    // Demand (always shown if chartData exists) - drawn on top as line
+    if (totalTimeData) {
+      series.push({
+        name: 'Demand',
+        data: totalTimeData,
+        type: 'line',
+        color: '#6366F1',
+        lineWidth: 2.5,
+        marker: { enabled: false },
+        zIndex: 3,
+        dataGrouping: enableDataGrouping ? {
+          enabled: true,
+          approximation: 'average', // Average values when grouping (for line)
+          groupPixelWidth: 50,
+          units: [
+            ['hour', [1, 6, 12, 24]],
+            ['day', [1, 7, 30]],
+            ['week', [1, 4]],
+            ['month', [1, 3, 6]]
+          ]
+        } : {
+          enabled: false
+        }
+      });
+    }
+
+    // If no series available, return null
+    if (series.length === 0) {
+      return null;
+    }
 
     return {
       chart: {
@@ -590,15 +752,21 @@ const GenerationProfileChart = ({ countryIso }) => {
         }
       },
       yAxis: {
-        title: { text: 'Generation (GW)' },
+        title: { text: 'Demand/Generation (GW)' },
         labels: { style: { color: '#64748B' } },
         gridLineColor: '#E2E8F0'
       },
       rangeSelector: {
         enabled: true,
         allButtonsEnabled: true,
-        selected: 5, // Default to "All" option (index 5)
+        selected: 6, // Default to "All" option (index 6, after adding 1D)
         buttons: [
+          {
+            type: 'day',
+            count: 1,
+            text: '1D',
+            title: 'View 1 day'
+          },
           {
             type: 'month',
             count: 1,
@@ -658,36 +826,137 @@ const GenerationProfileChart = ({ countryIso }) => {
         borderColor: '#E2E8F0',
         borderRadius: 8,
         shadow: true,
+        shared: true,
         formatter: function() {
-          return `
+          const date = Highcharts.dateFormat('%B %d, %Y %H:%M', this.x);
+          let tooltipContent = `
             <div style="padding: 8px;">
               <div style="font-weight: 600; color: #1E293B; margin-bottom: 8px;">
-                ${Highcharts.dateFormat('%B %d, %Y', this.x)}
+                ${date}
               </div>
-              <div style="font-weight: 600; color: #6366F1; font-size: 16px;">
-                Generation: ${Highcharts.numberFormat(this.y, 2)} GW
-              </div>
-            </div>
           `;
+          
+          let demandValue = null;
+          let solarValue = null;
+          let windValue = null;
+          let renewableTotal = 0;
+          
+          // Collect values from all series
+          this.points.forEach(point => {
+            const seriesName = point.series.name;
+            const value = point.y;
+            
+            if (seriesName === 'Demand') {
+              demandValue = value;
+            } else if (seriesName === 'Solar Generation') {
+              solarValue = value;
+              renewableTotal += value;
+            } else if (seriesName === 'Wind Generation') {
+              windValue = value;
+              renewableTotal += value;
+            }
+          });
+          
+          // Show Demand first
+          if (demandValue !== null) {
+            tooltipContent += `
+              <div style="margin-bottom: 4px;">
+                <span style="display: inline-block; width: 10px; height: 10px; background-color: #6366F1; border-radius: 2px; margin-right: 6px;"></span>
+                <span style="font-weight: 500; color: #475569;">Demand:</span>
+                <span style="font-weight: 600; color: #6366F1; margin-left: 6px;">${Highcharts.numberFormat(demandValue, 2)} GW</span>
+              </div>
+            `;
+          }
+          
+          // Show Solar (stacked)
+          if (solarValue !== null) {
+            tooltipContent += `
+              <div style="margin-bottom: 4px;">
+                <span style="display: inline-block; width: 10px; height: 10px; background-color: #FCD34D; border-radius: 2px; margin-right: 6px;"></span>
+                <span style="font-weight: 500; color: #475569;">Solar:</span>
+                <span style="font-weight: 600; color: #FCD34D; margin-left: 6px;">${Highcharts.numberFormat(solarValue, 2)} GW</span>
+              </div>
+            `;
+          }
+          
+          // Show Wind (stacked)
+          if (windValue !== null) {
+            tooltipContent += `
+              <div style="margin-bottom: 4px;">
+                <span style="display: inline-block; width: 10px; height: 10px; background-color: #10B981; border-radius: 2px; margin-right: 6px;"></span>
+                <span style="font-weight: 500; color: #475569;">Wind:</span>
+                <span style="font-weight: 600; color: #10B981; margin-left: 6px;">${Highcharts.numberFormat(windValue, 2)} GW</span>
+              </div>
+            `;
+          }
+          
+          // Show gap if both demand and renewable data available
+          if (demandValue !== null && renewableTotal > 0) {
+            const gap = demandValue - renewableTotal;
+            const gapColor = gap > 0 ? '#EF4444' : '#10B981';
+            const gapLabel = gap > 0 ? 'Gap (Additional needed)' : 'Surplus';
+            tooltipContent += `
+              <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #E2E8F0;">
+                <span style="font-weight: 600; color: ${gapColor};">${gapLabel}:</span>
+                <span style="font-weight: 600; color: ${gapColor}; margin-left: 6px;">${Highcharts.numberFormat(Math.abs(gap), 2)} GW</span>
+              </div>
+            `;
+          }
+          
+          tooltipContent += '</div>';
+          return tooltipContent;
         }
       },
       exporting: { enabled: false },
       plotOptions: {
+        column: {
+          borderWidth: 0,
+          grouping: false,
+          pointPadding: 0,
+          groupPadding: 0,
+          dataGrouping: enableDataGrouping ? {
+            enabled: true,
+            approximation: 'sum',
+            groupPixelWidth: 50,
+            units: [
+              ['hour', [1, 6, 12, 24]],
+              ['day', [1, 7, 30]],
+              ['week', [1, 4]],
+              ['month', [1, 3, 6]]
+            ]
+          } : {
+            enabled: false
+          }
+        },
         line: {
-          color: '#6366F1',
-          lineWidth: 2,
-          marker: { enabled: false }
+          marker: { enabled: false },
+          dataGrouping: enableDataGrouping ? {
+            enabled: true,
+            approximation: 'average',
+            groupPixelWidth: 50,
+            units: [
+              ['hour', [1, 6, 12, 24]],
+              ['day', [1, 7, 30]],
+              ['week', [1, 4]],
+              ['month', [1, 3, 6]]
+            ]
+          } : {
+            enabled: false
+          }
         }
       },
-      series: [{
-        name: 'Generation (GW)',
-        data: timeData,
-        type: 'line'
-      }],
-      legend: { enabled: false },
+      series: series,
+      legend: { 
+        enabled: true,
+        align: 'right',
+        verticalAlign: 'top',
+        layout: 'vertical',
+        itemStyle: { color: '#475569', fontSize: '12px' },
+        itemHoverStyle: { color: '#1E293B' }
+      },
       credits: { enabled: false }
     };
-  }, [chartData]);
+  }, [chartData, solarProfile, windProfile, formData.year, enableDataGrouping]);
 
   // Function to create chart options for profile charts (generation only)
   const getProfileChartOptions = (profileType, profileName, profileData) => {
@@ -801,17 +1070,70 @@ const GenerationProfileChart = ({ countryIso }) => {
             </div>
           </div>
 
-          {/* Capacity Summary */}
+          {/* Solar & Wind Capacity Inputs */}
           <div className="card p-4">
-            <h3 className="font-semibold text-gray-900 mb-4">Capacities</h3>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span>Solar</span>
-                <span className="font-mono text-gray-700">{typeof solarCapacityGW === 'number' ? `${solarCapacityGW.toFixed(2)} GW` : '—'}</span>
+            <h3 className="font-semibold text-gray-900 mb-4">Capacity Inputs</h3>
+            <div className="space-y-4">
+              {/* Solar Input */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <Sun className="h-4 w-4 inline mr-1 text-yellow-500" />
+                  Solar Capacity (GW)
+                </label>
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="number"
+                    placeholder="Enter capacity"
+                    value={solarInputGW}
+                    onChange={(e) => setSolarInputGW(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' && solarInputGW && parseFloat(solarInputGW) > 0 && !solarLoading) {
+                        handleSolarGo();
+                      }
+                    }}
+                    min="0.1"
+                    step="0.1"
+                    className="input-field flex-1 text-sm [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                  />
+                  <button
+                    onClick={handleSolarGo}
+                    disabled={!solarInputGW || parseFloat(solarInputGW) <= 0 || solarLoading}
+                    className="btn-primary text-sm px-3 py-2 disabled:opacity-50"
+                  >
+                    Go
+                  </button>
+                </div>
               </div>
-              <div className="flex justify-between">
-                <span>Wind</span>
-                <span className="font-mono text-gray-700">{typeof windCapacityGW === 'number' ? `${windCapacityGW.toFixed(2)} GW` : '—'}</span>
+
+              {/* Wind Input */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <Wind className="h-4 w-4 inline mr-1 text-emerald-500" />
+                  Wind Capacity (GW)
+                </label>
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="number"
+                    placeholder="Enter capacity"
+                    value={windInputGW}
+                    onChange={(e) => setWindInputGW(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' && windInputGW && parseFloat(windInputGW) > 0 && !windLoading) {
+                        handleWindGo();
+                      }
+                    }}
+                    min="0.1"
+                    step="0.1"
+                    className="input-field flex-1 text-sm [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                  />
+                  <button
+                    onClick={handleWindGo}
+                    disabled={!windInputGW || parseFloat(windInputGW) <= 0 || windLoading}
+                    className="btn-primary text-sm px-3 py-2 disabled:opacity-50"
+                  >
+                    Go
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -847,14 +1169,37 @@ const GenerationProfileChart = ({ countryIso }) => {
           <div className="card p-4">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-semibold text-gray-900">Timeline</h3>
-              <button
-                onClick={handleReloadTimeline}
-                disabled={loading}
-                className="btn-outline text-sm px-2 py-1 disabled:opacity-50"
-                title="Reload timeline"
-              >
-                <RefreshCw className="h-4 w-4" />
-              </button>
+              <div className="flex items-center gap-3">
+                {/* Data Grouping Toggle */}
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-600 whitespace-nowrap">
+                    {enableDataGrouping ? 'Avg Aggregation' : 'Grouping Disabled'}
+                  </span>
+                  <button
+                    onClick={() => setEnableDataGrouping(!enableDataGrouping)}
+                    role="switch"
+                    aria-checked={enableDataGrouping}
+                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 ${
+                      enableDataGrouping ? 'bg-indigo-600' : 'bg-gray-300'
+                    }`}
+                    title={enableDataGrouping ? 'Disable data grouping (show all hourly points)' : 'Enable average aggregation (group data for better performance)'}
+                  >
+                    <span
+                      className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                        enableDataGrouping ? 'translate-x-6' : 'translate-x-1'
+                      }`}
+                    />
+                  </button>
+                </div>
+                <button
+                  onClick={handleReloadTimeline}
+                  disabled={loading}
+                  className="btn-outline text-sm px-2 py-1 disabled:opacity-50"
+                  title="Reload timeline"
+                >
+                  <RefreshCw className="h-4 w-4" />
+                </button>
+              </div>
             </div>
             
             <div className="h-[420px] bg-white border border-gray-200 rounded overflow-visible">
@@ -900,55 +1245,6 @@ const GenerationProfileChart = ({ countryIso }) => {
                   <RefreshCw className="h-4 w-4" />
                 </button>
               </div>
-              <div className="mb-4 flex items-center space-x-2">
-                <input
-                  type="number"
-                  placeholder="Enter capacity (GW)"
-                  value={solarInputGW}
-                  onChange={(e) => setSolarInputGW(e.target.value)}
-                  min="0.1"
-                  step="0.1"
-                  className="input-field flex-1 text-sm [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                />
-                <button
-                  onClick={async () => {
-                    const cap = parseFloat(solarInputGW);
-                    if (!isNaN(cap) && cap > 0) {
-                      setSolarLoading(true);
-                      setSolarError(null);
-                      try {
-                        const solarResp = await generationProfileAPI.getSolarHourly(countryIso, formData.year, cap);
-                        if (solarResp?.success && Array.isArray(solarResp.profile)) {
-                          console.log('[Solar] API profile received', {
-                            iso: countryIso,
-                            year: formData.year,
-                            capacityGW: cap,
-                            points: solarResp.profile.length,
-                            sample: solarResp.profile.slice(0, 24)
-                          });
-                          setSolarProfile(solarResp.profile);
-                          setSolarCapacityGW(cap);
-                          setSolarSelectedCells(solarResp.selected_cells || null);
-                        } else {
-                          setSolarError('Solar profile endpoint returned no data');
-                          setSolarProfile(null);
-                          setSolarSelectedCells(null);
-                        }
-                      } catch (e) {
-                        console.error('❌ Error fetching solar hourly profile:', e);
-                        setSolarError(e?.response?.data?.message || e.message || 'Failed to fetch solar profile');
-                        setSolarProfile(null);
-                      } finally {
-                        setSolarLoading(false);
-                      }
-                    }
-                  }}
-                  disabled={!solarInputGW || parseFloat(solarInputGW) <= 0 || solarLoading}
-                  className="btn-primary text-sm px-4 py-2"
-                >
-                  Go
-                </button>
-              </div>
               <div className="h-64 bg-white border border-gray-200 rounded">
                 {solarLoading ? (
                   <div className="h-full flex items-center justify-center text-gray-400 text-sm">Loading solar profile...</div>
@@ -983,48 +1279,6 @@ const GenerationProfileChart = ({ countryIso }) => {
                   title="Reload wind profile"
                 >
                   <RefreshCw className="h-4 w-4" />
-                </button>
-              </div>
-              <div className="mb-4 flex items-center space-x-2">
-                <input
-                  type="number"
-                  placeholder="Enter capacity (GW)"
-                  value={windInputGW}
-                  onChange={(e) => setWindInputGW(e.target.value)}
-                  min="0.1"
-                  step="0.1"
-                  className="input-field flex-1 text-sm [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                />
-                <button
-                  onClick={async () => {
-                    const cap = parseFloat(windInputGW);
-                    if (!isNaN(cap) && cap > 0) {
-                      setWindLoading(true);
-                      setWindError(null);
-                      try {
-                        const windResp = await generationProfileAPI.getWindHourly(countryIso, formData.year, cap);
-                        if (windResp?.success && Array.isArray(windResp.profile)) {
-                          setWindProfile(windResp.profile);
-                          setWindCapacityGW(cap);
-                          setWindSelectedCells(windResp.selected_cells || null);
-                        } else {
-                          setWindError('Wind profile endpoint returned no data');
-                          setWindProfile(null);
-                          setWindSelectedCells(null);
-                        }
-                      } catch (e) {
-                        console.error('❌ Error fetching wind hourly profile:', e);
-                        setWindError(e?.response?.data?.message || e.message || 'Failed to fetch wind profile');
-                        setWindProfile(null);
-                      } finally {
-                        setWindLoading(false);
-                      }
-                    }
-                  }}
-                  disabled={!windInputGW || parseFloat(windInputGW) <= 0 || windLoading}
-                  className="btn-primary text-sm px-4 py-2"
-                >
-                  Go
                 </button>
               </div>
               <div className="h-64 bg-white border border-gray-200 rounded">

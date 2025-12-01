@@ -80,7 +80,12 @@ class Supply8760Constructor:
         }
         
     def load_demand_profile(self, iso_code):
-        """Load 8760-hour demand profile for ISO"""
+        """
+        Load 8760-hour demand profile for ISO from CSV
+        
+        NOTE: This method uses CSV files and is kept for backward compatibility
+        with existing pipelines. For dashboard use, see load_demand_profile_from_db()
+        """
         # Load cached demand data
         demand_df = self.shared_loader.get_era5_demand_data()
         
@@ -114,6 +119,68 @@ class Supply8760Constructor:
         annual_demand_mwh = iso_demand_profile.sum()
         
         return iso_demand_profile
+    
+    async def load_demand_profile_from_db(self, iso_code, db_pool, demand_year=2030, weather_year=2011):
+        """
+        Load 8760-hour demand profile for ISO from PostgreSQL database
+        
+        This is a faster, database-backed version for dashboard use.
+        Uses the vervestacks.usp_get_demand_profile stored procedure.
+        
+        Args:
+            iso_code: 3-letter ISO code (e.g., 'USA', 'AUS')
+            db_pool: asyncpg connection pool
+            demand_year: Scenario year for demand projection (default: 2030)
+            weather_year: Historical weather year used for profile (default: 2011)
+        
+        Returns:
+            numpy.ndarray: 8760-hour demand profile in MW (chronologically ordered)
+        
+        Raises:
+            ValueError: If no mapping found for ISO code or no data in database
+        """
+        import numpy as np
+        
+        # Load region mapping (same as CSV version)
+        region_map_df = self.shared_loader.get_vs_mappings_sheet('kinesys_region_map')
+        region_map = dict(zip(region_map_df['2-alpha code'], region_map_df['iso']))
+        
+        # Map ISO code to 2-letter country code
+        country_code = None
+        for code, mapped_iso in region_map.items():
+            if mapped_iso == iso_code:
+                country_code = code
+                break
+        
+        if country_code is None:
+            raise ValueError(f"No demand data found for ISO: {iso_code} (no mapping in kinesys_region_map)")
+        
+        # Query database using stored procedure
+        try:
+            profile = await db_pool.fetchval(
+                'SELECT vervestacks.usp_get_demand_profile($1, $2, $3)',
+                country_code, demand_year, weather_year
+            )
+            
+            if profile is None:
+                raise ValueError(
+                    f"No demand data found for ISO: {iso_code} (country_code: {country_code}, "
+                    f"demand_year: {demand_year}, weather_year: {weather_year})"
+                )
+            
+            # Convert to numpy array (same format as CSV version)
+            iso_demand_profile = np.array(profile, dtype=float)
+            
+            # Validate we got 8760 hours
+            if len(iso_demand_profile) != 8760:
+                raise ValueError(
+                    f"Expected 8760 hours, got {len(iso_demand_profile)} for ISO: {iso_code}"
+                )
+            
+            return iso_demand_profile
+            
+        except Exception as e:
+            raise ValueError(f"Database error loading demand profile for {iso_code}: {str(e)}")
     
     def build_baseline_profiles(self, iso_code, demand_profile):
         """Build nuclear and hydro baseline generation profiles"""
@@ -181,6 +248,13 @@ class Supply8760Constructor:
         # Get hydro data  
         hydro_monthly = iso_monthly[iso_monthly['Variable'] == 'Hydro'].groupby('month')['Value'].mean()
         hydro_hourly = self._create_demand_shaped_profile(hydro_monthly, demand_profile) if not hydro_monthly.empty else None
+        
+        # TODO: Implement residual-based hydro dispatch for dashboard simulator
+        #       See: 2_ts_design/HYDRO_RESIDUAL_DISPATCH_IMPLEMENTATION.md
+        #       Pending: 
+        #       1. Architecture review
+        #       2. Lightweight capacity data source discovery (EMBER structure)
+        #       3. Profile-level caching implementation
         
         return nuclear_hourly, hydro_hourly
     
@@ -382,6 +456,9 @@ class Supply8760Constructor:
         """
         Create hourly generation profile shaped by demand pattern using EMBER annual total.
         
+        NOTE: This method uses CSV files and is kept for backward compatibility
+        with existing pipelines. For dashboard use, see create_demand_shaped_generation_from_ember_db()
+        
         Parameters:
         -----------
         iso_code : str
@@ -399,6 +476,65 @@ class Supply8760Constructor:
         """
         # Load demand profile for the ISO
         demand_profile = self.load_demand_profile(iso_code)
+        
+        # Calculate hourly shares (normalize demand profile)
+        hourly_shares = demand_profile / demand_profile.sum()
+        
+        # Get total annual generation
+        if total_generation_twh is not None:
+            pass
+        else:
+            total_generation_twh = self.get_total_electricity_generation(iso_code, year)
+            if total_generation_twh is None:
+                raise ValueError(f"No EMBER generation data found for {iso_code} in {year}")
+        
+        # Convert TWh to GWh, then distribute according to demand shape
+        total_generation_gwh = total_generation_twh * 1000  # TWh to GWh
+        
+        # Create hourly generation profile in GW
+        generation_profile_gw = hourly_shares * total_generation_gwh
+        
+        return generation_profile_gw
+    
+    async def create_demand_shaped_generation_from_ember_db(self, iso_code, year, db_pool, 
+                                                            total_generation_twh=None,
+                                                            demand_year=2030, weather_year=2011):
+        """
+        Create hourly generation profile shaped by demand pattern using PostgreSQL demand data.
+        
+        This is a faster, database-backed version for dashboard use.
+        Uses PostgreSQL for demand profiles instead of loading 350MB CSV.
+        
+        Parameters:
+        -----------
+        iso_code : str
+             3-letter ISO country code (e.g., 'DEU', 'USA')
+        year : int
+             Year for EMBER generation data (e.g., 2022)
+        db_pool : asyncpg.Pool
+             Database connection pool
+        total_generation_twh : float, optional
+             Total annual generation in TWh. If provided, uses this value.
+             If None, gets from EMBER data for iso_code and year.
+        demand_year : int, optional
+             Scenario year for demand projection (default: 2030)
+        weather_year : int, optional
+             Historical weather year for demand profile (default: 2011)
+             
+        Returns:
+        --------
+        numpy.ndarray
+             8760-hour generation profile in GW
+        """
+        import numpy as np
+        
+        # Load demand profile from database (FAST!)
+        demand_profile = await self.load_demand_profile_from_db(
+            iso_code=iso_code,
+            db_pool=db_pool,
+            demand_year=demand_year,
+            weather_year=weather_year
+        )
         
         # Calculate hourly shares (normalize demand profile)
         hourly_shares = demand_profile / demand_profile.sum()

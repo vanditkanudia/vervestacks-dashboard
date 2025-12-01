@@ -110,3 +110,8 @@ docs-rtd/_build/
 !/vervestacks-dashboard/frontend/public/images/*.png
 vervestacks-dashboard/frontend/d3 copy.html
 output_cit/
+hydro_availability_scenarios/hydro_scenarios_full_2025_2050.csv
+hydro_availability_scenarios/enhanced_hydro_documentation.rst
+scenario_drivers/test_readme_output.md
+0_multi_region/create_regions_simple.py
+0_multi_region/create_regions_simple.py

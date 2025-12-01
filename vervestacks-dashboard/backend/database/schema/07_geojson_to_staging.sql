@@ -2,6 +2,7 @@
 --   temp_onshore_geom(geom geometry(MultiPolygon,4326), <attributes...>)
 --   temp_offshore_geom(geom geometry(MultiPolygon,4326), <attributes...>)
 -- Adjust attribute column names below to match your GeoJSON fields.
+-- NOTE: PostGIS functions are used here for processing, but final storage is TEXT (geometry_json)
 
 \echo '--- GeoJSON to staging: start ---'
 SET search_path TO vervestacks, public;

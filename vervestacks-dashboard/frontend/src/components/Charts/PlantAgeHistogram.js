@@ -135,10 +135,26 @@ const PlantAgeHistogram = ({ data }) => {
     stacking: 'normal',
     showLegend: true,
     tooltip: {
+      shared: true,
       formatter: function() {
-        const formattedValue = smartFormatNumber(this.y);
-        const formattedTotal = smartFormatNumber(this.point.stackTotal);
-        return `<b>${this.x}</b><br/>${this.series.name}: ${formattedValue} GW<br/>Total: ${formattedTotal} GW`;
+        let tooltip = `<b>${this.x} years</b><br/>`;
+        let total = 0;
+        
+        // Show each fuel type
+        this.points.forEach((point) => {
+          if (point.y > 0) {
+            const formattedValue = smartFormatNumber(point.y);
+            tooltip += `<span style="color:${point.color}">●</span> ${point.series.name}: <b>${formattedValue} GW</b><br/>`;
+            total += point.y;
+          }
+        });
+        
+        // Show total
+        if (total > 0) {
+          tooltip += `<br/><b>Total: ${smartFormatNumber(total)} GW</b>`;
+        }
+        
+        return tooltip;
       }
     }
   });

@@ -404,7 +404,6 @@ class PopulationDemandRegionMapper:
             Dictionary containing:
             - 'demand_points': DataFrame/array of demand points
             - 'cluster_centers': DataFrame/array of region centers  
-            - 'ntc_connections': DataFrame/array of NTC connections
             - 'summary': Dictionary with summary statistics
         """
         results = {}
@@ -427,14 +426,8 @@ class PopulationDemandRegionMapper:
         else:
             results['cluster_centers'] = None
         
-        # Get NTC connections
-        if hasattr(self, 'ntc_connections') and self.ntc_connections is not None:
-            if return_format == 'array':
-                results['ntc_connections'] = self.ntc_connections.values
-            else:
-                results['ntc_connections'] = self.ntc_connections.copy()
-        else:
-            results['ntc_connections'] = None
+        # NTC connections removed - no longer included in results
+        results['ntc_connections'] = None
         
         # Calculate summary statistics
         summary = {}
@@ -444,8 +437,7 @@ class PopulationDemandRegionMapper:
                 'total_regions': len(self.cluster_centers),
                 'total_population_demand': float(self.cluster_centers['total_demand'].sum()),
                 'average_region_size': float(self.cluster_centers['total_demand'].mean()),
-                'total_demand_points': len(self.demand_points) if self.demand_points is not None else 0,
-                'total_ntc_connections': len(self.ntc_connections) if hasattr(self, 'ntc_connections') and self.ntc_connections is not None else 0
+                'total_demand_points': len(self.demand_points) if self.demand_points is not None else 0
             }
             
             # Top 5 regions by population
@@ -480,11 +472,7 @@ class PopulationDemandRegionMapper:
             self.cluster_centers.to_csv(centers_file, index=False)
             print(f"Exported region centers to {centers_file}")
         
-        # Export NTC connections
-        if hasattr(self, 'ntc_connections') and self.ntc_connections is not None:
-            ntc_file = os.path.join(output_dir, f'{self.country}_ntc_connections.csv')
-            self.ntc_connections.to_csv(ntc_file, index=False)
-            print(f"Exported NTC connections to {ntc_file}")
+        # NTC connections export removed - no longer needed
         
         # Print summary
         if self.cluster_centers is not None:
@@ -525,8 +513,7 @@ def analyze_country_population_demand(country_code, target_clusters=None, eps_km
     print("\nCalculating cluster centers...")
     mapper.calculate_cluster_centers()
     
-    # Estimate NTC between regions
-    mapper.estimate_ntc_between_regions()
+    # NTC estimation removed - no longer needed
     
     return mapper
 

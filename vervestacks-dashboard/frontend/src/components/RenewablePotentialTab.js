@@ -5,15 +5,16 @@
  * Now refactored to use dedicated map components and custom hooks.
  */
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { 
   MapPin, 
   Zap, 
   TrendingUp, 
-  DollarSign, 
-  BarChart3,
   AlertCircle,
-  Loader2
+  Loader2,
+  Square,
+  Activity,
+  DollarSign
 } from 'lucide-react';
 import SolarMap from './SolarMap';
 import WindMap from './WindMap';
@@ -22,20 +23,18 @@ import useMapSynchronization from '../hooks/useMapSynchronization';
 import { formatNumber } from '../utils/renewableUtils';
 
 const RenewablePotentialTab = ({ countryIso }) => {
-  const [selectedZone, setSelectedZone] = useState(null);
-  
   // Use custom hooks for data management and map synchronization
   const {
     solarData,
     onshoreWindData,
     offshoreWindData,
-    loading,
-    loadingStates,
     error,
     windErrors,
     solarThresholds,
     onshoreWindThresholds,
-    offshoreWindThresholds
+    offshoreWindThresholds,
+    isSolarLoading,
+    isWindLoading
   } = useRenewableData(countryIso);
 
   const { synchronizeMaps, cleanup } = useMapSynchronization();
@@ -44,11 +43,6 @@ const RenewablePotentialTab = ({ countryIso }) => {
   const solarMapRef = useRef(null);
   const windMapRef = useRef(null);
 
-  // Handle zone selection
-  const handleZoneSelect = (zone) => {
-    setSelectedZone(zone);
-  };
-
   // Synchronize maps when both are ready
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -56,7 +50,24 @@ const RenewablePotentialTab = ({ countryIso }) => {
         const solarMap = solarMapRef.current.getMap();
         const windMap = windMapRef.current.getMap();
         if (solarMap && windMap) {
+          // Ensure both maps are loaded before synchronizing
+          const checkAndSync = () => {
+            if (solarMap._loaded && windMap._loaded) {
+              try {
+                // Verify both maps have centers set
+                solarMap.getCenter();
+                windMap.getCenter();
           synchronizeMaps(solarMap, windMap);
+              } catch (error) {
+                // Maps not ready yet, retry after a short delay
+                setTimeout(checkAndSync, 100);
+              }
+            } else {
+              // Maps not loaded yet, retry
+              setTimeout(checkAndSync, 100);
+            }
+          };
+          checkAndSync();
         }
       }
     }, 2000);
@@ -67,51 +78,8 @@ const RenewablePotentialTab = ({ countryIso }) => {
     };
   }, [synchronizeMaps, cleanup, solarData, onshoreWindData, offshoreWindData]);
 
-  // Loading state
-  if (loading) {
-    return (
-      <div className="p-8">
-        <div className="flex items-center justify-center h-64">
-          <div className="text-center">
-            <Loader2 className="h-12 w-12 animate-spin text-indigo-500 mx-auto mb-4" />
-            <p className="text-gray-600">Loading solar renewable zones data...</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // Error state
-  if (error) {
-    return (
-      <div className="p-8">
-        <div className="bg-red-50 border border-red-200 rounded-lg p-6">
-          <div className="flex items-center">
-            <AlertCircle className="h-6 w-6 text-red-500 mr-3" />
-            <div>
-              <h3 className="text-lg font-semibold text-red-800">Unable to Load Solar Data</h3>
-              <p className="text-red-600 mt-1">{error}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // No data state
-  if (!solarData || !solarData.statistics) {
-    return (
-      <div className="p-8">
-        <div className="text-center text-gray-600">
-          <MapPin className="h-12 w-12 mx-auto mb-4 text-gray-400" />
-          <h3 className="text-lg font-semibold mb-2">No Solar Data Available</h3>
-          <p>No solar renewable zones data found for {countryIso}.</p>
-        </div>
-      </div>
-    );
-  }
-
-  const { statistics } = solarData;
+  // Maps are always shown - loading/error overlays are on the maps themselves
+  const solarStatistics = solarData?.statistics;
 
   // ChartCard wrapper component (matching Overview tab style)
   const ChartCard = ({ title, subtitle, children, icon, showHeader = true }) => (
@@ -151,12 +119,29 @@ const RenewablePotentialTab = ({ countryIso }) => {
               ref={solarMapRef}
               solarData={solarData}
               solarThresholds={solarThresholds}
-              selectedZone={selectedZone}
-              onZoneSelect={handleZoneSelect}
-              countryIso={countryIso}
               className="w-full h-full"
             />
             
+            {/* Loading Overlay */}
+            {isSolarLoading && (
+              <div className="absolute inset-0 bg-white bg-opacity-75 flex items-center justify-center" style={{ zIndex: 1000 }}>
+                <div className="text-center">
+                  <Loader2 className="h-8 w-8 animate-spin text-indigo-500 mx-auto mb-2" />
+                  <div className="text-sm text-gray-600">Loading solar data...</div>
+                </div>
+              </div>
+            )}
+            
+            {/* Error Overlay */}
+            {error && !isSolarLoading && (
+              <div className="absolute inset-0 bg-red-50 bg-opacity-90 flex items-center justify-center" style={{ zIndex: 1000 }}>
+                <div className="text-center max-w-xs mx-4">
+                  <AlertCircle className="h-8 w-8 text-red-500 mx-auto mb-2" />
+                  <div className="text-sm font-semibold text-red-800 mb-1">Unable to Load Solar Data</div>
+                  <div className="text-xs text-red-600">{error}</div>
+                </div>
+              </div>
+            )}
 
             {/* Legend Overlay */}
             <div className="absolute bottom-4 right-4 bg-white border border-gray-200 rounded-lg p-3 shadow-lg max-w-xs" style={{ zIndex: 1000 }}>
@@ -196,14 +181,15 @@ const RenewablePotentialTab = ({ countryIso }) => {
           </div>
 
           {/* Solar Statistics */}
+          {solarStatistics && (
           <div className="mt-3 sm:mt-4">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
               <div className="bg-gray-50 rounded p-2">
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 text-gray-600 mr-2" />
                   <div>
                     <p className="text-xs text-gray-600">Zones</p>
-                    <p className="text-sm font-bold">{statistics.total_cells.toLocaleString()}</p>
+                      <p className="text-sm font-bold">{solarStatistics.total_cells.toLocaleString()}</p>
                   </div>
                 </div>
               </div>
@@ -212,7 +198,7 @@ const RenewablePotentialTab = ({ countryIso }) => {
                   <Zap className="h-4 w-4 text-gray-600 mr-2" />
                   <div>
                     <p className="text-xs text-gray-600">Capacity</p>
-                    <p className="text-sm font-bold">{formatNumber(statistics.total_capacity_mw)} MW</p>
+                      <p className="text-sm font-bold">{formatNumber(solarStatistics.total_capacity_mw)} MW</p>
                   </div>
                 </div>
               </div>
@@ -221,7 +207,25 @@ const RenewablePotentialTab = ({ countryIso }) => {
                   <TrendingUp className="h-4 w-4 text-gray-600 mr-2" />
                   <div>
                     <p className="text-xs text-gray-600">Avg CF</p>
-                    <p className="text-sm font-bold">{(statistics.avg_capacity_factor * 100).toFixed(1)}%</p>
+                      <p className="text-sm font-bold">{(solarStatistics.avg_capacity_factor * 100).toFixed(1)}%</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-50 rounded p-2">
+                <div className="flex items-center">
+                  <Square className="h-4 w-4 text-gray-600 mr-2" />
+                  <div>
+                    <p className="text-xs text-gray-600">Area</p>
+                      <p className="text-sm font-bold">{solarStatistics.total_suitable_area_km2.toLocaleString()} km²</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-50 rounded p-2">
+                <div className="flex items-center">
+                  <Activity className="h-4 w-4 text-gray-600 mr-2" />
+                  <div>
+                    <p className="text-xs text-gray-600">Generation</p>
+                      <p className="text-sm font-bold">{formatNumber(solarStatistics.total_generation_gwh)} GWh</p>
                   </div>
                 </div>
               </div>
@@ -229,20 +233,18 @@ const RenewablePotentialTab = ({ countryIso }) => {
                 <div className="flex items-center">
                   <DollarSign className="h-4 w-4 text-gray-600 mr-2" />
                   <div>
-                    <p className="text-xs text-gray-600">Avg LCOE</p>
-                    <p className="text-sm font-bold">${statistics.avg_lcoe.toFixed(0)}/MWh</p>
+                    <p className="text-xs text-gray-600">Cost</p>
+                      <p className="text-sm font-bold">
+                        {solarStatistics.cost_data_available 
+                          ? `$${solarStatistics.investment_cost_usd_kw}/kW`
+                          : 'N/A'}
+                      </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="text-xs text-gray-600 flex justify-between">
-              <span>Area: {statistics.total_suitable_area_km2.toLocaleString()} km² ({solarData.grid_data.length.toLocaleString()} zones)</span>
-              <span>Generation: {formatNumber(statistics.total_generation_gwh)} GWh</span>
-              {statistics.cost_data_available && (
-                <span>Cost: ${statistics.investment_cost_usd_kw}/kW</span>
-              )}
-            </div>
           </div>
+          )}
         </ChartCard>
 
         {/* Wind Card */}
@@ -259,31 +261,29 @@ const RenewablePotentialTab = ({ countryIso }) => {
               offshoreWindData={offshoreWindData}
               onshoreWindThresholds={onshoreWindThresholds}
               offshoreWindThresholds={offshoreWindThresholds}
-              selectedZone={selectedZone}
-              onZoneSelect={handleZoneSelect}
-              countryIso={countryIso}
               className="w-full h-full"
             />
             
             {/* Loading Overlay */}
-            {(loadingStates.onshore || loadingStates.offshore) && (
+            {isWindLoading && (
               <div className="absolute inset-0 bg-white bg-opacity-75 flex items-center justify-center" style={{ zIndex: 1000 }}>
                 <div className="text-center">
                   <Loader2 className="h-8 w-8 animate-spin text-indigo-500 mx-auto mb-2" />
-                  <div className="text-sm text-gray-600">
-                    {loadingStates.onshore && <div>Loading onshore wind data...</div>}
-                    {loadingStates.offshore && <div>Loading offshore wind data...</div>}
-                  </div>
+                  <div className="text-sm text-gray-600">Loading wind data...</div>
                 </div>
               </div>
             )}
 
-            {/* Error Messages */}
-            {(windErrors.onshore || windErrors.offshore) && (
-              <div className="absolute top-4 left-4 bg-yellow-50 border border-yellow-200 rounded-lg p-2 shadow-lg max-w-xs" style={{ zIndex: 1000 }}>
-                <div className="text-xs text-yellow-800">
-                  {windErrors.onshore && <div>⚠️ Onshore wind: {windErrors.onshore}</div>}
-                  {windErrors.offshore && <div>⚠️ Offshore wind: {windErrors.offshore}</div>}
+            {/* Error Overlay */}
+            {(windErrors.onshore || windErrors.offshore) && !isWindLoading && (
+              <div className="absolute inset-0 bg-red-50 bg-opacity-90 flex items-center justify-center" style={{ zIndex: 1000 }}>
+                <div className="text-center max-w-xs mx-4">
+                  <AlertCircle className="h-8 w-8 text-red-500 mx-auto mb-2" />
+                  <div className="text-sm font-semibold text-red-800 mb-1">Unable to Load Wind Data</div>
+                  <div className="text-xs text-red-600 space-y-1">
+                    {windErrors.onshore && <div>Onshore: {windErrors.onshore}</div>}
+                    {windErrors.offshore && <div>Offshore: {windErrors.offshore}</div>}
+                  </div>
                 </div>
               </div>
             )}
@@ -368,7 +368,7 @@ const RenewablePotentialTab = ({ countryIso }) => {
           {/* Wind Statistics */}
           {(onshoreWindData || offshoreWindData) && (
             <div className="mt-3 sm:mt-4">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
                 <div className="bg-gray-50 rounded p-2">
                   <div className="flex items-center">
                     <MapPin className="h-4 w-4 text-gray-600 mr-2" />
@@ -462,64 +462,52 @@ const RenewablePotentialTab = ({ countryIso }) => {
                     </div>
                   </div>
                 </div>
+              <div className="bg-gray-50 rounded p-2">
+                <div className="flex items-center">
+                  <Square className="h-4 w-4 text-gray-600 mr-2" />
+                  <div>
+                    <p className="text-xs text-gray-600">Area</p>
+                    <p className="text-sm font-bold">
+                      {((onshoreWindData?.statistics?.total_suitable_area_km2 || 0) + (offshoreWindData?.statistics?.total_suitable_area_km2 || 0)).toLocaleString()} km²
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-50 rounded p-2">
+                <div className="flex items-center">
+                  <Activity className="h-4 w-4 text-gray-600 mr-2" />
+                  <div>
+                    <p className="text-xs text-gray-600">Generation</p>
+                    <p className="text-sm font-bold">
+                      {formatNumber((onshoreWindData?.statistics?.total_generation_gwh || 0) + (offshoreWindData?.statistics?.total_generation_gwh || 0))} GWh
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {((onshoreWindData?.statistics?.cost_data_available) || (offshoreWindData?.statistics?.cost_data_available)) && (
                 <div className="bg-gray-50 rounded p-2">
                   <div className="flex items-center">
                     <DollarSign className="h-4 w-4 text-gray-600 mr-2" />
                     <div>
-                      <p className="text-xs text-gray-600">Avg LCOE</p>
+                      <p className="text-xs text-gray-600">Cost</p>
                       <p className="text-sm font-bold">
-                        {(() => {
-                          const onshoreLCOE = onshoreWindData?.statistics?.avg_lcoe || 0;
-                          const offshoreLCOE = offshoreWindData?.statistics?.avg_lcoe || 0;
+                        ${(() => {
+                          const onshoreCost = onshoreWindData?.statistics?.investment_cost_usd_kw || 0;
+                          const offshoreCost = offshoreWindData?.statistics?.investment_cost_usd_kw || 0;
                           const onshoreWeight = onshoreWindData?.statistics?.total_cells || 0;
                           const offshoreWeight = offshoreWindData?.statistics?.total_cells || 0;
                           const totalWeight = onshoreWeight + offshoreWeight;
-                          
-                          if (onshoreLCOE > 0 && offshoreLCOE > 0) {
-                            const weightedAvg = ((onshoreLCOE * onshoreWeight) + (offshoreLCOE * offshoreWeight)) / totalWeight;
-                            return (
-                              <span>
-                                <span className="text-green-600">${onshoreLCOE.toFixed(0)}</span> + 
-                                <span className="text-blue-600"> ${offshoreLCOE.toFixed(0)}</span> = ${weightedAvg.toFixed(0)}/MWh
-                              </span>
-                            );
-                          } else if (onshoreLCOE > 0) {
-                            return <span className="text-green-600">${onshoreLCOE.toFixed(0)}/MWh</span>;
-                          } else if (offshoreLCOE > 0) {
-                            return <span className="text-blue-600">${offshoreLCOE.toFixed(0)}/MWh</span>;
-                          } else {
-                            return '$0/MWh';
-                          }
-                        })()}
+                          if (totalWeight === 0) return '0';
+                          const weightedAvg = ((onshoreCost * onshoreWeight) + (offshoreCost * offshoreWeight)) / totalWeight;
+                          return weightedAvg.toFixed(0);
+                        })()}/kW
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="text-xs text-gray-600 flex justify-between">
-                <span>
-                  Area: {((onshoreWindData?.statistics?.total_suitable_area_km2 || 0) + (offshoreWindData?.statistics?.total_suitable_area_km2 || 0)).toLocaleString()} km² 
-                  ({((onshoreWindData?.grid_data?.length || 0) + (offshoreWindData?.grid_data?.length || 0)).toLocaleString()} zones)
-                </span>
-                <span>
-                  Generation: {formatNumber((onshoreWindData?.statistics?.total_generation_gwh || 0) + (offshoreWindData?.statistics?.total_generation_gwh || 0))} GWh
-                </span>
-                {((onshoreWindData?.statistics?.cost_data_available) || (offshoreWindData?.statistics?.cost_data_available)) && (
-                  <span>
-                    Cost: ${(() => {
-                      const onshoreCost = onshoreWindData?.statistics?.investment_cost_usd_kw || 0;
-                      const offshoreCost = offshoreWindData?.statistics?.investment_cost_usd_kw || 0;
-                      const onshoreWeight = onshoreWindData?.statistics?.total_cells || 0;
-                      const offshoreWeight = offshoreWindData?.statistics?.total_cells || 0;
-                      const totalWeight = onshoreWeight + offshoreWeight;
-                      if (totalWeight === 0) return '0';
-                      const weightedAvg = ((onshoreCost * onshoreWeight) + (offshoreCost * offshoreWeight)) / totalWeight;
-                      return weightedAvg.toFixed(0);
-                    })()}/kW
-                  </span>
-                )}
-              </div>
+              )}
             </div>
+          </div>
           )}
         </ChartCard>
       </div>

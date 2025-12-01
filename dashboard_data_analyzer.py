@@ -16,11 +16,9 @@ Example:
 """
 
 import pandas as pd
-import numpy as np
 from typing import Dict, Any
 import logging
 import os
-import sys
 from pathlib import Path
 
 class DashboardDataAnalyzer:
@@ -935,7 +933,6 @@ class DashboardDataAnalyzer:
                 - data (dict): Transmission data if successful, None otherwise, containing:
                     - demand_points (list): List of demand points with coordinates and population data
                     - cluster_centers (list): List of region centers with coordinates and metadata
-                    - ntc_connections (list): List of NTC connections between regions
                     - summary (dict): Summary statistics and metadata
                 - error (str): Error message if processing failed, None otherwise
         
@@ -992,7 +989,6 @@ class DashboardDataAnalyzer:
                 "iso_code": iso_code.upper(),
                 "demand_points": results['demand_points'].to_dict('records') if results['demand_points'] is not None else [],
                 "cluster_centers": results['cluster_centers'].to_dict('records') if results['cluster_centers'] is not None else [],
-                "ntc_connections": results['ntc_connections'].to_dict('records') if results['ntc_connections'] is not None else [],
                 "summary": results['summary']
             }
             
@@ -1077,285 +1073,139 @@ class DashboardDataAnalyzer:
                 "error": f"Failed to get fuel colors: {str(e)}"
             }
 
-    def get_transmission_network_data(self, iso_code: str) -> Dict[str, Any]:
-        """
-        Get transmission network data from load_network_components for dashboard visualization.
-        
-        This method loads real transmission infrastructure data including buses (substations)
-        and lines (transmission corridors) from OSM datasets.
-        
-        Args:
-            iso_code (str): 3-letter ISO country code (e.g., "DEU", "FRA", "CHE")
-        
-        Returns:
-            Dict[str, Any]: Dictionary with the following structure:
-                - success (bool): True if processing succeeded, False otherwise
-                - data (dict): Transmission network data if successful, None otherwise, containing:
-                    - buses (list): List of transmission buses/substations for map visualization
-                    - lines (list): List of transmission lines for map visualization
-                    - statistics (dict): Summary statistics and metrics
-                - error (str): Error message if processing failed, None otherwise
-        
-        Example:
-            result = analyzer.get_transmission_network_data("DEU")
-            if result["success"]:
-                network_data = result["data"]
-                print(f"Total Buses: {network_data['statistics']['total_buses']}")
-                print(f"Total Lines: {network_data['statistics']['total_lines']}")
-            else:
-                print(f"Error: {result['error']}")
-        """
-        try:
-            import sys
-            import os
-            from pathlib import Path
-            
-            # Add the 1_grids directory to Python path
-            grids_path = Path(__file__).parent / '1_grids'
-            if str(grids_path) not in sys.path:
-                sys.path.insert(0, str(grids_path))
-            
-            # Import the load_network_components function
-            from extract_country_pypsa_network_clustered import load_network_components,get_iso2_from_iso3 
-            
-            # Convert ISO3 to ISO2 for the function
-            iso2_code = get_iso2_from_iso3(iso_code.upper())
-            
-            # Temporarily change working directory to 1_grids for the function to work
-            original_cwd = os.getcwd()
-            try:
-                os.chdir(grids_path)
-                # Load network components
-                components = load_network_components(iso2_code, 'kan')
-            finally:
-                os.chdir(original_cwd)
-            
-            buses_df = components.get('buses', pd.DataFrame())
-            lines_df = components.get('lines', pd.DataFrame())
-            
-            
-            if buses_df.empty:
-                return {
-                    "success": False,
-                    "data": None,
-                    "error": f"No transmission buses found for {iso_code}"
-                }
-            
-            # Process buses data for visualization
-            buses_data = []
-            if not buses_df.empty:
-                for _, bus in buses_df.iterrows():
-                    bus_data = {
-                        "id": bus.get('bus_id', ''),
-                        "name": bus.get('bus_id', ''),
-                        "lat": bus.get('y', 0),
-                        "lng": bus.get('x', 0),
-                        "voltage": bus.get('voltage', 0),
-                        "type": "transmission_bus"
-                    }
-                    buses_data.append(bus_data)
-            
-            # Process lines data for visualization
-            lines_data = []
-            if not lines_df.empty:
-                # Get bus coordinates for line endpoints
-                bus_coords = buses_df.set_index('bus_id')[['x', 'y']].to_dict('index')
-                
-                for _, line in lines_df.iterrows():
-                    bus0_id = line.get('bus0', '')
-                    bus1_id = line.get('bus1', '')
-                    
-                    if bus0_id in bus_coords and bus1_id in bus_coords:
-                        line_data = {
-                            "id": f"{bus0_id}-{bus1_id}",
-                            "bus0_id": bus0_id,
-                            "bus1_id": bus1_id,
-                            "bus0_lat": bus_coords[bus0_id]['y'],
-                            "bus0_lng": bus_coords[bus0_id]['x'],
-                            "bus1_lat": bus_coords[bus1_id]['y'],
-                            "bus1_lng": bus_coords[bus1_id]['x'],
-                            "voltage": line.get('voltage', 0),
-                            "capacity": line.get('s_nom', 0),
-                            "length": line.get('length', 0),
-                            "geometry": line.get('geometry', ''),  # Include geometry data
-                            "type": "transmission_line"
-                        }
-                        lines_data.append(line_data)
-            
-            # Calculate statistics
-            voltage_levels = {}
-            if buses_data:
-                voltages = [bus['voltage'] for bus in buses_data if bus['voltage'] > 0]
-                for voltage in voltages:
-                    voltage_levels[f"{voltage}kV"] = voltage_levels.get(f"{voltage}kV", 0) + 1
-            
-            line_voltage_levels = {}
-            if lines_data:
-                # Get all unique voltage levels from the data
-                voltages = [line.get('voltage', 0) for line in lines_data if line.get('voltage', 0) > 0]
-                unique_voltages = sorted(set(voltages), reverse=True)  # Sort descending
-                
-                # Count lines for each voltage level
-                for voltage in unique_voltages:
-                    count = sum(1 for line in lines_data if line.get('voltage', 0) == voltage)
-                    line_voltage_levels[f"{int(voltage)}kV"] = count
-                
-                # Debug: Log voltage distribution
-                self.logger.info(f"Voltage levels found for {iso_code}: {unique_voltages}")
-                self.logger.info(f"Voltage distribution: {line_voltage_levels}")
-            
-            statistics = {
-                "total_buses": len(buses_data),
-                "total_lines": len(lines_data),
-                "voltage_levels": voltage_levels,
-                "line_voltage_levels": line_voltage_levels,
-                "iso_code": iso_code.upper()
-            }
-            
-            transmission_data = {
-                "iso_code": iso_code.upper(),
-                "buses": buses_data,
-                "lines": lines_data,
-                "statistics": statistics
-            }
-            
-            return {
-                "success": True,
-                "data": transmission_data,
-                "error": None
-            }
-            
-        except ImportError as e:
-            return {
-                "success": False,
-                "data": None,
-                "error": f"Failed to import load_network_components: {str(e)}"
-            }
-        except Exception as e:
-            self.logger.error(f"Error getting transmission network data for {iso_code}: {e}")
-            return {
-                "success": False,
-                "data": None,
-                "error": f"Failed to get transmission network data: {str(e)}"
-            }
+    # DEPRECATED: Transmission network data now comes from PostgreSQL
+    # via tables vervestacks.transmission_buses and vervestacks.transmission_lines
+    # using stored procedure usp_get_transmission_network_data().
+    # Backend route: /api/transmission/network/:isoCode (Node.js -> PostgreSQL)
+    # Old Python endpoint: /transmission/network/{iso_code} (no longer used)
+    # def get_transmission_network_data(self, iso_code: str) -> Dict[str, Any]:
+    #     """
+    #     Legacy function that loaded OSM data from CSV via load_network_components.
+    #     Preserved for reference only.
+    #     """
 
-    def get_transmission_generation_data(self, iso_code: str) -> Dict[str, Any]:
-        """
-        Get power generation data for transmission analysis.
-        
-        This method loads power plant data from country-specific CSV files
-        to visualize generation capacity and fuel types on the transmission map.
-        
-        Args:
-            iso_code (str): 3-letter ISO country code (e.g., "BRA", "USA", "DEU")
-        
-        Returns:
-            Dict[str, Any]: Dictionary with the following structure:
-                - success (bool): True if processing succeeded, False otherwise
-                - data (dict): Generation data if successful, None otherwise, containing:
-                    - plants (list): List of power plant data for map visualization
-                    - statistics (dict): Summary statistics and metrics
-                - error (str): Error message if processing failed, None otherwise
-        
-        Example:
-            result = analyzer.get_transmission_generation_data("BRA")
-            if result["success"]:
-                generation_data = result["data"]
-                print(f"Total Plants: {generation_data['statistics']['total_plants']}")
-            else:
-                print(f"Error: {result['error']}")
-        """
-        try:
-            import pandas as pd
-            from pathlib import Path
-            
-            # Set up path for generation data using project root
-            project_root = Path(__file__).parent
-            generation_file = project_root / 'data' / 'transmission_line_generation' / f'{iso_code.upper()}.csv'
-            
-            # Check if file exists
-            if not generation_file.exists():
-                return {
-                    "success": False,
-                    "data": None,
-                    "error": f"Generation data file not found for {iso_code.upper()}"
-                }
-            
-            # Read CSV file
-            df = pd.read_csv(generation_file)
-            
-            # Validate required columns
-            required_columns = ['Capacity (MW)', 'model_fuel', 'Latitude', 'Longitude', 'model_name']
-            missing_columns = [col for col in required_columns if col not in df.columns]
-            if missing_columns:
-                return {
-                    "success": False,
-                    "data": None,
-                    "error": f"Missing required columns: {missing_columns}"
-                }
-            
-            # Process plants data for visualization
-            plants_data = []
-            fuel_type_counts = {}
-            total_capacity = 0
-            
-            for _, plant in df.iterrows():
-                # Validate coordinates
-                lat = plant.get('Latitude')
-                lng = plant.get('Longitude')
-                
-                if pd.isna(lat) or pd.isna(lng) or lat == 0 or lng == 0:
-                    continue
-                
-                capacity = plant.get('Capacity (MW)', 0)
-                fuel_type = plant.get('model_fuel', 'unknown')
-                plant_name = plant.get('model_name', 'Unknown Plant')
-                
-                # Count fuel types
-                fuel_type_counts[fuel_type] = fuel_type_counts.get(fuel_type, 0) + 1
-                total_capacity += capacity
-                
-                plant_data = {
-                    "id": plant.get('comm-out', f"plant_{len(plants_data)}"),
-                    "name": plant_name,
-                    "capacity_mw": capacity,
-                    "fuel_type": fuel_type,
-                    "lat": lat,
-                    "lng": lng,
-                    "bus_id": plant.get('bus_id', ''),
-                    "description": plant.get('model_description', ''),
-                    "comm_id": plant.get('comm_id', ''),
-                    "type": "power_plant"
-                }
-                plants_data.append(plant_data)
-            
-            # Calculate statistics
-            statistics = {
-                "total_plants": len(plants_data),
-                "total_capacity_mw": total_capacity,
-                "fuel_types": fuel_type_counts,
-                "iso_code": iso_code.upper()
-            }
-            
-            generation_data = {
-                "iso_code": iso_code.upper(),
-                "plants": plants_data,
-                "statistics": statistics
-            }
-            
-            return {
-                "success": True,
-                "data": generation_data,
-                "error": None
-            }
-            
-        except Exception as e:
-            self.logger.error(f"Error getting transmission generation data for {iso_code}: {e}")
-            return {
-                "success": False,
-                "data": None,
-                "error": f"Failed to get transmission generation data: {str(e)}"
-            }
+    # DEPRECATED: This function has been migrated to PostgreSQL
+    # Generation plants data is now served from vervestacks.transmission_generation_plants table
+    # via stored procedure usp_get_transmission_generation_plants()
+    # Backend route: /api/transmission/generation/:isoCode (Node.js -> PostgreSQL)
+    # Old Python endpoint: /transmission/generation/{iso_code} (no longer used)
+    # def get_transmission_generation_data(self, iso_code: str) -> Dict[str, Any]:
+    #     """
+    #     Get power generation data for transmission analysis.
+    #     
+    #     This method loads power plant data from country-specific CSV files
+    #     to visualize generation capacity and fuel types on the transmission map.
+    #     
+    #     Args:
+    #         iso_code (str): 3-letter ISO country code (e.g., "BRA", "USA", "DEU")
+    #     
+    #     Returns:
+    #         Dict[str, Any]: Dictionary with the following structure:
+    #             - success (bool): True if processing succeeded, False otherwise
+    #             - data (dict): Generation data if successful, None otherwise, containing:
+    #                 - plants (list): List of power plant data for map visualization
+    #                 - statistics (dict): Summary statistics and metrics
+    #             - error (str): Error message if processing failed, None otherwise
+    #     
+    #     Example:
+    #         result = analyzer.get_transmission_generation_data("BRA")
+    #         if result["success"]:
+    #             generation_data = result["data"]
+    #             print(f"Total Plants: {generation_data['statistics']['total_plants']}")
+    #         else:
+    #             print(f"Error: {result['error']}")
+    #     """
+    #     try:
+    #         import pandas as pd
+    #         from pathlib import Path
+    #         
+    #         # Set up path for generation data using project root
+    #         project_root = Path(__file__).parent
+    #         generation_file = project_root / 'data' / 'transmission_line_generation' / f'{iso_code.upper()}.csv'
+    #         
+    #         # Check if file exists
+    #         if not generation_file.exists():
+    #             return {
+    #                 "success": False,
+    #                 "data": None,
+    #                 "error": f"Generation data file not found for {iso_code.upper()}"
+    #             }
+    #         
+    #         # Read CSV file
+    #         df = pd.read_csv(generation_file)
+    #         
+    #         # Validate required columns
+    #         required_columns = ['Capacity (MW)', 'model_fuel', 'Latitude', 'Longitude', 'model_name']
+    #         missing_columns = [col for col in required_columns if col not in df.columns]
+    #         if missing_columns:
+    #             return {
+    #                 "success": False,
+    #                 "data": None,
+    #                 "error": f"Missing required columns: {missing_columns}"
+    #             }
+    #         
+    #         # Process plants data for visualization
+    #         plants_data = []
+    #         fuel_type_counts = {}
+    #         total_capacity = 0
+    #         
+    #         for _, plant in df.iterrows():
+    #             # Validate coordinates
+    #             lat = plant.get('Latitude')
+    #             lng = plant.get('Longitude')
+    #             
+    #             if pd.isna(lat) or pd.isna(lng) or lat == 0 or lng == 0:
+    #                 continue
+    #             
+    #             capacity = plant.get('Capacity (MW)', 0)
+    #             fuel_type = plant.get('model_fuel', 'unknown')
+    #             plant_name = plant.get('model_name', 'Unknown Plant')
+    #             
+    #             # Count fuel types
+    #             fuel_type_counts[fuel_type] = fuel_type_counts.get(fuel_type, 0) + 1
+    #             total_capacity += capacity
+    #             
+    #             plant_data = {
+    #                 "id": plant.get('comm-out', f"plant_{len(plants_data)}"),
+    #                 "name": plant_name,
+    #                 "capacity_mw": capacity,
+    #                 "fuel_type": fuel_type,
+    #                 "lat": lat,
+    #                 "lng": lng,
+    #                 "bus_id": plant.get('bus_id', ''),
+    #                 "description": plant.get('model_description', ''),
+    #                 "comm_id": plant.get('comm_id', ''),
+    #                 "type": "power_plant"
+    #             }
+    #             plants_data.append(plant_data)
+    #         
+    #         # Calculate statistics
+    #         statistics = {
+    #             "total_plants": len(plants_data),
+    #             "total_capacity_mw": total_capacity,
+    #             "fuel_types": fuel_type_counts,
+    #             "iso_code": iso_code.upper()
+    #         }
+    #         
+    #         generation_data = {
+    #             "iso_code": iso_code.upper(),
+    #             "plants": plants_data,
+    #             "statistics": statistics
+    #         }
+    #         
+    #         return {
+    #             "success": True,
+    #             "data": generation_data,
+    #             "error": None
+    #         }
+    #         
+    #     except Exception as e:
+    #         self.logger.error(f"Error getting transmission generation data for {iso_code}: {e}")
+    #         return {
+    #             "success": False,
+    #             "data": None,
+    #             "error": f"Failed to get transmission generation data: {str(e)}"
+    #         }
 
 
     def get_ar6_scenario_drivers(self, iso_code: str) -> Dict[str, Any]:
@@ -1419,13 +1269,13 @@ class DashboardDataAnalyzer:
                         if not year_co2_data.empty:
                             category_co2_medians[category][year] = year_co2_data['median'].iloc[0]
                         else:
-                            category_co2_medians[category][year] = np.nan
+                            category_co2_medians[category][year] = None
                         if not year_elec_data.empty:
                             growth_index = year_elec_data['median'].iloc[0]
                             absolute_twh = iea_baseline_twh * growth_index
                             absolute_electricity_demand[category][year] = absolute_twh
                         else:
-                            absolute_electricity_demand[category][year] = np.nan
+                            absolute_electricity_demand[category][year] = None
                         if not year_hydrogen_data.empty and not year_elec_data.empty:
                             growth_index = year_elec_data['median'].iloc[0]
                             h2_share = year_hydrogen_data['median'].iloc[0]
@@ -1433,7 +1283,7 @@ class DashboardDataAnalyzer:
                             hydrogen_twh = absolute_elec_twh * h2_share
                             hydrogen_demand[category][year] = hydrogen_twh
                         else:
-                            hydrogen_demand[category][year] = np.nan
+                            hydrogen_demand[category][year] = None
                         if category == 'C1':
                             for attribute in elec_share_attributes:
                                 share_elec_data = ar6_data[(ar6_data['attribute'].str.lower() == attribute.lower()) & (ar6_data['Category'] == category) & (ar6_data['Year'] == year)]
@@ -1441,16 +1291,16 @@ class DashboardDataAnalyzer:
                                     elec_share = share_elec_data['median'].iloc[0]
                                     c1_elec_share_data[attribute][year] = elec_share
                                 else:
-                                    c1_elec_share_data[attribute][year] = np.nan
+                                    c1_elec_share_data[attribute][year] = None
                         if category == 'C7':
                             # for fuel price data
                             for attribute, fuel_name in fuel_attributes_mapping.items():
                                 fuel_data = ar6_data[(ar6_data['attribute'].str.lower() == attribute.lower()) & (ar6_data['Category'] == category) & (ar6_data['Year'] == year)]
-                                fuel_price = fuel_average_price[attribute] if attribute in fuel_average_price else np.nan
-                                if not fuel_data.empty and not pd.isna(fuel_price):
+                                fuel_price = fuel_average_price[attribute] if attribute in fuel_average_price else None
+                                if not fuel_data.empty and fuel_price is not None:
                                     fuel_price_data[fuel_name][year] = fuel_data['median'].iloc[0]*fuel_price
                                 else:
-                                    fuel_price_data[fuel_name][year] = np.nan
+                                    fuel_price_data[fuel_name][year] = None
 
                             for attribute in elec_share_attributes:
                                 share_elec_data = ar6_data[(ar6_data['attribute'].str.lower() == attribute.lower()) & (ar6_data['Category'] == category) & (ar6_data['Year'] == year)]
@@ -1458,7 +1308,7 @@ class DashboardDataAnalyzer:
                                     elec_share = share_elec_data['median'].iloc[0]
                                     c7_elec_share_data[attribute][year] = elec_share
                                 else:
-                                    c7_elec_share_data[attribute][year] = np.nan
+                                    c7_elec_share_data[attribute][year] = None
                             
 
 
@@ -1494,7 +1344,9 @@ class DashboardDataAnalyzer:
 
             # Load IEA baseline data for absolute calculations and historical plotting
         try:
-            iea_file = Path("scenario_drivers/iea_electricity_summary_2018_2022.csv")
+            project_root = Path(__file__).parent
+            iea_file = project_root /'scenario_drivers'/ 'iea_electricity_summary_2018_2022.csv'
+            # iea_file = Path("scenario_drivers/iea_electricity_summary_2018_2022.csv")
             if iea_file.exists():
                 iea_df = pd.read_csv(iea_file)
                 iso_iea = iea_df[iea_df['iso'] == iso_code.upper()]
@@ -1549,7 +1401,7 @@ class DashboardDataAnalyzer:
                     fuel_low_price = iso_fuel_prices_df[fuel_low_price_column].iloc[0]
                     fuel_average_price[fuel] = (fuel_high_price + fuel_low_price) / 2
                 else:
-                    fuel_average_price[fuel] = np.nan
+                    fuel_average_price[fuel] = None
             return fuel_average_price
         except Exception as e:
             print(f"❌ Error: {e}")

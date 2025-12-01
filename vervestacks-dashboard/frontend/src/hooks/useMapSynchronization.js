@@ -52,12 +52,18 @@ export const useMapSynchronization = () => {
       if (!isSyncing && map2 && map2._container && map2._loaded && map2._panes) {
         isSyncing = true;
         try {
-          // Additional validation before sync - allow sync even during zoom if maps are stable
-          if (map1._loaded && map1._panes && map1.getCenter) {
-            map2.setView(map1.getCenter(), map1.getZoom(), { animate: false });
+          // Check if map1 is ready and has a center set
+          if (map1._loaded && map1._panes && map1._loaded && map1.getCenter) {
+            // Try to get center - will throw if map center not set
+            const center = map1.getCenter();
+            const zoom = map1.getZoom();
+            if (center && typeof zoom === 'number') {
+              map2.setView(center, zoom, { animate: false });
+            }
           }
         } catch (error) {
-          console.warn('Error syncing map1 to map2:', error);
+          // Silently ignore - map might not be ready yet
+          // This is expected during initial load
         }
         setTimeout(() => { isSyncing = false; }, 150);
       }
@@ -67,12 +73,18 @@ export const useMapSynchronization = () => {
       if (!isSyncing && map1 && map1._container && map1._loaded && map1._panes) {
         isSyncing = true;
         try {
-          // Additional validation before sync - allow sync even during zoom if maps are stable
-          if (map2._loaded && map2._panes && map2.getCenter) {
-            map1.setView(map2.getCenter(), map2.getZoom(), { animate: false });
+          // Check if map2 is ready and has a center set
+          if (map2._loaded && map2._panes && map2._loaded && map2.getCenter) {
+            // Try to get center - will throw if map center not set
+            const center = map2.getCenter();
+            const zoom = map2.getZoom();
+            if (center && typeof zoom === 'number') {
+              map1.setView(center, zoom, { animate: false });
+            }
           }
         } catch (error) {
-          console.warn('Error syncing map2 to map1:', error);
+          // Silently ignore - map might not be ready yet
+          // This is expected during initial load
         }
         setTimeout(() => { isSyncing = false; }, 150);
       }

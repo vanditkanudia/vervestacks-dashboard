@@ -20,14 +20,11 @@ const WindMap = forwardRef(({
   offshoreWindData,
   onshoreWindThresholds, 
   offshoreWindThresholds,
-  selectedZone, 
-  onZoneSelect,
-  countryIso,
   className = "w-full h-full" 
 }, ref) => {
   const mapRef = useRef(null);
   const mapInstanceRef = useRef(null);
-  const [geometryLoading, setGeometryLoading] = useState(false);
+  const [mapReady, setMapReady] = useState(false);
 
   // Expose map instance to parent component
   useImperativeHandle(ref, () => ({
@@ -36,8 +33,6 @@ const WindMap = forwardRef(({
 
   // Create GeoJSON layer helper
   const createGeoJSONLayer = useCallback((geoJsonData, styleFunction, onEachFeature) => {
-    console.log('💨 WindMap: Creating GeoJSON layer with', geoJsonData.features.length, 'features');
-    
     const layer = L.geoJSON(geoJsonData, {
       style: styleFunction,
       onEachFeature: onEachFeature
@@ -46,15 +41,11 @@ const WindMap = forwardRef(({
     return layer;
   }, []);
 
-  // Render wind zone shapes
-  const renderWindZoneShapes = useCallback((map, onshoreData, offshoreData) => {
+  // Render wind zone shapes - thresholds passed as parameters, not in dependencies
+  const renderWindZoneShapes = useCallback((map, onshoreData, offshoreData, onshoreThresholds, offshoreThresholds) => {
     if (!map) {
-      setGeometryLoading(false);
       return;
     }
-    
-    // Set geometry loading state
-    setGeometryLoading(true);
     
     // Handle empty data
     if ((!onshoreData || !onshoreData.grid_data || onshoreData.grid_data.length === 0) && 
@@ -65,11 +56,10 @@ const WindMap = forwardRef(({
           map.removeLayer(layer);
         }
       });
-      setGeometryLoading(false);
       return;
     }
 
-    // Smart layer management - check for existing layers
+    // Remove existing layers before creating new ones
     let existingOnshoreLayer = null;
     let existingOffshoreLayer = null;
     map.eachLayer((layer) => {
@@ -78,30 +68,16 @@ const WindMap = forwardRef(({
         if (layer.options.offshoreWindLayer) existingOffshoreLayer = layer;
       }
     });
-
-    // Only re-render if we don't have existing layers or zoom changed significantly
-    if (existingOnshoreLayer && existingOffshoreLayer) {
-      const currentZoom = map.getZoom();
-      const lastOnshoreZoom = existingOnshoreLayer.options.lastZoom || 0;
-      const lastOffshoreZoom = existingOffshoreLayer.options.lastZoom || 0;
-      
-      // Only re-render if zoom level changed significantly (more than 2 levels)
-      if (Math.abs(currentZoom - lastOnshoreZoom) < 2 && Math.abs(currentZoom - lastOffshoreZoom) < 2) {
-        setGeometryLoading(false);
-        return;
-      }
-      
-      // Clear existing layers for re-render
-      if (existingOnshoreLayer) map.removeLayer(existingOnshoreLayer);
-      if (existingOffshoreLayer) map.removeLayer(existingOffshoreLayer);
-    }
+    
+    if (existingOnshoreLayer) map.removeLayer(existingOnshoreLayer);
+    if (existingOffshoreLayer) map.removeLayer(existingOffshoreLayer);
 
     // Get current map bounds and zoom level for performance optimization
     const mapBounds = map.getBounds();
     const zoomLevel = map.getZoom();
 
     // Render onshore wind shapes
-    if (onshoreData && onshoreData.grid_data && onshoreData.grid_data.length > 0) {
+    if (onshoreData && onshoreData.grid_data && onshoreData.grid_data.length > 0 && onshoreThresholds) {
       const onshoreZones = onshoreData.grid_data;
       
       // Optimize GeoJSON data based on current view
@@ -111,12 +87,20 @@ const WindMap = forwardRef(({
       if (onshoreGeoJsonData.features.length > 0) {
         const onshoreLayer = createGeoJSONLayer(
           onshoreGeoJsonData,
-          (feature) => getZoneStyle(feature, 'onshore_wind', onshoreWindThresholds, zoomLevel),
+          (feature) => getZoneStyle(feature, 'onshore_wind', onshoreThresholds, zoomLevel),
           (feature, layer) => {
             const zone = feature.properties;
             
-            layer.bindPopup(createZonePopup(zone, 'onshore_wind'));
-            layer.on('click', () => onZoneSelect(zone));
+            // Store original feature reference for color updates
+            layer.feature = feature;
+            
+            // Add tooltip on hover
+            layer.bindTooltip(createZonePopup(zone, 'onshore_wind'), {
+              permanent: false,
+              direction: 'auto',
+              className: 'renewable-zone-tooltip',
+              offset: [15, -15] // Move tooltip further from hover point
+            });
             
             // Add enhanced hover effects with smooth transitions
             layer.on('mouseover', (e) => {
@@ -125,7 +109,10 @@ const WindMap = forwardRef(({
             });
             
             layer.on('mouseout', (e) => {
+              // Restore original style based on thresholds
+              const originalStyle = getZoneStyle(feature, 'onshore_wind', onshoreThresholds, zoomLevel);
               e.target.setStyle({
+                ...originalStyle,
                 weight: zoomLevel <= 4 ? 0.5 : zoomLevel <= 6 ? 0.8 : zoomLevel <= 8 ? 1 : 1.2,
                 opacity: 0.8,
                 fillOpacity: 0.6,
@@ -139,12 +126,13 @@ const WindMap = forwardRef(({
         // Mark this layer as onshore wind layer for future identification
         onshoreLayer.options.onshoreWindLayer = true;
         onshoreLayer.options.lastZoom = map.getZoom();
+        onshoreLayer.options.thresholds = onshoreThresholds;
         onshoreLayer.addTo(map);
       }
     }
 
     // Render offshore wind shapes
-    if (offshoreData && offshoreData.grid_data && offshoreData.grid_data.length > 0) {
+    if (offshoreData && offshoreData.grid_data && offshoreData.grid_data.length > 0 && offshoreThresholds) {
       const offshoreZones = offshoreData.grid_data;
       
       // Optimize GeoJSON data based on current view
@@ -154,12 +142,20 @@ const WindMap = forwardRef(({
       if (offshoreGeoJsonData.features.length > 0) {
         const offshoreLayer = createGeoJSONLayer(
           offshoreGeoJsonData,
-          (feature) => getZoneStyle(feature, 'offshore_wind', offshoreWindThresholds, zoomLevel),
+          (feature) => getZoneStyle(feature, 'offshore_wind', offshoreThresholds, zoomLevel),
           (feature, layer) => {
             const zone = feature.properties;
             
-            layer.bindPopup(createZonePopup(zone, 'offshore_wind'));
-            layer.on('click', () => onZoneSelect(zone));
+            // Store original feature reference for color updates
+            layer.feature = feature;
+            
+            // Add tooltip on hover
+            layer.bindTooltip(createZonePopup(zone, 'offshore_wind'), {
+              permanent: false,
+              direction: 'auto',
+              className: 'renewable-zone-tooltip',
+              offset: [15, -15] // Move tooltip further from hover point
+            });
             
             // Add enhanced hover effects with smooth transitions
             layer.on('mouseover', (e) => {
@@ -168,7 +164,10 @@ const WindMap = forwardRef(({
             });
             
             layer.on('mouseout', (e) => {
+              // Restore original style based on thresholds
+              const originalStyle = getZoneStyle(feature, 'offshore_wind', offshoreThresholds, zoomLevel);
               e.target.setStyle({
+                ...originalStyle,
                 weight: zoomLevel <= 4 ? 0.5 : zoomLevel <= 6 ? 0.8 : zoomLevel <= 8 ? 1 : 1.2,
                 opacity: 0.8,
                 fillOpacity: 0.6,
@@ -182,30 +181,146 @@ const WindMap = forwardRef(({
         // Mark this layer as offshore wind layer for future identification
         offshoreLayer.options.offshoreWindLayer = true;
         offshoreLayer.options.lastZoom = map.getZoom();
+        offshoreLayer.options.thresholds = offshoreThresholds;
         offshoreLayer.addTo(map);
       }
     }
+  }, [createGeoJSONLayer]); // Removed onZoneSelect and thresholds from dependencies
+
+  // Initialize map immediately when component mounts (no dependencies)
+  useEffect(() => {
+    // Check if map already exists (from previous mount or external source)
+    if (mapInstanceRef.current) {
+      setMapReady(true);
+      return;
+    }
     
-    // Clear geometry loading state
-    setGeometryLoading(false);
-  }, [createGeoJSONLayer, onshoreWindThresholds, offshoreWindThresholds, onZoneSelect]);
-
-  // Initialize map
-  const initializeWindMap = useCallback(() => {
-    if (!mapRef.current) return;
-
-    try {
-      // Only initialize if map doesn't exist
-      if (!mapInstanceRef.current) {
-        // Calculate bounds from ALL available data
-        let coordinates = [];
+    if (!mapRef.current) {
+      return;
+    }
+    
+    // Wait for container to be ready and have dimensions
+    let retryCount = 0;
+    const maxRetries = 20; // Increased retries
+    
+    const initMap = () => {
+      // Check if map was already created (by another effect run)
+      if (mapInstanceRef.current) {
+        setMapReady(true);
+        return;
+      }
+      
+      if (!mapRef.current) return;
+      const container = mapRef.current;
+      
+      // Check if container has dimensions
+      const hasDimensions = container.offsetWidth > 0 && container.offsetHeight > 0;
+      if (!hasDimensions && retryCount < maxRetries) {
+        retryCount++;
+        // Retry on next frame if container doesn't have dimensions yet
+        requestAnimationFrame(initMap);
+        return;
+      }
+      
+      // Create map even if dimensions check failed (after max retries)
+      try {
+        const map = createMap(container, {
+          defaultStyle: 'CLEAN_MINIMAL'
+        });
         
-        // Helper function to extract coordinates from zone
+        // Set initial view immediately (required before map can be used)
+        map.setView([0, 0], 2, { animate: false });
+        mapInstanceRef.current = map;
+        setMapReady(true); // Signal that map is ready
+      } catch (error) {
+        console.error('Error creating wind map:', error);
+      }
+    };
+    
+    // Use requestAnimationFrame to ensure DOM is ready
+    requestAnimationFrame(initMap);
+    
+    // Cleanup only on unmount - actually remove the map
+    return () => {
+      if (mapInstanceRef.current) {
+        try {
+          mapInstanceRef.current.stop();
+          mapInstanceRef.current.remove();
+        } catch (err) {
+          console.warn('Error removing wind map:', err);
+        }
+        mapInstanceRef.current = null;
+        setMapReady(false);
+      }
+    };
+  }, []); // Empty deps - runs once on mount
+
+  // Render layers only when BOTH data AND thresholds are ready (for each wind type)
+  useEffect(() => {
+    // Wait for map to be ready
+    if (!mapReady || !mapInstanceRef.current) {
+      return;
+    }
+    
+    // Check if we have at least one wind type with both data and thresholds ready
+    const onshoreReady = onshoreWindData?.grid_data?.length > 0 && onshoreWindThresholds;
+    const offshoreReady = offshoreWindData?.grid_data?.length > 0 && offshoreWindThresholds;
+    
+    if (!onshoreReady && !offshoreReady) {
+      return; // Wait for at least one to be ready
+    }
+    
+    // Wait for map to be loaded before rendering
+    const renderLayers = () => {
+      if (!mapInstanceRef.current) {
+        return;
+      }
+      
+      const map = mapInstanceRef.current;
+      
+      // Check if map is ready - try to get center, if it fails, wait
+      let mapReady = false;
+      try {
+        const center = map.getCenter();
+        mapReady = center && typeof center.lat === 'number' && typeof center.lng === 'number';
+      } catch (error) {
+        mapReady = false;
+      }
+      
+      if (!mapReady) {
+        // Map not ready yet, wait for it
+        if (map.whenReady) {
+          map.whenReady(() => {
+            setTimeout(() => {
+              renderLayers();
+            }, 50);
+          });
+        } else {
+          // Retry after a short delay
+          setTimeout(() => {
+            renderLayers();
+          }, 100);
+        }
+        return;
+      }
+      
+      // Render layers first (so they're visible)
+      renderWindZoneShapes(
+        map, 
+        onshoreReady ? onshoreWindData : null,
+        offshoreReady ? offshoreWindData : null,
+        onshoreWindThresholds,
+        offshoreWindThresholds
+      );
+      
+      // Fit bounds AFTER rendering (so layers are visible)
+      if (!map.options.boundsSet) {
+        // Calculate bounds from ALL available data for initial view
+        let coordinates = [];
         const extractCoordinates = (zone) => {
           if (zone.lat && zone.lng) {
             coordinates.push([zone.lat, zone.lng]);
           } else if (zone.geometry && zone.geometry.type === 'Polygon') {
-            // Extract coordinates from polygon geometry
             const coords = zone.geometry.coordinates[0];
             coords.forEach(coord => {
               coordinates.push([coord[1], coord[0]]); // lat, lng
@@ -219,99 +334,77 @@ const WindMap = forwardRef(({
         if (offshoreWindData?.grid_data?.length > 0) {
           offshoreWindData.grid_data.forEach(extractCoordinates);
         }
-
-        // Initialize map with clean styling
-        const map = createMap(mapRef.current, {
-          defaultStyle: 'CLEAN_MINIMAL'
-        });
-        mapInstanceRef.current = map;
-
-        // Always fit bounds to data if available
+        
+        // Fit bounds if we have coordinates
         if (coordinates.length > 0) {
-          const bounds = calculateMapBounds(coordinates, 0.1);
-          map.fitBounds(bounds, { padding: [20, 20] });
-        } else {
-          // Fallback to world view if no coordinates
-          map.setView([0, 0], 2);
+          try {
+            const bounds = calculateMapBounds(coordinates, 0.1);
+            // Use a small delay to ensure layers are rendered first
+            setTimeout(() => {
+              map.fitBounds(bounds, { padding: [20, 20], animate: false });
+              map.options.boundsSet = true;
+            }, 100);
+          } catch (error) {
+            console.warn('Error fitting bounds:', error);
+          }
         }
       }
+    };
+    
+    // Use a small delay to ensure map is initialized
+    const timer = setTimeout(() => {
+      renderLayers();
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, [onshoreWindData, offshoreWindData, onshoreWindThresholds, offshoreWindThresholds, renderWindZoneShapes, mapReady]);
 
-      // Always update shapes with both data types
-      if (mapInstanceRef.current) {
-        renderWindZoneShapes(mapInstanceRef.current, onshoreWindData, offshoreWindData);
-      }
-    } catch (error) {
-      console.error('Error initializing wind map:', error);
-      // Reset map reference on error
-      if (mapInstanceRef.current) {
-        try {
-          mapInstanceRef.current.remove();
-        } catch (removeError) {
-          console.warn('Error removing wind map:', removeError);
-        }
-        mapInstanceRef.current = null;
-      }
-    }
-  }, [onshoreWindData, offshoreWindData, renderWindZoneShapes]);
-
-  // Initialize map when data is available or when component mounts
+  // Update layer colors when thresholds change (don't recreate layers)
   useEffect(() => {
-    if (mapRef.current) {
-      // Always initialize map, even without data
-      if (!mapInstanceRef.current) {
-        try {
-          // Initialize map with default view if no data
-          const map = createMap(mapRef.current, {
-            defaultStyle: 'CLEAN_MINIMAL'
-          });
-          mapInstanceRef.current = map;
-          
-           // Set default view based on data bounds or country
-           const allData = [];
-           if (onshoreWindData?.grid_data?.length > 0) allData.push(...onshoreWindData.grid_data);
-           if (offshoreWindData?.grid_data?.length > 0) allData.push(...offshoreWindData.grid_data);
-           
-           if (allData.length > 0) {
-             // Calculate bounds from ALL data
-             let coordinates = [];
-             allData.forEach(zone => {
-               if (zone.lat && zone.lng) {
-                 coordinates.push([zone.lat, zone.lng]);
-               } else if (zone.geometry && zone.geometry.type === 'Polygon') {
-                 const coords = zone.geometry.coordinates[0];
-                 coords.forEach(coord => {
-                   coordinates.push([coord[1], coord[0]]); // lat, lng
-                 });
-               }
-             });
-             
-             if (coordinates.length > 0) {
-               const bounds = calculateMapBounds(coordinates, 0.1);
-               map.fitBounds(bounds, { padding: [20, 20] });
-             } else {
-               map.setView([0, 0], 2);
-             }
-           } else {
-             map.setView([0, 0], 2);
-           }
-        } catch (error) {
-          console.error('Error initializing wind map:', error);
+    if (!mapInstanceRef.current) return;
+    
+    const zoomLevel = mapInstanceRef.current.getZoom();
+    
+    // Update onshore layer colors
+    if (onshoreWindThresholds) {
+      let onshoreLayer = null;
+      mapInstanceRef.current.eachLayer((layer) => {
+        if (layer instanceof L.GeoJSON && layer.options.onshoreWindLayer) {
+          onshoreLayer = layer;
         }
-      }
+      });
       
-      // If we have data, initialize with data
-      if ((onshoreWindData || offshoreWindData) && mapRef.current) {
-        initializeWindMap();
+      if (onshoreLayer) {
+        onshoreLayer.eachLayer((featureLayer) => {
+          if (featureLayer.feature) {
+            const newStyle = getZoneStyle(featureLayer.feature, 'onshore_wind', onshoreWindThresholds, zoomLevel);
+            featureLayer.setStyle(newStyle);
+          }
+        });
+        onshoreLayer.options.thresholds = onshoreWindThresholds;
       }
     }
     
-    return () => {
-      if (mapInstanceRef.current) {
-        mapInstanceRef.current.remove();
-        mapInstanceRef.current = null;
+    // Update offshore layer colors
+    if (offshoreWindThresholds) {
+      let offshoreLayer = null;
+      mapInstanceRef.current.eachLayer((layer) => {
+        if (layer instanceof L.GeoJSON && layer.options.offshoreWindLayer) {
+          offshoreLayer = layer;
+        }
+      });
+      
+      if (offshoreLayer) {
+        offshoreLayer.eachLayer((featureLayer) => {
+          if (featureLayer.feature) {
+            const newStyle = getZoneStyle(featureLayer.feature, 'offshore_wind', offshoreWindThresholds, zoomLevel);
+            featureLayer.setStyle(newStyle);
+          }
+        });
+        offshoreLayer.options.thresholds = offshoreWindThresholds;
       }
-    };
-  }, [initializeWindMap, onshoreWindData, offshoreWindData]);
+    }
+  }, [onshoreWindThresholds, offshoreWindThresholds]); // Only when thresholds change
 
   return (
     <div className={className}>
@@ -320,27 +413,7 @@ const WindMap = forwardRef(({
         className="w-full h-full min-h-96"
       />
       
-      {/* Loading Overlay */}
-      {geometryLoading && (
-        <div className="absolute inset-0 bg-white bg-opacity-75 flex items-center justify-center" style={{ zIndex: 1000 }}>
-          <div className="text-center">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-500 mx-auto mb-2"></div>
-            <div className="text-sm text-gray-600">Loading wind zones...</div>
-          </div>
-        </div>
-      )}
-      
-      {/* No Data Overlay */}
-      {!geometryLoading && 
-       (!onshoreWindData || !onshoreWindData.grid_data || onshoreWindData.grid_data.length === 0) &&
-       (!offshoreWindData || !offshoreWindData.grid_data || offshoreWindData.grid_data.length === 0) && (
-        <div className="absolute inset-0 bg-gray-50 flex items-center justify-center" style={{ zIndex: 1000 }}>
-          <div className="text-center text-gray-500">
-            <div className="text-sm">No wind data available</div>
-            <div className="text-xs mt-1">Map view centered on region</div>
-          </div>
-        </div>
-      )}
+      {/* Loading and error overlays are handled by parent component */}
     </div>
   );
 });

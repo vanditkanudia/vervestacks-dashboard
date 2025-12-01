@@ -153,5 +153,248 @@ CREATE TABLE IF NOT EXISTS vervestacks.staging_data_overview (
     imported_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Raw import for GEM plants data (from processed_gem_plants_data.csv)
+CREATE TABLE IF NOT EXISTS vervestacks.staging_gem_plants (
+    plant_name TEXT,
+    country_area TEXT,
+    iso_code VARCHAR(3),
+    city TEXT,
+    subnational_unit TEXT,
+    type TEXT,
+    technology TEXT,
+    fuel TEXT,
+    status TEXT,
+    capacity_mw NUMERIC,
+    latitude NUMERIC(10, 8),
+    longitude NUMERIC(11, 8),
+    start_year INTEGER,
+    year INTEGER,
+    imported_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- ============================================================================
+-- GEM PLANTS TABLES (Reference + Processed Data)
+-- ============================================================================
+
+-- Technology mapping table for model_fuel creation
+-- This table maps Type_mod + Technology to model_fuel and model_name
+CREATE TABLE IF NOT EXISTS vervestacks.gem_techmap (
+    id SERIAL PRIMARY KEY,
+    type_mod VARCHAR(50) NOT NULL,
+    technology VARCHAR(255) NOT NULL,
+    model_fuel VARCHAR(50) NOT NULL,
+    model_name VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(type_mod, technology)
+);
+
+-- Main table for processed GEM plants data
+-- This table contains the processed data with model_fuel already calculated
+CREATE TABLE IF NOT EXISTS vervestacks.gem_plants (
+    id SERIAL PRIMARY KEY,
+    
+    -- Plant identification
+    plant_name TEXT NOT NULL,
+    country_area TEXT,
+    iso_code VARCHAR(3) NOT NULL,
+    city TEXT,
+    subnational_unit TEXT,
+    
+    -- Plant characteristics
+    type TEXT,
+    technology TEXT,
+    fuel TEXT,
+    status TEXT NOT NULL,
+    capacity_mw NUMERIC,
+    
+    -- Processed fields
+    type_mod TEXT,  -- Type after oil/gas splitting
+    model_fuel TEXT,  -- Final model fuel after techmap merge
+    model_name TEXT,
+    
+    -- Location
+    latitude NUMERIC(10, 8),
+    longitude NUMERIC(11, 8),
+    has_coordinates BOOLEAN DEFAULT FALSE,
+    
+    -- Dates
+    start_year INTEGER,
+    year INTEGER,
+    age INTEGER,  -- Calculated: current_year - start_year
+    
+    -- Additional metadata
+    additional_data JSONB,
+    
+    -- Timestamps
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- ============================================================================
+-- TRANSMISSION GENERATION PLANTS TABLES
+-- ============================================================================
+
+-- Staging table for transmission generation plants CSV import
+-- Matches CSV column structure exactly
+CREATE TABLE IF NOT EXISTS vervestacks.staging_transmission_generation_plants (
+    "comm-out" TEXT,
+    "model_name" TEXT,
+    "Capacity (MW)" NUMERIC,
+    "model_fuel" TEXT,
+    "model_description" TEXT,
+    "comm_id" TEXT,
+    "bus_id" TEXT,
+    "Latitude" NUMERIC,
+    "Longitude" NUMERIC,
+    "is_new_tech" TEXT,
+    "iso_code" VARCHAR(3),
+    imported_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Main table for transmission generation plants
+CREATE TABLE IF NOT EXISTS vervestacks.transmission_generation_plants (
+    id SERIAL PRIMARY KEY,
+    
+    -- Country identification
+    iso_code VARCHAR(3) NOT NULL,
+    
+    -- Plant identification
+    plant_name TEXT,  -- From model_name
+    comm_out TEXT,  -- From comm-out
+    comm_id TEXT,
+    bus_id TEXT,
+    
+    -- Plant characteristics
+    capacity_mw NUMERIC,  -- From Capacity (MW)
+    fuel_type TEXT,  -- From model_fuel
+    description TEXT,  -- From model_description
+    is_new_tech BOOLEAN,  -- From is_new_tech
+    
+    -- Location
+    latitude NUMERIC(10, 8),
+    longitude NUMERIC(11, 8),
+    has_coordinates BOOLEAN DEFAULT FALSE,
+    
+    -- Timestamps
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- ============================================================================
+-- TRANSMISSION NETWORK TABLES (Buses + Lines)
+-- ============================================================================
+
+-- Staging table for transmission buses CSV import (matches OSM columns)
+CREATE TABLE IF NOT EXISTS vervestacks.staging_transmission_buses (
+    bus_id TEXT,
+    station_id TEXT,
+    voltage TEXT,
+    dc TEXT,
+    symbol TEXT,
+    under_construction TEXT,
+    tags TEXT,
+    x TEXT,
+    y TEXT,
+    country TEXT,
+    geometry TEXT,
+    imported_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Main table for transmission buses
+CREATE TABLE IF NOT EXISTS vervestacks.transmission_buses (
+    id SERIAL PRIMARY KEY,
+    bus_id TEXT NOT NULL,
+    station_id TEXT,
+    country VARCHAR(2) NOT NULL,
+    iso3_code VARCHAR(3),  -- ISO3 code from countries table lookup
+    voltage NUMERIC,
+    is_dc BOOLEAN DEFAULT FALSE,
+    symbol TEXT,
+    under_construction BOOLEAN DEFAULT FALSE,
+    tags TEXT,
+    longitude NUMERIC(11, 8),
+    latitude NUMERIC(10, 8),
+    geometry TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Staging table for transmission lines CSV import (matches OSM columns)
+CREATE TABLE IF NOT EXISTS vervestacks.staging_transmission_lines (
+    line_id TEXT,
+    bus0 TEXT,
+    bus1 TEXT,
+    voltage TEXT,
+    s_nom TEXT,
+    circuits TEXT,
+    length TEXT,
+    underground TEXT,
+    under_construction TEXT,
+    tags TEXT,
+    type TEXT,
+    geometry TEXT,
+    imported_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Main table for transmission lines
+CREATE TABLE IF NOT EXISTS vervestacks.transmission_lines (
+    id SERIAL PRIMARY KEY,
+    line_id TEXT NOT NULL,
+    bus0_id TEXT NOT NULL,
+    bus1_id TEXT NOT NULL,
+    country VARCHAR(2) NOT NULL,
+    iso3_code VARCHAR(3),  -- ISO3 code from countries table lookup (inherited from bus)
+    voltage NUMERIC,
+    s_nom NUMERIC,
+    circuits INTEGER,
+    length_km NUMERIC,
+    underground BOOLEAN DEFAULT FALSE,
+    under_construction BOOLEAN DEFAULT FALSE,
+    tags TEXT,
+    line_type TEXT,
+    geometry TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+-- DEMAND PROFILES TABLE (ERA5 Combined Data)
+-- ============================================================================
+
+-- ERA5 combined demand profiles (from era5_combined_data_2030.csv)
+-- This table contains hourly demand data with both demand_year (scenario) and weather_year (historical weather)
+CREATE TABLE IF NOT EXISTS vervestacks.era5_combined_data_2030 (
+    id SERIAL PRIMARY KEY,
+    
+    -- Country identification
+    country VARCHAR(3) NOT NULL,
+    region_name TEXT,
+    agg_region TEXT,
+    
+    -- Temporal information
+    time TIMESTAMP,
+    month INTEGER NOT NULL,
+    day INTEGER NOT NULL,
+    hour INTEGER NOT NULL,
+    mm_dd_hh VARCHAR(15),
+    
+    -- Scenario and weather year
+    demand_year INTEGER NOT NULL,
+    weather_year INTEGER NOT NULL,
+    
+    -- Demand value (NULL allowed for missing data - prevents holes in profiles)
+    mw NUMERIC,
+    
+    -- Unique constraint on time series key
+    UNIQUE(country, demand_year, weather_year, month, day, hour)
+);
+
+COMMENT ON TABLE vervestacks.era5_combined_data_2030 IS 
+    'Hourly electricity demand profiles by country with scenario year (demand_year) and weather year (weather_year)';
+COMMENT ON COLUMN vervestacks.era5_combined_data_2030.country IS 
+    '3-letter ISO country code';
+COMMENT ON COLUMN vervestacks.era5_combined_data_2030.mw IS 
+    'Electricity demand in megawatts for the hour. NULL values indicate missing data and are converted to 0 in stored procedures to maintain 8760-hour profile integrity.';
+COMMENT ON COLUMN vervestacks.era5_combined_data_2030.demand_year IS 
+    'Scenario year for demand projection (e.g., 2030)';
+COMMENT ON COLUMN vervestacks.era5_combined_data_2030.weather_year IS 
+    'Historical weather year used for profile (e.g., 2011)';
+
 -- Show table creation status
 SELECT 'Minimal core + staging tables created successfully!' as status;

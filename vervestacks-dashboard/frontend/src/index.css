@@ -416,3 +416,27 @@ code, pre, .font-mono {
 .custom-map .leaflet-tile-pane {
   opacity: 1.0 !important;
 }
+
+/* ===== RENEWABLE ZONE TOOLTIP STYLING ===== */
+.renewable-zone-tooltip {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  padding: 0 !important;
+  font-size: 12px !important;
+  max-width: 250px !important;
+}
+
+.renewable-zone-tooltip .leaflet-tooltip-content {
+  margin: 8px !important;
+}
+
+.renewable-zone-tooltip::before {
+  display: none !important;
+}
+
+.renewable-zone-tooltip::after {
+  display: none !important;
+}

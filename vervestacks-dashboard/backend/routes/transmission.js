@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const PythonExecutor = require('../utils/pythonExecutor');
+const db = require('../database/connection');
 
 const pythonExecutor = new PythonExecutor();
 
@@ -86,44 +87,44 @@ router.get('/network/:isoCode', async (req, res) => {
       });
     }
 
-    // Check Python service availability
-    const pythonAvailable = await pythonExecutor.checkPythonAvailability();
-    if (!pythonAvailable) {
-      return res.status(503).json({
+    // Call PostgreSQL stored procedure directly
+    const result = await db.query(
+      'SELECT vervestacks.usp_get_transmission_network_data($1) as data',
+      [isoCode.toUpperCase()]
+    );
+
+    if (!result.rows || result.rows.length === 0) {
+      return res.status(500).json({
         success: false,
-        error: 'Python service is not available. Please try again later.'
+        error: 'No data returned from stored procedure'
       });
     }
 
-    // Call Python service for transmission network data
-    const pythonServiceUrl = process.env.PYTHON_SERVICE_URL;
-    const pythonUrl = `${pythonServiceUrl}/transmission/network/${isoCode}`;
-    const pythonResponse = await fetch(pythonUrl);
-    
-    if (!pythonResponse.ok) {
-      const errorData = await pythonResponse.json().catch(() => ({}));
-      return res.status(pythonResponse.status).json({
-        success: false,
-        error: errorData.detail || `Python service error: ${pythonResponse.statusText}`
-      });
-    }
+    const procedureResult = result.rows[0].data;
 
-    const data = await pythonResponse.json();
-    
-    if (!data.success) {
+    if (!procedureResult.success) {
+      const errorMsg = procedureResult.error || 'No transmission network data found for this country';
+      const isNoDataCase = errorMsg.toLowerCase().includes('not found') ||
+                          errorMsg.toLowerCase().includes('no transmission') ||
+                          errorMsg.toLowerCase().includes('no buses') ||
+                          errorMsg.toLowerCase().includes('no data') ||
+                          errorMsg.toLowerCase().includes('file not found') ||
+                          errorMsg.toLowerCase().includes('available countries');
+
       return res.status(404).json({
         success: false,
-        error: data.error || 'No transmission network data found for this country'
+        error: errorMsg,
+        noData: isNoDataCase
       });
     }
 
     res.json({
       success: true,
-      data: data.data,
+      data: procedureResult.data,
       meta: {
         isoCode: isoCode.toUpperCase(),
         timestamp: new Date().toISOString(),
-        dataType: 'Real Transmission Infrastructure (OSM Data)'
+        dataType: 'Real Transmission Infrastructure (PostgreSQL)'
       }
     });
 
@@ -139,6 +140,7 @@ router.get('/network/:isoCode', async (req, res) => {
 /**
  * GET /api/transmission/generation/:isoCode
  * Get transmission generation data (power plants) for a specific country
+ * Now uses PostgreSQL stored procedure instead of Python service
  */
 router.get('/generation/:isoCode', async (req, res) => {
   try {
@@ -151,44 +153,46 @@ router.get('/generation/:isoCode', async (req, res) => {
       });
     }
 
-    // Check Python service availability
-    const pythonAvailable = await pythonExecutor.checkPythonAvailability();
-    if (!pythonAvailable) {
-      return res.status(503).json({
+    // Call PostgreSQL stored procedure directly (like Overview tab)
+    const result = await db.query(
+      'SELECT vervestacks.usp_get_transmission_generation_plants($1) as data',
+      [isoCode.toUpperCase()]
+    );
+
+    if (!result.rows || result.rows.length === 0) {
+      return res.status(500).json({
         success: false,
-        error: 'Python service is not available. Please try again later.'
+        error: 'No data returned from stored procedure'
       });
     }
 
-    // Call Python service for transmission generation data
-    const pythonServiceUrl = process.env.PYTHON_SERVICE_URL;
-    const pythonUrl = `${pythonServiceUrl}/transmission/generation/${isoCode}`;
-    const pythonResponse = await fetch(pythonUrl);
+    // Extract JSONB result from procedure
+    const procedureResult = result.rows[0].data;
     
-    if (!pythonResponse.ok) {
-      const errorData = await pythonResponse.json().catch(() => ({}));
-      return res.status(pythonResponse.status).json({
-        success: false,
-        error: errorData.detail || `Python service error: ${pythonResponse.statusText}`
-      });
-    }
+    // Check if procedure returned an error
+    if (!procedureResult.success) {
+      // Check if this is a "no data" case vs technical error
+      const errorMsg = procedureResult.error || 'No generation data found for this country';
+      const isNoDataCase = errorMsg.toLowerCase().includes('not found') ||
+                          errorMsg.toLowerCase().includes('no generation') ||
+                          errorMsg.toLowerCase().includes('no data') ||
+                          errorMsg.toLowerCase().includes('file not found');
 
-    const data = await pythonResponse.json();
-    
-    if (!data.success) {
       return res.status(404).json({
         success: false,
-        error: data.error || 'No generation data found for this country'
+        error: errorMsg,
+        noData: isNoDataCase
       });
     }
 
+    // Return the data directly from stored procedure (matches Python service structure)
     res.json({
       success: true,
-      data: data.data,
+      data: procedureResult.data,
       meta: {
         isoCode: isoCode.toUpperCase(),
         timestamp: new Date().toISOString(),
-        dataType: 'Power Generation Plants (CSV Data)'
+        dataType: 'Power Generation Plants (PostgreSQL)'
       }
     });
 

@@ -10,6 +10,10 @@ import sys
 # Add parent directory to path to import VerveStacks modules
 sys.path.append(str(Path(__file__).parent.parent))
 
+# Get script directory for resolving relative paths (works regardless of working directory)
+# This is important when called from API services where working directory may differ
+SCRIPT_DIR = Path(__file__).parent
+
 from excel_manager import ExcelManager
 
 
@@ -25,7 +29,8 @@ def map_iso_to_r10(iso_code):
     """
     try:
         # Load the mapping from VS_mappings.xlsx
-        vs_mappings_file = Path("assumptions/VS_mappings.xlsx")
+        # Use script's directory as base to work regardless of working directory (important for API calls)
+        vs_mappings_file = SCRIPT_DIR / "Assumptions" / "VS_mappings.xlsx"
         
         if not vs_mappings_file.exists():
             raise FileNotFoundError(f"VS_mappings.xlsx not found at {vs_mappings_file}")
@@ -66,7 +71,7 @@ def load_iea_electricity_summary(iso_code):
     """
     try:
         # Look for IEA electricity summary file in scenario_drivers folder
-        iea_file = Path("scenario_drivers/iea_electricity_summary_2018_2022.csv")
+        iea_file = SCRIPT_DIR / "scenario_drivers" / "iea_electricity_summary_2018_2022.csv"
         
         if not iea_file.exists():
             raise FileNotFoundError(f"IEA electricity summary file not found: {iea_file}")
@@ -103,7 +108,7 @@ def load_ar6_scenario_drivers(r10_region):
     """
     try:
         # Load the AR6 scenario drivers we created earlier
-        ar6_file = Path("scenario_drivers/ar6_r10_scenario_drivers.csv")
+        ar6_file = SCRIPT_DIR / "scenario_drivers" / "ar6_r10_scenario_drivers.csv"
         
         if not ar6_file.exists():
             raise FileNotFoundError(f"AR6 scenario drivers file not found: {ar6_file}")
@@ -375,7 +380,7 @@ def create_ar6_scenario_charts(r10_region, ar6_data, iso_code):
     from pathlib import Path
     
     # Create output directory in scenario_drivers
-    output_dir = Path("scenario_drivers")
+    output_dir = SCRIPT_DIR / "scenario_drivers"
     output_dir.mkdir(exist_ok=True)
     
     # Define climate categories and colors
@@ -393,7 +398,7 @@ def create_ar6_scenario_charts(r10_region, ar6_data, iso_code):
     
     # Load IEA baseline data for absolute calculations and historical plotting
     try:
-        iea_file = Path("scenario_drivers/iea_electricity_summary_2018_2022.csv")
+        iea_file = SCRIPT_DIR / "scenario_drivers" / "iea_electricity_summary_2018_2022.csv"
         if iea_file.exists():
             import pandas as pd
             iea_df = pd.read_csv(iea_file)
@@ -560,7 +565,7 @@ def copy_ar6_scenario_materials(iso_code, model_output_dir):
     model_scenario_dir.mkdir(exist_ok=True)
     
     # Source files in VerveStacks scenario_drivers folder
-    source_dir = Path("scenario_drivers")
+    source_dir = SCRIPT_DIR / "scenario_drivers"
     
     # Copy AR6 scenario chart
     chart_filename = f"ar6_scenarios_{iso_code}.png"

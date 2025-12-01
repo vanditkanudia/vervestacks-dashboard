@@ -16,28 +16,23 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import toast from 'react-hot-toast';
 import { createMap, createTileLayer, calculateMapBounds, MAP_STYLES } from '../utils/mapUtils';
+import { initializeFuelColors, getFuelColor as getFuelColorFromCache } from '../utils/fuelColors';
 import { transmissionAPI } from '../services/api';
 
 // Configuration constants
 const CONFIG = {
   colors: {
-    region: ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf', '#aec7e8', '#ffbb78', '#98df8a', '#ff9896', '#c5b0d5'],
+    region: [
+      '#E7A396', '#EACE84', '#BAB9E1', '#D9A1C0', '#F7A978', '#F0ACB7', '#F8E5EB', '#EBCFB2',
+      '#DDE4BE', '#B0E3CD', '#BDD4F6', '#CCCBF2', '#CAD892', '#969A60', '#758D46', '#98D0F5',
+      '#5E9DBE', '#3C8782', '#EB5A6D', '#F3C9E4', '#EEADA7', '#BDBDBD', '#F9F4BC', '#FAF5AF',
+      '#AD9281', '#F2C6C7', '#EB7757', '#ED6C84', '#83A061', '#A0BA46'
+    ],
     voltage: {
       high: '#d62728',    // Red for 380kV+
       medium: '#ff7f0e',  // Orange for 220kV
       low: '#2ca02c',     // Green for 110kV
       default: '#7f7f7f'  // Gray for lower voltages
-    },
-    fuel: {
-      gas: '#3B82F6',
-      bioenergy: '#10B981',
-      coal: '#6B7280',
-      hydro: '#06B6D4',
-      nuclear: '#8B5CF6',
-      solar: '#F59E0B',
-      wind: '#84CC16',
-      oil: '#EF4444',
-      unknown: '#9CA3AF'
     },
     transmission: {
       bus: '#fbbf24',
@@ -52,7 +47,7 @@ const CONFIG = {
     powerPlant: { weight: 2, opacity: 1, fillOpacity: 0.8 }
   },
   lines: {
-    transmission: { weight: 1, opacity: 0.8 },
+    transmission: { weight: 1, opacity: 1, smoothFactor: 0, lineCap: 'round' },
     ntc: { weight: 2, opacity: 0.6, dashArray: '5, 5' }
   },
   powerPlantSizes: {
@@ -76,7 +71,6 @@ const TransmissionLineTab = ({ countryIso }) => {
   const [layerVisibility, setLayerVisibility] = useState({
     populationPoints: true,
     clusterCenters: false, // Hidden by default
-    ntcConnections: false, // Hidden by default
     transmissionBuses: true, // Visible by default
     powerPlants: true // Visible by default
   });
@@ -89,6 +83,12 @@ const TransmissionLineTab = ({ countryIso }) => {
   const mapRef2 = useRef(null);
   const mapInstanceRef2 = useRef(null);
   const layerGroupsRef2 = useRef({});
+
+  useEffect(() => {
+    initializeFuelColors().catch(error => {
+      console.error('Failed to initialize fuel colors:', error);
+    });
+  }, []);
 
   // Utility functions for colors and styling
   const getRegionColor = useCallback((clusterId) => {
@@ -103,6 +103,10 @@ const TransmissionLineTab = ({ countryIso }) => {
   }, []);
 
   const getFuelColor = useCallback((fuelType) => {
+    const serviceColor = getFuelColorFromCache(fuelType);
+    if (serviceColor && serviceColor !== '#7F8C8D') {
+      return serviceColor;
+    }
     return CONFIG.colors.fuel[fuelType] || CONFIG.colors.fuel.unknown;
   }, []);
 
@@ -147,14 +151,17 @@ const TransmissionLineTab = ({ countryIso }) => {
     return marker;
   }, []);
 
+  const transmissionBusMarkersRef = useRef([]);
+  const transmissionBusMarkersRef2 = useRef([]);
+
   const createTransmissionBusMarker = useCallback((bus) => {
     const config = {
-      radius: CONFIG.markers.transmission.radius,
-      fillColor: CONFIG.colors.transmission.bus,
-      color: CONFIG.colors.transmission.busStroke,
-      weight: CONFIG.markers.transmission.weight,
-      opacity: CONFIG.markers.transmission.opacity,
-      fillOpacity: CONFIG.markers.transmission.fillOpacity
+      radius: 4,
+      fillColor: '#dc2626',
+      color: '#dc2626',
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0  // Transparent fill, only border visible
     };
     
     const popupContent = `
@@ -165,7 +172,11 @@ const TransmissionLineTab = ({ countryIso }) => {
       </div>
     `;
     
-    return createMarker(bus.lat, bus.lng, config, popupContent);
+    const marker = createMarker(bus.lat, bus.lng, config, popupContent);
+    if (marker) {
+      marker.options.baseRadius = config.radius;
+    }
+    return marker;
   }, [createMarker]);
 
   const createPopulationMarker = useCallback((point) => {
@@ -194,7 +205,7 @@ const TransmissionLineTab = ({ countryIso }) => {
     const config = {
       radius: getMarkerSize(plant.capacity_mw),
       fillColor: getFuelColor(plant.fuel_type),
-      color: '#FFFFFF',
+      color: "transparent",
       weight: CONFIG.markers.powerPlant.weight,
       opacity: CONFIG.markers.powerPlant.opacity,
       fillOpacity: CONFIG.markers.powerPlant.fillOpacity
@@ -210,24 +221,39 @@ const TransmissionLineTab = ({ countryIso }) => {
       </div>
     `;
     
-    return createMarker(plant.lat, plant.lng, config, popupContent);
+    const marker = createMarker(plant.lat, plant.lng, config, popupContent);
+    if (marker) {
+      marker.options.baseRadius = config.radius;
+    }
+    return marker;
   }, [createMarker, getMarkerSize, getFuelColor]);
 
   // Helper function to load transmission infrastructure (buses and lines)
-  const loadTransmissionInfrastructure = useCallback((mapInstance, layerGroups, data) => {
+  // Order: Lines first (will be bottom), then buses (will be on top of lines)
+  // But we want lines on top, so we'll add buses first, then lines
+  const loadTransmissionInfrastructure = useCallback((mapInstance, layerGroups, data, busMarkersRef = null) => {
     if (!data) return;
 
-    // Add transmission buses
+    // Add transmission buses first (middle layer)
+    if (busMarkersRef) {
+      busMarkersRef.current = [];
+    }
+
     if (data.buses) {
       data.buses.forEach(bus => {
         if (bus.lat && bus.lng) {
           const marker = createTransmissionBusMarker(bus);
-          layerGroups.transmissionBuses.addLayer(marker);
+          if (marker) {
+            layerGroups.transmissionBuses.addLayer(marker);
+            if (busMarkersRef) {
+              busMarkersRef.current.push(marker);
+            }
+          }
         }
       });
     }
 
-    // Add transmission lines
+    // Add transmission lines last (top layer - appears on top of buses)
     if (data.lines) {
       data.lines.forEach(line => {
         if (line.bus0_lat && line.bus0_lng && line.bus1_lat && line.bus1_lng) {
@@ -282,7 +308,23 @@ const TransmissionLineTab = ({ countryIso }) => {
     }
   }, [getVoltageColor, parseLinestringGeometry, createTransmissionBusMarker]);
 
-  // Load demand cluster data (population, clusters, NTC + transmission)
+  const updateTransmissionBusMarkerSizes = useCallback((mapInstance, busMarkersRef) => {
+    if (!mapInstance || !busMarkersRef?.current?.length) return;
+
+    const zoom = mapInstance.getZoom();
+    const baseZoom = 7;
+    const zoomDiff = zoom - baseZoom;
+    const scale = Math.max(0.2, Math.min(2.2, Math.pow(1.3, zoomDiff)));
+
+    busMarkersRef.current.forEach(marker => {
+      if (marker && marker.options?.baseRadius) {
+        marker.setRadius(marker.options.baseRadius * scale);
+      }
+    });
+  }, []);
+
+  // Load demand cluster data (population, clusters + transmission)
+  // Layer order (bottom to top): Demand points -> Transmission buses -> Transmission lines
   const loadDemandClusterData = useCallback((mapInstance, layerGroups) => {
     if (!mapInstance || !transmissionData) return;
 
@@ -291,7 +333,7 @@ const TransmissionLineTab = ({ countryIso }) => {
       group.clearLayers();
     });
 
-    // Add population points
+    // Step 1: Add demand points first (bottom layer)
     if (transmissionData.demand_points) {
       transmissionData.demand_points.forEach((point, index) => {
         if (point.lat && point.lng && point.cluster !== undefined) {
@@ -301,7 +343,7 @@ const TransmissionLineTab = ({ countryIso }) => {
       });
     }
 
-    // Add cluster centers
+    // Step 2: Add cluster centers (also bottom layer, same level as demand points)
     if (transmissionData.cluster_centers) {
       transmissionData.cluster_centers.forEach((center, index) => {
         if (center.center_lat && center.center_lng) {
@@ -348,45 +390,30 @@ const TransmissionLineTab = ({ countryIso }) => {
       });
     }
 
-    // Add NTC connections
-    if (transmissionData.ntc_connections) {
-      transmissionData.ntc_connections.forEach(connection => {
-        const fromCenter = transmissionData.cluster_centers?.find(c => c.cluster_id === connection.from_id);
-        const toCenter = transmissionData.cluster_centers?.find(c => c.cluster_id === connection.to_id);
-        
-        if (fromCenter && toCenter && fromCenter.center_lat && fromCenter.center_lng && 
-            toCenter.center_lat && toCenter.center_lng) {
-          
-          const line = L.polyline([
-            [fromCenter.center_lat, fromCenter.center_lng],
-            [toCenter.center_lat, toCenter.center_lng]
-          ], {
-            color: CONFIG.colors.transmission.ntc,
-            weight: CONFIG.lines.ntc.weight,
-            opacity: CONFIG.lines.ntc.opacity,
-            dashArray: CONFIG.lines.ntc.dashArray
-          });
-
-          line.bindPopup(`
-            <div class="p-2">
-              <h3 class="font-semibold text-sm">NTC Connection</h3>
-              <p class="text-xs text-gray-600">From: ${connection.from_region}</p>
-              <p class="text-xs text-gray-600">To: ${connection.to_region}</p>
-              <p class="text-xs text-gray-600">Distance: ${connection.distance_km} km</p>
-              <p class="text-xs text-gray-600">NTC: ${connection.estimated_ntc_mw} MW</p>
-            </div>
-          `);
-
-          layerGroups.ntcConnections.addLayer(line);
-        }
-      });
-    }
-
-    // Add transmission infrastructure to demand cluster
-    loadTransmissionInfrastructure(mapInstance, layerGroups, networkData);
-  }, [transmissionData, networkData, createPopulationMarker, loadTransmissionInfrastructure, getRegionColor]);
+    // Step 3: Add transmission infrastructure (buses then lines)
+    // This ensures buses are added before lines, so lines appear on top
+    loadTransmissionInfrastructure(mapInstance, layerGroups, networkData, transmissionBusMarkersRef);
+    updateTransmissionBusMarkerSizes(mapInstance, transmissionBusMarkersRef);
+  }, [transmissionData, networkData, createPopulationMarker, loadTransmissionInfrastructure, getRegionColor, updateTransmissionBusMarkerSizes]);
 
   // Load generation cluster data (transmission + power plants)
+  const powerPlantMarkersRef = useRef([]);
+
+  const updatePowerPlantMarkerSizes = useCallback((mapInstance) => {
+    if (!mapInstance || !powerPlantMarkersRef.current?.length) return;
+
+    const zoom = mapInstance.getZoom();
+    const baseZoom = 7;
+    const zoomDiff = zoom - baseZoom;
+    const scale = Math.max(0.15, Math.min(3, Math.pow(1.35, zoomDiff)));
+
+    powerPlantMarkersRef.current.forEach(marker => {
+      if (marker && marker.options?.baseRadius) {
+        marker.setRadius(marker.options.baseRadius * scale);
+      }
+    });
+  }, []);
+
   const loadGenerationClusterData = useCallback((mapInstance, layerGroups) => {
     if (!mapInstance) return;
 
@@ -394,20 +421,30 @@ const TransmissionLineTab = ({ countryIso }) => {
     Object.values(layerGroups).forEach(group => {
       group.clearLayers();
     });
+    powerPlantMarkersRef.current = [];
 
-    // Add transmission infrastructure to generation cluster
-    loadTransmissionInfrastructure(mapInstance, layerGroups, networkData);
-
-    // Add power plants from generation data
+    // Layer order (bottom to top): Power plants -> Transmission buses -> Transmission lines
+    
+    // Step 1: Add power plants first (middle layer, same level as buses)
     if (generationData && generationData.plants) {
       generationData.plants.forEach(plant => {
         if (plant.lat && plant.lng) {
           const marker = createPowerPlantMarker(plant);
-          layerGroups.powerPlants.addLayer(marker);
+          if (marker) {
+            layerGroups.powerPlants.addLayer(marker);
+            powerPlantMarkersRef.current.push(marker);
+          }
         }
       });
     }
-  }, [networkData, generationData, loadTransmissionInfrastructure, createPowerPlantMarker]);
+
+    // Step 2: Add transmission infrastructure (buses then lines)
+    // This ensures buses are added before lines, so lines appear on top
+    loadTransmissionInfrastructure(mapInstance, layerGroups, networkData, transmissionBusMarkersRef2);
+    
+    updatePowerPlantMarkerSizes(mapInstance);
+    updateTransmissionBusMarkerSizes(mapInstance, transmissionBusMarkersRef2);
+  }, [networkData, generationData, loadTransmissionInfrastructure, createPowerPlantMarker, updatePowerPlantMarkerSizes, updateTransmissionBusMarkerSizes]);
 
   const initializeMap = useCallback((mapRef, mapInstanceRef, layerGroupsRef, mapType = 'demand') => {
     if (!transmissionData || !transmissionData.demand_points || transmissionData.demand_points.length === 0) {
@@ -431,7 +468,6 @@ const TransmissionLineTab = ({ countryIso }) => {
     layerGroupsRef.current = {
       populationPoints: L.layerGroup(),
       clusterCenters: L.layerGroup(),
-      ntcConnections: L.layerGroup(),
       transmissionBuses: L.layerGroup(),
       powerPlants: L.layerGroup()
     };
@@ -444,18 +480,49 @@ const TransmissionLineTab = ({ countryIso }) => {
       });
     }
 
-    // Add layer groups to map
-    Object.values(layerGroupsRef.current).forEach(group => {
-      group.addTo(map);
-    });
+    // Add layer groups to map in correct z-index order (bottom to top):
+    // 1. Demand points (bottom)
+    // 2. Cluster centers (same level as demand points)
+    // 3. Transmission buses (middle)
+    // 4. Power plants (for generation map)
+    // 5. Transmission lines (top) - voltage layers added last
+    
+    // Add base layers first (bottom)
+    if (layerGroupsRef.current.populationPoints) {
+      layerGroupsRef.current.populationPoints.addTo(map);
+    }
+    if (layerGroupsRef.current.clusterCenters) {
+      layerGroupsRef.current.clusterCenters.addTo(map);
+    }
+    if (layerGroupsRef.current.transmissionBuses) {
+      layerGroupsRef.current.transmissionBuses.addTo(map);
+    }
+    if (layerGroupsRef.current.powerPlants) {
+      layerGroupsRef.current.powerPlants.addTo(map);
+    }
+    
+    // Add voltage layers last (top layer - transmission lines)
+    if (networkData && networkData.statistics && networkData.statistics.line_voltage_levels) {
+      Object.keys(networkData.statistics.line_voltage_levels).forEach(voltageKey => {
+        const layerKey = voltageKey.toLowerCase().replace('kv', 'kV');
+        if (layerGroupsRef.current[layerKey]) {
+          layerGroupsRef.current[layerKey].addTo(map);
+        }
+      });
+    }
 
     // Load data based on map type
     if (mapType === 'demand') {
       loadDemandClusterData(map, layerGroupsRef.current);
+      map.on('zoomend', () => updateTransmissionBusMarkerSizes(map, transmissionBusMarkersRef));
     } else if (mapType === 'generation') {
       loadGenerationClusterData(map, layerGroupsRef.current);
+      map.on('zoomend', () => {
+        updatePowerPlantMarkerSizes(map);
+        updateTransmissionBusMarkerSizes(map, transmissionBusMarkersRef2);
+      });
     }
-  }, [transmissionData, loadDemandClusterData, loadGenerationClusterData, networkData]);
+  }, [transmissionData, loadDemandClusterData, loadGenerationClusterData, networkData, updatePowerPlantMarkerSizes, updateTransmissionBusMarkerSizes]);
 
   const initializeBothMaps = useCallback(() => {
     if (!transmissionData || !transmissionData.demand_points || transmissionData.demand_points.length === 0) {
@@ -474,7 +541,6 @@ const TransmissionLineTab = ({ countryIso }) => {
     const layerConfig = {
       populationPoints: ['demand'],
       clusterCenters: ['demand'],
-      ntcConnections: ['demand'],
       transmissionBuses: ['demand', 'generation'],
       powerPlants: ['generation']
     };
@@ -482,6 +548,15 @@ const TransmissionLineTab = ({ countryIso }) => {
     const updateMapLayers = (mapInstance, layerGroups, mapType) => {
       if (!mapInstance) return;
 
+      // Define z-index order (bottom to top)
+      const zIndexOrder = [
+        'populationPoints',    // Bottom
+        'clusterCenters',      // Bottom (same level)
+        'transmissionBuses',   // Middle
+        'powerPlants'          // Middle (for generation map)
+      ];
+
+      // First, remove all layers
       Object.keys(layerVisibility).forEach(layerKey => {
         const group = layerGroups[layerKey];
         if (group) {
@@ -489,10 +564,32 @@ const TransmissionLineTab = ({ countryIso }) => {
                             (layerConfig[layerKey]?.includes(mapType) || 
                              layerKey.includes('kV')); // Voltage layers show on both maps
           
+          if (!shouldShow) {
+            group.remove();
+          }
+        }
+      });
+
+      // Then add layers back in correct z-index order (bottom to top)
+      zIndexOrder.forEach(layerKey => {
+        const group = layerGroups[layerKey];
+        if (group) {
+          const shouldShow = layerVisibility[layerKey] && 
+                            (layerConfig[layerKey]?.includes(mapType) || 
+                             layerKey.includes('kV'));
+          
           if (shouldShow) {
             group.addTo(mapInstance);
-          } else {
-            group.remove();
+          }
+        }
+      });
+
+      // Add voltage layers last (top layer - transmission lines)
+      Object.keys(layerVisibility).forEach(layerKey => {
+        if (layerKey.includes('kV')) {
+          const group = layerGroups[layerKey];
+          if (group && layerVisibility[layerKey]) {
+            group.addTo(mapInstance);
           }
         }
       });
@@ -557,9 +654,17 @@ const TransmissionLineTab = ({ countryIso }) => {
         // 3. Load Transmission Data (for both maps)
         const transmissionResponse = await transmissionAPI.getTransmissionNetworkData(countryIso);
         if (!transmissionResponse.success) {
-          throw new Error(transmissionResponse.error || 'Failed to load transmission data');
+          // Check if this is a "no data" case vs technical error
+          if (transmissionResponse.noData) {
+            // For "no data" cases, set networkData to null but don't throw error
+            // The component will handle this gracefully
+            setNetworkData(null);
+          } else {
+            throw new Error(transmissionResponse.error || 'Failed to load transmission data');
+          }
+        } else {
+          setNetworkData(transmissionResponse.data);
         }
-        setNetworkData(transmissionResponse.data);
         
         toast.success('All data loaded successfully');
       } catch (err) {
@@ -703,88 +808,19 @@ const TransmissionLineTab = ({ countryIso }) => {
     );
   }
 
-  const { summary } = transmissionData;
+  const { summary } = transmissionData || {};
   const networkStats = networkData?.statistics || {};
   const generationStats = generationData?.statistics || {};
 
   return (
     <div className="h-screen flex flex-col">
-    
-
-      {/* Statistics Cards */}
-      <div className="p-3 sm:p-4">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 sm:gap-4">
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-3 sm:p-4">
-            <div className="flex items-center">
-              <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-indigo-600 mr-2" />
-              <div>
-                <p className="text-xs sm:text-sm text-gray-600">Total Regions</p>
-                <p className="text-base sm:text-lg font-semibold text-gray-900">{summary?.total_regions || 0}</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-3 sm:p-4">
-            <div className="flex items-center">
-              <BarChart3 className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 mr-2" />
-              <div>
-                <p className="text-xs sm:text-sm text-gray-600">Demand Points</p>
-                <p className="text-base sm:text-lg font-semibold text-gray-900">{summary?.total_demand_points || 0}</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-3 sm:p-4">
-            <div className="flex items-center">
-              <Zap className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-600 mr-2" />
-              <div>
-                <p className="text-xs sm:text-sm text-gray-600">NTC Connections</p>
-                <p className="text-base sm:text-lg font-semibold text-gray-900">{summary?.total_ntc_connections || 0}</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-3 sm:p-4">
-            <div className="flex items-center">
-              <Power className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600 mr-2" />
-              <div>
-                <p className="text-xs sm:text-sm text-gray-600">Demand Buses</p>
-                <p className="text-base sm:text-lg font-semibold text-gray-900">{networkStats.total_buses || 0}</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-3 sm:p-4">
-            <div className="flex items-center">
-              <Zap className="h-4 w-4 sm:h-5 sm:w-5 text-red-600 mr-2" />
-              <div>
-                <p className="text-xs sm:text-sm text-gray-600">Generation Buses</p>
-                <p className="text-base sm:text-lg font-semibold text-gray-900">{generationStats.total_buses || 0}</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-3 sm:p-4">
-            <div className="flex items-center">
-              <TrendingUp className="h-4 w-4 sm:h-5 sm:w-5 text-purple-600 mr-2" />
-              <div>
-                <p className="text-xs sm:text-sm text-gray-600">Avg Region Size</p>
-                <p className="text-base sm:text-lg font-semibold text-gray-900">
-                  {summary?.average_region_size ? Math.round(summary.average_region_size).toLocaleString() : 0}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="px-4 sm:px-6 py-4 sm:py-6">
         {/* Maps - Clean Card Structure */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-4">
           
           
           {/* Demand Cluster Map Card */}
-          <div className="bg-white rounded-lg hover:shadow-sm transition-shadow" description="Demand Cluster Map - Shows population-based demand regions with NTC connections, transmission buses, and voltage-specific transmission lines">
+          <div className="bg-white rounded-lg hover:shadow-sm transition-shadow" description="Demand Cluster Map - Shows population-based demand regions with transmission buses and voltage-specific transmission lines">
             <div className="flex justify-between items-start p-3">
               <div className="flex items-center space-x-4">
                 <div>
@@ -901,18 +937,6 @@ const TransmissionLineTab = ({ countryIso }) => {
               </button>
             </div>
             
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <div className="w-4 h-0.5 bg-gray-500 mr-2" style={{ borderTop: '2px dashed #666' }}></div>
-                <span>NTC Connections ({summary?.total_ntc_connections || 0})</span>
-              </div>
-              <button
-                onClick={() => toggleLayer('ntcConnections')}
-                className="text-gray-500 hover:text-gray-700"
-              >
-                {layerVisibility.ntcConnections ? <Eye className="h-4 w-4" /> : <EyeOff className="h-4 w-4" />}
-              </button>
-            </div>
           </div>
 
           {/* Transmission Infrastructure Layers */}

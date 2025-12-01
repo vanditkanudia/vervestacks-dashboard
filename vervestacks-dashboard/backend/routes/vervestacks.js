@@ -304,30 +304,25 @@ router.get('/existing-stock/:iso_code', async (req, res) => {
       });
     }
 
-    // Call Python FastAPI service
-    const pythonServiceUrl = process.env.PYTHON_SERVICE_URL;
-    const response = await fetch(`${pythonServiceUrl}/overview/existing-stock/${iso_code}`);
-    
-    if (!response.ok) {
-      throw new Error(`Python service responded with status: ${response.status}`);
+    // Call PostgreSQL stored procedure directly (like Overview tab)
+    const result = await db.query(
+      'SELECT vervestacks.usp_get_existing_stock_metrics($1) as data',
+      [iso_code]
+    );
+
+    if (!result.rows || result.rows.length === 0) {
+      throw new Error('No data returned from stored procedure');
     }
 
-    const data = await response.json();
+    // Extract JSONB result from procedure
+    const procedureResult = result.rows[0].data;
     
-    // Return the data directly from Python service without extra wrapping
-    res.json(data);
+    // Return the data directly from stored procedure
+    res.json(procedureResult);
 
   } catch (error) {
     console.error('Error fetching existing stock data:', error);
     
-    if (error.message.includes('fetch')) {
-      return res.status(503).json({
-        success: false,
-        message: 'Python service not available. Please ensure the Python service is running on port 5000.',
-        error: 'Service unavailable'
-      });
-    }
-
     res.status(500).json({
       success: false,
       message: 'Failed to retrieve existing stock data',

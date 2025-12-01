@@ -160,7 +160,6 @@ export const createZonePopup = (zone, zoneType) => {
       <div class="space-y-1 text-xs">
         <div><strong>Capacity Factor:</strong> ${smartFormatNumber(zone['Capacity Factor'] * 100)}%</div>
         <div><strong>Capacity:</strong> ${smartFormatNumber(zone['Installed Capacity Potential (MW)'])} MW</div>
-        <div><strong>LCOE:</strong> $${smartFormatNumber(zone['LCOE (USD/MWh)'] || 0)}/MWh</div>
         <div><strong>Area:</strong> ${smartFormatNumber(zone['Suitable Area (km²)'])} km²</div>
       </div>
     </div>

@@ -63,6 +63,19 @@ END$$;
 \echo 'Creating stored procedures and functions (minimal)...'
 \i schema/04_create_functions.sql
 
+\echo 'Creating GEM existing stock procedure...'
+\i schema/procedure/usp_get_existing_stock_metrics.sql
+
+\echo 'Creating transmission generation plants procedure...'
+\i schema/procedure/usp_get_transmission_generation_plants.sql
+
+\echo 'Creating transmission network procedure...'
+\i schema/procedure/usp_get_transmission_network_data.sql
+
+-- ERA5 demand profile stored procedure
+\echo 'Creating ERA5 demand profile procedure...'
+\i schema/procedure/usp_get_demand_profile.sql
+
 -- ============================================================================
 -- TRIGGER CREATION
 -- ============================================================================
