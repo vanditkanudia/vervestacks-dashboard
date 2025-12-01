@@ -1,6 +1,8 @@
 -- Create VerveStacks Dashboard Database
 -- Run this first: psql -h localhost -U postgres -d postgres -f 00_create_database.sql
 
+DROP DATABASE if exists vervestacks_dashboard;
+
 -- Check if database exists and create if it doesn't
 SELECT 'Creating VerveStacks database...' as status;
 
