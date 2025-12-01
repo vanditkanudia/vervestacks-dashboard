@@ -10,7 +10,7 @@ env:
   Update_Data_On_Local: "true"
   Update_Data_On_Hetzner: "false"
 
-  # Control whether start.bat opens visible consoles
+  # NEW: control whether start.bat opens visible consoles
   # 'false' = run inline and check exit code (CI mode)
   # 'true'  = Start-Process -> separate window(s), no exit-code check
   SHOW_START_CONSOLES: "true"
@@ -35,13 +35,12 @@ env:
   APP_SUBROOT: "vervestacks-dashboard"
 
   # Python service settings
-  PYTHON_EXE: "C:\\Python312\\python.exe"
+  PYTHON_EXE: "C:\\Users\\Vandit\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
 
-  # App source root (what you copy from)
-  APP_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\vervestacks-dashboard"
-
-  # Full repo root (what you asked to copy 1:1)
-  REPO_SOURCE_ROOT: "D:\\GitHub\\VerveStacks"
+  # App / repo source roots on the RUNNER (GitHub workspace)
+  # github.workspace is the checkout path for this repo on the runner
+  REPO_SOURCE_ROOT: "${{ github.workspace }}"
+  APP_SOURCE_ROOT: "${{ github.workspace }}\\vervestacks-dashboard"
 
 jobs:
   deploy:
@@ -62,7 +61,6 @@ jobs:
         run: |
           $stepName = 'Init workflow run log file'
           $logRoot = 'D:\GitHub\VerveStacks_Logs'
-
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host '### STEP FAILED: Init workflow run log file'
@@ -70,17 +68,14 @@ jobs:
             Write-Host $_.ScriptStackTrace
             exit 1
           }
-
           if (-not (Test-Path $logRoot)) {
             New-Item -ItemType Directory -Path $logRoot | Out-Null
           }
-
           $timestamp = Get-Date -Format 'yyyy-MM-ddTHH-mm-ss'
-          # Log file name: Deploy_<timestamp>.log
+          # simpler log file name: Deploy_<timestamp>.log
           $fileName  = "Deploy_$timestamp.log"
           $safeName  = ($fileName -replace '[\\/:*?""<>|]', '_')
           $logFile   = Join-Path $logRoot $safeName
-
           'STEP     : Init workflow run log file' | Out-File -FilePath $logFile -Encoding UTF8
           ('Workflow : {0}' -f $env:GITHUB_WORKFLOW)   | Out-File -FilePath $logFile -Encoding UTF8 -Append
           ('Run ID   : {0}' -f $env:GITHUB_RUN_ID)     | Out-File -FilePath $logFile -Encoding UTF8 -Append
@@ -91,7 +86,6 @@ jobs:
           ('Workspace: {0}' -f $env:GITHUB_WORKSPACE)  | Out-File -FilePath $logFile -Encoding UTF8 -Append
           ('Started  : {0}' -f (Get-Date -Format o))   | Out-File -FilePath $logFile -Encoding UTF8 -Append
           '--------------------------------------'     | Out-File -FilePath $logFile -Encoding UTF8 -Append
-
           "LOG_FILE=$logFile" | Out-File -FilePath $env:GITHUB_ENV -Encoding UTF8 -Append
           exit 0
 
@@ -106,9 +100,7 @@ jobs:
         run: |
           $stepName = 'Map kanvault share'
           $log = $env:LOG_FILE
-
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
@@ -117,26 +109,21 @@ jobs:
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
-
           Write-Host ('=== [{0}] ===' -f $stepName)
           Write-Host ("Mapping {0} with user 'amit'" -f $env:KANVAULT_SHARE)
-
           try {
             Write-Host 'Attempting to delete existing mapping...'
             net use $env:KANVAULT_SHARE /delete /y
           } catch {
             Write-Host 'No existing mapping or delete failed. Continuing.'
           }
-
           net use $env:KANVAULT_SHARE /user:amit $env:KANVAULT_PASSWORD
           if ($LASTEXITCODE -ne 0) {
             Write-Host ("### ERROR DETAIL: net use failed with exit code {0}." -f $LASTEXITCODE)
             if ($log) { Stop-Transcript | Out-Null }
             exit $LASTEXITCODE
           }
-
           Write-Host 'UNC network share mapped successfully.'
-
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
@@ -149,9 +136,7 @@ jobs:
         run: |
           $stepName = 'Sync all data (kanvault + local) to IIS'
           $log = $env:LOG_FILE
-
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
@@ -160,7 +145,6 @@ jobs:
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
-
           Write-Host ('=== [{0}] ===' -f $stepName)
 
           $shareRoot = $env:KANVAULT_SHARE
@@ -189,7 +173,6 @@ jobs:
           )
 
           $exitCodes = @()
-
           foreach ($job in $syncJobs) {
             $name   = $job.Name
             $source = $job.Source
@@ -213,12 +196,10 @@ jobs:
             Write-Host ("Starting robocopy for '{0}'..." -f $name)
             robocopy $source $dest /E /Z /R:3 /W:5 /ETA /NP
             $exitCodes += $LASTEXITCODE
-
             Write-Host ("Robocopy exit code: {0}" -f $LASTEXITCODE)
           }
 
           $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
-
           Write-Host ("Max robocopy code = {0}" -f $maxCode)
           Write-Host 'INFO: 0–7 success, 8+ failure'
 
@@ -230,11 +211,45 @@ jobs:
 
           Write-Host 'All data sync jobs completed successfully.'
 
+          Write-Host ""
+          Write-Host "=== [PART 2] Syncing LOCAL data from D:\GitHub\VerveStacks\data → C:\inetpub\VerveStacks\data ==="
+
+          $srcLocal = $env:LOCAL_DATA_SOURCE_ROOT
+          $dstLocal = $env:DATA_ROOT
+
+          Write-Host "Local data source     : $srcLocal"
+          Write-Host "IIS data destination  : $dstLocal"
+
+          if (-not (Test-Path $srcLocal)) {
+            Write-Host "WARNING: Local data source folder does not exist: $srcLocal"
+            Write-Host "Nothing to sync from local; continuing."
+          }
+          else {
+            if (-not (Test-Path $dstLocal)) {
+              Write-Host "Creating IIS data root: $dstLocal"
+              [System.IO.Directory]::CreateDirectory($dstLocal) | Out-Null
+            }
+
+            robocopy $srcLocal $dstLocal /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
+            $codeLocal = $LASTEXITCODE
+            Write-Host "Local data robocopy exit code: $codeLocal"
+
+            if ($codeLocal -ge 8) {
+              Write-Error "Local data sync failed with robocopy exit code $codeLocal"
+              if ($log) { Stop-Transcript | Out-Null }
+              exit $codeLocal
+            }
+
+            Write-Host "Local data sync completed successfully."
+          }
+
+          Write-Host 'All data sync (kanvault + local) completed successfully.'
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
       # ==========================================================
       # 1b) SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
+      #     (EXCLUDING .git, .github, .venv, node_modules)
       # ==========================================================
       - name: Sync full VerveStacks repo to DEPLOY_ROOT
         if: env.Update_Data_On_Local == 'true'
@@ -242,9 +257,7 @@ jobs:
         run: |
           $stepName = 'Sync full VerveStacks repo to DEPLOY_ROOT'
           $log = $env:LOG_FILE
-
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
@@ -256,6 +269,7 @@ jobs:
 
           Write-Host ('=== [{0}] ===' -f $stepName)
 
+          # Now source is the GitHub workspace on the runner
           $src = $env:REPO_SOURCE_ROOT
           $dst = $env:DEPLOY_ROOT
 
@@ -263,7 +277,7 @@ jobs:
           Write-Host ("Destination (DEPLOY_ROOT) = {0}" -f $dst)
 
           if (-not (Test-Path $src)) {
-            Write-Host '### ERROR DETAIL: REPO_SOURCE_ROOT does not exist. Check D:\GitHub\VerveStacks.'
+            Write-Host '### ERROR DETAIL: REPO_SOURCE_ROOT does not exist. Check github.workspace.'
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -273,10 +287,12 @@ jobs:
             [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
-          Write-Host 'Running robocopy for FULL VerveStacks sync (excluding .git and .github folders)...'
-          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
-          $code = $LASTEXITCODE
+          Write-Host 'Running robocopy for FULL VerveStacks sync (excluding .git, .github, .venv, node_modules)...'
+          robocopy $src $dst /E /Z /R:3 /W:5 `
+            /XD ".git" ".github" ".venv" "node_modules" `
+            /NFL /NDL /NJH /NJS /NP
 
+          $code = $LASTEXITCODE
           Write-Host ("Full repo robocopy exit code: {0}" -f $code)
           Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
 
@@ -287,12 +303,12 @@ jobs:
           }
 
           Write-Host 'Full VerveStacks repo sync to DEPLOY_ROOT completed successfully.'
-
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
       # ==========================================================
       # 2) APP DEPLOY (COPY APP SOURCE TO DEPLOY_ROOT\APP_SUBROOT)
+      #     (EXCLUDING .git, .github, .venv, node_modules)
       # ==========================================================
       - name: Deploy app from APP_SOURCE_ROOT to DEPLOY_ROOT\APP_SUBROOT
         if: env.Update_Data_On_Local == 'true'
@@ -300,9 +316,7 @@ jobs:
         run: |
           $stepName = 'Deploy app files to IIS folder'
           $log = $env:LOG_FILE
-
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
@@ -331,10 +345,12 @@ jobs:
             [System.IO.Directory]::CreateDirectory($dst) | Out-Null
           }
 
-          Write-Host 'Running robocopy for application deployment (excluding .git & .github folders)...'
-          robocopy $src $dst /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
-          $code = $LASTEXITCODE
+          Write-Host 'Running robocopy for application deployment (excluding .git, .github, .venv, node_modules)...'
+          robocopy $src $dst /E /Z /R:3 /W:5 `
+            /XD ".git" ".github" ".venv" "node_modules" `
+            /NFL /NDL /NJH /NJS /NP
 
+          $code = $LASTEXITCODE
           Write-Host ("App robocopy exit code: {0}" -f $code)
           Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
 
@@ -345,7 +361,6 @@ jobs:
           }
 
           Write-Host 'Deployment completed successfully (app folder synced to IIS target).'
-
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
@@ -357,9 +372,7 @@ jobs:
         run: |
           $stepName = 'Install JS deps and build frontend'
           $log = $env:LOG_FILE
-
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host "### STEP FAILED: $stepName"
@@ -446,9 +459,7 @@ jobs:
         run: |
           $stepName = 'Publish frontend build to IIS root'
           $log = $env:LOG_FILE
-
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host "### STEP FAILED: $stepName"
@@ -474,7 +485,6 @@ jobs:
 
           robocopy $buildDir $appRoot /E /R:3 /W:5 /NFL /NDL /NJH /NJS /NP
           $code = $LASTEXITCODE
-
           Write-Host ("Robocopy exit code (publish build) = {0}" -f $code)
           Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
 
@@ -485,21 +495,18 @@ jobs:
           }
 
           Write-Host 'Frontend build published to IIS root successfully.'
-
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
       # ==========================================================
-      # 4) PYTHON SERVICE SETUP
+      # 4) PYTHON SERVICE SETUP (ALWAYS RECREATE .venv)
       # ==========================================================
       - name: Setup python service on deployed folder
         shell: powershell
         run: |
           $stepName = 'Setup python service'
           $log = $env:LOG_FILE
-
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host "### STEP FAILED: $stepName"
@@ -525,22 +532,97 @@ jobs:
 
           cd $pythonPath
 
-          if (-not (Test-Path '.venv')) {
-            Write-Host 'Creating virtual environment in .venv...'
-            & $env:PYTHON_EXE -m venv .venv
-          }
-          else {
-            Write-Host 'Virtual environment .venv already exists, reusing it.'
+          if (Test-Path '.venv') {
+            Write-Host 'Removing existing virtual environment .venv...'
+            try {
+              Remove-Item -Recurse -Force '.venv'
+            }
+            catch {
+              Write-Host ("### ERROR: Failed to delete old .venv: {0}" -f $_.Exception.Message)
+              if ($log) { Stop-Transcript | Out-Null }
+              exit 1
+            }
           }
 
+          Write-Host 'Creating virtual environment in .venv using PYTHON_EXE...'
+          & $env:PYTHON_EXE -m venv .venv
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host ("### ERROR: python -m venv .venv failed with exit code {0}" -f $LASTEXITCODE)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $LASTEXITCODE
+          }
+
+          Write-Host 'Installing/Updating Python dependencies from requirements.txt...'
           .\.venv\Scripts\python.exe -m pip install --upgrade pip
-          .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host ("### ERROR: pip upgrade failed with exit code {0}" -f $LASTEXITCODE)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $LASTEXITCODE
+          }
 
+          .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host ("### ERROR: pip install -r requirements.txt failed with exit code {0}" -f $LASTEXITCODE)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $LASTEXITCODE
+          }
+
+          Write-Host 'Python virtual environment created and dependencies installed successfully.'
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
       # ==========================================================
-      # 5) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
+      # 5) RUN DATABASE SETUP (setup_database.bat)
+      # ==========================================================
+      - name: Run database setup (setup_database.bat)
+        if: env.Update_Data_On_Local == 'true'
+        shell: powershell
+        run: |
+          $stepName = 'Run database setup (setup_database.bat)'
+          $log = $env:LOG_FILE
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            # Do not hard-fail workflow
+            exit 0
+          }
+
+          Write-Host "=== [$stepName] ==="
+
+          $appRoot   = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $dbFolder  = Join-Path $appRoot 'backend\database'
+          $dbBatch   = Join-Path $dbFolder 'setup_database.bat'
+
+          Write-Host ("DB folder path      = {0}" -f $dbFolder)
+          Write-Host ("DB setup batch path = {0}" -f $dbBatch)
+
+          if (-not (Test-Path $dbBatch)) {
+            Write-Host "WARNING: setup_database.bat not found. Skipping DB setup step."
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 0
+          }
+
+          Write-Host "A new CMD window will open for database setup."
+          Write-Host "Please type the PostgreSQL password there when prompted and follow the instructions."
+          Write-Host "This workflow step will NOT fail even if the batch exits with an error code."
+
+          $psi = New-Object System.Diagnostics.ProcessStartInfo
+          $psi.FileName = "cmd.exe"
+          $psi.Arguments = "/k `"`"$dbBatch`"`""
+          $psi.WorkingDirectory = $dbFolder
+          $psi.UseShellExecute = $true
+          [System.Diagnostics.Process]::Start($psi) | Out-Null
+
+          Write-Host "setup_database.bat launched in its own CMD window. Complete it manually if needed."
+          if ($log) { Stop-Transcript | Out-Null }
+          exit 0
+
+      # ==========================================================
+      # 6) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
       # ==========================================================
       - name: Deploy to Hetzner (placeholder)
         if: env.Update_Data_On_Hetzner == 'true'
@@ -557,68 +639,14 @@ jobs:
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
+
           Write-Host "=== [$stepName] ==="
           Write-Host 'Update_Data_On_Hetzner == true, but remote deploy logic is not implemented yet.'
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
       # ==========================================================
-      # 6) RUN database setup (setup_database.bat) - NON-BLOCKING
-      # ==========================================================
-      - name: Run database setup (setup_database.bat)
-        if: env.Update_Data_On_Local == 'true'
-        shell: powershell
-        run: |
-          $stepName = 'Run database setup (setup_database.bat)'
-          $log = $env:LOG_FILE
-
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-
-          $ErrorActionPreference = 'Stop'
-          trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
-            Write-Host $_.ScriptStackTrace
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          Write-Host "=== [$stepName] ==="
-
-          $dbFolder  = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\backend\database"
-          $setupPath = Join-Path $dbFolder "setup_database.bat"
-
-          Write-Host ("DB folder path      = {0}" -f $dbFolder)
-          Write-Host ("DB setup batch path = {0}" -f $setupPath)
-
-          if (-not (Test-Path $dbFolder)) {
-            Write-Host "### ERROR DETAIL: DB folder path not found."
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          if (-not (Test-Path $setupPath)) {
-            Write-Host "### ERROR DETAIL: setup_database.bat not found."
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          Write-Host "A new CMD window will open for database setup."
-          Write-Host "Please type the PostgreSQL password there when prompted."
-          Write-Host "The workflow will NOT wait for completion and will NOT fail on its exit code."
-
-          # Launch interactive CMD window for DB setup; do not wait
-          Start-Process -FilePath "cmd.exe" `
-                        -ArgumentList "/k `"`"setup_database.bat`"`"" `
-                        -WorkingDirectory $dbFolder `
-                        -WindowStyle Normal | Out-Null
-
-          Write-Host "setup_database.bat launched in a separate window."
-          if ($log) { Stop-Transcript | Out-Null }
-          exit 0
-
-      # ==========================================================
-      # 7) RUN start.bat AFTER DEPLOYMENT (NON-BLOCKING WHEN CONSOLES SHOWN)
+      # 7) RUN start.bat AFTER DEPLOYMENT
       # ==========================================================
       - name: Run start.bat after deployment
         if: env.Update_Data_On_Local == 'true'
@@ -626,9 +654,7 @@ jobs:
         run: |
           $stepName = 'Run start.bat'
           $log = $env:LOG_FILE
-
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host "### STEP FAILED: $stepName"
@@ -640,8 +666,7 @@ jobs:
 
           Write-Host "=== [$stepName] ==="
 
-          # Path to start.bat in deployed folder
-          $scriptPath = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
+          $scriptPath  = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
           $showConsoles = $env:SHOW_START_CONSOLES
 
           Write-Host ("Expected start.bat path: {0}" -f $scriptPath)
@@ -655,11 +680,8 @@ jobs:
 
           if ($showConsoles -eq 'true') {
             Write-Host 'SHOW_START_CONSOLES == true, launching start.bat in a separate window and NOT waiting for it.'
-
-            # Launch start.bat via cmd.exe in a separate window. Do NOT wait.
             $cmdArgs = "/c `"`"$scriptPath`"`""
             Start-Process -FilePath "cmd.exe" -ArgumentList $cmdArgs -WindowStyle Normal | Out-Null
-
             if ($log) { Stop-Transcript | Out-Null }
             exit 0
           }
@@ -667,13 +689,11 @@ jobs:
             Write-Host 'SHOW_START_CONSOLES != true, running start.bat inline and waiting for it to finish.'
             & $scriptPath
             $rc = $LASTEXITCODE
-
             if ($rc -ne 0) {
               Write-Host ("### ERROR DETAIL: start.bat exited with code {0}. See any messages printed by the script above." -f $rc)
               if ($log) { Stop-Transcript | Out-Null }
               exit $rc
             }
-
             Write-Host "start.bat completed successfully."
             if ($log) { Stop-Transcript | Out-Null }
             exit 0
