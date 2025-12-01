@@ -572,13 +572,20 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 5) RUN DATABASE SETUP (setup_database.bat)
+      # 5) UPDATE DATABASE (run Python + BAT scripts)
       # ==========================================================
-      - name: Run database setup (setup_database.bat)
+      - name: Update Database
         if: env.Update_Data_On_Local == 'true'
         shell: powershell
+        env:
+          # Optional: DB connection info if your scripts need it
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ secrets.DB_PORT }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         run: |
-          $stepName = 'Run database setup (setup_database.bat)'
+          $stepName = 'Update Database'
           $log = $env:LOG_FILE
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
           $ErrorActionPreference = 'Stop'
@@ -587,37 +594,99 @@ jobs:
             Write-Host "### ERROR: $($_.Exception.Message)"
             Write-Host $_.ScriptStackTrace
             if ($log) { Stop-Transcript | Out-Null }
-            # Do not hard-fail workflow
-            exit 0
+            exit 1
           }
 
           Write-Host "=== [$stepName] ==="
 
-          $appRoot   = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
-          $dbFolder  = Join-Path $appRoot 'backend\database'
-          $dbBatch   = Join-Path $dbFolder 'setup_database.bat'
+          # 1) Resolve paths
+          $appRoot  = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $dbFolder = Join-Path $appRoot 'backend\database'
 
-          Write-Host ("DB folder path      = {0}" -f $dbFolder)
-          Write-Host ("DB setup batch path = {0}" -f $dbBatch)
+          Write-Host ("App root   = {0}" -f $appRoot)
+          Write-Host ("DB folder  = {0}" -f $dbFolder)
 
-          if (-not (Test-Path $dbBatch)) {
-            Write-Host "WARNING: setup_database.bat not found. Skipping DB setup step."
+          if (-not (Test-Path $dbFolder)) {
+            Write-Host "### ERROR: DB folder not found: $dbFolder"
             if ($log) { Stop-Transcript | Out-Null }
-            exit 0
+            exit 1
           }
 
-          Write-Host "A new CMD window will open for database setup."
-          Write-Host "Please type the PostgreSQL password there when prompted and follow the instructions."
-          Write-Host "This workflow step will NOT fail even if the batch exits with an error code."
+          # 2) Python exe (reuse configured one)
+          $pythonExe = $env:PYTHON_EXE
+          Write-Host ("Using PYTHON_EXE = {0}" -f $pythonExe)
 
-          $psi = New-Object System.Diagnostics.ProcessStartInfo
-          $psi.FileName = "cmd.exe"
-          $psi.Arguments = "/k `"`"$dbBatch`"`""
-          $psi.WorkingDirectory = $dbFolder
-          $psi.UseShellExecute = $true
-          [System.Diagnostics.Process]::Start($psi) | Out-Null
+          if (-not (Test-Path $pythonExe)) {
+            Write-Host "### ERROR: PYTHON_EXE not found at $pythonExe"
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
 
-          Write-Host "setup_database.bat launched in its own CMD window. Complete it manually if needed."
+          # 3) LIST OF SCRIPTS TO RUN (EDIT THESE NAMES to your real files)
+          #    They are assumed to live under backend\database
+          $pythonScripts = @(
+            'consolidate_generation_plants.py',    
+            'convert_geojson.py'      
+          )
+
+          $batchScripts = @(
+            'setup_database.bat',   
+            'run_renewable_imports.bat',      
+            'setup_procedures.bat'    
+          )
+
+          # 4) Helper to run a command and check exit code
+          function Invoke-Checked {
+            param(
+              [string]$Description,
+              [scriptblock]$Action
+            )
+            Write-Host ''
+            Write-Host ("---- Running: {0}" -f $Description)
+            & $Action
+            $rc = $LASTEXITCODE
+            Write-Host ("Exit code = {0}" -f $rc)
+            if ($rc -ne 0) {
+              Write-Host ("### ERROR: Step '{0}' failed with exit code {1}." -f $Description, $rc)
+              if ($log) { Stop-Transcript | Out-Null }
+              exit $rc
+            }
+          }
+
+          # 5) Run Python scripts in order
+          foreach ($name in $pythonScripts) {
+            $path = Join-Path $dbFolder $name
+            Write-Host ("Python script path = {0}" -f $path)
+
+            if (-not (Test-Path $path)) {
+              Write-Host ("### ERROR: Python file not found: {0}" -f $path)
+              if ($log) { Stop-Transcript | Out-Null }
+              exit 1
+            }
+
+            Invoke-Checked -Description ("python {0}" -f $name) -Action {
+              & $pythonExe $path
+            }
+          }
+
+          # 6) Run BAT files in order
+          foreach ($name in $batchScripts) {
+            $path = Join-Path $dbFolder $name
+            Write-Host ("BAT script path = {0}" -f $path)
+
+            if (-not (Test-Path $path)) {
+              Write-Host ("### ERROR: BAT file not found: {0}" -f $path)
+              if ($log) { Stop-Transcript | Out-Null }
+              exit 1
+            }
+
+            Invoke-Checked -Description $name -Action {
+              & $path
+            }
+          }
+
+          Write-Host ""
+          Write-Host "All database update scripts completed successfully."
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
