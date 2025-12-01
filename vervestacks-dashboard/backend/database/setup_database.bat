@@ -155,10 +155,34 @@ IF "%PGPASSWORD%"=="" (
 
 REM psql reads PGPASSWORD automatically – no interactive prompt
 
-echo Testing connection...
+REM =========================================================
+REM Check if database exists; create it if it does not
+REM =========================================================
+echo Checking if database "%DB_NAME%" exists...
+
+set "DB_EXISTS="
+
+for /f "usebackq tokens=1" %%I in (`
+    psql -h "%DB_HOST%" -p "%DB_PORT%" -U "%DB_USER%" -d postgres -tAc "SELECT 1 FROM pg_database WHERE datname = '%DB_NAME%';"
+`) do set "DB_EXISTS=%%I"
+
+if "%DB_EXISTS%"=="1" (
+    echo Database "%DB_NAME%" already exists.
+) else (
+    echo Database "%DB_NAME%" does not exist. Creating...
+    psql -h "%DB_HOST%" -p "%DB_PORT%" -U "%DB_USER%" -d postgres -c "CREATE DATABASE \"%DB_NAME%\" WITH TEMPLATE=template0 ENCODING='UTF8';"
+    IF ERRORLEVEL 1 (
+        echo ERROR: Failed to create database "%DB_NAME%".
+        exit /b 1
+    )
+    echo Database "%DB_NAME%" created successfully.
+)
+
+echo.
+echo Testing connection to "%DB_NAME%"...
 psql -h "%DB_HOST%" -p "%DB_PORT%" -U "%DB_USER%" -d "%DB_NAME%" -c "\q"
 IF ERRORLEVEL 1 (
-    echo ERROR: Could not connect to database.
+    echo ERROR: Could not connect to database "%DB_NAME%".
     exit /b 1
 )
 
