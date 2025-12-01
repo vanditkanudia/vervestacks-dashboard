@@ -7,11 +7,18 @@ REM Run from: vervestacks-dashboard/backend/database/
 
 setlocal enabledelayedexpansion
 
-REM Database configuration
-set PG_HOST=localhost
-set PG_PORT=5432
-set PG_USER=postgres
-set DB_NAME=vervestacks_dashboard
+REM Database configuration – values come from workflow DB_* env vars
+set "PG_HOST=%DB_HOST%"
+if "%PG_HOST%"=="" set "PG_HOST=localhost"
+
+set "PG_PORT=%DB_PORT%"
+if "%PG_PORT%"=="" set "PG_PORT=5432"
+
+set "PG_USER=%DB_USER%"
+if "%PG_USER%"=="" set "PG_USER=postgres"
+
+set "DB_NAME=%DB_NAME%"
+if "%DB_NAME%"=="" set "DB_NAME=vervestacks_dashboard"
 
 echo.
 echo ========================================
@@ -23,7 +30,7 @@ echo.
 REM Check if procedure folder exists
 if not exist "schema\procedure" (
     echo ERROR: schema\procedure folder not found
-    pause
+    @REM pause
     exit /b 1
 )
 
@@ -35,7 +42,7 @@ for %%f in (schema\procedure\*.sql) do (
 
 if %procedure_count%==0 (
     echo ERROR: No .sql files found in schema\procedure folder
-    pause
+    @REM pause
     exit /b 1
 )
 
@@ -58,7 +65,7 @@ psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -c "SELECT 'Connection 
 if errorlevel 1 (
     echo ERROR: PostgreSQL connection failed
     echo Please check your password and ensure PostgreSQL is running
-    pause
+    @REM pause
     exit /b 1
 )
 

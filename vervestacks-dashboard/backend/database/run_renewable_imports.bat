@@ -8,13 +8,13 @@ REM ================================================================
 setlocal enabledelayedexpansion
 
 REM Default connection settings (override via environment variables if needed)
-set PG_HOST=%PG_HOST%
+set PG_HOST=%DB_HOST%
 if "%PG_HOST%"=="" set PG_HOST=localhost
 
-set PG_PORT=%PG_PORT%
+set PG_PORT=%DB_PORT%
 if "%PG_PORT%"=="" set PG_PORT=5432
 
-set PG_USER=%PG_USER%
+set PG_USER=%DB_USER%
 if "%PG_USER%"=="" set PG_USER=postgres
 
 set DB_NAME=%DB_NAME%
@@ -31,13 +31,11 @@ echo Database: %DB_NAME%
 echo ================================================
 echo.
 
-REM psql reads this env var automatically
-REM In CI we rely on DB_PASSWORD from environment; no interactive prompt.
+REM psql reads this env var automatically (non-interactive)
 set "PGPASSWORD=%DB_PASSWORD%"
 
 IF "%PGPASSWORD%"=="" (
     echo ERROR: DB_PASSWORD environment variable is not set.
-    echo Make sure GitHub Actions workflow passes DB_PASSWORD in env.
     exit /b 1
 )
 
