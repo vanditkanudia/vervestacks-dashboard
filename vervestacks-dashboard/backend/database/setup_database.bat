@@ -279,4 +279,4 @@ echo.
 REM Clear password from environment
 set PGPASSWORD=
 
-pause
+@REM pause

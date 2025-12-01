@@ -82,4 +82,4 @@ set PGPASSWORD=
 echo Done.
 endlocal
 
-pause
+@REM pause
