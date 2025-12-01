@@ -32,16 +32,14 @@ echo ================================================
 echo.
 
 REM psql reads this env var automatically
+REM In CI we rely on DB_PASSWORD from environment; no interactive prompt.
 set "PGPASSWORD=%DB_PASSWORD%"
 
-REM === Use password injected from GitHub Actions (DB_PASSWORD) ===
 IF "%PGPASSWORD%"=="" (
-    REM Prompt for password
-    set /p PG_PASSWORD="Enter PostgreSQL password for user '%PG_USER%': "
+    echo ERROR: DB_PASSWORD environment variable is not set.
+    echo Make sure GitHub Actions workflow passes DB_PASSWORD in env.
+    exit /b 1
 )
-
-REM Set password environment variable
-set "PGPASSWORD=%PG_PASSWORD%"
 
 REM Verify SQL files exist
 if not exist "schema\import_renewable_capacity_factors.sql" (

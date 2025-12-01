@@ -132,39 +132,33 @@ echo ========================================
 echo Ready to setup database
 echo ========================================
 echo Database: %DB_NAME%
-echo Host: %PG_HOST%:%PG_PORT%
-echo User: %PG_USER%
+echo Host    : %DB_HOST%:%DB_PORT%
+echo User    : %DB_USER%
 echo.
+
+REM === Use password injected from GitHub Actions (DB_PASSWORD) ===
+IF "%DB_PASSWORD%"=="" (
+    echo ERROR: DB_PASSWORD environment variable is not set.
+    echo Make sure the workflow step passes DB_PASSWORD as env.
+    exit /b 1
+)
 
 REM psql reads this env var automatically
 set "PGPASSWORD=%DB_PASSWORD%"
 
-REM === Use password injected from GitHub Actions (DB_PASSWORD) ===
-IF "%PGPASSWORD%"=="" (
-    REM Prompt for password
-    set /p PG_PASSWORD="Enter PostgreSQL password for user '%PG_USER%': "
-)
-
-REM Set password environment variable
-set "PGPASSWORD=%PG_PASSWORD%"
-
-
-echo.
 echo Testing connection...
-psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d postgres -c "SELECT 'Connection successful' as status;" >nul 2>&1
-if errorlevel 1 (
-    echo ERROR: PostgreSQL connection failed
-    echo Please check your password and ensure PostgreSQL is running
-    pause
+psql -h "%DB_HOST%" -p "%DB_PORT%" -U "%DB_USER%" -d "%DB_NAME%" -c "\q"
+IF ERRORLEVEL 1 (
+    echo ERROR: Could not connect to database.
     exit /b 1
 )
 
-echo Connection successful!
+echo Connection OK.
 echo.
 
 REM Step 1: Create database schema
 echo Step 1: Creating database schema...
-psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d postgres -f schema/setup_schema.sql
+psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d postgres -f schema/setup_schema.sql
 if errorlevel 1 (
     echo ERROR: Schema creation failed
     pause
