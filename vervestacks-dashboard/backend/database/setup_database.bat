@@ -7,18 +7,11 @@ REM Run from: vervestacks-dashboard/backend/database/
 
 setlocal enabledelayedexpansion
 
-REM Database configuration – values come from workflow DB_* env vars
-set "PG_HOST=%DB_HOST%"
-if "%PG_HOST%"=="" set "PG_HOST=localhost"
-
-set "PG_PORT=%DB_PORT%"
-if "%PG_PORT%"=="" set "PG_PORT=5432"
-
-set "PG_USER=%DB_USER%"
-if "%PG_USER%"=="" set "PG_USER=postgres"
-
-set "DB_NAME=%DB_NAME%"
-if "%DB_NAME%"=="" set "DB_NAME=vervestacks_dashboard"
+REM Database configuration
+set PG_HOST=localhost
+set PG_PORT=5432
+set PG_USER=postgres
+set DB_NAME=vervestacks_dashboard
 
 echo.
 echo ========================================
@@ -31,27 +24,27 @@ REM Check if required data files exist
 echo Checking data files...
 if not exist "data\worldcities.csv" (
     echo ERROR: data\worldcities.csv not found
-    @REM pause
+    pause
     exit /b 1
 )
 
 if not exist "data\onshore_zones.csv" (
     echo ERROR: data\onshore_zones.csv not found
     echo Please run: python convert_geojson.py
-    @REM pause
+    pause
     exit /b 1
 )
 
 if not exist "data\offshore_zones.csv" (
     echo ERROR: data\offshore_zones.csv not found
     echo Please run: python convert_geojson.py
-    @REM pause
+    pause
     exit /b 1
 )
 
 if not exist "data\data_overview_tab.csv" (
     echo ERROR: data\data_overview_tab.csv not found
-    @REM pause
+    pause
     exit /b 1
 )
 
@@ -59,14 +52,14 @@ REM OSM files are at project root level (3 levels up from backend/database/)
 if not exist "..\..\..\data\OSM-kan-prebuilt\buses.csv" (
     echo ERROR: ..\..\..\data\OSM-kan-prebuilt\buses.csv not found
     echo OSM buses file should be at project root: data/OSM-kan-prebuilt/buses.csv
-    @REM pause
+    pause
     exit /b 1
 )
 
 if not exist "..\..\..\data\OSM-kan-prebuilt\lines.csv" (
     echo ERROR: ..\..\..\data\OSM-kan-prebuilt\lines.csv not found
     echo OSM lines file should be at project root: data/OSM-kan-prebuilt/lines.csv
-    @REM pause
+    pause
     exit /b 1
 )
 
@@ -86,43 +79,43 @@ REM Check if SQL files exist
 echo Checking SQL files...
 if not exist "schema\setup_schema.sql" (
     echo ERROR: schema\setup_schema.sql not found
-    @REM pause
+    pause
     exit /b 1
 )
 
 if not exist "schema\import_worldcities.sql" (
     echo ERROR: schema\import_worldcities.sql not found
-    @REM pause
+    pause
     exit /b 1
 )
 
 if not exist "schema\import_renewable_zones.sql" (
     echo ERROR: schema\import_renewable_zones.sql not found
-    @REM pause
+    pause
     exit /b 1
 )
 
 if not exist "schema\import_data_overview.sql" (
     echo ERROR: schema\import_data_overview.sql not found
-    @REM pause
+    pause
     exit /b 1
 )
 
 if not exist "schema\import_gem_plants.sql" (
     echo ERROR: schema\import_gem_plants.sql not found
-    @REM pause
+    pause
     exit /b 1
 )
 
 if not exist "schema\import_transmission_generation_plants.sql" (
     echo ERROR: schema\import_transmission_generation_plants.sql not found
-    @REM pause
+    pause
     exit /b 1
 )
 
 if not exist "schema\import_transmission_network.sql" (
     echo ERROR: schema\import_transmission_network.sql not found
-    @REM pause
+    pause
     exit /b 1
 )
 
@@ -139,62 +132,35 @@ echo ========================================
 echo Ready to setup database
 echo ========================================
 echo Database: %DB_NAME%
-echo Host    : %DB_HOST%:%DB_PORT%
-echo User    : %DB_USER%
+echo Host: %PG_HOST%:%PG_PORT%
+echo User: %PG_USER%
 echo.
 
-REM === Use password injected from GitHub Actions (DB_PASSWORD) ===
-REM DB_PASSWORD is set in the workflow env and mapped from the secret
-set "PGPASSWORD=%DB_PASSWORD%"
+REM Prompt for password
+set /p PG_PASSWORD="Enter PostgreSQL password for user '%PG_USER%': "
 
-IF "%PGPASSWORD%"=="" (
-    echo ERROR: DB_PASSWORD environment variable is not set.
-    echo Make sure the workflow step passes DB_PASSWORD as env.
+REM Set password environment variable
+set PGPASSWORD=%PG_PASSWORD%
+
+echo.
+echo Testing connection...
+psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d postgres -c "SELECT 'Connection successful' as status;" >nul 2>&1
+if errorlevel 1 (
+    echo ERROR: PostgreSQL connection failed
+    echo Please check your password and ensure PostgreSQL is running
+    pause
     exit /b 1
 )
 
-REM psql reads PGPASSWORD automatically – no interactive prompt
-
-REM =========================================================
-REM Check if database exists; create it if it does not
-REM =========================================================
-echo Checking if database "%DB_NAME%" exists...
-
-set "DB_EXISTS="
-
-for /f "usebackq tokens=1" %%I in (`
-    psql -h "%DB_HOST%" -p "%DB_PORT%" -U "%DB_USER%" -d postgres -tAc "SELECT 1 FROM pg_database WHERE datname = '%DB_NAME%';"
-`) do set "DB_EXISTS=%%I"
-
-if "%DB_EXISTS%"=="1" (
-    echo Database "%DB_NAME%" already exists.
-) else (
-    echo Database "%DB_NAME%" does not exist. Creating...
-    psql -h "%DB_HOST%" -p "%DB_PORT%" -U "%DB_USER%" -d postgres -c "CREATE DATABASE \"%DB_NAME%\" WITH TEMPLATE=template0 ENCODING='UTF8';"
-    IF ERRORLEVEL 1 (
-        echo ERROR: Failed to create database "%DB_NAME%".
-        exit /b 1
-    )
-    echo Database "%DB_NAME%" created successfully.
-)
-
-echo.
-echo Testing connection to "%DB_NAME%"...
-psql -h "%DB_HOST%" -p "%DB_PORT%" -U "%DB_USER%" -d "%DB_NAME%" -c "\q"
-IF ERRORLEVEL 1 (
-    echo ERROR: Could not connect to database "%DB_NAME%".
-    exit /b 1
-)
-
-echo Connection OK.
+echo Connection successful!
 echo.
 
 REM Step 1: Create database schema
 echo Step 1: Creating database schema...
-psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d postgres -f schema/setup_schema.sql
+psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d postgres -f schema/setup_schema.sql
 if errorlevel 1 (
     echo ERROR: Schema creation failed
-    @REM pause
+    pause
     exit /b 1
 )
 
@@ -204,7 +170,7 @@ echo Step 2: Importing worldcities data...
 psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema/import_worldcities.sql
 if errorlevel 1 (
     echo ERROR: Failed to import worldcities data
-    @REM pause
+    pause
     exit /b 1
 )
 
@@ -214,7 +180,7 @@ echo Step 3: Importing renewable zones data...
 psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema/import_renewable_zones.sql
 if errorlevel 1 (
     echo ERROR: Failed to import renewable zones data
-    @REM pause
+    pause
     exit /b 1
 )
 
@@ -224,7 +190,7 @@ echo Step 4: Importing data overview data...
 psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema/import_data_overview.sql
 if errorlevel 1 (
     echo ERROR: Failed to import data overview data
-    @REM pause
+    pause
     exit /b 1
 )
 
@@ -288,7 +254,7 @@ echo Step 7: Importing transmission network (buses + lines) data...
 psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d %DB_NAME% -f schema/import_transmission_network.sql
 if errorlevel 1 (
     echo ERROR: Failed to import transmission network data
-    @REM pause
+    pause
     exit /b 1
 )
 
@@ -306,4 +272,4 @@ echo.
 REM Clear password from environment
 set PGPASSWORD=
 
-@REM pause
+pause
