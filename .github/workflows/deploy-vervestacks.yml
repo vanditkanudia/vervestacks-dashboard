@@ -613,11 +613,15 @@ jobs:
           }
 
           # 2) Python exe (reuse configured one)
-          $pythonExe = $env:PYTHON_EXE
-          Write-Host ("Using PYTHON_EXE = {0}" -f $pythonExe)
+          $appRoot    = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $venvPython = Join-Path $appRoot 'python-service\.venv\Scripts\python.exe'
+          $pythonExe  = $venvPython
+
+          Write-Host ("Using venv PYTHON_EXE = {0}" -f $pythonExe)
 
           if (-not (Test-Path $pythonExe)) {
-            Write-Host "### ERROR: PYTHON_EXE not found at $pythonExe"
+            Write-Host "### ERROR: venv python not found at $pythonExe"
+            Write-Host "Make sure the 'Setup python service' step ran successfully before this one."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
