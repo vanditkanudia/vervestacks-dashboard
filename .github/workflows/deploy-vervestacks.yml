@@ -595,7 +595,7 @@ jobs:
           Write-Host "Attempting direct psql connection from runner ..."
 
           # IMPORTANT: adjust this path to your actual psql.exe if needed
-          $psql = "C:\Program Files\PostgreSQL\16\bin\psql.exe"
+          $psql = "C:\Program Files\PostgreSQL\15\bin\psql.exe"
 
           if (-not (Test-Path $psql)) {
             Write-Host "### ERROR: psql.exe not found at $psql"
