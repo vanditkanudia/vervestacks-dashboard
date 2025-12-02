@@ -132,19 +132,21 @@ echo ========================================
 echo Ready to setup database
 echo ========================================
 echo Database: %DB_NAME%
-echo Host: %PG_HOST%:%PG_PORT%
-echo User: %PG_USER%
+echo Host: %DB_HOST%:%DB_PORT%
+echo User: %DB_USER%
 echo.
 
-REM Prompt for password
-set /p PG_PASSWORD="Enter PostgreSQL password for user '%PG_USER%': "
+REM === Use password injected from GitHub Actions (DB_PASSWORD) ===
+set PGPASSWORD=%DB_PASSWORD%
 
-REM Set password environment variable
-set PGPASSWORD=%PG_PASSWORD%
-
+IF "%PGPASSWORD%"=="" (
+    echo ERROR: DB_PASSWORD environment variable is not set.
+    echo Make sure the workflow step passes DB_PASSWORD in env.
+    exit /b 1
+)
 echo.
 echo Testing connection...
-psql -h %PG_HOST% -p %PG_PORT% -U %PG_USER% -d postgres -c "SELECT 'Connection successful' as status;" >nul 2>&1
+psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d postgres -c "SELECT 'Connection successful' as status;" >nul 2>&1
 if errorlevel 1 (
     echo ERROR: PostgreSQL connection failed
     echo Please check your password and ensure PostgreSQL is running
