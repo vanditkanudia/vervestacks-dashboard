@@ -574,7 +574,45 @@ jobs:
           Write-Host 'Python virtual environment created and dependencies installed successfully.'
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
+      # ==========================================================
+      # 4b) DEBUG: TEST DIRECT DB CONNECTION FROM WORKFLOW  
+      # ==========================================================
+      - name: Debug DB connection directly from workflow
+        shell: powershell
+        env:
+          DB_HOST:     ${{ secrets.PG_HOST }}
+          DB_PORT:     ${{ secrets.PG_PORT }}
+          DB_NAME:     ${{ secrets.DB_NAME }}
+          DB_USER:     ${{ secrets.PG_USER }}
+          DB_PASSWORD: ${{ secrets.PG_PASSWORD }}
+        run: |
+          Write-Host "=== [Debug DB connection] ==="
+          Write-Host "Host    = $env:DB_HOST"
+          Write-Host "Port    = $env:DB_PORT"
+          Write-Host "User    = $env:DB_USER"
+          Write-Host "DB Name = $env:DB_NAME"
+          Write-Host ""
+          Write-Host "Attempting direct psql connection from runner ..."
 
+          # IMPORTANT: adjust this path to your actual psql.exe if needed
+          $psql = "C:\Program Files\PostgreSQL\16\bin\psql.exe"
+
+          if (-not (Test-Path $psql)) {
+            Write-Host "### ERROR: psql.exe not found at $psql"
+            exit 1
+          }
+
+          $env:PGPASSWORD = $env:DB_PASSWORD
+
+          & $psql -h $env:DB_HOST -p $env:DB_PORT -U $env:DB_USER -d $env:DB_NAME -c "SELECT current_database(), current_user;"
+          $rc = $LASTEXITCODE
+          Write-Host "psql exit code = $rc"
+          if ($rc -ne 0) {
+            Write-Host "### ERROR: direct DB connection failed."
+            exit $rc
+          }
+
+          Write-Host "Direct DB connection OK."
       # ==========================================================
       # 5) UPDATE DATABASE (run Python + BAT scripts)
       # ==========================================================
