@@ -9,9 +9,9 @@ SELECT 'Creating VerveStacks database...' as status;
 -- Create database (this will fail gracefully if it already exists)
 -- DO $$
 -- BEGIN
-    IF NOT EXISTS (SELECT 1 FROM pg_database WHERE datname = 'vervestacks_dashboard') THEN
-        CREATE DATABASE vervestacks_dashboard;
-    END IF;
+-- IF NOT EXISTS (SELECT 1 FROM pg_database WHERE datname = 'vervestacks_dashboard') THEN
+CREATE DATABASE vervestacks_dashboard;
+-- END IF;
 -- END
 -- $$;
 

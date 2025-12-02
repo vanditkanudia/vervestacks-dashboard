@@ -9,6 +9,7 @@ env:
   # Flags
   Update_Data_On_Local: "true"
   Update_Data_On_Hetzner: "false"
+  RUN_ONLY_DB_STEP: "false"
 
   # NEW: control whether start.bat opens visible consoles
   # 'false' = run inline and check exit code (CI mode)
@@ -93,7 +94,7 @@ jobs:
       # MAP UNC SHARE (kanvault)
       # =====================
       - name: Map kanvault share
-        if: env.Update_Data_On_Local == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP != 'false'
         shell: powershell
         env:
           KANVAULT_PASSWORD: ${{ secrets.KANVAULT_PASSWORD }}
@@ -131,7 +132,7 @@ jobs:
       # 1) ALL DATA SYNC (KANVAULT + LOCAL) IN ONE STEP
       # ==========================================================
       - name: Sync all data (kanvault + local) to IIS
-        if: env.Update_Data_On_Local == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP != 'true'
         shell: powershell
         run: |
           $stepName = 'Sync all data (kanvault + local) to IIS'
@@ -252,7 +253,7 @@ jobs:
       #     (EXCLUDING .git, .github, .venv, node_modules)
       # ==========================================================
       - name: Sync full VerveStacks repo to DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP != 'true'
         shell: powershell
         run: |
           $stepName = 'Sync full VerveStacks repo to DEPLOY_ROOT'
@@ -311,7 +312,7 @@ jobs:
       #     (EXCLUDING .git, .github, .venv, node_modules)
       # ==========================================================
       - name: Deploy app from APP_SOURCE_ROOT to DEPLOY_ROOT\APP_SUBROOT
-        if: env.Update_Data_On_Local == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP != 'true'
         shell: powershell
         run: |
           $stepName = 'Deploy app files to IIS folder'
@@ -368,6 +369,7 @@ jobs:
       # 3) BACKEND + FRONTEND (npm) ON DESTINATION
       # ==========================================================
       - name: Install JS deps and build frontend on DEPLOY_ROOT
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP != 'true'
         shell: powershell
         run: |
           $stepName = 'Install JS deps and build frontend'
@@ -455,6 +457,7 @@ jobs:
       # 3b) PUBLISH FRONTEND BUILD TO IIS ROOT
       # ==========================================================
       - name: Publish frontend build to IIS root
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP != 'true'
         shell: powershell
         run: |
           $stepName = 'Publish frontend build to IIS root'
@@ -502,6 +505,7 @@ jobs:
       # 4) PYTHON SERVICE SETUP (ALWAYS RECREATE .venv)
       # ==========================================================
       - name: Setup python service on deployed folder
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
           $stepName = 'Setup python service'
@@ -575,7 +579,7 @@ jobs:
       # 5) UPDATE DATABASE (run Python + BAT scripts)
       # ==========================================================
       - name: Update Database
-        if: env.Update_Data_On_Local == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         env:
           # Optional: DB connection info if your scripts need it
@@ -703,7 +707,7 @@ jobs:
       # 6) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
       # ==========================================================
       - name: Deploy to Hetzner (placeholder)
-        if: env.Update_Data_On_Hetzner == 'true'
+        if: env.Update_Data_On_Hetzner == 'true' && env.RUN_ONLY_DB_STEP != 'true'
         shell: powershell
         run: |
           $stepName = 'Deploy to Hetzner (placeholder)'
@@ -727,7 +731,7 @@ jobs:
       # 7) RUN start.bat AFTER DEPLOYMENT
       # ==========================================================
       - name: Run start.bat after deployment
-        if: env.Update_Data_On_Local == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP != 'true'
         shell: powershell
         run: |
           $stepName = 'Run start.bat'
