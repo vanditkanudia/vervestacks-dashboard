@@ -785,7 +785,7 @@ jobs:
         if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
-          $stepName = 'Restart services (stop_all_services.ps1 → start_all_services.ps1)'
+          $stepName = 'Restart services'
           $log = $env:LOG_FILE
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
           $ErrorActionPreference = 'Stop'
