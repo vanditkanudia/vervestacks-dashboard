@@ -14,7 +14,7 @@ env:
   # NEW: VENV STRATEGY
   # false = reuse static venv at STATIC_VENV_ROOT
   # true  = create a new .venv under python-service on each deploy
-  CREATE_NEW_VENV: "false"
+  CREATE_NEW_VENV: "true"
   STATIC_VENV_ROOT: "D:\\Pyvenvs\\Visuals.py\\.venv"
 
   # NEW: control whether start.bat opens visible consoles
