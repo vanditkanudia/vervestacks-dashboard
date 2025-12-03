@@ -11,6 +11,12 @@ env:
   Update_Data_On_Hetzner: "false"
   RUN_ONLY_DB_STEP: "true"  # 'true' to run only DB update step; 'false' to run full deploy
 
+  # NEW: VENV STRATEGY
+  # false = reuse static venv at STATIC_VENV_ROOT
+  # true  = create a new .venv under python-service on each deploy
+  CREATE_NEW_VENV: "false"
+  STATIC_VENV_ROOT: "D:\\Pyvenvs\\Visuals.py\\.venv"
+
   # NEW: control whether start.bat opens visible consoles
   # 'false' = run inline and check exit code (CI mode)
   # 'true'  = Start-Process -> separate window(s), no exit-code check
@@ -36,6 +42,7 @@ env:
   APP_SUBROOT: "vervestacks-dashboard"
 
   # Python service settings
+  # Base interpreter used only when CREATE_NEW_VENV == "true"
   PYTHON_EXE: "C:\\Users\\Vandit\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
 
   # App / repo source roots on the RUNNER (GitHub workspace)
@@ -502,7 +509,7 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 4) PYTHON SERVICE SETUP (ALWAYS RECREATE .venv)
+      # 4) PYTHON SERVICE SETUP (STATIC OR NEW VENV)
       # ==========================================================
       - name: Setup python service on deployed folder
         if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
@@ -522,58 +529,96 @@ jobs:
 
           Write-Host "=== [$stepName] ==="
 
-          $appRoot    = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
-          $pythonPath = Join-Path $appRoot 'python-service'
+          $appRoot        = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $pythonSvcRoot  = Join-Path $appRoot 'python-service'
+          $staticVenvRoot = $env:STATIC_VENV_ROOT
+          $createNew      = $env:CREATE_NEW_VENV
 
-          Write-Host ("Python service path = {0}" -f $pythonPath)
-          Write-Host ("PYTHON_EXE         = {0}" -f $env:PYTHON_EXE)
+          Write-Host ("Python service path = {0}" -f $pythonSvcRoot)
+          Write-Host ("CREATE_NEW_VENV     = {0}" -f $createNew)
+          Write-Host ("STATIC_VENV_ROOT    = {0}" -f $staticVenvRoot)
+          Write-Host ("PYTHON_EXE          = {0}" -f $env:PYTHON_EXE)
 
-          if (-not (Test-Path $pythonPath)) {
+          if (-not (Test-Path $pythonSvcRoot)) {
             Write-Host '### ERROR DETAIL: python-service folder not found under app root.'
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          cd $pythonPath
+          # We always run pip in the python-service folder because requirements.txt lives here
+          Set-Location $pythonSvcRoot
 
-          if (Test-Path '.venv') {
-            Write-Host 'Removing existing virtual environment .venv...'
-            try {
-              Remove-Item -Recurse -Force '.venv'
+          if ($createNew -eq 'true') {
+            Write-Host 'Using per-deploy virtual environment under python-service\.venv'
+
+            if (Test-Path '.venv') {
+              Write-Host 'Removing existing virtual environment .venv...'
+              try {
+                Remove-Item -Recurse -Force '.venv'
+              }
+              catch {
+                Write-Host ("### ERROR: Failed to delete old .venv: {0}" -f $_.Exception.Message)
+                if ($log) { Stop-Transcript | Out-Null }
+                exit 1
+              }
             }
-            catch {
-              Write-Host ("### ERROR: Failed to delete old .venv: {0}" -f $_.Exception.Message)
+
+            Write-Host 'Creating virtual environment in .venv using PYTHON_EXE...'
+            & $env:PYTHON_EXE -m venv .venv
+            if ($LASTEXITCODE -ne 0) {
+              Write-Host ("### ERROR: python -m venv .venv failed with exit code {0}" -f $LASTEXITCODE)
+              if ($log) { Stop-Transcript | Out-Null }
+              exit $LASTEXITCODE
+            }
+
+            $venvPython = Join-Path $pythonSvcRoot '.venv\Scripts\python.exe'
+          }
+          else {
+            Write-Host 'Using static virtual environment at STATIC_VENV_ROOT'
+
+            if (-not (Test-Path $staticVenvRoot)) {
+              Write-Host ("### ERROR DETAIL: STATIC_VENV_ROOT not found: {0}" -f $staticVenvRoot)
               if ($log) { Stop-Transcript | Out-Null }
               exit 1
             }
+
+            $venvPython = Join-Path $staticVenvRoot 'Scripts\python.exe'
           }
 
-          Write-Host 'Creating virtual environment in .venv using PYTHON_EXE...'
-          & $env:PYTHON_EXE -m venv .venv
-          if ($LASTEXITCODE -ne 0) {
-            Write-Host ("### ERROR: python -m venv .venv failed with exit code {0}" -f $LASTEXITCODE)
+          Write-Host ("Resolved venv python = {0}" -f $venvPython)
+
+          if (-not (Test-Path $venvPython)) {
+            Write-Host ("### ERROR DETAIL: Python executable not found at {0}" -f $venvPython)
             if ($log) { Stop-Transcript | Out-Null }
-            exit $LASTEXITCODE
+            exit 1
           }
 
           Write-Host 'Installing/Updating Python dependencies from requirements.txt...'
-          .\.venv\Scripts\python.exe -m pip install --upgrade pip
+          & $venvPython -m pip install --upgrade pip
           if ($LASTEXITCODE -ne 0) {
             Write-Host ("### ERROR: pip upgrade failed with exit code {0}" -f $LASTEXITCODE)
             if ($log) { Stop-Transcript | Out-Null }
             exit $LASTEXITCODE
           }
 
-          .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+          $requirements = Join-Path $pythonSvcRoot 'requirements.txt'
+          if (-not (Test-Path $requirements)) {
+            Write-Host ("### ERROR DETAIL: requirements.txt not found at {0}" -f $requirements)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          & $venvPython -m pip install -r $requirements
           if ($LASTEXITCODE -ne 0) {
             Write-Host ("### ERROR: pip install -r requirements.txt failed with exit code {0}" -f $LASTEXITCODE)
             if ($log) { Stop-Transcript | Out-Null }
             exit $LASTEXITCODE
           }
 
-          Write-Host 'Python virtual environment created and dependencies installed successfully.'
+          Write-Host 'Python environment ready and dependencies installed successfully.'
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
+
       # ==========================================================
       # 4b) DEBUG: TEST DIRECT DB CONNECTION FROM WORKFLOW  
       # ==========================================================
@@ -613,6 +658,7 @@ jobs:
           }
 
           Write-Host "Direct DB connection OK."
+
       # ==========================================================
       # 5) UPDATE DATABASE (run Python + BAT scripts)
       # ==========================================================
@@ -658,17 +704,25 @@ jobs:
           Write-Host ("Changing working directory to DB folder: {0}" -f $dbFolder)
           Set-Location $dbFolder
           Write-Host ("Current directory is now: {0}" -f (Get-Location))
-          
-          # 2) Python exe (reuse configured one)
-          $appRoot    = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
-          $venvPython = Join-Path $appRoot 'python-service\.venv\Scripts\python.exe'
-          $pythonExe  = $venvPython
 
-          Write-Host ("Using venv PYTHON_EXE = {0}" -f $pythonExe)
+          # 2) Python exe – share logic with "Setup python service"
+          $pythonSvcRoot = Join-Path $appRoot 'python-service'
+          $createNew     = $env:CREATE_NEW_VENV
+
+          if ($createNew -eq 'true') {
+            # Use the per-deploy .venv under python-service
+            $pythonExe = Join-Path $pythonSvcRoot '.venv\Scripts\python.exe'
+            Write-Host ("Using per-deploy venv PYTHON_EXE = {0}" -f $pythonExe)
+          }
+          else {
+            # Use the static venv at STATIC_VENV_ROOT
+            $pythonExe = Join-Path $env:STATIC_VENV_ROOT 'Scripts\python.exe'
+            Write-Host ("Using static venv PYTHON_EXE = {0}" -f $pythonExe)
+          }
 
           if (-not (Test-Path $pythonExe)) {
-            Write-Host "### ERROR: venv python not found at $pythonExe"
-            Write-Host "Make sure the 'Setup python service' step ran successfully before this one."
+            Write-Host "### ERROR: python executable not found at $pythonExe"
+            Write-Host "Make sure the 'Setup python service' step ran successfully and STATIC_VENV_ROOT / .venv is correct."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -676,14 +730,14 @@ jobs:
           # 3) LIST OF SCRIPTS TO RUN (EDIT THESE NAMES to your real files)
           #    They are assumed to live under backend\database
           $pythonScripts = @(
-            'consolidate_generation_plants.py',    
-            'convert_geojson.py'      
+            'consolidate_generation_plants.py',
+            'convert_geojson.py'
           )
 
           $batchScripts = @(
-            'setup_database.bat',   
-            'run_renewable_imports.bat',      
-            'setup_procedures.bat'    
+            'setup_database.bat',
+            'run_renewable_imports.bat',
+            'setup_procedures.bat'
           )
 
           # 4) Helper to run a command and check exit code
@@ -817,4 +871,3 @@ jobs:
             Write-Host "start.bat completed successfully."
             if ($log) { Stop-Transcript | Out-Null }
             exit 0
-          }
