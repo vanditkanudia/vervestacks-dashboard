@@ -43,7 +43,7 @@ env:
 
   # Python service settings
   # Base interpreter used only when CREATE_NEW_VENV == "true"
-  PYTHON_EXE: "C:\\Users\\Vandit\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+  PYTHON_EXE: "D:\\Pyvenvs\\Visuals.py\\.venv\\Scripts\\python.exe"
 
   # App / repo source roots on the RUNNER (GitHub workspace)
   # github.workspace is the checkout path for this repo on the runner
@@ -591,14 +591,6 @@ jobs:
             Write-Host ("### ERROR DETAIL: Python executable not found at {0}" -f $venvPython)
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
-          }
-
-          Write-Host 'Installing/Updating Python dependencies from requirements.txt...'
-          & $venvPython -m pip install --upgrade pip
-          if ($LASTEXITCODE -ne 0) {
-            Write-Host ("### ERROR: pip upgrade failed with exit code {0}" -f $LASTEXITCODE)
-            if ($log) { Stop-Transcript | Out-Null }
-            exit $LASTEXITCODE
           }
 
           $requirements = Join-Path $pythonSvcRoot 'requirements.txt'
