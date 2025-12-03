@@ -781,7 +781,7 @@ jobs:
       # ==========================================================
       # 5b) RESTART SERVICES (stop_all_services.ps1 → start_all_services.ps1)
       # ==========================================================
-      - name: Restart services (stop_all_services.ps1 then start_all_services.ps1)
+      - name: Restart services
         if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
