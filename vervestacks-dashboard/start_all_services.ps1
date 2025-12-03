@@ -126,5 +126,5 @@ Write-Host "| Backend: $backendDir" -ForegroundColor Cyan
 Write-Host "| Frontend: $frontendDir" -ForegroundColor Cyan
 Write-Host "+-------------------------------------------------------------+" -ForegroundColor DarkGray
 Write-Host ""
-Write-Host "Press any key to close this window" -ForegroundColor Yellow
+# Write-Host "Press any key to close this window" -ForegroundColor Yellow
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')

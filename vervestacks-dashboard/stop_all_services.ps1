@@ -72,5 +72,5 @@ foreach ($port in $ports) {
 Write-Host ""
 Write-Host "🎉 All services stopped successfully!" -ForegroundColor Green
 Write-Host ""
-Write-Host "Press any key to close this window" -ForegroundColor Yellow
+# Write-Host "Press any key to close this window" -ForegroundColor Yellow
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
