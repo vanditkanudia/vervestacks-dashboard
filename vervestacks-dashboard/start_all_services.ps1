@@ -126,5 +126,10 @@ Write-Host "| Backend: $backendDir" -ForegroundColor Cyan
 Write-Host "| Frontend: $frontendDir" -ForegroundColor Cyan
 Write-Host "+-------------------------------------------------------------+" -ForegroundColor DarkGray
 Write-Host ""
-# Write-Host "Press any key to close this window" -ForegroundColor Yellow
-$null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
+
+# In interactive use (double-click / manual run), pause before closing.
+# In GitHub Actions (non-interactive), DO NOT wait for a key press.
+if (-not $env:GITHUB_ACTIONS) {
+    # Write-Host "Press any key to close this window" -ForegroundColor Yellow
+    # $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+}

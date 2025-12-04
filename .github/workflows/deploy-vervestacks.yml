@@ -17,6 +17,9 @@ env:
   CREATE_NEW_VENV: "false"
   STATIC_VENV_ROOT: "D:\\Pyvenvs\\Visuals.py\\.venv"
 
+  # Base Python EXE used ONLY to create new venvs
+  PYTHON_EXE: STATIC_VENV_ROOT\\Scripts\\python.exe
+
   # NEW: control whether start.bat opens visible consoles
   SHOW_START_CONSOLES: "true"
 
@@ -38,9 +41,6 @@ env:
 
   # Application subroot (beneath DEPLOY_ROOT)
   APP_SUBROOT: "vervestacks-dashboard"
-
-  # Base Python EXE used ONLY to create new venvs
-  PYTHON_EXE: "C:\\Users\\Vandit\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
 
   # App / repo source roots on the RUNNER (GitHub workspace)
   REPO_SOURCE_ROOT: "${{ github.workspace }}"
@@ -584,13 +584,13 @@ jobs:
             exit 1
           }
 
-          Write-Host 'Installing/Updating Python dependencies from requirements.txt...'
-          & $venvPython -m pip install --upgrade "pip<24"
-          if ($LASTEXITCODE -ne 0) {
-            Write-Host ("### ERROR: pip upgrade failed with exit code {0}" -f $LASTEXITCODE)
-            if ($log) { Stop-Transcript | Out-Null }
-            exit $LASTEXITCODE
-          }
+          # Write-Host 'Installing/Updating Python dependencies from requirements.txt...'
+          # & $venvPython -m pip install --upgrade "pip<24"
+          # if ($LASTEXITCODE -ne 0) {
+          #   Write-Host ("### ERROR: pip upgrade failed with exit code {0}" -f $LASTEXITCODE)
+          #   if ($log) { Stop-Transcript | Out-Null }
+          #   exit $LASTEXITCODE
+          # }
 
           $requirements = Join-Path $pythonSvcRoot 'requirements.txt'
           if (-not (Test-Path $requirements)) {
@@ -653,7 +653,7 @@ jobs:
       # 5) UPDATE DATABASE (Python + BAT scripts)
       # ==========================================================
       - name: Update Database
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         env:
           DB_HOST: ${{ secrets.PG_HOST }}
