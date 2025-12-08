@@ -13,6 +13,19 @@ Write-Host ""
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 Write-Host "Script location: $scriptDir" -ForegroundColor Cyan
 
+# Detect if running in GitHub Actions
+$runningInCI = $env:GITHUB_ACTIONS -eq 'true'
+
+# Log directory (only used in CI)
+$logDir = Join-Path $scriptDir "logs"
+if ($runningInCI -and -not (Test-Path $logDir)) {
+    try {
+        New-Item -ItemType Directory -Path $logDir -Force | Out-Null
+    } catch {
+        Write-Host "WARNING: Failed to create log directory: $logDir - $($_.Exception.Message)" -ForegroundColor Yellow
+    }
+}
+
 # Check required directories
 $pythonDir = Join-Path $scriptDir "python-service"
 $backendDir = Join-Path $scriptDir "backend"
@@ -64,14 +77,56 @@ Write-Host ""
 
 # Start Python FastAPI service
 Write-Host "Starting Python FastAPI service..." -ForegroundColor Green
-$pythonCmd = "cd '$pythonDir'; `$env:PYTHON_ENV='development'; python api_server.py"
-Start-Process powershell -ArgumentList "-NoExit", "-Command", $pythonCmd -WindowStyle Normal
+
+$pythonCmd = "& { `$host.UI.RawUI.WindowTitle = 'VS-Visuals-Python'; cd '$pythonDir'; python api_server.py }"
+
+if ($runningInCI) {
+    # In GitHub Actions – run headless and capture logs
+    $pythonOutLog = Join-Path $logDir "python-service.log"
+    $pythonErrLog = Join-Path $logDir "python-service-error.log"
+
+    Start-Process powershell `
+        -ArgumentList "-NoExit", "-NoLogo", "-Command", $pythonCmd `
+        -RedirectStandardOutput $pythonOutLog `
+        -RedirectStandardError  $pythonErrLog `
+        -WindowStyle Hidden     | Out-Null
+
+    Write-Host "Python service logs: $pythonOutLog, $pythonErrLog" -ForegroundColor DarkCyan
+}
+else {
+    # Local dev – keep behaviour: open visible terminal
+    Start-Process powershell `
+        -ArgumentList "-NoExit", "-NoLogo", "-Command", $pythonCmd `
+        -WindowStyle Normal
+}
+
 Start-Sleep -Seconds 3
 
 # Start Node.js backend
 Write-Host "Starting Node.js backend..." -ForegroundColor Green
-$backendCmd = "cd '$backendDir'; `$env:NODE_ENV='development'; npm start"
-Start-Process powershell -ArgumentList "-NoExit", "-Command", $backendCmd -WindowStyle Normal
+
+$backendCmd = "& { `$host.UI.RawUI.WindowTitle = 'VS-Visuals-Backend'; cd '$backendDir'; npm start }"
+
+if ($runningInCI) {
+    # In GitHub Actions – capture backend logs
+    $backendOutLog = Join-Path $logDir "backend.log"
+    $backendErrLog = Join-Path $logDir "backend-error.log"
+
+    Start-Process powershell `
+        -ArgumentList "-NoExit", "-NoLogo", "-Command", $backendCmd `
+        -RedirectStandardOutput $backendOutLog `
+        -RedirectStandardError  $backendErrLog `
+        -WindowStyle Hidden     | Out-Null
+
+    Write-Host "Backend logs: $backendOutLog, $backendErrLog" -ForegroundColor DarkCyan
+}
+else {
+    # Local dev – open visible terminal as before
+    Start-Process powershell `
+        -ArgumentList "-NoExit", "-NoLogo", "-Command", $backendCmd `
+        -WindowStyle Normal
+}
+
 Start-Sleep -Seconds 3
 
 # Start React frontend
@@ -130,6 +185,6 @@ Write-Host ""
 # In interactive use (double-click / manual run), pause before closing.
 # In GitHub Actions (non-interactive), DO NOT wait for a key press.
 if (-not $env:GITHUB_ACTIONS) {
-    # Write-Host "Press any key to close this window" -ForegroundColor Yellow
-    # $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+    Write-Host "Press any key to close this window" -ForegroundColor Yellow
+    $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 }
