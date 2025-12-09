@@ -93,6 +93,69 @@ jobs:
           exit 0
 
       # =====================
+      # STOP WINDOWS SERVICES (Python + Backend)
+      # =====================
+      - name: Stop VerveStacks Python & Backend services
+        shell: powershell
+        run: |
+          $stepName = 'Stop Windows services (Python + Backend)'
+          $log = $env:LOG_FILE
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host ("### STEP FAILED: {0}" -f $stepName)
+            Write-Host ("### ERROR: {0}" -f $_.Exception.Message)
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          Write-Host ("=== [{0}] ===" -f $stepName)
+
+          # Adjust these names if your NSSM service names differ
+          $services = @(
+            'VerveStacks-Python',
+            'VerveStacks-Backend'
+          )
+
+          foreach ($svcName in $services) {
+            $svc = Get-Service -Name $svcName -ErrorAction SilentlyContinue
+
+            if (-not $svc) {
+              Write-Host ("Service '{0}' not found. Skipping." -f $svcName)
+              continue
+            }
+
+            if ($svc.Status -eq 'Stopped') {
+              Write-Host ("Service '{0}' is already stopped." -f $svcName)
+              continue
+            }
+
+            Write-Host ("Stopping service '{0}'..." -f $svcName)
+            Stop-Service -Name $svcName -Force
+
+            # Wait up to 30 seconds for clean stop
+            $timeout = [TimeSpan]::FromSeconds(30)
+            $sw = [System.Diagnostics.Stopwatch]::StartNew()
+
+            do {
+              $svc.Refresh()
+              if ($svc.Status -eq 'Stopped') { break }
+              Start-Sleep -Seconds 1
+            } while ($sw.Elapsed -lt $timeout)
+
+            if ($svc.Status -eq 'Stopped') {
+              Write-Host ("Service '{0}' stopped successfully." -f $svcName)
+            }
+            else {
+              Write-Host ("WARNING: Service '{0}' did not reach Stopped state in time. Current status: {1}" -f $svcName, $svc.Status)
+            }
+          }
+
+          if ($log) { Stop-Transcript | Out-Null }
+          exit 0
+
+      # =====================
       # MAP UNC SHARE (kanvault)
       # =====================
       - name: Map kanvault share
@@ -254,7 +317,7 @@ jobs:
       # 1b) SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
       # ==========================================================
       - name: Sync full VerveStacks repo to DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
           $stepName = 'Sync full VerveStacks repo to DEPLOY_ROOT'
@@ -311,7 +374,7 @@ jobs:
       # 2) APP DEPLOY (APP_SOURCE_ROOT → DEPLOY_ROOT\APP_SUBROOT)
       # ==========================================================
       - name: Deploy app from APP_SOURCE_ROOT to DEPLOY_ROOT\APP_SUBROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
           $stepName = 'Deploy app files to IIS folder'
@@ -368,7 +431,7 @@ jobs:
       # 3) BACKEND + FRONTEND (npm) ON DESTINATION
       # ==========================================================
       - name: Install JS deps and build frontend on DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
           $stepName = 'Install JS deps and build frontend'
@@ -584,14 +647,6 @@ jobs:
             exit 1
           }
 
-          # Write-Host 'Installing/Updating Python dependencies from requirements.txt...'
-          # & $venvPython -m pip install --upgrade "pip<24"
-          # if ($LASTEXITCODE -ne 0) {
-          #   Write-Host ("### ERROR: pip upgrade failed with exit code {0}" -f $LASTEXITCODE)
-          #   if ($log) { Stop-Transcript | Out-Null }
-          #   exit $LASTEXITCODE
-          # }
-
           $requirements = Join-Path $pythonSvcRoot 'requirements.txt'
           if (-not (Test-Path $requirements)) {
             Write-Host ("### ERROR DETAIL: requirements.txt not found at {0}" -f $requirements)
@@ -779,7 +834,7 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 5b) RESTART SERVICES (stop_all_services.ps1 → start_all_services.ps1)
+      # 5b) RESTART SERVICES (start_all_services.ps1 ONLY)
       # ==========================================================
       - name: Restart services
         if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
@@ -799,34 +854,16 @@ jobs:
 
           Write-Host "=== [$stepName] ==="
 
-          $appRoot = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
-          $stopScript  = Join-Path $appRoot 'stop_all_services.ps1'
+          $appRoot     = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
           $startScript = Join-Path $appRoot 'start_all_services.ps1'
 
-          Write-Host ("App root           = {0}" -f $appRoot)
-          Write-Host ("Stop script  path  = {0}" -f $stopScript)
-          Write-Host ("Start script path  = {0}" -f $startScript)
-
-          if (-not (Test-Path $stopScript)) {
-            Write-Host ("### ERROR DETAIL: stop_all_services.ps1 not found at {0}" -f $stopScript)
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
+          Write-Host ("App root          = {0}" -f $appRoot)
+          Write-Host ("Start script path = {0}" -f $startScript)
 
           if (-not (Test-Path $startScript)) {
             Write-Host ("### ERROR DETAIL: start_all_services.ps1 not found at {0}" -f $startScript)
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
-          }
-
-          Write-Host "Stopping services via stop_all_services.ps1..."
-          & powershell.exe -ExecutionPolicy Bypass -File $stopScript
-          $rc = $LASTEXITCODE
-          Write-Host ("stop_all_services.ps1 exit code = {0}" -f $rc)
-          if ($rc -ne 0) {
-            Write-Host ("### ERROR: stop_all_services.ps1 failed with exit code {0}" -f $rc)
-            if ($log) { Stop-Transcript | Out-Null }
-            exit $rc
           }
 
           Write-Host "Starting services via start_all_services.ps1..."
@@ -839,7 +876,7 @@ jobs:
             exit $rc
           }
 
-          Write-Host "Services stopped and started successfully."
+          Write-Host "Services started successfully."
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
@@ -868,13 +905,13 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 7) RUN start.bat AFTER DEPLOYMENT (only in full deploy mode)
+      # 5c) RUN start.bat AFTER DB-ONLY UPDATE (DISABLED – using start_all_services.ps1)
       # ==========================================================
-      - name: Run start.bat after deployment
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+      - name: Run start.bat after DB-only update (disabled; using start_all_services.ps1)
+        if: false
         shell: powershell
         run: |
-          $stepName = 'Run start.bat'
+          $stepName = 'Run start.bat (DB-only mode)'
           $log = $env:LOG_FILE
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
           $ErrorActionPreference = 'Stop'
@@ -888,11 +925,9 @@ jobs:
 
           Write-Host "=== [$stepName] ==="
 
-          $scriptPath   = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
-          $showConsoles = $env:SHOW_START_CONSOLES
+          $scriptPath  = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
 
           Write-Host ("Expected start.bat path: {0}" -f $scriptPath)
-          Write-Host ("SHOW_START_CONSOLES   : {0}" -f $showConsoles)
 
           if (-not (Test-Path $scriptPath)) {
             Write-Host '### ERROR DETAIL: start.bat not found. Check that it exists in the app root.'
@@ -900,22 +935,15 @@ jobs:
             exit 1
           }
 
-          if ($showConsoles -eq 'true') {
-            Write-Host 'SHOW_START_CONSOLES == true, launching start.bat in a separate window and NOT waiting for it.'
-            $cmdArgs = "/c `"`"$scriptPath`"`""
-            Start-Process -FilePath "cmd.exe" -ArgumentList $cmdArgs -WindowStyle Normal | Out-Null
+          Write-Host 'Running start.bat inline and waiting for it to finish...'
+          & $scriptPath
+          $rc = $LASTEXITCODE
+          if ($rc -ne 0) {
+            Write-Host ("### ERROR DETAIL: start.bat exited with code {0}. See any messages printed by the script above." -f $rc)
             if ($log) { Stop-Transcript | Out-Null }
-            exit 0
+            exit $rc
           }
-          else {
-            Write-Host 'SHOW_START_CONSOLES != true, running start.bat inline and waiting for it to finish.'
-            & $scriptPath
-            $rc = $LASTEXITCODE
-            if ($rc -ne 0) {
-              Write-Host ("### ERROR DETAIL: start.bat exited with code {0}. See any messages printed by the script above." -f $rc)
-              if ($log) { Stop-Transcript | Out-Null }
-              exit $rc
-            }
-            Write-Host "start.bat completed successfully."
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 0
+
+          Write-Host "start.bat completed successfully (DB-only mode)."
+          if ($log) { Stop-Transcript | Out-Null }
+          exit 0

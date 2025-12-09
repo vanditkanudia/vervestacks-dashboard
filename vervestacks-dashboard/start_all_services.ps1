@@ -13,9 +13,6 @@ Write-Host ""
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 Write-Host "Script location: $scriptDir" -ForegroundColor Cyan
 
-# Detect if running in GitHub Actions
-$runningInCI = $env:GITHUB_ACTIONS -eq 'true'
-
 # Log directory (only used in CI)
 $logDir = Join-Path $scriptDir "logs"
 if ($runningInCI -and -not (Test-Path $logDir)) {
