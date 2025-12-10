@@ -708,7 +708,7 @@ jobs:
       # 5) UPDATE DATABASE (Python + BAT scripts)
       # ==========================================================
       - name: Update Database
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == ''
         shell: powershell
         env:
           DB_HOST: ${{ secrets.PG_HOST }}
@@ -925,9 +925,9 @@ jobs:
           exit 0
 
       # ==========================================================
-      # X) ROTATE NSSM LOGS + CLEAN UP LOGS OLDER THAN 7 DAYS
+      # 5a) ROTATE NSSM LOGS + CLEANUP (7 DAYS)
       # ==========================================================
-      - name: Rotate NSSM logs and cleanup (7 days)
+      - name: Rotate NSSM logs + cleanup (7 days)
         if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
@@ -942,25 +942,25 @@ jobs:
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
-
+          
           Write-Host "=== [$stepName] ==="
-
+          
           # Full path to nssm.exe – adjust if your install path is different
           $nssm = 'C:\nssm\win64\nssm.exe'
-
+          
           if (-not (Test-Path $nssm)) {
             Write-Host "### ERROR: nssm.exe not found at $nssm"
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
-
+          
           # Services whose logs we want to rotate + cleanup
           $services = @('VerveStacks-Python', 'VerveStacks-Backend')
-
+          
           foreach ($svc in $services) {
             Write-Host ""
             Write-Host ("--- Handling service: {0}" -f $svc)
-
+          
             # 1) Rotate logs (creates fresh log file and renames old one)
             Write-Host ("Rotating logs for '{0}'..." -f $svc)
             & $nssm rotate $svc
@@ -968,33 +968,44 @@ jobs:
             if ($rc -ne 0) {
               Write-Host ("WARNING: nssm rotate {0} returned exit code {1}" -f $svc, $rc)
             }
-
+          
             # 2) Figure out where logs live from AppStdout
-            $stdoutRaw = (& $nssm get $svc AppStdout) 2>$null
-            $stdoutRaw = $stdoutRaw | Out-String
-            $stdoutRaw = $stdoutRaw.Trim()
+            $stdoutRawLines = (& $nssm get $svc AppStdout) 2>$null
 
-            Write-Host ("Raw AppStdout for {0}: '{1}'" -f $svc, $stdoutRaw)
-
-            if ([string]::IsNullOrWhiteSpace($stdoutRaw)) {
+            if (-not $stdoutRawLines) {
               Write-Host ("No AppStdout configured for {0}; skipping cleanup." -f $svc)
               continue
             }
 
+            # Take first line in case NSSM prints extra blank lines
+            $stdoutRaw = ($stdoutRawLines | Select-Object -First 1)
+
+            # Trim whitespace and then strip any control chars (CR/LF etc.)
+            $stdoutRaw = $stdoutRaw.Trim()
+            $stdoutSanitized = -join ($stdoutRaw.ToCharArray() | Where-Object { [int]$_ -ge 32 })
+
+            Write-Host ("Raw AppStdout for {0}: '{1}'" -f $svc, $stdoutRaw)
+            Write-Host ("Sanitized AppStdout for {0}: '{1}'" -f $svc, $stdoutSanitized)
+
+            if ([string]::IsNullOrWhiteSpace($stdoutSanitized)) {
+              Write-Host ("Sanitized AppStdout is empty for {0}; skipping cleanup." -f $svc)
+              continue
+            }
+
             # Strip surrounding quotes if present: "C:\path\log.log" -> C:\path\log.log
-            $stdoutPath = $stdoutRaw
+            $stdoutPath = $stdoutSanitized
             if ($stdoutPath.StartsWith('"') -and $stdoutPath.EndsWith('"') -and $stdoutPath.Length -ge 2) {
               $stdoutPath = $stdoutPath.Substring(1, $stdoutPath.Length - 2)
             }
 
             $stdoutPath = $stdoutPath.Trim()
             Write-Host ("Normalized AppStdout for {0}: '{1}'" -f $svc, $stdoutPath)
-
+          
             if ([string]::IsNullOrWhiteSpace($stdoutPath)) {
               Write-Host ("Normalized AppStdout is empty for {0}; skipping cleanup." -f $svc)
               continue
             }
-
+          
             try {
               $logDir   = Split-Path -Parent $stdoutPath
               $baseName = [System.IO.Path]::GetFileNameWithoutExtension($stdoutPath)
@@ -1003,16 +1014,15 @@ jobs:
               Write-Host ("### ERROR: Failed to process AppStdout path '{0}' for {1}: {2}" -f $stdoutPath, $svc, $_.Exception.Message)
               continue
             }
-
+          
             if (-not (Test-Path $logDir)) {
               Write-Host ("Log directory '{0}' for {1} does not exist; skipping cleanup." -f $logDir, $svc)
               continue
             }
-
+          
             $cutoff = (Get-Date).AddDays(-7)
             Write-Host ("Cleaning log files for {0} in {1} older than {2} ..." -f $svc, $logDir, $cutoff)
-
-            # Delete log files like VerveStacks-Python-out*.log (adjust pattern if your names differ)
+          
             Get-ChildItem -Path $logDir -Filter "$baseName*.log" -ErrorAction SilentlyContinue |
               Where-Object { $_.LastWriteTime -lt $cutoff } |
               ForEach-Object {
@@ -1020,7 +1030,7 @@ jobs:
                 Remove-Item -LiteralPath $_.FullName -Force -ErrorAction SilentlyContinue
               }
           }
-
+          
           Write-Host ""
           Write-Host "NSSM log rotation + 7-day cleanup completed."
           if ($log) { Stop-Transcript | Out-Null }
