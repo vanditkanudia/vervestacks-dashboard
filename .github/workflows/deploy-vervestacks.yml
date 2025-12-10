@@ -317,7 +317,7 @@ jobs:
       # 1b) SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
       # ==========================================================
       - name: Sync full VerveStacks repo to DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         run: |
           $stepName = 'Sync full VerveStacks repo to DEPLOY_ROOT'
