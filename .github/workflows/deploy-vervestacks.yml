@@ -833,50 +833,66 @@ jobs:
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
-      # ==========================================================
-      # 5b) RESTART SERVICES (start_all_services.ps1 ONLY)
-      # ==========================================================
-      - name: Restart services
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+      # =====================
+      # START WINDOWS SERVICES (Python + Backend)
+      # =====================
+      - name: Start VerveStacks Python & Backend services
         shell: powershell
         run: |
-          $stepName = 'Restart services'
+          $stepName = 'Start Windows services (Python + Backend)'
           $log = $env:LOG_FILE
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
           $ErrorActionPreference = 'Stop'
           trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
+            Write-Host ("### STEP FAILED: {0}" -f $stepName)
+            Write-Host ("### ERROR: {0}" -f $_.Exception.Message)
             Write-Host $_.ScriptStackTrace
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          Write-Host "=== [$stepName] ==="
+          Write-Host ("=== [{0}] ===" -f $stepName)
 
-          $appRoot     = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
-          $startScript = Join-Path $appRoot 'start_all_services.ps1'
+          # Adjust these names if your NSSM service names differ
+          $services = @(
+            'VerveStacks-Python',
+            'VerveStacks-Backend'
+          )
 
-          Write-Host ("App root          = {0}" -f $appRoot)
-          Write-Host ("Start script path = {0}" -f $startScript)
+          foreach ($svcName in $services) {
+            $svc = Get-Service -Name $svcName -ErrorAction SilentlyContinue
 
-          if (-not (Test-Path $startScript)) {
-            Write-Host ("### ERROR DETAIL: start_all_services.ps1 not found at {0}" -f $startScript)
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
+            if (-not $svc) {
+              Write-Host ("Service '{0}' not found. Skipping." -f $svcName)
+              continue
+            }
+
+            if ($svc.Status -eq 'Started') {
+              Write-Host ("Service '{0}' is already started." -f $svcName)
+              continue
+            }
+
+            Write-Host ("Starting service '{0}'..." -f $svcName)
+            Start-Service -Name $svcName
+
+            # Wait up to 30 seconds for clean start
+            $timeout = [TimeSpan]::FromSeconds(30)
+            $sw = [System.Diagnostics.Stopwatch]::StartNew()
+
+            do {
+              $svc.Refresh()
+              if ($svc.Status -eq 'Stopped') { break }
+              Start-Sleep -Seconds 1
+            } while ($sw.Elapsed -lt $timeout)
+
+            if ($svc.Status -eq 'Started') {
+              Write-Host ("Service '{0}' started successfully." -f $svcName)
+            }
+            else {
+              Write-Host ("WARNING: Service '{0}' did not reach Started state in time. Current status: {1}" -f $svcName, $svc.Status)
+            }
           }
 
-          Write-Host "Starting services via start_all_services.ps1..."
-          & powershell.exe -ExecutionPolicy Bypass -File $startScript
-          $rc = $LASTEXITCODE
-          Write-Host ("start_all_services.ps1 exit code = {0}" -f $rc)
-          if ($rc -ne 0) {
-            Write-Host ("### ERROR: start_all_services.ps1 failed with exit code {0}" -f $rc)
-            if ($log) { Stop-Transcript | Out-Null }
-            exit $rc
-          }
-
-          Write-Host "Services started successfully."
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
