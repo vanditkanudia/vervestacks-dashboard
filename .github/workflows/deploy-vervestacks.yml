@@ -317,12 +317,12 @@ jobs:
       # 1b) SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
       # ==========================================================
       - name: Sync full VerveStacks repo to DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
           $stepName = 'Sync full VerveStacks repo to DEPLOY_ROOT'
           $log = $env:LOG_FILE
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }<|fim_middle|><|fim_middle|>
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
@@ -374,7 +374,7 @@ jobs:
       # 2) APP DEPLOY (APP_SOURCE_ROOT → DEPLOY_ROOT\APP_SUBROOT)
       # ==========================================================
       - name: Deploy app from APP_SOURCE_ROOT to DEPLOY_ROOT\APP_SUBROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
           $stepName = 'Deploy app files to IIS folder'
@@ -708,7 +708,7 @@ jobs:
       # 5) UPDATE DATABASE (Python + BAT scripts)
       # ==========================================================
       - name: Update Database
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         env:
           DB_HOST: ${{ secrets.PG_HOST }}
@@ -925,13 +925,13 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 5c) RUN start.bat AFTER DB-ONLY UPDATE (DISABLED – using start_all_services.ps1)
+      # X) ROTATE NSSM LOGS + CLEAN UP LOGS OLDER THAN 7 DAYS
       # ==========================================================
-      - name: Run start.bat after DB-only update (disabled; using start_all_services.ps1)
-        if: false
+      - name: Rotate NSSM logs and cleanup (7 days)
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
-          $stepName = 'Run start.bat (DB-only mode)'
+          $stepName = 'Rotate NSSM logs + cleanup (7 days)'
           $log = $env:LOG_FILE
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
           $ErrorActionPreference = 'Stop'
@@ -945,25 +945,60 @@ jobs:
 
           Write-Host "=== [$stepName] ==="
 
-          $scriptPath  = Join-Path $env:DEPLOY_ROOT "$env:APP_SUBROOT\start.bat"
+          # Full path to nssm.exe – adjust if your install path is different
+          $nssm = 'C:\nssm\win64\nssm.exe'
 
-          Write-Host ("Expected start.bat path: {0}" -f $scriptPath)
-
-          if (-not (Test-Path $scriptPath)) {
-            Write-Host '### ERROR DETAIL: start.bat not found. Check that it exists in the app root.'
+          if (-not (Test-Path $nssm)) {
+            Write-Host "### ERROR: nssm.exe not found at $nssm"
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          Write-Host 'Running start.bat inline and waiting for it to finish...'
-          & $scriptPath
-          $rc = $LASTEXITCODE
-          if ($rc -ne 0) {
-            Write-Host ("### ERROR DETAIL: start.bat exited with code {0}. See any messages printed by the script above." -f $rc)
-            if ($log) { Stop-Transcript | Out-Null }
-            exit $rc
+          # Services whose logs we want to rotate + cleanup
+          $services = @('VerveStacks-Python', 'VerveStacks-Backend')
+
+          foreach ($svc in $services) {
+            Write-Host ""
+            Write-Host ("--- Handling service: {0}" -f $svc)
+
+            # 1) Rotate logs (creates fresh log file and renames old one)
+            Write-Host ("Rotating logs for '{0}'..." -f $svc)
+            & $nssm rotate $svc
+            $rc = $LASTEXITCODE
+            if ($rc -ne 0) {
+              Write-Host ("WARNING: nssm rotate {0} returned exit code {1}" -f $svc, $rc)
+            }
+
+            # 2) Figure out where logs live from AppStdout
+            $stdoutPath = (& $nssm get $svc AppStdout) 2>$null
+            $stdoutPath = $stdoutPath.Trim()
+
+            if ([string]::IsNullOrWhiteSpace($stdoutPath)) {
+              Write-Host ("No AppStdout configured for {0}; skipping cleanup." -f $svc)
+              continue
+            }
+
+            $logDir  = Split-Path -Parent $stdoutPath
+            $baseName = [System.IO.Path]::GetFileNameWithoutExtension($stdoutPath)
+
+            if (-not (Test-Path $logDir)) {
+              Write-Host ("Log directory '{0}' for {1} does not exist; skipping cleanup." -f $logDir, $svc)
+              continue
+            }
+
+            $cutoff = (Get-Date).AddDays(-7)
+            Write-Host ("Cleaning log files for {0} in {1} older than {2} ..." -f $svc, $logDir, $cutoff)
+
+            # Delete log files like VerveStacks-Python-out*.log (adjust pattern if your names differ)
+            Get-ChildItem -Path $logDir -Filter "$baseName*.log" -ErrorAction SilentlyContinue |
+              Where-Object { $_.LastWriteTime -lt $cutoff } |
+              ForEach-Object {
+                Write-Host ("Deleting old log: {0} (LastWriteTime={1})" -f $_.FullName, $_.LastWriteTime)
+                Remove-Item -LiteralPath $_.FullName -Force -ErrorAction SilentlyContinue
+              }
           }
 
-          Write-Host "start.bat completed successfully (DB-only mode)."
+          Write-Host ""
+          Write-Host "NSSM log rotation + 7-day cleanup completed."
           if ($log) { Stop-Transcript | Out-Null }
-          exit 0
+          exit 0          
