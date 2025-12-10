@@ -970,16 +970,39 @@ jobs:
             }
 
             # 2) Figure out where logs live from AppStdout
-            $stdoutPath = (& $nssm get $svc AppStdout) 2>$null
-            $stdoutPath = $stdoutPath.Trim()
+            $stdoutRaw = (& $nssm get $svc AppStdout) 2>$null
+            $stdoutRaw = $stdoutRaw | Out-String
+            $stdoutRaw = $stdoutRaw.Trim()
 
-            if ([string]::IsNullOrWhiteSpace($stdoutPath)) {
+            Write-Host ("Raw AppStdout for {0}: '{1}'" -f $svc, $stdoutRaw)
+
+            if ([string]::IsNullOrWhiteSpace($stdoutRaw)) {
               Write-Host ("No AppStdout configured for {0}; skipping cleanup." -f $svc)
               continue
             }
 
-            $logDir  = Split-Path -Parent $stdoutPath
-            $baseName = [System.IO.Path]::GetFileNameWithoutExtension($stdoutPath)
+            # Strip surrounding quotes if present: "C:\path\log.log" -> C:\path\log.log
+            $stdoutPath = $stdoutRaw
+            if ($stdoutPath.StartsWith('"') -and $stdoutPath.EndsWith('"') -and $stdoutPath.Length -ge 2) {
+              $stdoutPath = $stdoutPath.Substring(1, $stdoutPath.Length - 2)
+            }
+
+            $stdoutPath = $stdoutPath.Trim()
+            Write-Host ("Normalized AppStdout for {0}: '{1}'" -f $svc, $stdoutPath)
+
+            if ([string]::IsNullOrWhiteSpace($stdoutPath)) {
+              Write-Host ("Normalized AppStdout is empty for {0}; skipping cleanup." -f $svc)
+              continue
+            }
+
+            try {
+              $logDir   = Split-Path -Parent $stdoutPath
+              $baseName = [System.IO.Path]::GetFileNameWithoutExtension($stdoutPath)
+            }
+            catch {
+              Write-Host ("### ERROR: Failed to process AppStdout path '{0}' for {1}: {2}" -f $stdoutPath, $svc, $_.Exception.Message)
+              continue
+            }
 
             if (-not (Test-Path $logDir)) {
               Write-Host ("Log directory '{0}' for {1} does not exist; skipping cleanup." -f $logDir, $svc)
@@ -1001,4 +1024,4 @@ jobs:
           Write-Host ""
           Write-Host "NSSM log rotation + 7-day cleanup completed."
           if ($log) { Stop-Transcript | Out-Null }
-          exit 0          
+          exit 0       
