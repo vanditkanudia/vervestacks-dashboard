@@ -322,7 +322,7 @@ jobs:
         run: |
           $stepName = 'Sync full VerveStacks repo to DEPLOY_ROOT'
           $log = $env:LOG_FILE
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }<|fim_middle|><|fim_middle|>
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }<|fim_middle|>
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
