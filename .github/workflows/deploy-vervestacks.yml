@@ -317,7 +317,7 @@ jobs:
       # 1b) SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
       # ==========================================================
       - name: Sync full VerveStacks repo to DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         run: |
           $stepName = 'Sync full VerveStacks repo to DEPLOY_ROOT'
@@ -374,7 +374,7 @@ jobs:
       # 2) APP DEPLOY (APP_SOURCE_ROOT → DEPLOY_ROOT\APP_SUBROOT)
       # ==========================================================
       - name: Deploy app from APP_SOURCE_ROOT to DEPLOY_ROOT\APP_SUBROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         run: |
           $stepName = 'Deploy app files to IIS folder'
@@ -431,7 +431,7 @@ jobs:
       # 3) BACKEND + FRONTEND (npm) ON DESTINATION
       # ==========================================================
       - name: Install JS deps and build frontend on DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         run: |
           $stepName = 'Install JS deps and build frontend'
@@ -708,7 +708,7 @@ jobs:
       # 5) UPDATE DATABASE (Python + BAT scripts)
       # ==========================================================
       - name: Update Database
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         env:
           DB_HOST: ${{ secrets.PG_HOST }}
@@ -836,7 +836,8 @@ jobs:
       # =====================
       # START WINDOWS SERVICES (Python + Backend)
       # =====================
-      - name: Start VerveStacks Python & Backend services
+      - name: Start Windows services (Python + Backend)
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
           $stepName = 'Start Windows services (Python + Backend)'
@@ -844,54 +845,57 @@ jobs:
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
           $ErrorActionPreference = 'Stop'
           trap {
-            Write-Host ("### STEP FAILED: {0}" -f $stepName)
-            Write-Host ("### ERROR: {0}" -f $_.Exception.Message)
+            Write-Host "### STEP FAILED: $stepName"
+            Write-Host "### ERROR: $($_.Exception.Message)"
             Write-Host $_.ScriptStackTrace
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          Write-Host ("=== [{0}] ===" -f $stepName)
+          Write-Host "=== [$stepName] ==="
 
-          # Adjust these names if your NSSM service names differ
-          $services = @(
-            'VerveStacks-Python',
-            'VerveStacks-Backend'
-          )
+          $services = @('VerveStacks-Python', 'VerveStacks-Backend')
 
           foreach ($svcName in $services) {
-            $svc = Get-Service -Name $svcName -ErrorAction SilentlyContinue
+            Write-Host ""
+            Write-Host ("--- Handling service: {0}" -f $svcName)
 
-            if (-not $svc) {
-              Write-Host ("Service '{0}' not found. Skipping." -f $svcName)
+            try {
+              $svc = Get-Service -Name $svcName -ErrorAction Stop
+            } catch {
+              Write-Host ("### ERROR: Service '{0}' not found on this machine." -f $svcName)
+              throw
+            }
+
+            Write-Host ("Current status of {0}: {1}" -f $svcName, $svc.Status)
+
+            if ($svc.Status -eq 'Running') {
+              Write-Host ("Service '{0}' is already Running, skipping Start-Service." -f $svcName)
               continue
             }
 
-            if ($svc.Status -eq 'Started') {
-              Write-Host ("Service '{0}' is already started." -f $svcName)
-              continue
-            }
+            try {
+              Write-Host ("Starting service '{0}'..." -f $svcName)
+              Start-Service -Name $svcName -ErrorAction Stop
 
-            Write-Host ("Starting service '{0}'..." -f $svcName)
-            Start-Service -Name $svcName
-
-            # Wait up to 30 seconds for clean start
-            $timeout = [TimeSpan]::FromSeconds(30)
-            $sw = [System.Diagnostics.Stopwatch]::StartNew()
-
-            do {
+              # Wait up to 30 seconds for Running
+              $svc.WaitForStatus('Running', [TimeSpan]::FromSeconds(30))
               $svc.Refresh()
-              if ($svc.Status -eq 'Stopped') { break }
-              Start-Sleep -Seconds 1
-            } while ($sw.Elapsed -lt $timeout)
+              Write-Host ("Service '{0}' final status: {1}" -f $svcName, $svc.Status)
 
-            if ($svc.Status -eq 'Started') {
-              Write-Host ("Service '{0}' started successfully." -f $svcName)
-            }
-            else {
-              Write-Host ("WARNING: Service '{0}' did not reach Started state in time. Current status: {1}" -f $svcName, $svc.Status)
+              if ($svc.Status -ne 'Running') {
+                throw "Service '$svcName' did not reach 'Running' status. Current status: $($svc.Status)"
+              }
+            } catch {
+              Write-Host ("### ERROR: Failed to start service '{0}'." -f $svcName)
+              Write-Host ("### DETAIL: {0}" -f $_.Exception.Message)
+              if ($log) { Stop-Transcript | Out-Null }
+              exit 1
             }
           }
+
+          Write-Host ""
+          Write-Host "All requested services are now Running (or already were)."
 
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
