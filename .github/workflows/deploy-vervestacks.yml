@@ -159,7 +159,7 @@ jobs:
       # MAP UNC SHARE (kanvault)
       # =====================
       - name: Map kanvault share
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         env:
           KANVAULT_PASSWORD: ${{ secrets.KANVAULT_PASSWORD }}
@@ -197,7 +197,7 @@ jobs:
       # 1) ALL DATA SYNC (KANVAULT + LOCAL) IN ONE STEP
       # ==========================================================
       - name: Sync all data (kanvault + local) to IIS
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
           $stepName = 'Sync all data (kanvault + local) to IIS'
@@ -317,12 +317,12 @@ jobs:
       # 1b) SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
       # ==========================================================
       - name: Sync full VerveStacks repo to DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
           $stepName = 'Sync full VerveStacks repo to DEPLOY_ROOT'
           $log = $env:LOG_FILE
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }<|fim_middle|>
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
@@ -431,7 +431,7 @@ jobs:
       # 3) BACKEND + FRONTEND (npm) ON DESTINATION
       # ==========================================================
       - name: Install JS deps and build frontend on DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         run: |
           $stepName = 'Install JS deps and build frontend'
@@ -515,53 +515,6 @@ jobs:
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
-      # ==========================================================
-      # 3b) PUBLISH FRONTEND BUILD TO IIS ROOT
-      # ==========================================================
-      - name: Publish frontend build to IIS root
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
-        shell: powershell
-        run: |
-          $stepName = 'Publish frontend build to IIS root'
-          $log = $env:LOG_FILE
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-          $ErrorActionPreference = 'Stop'
-          trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
-            Write-Host $_.ScriptStackTrace
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          Write-Host "=== [$stepName] ==="
-
-          $appRoot  = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
-          $buildDir = Join-Path $appRoot 'frontend\build'
-
-          Write-Host ("App root  = {0}" -f $appRoot)
-          Write-Host ("Build dir = {0}" -f $buildDir)
-
-          if (-not (Test-Path $buildDir)) {
-            Write-Host '### ERROR DETAIL: Frontend build directory not found. React build probably failed.'
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          robocopy $buildDir $appRoot /E /R:3 /W:5 /NFL /NDL /NJH /NJS /NP
-          $code = $LASTEXITCODE
-          Write-Host ("Robocopy exit code (publish build) = {0}" -f $code)
-          Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
-
-          if ($code -ge 8) {
-            Write-Host ("### ERROR DETAIL: Failed to publish frontend build to IIS root (code {0})." -f $code)
-            if ($log) { Stop-Transcript | Out-Null }
-            exit $code
-          }
-
-          Write-Host 'Frontend build published to IIS root successfully.'
-          if ($log) { Stop-Transcript | Out-Null }
-          exit 0
 
       # ==========================================================
       # 4) PYTHON SERVICE SETUP (STATIC vs PER-DEPLOY VENV)
@@ -666,49 +619,10 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 4b) DEBUG: TEST DIRECT DB CONNECTION FROM WORKFLOW
-      # ==========================================================
-      - name: Debug DB connection directly from workflow
-        shell: powershell
-        env:
-          DB_HOST:     ${{ secrets.PG_HOST }}
-          DB_PORT:     ${{ secrets.PG_PORT }}
-          DB_NAME:     ${{ secrets.DB_NAME }}
-          DB_USER:     ${{ secrets.PG_USER }}
-          DB_PASSWORD: ${{ secrets.PG_PASSWORD }}
-        run: |
-          Write-Host "=== [Debug DB connection] ==="
-          Write-Host "Host    = $env:DB_HOST"
-          Write-Host "Port    = $env:DB_PORT"
-          Write-Host "User    = $env:DB_USER"
-          Write-Host "DB Name = $env:DB_NAME"
-          Write-Host ""
-          Write-Host "Attempting direct psql connection from runner ..."
-
-          $psql = "C:\Program Files\PostgreSQL\15\bin\psql.exe"
-
-          if (-not (Test-Path $psql)) {
-            Write-Host "### ERROR: psql.exe not found at $psql"
-            exit 1
-          }
-
-          $env:PGPASSWORD = $env:DB_PASSWORD
-
-          & $psql -h $env:DB_HOST -p $env:DB_PORT -U $env:DB_USER -d $env:DB_NAME -c "SELECT current_database(), current_user;"
-          $rc = $LASTEXITCODE
-          Write-Host "psql exit code = $rc"
-          if ($rc -ne 0) {
-            Write-Host "### ERROR: direct DB connection failed."
-            exit $rc
-          }
-
-          Write-Host "Direct DB connection OK."
-
-      # ==========================================================
       # 5) UPDATE DATABASE (Python + BAT scripts)
       # ==========================================================
       - name: Update Database
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
         shell: powershell
         env:
           DB_HOST: ${{ secrets.PG_HOST }}
