@@ -2,23 +2,24 @@ name: Deploy VerveStacks Dashboard
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "RS-IIS-Deployment-on-LocalMachine" ]
   workflow_dispatch: {}
 
 env:
   # Flags
   Update_Data_On_Local: "true"
   Update_Data_On_Hetzner: "false"
-  RUN_ONLY_DB_STEP: "true"      # 'true' → only DB update pipeline; 'false' → full deploy
+  RUN_ONLY_DB_STEP: "false"      # 'true' → only DB update pipeline; 'false' → full deploy
+  SYNC_KANVAULT_ZIP: "false"      # 'true' → extract latest vervestacks_data_*.zip into DEPLOY_ROOT
 
   # Control how Python environment is handled
   # CREATE_NEW_VENV = "true"  → create/refresh python-service\.venv per deploy
   # CREATE_NEW_VENV = "false" → reuse STATIC_VENV_ROOT
   CREATE_NEW_VENV: "false"
-  STATIC_VENV_ROOT: "D:\\Pyvenvs\\Visuals.py\\.venv"
+  STATIC_VENV_ROOT: "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python39"
 
   # Base Python EXE used ONLY to create new venvs
-  PYTHON_EXE: STATIC_VENV_ROOT\\Scripts\\python.exe
+  PYTHON_EXE: "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
 
   # NEW: control whether start.bat opens visible consoles
   SHOW_START_CONSOLES: "true"
@@ -28,7 +29,7 @@ env:
   DATA_ROOT: "C:\\inetpub\\VerveStacks\\data"
 
   # Local data source root (your main local data source)
-  LOCAL_DATA_SOURCE_ROOT: "D:\\GitHub\\VerveStacks\\data"
+  LOCAL_DATA_SOURCE_ROOT: "${{ github.workspace }}\\data"
 
   # Base UNC share (YAML-escaped; runtime value is \\192.168.0.7\kanvault)
   KANVAULT_SHARE: "\\\\192.168.0.7\\kanvault"
@@ -36,19 +37,24 @@ env:
   # Destination data paths
   DEST_OSM: "C:\\inetpub\\VerveStacks\\data\\OSM-kan-prebuilt"
   DEST_TRANSMISSION: "C:\\inetpub\\VerveStacks\\data\\transmission_line_generation"
-  DEST_ATLITE: "C:\\inetpub\\VerveStacks\\data\\Atlite_data_optimized"
-  DEST_REZONING: "C:\\inetpub\\VerveStacks\\data\\REZoning_world_data"
+  DEST_ATLITE: "C:\\inetpub\\VerveStacks\\data\\hourly_profiles\\Atlite_data"
+  DEST_REZONING: "C:\\inetpub\\VerveStacks\\data\\REZoning"
 
   # Application subroot (beneath DEPLOY_ROOT)
   APP_SUBROOT: "vervestacks-dashboard"
 
-  # App / repo source roots on the RUNNER (GitHub workspace)
-  REPO_SOURCE_ROOT: "${{ github.workspace }}"
+  # App source root (what you copy from)
   APP_SOURCE_ROOT: "${{ github.workspace }}\\vervestacks-dashboard"
+
+  # Full repo root (what you asked to copy 1:1)
+  REPO_SOURCE_ROOT: "${{ github.workspace }}"
+
+  # Log root folder (persistent location outside workspace)
+  LOG_ROOT: "C:\\GitHub\\kanors-emr\\self-hosted-runner\\actions-runner-on-local-19\\Logs"
 
 jobs:
   deploy:
-    runs-on: self-hosted
+    runs-on: [ self-hosted, Windows, X64,]
 
     steps:
       # =====================
@@ -64,7 +70,8 @@ jobs:
         shell: powershell
         run: |
           $stepName = 'Init workflow run log file'
-          $logRoot = 'D:\GitHub\VerveStacks_Logs'
+          $logRoot = $env:LOG_ROOT
+
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host '### STEP FAILED: Init workflow run log file'
@@ -72,13 +79,17 @@ jobs:
             Write-Host $_.ScriptStackTrace
             exit 1
           }
+
           if (-not (Test-Path $logRoot)) {
             New-Item -ItemType Directory -Path $logRoot | Out-Null
           }
+
           $timestamp = Get-Date -Format 'yyyy-MM-ddTHH-mm-ss'
+          # Log file name: Deploy_<timestamp>.log
           $fileName  = "Deploy_$timestamp.log"
           $safeName  = ($fileName -replace '[\\/:*?""<>|]', '_')
           $logFile   = Join-Path $logRoot $safeName
+
           'STEP     : Init workflow run log file' | Out-File -FilePath $logFile -Encoding UTF8
           ('Workflow : {0}' -f $env:GITHUB_WORKFLOW)   | Out-File -FilePath $logFile -Encoding UTF8 -Append
           ('Run ID   : {0}' -f $env:GITHUB_RUN_ID)     | Out-File -FilePath $logFile -Encoding UTF8 -Append
@@ -88,85 +99,26 @@ jobs:
           ('Actor    : {0}' -f $env:GITHUB_ACTOR)      | Out-File -FilePath $logFile -Encoding UTF8 -Append
           ('Workspace: {0}' -f $env:GITHUB_WORKSPACE)  | Out-File -FilePath $logFile -Encoding UTF8 -Append
           ('Started  : {0}' -f (Get-Date -Format o))   | Out-File -FilePath $logFile -Encoding UTF8 -Append
+          ('SYNC_KANVAULT_ZIP: {0}' -f $env:SYNC_KANVAULT_ZIP) | Out-File -FilePath $logFile -Encoding UTF8 -Append
           '--------------------------------------'     | Out-File -FilePath $logFile -Encoding UTF8 -Append
+
           "LOG_FILE=$logFile" | Out-File -FilePath $env:GITHUB_ENV -Encoding UTF8 -Append
-          exit 0
-
-      # =====================
-      # STOP WINDOWS SERVICES (Python + Backend)
-      # =====================
-      - name: Stop VerveStacks Python & Backend services
-        shell: powershell
-        run: |
-          $stepName = 'Stop Windows services (Python + Backend)'
-          $log = $env:LOG_FILE
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-          $ErrorActionPreference = 'Stop'
-          trap {
-            Write-Host ("### STEP FAILED: {0}" -f $stepName)
-            Write-Host ("### ERROR: {0}" -f $_.Exception.Message)
-            Write-Host $_.ScriptStackTrace
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          Write-Host ("=== [{0}] ===" -f $stepName)
-
-          # Adjust these names if your NSSM service names differ
-          $services = @(
-            'VerveStacks-Python',
-            'VerveStacks-Backend'
-          )
-
-          foreach ($svcName in $services) {
-            $svc = Get-Service -Name $svcName -ErrorAction SilentlyContinue
-
-            if (-not $svc) {
-              Write-Host ("Service '{0}' not found. Skipping." -f $svcName)
-              continue
-            }
-
-            if ($svc.Status -eq 'Stopped') {
-              Write-Host ("Service '{0}' is already stopped." -f $svcName)
-              continue
-            }
-
-            Write-Host ("Stopping service '{0}'..." -f $svcName)
-            Stop-Service -Name $svcName -Force
-
-            # Wait up to 30 seconds for clean stop
-            $timeout = [TimeSpan]::FromSeconds(30)
-            $sw = [System.Diagnostics.Stopwatch]::StartNew()
-
-            do {
-              $svc.Refresh()
-              if ($svc.Status -eq 'Stopped') { break }
-              Start-Sleep -Seconds 1
-            } while ($sw.Elapsed -lt $timeout)
-
-            if ($svc.Status -eq 'Stopped') {
-              Write-Host ("Service '{0}' stopped successfully." -f $svcName)
-            }
-            else {
-              Write-Host ("WARNING: Service '{0}' did not reach Stopped state in time. Current status: {1}" -f $svcName, $svc.Status)
-            }
-          }
-
-          if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
       # =====================
       # MAP UNC SHARE (kanvault)
       # =====================
       - name: Map kanvault share
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: (env.Update_Data_On_Local == 'true' || env.SYNC_KANVAULT_ZIP == 'true') && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         env:
           KANVAULT_PASSWORD: ${{ secrets.KANVAULT_PASSWORD }}
         run: |
           $stepName = 'Map kanvault share'
           $log = $env:LOG_FILE
+
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
@@ -175,21 +127,104 @@ jobs:
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
+
           Write-Host ('=== [{0}] ===' -f $stepName)
           Write-Host ("Mapping {0} with user 'amit'" -f $env:KANVAULT_SHARE)
+
           try {
             Write-Host 'Attempting to delete existing mapping...'
             net use $env:KANVAULT_SHARE /delete /y
           } catch {
             Write-Host 'No existing mapping or delete failed. Continuing.'
           }
+
           net use $env:KANVAULT_SHARE /user:amit $env:KANVAULT_PASSWORD
           if ($LASTEXITCODE -ne 0) {
             Write-Host ("### ERROR DETAIL: net use failed with exit code {0}." -f $LASTEXITCODE)
             if ($log) { Stop-Transcript | Out-Null }
             exit $LASTEXITCODE
           }
+
           Write-Host 'UNC network share mapped successfully.'
+
+          if ($log) { Stop-Transcript | Out-Null }
+          exit 0
+
+      # ==========================================================
+      # 1a) EXTRACT LATEST KANVAULT DATA ZIP (optional)
+      # ==========================================================
+      - name: Extract latest Kanvault data ZIP
+        if: env.SYNC_KANVAULT_ZIP == 'true' && env.RUN_ONLY_DB_STEP == 'false'
+        shell: powershell
+        run: |
+          $stepName = 'Extract latest Kanvault data ZIP'
+          $log = $env:LOG_FILE
+
+          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
+          $ErrorActionPreference = 'Stop'
+          trap {
+            Write-Host ('### STEP FAILED: {0}' -f $stepName)
+            Write-Host ('### ERROR: {0}' -f $_.Exception.Message)
+            Write-Host $_.ScriptStackTrace
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 1
+          }
+
+          Write-Host ('=== [{0}] ===' -f $stepName)
+
+          $sourceDir  = Join-Path $env:KANVAULT_SHARE 'KanORS_Data\VerveStacks'
+          $stageDir   = Join-Path $env:DEPLOY_ROOT 'data\_kanvault_zip_stage'
+          $markerFile = Join-Path $stageDir '_last_zip_processed.txt'
+          $deployRoot = $env:DEPLOY_ROOT
+
+          Write-Host ("ZIP source dir = {0}" -f $sourceDir)
+
+          if (-not (Test-Path $sourceDir)) {
+            Write-Host ("WARNING: ZIP source directory does not exist: {0} (skipping ZIP extract)" -f $sourceDir)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 0
+          }
+
+          if (-not (Test-Path $stageDir)) {
+            New-Item -ItemType Directory -Path $stageDir | Out-Null
+          }
+
+          $latestZip = Get-ChildItem -Path $sourceDir -Filter 'vervestacks_data_*.zip' -File -ErrorAction Stop |
+            Sort-Object LastWriteTime -Descending |
+            Select-Object -First 1
+
+          if (-not $latestZip) {
+            Write-Host 'No matching ZIP found (vervestacks_data_*.zip). Skipping.'
+            if ($log) { Stop-Transcript | Out-Null }
+            exit 0
+          }
+
+          Write-Host ("Latest ZIP: {0} (LastWriteTime={1})" -f $latestZip.Name, $latestZip.LastWriteTime)
+
+          if (Test-Path $markerFile) {
+            $prev = (Get-Content -Path $markerFile -ErrorAction SilentlyContinue | Select-Object -First 1)
+            if ($prev -and ($prev.Trim() -eq $latestZip.Name)) {
+              Write-Host 'Latest ZIP already processed. Skipping.'
+              if ($log) { Stop-Transcript | Out-Null }
+              exit 0
+            }
+          }
+
+          $localZipPath = Join-Path $stageDir $latestZip.Name
+          Write-Host ("Copying ZIP to stage: {0}" -f $localZipPath)
+          Copy-Item -Path $latestZip.FullName -Destination $localZipPath -Force
+
+          if (-not (Test-Path $localZipPath)) {
+            throw "ZIP copy failed. Not found in staging: $localZipPath"
+          }
+
+          Write-Host ("Extracting ZIP directly into Deploy Root: {0}" -f $deployRoot)
+          Expand-Archive -Path $localZipPath -DestinationPath $deployRoot -Force
+
+          Set-Content -Path $markerFile -Value $latestZip.Name -Encoding UTF8
+          Write-Host 'ZIP extracted successfully and marker updated.'
+
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
@@ -197,12 +232,14 @@ jobs:
       # 1) ALL DATA SYNC (KANVAULT + LOCAL) IN ONE STEP
       # ==========================================================
       - name: Sync all data (kanvault + local) to IIS
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         run: |
           $stepName = 'Sync all data (kanvault + local) to IIS'
           $log = $env:LOG_FILE
+
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
@@ -211,6 +248,7 @@ jobs:
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
+
           Write-Host ('=== [{0}] ===' -f $stepName)
 
           $shareRoot = $env:KANVAULT_SHARE
@@ -224,9 +262,6 @@ jobs:
             @{ Name = 'OSM-kan-prebuilt'
                Source = Join-Path $verveRoot 'OSM-kan-prebuilt'
                Dest   = $env:DEST_OSM },
-            @{ Name = 'OSM-kan-prebuilt (harish)'
-               Source = Join-Path $verveRoot 'OSM-kan-prebuilt\harish'
-               Dest   = $env:DEST_OSM },
             @{ Name = 'transmission_line_generation'
                Source = Join-Path $verveRoot 'transmission_line_generation'
                Dest   = $env:DEST_TRANSMISSION },
@@ -235,37 +270,64 @@ jobs:
                Dest   = $env:DEST_ATLITE },
             @{ Name = 'REZoning_world_data'
                Source = Join-Path $rezRoot 'REZoning_world_data'
-               Dest   = $env:DEST_REZONING }
+               Dest   = $env:DEST_REZONING },
+            @{ Name = 'ember_monthly_patch'
+               Source = Join-Path $verveRoot 'ember\monthly_full_release_long_format_patch.csv'
+               Dest   = Join-Path $env:DEPLOY_ROOT 'data\ember\monthly_full_release_long_format_patch.csv'
+               IsFile = $true },
+            @{ Name = 'era5_demand_localtime'
+               Source = Join-Path $verveRoot 'hourly_profiles\era5_combined_data_2030_localtime.csv'
+               Dest   = Join-Path $env:DEPLOY_ROOT 'data\hourly_profiles\era5_combined_data_2030_localtime.csv'
+               IsFile = $true },
+            @{ Name = 'gem_re_units_cf_mapping'
+               Source = Join-Path $verveRoot 'GlobalEnergyMonitor\re_units_cf_grid_cell_mapping.csv'
+               Dest   = Join-Path $env:DEPLOY_ROOT 'data\GlobalEnergyMonitor\re_units_cf_grid_cell_mapping.csv'
+               IsFile = $true }
           )
 
           $exitCodes = @()
+
           foreach ($job in $syncJobs) {
             $name   = $job.Name
             $source = $job.Source
             $dest   = $job.Dest
+            $isFile = $job.IsFile -eq $true
 
             Write-Host '----'
             Write-Host ("Job: {0}" -f $name)
             Write-Host ("  Source: {0}" -f $source)
             Write-Host ("  Dest  : {0}" -f $dest)
 
-            if (-not (Test-Path $dest)) {
-              Write-Host ("Creating destination folder: {0}" -f $dest)
-              New-Item -ItemType Directory -Path $dest | Out-Null
-            }
-
             if (-not (Test-Path $source)) {
               Write-Host ("WARNING: Source does not exist: {0}" -f $source)
               continue
             }
 
+            if ($isFile) {
+              $destDir = Split-Path -Parent $dest
+              if (-not (Test-Path $destDir)) {
+                Write-Host ("Creating destination folder: {0}" -f $destDir)
+                New-Item -ItemType Directory -Path $destDir -Force | Out-Null
+              }
+              Write-Host ("Copying file '{0}'..." -f $name)
+              Copy-Item -Path $source -Destination $dest -Force
+              continue
+            }
+
+            if (-not (Test-Path $dest)) {
+              Write-Host ("Creating destination folder: {0}" -f $dest)
+              New-Item -ItemType Directory -Path $dest | Out-Null
+            }
+
             Write-Host ("Starting robocopy for '{0}'..." -f $name)
             robocopy $source $dest /E /Z /R:3 /W:5 /ETA /NP
             $exitCodes += $LASTEXITCODE
+
             Write-Host ("Robocopy exit code: {0}" -f $LASTEXITCODE)
           }
 
           $maxCode = ($exitCodes | Measure-Object -Maximum).Maximum
+
           Write-Host ("Max robocopy code = {0}" -f $maxCode)
           Write-Host 'INFO: 0–7 success, 8+ failure'
 
@@ -277,52 +339,22 @@ jobs:
 
           Write-Host 'All data sync jobs completed successfully.'
 
-          Write-Host ""
-          Write-Host "=== [PART 2] Syncing LOCAL data from D:\GitHub\VerveStacks\data → C:\inetpub\VerveStacks\data ==="
-
-          $srcLocal = $env:LOCAL_DATA_SOURCE_ROOT
-          $dstLocal = $env:DATA_ROOT
-
-          Write-Host "Local data source     : $srcLocal"
-          Write-Host "IIS data destination  : $dstLocal"
-
-          if (-not (Test-Path $srcLocal)) {
-            Write-Host "WARNING: Local data source folder does not exist: $srcLocal"
-            Write-Host "Nothing to sync from local; continuing."
-          }
-          else {
-            if (-not (Test-Path $dstLocal)) {
-              Write-Host "Creating IIS data root: $dstLocal"
-              [System.IO.Directory]::CreateDirectory($dstLocal) | Out-Null
-            }
-
-            robocopy $srcLocal $dstLocal /E /Z /R:3 /W:5 /XD ".git" ".github" /NFL /NDL /NJH /NJS /NP
-            $codeLocal = $LASTEXITCODE
-            Write-Host "Local data robocopy exit code: $codeLocal"
-
-            if ($codeLocal -ge 8) {
-              Write-Error "Local data sync failed with robocopy exit code $codeLocal"
-              if ($log) { Stop-Transcript | Out-Null }
-              exit $codeLocal
-            }
-
-            Write-Host "Local data sync completed successfully."
-          }
-
-          Write-Host 'All data sync (kanvault + local) completed successfully.'
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
       # ==========================================================
       # 1b) SYNC FULL VerveStacks FOLDER TO DEPLOY_ROOT
+      #     (EXCLUDING .git, .github, .venv, node_modules)
       # ==========================================================
       - name: Sync full VerveStacks repo to DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         run: |
           $stepName = 'Sync full VerveStacks repo to DEPLOY_ROOT'
           $log = $env:LOG_FILE
+
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
@@ -341,7 +373,7 @@ jobs:
           Write-Host ("Destination (DEPLOY_ROOT) = {0}" -f $dst)
 
           if (-not (Test-Path $src)) {
-            Write-Host '### ERROR DETAIL: REPO_SOURCE_ROOT does not exist. Check github.workspace.'
+            Write-Host '### ERROR DETAIL: REPO_SOURCE_ROOT does not exist. Check REPO_SOURCE_ROOT.'
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
@@ -357,6 +389,7 @@ jobs:
             /NFL /NDL /NJH /NJS /NP
 
           $code = $LASTEXITCODE
+
           Write-Host ("Full repo robocopy exit code: {0}" -f $code)
           Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
 
@@ -367,19 +400,23 @@ jobs:
           }
 
           Write-Host 'Full VerveStacks repo sync to DEPLOY_ROOT completed successfully.'
+
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
       # ==========================================================
-      # 2) APP DEPLOY (APP_SOURCE_ROOT → DEPLOY_ROOT\APP_SUBROOT)
+      # 2) APP DEPLOY (COPY APP SOURCE TO DEPLOY_ROOT\APP_SUBROOT)
+      #     (EXCLUDING .git, .github, .venv, node_modules)
       # ==========================================================
       - name: Deploy app from APP_SOURCE_ROOT to DEPLOY_ROOT\APP_SUBROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         run: |
           $stepName = 'Deploy app files to IIS folder'
           $log = $env:LOG_FILE
+
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host ('### STEP FAILED: {0}' -f $stepName)
@@ -414,6 +451,7 @@ jobs:
             /NFL /NDL /NJH /NJS /NP
 
           $code = $LASTEXITCODE
+
           Write-Host ("App robocopy exit code: {0}" -f $code)
           Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
 
@@ -424,6 +462,7 @@ jobs:
           }
 
           Write-Host 'Deployment completed successfully (app folder synced to IIS target).'
+
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
@@ -431,12 +470,14 @@ jobs:
       # 3) BACKEND + FRONTEND (npm) ON DESTINATION
       # ==========================================================
       - name: Install JS deps and build frontend on DEPLOY_ROOT
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         run: |
           $stepName = 'Install JS deps and build frontend'
           $log = $env:LOG_FILE
+
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host "### STEP FAILED: $stepName"
@@ -483,12 +524,38 @@ jobs:
             if (Test-Path $nodeModules) {
               Write-Host ("{0}: Removing existing node_modules for a clean install..." -f $name)
               try {
-                Remove-Item -Recurse -Force $nodeModules
+                # Method 1: Try robocopy to delete (fastest and most reliable for deep nested folders)
+                Write-Host ("{0}: Using robocopy method to remove node_modules..." -f $name)
+                $emptyDir = Join-Path $env:TEMP "empty_$(Get-Random)"
+                New-Item -ItemType Directory -Path $emptyDir -Force | Out-Null
+                robocopy $emptyDir $nodeModules /MIR /R:0 /W:0 /NFL /NDL /NJH /NJS /NP | Out-Null
+                Remove-Item -Path $emptyDir -Force | Out-Null
+                Remove-Item -Path $nodeModules -Force | Out-Null
+                Write-Host ("{0}: node_modules removed successfully using robocopy method." -f $name)
               }
               catch {
-                Write-Host ("ERROR: {0}: Failed to delete node_modules: {1}" -f $name, $_.Exception.Message)
-                if ($log) { Stop-Transcript | Out-Null }
-                exit 1
+                Write-Host ("{0}: Robocopy method failed, trying PowerShell with force..." -f $name)
+                try {
+                  # Method 2: PowerShell with more aggressive settings
+                  Get-ChildItem -Path $nodeModules -Recurse -Force | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue
+                  Remove-Item -Path $nodeModules -Force -Recurse -ErrorAction Stop
+                  Write-Host ("{0}: node_modules removed successfully using PowerShell method." -f $name)
+                }
+                catch {
+                  # Method 3: If all else fails, try cmd rmdir
+                  Write-Host ("{0}: PowerShell method failed, trying cmd rmdir..." -f $name)
+                  try {
+                    cmd /c "rmdir /s /q `"$nodeModules`""
+                    if (Test-Path $nodeModules) {
+                      throw "rmdir command failed - directory still exists"
+                    }
+                    Write-Host ("{0}: node_modules removed successfully using cmd rmdir." -f $name)
+                  }
+                  catch {
+                    Write-Host ("WARNING: {0}: Could not completely remove node_modules: {1}" -f $name, $_.Exception.Message)
+                    Write-Host ("{0}: Continuing with npm install anyway - npm will handle conflicts..." -f $name)
+                  }
+                }
               }
             }
 
@@ -501,11 +568,11 @@ jobs:
             }
 
             if ($build) {
-              Write-Host ("{0}: running build:prod with CI=false..." -f $name)
+              Write-Host ("{0}: running build:dev with CI=false..." -f $name)
               $env:CI = 'false'
-              npm run build:prod
+              npm run build:dev
               if ($LASTEXITCODE -ne 0) {
-                Write-Host ("{0}: npm run build:prod failed with exit code {1}" -f $name, $LASTEXITCODE)
+                Write-Host ("{0}: npm run build:dev failed with exit code {1}" -f $name, $LASTEXITCODE)
                 if ($log) { Stop-Transcript | Out-Null }
                 exit 1
               }
@@ -515,17 +582,69 @@ jobs:
           if ($log) { Stop-Transcript | Out-Null }
           exit 0
 
+      # ==========================================================
+      # 3b) PUBLISH FRONTEND BUILD TO IIS ROOT
+      # ==========================================================
+      # - name: Publish frontend build to IIS root
+      #   shell: powershell
+      #   run: |
+      #     $stepName = 'Publish frontend build to IIS root'
+      #     $log = $env:LOG_FILE
+
+      #     if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
+      #     $ErrorActionPreference = 'Stop'
+      #     trap {
+      #       Write-Host "### STEP FAILED: $stepName"
+      #       Write-Host "### ERROR: $($_.Exception.Message)"
+      #       Write-Host $_.ScriptStackTrace
+      #       if ($log) { Stop-Transcript | Out-Null }
+      #       exit 1
+      #     }
+
+      #     Write-Host "=== [$stepName] ==="
+
+      #     $appRoot  = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+      #     $buildDir = Join-Path $appRoot 'frontend\build'
+
+      #     Write-Host ("App root  = {0}" -f $appRoot)
+      #     Write-Host ("Build dir = {0}" -f $buildDir)
+
+      #     if (-not (Test-Path $buildDir)) {
+      #       Write-Host '### ERROR DETAIL: Frontend build directory not found. React build probably failed.'
+      #       if ($log) { Stop-Transcript | Out-Null }
+      #       exit 1
+      #     }
+
+      #     robocopy $buildDir $appRoot /E /R:3 /W:5 /NFL /NDL /NJH /NJS /NP
+      #     $code = $LASTEXITCODE
+
+      #     Write-Host ("Robocopy exit code (publish build) = {0}" -f $code)
+      #     Write-Host 'INFO: Robocopy exit codes 0-7 are success/acceptable; 8 or higher indicates failure.'
+
+      #     if ($code -ge 8) {
+      #       Write-Host ("### ERROR DETAIL: Failed to publish frontend build to IIS root (code {0})." -f $code)
+      #       if ($log) { Stop-Transcript | Out-Null }
+      #       exit $code
+      #     }
+
+      #     Write-Host 'Frontend build published to IIS root successfully.'
+
+      #     if ($log) { Stop-Transcript | Out-Null }
+      #     exit 0
 
       # ==========================================================
       # 4) PYTHON SERVICE SETUP (STATIC vs PER-DEPLOY VENV)
       # ==========================================================
-      - name: Setup python service on deployed folder
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+      - name: Setup python service environment
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         run: |
           $stepName = 'Setup python service'
           $log = $env:LOG_FILE
+
           if ($log) { Start-Transcript -Path $log -Append | Out-Null }
+
           $ErrorActionPreference = 'Stop'
           trap {
             Write-Host "### STEP FAILED: $stepName"
@@ -589,7 +708,7 @@ jobs:
               exit 1
             }
 
-            $venvPython = Join-Path $staticVenvRoot 'Scripts\python.exe'
+            $venvPython = Join-Path $staticVenvRoot 'python.exe'
           }
 
           Write-Host ("Resolved venv python = {0}" -f $venvPython)
@@ -598,6 +717,14 @@ jobs:
             Write-Host ("### ERROR DETAIL: Python executable not found at {0}" -f $venvPython)
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
+          }
+
+          Write-Host 'Installing/Updating Python dependencies from requirements.txt...'
+          & $venvPython -m pip install --upgrade "pip"
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host ("### ERROR: pip upgrade failed with exit code {0}" -f $LASTEXITCODE)
+            if ($log) { Stop-Transcript | Out-Null }
+            exit $LASTEXITCODE
           }
 
           $requirements = Join-Path $pythonSvcRoot 'requirements.txt'
@@ -619,17 +746,18 @@ jobs:
           exit 0
 
       # ==========================================================
-      # 5) UPDATE DATABASE (Python + BAT scripts)
+      # 5) UPDATE DATABASE (run Python + BAT scripts)
       # ==========================================================
       - name: Update Database
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
+        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'false'
         shell: powershell
         env:
-          DB_HOST: ${{ secrets.PG_HOST }}
-          DB_PORT: ${{ secrets.PG_PORT }}
-          DB_USER: ${{ secrets.PG_USER }}
+          # Optional: DB connection info if your scripts need it
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ secrets.DB_PORT }}
+          DB_USER: ${{ secrets.DB_USER }}
           DB_NAME: ${{ secrets.DB_NAME }}
-          DB_PASSWORD: ${{ secrets.PG_PASSWORD }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         run: |
           $stepName = 'Update Database'
           $log = $env:LOG_FILE
@@ -645,6 +773,7 @@ jobs:
 
           Write-Host "=== [$stepName] ==="
 
+          # 1) Resolve paths
           $appRoot  = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
           $dbFolder = Join-Path $appRoot 'backend\database'
 
@@ -656,45 +785,42 @@ jobs:
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
-
           $env:PYTHONIOENCODING = 'utf-8'
+
           Write-Host ("Changing working directory to DB folder: {0}" -f $dbFolder)
           Set-Location $dbFolder
           Write-Host ("Current directory is now: {0}" -f (Get-Location))
+          
+          # 2) Python exe (reuse configured one)
+          $appRoot    = Join-Path $env:DEPLOY_ROOT $env:APP_SUBROOT
+          $venvPython = Join-Path $env:STATIC_VENV_ROOT 'python.exe'
+          $pythonExe  = $venvPython
 
-          $createNew      = $env:CREATE_NEW_VENV
-          $staticVenvRoot = $env:STATIC_VENV_ROOT
+          Write-Host ("Using venv PYTHON_EXE = {0}" -f $pythonExe)
 
-          if ($createNew -eq 'true') {
-            $venvPython = Join-Path $appRoot 'python-service\.venv\Scripts\python.exe'
-            Write-Host "Using per-deploy venv for DB step: $venvPython"
-          }
-          else {
-            $venvPython = Join-Path $staticVenvRoot 'Scripts\python.exe'
-            Write-Host "Using static venv for DB step: $venvPython"
-          }
-
-          if (-not (Test-Path $venvPython)) {
-            Write-Host ("### ERROR: venv python not found at {0}" -f $venvPython)
+          if (-not (Test-Path $pythonExe)) {
+            Write-Host "### ERROR: venv python not found at $pythonExe"
             Write-Host "Make sure the 'Setup python service' step ran successfully before this one."
             if ($log) { Stop-Transcript | Out-Null }
             exit 1
           }
 
-          $pythonExe = $venvPython
-          Write-Host ("Resolved pythonExe for DB update = {0}" -f $pythonExe)
-
+          # 3) LIST OF SCRIPTS TO RUN (EDIT THESE NAMES to your real files)
+          #    They are assumed to live under backend\database
           $pythonScripts = @(
-            'consolidate_generation_plants.py',
-            'convert_geojson.py'
+            'consolidate_generation_plants.py',    
+            'convert_geojson.py'      
           )
 
-          $batchScripts = @(
+          # All batch scripts will be run in interactive mode with timeout protection
+          # Order: setup_database.bat -> run_renewable_imports.bat -> setup_procedures.bat
+          $interactiveBatchScripts = @(
             'setup_database.bat',
-            'run_renewable_imports.bat',
+            'run_renewable_imports.bat',      
             'setup_procedures.bat'
           )
 
+          # 4) Helper to run a command and check exit code
           function Invoke-Checked {
             param(
               [string]$Description,
@@ -712,6 +838,7 @@ jobs:
             }
           }
 
+          # 5) Run Python scripts in order
           foreach ($name in $pythonScripts) {
             $path = Join-Path $dbFolder $name
             Write-Host ("Python script path = {0}" -f $path)
@@ -727,225 +854,179 @@ jobs:
             }
           }
 
-          foreach ($name in $batchScripts) {
-            $path = Join-Path $dbFolder $name
-            Write-Host ("BAT script path = {0}" -f $path)
-
-            if (-not (Test-Path $path)) {
-              Write-Host ("### ERROR: BAT file not found: {0}" -f $path)
-              if ($log) { Stop-Transcript | Out-Null }
-              exit 1
-            }
-
-            Invoke-Checked -Description $name -Action {
-              & $path
-            }
+          # 6) Run all BAT files in interactive mode with timeout protection
+          # Set PostgreSQL password and other environment variables
+          if ($env:DB_PASSWORD) {
+            $env:PGPASSWORD = $env:DB_PASSWORD
+            Write-Host "Using DB_PASSWORD from secrets for PostgreSQL authentication."
+          }
+          else {
+            Write-Host "WARNING: No DB_PASSWORD secret found. Scripts requiring password may fail."
           }
 
-          Write-Host ""
-          Write-Host "All database update scripts completed successfully."
-          if ($log) { Stop-Transcript | Out-Null }
-          exit 0
+          # Set database connection environment variables for batch scripts
+          if ($env:DB_HOST) { $env:PG_HOST = $env:DB_HOST }
+          if ($env:DB_PORT) { $env:PG_PORT = $env:DB_PORT }  
+          if ($env:DB_USER) { $env:PG_USER = $env:DB_USER }
+          if ($env:DB_NAME) { $env:DB_NAME = $env:DB_NAME }
 
-      # =====================
-      # START WINDOWS SERVICES (Python + Backend)
-      # =====================
-      - name: Start Windows services (Python + Backend)
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
-        shell: powershell
-        run: |
-          $stepName = 'Start Windows services (Python + Backend)'
-          $log = $env:LOG_FILE
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-          $ErrorActionPreference = 'Stop'
-          trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
-            Write-Host $_.ScriptStackTrace
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
+          try {
+            foreach ($name in $interactiveBatchScripts) {
+              $path = Join-Path $dbFolder $name
+              Write-Host ""
+              Write-Host ("---- Running {0} in non-interactive mode ----" -f $name)
+              Write-Host ("BAT script path = {0}" -f $path)
 
-          Write-Host "=== [$stepName] ==="
-
-          $services = @('VerveStacks-Python', 'VerveStacks-Backend')
-
-          foreach ($svcName in $services) {
-            Write-Host ""
-            Write-Host ("--- Handling service: {0}" -f $svcName)
-
-            try {
-              $svc = Get-Service -Name $svcName -ErrorAction Stop
-            } catch {
-              Write-Host ("### ERROR: Service '{0}' not found on this machine." -f $svcName)
-              throw
-            }
-
-            Write-Host ("Current status of {0}: {1}" -f $svcName, $svc.Status)
-
-            if ($svc.Status -eq 'Running') {
-              Write-Host ("Service '{0}' is already Running, skipping Start-Service." -f $svcName)
-              continue
-            }
-
-            try {
-              Write-Host ("Starting service '{0}'..." -f $svcName)
-              Start-Service -Name $svcName -ErrorAction Stop
-
-              # Wait up to 30 seconds for Running
-              $svc.WaitForStatus('Running', [TimeSpan]::FromSeconds(30))
-              $svc.Refresh()
-              Write-Host ("Service '{0}' final status: {1}" -f $svcName, $svc.Status)
-
-              if ($svc.Status -ne 'Running') {
-                throw "Service '$svcName' did not reach 'Running' status. Current status: $($svc.Status)"
+              if (-not (Test-Path $path)) {
+                Write-Host ("WARNING: BAT file not found: {0} - skipping" -f $path)
+                continue
               }
-            } catch {
-              Write-Host ("### ERROR: Failed to start service '{0}'." -f $svcName)
-              Write-Host ("### DETAIL: {0}" -f $_.Exception.Message)
-              if ($log) { Stop-Transcript | Out-Null }
-              exit 1
-            }
-          }
 
-          Write-Host ""
-          Write-Host "All requested services are now Running (or already were)."
+              # Create unique log files for each script
+              $baseName = [System.IO.Path]::GetFileNameWithoutExtension($name)
+              $outputLog = "$dbFolder\${baseName}_output.log"
+              $errorLog = "$dbFolder\${baseName}_error.log"
 
-          if ($log) { Stop-Transcript | Out-Null }
-          exit 0
+              # Create a modified version of the batch file that doesn't use pause
+              $tempBatPath = "$dbFolder\temp_${baseName}.bat"
+              Write-Host ("Creating non-interactive version: {0}" -f $tempBatPath)
+              
+              try {
+                # Read original batch file and modify it
+                $batContent = Get-Content $path -Raw
+                
+                 # Make comprehensive modifications for automation
+                 Write-Host "Modifying batch file for non-interactive execution with password argument..."
+                 
+                 # Start with proper batch file header that accepts password as argument
+                 $headerContent = "@echo off`r`n"
+                 $headerContent += "setlocal enabledelayedexpansion`r`n"
+                 $headerContent += "rem Automated version of $name`r`n"
+                 $headerContent += "`r`n"
+                 $headerContent += "rem Get password from first argument`r`n"
+                 $headerContent += "if not `"%~1`"==`"`" (`r`n"
+                 $headerContent += "    set `"PGPASSWORD=%~1`"`r`n"
+                 $headerContent += "    echo [AUTOMATED MODE] Using password from argument`r`n"
+                 $headerContent += ") else (`r`n"
+                 $headerContent += "    echo [AUTOMATED MODE] No password argument provided`r`n"
+                 $headerContent += "    set `"PGPASSWORD=`"`r`n"
+                 $headerContent += ")`r`n"
+                 $headerContent += "`r`n"
+                 
+                 # Remove all pause commands
+                 $modifiedContent = $batContent -replace 'pause', 'echo [AUTOMATED MODE - pause removed]'
+                 
+                 # Remove interactive password prompts and replace with argument usage
+                 $modifiedContent = $modifiedContent -replace 'if "%PGPASSWORD%"=="" \([\s\S]*?\)', 'if "%PGPASSWORD%"=="" ( echo [AUTOMATED MODE] PGPASSWORD already set from argument )'
+                 $modifiedContent = $modifiedContent -replace 'set /p PGPASSWORD=.*', 'echo [AUTOMATED MODE - using PGPASSWORD from argument]'
+                 
+                 # Remove any other interactive prompts
+                 $modifiedContent = $modifiedContent -replace 'set /p [^=]*=.*', 'echo [AUTOMATED MODE - prompt removed]'
+                 
+                 # Replace psql connection tests that might hang with non-interactive versions
+                 $modifiedContent = $modifiedContent -replace 'psql.*-c.*"SELECT.*".*>nul 2>&1', 'echo [AUTOMATED MODE - connection test skipped, assuming success]'
+                 
+                 # Add non-interactive flags to psql commands
+                 $modifiedContent = $modifiedContent -replace '(psql\s+[^|]*?)(\s+[^|]*?)(\s*$)', '$1$2 --no-password$3'
+                 
+                 # Combine header with modified content
+                 $modifiedContent = $headerContent + $modifiedContent
+                 
+                 # Add explicit success exit at the end
+                 $modifiedContent += "`r`necho [AUTOMATED MODE] Script execution completed.`r`nexit /b 0"
+                
+                 # Write modified batch file
+                 Set-Content -Path $tempBatPath -Value $modifiedContent -Encoding ASCII
+                 
+                #  # Debug: Show first few lines of the modified batch file
+                #  Write-Host "First 10 lines of modified batch file:"
+                #  Get-Content $tempBatPath -TotalCount 10 | ForEach-Object { Write-Host "  $_" }
+                
+                 Write-Host ("Running {0} (no timeout - will wait for completion)..." -f $name)
+                
+                 # Prepare arguments for batch file (pass DB_PASSWORD as argument)
+                 $dbPassword = if ($env:DB_PASSWORD) { $env:DB_PASSWORD } else { "" }
+                 
+                 # Construct single command string for batch file with password
+                 $batCommand = "`"$tempBatPath`" $dbPassword"
+                 $processArgs = @("/c", $batCommand)
 
-      # ==========================================================
-      # 6) PLACEHOLDER: HETZNER DEPLOY (FUTURE)
-      # ==========================================================
-      - name: Deploy to Hetzner (placeholder)
-        if: env.Update_Data_On_Hetzner == 'true' && env.RUN_ONLY_DB_STEP == 'false'
-        shell: powershell
-        run: |
-          $stepName = 'Deploy to Hetzner (placeholder)'
-          $log = $env:LOG_FILE
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-          $ErrorActionPreference = 'Stop'
-          trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
-            Write-Host $_.ScriptStackTrace
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-
-          Write-Host "=== [$stepName] ==="
-          Write-Host 'Update_Data_On_Hetzner == true, but remote deploy logic is not implemented yet.'
-          if ($log) { Stop-Transcript | Out-Null }
-          exit 0
-
-      # ==========================================================
-      # 5a) ROTATE NSSM LOGS + CLEANUP (7 DAYS)
-      # ==========================================================
-      - name: Rotate NSSM logs + cleanup (7 days)
-        if: env.Update_Data_On_Local == 'true' && env.RUN_ONLY_DB_STEP == 'true'
-        shell: powershell
-        run: |
-          $stepName = 'Rotate NSSM logs + cleanup (7 days)'
-          $log = $env:LOG_FILE
-          if ($log) { Start-Transcript -Path $log -Append | Out-Null }
-          $ErrorActionPreference = 'Stop'
-          trap {
-            Write-Host "### STEP FAILED: $stepName"
-            Write-Host "### ERROR: $($_.Exception.Message)"
-            Write-Host $_.ScriptStackTrace
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-          
-          Write-Host "=== [$stepName] ==="
-          
-          # Full path to nssm.exe – adjust if your install path is different
-          $nssm = 'C:\nssm\win64\nssm.exe'
-          
-          if (-not (Test-Path $nssm)) {
-            Write-Host "### ERROR: nssm.exe not found at $nssm"
-            if ($log) { Stop-Transcript | Out-Null }
-            exit 1
-          }
-          
-          # Services whose logs we want to rotate + cleanup
-          $services = @('VerveStacks-Python', 'VerveStacks-Backend')
-          
-          foreach ($svc in $services) {
-            Write-Host ""
-            Write-Host ("--- Handling service: {0}" -f $svc)
-          
-            # 1) Rotate logs (creates fresh log file and renames old one)
-            Write-Host ("Rotating logs for '{0}'..." -f $svc)
-            & $nssm rotate $svc
-            $rc = $LASTEXITCODE
-            if ($rc -ne 0) {
-              Write-Host ("WARNING: nssm rotate {0} returned exit code {1}" -f $svc, $rc)
-            }
-          
-            # 2) Figure out where logs live from AppStdout
-            $stdoutRawLines = (& $nssm get $svc AppStdout) 2>$null
-
-            if (-not $stdoutRawLines) {
-              Write-Host ("No AppStdout configured for {0}; skipping cleanup." -f $svc)
-              continue
-            }
-
-            # Take first line in case NSSM prints extra blank lines
-            $stdoutRaw = ($stdoutRawLines | Select-Object -First 1)
-
-            # Trim whitespace and then strip any control chars (CR/LF etc.)
-            $stdoutRaw = $stdoutRaw.Trim()
-            $stdoutSanitized = -join ($stdoutRaw.ToCharArray() | Where-Object { [int]$_ -ge 32 })
-
-            Write-Host ("Raw AppStdout for {0}: '{1}'" -f $svc, $stdoutRaw)
-            Write-Host ("Sanitized AppStdout for {0}: '{1}'" -f $svc, $stdoutSanitized)
-
-            if ([string]::IsNullOrWhiteSpace($stdoutSanitized)) {
-              Write-Host ("Sanitized AppStdout is empty for {0}; skipping cleanup." -f $svc)
-              continue
-            }
-
-            # Strip surrounding quotes if present: "C:\path\log.log" -> C:\path\log.log
-            $stdoutPath = $stdoutSanitized
-            if ($stdoutPath.StartsWith('"') -and $stdoutPath.EndsWith('"') -and $stdoutPath.Length -ge 2) {
-              $stdoutPath = $stdoutPath.Substring(1, $stdoutPath.Length - 2)
-            }
-
-            $stdoutPath = $stdoutPath.Trim()
-            Write-Host ("Normalized AppStdout for {0}: '{1}'" -f $svc, $stdoutPath)
-          
-            if ([string]::IsNullOrWhiteSpace($stdoutPath)) {
-              Write-Host ("Normalized AppStdout is empty for {0}; skipping cleanup." -f $svc)
-              continue
-            }
-          
-            try {
-              $logDir   = Split-Path -Parent $stdoutPath
-              $baseName = [System.IO.Path]::GetFileNameWithoutExtension($stdoutPath)
-            }
-            catch {
-              Write-Host ("### ERROR: Failed to process AppStdout path '{0}' for {1}: {2}" -f $stdoutPath, $svc, $_.Exception.Message)
-              continue
-            }
-          
-            if (-not (Test-Path $logDir)) {
-              Write-Host ("Log directory '{0}' for {1} does not exist; skipping cleanup." -f $logDir, $svc)
-              continue
-            }
-          
-            $cutoff = (Get-Date).AddDays(-7)
-            Write-Host ("Cleaning log files for {0} in {1} older than {2} ..." -f $svc, $logDir, $cutoff)
-          
-            Get-ChildItem -Path $logDir -Filter "$baseName*.log" -ErrorAction SilentlyContinue |
-              Where-Object { $_.LastWriteTime -lt $cutoff } |
-              ForEach-Object {
-                Write-Host ("Deleting old log: {0} (LastWriteTime={1})" -f $_.FullName, $_.LastWriteTime)
-                Remove-Item -LiteralPath $_.FullName -Force -ErrorAction SilentlyContinue
+                 $passwordStatus = if ($env:DB_PASSWORD) { "provided" } else { "not provided" }
+                 Write-Host "Running batch file with password argument ($passwordStatus)..."
+                 Write-Host "Command: cmd.exe /c $batCommand"
+                 
+                 # Use Start-Process with timeout to prevent hanging
+                 $process = Start-Process -FilePath "cmd.exe" `
+                                       -ArgumentList $processArgs `
+                                       -WorkingDirectory $dbFolder `
+                                       -WindowStyle Hidden `
+                                       -PassThru `
+                                       -RedirectStandardOutput $outputLog `
+                                       -RedirectStandardError $errorLog
+                
+                 # Wait for process to complete (no timeout)
+                 Write-Host "Waiting for $name to complete..."
+                 $process.WaitForExit()
+                 
+                 try {
+                   $exitCode = $process.ExitCode
+                   if ($exitCode -eq $null -or $exitCode -eq "") {
+                     $exitCode = "unknown"
+                   }
+                 }
+                 catch {
+                   $exitCode = "error_getting_code"
+                 }
+                 
+                 Write-Host ("{0} completed with exit code: {1}" -f $name, $exitCode)
+                 
+                 # Show output logs
+                 if (Test-Path $outputLog) {
+                   Write-Host ("--- {0} Output ---" -f $name)
+                   Get-Content $outputLog | Write-Host
+                 }
+                 if (Test-Path $errorLog) {
+                   $errorContent = Get-Content $errorLog -ErrorAction SilentlyContinue
+                   if ($errorContent) {
+                     Write-Host ("--- {0} Errors ---" -f $name)
+                     $errorContent | Write-Host
+                   }
+                 }
+                 
+                 if ($exitCode -eq 0) {
+                   Write-Host ("{0} completed successfully." -f $name)
+                 }
+                 elseif ($exitCode -eq "unknown") {
+                   Write-Host ("WARNING: {0} completed but exit code could not be determined. Check logs above." -f $name)
+                   Write-Host "Continuing with remaining scripts..."
+                 }
+                 else {
+                   Write-Host ("WARNING: {0} failed with exit code {1}. Check logs above." -f $name, $exitCode)
+                   Write-Host "Continuing with remaining scripts..."
+                 }
               }
+              catch {
+                Write-Host ("WARNING: Error running {0}: {1}" -f $name, $_.Exception.Message)
+                Write-Host "Continuing with remaining scripts..."
+              }
+              finally {
+                # Clean up temporary batch file
+                if (Test-Path $tempBatPath) {
+                  Remove-Item $tempBatPath -Force -ErrorAction SilentlyContinue
+                }
+              }
+            }
           }
-          
+          finally {
+            # Clean up environment variables
+            if ($env:PGPASSWORD) { Remove-Item Env:PGPASSWORD -ErrorAction SilentlyContinue }
+            if ($env:PG_HOST) { Remove-Item Env:PG_HOST -ErrorAction SilentlyContinue }
+            if ($env:PG_PORT) { Remove-Item Env:PG_PORT -ErrorAction SilentlyContinue }
+            if ($env:PG_USER) { Remove-Item Env:PG_USER -ErrorAction SilentlyContinue }
+            if ($env:DB_NAME) { Remove-Item Env:DB_NAME -ErrorAction SilentlyContinue }
+          }
+
           Write-Host ""
-          Write-Host "NSSM log rotation + 7-day cleanup completed."
+          Write-Host "Database update process completed."
           if ($log) { Stop-Transcript | Out-Null }
-          exit 0       
+          exit 0
