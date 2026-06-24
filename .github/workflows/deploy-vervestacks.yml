@@ -7,7 +7,7 @@ on:
 
 env:
   # Flags
-  Update_Data_On_Local: "true"
+  Update_Data_On_Local: "false"
   Update_Data_On_Hetzner: "false"
   RUN_ONLY_DB_STEP: "false"      # 'true' → only DB update pipeline; 'false' → full deploy
   SYNC_KANVAULT_ZIP: "false"      # 'true' → extract latest vervestacks_data_*.zip into DEPLOY_ROOT
